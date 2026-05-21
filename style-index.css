@@ -197,3 +197,21 @@
             margin-top: auto;
             font-size: 0.9rem;
         }
+
+/* --- TESTUMGEBUNG BADGE --- */   ← hier neu anfügen
+.badge-testumgebung {
+    position: fixed;
+    top: 20px;
+    right: -38px;
+    background-color: #BA7517;
+    color: #412402;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    padding: 7px 56px;
+    transform: rotate(45deg);
+    transform-origin: center;
+    z-index: 9999;
+    pointer-events: none;
+    white-space: nowrap;
+}
