@@ -64,6 +64,11 @@
             // Berechne vergangene Wochen seit Startdatum
             const wochenIndex = Math.floor((heute - startReferenz) / msProWoche);
 
+            // Hilfsfunktion: Revision 11 wird übersprungen
+            function getRevision(index) {
+                return index >= 11 ? index + 1 : index;
+            }
+            
             // Links im HTML aktualisieren
             const ids = ["link-woche-0", "link-woche-1", "link-woche-2"];
             ids.forEach((id, index) => {
