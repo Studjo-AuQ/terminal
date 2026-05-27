@@ -64,14 +64,6 @@
             // Berechne vergangene Wochen seit Startdatum
             const wochenIndex = Math.floor((heute - startReferenz) / msProWoche);
 
-            // Hilfsfunktion: Revision 11 wird übersprungen
-            function getRevision(index) {
-                if (index < 11) return index;
-                if (index === 11) return 12;
-                return index + 1;
-            }
-
-            console.log("Berechneter wochenIndex:", wochenIndex);
             
             // Links im HTML aktualisieren
             const ids = ["link-woche-0", "link-woche-1", "link-woche-2"];
@@ -79,6 +71,9 @@
                 const element = document.getElementById(id);
                 if (element) {
                     element.href = basisURL + (wochenIndex + index);
+                if (revision >= 11) revision = revision + 1;
+                element.href = basisURL + revision;
+                console.log(id + " → Revision " + revision);
                 }
             });
         })();
