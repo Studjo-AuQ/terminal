@@ -66,8 +66,12 @@
 
             // Hilfsfunktion: Revision 11 wird übersprungen
             function getRevision(index) {
-                return index >= 11 ? index + 1 : index;
+                if (index < 11) return index;
+                if (index === 11) return 12;
+                return index + 1;
             }
+
+            console.log("Berechneter wochenIndex:", wochenIndex);
             
             // Links im HTML aktualisieren
             const ids = ["link-woche-0", "link-woche-1", "link-woche-2"];
