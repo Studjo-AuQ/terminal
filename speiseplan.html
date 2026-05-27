@@ -56,7 +56,7 @@
             // KONFIGURATION
             // Setze hier den Montag ein, an dem der Link die Endung ":0" hatte
             const startReferenz = new Date("2026-03-23"); 
-            const basisURL = "https://001sdbfevm-660.johanneswerk.int/Manual/WebViewer?OID=D67363000:";
+            const basisURL = "https://001sdbfevm-660.johanneswerk.int/Manual/WebViewer?OID=D67363000%3A";
 
             const heute = new Date();
             const msProWoche = 604800000; // 7 Tage in Millisekunden
@@ -70,8 +70,12 @@
             ids.forEach((id, index) => {
                 const element = document.getElementById(id);
                 if (element) {
-                    element.href = basisURL + (wochenIndex + index);
-                if (revision >= 11) revision = revision + 1;
+                let revision = wochenIndex + index;
+                if (revision === 11) {
+                    revision = 12;
+                } else if (revision > 11) {
+                    revision = revision + 1;
+                }
                 element.href = basisURL + revision;
                 console.log(id + " → Revision " + revision);
                 }
