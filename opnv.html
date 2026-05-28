@@ -30,7 +30,7 @@
         </div>
 
 <!-- ============================================================
-     BETRIEBSSTÄTTEN-ADRESSEN
+     BETRIEBSSTÄTTEN-ADRESSEN (aktualisiert: Maps via maps.html)
      Einbaustelle: direkt vor </main> in der opnv.html
      ============================================================ -->
 
@@ -105,12 +105,14 @@
 
     .adr-icon { margin-right: 5px; }
 
-    .adr-copy-btn {
+    .adr-btn-row {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
         margin-top: 12px;
-        align-self: flex-start;
-        background-color: white;
-        color: #b61f29;
-        border: 2px solid #b61f29;
+    }
+
+    .adr-map-btn, .adr-copy-btn {
         border-radius: 999px;
         padding: 5px 14px;
         font-size: 0.80rem;
@@ -118,6 +120,25 @@
         cursor: pointer;
         font-family: inherit;
         transition: background-color 0.2s, color 0.2s;
+        text-decoration: none;
+        border: 2px solid #b61f29;
+        display: inline-block;
+    }
+
+    /* Karte-Button: ausgefüllt rot */
+    .adr-map-btn {
+        background-color: #b61f29;
+        color: white;
+    }
+    .adr-map-btn:hover {
+        background-color: #8b161e;
+        border-color: #8b161e;
+    }
+
+    /* Kopieren-Button: Outline */
+    .adr-copy-btn {
+        background-color: white;
+        color: #b61f29;
     }
     .adr-copy-btn:hover {
         background-color: #b61f29;
@@ -140,20 +161,13 @@
             Freisenbergstraße
             <span class="adr-kuerzel">FBS</span>
         </div>
-        <div class="adr-line">
-            <span class="adr-icon">📌</span>
-            <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x47b937de607ce9e5:0xd4b1ed4f62dacf34" target="_blank">
-                Freisenbergstraße 33
-            </a>
-        </div>
+        <div class="adr-line"><span class="adr-icon">📌</span>Freisenbergstraße 33</div>
         <div class="adr-line" style="padding-left:22px;">58513 Lüdenscheid</div>
-        <div class="adr-line">
-            <span class="adr-icon">📞</span>
-            <a href="tel:+492351095800">02351 95800</a>
+        <div class="adr-line"><span class="adr-icon">📞</span><a href="tel:+492351095800">02351 95800</a></div>
+        <div class="adr-btn-row">
+            <a href="maps.html?q=Freisenbergstraße 33, 58513 Lüdenscheid&name=BST Freisenbergstraße" class="adr-map-btn">🗺️ Karte</a>
+            <button class="adr-copy-btn" onclick="adresseKopieren(this, 'Freisenbergstraße 33, 58513 Lüdenscheid')">📋 Kopieren</button>
         </div>
-        <button class="adr-copy-btn" onclick="adresseKopieren(this, 'Freisenbergstraße 33, 58513 Lüdenscheid, Tel.: 02351 95800')">
-            📋 Adresse kopieren
-        </button>
     </div>
 
     <!-- 2 · Wefelshohlerstraße -->
@@ -162,20 +176,13 @@
             Wefelshohlerstraße
             <span class="adr-kuerzel">WHS</span>
         </div>
-        <div class="adr-line">
-            <span class="adr-icon">📌</span>
-            <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x47b949a9b14e82a7:0x142e139fc3bba5ea" target="_blank">
-                Wefelshohler Str. 48
-            </a>
-        </div>
+        <div class="adr-line"><span class="adr-icon">📌</span>Wefelshohler Str. 48</div>
         <div class="adr-line" style="padding-left:22px;">58511 Lüdenscheid</div>
-        <div class="adr-line">
-            <span class="adr-icon">📞</span>
-            <a href="tel:+492351093870">02351 93870</a>
+        <div class="adr-line"><span class="adr-icon">📞</span><a href="tel:+492351093870">02351 93870</a></div>
+        <div class="adr-btn-row">
+            <a href="maps.html?q=Wefelshohler Str. 48, 58511 Lüdenscheid&name=BST Wefelshohlerstraße" class="adr-map-btn">🗺️ Karte</a>
+            <button class="adr-copy-btn" onclick="adresseKopieren(this, 'Wefelshohler Str. 48, 58511 Lüdenscheid')">📋 Kopieren</button>
         </div>
-        <button class="adr-copy-btn" onclick="adresseKopieren(this, 'Wefelshohler Str. 48, 58511 Lüdenscheid, Tel.: 02351 93870')">
-            📋 Adresse kopieren
-        </button>
     </div>
 
     <!-- 3 · Kerkhagen -->
@@ -184,20 +191,13 @@
             Kerkhagen
             <span class="adr-kuerzel">KH</span>
         </div>
-        <div class="adr-line">
-            <span class="adr-icon">📌</span>
-            <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x47b937dcfc5ebd9d:0x77f004a17fcdad68" target="_blank">
-                Kerkhagen 22
-            </a>
-        </div>
+        <div class="adr-line"><span class="adr-icon">📌</span>Kerkhagen 22</div>
         <div class="adr-line" style="padding-left:22px;">58513 Lüdenscheid</div>
-        <div class="adr-line">
-            <span class="adr-icon">📞</span>
-            <a href="tel:+4923516714000">02351 671400</a>
+        <div class="adr-line"><span class="adr-icon">📞</span><a href="tel:+4923516714000">02351 671400</a></div>
+        <div class="adr-btn-row">
+            <a href="maps.html?q=Kerkhagen 22, 58513 Lüdenscheid&name=BST Kerkhagen" class="adr-map-btn">🗺️ Karte</a>
+            <button class="adr-copy-btn" onclick="adresseKopieren(this, 'Kerkhagen 22, 58513 Lüdenscheid')">📋 Kopieren</button>
         </div>
-        <button class="adr-copy-btn" onclick="adresseKopieren(this, 'Kerkhagen 22, 58513 Lüdenscheid, Tel.: 02351 671400')">
-            📋 Adresse kopieren
-        </button>
     </div>
 
     <!-- 4 · Werdohl -->
@@ -206,20 +206,13 @@
             Werdohl
             <span class="adr-kuerzel">WD</span>
         </div>
-        <div class="adr-line">
-            <span class="adr-icon">📌</span>
-            <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x47b9455eda111b31:0x74f88b1d9b954c07" target="_blank">
-                Gewerbestraße 10
-            </a>
-        </div>
+        <div class="adr-line"><span class="adr-icon">📌</span>Gewerbestraße 10</div>
         <div class="adr-line" style="padding-left:22px;">58791 Werdohl</div>
-        <div class="adr-line">
-            <span class="adr-icon">📞</span>
-            <a href="tel:+492392091900">02392 91900</a>
+        <div class="adr-line"><span class="adr-icon">📞</span><a href="tel:+492392091900">02392 91900</a></div>
+        <div class="adr-btn-row">
+            <a href="maps.html?q=Gewerbestraße 10, 58791 Werdohl&name=BST Werdohl" class="adr-map-btn">🗺️ Karte</a>
+            <button class="adr-copy-btn" onclick="adresseKopieren(this, 'Gewerbestraße 10, 58791 Werdohl')">📋 Kopieren</button>
         </div>
-        <button class="adr-copy-btn" onclick="adresseKopieren(this, 'Gewerbestraße 10, 58791 Werdohl, Tel.: 02392 91900')">
-            📋 Adresse kopieren
-        </button>
     </div>
 
     <!-- 5 · Kierspe -->
@@ -228,20 +221,13 @@
             Kierspe
             <span class="adr-kuerzel">KI</span>
         </div>
-        <div class="adr-line">
-            <span class="adr-icon">📌</span>
-            <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x47b94aa1a53bbd41:0x4eaa4efd531c2a3c" target="_blank">
-                Am Funkenhof 1
-            </a>
-        </div>
+        <div class="adr-line"><span class="adr-icon">📌</span>Am Funkenhof 1</div>
         <div class="adr-line" style="padding-left:22px;">58566 Kierspe</div>
-        <div class="adr-line">
-            <span class="adr-icon">📞</span>
-            <a href="tel:+4902359294960">02359 294960</a>
+        <div class="adr-line"><span class="adr-icon">📞</span><a href="tel:+4902359294960">02359 294960</a></div>
+        <div class="adr-btn-row">
+            <a href="maps.html?q=Am Funkenhof 1, 58566 Kierspe&name=BST Kierspe" class="adr-map-btn">🗺️ Karte</a>
+            <button class="adr-copy-btn" onclick="adresseKopieren(this, 'Am Funkenhof 1, 58566 Kierspe')">📋 Kopieren</button>
         </div>
-        <button class="adr-copy-btn" onclick="adresseKopieren(this, 'Am Funkenhof 1, 58566 Kierspe, Tel.: 02359 294960')">
-            📋 Adresse kopieren
-        </button>
     </div>
 
     <!-- 6 · Auf der Heide -->
@@ -250,20 +236,13 @@
             Auf der Heide
             <span class="adr-kuerzel">AdH</span>
         </div>
-        <div class="adr-line">
-            <span class="adr-icon">📌</span>
-            <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x47b91ffbc0f33ac1:0x250c1f0c4ec8b163" target="_blank">
-                Auf d. Heide 24
-            </a>
-        </div>
+        <div class="adr-line"><span class="adr-icon">📌</span>Auf d. Heide 24</div>
         <div class="adr-line" style="padding-left:22px;">44803 Bochum</div>
-        <div class="adr-line">
-            <span class="adr-icon">📞</span>
-            <a href="tel:+49234938870">0234 938870</a>
+        <div class="adr-line"><span class="adr-icon">📞</span><a href="tel:+49234938870">0234 938870</a></div>
+        <div class="adr-btn-row">
+            <a href="maps.html?q=Auf der Heide 24, 44803 Bochum&name=BST Auf der Heide" class="adr-map-btn">🗺️ Karte</a>
+            <button class="adr-copy-btn" onclick="adresseKopieren(this, 'Auf d. Heide 24, 44803 Bochum')">📋 Kopieren</button>
         </div>
-        <button class="adr-copy-btn" onclick="adresseKopieren(this, 'Auf d. Heide 24, 44803 Bochum, Tel.: 0234 938870')">
-            📋 Adresse kopieren
-        </button>
     </div>
 
     <!-- 7 · Dannenbaumstraße -->
@@ -272,20 +251,13 @@
             Dannenbaumstraße
             <span class="adr-kuerzel">DB</span>
         </div>
-        <div class="adr-line">
-            <span class="adr-icon">📌</span>
-            <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x47b91ff1e5db0945:0xa552024dcc8310c1" target="_blank">
-                Dannenbaumstraße 63
-            </a>
-        </div>
+        <div class="adr-line"><span class="adr-icon">📌</span>Dannenbaumstraße 63</div>
         <div class="adr-line" style="padding-left:22px;">44803 Bochum</div>
-        <div class="adr-line">
-            <span class="adr-icon">📞</span>
-            <a href="tel:+4902342983590">0234 2983590</a>
+        <div class="adr-line"><span class="adr-icon">📞</span><a href="tel:+4902342983590">0234 2983590</a></div>
+        <div class="adr-btn-row">
+            <a href="maps.html?q=Dannenbaumstraße 63, 44803 Bochum&name=BST Dannenbaumstraße" class="adr-map-btn">🗺️ Karte</a>
+            <button class="adr-copy-btn" onclick="adresseKopieren(this, 'Dannenbaumstraße 63, 44803 Bochum')">📋 Kopieren</button>
         </div>
-        <button class="adr-copy-btn" onclick="adresseKopieren(this, 'Dannenbaumstraße 63, 44803 Bochum, Tel.: 0234 2983590')">
-            📋 Adresse kopieren
-        </button>
     </div>
 
 </div>
@@ -296,11 +268,10 @@ function adresseKopieren(btn, text) {
         btn.textContent = '✅ Kopiert!';
         btn.classList.add('copied');
         setTimeout(() => {
-            btn.textContent = '📋 Adresse kopieren';
+            btn.textContent = '📋 Kopieren';
             btn.classList.remove('copied');
         }, 2500);
     }).catch(() => {
-        // Fallback für ältere Browser
         const el = document.createElement('textarea');
         el.value = text;
         el.style.position = 'fixed';
@@ -312,7 +283,7 @@ function adresseKopieren(btn, text) {
         btn.textContent = '✅ Kopiert!';
         btn.classList.add('copied');
         setTimeout(() => {
-            btn.textContent = '📋 Adresse kopieren';
+            btn.textContent = '📋 Kopieren';
             btn.classList.remove('copied');
         }, 2500);
     });
