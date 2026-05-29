@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bistro Speiseplan – Studjo</title>
+    <style>
+        :root { --primary-red: #b61f29; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Nunito Sans', Calibri, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header {
+            background-color: white;
+            padding: 10px 16px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            flex-shrink: 0;
+        }
+        .back-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            gap: 12px;
+        }
+        .back-button {
+            background-color: var(--primary-red);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-family: inherit;
+            white-space: nowrap;
+        }
+        .page-label {
+            font-size: 1.0rem;
+            font-weight: 700;
+            color: var(--primary-red);
+            text-align: center;
+            flex: 1;
+        }
+        .content-frame {
+            flex: 1;
+            border: none;
+            width: 100%;
+        }
+        /* Hinweis falls PDF nicht lädt */
+        .pdf-fallback {
+            display: none;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 16px;
+            background: #f9f9f9;
+            color: #555;
+            font-size: 1rem;
+            text-align: center;
+            padding: 40px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: var(--primary-red);
+            color: white;
+            font-size: 0.8rem;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="back-nav">
+            <a href="speiseplan.html" class="back-button">← Zurück</a>
+            <div class="page-label">📄 Bistro Speiseplan</div>
+            <img src="header.jpg" style="height: 40px;" alt="Studjo Logo">
+        </div>
+    </header>
+
+    <!-- PDF direkt als iframe einbinden – funktioniert in Chrome/Edge/Firefox -->
+    <iframe
+        id="pdf-frame"
+        src="bistroplan.pdf"
+        class="content-frame"
+        type="application/pdf">
+    </iframe>
+
+    <!-- Fallback falls Browser kein PDF inline anzeigt -->
+    <div class="pdf-fallback" id="pdf-fallback">
+        <span style="font-size:3rem;">📄</span>
+        <p>Der Speiseplan konnte nicht direkt angezeigt werden.</p>
+        <a href="bistroplan.pdf"
+           style="background:#b61f29;color:white;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:700;">
+            PDF herunterladen
+        </a>
+    </div>
+
+    <footer>
+        &copy; 2024 <b>Studjo | Arbeit und Qualifizierung</b> | Infoterminal | Barrierefreier Zugang
+    </footer>
+
+<script>
+    // Prüft ob das PDF geladen hat – zeigt Fallback wenn nicht
+    const frame = document.getElementById('pdf-frame');
+    frame.addEventListener('error', function () {
+        frame.style.display = 'none';
+        document.getElementById('pdf-fallback').style.display = 'flex';
+    });
+    // Zusätzliche Prüfung nach 3 Sekunden (manche Browser feuern kein error-Event)
+    setTimeout(function () {
+        try {
+            if (!frame.contentDocument || frame.contentDocument.body.innerHTML === '') {
+                frame.style.display = 'none';
+                document.getElementById('pdf-fallback').style.display = 'flex';
+            }
+        } catch(e) { /* Cross-origin – PDF lädt, alles ok */ }
+    }, 3000);
+</script>
+
+</body>
+</html>
