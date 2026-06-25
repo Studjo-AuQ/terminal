@@ -13,7 +13,7 @@
 
 // ── Erlaubte Quellen (Whitelist) ──────────────────────────
 $ERLAUBTE_QUELLEN = [
-    'https://www.tagesschau.de/einfache-sprache/',
+    'https://www.tagesschau.de/einfache-sprache/atom',
     'https://www.nachrichtenleicht.de/nachrichten.2248.de.podcast.xml',
 ];
 
