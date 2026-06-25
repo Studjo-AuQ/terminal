@@ -13,8 +13,8 @@
 
 // ── Erlaubte Quellen (Whitelist) ──────────────────────────
 $ERLAUBTE_QUELLEN = [
-    'https://www.tagesschau.de/einfache-sprache/atom',
-    'https://www.nachrichtenleicht.de/nachrichten.2248.de.podcast.xml',
+    'https://www.nachrichtenleicht.de/nachrichtenleicht-nachrichten-100.rss',
+    'https://www.deutschlandfunk.de/podcast-nachrichtenleicht-der-wochenrueckblick-in-einfacher-sprache-100.xml',
 ];
 
 // ── Cache-Einstellungen ───────────────────────────────────
