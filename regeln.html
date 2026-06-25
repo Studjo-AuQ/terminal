@@ -1,57 +1,430 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regeln</title>
-    <link rel="stylesheet" href="style.css">   
+    <title>Nachrichten – Studjo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-red:  #b61f29;
+            --dark-red:     #8b161e;
+            --bg-color:     #f9f9f9;
+            --text-color:   #0f2f37;
+            --grey:         #8a8d8f;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ── Header ── */
+        header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+        .logo-container { max-width: 1200px; margin: 0 auto; }
+        .logo-container img { width: 100%; height: auto; display: block; }
+
+        /* ── Main ── */
+        main {
+            flex: 1;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 24px 20px 40px;
+            width: 100%;
+        }
+
+        /* ── Top Bar ── */
+        .top-bar {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: white;
+            color: var(--primary-red);
+            border: 2px solid var(--primary-red);
+            border-radius: 999px;
+            padding: 8px 20px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-decoration: none;
+            font-family: inherit;
+            transition: background 0.2s, color 0.2s;
+            white-space: nowrap;
+        }
+        .back-button:hover { background: var(--primary-red); color: white; }
+
+        h1 {
+            font-size: 1.45rem;
+            font-weight: 800;
+            color: var(--primary-red);
+            flex: 1;
+        }
+
+        /* ── Quelle + Aktualisierung ── */
+        .source-bar {
+            background: white;
+            border-left: 6px solid var(--primary-red);
+            border-radius: 10px;
+            padding: 12px 18px;
+            margin-bottom: 22px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .source-label {
+            font-size: 0.88rem;
+            color: var(--grey);
+            font-weight: 600;
+        }
+        .source-label strong { color: var(--text-color); }
+        .refresh-info {
+            font-size: 0.80rem;
+            color: var(--grey);
+        }
+        #letzte-aktualisierung { font-weight: 700; color: var(--text-color); }
+
+        /* ── Lade-Anzeige ── */
+        .loading-box {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--grey);
+        }
+        .spinner {
+            width: 44px; height: 44px;
+            border: 5px solid #ddd;
+            border-top-color: var(--primary-red);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 16px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .loading-box p { font-size: 1rem; }
+
+        /* ── Fehlermeldung ── */
+        .error-box {
+            display: none;
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 12px;
+            padding: 20px 24px;
+            text-align: center;
+            font-size: 0.95rem;
+            color: #664d03;
+            margin-bottom: 20px;
+        }
+
+        /* ── News-Karten ── */
+        .news-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .news-card {
+            background: white;
+            border-radius: 14px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+            overflow: hidden;
+            cursor: pointer;
+            transition: box-shadow 0.2s, transform 0.15s;
+            border-left: 5px solid #e0e0e0;
+        }
+        .news-card:hover {
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+            transform: translateY(-1px);
+        }
+        .news-card.offen {
+            border-left-color: var(--primary-red);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            padding: 16px 18px;
+        }
+        .card-datum {
+            min-width: 72px;
+            text-align: center;
+            background: var(--bg-color);
+            border-radius: 8px;
+            padding: 8px 6px;
+            flex-shrink: 0;
+        }
+        .card-datum .tag {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-red);
+            line-height: 1;
+        }
+        .card-datum .monat {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--grey);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .card-titel-block { flex: 1; }
+        .card-titel {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-color);
+            line-height: 1.35;
+            margin-bottom: 4px;
+        }
+        .card-teaser {
+            font-size: 0.88rem;
+            color: #666;
+            line-height: 1.5;
+        }
+        .card-pfeil {
+            font-size: 1.2rem;
+            color: var(--grey);
+            transition: transform 0.2s, color 0.2s;
+            align-self: center;
+            flex-shrink: 0;
+            padding-left: 8px;
+        }
+        .news-card.offen .card-pfeil {
+            transform: rotate(90deg);
+            color: var(--primary-red);
+        }
+
+        /* ── Ausklapp-Inhalt ── */
+        .card-inhalt {
+            display: none;
+            padding: 0 18px 18px 18px;
+            border-top: 1px solid #f0f0f0;
+        }
+        .news-card.offen .card-inhalt { display: block; }
+
+        .card-inhalt-text {
+            font-size: 0.97rem;
+            line-height: 1.75;
+            color: var(--text-color);
+            padding-top: 14px;
+        }
+        /* HTML-Tags aus RSS bereinigen */
+        .card-inhalt-text p { margin-bottom: 10px; }
+        .card-inhalt-text p:last-child { margin-bottom: 0; }
+
+        .card-inhalt-quelle {
+            margin-top: 14px;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+            font-size: 0.78rem;
+            color: var(--grey);
+        }
+
+        /* ── Footer ── */
+        footer {
+            text-align: center;
+            padding: 18px;
+            background: var(--primary-red);
+            color: white;
+            font-size: 0.88rem;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="logo-container">            
-		<a href="index.html" target="_self" alt="Studjo Logo Arbeit und Qualifizierung">
-<img src="header.jpg"></a>
-        </div>
-    </header>
-    <main>
-        <h1><b>Unsere Regeln</b></h1>
-        <div class="tile-grid">   
-            <a href="index.html" target="_self" class="tile tile-color-11">
-                <img src="back.jpg" alt="zur&uuml;ck" class="tile-img">
-                <h2>Hier geht's zur&uuml;ck...</h2>
-            </a>
 
-            <a href="https://001sdbfevm-660.johanneswerk.int/Manual/WebViewer?OID=D11879700" target="_blank" class="tile tile-color-2">
-                <img src="FEM.jpg" alt="Regeln FEM" class="tile-img">
-                <h2>Regeln zu Freiheit</h2>
-            </a>
-
-            <a href="https://001sdbfevm-660.johanneswerk.int/Manual/WebViewer?OID=D8541000" target="_blank" class="tile tile-color-2">
-                <img src="Liebe.jpg" alt="Regeln Liebe" class="tile-img">
-                <h2>Regeln zu Liebe</h2>
-            </a>
-
-            <a href="https://001sdbfevm-660.johanneswerk.int/Manual/WebViewer?OID=D9801800" target="_blank" class="tile tile-color-2">
-                <img src="Gewalt.jpg" alt="Regeln Gewalt" class="tile-img">
-                <h2>Regeln zu Gewalt</h2>
-            </a>
-
-            <a href="https://001sdbfevm-660.johanneswerk.int/Manual/WebViewer?OID=D9802900" target="_blank" class="tile tile-color-2">
-                <img src="Zusammenarbeit.jpg" alt="Regeln Zusammenarbeit" class="tile-img">
-                <h2>Regeln zur Zusammenarbeit</h2>
-            </a>
-
-        </div>
-    </main>
-<div class="read-aloud-container">
-        <button class="btn-read-aloud">
-            <img src="zuhoeren.jpg" alt="Ohr-Symbol">
-            <span>Vorlesen</span>
-        </button>
+<header>
+    <div class="logo-container">
+        <img src="header.jpg" alt="Studjo Logo Arbeit und Qualifizierung">
     </div>
-    <footer>
-        &copy; 2024 <b>Studjo | Arbeit und Qualifizierung</b> | Infoterminal | Barrierefreier Zugang
-    </footer>
-<script src="script.js" defer></script>
+</header>
+
+<main>
+
+    <div class="top-bar">
+        <a href="index.html" class="back-button">← Zurück</a>
+        <h1>📰 Nachrichten in Leichter Sprache</h1>
+    </div>
+
+    <div class="source-bar">
+        <div class="source-label">
+            Quelle: <strong>Tagesschau – Nachrichten in einfacher Sprache</strong>
+        </div>
+        <div class="refresh-info">
+            Zuletzt aktualisiert: <span id="letzte-aktualisierung">–</span>
+            &nbsp;·&nbsp; Automatische Aktualisierung alle 30 Minuten
+        </div>
+    </div>
+
+    <div class="loading-box" id="loading-box">
+        <div class="spinner"></div>
+        <p>Nachrichten werden geladen…</p>
+    </div>
+
+    <div class="error-box" id="error-box">
+        ⚠️ Die Nachrichten konnten gerade nicht geladen werden.<br>
+        Bitte prüfe die Internetverbindung. Es wird automatisch erneut versucht.
+    </div>
+
+    <div class="news-grid" id="news-grid"></div>
+
+</main>
+
+<footer>
+    &copy; 2024 <b>Studjo | Arbeit und Qualifizierung</b> | Infoterminal | Barrierefreier Zugang
+</footer>
+
+<script>
+// ══════════════════════════════════════════════════════════
+// KONFIGURATION  ←  hier bei Bedarf anpassen
+// ══════════════════════════════════════════════════════════
+
+// RSS-Feed URL (Tagesschau einfache Sprache)
+const RSS_URL = 'https://www.tagesschau.de/einfache-sprache/index~rss2.xml';
+
+// Alternativ: Nachrichten leicht (Deutschlandfunk)
+// const RSS_URL = 'https://www.nachrichtenleicht.de/api/partials/pod-rss';
+
+// Anzahl der angezeigten Meldungen
+const MAX_MELDUNGEN = 10;
+
+// Automatische Aktualisierung alle X Minuten
+const REFRESH_MINUTEN = 30;
+
+// rss2json API (kostenlos, 10.000 Anfragen/Tag)
+const API_URL = 'https://api.rss2json.com/v1/api.json?rss_url='
+              + encodeURIComponent(RSS_URL)
+              + '&api_key=&count=' + MAX_MELDUNGEN;
+
+// ══════════════════════════════════════════════════════════
+
+const MONATE = ['Jan','Feb','Mär','Apr','Mai','Jun',
+                'Jul','Aug','Sep','Okt','Nov','Dez'];
+
+function zeitstempel() {
+    const n = new Date();
+    return n.getHours().toString().padStart(2,'0') + ':'
+         + n.getMinutes().toString().padStart(2,'0')
+         + ' Uhr';
+}
+
+// Einfaches HTML-Bereinigen für RSS-Beschreibungen
+function bereinige(html) {
+    const tmp = document.createElement('div');
+    tmp.innerHTML = html;
+    // Bilder entfernen (brauchen wir nicht)
+    tmp.querySelectorAll('img, figure, .meldung__bild').forEach(el => el.remove());
+    // Leere Tags entfernen
+    tmp.querySelectorAll('p, div').forEach(el => {
+        if (!el.textContent.trim()) el.remove();
+    });
+    return tmp.innerHTML;
+}
+
+function erstelleKarte(item, index) {
+    const datum = new Date(item.pubDate);
+    const tag   = datum.getDate();
+    const monat = MONATE[datum.getMonth()];
+
+    // Ersten Satz des Teasers extrahieren
+    const tmpDiv = document.createElement('div');
+    tmpDiv.innerHTML = item.description;
+    const reinText = tmpDiv.textContent || '';
+    const teaser = reinText.substring(0, 120).trim()
+                 + (reinText.length > 120 ? ' …' : '');
+
+    const inhalt = bereinige(item.description || item.content || '');
+
+    const karte = document.createElement('div');
+    karte.className = 'news-card';
+    karte.dataset.index = index;
+    karte.innerHTML = `
+        <div class="card-header">
+            <div class="card-datum">
+                <div class="tag">${tag}</div>
+                <div class="monat">${monat}</div>
+            </div>
+            <div class="card-titel-block">
+                <div class="card-titel">${item.title}</div>
+                <div class="card-teaser">${teaser}</div>
+            </div>
+            <div class="card-pfeil">›</div>
+        </div>
+        <div class="card-inhalt">
+            <div class="card-inhalt-text">${inhalt || '<p>' + reinText + '</p>'}</div>
+            <div class="card-inhalt-quelle">
+                Quelle: Tagesschau – Nachrichten in einfacher Sprache
+            </div>
+        </div>`;
+
+    karte.addEventListener('click', function () {
+        const warOffen = this.classList.contains('offen');
+        // Alle anderen schließen
+        document.querySelectorAll('.news-card.offen').forEach(k => k.classList.remove('offen'));
+        // Diese öffnen / schließen
+        if (!warOffen) this.classList.add('offen');
+        // Nach oben scrollen damit Überschrift sichtbar bleibt
+        if (!warOffen) {
+            setTimeout(() => this.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+        }
+    });
+
+    return karte;
+}
+
+async function ladeNachrichten() {
+    const grid     = document.getElementById('news-grid');
+    const ladeBox  = document.getElementById('loading-box');
+    const fehler   = document.getElementById('error-box');
+
+    // Beim ersten Laden Spinner zeigen; bei Refresh stillschweigend aktualisieren
+    if (grid.children.length === 0) {
+        ladeBox.style.display = 'block';
+    }
+    fehler.style.display = 'none';
+
+    try {
+        const antwort = await fetch(API_URL);
+        if (!antwort.ok) throw new Error('HTTP ' + antwort.status);
+        const daten = await antwort.json();
+
+        if (daten.status !== 'ok' || !daten.items?.length) {
+            throw new Error('Keine Meldungen im Feed');
+        }
+
+        ladeBox.style.display = 'none';
+        grid.innerHTML = '';
+        daten.items.forEach((item, i) => grid.appendChild(erstelleKarte(item, i)));
+        document.getElementById('letzte-aktualisierung').textContent = zeitstempel();
+
+    } catch (err) {
+        console.error('RSS-Fehler:', err);
+        ladeBox.style.display = 'none';
+        if (grid.children.length === 0) {
+            fehler.style.display = 'block';
+        }
+    }
+}
+
+// Beim Laden starten
+ladeNachrichten();
+
+// Automatische Aktualisierung
+setInterval(ladeNachrichten, REFRESH_MINUTEN * 60 * 1000);
+</script>
+
 </body>
 </html>
