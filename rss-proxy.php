@@ -58,6 +58,10 @@ $kontext = stream_context_create([
 
 $inhalt = @file_get_contents($url, false, $kontext);
 
+if ($inhalt !== false && stripos(trim($inhalt), '<!DOCTYPE') === 0) {
+    $inhalt = false; // HTML statt XML – als Fehler behandeln
+}
+
 if ($inhalt === false) {
     // Cache noch vorhanden? Dann lieber veraltet als gar nichts
     if (file_exists($CACHE_DATEI)) {
