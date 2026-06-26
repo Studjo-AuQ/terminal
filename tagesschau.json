@@ -1,7 +1,25 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "26.06.2026, 10:51 Uhr (UTC)",
+  "aktualisiert": "26.06.2026, 11:45 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Erdbeben in Venezuela: Notfallmediziner beklagt mangelnde Versorgung",
+      "description": "Ärztemangel, fehlende Medikamente und kein medizinisches Material: Laut Notfallmediziner Tankred Stöbe spielt sich nach den Erdbeben in Venezuela eine \"zweite Katastrophe\" in den Krankenhäusern des Landes ab.",
+      "pubDate": "2026-06-26T13:22:22+02:00",
+      "bild": ""
+    },
+    {
+      "title": "40 Grad im Juni - ist das das neue Normal?",
+      "description": "Am Wochenende soll die Hitzewelle ihren Höhepunkt erreichen, doch schon jetzt ist klar: Die extrem hohen Juni-Temperaturen sind außergewöhnlich. Oder müssen wir uns an immer mehr Hitzetage gewöhnen? Von Tim Staeger.",
+      "pubDate": "2026-06-26T13:14:00+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Russland: Putins Kampf für mehr Geburten bleibt ohne Erfolg",
+      "description": "Russlands Bevölkerung schrumpft seit Jahren rapide. Deshalb propagiert Präsident Putin seit Jahren das Kinderkriegen. Doch weder finanzielle Anreize noch verschärfte Abtreibungsregeln bringen Erfolg. Von Ina Ruck.",
+      "pubDate": "2026-06-26T13:11:31+02:00",
+      "bild": ""
+    },
     {
       "title": "Zwei mutmaßliche Rechtsterroristen in Thüringen festgenommen",
       "description": "Die Bundesanwaltschaft hat zwei mutmaßliche Unterstützer der rechtsextremen Terrorgruppe \"Letzte Verteidigungswelle\" festnehmen lassen. Sie sollen versucht haben, eine Asylbewerberunterkunft anzuzünden.",
@@ -22,7 +40,7 @@
     },
     {
       "title": "EU-Kommission will Schutz für Ukrainer im wehrfähigen Alter beenden",
-      "description": "Auf Bitte der Regierung in Kiew will die EU-Kommission den automatischen Schutzstatus für ukrainische Männer zwischen 23 und 60 Jahren beenden. Die Mitgliedsstaaten müssen noch zustimmen, Deutschland hat seine Position bereits deutlich gemacht.",
+      "description": "Auf Bitte der Regierung in Kiew will die EU-Kommission den automatischen Schutzstatus für ukrainische Männer zwischen 23 und 60 Jahren beenden. Die Mitgliedstaaten müssen noch zustimmen, Deutschland hat seine Position bereits deutlich gemacht.",
       "pubDate": "2026-06-26T11:08:51+02:00",
       "bild": ""
     },
@@ -34,8 +52,8 @@
     },
     {
       "title": "Mehr als 600 Drohnen: Russland meldet massiven ukrainischen Angriff",
-      "description": "Russland hat nach eigenen Angaben in der Nacht mehr als 600 ukrainische Drohnen abgewehrt - und damit wohl den heftigsten Angriff seit Jahresbeginn. Unterdessen ist Justizministerin Hubig in Kiew eingetroffen.",
-      "pubDate": "2026-06-26T10:32:01+02:00",
+      "description": "Russland hat nach eigenen Angaben in der Nacht mehr als 600 ukrainische Drohnen abgewehrt - und damit wohl den heftigsten Angriff seit Jahresbeginn. Die von Russland eingesetzten Behörden auf der Krim riefen den Ausnahmezustand aus.",
+      "pubDate": "2026-06-26T12:57:49+02:00",
       "bild": ""
     },
     {
@@ -57,9 +75,9 @@
       "bild": ""
     },
     {
-      "title": "Hitze-Liveblog: ++ Höchste je gemessene Juni-Temperatur erwartet ++",
-      "description": "Erstmals an einem Juni-Tag könnte es heute in Deutschland mehr als 40 Grad heiß werden. Auch nachts kühlt es kaum ab. Der Bevölkerungsschutztag an diesem Samstag wird wegen der Hitze verschoben.",
-      "pubDate": "2026-06-26T12:16:36+02:00",
+      "title": "Hitze-Liveblog: ++ Waldbrandgefahr steigt vielerorts auf höchste Stufe ++",
+      "description": "An vielen Orten in Deutschland gilt laut Deutschem Wetterdienst inzwischen die höchste Warnstufe für Waldbrände. Erstmals an einem Juni-Tag könnte es heute in Deutschland mehr als 40 Grad heiß werden.",
+      "pubDate": "2026-06-26T13:36:51+02:00",
       "bild": ""
     },
     {
@@ -72,24 +90,6 @@
       "title": "Wie Sportvereine mit der Hitze umgehen",
       "description": "Kein Sportfest, kein Amateurfußball: Wegen der hohen Temperaturen sagen Vereine und Verbände teils ihre Veranstaltungen ab. Doch nicht alle reagieren gleich. Von Philipp Wundersee.",
       "pubDate": "2026-06-26T09:11:33+02:00",
-      "bild": ""
-    },
-    {
-      "title": "30 Millionen Pfund: König Charles legt Steuerzahlungen offen",
-      "description": "Auch britische Könige zahlen Steuern: Wie viel genau, hat König Charles jetzt als erster Monarch offengelegt. Außerdem kündigte er an, nach Abschluss der Renovierungen nicht mehr im Buckingham-Palast wohnen zu wollen.",
-      "pubDate": "2026-06-26T08:45:34+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Abschiebezentrum \"Alligator Alcatraz\" schließt",
-      "description": "Das US-Abschiebegefängnis \"Alligator Alcatraz\" wird nach knapp einjährigem Betrieb geschlossen. Das teilte der republikanische Gouverneur DeSantis mit. Die Einrichtung stand wegen ihrer schlechten Haftbedingungen in der Kritik.",
-      "pubDate": "2026-06-26T07:27:04+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Nach Erdbeben in Venezuela: Rettungskräfte arbeiten gegen die Zeit",
-      "description": "Nach den Erdbeben in Venezuela suchen Retter unter den Trümmern nach Verschütteten. Ausländische Helfer sind unterwegs. Das THW schickt ein Team mit Spürhunden. Doch es ist ein Wettlauf gegen die Zeit. Die Zahl der Toten steigt. Von Jenny Barke.",
-      "pubDate": "2026-06-26T07:12:30+02:00",
       "bild": ""
     }
   ],
