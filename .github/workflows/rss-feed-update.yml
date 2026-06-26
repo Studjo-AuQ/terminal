@@ -1,23 +1,21 @@
 name: RSS-Feed aktualisieren
 
 on:
-  # Automatisch alle 30 Minuten
   schedule:
     - cron: '*/30 * * * *'
-  # Manuell auslösbar über GitHub → Actions → "Run workflow"
   workflow_dispatch:
 
 jobs:
   rss-holen:
     runs-on: ubuntu-latest
     permissions:
-      contents: write   # Erlaubt dem Workflow, Dateien ins Repo zu schreiben
+      contents: write
 
     steps:
       - name: Repository auschecken
         uses: actions/checkout@v4
 
-      - name: RSS-Feed holen und als JSON speichern
+      - name: Beide RSS-Feeds holen und als JSON speichern
         run: |
           python3 << 'PYTHON'
           import urllib.request
@@ -27,126 +25,122 @@ jobs:
           from datetime import datetime, timezone
 
           # ── Konfiguration ─────────────────────────────────────────
-          RSS_URLS = [
-              'https://www.nachrichtenleicht.de/nachrichtenleicht-nachrichten-100.rss',
-              'https://www.deutschlandfunk.de/podcast-nachrichtenleicht-der-wochenrueckblick-in-einfacher-sprache-100.xml',
+          FEEDS = [
+              {
+                  'datei':  'nachrichten.json',
+                  'urls': [
+                      'https://www.nachrichtenleicht.de/nachrichtenleicht-nachrichten-100.rss',
+                      'https://www.deutschlandfunk.de/podcast-nachrichtenleicht-der-wochenrueckblick-in-einfacher-sprache-100.xml',
+                  ],
+                  'max': 12,
+              },
+              {
+                  'datei':  'tagesschau.json',
+                  'urls': [
+                      'https://www.tagesschau.de/xml/rss2/',
+                      'https://www.tagesschau.de/inland/index~rss2.xml',
+                  ],
+                  'max': 15,
+              },
           ]
-          MAX_MELDUNGEN = 12
-          AUSGABE_DATEI = 'nachrichten.json'
           # ─────────────────────────────────────────────────────────
 
           def html_entfernen(text):
-              """Einfaches HTML-Tag-Entfernen"""
               if not text:
                   return ''
               text = re.sub(r'<[^>]+>', ' ', text)
-              text = re.sub(r'&amp;',  '&',  text)
-              text = re.sub(r'&lt;',   '<',  text)
-              text = re.sub(r'&gt;',   '>',  text)
-              text = re.sub(r'&quot;', '"',  text)
-              text = re.sub(r'&#39;',  "'",  text)
-              text = re.sub(r'&nbsp;', ' ',  text)
-              text = re.sub(r'\s+',   ' ',   text)
-              return text.strip()
+              for entity, ersatz in [('&amp;','&'),('&lt;','<'),('&gt;','>'),
+                                     ('&quot;','"'),('&#39;',"'"),('&nbsp;',' ')]:
+                  text = text.replace(entity, ersatz)
+              return re.sub(r'\s+', ' ', text).strip()
 
-          def namespace_entfernen(tag):
-              """Entfernt XML-Namespace aus Tag-Namen"""
-              return re.sub(r'\{[^}]+\}', '', tag)
-
-          def parse_datum(datum_str):
-              """Versucht verschiedene Datumsformate zu parsen"""
-              formate = [
-                  '%a, %d %b %Y %H:%M:%S %z',
-                  '%a, %d %b %Y %H:%M:%S %Z',
-                  '%Y-%m-%dT%H:%M:%S%z',
-                  '%Y-%m-%dT%H:%M:%SZ',
-              ]
-              for fmt in formate:
+          def parse_datum(s):
+              for fmt in ['%a, %d %b %Y %H:%M:%S %z','%a, %d %b %Y %H:%M:%S %Z',
+                          '%Y-%m-%dT%H:%M:%S%z','%Y-%m-%dT%H:%M:%SZ']:
                   try:
-                      return datetime.strptime(datum_str.strip(), fmt).isoformat()
+                      return datetime.strptime(s.strip(), fmt).isoformat()
                   except:
                       pass
-              return datum_str
+              return s
 
-          meldungen = []
-          quelle_name = ''
-          fehler_log = []
+          def hole_feed(url, max_meldungen):
+              req = urllib.request.Request(url, headers={'User-Agent': 'Studjo-Infoterminal/1.0'})
+              with urllib.request.urlopen(req, timeout=15) as r:
+                  inhalt = r.read()
+              root    = ET.fromstring(inhalt)
+              channel = root.find('channel')
+              if channel is not None:
+                  quelle = (channel.findtext('title') or '').strip()
+                  items  = channel.findall('item')
+              else:
+                  ns     = 'http://www.w3.org/2005/Atom'
+                  quelle = (root.findtext(f'{{{ns}}}title') or '').strip()
+                  items  = root.findall(f'{{{ns}}}entry')
 
-          for rss_url in RSS_URLS:
-              try:
-                  print(f'Versuche: {rss_url}')
-                  req = urllib.request.Request(rss_url, headers={
-                      'User-Agent': 'Studjo-Infoterminal/1.0'
-                  })
-                  with urllib.request.urlopen(req, timeout=15) as response:
-                      inhalt = response.read()
+              meldungen = []
+              for item in items[:max_meldungen]:
+                  def txt(tag, atom=None):
+                      el = item.find(tag)
+                      if el is None and atom:
+                          el = item.find(f'{{http://www.w3.org/2005/Atom}}{atom}')
+                      return el.text or '' if el is not None else ''
 
-                  root = ET.fromstring(inhalt)
+                  # Bild-URL versuchen zu extrahieren (media:thumbnail oder enclosure)
+                  bild = ''
+                  media_thumb = item.find('{http://search.yahoo.com/mrss/}thumbnail')
+                  if media_thumb is not None:
+                      bild = media_thumb.get('url', '')
+                  if not bild:
+                      enclosure = item.find('enclosure')
+                      if enclosure is not None and 'image' in enclosure.get('type',''):
+                          bild = enclosure.get('url', '')
 
-                  # RSS 2.0: <channel><title> und <item>
-                  channel = root.find('channel')
-                  if channel is not None:
-                      titel_el = channel.find('title')
-                      quelle_name = titel_el.text if titel_el is not None else 'Nachrichten'
-                      items = channel.findall('item')
-                  else:
-                      # Atom-Format: <feed><entry>
-                      titel_el = root.find('{http://www.w3.org/2005/Atom}title')
-                      quelle_name = titel_el.text if titel_el is not None else 'Nachrichten'
-                      items = root.findall('{http://www.w3.org/2005/Atom}entry')
+                  titel = html_entfernen(txt('title', 'title'))
+                  desc  = html_entfernen(txt('description', 'summary'))
+                  datum = parse_datum(txt('pubDate', 'published'))
 
-                  for item in items[:MAX_MELDUNGEN]:
-                      def finde(tag, atom_tag=None):
-                          el = item.find(tag)
-                          if el is None and atom_tag:
-                              el = item.find(atom_tag)
-                          return el.text if el is not None else ''
+                  if titel:
+                      meldungen.append({
+                          'title':       titel,
+                          'description': desc,
+                          'pubDate':     datum,
+                          'bild':        bild,
+                      })
+              return quelle, meldungen
 
-                      titel = html_entfernen(finde('title',
-                          '{http://www.w3.org/2005/Atom}title'))
-                      beschreibung = html_entfernen(finde('description',
-                          '{http://www.w3.org/2005/Atom}summary'))
-                      datum = parse_datum(finde('pubDate',
-                          '{http://www.w3.org/2005/Atom}published'))
+          jetzt = datetime.now(timezone.utc).strftime('%d.%m.%Y, %H:%M Uhr (UTC)')
 
-                      if titel:
-                          meldungen.append({
-                              'title':       titel,
-                              'description': beschreibung,
-                              'pubDate':     datum,
-                          })
+          for feed_cfg in FEEDS:
+              meldungen  = []
+              quelle     = ''
+              fehler_log = []
 
-                  print(f'Erfolgreich: {len(meldungen)} Meldungen von {quelle_name}')
-                  break  # Erfolg – keine weiteren URLs versuchen
+              for url in feed_cfg['urls']:
+                  try:
+                      print(f"Lade: {url}")
+                      quelle, meldungen = hole_feed(url, feed_cfg['max'])
+                      print(f"  → {len(meldungen)} Meldungen von '{quelle}'")
+                      break
+                  except Exception as e:
+                      fehler_log.append(f"{url}: {e}")
+                      print(f"  → Fehler: {e}")
 
-              except Exception as e:
-                  fehler = f'{rss_url}: {str(e)}'
-                  fehler_log.append(fehler)
-                  print(f'Fehler: {fehler}')
-                  continue
-
-          # JSON ausgeben
-          ausgabe = {
-              'quelle':       quelle_name or 'Nachrichten in Leichter Sprache',
-              'aktualisiert': datetime.now(timezone.utc).strftime('%d.%m.%Y, %H:%M Uhr (UTC)'),
-              'meldungen':    meldungen,
-              'fehler':       fehler_log if not meldungen else [],
-          }
-
-          with open(AUSGABE_DATEI, 'w', encoding='utf-8') as f:
-              json.dump(ausgabe, f, ensure_ascii=False, indent=2)
-
-          if meldungen:
-              print(f'✅ {AUSGABE_DATEI} gespeichert mit {len(meldungen)} Meldungen.')
-          else:
-              print(f'⚠️ Keine Meldungen geladen. Fehler: {fehler_log}')
+              ausgabe = {
+                  'quelle':       quelle or 'Nachrichten',
+                  'aktualisiert': jetzt,
+                  'meldungen':    meldungen,
+                  'fehler':       fehler_log if not meldungen else [],
+              }
+              with open(feed_cfg['datei'], 'w', encoding='utf-8') as f:
+                  json.dump(ausgabe, f, ensure_ascii=False, indent=2)
+              status = f"{len(meldungen)} Meldungen" if meldungen else "FEHLER"
+              print(f"Gespeichert: {feed_cfg['datei']} ({status})")
           PYTHON
 
       - name: Änderungen ins Repository übertragen
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add nachrichten.json
-          # Nur committen wenn sich etwas geändert hat
+          git add nachrichten.json tagesschau.json
           git diff --staged --quiet || git commit -m "RSS-Update: $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
