@@ -1,0 +1,152 @@
+name: RSS-Feed aktualisieren
+
+on:
+  # Automatisch alle 30 Minuten
+  schedule:
+    - cron: '*/30 * * * *'
+  # Manuell auslösbar über GitHub → Actions → "Run workflow"
+  workflow_dispatch:
+
+jobs:
+  rss-holen:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # Erlaubt dem Workflow, Dateien ins Repo zu schreiben
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: RSS-Feed holen und als JSON speichern
+        run: |
+          python3 << 'PYTHON'
+          import urllib.request
+          import xml.etree.ElementTree as ET
+          import json
+          import re
+          from datetime import datetime, timezone
+
+          # ── Konfiguration ─────────────────────────────────────────
+          RSS_URLS = [
+              'https://www.nachrichtenleicht.de/nachrichtenleicht-nachrichten-100.rss',
+              'https://www.deutschlandfunk.de/podcast-nachrichtenleicht-der-wochenrueckblick-in-einfacher-sprache-100.xml',
+          ]
+          MAX_MELDUNGEN = 12
+          AUSGABE_DATEI = 'nachrichten.json'
+          # ─────────────────────────────────────────────────────────
+
+          def html_entfernen(text):
+              """Einfaches HTML-Tag-Entfernen"""
+              if not text:
+                  return ''
+              text = re.sub(r'<[^>]+>', ' ', text)
+              text = re.sub(r'&amp;',  '&',  text)
+              text = re.sub(r'&lt;',   '<',  text)
+              text = re.sub(r'&gt;',   '>',  text)
+              text = re.sub(r'&quot;', '"',  text)
+              text = re.sub(r'&#39;',  "'",  text)
+              text = re.sub(r'&nbsp;', ' ',  text)
+              text = re.sub(r'\s+',   ' ',   text)
+              return text.strip()
+
+          def namespace_entfernen(tag):
+              """Entfernt XML-Namespace aus Tag-Namen"""
+              return re.sub(r'\{[^}]+\}', '', tag)
+
+          def parse_datum(datum_str):
+              """Versucht verschiedene Datumsformate zu parsen"""
+              formate = [
+                  '%a, %d %b %Y %H:%M:%S %z',
+                  '%a, %d %b %Y %H:%M:%S %Z',
+                  '%Y-%m-%dT%H:%M:%S%z',
+                  '%Y-%m-%dT%H:%M:%SZ',
+              ]
+              for fmt in formate:
+                  try:
+                      return datetime.strptime(datum_str.strip(), fmt).isoformat()
+                  except:
+                      pass
+              return datum_str
+
+          meldungen = []
+          quelle_name = ''
+          fehler_log = []
+
+          for rss_url in RSS_URLS:
+              try:
+                  print(f'Versuche: {rss_url}')
+                  req = urllib.request.Request(rss_url, headers={
+                      'User-Agent': 'Studjo-Infoterminal/1.0'
+                  })
+                  with urllib.request.urlopen(req, timeout=15) as response:
+                      inhalt = response.read()
+
+                  root = ET.fromstring(inhalt)
+
+                  # RSS 2.0: <channel><title> und <item>
+                  channel = root.find('channel')
+                  if channel is not None:
+                      titel_el = channel.find('title')
+                      quelle_name = titel_el.text if titel_el is not None else 'Nachrichten'
+                      items = channel.findall('item')
+                  else:
+                      # Atom-Format: <feed><entry>
+                      titel_el = root.find('{http://www.w3.org/2005/Atom}title')
+                      quelle_name = titel_el.text if titel_el is not None else 'Nachrichten'
+                      items = root.findall('{http://www.w3.org/2005/Atom}entry')
+
+                  for item in items[:MAX_MELDUNGEN]:
+                      def finde(tag, atom_tag=None):
+                          el = item.find(tag)
+                          if el is None and atom_tag:
+                              el = item.find(atom_tag)
+                          return el.text if el is not None else ''
+
+                      titel = html_entfernen(finde('title',
+                          '{http://www.w3.org/2005/Atom}title'))
+                      beschreibung = html_entfernen(finde('description',
+                          '{http://www.w3.org/2005/Atom}summary'))
+                      datum = parse_datum(finde('pubDate',
+                          '{http://www.w3.org/2005/Atom}published'))
+
+                      if titel:
+                          meldungen.append({
+                              'title':       titel,
+                              'description': beschreibung,
+                              'pubDate':     datum,
+                          })
+
+                  print(f'Erfolgreich: {len(meldungen)} Meldungen von {quelle_name}')
+                  break  # Erfolg – keine weiteren URLs versuchen
+
+              except Exception as e:
+                  fehler = f'{rss_url}: {str(e)}'
+                  fehler_log.append(fehler)
+                  print(f'Fehler: {fehler}')
+                  continue
+
+          # JSON ausgeben
+          ausgabe = {
+              'quelle':       quelle_name or 'Nachrichten in Leichter Sprache',
+              'aktualisiert': datetime.now(timezone.utc).strftime('%d.%m.%Y, %H:%M Uhr (UTC)'),
+              'meldungen':    meldungen,
+              'fehler':       fehler_log if not meldungen else [],
+          }
+
+          with open(AUSGABE_DATEI, 'w', encoding='utf-8') as f:
+              json.dump(ausgabe, f, ensure_ascii=False, indent=2)
+
+          if meldungen:
+              print(f'✅ {AUSGABE_DATEI} gespeichert mit {len(meldungen)} Meldungen.')
+          else:
+              print(f'⚠️ Keine Meldungen geladen. Fehler: {fehler_log}')
+          PYTHON
+
+      - name: Änderungen ins Repository übertragen
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add nachrichten.json
+          # Nur committen wenn sich etwas geändert hat
+          git diff --staged --quiet || git commit -m "RSS-Update: $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
