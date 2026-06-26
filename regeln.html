@@ -25,6 +25,7 @@
         header { background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
         .logo-container { max-width: 1200px; margin: 0 auto; }
         .logo-container img { width: 100%; height: auto; display: block; }
+
         main {
             flex: 1;
             max-width: 960px;
@@ -32,6 +33,7 @@
             padding: 24px 20px 40px;
             width: 100%;
         }
+
         .top-bar {
             display: flex;
             align-items: center;
@@ -57,6 +59,7 @@
         }
         .back-button:hover { background: var(--primary-red); color: white; }
         h1 { font-size: 1.45rem; font-weight: 800; color: var(--primary-red); flex: 1; }
+
         .source-bar {
             background: white;
             border-left: 6px solid var(--primary-red);
@@ -68,18 +71,14 @@
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 8px;
         }
         .source-label { font-size: 0.88rem; color: var(--grey); font-weight: 600; }
         .source-label strong { color: var(--text-color); }
         .refresh-info { font-size: 0.80rem; color: var(--grey); }
         #letzte-aktualisierung { font-weight: 700; color: var(--text-color); }
-        #quelle-methode {
-            font-size: 0.75rem;
-            color: #aaa;
-            font-style: italic;
-            width: 100%;
-        }
+
+        /* Ladeanimation */
         .loading-box { text-align: center; padding: 60px 20px; color: var(--grey); }
         .spinner {
             width: 44px; height: 44px;
@@ -91,6 +90,8 @@
         }
         @keyframes spin { to { transform: rotate(360deg); } }
         .loading-box p { font-size: 1rem; }
+
+        /* Fehlermeldung */
         .error-box {
             display: none;
             background: #fff3cd;
@@ -103,6 +104,22 @@
             margin-bottom: 20px;
             line-height: 1.6;
         }
+
+        /* Noch-nicht-bereit-Box */
+        .warten-box {
+            display: none;
+            background: #e3f2fd;
+            border: 1px solid #90caf9;
+            border-radius: 12px;
+            padding: 20px 24px;
+            text-align: center;
+            font-size: 0.95rem;
+            color: #0d47a1;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        /* News-Karten */
         .news-grid { display: flex; flex-direction: column; gap: 14px; }
         .news-card {
             background: white;
@@ -113,8 +130,12 @@
             transition: box-shadow 0.2s, transform 0.15s;
             border-left: 5px solid #e0e0e0;
         }
-        .news-card:hover { box-shadow: 0 6px 18px rgba(0,0,0,0.12); transform: translateY(-1px); }
+        .news-card:hover {
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+            transform: translateY(-1px);
+        }
         .news-card.offen { border-left-color: var(--primary-red); }
+
         .card-header {
             display: flex;
             align-items: flex-start;
@@ -129,11 +150,13 @@
             padding: 8px 6px;
             flex-shrink: 0;
         }
-        .card-datum .tag { font-size: 1.5rem; font-weight: 800; color: var(--primary-red); line-height: 1; }
+        .card-datum .tag  { font-size: 1.5rem; font-weight: 800; color: var(--primary-red); line-height: 1; }
         .card-datum .monat { font-size: 0.75rem; font-weight: 700; color: var(--grey); text-transform: uppercase; letter-spacing: 0.5px; }
+
         .card-titel-block { flex: 1; }
-        .card-titel { font-size: 1.05rem; font-weight: 700; color: var(--text-color); line-height: 1.35; margin-bottom: 4px; }
+        .card-titel  { font-size: 1.05rem; font-weight: 700; color: var(--text-color); line-height: 1.35; margin-bottom: 4px; }
         .card-teaser { font-size: 0.88rem; color: #666; line-height: 1.5; }
+
         .card-pfeil {
             font-size: 1.2rem;
             color: var(--grey);
@@ -143,9 +166,16 @@
             padding-left: 8px;
         }
         .news-card.offen .card-pfeil { transform: rotate(90deg); color: var(--primary-red); }
-        .card-inhalt { display: none; padding: 0 18px 18px 18px; border-top: 1px solid #f0f0f0; }
+
+        .card-inhalt { display: none; padding: 0 18px 18px; border-top: 1px solid #f0f0f0; }
         .news-card.offen .card-inhalt { display: block; }
-        .card-inhalt-text { font-size: 0.97rem; line-height: 1.75; color: var(--text-color); padding-top: 14px; }
+        .card-inhalt-text {
+            font-size: 0.97rem;
+            line-height: 1.8;
+            color: var(--text-color);
+            padding-top: 14px;
+            white-space: pre-line;
+        }
         .card-inhalt-quelle {
             margin-top: 14px;
             padding-top: 10px;
@@ -153,7 +183,14 @@
             font-size: 0.78rem;
             color: var(--grey);
         }
-        footer { text-align: center; padding: 18px; background: var(--primary-red); color: white; font-size: 0.88rem; }
+
+        footer {
+            text-align: center;
+            padding: 18px;
+            background: var(--primary-red);
+            color: white;
+            font-size: 0.88rem;
+        }
     </style>
 </head>
 <body>
@@ -172,13 +209,11 @@
 
     <div class="source-bar">
         <div class="source-label">
-            Quelle: <strong>Deutschlandfunk – Nachrichten in einfacher Sprache</strong>
+            Quelle: <strong id="quelle-name">Nachrichten in Leichter Sprache</strong>
         </div>
         <div class="refresh-info">
-            Zuletzt aktualisiert: <span id="letzte-aktualisierung">–</span>
-            &nbsp;·&nbsp; Aktualisierung alle 30 Minuten
+            Stand: <span id="letzte-aktualisierung">wird geladen…</span>
         </div>
-        <div id="quelle-methode"></div>
     </div>
 
     <div class="loading-box" id="loading-box">
@@ -186,7 +221,17 @@
         <p>Nachrichten werden geladen…</p>
     </div>
 
-    <div class="error-box" id="error-box"></div>
+    <div class="error-box" id="error-box">
+        ⚠️ Die Nachrichten konnten nicht geladen werden.<br>
+        Bitte die Internetverbindung prüfen oder die Seite neu laden.
+    </div>
+
+    <div class="warten-box" id="warten-box">
+        ⏳ Die Nachrichten werden zum ersten Mal eingerichtet.<br>
+        GitHub aktualisiert den Inhalt automatisch – bitte in ca. <strong>30 Minuten</strong> erneut aufrufen.<br>
+        <small style="color:#1565c0;">Der Workflow muss einmalig auf GitHub gestartet werden – siehe Einbauanleitung Schritt 4.</small>
+    </div>
+
     <div class="news-grid" id="news-grid"></div>
 </main>
 
@@ -195,106 +240,20 @@
 </footer>
 
 <script>
-// ══════════════════════════════════════════════════════════
-// KONFIGURATION
-// ══════════════════════════════════════════════════════════
-const RSS_URL   = 'https://www.nachrichtenleicht.de/nachrichtenleicht-nachrichten-100.rss';
-const PHP_PROXY = 'rss-proxy.php';
-const MAX_MELDUNGEN = 10;
-const REFRESH_MIN   = 30;
-
-// ══════════════════════════════════════════════════════════
-// ABRUF-STRATEGIEN (werden der Reihe nach versucht)
-// ══════════════════════════════════════════════════════════
-async function holeRSSdirekT() {
-    // Variante 1: Direkter Abruf – funktioniert wenn Firewall erlaubt
-    const r = await fetch(RSS_URL, { cache: 'no-cache' });
-    if (!r.ok) throw new Error('Direktabruf HTTP ' + r.status);
-    const text = await r.text();
-    return parseXML(text);
-}
-
-async function holeRSSallOrigins() {
-    // Variante 2: allorigins.win als CORS-Proxy
-    const url = 'https://api.allorigins.win/get?url=' + encodeURIComponent(RSS_URL);
-    const r   = await fetch(url, { cache: 'no-cache' });
-    if (!r.ok) throw new Error('allOrigins HTTP ' + r.status);
-    const json = await r.json();
-    return parseXML(json.contents);
-}
-
-async function holeRSSphp() {
-    // Variante 3: Lokaler PHP-Proxy auf eurem Server
-    if (!PHP_PROXY) throw new Error('Kein PHP-Proxy konfiguriert');
-    const r = await fetch(PHP_PROXY + '?url=' + encodeURIComponent(RSS_URL));
-    if (!r.ok) throw new Error('PHP-Proxy HTTP ' + r.status);
-    const text = await r.text();
-    return parseXML(text);
-}
-
-// ══════════════════════════════════════════════════════════
-// XML-PARSER
-// ══════════════════════════════════════════════════════════
-function parseXML(xmlText) {
-    const parser = new DOMParser();
-    const xml    = parser.parseFromString(xmlText, 'text/xml');
-    const fehler = xml.querySelector('parsererror');
-    if (fehler) throw new Error('XML-Parsefehler');
-
-    const items = Array.from(xml.querySelectorAll('item'))
-                       .slice(0, MAX_MELDUNGEN);
-    if (!items.length) throw new Error('Keine Meldungen im Feed');
-
-    return items.map(item => ({
-        title:       item.querySelector('title')?.textContent       || '(kein Titel)',
-        description: item.querySelector('description')?.textContent || '',
-        pubDate:     item.querySelector('pubDate')?.textContent     || '',
-        link:        item.querySelector('link')?.textContent        || ''
-    }));
-}
-
-// ══════════════════════════════════════════════════════════
-// RENDERING
-// ══════════════════════════════════════════════════════════
 const MONATE = ['Jan','Feb','Mär','Apr','Mai','Jun',
                 'Jul','Aug','Sep','Okt','Nov','Dez'];
 
-function zeitstempel() {
-    const n = new Date();
-    return n.getHours().toString().padStart(2,'0') + ':'
-         + n.getMinutes().toString().padStart(2,'0') + ' Uhr';
+function formatDatum(datumStr) {
+    if (!datumStr) return { tag: '–', monat: '' };
+    const d = new Date(datumStr);
+    if (isNaN(d)) return { tag: '–', monat: '' };
+    return { tag: d.getDate(), monat: MONATE[d.getMonth()] };
 }
 
-function bereinige(html) {
-    const tmp = document.createElement('div');
-    tmp.innerHTML = html;
-    tmp.querySelectorAll('img, figure').forEach(el => el.remove());
-    // Absätze erhalten, leere entfernen
-    tmp.querySelectorAll('p, div').forEach(el => {
-        if (!el.textContent.trim()) el.remove();
-    });
-    // Falls kein Block-Tag: in <p> einwickeln
-    if (!tmp.querySelector('p')) {
-        const p = document.createElement('p');
-        p.textContent = tmp.textContent.trim();
-        tmp.innerHTML = '';
-        tmp.appendChild(p);
-    }
-    return tmp.innerHTML;
-}
-
-function erstelleKarte(item) {
-    const datum = new Date(item.pubDate);
-    const tag   = isNaN(datum) ? '–'  : datum.getDate();
-    const monat = isNaN(datum) ? ''   : MONATE[datum.getMonth()];
-
-    // Teaser: reinen Text, erste 130 Zeichen
-    const tmp   = document.createElement('div');
-    tmp.innerHTML = item.description;
-    const rein  = (tmp.textContent || '').trim();
-    const teaser = rein.substring(0, 130) + (rein.length > 130 ? ' …' : '');
-
-    const inhalt = bereinige(item.description);
+function erstelleKarte(meldung) {
+    const { tag, monat } = formatDatum(meldung.pubDate);
+    const text = meldung.description || '';
+    const teaser = text.substring(0, 130) + (text.length > 130 ? ' …' : '');
 
     const karte = document.createElement('div');
     karte.className = 'news-card';
@@ -305,15 +264,15 @@ function erstelleKarte(item) {
                 <div class="monat">${monat}</div>
             </div>
             <div class="card-titel-block">
-                <div class="card-titel">${item.title}</div>
+                <div class="card-titel">${meldung.title}</div>
                 <div class="card-teaser">${teaser}</div>
             </div>
             <div class="card-pfeil">›</div>
         </div>
         <div class="card-inhalt">
-            <div class="card-inhalt-text">${inhalt}</div>
+            <div class="card-inhalt-text">${text}</div>
             <div class="card-inhalt-quelle">
-                Quelle: Tagesschau – Nachrichten in einfacher Sprache
+                Quelle: Nachrichten in Leichter Sprache (Deutschlandfunk)
             </div>
         </div>`;
 
@@ -323,70 +282,56 @@ function erstelleKarte(item) {
                 .forEach(k => k.classList.remove('offen'));
         if (!warOffen) {
             this.classList.add('offen');
-            setTimeout(() => this.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+            setTimeout(() =>
+                this.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
         }
     });
-
     return karte;
 }
-
-// ══════════════════════════════════════════════════════════
-// HAUPT-LADEROUTINE  –  probiert Strategien der Reihe nach
-// ══════════════════════════════════════════════════════════
-const STRATEGIEN = [
-    { fn: holeRSSphp,       name: 'Interner Server-Proxy'   },
-    { fn: holeRSSdirekT,    name: 'Direktabruf (CORS)'      },
-    { fn: holeRSSallOrigins,name: 'Externer CORS-Proxy'     }
-];
-// PHP-Proxy vorne, aber nur wenn konfiguriert; sonst Direktabruf zuerst
-const REIHENFOLGE = PHP_PROXY
-    ? STRATEGIEN
-    : [STRATEGIEN[1], STRATEGIEN[2]];
 
 async function ladeNachrichten() {
     const grid      = document.getElementById('news-grid');
     const ladeBox   = document.getElementById('loading-box');
     const fehlerBox = document.getElementById('error-box');
-    const methode   = document.getElementById('quelle-methode');
+    const wartenBox = document.getElementById('warten-box');
 
-    if (!grid.children.length) ladeBox.style.display = 'block';
-    fehlerBox.style.display = 'none';
+    try {
+        // Lokale JSON-Datei laden – kein externer Aufruf, keine Firewall-Probleme
+        const antwort = await fetch('nachrichten.json?v=' + Date.now());
+        if (!antwort.ok) throw new Error('HTTP ' + antwort.status);
+        const daten = await antwort.json();
 
-    let items      = null;
-    let verwendete = '';
-    let fehlerLog  = [];
+        ladeBox.style.display = 'none';
 
-    for (const strategie of REIHENFOLGE) {
-        try {
-            items      = await strategie.fn();
-            verwendete = strategie.name;
-            break; // Erfolg – Schleife verlassen
-        } catch (err) {
-            fehlerLog.push(strategie.name + ': ' + err.message);
-            console.warn('[Nachrichten]', strategie.name, 'fehlgeschlagen:', err.message);
+        // Quelle und Zeitstempel anzeigen
+        if (daten.quelle) {
+            document.getElementById('quelle-name').textContent = daten.quelle;
         }
-    }
+        if (daten.aktualisiert) {
+            document.getElementById('letzte-aktualisierung').textContent = daten.aktualisiert;
+        }
 
-    ladeBox.style.display = 'none';
+        // Noch keine Meldungen (erster Start vor erstem Workflow-Lauf)
+        if (!daten.meldungen || daten.meldungen.length === 0) {
+            wartenBox.style.display = 'block';
+            return;
+        }
 
-    if (!items) {
-        // Alle Strategien gescheitert
+        // Karten aufbauen
+        grid.innerHTML = '';
+        daten.meldungen.forEach(m => grid.appendChild(erstelleKarte(m)));
+
+    } catch (err) {
+        console.error('Ladefehler:', err);
+        ladeBox.style.display = 'none';
         fehlerBox.style.display = 'block';
-        fehlerBox.innerHTML =
-            '⚠️ Die Nachrichten konnten gerade nicht geladen werden.<br>' +
-            'Bitte Internetverbindung prüfen. Nächster Versuch in ' + REFRESH_MIN + ' Minuten.<br>' +
-            '<small style="color:#999;font-size:0.75rem;">' + fehlerLog.join(' | ') + '</small>';
-        return;
     }
-
-    grid.innerHTML = '';
-    items.forEach(item => grid.appendChild(erstelleKarte(item)));
-    document.getElementById('letzte-aktualisierung').textContent = zeitstempel();
-    methode.textContent = 'Abrufmethode: ' + verwendete;
 }
 
 ladeNachrichten();
-setInterval(ladeNachrichten, REFRESH_MIN * 60 * 1000);
+
+// Seite alle 30 Minuten neu laden (holt aktualisiertes JSON)
+setTimeout(() => location.reload(), 30 * 60 * 1000);
 </script>
 
 </body>
