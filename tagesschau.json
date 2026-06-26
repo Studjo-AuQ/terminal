@@ -1,6 +1,97 @@
 {
-  "quelle": "Tagesschau",
-  "aktualisiert": "Wird beim ersten Workflow-Lauf befüllt…",
-  "meldungen": [],
+  "quelle": "tagesschau.de - Die Nachrichten der ARD",
+  "aktualisiert": "26.06.2026, 10:51 Uhr (UTC)",
+  "meldungen": [
+    {
+      "title": "Zwei mutmaßliche Rechtsterroristen in Thüringen festgenommen",
+      "description": "Die Bundesanwaltschaft hat zwei mutmaßliche Unterstützer der rechtsextremen Terrorgruppe \"Letzte Verteidigungswelle\" festnehmen lassen. Sie sollen versucht haben, eine Asylbewerberunterkunft anzuzünden.",
+      "pubDate": "2026-06-26T12:30:19+02:00",
+      "bild": ""
+    },
+    {
+      "title": "VW-Vorstand plant Abbau von bis zu 100.000 Stellen",
+      "description": "Der VW-Vorstand plant offenbar einen größeren Stellenabbau als bisher bekannt. Medienberichten zufolge könnten weltweit bis zu 100.000 Arbeitsplätze gestrichen werden. Der Aufsichtsrat soll am 9. Juli darüber beraten.",
+      "pubDate": "2026-06-26T11:56:23+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Für Verkauf von Kindern auf Vinted gibt es keine Beweise",
+      "description": "In den Sozialen Netzwerken kursieren etliche Videos, in denen behauptet wird, auf der Plattform Vinted würden Kinder zum Kauf angeboten. Beweise dafür gibt es nicht. Laut BKA häufen sich die Anzeigen zum Thema. Von C. Reveland und P. Siggelkow.",
+      "pubDate": "2026-06-26T11:10:58+02:00",
+      "bild": ""
+    },
+    {
+      "title": "EU-Kommission will Schutz für Ukrainer im wehrfähigen Alter beenden",
+      "description": "Auf Bitte der Regierung in Kiew will die EU-Kommission den automatischen Schutzstatus für ukrainische Männer zwischen 23 und 60 Jahren beenden. Die Mitgliedsstaaten müssen noch zustimmen, Deutschland hat seine Position bereits deutlich gemacht.",
+      "pubDate": "2026-06-26T11:08:51+02:00",
+      "bild": ""
+    },
+    {
+      "title": "BaFin ermittelt: Fehlerhafter Jahresabschluss bei Zalando?",
+      "description": "Trubel beim Modehändler Zalando: Die Finanzaufsichtsbehörde BaFin prüft, ob dem Unternehmen im Konzernabschluss des vergangenen Jahres ein Fehler unterlaufen ist.",
+      "pubDate": "2026-06-26T10:42:19+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Mehr als 600 Drohnen: Russland meldet massiven ukrainischen Angriff",
+      "description": "Russland hat nach eigenen Angaben in der Nacht mehr als 600 ukrainische Drohnen abgewehrt - und damit wohl den heftigsten Angriff seit Jahresbeginn. Unterdessen ist Justizministerin Hubig in Kiew eingetroffen.",
+      "pubDate": "2026-06-26T10:32:01+02:00",
+      "bild": ""
+    },
+    {
+      "title": "So sollen Energiespeicher die Energiewende sichern",
+      "description": "Energiespeicher sollen Stromausfälle in Dunkelflauten verhindern. Eine Studie zeigt: Verschiedene Technologien müssen je nach Bedarf und Zweck kombiniert eingesetzt werden. Von Jan Kerckhoff.",
+      "pubDate": "2026-06-26T10:05:55+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX-Auftakt mit Verlusten - KI-Sorgen sind wieder da",
+      "description": "Negative Nachrichten aus der Technologie-Branche drücken Asiens Börsen ins Minus und belasten auch den DAX. Ein Einbruch der Zalando-Aktie drückt zusätzlich die Stimmung vor dem Wochenende.",
+      "pubDate": "2026-06-26T10:00:55+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Lebenslange Haft für Todesfahrer vom Magdeburger Weihnachtsmarkt",
+      "description": "2024 raste er mit einem Mietwagen auf den Weihnachtsmarkt in Magdeburg. Nun hat das Landgericht Magdeburg den Angeklagten Taleb A. zu einer lebenslangen Freiheitsstrafe verurteilt. Er habe aus persönlichen Motiven heraus gehandelt.",
+      "pubDate": "2026-06-26T11:05:51+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Hitze-Liveblog: ++ Höchste je gemessene Juni-Temperatur erwartet ++",
+      "description": "Erstmals an einem Juni-Tag könnte es heute in Deutschland mehr als 40 Grad heiß werden. Auch nachts kühlt es kaum ab. Der Bevölkerungsschutztag an diesem Samstag wird wegen der Hitze verschoben.",
+      "pubDate": "2026-06-26T12:16:36+02:00",
+      "bild": ""
+    },
+    {
+      "title": "So übersteht man die Hitzetage",
+      "description": "Derzeit herrschen sehr hohe Temperaturen von weit mehr als 30 Grad in Deutschland. Gesundheitsbehörden warnen vor der Hitzebelastung. Wie können wir uns im Alltag am besten schützen? Ein Überblick.",
+      "pubDate": "2026-06-26T09:14:14+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wie Sportvereine mit der Hitze umgehen",
+      "description": "Kein Sportfest, kein Amateurfußball: Wegen der hohen Temperaturen sagen Vereine und Verbände teils ihre Veranstaltungen ab. Doch nicht alle reagieren gleich. Von Philipp Wundersee.",
+      "pubDate": "2026-06-26T09:11:33+02:00",
+      "bild": ""
+    },
+    {
+      "title": "30 Millionen Pfund: König Charles legt Steuerzahlungen offen",
+      "description": "Auch britische Könige zahlen Steuern: Wie viel genau, hat König Charles jetzt als erster Monarch offengelegt. Außerdem kündigte er an, nach Abschluss der Renovierungen nicht mehr im Buckingham-Palast wohnen zu wollen.",
+      "pubDate": "2026-06-26T08:45:34+02:00",
+      "bild": ""
+    },
+    {
+      "title": "US-Abschiebezentrum \"Alligator Alcatraz\" schließt",
+      "description": "Das US-Abschiebegefängnis \"Alligator Alcatraz\" wird nach knapp einjährigem Betrieb geschlossen. Das teilte der republikanische Gouverneur DeSantis mit. Die Einrichtung stand wegen ihrer schlechten Haftbedingungen in der Kritik.",
+      "pubDate": "2026-06-26T07:27:04+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Nach Erdbeben in Venezuela: Rettungskräfte arbeiten gegen die Zeit",
+      "description": "Nach den Erdbeben in Venezuela suchen Retter unter den Trümmern nach Verschütteten. Ausländische Helfer sind unterwegs. Das THW schickt ein Team mit Spürhunden. Doch es ist ein Wettlauf gegen die Zeit. Die Zahl der Toten steigt. Von Jenny Barke.",
+      "pubDate": "2026-06-26T07:12:30+02:00",
+      "bild": ""
+    }
+  ],
   "fehler": []
 }
