@@ -1,0 +1,146 @@
+name: Wetter aktualisieren
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'   # alle 30 Minuten
+  workflow_dispatch:           # manuell auslösbar
+
+jobs:
+  wetter-holen:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Wetterdaten für alle Standorte holen
+        run: |
+          python3 << 'PYTHON'
+          import urllib.request
+          import json
+          from datetime import datetime, timezone
+
+          # ── Standorte konfigurieren ───────────────────────────
+          STAEDTE = [
+              { 'name': 'Lüdenscheid', 'lat': 51.2198, 'lon': 7.6286 },
+              { 'name': 'Werdohl',     'lat': 51.2604, 'lon': 7.7669 },
+              { 'name': 'Kierspe',     'lat': 51.1319, 'lon': 7.5863 },
+              { 'name': 'Bochum',      'lat': 51.4818, 'lon': 7.2162 },
+          ]
+
+          # ── WMO-Wettercodes → Text und Emoji ─────────────────
+          WMO = {
+              0:  ('Klar',                  '☀️'),
+              1:  ('Überwiegend klar',       '🌤️'),
+              2:  ('Teils bewölkt',          '⛅'),
+              3:  ('Bedeckt',               '☁️'),
+              45: ('Nebel',                 '🌫️'),
+              48: ('Reifnebel',             '🌫️'),
+              51: ('Leichter Nieselregen',  '🌦️'),
+              53: ('Nieselregen',           '🌦️'),
+              55: ('Starker Nieselregen',   '🌦️'),
+              61: ('Leichter Regen',        '🌧️'),
+              63: ('Regen',                 '🌧️'),
+              65: ('Starker Regen',         '🌧️'),
+              71: ('Leichter Schneefall',   '❄️'),
+              73: ('Schneefall',            '❄️'),
+              75: ('Starker Schneefall',    '❄️'),
+              77: ('Schneegriesel',         '🌨️'),
+              80: ('Leichte Schauer',       '🌦️'),
+              81: ('Schauer',               '🌦️'),
+              82: ('Starke Schauer',        '⛈️'),
+              85: ('Schneeschauer',         '🌨️'),
+              86: ('Starke Schneeschauer',  '🌨️'),
+              95: ('Gewitter',              '⛈️'),
+              96: ('Gewitter mit Hagel',    '⛈️'),
+              99: ('Schweres Gewitter',     '⛈️'),
+          }
+
+          WOCHENTAGE = ['Montag','Dienstag','Mittwoch','Donnerstag',
+                        'Freitag','Samstag','Sonntag']
+
+          def wmo_info(code):
+              return WMO.get(int(code), ('Unbekannt', '🌡️'))
+
+          def hole_wetter(stadt):
+              url = (
+                  f"https://api.open-meteo.com/v1/forecast"
+                  f"?latitude={stadt['lat']}&longitude={stadt['lon']}"
+                  f"&current=temperature_2m,apparent_temperature,weather_code,"
+                  f"wind_speed_10m,relative_humidity_2m,precipitation"
+                  f"&daily=weather_code,temperature_2m_max,temperature_2m_min,"
+                  f"precipitation_sum"
+                  f"&timezone=Europe%2FBerlin"
+                  f"&forecast_days=5"
+              )
+              req = urllib.request.Request(url, headers={'User-Agent': 'Studjo-Infoterminal/1.0'})
+              with urllib.request.urlopen(req, timeout=15) as r:
+                  daten = json.loads(r.read())
+
+              current = daten['current']
+              daily   = daten['daily']
+
+              # Aktuell
+              wmo_text, wmo_emoji = wmo_info(current['weather_code'])
+              aktuell = {
+                  'temp':        round(current['temperature_2m']),
+                  'gefuehlt':    round(current['apparent_temperature']),
+                  'zustand':     wmo_text,
+                  'emoji':       wmo_emoji,
+                  'wind':        round(current['wind_speed_10m']),
+                  'luftfeuchte': current['relative_humidity_2m'],
+                  'niederschlag':current['precipitation'],
+              }
+
+              # 5-Tage-Vorschau
+              tage = []
+              for i in range(5):
+                  datum = datetime.fromisoformat(daily['time'][i])
+                  wt, we = wmo_info(daily['weather_code'][i])
+                  tage.append({
+                      'wochentag':  WOCHENTAGE[datum.weekday()],
+                      'datum':      datum.strftime('%d.%m.'),
+                      'emoji':      we,
+                      'zustand':    wt,
+                      'max':        round(daily['temperature_2m_max'][i]),
+                      'min':        round(daily['temperature_2m_min'][i]),
+                      'niederschlag': round(daily['precipitation_sum'][i], 1),
+                  })
+
+              return { 'aktuell': aktuell, 'tage': tage }
+
+          # ── Alle Städte abrufen ───────────────────────────────
+          ergebnisse = []
+          fehler     = []
+
+          for stadt in STAEDTE:
+              try:
+                  print(f"Lade Wetter für {stadt['name']}…")
+                  wetter = hole_wetter(stadt)
+                  ergebnisse.append({ 'stadt': stadt['name'], **wetter })
+                  print(f"  ✅ {wetter['aktuell']['temp']}°C, {wetter['aktuell']['zustand']}")
+              except Exception as e:
+                  fehler.append(f"{stadt['name']}: {e}")
+                  print(f"  ❌ Fehler: {e}")
+
+          ausgabe = {
+              'aktualisiert': datetime.now(timezone.utc).strftime('%d.%m.%Y, %H:%M Uhr'),
+              'staedte':      ergebnisse,
+              'fehler':       fehler,
+          }
+
+          with open('wetter.json', 'w', encoding='utf-8') as f:
+              json.dump(ausgabe, f, ensure_ascii=False, indent=2)
+
+          print(f"\n✅ wetter.json gespeichert – {len(ergebnisse)} Städte, {len(fehler)} Fehler")
+          PYTHON
+
+      - name: Änderungen ins Repository übertragen
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add wetter.json
+          git diff --staged --quiet || git commit -m "Wetter-Update: $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
