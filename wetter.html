@@ -1,176 +1,236 @@
 <!DOCTYPE html>
 <html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wetter – Studjo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
-        /* --- Grundeinstellungen & Variablen --- */
         :root {
-            --primary-red: #b61f29; 
-            --secondary-grey: #8a8d8f;
-            --bg-color: #f9f9f9;
-            --card-bg: #ffffff;
-            --text-color: #0f2f37;
-
-        /* --- NEUE PASTELL-FARBVARIABLEN (10 Stück) --- */
-            --pastel-1: #e1f5fe;   /* Eis-Blau */
-            --pastel-2: #e8f5e9;   /* Mint-Grün */
-            --pastel-3: #fffde7;   /* Cremiges Gelb */
-            --pastel-4: #fce4ec;   /* Puder-Rosa */
-            --pastel-5: #f3e5f5;   /* Blasser Lavendel */
-            --pastel-6: #fff3e0;   /* Pfirsich-Creme */
-            --pastel-7: #efebe9;   /* Licht-Grau */
-            --pastel-8: #e0f7fa;   /* Azur-Weiß */
-            --pastel-9: #f1f8e9;   /* Helles Limette */
-            --pastel-10: #fbe9e7;  /* Helles Koralle */
-            --pastel-11: #ffffff;  /* JW Weiß */
---pastel-12: #ffebee; /* Blasses Rot/Rosa */
-    --pastel-13: #e8eaf6; /* Blasses Indigo */
-    --pastel-14: #e0f2f1; /* Blasses Teal/Minze */
-    --pastel-15: #fff3e0; /* Blasses Apricot */
-    --pastel-16: #eceff1; /* Blasses Blaugrau */
-    --pastel-17: #f4ecea; /* Blasses Kaffeebraun */
-    --pastel-18: #fce4ec; /* Blasses Weinrot/Mauve */
-    --pastel-19: #e0f2f1; /* Blasses Petrol/Aqua */
-    --pastel-20: #f1f8e9; /* Blasses Oliv */
-    --pastel-21: #fff0e0; /* Blasses Rost/Terracotta */
+            --primary-red:  #b61f29;
+            --bg-color:     #f9f9f9;
+            --text-color:   #0f2f37;
+            --grey:         #8a8d8f;
+            --card-bg:      #ffffff;
         }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
             font-family: 'Nunito Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--bg-color);
+            background: var(--bg-color);
             color: var(--text-color);
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
         }
 
-        /* --- Header & Logo --- */
-        header {
-            background-color: white;
-            padding: 0rem 0rem;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
+        /* ── Header ── */
+        header { background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+        .logo-container { max-width: 1200px; margin: 0 auto; }
+        .logo-container img { width: 100%; height: auto; display: block; }
 
-        .logo-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .logo-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        /* --- Hauptinhalt --- */
+        /* ── Main ── */
         main {
             flex: 1;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px 20px;
-            width: 60%;
-            box-sizing: border-box;
+            padding: 24px 20px 40px;
+            width: 100%;
         }
 
-        h1 {
-            text-align: center;
+        /* ── Top Bar ── */
+        .top-bar {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 22px;
+            flex-wrap: wrap;
+        }
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: white;
             color: var(--primary-red);
-            font-weight: 500;
-            margin-bottom: 40px;
-            font-family: 'Nunito Sans', sans-serif;
-        }
-
-        /* --- Das Kachel-Raster (Grid) --- */
-        .tile-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        /* --- Design der Kacheln --- */
-        .tile {
-            background-color: var(--bg-color);
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 2px solid var(--primary-red);
+            border-radius: 999px;
+            padding: 8px 20px;
+            font-weight: 700;
+            font-size: 0.95rem;
             text-decoration: none;
-            color: var(--text-color);
-            padding: 30px;
-            /* Hinzufügen einer Custom-Property für die Hover-Farbe */
-            --tile-hover-color: var(--primary-red);
-            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s;
+            font-family: inherit;
+            transition: background 0.2s, color 0.2s;
+        }
+        .back-button:hover { background: var(--primary-red); color: white; }
+
+        h1 { font-size: 1.5rem; font-weight: 800; color: var(--primary-red); flex: 1; }
+
+        /* ── Stand-Leiste ── */
+        .stand-bar {
+            background: white;
+            border-left: 6px solid var(--primary-red);
+            border-radius: 10px;
+            padding: 10px 16px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 6px;
+            font-size: 0.85rem;
+        }
+        .stand-bar .quelle { color: var(--grey); font-weight: 600; }
+        .stand-bar .quelle strong { color: var(--text-color); }
+        .stand-bar .zeit { color: var(--grey); font-size: 0.80rem; }
+        .stand-bar .zeit span { font-weight: 700; color: var(--text-color); }
+
+        /* ── Stadtgitter ── */
+        .stadt-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* ── Stadt-Karte ── */
+        .stadt-karte {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+
+        /* Kopf mit Stadtname */
+        .karte-kopf {
+            background: linear-gradient(135deg, #1565c0 0%, #0288d1 100%);
+            color: white;
+            padding: 14px 18px 10px;
+        }
+        .karte-kopf .stadtname {
+            font-size: 1.1rem;
+            font-weight: 800;
+            letter-spacing: 0.3px;
+        }
+        .karte-kopf .aktuell-reihe {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 6px;
+        }
+        .karte-kopf .gross-temp {
+            font-size: 2.8rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+        .karte-kopf .wetter-emoji {
+            font-size: 2.2rem;
+            line-height: 1;
+        }
+        .karte-kopf .zustand-block {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            gap: 2px;
+        }
+        .karte-kopf .zustand-text {
+            font-size: 0.92rem;
+            font-weight: 600;
+            opacity: 0.95;
+        }
+        .karte-kopf .gefuehlt {
+            font-size: 0.78rem;
+            opacity: 0.75;
+        }
+
+        /* Detail-Zeile (Wind, Luftfeuchte) */
+        .karte-details {
+            display: flex;
+            gap: 0;
+            background: #e3f0fb;
+            padding: 8px 18px;
+            font-size: 0.82rem;
+            color: #1a3a5c;
+            font-weight: 600;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        /* 5-Tage-Vorschau */
+        .vorschau-kopf {
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--grey);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 10px 18px 4px;
+        }
+
+        .vorschau-tage {
+            display: flex;
+            padding: 0 14px 14px;
+            gap: 6px;
+        }
+        .tag-kachel {
+            flex: 1;
+            background: var(--bg-color);
+            border-radius: 10px;
+            padding: 8px 4px;
             text-align: center;
-            font-family: 'Nunito Sans', sans-serif;
-            border-bottom: 4px solid transparent; 
+            font-size: 0.75rem;
         }
-
-        /* --- Pastellfarben (1 bis 10) --- */
-        .tile-color-1 { background-color: var(--pastel-1) !important; --tile-hover-color: #0288d1; } /* Dunkles Blau */
-        .tile-color-2 { background-color: var(--pastel-2) !important; --tile-hover-color: #558b2f; } /* Dunkles Grün */
-        .tile-color-3 { background-color: var(--pastel-3) !important; --tile-hover-color: #fdd835; } /* Dunkles Gelb */
-        .tile-color-4 { background-color: var(--pastel-4) !important; --tile-hover-color: #d81b60; } /* Dunkles Pink */
-        .tile-color-5 { background-color: var(--pastel-5) !important; --tile-hover-color: #8e24aa; } /* Dunkles Violett */
-        .tile-color-6 { background-color: var(--pastel-6) !important; --tile-hover-color: #fb8c00; } /* Dunkles Orange */
-        .tile-color-7 { background-color: var(--pastel-7) !important; --tile-hover-color: #6d4c41; } /* Dunkles Braun */
-        .tile-color-8 { background-color: var(--pastel-8) !important; --tile-hover-color: #00bcd4; } /* Dunkles Cyan */
-        .tile-color-9 { background-color: var(--pastel-9) !important; --tile-hover-color: #afb42b; } /* Dunkles Limette */
-        .tile-color-10 { background-color: var(--pastel-10) !important; --tile-hover-color: #ff5722; } /* Dunkle Koralle */
-        .tile-color-11 { background-color: var(--pastel-11) !important; --tile-hover-color: #000000; } /* JW Schwarz für den Zurück Button */
-.tile-color-12 { background-color: var(--pastel-12) !important; --tile-hover-color: #283593; } /* Dunkles Indigo */
-.tile-color-13 { background-color: var(--pastel-13) !important; --tile-hover-color: #00695c; } /* Dunkles Teal / Tannengrün */
-.tile-color-14 { background-color: var(--pastel-14) !important; --tile-hover-color: #ef6c00; } /* Dunkles Kürbisorange */
-.tile-color-15 { background-color: var(--pastel-15) !important; --tile-hover-color: #455a64; } /* Dunkles Blaugrau / Schiefer */
-.tile-color-16 { background-color: var(--pastel-16) !important; --tile-hover-color: #5d4037; } /* Dunkles Kaffeebraun */
-.tile-color-17 { background-color: var(--pastel-17) !important; --tile-hover-color: #ad1457; } /* Dunkles Weinrot / Bordeaux */
-.tile-color-18 { background-color: var(--pastel-18) !important; --tile-hover-color: #00838f; } /* Dunkles Petrol / Ozeanblau */
-.tile-color-19 { background-color: var(--pastel-19) !important; --tile-hover-color: #33691e; } /* Dunkles Olivgrün */
-.tile-color-20 { background-color: var(--pastel-20) !important; --tile-hover-color: #e65100; } /* Dunkles Rostrot */
-
-        .tile:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(15,47,55,0.5);
-            /* Verwendet die kachelspezifische Hover-Farbe */
-            border-bottom: 3px solid var(--tile-hover-color);
+        .tag-kachel.heute {
+            background: #e3f2fd;
+            border: 1px solid #90caf9;
         }
+        .tag-name  { font-weight: 700; color: var(--text-color); font-size: 0.72rem; }
+        .tag-datum { color: var(--grey); font-size: 0.68rem; }
+        .tag-emoji { font-size: 1.3rem; margin: 3px 0; display: block; }
+        .tag-temp  { font-weight: 700; color: #1565c0; font-size: 0.80rem; }
+        .tag-min   { color: var(--grey); font-size: 0.72rem; }
+        .tag-regen { color: #0288d1; font-size: 0.68rem; margin-top: 2px; }
 
-        .tile h2 {
-            margin-top: 10px;
-            color: var(--text-color);
-            font-size: 1.3rem; 
-            margin-bottom: 0;
-        }
-
-        /* --- Design der Metacom-Platzhalter Bilder --- */
-        .tile-img {
-            width: 100px; 
-            height: 100px;
-            object-fit: contain;
-            margin-bottom: 5px; 
-            border: 2px solid var(--secondary-grey); 
-            border-radius: 8px;
-            padding: 5px;
-            background-color: white;
-        }
-/* 🔴 NEUER CODE AB HIER: CSS für den Button und das Highlighting 🔴 */
-        .read-aloud-container {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            z-index: 1000;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .btn-read-aloud {
-            width: 80px;
-            height: 80px;
+        /* ── Lade / Fehler ── */
+        .loading-box { text-align: center; padding: 60px 20px; color: var(--grey); }
+        .spinner {
+            width: 44px; height: 44px;
+            border: 5px solid #ddd;
+            border-top-color: var(--primary-red);
             border-radius: 50%;
-            background-color: var(--primary-red);
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 14px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .fehler-box {
+            display: none;
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 12px;
+            padding: 18px 22px;
+            text-align: center;
+            font-size: 0.92rem;
+            color: #664d03;
+        }
+        .warten-box {
+            display: none;
+            background: #e3f2fd;
+            border: 1px solid #90caf9;
+            border-radius: 12px;
+            padding: 18px 22px;
+            text-align: center;
+            font-size: 0.92rem;
+            color: #0d47a1;
+            line-height: 1.7;
+        }
+
+        /* ── Vorlesen ── */
+        .read-aloud-container {
+            position: fixed; bottom: 30px; right: 30px; z-index: 1000;
+        }
+        .btn-read-aloud {
+            width: 80px; height: 80px;
+            border-radius: 50%;
+            background: var(--primary-red);
             border: 4px solid white;
             box-shadow: 0 4px 15px rgba(0,0,0,0.3);
             cursor: pointer;
@@ -178,178 +238,177 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            transition: transform 0.2s, background-color 0.2s;
+            transition: transform 0.2s;
             padding: 10px;
         }
+        .btn-read-aloud:hover { transform: scale(1.1); }
+        .btn-read-aloud img   { width: 45px; height: 45px; margin-bottom: 2px; }
+        .btn-read-aloud span  { color: white; font-size: 0.7rem; font-weight: bold; text-transform: uppercase; }
 
-        .btn-read-aloud:hover {
-            transform: scale(1.1);
-            background-color: #d42430;
-        }
-
-        .btn-read-aloud img {
-            width: 45px;
-            height: 45px;
-            margin-bottom: 2px;
-        }
-
-        .btn-read-aloud span {
-            color: white;
-            font-size: 0.7rem;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        .is-reading {
-            background-color: #ffe600 !important;
-            color: black !important;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(255, 230, 0, 0.8) !important;
-            transform: scale(1.05);
-            transition: all 0.3s ease;
-        }
-        /* 🔴 ENDE NEUER CODE 🔴 */
-
-        /* --- Footer --- */
+        /* ── Footer ── */
         footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #b61f29;
-            color: white;
-            margin-top: auto;
-            font-size: 0.9rem;
-            font-family: 'Nunito Sans', sans-serif;
+            text-align: center; padding: 18px;
+            background: var(--primary-red); color: white; font-size: 0.88rem;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo-container">
-            <a href="index.html" target="_self" alt="Studjo Logo Arbeit und Qualifizierung">
-<img src="header.jpg"></a>
-        </div>
-    </header>
-    <main>
-        <h1><b>Wetter</b></h1>
+<header>
+    <div class="logo-container">
+        <a href="index.html" target="_self">
+            <img src="header.jpg" alt="Studjo Logo">
+        </a>
+    </div>
+</header>
 
-        <div class="tile-grid">   
-            <a href="index.html" target="_self" class="tile tile-color-11">
-                <img src="back.jpg" alt="zur&uuml;ck" class="tile-img">
-                <h2>Hier geht's zur&uuml;ck...</h2>
-            </a>
-
-            <a href="wetter luedenscheid.html" target="_self" class="tile tile-color-14">
-                <img src="wetter.jpg" alt="Wetter L&uuml;denscheid " class="tile-img">
-                <h2>Wetter L&uuml;denscheid</h2>
-            </a>
-
-            <a href="wetter werdohl.html" target="_self" class="tile tile-color-14">
-                <img src="wetter.jpg" alt="Wetter Werdohl" class="tile-img">
-                <h2>Wetter Werdohl</h2>
-            </a>
-
-            <a href="wetter kierspe.html" target="_self" class="tile tile-color-14">
-                <img src="wetter.jpg" alt="Wetter Kierspe" class="tile-img">
-                <h2>Wetter Kierspe</h2>
-            </a>
-
-            <a href="wetter bochum.html" target="_self" class="tile tile-color-14">
-                <img src="wetter.jpg" alt="Wetter Bochum" class="tile-img">
-                <h2>Wetter Bochum</h2>
-            </a>
-
-        </div>
-    </main>
-<div class="read-aloud-container">
-        <button class="btn-read-aloud" onclick="vorlesenUndMarkieren()" title="Seite vorlesen">
-            <img src="zuhoeren.jpg" alt="Ohr-Symbol">
-            <span>Vorlesen</span>
-        </button>
+<main>
+    <div class="top-bar">
+        <a href="index.html" class="back-button">← Zurück</a>
+        <h1>🌤️ Wetter an unseren Standorten</h1>
     </div>
 
-    <footer>
-        &copy; 2024 <b>Studjo | Arbeit und Qualifizierung</b> | Infoterminal | Barrierefreier Zugang
-    </footer>
+    <div class="stand-bar">
+        <div class="quelle">Quelle: <strong>Open-Meteo (openmeteo.com)</strong></div>
+        <div class="zeit">Stand: <span id="stand-zeit">wird geladen…</span> · Aktualisierung alle 30 Minuten</div>
+    </div>
+
+    <div class="loading-box" id="loading-box">
+        <div class="spinner"></div>
+        <p>Wetterdaten werden geladen…</p>
+    </div>
+    <div class="fehler-box" id="fehler-box">
+        ⚠️ Wetterdaten konnten nicht geladen werden. Bitte Seite neu laden.
+    </div>
+    <div class="warten-box" id="warten-box">
+        ⏳ Wetterdaten werden eingerichtet – bitte in ca. 30 Minuten erneut aufrufen.<br>
+        <small>Der Workflow muss einmalig auf GitHub gestartet werden.</small>
+    </div>
+
+    <div class="stadt-grid" id="stadt-grid"></div>
+</main>
+
+<div class="read-aloud-container">
+    <button class="btn-read-aloud" onclick="vorlesen()" title="Seite vorlesen">
+        <img src="zuhoeren.jpg" alt="Ohr-Symbol">
+        <span>Vorlesen</span>
+    </button>
+</div>
+
+<footer>
+    &copy; 2024 <b>Studjo | Arbeit und Qualifizierung</b> | Infoterminal | Barrierefreier Zugang
+</footer>
+
 <script>
-        let isSpeaking = false;
-        let aktuelleAussage = null; 
+const WOCHENTAGE_KURZ = ['So','Mo','Di','Mi','Do','Fr','Sa'];
 
-        function vorlesenUndMarkieren() {
-            if (isSpeaking || window.speechSynthesis.speaking) {
-                window.speechSynthesis.cancel();
-                entferneAlleMarkierungen();
-                isSpeaking = false;
-                return;
-            }
+function erstelleStadtKarte(stadtDaten) {
+    const a = stadtDaten.aktuell;
+    const heute = new Date();
 
-            window.speechSynthesis.cancel();
-            isSpeaking = true;
+    // Tageskacheln (5 Tage)
+    const tageHtml = stadtDaten.tage.map((tag, i) => {
+        const istHeute = i === 0;
+        const regenHtml = tag.niederschlag > 0
+            ? `<div class="tag-regen">💧 ${tag.niederschlag} mm</div>` : '';
+        return `
+            <div class="tag-kachel${istHeute ? ' heute' : ''}">
+                <div class="tag-name">${istHeute ? 'Heute' : tag.wochentag.substring(0,2)}</div>
+                <div class="tag-datum">${tag.datum}</div>
+                <span class="tag-emoji">${tag.emoji}</span>
+                <div class="tag-temp">${tag.max}°</div>
+                <div class="tag-min">${tag.min}°</div>
+                ${regenHtml}
+            </div>`;
+    }).join('');
 
-            const elementeZumVorlesen = [];
+    const karte = document.createElement('div');
+    karte.className = 'stadt-karte';
+    karte.innerHTML = `
+        <div class="karte-kopf">
+            <div class="stadtname">📍 ${stadtDaten.stadt}</div>
+            <div class="aktuell-reihe">
+                <div class="gross-temp">${a.temp}°</div>
+                <div class="wetter-emoji">${a.emoji}</div>
+                <div class="zustand-block">
+                    <div class="zustand-text">${a.zustand}</div>
+                    <div class="gefuehlt">Gefühlt ${a.gefuehlt}°C</div>
+                </div>
+            </div>
+        </div>
+        <div class="karte-details">
+            <span>💨 Wind ${a.wind} km/h</span>
+            <span>💧 Feuchte ${a.luftfeuchte} %</span>
+            ${a.niederschlag > 0 ? `<span>🌧️ ${a.niederschlag} mm</span>` : ''}
+        </div>
+        <div class="vorschau-kopf">5-Tage-Vorschau</div>
+        <div class="vorschau-tage">${tageHtml}</div>`;
+    return karte;
+}
 
-            const h1 = document.querySelector('h1');
-            if (h1 && h1.innerText.trim() !== "") {
-                elementeZumVorlesen.push({ text: h1.innerText, element: h1 });
-            }
+async function ladeWetter() {
+    const grid     = document.getElementById('stadt-grid');
+    const ladeBox  = document.getElementById('loading-box');
+    const fehlerBox= document.getElementById('fehler-box');
+    const wartenBox= document.getElementById('warten-box');
 
-            elementeZumVorlesen.push({ text: "Hier gibt es folgende Bereiche:", element: null });
+    try {
+        const r = await fetch('wetter.json?v=' + Date.now());
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        const daten = await r.json();
 
-            const tiles = document.querySelectorAll('.tile');
-            tiles.forEach(tile => {
-                const h2 = tile.querySelector('h2');
-                if (h2 && h2.innerText.trim() !== "") {
-                    elementeZumVorlesen.push({ text: h2.innerText, element: tile });
-                }
-            });
+        ladeBox.style.display = 'none';
 
-            if (elementeZumVorlesen.length > 0) {
-                spieleSequenz(elementeZumVorlesen, 0);
-            } else {
-                isSpeaking = false;
-            }
+        if (daten.aktualisiert) {
+            document.getElementById('stand-zeit').textContent = daten.aktualisiert;
         }
 
-        function spieleSequenz(elemente, index) {
-            if (index >= elemente.length || !isSpeaking) {
-                entferneAlleMarkierungen();
-                isSpeaking = false;
-                return; 
-            }
-
-            const abschnitt = elemente[index];
-            
-            aktuelleAussage = new SpeechSynthesisUtterance(abschnitt.text);
-            aktuelleAussage.lang = 'de-DE';
-            aktuelleAussage.rate = 0.9; 
-
-            aktuelleAussage.onstart = () => {
-                entferneAlleMarkierungen();
-                if (abschnitt.element) {
-                    abschnitt.element.classList.add('is-reading');
-                }
-            };
-
-            aktuelleAussage.onend = () => {
-                setTimeout(() => {
-                    spieleSequenz(elemente, index + 1);
-                }, 150);
-            };
-
-            aktuelleAussage.onerror = (event) => {
-                console.error("Fehler beim Vorlesen:", event);
-                entferneAlleMarkierungen();
-                isSpeaking = false;
-            };
-
-            window.speechSynthesis.speak(aktuelleAussage);
+        if (!daten.staedte || !daten.staedte.length) {
+            wartenBox.style.display = 'block';
+            return;
         }
 
-        function entferneAlleMarkierungen() {
-            document.querySelectorAll('.is-reading').forEach(el => {
-                el.classList.remove('is-reading');
-            });
-        }
-    </script>
+        grid.innerHTML = '';
+        daten.staedte.forEach(s => grid.appendChild(erstelleStadtKarte(s)));
+
+    } catch (err) {
+        console.error(err);
+        ladeBox.style.display  = 'none';
+        fehlerBox.style.display = 'block';
+    }
+}
+
+// ── Vorlesen ─────────────────────────────────────────────
+let spricht = false;
+function vorlesen() {
+    if (spricht || speechSynthesis.speaking) {
+        speechSynthesis.cancel(); spricht = false; return;
+    }
+    spricht = true;
+    const texte = [];
+    document.querySelectorAll('.stadt-karte').forEach(k => {
+        const name  = k.querySelector('.stadtname')?.textContent.replace('📍','').trim() || '';
+        const temp  = k.querySelector('.gross-temp')?.textContent || '';
+        const zust  = k.querySelector('.zustand-text')?.textContent || '';
+        const wind  = k.querySelector('.karte-details')?.textContent.replace(/\s+/g,' ').trim() || '';
+        texte.push(`${name}: ${temp} Grad, ${zust}. ${wind}.`);
+    });
+    let i = 0;
+    function next() {
+        if (i >= texte.length) { spricht = false; return; }
+        const u = new SpeechSynthesisUtterance(texte[i++]);
+        u.lang = 'de-DE'; u.rate = 0.9;
+        u.onend = () => setTimeout(next, 150);
+        u.onerror = () => { spricht = false; };
+        speechSynthesis.speak(u);
+    }
+    next();
+}
+
+ladeWetter();
+// Alle 30 Minuten neu laden
+setTimeout(() => location.reload(), 30 * 60 * 1000);
+</script>
+
 </body>
 </html>
