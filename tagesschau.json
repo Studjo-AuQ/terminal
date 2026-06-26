@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "26.06.2026, 16:31 Uhr (UTC)",
+  "aktualisiert": "26.06.2026, 18:28 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Verzehnfachung der Strompreise wegen der Hitze",
+      "description": "Mit den Temperaturen steigen derzeit auch die Strompreise kräftig an. Vor allem für Unternehmen mit einem hohen Stromverbrauch in den Abendstunden wird die Hitze zum Kostenrisiko. Von Anne-Catherine Petry Beck.",
+      "pubDate": "2026-06-26T20:02:40+02:00",
+      "bild": ""
+    },
     {
       "title": "Marktbericht: Neue KI-Vorsicht drückt den DAX",
       "description": "Die KI-Tech-Euphorie ebbt ab und drückt weltweit die Aktienmärkte. Dem konnte sich auch der DAX nicht entziehen, der darüber hinaus noch einige negative Unternehmensmeldungen verkraften musste.",
@@ -11,7 +17,7 @@
     {
       "title": "Temperaturrekord in Deutschland gemessen - 41,3 Grad in Saarbrücken",
       "description": "Der Deutsche Wetterdienst hat nach vorläufigen Angaben mit 41,3 Grad die höchste Temperatur registriert, die bisher in Deutschland gemessen wurde. Zuvor hatte es bereits einen Juni-Rekord gegeben.",
-      "pubDate": "2026-06-26T18:24:32+02:00",
+      "pubDate": "2026-06-26T19:01:58+02:00",
       "bild": ""
     },
     {
@@ -39,9 +45,9 @@
       "bild": ""
     },
     {
-      "title": "Zahl der Todesopfer in Venezuela steigt auf 589 - viele Vermisste",
-      "description": "589 Tote sind nach den verheerenden Erdbeben in Venezuela geborgen worden. Tausende werden noch vermisst. Für die Suche nach ihnen trifft immer mehr internationale Hilfe ein - auch aus Deutschland.",
-      "pubDate": "2026-06-26T16:08:23+02:00",
+      "title": "Zahl der Todesopfer in Venezuela steigt auf 920 - viele Vermisste",
+      "description": "Nach den verheerenden Erdbeben in Venezuela ist die Zahl der bestätigten Todesopfer auf 920 gestiegen. Tausende werden noch vermisst. Für die Suche nach ihnen trifft immer mehr internationale Hilfe ein - auch aus Deutschland.",
+      "pubDate": "2026-06-26T19:57:19+02:00",
       "bild": ""
     },
     {
@@ -84,12 +90,6 @@
       "title": "Erdbeben in Venezuela: Notfallmediziner beklagt mangelnde Versorgung",
       "description": "Ärztemangel, fehlende Medikamente und kein medizinisches Material: Laut Notfallmediziner Tankred Stöbe spielt sich nach den Erdbeben in Venezuela eine \"zweite Katastrophe\" in den Krankenhäusern des Landes ab.",
       "pubDate": "2026-06-26T13:22:22+02:00",
-      "bild": ""
-    },
-    {
-      "title": "40 Grad im Juni - ist das das neue Normal?",
-      "description": "Am Wochenende soll die Hitzewelle ihren Höhepunkt erreichen, doch schon jetzt ist klar: Die extrem hohen Juni-Temperaturen sind außergewöhnlich. Müssen wir uns an immer mehr Hitzetage gewöhnen? Von Tim Staeger.",
-      "pubDate": "2026-06-26T13:14:00+02:00",
       "bild": ""
     }
   ],
