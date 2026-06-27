@@ -1,7 +1,31 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "27.06.2026, 14:12 Uhr (UTC)",
+  "aktualisiert": "27.06.2026, 15:48 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Ukraine greift Fabrik mit \"Flamingo\"-Marschflugkörpern an",
+      "description": "In der russischen Millionenstadt Wolgograd sind ukrainische Flugkörper eingeschlagen. Nach Angaben des ukrainischen Präsidenten Selenskyj wurde ein Rüstungsbetrieb mit \"Flamingo\"-Marschflugkörpern getroffen.",
+      "pubDate": "2026-06-27T17:41:38+02:00",
+      "bild": ""
+    },
+    {
+      "title": "DWD: Hitzerekord in Deutschland erneut gebrochen",
+      "description": "Am zweiten Tag in Folge ist in Deutschland laut vorläufigen Daten des DWD ein neuer Temperaturhöchstwert gemessen worden. An der Wetterstation Möckern-Drewitz in Sachsen-Anhalt war es demnach 41,5 Grad heiß.",
+      "pubDate": "2026-06-27T17:24:50+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Argentinien: Mehr Mathe mit Messi & Co.",
+      "description": "Wer will schon Mathe lernen, wenn gerade das eigene Nationalteam bei der WM spielt? Aber vielleicht liegt gerade im Fußball ein Mittel, um die Aufmerksamkeit von Schülern zu gewinnen. In Argentinien scheint das zu funktionieren. Von A. Herrberg.",
+      "pubDate": "2026-06-27T16:34:56+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Grüne beraten über Wahlkampf-Strategie für Ostdeutschland",
+      "description": "Die Grünen beraten auf Rügen über ihre Wahlkampfstrategie für Ostdeutschland. Dort hat die Partei einen schweren Stand. Mit Wohnmobil-Tour und Bratwürsten will man Vorurteilen entgegentreten. Von N. Kohnert und D. K. Mäurer.",
+      "pubDate": "2026-06-27T16:31:51+02:00",
+      "bild": ""
+    },
     {
       "title": "Drogen: Wie sich Portugal von einem Heroin-Problem befreite",
       "description": "\"Mir ist egal, ob jemand Heroin oder Cannabis braucht\", sagt der Erfinder der liberalen portugiesischen Drogen-Politik. \"Es soll nur niemand darunter leiden.\" Sein Modell wird jetzt 25 Jahre alt. Von Sebastian Kisters.",
@@ -21,9 +45,9 @@
       "bild": ""
     },
     {
-      "title": "Hitze-Liveblog: ++ Bahn rät von nicht notwendigen Reisen ab ++",
-      "description": "Aufgrund der extremen Temperaturen rät die Deutsche Bahn von nicht dringend notwendigen Reisen ab und bietet Ticket-Erstattungen an. Die Freibäder in Deutschland erleben einen Besucheransturm.",
-      "pubDate": "2026-06-27T15:46:38+02:00",
+      "title": "Hitze-Liveblog: ++ Hitzeschäden bremsen Verkehr auf Autobahnen ++",
+      "description": "Die anhaltende Hitze lässt auf manchen Autobahnen die Fahrbahn aufbrechen. Autofahrer müssen mit Sperrungen und Tempolimits rechnen. Auch die Bahn rät von Reisen ab. Die Freibäder in Deutschland erleben einen Besucheransturm.",
+      "pubDate": "2026-06-27T17:43:21+02:00",
       "bild": ""
     },
     {
@@ -66,30 +90,6 @@
       "title": "Mord vor 25 Jahren: Hamburgs Sonderweg bei der NSU-Aufarbeitung",
       "description": "Vor 25 Jahren wurde Süleyman Taşköprü vom NSU in Hamburg ermordet. Anders als in anderen Bundesländern gab es hier aber keinen parlamentarischen Untersuchungsausschuss. Für die Angehörigen bleiben drängende Fragen. Von P. Hennig und A. Höber.",
       "pubDate": "2026-06-27T11:20:39+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Weitere Erdstöße erschüttern Venezuela - Rettungsarbeiten laufen",
-      "description": "Während die Rettungsarbeiten nach den schweren Erdbeben in Venezuela andauern, hat es dort mehrere Nachbeben gegeben. Mindestens 50.000 Menschen gelten als vermisst. Inzwischen sind erste Hilfskräfte aus dem Ausland eingetroffen.",
-      "pubDate": "2026-06-27T09:54:13+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Für ausgewählte Firmen: Anthropic gibt KI \"Mythos 5\" wieder frei",
-      "description": "Von der US-Regierung ausgewählte Firmen haben wieder Zugang zum KI-Modell \"Mythos 5\" von Anthropic. Nach der Sperrung vor zwei Wochen habe das Unternehmen kooperiert, um Risiken auszuräumen, so Handelsminister Lutnick.",
-      "pubDate": "2026-06-27T09:38:53+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Italien: Noch ein Herausforderer für Meloni - von rechts",
-      "description": "Italiens rechtes Parteienspektrum wächst. Mit Roberto Vannacci bekommt Regierungschefin Meloni einen zusätzlichen radikalen Konkurrenten. Beobachter sagen: Das hat auch mit Meloni selbst zu tun. Von J. Seisselberg.",
-      "pubDate": "2026-06-27T06:36:53+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Siebenschläfer: Und jetzt sieben Wochen Hitze?",
-      "description": "Heute ist Siebenschläfer - der Tag, der einer Bauernregel zufolge das Wetter der nächsten sieben Wochen bestimmen soll. Eine zuverlässige Vorhersage? Von Florian Zinner und Robert Rönsch.",
-      "pubDate": "2026-06-27T06:22:41+02:00",
       "bild": ""
     }
   ],
