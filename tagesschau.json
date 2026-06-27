@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "27.06.2026, 05:29 Uhr (UTC)",
+  "aktualisiert": "27.06.2026, 08:10 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Weitere Erdstöße erschüttern Venezuela - Rettungsarbeiten laufen",
+      "description": "Während die Rettungsarbeiten nach den schweren Erdbeben in Venezuela andauern, hat es dort mehrere Nachbeben gegeben. Mindestens 50.000 Menschen gelten als vermisst. Inzwischen sind erste Hilfskräfte aus dem Ausland eingetroffen.",
+      "pubDate": "2026-06-27T09:54:13+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Für ausgewählte Firmen: Anthropic gibt KI \"Mythos 5\" wieder frei",
+      "description": "Von der US-Regierung ausgewählte Firmen haben wieder Zugang zum KI-Modell \"Mythos 5\" von Anthropic. Nach der Sperrung vor zwei Wochen habe das Unternehmen kooperiert, um Risiken auszuräumen, so Handelsminister Lutnick.",
+      "pubDate": "2026-06-27T09:38:53+02:00",
+      "bild": ""
+    },
     {
       "title": "Italien: Noch ein Herausforderer für Meloni - von rechts",
       "description": "Italiens rechtes Parteienspektrum wächst. Mit Roberto Vannacci bekommt Regierungschefin Meloni einen zusätzlichen radikalen Konkurrenten. Beobachter sagen: Das hat auch mit Meloni selbst zu tun. Von J. Seisselberg.",
@@ -16,8 +28,8 @@
     },
     {
       "title": "US-Militär: Haben Angriffe gegen Iran durchgeführt",
-      "description": "Das US-Militär hat nach eigenen Angaben trotz vereinbarter Waffenruhe Angriffe gegen Iran durchgeführt. Daraufhin reagierte Iran mit Gegenangriffen.",
-      "pubDate": "2026-06-27T05:22:10+02:00",
+      "description": "Die USA haben Luftangriffe gegen Iran geflogen. Dies sei angeordnet worden, nachdem ein Handelsschiff in der Straße von Hormus von einer iranischen Drohne getroffen worden sei. Der Iran griff nach eigenen Angaben daraufhin US-Stützpunkte an.",
+      "pubDate": "2026-06-27T08:40:02+02:00",
       "bild": ""
     },
     {
@@ -78,18 +90,6 @@
       "title": "Neuer Juni-Temperaturhöchstwert für Juni gemessen",
       "description": "In Deutschland sind erstmals in einem Juni mehr als 40 Grad gemessen worden. In Saarbrücken wurden laut DWD 41,1 Grad aufgezeichnet. Auch andere Stationen übertrafen den bisherigen Rekord aus dem Jahr 2019.",
       "pubDate": "2026-06-26T17:53:55+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Istanbul: Lange Haftstrafen im Prozess um vergiftete Familie",
-      "description": "Im Prozess um den Tod zwei kleiner Kinder und ihrer Eltern in Istanbul durch ein Insektengift gibt es jetzt ein Urteil: Die vier Angeklagten wurden zu langen Haftstrafen verurteilt. Die Gerichtsentscheidung ist noch nicht rechtskräftig.",
-      "pubDate": "2026-06-26T16:22:08+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Mehr arbeiten für das gleiche Geld: Mercedes verschärft Sparkurs",
-      "description": "Mercedes muss sparen: Vorerst verschiebt der Konzern eine Sonderzahlung an seine Mitarbeiter. In Zukunft sollen sie außerdem mehr arbeiten - für den gleichen Lohn.",
-      "pubDate": "2026-06-26T16:14:06+02:00",
       "bild": ""
     }
   ],
