@@ -1,7 +1,37 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "27.06.2026, 08:10 Uhr (UTC)",
+  "aktualisiert": "27.06.2026, 10:31 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "NATO-Treffen im Juli: Ankara vor dem Gipfel im Ausnahmezustand",
+      "description": "Die Vorbereitungen zum NATO-Gipfel Anfang Juli in der Türkei sorgen für Aufruhr: Bereits ab Sonntag gilt in ganz Ankara ein Versammlungsverbot. Zahlreiche türkische Journalisten wurden nicht zum Gipfel zugelassen. Von B. Weber.",
+      "pubDate": "2026-06-27T12:04:36+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Hitzeresistente Häuser: Wie ein Architekt gegen die Hitze kämpft",
+      "description": "Architekt Francis Kéré zeigt in Dakar, wie nachhaltige Architektur mit lokalen Materialien und natürlicher Belüftung für Kühlung sorgt. Traditionelle Bauweisen gelten als wegweisend im Kampf gegen Hitze. Von K. Bensch",
+      "pubDate": "2026-06-27T11:47:53+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Aus Italien zum Weltstar: Wie Bud Spencer Filmgeschichte schrieb",
+      "description": "In mehr als 120 Filmen und Serienepisoden hat er mitgespielt, seine Rollen als harter Kerl in Westernkomödien machten Bud Spencer zum Star. Auch zehn Jahre nach seinem Tod wird er noch verehrt. Von Christoph Ohrem.",
+      "pubDate": "2026-06-27T11:33:14+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Mord vor 25 Jahren: Hamburgs Sonderweg bei der NSU-Aufarbeitung",
+      "description": "Vor 25 Jahren wurde Süleyman Taşköprü vom NSU in Hamburg ermordet. Anders als in anderen Bundesländern gab es hier aber keinen parlamentarischen Untersuchungsausschuss. Für die Angehörigen bleiben drängende Fragen. Von P. Hennig und A. Höber.",
+      "pubDate": "2026-06-27T11:20:39+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Hitze-Liveblog: ++ Kommunen rufen zum Wassersparen auf ++",
+      "description": "Heute wird in Deutschland der Höhepunkt der Hitzewelle erwartet. Der Städte- und Gemeindebund ruft zum Wassersparen auf, Hausärzte werfen der Bundesregierung Versagen beim Hitzeschutz vor.",
+      "pubDate": "2026-06-27T12:07:53+02:00",
+      "bild": ""
+    },
     {
       "title": "Weitere Erdstöße erschüttern Venezuela - Rettungsarbeiten laufen",
       "description": "Während die Rettungsarbeiten nach den schweren Erdbeben in Venezuela andauern, hat es dort mehrere Nachbeben gegeben. Mindestens 50.000 Menschen gelten als vermisst. Inzwischen sind erste Hilfskräfte aus dem Ausland eingetroffen.",
@@ -29,7 +59,7 @@
     {
       "title": "US-Militär: Haben Angriffe gegen Iran durchgeführt",
       "description": "Die USA haben Luftangriffe gegen Iran geflogen. Dies sei angeordnet worden, nachdem ein Handelsschiff in der Straße von Hormus von einer iranischen Drohne getroffen worden sei. Der Iran griff nach eigenen Angaben daraufhin US-Stützpunkte an.",
-      "pubDate": "2026-06-27T08:40:02+02:00",
+      "pubDate": "2026-06-27T11:41:33+02:00",
       "bild": ""
     },
     {
@@ -60,36 +90,6 @@
       "title": "Aktuelle Stunde: Streit über Rentenreform im Bundestag",
       "description": "Chance oder fahrlässiges Spekulieren? Die Linke kritisiert die geplante Kapitalrente scharf, die CDU verteidigt das Vorhaben. Im Bundestag ging es erneut um die Rentenreform der Bundesregierung - diesmal in einer Aktuellen Stunde. Von F. Aischmann",
       "pubDate": "2026-06-26T20:37:43+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Verzehnfachung der Strompreise wegen der Hitze",
-      "description": "Mit den Temperaturen steigen derzeit auch die Strompreise kräftig an. Vor allem für Unternehmen mit einem hohen Stromverbrauch in den Abendstunden wird die Hitze zum Kostenrisiko. Von Anne-Catherine Petry Beck.",
-      "pubDate": "2026-06-26T20:02:40+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Neue KI-Vorsicht drückt den DAX",
-      "description": "Die KI-Tech-Euphorie ebbt ab und drückt weltweit die Aktienmärkte. Dem konnte sich auch der DAX nicht entziehen, der darüber hinaus noch einige negative Unternehmensmeldungen verkraften musste.",
-      "pubDate": "2026-06-26T18:15:49+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Temperaturrekord in Deutschland gemessen - 41,3 Grad in Saarbrücken",
-      "description": "Der Deutsche Wetterdienst hat nach vorläufigen Angaben mit 41,3 Grad die höchste Temperatur registriert, die bisher in Deutschland gemessen wurde. Zuvor hatte es bereits einen Juni-Rekord gegeben.",
-      "pubDate": "2026-06-26T19:01:58+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Stuttgart 21 auf 2031 verschoben - und drei Milliarden teurer",
-      "description": "Dass es mit Stuttgart 21 noch länger dauern wird, war schon bekannt. Jetzt wird es auch weiter teurer. Ein interner Bericht legt viele Versäumnisse des Mega-Projekts offen.",
-      "pubDate": "2026-06-26T17:24:06+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Neuer Juni-Temperaturhöchstwert für Juni gemessen",
-      "description": "In Deutschland sind erstmals in einem Juni mehr als 40 Grad gemessen worden. In Saarbrücken wurden laut DWD 41,1 Grad aufgezeichnet. Auch andere Stationen übertrafen den bisherigen Rekord aus dem Jahr 2019.",
-      "pubDate": "2026-06-26T17:53:55+02:00",
       "bild": ""
     }
   ],
