@@ -1,7 +1,31 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "27.06.2026, 10:31 Uhr (UTC)",
+  "aktualisiert": "27.06.2026, 12:06 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Hitze-Liveblog: ++ Bahn rät von nicht notwendigen Reisen ab ++",
+      "description": "Aufgrund der extremen Temperaturen rät die Deutsche Bahn von nicht dringend notwendigen Reisen ab und bietet Ticket-Erstattungen an. Die Freibäder in Deutschland erleben einen Besucheransturm.",
+      "pubDate": "2026-06-27T13:47:45+02:00",
+      "bild": ""
+    },
+    {
+      "title": "80 Jahre Vespa: Geburtstagsparty mit wirtschaftlichen Sorgen",
+      "description": "Ein Kultobjekt feiert Jubiläum: die Vespa. Zum 80. Geburtstag kommen Fans aus der ganzen Welt in Rom zusammen. Abseits der fröhlichen Feier aber hat der Hersteller Piaggio mit Problemen zu kämpfen. Von Jörg Seisselberg.",
+      "pubDate": "2026-06-27T13:40:02+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Baden bei Extremhitze: Zahl der Badeunfälle steigt",
+      "description": "Die Hitzewelle lockt derzeit Tausende Menschen an Seen, Flüsse und Kanäle. Doch mit den hohen Temperaturen steigt auch die Zahl der Badeunfälle - viele Menschen unterschätzen das Risiko. Von Jens Eberl.",
+      "pubDate": "2026-06-27T13:09:51+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Interview: Wie der Projektleiter das AfD-Gutachten bewertet",
+      "description": "Die AfD ist verfassungswidrig und ein Verbotsverfahren wäre \"wahrscheinlich erfolgreich\" - zu diesem Ergebnis kommt ein Gutachten der Gesellschaft für Freiheitsrechte. Projektleiter Moini erklärt die eigene Arbeit.",
+      "pubDate": "2026-06-27T12:31:15+02:00",
+      "bild": ""
+    },
     {
       "title": "NATO-Treffen im Juli: Ankara vor dem Gipfel im Ausnahmezustand",
       "description": "Die Vorbereitungen zum NATO-Gipfel Anfang Juli in der Türkei sorgen für Aufruhr: Bereits ab Sonntag gilt in ganz Ankara ein Versammlungsverbot. Zahlreiche türkische Journalisten wurden nicht zum Gipfel zugelassen. Von B. Weber.",
@@ -24,12 +48,6 @@
       "title": "Mord vor 25 Jahren: Hamburgs Sonderweg bei der NSU-Aufarbeitung",
       "description": "Vor 25 Jahren wurde Süleyman Taşköprü vom NSU in Hamburg ermordet. Anders als in anderen Bundesländern gab es hier aber keinen parlamentarischen Untersuchungsausschuss. Für die Angehörigen bleiben drängende Fragen. Von P. Hennig und A. Höber.",
       "pubDate": "2026-06-27T11:20:39+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Hitze-Liveblog: ++ Kommunen rufen zum Wassersparen auf ++",
-      "description": "Heute wird in Deutschland der Höhepunkt der Hitzewelle erwartet. Der Städte- und Gemeindebund ruft zum Wassersparen auf, Hausärzte werfen der Bundesregierung Versagen beim Hitzeschutz vor.",
-      "pubDate": "2026-06-27T12:07:53+02:00",
       "bild": ""
     },
     {
@@ -72,24 +90,6 @@
       "title": "Trump droht EU-Ländern wegen Digitalsteuer mit Strafzöllen",
       "description": "Im Streit um Digitalsteuern für US-Konzerne wie Apple hat US-Präsident Trump den Europäern erneut mit Strafzöllen gedroht. Im Zentrum steht vor allem Frankreich. Die EU reagierte scharf auf die Drohungen.",
       "pubDate": "2026-06-26T21:59:37+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Umgang mit geheimen Akten: Ex-Berater von Trump bekennt sich schuldig",
-      "description": "John Bolton, Ex-Sicherheitsberater von US-Präsident Trump, hat den unsachgemäßen Umgang mit Geheimdokumenten eingeräumt und sich schuldig bekannt. Das Strafmaß wird im Oktober verkündet. Ein Deal könnte eine Haftstrafe verhindern.",
-      "pubDate": "2026-06-26T21:27:57+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Lage auf der Krim: Ein Notstand mit Symbolwirkung",
-      "description": "Die ukrainischen Angriffe auf Russlands Energieversorgung zeigen immer deutlicher Wirkung. Nun riefen die von Russland eingesetzten Krim-Behörden den Notstand aus. Für Putin könnte das zum Imageschaden werden. Von B. Blaschke.",
-      "pubDate": "2026-06-26T20:55:44+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Aktuelle Stunde: Streit über Rentenreform im Bundestag",
-      "description": "Chance oder fahrlässiges Spekulieren? Die Linke kritisiert die geplante Kapitalrente scharf, die CDU verteidigt das Vorhaben. Im Bundestag ging es erneut um die Rentenreform der Bundesregierung - diesmal in einer Aktuellen Stunde. Von F. Aischmann",
-      "pubDate": "2026-06-26T20:37:43+02:00",
       "bild": ""
     }
   ],
