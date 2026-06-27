@@ -1,11 +1,29 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "27.06.2026, 12:06 Uhr (UTC)",
+  "aktualisiert": "27.06.2026, 14:12 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Drogen: Wie sich Portugal von einem Heroin-Problem befreite",
+      "description": "\"Mir ist egal, ob jemand Heroin oder Cannabis braucht\", sagt der Erfinder der liberalen portugiesischen Drogen-Politik. \"Es soll nur niemand darunter leiden.\" Sein Modell wird jetzt 25 Jahre alt. Von Sebastian Kisters.",
+      "pubDate": "2026-06-27T15:32:58+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Kleinflugzeug kracht in Peking in Hochhaus",
+      "description": "In Peking ist ein Kleinflugzeug in das höchste Gebäude der Stadt geflogen. Fast einen Tag schwiegen die Behörden zu dem Vorfall, nun bestätigten sie den Tod des Piloten. Aufnahmen des Absturzes im Internet wurden gelöscht.",
+      "pubDate": "2026-06-27T15:25:31+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Angriffe lösen Sorge vor Eskalation am Persischen Golf aus",
+      "description": "Die Passage von Handelsschiffen durch die Straße von Hormus bleibt ein brisanter Streitpunkt zwischen den USA und Iran. Nach dem Beschuss eines Frachters flogen die USA neue Angriffe, Iran reagierte prompt. Hält die Waffenruhe?",
+      "pubDate": "2026-06-27T14:36:02+02:00",
+      "bild": ""
+    },
     {
       "title": "Hitze-Liveblog: ++ Bahn rät von nicht notwendigen Reisen ab ++",
       "description": "Aufgrund der extremen Temperaturen rät die Deutsche Bahn von nicht dringend notwendigen Reisen ab und bietet Ticket-Erstattungen an. Die Freibäder in Deutschland erleben einen Besucheransturm.",
-      "pubDate": "2026-06-27T13:47:45+02:00",
+      "pubDate": "2026-06-27T15:46:38+02:00",
       "bild": ""
     },
     {
@@ -72,24 +90,6 @@
       "title": "Siebenschläfer: Und jetzt sieben Wochen Hitze?",
       "description": "Heute ist Siebenschläfer - der Tag, der einer Bauernregel zufolge das Wetter der nächsten sieben Wochen bestimmen soll. Eine zuverlässige Vorhersage? Von Florian Zinner und Robert Rönsch.",
       "pubDate": "2026-06-27T06:22:41+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Militär: Haben Angriffe gegen Iran durchgeführt",
-      "description": "Die USA haben Luftangriffe gegen Iran geflogen. Dies sei angeordnet worden, nachdem ein Handelsschiff in der Straße von Hormus von einer iranischen Drohne getroffen worden sei. Der Iran griff nach eigenen Angaben daraufhin US-Stützpunkte an.",
-      "pubDate": "2026-06-27T11:41:33+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Israel und Libanon unterzeichnen Rahmenabkommen für Ende der Kämpfe",
-      "description": "Israel und der Libanon haben ein Rahmenabkommen zur Beendigung der Kämpfe unterzeichnet. US-Außenminister Rubio sprach von einem ersten Schritt auf einem schwierigen Weg. Die pro-iranische Hisbollah drohte mit einem Bürgerkrieg.",
-      "pubDate": "2026-06-26T22:11:12+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Trump droht EU-Ländern wegen Digitalsteuer mit Strafzöllen",
-      "description": "Im Streit um Digitalsteuern für US-Konzerne wie Apple hat US-Präsident Trump den Europäern erneut mit Strafzöllen gedroht. Im Zentrum steht vor allem Frankreich. Die EU reagierte scharf auf die Drohungen.",
-      "pubDate": "2026-06-26T21:59:37+02:00",
       "bild": ""
     }
   ],
