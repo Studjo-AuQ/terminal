@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "28.06.2026, 21:36 Uhr (UTC)",
+  "aktualisiert": "28.06.2026, 22:59 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Treibstoffmangel: Putin räumt Versorgungsprobleme ein",
+      "description": "Die Ukraine verstärkte zuletzt ihre Angriffe gegen die russische Erdölindustrie - und bringt Russland damit in Bedrängnis: Präsident Putin rief wegen Versorgungsproblemen beim Treibstoff zur Krisensitzung.",
+      "pubDate": "2026-06-29T00:20:20+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Hitzewelle in Deutschland: Wie Pflegeheime mit der Hitze umgehen",
+      "description": "Die hohen Temperaturen sind besonders für alte Menschen anstrengend. Pflegeheime und Senioren begegnen der Hitzewelle mit Eis, Melonen, Lüften - und Hitzepaten. Von P. Wundersee und J.-O. Niermann",
+      "pubDate": "2026-06-28T23:58:12+02:00",
+      "bild": ""
+    },
     {
       "title": "Suche nach Überlebenden: Die Wut auf die Regierung in Venezuela wächst",
       "description": "Noch immer werden in Venezuela Überlebende aus den Trümmern geborgen. Die Hilfe aus dem Ausland ist zwar angelaufen, aber viele Bürger organisieren sich selbst - denn sie fühlen sich von der Regierung allein gelassen. Von J. Barke.",
@@ -78,18 +90,6 @@
       "title": "250 Jahre Unabhängigkeit der USA: Meine Freiheit, deine Freiheit",
       "description": "Freiheit steht im Zentrum der Feiern zum 250. Jahrestag der Unabhängigkeit der USA. Doch verstehen die Menschen auf dem Land darunter dasselbe wie Bürger in den Städten? Und was bedeutet das für indigene US-Amerikaner? Von S. Schmidt.",
       "pubDate": "2026-06-28T11:17:37+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Trotz Grillsaison: schlechte Stimmung bei den Schweinehaltern",
-      "description": "Ein Sommer mit Fußball-WM - das ist klassische Grillsaison. Trotzdem verdienen deutsche Schweinehalter gerade kein Geld. Wie kann das sein? Von Birgit Stamerjohanns.",
-      "pubDate": "2026-06-28T10:12:47+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Neuer nächtlicher Temperaturrekord gemessen",
-      "description": "Erneut gibt es einen Höchstwert bei den Temperaturen: In einem sächsischen Ort sanken sie in der Nacht nicht unter 29,4 Grad. Die bis dahin heißeste Nacht hatte es 2003 gegeben - der Wert lag 2,2 Grad unter dem aktuellen.",
-      "pubDate": "2026-06-28T10:20:39+02:00",
       "bild": ""
     }
   ],
