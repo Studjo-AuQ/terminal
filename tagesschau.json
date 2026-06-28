@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "28.06.2026, 14:21 Uhr (UTC)",
+  "aktualisiert": "28.06.2026, 15:47 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Erneuter Temperaturhöchstwert in Deutschland",
+      "description": "In Deutschland ist den dritten Tag in Folge ein neuer Temperaturhöchstwert gemessen worden. Der Deutsche Wetterdienst (DWD) meldete einen vorläufigen Wert von 41,7 Grad im brandenburgischen Neißemünde-Coschen an der polnischen Grenze.",
+      "pubDate": "2026-06-28T17:06:00+02:00",
+      "bild": ""
+    },
     {
       "title": "Elf Tote bei Absturz von Kleinflugzeug in Frankreich",
       "description": "In der Nähe der französischen Stadt Nancy ist ein Kleinflugzeug abgestürzt. Alle elf Insassen sind tot. An Bord war eine Gruppe von Fallschirmspringern. Die Maschine vom Typ \"Pilatus\" war in Deutschland registriert.",
@@ -63,9 +69,9 @@
       "bild": ""
     },
     {
-      "title": "Hitze-Liveblog: ++ Rettungskräfte holen Passagiere aus überhitztem Zug ++",
-      "description": "Über Stunden mussten gestern Hunderte Reisende in einem Zug aushalten, der wegen eines Sturmschadens liegen geblieben war. Rettungskräfte holten Passagiere aus dem Zug. Der Deutsche Wetterdienst warnt auch heute vor extremer Hitze.",
-      "pubDate": "2026-06-28T15:46:53+02:00",
+      "title": "Hitze-Liveblog: ++ Klimaexpertin: \"So eine Hitzewelle vor 50 Jahren nicht möglich\" ++",
+      "description": "Eine Hitzewelle wie die jetzige mit diesen extrem hohen Temperaturen wäre laut ARD-Klimaexpertin Claudia Reiser vor 50 Jahren noch gar nicht möglich gewesen. Nicht nur in Deutschland wurden Rekordtemperaturen erreicht.",
+      "pubDate": "2026-06-28T17:07:15+02:00",
       "bild": ""
     },
     {
@@ -84,12 +90,6 @@
       "title": "Grenzen der Kunstfreiheit: Wo werden aus Klassikern Streitfälle?",
       "description": "Wie umgehen mit alter Kunst, wenn sich moralische Werte ändern? Mit der Diskussion um Wim Wenders' Film \"Falsche Bewegung\" von 1975 ist der Streit um eine grundsätzliche Frage neu entbrannt. Von W. Keuneke und V. Kleber.",
       "pubDate": "2026-06-28T07:56:03+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Tiny Forests: Kleine Wälder - große Wirkung?",
-      "description": "Sogenannte Tiny Forests sollen in Städten Hitze lindern und Lebensraum schaffen, wo sonst nur Steine und Beton zu finden sind. Doch wie groß ist ihr Effekt tatsächlich? Von Jennifer Sieglar und Katharina Wilhelm.",
-      "pubDate": "2026-06-28T07:55:34+02:00",
       "bild": ""
     }
   ],
