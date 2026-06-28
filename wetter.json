@@ -1,15 +1,15 @@
 {
-  "aktualisiert": "27.06.2026, 22:57 Uhr",
+  "aktualisiert": "28.06.2026, 00:03 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
         "temp": 26,
-        "gefuehlt": 27,
-        "zustand": "Bedeckt",
-        "emoji": "☁️",
-        "wind": 9,
-        "luftfeuchte": 53,
+        "gefuehlt": 26,
+        "zustand": "Klar",
+        "emoji": "☀️",
+        "wind": 15,
+        "luftfeuchte": 50,
         "niederschlag": 0.0
       },
       "tage": [
@@ -63,12 +63,12 @@
     {
       "stadt": "Werdohl",
       "aktuell": {
-        "temp": 27,
-        "gefuehlt": 29,
+        "temp": 26,
+        "gefuehlt": 27,
         "zustand": "Überwiegend klar",
         "emoji": "🌤️",
-        "wind": 4,
-        "luftfeuchte": 58,
+        "wind": 6,
+        "luftfeuchte": 56,
         "niederschlag": 0.0
       },
       "tage": [
@@ -78,7 +78,7 @@
           "emoji": "☁️",
           "zustand": "Bedeckt",
           "max": 33,
-          "min": 24,
+          "min": 22,
           "niederschlag": 0.0
         },
         {
@@ -88,7 +88,7 @@
           "zustand": "Gewitter",
           "max": 26,
           "min": 19,
-          "niederschlag": 14.6
+          "niederschlag": 14.0
         },
         {
           "wochentag": "Dienstag",
@@ -122,12 +122,12 @@
     {
       "stadt": "Kierspe",
       "aktuell": {
-        "temp": 26,
-        "gefuehlt": 26,
-        "zustand": "Bedeckt",
-        "emoji": "☁️",
-        "wind": 12,
-        "luftfeuchte": 56,
+        "temp": 25,
+        "gefuehlt": 25,
+        "zustand": "Klar",
+        "emoji": "☀️",
+        "wind": 16,
+        "luftfeuchte": 58,
         "niederschlag": 0.0
       },
       "tage": [
@@ -181,12 +181,12 @@
     {
       "stadt": "Bochum",
       "aktuell": {
-        "temp": 26,
-        "gefuehlt": 27,
-        "zustand": "Teils bewölkt",
-        "emoji": "⛅",
-        "wind": 17,
-        "luftfeuchte": 70,
+        "temp": 25,
+        "gefuehlt": 24,
+        "zustand": "Bedeckt",
+        "emoji": "☁️",
+        "wind": 31,
+        "luftfeuchte": 69,
         "niederschlag": 0.0
       },
       "tage": [
