@@ -1,11 +1,23 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "28.06.2026, 12:14 Uhr (UTC)",
+  "aktualisiert": "28.06.2026, 14:21 Uhr (UTC)",
   "meldungen": [
     {
+      "title": "Elf Tote bei Absturz von Kleinflugzeug in Frankreich",
+      "description": "In der Nähe der französischen Stadt Nancy ist ein Kleinflugzeug abgestürzt. Alle elf Insassen sind tot. An Bord war eine Gruppe von Fallschirmspringern. Die Maschine vom Typ \"Pilatus\" war in Deutschland registriert.",
+      "pubDate": "2026-06-28T15:16:19+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Deutsche Autorin Lena Schätte gewinnt Bachmann-Preis",
+      "description": "Die Deutsche Lena Schätte erhält den diesjährigen Ingeborg-Bachmann-Preis. Ihr im Wettlesen vorgetragener Text über die Freundschaft zweier übergewichtiger Schülerinnen sei von \"existenzieller Wucht\", hieß es in der Laudatio.",
+      "pubDate": "2026-06-28T14:45:17+02:00",
+      "bild": ""
+    },
+    {
       "title": "Feuerwehren im Großeinsatz: Kampf gegen Waldbrände - und die Munition im Boden",
-      "description": "In mehreren Teilen Deutschland kämpfen Feuerwehren gegen Waldbrände. Mancherorts erschweren Kampfmittelrückstände im Boden die Einsätze, es kommt zu Explosionen. Böige Winde lassen die Feuer immer wieder auflodern.",
-      "pubDate": "2026-06-28T13:55:52+02:00",
+      "description": "In mehreren Teilen Deutschlands kämpfen Feuerwehren gegen Waldbrände. Mancherorts erschweren Kampfmittelrückstände im Boden die Einsätze, es kommt zu Explosionen. Böige Winde lassen die Feuer immer wieder auflodern.",
+      "pubDate": "2026-06-28T15:27:52+02:00",
       "bild": ""
     },
     {
@@ -53,7 +65,7 @@
     {
       "title": "Hitze-Liveblog: ++ Rettungskräfte holen Passagiere aus überhitztem Zug ++",
       "description": "Über Stunden mussten gestern Hunderte Reisende in einem Zug aushalten, der wegen eines Sturmschadens liegen geblieben war. Rettungskräfte holten Passagiere aus dem Zug. Der Deutsche Wetterdienst warnt auch heute vor extremer Hitze.",
-      "pubDate": "2026-06-28T13:59:18+02:00",
+      "pubDate": "2026-06-28T15:46:53+02:00",
       "bild": ""
     },
     {
@@ -78,18 +90,6 @@
       "title": "Tiny Forests: Kleine Wälder - große Wirkung?",
       "description": "Sogenannte Tiny Forests sollen in Städten Hitze lindern und Lebensraum schaffen, wo sonst nur Steine und Beton zu finden sind. Doch wie groß ist ihr Effekt tatsächlich? Von Jennifer Sieglar und Katharina Wilhelm.",
       "pubDate": "2026-06-28T07:55:34+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Nach der Brandkatastrophe von Crans-Montana gibt es neue Ermittlungen",
-      "description": "Nach dem verheerenden Brand im Schweizer Skiort Crans-Montana treten immer neue Details zu Tage. Inzwischen wächst die Kritik am Rettungseinsatz. Die Staatsanwaltschaft hat dazu neue Ermittlungen aufgenommen. Von S. Dodt und M. Weidmann.",
-      "pubDate": "2026-06-28T07:05:39+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Erneut gegenseitige Angriffe zwischen USA und Iran",
-      "description": "Die zweite Nacht in Folge haben die USA Ziele in Iran angegriffen. Grund sei ein erneuter iranischer Angriff auf einen Frachter gewesen. Teheran griff im Gegenzug US-Militärstützpunkte in Bahrain und Kuwait an. Die Spannungen am Golf nehmen zu.",
-      "pubDate": "2026-06-28T10:18:44+02:00",
       "bild": ""
     }
   ],
