@@ -1,7 +1,25 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "28.06.2026, 08:25 Uhr (UTC)",
+  "aktualisiert": "28.06.2026, 10:39 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Nach dem Erdbeben: Die unermüdlichen Helfer von Venezuela",
+      "description": "Nach den Erdbeben gibt es in Venezuela viel Hilfsbereitschaft - während viele die Abwesenheit der Regierung beklagen. Freiwillige verteilen Lebensmittel, versorgen Verletzte und suchen Überlebende. Von Anne Demmer.",
+      "pubDate": "2026-06-28T12:35:35+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Grüne fordern Sofortprogramm für Klimaanlagen",
+      "description": "Die Grünen drängen auf einen Aktionsplan gegen Hitze. Fraktionschefin Dröge warnt vor mehr lebensgefährlichen Hitzetagen. Helfen sollen auch Klimaanlagen in öffentlichen Einrichtungen. Von Dietrich Karl Mäurer.",
+      "pubDate": "2026-06-28T11:42:31+02:00",
+      "bild": ""
+    },
+    {
+      "title": "250 Jahre Unabhängigkeit der USA: Meine Freiheit, deine Freiheit",
+      "description": "Freiheit steht im Zentrum der Feiern zum 250. Jahrestag der Unabhängigkeit der USA. Doch verstehen die Menschen auf dem Land darunter dasselbe wie Bürger in den Städten? Und was bedeutet das für indigene US-Amerikaner? Von S. Schmidt.",
+      "pubDate": "2026-06-28T11:17:37+02:00",
+      "bild": ""
+    },
     {
       "title": "Trotz Grillsaison: schlechte Stimmung bei den Schweinehaltern",
       "description": "Ein Sommer mit Fußball-WM - das ist klassische Grillsaison. Trotzdem verdienen deutsche Schweinehalter gerade kein Geld. Wie kann das sein? Von Birgit Stamerjohanns.",
@@ -10,14 +28,14 @@
     },
     {
       "title": "Neuer nächtlicher Temperaturrekord gemessen",
-      "description": "Erneut gibt es einen Höchstwert bei den Temperaturen: In einem sächsischen Ort sanken sie in der Nacht nicht unter 29,4 Grad. Die bis dahin heißeste Nacht hatte es 2003 gegeben - der Wert liegt 2,2 Grad unter dem aktuellen.",
+      "description": "Erneut gibt es einen Höchstwert bei den Temperaturen: In einem sächsischen Ort sanken sie in der Nacht nicht unter 29,4 Grad. Die bis dahin heißeste Nacht hatte es 2003 gegeben - der Wert lag 2,2 Grad unter dem aktuellen.",
       "pubDate": "2026-06-28T10:20:39+02:00",
       "bild": ""
     },
     {
-      "title": "Hitze-Liveblog: ++ Anstieg der Todesfälle in Frankreich ++",
-      "description": "Frankreich meldet einen Anstieg der Todesfälle während der Hitzewelle. Der Deutsche Wetterdienst warnt auch heute vor extremer Hitze, vor allem im Osten Deutschlands soll es heiß werden.",
-      "pubDate": "2026-06-28T10:23:40+02:00",
+      "title": "Hitze-Liveblog: ++ Rettungskräfte holen Passagiere aus überhitztem Zug ++",
+      "description": "Über Stunden mussten gestern Hunderte Reisende in einem Zug aushalten, der wegen eines Sturmschadens liegen geblieben war. Rettungskräfte holten Passagiere aus dem Zug. Der Deutsche Wetterdienst warnt auch heute vor extremer Hitze.",
+      "pubDate": "2026-06-28T12:37:14+02:00",
       "bild": ""
     },
     {
@@ -72,24 +90,6 @@
       "title": "Kuba kündigt Wirtschaftsreformen an - hilft das den Menschen?",
       "description": "Marode Infrastruktur, Stromausfälle und Versorgungsmängel bestimmen den Alltag in Kuba. Nun hat die Führung in Havanna eine wirtschaftspolitische Kehrtwende angekündigt - und eine Öffnung für Investoren. Doch kann das funktionieren? Von Jenny Barke.",
       "pubDate": "2026-06-27T20:08:52+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Zehntausende feiern bei Pride-Parade in Budapest - ohne Verbot",
-      "description": "Zehntausende haben in Budapest bei der Pride-Parade gefeiert. Es war der erste Umzug seit der Abwahl von Regierungschef Orban, der die Parade untersagt hatte. An die neue Regierung richteten die Teilnehmer Appelle.",
-      "pubDate": "2026-06-27T19:57:25+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ukraine greift Fabrik mit \"Flamingo\"-Marschflugkörpern an",
-      "description": "In der russischen Millionenstadt Wolgograd sind ukrainische Flugkörper eingeschlagen. Nach Angaben des ukrainischen Präsidenten Selenskyj wurde ein Rüstungsbetrieb mit \"Flamingo\"-Marschflugkörpern getroffen.",
-      "pubDate": "2026-06-27T17:41:38+02:00",
-      "bild": ""
-    },
-    {
-      "title": "DWD: Hitzerekord in Deutschland erneut gebrochen",
-      "description": "Am zweiten Tag in Folge ist in Deutschland laut vorläufigen Daten des DWD ein neuer Temperaturhöchstwert gemessen worden. An der Wetterstation Möckern-Drewitz in Sachsen-Anhalt war es 41,5 Grad heiß.",
-      "pubDate": "2026-06-27T17:58:37+02:00",
       "bild": ""
     }
   ],
