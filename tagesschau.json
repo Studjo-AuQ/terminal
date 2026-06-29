@@ -1,7 +1,37 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "29.06.2026, 00:14 Uhr (UTC)",
+  "aktualisiert": "29.06.2026, 05:10 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Forschende warnen vor unkritischer KI-Nutzung",
+      "description": "Autonomes Fahren, Bildbearbeitung, Auswertungen medizinischer Untersuchungen - überall boomt KI. Sie trifft Entscheidungen und hilft als netter Chatbot. Forschende warnen vor einem unkritischen Einsatz. Von M. Lang und V. Weber.",
+      "pubDate": "2026-06-29T06:33:34+02:00",
+      "bild": ""
+    },
+    {
+      "title": "11KM-Podcast: Weltraummacht Deutschland? Streit um Zuständigkeiten",
+      "description": "Deutschland soll Weltraummacht werden und pumpt Milliarden in die Aufrüstung im All. Doch die Bundeswehr streitet intern um Zuständigkeiten. 11KM fragt: Wer schützt uns im Weltraum?",
+      "pubDate": "2026-06-29T06:31:55+02:00",
+      "bild": ""
+    },
+    {
+      "title": "SpaceX im MSCI World: Was ETF-Anleger wissen müssen",
+      "description": "Die SpaceX-Aktie wird heute in den MSCI World aufgenommen. Damit werden viele ETF-Sparer indirekt zu SpaceX-Aktionären. Welche Risiken damit verbunden sind - und worauf Anleger achten sollten. Von Angela Göpfert.",
+      "pubDate": "2026-06-29T06:01:05+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Maschinengewehre auf zivilem russischen Tanker",
+      "description": "Estnische Grenzschützer haben in der Ostsee erstmals ein russisches LNG-Schiff entdeckt, das mit Maschinengewehren bewaffnet ist. Experten werten das als Reaktion Russlands auf ukrainische Drohnenangriffe.",
+      "pubDate": "2026-06-29T06:00:44+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Israels Armee zerstört Tunnel im Südlibanon",
+      "description": "Israel hat die Zerstörung eines unterirdischen Tunnels der Hisbollah-Miliz im Südlibanon gemeldet. Die Anlage war laut Armee mit Waffen bestückt und habe als Ausgangspunkt für Angriffe gedient.",
+      "pubDate": "2026-06-29T03:40:01+02:00",
+      "bild": ""
+    },
     {
       "title": "Treibstoffmangel: Putin räumt Versorgungsprobleme ein",
       "description": "Die Ukraine verstärkte zuletzt ihre Angriffe gegen die russische Erdölindustrie - und bringt Russland damit in Bedrängnis: Präsident Putin rief wegen Versorgungsproblemen beim Treibstoff zur Krisensitzung.",
@@ -9,8 +39,8 @@
       "bild": ""
     },
     {
-      "title": "Hitzewelle in Deutschland: Wie Pflegeheime mit der Hitze umgehen",
-      "description": "Die hohen Temperaturen sind besonders für alte Menschen anstrengend. Pflegeheime und Senioren begegnen der Hitzewelle mit Eis, Melonen, Lüften - und Hitzepaten. Von P. Wundersee und J.-O. Niermann",
+      "title": "Wie Pflegeheime und Senioren mit Hitze umgehen",
+      "description": "Hohe Temperaturen sind besonders für alte Menschen anstrengend. Pflegeheime und Senioren begegnen Hitze mit Eis, Melonen, Lüften - und Hitzepaten. Von P. Wundersee und J.-O. Niermann",
       "pubDate": "2026-06-28T23:58:12+02:00",
       "bild": ""
     },
@@ -28,8 +58,8 @@
     },
     {
       "title": "USA-Iran-Konflikt verschärft sich trotz des Rahmenabkommens wieder",
-      "description": "Knapp zwei Wochen nach Unterzeichnung eines Rahmenabkommens eskaliert der Konflikt zwischen den USA und Iran weiter. Während die USA als Reaktion auf die Attacke auf ein Frachtschiff Iran angriff, beschoss Iran Ziele in Kuwait und Bahrain.",
-      "pubDate": "2026-06-28T19:05:40+02:00",
+      "description": "Knapp zwei Wochen nach Unterzeichnung eines Rahmenabkommens eskaliert der Konflikt zwischen den USA und Iran erneut. Trotz gegenseitiger Beschüsse sollen die Friedensgespräche aber fortgesetzt werden.",
+      "pubDate": "2026-06-29T04:22:18+02:00",
       "bild": ""
     },
     {
@@ -60,36 +90,6 @@
       "title": "Feuerwehren im Großeinsatz: Kampf gegen Waldbrände - und die Munition im Boden",
       "description": "In mehreren Teilen Deutschlands kämpfen Feuerwehren gegen Waldbrände. Mancherorts erschweren Kampfmittelrückstände im Boden die Einsätze, es kommt zu Explosionen. In Rheinland-Pfalz musste deshalb ein ganzer Ort geräumt werden.",
       "pubDate": "2026-06-28T18:56:27+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Einwanderungsbehörde: Trump nominiert neuen ICE-Chef",
-      "description": "Die brachialen Einsätze der Einwanderungsbehörde ICE haben viele Menschen in den USA aufgewühlt. Jetzt soll die Behörde einen neuen Direktor bekommen. US-Präsident Trump hat einen ehemaligen Polizisten nominiert.",
-      "pubDate": "2026-06-28T12:56:44+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Verkauf von Glasfaserverträgen: Fragwürdige Methoden an der Haustür",
-      "description": "Bislang nutzen nur wenige Internetkunden die teuren Glasfaseranschlüsse. Verbraucher beklagen aggressive Versuche, die Verträge dafür zu verkaufen. Die Verbraucherzentralen raten zur Vorsicht. Von F. Siegel und T. Kukral.",
-      "pubDate": "2026-06-28T12:47:41+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Nach dem Erdbeben: Die unermüdlichen Helfer von Venezuela",
-      "description": "Nach den Erdbeben gibt es in Venezuela viel Hilfsbereitschaft - während viele die Abwesenheit der Regierung beklagen. Freiwillige verteilen Lebensmittel, versorgen Verletzte und suchen Überlebende. Von Anne Demmer.",
-      "pubDate": "2026-06-28T12:35:35+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Grüne fordern Sofortprogramm für Klimaanlagen",
-      "description": "Die Grünen drängen auf einen Aktionsplan gegen Hitze. Fraktionschefin Dröge warnt vor mehr lebensgefährlichen Hitzetagen. Helfen sollen auch Klimaanlagen in öffentlichen Einrichtungen. Von Dietrich Karl Mäurer.",
-      "pubDate": "2026-06-28T11:42:31+02:00",
-      "bild": ""
-    },
-    {
-      "title": "250 Jahre Unabhängigkeit der USA: Meine Freiheit, deine Freiheit",
-      "description": "Freiheit steht im Zentrum der Feiern zum 250. Jahrestag der Unabhängigkeit der USA. Doch verstehen die Menschen auf dem Land darunter dasselbe wie Bürger in den Städten? Und was bedeutet das für indigene US-Amerikaner? Von S. Schmidt.",
-      "pubDate": "2026-06-28T11:17:37+02:00",
       "bild": ""
     }
   ],
