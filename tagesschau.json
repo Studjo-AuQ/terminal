@@ -1,7 +1,55 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "29.06.2026, 05:10 Uhr (UTC)",
+  "aktualisiert": "29.06.2026, 10:07 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Hoffnung und Verzweiflung im Erdbebengebiet von Venezuela",
+      "description": "Nach zwei verheerenden Erdbeben in Venezuela sind internationale Helfer weiter auf der Suche nach Überlebenden. In den Trümmern herrscht Chaos - doch die Bevölkerung gibt die Hoffnung nicht auf. Von Anne Demmer.",
+      "pubDate": "2026-06-29T11:57:12+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Badeunfälle: DLRG meldet mindestens 26 Tote und Vermisste",
+      "description": "Laut DLRG hat es am Wochenende zahlreiche Badeunfälle mit tödlichem Ausgang gegeben. Vor allem Männer überschätzten sich bei der Suche nach Abkühlung im Wasser.",
+      "pubDate": "2026-06-29T11:39:49+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wie Russland mit Drohnen Zivilisten in der Ukraine jagt",
+      "description": "Russland terrorisiert die Zivilbevölkerung in der Ukraine mit verschiedenen Methoden. Eine ist besonders perfide: Drohnenpiloten machen Jagd auf einzelne Menschen. Das Beispiel Saporischschja. Von F. Kellermann",
+      "pubDate": "2026-06-29T11:29:45+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX steigt trotz Unsicherheit im Nahen Osten",
+      "description": "Die Lage im Nahen Osten, die Bewertungen im Tech-Sektor und die Geldpolitik: Diese Themen müssen die Anleger im Blick behalten. Aktuell überwiegt der Optimismus, der DAX legt zum Start leicht zu.",
+      "pubDate": "2026-06-29T10:43:17+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Besserer Hitzeschutz: Nach der Hitzewelle kommt die Diskussion",
+      "description": "Nach einer Woche mit Hitzerekorden wird es heute erst mal kühler. Die politische Debatte um besseren Hitzeschutz in der Zukunft hat aber gerade erst begonnen. Von Birthe Sönnichsen.",
+      "pubDate": "2026-06-29T10:10:44+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Verfassungsschutz: Folgen einer möglichen AfD-Landesregierung",
+      "description": "Angenommen, die AfD kommt in Sachsen-Anhalt an die Macht: Welche Auswirkungen hätte das auf den Verfassungsschutz und für andere Länder? Schließlich ist der Informationsaustausch intensiv. Von Claudia Kornmeier.",
+      "pubDate": "2026-06-29T09:09:25+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Privatbanken: Was folgt aus dem Fall Berenberg?",
+      "description": "Die Finanzaufsicht BaFin hat die gesamte Geschäftsführung der Privatbank Berenberg entmachtet - ein fast einzigartiger Vorgang. Was über den Fall bekannt ist. Von Sebastian Schreiber.",
+      "pubDate": "2026-06-29T08:56:48+02:00",
+      "bild": ""
+    },
+    {
+      "title": "WHO: Hantavirus-Ausbruch neigt sich Ende zu",
+      "description": "Mitte Mai wurden mehrere Fälle des Hantavirus bei Passagieren einer Kreuzfahrt nachgewiesen. Nun gibt die Weltgesundheitsorganisation Entwarnung, das Virus hat sich nicht weiter ausgebreitet.",
+      "pubDate": "2026-06-29T07:16:57+02:00",
+      "bild": ""
+    },
     {
       "title": "Forschende warnen vor unkritischer KI-Nutzung",
       "description": "Autonomes Fahren, Bildbearbeitung, Auswertungen medizinischer Untersuchungen - überall boomt KI. Sie trifft Entscheidungen und hilft als netter Chatbot. Forschende warnen vor einem unkritischen Einsatz. Von M. Lang und V. Weber.",
@@ -42,54 +90,6 @@
       "title": "Wie Pflegeheime und Senioren mit Hitze umgehen",
       "description": "Hohe Temperaturen sind besonders für alte Menschen anstrengend. Pflegeheime und Senioren begegnen Hitze mit Eis, Melonen, Lüften - und Hitzepaten. Von P. Wundersee und J.-O. Niermann",
       "pubDate": "2026-06-28T23:58:12+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Suche nach Überlebenden: Die Wut auf die Regierung in Venezuela wächst",
-      "description": "Noch immer werden in Venezuela Überlebende aus den Trümmern geborgen. Die Hilfe aus dem Ausland ist zwar angelaufen, aber viele Bürger organisieren sich selbst - denn sie fühlen sich von der Regierung allein gelassen. Von J. Barke.",
-      "pubDate": "2026-06-28T21:46:10+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ugandas Armeechef und Präsidentensohn schließt Medien",
-      "description": "Der ugandische Armeechef und Präsidentensohn Kainerugaba hat den Betrieb verschiedener Medien gestoppt. Der konkrete Grund ist unklar. Jedoch nimmt die politische Repression in Uganda allgemein immer mehr zu - vor allem durch Kainerugaba.",
-      "pubDate": "2026-06-28T20:19:01+02:00",
-      "bild": ""
-    },
-    {
-      "title": "USA-Iran-Konflikt verschärft sich trotz des Rahmenabkommens wieder",
-      "description": "Knapp zwei Wochen nach Unterzeichnung eines Rahmenabkommens eskaliert der Konflikt zwischen den USA und Iran erneut. Trotz gegenseitiger Beschüsse sollen die Friedensgespräche aber fortgesetzt werden.",
-      "pubDate": "2026-06-29T04:22:18+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Parteichefs der Koalition beraten zu Reformen im Kanzleramt",
-      "description": "Vor dem Koalitionsausschuss am Mittwoch haben die Parteispitzen im Kanzleramt über strittige Punkte der anstehenden Reformprojekte beraten. Bei der Reichensteuer zeigte sich CDU-Generalsekretär Linnemann im Bericht aus Berlin kompromissbereit.",
-      "pubDate": "2026-06-29T01:05:21+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Erneuter Temperaturhöchstwert in Deutschland",
-      "description": "In Deutschland ist den dritten Tag in Folge ein neuer Temperaturhöchstwert gemessen worden. Der Deutsche Wetterdienst (DWD) meldete einen vorläufigen Wert von 41,7 Grad im brandenburgischen Neißemünde-Coschen an der polnischen Grenze.",
-      "pubDate": "2026-06-28T17:06:00+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Elf Tote bei Absturz von Kleinflugzeug in Frankreich",
-      "description": "In der Nähe der französischen Stadt Nancy ist ein Kleinflugzeug abgestürzt. Alle elf Insassen sind tot. An Bord war eine Gruppe von Fallschirmspringern. Die Maschine vom Typ \"Pilatus\" war in Deutschland registriert.",
-      "pubDate": "2026-06-28T15:16:19+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Deutsche Autorin Lena Schätte gewinnt Bachmann-Preis",
-      "description": "Die Deutsche Lena Schätte erhält den diesjährigen Ingeborg-Bachmann-Preis. Ihr im Wettlesen vorgetragener Text über die Freundschaft zweier übergewichtiger Schülerinnen sei von \"existenzieller Wucht\", hieß es in der Laudatio.",
-      "pubDate": "2026-06-28T14:45:17+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Feuerwehren im Großeinsatz: Kampf gegen Waldbrände - und die Munition im Boden",
-      "description": "In mehreren Teilen Deutschlands kämpfen Feuerwehren gegen Waldbrände. Mancherorts erschweren Kampfmittelrückstände im Boden die Einsätze, es kommt zu Explosionen. In Rheinland-Pfalz musste deshalb ein ganzer Ort geräumt werden.",
-      "pubDate": "2026-06-28T18:56:27+02:00",
       "bild": ""
     }
   ],
