@@ -1,34 +1,34 @@
 {
-  "aktualisiert": "28.06.2026, 22:57 Uhr",
+  "aktualisiert": "29.06.2026, 00:09 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
         "temp": 21,
-        "gefuehlt": 24,
+        "gefuehlt": 22,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 6,
-        "luftfeuchte": 86,
+        "wind": 10,
+        "luftfeuchte": 82,
         "niederschlag": 0.0
       },
       "tage": [
         {
           "wochentag": "Montag",
           "datum": "29.06.",
-          "emoji": "☁️",
-          "zustand": "Bedeckt",
-          "max": 25,
+          "emoji": "🌧️",
+          "zustand": "Regen",
+          "max": 26,
           "min": 19,
-          "niederschlag": 0.0
+          "niederschlag": 4.1
         },
         {
           "wochentag": "Dienstag",
           "datum": "30.06.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 26,
-          "min": 17,
+          "max": 27,
+          "min": 18,
           "niederschlag": 0.0
         },
         {
@@ -64,11 +64,11 @@
       "stadt": "Werdohl",
       "aktuell": {
         "temp": 22,
-        "gefuehlt": 25,
+        "gefuehlt": 24,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 6,
-        "luftfeuchte": 81,
+        "wind": 5,
+        "luftfeuchte": 83,
         "niederschlag": 0.0
       },
       "tage": [
@@ -126,19 +126,19 @@
         "gefuehlt": 23,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 8,
-        "luftfeuchte": 90,
+        "wind": 11,
+        "luftfeuchte": 89,
         "niederschlag": 0.0
       },
       "tage": [
         {
           "wochentag": "Montag",
           "datum": "29.06.",
-          "emoji": "☁️",
-          "zustand": "Bedeckt",
+          "emoji": "🌧️",
+          "zustand": "Starker Regen",
           "max": 25,
-          "min": 19,
-          "niederschlag": 0.0
+          "min": 18,
+          "niederschlag": 10.7
         },
         {
           "wochentag": "Dienstag",
@@ -181,12 +181,12 @@
     {
       "stadt": "Bochum",
       "aktuell": {
-        "temp": 26,
-        "gefuehlt": 27,
-        "zustand": "Bedeckt",
-        "emoji": "☁️",
-        "wind": 12,
-        "luftfeuchte": 61,
+        "temp": 23,
+        "gefuehlt": 25,
+        "zustand": "Überwiegend klar",
+        "emoji": "🌤️",
+        "wind": 8,
+        "luftfeuchte": 69,
         "niederschlag": 0.0
       },
       "tage": [
@@ -204,7 +204,7 @@
           "datum": "30.06.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 30,
+          "max": 31,
           "min": 20,
           "niederschlag": 0.0
         },
@@ -214,7 +214,7 @@
           "emoji": "🌦️",
           "zustand": "Leichter Nieselregen",
           "max": 27,
-          "min": 20,
+          "min": 21,
           "niederschlag": 0.7
         },
         {
