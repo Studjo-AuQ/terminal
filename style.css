@@ -112,6 +112,27 @@ h1 {
     border-bottom: 4px solid transparent; 
 }
 
+.kachel {
+  position: relative;
+}
+
+a[href*="johanneswerk.int"]::after {
+  content: "🔒 Intern";
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: #b61f29;
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 5px;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  pointer-events: none; /* Badge blockiert den Klick nicht */
+}
+
+
 /* --- Pastellfarben (1 bis 20) - Komplett ohne !important --- */
 .tile-color-1  { --tile-bg: var(--pastel-1);  --tile-hover-color: #0288d1; }
 .tile-color-2  { --tile-bg: var(--pastel-2);  --tile-hover-color: #558b2f; }
