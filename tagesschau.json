@@ -1,7 +1,79 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "30.06.2026, 13:21 Uhr (UTC)",
+  "aktualisiert": "30.06.2026, 16:02 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Wagenknecht und Weidel? Das BSW und die Annäherung an die AfD",
+      "description": "Die Zeiten, in denen das Bündnis Sahra Wagenknecht ein wichtiger neuer Player auf der bundespolitischen Ebene war, scheinen vorbei. Das will das BSW jetzt offenbar mit einem Angebot an die AfD ändern. Von Kerstin Palzer.",
+      "pubDate": "2026-06-30T17:32:41+02:00",
+      "bild": ""
+    },
+    {
+      "title": "London erhöht Verteidigungsetat um 15 Milliarden Pfund",
+      "description": "Seit Monaten gibt es in der britischen Regierung Streit um den Haushalt für die Verteidigung. Nun soll er erhöht werden. Doch Kritiker halten die Investitionen weiterhin für zu gering, um das Land kriegstüchtig zu machen.",
+      "pubDate": "2026-06-30T17:24:22+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Grenzkontrollen in Bulgarien: Prinzip \"Kohle, durchwinken, Kohle, durchwinken\"",
+      "description": "Sorgt die organisierte Kriminalität dafür, dass Lebensmitteltransporte am wichtigsten Grenzübergang von Bulgarien zur Türkei nicht mehr auf schadhafte Ladung kontrolliert werden? Ein Insider hat nun ausgepackt. Von O. Soos.",
+      "pubDate": "2026-06-30T17:22:01+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Sozialdemokrat Sinkevicius neuer Regierungschef in Litauen",
+      "description": "Litauen hat einen neuen Regierungschef. Präsident Nauseda ernannte den Sozialdemokraten Sinkevicius zum Ministerpräsidenten, zuvor war er vom Parlament gewählt worden. Sinkevicius versprach Stabilität in \"schwierigen Zeiten\".",
+      "pubDate": "2026-06-30T17:50:12+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Ex-Kanzler Scholz hat einen neuen Job",
+      "description": "Olaf Scholz hat eine neue Aufgabe. Der Ex-Kanzler übernimmt den Vorsitz der neuen Nord-Süd-Kommission. Das Gremium wurde von der Bundesregierung einberufen und soll die internationale Entwicklungszusammenarbeit verbessern.",
+      "pubDate": "2026-06-30T16:51:34+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wo Stellen wegfallen - und wo neue entstehen",
+      "description": "Vor allem in der Industrie streichen deutsche Unternehmen derzeit viele Arbeitsplätze. Der Trend könnte sich in den kommenden Jahren fortsetzen. Anderswo entstehen neue Jobs.",
+      "pubDate": "2026-06-30T16:34:23+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Venezuela nach den Beben: \"Kinder brauchen vor allem Sicherheit\"",
+      "description": "Als Folge der verheerenden Erdbeben in Venezuela sind auch Tausende Kinder betroffen. Viele haben ihre Familie oder Teile davon verloren, erklärt der stellvertretende Leiter von UNICEF in Venezuela, Gabriel Vockel.",
+      "pubDate": "2026-06-30T16:30:33+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Studie: HPV-Impfung drückt Krebs-Sterberisiko auf nahezu null",
+      "description": "Eine Impfung gegen Humane Papillomviren (HPV) kann Krebserkrankungen und Todesfälle effektiv verhindern - das zeigt eine aktuelle, englische Studie. Doch in Deutschland wird sie noch zu wenig genutzt. Von Andreas Kegel.",
+      "pubDate": "2026-06-30T16:07:58+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Bundesnetzagentur: Bahn muss Platz für Wettbewerber schaffen",
+      "description": "Die Bundesnetzagentur will den Fernverkehr aufmischen. Die Deutsche Bahn soll künftig mehr Platz für Wettbewerber machen. Fahrgäste sollen profitieren - durch niedrigere Ticketpreise. Die Bahn warnt vor den Folgen.",
+      "pubDate": "2026-06-30T16:01:43+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Spritpreise vor Ende des Tankrabatts deutlich gestiegen",
+      "description": "An vielen Tankstellen haben sich heute Schlangen gebildet. Das Ziel der Autofahrer: ein letztes Mal günstiger tanken, bevor der Tankrabatt um Mitternacht endet. Bereits am Mittag stiegen vielerorts die Preise.",
+      "pubDate": "2026-06-30T15:51:26+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Venezuela: In der Katastrophe bricht die Wut durch",
+      "description": "Die Wut in der Bevölkerung auf die Regierung in Venezuela wächst. Staat und Militär seien untätig, so die Kritik. Nun hat Oppositionsführerin und Friedensnobelpreisträgerin Machado ihre Rückkehr angekündigt.Von Jenny Barke.",
+      "pubDate": "2026-06-30T15:28:42+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Inflationsrate sinkt im Juni auf 2,3 Prozent",
+      "description": "Die Inflation in Deutschland hat an Tempo verloren. Im Juni lagen die Verbraucherpreise um 2,3 Prozent über dem Niveau des Vorjahresmonats - nach 2,6 Prozent im Mai, wie das Statistische Bundesamt mitteilte.",
+      "pubDate": "2026-06-30T15:27:48+02:00",
+      "bild": ""
+    },
     {
       "title": "Nach WM-Aus der Deutschen: Adidas-Aktie knickt ein",
       "description": "Das WM-Aus der deutschen Fußball-Nationalmannschaft hat auch im DAX einen direkten Verlierer. Die Adidas-Aktie gab zunächst kräftig nach, konnte sich im Verlauf aber in einem starken Gesamtmarkt deutlich erholen.",
@@ -18,78 +90,6 @@
       "title": "UBS-Bericht zu Privatvermögen: Die Reichen sind noch reicher geworden",
       "description": "Weltweit wachsen die Privatvermögen - vor allem die der ohnehin schon Reichen. Das zeigt ein Bericht der Bank UBS. In Deutschland besaßen die reichsten 3,9 Prozent im vergangenen Jahr fast die Hälfte des Gesamtvermögens.",
       "pubDate": "2026-06-30T14:30:36+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Deutlich mehr Waldbrände in Deutschland in 2025",
-      "description": "Rund 2.600 Hektar Wald sind im vergangenen Jahr in Deutschland verbrannt - das sind etwa 3.676 Fußballfelder. Es gab mehr als doppelt so viele Waldbrände wie im Jahr zuvor. Grund war das besonders trockene Frühjahr.",
-      "pubDate": "2026-06-30T14:27:10+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Förderprogramm für Umbau von Büros zu Wohnungen startet",
-      "description": "Wie wäre es mit einem Umzug ins Büro? Genau dafür will die Bundesregierung Anreize schaffen und den Umbau von Gewerbeflächen zu Wohnraum fördern. Ab morgen können die Zuschüsse beantragt werden.",
-      "pubDate": "2026-06-30T13:42:51+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Alphabet-Aktie jetzt im US-Leitindex Dow Jones",
-      "description": "Mit der Alphabet-Aktie kommt ein weiteres Tech-Schwergewicht in den 30 Werte umfassenden amerikanischen Leitindex Dow Jones. Damit stellt sich die Frage: Bildet der überhaupt noch den Zustand der US-Wirtschaft ab?",
-      "pubDate": "2026-06-30T13:32:21+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Paraguay ruft nach WM-Erfolg spontan nationalen Feiertag aus",
-      "description": "Nach dem Fußball-Triumph über Deutschland kommt Paraguay aus dem Jubeln nicht mehr heraus. Die Regierung hat den Dienstag sogar spontan zum Nationalfeiertag erklärt: Das ganze Land soll feiern, so Präsident Peña.",
-      "pubDate": "2026-06-30T13:16:17+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Australien besorgt über Vogelgrippe-Ausbruch",
-      "description": "Australien war lange von dem Vogelgrippe-Virus verschont - vor Kurzem aber wurden auch dort erkrankte Tiere gefunden. Jetzt sorgen sich viele im Land um die einzigartige Tierwelt. Von Ines Burckhardt",
-      "pubDate": "2026-06-30T12:47:23+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktmacht der US-Techkonzerne: Ist ein Leben ohne Google möglich?",
-      "description": "Google ist aus dem Alltag kaum mehr wegzudenken. Alternative Dienste zur Internetsuche oder Navigation sind nur wenig bekannt. Die Folgen für Händler, Plattformbetreiber und Nutzer sind gravierend. Von Jörg Hommer.",
-      "pubDate": "2026-06-30T12:35:10+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Außenminister Wadephul beginnt mehrtägigen Südamerika-Besuch",
-      "description": "Außenminister Wadephul beginnt heute einen mehrtägigen Besuch in Südamerika. Das Ziel: stabile Partner für neue Abkommen finden. Denn während Europa noch Absichtserklärungen unterschreibt, ist China längst da. Von Anne Herrberg.",
-      "pubDate": "2026-06-30T12:07:39+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Anleger fassen Mut vor neuen Inflationszahlen",
-      "description": "Vor den wichtigen deutschen Inflationsdaten legt der DAX solide zu, die Verbraucherpreise in Frankreich steigen weniger stark als gedacht. Aus dem Nahen Osten bleiben bislang neue negative Impulse aus.",
-      "pubDate": "2026-06-30T10:39:46+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Verfassungsschutz: Zahl extremistischer Personen so hoch wie nie",
-      "description": "In seinem Jahresbericht beschreibt der Verfassungsschutz, wo er Gefahren durch Extremisten sieht. Neue Beobachtungsobjekte sind nicht hinzugekommen. Allerdings ist das extremistische Personenpotenzial so groß wie nie. Von Claudia Kornmeier.",
-      "pubDate": "2026-06-30T12:45:59+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Fujimori gewinnt Präsidentenwahl in Peru knapp",
-      "description": "Die Stimmenauszählung war langwierig, das Ergebnis ist knapp. Im vierten Anlauf hat Keiko Fujimori die Präsidentenwahl in Peru gewonnen. Nur wenige Stimmen trennen sie vom Linkspolitiker Sánchez.",
-      "pubDate": "2026-06-30T09:28:58+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Drei Verletzte durch Explosion im Fürstentum Monaco",
-      "description": "In einem Wohnhaus im Fürstentum Monaco ist gestern Abend ein Sprengsatz gezündet worden. Drei Menschen wurden dabei verletzt. Medienberichten zufolge soll ein Oligarch aus der Ukraine das Ziel gewesen sein.",
-      "pubDate": "2026-06-30T12:54:03+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Singapur: KI-Kurse fürs Volk",
-      "description": "Singapur hat ein ehrgeiziges Ziel: Es will der KI-Hub für die gesamte Region werden. Auch deshalb macht Singapur mit staatlich subventionierten Kursen die breite Bevölkerung fit. Von Jennifer Johnston.",
-      "pubDate": "2026-06-30T06:58:38+02:00",
       "bild": ""
     }
   ],
