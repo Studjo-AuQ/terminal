@@ -1,7 +1,37 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "30.06.2026, 04:19 Uhr (UTC)",
+  "aktualisiert": "30.06.2026, 08:05 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Verfassungsschutz: Zahl extremistischer Personen so hoch wie nie",
+      "description": "In seinem Jahresbericht beschreibt der Verfassungsschutz, wo er Gefahren durch Extremisten sieht. Neue Beobachtungsobjekte sind nicht hinzugekommen. Allerdings ist das extremistische Personenpotenzial so hoch wie nie. Von Claudia Kornmeier.",
+      "pubDate": "2026-06-30T10:00:19+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Fujimori gewinnt Präsidentenwahl in Peru knapp",
+      "description": "Die Stimmenauszählung war langwierig, das Ergebnis ist knapp. Im vierten Anlauf hat Keiko Fujimori die Präsidentenwahl in Peru gewonnen. Nur wenige Stimmen trennen sie vom Linkspolitiker Sánchez.",
+      "pubDate": "2026-06-30T09:28:58+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Drei Verletzte durch Explosion im Fürstentum Monaco",
+      "description": "In einem Wohnhaus im Fürstentum Monaco ist gestern Abend offenbar ein Sprengsatz gezündet worden. Drei Menschen wurden verletzt, zwei von ihnen lebensgefährlich - darunter ist Berichten zufolge ein ukrainischer Oligarch.",
+      "pubDate": "2026-06-30T07:48:11+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: Starke Vorgaben dürften DAX anschieben",
+      "description": "Der DAX könnte heute zum Handelsstart einen Erholungsversuch unternehmen - die Vorgaben aus Asien und den USA fallen stark aus. Der wichtigste Termin des Tages werden die deutschen Inflationsdaten sein.",
+      "pubDate": "2026-06-30T07:36:54+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Singapur: KI-Kurse fürs Volk",
+      "description": "Singapur hat ein ehrgeiziges Ziel: Es will der KI-Hub für die gesamte Region werden. Auch deshalb macht Singapur mit staatlich subventionierten Kursen die breite Bevölkerung fit. Von Jennifer Johnston.",
+      "pubDate": "2026-06-30T06:58:38+02:00",
+      "bild": ""
+    },
     {
       "title": "Ultimatum an Migranten: Südafrika hält den Atem an",
       "description": "Anti-Migrations-Gruppen haben illegalen Zuwanderern eine Frist gesetzt: Spätestens heute sollen sie Südafrika verlassen. Zugleich wollen sie das Land in den Stillstand versetzen. Kommt es erneut zu Gewalt? Von S. Ueberbach.",
@@ -10,7 +40,7 @@
     },
     {
       "title": "Setzen USA und Iran Gespräche fort?",
-      "description": "Trotz gegenseitiger Angriffe in den letzten Tagen sollen die Gespräche zwischen den USA und Iran offenbar wie geplant stattfinden. Laut US-Präsident Trump gibt es heute ein Treffen in Doha. Darüber, wer mit wem spricht, gibt es widersprüchliche Angaben. Von M. Behrendt.",
+      "description": "Trotz der jüngsten gegenseitigen Angriffe sollen die Gespräche zwischen den USA und Iran offenbar wie geplant stattfinden. Laut US-Präsident Trump gibt es heute ein Treffen in Doha. Unklar ist, wer mit wem spricht. Von M. Behrendt.",
       "pubDate": "2026-06-30T03:44:25+02:00",
       "bild": ""
     },
@@ -60,36 +90,6 @@
       "title": "Griechenland zahlt Fangprämie für giftigen Hasenkopf-Kugelfisch",
       "description": "Der giftige Hasenkopf-Kugelfisch breitet sich massiv in der Ägäis aus. Nun zahlt die griechische Regierung Fischern eine Fangprämie. Denn die invasive Art bringt das Ökosystem durcheinander - und kann auch stark zubeißen.",
       "pubDate": "2026-06-29T19:20:35+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Strukturwandel: Seenlandschaft statt Braunkohlewüste in der Lausitz",
-      "description": "Fünf Seen, ein Revier, mitten in der Lausitz: Europas angeblich größte künstliche Seenlandschaft ist eröffnet. Wo einst Bergleute und Schaufelradbagger Braunkohle aus der Erde holten, sollen sich nun Urlauber erholen. Von Markus Reher.",
-      "pubDate": "2026-06-29T18:41:01+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Viel Trübsal und ein spektakulärer Kurssprung",
-      "description": "Dem deutschen Aktienmarkt mangelt es weiter an Orientierung. Der DAX startete mit leichten Verlusten in die neue Woche. Einen rekordverdächtigen Kurssprung gab es im SDAX.",
-      "pubDate": "2026-06-29T18:32:07+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Infrastruktur und Temperaturen: Wie die Hitze Schienen und Autobahnen zusetzt",
-      "description": "Defekte Klimaanlagen in Zügen, Böschungsbrände und \"blow ups\": Die Hitzewelle bringt nicht nur Menschen an ihre Grenzen. Auch auf Schiene und Autobahn gab es am Wochenende Probleme. Was hilft und wie lange dauert es? Von Frank Aischmann.",
-      "pubDate": "2026-06-29T17:56:31+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Steinmeier fordert mit scharfen Worten mehr deutsches UN-Engagement",
-      "description": "\"Rohe Machtpolitik\" und \"Nullsummendenken\" bedrohten die Vereinten Nationen, warnt Bundespräsident Steinmeier. Daher sei Deutschland stärker denn je gefordert, betonte er bei der Eröffnung einer Nachhaltigkeitskonferenz in Hamburg.",
-      "pubDate": "2026-06-29T17:11:06+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Insolvenzverfahren: Deko-Kette Depot schließt weitere 66 Filialen",
-      "description": "Der Deko-Händler Depot macht deutschlandweit Dutzende weitere Filialen dicht, betroffen sind unter anderem Geschäfte in Berlin, Hamburg, Braunschweig, Stuttgart und Erfurt. Depot hatte 2024 Insolvenz in Eigenregie angemeldet.",
-      "pubDate": "2026-06-29T16:49:11+02:00",
       "bild": ""
     }
   ],
