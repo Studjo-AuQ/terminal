@@ -1,11 +1,41 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "30.06.2026, 08:05 Uhr (UTC)",
+  "aktualisiert": "30.06.2026, 11:26 Uhr (UTC)",
   "meldungen": [
     {
+      "title": "Paraguay ruft nach WM-Erfolg spontan nationalen Feiertag aus",
+      "description": "Nach dem Fußball-Triumph über Deutschland kommt Paraguay aus dem Jubeln nicht mehr heraus. Die Regierung hat den Dienstag sogar spontan zum Nationalfeiertag erklärt: Das ganze Land soll feiern, so Präsident Peña.",
+      "pubDate": "2026-06-30T13:16:17+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Australien besorgt über Vogelgrippe-Ausbruch",
+      "description": "Australien war lange von dem Vogelgrippe-Virus verschont - vor Kurzem aber wurden auch dort erkrankte Tiere gefunden. Jetzt sorgen sich viele im Land um die einzigartige Tierwelt. Von Ines Burckhardt",
+      "pubDate": "2026-06-30T12:47:23+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktmacht der US-Techkonzerne: Ist ein Leben ohne Google möglich?",
+      "description": "Google ist aus dem Alltag kaum mehr wegzudenken. Alternative Dienste zur Internetsuche oder Navigation sind nur wenig bekannt. Die Folgen für Händler, Plattformbetreiber und Nutzer sind gravierend. Von Jörg Hommer.",
+      "pubDate": "2026-06-30T12:35:10+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Außenminister Wadephul beginnt mehrtägigen Südamerika-Besuch",
+      "description": "Außenminister Wadephul beginnt heute einen mehrtägigen Besuch in Südamerika. Das Ziel: stabile Partner für neue Abkommen finden. Denn während Europa noch Absichtserklärungen unterschreibt, ist China längst da. Von Anne Herrberg.",
+      "pubDate": "2026-06-30T12:07:39+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: Anleger fassen Mut vor neuen Inflationszahlen",
+      "description": "Vor den wichtigen deutschen Inflationsdaten legt der DAX solide zu, die Verbraucherpreise in Frankreich steigen weniger stark als gedacht. Aus dem Nahen Osten bleiben bislang neue negative Impulse aus.",
+      "pubDate": "2026-06-30T10:39:46+02:00",
+      "bild": ""
+    },
+    {
       "title": "Verfassungsschutz: Zahl extremistischer Personen so hoch wie nie",
-      "description": "In seinem Jahresbericht beschreibt der Verfassungsschutz, wo er Gefahren durch Extremisten sieht. Neue Beobachtungsobjekte sind nicht hinzugekommen. Allerdings ist das extremistische Personenpotenzial so hoch wie nie. Von Claudia Kornmeier.",
-      "pubDate": "2026-06-30T10:00:19+02:00",
+      "description": "In seinem Jahresbericht beschreibt der Verfassungsschutz, wo er Gefahren durch Extremisten sieht. Neue Beobachtungsobjekte sind nicht hinzugekommen. Allerdings ist das extremistische Personenpotenzial so groß wie nie. Von Claudia Kornmeier.",
+      "pubDate": "2026-06-30T12:45:59+02:00",
       "bild": ""
     },
     {
@@ -16,14 +46,8 @@
     },
     {
       "title": "Drei Verletzte durch Explosion im Fürstentum Monaco",
-      "description": "In einem Wohnhaus im Fürstentum Monaco ist gestern Abend offenbar ein Sprengsatz gezündet worden. Drei Menschen wurden verletzt, zwei von ihnen lebensgefährlich - darunter ist Berichten zufolge ein ukrainischer Oligarch.",
-      "pubDate": "2026-06-30T07:48:11+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Starke Vorgaben dürften DAX anschieben",
-      "description": "Der DAX könnte heute zum Handelsstart einen Erholungsversuch unternehmen - die Vorgaben aus Asien und den USA fallen stark aus. Der wichtigste Termin des Tages werden die deutschen Inflationsdaten sein.",
-      "pubDate": "2026-06-30T07:36:54+02:00",
+      "description": "In einem Wohnhaus im Fürstentum Monaco ist gestern Abend ein Sprengsatz gezündet worden. Drei Menschen wurden dabei verletzt. Medienberichten zufolge soll ein Oligarch aus der Ukraine das Ziel gewesen sein.",
+      "pubDate": "2026-06-30T12:54:03+02:00",
       "bild": ""
     },
     {
@@ -47,7 +71,7 @@
     {
       "title": "Was über die Gewalttat von Stade mit sechs Toten bekannt ist",
       "description": "In einer Mutter-Kind-Einrichtung in Stade sind sechs Mitarbeiter erschossen worden. Was weiß die Polizei über den mutmaßlichen Schützen und sein Motiv? Was ist über die Opfer bekannt?",
-      "pubDate": "2026-06-29T22:26:30+02:00",
+      "pubDate": "2026-06-30T11:26:12+02:00",
       "bild": ""
     },
     {
@@ -66,30 +90,6 @@
       "title": "Wie wichtig ist Klimaschutz für die Bundesregierung?",
       "description": "Rekordtemperaturen bis 41,7 Grad: Eine Hitzewelle hatte Deutschland fest im Griff. Doch politisch bleibt es zunächst ruhig. Welchen Stellenwert hat der Klimaschutz derzeit in der Bundesregierung? Von Katrin Aue.",
       "pubDate": "2026-06-29T20:07:44+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Präsident Trump erleidet Niederlagen vor Supreme Court",
-      "description": "Eine Entscheidung des Supreme Court hat US-Präsident Trump in seinem Kampf um ein schärferes Wahlrecht Grenzen gesetzt. Und das war nicht die einzige Niederlage, die er vor dem obersten Gericht hinnehmen musste.",
-      "pubDate": "2026-06-29T19:58:02+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Sechs Tote in Stade: Ermittler vermuten Sorgerechtsstreit als Motiv",
-      "description": "Nach den Schüssen in einem Eltern-Kind-Zentrum in Stade mit sechs Toten hat sich die Polizei zum Motiv geäußert. Sie vermutet einen Sorgerechtsstreit als Hintergrund der Tat. Die Opfer arbeiteten in der Einrichtung.",
-      "pubDate": "2026-06-29T20:13:28+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Vor Koalitionsausschuss: Linke SPD-Abgeordnete stellen Forderungen",
-      "description": "Am Mittwoch wollen Union und SPD einen Durchbruch bei großen Reformprojekten erzielen. In einem Papier, das dem ARD-Hauptstadtstudio vorliegt, stellen SPD-Linke nun Forderungen auf, was die Partei auf keinen Fall mitmachen dürfe. Von M. Rödle.",
-      "pubDate": "2026-06-29T19:26:18+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Griechenland zahlt Fangprämie für giftigen Hasenkopf-Kugelfisch",
-      "description": "Der giftige Hasenkopf-Kugelfisch breitet sich massiv in der Ägäis aus. Nun zahlt die griechische Regierung Fischern eine Fangprämie. Denn die invasive Art bringt das Ökosystem durcheinander - und kann auch stark zubeißen.",
-      "pubDate": "2026-06-29T19:20:35+02:00",
       "bild": ""
     }
   ],
