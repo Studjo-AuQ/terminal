@@ -1,17 +1,77 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "01.07.2026, 06:22 Uhr (UTC)",
+  "aktualisiert": "01.07.2026, 10:28 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Umfrage des EU-Parlaments: 75 Prozent bewerten die EU als \"sicheren Hafen\"",
+      "description": "Das Vertrauen der Europäer in die EU ist aktuell so groß wie lange nicht mehr - so das Ergebnis der Umfrage Eurobarometer. Die weltpolitische Lage sorgt allerdings für Verunsicherung. Von Kathrin Schmid.",
+      "pubDate": "2026-07-01T11:43:34+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Korruptions-Razzia wegen Tickets für Fußball-EM 2024",
+      "description": "Im Zusammenhang mit der Fußball-EM 2024 hat es in mehreren deutschen Städten Razzien gegeben. Auch die DFB-Zentrale wurde durchsucht. Stadtverwaltungen sollen Tausende EM-Tickets zu Vorzugspreisen erhalten haben.",
+      "pubDate": "2026-07-01T11:37:53+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Warum Stahlaktien trotz Dauerkrise so gut laufen",
+      "description": "Hohe Energiekosten und wachsende Konkurrenz: Die Stahlindustrie ist in der Dauerkrise. Hinzu kommen neue US-Zölle auf europäischen Stahl. Trotzdem glänzten Stahlaktien zuletzt mit steigenden Kursen. Von Stefan Wolff.",
+      "pubDate": "2026-07-01T11:18:12+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Zolldeal in Kraft: US-Industriegüter und Hummer ab heute zollfrei",
+      "description": "Der Zolldeal der EU mit den USA ist in Kraft. Seit Mitternacht gibt es keine europäischen Zölle auf US-Industrieprodukte und Hummer mehr. Gleichzeitig gelten in der EU von heute an strengere Regeln für Stahlimporte.",
+      "pubDate": "2026-07-01T11:17:56+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Grundsicherung vor Neuberechnung: Drohen Kürzungen bei den Regelsätzen?",
+      "description": "Das Bürgergeld ist abgeschafft, die Grundsicherung eingeführt - doch die Debatte geht weiter. Eine neue Berechnung der Regelsätze ist in Arbeit. Opposition und Sozialverbände fürchten Kürzungen. Von Jan-Peter Bartels.",
+      "pubDate": "2026-07-01T11:08:03+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Statistisches Bundesamt: So wenig Geburten wie zuletzt 1997",
+      "description": "Die Geburtenrate ist laut Statistischem Bundesamt auf den tiefsten Wert seit fast 30 Jahren gefallen - auf 1,32 Kinder pro Frau. In beinahe allen Bundesländern wurden 2025 weniger Kinder geboren als im Vorjahr.",
+      "pubDate": "2026-07-01T10:51:16+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX mäandert um 25.000-Punkte-Marke",
+      "description": "Nach uneinheitlichen Vorgaben ist der deutsche Aktienmarkt verhalten in den Juli gestartet. Der DAX klebt weiter an der Marke von 25.000 Punkten. Impulse könnten vom Notenbanktreffen in Sintra kommen.",
+      "pubDate": "2026-07-01T10:48:01+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Zollgebühr für kleine Pakete von Temu und Shein",
+      "description": "Die EU will Billigprodukte aus China eindämmen. Schrittweise wird eine Zollreform umgesetzt. Jetzt fällt auch für kleine Pakete chinesischer Billiganbieter Zoll an. Was heißt das für Verbraucher? Von Sarah López.",
+      "pubDate": "2026-07-01T10:14:26+02:00",
+      "bild": ""
+    },
+    {
+      "title": "US-Regierung hebt Sperren für KI-Modelle von Anthropic auf",
+      "description": "Anthropic will den Zugang zu seinen Modellen \"Mythos 5\" und \"Fable 5\" wiederherstellen. Zuvor hatte das Unternehmen beide KI-Modelle auf Druck der US-Regierung blockiert. Streitpunkt waren angebliche Sicherheitslücken.",
+      "pubDate": "2026-07-01T09:24:00+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Inflation: Warum das Preisniveau bald wieder deutlich steigen könnte",
+      "description": "Die Inflation ist deutlich gesunken. Doch Ökonomen warnen: Die Energiepreiskrise könnte nachwirken - und erst mit Verzögerung bei Konsumgütern, Lebensmitteln und Dienstleistungen ankommen. Von Angela Göpfert.",
+      "pubDate": "2026-07-01T09:01:53+02:00",
+      "bild": ""
+    },
+    {
+      "title": "China ordnet Anpassung an Mehrheitsgesellschaft per Gesetz an",
+      "description": "In China soll heute ein neues Gesetz zur \"ethnischen Einheit\" in Kraft treten. Das Ziel: Minderheiten sollen sich stärker an die Mehrheitsgesellschaft anpassen. International gibt es viel Kritik. Von Benjamin Eyssel.",
+      "pubDate": "2026-07-01T08:45:54+02:00",
+      "bild": ""
+    },
     {
       "title": "Trump nahm 2025 über eine Milliarde Dollar mit Kryptogeschäften ein",
       "description": "Seit Beginn seiner zweiten Amtszeit hat US-Präsident Trump den Handel mit Kryptowährungen vorangetrieben - und damit laut einem Finanzbericht auch persönlich lukrative Geschäfte gemacht. Kritiker sehen Interessenkonflikte.",
       "pubDate": "2026-07-01T08:18:27+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Börsenausblick: DAX bleibt an der 25.000-Marke dran",
-      "description": "Während die KI-Rally in den USA ungebremst weitergeht, zeigen sich die Märkte in Asien uneinheitlich. Dem DAX steht ein kaum veränderter Start in den Juli bevor.",
-      "pubDate": "2026-07-01T08:07:47+02:00",
       "bild": ""
     },
     {
@@ -21,75 +81,15 @@
       "bild": ""
     },
     {
-      "title": "Bischofsweihe in der Schweiz: Piusbrüder wagen den Konflikt mit dem Papst",
-      "description": "Trotz einer Mahnung von Papst Leo XIV. will die traditionalistische Piusbruderschaft in der Schweiz vier Bischöfe weihen. Die Beteiligten nehmen dafür die Exkommunikation in Kauf - sie sehen sich als Hüter des wahren Glaubens. Von S. Detjen.",
-      "pubDate": "2026-07-01T07:00:35+02:00",
+      "title": "Bischofsweihe in der Schweiz: Piusbrüder wagen Konflikt mit dem Papst",
+      "description": "Trotz einer Warnung von Papst Leo XIV. hat die traditionalistische Piusbruderschaft in der Schweiz vier Bischöfe geweiht. Damit sind die Beteiligten exkommuniziert. Sie sehen sich als Hüter des wahren Glaubens. Von S. Detjen.",
+      "pubDate": "2026-07-01T11:10:34+02:00",
       "bild": ""
     },
     {
       "title": "Neue Förderung: Aus Büros werden Wohnungen - ein Beispiel aus NRW",
       "description": "In Deutschlands Metropolen stehen immer mehr Büroflächen leer. Einige davon könnten zu Wohnungen umgewandelt werden. Um das für Investoren attraktiver zu machen, startet heute ein neues Förderprogramm. Von David Zajonz.",
       "pubDate": "2026-07-01T06:48:47+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Verteidigungsminister Pistorius will Bundeswehr-Reserve stärken",
-      "description": "Heute kommt das \"Reservestärkungsgesetz\" ins Kabinett. Es soll helfen, die Zahl der Reservistinnen und Reservisten zu erhöhen - auf 200.000 bis zum Jahr 2035. Kritik an Details kommt aus der Wirtschaft. Von Katrin Aue.",
-      "pubDate": "2026-07-01T06:43:52+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Meere im Juni so aufgeheizt wie nie zuvor",
-      "description": "Die Meerestemperatur im Juni war noch nie so hoch wie in diesem Jahr. Das hat der EU-Klimadienst ermittelt. Bei etwa 21 Grad lag die durchschnittliche Temperatur. Forscher rechnen mit Folgen - nicht nur für die Meere.",
-      "pubDate": "2026-07-01T05:26:59+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Welche Themen beim Koalitionsausschuss auf dem Tisch liegen",
-      "description": "Bringt der Koalitionsausschuss den Durchbruch bei den großen Themen wie Arbeit, Steuerreform und Pflege? Die Spitzen von Schwarz-Rot arbeiten an einer Paketlösung. Dicke Brocken liegen auf dem Tisch. Worum geht es?",
-      "pubDate": "2026-07-01T05:03:10+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Zwei Tote bei Waldbrand in Griechenland",
-      "description": "In der Nähe der griechischen Stadt Thessaloniki ist ein Waldbrand ausgebrochen. Zwei Menschen sind ums Leben gekommen. Die Feuerwehr kämpft auch aus der Luft gegen die Flammen. Bisher ist das Land glimpflich durch die Waldbrandsaison gekommen.",
-      "pubDate": "2026-07-01T03:31:42+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Warum Schweden zurück zum Bargeld will",
-      "description": "Scheine und Münzen sind in Schweden fast vollständig aus den Läden verschwunden. Doch nun müssen Lebensmittelgeschäfte und Apotheken wieder Bargeld annehmen. Ein neues Gesetz verpflichtet sie dazu. Was steckt dahinter? Von Charlotte Littgen.",
-      "pubDate": "2026-07-01T03:28:46+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Trump kündigt Parteitag der Republikaner vor Midterms an",
-      "description": "Die Zustimmung für die Republikaner von Donald Trump geht zurück. Wohl auch deshalb hat der US-Präsident nun einen ungewöhnlichen Schritt angekündigt: Vor der Midterms soll ein Parteitag neuen Schwung geben.",
-      "pubDate": "2026-07-01T03:28:32+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ausstellung 250 Jahre USA: Zwischen Kanonenboot, iPod und Ground Zero",
-      "description": "Sternenbanner, Bürgerrechte und ein Mann auf dem Mond: Die USA zelebrieren ihre Erfolge wie kaum ein anderes Land. Welches Bild also zeichnen die USA zum 250. Jubiläum der Unabhängigkeitserklärung von sich? Von. S. Jackisch.",
-      "pubDate": "2026-07-01T01:43:18+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Tankrabatt beendet - Sorge vor dem Preissprung um 12 Uhr",
-      "description": "Mit dem Ende des Tankrabatts könnten heute die Spritpreise weiter steigen. Bereits am Dienstag waren Benzin und Diesel deutlich teurer geworden. Ohne die 17-Cent-Steuerentlastung dürfte sich dieser Trend um 12 Uhr fortsetzen.",
-      "pubDate": "2026-07-01T01:36:21+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Fast 2.000 Tote nach Erdbeben in Venezuela",
-      "description": "Knapp eine Woche nach den verheerenden Erdbeben in Venezuela ist die Zahl der Todesopfer auf mindestens 1.943 gestiegen - etwa 10.000 Personen werden noch vermisst. Doch es werden auch weiter Menschen gerettet - zuletzt ein dreijähriger Junge.",
-      "pubDate": "2026-06-30T23:05:22+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Worum geht es beim Urteil zum US-Geburtsrecht?",
-      "description": "Im Streit um das US-Geburtsrecht hat Präsident Trump eine Niederlage vor dem Obersten Gerichtshof kassiert. Worum genau geht es? Was wollte Trump erreichen? Und wie begründet das Gericht sein Urteil?",
-      "pubDate": "2026-06-30T21:37:33+02:00",
       "bild": ""
     }
   ],
