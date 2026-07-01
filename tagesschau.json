@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "01.07.2026, 18:23 Uhr (UTC)",
+  "aktualisiert": "01.07.2026, 20:22 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "In Polen explodieren nach Ende der Preisbremse die Spritpreise",
+      "description": "Die Kraftstoffpreise sind in Polen über Nacht sprungartig angestiegen. Ähnlich wie in Deutschland lief im Juni ein Programm aus, das die Spritpreise begrenzte. Nun steht die Regierung massiv in der Kritik. Von Palina Milling.",
+      "pubDate": "2026-07-01T21:35:55+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Was die Supreme-Court-Urteile für die Macht des Präsidenten bedeuten",
+      "description": "In den meisten Fällen folgt der Supreme Court derzeit der Argumentation der US-Regierung. Entsprechend zufrieden kann Präsident Trump sein. Doch was bedeutet das für den Gerichtshof und die Gewaltenteilung im Land? Von Carsten Kühntopp.",
+      "pubDate": "2026-07-01T21:25:33+02:00",
+      "bild": ""
+    },
     {
       "title": "Rente erhöht - und plötzlich steuerpflichtig",
       "description": "Die gesetzliche Rente steigt mit dem Juli um durchschnittlich 4,24 Prozent. Für manche Ruheständler hat das einen ungewollten Nebeneffekt: Sie müssen eine Steuererklärung abgeben. Von Wolfgang Brauer.",
@@ -35,7 +47,7 @@
     {
       "title": "Koalitionsspitzen beraten über Reformen - Kanzler Merz optimistisch",
       "description": "Die schwarz-roten Regierungspartner wollen die Weichen für größere Reformen stellen. Die Verhandlungen dazu im Kanzleramt haben nun begonnen. Gelingt eine Verständigung? Vertreter von Union und SPD sind zuversichtlich.",
-      "pubDate": "2026-07-01T17:56:58+02:00",
+      "pubDate": "2026-07-01T21:50:13+02:00",
       "bild": ""
     },
     {
@@ -78,18 +90,6 @@
       "title": "Tankstellen-Pächter befürchten neuen Unmut von Autofahrern",
       "description": "Monatelang sahen sich Tankstellenpächter wütenden Kunden und einbrechenden Umsätzen ausgesetzt. Der Tankrabatt brachte Entspannung. Gibt es jetzt neuen Unmut bei Autofahrern, wenn der Sprit wieder teuer wird? Von Susett Kleine.",
       "pubDate": "2026-07-01T15:01:00+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Spritpreise ziehen mit dem Ende des Tankrabatts kräftig an",
-      "description": "Die Spritpreise an deutschen Tankstellen sind mit Auslaufen des Tankrabatts massiv angestiegen. Sowohl Super E10 als auch Diesel kosten am Mittag im bundesweiten Schnitt wieder deutlich über zwei Euro pro Liter.",
-      "pubDate": "2026-07-01T14:59:42+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Anschläge in Griechenland - wohl gegen Politiker",
-      "description": "In Griechenlands zweitgrößter Stadt Thessaloniki gab es mehrere Brandanschläge - mutmaßlich gegen Mitglieder der konservativen Regierungspartei. Fünf Menschen wurden verletzt. Wer dahintersteckt, ist noch unklar.",
-      "pubDate": "2026-07-01T14:47:01+02:00",
       "bild": ""
     }
   ],
