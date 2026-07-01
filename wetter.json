@@ -1,14 +1,14 @@
 {
-  "aktualisiert": "30.06.2026, 23:04 Uhr",
+  "aktualisiert": "01.07.2026, 01:37 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
-        "temp": 15,
-        "gefuehlt": 15,
-        "zustand": "Bedeckt",
-        "emoji": "☁️",
-        "wind": 6,
+        "temp": 16,
+        "gefuehlt": 16,
+        "zustand": "Teils bewölkt",
+        "emoji": "⛅",
+        "wind": 4,
         "luftfeuchte": 86,
         "niederschlag": 0.0
       },
@@ -19,7 +19,7 @@
           "emoji": "☁️",
           "zustand": "Bedeckt",
           "max": 24,
-          "min": 14,
+          "min": 15,
           "niederschlag": 0.0
         },
         {
@@ -29,7 +29,7 @@
           "zustand": "Leichter Nieselregen",
           "max": 24,
           "min": 14,
-          "niederschlag": 0.7
+          "niederschlag": 1.2
         },
         {
           "wochentag": "Freitag",
@@ -63,12 +63,12 @@
     {
       "stadt": "Werdohl",
       "aktuell": {
-        "temp": 18,
-        "gefuehlt": 19,
+        "temp": 17,
+        "gefuehlt": 18,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 5,
-        "luftfeuchte": 78,
+        "wind": 2,
+        "luftfeuchte": 85,
         "niederschlag": 0.0
       },
       "tage": [
@@ -88,7 +88,7 @@
           "zustand": "Leichte Schauer",
           "max": 24,
           "min": 13,
-          "niederschlag": 0.5
+          "niederschlag": 1.1
         },
         {
           "wochentag": "Freitag",
@@ -124,10 +124,10 @@
       "aktuell": {
         "temp": 15,
         "gefuehlt": 15,
-        "zustand": "Bedeckt",
-        "emoji": "☁️",
-        "wind": 4,
-        "luftfeuchte": 90,
+        "zustand": "Teils bewölkt",
+        "emoji": "⛅",
+        "wind": 5,
+        "luftfeuchte": 93,
         "niederschlag": 0.0
       },
       "tage": [
@@ -137,7 +137,7 @@
           "emoji": "☁️",
           "zustand": "Bedeckt",
           "max": 23,
-          "min": 13,
+          "min": 14,
           "niederschlag": 0.0
         },
         {
@@ -182,11 +182,11 @@
       "stadt": "Bochum",
       "aktuell": {
         "temp": 20,
-        "gefuehlt": 20,
+        "gefuehlt": 21,
         "zustand": "Teils bewölkt",
         "emoji": "⛅",
-        "wind": 6,
-        "luftfeuchte": 62,
+        "wind": 2,
+        "luftfeuchte": 70,
         "niederschlag": 0.0
       },
       "tage": [
@@ -195,7 +195,7 @@
           "datum": "01.07.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 28,
+          "max": 27,
           "min": 18,
           "niederschlag": 0.0
         },
