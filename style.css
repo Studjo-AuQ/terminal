@@ -112,10 +112,12 @@ h1 {
     border-bottom: 4px solid transparent; 
 }
 
-.kachel {
+.tile {
   position: relative;
 }
 
+/* --- Badge intern --- */
+<!--
 a[href*="johanneswerk.int"]::after {
   content: "🔒 Intern";
   position: absolute;
@@ -130,6 +132,25 @@ a[href*="johanneswerk.int"]::after {
   letter-spacing: 0.02em;
   line-height: 1.4;
   pointer-events: none; /* Badge blockiert den Klick nicht */
+}
+-->
+.tile[href*="johanneswerk.int"]::after,
+.tile:has(a[href*="johanneswerk.int"])::after {
+    content: "🔒 intern";
+    position: absolute;      /* relativ zur Kachel, NICHT zum Fenster */
+    top: 8px;
+    right: 8px;
+    background-color: #1a237e;
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 5px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    pointer-events: none;    /* verhindert Klick-Blockierung */
+    z-index: 2;
+    /* kein hover – immer sichtbar */
 }
 
 
