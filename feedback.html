@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback – Studjo Infoterminal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Nunito Sans', Arial, sans-serif; background: #f0f0f0; color: #222; }
+
+    .terminal-header img { width: 100%; display: block; }
+
+    .seite {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem 2.5rem;
+    }
+
+    .zurueck-btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 0.55rem 1.1rem;
+      background: #fde8e9; color: #b61f29;
+      font-family: inherit; font-size: 0.88rem; font-weight: 700;
+      border: none; border-radius: 10px; cursor: pointer;
+      text-decoration: none; margin-bottom: 1rem;
+    }
+    .zurueck-btn:hover { background: #f7cdd0; }
+
+    h1 {
+      color: #b61f29; text-align: center; font-weight: 800;
+      font-size: clamp(1.4rem, 3vw, 2rem); margin-bottom: 0.25rem;
+    }
+    .untertitel {
+      text-align: center; font-size: 0.95rem; color: #555; margin-bottom: 0.75rem;
+    }
+    .anonym-pill {
+      display: inline-flex; align-items: center; gap: 5px;
+      background: #eafaea; color: #2a7a2a; font-size: 0.8rem; font-weight: 700;
+      padding: 4px 12px; border-radius: 20px; border: 1px solid #b0d8b0;
+      margin-bottom: 1.4rem;
+    }
+    .zentriert { text-align: center; }
+
+    .karte {
+      background: #fff; border-radius: 16px; padding: 1.5rem;
+      box-shadow: 0 3px 12px rgba(0,0,0,.08);
+    }
+
+    .feld-gruppe { margin-bottom: 1.4rem; }
+
+    .feld-label {
+      display: block; font-size: 1rem; font-weight: 800; color: #222;
+      margin-bottom: 0.6rem;
+    }
+    .feld-label .opt {
+      font-weight: 400; font-size: 0.82rem; color: #888; margin-left: 4px;
+    }
+    .pflicht { color: #b61f29; }
+
+    /* Emoji-Bewertung */
+    .emoji-reihe { display: flex; gap: 0.7rem; flex-wrap: wrap; }
+    .emoji-radio { display: none; }
+    .emoji-btn {
+      display: flex; flex-direction: column; align-items: center; gap: 4px;
+      padding: 0.8rem 1rem;
+      background: #f5f5f5; border: 3px solid transparent;
+      border-radius: 14px; cursor: pointer;
+      font-size: 2.4rem; min-width: 86px;
+      transition: all 0.14s; user-select: none;
+    }
+    .emoji-btn .bez { font-size: 0.7rem; font-weight: 700; color: #666; }
+    .emoji-radio:checked + .emoji-btn {
+      background: #fde8e9; border-color: #b61f29; transform: scale(1.06);
+    }
+    .emoji-btn:hover { background: #fde8e9; }
+
+    /* Textfelder */
+    .fb-textarea, .fb-input {
+      width: 100%; padding: 0.75rem 1rem;
+      font-family: inherit; font-size: 0.97rem;
+      border: 2px solid #ddd; border-radius: 10px;
+      background: #fafafa; color: #222;
+      transition: border-color 0.15s;
+    }
+    .fb-textarea { min-height: 88px; resize: vertical; }
+    .fb-textarea:focus, .fb-input:focus {
+      border-color: #b61f29; outline: none; background: #fff;
+    }
+    .fb-textarea::placeholder, .fb-input::placeholder { color: #bbb; }
+
+    /* Absenden-Button */
+    .absenden-btn {
+      width: 100%; padding: 1rem;
+      background: #b61f29; color: #fff;
+      font-family: inherit; font-size: 1.1rem; font-weight: 800;
+      border: none; border-radius: 12px; cursor: pointer;
+      transition: background 0.15s, transform 0.1s;
+      margin-top: 0.5rem;
+    }
+    .absenden-btn:hover { background: #9a1922; }
+    .absenden-btn:active { transform: scale(0.99); }
+    .absenden-btn:disabled { background: #ccc; cursor: not-allowed; }
+
+    .laden {
+      display: none; text-align: center; padding: 0.6rem;
+      color: #b61f29; font-weight: 700; font-size: 0.95rem;
+    }
+
+    /* Meldungen */
+    .meldung {
+      display: none; border-radius: 14px; padding: 2rem 1.5rem;
+      text-align: center;
+    }
+    .meldung.erfolg { background: #eafaea; border: 2px solid #2a7a2a; }
+    .meldung.fehler { background: #fdeaea; border: 2px solid #b61f29; }
+    .meldung .icon { font-size: 3.5rem; margin-bottom: 0.6rem; }
+    .meldung h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: 0.4rem; }
+    .meldung.erfolg h2 { color: #2a7a2a; }
+    .meldung.fehler h2 { color: #b61f29; }
+    .meldung p { font-size: 0.9rem; color: #555; line-height: 1.5; }
+    .meldung .weiter-btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 0.6rem 1.3rem; margin-top: 1.2rem;
+      background: #fde8e9; color: #b61f29;
+      font-family: inherit; font-size: 0.9rem; font-weight: 700;
+      border: none; border-radius: 10px; cursor: pointer; text-decoration: none;
+    }
+    .meldung .weiter-btn:hover { background: #f7cdd0; }
+
+    footer.terminal-footer {
+      text-align: center; padding: 0.8rem 1rem;
+      font-size: 0.82rem; color: #666;
+      border-top: 2px solid #b61f29; margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="terminal-header">
+    <a href="index.html" target="_self">
+      <img src="header.jpg" alt="Studjo Infoterminal – Zur Startseite">
+    </a>
+  </div>
+
+  <div class="seite">
+
+    <a href="index.html" target="_self" class="zurueck-btn">← Hier geht's zurück</a>
+
+    <h1>Dein Feedback</h1>
+    <p class="untertitel">Was denkst du? Deine Meinung ist wichtig für uns!</p>
+    <div class="zentriert">
+      <span class="anonym-pill">✓ Anonym möglich – Name ist freiwillig</span>
+    </div>
+
+    <!-- Erfolgsmeldung -->
+    <div class="meldung erfolg" id="meldung-erfolg">
+      <div class="icon">✅</div>
+      <h2>Vielen Dank!</h2>
+      <p>Dein Feedback ist bei uns angekommen.<br>Wir lesen es und nehmen es ernst.</p>
+      <a href="index.html" target="_self" class="weiter-btn">← Zurück zum Start</a>
+    </div>
+
+    <!-- Fehlermeldung -->
+    <div class="meldung fehler" id="meldung-fehler">
+      <div class="icon">⚠️</div>
+      <h2>Das hat leider nicht geklappt.</h2>
+      <p>Bitte versuche es nochmal oder sprich jemanden an.</p>
+      <p style="font-size:0.75rem;color:#999;margin-top:0.5rem" id="fehler-details"></p>
+      <button class="weiter-btn" onclick="zurueckZumFormular()">← Zurück zum Formular</button>
+    </div>
+
+    <!-- Formular -->
+    <div class="karte" id="formular-bereich">
+
+      <!-- 1. Gesamteindruck -->
+      <div class="feld-gruppe">
+        <label class="feld-label">
+          Wie zufrieden bist du gerade? <span class="pflicht">*</span>
+        </label>
+        <div class="emoji-reihe">
+          <input type="radio" name="Gesamteindruck" id="e1" value="😟 Nicht gut" class="emoji-radio">
+          <label for="e1" class="emoji-btn">😟<span class="bez">Nicht gut</span></label>
+
+          <input type="radio" name="Gesamteindruck" id="e2" value="😐 Geht so" class="emoji-radio">
+          <label for="e2" class="emoji-btn">😐<span class="bez">Geht so</span></label>
+
+          <input type="radio" name="Gesamteindruck" id="e3" value="😊 Gut" class="emoji-radio">
+          <label for="e3" class="emoji-btn">😊<span class="bez">Gut</span></label>
+
+          <input type="radio" name="Gesamteindruck" id="e4" value="😁 Super!" class="emoji-radio">
+          <label for="e4" class="emoji-btn">😁<span class="bez">Super!</span></label>
+        </div>
+      </div>
+
+      <!-- 2. Was läuft gut -->
+      <div class="feld-gruppe">
+        <label class="feld-label" for="feld-gut">
+          👍 Was läuft gut? <span class="opt">(freiwillig)</span>
+        </label>
+        <textarea id="feld-gut" name="Was läuft gut" class="fb-textarea"
+          placeholder="Das finde ich gut …"></textarea>
+      </div>
+
+      <!-- 3. Wünsche -->
+      <div class="feld-gruppe">
+        <label class="feld-label" for="feld-wunsch">
+          💡 Was wünschst du dir? <span class="opt">(freiwillig)</span>
+        </label>
+        <textarea id="feld-wunsch" name="Wünsche und Ideen" class="fb-textarea"
+          placeholder="Ich wünsche mir …"></textarea>
+      </div>
+
+      <!-- 4. Was stört -->
+      <div class="feld-gruppe">
+        <label class="feld-label" for="feld-stoert">
+          👎 Was gefällt dir nicht? <span class="opt">(freiwillig)</span>
+        </label>
+        <textarea id="feld-stoert" name="Was gefällt nicht" class="fb-textarea"
+          placeholder="Das gefällt mir nicht …"></textarea>
+      </div>
+
+      <!-- 5. Name -->
+      <div class="feld-gruppe">
+        <label class="feld-label" for="feld-name">
+          👤 Dein Name <span class="opt">(freiwillig – anonym ist okay!)</span>
+        </label>
+        <input type="text" id="feld-name" name="Name" class="fb-input"
+          placeholder="Einfach leer lassen, wenn du anonym bleiben möchtest.">
+      </div>
+
+      <div class="laden" id="laden">⏳ Wird gesendet …</div>
+      <button type="button" class="absenden-btn" id="absenden-btn"
+        onclick="feedbackAbsenden()">
+        📤 &nbsp;Feedback absenden
+      </button>
+
+    </div>
+
+  </div>
+
+  <footer class="terminal-footer">
+    &copy; 2024 <strong>Studjo | Arbeit und Qualifizierung</strong>
+    | Infoterminal | Barrierefreier Zugang
+  </footer>
+
+  <script>
+    // ╔════════════════════════════════════════════════════════════╗
+    // ║  EINZIGE KONFIGURATION – diese EINE Zeile anpassen:      ║
+    // ║  Formspree-ID aus dem Formspree-Dashboard eintragen.      ║
+    // ║  Beispiel: 'xdoqkbnz'  (8 Zeichen, nur Buchstaben/Ziffern) ║
+    // ╚════════════════════════════════════════════════════════════╝
+    const FORMSPREE_ID = 'xjgqanep';
+
+    async function feedbackAbsenden() {
+
+      // Pflichtfeld: Emoji-Bewertung
+      const emoji = document.querySelector('input[name="Gesamteindruck"]:checked');
+      if (!emoji) {
+        alert('Bitte wähle zuerst aus, wie zufrieden du bist (😟 😐 😊 😁).');
+        return;
+      }
+
+      // Zeitstempel
+      const jetzt   = new Date();
+      const datum   = jetzt.toLocaleDateString('de-DE', {day:'2-digit', month:'2-digit', year:'numeric'});
+      const uhrzeit = jetzt.toLocaleTimeString('de-DE', {hour:'2-digit', minute:'2-digit'});
+
+      // Formulardaten zusammenstellen
+      const daten = new FormData();
+      daten.append('_subject',  `📝 Feedback Terminal – ${datum}, ${uhrzeit} Uhr`);
+      daten.append('_cc',       'marc.brenzel@johanneswerk.de');  // Kopie an 2. Adresse
+      daten.append('Gesamteindruck', emoji.value);
+      daten.append('Was läuft gut',
+        document.getElementById('feld-gut').value.trim()    || '(keine Angabe)');
+      daten.append('Wünsche und Ideen',
+        document.getElementById('feld-wunsch').value.trim() || '(keine Angabe)');
+      daten.append('Was gefällt nicht',
+        document.getElementById('feld-stoert').value.trim() || '(keine Angabe)');
+      daten.append('Name',
+        document.getElementById('feld-name').value.trim()   || 'Anonym');
+      daten.append('Eingegangen am', `${datum} um ${uhrzeit} Uhr`);
+
+      // UI: Ladezustand aktivieren
+      document.getElementById('absenden-btn').disabled = true;
+      document.getElementById('laden').style.display   = 'block';
+      document.getElementById('formular-bereich').style.opacity      = '0.5';
+      document.getElementById('formular-bereich').style.pointerEvents = 'none';
+
+      try {
+        const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+          method:  'POST',
+          body:    daten,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        const json = await res.json();
+
+        if (json.ok) {
+          // ✅ Erfolg
+          document.getElementById('formular-bereich').style.display = 'none';
+          document.getElementById('meldung-erfolg').style.display   = 'block';
+        } else {
+          const msg = (json.errors || []).map(e => e.message).join(', ') || 'Unbekannter Fehler';
+          throw new Error(msg);
+        }
+
+      } catch (err) {
+        // ⚠️ Fehler
+        document.getElementById('absenden-btn').disabled            = false;
+        document.getElementById('laden').style.display              = 'none';
+        document.getElementById('formular-bereich').style.opacity   = '1';
+        document.getElementById('formular-bereich').style.pointerEvents = '';
+        document.getElementById('fehler-details').textContent       = err.message;
+        document.getElementById('meldung-fehler').style.display     = 'block';
+      }
+    }
+
+    function zurueckZumFormular() {
+      document.getElementById('meldung-fehler').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
