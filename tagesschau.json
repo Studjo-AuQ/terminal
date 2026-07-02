@@ -1,7 +1,31 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "02.07.2026, 01:31 Uhr (UTC)",
+  "aktualisiert": "02.07.2026, 05:55 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Parlamentswahl in Algerien: Wahlkampf gegen das Desinteresse",
+      "description": "Das rohstoffreiche Algerien wählt ein neues Parlament und die Opposition hofft, dass die neue Volksvertretung mehr Einfluss ausüben wird. Doch dazu müssten mehr Menschen als 2021 abstimmen. Ist die Hoffnung berechtigt? Von Kristina Böker.",
+      "pubDate": "2026-07-02T07:19:03+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wie giftig ist das Pestizid Fluazinam wirklich?",
+      "description": "Das Fungizid Fluazinam wird seit Langem im Kartoffelanbau eingesetzt. Doch nun erheben Wissenschaftler nach BR-Recherchen schwere Vorwürfe: Die Risiken seien falsch berechnet worden, das Mittel hätte nie zugelassen werden dürfen.",
+      "pubDate": "2026-07-02T06:00:30+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Ukraine meldet massive russische Luftangriffe - mehrere Tote",
+      "description": "Die Ukraine ist in der Nacht wieder Ziel von heftigen russischen Luftangriffen geworden. In Kiew wurden mehrere Wohnhäuser und ein Hotel komplett zerstört. Behörden melden mindestens zehn Todesopfer.",
+      "pubDate": "2026-07-02T05:07:45+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Pflegepersonal - AOK kritisiert Fehlanreize für Heimbetreiber",
+      "description": "Seit Jahren wird über fehlendes Pflegepersonal geklagt - darunter leidet die Qualität der Pflege. Doch was kaum jemand weiß: Unbesetzte Stellen können den Heimbetreibern sogar Gewinne ermöglichen. Von Tina Friedrich und Torsten Mandalka.",
+      "pubDate": "2026-07-02T05:00:27+02:00",
+      "bild": ""
+    },
     {
       "title": "Venezuela: Hoffnung auf Neuanfang durch Erdbeben erschüttert",
       "description": "Vor sechs Monaten ist Venezuelas Langzeitmachthaber Maduro festgenommen worden. Mit Interimspräsidentin Rodriguez kam Hoffnung auf einen Aufschwung auf. Nach den verheerenden Erdbeben ist davon wenig übrig. Von Jenny Barke.",
@@ -10,8 +34,8 @@
     },
     {
       "title": "Koalitionsausschuss: Einigung auf Paket für Wachstum und Beschäftigung",
-      "description": "Die Spitzen von CDU, CSU und SPD haben sich nach ARD-Informationen auf ein umfassendes Paket für Wachstum und Beschäftigung verständigt. Außerdem einigte sich die Koalition demnach auf eine Einkommensteuerreform.",
-      "pubDate": "2026-07-02T00:16:46+02:00",
+      "description": "Die Spitzen von CDU, CSU und SPD haben sich nach ARD-Informationen auf ein umfassendes Paket für Wachstum und Beschäftigung verständigt - darunter auch auf eine Reform der Einkommenssteuer. Details wollen sie am Vormittag vorstellen.",
+      "pubDate": "2026-07-02T07:00:34+02:00",
       "bild": ""
     },
     {
@@ -22,7 +46,7 @@
     },
     {
       "title": "Was die Supreme-Court-Urteile für die Macht des Präsidenten bedeuten",
-      "description": "In den meisten Fällen folgt der Supreme Court derzeit der Argumentation der US-Regierung. Entsprechend zufrieden kann Präsident Trump sein. Doch was bedeutet das für den Gerichtshof und die Gewaltenteilung im Land? Von Carsten Kühntopp.",
+      "description": "Auch wenn der Supreme Court nicht immer der Argumentation der Trump-Regierung folgt, so hat das Gericht die Machtfülle des Präsidenten doch erheblich erweitert. Was bedeutet das für die Gewaltenteilung im Land? Von Carsten Kühntopp.",
       "pubDate": "2026-07-01T21:25:33+02:00",
       "bild": ""
     },
@@ -66,30 +90,6 @@
       "title": "Deutsche Bahn setzt ab sofort auch im Fernverkehr Bodycams ein",
       "description": "Die Deutsche Bahn bietet nun auch Beschäftigten im Fernverkehr an, während der Arbeit freiwillig eine Bodycam zu tragen. Die Maßnahme geht auf einen tödlichen Angriff auf einen Bahnmitarbeiter im Februar zurück.",
       "pubDate": "2026-07-01T17:19:22+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Gas-Pipelines: Erste Anklage gegen mutmaßlichen Nord-Stream-Saboteur",
-      "description": "Der Generalbundesanwalt hat im Fall der gesprengten Nord-Stream-Pipelines Anklage gegen einen Ukrainer erhoben. Laut ARD, SZ und Zeit soll sich der Ex-Soldat in abgehörten Telefonaten selbst belastet haben. Er wird in Hamburg vor Gericht stehen.",
-      "pubDate": "2026-07-01T17:33:26+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Gemischte Reaktionen auf neues Eintrittsgeld für Kölner Dom",
-      "description": "Die Besucher des Kölner Doms reagieren gemischt auf das neue Eintrittsgeld. Während Touristen aus dem Ausland oft Verständnis zeigen, sind manche Kölner frustriert - der Preis sei zu hoch.",
-      "pubDate": "2026-07-01T13:41:00+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Trump lobt indirekte Gespräche mit Iran in Katar",
-      "description": "In Katar fanden erneut indirekte Gespräche zwischen den USA und Iran über einen dauerhaften Waffenstillstand statt. US-Präsident Trump erklärte, die Denuklearisierung Irans komme gut voran.",
-      "pubDate": "2026-07-01T16:19:46+02:00",
-      "bild": ""
-    },
-    {
-      "title": "250 Jahre USA: Wer sich noch dazugehörig fühlt",
-      "description": "Wer in den USA auf die Welt kommt, erhält die US-Staatsbürgerschaft. Doch wer fühlt sich wirklich noch als Teil der Gesellschaft dieses Landes, das nun sein 250-jähriges Bestehen feiert? Auf Spurensuche in Tennessee. Von Anne Schneider.",
-      "pubDate": "2026-07-01T16:01:45+02:00",
       "bild": ""
     }
   ],
