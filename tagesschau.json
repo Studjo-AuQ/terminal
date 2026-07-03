@@ -1,7 +1,37 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "03.07.2026, 04:24 Uhr (UTC)",
+  "aktualisiert": "03.07.2026, 07:45 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Erneute Angriffe auf Ukraine - mindestens vier Tote",
+      "description": "Bei russischen Angriffen auf mehrere Regionen in der Ukraine sind erneut mehrere Menschen getötet und verletzt worden. In Kiew ist die Zahl der Todesopfer durch die massiven Attacken in der Nacht auf Donnerstag auf mindestens 30 gestiegen.",
+      "pubDate": "2026-07-03T08:37:51+02:00",
+      "bild": ""
+    },
+    {
+      "title": "US-Gericht: Einwanderer dürfen maximal 90 Tage inhaftiert werden",
+      "description": "Ein US-Berufungsgericht hat die Haftdauer von Migranten ohne Anhörung auf 90 Tage begrenzt. Die Entscheidung könnte Tausende Menschen betreffen, die in Staaten wie Texas und Louisiana inhaftiert sind.",
+      "pubDate": "2026-07-03T08:32:54+02:00",
+      "bild": ""
+    },
+    {
+      "title": "\"Vernünftige\" Lösungen bei Krankschreibungen?",
+      "description": "Einen Tag nach dem Beschluss zur Attestpflicht ab dem ersten Krankheitstag versucht die Koalition die Aufregung etwas einzufangen. SPD-Chef Klingbeil will eine \"vernünftige\" Umsetzung. Gesundheitsministerin Warken setzt auf Digitalisierung.",
+      "pubDate": "2026-07-03T09:13:49+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: Der nächste DAX-Rekord könnte anstehen",
+      "description": "Der DAX dürfte zum Wochenschluss weiter auf Rekordjagd gehen. Die Hoffnung auf Zinssenkungen in den USA zieht die Anleger in den Markt, auch die guten Vorgaben aus Asien locken.",
+      "pubDate": "2026-07-03T07:46:22+02:00",
+      "bild": ""
+    },
+    {
+      "title": "FIFA-WM-Finale: Elf Minuten Halbzeitshow",
+      "description": "Erstmals bei einem Fußball-WM-Finale soll es eine Halbzeitshow mit Auftritten von Popstars wie beim Super Bowl geben. Überlänge soll die Show aber wohl nicht haben. In elf Minuten soll alles vorbei sein. Von Martin Ganslmeier.",
+      "pubDate": "2026-07-03T06:32:56+02:00",
+      "bild": ""
+    },
     {
       "title": "Warum Hitze alle gefährdet - und was künftig schützt",
       "description": "41,7 Grad in Deutschland - ein Rekord, unter dem längst nicht mehr nur Risikogruppen leiden. Die Gefahr durch Hitze wird oft unterschätzt. Warum selbst Gesunde an ihre Grenzen kommen und wie wir uns besser schützen können. Von Melina Runde.",
@@ -60,36 +90,6 @@
       "title": "Schwarz-rote Reformen: Das soll sich bei der Krankschreibung ändern",
       "description": "CDU, CSU und SPD haben sich auf ein großes Reformpaket geeinigt. Ein Teil davon: schärfere Regeln bei der Krankschreibung. Was das für Arbeitnehmer bedeutet und warum der Schritt für Kritik sorgt.",
       "pubDate": "2026-07-02T17:46:54+02:00",
-      "bild": ""
-    },
-    {
-      "title": "DAX erreicht nach sinkenden Ölpreisen Rekordstand",
-      "description": "Mit den sinkenden Ölpreisen kommt der Aktienmarkt wieder in Schwung. Auch Arbeitsmarktdaten aus den USA treiben die Börsen in Europa auf neue Höhen. Der DAX hat erstmals seit Januar einen neuen Höchststand erreicht.",
-      "pubDate": "2026-07-02T17:23:03+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wenn die Zeit abläuft: Abschied von den Erdbebenopfern in Venezuela",
-      "description": "Mehr als 2.000 Tote sind nach den Erdbeben in Venezuela geborgen worden, Zehntausende werden vermisst. Die Katastrophe zwingt Angehörige und Helfer in den schmerzhaften Spagat zwischen bitterer Logistik und dem Bedürfnis nach einem würdigem Abschied. Von Anne Demmer.",
-      "pubDate": "2026-07-02T16:10:45+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Michael Thonet: Wie sein Kaffeehaus-Stuhl die Welt eroberte",
-      "description": "Michael Thonet perfektionierte die \"Bugholz-Methode\" und verlieh seinen Möbeln zeitlose Leichtigkeit. Vor gut 200 Jahren schuf er mit dem Wiener Kaffeehaus-Stuhl ein Vorbild für IKEA & Co. Von Miriam Berger.",
-      "pubDate": "2026-07-02T15:30:16+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Trümmer und Traumata - 1.000 Tage nach dem Überfall der Hamas",
-      "description": "Vor 1.000 Tagen überfiel die Hamas Israel. Seitdem befinden sich die Menschen dort und im Gazastreifen in der Dauerkrise: zerstörte Gemeinschaften, traumatisierte Überlebende und kein Ende des Konflikts. Von Julio Segador.",
-      "pubDate": "2026-07-02T15:28:33+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Koalition stellt Reformpläne vor: Ein staatstragender Auftritt",
-      "description": "Geschlossen, fast gelöst präsentiert sich die Koalition bei ihren Reformplänen - nach monatelangem Hin und Her ist nun von Zusammenarbeit und gemeinsamen Lösungen die Rede. Wie tragfähig das ist, wird sich noch zeigen. Von I. Spinner.",
-      "pubDate": "2026-07-02T15:26:56+02:00",
       "bild": ""
     }
   ],
