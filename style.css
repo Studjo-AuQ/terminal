@@ -140,7 +140,7 @@ a[href*="johanneswerk.int"]::after {
     position: absolute;      /* relativ zur Kachel, NICHT zum Fenster */
     top: 8px;
     right: 8px;
-    background-color: #1a237e;
+    background-color: #b61f29;
     color: white;
     font-size: 0.65rem;
     font-weight: 700;
