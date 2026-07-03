@@ -102,6 +102,47 @@
             border-bottom: 4px solid transparent; 
         }
 
+.tile {
+  position: relative;
+}
+
+/* --- Badge intern --- */
+<!--
+a[href*="johanneswerk.int"]::after {
+  content: "🔒 Intern";
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: #b61f29;
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 5px;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  pointer-events: none; /* Badge blockiert den Klick nicht */
+}
+-->
+.tile[href*="johanneswerk.int"]::after,
+.tile:has(a[href*="johanneswerk.int"])::after {
+    content: "🔒 intern";
+    position: absolute;      /* relativ zur Kachel, NICHT zum Fenster */
+    top: 8px;
+    right: 8px;
+    background-color: #b61f29;
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 5px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    pointer-events: none;    /* verhindert Klick-Blockierung */
+    z-index: 2;
+    /* kein hover – immer sichtbar */
+}
+
         /* Farbkachel-Logik */
         .tile-color-1 { background-color: var(--pastel-1) !important; --hover-c: #0288d1; }
         .tile-color-2 { background-color: var(--pastel-2) !important; --hover-c: #558b2f; }
