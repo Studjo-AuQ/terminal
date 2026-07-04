@@ -1,11 +1,23 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "04.07.2026, 00:01 Uhr (UTC)",
+  "aktualisiert": "04.07.2026, 04:09 Uhr (UTC)",
   "meldungen": [
     {
+      "title": "Popstar Swift und Footballer Kelce sind verheiratet",
+      "description": "Wochenlang wurde über eine Hochzeit der Musikerin und des Football-Profis spekuliert. Die beiden Stars haben sich mitten in Manhatten vor Hunderten, teils prominenten Gästen das Ja-Wort gegeben.",
+      "pubDate": "2026-07-04T05:27:57+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Was beim Bundesparteitag der AfD auf dem Spiel steht",
+      "description": "Begleitet von Protesten beginnt der AfD-Parteitag in Erfurt. Es geht vor allem um Personal und Geschlossenheit vor den wichtigen Landtagswahlen im Osten. Inhaltlich soll nichts dazwischen kommen - ob das gelingt? Von B. Großkopff.",
+      "pubDate": "2026-07-04T05:00:13+02:00",
+      "bild": ""
+    },
+    {
       "title": "Russland meldet Einnahme wichtiger Stadt im ukrainischen Donbass",
-      "description": "Russland rückt nach eigenen Angaben im Osten der Ukraine vor und will eine strategisch wichtige Stadt erobert haben. Bei einem russischen Angriff auf die ukrainische Stadt Sumy gibt es mehrere Tote.",
-      "pubDate": "2026-07-04T00:29:34+02:00",
+      "description": "Russland rückt nach eigenen Angaben im Osten der Ukraine vor und will eine strategisch wichtige Stadt erobert haben. Bei neuen russischen Angriffen gab es unterdessen wieder Tote in mehreren ukrainischen Regionen.",
+      "pubDate": "2026-07-04T05:20:13+02:00",
       "bild": ""
     },
     {
@@ -29,7 +41,7 @@
     {
       "title": "AfD-Parteitag in Erfurt: Was ist bei den Demos erlaubt - und was nicht?",
       "description": "Wegen des AfD-Parteitags, der am Wochenende stattfindet, kommen Demonstranten aus ganz Deutschland nach Erfurt. Das Ziel: den Parteitag verhindern. Was erlauben Grundgesetz und Versammlungsrecht, und wo liegen die Grenzen? Von Alena Lagmöller.",
-      "pubDate": "2026-07-03T19:55:58+02:00",
+      "pubDate": "2026-07-04T05:42:26+02:00",
       "bild": ""
     },
     {
@@ -78,18 +90,6 @@
       "title": "Fast 50 Prozent mehr E-Autos im ersten Halbjahr neu zugelassen",
       "description": "Der Automarkt in Deutschland kommt in Schwung. Vor allem die Nachfrage nach Fahrzeugen mit Elektromotor steigt. Der chinesische Hersteller BYD verkaufte im Juni viermal so viele Autos wie im Vorjahr.",
       "pubDate": "2026-07-03T15:52:04+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ökonom Heinemann zu Reform-Beschlüssen: \"Dieses Paket hilft\"",
-      "description": "Bringen die angekündigten Reformen der schwarz-roten Koalition tatsächlich die Wirtschaft wieder in Schwung? Der Ökonom Friedrich Heinemann erwartet einen positiven Effekt - sieht aber auch problematische Punkte.",
-      "pubDate": "2026-07-03T15:02:25+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Anschlag in Monaco: Interpol fahndet nach Ukrainerin aus Deutschland",
-      "description": "Bei einer Explosion in Monaco wurden am Montag drei Menschen schwer verletzt. Nun wird eine 39-jährige Ukrainerin aus Deutschland per internationalem Haftbefehl gesucht. Die Spuren führen auch nach Hessen.",
-      "pubDate": "2026-07-03T14:59:09+02:00",
       "bild": ""
     }
   ],
