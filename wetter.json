@@ -1,10 +1,242 @@
 {
-  "aktualisiert": "04.07.2026, 01:07 Uhr",
-  "staedte": [],
-  "fehler": [
-    "Lüdenscheid: <urlopen error _ssl.c:983: The handshake operation timed out>",
-    "Werdohl: <urlopen error _ssl.c:983: The handshake operation timed out>",
-    "Kierspe: <urlopen error _ssl.c:983: The handshake operation timed out>",
-    "Bochum: <urlopen error _ssl.c:983: The handshake operation timed out>"
-  ]
+  "aktualisiert": "04.07.2026, 05:04 Uhr",
+  "staedte": [
+    {
+      "stadt": "Lüdenscheid",
+      "aktuell": {
+        "temp": 11,
+        "gefuehlt": 10,
+        "zustand": "Klar",
+        "emoji": "☀️",
+        "wind": 4,
+        "luftfeuchte": 77,
+        "niederschlag": 0.0
+      },
+      "tage": [
+        {
+          "wochentag": "Samstag",
+          "datum": "04.07.",
+          "emoji": "🌦️",
+          "zustand": "Leichter Nieselregen",
+          "max": 24,
+          "min": 10,
+          "niederschlag": 0.1
+        },
+        {
+          "wochentag": "Sonntag",
+          "datum": "05.07.",
+          "emoji": "🌦️",
+          "zustand": "Starker Nieselregen",
+          "max": 18,
+          "min": 15,
+          "niederschlag": 2.3
+        },
+        {
+          "wochentag": "Montag",
+          "datum": "06.07.",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
+          "max": 23,
+          "min": 15,
+          "niederschlag": 0.0
+        },
+        {
+          "wochentag": "Dienstag",
+          "datum": "07.07.",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
+          "max": 24,
+          "min": 15,
+          "niederschlag": 0.0
+        },
+        {
+          "wochentag": "Mittwoch",
+          "datum": "08.07.",
+          "emoji": "🌦️",
+          "zustand": "Leichter Nieselregen",
+          "max": 22,
+          "min": 14,
+          "niederschlag": 0.6
+        }
+      ]
+    },
+    {
+      "stadt": "Werdohl",
+      "aktuell": {
+        "temp": 12,
+        "gefuehlt": 11,
+        "zustand": "Teils bewölkt",
+        "emoji": "⛅",
+        "wind": 2,
+        "luftfeuchte": 86,
+        "niederschlag": 0.0
+      },
+      "tage": [
+        {
+          "wochentag": "Samstag",
+          "datum": "04.07.",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
+          "max": 24,
+          "min": 10,
+          "niederschlag": 0.0
+        },
+        {
+          "wochentag": "Sonntag",
+          "datum": "05.07.",
+          "emoji": "🌦️",
+          "zustand": "Leichte Schauer",
+          "max": 20,
+          "min": 17,
+          "niederschlag": 0.9
+        },
+        {
+          "wochentag": "Montag",
+          "datum": "06.07.",
+          "emoji": "🌦️",
+          "zustand": "Leichte Schauer",
+          "max": 20,
+          "min": 16,
+          "niederschlag": 0.9
+        },
+        {
+          "wochentag": "Dienstag",
+          "datum": "07.07.",
+          "emoji": "🌧️",
+          "zustand": "Leichter Regen",
+          "max": 23,
+          "min": 16,
+          "niederschlag": 0.3
+        },
+        {
+          "wochentag": "Mittwoch",
+          "datum": "08.07.",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
+          "max": 23,
+          "min": 14,
+          "niederschlag": 0.0
+        }
+      ]
+    },
+    {
+      "stadt": "Kierspe",
+      "aktuell": {
+        "temp": 11,
+        "gefuehlt": 9,
+        "zustand": "Klar",
+        "emoji": "☀️",
+        "wind": 6,
+        "luftfeuchte": 78,
+        "niederschlag": 0.0
+      },
+      "tage": [
+        {
+          "wochentag": "Samstag",
+          "datum": "04.07.",
+          "emoji": "🌦️",
+          "zustand": "Leichter Nieselregen",
+          "max": 24,
+          "min": 9,
+          "niederschlag": 0.1
+        },
+        {
+          "wochentag": "Sonntag",
+          "datum": "05.07.",
+          "emoji": "🌦️",
+          "zustand": "Leichter Nieselregen",
+          "max": 18,
+          "min": 15,
+          "niederschlag": 1.4
+        },
+        {
+          "wochentag": "Montag",
+          "datum": "06.07.",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
+          "max": 23,
+          "min": 15,
+          "niederschlag": 0.0
+        },
+        {
+          "wochentag": "Dienstag",
+          "datum": "07.07.",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
+          "max": 24,
+          "min": 14,
+          "niederschlag": 0.0
+        },
+        {
+          "wochentag": "Mittwoch",
+          "datum": "08.07.",
+          "emoji": "🌦️",
+          "zustand": "Leichter Nieselregen",
+          "max": 22,
+          "min": 14,
+          "niederschlag": 0.3
+        }
+      ]
+    },
+    {
+      "stadt": "Bochum",
+      "aktuell": {
+        "temp": 16,
+        "gefuehlt": 14,
+        "zustand": "Überwiegend klar",
+        "emoji": "🌤️",
+        "wind": 9,
+        "luftfeuchte": 55,
+        "niederschlag": 0.0
+      },
+      "tage": [
+        {
+          "wochentag": "Samstag",
+          "datum": "04.07.",
+          "emoji": "🌦️",
+          "zustand": "Leichter Nieselregen",
+          "max": 27,
+          "min": 15,
+          "niederschlag": 0.1
+        },
+        {
+          "wochentag": "Sonntag",
+          "datum": "05.07.",
+          "emoji": "🌦️",
+          "zustand": "Leichter Nieselregen",
+          "max": 21,
+          "min": 18,
+          "niederschlag": 0.7
+        },
+        {
+          "wochentag": "Montag",
+          "datum": "06.07.",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
+          "max": 26,
+          "min": 19,
+          "niederschlag": 0.0
+        },
+        {
+          "wochentag": "Dienstag",
+          "datum": "07.07.",
+          "emoji": "🌦️",
+          "zustand": "Leichter Nieselregen",
+          "max": 26,
+          "min": 18,
+          "niederschlag": 0.1
+        },
+        {
+          "wochentag": "Mittwoch",
+          "datum": "08.07.",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
+          "max": 25,
+          "min": 16,
+          "niederschlag": 0.0
+        }
+      ]
+    }
+  ],
+  "fehler": []
 }
