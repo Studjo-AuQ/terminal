@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "04.07.2026, 15:41 Uhr (UTC)",
+  "aktualisiert": "04.07.2026, 17:00 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Parlamentswahl in Israel: Geben arabische Frauen den Ausschlag?",
+      "description": "Im Herbst wird in Israel ein neues Parlament gewählt. Entscheidend könnte dabei die arabische Minderheit sein. Die Wahlbeteiligung arabischer Frauen aber war zuletzt gering. Das könnte sich nun ändern. Von Bettina Meier.",
+      "pubDate": "2026-07-04T17:54:50+02:00",
+      "bild": ""
+    },
     {
       "title": "Haushaltsentwurf: Klingbeil will auch beim Klimafonds sparen",
       "description": "Die Bundesregierung will investieren - und muss sparen. Der Konsolidierungskurs von Finanzminister Klingbeil sieht auch Kürzungen beim Klima- und Transformationsfonds vor. Das könnte Einschnitte bei der Heizungsförderung zur Folge haben.",
@@ -64,8 +70,8 @@
     },
     {
       "title": "Bundesparteitag: Zehntausende protestieren gegen AfD in Erfurt",
-      "description": "Laut Polizei protestieren mehr als 30.000 Menschen in Erfurt gegen den Bundesparteitag der AfD. Auf einigen Zufahrtsstraßen zum Tagungsort gilt ein Demonstrationsverbot - zu Recht bestätigte jetzt das Oberverwaltungsgericht.",
-      "pubDate": "2026-07-04T15:50:35+02:00",
+      "description": "Laut Polizei haben mehr als 30.000 Menschen in Erfurt gegen den Bundesparteitag der AfD protestiert. Auf einigen Zufahrtsstraßen zum Tagungsort gilt ein Demonstrationsverbot - zu Recht, bestätigte das Oberverwaltungsgericht.",
+      "pubDate": "2026-07-04T18:58:28+02:00",
       "bild": ""
     },
     {
@@ -84,12 +90,6 @@
       "title": "Popstar Swift und Footballer Kelce sind verheiratet",
       "description": "Wochenlang wurde über eine Hochzeit der Musikerin und des Football-Profis spekuliert. Die beiden Stars haben sich mitten in Manhattan vor Hunderten, teils prominenten Gästen das Ja-Wort gegeben.",
       "pubDate": "2026-07-04T05:27:57+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Was beim Bundesparteitag der AfD auf dem Spiel steht",
-      "description": "Begleitet von Protesten beginnt der AfD-Parteitag in Erfurt. Es geht vor allem um Personal und Geschlossenheit vor den wichtigen Landtagswahlen im Osten. Inhaltlich soll nichts dazwischen kommen - ob das gelingt? Von B. Großkopff.",
-      "pubDate": "2026-07-04T05:00:13+02:00",
       "bild": ""
     }
   ],
