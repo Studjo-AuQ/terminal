@@ -1,11 +1,35 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "05.07.2026, 02:41 Uhr (UTC)",
+  "aktualisiert": "05.07.2026, 06:37 Uhr (UTC)",
   "meldungen": [
     {
+      "title": "Unterwegs mit der ersten Frauen-Drohneneinheit der Ukraine",
+      "description": "Vor einigen Jahren arbeiteten sie als Designerin, im Marketing oder studierten an der Uni. Heute sind sie in der ersten rein weiblichen Drohneneinheit der Ukraine - und setzen Russlands Kriegslogistik zunehmend unter Druck. Von S. Petersohn.",
+      "pubDate": "2026-07-05T08:06:23+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Trump hält Rede zum 250. Unabhängigkeitstag der USA",
+      "description": "Selbstlob, Attacken, angebliches Rekordfeuerwerk: US-Präsident Trump hat die Feiern zum 250. US-Unabhängigkeitstag beendet. In seiner Rede feierte er sich selbst. Ein Unwetter hatte seinen Auftritt massiv verzögert.",
+      "pubDate": "2026-07-05T08:11:06+02:00",
+      "bild": ""
+    },
+    {
+      "title": "30 Jahre nach \"Dolly\": Wie das Klonschaf die Forschung veränderte",
+      "description": "Vor 30 Jahren kam Schaf \"Dolly\" zur Welt - als das erste geklonte Säugetier. Heute ist das Laborwunder die Grundlage wichtiger Forschung. Was kann Klonen leisten und wo liegen die Grenzen - auch ethisch? Von L. Fiedler und E. Burkhart.",
+      "pubDate": "2026-07-05T05:44:47+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Altersabsicherung oder Verkaufsfalle: Was das Altersvorsorgedepot bietet",
+      "description": "Das Altersvorsorgedepot soll das Rentensystem entlasten und für viele Menschen zugänglich sein. Doch Experten bezweifeln, dass mit dem neuen Depot soziale Gerechtigkeit hergestellt wird. Von L.-M. Hiltscher und C. Dörr.",
+      "pubDate": "2026-07-05T05:44:23+02:00",
+      "bild": ""
+    },
+    {
       "title": "250 Jahre USA: Unwetter verzögert Trump-Rede - Festmeile evakuiert",
-      "description": "Das Wetter überschattet die Feierlichkeiten zum 250. Gründungstag der USA in Washington. Nach Absagen von Veranstaltungen wegen extremer Hitze verzögert sich auch eine Rede des Präsidenten Trump.",
-      "pubDate": "2026-07-05T04:05:30+02:00",
+      "description": "Das Wetter überschattet die Feierlichkeiten zum 250. Gründungstag der USA in Washington. Nach Absagen von Veranstaltungen wegen extremer Hitze verzögerte sich auch eine Rede des Präsidenten Trump.",
+      "pubDate": "2026-07-05T05:31:58+02:00",
       "bild": ""
     },
     {
@@ -66,30 +90,6 @@
       "title": "Alice Weidel und Tino Chrupalla als AfD-Vorsitzende wiedergewählt",
       "description": "Alice Weidel und Tino Chrupalla sind als AfD-Chefs wiedergewählt worden. Beim Bundesparteitag in Erfurt konnte Weidel ihr Ergebnis von vor zwei Jahren leicht verbessern, Chrupalla hingegen büßte Stimmen ein.",
       "pubDate": "2026-07-04T19:08:31+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Hitzewelle: Parade beim US-Unabhängigkeitstag abgesagt",
-      "description": "Temperaturen von mehr als 38 Grad beeinträchtigen die Jubiläumsfeiern in Washington und anderen Städten der USA. Eine Parade wurde abgesagt, nachdem mehrere Menschen kollabiert waren. Tausende Haushalte sind infolge der Hitze ohne Strom.",
-      "pubDate": "2026-07-04T12:37:35+02:00",
-      "bild": ""
-    },
-    {
-      "title": "250 Jahre USA: Eine verpasste Chance für ein gespaltenes Land?",
-      "description": "250 Jahre Unabhängigkeitserklärung - das könnte Anlass sein für Feiern, die die USA wieder zusammenführen. Doch das Gegenteil ist der Fall. Ein Streit um Baumaßnahmen überschattet den Jahrestag - und die Selbstdarstellung Trumps. Von Anne Schneider.",
-      "pubDate": "2026-07-04T12:37:28+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kinder in Venezuela: Spielen zwischen den Trümmern",
-      "description": "Viele Kinder in Venezuela sind durch die schweren Erdbeben traumatisiert. Sie haben Eltern, Freunde oder Klassenkameraden verloren. In einem Park gibt es beim Spielen Momente der Normalität. Von Anne Demmer.",
-      "pubDate": "2026-07-04T11:26:25+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Tote bei russischen Angriffen - Ukraine attackiert Ölanlagen",
-      "description": "In der Ukraine sind bei russischen Angriffen zehn Menschen getötet worden. Die Ukraine attackiert derweil erneut Ölanlagen in St. Petersburg. Und Moskau meldet die angebliche Einnahme einer strategisch wichtigen Stadt - Selenskyj dementiert.",
-      "pubDate": "2026-07-04T14:25:35+02:00",
       "bild": ""
     }
   ],
