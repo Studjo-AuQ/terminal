@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "04.07.2026, 23:32 Uhr (UTC)",
+  "aktualisiert": "05.07.2026, 02:41 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "250 Jahre USA: Unwetter verzögert Trump-Rede - Festmeile evakuiert",
+      "description": "Das Wetter überschattet die Feierlichkeiten zum 250. Gründungstag der USA in Washington. Nach Absagen von Veranstaltungen wegen extremer Hitze verzögert sich auch eine Rede des Präsidenten Trump.",
+      "pubDate": "2026-07-05T04:05:30+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Behörden in Venezuela melden fast 3.000 Tote nach Erdbeben",
+      "description": "Die Hoffnung schwindet, nach den Erdbeben in Venezuela noch Überlebende zu finden. Doch Helfer und Rettungskräfte suchen weiter. Die Zahl der bestätigten Todesopfer liegt mittlerweile bei fast 3.000.",
+      "pubDate": "2026-07-05T02:21:44+02:00",
+      "bild": ""
+    },
     {
       "title": "Chrupalla: \"Bürger erwarten von der AfD Führungsqualitäten\"",
       "description": "AfD-Co-Chef Chrupalla hat sich in den tagesthemen zufrieden über seine Wiederwahl gezeigt. Zum Kurs der AfD erklärte er, die Bürger erwarteten \"Führungsqualitäten\" - inhaltliche Fragen wolle die Partei allerdings erst im kommenden Jahr besprechen.",
@@ -78,18 +90,6 @@
       "title": "Tote bei russischen Angriffen - Ukraine attackiert Ölanlagen",
       "description": "In der Ukraine sind bei russischen Angriffen zehn Menschen getötet worden. Die Ukraine attackiert derweil erneut Ölanlagen in St. Petersburg. Und Moskau meldet die angebliche Einnahme einer strategisch wichtigen Stadt - Selenskyj dementiert.",
       "pubDate": "2026-07-04T14:25:35+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bundesparteitag: Zehntausende protestieren gegen AfD in Erfurt",
-      "description": "Laut Polizei haben mehr als 30.000 Menschen in Erfurt gegen den Bundesparteitag der AfD protestiert. Auf einigen Zufahrtsstraßen zum Tagungsort gilt ein Demonstrationsverbot - zu Recht, bestätigte das Oberverwaltungsgericht.",
-      "pubDate": "2026-07-04T20:14:57+02:00",
-      "bild": ""
-    },
-    {
-      "title": "KI-Firmen kaufen offenbar Antiquariate leer - Buchhändler alarmiert",
-      "description": "Es sind sonderbare Bestellungen: Massenweise werden in Antiquariaten innerhalb kürzester Zeit online Ladenhüter bestellt. Dahinter stecken vermutlich Firmen, die ihre KI trainieren. Nicht nur Buchhändler sind alarmiert. Von J. Büchsenmann.",
-      "pubDate": "2026-07-04T07:59:38+02:00",
       "bild": ""
     }
   ],
