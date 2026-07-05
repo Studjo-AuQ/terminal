@@ -1,15 +1,15 @@
 {
-  "aktualisiert": "05.07.2026, 17:00 Uhr",
+  "aktualisiert": "05.07.2026, 18:35 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
-        "temp": 19,
-        "gefuehlt": 19,
+        "temp": 18,
+        "gefuehlt": 17,
         "zustand": "Bedeckt",
         "emoji": "☁️",
         "wind": 12,
-        "luftfeuchte": 69,
+        "luftfeuchte": 78,
         "niederschlag": 0.0
       },
       "tage": [
@@ -20,7 +20,7 @@
           "zustand": "Nieselregen",
           "max": 20,
           "min": 16,
-          "niederschlag": 1.5
+          "niederschlag": 1.7
         },
         {
           "wochentag": "Montag",
@@ -64,12 +64,12 @@
       "stadt": "Werdohl",
       "aktuell": {
         "temp": 19,
-        "gefuehlt": 19,
-        "zustand": "Leichte Schauer",
-        "emoji": "🌦️",
-        "wind": 16,
-        "luftfeuchte": 76,
-        "niederschlag": 0.6
+        "gefuehlt": 20,
+        "zustand": "Bedeckt",
+        "emoji": "☁️",
+        "wind": 6,
+        "luftfeuchte": 78,
+        "niederschlag": 0.0
       },
       "tage": [
         {
@@ -122,13 +122,13 @@
     {
       "stadt": "Kierspe",
       "aktuell": {
-        "temp": 19,
-        "gefuehlt": 18,
-        "zustand": "Bedeckt",
-        "emoji": "☁️",
-        "wind": 14,
-        "luftfeuchte": 77,
-        "niederschlag": 0.0
+        "temp": 17,
+        "gefuehlt": 17,
+        "zustand": "Leichter Nieselregen",
+        "emoji": "🌦️",
+        "wind": 11,
+        "luftfeuchte": 86,
+        "niederschlag": 0.1
       },
       "tage": [
         {
@@ -138,7 +138,7 @@
           "zustand": "Nieselregen",
           "max": 20,
           "min": 15,
-          "niederschlag": 2.5
+          "niederschlag": 2.4
         },
         {
           "wochentag": "Montag",
@@ -181,12 +181,12 @@
     {
       "stadt": "Bochum",
       "aktuell": {
-        "temp": 23,
-        "gefuehlt": 22,
-        "zustand": "Teils bewölkt",
-        "emoji": "⛅",
-        "wind": 16,
-        "luftfeuchte": 57,
+        "temp": 21,
+        "gefuehlt": 19,
+        "zustand": "Bedeckt",
+        "emoji": "☁️",
+        "wind": 20,
+        "luftfeuchte": 62,
         "niederschlag": 0.0
       },
       "tage": [
@@ -195,8 +195,8 @@
           "datum": "05.07.",
           "emoji": "🌦️",
           "zustand": "Leichter Nieselregen",
-          "max": 23,
-          "min": 20,
+          "max": 24,
+          "min": 19,
           "niederschlag": 0.2
         },
         {
