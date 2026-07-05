@@ -1,15 +1,74 @@
 {
-  "aktualisiert": "05.07.2026, 12:47 Uhr",
+  "aktualisiert": "05.07.2026, 14:26 Uhr",
   "staedte": [
+    {
+      "stadt": "Lüdenscheid",
+      "aktuell": {
+        "temp": 20,
+        "gefuehlt": 19,
+        "zustand": "Bedeckt",
+        "emoji": "☁️",
+        "wind": 16,
+        "luftfeuchte": 64,
+        "niederschlag": 0.0
+      },
+      "tage": [
+        {
+          "wochentag": "Sonntag",
+          "datum": "05.07.",
+          "emoji": "🌧️",
+          "zustand": "Leichter Regen",
+          "max": 20,
+          "min": 16,
+          "niederschlag": 2.2
+        },
+        {
+          "wochentag": "Montag",
+          "datum": "06.07.",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
+          "max": 25,
+          "min": 15,
+          "niederschlag": 0.0
+        },
+        {
+          "wochentag": "Dienstag",
+          "datum": "07.07.",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
+          "max": 25,
+          "min": 17,
+          "niederschlag": 0.0
+        },
+        {
+          "wochentag": "Mittwoch",
+          "datum": "08.07.",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
+          "max": 22,
+          "min": 14,
+          "niederschlag": 0.0
+        },
+        {
+          "wochentag": "Donnerstag",
+          "datum": "09.07.",
+          "emoji": "🌤️",
+          "zustand": "Überwiegend klar",
+          "max": 27,
+          "min": 15,
+          "niederschlag": 0.0
+        }
+      ]
+    },
     {
       "stadt": "Werdohl",
       "aktuell": {
-        "temp": 21,
+        "temp": 20,
         "gefuehlt": 20,
         "zustand": "Bedeckt",
         "emoji": "☁️",
         "wind": 14,
-        "luftfeuchte": 66,
+        "luftfeuchte": 68,
         "niederschlag": 0.0
       },
       "tage": [
@@ -20,7 +79,7 @@
           "zustand": "Leichter Regen",
           "max": 21,
           "min": 17,
-          "niederschlag": 0.4
+          "niederschlag": 0.5
         },
         {
           "wochentag": "Montag",
@@ -37,7 +96,7 @@
           "emoji": "☁️",
           "zustand": "Bedeckt",
           "max": 25,
-          "min": 15,
+          "min": 14,
           "niederschlag": 0.0
         },
         {
@@ -63,11 +122,11 @@
     {
       "stadt": "Kierspe",
       "aktuell": {
-        "temp": 19,
-        "gefuehlt": 18,
+        "temp": 20,
+        "gefuehlt": 19,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 12,
+        "wind": 14,
         "luftfeuchte": 77,
         "niederschlag": 0.0
       },
@@ -76,17 +135,17 @@
           "wochentag": "Sonntag",
           "datum": "05.07.",
           "emoji": "🌧️",
-          "zustand": "Leichter Regen",
+          "zustand": "Regen",
           "max": 20,
           "min": 15,
-          "niederschlag": 3.0
+          "niederschlag": 6.9
         },
         {
           "wochentag": "Montag",
           "datum": "06.07.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 25,
+          "max": 24,
           "min": 15,
           "niederschlag": 0.0
         },
@@ -95,7 +154,7 @@
           "datum": "07.07.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 24,
+          "max": 25,
           "min": 16,
           "niederschlag": 0.0
         },
@@ -111,8 +170,8 @@
         {
           "wochentag": "Donnerstag",
           "datum": "09.07.",
-          "emoji": "☀️",
-          "zustand": "Klar",
+          "emoji": "🌤️",
+          "zustand": "Überwiegend klar",
           "max": 27,
           "min": 14,
           "niederschlag": 0.0
@@ -126,8 +185,8 @@
         "gefuehlt": 21,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 14,
-        "luftfeuchte": 59,
+        "wind": 17,
+        "luftfeuchte": 55,
         "niederschlag": 0.0
       },
       "tage": [
@@ -137,7 +196,7 @@
           "emoji": "🌦️",
           "zustand": "Leichter Nieselregen",
           "max": 24,
-          "min": 19,
+          "min": 20,
           "niederschlag": 0.5
         },
         {
@@ -145,7 +204,7 @@
           "datum": "06.07.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 29,
+          "max": 28,
           "min": 18,
           "niederschlag": 0.0
         },
@@ -155,7 +214,7 @@
           "emoji": "☁️",
           "zustand": "Bedeckt",
           "max": 28,
-          "min": 20,
+          "min": 21,
           "niederschlag": 0.0
         },
         {
@@ -170,8 +229,8 @@
         {
           "wochentag": "Donnerstag",
           "datum": "09.07.",
-          "emoji": "☀️",
-          "zustand": "Klar",
+          "emoji": "⛅",
+          "zustand": "Teils bewölkt",
           "max": 31,
           "min": 18,
           "niederschlag": 0.0
@@ -179,7 +238,5 @@
       ]
     }
   ],
-  "fehler": [
-    "Lüdenscheid: <urlopen error _ssl.c:983: The handshake operation timed out>"
-  ]
+  "fehler": []
 }
