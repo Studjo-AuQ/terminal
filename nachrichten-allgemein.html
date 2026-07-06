@@ -249,6 +249,18 @@
             Tagesschau aktuell
             <span class="tab-sub">Alle aktuellen Nachrichten</span>
         </button>
+<!-- ════════════════════════════════════════════════════════
+     SCHRITT 1: Neuer Tab-Button  (nach dem Tagesschau-Button einfügen)
+     ════════════════════════════════════════════════════════ -->
+
+<button class="tab-btn" data-tab="kobinet" onclick="zeigeTab('kobinet', this)">
+  ♿ kobinet – Teilhabe
+</button>
+
+<!-- Hinweis: Das onclick-Attribut muss zur bestehenden Tab-Logik passen.
+     Schau Dir an, wie der Tagesschau-Button aufgerufen wird, und kopiere
+     den gleichen Funktionsnamen (z. B. switchTab, zeigeTab, wechsleTab …). -->
+        
     </div>
 
     <!-- ══════════════════════════════════════════════════
@@ -278,6 +290,33 @@
         <div class="info-box blau"  id="warten-tagesschau"  style="display:none">⏳ Inhalte werden eingerichtet – bitte in 30 Minuten erneut aufrufen.</div>
         <div class="news-grid tagesschau" id="grid-tagesschau"></div>
     </div>
+
+    <!-- ════════════════════════════════════════════════════════
+     SCHRITT 2: Tab-Inhaltsbereich (nach dem Tagesschau-Bereich einfügen)
+     ════════════════════════════════════════════════════════ -->
+
+<div id="tab-kobinet" class="tab-content" style="display:none">
+
+  <!-- Kopfzeile des Tabs -->
+  <div class="news-quelle">
+    <strong>Quelle: kobinet-nachrichten.org</strong>
+    <span class="news-stand">Stand: <span id="kobinet-stand">wird geladen…</span></span>
+  </div>
+
+  <!-- Artikel-Liste -->
+  <div id="kobinet-liste">
+    <p class="news-laden">Wird geladen…</p>
+  </div>
+
+  <!-- Fehlermeldungen (hidden by default) -->
+  <p class="news-fehler" id="kobinet-fehler" style="display:none">
+    ⚠️ Nachrichten konnten nicht geladen werden.
+  </p>
+  <p class="news-leer" id="kobinet-leer" style="display:none">
+    ⏳ Inhalte werden eingerichtet – bitte in 30 Minuten erneut aufrufen.
+  </p>
+
+</div>
 
 </main>
 
@@ -399,6 +438,98 @@ ladeFeed('tagesschau.json', {
 
 // Seite alle 30 Minuten neu laden
 setTimeout(() => location.reload(), 30 * 60 * 1000);
+</script>
+<!-- ════════════════════════════════════════════════════════
+     SCHRITT 3: JavaScript (vor </body> einfügen)
+     ════════════════════════════════════════════════════════ -->
+
+<script>
+// ── Kobinet-Nachrichten laden und rendern ────────────────────────────────
+(function ladeKobinet() {
+
+  fetch('kobinet.json')
+    .then(function(res) {
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      return res.json();
+    })
+    .then(function(data) {
+
+      // Stand-Zeitstempel setzen
+      var standEl = document.getElementById('kobinet-stand');
+      if (standEl) standEl.textContent = data.updated || '–';
+
+      var liste = document.getElementById('kobinet-liste');
+      if (!liste) return;
+
+      // Fehler im Datenabruf?
+      if (data.error) {
+        document.getElementById('kobinet-fehler').style.display = 'block';
+        liste.innerHTML = '';
+        return;
+      }
+
+      // Keine Artikel?
+      if (!data.items || data.items.length === 0) {
+        document.getElementById('kobinet-leer').style.display = 'block';
+        liste.innerHTML = '';
+        return;
+      }
+
+      // Artikel rendern – gleiche Struktur wie Tagesschau-Tab
+      var html = '';
+      data.items.forEach(function(artikel) {
+
+        // Datum formatieren (optional, falls pubDate vorhanden)
+        var datumText = '';
+        if (artikel.pubDate) {
+          try {
+            var d = new Date(artikel.pubDate);
+            datumText = d.toLocaleDateString('de-DE', {
+              day: '2-digit', month: '2-digit', year: 'numeric'
+            });
+          } catch(e) { datumText = artikel.pubDate; }
+        }
+
+        // Link-Wrapper nur wenn URL vorhanden
+        var oeffner = artikel.link
+          ? '<a href="' + artikel.link + '" target="_blank" rel="noopener noreferrer" class="news-link">'
+          : '<div class="news-link">';
+        var schliesser = artikel.link ? '</a>' : '</div>';
+
+        html += oeffner +
+          '<div class="news-artikel">' +
+            '<div class="news-titel">' + escapeHTML(artikel.title) + '</div>' +
+            (artikel.description
+              ? '<div class="news-beschreibung">' + escapeHTML(artikel.description) + '</div>'
+              : '') +
+            (datumText
+              ? '<div class="news-datum">📅 ' + datumText + '</div>'
+              : '') +
+          '</div>' +
+        schliesser;
+      });
+
+      liste.innerHTML = html;
+    })
+    .catch(function(err) {
+      console.error('Kobinet fetch Fehler:', err);
+      var fehlerEl = document.getElementById('kobinet-fehler');
+      if (fehlerEl) fehlerEl.style.display = 'block';
+      var listeEl = document.getElementById('kobinet-liste');
+      if (listeEl) listeEl.innerHTML = '';
+    });
+
+})();
+
+// ── Hilfsfunktion: HTML-Sonderzeichen escapen ────────────────────────────
+function escapeHTML(str) {
+  if (!str) return '';
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
 </script>
 
 </body>
