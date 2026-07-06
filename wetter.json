@@ -1,15 +1,15 @@
 {
-  "aktualisiert": "06.07.2026, 00:02 Uhr",
+  "aktualisiert": "06.07.2026, 04:48 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
-        "temp": 15,
-        "gefuehlt": 15,
+        "temp": 14,
+        "gefuehlt": 14,
         "zustand": "Bedeckt",
         "emoji": "☁️",
         "wind": 9,
-        "luftfeuchte": 89,
+        "luftfeuchte": 90,
         "niederschlag": 0.0
       },
       "tage": [
@@ -27,18 +27,18 @@
           "datum": "07.07.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 24,
+          "max": 23,
           "min": 17,
           "niederschlag": 0.0
         },
         {
           "wochentag": "Mittwoch",
           "datum": "08.07.",
-          "emoji": "🌦️",
-          "zustand": "Leichter Nieselregen",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
           "max": 20,
           "min": 15,
-          "niederschlag": 0.1
+          "niederschlag": 0.2
         },
         {
           "wochentag": "Donnerstag",
@@ -67,8 +67,8 @@
         "gefuehlt": 16,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 5,
-        "luftfeuchte": 87,
+        "wind": 6,
+        "luftfeuchte": 86,
         "niederschlag": 0.0
       },
       "tage": [
@@ -87,7 +87,7 @@
           "emoji": "☁️",
           "zustand": "Bedeckt",
           "max": 26,
-          "min": 15,
+          "min": 16,
           "niederschlag": 0.0
         },
         {
@@ -95,7 +95,7 @@
           "datum": "08.07.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 22,
+          "max": 23,
           "min": 16,
           "niederschlag": 0.0
         },
@@ -104,17 +104,17 @@
           "datum": "09.07.",
           "emoji": "⛅",
           "zustand": "Teils bewölkt",
-          "max": 28,
+          "max": 27,
           "min": 14,
           "niederschlag": 0.0
         },
         {
           "wochentag": "Freitag",
           "datum": "10.07.",
-          "emoji": "☁️",
-          "zustand": "Bedeckt",
-          "max": 29,
-          "min": 15,
+          "emoji": "🌫️",
+          "zustand": "Nebel",
+          "max": 28,
+          "min": 14,
           "niederschlag": 0.0
         }
       ]
@@ -127,7 +127,7 @@
         "zustand": "Bedeckt",
         "emoji": "☁️",
         "wind": 8,
-        "luftfeuchte": 94,
+        "luftfeuchte": 93,
         "niederschlag": 0.0
       },
       "tage": [
@@ -152,10 +152,10 @@
         {
           "wochentag": "Mittwoch",
           "datum": "08.07.",
-          "emoji": "🌦️",
-          "zustand": "Leichter Nieselregen",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
           "max": 20,
-          "min": 15,
+          "min": 14,
           "niederschlag": 0.1
         },
         {
@@ -164,14 +164,14 @@
           "emoji": "☁️",
           "zustand": "Bedeckt",
           "max": 26,
-          "min": 15,
+          "min": 14,
           "niederschlag": 0.0
         },
         {
           "wochentag": "Freitag",
           "datum": "10.07.",
-          "emoji": "⛅",
-          "zustand": "Teils bewölkt",
+          "emoji": "🌤️",
+          "zustand": "Überwiegend klar",
           "max": 27,
           "min": 15,
           "niederschlag": 0.0
@@ -181,12 +181,12 @@
     {
       "stadt": "Bochum",
       "aktuell": {
-        "temp": 18,
+        "temp": 19,
         "gefuehlt": 18,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 11,
-        "luftfeuchte": 76,
+        "wind": 14,
+        "luftfeuchte": 71,
         "niederschlag": 0.0
       },
       "tage": [
@@ -215,7 +215,7 @@
           "zustand": "Bedeckt",
           "max": 24,
           "min": 18,
-          "niederschlag": 0.1
+          "niederschlag": 0.0
         },
         {
           "wochentag": "Donnerstag",
@@ -229,9 +229,9 @@
         {
           "wochentag": "Freitag",
           "datum": "10.07.",
-          "emoji": "☁️",
-          "zustand": "Bedeckt",
-          "max": 30,
+          "emoji": "🌤️",
+          "zustand": "Überwiegend klar",
+          "max": 31,
           "min": 19,
           "niederschlag": 0.0
         }
