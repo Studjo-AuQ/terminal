@@ -1,7 +1,43 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "06.07.2026, 00:11 Uhr (UTC)",
+  "aktualisiert": "06.07.2026, 04:50 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Ukraine meldet mehrere Tote nach russischen Angriffen",
+      "description": "Luftalarm im ganzen Land, Explosionen in Kiew: Russland hat die Ukraine in der Nacht erneut attackiert - und das kurz vor einem NATO-Gipfel in der Türkei. Medien und Behörden zufolge gibt es mindestens neun Tote.",
+      "pubDate": "2026-07-06T06:35:58+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wenn Hilfe ausbleibt - Deutschland verliert internationale Bedeutung",
+      "description": "Die Bundesregierung will erneut im Entwicklungsetat sparen - mit Folgen weit über Deutschland hinaus: Hilfsprojekte werden eingestellt, Partnerorganisationen verlieren Sicherheit - und andere Staaten gewinnen Einfluss. Von Anne-Katrin Mellmann.",
+      "pubDate": "2026-07-06T06:27:54+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Warum der Suezkanal für den Welthandel so wichtig ist",
+      "description": "Die Welt blickt derzeit gebannt auf die Straße von Hormus als wichtige Seefahrtsroute. Ähnlich wichtig für die Weltwirtschaft ist auch der Suezkanal in Ägypten. Jürgen Stryjak über einen Kanal, um den bereits Krieg geführt wurde.",
+      "pubDate": "2026-07-06T05:50:45+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Haushaltsentwurf: Warum Klingbeil mit mehr Schulden plant",
+      "description": "Heute stellt Finanzminister Klingbeil seinen Haushaltsentwurf für 2027 vor. Er muss erklären, warum er neue Schulden aufnimmt und Gelder aus dem Klima- und Transformationsfonds kürzen will. Von Nicole Kohnert.",
+      "pubDate": "2026-07-06T04:45:12+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Trump und Selenskyj wollen sich beim NATO-Gipfel treffen",
+      "description": "Erst ein Telefonat, jetzt ein Treffen: US-Präsident Trump und der ukrainische Präsident Selenskyj wollen ihr Gespräch beim NATO-Gipfel fortsetzen. Dabei dürfte es um ein Ende des Krieges gegen die Ukraine gehen.",
+      "pubDate": "2026-07-06T03:56:37+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Zahl der Toten nach Erdbeben in Venezuela steigt weiter",
+      "description": "Immer noch werden Tote nach den Erdbeben in Venezuela geborgen. Die Opferzahl stieg laut Behörden auf mehr als 3.300 Menschen. Interimspräsidentin Rodríguez verteidigte derweil ihre Regierung gegen Kritik.",
+      "pubDate": "2026-07-06T02:41:08+02:00",
+      "bild": ""
+    },
     {
       "title": "Analyse zum AfD-Parteitag: Wie Weidel und Höcke ihre Macht ausbauen",
       "description": "Der Parteitag der AfD sollte vor den Landtagswahlen vor allem Geschlossenheit ausstrahlen. Doch hinter den Kulissen knirscht es. Sowohl Weidel als auch Höcke nutzten ihre Netzwerke, um noch mächtiger zu werden, analysiert Kilian Pfeffer.",
@@ -28,7 +64,7 @@
     },
     {
       "title": "Mehr als eine Million Menschen bei der CSD-Parade in Köln",
-      "description": "Es ist ein Fest für Respekt und Toleranz: Zum Christopher Street Day sind in Köln mehr als eine Million Menschen auf der Straße. Bei einer Parade demonstrieren sie für die Rechte der LGBTQ-Community.",
+      "description": "Es ist ein Fest für Respekt und Toleranz: Zum Christopher Street Day sind in Köln mehr als eine Million Menschen auf die Straße gegangen. Bei einer Parade demonstrierten sie für die Rechte der LGBTQ-Community.",
       "pubDate": "2026-07-05T17:22:13+02:00",
       "bild": ""
     },
@@ -54,42 +90,6 @@
       "title": "Kraftstoff aus Mais treibt Brasilien an",
       "description": "Wer in Brasilien tankt, bekommt inzwischen mehr als 30 Prozent Bioethanol aus Mais im Kraftstoff. Das macht das Land unabhängiger von Preisschocks auf dem Ölmarkt. Doch es gibt auch Kritik. Von Anne Herrberg.",
       "pubDate": "2026-07-05T14:05:39+02:00",
-      "bild": ""
-    },
-    {
-      "title": "SPD-Politiker gegen von Regierung geplantes Enteignungsverbot",
-      "description": "Schwarz-Rot will die Enteignung von Wohnungskonzernen verbieten - daran gibt es Kritik aus den eigenen Reihen. SPD-Politiker sprechen von einem \"Wahlgeschenk an die Linken\". Die könnten bei der Berlin-Wahl stärkste Kraft werden.",
-      "pubDate": "2026-07-05T13:22:00+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Chameneis Sohn und Nachfolger fehlt bei Trauerfeier in Teheran",
-      "description": "In Iran gehen die Trauerfeiern für den getöteten Ajatollah Ali Chamenei weiter. Dessen Sohn und Nachfolger wurde dort bislang nicht gesichtet - was Spekulationen über seinen Gesundheitszustand anheizt.",
-      "pubDate": "2026-07-05T12:16:43+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Pistorius: Keine Weitergabe von Geheiminformationen an AfD",
-      "description": "Was, wenn die AfD etwa in Sachsen-Anhalt an die Regierung kommt? Dann will Verteidigungsminister Pistorius die Weitergabe geheimer Informationen an die Partei verhindern. Eine AfD-Nähe zu Putin sei \"nicht zu übersehen\".",
-      "pubDate": "2026-07-05T11:52:52+02:00",
-      "bild": ""
-    },
-    {
-      "title": "DGB: 40 Prozent der Beschäftigten zweifeln am Durchhalten bis zur Rente",
-      "description": "Mehr als jeder Dritte Beschäftigte in Deutschland zweifelt daran, bis zur Rente durchhalten zu können. Das ergab eine Erhebung des DGB. Besonders pessimistisch sind Arbeitnehmer aus den Bereichen Pflege, Handwerk und Bau.",
-      "pubDate": "2026-07-05T11:35:16+02:00",
-      "bild": ""
-    },
-    {
-      "title": "250 Jahre USA: Was wird aus den Idealen der Gründerväter?",
-      "description": "Die USA feiern ihre Unabhängigkeit und ihre demokratische Verfassung. Doch von Anfang an waren diese auch von Widersprüchen geprägt - und werden in Zeiten von Präsident Trump zunehmend neu interpretiert. Von Max Bauer.",
-      "pubDate": "2026-07-05T11:13:19+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Krieg gegen die Ukraine: Trump spricht mit Putin und Selenskyj",
-      "description": "Thema war auch der russische Angriffskrieg gegen das Nachbarland: US-Präsident Trump hat mit Kremlchef Putin und dem ukrainischen Präsidenten Selenskyj telefoniert. Russland meldet massive Drohnenangriffe auf eigene Städte.",
-      "pubDate": "2026-07-05T09:49:18+02:00",
       "bild": ""
     }
   ],
