@@ -18,16 +18,33 @@
       padding: 1rem 1.5rem 2.5rem;
     }
 
-    .zurueck-btn {
-      display: inline-flex; align-items: center; gap: 6px;
-      padding: 0.55rem 1.1rem;
-      background: #fde8e9; color: #b61f29;
-      font-family: inherit; font-size: 0.88rem; font-weight: 700;
-      border: none; border-radius: 10px; cursor: pointer;
-      text-decoration: none; margin-bottom: 1rem;
+    /* ══════════════════════════════════════════════════
+       ZURÜCK-BUTTON – Stil wie bei jahrestermine.html:
+       Rahmen-Pill, weiß/transparent, rote Umrandung
+       ══════════════════════════════════════════════════ */
+    .zurueck-bereich {
+      text-align: center;
+      margin-bottom: 1.2rem;
     }
-    .zurueck-btn:hover { background: #f7cdd0; }
+    .zurueck-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0.65rem 1.8rem;
+      background: transparent;
+      color: #b61f29;
+      font-family: inherit;
+      font-size: 0.92rem;
+      font-weight: 700;
+      border: 2px solid #b61f29;
+      border-radius: 999px;        /* Pill-Form */
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+    .zurueck-btn:hover { background: #fde8e9; }
 
+    /* Titel */
     h1 {
       color: #b61f29; text-align: center; font-weight: 800;
       font-size: clamp(1.4rem, 3vw, 2rem); margin-bottom: 0.25rem;
@@ -43,20 +60,18 @@
     }
     .zentriert { text-align: center; }
 
+    /* Formular-Karte */
     .karte {
       background: #fff; border-radius: 16px; padding: 1.5rem;
       box-shadow: 0 3px 12px rgba(0,0,0,.08);
     }
 
     .feld-gruppe { margin-bottom: 1.4rem; }
-
     .feld-label {
       display: block; font-size: 1rem; font-weight: 800; color: #222;
       margin-bottom: 0.6rem;
     }
-    .feld-label .opt {
-      font-weight: 400; font-size: 0.82rem; color: #888; margin-left: 4px;
-    }
+    .feld-label .opt { font-weight: 400; font-size: 0.82rem; color: #888; margin-left: 4px; }
     .pflicht { color: #b61f29; }
 
     /* Emoji-Bewertung */
@@ -108,7 +123,9 @@
       color: #b61f29; font-weight: 700; font-size: 0.95rem;
     }
 
-    /* Meldungen */
+    /* ══════════════════════════════════════════════════
+       MELDUNGEN (Erfolg / Fehler)
+       ══════════════════════════════════════════════════ */
     .meldung {
       display: none; border-radius: 14px; padding: 2rem 1.5rem;
       text-align: center;
@@ -120,15 +137,52 @@
     .meldung.erfolg h2 { color: #2a7a2a; }
     .meldung.fehler h2 { color: #b61f29; }
     .meldung p { font-size: 0.9rem; color: #555; line-height: 1.5; }
-    .meldung .weiter-btn {
-      display: inline-flex; align-items: center; gap: 6px;
-      padding: 0.6rem 1.3rem; margin-top: 1.2rem;
-      background: #fde8e9; color: #b61f29;
-      font-family: inherit; font-size: 0.9rem; font-weight: 700;
-      border: none; border-radius: 10px; cursor: pointer; text-decoration: none;
-    }
-    .meldung .weiter-btn:hover { background: #f7cdd0; }
 
+    /* ── Countdown auf Erfolgsmeldung ── */
+    .countdown-bereich {
+      margin: 1.2rem 0 1rem;
+      display: flex; flex-direction: column;
+      align-items: center; gap: 10px;
+    }
+    .countdown-ring-wrap {
+      position: relative; width: 64px; height: 64px;
+    }
+    .countdown-svg { transform: rotate(-90deg); }
+    .countdown-bg {
+      fill: none; stroke: #c8e6c8; stroke-width: 6;
+    }
+    .countdown-fg {
+      fill: none; stroke: #2a7a2a; stroke-width: 6;
+      stroke-linecap: round;
+      stroke-dasharray: 163;   /* 2π × r(26) ≈ 163 */
+      stroke-dashoffset: 0;
+      transition: stroke-dashoffset 1s linear;
+    }
+    .countdown-zahl-wrap {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .countdown-zahl {
+      font-size: 1.35rem; font-weight: 800; color: #2a7a2a;
+    }
+    .countdown-label {
+      font-size: 0.8rem; color: #666;
+    }
+
+    /* Pill-Button auch in Meldungen */
+    .meldung .zurueck-btn {
+      margin-top: 0.4rem;
+    }
+    .meldung .zurueck-btn.gruen {
+      color: #2a7a2a; border-color: #2a7a2a;
+    }
+    .meldung .zurueck-btn.gruen:hover { background: #eafaea; }
+    .meldung .zurueck-btn.rot {
+      color: #b61f29; border-color: #b61f29;
+    }
+    .meldung .zurueck-btn.rot:hover { background: #fdeaea; }
+
+    /* Footer */
     footer.terminal-footer {
       text-align: center; padding: 0.8rem 1rem;
       font-size: 0.82rem; color: #666;
@@ -146,20 +200,47 @@
 
   <div class="seite">
 
-    <a href="index.html" target="_self" class="zurueck-btn">← Hier geht's zurück</a>
+    <!-- ── Zurück-Button (Pill-Rahmen-Stil wie jahrestermine.html) ── -->
+    <div class="zurueck-bereich">
+      <a href="index.html" target="_self" class="zurueck-btn">
+        ← Zurück zur Startseite
+      </a>
+    </div>
 
-    <h1>Dein Feedback zum Terminal</h1>
+    <h1>Dein Feedback</h1>
     <p class="untertitel">Was denkst du? Deine Meinung ist wichtig für uns!</p>
     <div class="zentriert">
       <span class="anonym-pill">✓ Anonym möglich – Name ist freiwillig</span>
     </div>
 
-    <!-- Erfolgsmeldung -->
+    <!-- ══════════════════════════════════════════════════
+         ERFOLGSMELDUNG  (nach Absenden)
+         – eigene Danke-Seite mit 10-Sekunden-Countdown
+         – danach automatische Weiterleitung zu index.html
+         ══════════════════════════════════════════════════ -->
     <div class="meldung erfolg" id="meldung-erfolg">
       <div class="icon">✅</div>
       <h2>Vielen Dank!</h2>
       <p>Dein Feedback ist bei uns angekommen.<br>Wir lesen es und nehmen es ernst.</p>
-      <a href="index.html" target="_self" class="weiter-btn">← Zurück zum Start</a>
+
+      <!-- Countdown-Ring -->
+      <div class="countdown-bereich">
+        <div class="countdown-ring-wrap">
+          <svg class="countdown-svg" width="64" height="64" viewBox="0 0 64 64">
+            <circle class="countdown-bg" cx="32" cy="32" r="26"/>
+            <circle class="countdown-fg" id="cd-ring" cx="32" cy="32" r="26"/>
+          </svg>
+          <div class="countdown-zahl-wrap">
+            <span class="countdown-zahl" id="cd-zahl">10</span>
+          </div>
+        </div>
+        <span class="countdown-label">Weiterleitung zur Startseite …</span>
+      </div>
+
+      <!-- Manuell früher zurück -->
+      <a href="index.html" target="_self" class="zurueck-btn gruen">
+        ← Jetzt zur Startseite
+      </a>
     </div>
 
     <!-- Fehlermeldung -->
@@ -168,16 +249,18 @@
       <h2>Das hat leider nicht geklappt.</h2>
       <p>Bitte versuche es nochmal oder sprich jemanden an.</p>
       <p style="font-size:0.75rem;color:#999;margin-top:0.5rem" id="fehler-details"></p>
-      <button class="weiter-btn" onclick="zurueckZumFormular()">← Zurück zum Formular</button>
+      <button class="zurueck-btn rot" style="margin-top:1rem;cursor:pointer;border:2px solid #b61f29"
+        onclick="zurueckZumFormular()">← Zurück zum Formular</button>
     </div>
 
-    <!-- Formular -->
+    <!-- ══════════════════════════════════════════════════
+         FORMULAR
+         ══════════════════════════════════════════════════ -->
     <div class="karte" id="formular-bereich">
 
-      <!-- 1. Gesamteindruck -->
       <div class="feld-gruppe">
         <label class="feld-label">
-          Wie zufrieden bist du mit dem Terminal? <span class="pflicht">*</span>
+          Wie zufrieden bist du gerade? <span class="pflicht">*</span>
         </label>
         <div class="emoji-reihe">
           <input type="radio" name="Gesamteindruck" id="e1" value="😟 Nicht gut" class="emoji-radio">
@@ -194,34 +277,30 @@
         </div>
       </div>
 
-      <!-- 2. Was läuft gut -->
       <div class="feld-gruppe">
         <label class="feld-label" for="feld-gut">
-          👍 Was findest du gut am Terminal? <span class="opt">(freiwillig)</span>
+          👍 Was läuft gut? <span class="opt">(freiwillig)</span>
         </label>
         <textarea id="feld-gut" name="Was läuft gut" class="fb-textarea"
           placeholder="Das finde ich gut …"></textarea>
       </div>
 
-      <!-- 3. Wünsche -->
       <div class="feld-gruppe">
         <label class="feld-label" for="feld-wunsch">
-          💡 Was wünschst du dir am Terminal noch? <span class="opt">(freiwillig)</span>
+          💡 Was wünschst du dir? <span class="opt">(freiwillig)</span>
         </label>
         <textarea id="feld-wunsch" name="Wünsche und Ideen" class="fb-textarea"
           placeholder="Ich wünsche mir …"></textarea>
       </div>
 
-      <!-- 4. Was stört -->
       <div class="feld-gruppe">
         <label class="feld-label" for="feld-stoert">
-          👎 Was gefällt dir nicht am Terminal? <span class="opt">(freiwillig)</span>
+          👎 Was gefällt dir nicht? <span class="opt">(freiwillig)</span>
         </label>
         <textarea id="feld-stoert" name="Was gefällt nicht" class="fb-textarea"
           placeholder="Das gefällt mir nicht …"></textarea>
       </div>
 
-      <!-- 5. Name -->
       <div class="feld-gruppe">
         <label class="feld-label" for="feld-name">
           👤 Dein Name <span class="opt">(freiwillig – anonym ist okay!)</span>
@@ -232,13 +311,13 @@
 
       <div class="laden" id="laden">⏳ Wird gesendet …</div>
       <button type="button" class="absenden-btn" id="absenden-btn"
-        onclick="feedbackAbsenden()">
+              onclick="feedbackAbsenden()">
         📤 &nbsp;Feedback absenden
       </button>
 
-    </div>
+    </div><!-- /karte -->
 
-  </div>
+  </div><!-- /seite -->
 
   <footer class="terminal-footer">
     &copy; 2024 <strong>Studjo | Arbeit und Qualifizierung</strong>
@@ -246,31 +325,57 @@
   </footer>
 
   <script>
-    // ╔════════════════════════════════════════════════════════════╗
-    // ║  EINZIGE KONFIGURATION – diese EINE Zeile anpassen:      ║
-    // ║  Formspree-ID aus dem Formspree-Dashboard eintragen.      ║
-    // ║  Beispiel: 'xdoqkbnz'  (8 Zeichen, nur Buchstaben/Ziffern) ║
-    // ╚════════════════════════════════════════════════════════════╝
+    // ╔══════════════════════════════════════════════════════╗
+    // ║  Formspree-ID hier eintragen (aus Deinem Dashboard) ║
+    // ║  Deine bisherige ID einfach hier einsetzen.         ║
+    // ╚══════════════════════════════════════════════════════╝
     const FORMSPREE_ID = 'xjgqanep';
 
+    // ── Countdown nach erfolgreichem Absenden ────────────────
+    function starteCountdown() {
+      const DAUER   = 10;          // Sekunden bis Weiterleitung
+      const UMFANG  = 163;         // 2π × r(26) ≈ 163
+      const ring    = document.getElementById('cd-ring');
+      const zahl    = document.getElementById('cd-zahl');
+      let   rest    = DAUER;
+
+      // Ring startet voll gefüllt
+      ring.style.strokeDashoffset = '0';
+
+      const timer = setInterval(function () {
+        rest--;
+        zahl.textContent = rest;
+
+        // Ring leert sich gleichmäßig
+        ring.style.strokeDashoffset =
+          String(UMFANG * (1 - rest / DAUER));
+
+        if (rest <= 0) {
+          clearInterval(timer);
+          window.location.href = 'index.html';
+        }
+      }, 1000);
+    }
+
+    // ── Formular absenden ────────────────────────────────────
     async function feedbackAbsenden() {
 
-      // Pflichtfeld: Emoji-Bewertung
       const emoji = document.querySelector('input[name="Gesamteindruck"]:checked');
       if (!emoji) {
         alert('Bitte wähle zuerst aus, wie zufrieden du bist (😟 😐 😊 😁).');
         return;
       }
 
-      // Zeitstempel
       const jetzt   = new Date();
-      const datum   = jetzt.toLocaleDateString('de-DE', {day:'2-digit', month:'2-digit', year:'numeric'});
-      const uhrzeit = jetzt.toLocaleTimeString('de-DE', {hour:'2-digit', minute:'2-digit'});
+      const datum   = jetzt.toLocaleDateString('de-DE',
+                        {day:'2-digit', month:'2-digit', year:'numeric'});
+      const uhrzeit = jetzt.toLocaleTimeString('de-DE',
+                        {hour:'2-digit', minute:'2-digit'});
 
-      // Formulardaten zusammenstellen
       const daten = new FormData();
-      daten.append('_subject',  `📝 Feedback Terminal – ${datum}, ${uhrzeit} Uhr`);
-      daten.append('_cc',       'marc.brenzel@johanneswerk.de');  // Kopie an 2. Adresse
+      daten.append('_subject',
+        `📝 Feedback Terminal – ${datum}, ${uhrzeit} Uhr`);
+      daten.append('_cc', 'marc.brenzel@johanneswerk.de');
       daten.append('Gesamteindruck', emoji.value);
       daten.append('Was läuft gut',
         document.getElementById('feld-gut').value.trim()    || '(keine Angabe)');
@@ -282,10 +387,10 @@
         document.getElementById('feld-name').value.trim()   || 'Anonym');
       daten.append('Eingegangen am', `${datum} um ${uhrzeit} Uhr`);
 
-      // UI: Ladezustand aktivieren
-      document.getElementById('absenden-btn').disabled = true;
-      document.getElementById('laden').style.display   = 'block';
-      document.getElementById('formular-bereich').style.opacity      = '0.5';
+      // UI → Ladezustand
+      document.getElementById('absenden-btn').disabled             = true;
+      document.getElementById('laden').style.display               = 'block';
+      document.getElementById('formular-bereich').style.opacity    = '0.5';
       document.getElementById('formular-bereich').style.pointerEvents = 'none';
 
       try {
@@ -298,22 +403,23 @@
         const json = await res.json();
 
         if (json.ok) {
-          // ✅ Erfolg
+          // ✅ Erfolg – Formular ausblenden, Danke-Seite + Countdown zeigen
           document.getElementById('formular-bereich').style.display = 'none';
           document.getElementById('meldung-erfolg').style.display   = 'block';
+          starteCountdown();   // ← 10-Sekunden-Countdown startet
         } else {
-          const msg = (json.errors || []).map(e => e.message).join(', ') || 'Unbekannter Fehler';
+          const msg = (json.errors || []).map(e => e.message).join(', ')
+                      || 'Unbekannter Fehler';
           throw new Error(msg);
         }
 
       } catch (err) {
-        // ⚠️ Fehler
-        document.getElementById('absenden-btn').disabled            = false;
-        document.getElementById('laden').style.display              = 'none';
-        document.getElementById('formular-bereich').style.opacity   = '1';
+        document.getElementById('absenden-btn').disabled                = false;
+        document.getElementById('laden').style.display                  = 'none';
+        document.getElementById('formular-bereich').style.opacity       = '1';
         document.getElementById('formular-bereich').style.pointerEvents = '';
-        document.getElementById('fehler-details').textContent       = err.message;
-        document.getElementById('meldung-fehler').style.display     = 'block';
+        document.getElementById('fehler-details').textContent           = err.message;
+        document.getElementById('meldung-fehler').style.display         = 'block';
       }
     }
 
