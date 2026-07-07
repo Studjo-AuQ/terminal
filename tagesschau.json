@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "07.07.2026, 21:56 Uhr (UTC)",
+  "aktualisiert": "07.07.2026, 23:10 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "US-Militär: USA starten erneut Angriffe auf Iran",
+      "description": "Nach Angaben des US-Militärs haben erneut Angriffe auf Iran begonnen. Diese folgten auf Angriffe Teherans auf Handelsschiffe in der Straße von Hormus. Zudem setzten die USA die Öl-Sanktionen wieder in Kraft.",
+      "pubDate": "2026-07-08T00:35:24+02:00",
+      "bild": ""
+    },
     {
       "title": "NATO-Gipfel in der Türkei: Auf der Suche nach dem Geist von Ankara",
       "description": "Bundeskanzler Merz hofft beim NATO-Gipfel auf einen guten \"Geist von Ankara\", US-Präsident Trump hingegen beschwert sich bei den Partnern und fragt, wer im Bündnis für wen da ist. Von Benjamin Großkopff.",
@@ -84,12 +90,6 @@
       "title": "Erneut Beschuss von Tankern in der Straße von Hormus",
       "description": "In der Straße von Hormus droht ein Flüssiggastanker nach Beschuss zu explodieren, mindestens ein weiteres Schiff ist nach britischen Informationen von einem Geschoss getroffen worden. Katar macht Iran dafür verantwortlich.",
       "pubDate": "2026-07-07T16:33:19+02:00",
-      "bild": ""
-    },
-    {
-      "title": "NATO-Chef fordert \"Revolution\" in der Verteidigungsindustrie",
-      "description": "Vor dem Gipfel hat NATO-Chef Rutte von der Verteidigungsindustrie noch mehr Einsatz gefordert. Mit Blick auf Russland äußerte er sich besorgt. Laut Kanzler Merz könnte der Gipfel aber einen Einschnitt im Ukraine-Krieg markieren.",
-      "pubDate": "2026-07-07T15:09:35+02:00",
       "bild": ""
     }
   ],
