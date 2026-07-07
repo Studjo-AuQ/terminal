@@ -12,6 +12,7 @@
             --bg-color:     #f9f9f9;
             --text-color:   #0f2f37;
             --grey:         #8a8d8f;
+            --kobinet-gruen:#1b6b3a;   /* ← Farbe für kobinet-Tab */
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
@@ -25,7 +26,6 @@
         header { background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
         .logo-container { max-width: 1200px; margin: 0 auto; }
         .logo-container img { width: 100%; height: auto; display: block; }
-
         main {
             flex: 1;
             max-width: 960px;
@@ -33,7 +33,6 @@
             padding: 24px 20px 40px;
             width: 100%;
         }
-
         /* ── Top Bar ── */
         .top-bar {
             display: flex;
@@ -60,7 +59,6 @@
         }
         .back-button:hover { background: var(--primary-red); color: white; }
         h1 { font-size: 1.45rem; font-weight: 800; color: var(--primary-red); flex: 1; }
-
         /* ── Tab-Umschalter ── */
         .tab-bar {
             display: flex;
@@ -70,7 +68,7 @@
         }
         .tab-btn {
             flex: 1;
-            min-width: 180px;
+            min-width: 160px;
             padding: 14px 20px;
             border-radius: 12px;
             border: 2px solid #e0e0e0;
@@ -95,9 +93,20 @@
             color: white;
             box-shadow: 0 4px 12px rgba(182,31,41,0.25);
         }
+        /* Tagesschau-Tab aktiv: blau */
+        .tab-btn.aktiv.tagesschau-btn {
+            background: #1a237e;
+            border-color: #1a237e;
+            box-shadow: 0 4px 12px rgba(26,35,126,0.25);
+        }
+        /* kobinet-Tab aktiv: grün */
+        .tab-btn.aktiv.kobinet-btn {
+            background: var(--kobinet-gruen);
+            border-color: var(--kobinet-gruen);
+            box-shadow: 0 4px 12px rgba(27,107,58,0.25);
+        }
         .tab-btn .tab-emoji { font-size: 1.3rem; display: block; margin-bottom: 3px; }
         .tab-btn .tab-sub   { font-size: 0.75rem; font-weight: 400; opacity: 0.8; }
-
         /* ── Info-Leiste ── */
         .source-bar {
             background: white;
@@ -117,11 +126,9 @@
         .source-label strong { color: var(--text-color); }
         .refresh-info { color: var(--grey); font-size: 0.80rem; }
         .refresh-info span { font-weight: 700; color: var(--text-color); }
-
         /* ── Tab-Panels ── */
         .tab-panel { display: none; }
         .tab-panel.aktiv { display: block; }
-
         /* ── Lade / Fehler / Warten ── */
         .loading-box { text-align: center; padding: 50px 20px; color: var(--grey); }
         .spinner {
@@ -143,10 +150,8 @@
         }
         .info-box.gelb  { background:#fff3cd; border:1px solid #ffc107; color:#664d03; }
         .info-box.blau  { background:#e3f2fd; border:1px solid #90caf9; color:#0d47a1; }
-
         /* ── News-Karten ── */
         .news-grid { display: flex; flex-direction: column; gap: 14px; }
-
         .news-card {
             background: white;
             border-radius: 14px;
@@ -161,11 +166,16 @@
             transform: translateY(-1px);
         }
         .news-card.offen { border-left-color: var(--primary-red); }
-
-        /* Tagesschau-Karten: blaue Akzentfarbe */
-        .tab-panel.tagesschau .news-card.offen { border-left-color: #1a237e; }
-        .tab-panel.tagesschau .news-card:hover { box-shadow: 0 6px 18px rgba(26,35,126,0.13); }
-
+        /* Tagesschau: blauer Akzent */
+        .tab-panel.tagesschau .news-card.offen    { border-left-color: #1a237e; }
+        .tab-panel.tagesschau .news-card:hover    { box-shadow: 0 6px 18px rgba(26,35,126,0.13); }
+        .tab-panel.tagesschau .card-datum .tag    { color: #1a237e; }
+        .tab-panel.tagesschau .news-card.offen .card-pfeil { color: #1a237e; }
+        /* kobinet: grüner Akzent */
+        .tab-panel.kobinet .news-card.offen       { border-left-color: var(--kobinet-gruen); }
+        .tab-panel.kobinet .news-card:hover       { box-shadow: 0 6px 18px rgba(27,107,58,0.13); }
+        .tab-panel.kobinet .card-datum .tag       { color: var(--kobinet-gruen); }
+        .tab-panel.kobinet .news-card.offen .card-pfeil { color: var(--kobinet-gruen); }
         .card-header {
             display: flex;
             align-items: flex-start;
@@ -182,8 +192,6 @@
         }
         .card-datum .tag   { font-size: 1.4rem; font-weight: 800; color: var(--primary-red); line-height: 1; }
         .card-datum .monat { font-size: 0.72rem; font-weight: 700; color: var(--grey); text-transform: uppercase; letter-spacing: 0.5px; }
-        .tab-panel.tagesschau .card-datum .tag { color: #1a237e; }
-
         .card-bild {
             width: 80px;
             height: 60px;
@@ -192,7 +200,6 @@
             flex-shrink: 0;
             background: #eee;
         }
-
         .card-titel-block { flex: 1; min-width: 0; }
         .card-titel  { font-size: 1.0rem; font-weight: 700; color: var(--text-color); line-height: 1.35; margin-bottom: 3px; }
         .card-teaser { font-size: 0.86rem; color: #666; line-height: 1.5; }
@@ -201,9 +208,7 @@
             transition: transform 0.2s, color 0.2s;
             align-self: center; flex-shrink: 0; padding-left: 6px;
         }
-        .news-card.offen .card-pfeil             { transform: rotate(90deg); color: var(--primary-red); }
-        .tab-panel.tagesschau .news-card.offen .card-pfeil { color: #1a237e; }
-
+        .news-card.offen .card-pfeil { transform: rotate(90deg); color: var(--primary-red); }
         .card-inhalt { display: none; padding: 0 16px 16px; border-top: 1px solid #f0f0f0; }
         .news-card.offen .card-inhalt { display: block; }
         .card-inhalt-text {
@@ -216,7 +221,6 @@
             border-top: 1px solid #eee;
             font-size: 0.78rem; color: var(--grey);
         }
-
         footer {
             text-align: center; padding: 18px;
             background: var(--primary-red); color: white; font-size: 0.88rem;
@@ -224,13 +228,11 @@
     </style>
 </head>
 <body>
-
 <header>
     <div class="logo-container">
         <img src="header.jpg" alt="Studjo Logo Arbeit und Qualifizierung">
     </div>
 </header>
-
 <main>
     <div class="top-bar">
         <a href="index.html" class="back-button">← Zurück</a>
@@ -244,23 +246,17 @@
             Leichte Sprache
             <span class="tab-sub">Deutschlandfunk Nachrichten leicht</span>
         </button>
-        <button class="tab-btn" onclick="zeigeTab('tagesschau', this)">
+        <button class="tab-btn tagesschau-btn" onclick="zeigeTab('tagesschau', this)">
             <span class="tab-emoji">📺</span>
             Tagesschau aktuell
             <span class="tab-sub">Alle aktuellen Nachrichten</span>
         </button>
-<!-- ════════════════════════════════════════════════════════
-     SCHRITT 1: Neuer Tab-Button  (nach dem Tagesschau-Button einfügen)
-     ════════════════════════════════════════════════════════ -->
-
-<button class="tab-btn" data-tab="kobinet" onclick="zeigeTab('kobinet', this)">
-  ♿ kobinet – Teilhabe
-</button>
-
-<!-- Hinweis: Das onclick-Attribut muss zur bestehenden Tab-Logik passen.
-     Schau Dir an, wie der Tagesschau-Button aufgerufen wird, und kopiere
-     den gleichen Funktionsnamen (z. B. switchTab, zeigeTab, wechsleTab …). -->
-        
+        <!-- ── NEU: kobinet-Tab ── -->
+        <button class="tab-btn kobinet-btn" onclick="zeigeTab('kobinet', this)">
+            <span class="tab-emoji">♿</span>
+            kobinet – Teilhabe
+            <span class="tab-sub">Behinderung &amp; Inklusion</span>
+        </button>
     </div>
 
     <!-- ══════════════════════════════════════════════════
@@ -272,8 +268,8 @@
             <div class="refresh-info">Stand: <span id="stand-leicht">wird geladen…</span></div>
         </div>
         <div class="loading-box" id="lade-leicht"><div class="spinner"></div><p>Wird geladen…</p></div>
-        <div class="info-box gelb"  id="fehler-leicht"  style="display:none">⚠️ Nachrichten konnten nicht geladen werden.</div>
-        <div class="info-box blau"  id="warten-leicht"  style="display:none">⏳ Inhalte werden eingerichtet – bitte in 30 Minuten erneut aufrufen.</div>
+        <div class="info-box gelb" id="fehler-leicht" style="display:none">⚠️ Nachrichten konnten nicht geladen werden.</div>
+        <div class="info-box blau" id="warten-leicht" style="display:none">⏳ Inhalte werden eingerichtet – bitte in 30 Minuten erneut aufrufen.</div>
         <div class="news-grid leicht" id="grid-leicht"></div>
     </div>
 
@@ -286,36 +282,27 @@
             <div class="refresh-info">Stand: <span id="stand-tagesschau">wird geladen…</span></div>
         </div>
         <div class="loading-box" id="lade-tagesschau"><div class="spinner"></div><p>Wird geladen…</p></div>
-        <div class="info-box gelb"  id="fehler-tagesschau"  style="display:none">⚠️ Nachrichten konnten nicht geladen werden.</div>
-        <div class="info-box blau"  id="warten-tagesschau"  style="display:none">⏳ Inhalte werden eingerichtet – bitte in 30 Minuten erneut aufrufen.</div>
+        <div class="info-box gelb" id="fehler-tagesschau" style="display:none">⚠️ Nachrichten konnten nicht geladen werden.</div>
+        <div class="info-box blau" id="warten-tagesschau" style="display:none">⏳ Inhalte werden eingerichtet – bitte in 30 Minuten erneut aufrufen.</div>
         <div class="news-grid tagesschau" id="grid-tagesschau"></div>
     </div>
 
-    <!-- ════════════════════════════════════════════════════════
-     SCHRITT 2: Tab-Inhaltsbereich (nach dem Tagesschau-Bereich einfügen)
-     ════════════════════════════════════════════════════════ -->
-
-<div id="tab-kobinet" class="tab-content" style="display:none">
-
- <div class="news-kopf">
-    <span class="news-quelle" id="kobinet-quelle">kobinet-nachrichten.org</span>
-    <span class="news-stand">Stand: <span id="kobinet-stand">–</span></span>
-  </div>
-
-  <div id="kobinet-liste">
-    <!-- Artikel werden per JavaScript geladen -->
-    <p class="news-laden">⏳ Wird geladen …</p>
-  </div>
-
-  <p class="news-fehler" id="kobinet-fehler" style="display:none">
-    ⚠️ Nachrichten konnten nicht geladen werden.
-  </p>
-
-</div>
-
+    <!-- ══════════════════════════════════════════════════
+         TAB 3: kobinet  ← KORRIGIERT
+         Nutzt dieselbe Struktur und dieselbe ladeFeed()-Funktion
+         ══════════════════════════════════════════════════ -->
+    <div class="tab-panel kobinet" id="panel-kobinet">
+        <div class="source-bar" style="border-left-color:var(--kobinet-gruen);">
+            <div class="source-label">Quelle: <strong id="quelle-kobinet">kobinet-nachrichten.org</strong></div>
+            <div class="refresh-info">Stand: <span id="stand-kobinet">wird geladen…</span></div>
+        </div>
+        <div class="loading-box" id="lade-kobinet"><div class="spinner"></div><p>Wird geladen…</p></div>
+        <div class="info-box gelb" id="fehler-kobinet" style="display:none">⚠️ Nachrichten konnten nicht geladen werden.</div>
+        <div class="info-box blau" id="warten-kobinet" style="display:none">⏳ Inhalte werden eingerichtet – bitte in 30 Minuten erneut aufrufen.</div>
+        <div class="news-grid kobinet" id="grid-kobinet"></div>
+    </div>
 
 </main>
-
 <footer>
     &copy; 2024 <b>Studjo | Arbeit und Qualifizierung</b> | Infoterminal | Barrierefreier Zugang
 </footer>
@@ -324,7 +311,7 @@
 const MONATE = ['Jan','Feb','Mär','Apr','Mai','Jun',
                 'Jul','Aug','Sep','Okt','Nov','Dez'];
 
-// ── Tab umschalten ────────────────────────────────────────
+// ── Tab umschalten ────────────────────────────────────────────────────────
 function zeigeTab(name, btn) {
     document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('aktiv'));
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('aktiv'));
@@ -332,7 +319,7 @@ function zeigeTab(name, btn) {
     btn.classList.add('aktiv');
 }
 
-// ── Datum formatieren ─────────────────────────────────────
+// ── Datum formatieren ─────────────────────────────────────────────────────
 function formatDatum(s) {
     if (!s) return { tag: '–', monat: '' };
     const d = new Date(s);
@@ -340,7 +327,7 @@ function formatDatum(s) {
     return { tag: d.getDate(), monat: MONATE[d.getMonth()] };
 }
 
-// ── Einzelne News-Karte erstellen ─────────────────────────
+// ── Einzelne News-Karte erstellen ─────────────────────────────────────────
 function erstelleKarte(m, quelleText) {
     const { tag, monat } = formatDatum(m.pubDate);
     const text   = m.description || '';
@@ -348,7 +335,6 @@ function erstelleKarte(m, quelleText) {
     const bildHtml = m.bild
         ? `<img src="${m.bild}" alt="" class="card-bild" onerror="this.style.display='none'">`
         : '';
-
     const karte = document.createElement('div');
     karte.className = 'news-card';
     karte.innerHTML = `
@@ -368,10 +354,8 @@ function erstelleKarte(m, quelleText) {
             <div class="card-inhalt-text">${text || '(Kein weiterer Text verfügbar)'}</div>
             <div class="card-inhalt-quelle">Quelle: ${quelleText}</div>
         </div>`;
-
     karte.addEventListener('click', function () {
         const warOffen = this.classList.contains('offen');
-        // Nur Karten im selben Grid schließen
         this.closest('.news-grid').querySelectorAll('.news-card.offen')
             .forEach(k => k.classList.remove('offen'));
         if (!warOffen) {
@@ -383,29 +367,24 @@ function erstelleKarte(m, quelleText) {
     return karte;
 }
 
-// ── Feed aus lokalem JSON laden ───────────────────────────
+// ── Feed aus lokalem JSON laden ───────────────────────────────────────────
 async function ladeFeed(jsonDatei, ids) {
     const { gridId, ladeId, fehlerID, wartenId, quelleId, standId } = ids;
     try {
         const r = await fetch(jsonDatei + '?v=' + Date.now());
         if (!r.ok) throw new Error('HTTP ' + r.status);
         const daten = await r.json();
-
         document.getElementById(ladeId).style.display = 'none';
-
         if (daten.quelle)       document.getElementById(quelleId).textContent = daten.quelle;
         if (daten.aktualisiert) document.getElementById(standId).textContent  = daten.aktualisiert;
-
         if (!daten.meldungen || !daten.meldungen.length) {
             document.getElementById(wartenId).style.display = 'block';
             return;
         }
-
         const grid = document.getElementById(gridId);
         grid.innerHTML = '';
         daten.meldungen.forEach(m =>
             grid.appendChild(erstelleKarte(m, daten.quelle || jsonDatei)));
-
     } catch (err) {
         console.error(jsonDatei, err);
         document.getElementById(ladeId).style.display   = 'none';
@@ -413,7 +392,7 @@ async function ladeFeed(jsonDatei, ids) {
     }
 }
 
-// ── Beide Feeds laden ─────────────────────────────────────
+// ── Alle drei Feeds laden ─────────────────────────────────────────────────
 ladeFeed('nachrichten.json', {
     gridId:  'grid-leicht',
     ladeId:  'lade-leicht',
@@ -422,7 +401,6 @@ ladeFeed('nachrichten.json', {
     quelleId:'quelle-leicht',
     standId: 'stand-leicht',
 });
-
 ladeFeed('tagesschau.json', {
     gridId:  'grid-tagesschau',
     ladeId:  'lade-tagesschau',
@@ -431,113 +409,18 @@ ladeFeed('tagesschau.json', {
     quelleId:'quelle-tagesschau',
     standId: 'stand-tagesschau',
 });
+// ── NEU: kobinet – nutzt dieselbe Funktion ────────────────────────────────
+ladeFeed('kobinet.json', {
+    gridId:  'grid-kobinet',
+    ladeId:  'lade-kobinet',
+    fehlerID:'fehler-kobinet',
+    wartenId:'warten-kobinet',
+    quelleId:'quelle-kobinet',
+    standId: 'stand-kobinet',
+});
 
 // Seite alle 30 Minuten neu laden
 setTimeout(() => location.reload(), 30 * 60 * 1000);
 </script>
-<!-- ════════════════════════════════════════════════════════
-     SCHRITT 3: JavaScript (vor </body> einfügen)
-     ════════════════════════════════════════════════════════ -->
-
-<script>
-// ── kobinet-Nachrichten laden ────────────────────────────────────────────
-// Feldnamen entsprechen der bestehenden JSON-Struktur des Workflows:
-//   data.quelle / data.aktualisiert / data.meldungen[]
-//   Jede Meldung: .title .description .pubDate .bild
-
-(function ladeKobinet() {
-
-  fetch('kobinet.json?v=' + Date.now())   // ?v= verhindert Browser-Cache
-    .then(function(res) {
-      if (!res.ok) throw new Error('HTTP ' + res.status);
-      return res.json();
-    })
-    .then(function(data) {
-
-      // ── Metadaten setzen ────────────────────────────────────────
-      var standEl  = document.getElementById('kobinet-stand');
-      var quelleEl = document.getElementById('kobinet-quelle');
-      if (standEl  && data.aktualisiert) standEl.textContent  = data.aktualisiert;
-      if (quelleEl && data.quelle)       quelleEl.textContent = data.quelle;
-
-      var liste = document.getElementById('kobinet-liste');
-      if (!liste) return;
-
-      // ── Keine Meldungen oder Fehler? ────────────────────────────
-      var meldungen = data.meldungen || [];
-      if (meldungen.length === 0) {
-        liste.innerHTML = '';
-        document.getElementById('kobinet-fehler').style.display = 'block';
-        return;
-      }
-
-      // ── Meldungen rendern ───────────────────────────────────────
-      // Gleiche CSS-Klassen wie die anderen Tabs verwenden.
-      // Falls Deine bestehenden Tabs andere Klassen nutzen,
-      // passe .news-artikel / .news-titel / .news-text / .news-datum an.
-
-      var html = '';
-
-      meldungen.forEach(function(m) {
-
-        // Datum lesbar formatieren
-        var datumText = '';
-        if (m.pubDate) {
-          try {
-            var d = new Date(m.pubDate);
-            if (!isNaN(d)) {
-              datumText = d.toLocaleDateString('de-DE', {
-                day: '2-digit', month: '2-digit', year: 'numeric'
-              });
-            }
-          } catch(e) {}
-        }
-
-        // Bild (optional – nur rendern wenn vorhanden)
-        var bildHtml = m.bild
-          ? '<img src="' + escHTML(m.bild) + '" alt="" class="news-bild" loading="lazy">'
-          : '';
-
-        // Artikel mit oder ohne Link
-        var tagAuf  = m.link
-          ? '<a href="' + escHTML(m.link) + '" target="_blank" rel="noopener noreferrer" class="news-artikel">'
-          : '<div class="news-artikel">';
-        var tagZu   = m.link ? '</a>' : '</div>';
-
-        html +=
-          tagAuf +
-            bildHtml +
-            '<div class="news-titel">'  + escHTML(m.title)       + '</div>' +
-            (m.description
-              ? '<div class="news-text">' + escHTML(m.description) + '</div>'
-              : '') +
-            (datumText
-              ? '<div class="news-datum">📅 ' + datumText + '</div>'
-              : '') +
-          tagZu;
-      });
-
-      liste.innerHTML = html;
-    })
-    .catch(function(err) {
-      console.error('kobinet.json konnte nicht geladen werden:', err);
-      var liste    = document.getElementById('kobinet-liste');
-      var fehlerEl = document.getElementById('kobinet-fehler');
-      if (liste)    liste.innerHTML = '';
-      if (fehlerEl) fehlerEl.style.display = 'block';
-    });
-
-})();
-
-// ── HTML-Sonderzeichen escapen ───────────────────────────────────────────
-function escHTML(s) {
-  if (!s) return '';
-  return s.replace(/&/g,'&amp;')
-          .replace(/</g,'&lt;')
-          .replace(/>/g,'&gt;')
-          .replace(/"/g,'&quot;');
-}
-</script>
-
 </body>
 </html>
