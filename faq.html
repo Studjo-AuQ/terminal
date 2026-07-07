@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ – Häufige Fragen – Studjo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --rot:      #b61f29;
+      --bg:       #f9f9f9;
+      --text:     #0f2f37;
+      --grau:     #8a8d8f;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Nunito Sans', sans-serif;
+      background: var(--bg); color: var(--text);
+      min-height: 100vh; display: flex; flex-direction: column;
+    }
+    header { background: white; box-shadow: 0 2px 10px rgba(0,0,0,.06); }
+    .logo-container { max-width: 1200px; margin: 0 auto; }
+    .logo-container img { width: 100%; height: auto; display: block; }
+    main { flex: 1; max-width: 960px; margin: 0 auto; padding: 24px 20px 48px; width: 100%; }
+
+    /* ── Top-Bar ── */
+    .top-bar { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; }
+    .back-button {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: white; color: var(--rot);
+      border: 2px solid var(--rot); border-radius: 999px;
+      padding: 8px 20px; font-weight: 700; font-size: 0.95rem;
+      text-decoration: none; font-family: inherit;
+      transition: background .2s, color .2s; white-space: nowrap;
+    }
+    .back-button:hover { background: var(--rot); color: white; }
+    h1 { font-size: 1.5rem; font-weight: 800; color: var(--rot); flex: 1; }
+
+    /* ── Kapitel ── */
+    .kapitel { margin-bottom: 36px; }
+    .kapitel-kopf {
+      display: flex; align-items: center; gap: 14px;
+      padding: 14px 18px; border-radius: 14px;
+      margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    }
+    .kapitel-kopf img {
+      width: 60px; height: 60px; object-fit: cover;
+      border-radius: 10px; background: white; flex-shrink: 0;
+    }
+    .kapitel-nr { font-size: 0.72rem; font-weight: 700; opacity: .65; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 2px; }
+    .kapitel-kopf h2 { font-size: 1.2rem; font-weight: 800; }
+
+    .k-urlaub       { background: #dbeafe; } .k-urlaub h2,       .k-urlaub .kapitel-nr       { color: #1e40af; }
+    .k-krank        { background: #fde8e9; } .k-krank h2,        .k-krank .kapitel-nr        { color: var(--rot); }
+    .k-arbeitszeit  { background: #fff3e0; } .k-arbeitszeit h2,  .k-arbeitszeit .kapitel-nr  { color: #c25e00; }
+    .k-lohn         { background: #dcfce7; } .k-lohn h2,         .k-lohn .kapitel-nr         { color: #15803d; }
+    .k-werkstattrat { background: #f3e8ff; } .k-werkstattrat h2, .k-werkstattrat .kapitel-nr { color: #7e22ce; }
+    .k-sonstiges    { background: #f1f5f9; } .k-sonstiges h2,    .k-sonstiges .kapitel-nr    { color: #475569; }
+
+    /* ── FAQ-Karte ── */
+    .faq-karte {
+      background: white; border-radius: 14px;
+      box-shadow: 0 3px 10px rgba(0,0,0,.07);
+      margin-bottom: 10px; overflow: hidden;
+      border-left: 5px solid #e0e0e0; transition: border-color .2s;
+    }
+    .faq-karte.offen { border-left-color: var(--rot); }
+
+    .faq-frage {
+      display: flex; align-items: center; gap: 14px;
+      padding: 14px 16px; cursor: pointer; user-select: none;
+      transition: background .15s;
+    }
+    .faq-frage:hover { background: #fef2f2; }
+    .faq-metacom {
+      width: 56px; height: 56px; object-fit: cover;
+      border-radius: 8px; border: 2px solid #f0f0f0;
+      flex-shrink: 0; background: #f5f5f5;
+    }
+    .faq-frage-text { flex: 1; font-size: 1rem; font-weight: 700; color: var(--text); line-height: 1.35; }
+    .faq-pfeil { font-size: 1.3rem; color: var(--grau); transition: transform .2s, color .2s; flex-shrink: 0; padding-left: 4px; }
+    .faq-karte.offen .faq-pfeil { transform: rotate(90deg); color: var(--rot); }
+
+    .faq-antwort { display: none; padding: 0 18px 20px; border-top: 1px solid #f0f0f0; }
+    .faq-karte.offen .faq-antwort { display: block; }
+    .antwort-text { font-size: 0.95rem; line-height: 1.85; color: var(--text); padding: 14px 0 10px; }
+    .antwort-text ul { margin: 8px 0 8px 1.4rem; }
+    .antwort-text li { margin-bottom: 4px; }
+
+    /* ── Mini-Quiz ── */
+    .quiz-box {
+      margin-top: 14px; background: #f8f9fa;
+      border: 1px solid #e9ecef; border-radius: 12px; padding: 14px 16px;
+    }
+    .quiz-label { font-size: 0.68rem; font-weight: 800; color: var(--rot); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 6px; }
+    .quiz-frage { font-size: 0.92rem; font-weight: 700; color: var(--text); margin-bottom: 10px; line-height: 1.4; }
+    .quiz-optionen { display: flex; flex-direction: column; gap: 8px; }
+    .quiz-btn {
+      display: flex; align-items: center; gap: 10px;
+      padding: 10px 14px; background: white;
+      border: 2px solid #dee2e6; border-radius: 10px; cursor: pointer;
+      font-family: inherit; font-size: 0.9rem; font-weight: 700;
+      color: var(--text); text-align: left; transition: all .15s;
+    }
+    .quiz-btn:hover:not(:disabled) { border-color: var(--rot); background: #fef2f2; color: var(--rot); }
+    .quiz-btn:disabled { cursor: default; }
+    .quiz-btn .kreis {
+      width: 22px; height: 22px; border-radius: 50%;
+      border: 2px solid #dee2e6;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.75rem; flex-shrink: 0; transition: all .15s;
+    }
+    .quiz-btn.richtig  { border-color: #15803d; background: #dcfce7; color: #15803d; }
+    .quiz-btn.richtig .kreis  { border-color: #15803d; background: #15803d; color: white; }
+    .quiz-btn.falsch   { border-color: #dc2626; background: #fef2f2; color: #dc2626; }
+    .quiz-btn.falsch .kreis   { border-color: #dc2626; background: #dc2626; color: white; }
+    .quiz-btn.korrekt-markiert { border-color: #15803d; background: #f0fdf4; color: #15803d; opacity: .75; }
+    .quiz-btn.korrekt-markiert .kreis { border-color: #15803d; background: #15803d; color: white; }
+    .quiz-feedback {
+      display: none; margin-top: 10px; padding: 9px 12px;
+      border-radius: 8px; font-size: 0.88rem; font-weight: 700; line-height: 1.4;
+    }
+    .quiz-feedback.richtig { display: block; background: #dcfce7; color: #15803d; border: 1px solid #bbf7d0; }
+    .quiz-feedback.falsch  { display: block; background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; }
+
+    footer { text-align: center; padding: 18px; background: var(--rot); color: white; font-size: 0.88rem; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-container">
+    <img src="header.jpg" alt="Studjo – Arbeit und Qualifizierung">
+  </div>
+</header>
+
+<main>
+  <div class="top-bar">
+    <a href="index.html" class="back-button" target="_self">← Zurück</a>
+    <h1>❓ Häufige Fragen</h1>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       KAPITEL 1: URLAUB
+       ══════════════════════════════════════════════════ -->
+  <section class="kapitel">
+    <div class="kapitel-kopf k-urlaub">
+      <img src="AbA.jpg" alt="Urlaub">
+      <div><div class="kapitel-nr">Kapitel 1</div><h2>🌴 Urlaub</h2></div>
+    </div>
+
+    <div class="faq-karte" id="faq-1-1">
+      <div class="faq-frage" onclick="toggleFaq('faq-1-1')">
+        <img src="AbA.jpg" alt="" class="faq-metacom">
+        <div class="faq-frage-text">Wie viele Urlaubstage habe ich pro Jahr?</div>
+        <div class="faq-pfeil">›</div>
+      </div>
+      <div class="faq-antwort">
+        <div class="antwort-text">
+          Du hast Anspruch auf <strong>30 Urlaubstage</strong> pro Kalenderjahr – das sind 6 Wochen Urlaub.<br><br>
+          Wenn du im Laufe des Jahres anfängst zu arbeiten, bekommst du weniger Urlaubstage,
+          je nachdem wie viele Monate du schon dabei bist.
+        </div>
+        <div class="quiz-box">
+          <div class="quiz-label">🧠 Teste dein Wissen</div>
+          <div class="quiz-frage">Wie viele Urlaubstage habe ich bei Studjo pro Jahr?</div>
+          <div class="quiz-optionen">
+            <button class="quiz-btn" onclick="bewerteAntwort(this, false)"><span class="kreis"></span> 15 Urlaubstage</button>
+            <button class="quiz-btn" onclick="bewerteAntwort(this, true)"><span class="kreis"></span> 30 Urlaubstage</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-karte" id="faq-1-2">
+      <div class="faq-frage" onclick="toggleFaq('faq-1-2')">
+        <img src="AbA.jpg" alt="" class="faq-metacom">
+        <div class="faq-frage-text">Wie beantrage ich Urlaub?</div>
+        <div class="faq-pfeil">›</div>
+      </div>
+      <div class="faq-antwort">
+        <div class="antwort-text">
+          Urlaub beantragst du so:
+          <ul>
+            <li>Sprich zuerst mit deiner <strong>Gruppenleitung</strong>.</li>
+            <li>Fülle dann einen <strong>Urlaubsantrag</strong> aus.</li>
+            <li>Die Gruppenleitung genehmigt den Urlaub.</li>
+          </ul>
+          Bitte beantrage deinen Urlaub <strong>mindestens 2 Wochen vorher</strong>.
+        </div>
+        <div class="quiz-box">
+          <div class="quiz-label">🧠 Teste dein Wissen</div>
+          <div class="quiz-frage">Bei wem beantrage ich meinen Urlaub?</div>
+          <div class="quiz-optionen">
+            <button class="quiz-btn" onclick="bewerteAntwort(this, true)"><span class="kreis"></span> Bei meiner Gruppenleitung</button>
+            <button class="quiz-btn" onclick="bewerteAntwort(this, false)"><span class="kreis"></span> Ich kann einfach zuhause bleiben</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       KAPITEL 2: KRANKMELDUNG
+       ══════════════════════════════════════════════════ -->
+  <section class="kapitel">
+    <div class="kapitel-kopf k-krank">
+      <img src="AbA.jpg" alt="Krankmeldung">
+      <div><div class="kapitel-nr">Kapitel 2</div><h2>🤒 Krankmeldung</h2></div>
+    </div>
+
+    <div class="faq-karte" id="faq-2-1">
+      <div class="faq-frage" onclick="toggleFaq('faq-2-1')">
+        <img src="AbA.jpg" alt="" class="faq-metacom">
+        <div class="faq-frage-text">Was mache ich, wenn ich krank bin?</div>
+        <div class="faq-pfeil">›</div>
+      </div>
+      <div class="faq-antwort">
+        <div class="antwort-text">
+          Wenn du krank bist und nicht zur Arbeit kommen kannst:
+          <ul>
+            <li>Ruf <strong>so früh wie möglich</strong> in der Werkstatt an – am besten vor Arbeitsbeginn.</li>
+            <li>Sag Bescheid, dass du krank bist.</li>
+            <li>Ab dem <strong>4. Krankheitstag</strong> brauchst du ein Attest vom Arzt.</li>
+          </ul>
+        </div>
+        <div class="quiz-box">
+          <div class="quiz-label">🧠 Teste dein Wissen</div>
+          <div class="quiz-frage">Was muss ich tun, wenn ich krank bin?</div>
+          <div class="quiz-optionen">
+            <button class="quiz-btn" onclick="bewerteAntwort(this, false)"><span class="kreis"></span> Nichts – ich muss mich nicht melden</button>
+            <button class="quiz-btn" onclick="bewerteAntwort(this, true)"><span class="kreis"></span> In der Werkstatt anrufen und Bescheid geben</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-karte" id="faq-2-2">
+      <div class="faq-frage" onclick="toggleFaq('faq-2-2')">
+        <img src="AbA.jpg" alt="" class="faq-metacom">
+        <div class="faq-frage-text">Ab wann brauche ich einen Krankenschein?</div>
+        <div class="faq-pfeil">›</div>
+      </div>
+      <div class="faq-antwort">
+        <div class="antwort-text">
+          Du brauchst einen Krankenschein ab dem <strong>4. Krankheitstag</strong>.<br><br>
+          Beispiel: Bist du Montag, Dienstag und Mittwoch krank, reicht eine Ansage.
+          Bist du auch am Donnerstag noch krank, brauchst du ein Attest vom Arzt.<br><br>
+          Den Krankenschein gibst du deiner <strong>Gruppenleitung</strong> ab.
+        </div>
+        <div class="quiz-box">
+          <div class="quiz-label">🧠 Teste dein Wissen</div>
+          <div class="quiz-frage">Ab welchem Krankheitstag brauche ich einen Krankenschein?</div>
+          <div class="quiz-optionen">
+            <button class="quiz-btn" onclick="bewerteAntwort(this, true)"><span class="kreis"></span> Ab dem 4. Krankheitstag</button>
+            <button class="quiz-btn" onclick="bewerteAntwort(this, false)"><span class="kreis"></span> Nie – ich brauche keinen Krankenschein</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       KAPITEL 3: ARBEITSZEITEN
+       ══════════════════════════════════════════════════ -->
+  <section class="kapitel">
+    <div class="kapitel-kopf k-arbeitszeit">
+      <img src="AbA.jpg" alt="Arbeitszeiten">
+      <div><div class="kapitel-nr">Kapitel 3</div><h2>⏰ Arbeitszeiten</h2></div>
+    </div>
+
+    <div class="faq-karte" id="faq-3-1">
+      <div class="faq-frage" onclick="toggleFaq('faq-3-1')">
+        <img src="AbA.jpg" alt="" class="faq-metacom">
+        <div class="faq-frage-text">Wann beginnt und endet meine Arbeitszeit?</div>
+        <div class="faq-pfeil">›</div>
+      </div>
+      <div class="faq-antwort">
+        <div class="antwort-text">
+          Typische Arbeitszeiten bei Studjo:
+          <ul>
+            <li><strong>Beginn:</strong> 08:00 Uhr</li>
+            <li><strong>Ende:</strong> 15:30 Uhr</li>
+            <li><strong>Mittagspause:</strong> 30 Minuten</li>
+          </ul>
+          Deine genauen Zeiten erfährst du bei deiner Gruppenleitung.
+        </div>
+        <div class="quiz-box">
+          <div class="quiz-label">🧠 Teste dein Wissen</div>
+          <div class="quiz-frage">Wann beginnt die Arbeit bei Studjo üblicherweise?</div>
+          <div class="quiz-optionen">
+            <button class="quiz-btn" onclick="bewerteAntwort(this, false)"><span class="kreis"></span> Um 12:00 Uhr mittags</button>
+            <button class="quiz-btn" onclick="bewerteAntwort(this, true)"><span class="kreis"></span> Um 08:00 Uhr morgens</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-karte" id="faq-3-2">
+      <div class="faq-frage" onclick="toggleFaq('faq-3-2')">
+        <img src="AbA.jpg" alt="" class="faq-metacom">
+        <div class="faq-frage-text">Wie lang ist meine Pause?</div>
+        <div class="faq-pfeil">›</div>
+      </div>
+      <div class="faq-antwort">
+        <div class="antwort-text">
+          Du hast Anspruch auf folgende Pausen:
+          <ul>
+            <li><strong>Mittagspause:</strong> 30 Minuten</li>
+            <li>Zusätzlich kurze Erholungspausen während des Tages.</li>
+          </ul>
+          Die Pause ist <strong>Pflicht</strong> – du musst sie nehmen und musst in der Pause nicht arbeiten.
+        </div>
+        <div class="quiz-box">
+          <div class="quiz-label">🧠 Teste dein Wissen</div>
+          <div class="quiz-frage">Wie lang ist die Mittagspause?</div>
+          <div class="quiz-optionen">
+            <button class="quiz-btn" onclick="bewerteAntwort(this, true)"><span class="kreis"></span> 30 Minuten</button>
+            <button class="quiz-btn" onclick="bewerteAntwort(this, false)"><span class="kreis"></span> 5 Minuten</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       KAPITEL 4: LOHN / ENTGELT
+       ══════════════════════════════════════════════════ -->
+  <section class="kapitel">
+    <div class="kapitel-kopf k-lohn">
+      <img src="AbA.jpg" alt="Lohn">
+      <div><div class="kapitel-nr">Kapitel 4</div><h2>💰 Lohn und Entgelt</h2></div>
+    </div>
+
+    <div class="faq-karte" id="faq-4-1">
+      <div class="faq-frage" onclick="toggleFaq('faq-4-1')">
+        <img src="AbA.jpg" alt="" class="faq-metacom">
+        <div class="faq-frage-text">Wann bekomme ich meinen Lohn?</div>
+        <div class="faq-pfeil">›</div>
+      </div>
+      <div class="faq-antwort">
+        <div class="antwort-text">
+          Dein Entgelt wird einmal im Monat überwiesen –
+          immer am <strong>letzten Werktag des Monats</strong>.<br><br>
+          Du bekommst außerdem einen <strong>Entgeltnachweis</strong> (Gehaltszettel),
+          auf dem alles erklärt ist.
+        </div>
+        <div class="quiz-box">
+          <div class="quiz-label">🧠 Teste dein Wissen</div>
+          <div class="quiz-frage">Wie oft bekomme ich meinen Lohn?</div>
+          <div class="quiz-optionen">
+            <button class="quiz-btn" onclick="bewerteAntwort(this, false)"><span class="kreis"></span> Einmal pro Woche</button>
+            <button class="quiz-btn" onclick="bewerteAntwort(this, true)"><span class="kreis"></span> Einmal im Monat am letzten Werktag</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-karte" id="faq-4-2">
+      <div class="faq-frage" onclick="toggleFaq('faq-4-2')">
+        <img src="AbA.jpg" alt="" class="faq-metacom">
+        <div class="faq-frage-text">Bekomme ich Geld, wenn ich krank bin?</div>
+        <div class="faq-pfeil">›</div>
+      </div>
+      <div class="faq-antwort">
+        <div class="antwort-text">
+          Ja! Wenn du krank bist, bekommst du trotzdem Geld:
+          <ul>
+            <li>Du bekommst dein <strong>normales Arbeitsentgelt weitergezahlt</strong>.</li>
+            <li>Das nennt sich <strong>Lohnfortzahlung im Krankheitsfall</strong>.</li>
+            <li>Das gilt für die ersten 6 Wochen einer Erkrankung.</li>
+          </ul>
+          Du wirst also nicht bestraft, weil du krank bist!
+        </div>
+        <div class="quiz-box">
+          <div class="quiz-label">🧠 Teste dein Wissen</div>
+          <div class="quiz-frage">Bekomme ich Geld, wenn ich krank bin?</div>
+          <div class="quiz-optionen">
+            <button class="quiz-btn" onclick="bewerteAntwort(this, true)"><span class="kreis"></span> Ja, ich bekomme meinen Lohn weitergezahlt</button>
+            <button class="quiz-btn" onclick="bewerteAntwort(this, false)"><span class="kreis"></span> Nein, bei Krankheit gibt es kein Geld</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       KAPITEL 5: WERKSTATTRAT
+       ══════════════════════════════════════════════════ -->
+  <section class="kapitel">
+    <div class="kapitel-kopf k-werkstattrat">
+      <img src="AbA.jpg" alt="Werkstattrat">
+      <div><div class="kapitel-nr">Kapitel 5</div><h2>🗣️ Werkstattrat</h2></div>
+    </div>
+
+    <div class="faq-karte" id="faq-5-1">
+      <div class="faq-frage" onclick="toggleFaq('faq-5-1')">
+        <img src="AbA.jpg" alt="" class="faq-metacom">
+        <div class="faq-frage-text">Was ist der Werkstattrat?</div>
+        <div class="faq-pfeil">›</div>
+      </div>
+      <div class="faq-antwort">
+        <div class="antwort-text">
+          Der Werkstattrat ist die <strong>Interessenvertretung der Beschäftigten</strong> – also von euch!<br><br>
+          Die Mitglieder werden von den Beschäftigten gewählt.
+          Sie setzen sich für eure Rechte und Wünsche ein und sprechen mit der Werkstattleitung.<br><br>
+          Jede und jeder Beschäftigte kann den Werkstattrat ansprechen.
+        </div>
+        <div class="quiz-box">
+          <div class="quiz-label">🧠 Teste dein Wissen</div>
+          <div class="quiz-frage">Wer wählt den Werkstattrat?</div>
+          <div class="quiz-optionen">
+            <button class="quiz-btn" onclick="bewerteAntwort(this, false)"><span class="kreis"></span> Die Werkstattleitung bestimmt den Werkstattrat</button>
+            <button class="quiz-btn" onclick="bewerteAntwort(this, true)"><span class="kreis"></span> Die Beschäftigten wählen den Werkstattrat selbst</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-karte" id="faq-5-2">
+      <div class="faq-frage" onclick="toggleFaq('faq-5-2')">
+        <img src="AbA.jpg" alt="" class="faq-metacom">
+        <div class="faq-frage-text">An wen wende ich mich, wenn ich ein Problem habe?</div>
+        <div class="faq-pfeil">›</div>
+      </div>
+      <div class="faq-antwort">
+        <div class="antwort-text">
+          Bei Problemen kannst du dich an verschiedene Personen wenden:
+          <ul>
+            <li><strong>Gruppenleitung:</strong> für alltägliche Fragen</li>
+            <li><strong>Werkstattrat:</strong> wenn du dich ungerecht behandelt fühlst</li>
+            <li><strong>Sozialdienst:</strong> für persönliche oder soziale Themen</li>
+            <li><strong>Werkstattleitung:</strong> bei größeren Problemen</li>
+          </ul>
+          Du musst nicht alleine mit einem Problem bleiben – wir helfen dir!
+        </div>
+        <div class="quiz-box">
+          <div class="quiz-label">🧠 Teste dein Wissen</div>
+          <div class="quiz-frage">Was macht der Werkstattrat?</div>
+          <div class="quiz-optionen">
+            <button class="quiz-btn" onclick="bewerteAntwort(this, true)"><span class="kreis"></span> Er setzt sich für die Rechte der Beschäftigten ein</button>
+            <button class="quiz-btn" onclick="bewerteAntwort(this, false)"><span class="kreis"></span> Er verteilt die Arbeit an die Beschäftigten</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       KAPITEL 6: SONSTIGES
+       ══════════════════════════════════════════════════ -->
+  <section class="kapitel">
+    <div class="kapitel-kopf k-sonstiges">
+      <img src="AbA.jpg" alt="Sonstiges">
+      <div><div class="kapitel-nr">Kapitel 6</div><h2>📋 Sonstiges</h2></div>
+    </div>
+
+    <div class="faq-karte" id="faq-6-1">
+      <div class="faq-frage" onclick="toggleFaq('faq-6-1')">
+        <img src="AbA.jpg" alt="" class="faq-metacom">
+        <div class="faq-frage-text">Was ist ein Förder- und Entwicklungsplan (FEP)?</div>
+        <div class="faq-pfeil">›</div>
+      </div>
+      <div class="faq-antwort">
+        <div class="antwort-text">
+          Der Förder- und Entwicklungsplan – kurz <strong>FEP</strong> – ist ein persönlicher Plan für dich.<br><br>
+          Darin steht:
+          <ul>
+            <li>Was du gut kannst</li>
+            <li>Was du noch lernen möchtest</li>
+            <li>Welche Ziele du hast</li>
+          </ul>
+          Den Plan erstellst du <strong>gemeinsam mit deiner Gruppenleitung</strong>.
+          Er wird regelmäßig besprochen und angepasst.
+        </div>
+        <div class="quiz-box">
+          <div class="quiz-label">🧠 Teste dein Wissen</div>
+          <div class="quiz-frage">Mit wem erstellst du deinen Förder- und Entwicklungsplan?</div>
+          <div class="quiz-optionen">
+            <button class="quiz-btn" onclick="bewerteAntwort(this, true)"><span class="kreis"></span> Gemeinsam mit meiner Gruppenleitung</button>
+            <button class="quiz-btn" onclick="bewerteAntwort(this, false)"><span class="kreis"></span> Ich muss ihn alleine ausfüllen</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-karte" id="faq-6-2">
+      <div class="faq-frage" onclick="toggleFaq('faq-6-2')">
+        <img src="AbA.jpg" alt="" class="faq-metacom">
+        <div class="faq-frage-text">Was ist das Infoterminal und wofür ist es gut?</div>
+        <div class="faq-pfeil">›</div>
+      </div>
+      <div class="faq-antwort">
+        <div class="antwort-text">
+          Das Studjo Infoterminal ist ein digitales Informationsangebot für dich.<br><br>
+          Hier findest du:
+          <ul>
+            <li>Aktuelle <strong>Nachrichten</strong> in Leichter Sprache</li>
+            <li>Wichtige <strong>Infos über die Werkstatt</strong></li>
+            <li>Den <strong>Bistro-Plan</strong></li>
+            <li>Häufige <strong>Fragen und Antworten</strong> – genau hier!</li>
+          </ul>
+          Das Terminal ist für alle Beschäftigten da – schau einfach rein!
+        </div>
+        <div class="quiz-box">
+          <div class="quiz-label">🧠 Teste dein Wissen</div>
+          <div class="quiz-frage">Für wen ist das Studjo Infoterminal gedacht?</div>
+          <div class="quiz-optionen">
+            <button class="quiz-btn" onclick="bewerteAntwort(this, false)"><span class="kreis"></span> Nur für die Werkstattleitung</button>
+            <button class="quiz-btn" onclick="bewerteAntwort(this, true)"><span class="kreis"></span> Für alle Beschäftigten</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2024 <b>Studjo | Arbeit und Qualifizierung</b> | Infoterminal | Barrierefreier Zugang
+</footer>
+
+<script>
+  // ── FAQ aufklappen / zuklappen ──────────────────────────────
+  function toggleFaq(id) {
+    const karte    = document.getElementById(id);
+    const warOffen = karte.classList.contains('offen');
+    // Alle Karten im gleichen Kapitel schließen
+    karte.closest('.kapitel')
+      .querySelectorAll('.faq-karte.offen')
+      .forEach(k => k.classList.remove('offen'));
+    if (!warOffen) {
+      karte.classList.add('offen');
+      setTimeout(() =>
+        karte.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60);
+    }
+  }
+
+  // ── Quiz bewerten ────────────────────────────────────────────
+  function bewerteAntwort(geklickterBtn, istRichtig) {
+    const quizBox  = geklickterBtn.closest('.quiz-box');
+    const alleBtn  = quizBox.querySelectorAll('.quiz-btn');
+    const feedback = quizBox.querySelector('.quiz-feedback');
+
+    alleBtn.forEach(function(btn) {
+      btn.disabled = true;
+      if (btn === geklickterBtn) {
+        btn.classList.add(istRichtig ? 'richtig' : 'falsch');
+        btn.querySelector('.kreis').textContent = istRichtig ? '✓' : '✗';
+      } else {
+        // Andere Antwort: wenn sie richtig wäre, grün markieren
+        const andereIstRichtig =
+          btn.getAttribute('onclick').includes('true');
+        if (andereIstRichtig && !istRichtig) {
+          btn.classList.add('korrekt-markiert');
+          btn.querySelector('.kreis').textContent = '✓';
+        }
+      }
+    });
+
+    feedback.className   = 'quiz-feedback ' + (istRichtig ? 'richtig' : 'falsch');
+    feedback.textContent = istRichtig
+      ? '✅ Richtig! Super gemacht!'
+      : '❌ Leider falsch. Die richtige Antwort ist grün markiert.';
+  }
+
+  // ── Reset beim Verlassen (Back-Forward-Cache) ────────────────
+  // Da kein localStorage genutzt wird, sind alle Antworten
+  // nach einem echten Reload automatisch zurückgesetzt.
+  // Der pageshow-Handler verhindert, dass ein Browser-Cache
+  // die beantworteten Quizze beim Zurück-Navigieren beibehält.
+  window.addEventListener('pageshow', function(e) {
+    if (e.persisted) {
+      window.location.reload();
+    }
+  });
+</script>
+
+</body>
+</html>
