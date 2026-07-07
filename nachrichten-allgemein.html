@@ -297,26 +297,22 @@
 
 <div id="tab-kobinet" class="tab-content" style="display:none">
 
-  <!-- Kopfzeile des Tabs -->
-  <div class="news-quelle">
-    <strong>Quelle: kobinet-nachrichten.org</strong>
-    <span class="news-stand">Stand: <span id="kobinet-stand">wird geladen…</span></span>
+ <div class="news-kopf">
+    <span class="news-quelle" id="kobinet-quelle">kobinet-nachrichten.org</span>
+    <span class="news-stand">Stand: <span id="kobinet-stand">–</span></span>
   </div>
 
-  <!-- Artikel-Liste -->
   <div id="kobinet-liste">
-    <p class="news-laden">Wird geladen…</p>
+    <!-- Artikel werden per JavaScript geladen -->
+    <p class="news-laden">⏳ Wird geladen …</p>
   </div>
 
-  <!-- Fehlermeldungen (hidden by default) -->
   <p class="news-fehler" id="kobinet-fehler" style="display:none">
     ⚠️ Nachrichten konnten nicht geladen werden.
   </p>
-  <p class="news-leer" id="kobinet-leer" style="display:none">
-    ⏳ Inhalte werden eingerichtet – bitte in 30 Minuten erneut aufrufen.
-  </p>
 
 </div>
+
 
 </main>
 
@@ -444,91 +440,102 @@ setTimeout(() => location.reload(), 30 * 60 * 1000);
      ════════════════════════════════════════════════════════ -->
 
 <script>
-// ── Kobinet-Nachrichten laden und rendern ────────────────────────────────
+// ── kobinet-Nachrichten laden ────────────────────────────────────────────
+// Feldnamen entsprechen der bestehenden JSON-Struktur des Workflows:
+//   data.quelle / data.aktualisiert / data.meldungen[]
+//   Jede Meldung: .title .description .pubDate .bild
+
 (function ladeKobinet() {
 
-  fetch('kobinet.json')
+  fetch('kobinet.json?v=' + Date.now())   // ?v= verhindert Browser-Cache
     .then(function(res) {
       if (!res.ok) throw new Error('HTTP ' + res.status);
       return res.json();
     })
     .then(function(data) {
 
-      // Stand-Zeitstempel setzen
-      var standEl = document.getElementById('kobinet-stand');
-      if (standEl) standEl.textContent = data.updated || '–';
+      // ── Metadaten setzen ────────────────────────────────────────
+      var standEl  = document.getElementById('kobinet-stand');
+      var quelleEl = document.getElementById('kobinet-quelle');
+      if (standEl  && data.aktualisiert) standEl.textContent  = data.aktualisiert;
+      if (quelleEl && data.quelle)       quelleEl.textContent = data.quelle;
 
       var liste = document.getElementById('kobinet-liste');
       if (!liste) return;
 
-      // Fehler im Datenabruf?
-      if (data.error) {
+      // ── Keine Meldungen oder Fehler? ────────────────────────────
+      var meldungen = data.meldungen || [];
+      if (meldungen.length === 0) {
+        liste.innerHTML = '';
         document.getElementById('kobinet-fehler').style.display = 'block';
-        liste.innerHTML = '';
         return;
       }
 
-      // Keine Artikel?
-      if (!data.items || data.items.length === 0) {
-        document.getElementById('kobinet-leer').style.display = 'block';
-        liste.innerHTML = '';
-        return;
-      }
+      // ── Meldungen rendern ───────────────────────────────────────
+      // Gleiche CSS-Klassen wie die anderen Tabs verwenden.
+      // Falls Deine bestehenden Tabs andere Klassen nutzen,
+      // passe .news-artikel / .news-titel / .news-text / .news-datum an.
 
-      // Artikel rendern – gleiche Struktur wie Tagesschau-Tab
       var html = '';
-      data.items.forEach(function(artikel) {
 
-        // Datum formatieren (optional, falls pubDate vorhanden)
+      meldungen.forEach(function(m) {
+
+        // Datum lesbar formatieren
         var datumText = '';
-        if (artikel.pubDate) {
+        if (m.pubDate) {
           try {
-            var d = new Date(artikel.pubDate);
-            datumText = d.toLocaleDateString('de-DE', {
-              day: '2-digit', month: '2-digit', year: 'numeric'
-            });
-          } catch(e) { datumText = artikel.pubDate; }
+            var d = new Date(m.pubDate);
+            if (!isNaN(d)) {
+              datumText = d.toLocaleDateString('de-DE', {
+                day: '2-digit', month: '2-digit', year: 'numeric'
+              });
+            }
+          } catch(e) {}
         }
 
-        // Link-Wrapper nur wenn URL vorhanden
-        var oeffner = artikel.link
-          ? '<a href="' + artikel.link + '" target="_blank" rel="noopener noreferrer" class="news-link">'
-          : '<div class="news-link">';
-        var schliesser = artikel.link ? '</a>' : '</div>';
+        // Bild (optional – nur rendern wenn vorhanden)
+        var bildHtml = m.bild
+          ? '<img src="' + escHTML(m.bild) + '" alt="" class="news-bild" loading="lazy">'
+          : '';
 
-        html += oeffner +
-          '<div class="news-artikel">' +
-            '<div class="news-titel">' + escapeHTML(artikel.title) + '</div>' +
-            (artikel.description
-              ? '<div class="news-beschreibung">' + escapeHTML(artikel.description) + '</div>'
+        // Artikel mit oder ohne Link
+        var tagAuf  = m.link
+          ? '<a href="' + escHTML(m.link) + '" target="_blank" rel="noopener noreferrer" class="news-artikel">'
+          : '<div class="news-artikel">';
+        var tagZu   = m.link ? '</a>' : '</div>';
+
+        html +=
+          tagAuf +
+            bildHtml +
+            '<div class="news-titel">'  + escHTML(m.title)       + '</div>' +
+            (m.description
+              ? '<div class="news-text">' + escHTML(m.description) + '</div>'
               : '') +
             (datumText
               ? '<div class="news-datum">📅 ' + datumText + '</div>'
               : '') +
-          '</div>' +
-        schliesser;
+          tagZu;
       });
 
       liste.innerHTML = html;
     })
     .catch(function(err) {
-      console.error('Kobinet fetch Fehler:', err);
+      console.error('kobinet.json konnte nicht geladen werden:', err);
+      var liste    = document.getElementById('kobinet-liste');
       var fehlerEl = document.getElementById('kobinet-fehler');
+      if (liste)    liste.innerHTML = '';
       if (fehlerEl) fehlerEl.style.display = 'block';
-      var listeEl = document.getElementById('kobinet-liste');
-      if (listeEl) listeEl.innerHTML = '';
     });
 
 })();
 
-// ── Hilfsfunktion: HTML-Sonderzeichen escapen ────────────────────────────
-function escapeHTML(str) {
-  if (!str) return '';
-  return str
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
+// ── HTML-Sonderzeichen escapen ───────────────────────────────────────────
+function escHTML(s) {
+  if (!s) return '';
+  return s.replace(/&/g,'&amp;')
+          .replace(/</g,'&lt;')
+          .replace(/>/g,'&gt;')
+          .replace(/"/g,'&quot;');
 }
 </script>
 
