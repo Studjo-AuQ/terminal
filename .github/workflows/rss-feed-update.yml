@@ -15,7 +15,7 @@ jobs:
       - name: Repository auschecken
         uses: actions/checkout@v4
 
-      - name: Beide RSS-Feeds holen und als JSON speichern
+      - name: Alle RSS-Feeds holen und als JSON speichern
         run: |
           python3 << 'PYTHON'
           import urllib.request
@@ -42,109 +42,17 @@ jobs:
                   ],
                   'max': 15,
               },
+              # ── NEU: kobinet-Nachrichten ────────────────────────────
+              {
+                  'datei':  'kobinet.json',
+                  'urls': [
+                      'https://feeds.feedburner.com/Kobinet-nachrichten',
+                  ],
+                  'max': 12,
+              },
           ]
           # ─────────────────────────────────────────────────────────
 
-          # ╔══════════════════════════════════════════════════════════════════════╗
-# ║  SNIPPET – in Deinen bestehenden RSS-Fetch-Workflow einfügen        ║
-# ║  Suche darin nach dem Schritt der nachrichten.json oder             ║
-# ║  tagesschau.json erstellt und füge diesen Block DARUNTER ein.       ║
-# ║  Außerdem: In dem "git add"-Schritt "kobinet.json" ergänzen.        ║
-# ╚══════════════════════════════════════════════════════════════════════╝
-
-      # ── NEU: Kobinet-Nachrichten (Nachrichten über Behinderung & Teilhabe) ──
-      - name: Kobinet-Nachrichten RSS abrufen und speichern
-        run: |
-          python3 << 'PYTHON'
-import urllib.request, json, re
-import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
-
-FEED_URL = "https://feeds.feedburner.com/Kobinet-nachrichten"
-OUTPUT   = "kobinet.json"
-MAX_ITEMS = 12
-
-req = urllib.request.Request(FEED_URL, headers={
-    "User-Agent": "Mozilla/5.0 (Studjo-Terminal/1.0; RSS-Reader)"
-})
-
-# ── Feed abrufen ────────────────────────────────────────────────────────
-try:
-    with urllib.request.urlopen(req, timeout=20) as resp:
-        raw = resp.read().decode("utf-8", errors="replace")
-except Exception as e:
-    result = {
-        "source": "kobinet-nachrichten.org",
-        "updated": "Fehler beim Abrufen",
-        "error": str(e),
-        "items": []
-    }
-    with open(OUTPUT, "w", encoding="utf-8") as f:
-        json.dump(result, f, ensure_ascii=False)
-    print(f"FEHLER: {e}")
-    exit(0)
-
-# ── XML parsen (Namespaces bereinigen) ──────────────────────────────────
-raw = re.sub(r'\s+xmlns(?::[^=]+)?="[^"]*"', '', raw)
-raw = re.sub(r'<\?xml[^?]*\?>', '', raw)
-
-try:
-    root = ET.fromstring(raw)
-except ET.ParseError as e:
-    result = {
-        "source": "kobinet-nachrichten.org",
-        "updated": "Parse-Fehler",
-        "error": str(e),
-        "items": []
-    }
-    with open(OUTPUT, "w", encoding="utf-8") as f:
-        json.dump(result, f, ensure_ascii=False)
-    print(f"XML PARSE FEHLER: {e}")
-    exit(0)
-
-# ── Artikel extrahieren ─────────────────────────────────────────────────
-items = []
-for item in root.findall(".//item")[:MAX_ITEMS]:
-    title = (item.findtext("title") or "").strip()
-    desc  = (item.findtext("description") or "").strip()
-    link  = (item.findtext("link") or "").strip()
-    date  = (item.findtext("pubDate") or "").strip()
-
-    # HTML-Tags aus Beschreibung entfernen
-    desc = re.sub(r"<[^>]+>", " ", desc)
-    desc = re.sub(r"\s+", " ", desc).strip()
-
-    # Auf 280 Zeichen kürzen
-    if len(desc) > 280:
-        desc = desc[:277] + "…"
-
-    if title:
-        items.append({
-            "title":       title,
-            "description": desc,
-            "link":        link,
-            "pubDate":     date
-        })
-
-# ── Zeitstempel und Speichern ───────────────────────────────────────────
-now = datetime.now(timezone.utc)
-result = {
-    "source":  "kobinet-nachrichten.org",
-    "updated": now.strftime("%d.%m.%Y, %H:%M Uhr"),
-    "items":   items
-}
-
-with open(OUTPUT, "w", encoding="utf-8") as f:
-    json.dump(result, f, ensure_ascii=False, indent=2)
-
-print(f"kobinet.json: {len(items)} Artikel gespeichert ({now.strftime('%H:%M UTC')})")
-PYTHON
-          
-          
-          
-          
-          
-          
           def html_entfernen(text):
               if not text:
                   return ''
@@ -185,7 +93,6 @@ PYTHON
                           el = item.find(f'{{http://www.w3.org/2005/Atom}}{atom}')
                       return el.text or '' if el is not None else ''
 
-                  # Bild-URL versuchen zu extrahieren (media:thumbnail oder enclosure)
                   bild = ''
                   media_thumb = item.find('{http://search.yahoo.com/mrss/}thumbnail')
                   if media_thumb is not None:
