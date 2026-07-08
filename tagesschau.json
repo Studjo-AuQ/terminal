@@ -1,11 +1,35 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "08.07.2026, 16:46 Uhr (UTC)",
+  "aktualisiert": "08.07.2026, 18:23 Uhr (UTC)",
   "meldungen": [
     {
-      "title": "Marktbericht: Eskalation im Nahen Osten",
+      "title": "Kommentar: NATO sendet Signal der Geschlossenheit",
+      "description": "Der NATO-Gipfel in Ankara war von der einen oder anderen Unstimmigkeit geprägt - nicht zuletzt durch Provokationen Trumps. Trotzdem ist es den Teilnehmern am Ende gelungen, ein Signal der Geschlossenheit zu senden, meint Benjamin Weber.",
+      "pubDate": "2026-07-08T20:01:58+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Liveblog zur Sicherheitspolitik: ++ Trump spricht von \"sehr erfolgreichem NATO-Gipfel\" ++",
+      "description": "Zum Abschluss des NATO-Gipfels zieht US-Präsident Trump eine positive Bilanz - und lobt die \"unglaubliche Einigkeit\" in Ankara. Kanzler Merz will das Fünf-Prozent-Ziel schneller erreichen als geplant. Alle Entwicklungen im Liveblog.",
+      "pubDate": "2026-07-08T19:49:46+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Nach Gerichtsurteil: Marine Le Pen stürzt sich in den Wahlkampf",
+      "description": "Direkt nach dem Urteil gegen sie hat die französische Rechtsnationalistin Marine Le Pen mit dem Wahlkampf begonnen. Ihre Anhänger haben mit ihrer strafrechtlichen Verurteilung offenbar kein Problem. Von Cai Rienäcker.",
+      "pubDate": "2026-07-08T18:57:40+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Warum die Opposition das Gesundheits-Sparpaket stoppen will",
+      "description": "Die Oppositionsparteien sehen sich bei der geplanten Krankenkassen-Reform unter Druck gesetzt. Mit Eilanträgen wollen sie die Abstimmung verhindern - und rechnen sich gute Chancen aus. Die Regierung reagiert gelassen. Von C. Berdrow.",
+      "pubDate": "2026-07-08T18:46:03+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX rauscht nach Eskalation im Nahen Osten in die Tiefe",
       "description": "Die Furcht vor einem Wiederaufflammen des Kriegs im Nahen Osten hat Anleger in die Flucht geschlagen. Der DAX rauscht in die Tiefe. Die Ölpreise ziehen wieder an. Die Lage ist angespannt.",
-      "pubDate": "2026-07-08T18:19:14+02:00",
+      "pubDate": "2026-07-08T18:54:20+02:00",
       "bild": ""
     },
     {
@@ -28,14 +52,8 @@
     },
     {
       "title": "NATO-Gipfel: Milliarden für die Ukraine - milde Töne von Trump",
-      "description": "Der NATO-Gipfel ist mit milliardenschweren Hilfszusagen für die Ukraine zu Ende gegangen. Nach den Verbalattacken gegen Partnerländer stimmte US-Präsident Trump offenbar mildere Töne an - und lobte Deutschland.",
-      "pubDate": "2026-07-08T17:00:29+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Liveblog zur Sicherheitspolitik: ++ Merz will 5-Prozent-Ziel schneller erreichen ++",
-      "description": "Laut Kanzler Merz soll Deutschland das 5-Prozent-Ausgaben-Ziel der NATO schneller erreichen als geplant. Die USA wollen der Ukraine die Lizenz zum Bau von \"Patriot\"-Abwehrsystemen erteilen. Alle Entwicklungen im Liveblog.",
-      "pubDate": "2026-07-08T18:29:23+02:00",
+      "description": "Der NATO-Gipfel ist mit milliardenschweren Hilfszusagen für die Ukraine zu Ende gegangen. Nach den Verbalattacken gegen Partnerländer zu Beginn stimmte US-Präsident Trump zum Abschluss mildere Töne an.",
+      "pubDate": "2026-07-08T19:07:16+02:00",
       "bild": ""
     },
     {
@@ -46,8 +64,8 @@
     },
     {
       "title": "Trump droht Iran bei NATO-Gipfel mit neuen Angriffen",
-      "description": "US-Präsident Trump droht mit neuen Angriffen auf Iran - und schließt weitere Verhandlungen mit Teheran aus. Zumindest vorerst. Auf dem NATO-Gipfel kritisierte er erneut die Bündnispartner Spanien und Deutschland.",
-      "pubDate": "2026-07-08T17:08:05+02:00",
+      "description": "US-Präsident Trump droht mit neuen Angriffen auf Iran - und schließt weitere Verhandlungen mit Teheran aus. Auf dem NATO-Gipfel erklärte er dann allerdings, er rechne nicht mit langen Kriegshandlungen.",
+      "pubDate": "2026-07-08T19:27:40+02:00",
       "bild": ""
     },
     {
@@ -72,24 +90,6 @@
       "title": "Hinweise auf Amoktat: Mehrere Verletzte an Gymnasium in Bayern",
       "description": "Großeinsatz im oberbayerischen Schongau: An einem Gymnasium wurden laut Polizei mehrere Personen verletzt. Den Angaben zufolge gibt es Hinweise auf eine Amoktat. Ein Tatverdächtiger wurde festgenommen.",
       "pubDate": "2026-07-08T14:10:53+02:00",
-      "bild": ""
-    },
-    {
-      "title": "KI-Assistenzsystem soll Bahnreisende besser informieren",
-      "description": "Die Deutsche Bahn will dafür sorgen, dass Fahrgäste auf ihrer Zugreise besser und schneller über Verspätungen, Zugausfälle oder kurzfristige Gleiswechsel informiert werden. Dabei soll auch Künstliche Intelligenz helfen.",
-      "pubDate": "2026-07-08T13:53:39+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Landgericht Berlin verurteilt Palliativarzt wegen Mordserie",
-      "description": "Lebenslange Haft, besondere Schwere der Schuld und Sicherungsverwahrung: Im Prozess gegen einen Berliner Palliativarzt ist das Urteil gefallen. Nach Überzeugung des Gerichts hat er 15 schwer kranke Menschen getötet.",
-      "pubDate": "2026-07-08T15:46:32+02:00",
-      "bild": ""
-    },
-    {
-      "title": "USA und Iran: \"Ich sehe keine Kompromisslösung\"",
-      "description": "Im US-Kurs gegenüber Iran erkennt der Nahost-Experte Guido Steinberg Ratlosigkeit. Nun gehe es erst einmal darum, das Abkommen zur Waffenruhe zu retten. Ein weitergehender Kompromiss in der Atomfrage sei nicht absehbar.",
-      "pubDate": "2026-07-08T13:28:45+02:00",
       "bild": ""
     }
   ],
