@@ -1,7 +1,55 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "08.07.2026, 07:34 Uhr (UTC)",
+  "aktualisiert": "08.07.2026, 10:26 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Liveblog zur Sicherheitspolitik: ++ Ölpreise legen stark zu ++",
+      "description": "Trumps Abkehr vom Iran-Waffenstillstand lässt den Ölpreis um fast sechs Prozent ansteigen. Vermittler Katar ruft zur Deeskalation auf. Die Entwicklungen im Liveblog.",
+      "pubDate": "2026-07-08T12:23:19+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Sorgen wegen drohendem Einsturz: Hochhaus in Manhattan für stabil erklärt",
+      "description": "Schreck in New York: In einem Hochhaus wurden Risse und eingeknickte Stützpfeiler entdeckt. Nach Evakuierungen und Notreparaturen ist das Gebäude nun wieder für stabil erklärt worden.",
+      "pubDate": "2026-07-08T11:22:54+02:00",
+      "bild": ""
+    },
+    {
+      "title": "US-Präsident Trump will Handel mit Spanien einstellen",
+      "description": "Schon länger kritisiert US-Präsident Trump den NATO-Partner Spanien: zu geringe Verteidigungsausgaben, mangelnde Unterstützung im Iran-Krieg. Nun kündigte er an, den Handel zu stoppen. Das dürfte aber schwierig werden.",
+      "pubDate": "2026-07-08T11:52:00+02:00",
+      "bild": ""
+    },
+    {
+      "title": "SED-Opferbeauftragte Zupke: \"Diktatur ist weg, Folgen bleiben\"",
+      "description": "Viele Menschen leiden bis heute unter den Folgen der SED-Diktatur. Die Beauftragte Zupke sieht im Jahresbericht Fortschritte bei der Unterstützung von Betroffenen - fordert aber weitere Schritte. Von Dietrich Karl Mäurer.",
+      "pubDate": "2026-07-08T10:41:19+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Nach neuen Angriffen: Trump erklärt Rahmenabkommen mit Iran für beendet",
+      "description": "US-Präsident Trump hat die Absichtserklärung mit Iran für eine Beendigung des Krieges für hinfällig erklärt. Die Vereinbarung sei \"vorbei\", sagte Trump am Rande des NATO-Gipfels. Zuvor hatte es erneut gegenseitige Angriffe gegeben.",
+      "pubDate": "2026-07-08T10:55:54+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Commerzbank-Aktionäre nehmen Übernahmeangebot der UniCredit an",
+      "description": "Die italienische Großbank UniCredit hat sich mit ihrem Aktientauschangebot mehr als 44 Prozent an der Commerzbank gesichert. Eine Übernahme wird damit zwar wahrscheinlicher, doch es gibt noch Hürden.",
+      "pubDate": "2026-07-08T10:35:47+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: Anleger blicken sorgenvoll auf den Nahen Osten",
+      "description": "Die Ölpreise ziehen wieder an, der DAX fällt recht deutlich zurück. Die angespannte Lage im Nahen Osten zwingt die Investoren zur Vorsicht. Aber noch gibt es Hoffnung auf eine Wiederaufnahme der Waffenruhe.",
+      "pubDate": "2026-07-08T10:29:04+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Trump sorgt beim NATO-Gipfel mit neuer Grönland-Aussage für Ärger",
+      "description": "Beim NATO-Gipfel sorgen diverse Äußerungen des US-Präsidenten für Unmut. Trump erhob auch erneut Anspruch auf Grönland, Dänemark reagierte deutlich. NATO-Chef Rutte sieht die Einigkeit des Bündnisses jedoch nicht in Gefahr.",
+      "pubDate": "2026-07-08T10:16:48+02:00",
+      "bild": ""
+    },
     {
       "title": "Bäckerei-Insolvenzen im ersten Halbjahr um 40 Prozent gestiegen",
       "description": "Die Menschen in Deutschland kaufen Brot, Brötchen und andere Backwaren immer häufiger im Supermarkt oder beim Discounter statt in klassischen Bäckereien. Das macht vielen traditionellen Betrieben zu schaffen - und viele müssen aufgeben.",
@@ -16,26 +64,20 @@
     },
     {
       "title": "Polarisierend und entschlossen: UniCredit-Chef Andrea Orcel",
-      "description": "Die UniCredit legt heute das Ergebnis des Aktientauschs für die Übernahme der Commerzbank vor. Der Kopf hinter der Schlacht ist der Chef der italienischen Großbank, Andrea Orcel. Wer ist dieser Banker? Von J. Seisselberg.",
+      "description": "Die UniCredit kommt einer Übernahme der Commerzbank näher. Der Kopf hinter der Schlacht ist der Chef der italienischen Großbank, Andrea Orcel. Wer ist dieser Banker? Von J. Seisselberg.",
       "pubDate": "2026-07-08T09:00:17+02:00",
       "bild": ""
     },
     {
-      "title": "Ukraine: Erneut Angriffe auf Kiew in der Nacht",
-      "description": "Erneut heulten in der Nacht in Kiew die Sirenen. Mindestens eine Person starb bei den russischen Angriffen. Auch Charkiw geriet ins Visier. Die Ukraine griff ihrerseits Industrieanlagen in Russland an.",
-      "pubDate": "2026-07-08T08:56:47+02:00",
+      "title": "Ukraine: Erneut schwere Angriffe auf Kiew und andere Städte",
+      "description": "Erneut heulten in der Nacht in Kiew die Sirenen. Auch Charkiw geriet ins Visier russischer Angriffe. Landesweit wurden mindestens sieben Todesopfer gemeldet. Die Ukraine griff ihrerseits Industrieanlagen in Russland an.",
+      "pubDate": "2026-07-08T11:26:30+02:00",
       "bild": ""
     },
     {
       "title": "Grüne prüfen rechtliche Schritte, um Gesundheitsreform zu stoppen",
       "description": "Am Freitag soll das Gesundheits-Sparpaket der Koalition beschlossen werden. Die Grünen ärgern sich über kurzfristige Änderungen am Gesetzentwurf, \"auf 278 Seiten\". Sie erwägen juristische Schritte, um die Verabschiedung zu stoppen.",
-      "pubDate": "2026-07-08T08:34:21+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Die Nahost-Krise ist zurück an der Börse",
-      "description": "Die erneute Eskalation im Nahen Osten wird von den Anlegern relativ gelassen aufgenommen. Die Ölpreise legen zwar zu, bislang rechnen die Anleger aber wohl nicht mit einem Wiederaufflammen des Kriegs.",
-      "pubDate": "2026-07-08T08:05:49+02:00",
+      "pubDate": "2026-07-08T09:56:38+02:00",
       "bild": ""
     },
     {
@@ -48,48 +90,6 @@
       "title": "Zahl der Angriffe auf Bahn-Beschäftigte und Bundespolizisten steigt",
       "description": "Drohungen, Beleidigungen oder körperliche Angriffe: Die Zahl der Angriffe auf Bahn-Beschäftigte ist weiter gestiegen. Laut Zahlen des Innenministeriums waren es zuletzt im Schnitt acht Angriffe pro Tag.",
       "pubDate": "2026-07-08T07:53:55+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Millionen-Geschäft mit illegalen Online-Casinos",
-      "description": "Ein Whistleblower-Leak zeigt: Ein Netzwerk von rund 120 Online-Glücksspielseiten spricht gezielt deutsche Spieler an, und das ohne die notwendige Lizenz. Hinter dem Firmennetzwerk steht ein dubioser Geschäftsmann. Von A. Meyer-Fünffinger, J. Streule, M. Zierer.",
-      "pubDate": "2026-07-08T07:07:22+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wie Windräder beim Waldumbau helfen können",
-      "description": "In Hessen, Rheinland-Pfalz und Brandenburg stehen über 500 Windräder im Wald - in Thüringen sind es vier. Das Thema ist kontrovers, Projekte werden oft gekippt - dabei könnten sie auch eine Chance sein. Von Inka Zimmermann.",
-      "pubDate": "2026-07-08T06:39:59+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kommentar zu Le Pen: Die Zockerin geht eine hochriskante Wette ein",
-      "description": "Marine Le Pen treibt den Machtkampf mit der Justiz auf die Spitze. Der Stammwählerschaft dürfte das gefallen. Doch andere Wähler wird sie verprellen, meint Julia Borutta. Und die bräuchte Le Pen, um an die Macht zu kommen.",
-      "pubDate": "2026-07-08T06:33:10+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Manhattan: Hochhaus wegen Einsturzgefahr geräumt",
-      "description": "Mitten in Manhattan musste ein Gebäude mit 37 Stockwerken geräumt werden: Metallstreben sind verbogen, Stützpfeiler eingeknickt. Es droht offenbar ein Teileinsturz. In der Nähe liegen viele Touristenattraktionen.",
-      "pubDate": "2026-07-08T02:51:41+02:00",
-      "bild": ""
-    },
-    {
-      "title": "USA greifen erneut Iran an - Reaktion auf Attacken auf Handelsschiffe",
-      "description": "Die Waffenruhe im Iran-Krieg bleibt brüchig: Die USA griffen erneut Ziele in Iran an. Dies sei die Reaktion auf iranische Attacken auf Handelsschiffe. Zudem wurden Öl-Sanktionen wieder in Kraft gesetzt. Iran reagierte seinerseits mit Angriffen.",
-      "pubDate": "2026-07-08T07:28:18+02:00",
-      "bild": ""
-    },
-    {
-      "title": "NATO-Gipfel in der Türkei: Auf der Suche nach dem Geist von Ankara",
-      "description": "Bundeskanzler Merz hofft beim NATO-Gipfel auf einen guten \"Geist von Ankara\", US-Präsident Trump hingegen beschwert sich bei den Partnern und fragt, wer im Bündnis für wen da ist. Von Benjamin Großkopff.",
-      "pubDate": "2026-07-07T21:32:34+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Le Pen will trotz Urteils bei Präsidentschaftswahl 2027 antreten",
-      "description": "Die französische Politikerin Le Pen hält an ihrer Präsidentschaftskandidatur fest. Zuvor hatte ein Berufungsgericht sie wegen Veruntreuung von EU-Geldern zu einem Jahr Hausarrest mit einer elektronischen Fußfessel verurteilt.",
-      "pubDate": "2026-07-07T20:52:06+02:00",
       "bild": ""
     }
   ],
