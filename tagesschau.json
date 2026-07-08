@@ -1,11 +1,47 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "08.07.2026, 10:26 Uhr (UTC)",
+  "aktualisiert": "08.07.2026, 12:06 Uhr (UTC)",
   "meldungen": [
     {
-      "title": "Liveblog zur Sicherheitspolitik: ++ Ölpreise legen stark zu ++",
-      "description": "Trumps Abkehr vom Iran-Waffenstillstand lässt den Ölpreis um fast sechs Prozent ansteigen. Vermittler Katar ruft zur Deeskalation auf. Die Entwicklungen im Liveblog.",
-      "pubDate": "2026-07-08T12:23:19+02:00",
+      "title": "KI-Assistenzsystem soll Bahnreisende besser informieren",
+      "description": "Die Deutsche Bahn will dafür sorgen, dass Fahrgäste auf ihrer Zugreise besser und schneller über Verspätungen, Zugausfälle oder kurzfristige Gleiswechsel informiert werden. Dabei soll auch Künstliche Intelligenz helfen.",
+      "pubDate": "2026-07-08T13:53:39+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Landgericht Berlin verurteilt Palliativarzt wegen Mordserie",
+      "description": "Lebenslange Haft, besondere Schwere der Schuld und Sicherungsverwahrung: Im Prozess gegen einen Berliner Palliativarzt ist das Urteil gefallen. Nach Überzeugung des Gerichts hat er 15 schwer kranke Menschen getötet.",
+      "pubDate": "2026-07-08T13:53:14+02:00",
+      "bild": ""
+    },
+    {
+      "title": "USA und Iran: \"Ich sehe keine Kompromisslösung\"",
+      "description": "Im US-Kurs gegenüber Iran erkennt der Nahost-Experte Guido Steinberg Ratlosigkeit. Nun gehe es erst einmal darum, das Abkommen zur Waffenruhe zu retten. Ein weitergehender Kompromiss in der Atomfrage sei nicht absehbar.",
+      "pubDate": "2026-07-08T13:28:45+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Polizeibeauftragter: Grenzkontrollen so \"auf Dauer nicht tragbar\"",
+      "description": "Seit fast zwei Jahren gibt es an allen deutschen Grenzen Einreisekontrollen. Der Polizeibeauftragte des Bundes betrachtet das \"mit wachsender Sorge\". Innenminister Dobrindt weist Kritik erneut zurück. Von C. Kornmeier und P. Eckstein.",
+      "pubDate": "2026-07-08T13:21:16+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Grüne reichen Eilantrag beim Verfassungsgericht gegen Gesundheitsreform ein",
+      "description": "Am Freitag soll das Gesundheits-Sparpaket der Koalition beschlossen werden - eigentlich. Doch die Grünen haben einen Eilantrag dagegen in Karlsruhe eingereicht. Auch Linke und AfD wollen das Verfassungsgericht anrufen.",
+      "pubDate": "2026-07-08T13:08:01+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Apple scheitert vor EU-Gericht mit Klage gegen strengere Regeln",
+      "description": "Das EU-Gericht in Luxemburg hat eine Klage von Apple gegen die Einstufung als sogenannten Torwächter für den App-Store und das Betriebssystem iOS abgewiesen. Damit hat der Konzern bestimmte Pflichten.",
+      "pubDate": "2026-07-08T12:47:51+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Liveblog zur Sicherheitspolitik: ++ Rutte tritt Trump-Kritik an Europäern entgegen ++",
+      "description": "US-Präsident Trump kritisiert die Europäer erneut - NATO-Generalsekretär Rutte hält dagegen. Die US-Abkehr vom Iran-Waffenstillstand lässt den Ölpreis um fast sechs Prozent ansteigen. Die Entwicklungen im Liveblog.",
+      "pubDate": "2026-07-08T14:00:47+02:00",
       "bild": ""
     },
     {
@@ -17,7 +53,7 @@
     {
       "title": "US-Präsident Trump will Handel mit Spanien einstellen",
       "description": "Schon länger kritisiert US-Präsident Trump den NATO-Partner Spanien: zu geringe Verteidigungsausgaben, mangelnde Unterstützung im Iran-Krieg. Nun kündigte er an, den Handel zu stoppen. Das dürfte aber schwierig werden.",
-      "pubDate": "2026-07-08T11:52:00+02:00",
+      "pubDate": "2026-07-08T13:26:17+02:00",
       "bild": ""
     },
     {
@@ -27,9 +63,9 @@
       "bild": ""
     },
     {
-      "title": "Nach neuen Angriffen: Trump erklärt Rahmenabkommen mit Iran für beendet",
-      "description": "US-Präsident Trump hat die Absichtserklärung mit Iran für eine Beendigung des Krieges für hinfällig erklärt. Die Vereinbarung sei \"vorbei\", sagte Trump am Rande des NATO-Gipfels. Zuvor hatte es erneut gegenseitige Angriffe gegeben.",
-      "pubDate": "2026-07-08T10:55:54+02:00",
+      "title": "Neue Angriffe: Trump erklärt Vereinbarungen mit Iran für beendet",
+      "description": "US-Präsident Trump hat das Rahmenabkommen und die Waffenruhe mit Iran für hinfällig erklärt. Die Gespräche könnten aber weitergehen. Zuvor hatte es erneut gegenseitige Angriffe gegeben.",
+      "pubDate": "2026-07-08T12:50:26+02:00",
       "bild": ""
     },
     {
@@ -54,42 +90,6 @@
       "title": "Bäckerei-Insolvenzen im ersten Halbjahr um 40 Prozent gestiegen",
       "description": "Die Menschen in Deutschland kaufen Brot, Brötchen und andere Backwaren immer häufiger im Supermarkt oder beim Discounter statt in klassischen Bäckereien. Das macht vielen traditionellen Betrieben zu schaffen - und viele müssen aufgeben.",
       "pubDate": "2026-07-08T09:23:31+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Chance auf Schadensersatz für Zehntausende Energiekunden",
-      "description": "Zehntausende Verbraucher deutschlandweit könnten von einem Urteil des OLG Hamm profitieren. Verbraucherschützer haben gegen den Energieanbieter ExtraEnergie geklagt. Von Philip Raillon.",
-      "pubDate": "2026-07-08T09:08:11+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Polarisierend und entschlossen: UniCredit-Chef Andrea Orcel",
-      "description": "Die UniCredit kommt einer Übernahme der Commerzbank näher. Der Kopf hinter der Schlacht ist der Chef der italienischen Großbank, Andrea Orcel. Wer ist dieser Banker? Von J. Seisselberg.",
-      "pubDate": "2026-07-08T09:00:17+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ukraine: Erneut schwere Angriffe auf Kiew und andere Städte",
-      "description": "Erneut heulten in der Nacht in Kiew die Sirenen. Auch Charkiw geriet ins Visier russischer Angriffe. Landesweit wurden mindestens sieben Todesopfer gemeldet. Die Ukraine griff ihrerseits Industrieanlagen in Russland an.",
-      "pubDate": "2026-07-08T11:26:30+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Grüne prüfen rechtliche Schritte, um Gesundheitsreform zu stoppen",
-      "description": "Am Freitag soll das Gesundheits-Sparpaket der Koalition beschlossen werden. Die Grünen ärgern sich über kurzfristige Änderungen am Gesetzentwurf, \"auf 278 Seiten\". Sie erwägen juristische Schritte, um die Verabschiedung zu stoppen.",
-      "pubDate": "2026-07-08T09:56:38+02:00",
-      "bild": ""
-    },
-    {
-      "title": "11KM-Podcast: Was verbirgt Chinas Militär auf dem Meer?",
-      "description": "Im Dezember 2025 bilden Hunderte Fischerboote eine kilometerlange Front im Meer vor China. Was geht dort vor? Vieles deutet darauf hin, dass sie nicht fischen. 11KM über Chinas geheime Militärstrategie.",
-      "pubDate": "2026-07-08T08:01:44+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Zahl der Angriffe auf Bahn-Beschäftigte und Bundespolizisten steigt",
-      "description": "Drohungen, Beleidigungen oder körperliche Angriffe: Die Zahl der Angriffe auf Bahn-Beschäftigte ist weiter gestiegen. Laut Zahlen des Innenministeriums waren es zuletzt im Schnitt acht Angriffe pro Tag.",
-      "pubDate": "2026-07-08T07:53:55+02:00",
       "bild": ""
     }
   ],
