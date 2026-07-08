@@ -25,10 +25,16 @@
     .logo-container img { width: 100%; height: auto; display: block; }
 
     /* ── Main ── */
-    main { flex: 1; max-width: 960px; margin: 0 auto; padding: 24px 20px 80px; width: 100%; }
+    main {
+      flex: 1; max-width: 960px; margin: 0 auto;
+      padding: 24px 20px 100px; width: 100%;
+    }
 
     /* ── Top-Bar ── */
-    .top-bar { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; }
+    .top-bar {
+      display: flex; align-items: center; gap: 16px;
+      margin-bottom: 24px; flex-wrap: wrap;
+    }
     .back-button {
       display: inline-flex; align-items: center; gap: 6px;
       background: white; color: var(--rot);
@@ -41,121 +47,97 @@
     h1 { font-size: 1.5rem; font-weight: 800; color: var(--rot); flex: 1; }
 
     /* ══════════════════════════════════════════════════
-       KAPITEL-KACHELN  –  2 pro Zeile
+       KAPITEL-KACHELN – volle Breite, untereinander
        ══════════════════════════════════════════════════ */
-    .kapitel-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      align-items: start;   /* Kacheln dehnen sich nicht auf gleiche Höhe */
-    }
-    @media (max-width: 540px) {
-      .kapitel-grid { grid-template-columns: 1fr; }
-    }
-
-    /* ── Einzelne Kapitel-Kachel ── */
-    .kapitel-kachel {
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 4px 14px rgba(0,0,0,.09);
-      transition: box-shadow .2s;
-    }
-    .kapitel-kachel:hover { box-shadow: 0 6px 20px rgba(0,0,0,.14); }
-
-    /* ── Kapitel-Kopf (immer sichtbar, klickbar) ── */
-    .kachel-kopf {
+    .kapitel-liste {
       display: flex;
       flex-direction: column;
+      gap: 14px;
+    }
+
+    .kapitel-kachel {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px rgba(0,0,0,.08);
+      border-left: 6px solid #e0e0e0;
+      transition: box-shadow .2s, border-color .2s;
+    }
+
+    /* Kapitel-Farben (linker Rand + Kopf-Hintergrund) */
+    .k-urlaub       { border-left-color: #1e40af; }
+    .k-krank        { border-left-color: var(--rot); }
+    .k-arbeitszeit  { border-left-color: #c25e00; }
+    .k-lohn         { border-left-color: #15803d; }
+    .k-werkstattrat { border-left-color: #7e22ce; }
+    .k-sonstiges    { border-left-color: #475569; }
+
+    .k-urlaub       .kachel-kopf { background: #dbeafe; }
+    .k-krank        .kachel-kopf { background: #fde8e9; }
+    .k-arbeitszeit  .kachel-kopf { background: #fff3e0; }
+    .k-lohn         .kachel-kopf { background: #dcfce7; }
+    .k-werkstattrat .kachel-kopf { background: #f3e8ff; }
+    .k-sonstiges    .kachel-kopf { background: #f1f5f9; }
+
+    .k-urlaub       .kachel-titel, .k-urlaub       .kachel-nr { color: #1e40af; }
+    .k-krank        .kachel-titel, .k-krank        .kachel-nr { color: var(--rot); }
+    .k-arbeitszeit  .kachel-titel, .k-arbeitszeit  .kachel-nr { color: #c25e00; }
+    .k-lohn         .kachel-titel, .k-lohn         .kachel-nr { color: #15803d; }
+    .k-werkstattrat .kachel-titel, .k-werkstattrat .kachel-nr { color: #7e22ce; }
+    .k-sonstiges    .kachel-titel, .k-sonstiges    .kachel-nr { color: #475569; }
+
+    /* ── Kapitel-Kopf (klickbare Leiste) ── */
+    .kachel-kopf {
+      display: flex;
       align-items: center;
-      padding: 22px 16px 18px;
+      gap: 16px;
+      padding: 14px 18px;
       cursor: pointer;
       user-select: none;
-      transition: padding .25s;
-      gap: 10px;
-      position: relative;
+      transition: filter .15s;
     }
+    .kachel-kopf:hover { filter: brightness(.97); }
 
-    /* Geschlossen → großes Bild, zentriert */
+    /* Metacom-Bild links */
     .kachel-metacom {
-      width: 88px; height: 88px;
-      object-fit: cover; border-radius: 12px;
-      border: 2px solid rgba(255,255,255,.6);
-      transition: width .25s, height .25s, border-radius .25s;
+      width: 72px; height: 72px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid rgba(255,255,255,.7);
       flex-shrink: 0;
+      background: white;
     }
-    .kachel-text-block { text-align: center; transition: text-align .25s; }
-    .kachel-nr  { font-size: 0.7rem; font-weight: 700; opacity: .65; text-transform: uppercase; letter-spacing: .06em; }
-    .kachel-titel { font-size: 1.1rem; font-weight: 800; margin-top: 2px; }
 
+    /* Text-Block (Kapitel-Nr + Titel) */
+    .kachel-text-block { flex: 1; }
+    .kachel-nr    { font-size: 0.72rem; font-weight: 700; opacity: .7; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 2px; }
+    .kachel-titel { font-size: 1.2rem; font-weight: 800; line-height: 1.2; }
+
+    /* Pfeil rechts */
     .kachel-pfeil {
-      position: absolute; top: 12px; right: 14px;
-      font-size: 1rem; opacity: .55;
+      font-size: 1.4rem; color: var(--grau);
       transition: transform .25s;
+      flex-shrink: 0; padding: 0 4px;
     }
-
-    /* ── Offen: Kopf wird zur schmalen Leiste ── */
-    .kapitel-kachel.offen .kachel-kopf {
-      flex-direction: row;
-      align-items: center;
-      padding: 12px 14px;
-      gap: 12px;
-      border-bottom: 1px solid rgba(0,0,0,.08);
-    }
-    .kapitel-kachel.offen .kachel-metacom {
-      width: 52px; height: 52px; border-radius: 8px;
-    }
-    .kapitel-kachel.offen .kachel-text-block { text-align: left; flex: 1; }
-    .kapitel-kachel.offen .kachel-titel { font-size: 1rem; }
-    .kapitel-kachel.offen .kachel-pfeil { transform: rotate(180deg); opacity: .7; }
+    .kapitel-kachel.offen .kachel-pfeil { transform: rotate(90deg); }
 
     /* ── Kapitel-Inhalt (FAQ-Liste) ── */
     .kachel-inhalt {
       display: none;
-      padding: 12px 14px 16px;
+      padding: 12px 16px 16px;
     }
     .kapitel-kachel.offen .kachel-inhalt { display: block; }
-
-    /* ── Kapitel-Farben ── */
-    .k-urlaub        .kachel-kopf { background: #dbeafe; }
-    .k-urlaub        .kachel-titel { color: #1e40af; }
-    .k-urlaub        .kachel-nr   { color: #1e40af; }
-    .k-urlaub        .kachel-inhalt { background: #f0f7ff; }
-
-    .k-krank         .kachel-kopf { background: #fde8e9; }
-    .k-krank         .kachel-titel { color: var(--rot); }
-    .k-krank         .kachel-nr   { color: var(--rot); }
-    .k-krank         .kachel-inhalt { background: #fff5f5; }
-
-    .k-arbeitszeit   .kachel-kopf { background: #fff3e0; }
-    .k-arbeitszeit   .kachel-titel { color: #c25e00; }
-    .k-arbeitszeit   .kachel-nr   { color: #c25e00; }
-    .k-arbeitszeit   .kachel-inhalt { background: #fffbf5; }
-
-    .k-lohn          .kachel-kopf { background: #dcfce7; }
-    .k-lohn          .kachel-titel { color: #15803d; }
-    .k-lohn          .kachel-nr   { color: #15803d; }
-    .k-lohn          .kachel-inhalt { background: #f0fdf4; }
-
-    .k-werkstattrat  .kachel-kopf { background: #f3e8ff; }
-    .k-werkstattrat  .kachel-titel { color: #7e22ce; }
-    .k-werkstattrat  .kachel-nr   { color: #7e22ce; }
-    .k-werkstattrat  .kachel-inhalt { background: #faf5ff; }
-
-    .k-sonstiges     .kachel-kopf { background: #f1f5f9; }
-    .k-sonstiges     .kachel-titel { color: #475569; }
-    .k-sonstiges     .kachel-nr   { color: #475569; }
-    .k-sonstiges     .kachel-inhalt { background: #f8fafc; }
 
     /* ══════════════════════════════════════════════════
        FAQ-KARTEN (innerhalb einer Kachel)
        ══════════════════════════════════════════════════ */
     .faq-karte {
-      background: white;
+      background: var(--bg);
       border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,.07);
+      box-shadow: 0 2px 8px rgba(0,0,0,.06);
       margin-bottom: 8px;
       overflow: hidden;
-      border-left: 4px solid rgba(0,0,0,.08);
+      border-left: 4px solid transparent;
       transition: border-color .2s;
     }
     .faq-karte:last-child { margin-bottom: 0; }
@@ -167,18 +149,34 @@
       transition: background .15s;
     }
     .faq-frage:hover { background: #fef2f2; }
+
     .faq-metacom {
-      width: 48px; height: 48px; object-fit: cover;
-      border-radius: 7px; border: 2px solid #f0f0f0;
-      flex-shrink: 0; background: #f5f5f5;
+      width: 52px; height: 52px;
+      object-fit: cover; border-radius: 8px;
+      border: 2px solid #e8e8e8; flex-shrink: 0;
+      background: white;
     }
-    .faq-frage-text { flex: 1; font-size: 0.92rem; font-weight: 700; color: var(--text); line-height: 1.35; }
-    .faq-pfeil { font-size: 1.1rem; color: var(--grau); transition: transform .2s, color .2s; flex-shrink: 0; }
+    .faq-frage-text {
+      flex: 1; font-size: 0.95rem; font-weight: 700;
+      color: var(--text); line-height: 1.35;
+    }
+    .faq-pfeil {
+      font-size: 1.1rem; color: var(--grau);
+      transition: transform .2s, color .2s; flex-shrink: 0;
+    }
     .faq-karte.offen .faq-pfeil { transform: rotate(90deg); color: var(--rot); }
 
-    .faq-antwort { display: none; padding: 0 14px 16px; border-top: 1px solid #f0f0f0; }
+    .faq-antwort {
+      display: none;
+      padding: 0 14px 16px 14px;
+      border-top: 1px solid #eeeeee;
+    }
     .faq-karte.offen .faq-antwort { display: block; }
-    .antwort-text { font-size: 0.9rem; line-height: 1.8; color: var(--text); padding: 12px 0 8px; }
+
+    .antwort-text {
+      font-size: 0.93rem; line-height: 1.8;
+      color: var(--text); padding: 12px 0 8px;
+    }
     .antwort-text ul { margin: 6px 0 6px 1.3rem; }
     .antwort-text li { margin-bottom: 3px; }
 
@@ -186,17 +184,24 @@
        MINI-QUIZ
        ══════════════════════════════════════════════════ */
     .quiz-box {
-      margin-top: 12px; background: #f8f9fa;
-      border: 1px solid #e9ecef; border-radius: 10px; padding: 12px 14px;
+      margin-top: 12px; background: white;
+      border: 1px solid #e9ecef; border-radius: 10px;
+      padding: 12px 14px;
     }
-    .quiz-label { font-size: 0.65rem; font-weight: 800; color: var(--rot); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 5px; }
-    .quiz-frage { font-size: 0.88rem; font-weight: 700; color: var(--text); margin-bottom: 9px; line-height: 1.35; }
+    .quiz-label {
+      font-size: 0.65rem; font-weight: 800; color: var(--rot);
+      text-transform: uppercase; letter-spacing: .06em; margin-bottom: 6px;
+    }
+    .quiz-frage {
+      font-size: 0.9rem; font-weight: 700;
+      color: var(--text); margin-bottom: 9px; line-height: 1.35;
+    }
     .quiz-optionen { display: flex; flex-direction: column; gap: 7px; }
     .quiz-btn {
       display: flex; align-items: center; gap: 9px;
-      padding: 9px 12px; background: white;
+      padding: 9px 12px; background: var(--bg);
       border: 2px solid #dee2e6; border-radius: 9px; cursor: pointer;
-      font-family: inherit; font-size: 0.85rem; font-weight: 700;
+      font-family: inherit; font-size: 0.88rem; font-weight: 700;
       color: var(--text); text-align: left; transition: all .15s;
     }
     .quiz-btn:hover:not(:disabled) { border-color: var(--rot); background: #fef2f2; color: var(--rot); }
@@ -221,37 +226,49 @@
     .quiz-feedback.falsch  { display: block; background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; }
 
     /* ══════════════════════════════════════════════════
-       VORLESEN-BUTTON (unten rechts, schwebend)
+       VORLESEN  –  runder Button unten rechts
        ══════════════════════════════════════════════════ */
     .vorlesen-btn {
       position: fixed;
-      bottom: 24px; right: 24px;
-      display: flex; align-items: center; gap: 10px;
-      background: white;
-      border: 2px solid var(--rot);
-      border-radius: 999px;
-      padding: 10px 20px;
-      cursor: pointer;
-      font-family: inherit; font-size: 0.95rem; font-weight: 700;
-      color: var(--rot);
-      box-shadow: 0 4px 16px rgba(0,0,0,.15);
-      z-index: 200;
-      transition: background .2s, color .2s;
-      user-select: none;
+      bottom: 28px; right: 28px;
+      width: 82px; height: 82px;
+      border-radius: 50%;
+      background: var(--rot);
+      border: none; cursor: pointer;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 2px;
+      box-shadow: 0 4px 18px rgba(182,31,41,.35);
+      z-index: 300;
+      transition: background .2s, transform .15s;
+      font-family: inherit;
     }
-    .vorlesen-btn:hover { background: var(--rot); color: white; }
-    .vorlesen-btn img { width: 32px; height: 32px; object-fit: contain; }
+    .vorlesen-btn:hover { background: #8b161e; transform: scale(1.06); }
+    .vorlesen-btn img  { width: 38px; height: 38px; object-fit: contain; }
+    .vorlesen-btn span {
+      font-size: 0.6rem; font-weight: 800; color: white;
+      text-transform: uppercase; letter-spacing: .06em;
+    }
     .vorlesen-btn.aktiv {
-      background: var(--rot); color: white;
-      animation: puls 1.2s ease-in-out infinite;
+      animation: puls-rot 1.1s ease-in-out infinite;
     }
-    @keyframes puls {
-      0%, 100% { box-shadow: 0 4px 16px rgba(182,31,41,.3); }
-      50%       { box-shadow: 0 4px 24px rgba(182,31,41,.6); }
+    @keyframes puls-rot {
+      0%, 100% { box-shadow: 0 4px 18px rgba(182,31,41,.35); }
+      50%       { box-shadow: 0 4px 28px rgba(182,31,41,.7); }
+    }
+
+    /* ── Vorlesen-Markierung (aktuell gelesenes Element) ── */
+    .is-reading {
+      background: rgba(182,31,41,.08) !important;
+      outline: 2px solid rgba(182,31,41,.4);
+      border-radius: 6px;
     }
 
     /* ── Footer ── */
-    footer { text-align: center; padding: 18px; background: var(--rot); color: white; font-size: 0.88rem; }
+    footer {
+      text-align: center; padding: 18px;
+      background: var(--rot); color: white; font-size: 0.88rem;
+    }
   </style>
 </head>
 <body>
@@ -268,20 +285,19 @@
     <h1>❓ Häufige Fragen</h1>
   </div>
 
-  <!-- ══════════════════════════════════════════════════
-       2-SPALTEN KAPITEL-RASTER
-       ══════════════════════════════════════════════════ -->
-  <div class="kapitel-grid">
+  <div class="kapitel-liste">
 
-    <!-- ─── KAPITEL 1: URLAUB ─────────────────────── -->
+    <!-- ══════════════════════════════════════════
+         KAPITEL 1: URLAUB
+         ══════════════════════════════════════════ -->
     <div class="kapitel-kachel k-urlaub" id="kapitel-1">
       <div class="kachel-kopf" onclick="toggleKapitel('kapitel-1')">
-        <span class="kachel-pfeil">▼</span>
         <img src="AbA.jpg" alt="Urlaub" class="kachel-metacom">
         <div class="kachel-text-block">
           <div class="kachel-nr">Kapitel 1</div>
           <div class="kachel-titel">🌴 Urlaub</div>
         </div>
+        <div class="kachel-pfeil">›</div>
       </div>
       <div class="kachel-inhalt">
 
@@ -337,17 +353,19 @@
         </div>
 
       </div>
-    </div><!-- /kapitel-1 -->
+    </div>
 
-    <!-- ─── KAPITEL 2: KRANKMELDUNG ───────────────── -->
+    <!-- ══════════════════════════════════════════
+         KAPITEL 2: KRANKMELDUNG
+         ══════════════════════════════════════════ -->
     <div class="kapitel-kachel k-krank" id="kapitel-2">
       <div class="kachel-kopf" onclick="toggleKapitel('kapitel-2')">
-        <span class="kachel-pfeil">▼</span>
         <img src="AbA.jpg" alt="Krankmeldung" class="kachel-metacom">
         <div class="kachel-text-block">
           <div class="kachel-nr">Kapitel 2</div>
           <div class="kachel-titel">🤒 Krankmeldung</div>
         </div>
+        <div class="kachel-pfeil">›</div>
       </div>
       <div class="kachel-inhalt">
 
@@ -403,17 +421,19 @@
         </div>
 
       </div>
-    </div><!-- /kapitel-2 -->
+    </div>
 
-    <!-- ─── KAPITEL 3: ARBEITSZEITEN ──────────────── -->
+    <!-- ══════════════════════════════════════════
+         KAPITEL 3: ARBEITSZEITEN
+         ══════════════════════════════════════════ -->
     <div class="kapitel-kachel k-arbeitszeit" id="kapitel-3">
       <div class="kachel-kopf" onclick="toggleKapitel('kapitel-3')">
-        <span class="kachel-pfeil">▼</span>
         <img src="AbA.jpg" alt="Arbeitszeiten" class="kachel-metacom">
         <div class="kachel-text-block">
           <div class="kachel-nr">Kapitel 3</div>
           <div class="kachel-titel">⏰ Arbeitszeiten</div>
         </div>
+        <div class="kachel-pfeil">›</div>
       </div>
       <div class="kachel-inhalt">
 
@@ -470,17 +490,19 @@
         </div>
 
       </div>
-    </div><!-- /kapitel-3 -->
+    </div>
 
-    <!-- ─── KAPITEL 4: LOHN / ENTGELT ─────────────── -->
+    <!-- ══════════════════════════════════════════
+         KAPITEL 4: LOHN / ENTGELT
+         ══════════════════════════════════════════ -->
     <div class="kapitel-kachel k-lohn" id="kapitel-4">
       <div class="kachel-kopf" onclick="toggleKapitel('kapitel-4')">
-        <span class="kachel-pfeil">▼</span>
         <img src="AbA.jpg" alt="Lohn" class="kachel-metacom">
         <div class="kachel-text-block">
           <div class="kachel-nr">Kapitel 4</div>
           <div class="kachel-titel">💰 Lohn und Entgelt</div>
         </div>
+        <div class="kachel-pfeil">›</div>
       </div>
       <div class="kachel-inhalt">
 
@@ -520,7 +542,7 @@
               Ja! Du bekommst dein <strong>normales Entgelt weitergezahlt</strong>
               – das nennt sich Lohnfortzahlung im Krankheitsfall.<br><br>
               Das gilt für die ersten <strong>6 Wochen</strong> einer Erkrankung.
-              Du wirst also nicht bestraft, weil du krank bist!
+              Du wirst nicht bestraft, weil du krank bist!
             </div>
             <div class="quiz-box">
               <div class="quiz-label">🧠 Teste dein Wissen</div>
@@ -535,17 +557,19 @@
         </div>
 
       </div>
-    </div><!-- /kapitel-4 -->
+    </div>
 
-    <!-- ─── KAPITEL 5: WERKSTATTRAT ────────────────── -->
+    <!-- ══════════════════════════════════════════
+         KAPITEL 5: WERKSTATTRAT
+         ══════════════════════════════════════════ -->
     <div class="kapitel-kachel k-werkstattrat" id="kapitel-5">
       <div class="kachel-kopf" onclick="toggleKapitel('kapitel-5')">
-        <span class="kachel-pfeil">▼</span>
         <img src="AbA.jpg" alt="Werkstattrat" class="kachel-metacom">
         <div class="kachel-text-block">
           <div class="kachel-nr">Kapitel 5</div>
           <div class="kachel-titel">🗣️ Werkstattrat</div>
         </div>
+        <div class="kachel-pfeil">›</div>
       </div>
       <div class="kachel-inhalt">
 
@@ -558,8 +582,9 @@
           <div class="faq-antwort">
             <div class="antwort-text">
               Der Werkstattrat ist die <strong>Interessenvertretung der Beschäftigten</strong>.<br><br>
-              Die Mitglieder werden von euch gewählt. Sie setzen sich für eure Rechte
-              und Wünsche ein und sprechen mit der Werkstattleitung.<br><br>
+              Die Mitglieder werden von euch gewählt.
+              Sie setzen sich für eure Rechte und Wünsche ein
+              und sprechen mit der Werkstattleitung.<br><br>
               Jede und jeder Beschäftigte kann den Werkstattrat ansprechen.
             </div>
             <div class="quiz-box">
@@ -604,17 +629,19 @@
         </div>
 
       </div>
-    </div><!-- /kapitel-5 -->
+    </div>
 
-    <!-- ─── KAPITEL 6: SONSTIGES ───────────────────── -->
+    <!-- ══════════════════════════════════════════
+         KAPITEL 6: SONSTIGES
+         ══════════════════════════════════════════ -->
     <div class="kapitel-kachel k-sonstiges" id="kapitel-6">
       <div class="kachel-kopf" onclick="toggleKapitel('kapitel-6')">
-        <span class="kachel-pfeil">▼</span>
         <img src="AbA.jpg" alt="Sonstiges" class="kachel-metacom">
         <div class="kachel-text-block">
           <div class="kachel-nr">Kapitel 6</div>
           <div class="kachel-titel">📋 Sonstiges</div>
         </div>
+        <div class="kachel-pfeil">›</div>
       </div>
       <div class="kachel-inhalt">
 
@@ -676,156 +703,176 @@
         </div>
 
       </div>
-    </div><!-- /kapitel-6 -->
+    </div>
 
-  </div><!-- /kapitel-grid -->
+  </div><!-- /kapitel-liste -->
 </main>
 
 <footer>
   &copy; 2024 <b>Studjo | Arbeit und Qualifizierung</b> | Infoterminal | Barrierefreier Zugang
 </footer>
 
-<!-- ══════════════════════════════════════════════════
-     VORLESEN-BUTTON (unten rechts, schwebend)
-     ══════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════════════
+     VORLESEN-BUTTON (rund, unten rechts)
+     ══════════════════════════════════════════ -->
 <button class="vorlesen-btn" id="vorlesen-btn"
-        onclick="vorlesen()"
-        aria-label="Vorlesen"
-        title="Inhalt vorlesen">
+        onclick="vorlesenUndMarkieren()"
+        aria-label="Vorlesen starten oder stoppen">
   <img src="zuhoeren.jpg" alt="Ohr-Symbol">
-  Vorlesen
+  <span>Vorlesen</span>
 </button>
 
 <script>
-  // ── Kapitel aufklappen / zuklappen ───────────────────────────────────────
+  /* ── Kapitel auf-/zuklappen ──────────────────────────────────── */
   function toggleKapitel(id) {
     const kachel   = document.getElementById(id);
     const warOffen = kachel.classList.contains('offen');
-
-    // Alle anderen Kapitel schließen (nur eines gleichzeitig offen)
-    document.querySelectorAll('.kapitel-kachel.offen').forEach(function(k) {
-      k.classList.remove('offen');
-    });
-
+    // Alle anderen Kapitel schließen (immer nur eines offen)
+    document.querySelectorAll('.kapitel-kachel.offen')
+      .forEach(k => k.classList.remove('offen'));
     if (!warOffen) {
       kachel.classList.add('offen');
-      setTimeout(function() {
-        kachel.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }, 60);
+      setTimeout(() =>
+        kachel.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60);
     }
   }
 
-  // ── FAQ aufklappen / zuklappen (innerhalb einer Kachel) ──────────────────
+  /* ── FAQ auf-/zuklappen ──────────────────────────────────────── */
   function toggleFaq(id) {
     const karte    = document.getElementById(id);
     const warOffen = karte.classList.contains('offen');
-
-    // Alle anderen FAQs in derselben Kachel schließen
     karte.closest('.kachel-inhalt')
       .querySelectorAll('.faq-karte.offen')
-      .forEach(function(k) { k.classList.remove('offen'); });
-
+      .forEach(k => k.classList.remove('offen'));
     if (!warOffen) {
       karte.classList.add('offen');
-      setTimeout(function() {
-        karte.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      }, 60);
+      setTimeout(() =>
+        karte.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 60);
     }
   }
 
-  // ── Quiz bewerten ─────────────────────────────────────────────────────────
-  function bewerteAntwort(geklickterBtn, istRichtig) {
-    var quizBox  = geklickterBtn.closest('.quiz-box');
-    var alleBtn  = quizBox.querySelectorAll('.quiz-btn');
-    var feedback = quizBox.querySelector('.quiz-feedback');
-
-    alleBtn.forEach(function(btn) {
-      btn.disabled = true;
-      if (btn === geklickterBtn) {
-        btn.classList.add(istRichtig ? 'richtig' : 'falsch');
-        btn.querySelector('.kreis').textContent = istRichtig ? '✓' : '✗';
-      } else {
-        var andereIstRichtig = btn.getAttribute('onclick').includes('true');
-        if (andereIstRichtig && !istRichtig) {
-          btn.classList.add('korrekt-markiert');
-          btn.querySelector('.kreis').textContent = '✓';
-        }
+  /* ── Quiz bewerten ───────────────────────────────────────────── */
+  function bewerteAntwort(btn, istRichtig) {
+    const quizBox  = btn.closest('.quiz-box');
+    const alleBtn  = quizBox.querySelectorAll('.quiz-btn');
+    const feedback = quizBox.querySelector('.quiz-feedback');
+    alleBtn.forEach(b => {
+      b.disabled = true;
+      if (b === btn) {
+        b.classList.add(istRichtig ? 'richtig' : 'falsch');
+        b.querySelector('.kreis').textContent = istRichtig ? '✓' : '✗';
+      } else if (b.getAttribute('onclick').includes('true') && !istRichtig) {
+        b.classList.add('korrekt-markiert');
+        b.querySelector('.kreis').textContent = '✓';
       }
     });
-
     feedback.className   = 'quiz-feedback ' + (istRichtig ? 'richtig' : 'falsch');
     feedback.textContent = istRichtig
       ? '✅ Richtig! Super gemacht!'
       : '❌ Leider falsch. Die richtige Antwort ist grün markiert.';
   }
 
-  // ── Vorlesen (Text-to-Speech) ─────────────────────────────────────────────
-  var vorlesenLaeuft = false;
+  /* ══════════════════════════════════════════════════════════════
+     VORLESEN  –  sequenziell mit Markierung (wie im Anhang)
+     ══════════════════════════════════════════════════════════════ */
+  let isSpeaking     = false;
+  let aktuelleAussage = null;
 
-  function vorlesen() {
-    if (!('speechSynthesis' in window)) {
-      alert('Vorlesen wird von diesem Browser nicht unterstützt.');
-      return;
-    }
-
-    // Läuft gerade → stoppen
-    if (vorlesenLaeuft) {
+  function vorlesenUndMarkieren() {
+    if (isSpeaking || window.speechSynthesis.speaking) {
       window.speechSynthesis.cancel();
-      vorlesenLaeuft = false;
+      entferneAlleMarkierungen();
+      isSpeaking = false;
       document.getElementById('vorlesen-btn').classList.remove('aktiv');
       return;
     }
 
-    var text = 'Häufige Fragen. ';
+    window.speechSynthesis.cancel();
+    isSpeaking = true;
+    document.getElementById('vorlesen-btn').classList.add('aktiv');
 
-    var offeneKachel = document.querySelector('.kapitel-kachel.offen');
-    if (offeneKachel) {
-      // Offenes Kapitel vorlesen
-      var kapitelTitel = offeneKachel.querySelector('.kachel-titel');
-      if (kapitelTitel) text += kapitelTitel.textContent.trim() + '. ';
+    const elementeZumVorlesen = [];
 
-      var offeneFaq = offeneKachel.querySelector('.faq-karte.offen');
-      if (offeneFaq) {
-        // Geöffnete FAQ vorlesen
-        var frage   = offeneFaq.querySelector('.faq-frage-text');
-        var antwort = offeneFaq.querySelector('.antwort-text');
-        if (frage)   text += 'Frage: ' + frage.textContent.trim() + '. ';
-        if (antwort) text += 'Antwort: ' + antwort.textContent.trim() + '. ';
-      } else {
-        // Alle Fragentitel des Kapitels vorlesen
-        offeneKachel.querySelectorAll('.faq-frage-text').forEach(function(el) {
-          text += el.textContent.trim() + '. ';
+    // Seitentitel
+    const h1 = document.querySelector('h1');
+    if (h1) elementeZumVorlesen.push({ text: h1.innerText, element: h1 });
+
+    // Alle Kapitel durchgehen
+    document.querySelectorAll('.kapitel-kachel').forEach(kachel => {
+
+      // Kapiteltitel (Emojis entfernen für saubere Aussprache)
+      const titelEl = kachel.querySelector('.kachel-titel');
+      let kapitelName = titelEl ? titelEl.innerText : '';
+      kapitelName = kapitelName
+        .replace(/[\u{1F300}-\u{1F9FF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]/gu, '')
+        .trim();
+      if (titelEl) {
+        elementeZumVorlesen.push({
+          text: 'Kapitel: ' + kapitelName + '.',
+          element: kachel.querySelector('.kachel-kopf')
         });
       }
-    } else {
-      // Kein Kapitel offen: alle Kapitelnamen vorlesen
-      text += 'Bitte wähle ein Kapitel. ';
-      document.querySelectorAll('.kachel-titel').forEach(function(el) {
-        text += el.textContent.trim() + '. ';
-      });
-    }
 
-    var utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang  = 'de-DE';
-    utterance.rate  = 0.92;
-    utterance.pitch = 1;
+      // Nur wenn Kapitel offen: Fragen vorlesen
+      if (kachel.classList.contains('offen')) {
+        kachel.querySelectorAll('.faq-karte').forEach(faqKarte => {
+          const frageEl = faqKarte.querySelector('.faq-frage-text');
+          if (frageEl) {
+            elementeZumVorlesen.push({
+              text: 'Frage: ' + frageEl.innerText + '.',
+              element: frageEl
+            });
+          }
+          // Wenn Frage offen: Antwort vorlesen
+          if (faqKarte.classList.contains('offen')) {
+            const antwortEl = faqKarte.querySelector('.antwort-text');
+            if (antwortEl) {
+              elementeZumVorlesen.push({
+                text: 'Antwort: ' + antwortEl.innerText + '.',
+                element: antwortEl
+              });
+            }
+          }
+        });
+      }
+    });
 
-    utterance.onstart = function() {
-      vorlesenLaeuft = true;
-      document.getElementById('vorlesen-btn').classList.add('aktiv');
-    };
-    utterance.onend = utterance.onerror = function() {
-      vorlesenLaeuft = false;
-      document.getElementById('vorlesen-btn').classList.remove('aktiv');
-    };
-
-    window.speechSynthesis.speak(utterance);
+    if (elementeZumVorlesen.length > 0) spieleSequenz(elementeZumVorlesen, 0);
+    else isSpeaking = false;
   }
 
-  // ── Reset beim Verlassen (Back-Forward-Cache) ─────────────────────────────
-  // Da kein localStorage verwendet wird, sind alle Antworten nach einem
-  // echten Seitenaufruf automatisch zurückgesetzt. Der pageshow-Handler
-  // erzwingt einen Reload, wenn der Browser die Seite aus dem Cache holt.
+  function spieleSequenz(elemente, index) {
+    if (index >= elemente.length || !isSpeaking) {
+      entferneAlleMarkierungen();
+      isSpeaking = false;
+      document.getElementById('vorlesen-btn').classList.remove('aktiv');
+      return;
+    }
+    const abschnitt = elemente[index];
+    aktuelleAussage = new SpeechSynthesisUtterance(abschnitt.text);
+    aktuelleAussage.lang  = 'de-DE';
+    aktuelleAussage.rate  = 0.9;
+    aktuelleAussage.onstart = () => {
+      entferneAlleMarkierungen();
+      if (abschnitt.element) abschnitt.element.classList.add('is-reading');
+    };
+    aktuelleAussage.onend = () => {
+      setTimeout(() => spieleSequenz(elemente, index + 1), 200);
+    };
+    aktuelleAussage.onerror = () => {
+      entferneAlleMarkierungen();
+      isSpeaking = false;
+      document.getElementById('vorlesen-btn').classList.remove('aktiv');
+    };
+    window.speechSynthesis.speak(aktuelleAussage);
+  }
+
+  function entferneAlleMarkierungen() {
+    document.querySelectorAll('.is-reading')
+      .forEach(el => el.classList.remove('is-reading'));
+  }
+
+  /* ── Reset beim Verlassen (Back-Forward-Cache) ───────────────── */
   window.addEventListener('pageshow', function(e) {
     if (e.persisted) { window.location.reload(); }
   });
