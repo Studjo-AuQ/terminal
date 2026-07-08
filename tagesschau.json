@@ -1,11 +1,17 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "07.07.2026, 23:10 Uhr (UTC)",
+  "aktualisiert": "08.07.2026, 01:02 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Manhattan: Hochhaus in New York wegen Einsturzgefahr geräumt",
+      "description": "Mitten im Berufsverkehr muss in Manhattan ein Gebäude mit 37 Stockwerken geräumt werden. Balken hatten sich verbogen. Die Ursache bleibt zunächst unklar.",
+      "pubDate": "2026-07-08T02:51:41+02:00",
+      "bild": ""
+    },
     {
       "title": "US-Militär: USA starten erneut Angriffe auf Iran",
       "description": "Nach Angaben des US-Militärs haben erneut Angriffe auf Iran begonnen. Diese folgten auf Angriffe Teherans auf Handelsschiffe in der Straße von Hormus. Zudem setzten die USA die Öl-Sanktionen wieder in Kraft.",
-      "pubDate": "2026-07-08T00:35:24+02:00",
+      "pubDate": "2026-07-08T01:53:32+02:00",
       "bild": ""
     },
     {
@@ -84,12 +90,6 @@
       "title": "Wachsende Kritik an Reformplänen zur Informationsfreiheit",
       "description": "Die Bundesregierung will die Informationsfreiheit in Deutschland einschränken. Dagegen formiert sich jetzt großflächig Protest, etwa von Journalisten, Verlegern und NGOs. Auch aus der SPD kommt Kritik an den Plänen.",
       "pubDate": "2026-07-07T16:39:59+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Erneut Beschuss von Tankern in der Straße von Hormus",
-      "description": "In der Straße von Hormus droht ein Flüssiggastanker nach Beschuss zu explodieren, mindestens ein weiteres Schiff ist nach britischen Informationen von einem Geschoss getroffen worden. Katar macht Iran dafür verantwortlich.",
-      "pubDate": "2026-07-07T16:33:19+02:00",
       "bild": ""
     }
   ],
