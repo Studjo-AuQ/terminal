@@ -1,11 +1,17 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "08.07.2026, 23:15 Uhr (UTC)",
+  "aktualisiert": "09.07.2026, 01:11 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Regierungserklärung: Merz stellt Reformprogramm im Bundestag vor",
+      "description": "Kanzler Merz gibt heute eine Regierungserklärung im Bundestag ab. Es wird erwartet, dass er sowohl auf den NATO-Gipfel als auch auf die von den Koalitionsspitzen beschlossenen Reformen eingeht. Von J. Mayr.",
+      "pubDate": "2026-07-09T02:02:10+02:00",
+      "bild": ""
+    },
     {
       "title": "USA greifen erneut Iran an - Teheran kündigt Gegenangriffe an",
       "description": "Wie von Präsident Trump angekündigt haben die USA erneut Ziele in Iran angegriffen. Explosionen werden aus der Küstenregion gemeldet. Teheran kündigte umgehend an, massive Gegenangriffe auf US-Basen in der Region zu starten.",
-      "pubDate": "2026-07-09T00:17:47+02:00",
+      "pubDate": "2026-07-09T03:08:29+02:00",
       "bild": ""
     },
     {
@@ -84,12 +90,6 @@
       "title": "Trump droht Iran bei NATO-Gipfel mit neuen Angriffen",
       "description": "US-Präsident Trump droht mit neuen Angriffen auf Iran - und schließt weitere Verhandlungen mit Teheran aus. Auf dem NATO-Gipfel erklärte er dann allerdings, er rechne nicht mit langen Kriegshandlungen.",
       "pubDate": "2026-07-08T19:27:40+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ölpreise steigen: Krieg in Iran ist wieder Thema an der Börse",
-      "description": "Nach den jüngsten Attacken auf Tanker in der Straße von Hormus hat das US-Militär Ziele in Iran angegriffen. Zudem wurden Sanktionen wieder in Kraft gesetzt. Die Reaktion an der Börse folgt prompt. Von Claudia Wehrle.",
-      "pubDate": "2026-07-08T15:04:04+02:00",
       "bild": ""
     }
   ],
