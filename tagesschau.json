@@ -1,17 +1,47 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "09.07.2026, 01:11 Uhr (UTC)",
+  "aktualisiert": "09.07.2026, 05:50 Uhr (UTC)",
   "meldungen": [
     {
-      "title": "Regierungserklärung: Merz stellt Reformprogramm im Bundestag vor",
+      "title": "DAX auf Erholungskurs",
+      "description": "An den Börsen stehen heute erneut die Kämpfe im Nahen Osten im Fokus. Noch reagieren die Anleger gelassen, sie rechnen mit einer Einigung. Der DAX wird erholt erwartet.",
+      "pubDate": "2026-07-09T07:41:03+02:00",
+      "bild": ""
+    },
+    {
+      "title": "11KM-Podcast: Neapels Supervulkan - wie groß ist die Gefahr?",
+      "description": "Bei Neapel schlummert ein Supervulkan. 40.000 Jahre nach dem letzten Ausbruch rumort er wieder. 11KM über die Vorbereitung auf einen möglichen Tag X.",
+      "pubDate": "2026-07-09T06:51:03+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wie Bots die Kommentarspalten auf Social Media manipulieren",
+      "description": "In einer umfangreichen Analyse hat eine internationale Recherchekooperation die Kommentare zu Postings von Medien ausgewertet. Besonders beim Thema Iran versuchen Bots und koordinierte Kampagnen, die Debatte zu beeinflussen. Von C. Reveland und P. Siggelkow.",
+      "pubDate": "2026-07-09T06:00:21+02:00",
+      "bild": ""
+    },
+    {
+      "title": "BTS auf der WM-Bühne: Warum die FIFA auf K-Pop setzt",
+      "description": "Erstmals gibt es bei einem WM-Finale eine Halbzeitshow. Die FIFA setzt dabei unter anderem auf BTS. Warum holt der Verband eine K-Pop-Band auf die Fußballbühne? Die Antwort führt weit über Musik hinaus. Von L. Erbe-Rullang und C. Schulze.",
+      "pubDate": "2026-07-09T05:04:56+02:00",
+      "bild": ""
+    },
+    {
+      "title": "VW-Sparpläne sorgen in Region für Existenzängste",
+      "description": "In Wolfsburg trifft sich heute der Aufsichtsrat von VW. Auf der Tagesordnung steht das größte Sparprogramm der Konzerngeschichte. In den betroffenen Regionen wächst die Sorge vor den Folgen. Von M. Weidner und T. Niemann.",
+      "pubDate": "2026-07-09T03:46:39+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Rede zur politischen Lage: Merz hält Regierungserklärung im Bundestag",
       "description": "Kanzler Merz gibt heute eine Regierungserklärung im Bundestag ab. Es wird erwartet, dass er sowohl auf den NATO-Gipfel als auch auf die von den Koalitionsspitzen beschlossenen Reformen eingeht. Von J. Mayr.",
       "pubDate": "2026-07-09T02:02:10+02:00",
       "bild": ""
     },
     {
-      "title": "USA greifen erneut Iran an - Teheran kündigt Gegenangriffe an",
-      "description": "Wie von Präsident Trump angekündigt haben die USA erneut Ziele in Iran angegriffen. Explosionen werden aus der Küstenregion gemeldet. Teheran kündigte umgehend an, massive Gegenangriffe auf US-Basen in der Region zu starten.",
-      "pubDate": "2026-07-09T03:08:29+02:00",
+      "title": "USA greifen erneut Iran an - Teheran reagiert mit Gegenangriffen",
+      "description": "Wie von Präsident Trump angekündigt, haben die USA erneut Ziele in Iran angegriffen. Explosionen wurden aus der Küstenregion gemeldet. Teheran griff daraufhin US-Militärstützpunkte in der Region an.",
+      "pubDate": "2026-07-09T05:15:45+02:00",
       "bild": ""
     },
     {
@@ -60,36 +90,6 @@
       "title": "Die zentralen Punkte der NATO-Erklärung",
       "description": "Trotz anhaltender Spannungen zwischen den USA und anderen NATO-Partnern kam es beim Gipfel in Ankara nicht zum großen Bruch. Präsident Trump trug die Gipfelerklärung mit. Die fünf zentralen Punkte des Dokuments.",
       "pubDate": "2026-07-08T18:04:18+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Erste deutsche Störsatelliten sollen 2027 starten",
-      "description": "Künftig will die Bundeswehr im Weltall \"kriegstüchtig\" sein. Dazu sollen nach Recherchen von WDR, NDR und SZ bereits 2027 vier deutsche Testsatelliten ins All gebracht werden - auch, um so andere Satelliten stören zu können.",
-      "pubDate": "2026-07-08T18:00:38+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Trauerprozession für getöteten Chamenei im Irak",
-      "description": "Die tagelangen Trauerzeremonien für Irans getöteten Obersten Führer Chamenei haben den Irak erreicht: Zahlreiche Menschen begleiteten den Sarg in der Stadt Nadschaf. Es ist auch eine iranische Machtdemonstration. Von M. Behrendt.",
-      "pubDate": "2026-07-08T17:19:46+02:00",
-      "bild": ""
-    },
-    {
-      "title": "NATO-Gipfel: Milliarden für die Ukraine - milde Töne von Trump",
-      "description": "Der NATO-Gipfel ist mit milliardenschweren Hilfszusagen für die Ukraine zu Ende gegangen. Nach den Verbalattacken gegen Partnerländer zu Beginn stimmte US-Präsident Trump zum Abschluss mildere Töne an.",
-      "pubDate": "2026-07-08T19:07:16+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Informationsfreiheitsgesetz: Hubig will Auskunftspflicht der Regierung bewahren",
-      "description": "Die geplante Reform des Informationsfreiheitsgesetzes stößt auf breite Kritik - auch aus Reihen der Regierungspartei SPD. Im ARD-Interview betont Justizministerin Hubig, die Bewahrung der Auskunftspflicht sei wichtig.",
-      "pubDate": "2026-07-08T16:26:24+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Trump droht Iran bei NATO-Gipfel mit neuen Angriffen",
-      "description": "US-Präsident Trump droht mit neuen Angriffen auf Iran - und schließt weitere Verhandlungen mit Teheran aus. Auf dem NATO-Gipfel erklärte er dann allerdings, er rechne nicht mit langen Kriegshandlungen.",
-      "pubDate": "2026-07-08T19:27:40+02:00",
       "bild": ""
     }
   ],
