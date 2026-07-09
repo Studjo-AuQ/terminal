@@ -70,6 +70,24 @@
     .k-arbeitszeit  { border-left-color: #c25e00; }
     .k-lohn         { border-left-color: #15803d; }
     .k-werkstattrat { border-left-color: #7e22ce; }
+    /* ── Kapitel 5: Arbeit ─────────────────────── */
+.k-arbeit         { border-left-color: #0e7490; }
+.k-arbeit         .kachel-kopf { background: #cffafe; }
+.k-arbeit         .kachel-titel,
+.k-arbeit         .kachel-nr   { color: #0e7490; }
+
+/* ── Kapitel 6: Qualifizierung ─────────────── */
+.k-qualifizierung { border-left-color: #4338ca; }
+.k-qualifizierung .kachel-kopf { background: #e0e7ff; }
+.k-qualifizierung .kachel-titel,
+.k-qualifizierung .kachel-nr   { color: #4338ca; }
+
+/* ── Kapitel 7: Beschwerden ────────────────── */
+.k-beschwerden    { border-left-color: #b45309; }
+.k-beschwerden    .kachel-kopf { background: #fef3c7; }
+.k-beschwerden    .kachel-titel,
+.k-beschwerden    .kachel-nr   { color: #b45309; }    
+    
     .k-sonstiges    { border-left-color: #475569; }
 
     .k-urlaub       .kachel-kopf { background: #dbeafe; }
@@ -559,22 +577,247 @@
       </div>
     </div>
 
+    <!-- ═══════════════════════════════════════
+     KAPITEL 5: ARBEIT
+     ═══════════════════════════════════════ -->
+<div class="kapitel-kachel k-arbeit" id="kapitel-5">
+  <div class="kachel-kopf" onclick="toggleKapitel('kapitel-5')">
+    <img src="AbA.jpg" alt="Arbeit" class="kachel-metacom">
+    <div class="kachel-text-block">
+      <div class="kachel-nr">Kapitel 5</div>
+      <div class="kachel-titel">🔨 Arbeit</div>
+    </div>
+    <div class="kachel-pfeil">›</div>
+  </div>
+  <div class="kachel-inhalt">
+
+    <div class="faq-karte" id="faq-5-1">
+      <div class="faq-frage" onclick="toggleFaq('faq-5-1')">
+        <img src="AbA.jpg" alt="" class="faq-metacom">
+        <div class="faq-frage-text">Welche Arten von Arbeit gibt es bei Studjo?</div>
+        <div class="faq-pfeil">›</div>
+      </div>
+      <div class="faq-antwort">
+        <div class="antwort-text">
+          Bei Studjo gibt es viele verschiedene Arbeitsgruppen und Aufgaben:
+          <ul>
+            <li><strong>Montage und Verpackung:</strong> Teile zusammenbauen und verpacken</li>
+            <li><strong>Hauswirtschaft:</strong> Küche, Reinigung und Hausdienste</li>
+            <li><strong>Garten und Außenbereich:</strong> Pflanzen und Außenpflege</li>
+            <li><strong>Büro und Verwaltung:</strong> Büroaufgaben und Postverwaltung</li>
+          </ul>
+          Welche Gruppe zu dir passt, besprichst du gemeinsam mit deiner Gruppenleitung.
+        </div>
+        <div class="quiz-box">
+          <div class="quiz-label">🧠 Teste dein Wissen</div>
+          <div class="quiz-frage">Mit wem besprichst du, in welcher Gruppe du arbeitest?</div>
+          <div class="quiz-optionen">
+            <button class="quiz-btn" onclick="bewerteAntwort(this,false)"><span class="kreis"></span>Das entscheide ich ganz alleine</button>
+            <button class="quiz-btn" onclick="bewerteAntwort(this,true)"><span class="kreis"></span>Gemeinsam mit meiner Gruppenleitung</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-karte" id="faq-5-2">
+      <div class="faq-frage" onclick="toggleFaq('faq-5-2')">
+        <img src="AbA.jpg" alt="" class="faq-metacom">
+        <div class="faq-frage-text">Was passiert, wenn ich meine Arbeit nicht schaffe?</div>
+        <div class="faq-pfeil">›</div>
+      </div>
+      <div class="faq-antwort">
+        <div class="antwort-text">
+          Kein Problem! Bei Studjo bekommst du immer <strong>Unterstützung</strong>.<br><br>
+          <ul>
+            <li>Deine <strong>Gruppenleitung</strong> hilft dir, wenn du nicht weiterkommst.</li>
+            <li>Die Aufgaben werden an deine <strong>Fähigkeiten angepasst</strong>.</li>
+            <li>Niemand wird bestraft, wenn etwas nicht klappt.</li>
+          </ul>
+          Sprich einfach deine Gruppenleitung an – sie ist für dich da!
+        </div>
+        <div class="quiz-box">
+          <div class="quiz-label">🧠 Teste dein Wissen</div>
+          <div class="quiz-frage">Was tust du, wenn du bei der Arbeit Hilfe brauchst?</div>
+          <div class="quiz-optionen">
+            <button class="quiz-btn" onclick="bewerteAntwort(this,true)"><span class="kreis"></span>Ich spreche meine Gruppenleitung an</button>
+            <button class="quiz-btn" onclick="bewerteAntwort(this,false)"><span class="kreis"></span>Ich sage nichts und mache weiter</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div><!-- /kapitel-5 Arbeit -->
+
+    <!-- ═══════════════════════════════════════
+     KAPITEL 6: QUALIFIZIERUNG
+     ═══════════════════════════════════════ -->
+<div class="kapitel-kachel k-qualifizierung" id="kapitel-6">
+  <div class="kachel-kopf" onclick="toggleKapitel('kapitel-6')">
+    <img src="AbA.jpg" alt="Qualifizierung" class="kachel-metacom">
+    <div class="kachel-text-block">
+      <div class="kachel-nr">Kapitel 6</div>
+      <div class="kachel-titel">📚 Qualifizierung</div>
+    </div>
+    <div class="kachel-pfeil">›</div>
+  </div>
+  <div class="kachel-inhalt">
+
+    <div class="faq-karte" id="faq-6-1">
+      <div class="faq-frage" onclick="toggleFaq('faq-6-1')">
+        <img src="AbA.jpg" alt="" class="faq-metacom">
+        <div class="faq-frage-text">Was ist eine Qualifizierung?</div>
+        <div class="faq-pfeil">›</div>
+      </div>
+      <div class="faq-antwort">
+        <div class="antwort-text">
+          Eine Qualifizierung ist eine <strong>Schulung oder ein Kurs</strong>,
+          bei dem du etwas Neues lernst.<br><br>
+          Bei Studjo kannst du zum Beispiel lernen:
+          <ul>
+            <li>Neue <strong>Arbeitstechniken</strong> und Handgriffe</li>
+            <li><strong>Lesen und Schreiben</strong> verbessern</li>
+            <li><strong>Computer</strong> bedienen</li>
+            <li><strong>Soziale Fähigkeiten</strong> stärken</li>
+          </ul>
+          Qualifizierungen helfen dir, besser zu werden und neue Dinge auszuprobieren!
+        </div>
+        <div class="quiz-box">
+          <div class="quiz-label">🧠 Teste dein Wissen</div>
+          <div class="quiz-frage">Was ist das Ziel einer Qualifizierung?</div>
+          <div class="quiz-optionen">
+            <button class="quiz-btn" onclick="bewerteAntwort(this,false)"><span class="kreis"></span>Eine Strafe für schlechte Arbeit</button>
+            <button class="quiz-btn" onclick="bewerteAntwort(this,true)"><span class="kreis"></span>Etwas Neues lernen und besser werden</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-karte" id="faq-6-2">
+      <div class="faq-frage" onclick="toggleFaq('faq-6-2')">
+        <img src="AbA.jpg" alt="" class="faq-metacom">
+        <div class="faq-frage-text">Wie kann ich an einer Qualifizierung teilnehmen?</div>
+        <div class="faq-pfeil">›</div>
+      </div>
+      <div class="faq-antwort">
+        <div class="antwort-text">
+          So kannst du mitmachen:
+          <ul>
+            <li>Sprich mit deiner <strong>Gruppenleitung</strong> über dein Interesse.</li>
+            <li>Zusammen schaut ihr, welche Qualifizierung zu dir passt.</li>
+            <li>Die Teilnahme wird in deinem <strong>Förder- und Entwicklungsplan</strong> festgehalten.</li>
+          </ul>
+          Du kannst jederzeit fragen – Qualifizierungen sind für alle da!
+        </div>
+        <div class="quiz-box">
+          <div class="quiz-label">🧠 Teste dein Wissen</div>
+          <div class="quiz-frage">Bei wem meldest du dich für eine Qualifizierung an?</div>
+          <div class="quiz-optionen">
+            <button class="quiz-btn" onclick="bewerteAntwort(this,true)"><span class="kreis"></span>Bei meiner Gruppenleitung</button>
+            <button class="quiz-btn" onclick="bewerteAntwort(this,false)"><span class="kreis"></span>Ich muss gar nichts tun</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div><!-- /kapitel-6 Qualifizierung -->
+
+    <!-- ═══════════════════════════════════════
+     KAPITEL 7: BESCHWERDEN
+     ═══════════════════════════════════════ -->
+<div class="kapitel-kachel k-beschwerden" id="kapitel-7">
+  <div class="kachel-kopf" onclick="toggleKapitel('kapitel-7')">
+    <img src="AbA.jpg" alt="Beschwerden" class="kachel-metacom">
+    <div class="kachel-text-block">
+      <div class="kachel-nr">Kapitel 7</div>
+      <div class="kachel-titel">📣 Beschwerden</div>
+    </div>
+    <div class="kachel-pfeil">›</div>
+  </div>
+  <div class="kachel-inhalt">
+
+    <div class="faq-karte" id="faq-7-1">
+      <div class="faq-frage" onclick="toggleFaq('faq-7-1')">
+        <img src="AbA.jpg" alt="" class="faq-metacom">
+        <div class="faq-frage-text">Was kann ich tun, wenn mich etwas stört?</div>
+        <div class="faq-pfeil">›</div>
+      </div>
+      <div class="faq-antwort">
+        <div class="antwort-text">
+          Du hast das Recht, dich zu beschweren! Das kannst du tun:
+          <ul>
+            <li>Sprich direkt mit deiner <strong>Gruppenleitung</strong>.</li>
+            <li>Wende dich an den <strong>Werkstattrat</strong> – er ist für dich da.</li>
+            <li>Nutze das <strong>Beschwerdeverfahren</strong> der Werkstatt.</li>
+          </ul>
+          Du wirst <strong>nicht bestraft</strong>, wenn du dich beschwerst.
+          Eine Beschwerde ist kein Angriff – sie hilft, Dinge zu verbessern!
+        </div>
+        <div class="quiz-box">
+          <div class="quiz-label">🧠 Teste dein Wissen</div>
+          <div class="quiz-frage">Werde ich bestraft, wenn ich mich beschwere?</div>
+          <div class="quiz-optionen">
+            <button class="quiz-btn" onclick="bewerteAntwort(this,false)"><span class="kreis"></span>Ja, ich bekomme Ärger</button>
+            <button class="quiz-btn" onclick="bewerteAntwort(this,true)"><span class="kreis"></span>Nein, Beschwerden sind erlaubt und wichtig</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-karte" id="faq-7-2">
+      <div class="faq-frage" onclick="toggleFaq('faq-7-2')">
+        <img src="AbA.jpg" alt="" class="faq-metacom">
+        <div class="faq-frage-text">Wie läuft eine Beschwerde ab?</div>
+        <div class="faq-pfeil">›</div>
+      </div>
+      <div class="faq-antwort">
+        <div class="antwort-text">
+          Eine Beschwerde läuft so ab:
+          <ul>
+            <li><strong>Schritt 1:</strong> Du sprichst mit der Gruppenleitung oder dem Werkstattrat.</li>
+            <li><strong>Schritt 2:</strong> Deine Beschwerde wird <strong>ernst genommen</strong> und besprochen.</li>
+            <li><strong>Schritt 3:</strong> Es wird gemeinsam nach einer <strong>Lösung</strong> gesucht.</li>
+            <li><strong>Schritt 4:</strong> Du bekommst eine Rückmeldung, was passiert ist.</li>
+          </ul>
+          Beschwerden helfen uns allen, die Werkstatt besser zu machen!
+        </div>
+        <div class="quiz-box">
+          <div class="quiz-label">🧠 Teste dein Wissen</div>
+          <div class="quiz-frage">Was bringt eine Beschwerde?</div>
+          <div class="quiz-optionen">
+            <button class="quiz-btn" onclick="bewerteAntwort(this,false)"><span class="kreis"></span>Nichts – es ändert sich nie etwas</button>
+            <button class="quiz-btn" onclick="bewerteAntwort(this,true)"><span class="kreis"></span>Sie hilft, die Werkstatt zu verbessern</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div><!-- /kapitel-7 Beschwerden -->
+    
     <!-- ══════════════════════════════════════════
          KAPITEL 5: WERKSTATTRAT
          ══════════════════════════════════════════ -->
-    <div class="kapitel-kachel k-werkstattrat" id="kapitel-5">
-      <div class="kachel-kopf" onclick="toggleKapitel('kapitel-5')">
+    <div class="kapitel-kachel k-werkstattrat" id="kapitel-8">
+      <div class="kachel-kopf" onclick="toggleKapitel('kapitel-8')">
         <img src="faq-wr.jpg" alt="Werkstattrat" class="kachel-metacom">
         <div class="kachel-text-block">
-          <div class="kachel-nr">Kapitel 5</div>
+          <div class="kachel-nr">Kapitel 8</div>
           <div class="kachel-titel">🗣️ Werkstattrat</div>
         </div>
         <div class="kachel-pfeil">›</div>
       </div>
       <div class="kachel-inhalt">
 
-        <div class="faq-karte" id="faq-5-1">
-          <div class="faq-frage" onclick="toggleFaq('faq-5-1')">
+        <div class="faq-karte" id="faq-8-1">
+          <div class="faq-frage" onclick="toggleFaq('faq-8-1')">
             <img src="faq-blanko.jpg" alt="" class="faq-metacom">
             <div class="faq-frage-text">Was ist der Werkstattrat?</div>
             <div class="faq-pfeil">›</div>
@@ -599,8 +842,8 @@
           </div>
         </div>
 
-        <div class="faq-karte" id="faq-5-2">
-          <div class="faq-frage" onclick="toggleFaq('faq-5-2')">
+        <div class="faq-karte" id="faq-8-2">
+          <div class="faq-frage" onclick="toggleFaq('faq-8-2')">
             <img src="faq-blanko.jpg" alt="" class="faq-metacom">
             <div class="faq-frage-text">An wen wende ich mich bei einem Problem?</div>
             <div class="faq-pfeil">›</div>
@@ -632,21 +875,21 @@
     </div>
 
     <!-- ══════════════════════════════════════════
-         KAPITEL 6: SONSTIGES
+         KAPITEL 9: SONSTIGES
          ══════════════════════════════════════════ -->
-    <div class="kapitel-kachel k-sonstiges" id="kapitel-6">
-      <div class="kachel-kopf" onclick="toggleKapitel('kapitel-6')">
+    <div class="kapitel-kachel k-sonstiges" id="kapitel-9">
+      <div class="kachel-kopf" onclick="toggleKapitel('kapitel-9')">
         <img src="faq-sonstiges.jpg" alt="Sonstiges" class="kachel-metacom">
         <div class="kachel-text-block">
-          <div class="kachel-nr">Kapitel 6</div>
+          <div class="kachel-nr">Kapitel 9</div>
           <div class="kachel-titel">📋 Sonstiges</div>
         </div>
         <div class="kachel-pfeil">›</div>
       </div>
       <div class="kachel-inhalt">
 
-        <div class="faq-karte" id="faq-6-1">
-          <div class="faq-frage" onclick="toggleFaq('faq-6-1')">
+        <div class="faq-karte" id="faq-9-1">
+          <div class="faq-frage" onclick="toggleFaq('faq-9-1')">
             <img src="faq-blanko.jpg" alt="" class="faq-metacom">
             <div class="faq-frage-text">Was ist ein Förder- und Entwicklungsplan (FEP)?</div>
             <div class="faq-pfeil">›</div>
@@ -674,8 +917,8 @@
           </div>
         </div>
 
-        <div class="faq-karte" id="faq-6-2">
-          <div class="faq-frage" onclick="toggleFaq('faq-6-2')">
+        <div class="faq-karte" id="faq-9-2">
+          <div class="faq-frage" onclick="toggleFaq('faq-9-2')">
             <img src="faq-blanko.jpg" alt="" class="faq-metacom">
             <div class="faq-frage-text">Wofür ist das Studjo Infoterminal?</div>
             <div class="faq-pfeil">›</div>
