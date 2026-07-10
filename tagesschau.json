@@ -1,7 +1,43 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "10.07.2026, 13:29 Uhr (UTC)",
+  "aktualisiert": "10.07.2026, 16:00 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Bundestag weitet Befugnisse von Bundespolizei deutlich aus",
+      "description": "Der Bundestag hat ein neues Bundespolizeigesetz verabschiedet. Die 55.000 Beamten sollen mehr Möglichkeiten erhalten, Personen zu überwachen und Drohnen abzuwehren. Außerdem soll in bestimmten Fällen eine Live-Gesichtserkennung möglich sein.",
+      "pubDate": "2026-07-10T17:38:36+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wie die Koalition ihre Gesundheitsreform durchbrachte",
+      "description": "Trotz heftiger Kritik haben Bundestag und Bundesrat das Sparpaket für die gesetzliche Krankenversicherung verabschiedet. Die erste größere Reform der schwarz-roten Koalition ist damit beschlossen. Von Isabell Karras.",
+      "pubDate": "2026-07-10T17:21:04+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Fenster von Ryanair-Maschine bricht nach Start - Flugzeug kehrt um",
+      "description": "Während eines Ryanair-Fluges von Griechenland nach Deutschland ist ein Fenster zerbrochen. Ein Passagier wurde Berichten zufolge beinahe aus dem Flugzeug hinaus gesogen - doch der Vorfall ging offenbar glimpflich aus.",
+      "pubDate": "2026-07-10T16:30:37+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Nach Feuer: Bahnstrecke zwischen Düsseldorf und Köln gesperrt",
+      "description": "Nach einem Böschungsbrand ist die wichtige Bahnstrecke zwischen Düsseldorf und Köln bis mindestens Samstagnachmittag gesperrt. Im Nah- und Fernverkehr kommt es deshalb zu Umleitungen und Verspätungen. Die Polizei ermittelt wegen Brandstiftung.",
+      "pubDate": "2026-07-10T17:46:00+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Britischer Rechtspopulist: \"Teflon-Image von Farage hat Kratzer\"",
+      "description": "An Nigel Farage, Brexit-Wortführer der ersten Stunde und Gesicht des britischen Rechtspopulismus, schien jede Kritik abzuperlen. Doch jetzt gerät er unter Druck - und seine Flucht nach vorne scheint nicht recht zu funktionieren. Von M. Aden.",
+      "pubDate": "2026-07-10T15:43:22+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Berlins Regierender Bürgermeister Wegner tritt bei Wahl nicht mehr an",
+      "description": "Berlins Regierender Bürgermeister Wegner tritt bei der nächsten Wahl nicht mehr an, bleibt aber bis September im Amt. Rund um den großen Stromausfall in der Hauptstadt im Januar habe er \"kommunikative Fehler\" gemacht, räumte er ein.",
+      "pubDate": "2026-07-10T15:59:49+02:00",
+      "bild": ""
+    },
     {
       "title": "Kommentar zur Klimapolitik: Das Fundament droht zu brechen",
       "description": "Schwächere Heizungsregeln, ein Fokus auf Gaskraftwerke und ein Haushalt, der beim Klimaschutz kürzt: Was einzeln noch verkraftbar wäre, zerstört in Summe jeglichen Fortschritt bei der Klimatransformation, meint Katha Jansen.",
@@ -54,42 +90,6 @@
       "title": "Stabile Beiträge bei Krankenkassen - auf wessen Kosten?",
       "description": "Krankenhäuser und ganze Berufsgruppen sehen sich durch die Reform der Krankenkassen vor Problemen. Sie warnen vor Abstrichen bei der Versorgung. Die bereits schwierigen Arbeitsbedingungen haben Folgen. Von Teresa Peters.",
       "pubDate": "2026-07-10T12:06:43+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bundestag stimmt für umstrittenes Krankenkassen-Sparpaket",
-      "description": "Der Bundestag hat für Einsparungen bei der gesetzlichen Krankenversicherung gestimmt. Ausgabenbremsen und höhere Zuzahlungen sollen Beitragserhöhungen verhindern. Noch heute wird auch der Bundesrat darüber abstimmen.",
-      "pubDate": "2026-07-10T13:38:25+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ukraine attackiert erneut russische Energieanlagen",
-      "description": "Russischen Angaben zufolge hat die Ukraine das Land in der vergangenen Nacht erneut mit Hunderten Drohnen attackiert. Viele der Angriffe zielten auf Raffinerien und Ölanlagen. Todesopfer oder Verletzte wurden bisher nicht gemeldet.",
-      "pubDate": "2026-07-10T11:17:02+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Welche Preise besonders stark steigen und sinken",
-      "description": "Der gesunkene Ölpreis und der Tankrabatt haben die Preisentwicklung zuletzt entscheidend gedämpft. Zudem waren Nahrungsmittel teils deutlich günstiger, während sich einige Dienstleistungen verteuerten.",
-      "pubDate": "2026-07-10T11:16:43+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Die KI-Rally geht am DAX vorbei",
-      "description": "Auch gute internationale Vorgaben helfen dem DAX heute nicht - der KI-Funke will nicht überspringen. Im Fokus steht auch weiter der VW-Konzern, der vor einer großen Neuausrichtung steht.",
-      "pubDate": "2026-07-10T10:44:55+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kraftstoffkrise: Langes Warten an Russlands Tankstellen",
-      "description": "Der Kraftstoffmangel in Russland verschärft sich. Die Preise steigen - wer kann, tankt im Ausland. Zwar will der Kreml beruhigen, doch die Schlangen vor den Tankstellen sprechen eine andere Sprache. Von Lilia Becker.",
-      "pubDate": "2026-07-10T10:33:10+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Industrieunglück in China : Mindesten 28 Tote bei Brand in Schuhfabrik",
-      "description": "In China sind bei einem Brand in einer Schuhfabrik mindestens 28 Menschen ums Leben gekommen. Die Ursache ist bislang unklar. Trotz strenger Auflagen für Betriebe kommt es in China immer wieder zu schweren Industrieunglücken.",
-      "pubDate": "2026-07-10T10:12:34+02:00",
       "bild": ""
     }
   ],
