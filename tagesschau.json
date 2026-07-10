@@ -1,7 +1,79 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "10.07.2026, 07:47 Uhr (UTC)",
+  "aktualisiert": "10.07.2026, 11:12 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Umzug des Bundespräsidenten: Vom Schloss in den Modulbau",
+      "description": "Amtsgeschäfte im Ausweichquartier: Bundespräsident Steinmeier hat seinen neuen Amtssitz bezogen - ein Gebäude ohne Stuck, Gold, und Prunk. Nötig macht das die Sanierung von Schloss Bellevue. Von Tina Handel.",
+      "pubDate": "2026-07-10T13:05:14+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Krawalle in Düsseldorf nach Marokkos WM-Aus",
+      "description": "Nach dem 0:2 gegen Frankreich bei der Fußball-WM sitzt die Enttäuschung bei Marokko-Fans tief. In Düsseldorf kippt die Stimmung: Vermummte werfen Böller und Molotow-Cocktails - drei Polizisten werden verletzt.",
+      "pubDate": "2026-07-10T10:21:00+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Stabile Beiträge bei Krankenkassen - auf wessen Kosten?",
+      "description": "Krankenhäuser und ganze Berufsgruppen sehen sich durch die Reform der Krankenkassen vor Problemen. Sie warnen vor Abstrichen bei der Versorgung. Die bereits schwierigen Arbeitsbedingungen haben Folgen. Von Teresa Peters.",
+      "pubDate": "2026-07-10T12:06:43+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Bundestag stimmt für umstrittenes Krankenkassen-Sparpaket",
+      "description": "Der Bundestag hat für Einsparungen bei der gesetzlichen Krankenversicherung gestimmt. Ausgabenbremsen und höhere Zuzahlungen sollen Beitragserhöhungen verhindern. Noch heute wird auch der Bundesrat darüber abstimmen.",
+      "pubDate": "2026-07-10T12:34:14+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Ukraine attackiert erneut russische Energieanlagen",
+      "description": "Russischen Angaben zufolge hat die Ukraine das Land in der vergangenen Nacht erneut mit Hunderten Drohnen attackiert. Viele der Angriffe zielten auf Raffinerien und Ölanlagen. Todesopfer oder Verletzte wurden bisher nicht gemeldet.",
+      "pubDate": "2026-07-10T11:17:02+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Welche Preise besonders stark steigen und sinken",
+      "description": "Der gesunkene Ölpreis und der Tankrabatt haben die Preisentwicklung zuletzt entscheidend gedämpft. Zudem waren Nahrungsmittel teils deutlich günstiger, während sich einige Dienstleistungen verteuerten.",
+      "pubDate": "2026-07-10T11:16:43+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Die KI-Rally geht am DAX vorbei",
+      "description": "Auch gute internationale Vorgaben helfen dem DAX heute nicht - der KI-Funke will nicht überspringen. Im Fokus steht auch weiter der VW-Konzern, der vor einer großen Neuausrichtung steht.",
+      "pubDate": "2026-07-10T10:44:55+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Kraftstoffkrise: Langes Warten an Russlands Tankstellen",
+      "description": "Der Kraftstoffmangel in Russland verschärft sich. Die Preise steigen - wer kann, tankt im Ausland. Zwar will der Kreml beruhigen, doch die Schlangen vor den Tankstellen sprechen eine andere Sprache. Von Lilia Becker.",
+      "pubDate": "2026-07-10T10:33:10+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Industrieunglück in China : Mindesten 28 Tote bei Brand in Schuhfabrik",
+      "description": "In China sind bei einem Brand in einer Schuhfabrik mindestens 28 Menschen ums Leben gekommen. Die Ursache ist bislang unklar. Trotz strenger Auflagen für Betriebe kommt es in China immer wieder zu schweren Industrieunglücken.",
+      "pubDate": "2026-07-10T10:12:34+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Leiden Frauen mehr unter Hitze als Männer?",
+      "description": "Ein aktueller Bericht des Robert Koch-Instituts zeigt: Hitzewellen wie Ende Juni verursachen Tausende zusätzliche Todesfälle. Aber Hitze belastet nicht alle Menschen gleich. Sind Frauen stärker betroffen? Von Laura Gerstner.",
+      "pubDate": "2026-07-10T10:09:22+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Warum Chinas Exporterfolge Jobs in Deutschland und Europa bedrohen",
+      "description": "China ist bei Elektronik, Industrieanlagen und E-Mobilität längst Weltmarktführer. Europa gerät dadurch immer stärker unter Druck, und Deutschland verliert Jobs in seit Jahrzehnten etablierten Branchen. Von Alfred Schmit.",
+      "pubDate": "2026-07-10T10:03:56+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Betriebsrat setzt VW-Chef Blume Ultimatum bis heute",
+      "description": "Nach der VW-Aufsichtsratssitzung bleiben Fragen offen. Vorstandschef Blume soll sich nun \"unmissverständlich\" zu den Sparplänen äußern, fordert der Betriebsrat. Der Autobauer leidet weiter unter schwachen Verkäufen in China, wie neue Zahlen zeigen.",
+      "pubDate": "2026-07-10T12:03:39+02:00",
+      "bild": ""
+    },
     {
       "title": "Spätwerke von Musikikonen: Meisterwerke und Totalausfälle",
       "description": "Die Rolling Stones, Paul McCartney, Madonna: Diverse Musiklegenden legen neue Alben vor. Welchen Wert haben solche Alterswerke, wenn man der Musik schon längst seinen Stempel aufgedrückt hat? Von Miriam Berger.",
@@ -15,81 +87,9 @@
       "bild": ""
     },
     {
-      "title": "DAX kaum verändert erwartet",
-      "description": "Trotz weiterer US-Angriffe auf den Iran: Unter der Führung von Chip-Aktien zogen die Märkte in New York und Asien in der Nacht an. Der DAX kann davon aber nicht wirklich profitieren.",
-      "pubDate": "2026-07-10T07:44:54+02:00",
-      "bild": ""
-    },
-    {
       "title": "Irans ehemaliger Oberster Führer Chamenei beigesetzt",
       "description": "Zu Beginn des Iran-Krieges wurde Irans Oberster Führer Chamenei bei einem Angriff getötet. Nun wurde er in seiner Heimatstadt beigesetzt. Auffällig ist das erneute öffentliche Fehlen seines Sohnes und Nachfolgers.",
       "pubDate": "2026-07-10T07:43:14+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Präsident und Sohn: Wer hat die Macht in Uganda?",
-      "description": "Uganda wird seit 40 Jahren von Präsident Museveni mit harter Hand regiert. Doch mittlerweile scheint zunehmend unklar, ob er noch das Sagen hat - oder der Armeechef des Landes, sein Sohn. Von Karin Bensch.",
-      "pubDate": "2026-07-10T06:31:11+02:00",
-      "bild": ""
-    },
-    {
-      "title": "GKV-Reform im Bundestag: Schafft es das Sparpaket ins Ziel?",
-      "description": "Im Bundestag soll heute das Sparpaket für die gesetzliche Krankenversicherung verabschiedet werden. Die Kritik an dem Vorhaben von Ministerin Warken reißt nicht ab. Und was macht der Bundesrat? Von Birthe Sönnichsen.",
-      "pubDate": "2026-07-10T05:35:57+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Zahl der Erdbeben-Opfer in Venezuela steigt auf 3.889",
-      "description": "Nach den starken Erdbeben in Venezuela ist die Zahl der Toten auf 3.889 gestiegen. Die WHO warnt nun vor der schlechten Gesundheitsversorgung im Land. Davon gingen inzwischen die größten Risiken für die Überlebenden aus.",
-      "pubDate": "2026-07-10T05:34:55+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Mindestens zwölf Tote bei Waldbrand im Süden Spaniens",
-      "description": "Trockenes Wetter, hohe Temperaturen: Immer wieder kommt es im Sommer in Spanien zu schweren Waldbränden. In Andalusien hat ein Brand nun mindestens zwölf Menschen das Leben gekostet.",
-      "pubDate": "2026-07-10T08:15:48+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bundestag beschließt Gesetz zur Entlastung von Ländern und Kommunen",
-      "description": "Der Bundestag hat ein Gesetz zur finanziellen Entlastung von Ländern und Kommunen beschlossen. Es sieht für hoch verschuldete Städte und Gemeinden einen jährlichen Zuschuss von rund einer Milliarde Euro bis 2029 vor.",
-      "pubDate": "2026-07-10T05:34:07+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Beratungen von VW-Aufsichtsrat enden ohne Klarheit zu Sparplänen",
-      "description": "Mit Spannung wurde die Aufsichtsratssitzung bei VW verfolgt - doch am Ende blieben viele Fragen offen. Der Konzern schweigt zu möglichen Entlassungen oder Schließungen. Betriebsratschefin Cavallo verlangt Klarheit. Von Hilke Janssen.",
-      "pubDate": "2026-07-09T22:43:27+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Revolver mit sechs Patronen: Erdoğans Geschenk irritiert Gäste des NATO-Gipfels",
-      "description": "Es ist ein Gastgeschenk zum Schießen: Mit Revolvern und Munition bedankte sich der türkische Präsident Erdoğan bei den hochrangigen Gästen des NATO-Gipfels in Ankara - und stellte einige damit vor große Probleme.",
-      "pubDate": "2026-07-09T20:19:08+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Regierungserklärung von Merz: Ein Treuebekenntnis vor der Sommerpause",
-      "description": "Bei seiner Regierungserklärung gibt sich der Kanzler selbstbewusst und wirkt doch dünnhäutig. Auf Kritik an geplanten Reformen geht Merz nicht ein, dafür auf die SPD. Nur diese Koalition könne es. Von Corinna Emundts.",
-      "pubDate": "2026-07-09T20:04:41+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Gericht weist Klage gegen Zurückweisung aus formalen Gründen ab",
-      "description": "Ein Mann aus Algerien ist vor dem Verwaltungsgericht Karlsruhe mit einer Klage gegen eine Zurückweisung gescheitert. Bei der Entscheidung ging es nicht um die Frage, ob das Vorgehen gegen EU-Recht verstößt. Von Max Bauer.",
-      "pubDate": "2026-07-09T18:26:15+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: DAX wieder über 25.000 Punkten",
-      "description": "Angesichts der ungewissen Lage im Nahen Osten wagen sich Anleger zunächst kaum aus der Deckung, der deutsche Leitindex schließt dennoch im Plus. Wieder im Blick der Investoren: Die Öltransporte durch die Straße von Hormus.",
-      "pubDate": "2026-07-09T18:24:18+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Tödlicher Angriff auf Zugbegleiter: Ein Urteil mit Ansage",
-      "description": "Im Verfahren um den Tod eines Zugbegleiters hat das Landgericht Zweibrücken den Angeklagten wegen Körperverletzung mit Todesfolge verurteilt. Das Urteil ist wenig überraschend, bietet aber dennoch Diskussionsstoff. Von Christoph Kehlbach.",
-      "pubDate": "2026-07-09T17:47:49+02:00",
       "bild": ""
     }
   ],
