@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "10.07.2026, 18:08 Uhr (UTC)",
+  "aktualisiert": "10.07.2026, 20:00 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Mordermittlungen nach Tod von britischer Politikerin Widdecombe",
+      "description": "Die britische Polizei hat einen 26-jährigen Briten festgenommen. Er soll die rechtskonservative Ex-Ministerin Ann Widdecombe ermordet haben. Die 78-Jährige war am Donnerstag tot aufgefunden worden. Das Motiv ist weiter unklar.",
+      "pubDate": "2026-07-10T21:27:29+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Gesundheitsreform: Was sich mit dem Sparpaket für Versicherte ändert",
+      "description": "Grünes Licht für die Reform der gesetzlichen Krankenversicherung: Die Bundesregierung will die Ausgaben im Gesundheitssystem bremsen. Ein Überblick, mit welchen Einschnitten und Zuzahlungen Versicherte nun rechnen müssen.",
+      "pubDate": "2026-07-10T21:02:57+02:00",
+      "bild": ""
+    },
     {
       "title": "Neues Gesetz in Frankreich macht Schüsse von Polizisten zu Notwehr",
       "description": "Schüsse aus Polizeiwaffen gelten in Frankreich künftig als Notwehr. Opfer müssen beweisen, dass der Beamte die Waffe regelwidrig benutzt hat. Kritiker sind entsetzt und fürchten Straflosigkeit. Von Julia Borutta.",
@@ -78,18 +90,6 @@
       "title": "Kommentar zur Klimapolitik: Das Fundament droht zu brechen",
       "description": "Schwächere Heizungsregeln, ein Fokus auf Gaskraftwerke und ein Haushalt, der beim Klimaschutz kürzt: Was einzeln noch verkraftbar wäre, zerstört in Summe jeglichen Fortschritt bei der Klimatransformation, meint Katha Jansen.",
       "pubDate": "2026-07-10T15:11:44+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kartellamt: Steuerentlastung überwiegend an Verbraucher weitergegeben",
-      "description": "Das Bundeskartellamt zieht eine positive Bilanz des Tankrabatts: Rund 80 Prozent der Steuersenkung wurden an Verbraucher weitergegeben. Das Bundeskartellamt spricht von einer Preislücke von knapp vier Cent.",
-      "pubDate": "2026-07-10T14:59:08+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Investitionen in Sicherheit schafft Tausende neue Jobs",
-      "description": "Drohnen, Panzer und Munition sind nicht alles. Den NATO-Ländern geht es auch um Investitionen in die sicherheitsrelevante Infrastruktur. Das könnte Tausende neue Jobs schaffen. Fragen bleiben.",
-      "pubDate": "2026-07-10T14:27:48+02:00",
       "bild": ""
     }
   ],
