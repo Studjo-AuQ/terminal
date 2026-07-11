@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "11.07.2026, 08:52 Uhr (UTC)",
+  "aktualisiert": "11.07.2026, 10:20 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Linksextreme Gruppe bekennt sich zu Sabotage auf Bahnstrecke Köln-Düsseldorf",
+      "description": "Eine der wichtigsten Bahnstrecken in NRW ist offenbar durch einen Sabotageakt lahmgelegt worden. Im Netz tauchte ein Bekennerschreiben der linksextremen Gruppe \"Angry Birds\" auf. Sie hat demnach Brandsätze nahe Leverkusen gelegt.",
+      "pubDate": "2026-07-11T12:18:23+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Krieg gegen die Ukraine: Wieder russische Angriffe auf Kiew",
+      "description": "In der Nacht hat Russland Kiew erneut mit Raketen angegriffen. Es gab mehrere Verletzte. Trotz der Eskalation in den vergangenen Wochen sieht Bundesaußenminister Wadephul jetzt einen guten Zeitpunkt für Verhandlungen.",
+      "pubDate": "2026-07-11T11:44:49+02:00",
+      "bild": ""
+    },
     {
       "title": "Forderung aus Wirtschaft und Politik: Deutsche Klimaneutralität erst 2050",
       "description": "Eigentlich soll Deutschland im Jahr 2045 klimaneutral sein. Doch führende Vertreter aus Wirtschaft, Gewerkschaften und Politik fordern nun mehr Zeit: Deutschland solle das europäische Datum 2050 übernehmen.",
@@ -11,13 +23,13 @@
     {
       "title": "Kommunen bedauern das Ja des Bundesrats zur Gesundheitsreform",
       "description": "Das Sparpaket im Gesundheitswesen ist beschlossene Sache - Kritik gibt es weiter: etwa daran, dass der Bundesrat darauf verzichtete nachzuverhandeln. Der Deutsche Landkreistag warnt vor zusätzlichen Kosten für die Kommunen.",
-      "pubDate": "2026-07-11T10:46:02+02:00",
+      "pubDate": "2026-07-11T11:10:12+02:00",
       "bild": ""
     },
     {
       "title": "Geiselnahme in Berliner Supermarkt beendet - Großeinsatz der Polizei",
-      "description": "Fast zwölf Stunden lang hielt ein Mann in einem Supermarkt im Süden Berlins eine Frau Geisel. Spezialkräfte der Polizei schritten schließlich ein und überwältigten den Täter. Über die Hintergründe ist noch nichts bekannt.",
-      "pubDate": "2026-07-11T10:31:07+02:00",
+      "description": "Fast zwölf Stunden lang hielt ein Mann in einem Supermarkt im Süden Berlins eine Frau als Geisel. Spezialkräfte der Polizei schritten schließlich ein und überwältigten den Täter. Über die Hintergründe ist noch nichts bekannt.",
+      "pubDate": "2026-07-11T11:24:41+02:00",
       "bild": ""
     },
     {
@@ -53,7 +65,7 @@
     {
       "title": "Belgien plant Straßenmaut für alle Autos",
       "description": "Das Autofahren in Belgien soll künftig Geld kosten. Alle drei Regionen des Landes einigten sich auf eine Mautplakette für Pkw - für Belgier als auch für Ausländer. Die Kosten sollen sich je nach Fahrzeug unterscheiden.",
-      "pubDate": "2026-07-11T02:04:33+02:00",
+      "pubDate": "2026-07-11T11:18:50+02:00",
       "bild": ""
     },
     {
@@ -78,18 +90,6 @@
       "title": "Waldbrandgefahr steigt am Wochenende teils auf höchste Warnstufe",
       "description": "Nicht nur in Südeuropa, auch in Deutschland drohen aufgrund der Hitze Waldbrände. Laut Deutschem Wetterdienst wird am Wochenende teilweise die höchste Warnstufe erreicht - unter anderem im Südwesten des Landes.",
       "pubDate": "2026-07-10T19:20:03+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Dritte Hitzewelle des Jahres: Frankreich verschärft Krisenplan",
-      "description": "Die französische Regierung stimmt die Bevölkerung auf den Höhepunkt der dritten Hitzewelle des Jahres ein. Ein neuer Zivilschutzplan soll nun Alte, Alleinstehende und Obdachlose besser schützen. Von Cai Rienäcker.",
-      "pubDate": "2026-07-10T19:02:48+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wie Wärmepumpen auch kühlen können",
-      "description": "An heißen Sommertagen sorgt eine Klimaanlage für erträgliche Temperaturen. Doch auch eine moderne Wärmepumpe, die sonst zum Heizen dient, kann ein Haus kühlen. Diese Optionen gibt es. Von Daniel Peter.",
-      "pubDate": "2026-07-10T18:54:46+02:00",
       "bild": ""
     }
   ],
