@@ -1,7 +1,31 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "11.07.2026, 13:42 Uhr (UTC)",
+  "aktualisiert": "11.07.2026, 15:02 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Flammen in Andalusien breiten sich aus",
+      "description": "Seit Donnerstag brennen im Süden Spanien große Waldflächen, zwölf Menschen starben. Nun mussten wieder Hunderte in Sicherheit gebracht werden. Die Feuerwehr macht aber Fortschritte bei der Brandbekämpfung.",
+      "pubDate": "2026-07-11T16:13:43+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Söder versichert, dass \"Minijobs bleiben\"",
+      "description": "Die Regierung hatte versprochen, die Vorschläge der Rentenkommission möglichst eins zu eins umzusetzen. Dazu gehört auch die Abschaffung von Minijobs. CSU-Chef Söder hatte das von Anfang an kritisiert und verspricht nun: die Minijobs bleiben.",
+      "pubDate": "2026-07-11T16:09:50+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Verdächtiger im Mordfall Widdecombe wieder frei",
+      "description": "Ein nach dem Tod einer Ex-Ministerin in Großbritannien festgenommener Mann ist auf freien Fuß gesetzt worden. Gegen den zunächst unter Mordverdacht stehenden 26-Jährigen werde nicht mehr ermittelt, so die Polizei. Von Lisa-Marie Röhling.",
+      "pubDate": "2026-07-11T16:05:32+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Gericht in Südafrika öffnet Tür zum Handel mit Nashorn-Hörnern",
+      "description": "In Südafrika sorgt ein Gerichtsurteil für heftige Debatten über den Artenschutz: Ein privater Nashornzüchter darf unter bestimmten Auflagen die Hörner seiner Tiere ins Ausland verkaufen. Naturschützer sind entsetzt. Von Stefan Ueberbach.",
+      "pubDate": "2026-07-11T15:42:17+02:00",
+      "bild": ""
+    },
     {
       "title": "Sanierung als Alternative: Marode Brücke abreißen - muss das sein?",
       "description": "Tausende deutsche Autobahnbrücken sind marode. Bislang heißt das in den meisten Fällen: Abriss und Neubau. Doch das dauert Jahrzehnte, und die Kosten sind enorm. Muss wirklich immer neu gebaut werden? Von Christof Dörr.",
@@ -10,8 +34,8 @@
     },
     {
       "title": "Wie ein Krankenhaus sich für die Hitze wappnet",
-      "description": "Mehr als 4.000 Hitzetote gab es nach einer Schätzung des Robert-Koch-Instituts Ende Juni. Eine Klinik in Stuttgart arbeitete während der Hitzewelle am Limit - und plant schon für das nächste Mal. Von T. Denzel und A. Koha.",
-      "pubDate": "2026-07-11T15:29:04+02:00",
+      "description": "Mehr als 4.000 Hitzetote gab es nach einer Schätzung des Robert Koch-Instituts Ende Juni. Eine Klinik in Stuttgart arbeitete während der Hitzewelle am Limit - und plant schon für das nächste Mal. Von T. Denzel und A. Koha.",
+      "pubDate": "2026-07-11T16:51:31+02:00",
       "bild": ""
     },
     {
@@ -41,7 +65,7 @@
     {
       "title": "Linksextreme Gruppe bekennt sich zu Sabotage auf Bahnstrecke Köln-Düsseldorf",
       "description": "Eine der wichtigsten Bahnstrecken in NRW ist offenbar durch einen Sabotageakt lahmgelegt worden. Im Netz tauchte ein Bekennerschreiben der linksextremen Gruppe \"Angry Birds\" auf. Sie hat demnach Brandsätze nahe Leverkusen gelegt.",
-      "pubDate": "2026-07-11T14:59:00+02:00",
+      "pubDate": "2026-07-11T15:53:00+02:00",
       "bild": ""
     },
     {
@@ -66,30 +90,6 @@
       "title": "Geiselnahme in Berliner Supermarkt beendet - Großeinsatz der Polizei",
       "description": "Fast zwölf Stunden lang hielt ein Mann in einem Supermarkt im Süden Berlins eine Frau als Geisel. Spezialkräfte der Polizei schritten schließlich ein und überwältigten den Täter. Über die Hintergründe ist noch nichts bekannt.",
       "pubDate": "2026-07-11T13:20:48+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Mit dem richtigen Fahrverhalten spritsparend in den Urlaub",
-      "description": "Mit Vollgas in den Urlaub? Für den Geldbeutel keine gute Idee. Wer auf ein paar Kleinigkeiten beim Fahren achtet, kann Sprit sparen. Und kommt vielleicht sogar entspannter an. Von Wiebke Neelsen.",
-      "pubDate": "2026-07-11T09:11:12+02:00",
-      "bild": ""
-    },
-    {
-      "title": "CHP-Bürgermeister: Bürgernah - und Erdoğans Partei ein Dorn im Auge",
-      "description": "Wer der türkischen Oppositionspartei CHP angehört und ein Amt ausübt, riskiert viel. Viele Mandatsträger wurden in den vergangenen Jahren verhaftet. Wie geht ein Bürgermeister in der Heimat von Präsident Erdoğan damit um? Von G. Dunkel.",
-      "pubDate": "2026-07-11T08:17:44+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wie Hitze auf Zyklus und Menstruation wirken kann",
-      "description": "Das Wochenende bringt in vielen Teilen Deutschlands wieder besonders hohe Temperaturen mit sich. Das kann sich allgemein auf den Körper auswirken - bei Frauen aber auch auf den Zyklus und die Menstruation. Von Laura Gerstner.",
-      "pubDate": "2026-07-11T08:13:02+02:00",
-      "bild": ""
-    },
-    {
-      "title": "USA fordern von Iran freien Seeweg in der Straße von Hormus",
-      "description": "Das Rahmenabkommen ist aufgekündigt, es gibt immer wieder Angriffe - doch die USA wollen mit Iran weiterverhandeln. Teheran müsse zusichern, dass die Straße von Hormus ohne Gefahren passierbar ist.",
-      "pubDate": "2026-07-11T09:12:28+02:00",
       "bild": ""
     }
   ],
