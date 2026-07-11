@@ -1,32 +1,32 @@
 {
-  "aktualisiert": "11.07.2026, 13:03 Uhr",
+  "aktualisiert": "11.07.2026, 14:34 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
-        "temp": 27,
+        "temp": 28,
         "gefuehlt": 28,
         "zustand": "Klar",
         "emoji": "☀️",
         "wind": 10,
-        "luftfeuchte": 42,
+        "luftfeuchte": 38,
         "niederschlag": 0.0
       },
       "tage": [
         {
           "wochentag": "Samstag",
           "datum": "11.07.",
-          "emoji": "🌤️",
-          "zustand": "Überwiegend klar",
-          "max": 27,
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
+          "max": 28,
           "min": 16,
           "niederschlag": 0.0
         },
         {
           "wochentag": "Sonntag",
           "datum": "12.07.",
-          "emoji": "☀️",
-          "zustand": "Klar",
+          "emoji": "⛅",
+          "zustand": "Teils bewölkt",
           "max": 29,
           "min": 17,
           "niederschlag": 0.0
@@ -36,8 +36,8 @@
           "datum": "13.07.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 27,
-          "min": 16,
+          "max": 29,
+          "min": 17,
           "niederschlag": 0.0
         },
         {
@@ -64,11 +64,11 @@
       "stadt": "Werdohl",
       "aktuell": {
         "temp": 28,
-        "gefuehlt": 30,
+        "gefuehlt": 28,
         "zustand": "Überwiegend klar",
         "emoji": "🌤️",
-        "wind": 9,
-        "luftfeuchte": 43,
+        "wind": 10,
+        "luftfeuchte": 37,
         "niederschlag": 0.0
       },
       "tage": [
@@ -84,8 +84,8 @@
         {
           "wochentag": "Sonntag",
           "datum": "12.07.",
-          "emoji": "⛅",
-          "zustand": "Teils bewölkt",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
           "max": 29,
           "min": 14,
           "niederschlag": 0.0
@@ -127,15 +127,15 @@
         "zustand": "Klar",
         "emoji": "☀️",
         "wind": 9,
-        "luftfeuchte": 46,
+        "luftfeuchte": 42,
         "niederschlag": 0.0
       },
       "tage": [
         {
           "wochentag": "Samstag",
           "datum": "11.07.",
-          "emoji": "⛅",
-          "zustand": "Teils bewölkt",
+          "emoji": "🌤️",
+          "zustand": "Überwiegend klar",
           "max": 27,
           "min": 14,
           "niederschlag": 0.0
@@ -143,10 +143,10 @@
         {
           "wochentag": "Sonntag",
           "datum": "12.07.",
-          "emoji": "☀️",
-          "zustand": "Klar",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
           "max": 28,
-          "min": 17,
+          "min": 18,
           "niederschlag": 0.0
         },
         {
@@ -154,8 +154,8 @@
           "datum": "13.07.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 27,
-          "min": 16,
+          "max": 28,
+          "min": 17,
           "niederschlag": 0.0
         },
         {
@@ -182,19 +182,19 @@
       "stadt": "Bochum",
       "aktuell": {
         "temp": 31,
-        "gefuehlt": 31,
+        "gefuehlt": 30,
         "zustand": "Klar",
         "emoji": "☀️",
         "wind": 12,
-        "luftfeuchte": 30,
+        "luftfeuchte": 28,
         "niederschlag": 0.0
       },
       "tage": [
         {
           "wochentag": "Samstag",
           "datum": "11.07.",
-          "emoji": "🌤️",
-          "zustand": "Überwiegend klar",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
           "max": 31,
           "min": 19,
           "niederschlag": 0.0
@@ -204,16 +204,16 @@
           "datum": "12.07.",
           "emoji": "⛅",
           "zustand": "Teils bewölkt",
-          "max": 32,
+          "max": 33,
           "min": 21,
           "niederschlag": 0.0
         },
         {
           "wochentag": "Montag",
           "datum": "13.07.",
-          "emoji": "☁️",
-          "zustand": "Bedeckt",
-          "max": 31,
+          "emoji": "☀️",
+          "zustand": "Klar",
+          "max": 32,
           "min": 17,
           "niederschlag": 0.0
         },
