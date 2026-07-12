@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "12.07.2026, 10:56 Uhr (UTC)",
+  "aktualisiert": "12.07.2026, 12:04 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "USA: Kritik an Justizvorladungen von NYT-Reportern",
+      "description": "Gibt es Sicherheitsbedenken bei der neuen US-Präsidentenmaschine? Mit dieser Frage beschäftigte sich die New York Times - und prompt erhielten die Reporter Vorladungen der Justiz. Die Zeitung und Journalistenverbände sind empört.",
+      "pubDate": "2026-07-12T13:22:18+02:00",
+      "bild": ""
+    },
     {
       "title": "Familienministerin Prien will beim Unterhaltsvorschuss sparen",
       "description": "Zahlt ein Elternteil keinen Unterhalt für gemeinsame Kinder, springt der Staat ein. Laut Familienministerin Prien sind die Kosten aber zu hoch. Der Vorschuss soll bald nur noch für Kinder bis zum 15. Lebensjahr gewährt werden.",
@@ -15,7 +21,7 @@
       "bild": ""
     },
     {
-      "title": "Le Pen im Wahlkampf: Weitermachen, als sei sie freigesprochen worden",
+      "title": "Le Pen im Wahlkampf: Weitermachen, als wäre sie freigesprochen worden",
       "description": "Es bleibt ungewiss, ob Marine Le Pen bei der Präsidentschaftswahl im kommenden Jahr kandidieren kann. Bis ein Berufungsgericht darüber urteilt, macht sie Wahlkampf - in einem für sie symbolischen Ort. Von M. Strempel.",
       "pubDate": "2026-07-12T10:39:00+02:00",
       "bild": ""
@@ -84,12 +90,6 @@
       "title": "Neuer Anlauf für Iran-Verhandlungen im Oman",
       "description": "Die USA und Iran drohen sich öffentlich einmal mehr mit Rache und Vernichtung. Doch hinter den Kulissen wird offenbar wieder verhandelt - unter anderem im Oman. Im Fokus: die Straße von Hormus. Gelingt es, den Seeweg zu öffnen?",
       "pubDate": "2026-07-11T20:59:23+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Krieg gegen die Ukraine: Mehrere Tote nach russischen Angriffen",
-      "description": "In der Nacht zum Samstag hat Russland die Ukraine erneut mit Raketen angegriffen. Es gab mindestens acht Tote. Trotz der aktuellen Eskalation sieht Bundesaußenminister Wadephul jetzt einen guten Zeitpunkt für Verhandlungen.",
-      "pubDate": "2026-07-11T19:36:00+02:00",
       "bild": ""
     }
   ],
