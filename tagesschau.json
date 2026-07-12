@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "12.07.2026, 12:04 Uhr (UTC)",
+  "aktualisiert": "12.07.2026, 14:06 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Drohnenjagd in Frankreich - künftig auch durch Privatfirmen",
+      "description": "Frankreich setzt bei der Abwehr von Drohnen künftig auch auf private Unternehmen. Die Firmen arbeiten bereits an Techniken, unbekannte Drohnen abzufangen. Doch viele rechtliche Fragen sind noch ungeklärt. Von J. Borutta.",
+      "pubDate": "2026-07-12T15:56:17+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Iran attackiert Ziele in mehreren Golfstaaten",
+      "description": "Der Konflikt zwischen den USA und Iran hat sich erneut zugespitzt. Nach Angriffen der USA in der Nacht befehligte Teheran neue Attacken auf US-Verbündete im Golf - und betonte die strategische Bedeutung der Straße von Hormus.",
+      "pubDate": "2026-07-12T15:14:53+02:00",
+      "bild": ""
+    },
     {
       "title": "USA: Kritik an Justizvorladungen von NYT-Reportern",
       "description": "Gibt es Sicherheitsbedenken bei der neuen US-Präsidentenmaschine? Mit dieser Frage beschäftigte sich die New York Times - und prompt erhielten die Reporter Vorladungen der Justiz. Die Zeitung und Journalistenverbände sind empört.",
@@ -29,7 +41,7 @@
     {
       "title": "Republikanischer US-Senator Lindsey Graham gestorben",
       "description": "Erst Gegner, dann Verbündeter Trumps: Der US-Senator Lindsey Graham ist tot. Laut seinem Büro starb er am Abend nach \"kurzer, schwerer Krankheit\".",
-      "pubDate": "2026-07-12T10:30:02+02:00",
+      "pubDate": "2026-07-12T14:16:40+02:00",
       "bild": ""
     },
     {
@@ -78,18 +90,6 @@
       "title": "VW-Chef sieht \"intelligentere Lösungen\" als Werksschließungen",
       "description": "Der kriselnde Autobauer VW muss sparen. Mehr als 100.000 Stellen könnten wegfallen, Standorte sind in Gefahr. Konzernchef Blume sagte nun, er sehe \"intelligentere Lösungen\" statt Werksschließungen.",
       "pubDate": "2026-07-12T04:35:03+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Neue US-Angriffe auf Iran - Straße von Hormus gesperrt",
-      "description": "Das US-Militär hat nach eigenen Angaben neue Angriffe auf Iran gestartet. Hintergrund sei eine Attacke der iranischen Revolutionsgarde auf ein Containerschiff in der Straße von Hormus. Iran erklärte die Meerenge für gesperrt.",
-      "pubDate": "2026-07-12T07:37:25+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Neuer Anlauf für Iran-Verhandlungen im Oman",
-      "description": "Die USA und Iran drohen sich öffentlich einmal mehr mit Rache und Vernichtung. Doch hinter den Kulissen wird offenbar wieder verhandelt - unter anderem im Oman. Im Fokus: die Straße von Hormus. Gelingt es, den Seeweg zu öffnen?",
-      "pubDate": "2026-07-11T20:59:23+02:00",
       "bild": ""
     }
   ],
