@@ -1,7 +1,61 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "13.07.2026, 15:24 Uhr (UTC)",
+  "aktualisiert": "13.07.2026, 17:31 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Pläne der Koalition: Warum das Rauchen teurer werden soll",
+      "description": "Fast zwölf Euro für eine Schachtel Zigaretten - so teuer könnte Rauchen bis zum Jahr 2030 werden. Der Bund erhofft sich dadurch höhere Steuereinnahmen. Was ist geplant - und wie sind die Reaktionen?",
+      "pubDate": "2026-07-13T19:19:39+02:00",
+      "bild": ""
+    },
+    {
+      "title": "\"Push\": Geburtenboom in der Serienwelt",
+      "description": "Serien wie \"Push\", \"The Pitt\" und \"Paradise\" zeigen Geburten so realistisch wie nie - und treffen damit einen Nerv. Statt Hollywood-Blitzgeburten, sind auch die schmerzvollen Seiten des Kinderkriegens zu sehen.",
+      "pubDate": "2026-07-13T19:18:27+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Mehr Tourismus und Zuzug: Wie Asturien von Spaniens großer Hitze profitiert",
+      "description": "Weite Teile Spaniens leiden unter großer Hitze. Vergleichsweise erträglich ist es im grünen Norden am Atlantik. Dort steigen nun Immobilienpreise und Tourismuszahlen. Doch auch hier macht sich der Klimawandel bemerkbar. Von Sebastian Kisters.",
+      "pubDate": "2026-07-13T18:54:23+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX startet robust in die neue Woche",
+      "description": "Mit einer deutlichen Erholung konnte sich der DAX im Verlauf leicht ins Plus retten. In dieser Woche steht der Aktienmarkt neben dem Iran-Konflikt aber noch vor weiteren Herausforderungen.",
+      "pubDate": "2026-07-13T18:51:20+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Berlin-Wahl: Finanzsenator Evers ist neuer CDU-Spitzenkandidat",
+      "description": "Nach dem angekündigten Rückzug des Regierenden Bürgermeisters Wegner soll Finanzsenator Evers die Berliner CDU in den Wahlkampf ums Abgeordnetenhaus führen. Der Landesvorstand wählte ihn zum neuen Spitzenkandidaten.",
+      "pubDate": "2026-07-13T19:17:15+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Mordfall Widdecombe: Terrorabwehr übernimmt Ermittlungen",
+      "description": "Die Tötung der britischen Politikerin Widdecombe wird von den Ermittlern inzwischen als Terrorakt eingestuft. Der zunächst freigelassene 28-jährige Tatverdächtige wurde erneut festgenommen.",
+      "pubDate": "2026-07-13T18:30:07+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Mehr als 35 Grad: Europa ächzt unter der nächsten Hitzewelle",
+      "description": "Von Griechenland bis Nordengland: Eine erneute Hitzewelle hat das Wetter in Europa im Griff. In mehreren Ländern kommt es zu Waldbränden, die teils extrem hohen Temperaturen sind aber auch eine große Gefahr für Menschen.",
+      "pubDate": "2026-07-13T18:26:57+02:00",
+      "bild": ""
+    },
+    {
+      "title": "US-Präsident Trump kündigt neue Seeblockade gegen Iran an",
+      "description": "Nach erneuten gegenseitigen Angriffen kündigt US-Präsident Trump eine neue Seeblockade gegen Iran an. Zudem wollen die USA in der Straße von Hormus offenbar selbst mitverdienen. Die tatsächliche Lage vor Ort bleibt jedoch unklar.",
+      "pubDate": "2026-07-13T17:41:04+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Prien will Unterhaltsvorschuss kürzen - Widerstand wächst",
+      "description": "Bundesfamilienministerin Prien will den staatlichen Unterhaltsvorschuss künftig nur noch bis zum 16. Geburtstag von Kindern zahlen. Der Widerstand gegen die Pläne wächst - auch in der eigenen Koalition. Von Dietrich Karl Mäurer.",
+      "pubDate": "2026-07-13T17:34:28+02:00",
+      "bild": ""
+    },
     {
       "title": "EU-Experten empfehlen Zugangsbeschränkungen für Social Media",
       "description": "Kinder unter 13 Jahren sollen keinen Zugang zu sozialen Medien haben, schlagen Fachleute der EU vor. Für Kommissionspräsidentin von der Leyen wäre das ein Schritt in die richtige Richtung. Aber was folgt daraus? Von Kathrin Schmid.",
@@ -17,7 +71,7 @@
     {
       "title": "Krieg im Nahen Osten: Angriff auf Flughafen Sanaa im Jemen",
       "description": "Im Jemen ist es zu einem Angriff auf den Flughafen Sanaa gekommen - wohl wegen eines Flugzeugs aus Iran. Die Huthi-Miliz beschuldigt Saudi-Arabien und kündigt eine Reaktion an. Die Lage in der Region spitzt sich weiter zu.",
-      "pubDate": "2026-07-13T15:49:13+02:00",
+      "pubDate": "2026-07-13T18:19:56+02:00",
       "bild": ""
     },
     {
@@ -36,60 +90,6 @@
       "title": "Realitätscheck voraus: Berichtssaison läuft an",
       "description": "Ab dieser Woche bestimmen zunehmend wieder die Unternehmen die Börsentendenz. In den USA läuft die Berichtssaison zum zweiten Quartal an. Die Erwartungen sind ziemlich hoch. Von Detlev Landmesser.",
       "pubDate": "2026-07-13T14:04:01+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Cyberangriffe: Auswärtiges Amt bestellt russischen Botschafter ein",
-      "description": "Deutschland und weitere EU-Länder haben Russland für schwere Cyberangriffe auf staatliche Stellen verantwortlich gemacht. Berlin bestellte den russischen Botschafter ein, die EU reagierte mit neuen Sanktionen.",
-      "pubDate": "2026-07-13T13:58:54+02:00",
-      "bild": ""
-    },
-    {
-      "title": "EU-Experten empfehlen Social-Media-Verbot für Kinder unter 13 Jahren",
-      "description": "EU-Experten haben ein Social-Media-Verbot für Kinder unter 13 Jahren vorgeschlagen. Bis Herbst will die EU-Kommission nun einen entsprechenden Gesetzesvorschlag machen - mit absehbaren Folgen für die deutsche Debatte über Altersgrenzen.",
-      "pubDate": "2026-07-13T13:13:48+02:00",
-      "bild": ""
-    },
-    {
-      "title": "VW-Chef Blume: Bis zu 50.000 Stellen könnten wegfallen",
-      "description": "Lange wurde über die Zahlen spekuliert, jetzt erklärt der VW-Chef erstmals, wie viele Jobs beim Autohersteller wegfallen könnten. Auch die Schließung von Werken ist nicht vom Tisch.",
-      "pubDate": "2026-07-13T13:10:33+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Hubig will Entschädigung für zu Unrecht inhaftierte anheben",
-      "description": "Wer zu Unrecht im Gefängnis saß, soll nach dem Willen von Bundesjustizministerin Hubig künftig deutlich mehr Geld erhalten. Ein Gesetzentwurf sieht zudem das Ende von Abzügen für \"Kost und Logis\" vor.",
-      "pubDate": "2026-07-13T13:09:34+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Frankreich: Großer Brand im Wald von Fontainebleau bei Paris",
-      "description": "Im Wald von Fontainebleau steht eines der bekanntesten Königsschlösser Frankreichs. Nun ist in dem Areal nahe Paris ein großes Feuer ausgebrochen. Ermittler gehen Hinweisen auf Brandstiftung nach.",
-      "pubDate": "2026-07-13T12:57:08+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Flugtickets sind im ersten Halbjahr deutlich teurer geworden",
-      "description": "Flugreisen haben sich im ersten Halbjahr 2026 spürbar verteuert. Besonders stark stiegen die Preise für Flüge nach Mittelamerika sowie innerhalb Europas. Pauschalreisen legten dagegen nur moderat zu.",
-      "pubDate": "2026-07-13T12:06:40+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Urteil des OLG München: Freiheitsstrafen wegen Versklavung jesidischer Mädchen",
-      "description": "Sie sollen im Irak zwei jesidische Mädchen als Sklavinnen gehalten und missbraucht haben: Nach mehr als einem Jahr Prozess hat das Oberlandesgericht München ein irakisches Ehepaar zu hohen Freiheitsstrafen verurteilt - unter anderem wegen Völkermords.",
-      "pubDate": "2026-07-13T11:55:53+02:00",
-      "bild": ""
-    },
-    {
-      "title": "\"Koalition der Willigen\" berät über weitere Hilfen für die Ukraine",
-      "description": "Russlands Krieg gegen die Ukraine ist heute Thema in Paris und Brüssel. Bevor die \"Koalition der Willigen\" über weitere militärische Hilfe für die Ukraine berät, verhandeln die EU-Außenminister über nächste Sanktionen gegen Russland.",
-      "pubDate": "2026-07-13T11:23:04+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Fluggastrechte: Was sich für Passagiere ab 2027 ändert",
-      "description": "Die EU reformiert die Fluggastrechte. Familien und Menschen mit Behinderung sollen profitieren. An anderer Stelle droht aber eine Verschlechterung für Passagiere. Antworten auf zentrale Fragen.",
-      "pubDate": "2026-07-13T11:10:35+02:00",
       "bild": ""
     }
   ],
