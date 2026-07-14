@@ -1,7 +1,43 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "14.07.2026, 11:09 Uhr (UTC)",
+  "aktualisiert": "14.07.2026, 12:49 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Ukraine greift Ölproduktion an, Russland ein Schiff",
+      "description": "Die Ukraine setzt sich weiter gegen Russland zur Wehr. Das Militär griff mehrere russische Tanker und Frachtschiffe sowie Ölraffinerien an. Russland nahm Odessa ins Visier - und traf laut ukrainischen Angaben ein ziviles Schiff.",
+      "pubDate": "2026-07-14T14:44:26+02:00",
+      "bild": ""
+    },
+    {
+      "title": "\"Koalition der Willigen\": Tusk kündigt gemeinsames Manöver in Polen an",
+      "description": "Die Unterstützerländer der Ukraine gehen den nächsten Schritt: Sie wollen gemeinsam militärisch üben - im Herbst in Polen. Das kündigte Ministerpräsident Tusk an. Neben Polen sollen Frankreich und Großbritannien an den Manövern teilnehmen.",
+      "pubDate": "2026-07-14T14:42:49+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Großbritannien: Die morschen Mauern von Westminster",
+      "description": "So altehrwürdig das britische Parlament auch sein mag: Das Gebäude muss dringend renoviert werden. Die Mauern bröckeln, immer mal wieder brennt es - und Mäuse tauchen in Interviews auf. Doch eine Renovierung dürfte Jahrzehnte dauern. Von C. Prössl.",
+      "pubDate": "2026-07-14T14:42:14+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: Trump treibt die Ölpreise wieder nach oben",
+      "description": "Der US-Präsident will erneut die Straße von Hormus blockieren. Nach einem Zehn-Prozent-Sprung gestern klettern die Ölpreise heute weiter. Auch für Finanzprofis wird eine neuer Kriegsausbruch wahrscheinlicher.",
+      "pubDate": "2026-07-14T14:32:18+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Ermittlungen gegen Justizbedienstete in NRW und Rheinland-Pfalz",
+      "description": "Die Polizei durchsucht seit dem Morgen Räume der Justizvollzugsanstalt Rheinbach sowie Wohnungen in Nordrhein-Westfalen und Rheinland-Pfalz. Es geht um Ermittlungen wegen Delikten im Amt und mögliche Bestechung.",
+      "pubDate": "2026-07-14T13:12:00+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Extreme Hochwasser in Deutschland: \"Häufig fehlt der Erfahrungsschatz\"",
+      "description": "Wie gut ist Deutschland auf große Hochwasser vorbereitet? Geograf Thomas Roggenkamp sieht einen Rückstand speziell bei extremen Lagen. Auf diese müsse man sich in Zukunft eher einstellen, sagt er im tagesthemen-Interview.",
+      "pubDate": "2026-07-14T13:13:24+02:00",
+      "bild": ""
+    },
     {
       "title": "Israel: Knesset verabschiedet umstrittenes \"Thora-Grundgesetz\"",
       "description": "Das israelische Parlament hat nach heftigen Debatten das umstrittene \"Thora-Grundgesetz\" verabschiedet. Mit dem Zugeständnis von Premier Netanjahu an seine ultraorthodoxen Partner dürfte der Riss in der Gesellschaft noch tiefer werden. Von J. Segador.",
@@ -54,42 +90,6 @@
       "title": "Pflegekosten: Eigenanteil für Pflege im Heim erneut gestiegen",
       "description": "Die monatlichen Kosten für einen Heimplatz sind für Pflegebedürftige abermals gestiegen. Seit Beginn des Jahres legte der Eigenanteil im Schnitt um fast 120 Euro zu. Dabei gibt es große regionale Unterschiede.",
       "pubDate": "2026-07-14T08:13:04+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Fünfter Jahrestag der Ahrtal-Flut: Lernen aus der Katastrophe?",
-      "description": "Die Flut im Ahrtal legte schwere Mängel im Katastrophenschutz bloß. Pläne für den Ernstfall fehlten ebenso wie Geräte. Wer dafür Verantwortung trug - und was sich seither geändert hat. Von Thomas Schneider.",
-      "pubDate": "2026-07-14T07:32:28+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Anträge auf Kriegsdienstverweigerung laut Bericht deutlich gestiegen",
-      "description": "Die Zahl der Anträge auf Kriegsdienstverweigerung ist weiter steil angestiegen - und hat im ersten Halbjahr 2026 bereits den Vorjahreswert übertroffen. Ein Grund dafür dürfte das Inkrafttreten des neuen Wehrdienstgesetzes sein.",
-      "pubDate": "2026-07-14T11:02:40+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Japan: Wie einer Frau der Ausstieg aus der Yakuza gelang",
-      "description": "Die japanische Mafia, Yakuza genannt, wuchs über Jahrzehnte zu einer mächtigen Schattenwelt heran. Aus dem Innern der Männerbanden erzählt nun ausgerechnet eine Frau - und berichtet, wie sie den Ausstieg schaffte. Von Ulrich Mendgen.",
-      "pubDate": "2026-07-14T05:07:47+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Straße von Hormus: Dritte Nacht in Folge US-Angriffe auf Iran",
-      "description": "Erneut gab es in der vergangenen Nacht Angriffe der USA auf Iran sowie iranische Reaktionen. Im Streit über den Zugang zur Straße von Hormus fordert US-Präsident Trump eine hohe Maut zugunsten der USA.",
-      "pubDate": "2026-07-14T12:24:00+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Bundesstaaten wollen Warner-Übernahme durch Paramount stoppen",
-      "description": "Die Übernahme von Warner Bros. durch Paramount ist ein Mega-Geschäft, das nicht nur Hollywood umkrempeln könnte. Die US-Regierung winkte den Deal durch - doch mehrere Bundesstaaten wollen ihn kippen und ziehen vor Gericht.",
-      "pubDate": "2026-07-13T21:56:21+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Massiver IT-Ausfall bei der Berliner Justiz",
-      "description": "Softwareprobleme haben bei Berliner Gerichten für erheblichen Ausfälle gesorgt. Seit dem Morgen können sich Richter nicht auf den Servern einwählen. Fälle bleiben unbearbeitet, Mitarbeiter werden nach Hause geschickt.",
-      "pubDate": "2026-07-14T10:12:12+02:00",
       "bild": ""
     }
   ],
