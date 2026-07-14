@@ -1,7 +1,31 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "14.07.2026, 09:10 Uhr (UTC)",
+  "aktualisiert": "14.07.2026, 11:09 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Israel: Knesset verabschiedet umstrittenes \"Thora-Grundgesetz\"",
+      "description": "Das israelische Parlament hat nach heftigen Debatten das umstrittene \"Thora-Grundgesetz\" verabschiedet. Mit dem Zugeständnis von Premier Netanjahu an seine ultraorthodoxen Partner dürfte der Riss in der Gesellschaft noch tiefer werden. Von J. Segador.",
+      "pubDate": "2026-07-14T12:49:41+02:00",
+      "bild": ""
+    },
+    {
+      "title": "ADAC: Viele kleine Rastplätze fallen bei Test durch",
+      "description": "Fehlende Sauberkeit, kein Toilettenpapier, kaputte oder leere Seifenspender: Viele Autobahn-Rastplätze sind in einem ADAC-Test durchgefallen. Geprüft wurden kleine Anlagen ohne Tankstelle oder Restaurant.",
+      "pubDate": "2026-07-14T12:00:15+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Nach schwerem Hagel im Norden: DWD warnt vor weiteren Unwettern",
+      "description": "Nach Unwettern mit teils schwerem Hagelschlag in Norddeutschland warnt der Wetterdienst für heute vor weiteren Unwettern - in praktisch allen Regionen Deutschlands. Auch in den kommenden Tagen bleibt das Wetter turbulent.",
+      "pubDate": "2026-07-14T11:23:08+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Nahrungsergänzungsmittel LaVita erhält Negativpreis",
+      "description": "Das Nahrungsergänzungsmittel LaVita bekommt von Foodwatch den \"Goldenen Windbeutel\" für die \"dreisteste Werbelüge\" des Jahres. Ein Liter koste umgerechnet 100 Euro - und enthalte hauptsächlich Fruchtsaft.",
+      "pubDate": "2026-07-14T11:13:54+02:00",
+      "bild": ""
+    },
     {
       "title": "Einwanderungsbehörde: Wieder tödliche ICE-Einsätze in den USA",
       "description": "In Maine ist bei einem Einsatz unter Beteiligung der US-Einwanderungsbehörde ICE ein Mann erschossen worden. Es ist bereits der zweite tödliche Vorfall innerhalb einer Woche. Von N. Barth.",
@@ -52,8 +76,8 @@
     },
     {
       "title": "Straße von Hormus: Dritte Nacht in Folge US-Angriffe auf Iran",
-      "description": "Erneut gab es in der vergangenen Nacht Angriffe der USA auf Iran sowie iranische Reaktionen. Im Streit um den Zugang zur Straße von Hormus fordert US-Präsident Trump eine hohe Maut zugunsten der USA.",
-      "pubDate": "2026-07-14T10:01:55+02:00",
+      "description": "Erneut gab es in der vergangenen Nacht Angriffe der USA auf Iran sowie iranische Reaktionen. Im Streit über den Zugang zur Straße von Hormus fordert US-Präsident Trump eine hohe Maut zugunsten der USA.",
+      "pubDate": "2026-07-14T12:24:00+02:00",
       "bild": ""
     },
     {
@@ -66,30 +90,6 @@
       "title": "Massiver IT-Ausfall bei der Berliner Justiz",
       "description": "Softwareprobleme haben bei Berliner Gerichten für erheblichen Ausfälle gesorgt. Seit dem Morgen können sich Richter nicht auf den Servern einwählen. Fälle bleiben unbearbeitet, Mitarbeiter werden nach Hause geschickt.",
       "pubDate": "2026-07-14T10:12:12+02:00",
-      "bild": ""
-    },
-    {
-      "title": "7.000 Hektar verbrannt und 13 Tote bei Waldbrand in Spanien",
-      "description": "Nach dem schweren Waldbrand in Andalusien ist die Ausbreitung des Feuers bei Almería gestoppt. Erste Anwohner kehren zurück in ihre Häuser. Regierungschef Sánchez verspricht bei seinem Besuch in der Region Mittel für den Wiederaufbau. Von A. Mundt.",
-      "pubDate": "2026-07-13T20:57:12+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ungarns Parlament stimmt für Absetzung von Staatspräsident Sulyok",
-      "description": "Ungarns Staatspräsident Sulyok galt als Gefolgsmann von Ex-Premier Orban. Das Parlament hat nun eine Verfassungsänderung beschlossen, um ihn unverzüglich absetzen zu können. Der will sich dagegen wehren. Von Oliver Soos.",
-      "pubDate": "2026-07-13T20:42:35+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Fünf Jahre nach der Flut: \"Man darf nicht vergessen\"",
-      "description": "Als das Wasser kam, strömte es unaufhaltsam durch Straßen und Häuser. Fünf Jahre nach der Flut halten die Einwohner im nordrhein-westfälischen Rheinbach das Gedenken aufrecht. Und fragen sich: Wurden wir vergessen? Von Cosima Gill.",
-      "pubDate": "2026-07-13T20:24:05+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Europäer schmieden Bündnis für Raketenabwehr",
-      "description": "Frankreich, Deutschland und sieben weitere europäische Staaten vereinbaren mit der Ukraine eine Koalition zur Raketenabwehr. Das Bündnis betont dabei seinen defensiven Charakter - und kündigt Übungsmanöver an.",
-      "pubDate": "2026-07-13T21:04:45+02:00",
       "bild": ""
     }
   ],
