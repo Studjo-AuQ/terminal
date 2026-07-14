@@ -1,11 +1,17 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "14.07.2026, 00:59 Uhr (UTC)",
+  "aktualisiert": "14.07.2026, 04:12 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Japan: Wie einer Frau der Ausstieg aus der Yakuza gelang",
+      "description": "Die japanische Mafia, Yakuza genannt, wuchs über Jahrzehnte zu einer mächtigen Schattenwelt heran. Aus dem Innern der Männerbanden erzählt nun ausgerechnet eine Frau - und berichtet, wie sie den Ausstieg schaffte. Von Ulrich Mendgen.",
+      "pubDate": "2026-07-14T05:07:47+02:00",
+      "bild": ""
+    },
     {
       "title": "Straße von Hormus: Dritte Nacht in Folge US-Angriffe auf Iran",
       "description": "Der Konflikt zwischen den USA und Iran um die Straße von Hormus eskaliert weiter. Die Vereinigten Arabischen Emirate melden Angriffe Irans auf Öltanker, bei denen es einen Toten geben soll.",
-      "pubDate": "2026-07-14T02:54:22+02:00",
+      "pubDate": "2026-07-14T06:03:05+02:00",
       "bild": ""
     },
     {
@@ -84,12 +90,6 @@
       "title": "Mehr als 35 Grad: Europa ächzt unter der nächsten Hitzewelle",
       "description": "Von Griechenland bis Nordengland: Eine erneute Hitzewelle hat das Wetter in Europa im Griff. In mehreren Ländern kommt es zu Waldbränden, die teils extrem hohen Temperaturen sind aber auch eine große Gefahr für Menschen.",
       "pubDate": "2026-07-13T18:26:57+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Präsident Trump kündigt neue Seeblockade gegen Iran an",
-      "description": "Nach erneuten gegenseitigen Angriffen kündigt US-Präsident Trump eine neue Seeblockade gegen Iran an. Zudem wollen die USA in der Straße von Hormus offenbar selbst mitverdienen. Die tatsächliche Lage vor Ort bleibt jedoch unklar.",
-      "pubDate": "2026-07-13T20:56:13+02:00",
       "bild": ""
     }
   ],
