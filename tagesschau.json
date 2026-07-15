@@ -1,7 +1,43 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "15.07.2026, 12:02 Uhr (UTC)",
+  "aktualisiert": "15.07.2026, 14:22 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "EU will Schutz für wehrfähige Ukrainer einschränken",
+      "description": "Die EU will den Schutzstatus für wehrfähige ukrainische Männer einschränken. Künftig müssen diese belegen, dass sie ihren Wehrdienst geleistet haben oder davon befreit sind. Die EU kommt damit einer Bitte der Ukraine nach.",
+      "pubDate": "2026-07-15T15:58:07+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Sommerpressekonferenz des Kanzlers: \"Die Koalition hat Tritt gefasst\"",
+      "description": "Schulden, Unterhaltsvorschuss, Arbeitszeiten: Bei der Sommerpressekonferenz hat Kanzler Merz die Pläne der Regierung verteidigt. Die Koalition sieht er auf einem guten Weg. Zugleich bekräftigte er seine Haltung zur AfD.",
+      "pubDate": "2026-07-15T15:39:20+02:00",
+      "bild": ""
+    },
+    {
+      "title": "\"Entlastungskabinett\" beschließt Maßnahmen zum Bürokratieabbau",
+      "description": "Weniger Bürokratie - dafür hat das \"Entlastungskabinett\" Maßnahmen beschlossen. Es sollen auch Regelungen fallen, die schon länger für Kopfschütteln sorgen - etwa zur regelmäßigen Prüfung von Kaffeemaschinen.",
+      "pubDate": "2026-07-15T15:31:18+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Analyse: Wie der Putschversuch 2016 und Erdoğans Machtgewinn zusammenhängen",
+      "description": "Wer steckte hinter dem Putschversuch 2016 in der Türkei - und was wusste die Staatsführung? Auch zehn Jahre danach ist vieles unklar. Fest steht: Präsident Erdoğan baute seinen Machtapparat seitdem aus. Von Benjamin Weber.",
+      "pubDate": "2026-07-15T15:13:55+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Gesetzentwurf zum Unterhaltsvorschuss soll im Juli ins Kabinett",
+      "description": "Familienministerin Prien treibt die Kürzungspläne beim Unterhaltsvorschuss weiter voran. Noch in diesem Monat soll der Gesetzentwurf ins Kabinett, sagte sie dem ARD-Hauptstadtstudio. Die Ministerin rechnet mit großen Einsparungen.",
+      "pubDate": "2026-07-15T14:37:50+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wettbewerb im Fernverkehr: Monopolkommission stärkt Italo-Pläne",
+      "description": "Die Monopolkommission unterstützt die Pläne der Bundesnetzagentur für mehr Wettbewerb im Bahnverkehr. Verkehrsminister Schnieder warnt vor einem Fernverkehr, der sich nur noch auf lukrative Strecken konzentriert.",
+      "pubDate": "2026-07-15T14:30:32+02:00",
+      "bild": ""
+    },
     {
       "title": "Marktbericht: Chipausrüster ASML erwartet ein Rekordjahr",
       "description": "Angetrieben vom KI-Boom hat Europas wichtigster Chipkonzern seine Umsatzziele deutlich übertroffen. Für 2026 winkt ASML ein Rekordjahr. Doch ein Unsicherheitsfaktor bleibt.",
@@ -53,43 +89,7 @@
     {
       "title": "Was beim Unterhaltsvorschuss geplant ist - und wen das betrifft",
       "description": "Mit einem Vorschuss springt der Staat ein, wenn ein Elternteil keinen Unterhalt für die Kinder zahlt. Das ist teuer, doch die Sparpläne der Familienministerin stoßen auf massive Kritik - auch in der Koalition. Was ist geplant, was wären die Folgen?",
-      "pubDate": "2026-07-15T13:17:17+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Machen Normen das Bauen teuer und umständlich?",
-      "description": "Wohnraum ist in vielen Städten knapp und teuer. Fachleute führen das auch auf Bürokratie zurück - die Masse deutscher Baunormen, etwa zu Treppen, Lärmschutz oder Stellplätzen. Muss das so sein? Von Laura Bisch.",
-      "pubDate": "2026-07-15T10:33:21+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Studierende geben Hälfte ihres Einkommens für Wohnen aus",
-      "description": "Mieten und Nebenkosten setzen Studierende finanziell stark unter Druck. Wer nicht mehr bei den Eltern lebt, gibt im Schnitt 54 Prozent seines verfügbaren Einkommens für Wohnen aus. Viele sind überbelastet.",
-      "pubDate": "2026-07-15T10:32:27+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Weltraumpolitik: Raumfahrer aus USA und Russland erreichen ISS",
-      "description": "Bei den Missionen zur Internationalen Raumstation arbeiten Moskau und Washington noch eng zusammen - trotz Differenzen wegen des Ukraine-Kriegs. Erstmals seit Jahren war nun sogar ein NASA-Chef bei einem Raketenstart in Baikonur dabei.",
-      "pubDate": "2026-07-15T10:12:21+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Mit dem \"Familienrathaus\" gegen Bürokratie",
-      "description": "Geburtsurkunde, Elterngeld, Kita-Anmeldung: Junge Familien erleben viel Bürokratie - und müssen dafür von Amt zu Amt. Wie es einfacher gehen kann, zeigt die Stadt Hamm in NRW mit dem \"Familienrathaus\". Von David Zajonz.",
-      "pubDate": "2026-07-15T10:10:11+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: DAX rutscht wieder unter 25.000 Punkte",
-      "description": "Der DAX ist am Morgen unter die psychologisch wichtige Marke von 25.000 Punkten gefallen. Auch ein Quartalsbericht von ASML deutlich über Markterwartungen konnte den deutschen Leitindex nicht beflügeln.",
-      "pubDate": "2026-07-15T10:08:35+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Einwanderungsbehörde: Neue Auflagen für ICE - und Proteste",
-      "description": "In den USA wird über Todesfälle im Zusammenhang mit der Einwanderungsbehörde ICE diskutiert. Medien berichten von neuen Auflagen für die Mitarbeiter. Mexiko hat wegen der Fälle den UN-Hochkommissar für Menschenrechte eingeschaltet.",
-      "pubDate": "2026-07-15T10:02:40+02:00",
+      "pubDate": "2026-07-15T15:23:00+02:00",
       "bild": ""
     }
   ],
