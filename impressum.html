@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressum – Studjo Infoterminal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --rot: #b61f29; --bg: #f9f9f9; --text: #0f2f37; --grau: #8a8d8f; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Nunito Sans', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; }
+
+    header { background: white; box-shadow: 0 2px 10px rgba(0,0,0,.06); }
+    .logo-container { max-width: 1200px; margin: 0 auto; }
+    .logo-container img { width: 100%; height: auto; display: block; }
+
+    main { flex: 1; max-width: 860px; margin: 0 auto; padding: 24px 20px 48px; width: 100%; }
+
+    .top-bar { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; flex-wrap: wrap; }
+    .back-button {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: white; color: var(--rot); border: 2px solid var(--rot);
+      border-radius: 999px; padding: 8px 20px; font-weight: 700;
+      font-size: 0.95rem; text-decoration: none; font-family: inherit;
+      transition: background .2s, color .2s; white-space: nowrap;
+    }
+    .back-button:hover { background: var(--rot); color: white; }
+    h1 { font-size: 1.5rem; font-weight: 800; color: var(--rot); }
+
+    /* Inhaltsbereich */
+    .karte {
+      background: white; border-radius: 16px;
+      box-shadow: 0 3px 12px rgba(0,0,0,.08);
+      padding: 28px 32px; margin-bottom: 16px;
+    }
+    .karte h2 {
+      font-size: 1.05rem; font-weight: 800; color: var(--rot);
+      border-bottom: 2px solid var(--rot); padding-bottom: 8px;
+      margin-bottom: 16px;
+    }
+    .karte h3 { font-size: 0.92rem; font-weight: 800; color: var(--text); margin: 16px 0 6px; }
+    .karte p, .karte address { font-size: 0.9rem; line-height: 1.75; color: #333; font-style: normal; }
+    .karte a { color: var(--rot); }
+    .karte a:hover { text-decoration: underline; }
+    .karte ul { margin: 8px 0 8px 1.4rem; }
+    .karte li { font-size: 0.9rem; line-height: 1.75; color: #333; }
+
+    /* Platzhalter-Markierung */
+    .pflicht {
+      background: #fff3cd; border: 1px dashed #f0a500;
+      border-radius: 4px; padding: 1px 6px;
+      font-weight: 700; color: #7a5000; font-style: italic;
+    }
+    .pflicht-hinweis {
+      background: #fff8e8; border-left: 3px solid #f0a500;
+      border-radius: 0 8px 8px 0; padding: 10px 14px;
+      font-size: 0.82rem; color: #5a4500; margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center; padding: 16px;
+      background: var(--rot); color: white; font-size: 0.85rem;
+    }
+    footer a { color: rgba(255,255,255,.85); text-decoration: none; margin: 0 8px; }
+    footer a:hover { color: white; text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-container">
+    <img src="header.jpg" alt="Studjo – Arbeit und Qualifizierung">
+  </div>
+</header>
+
+<main>
+  <div class="top-bar">
+    <a href="index.html" class="back-button" target="_self">← Zurück</a>
+    <h1>Impressum</h1>
+  </div>
+
+   <!-- ── 1. Anbieter / Betreiber ── -->
+  <div class="karte">
+    <h2>Angaben gemäß § 5 TMG</h2>
+
+    <h3>Herausgeber und inhaltlich Verantwortlicher</h3>
+    <address>
+      Evangelisches Johanneswerk gGmbH<br>
+      Studjo | Arbeit und Qualifizierung<br>
+      <span class="pflicht">Freisenbergstraße 33</span><br>
+      <span class="pflicht">58513 Lüdenscheid</span>
+    </address>
+
+    <h3>Übergeordneter Träger</h3>
+    <address>
+      Evangelisches Johanneswerk gGmbH<br>
+      Schildescher Str. 101<br>
+      33611 Bielefeld<br>
+      Telefon: 0521 801-01<br>
+      Fax: 0521 801-2569<br>
+      E-Mail: <a href="mailto:kommunikation@johanneswerk.de">kommunikation[AT]johanneswerk.de</a><br>
+      Web: <a href="https://www.johanneswerk.de" target="_blank" rel="noopener">www.johanneswerk.de</a>
+    </address>
+
+    <h3>Vertretungsberechtigte Geschäftsführung</h3>
+    <p>
+      Sabine Hirte (Vorsitzende)<br>
+      Dr. Bodo de Vries (stellv. Vorsitzender)<br>
+      Burkhard Bensiek<br>
+      Frank Lohmann
+    </p>
+
+    <h3>Rechtsform und Registereintrag</h3>
+    <p>
+      Rechtsform: Gemeinnützige Gesellschaft mit beschränkter Haftung (gGmbH)<br>
+      Handelsregister: Amtsgericht Bielefeld, HRB 42903<br>
+      Umsatzsteuer-Identifikationsnummer gem. § 27a UStG: DE316517497
+    </p>
+  </div>
+
+  <!-- ── 2. Inhaltliche Verantwortung ── -->
+  <div class="karte">
+    <h2>Inhaltlich Verantwortlicher gemäß § 18 Abs. 2 MStV</h2>
+    <p>
+      <span class="pflicht">Christoph Pasch</span><br>
+      Studjo | Arbeit und Qualifizierung<br>
+      Evangelisches Johanneswerk gGmbH<br>
+      <span class="pflicht">Freisenbergstraße 33</span><br>
+      <span class="pflicht">58513 Lüdenscheid</span><br>
+      E-Mail: <span class="pflicht">christoph.pasch[AT]johanneswerk.de</span>
+    </p>
+  </div>
+
+  <!-- ── 3. Technische Umsetzung ── -->
+  <div class="karte">
+    <h2>Technische Umsetzung und Hosting</h2>
+
+    <h3>Entwicklung und Pflege</h3>
+    <p>
+      <span class="pflicht">Marc Brenzel</span><br>
+      Studjo | Arbeit und Qualifizierung<br>
+      Evangelisches Johanneswerk gGmbH<br>
+      E-Mail: <span class="pflicht">marc.brenzel[AT]johanneswerk.de</span>
+    </p>
+
+    <h3>Hosting</h3>
+    <p>
+      Dieses Infoterminal wird als statische Website über den Dienst
+      <strong>GitHub Pages</strong> bereitgestellt:<br>
+      GitHub, Inc. · 88 Colin P. Kelly Jr. Street · San Francisco, CA 94107 · USA<br>
+      Web: <a href="https://pages.github.com" target="_blank" rel="noopener">pages.github.com</a>
+    </p>
+    <p>
+      Die Nutzung von GitHub Pages erfolgt auf Grundlage von
+      Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer
+      zuverlässigen und sicheren Bereitstellung des Angebots).
+    </p>
+  </div>
+
+  <!-- ── 4. Haftungsausschluss ── -->
+  <div class="karte">
+    <h2>Haftungsausschluss</h2>
+
+    <h3>Haftung für Inhalte</h3>
+    <p>
+      Die Inhalte dieser Seiten wurden mit größter Sorgfalt erstellt.
+      Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte
+      kann jedoch keine Gewähr übernommen werden.
+      Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte
+      auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.
+    </p>
+
+    <h3>Haftung für Links</h3>
+    <p>
+      Dieses Angebot enthält Links zu externen Webseiten Dritter,
+      auf deren Inhalte kein Einfluss besteht. Für diese fremden Inhalte
+      kann daher keine Gewähr übernommen werden.
+      Für die Inhalte der verlinkten Seiten ist stets der jeweilige
+      Anbieter oder Betreiber der Seiten verantwortlich.
+    </p>
+
+    <h3>Urheberrecht</h3>
+    <p>
+      Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten
+      unterliegen dem deutschen Urheberrecht.
+      Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung
+      außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung
+      des jeweiligen Autors bzw. Erstellers.
+    </p>
+    <p>
+      Die auf diesen Seiten verwendeten Metacom-Symbole sind urheberrechtlich
+      geschützt. Metacom® ist ein eingetragenes Warenzeichen von
+      Annick Schauer-Süss, Mayer-Johnson LLC und weiteren Rechteinhabern.
+    </p>
+  </div>
+
+  <!-- ── 5. Streitbeilegung ── -->
+  <div class="karte">
+    <h2>Außergerichtliche Streitbeilegung</h2>
+    <p>
+      Die Evangelisches Johanneswerk gGmbH ist nicht bereit und nicht verpflichtet,
+      an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.<br><br>
+      Die EU-Kommission stellt eine Plattform zur Online-Streitbeilegung bereit:
+      <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener">
+        ec.europa.eu/consumers/odr
+      </a>
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  &copy; <span class="pflicht">2006</span>
+  <strong>Studjo | Arbeit und Qualifizierung</strong> ·
+  Evangelisches Johanneswerk gGmbH
+  <br>
+  <a href="index.html">Startseite</a> |
+  <a href="impressum.html">Impressum</a> |
+  <a href="datenschutz.html">Datenschutz</a>
+</footer>
+
+</body>
+</html>
