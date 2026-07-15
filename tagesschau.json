@@ -1,7 +1,43 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "15.07.2026, 10:23 Uhr (UTC)",
+  "aktualisiert": "15.07.2026, 12:02 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Marktbericht: Chipausrüster ASML erwartet ein Rekordjahr",
+      "description": "Angetrieben vom KI-Boom hat Europas wichtigster Chipkonzern seine Umsatzziele deutlich übertroffen. Für 2026 winkt ASML ein Rekordjahr. Doch ein Unsicherheitsfaktor bleibt.",
+      "pubDate": "2026-07-15T13:58:19+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Von der Leyen und Selenskyj schließen Drohnenabkommen",
+      "description": "Mit vereinten Kräften wollen die EU und die Ukraine die Produktion von Drohnen hochfahren. Ein neues Abkommen soll Europas Industrie mit der erprobten Drohnenexpertise der Ukraine verzahnen.",
+      "pubDate": "2026-07-15T13:57:10+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Großbritannien plant nächtliche Social-Media-Sperre für Jugendliche",
+      "description": "Großbritannien plant bereits ein Social-Media-Verbot für unter 16-Jährige. Jetzt geht die Regierung noch weiter: Für 16- und 17-Jährige soll die Nutzung nachts automatisch gesperrt werden. Aufheben lässt sich die Sperre aber mit wenigen Klicks.",
+      "pubDate": "2026-07-15T13:48:49+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Liebich von Tschechien nach Deutschland gebracht",
+      "description": "Im April wurde die untergetauchte Rechtsextremistin Liebich in Tschechien gefasst - nun ist sie nach Deutschland gebracht worden. Zumindest vorerst soll sie ins Frauengefängnis in Chemnitz kommen.",
+      "pubDate": "2026-07-15T13:04:08+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Gründe für Überschuldung: Krankheit vor Arbeitslosigkeit",
+      "description": "Erkrankung, Sucht oder ein Unfall bringen Menschen am häufigsten in die Überschuldung. Das zeigen Daten des Statistischen Bundesamtes. Wer eine Schuldnerberatung aufsuchte, hatte im Schnitt fast 35.000 Euro Schulden.",
+      "pubDate": "2026-07-15T12:40:22+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Hilfsorganisation verteilt übrig gebliebenes WM-Essen an Bedürftige",
+      "description": "Egal ob WM-Stadion oder Fan-Fest: Nicht verkauftes Essen geht in Kansas City an hilfsbedürftige Familien. Die Organisation Pete's Garden hat bislang 15.000 Mahlzeiten verteilt - auch Hühnchen von Messis Geburtstagsfeier. Von N. Barth.",
+      "pubDate": "2026-07-15T12:38:53+02:00",
+      "bild": ""
+    },
     {
       "title": "Chinas Wirtschaft wächst so langsam wie seit Ende 2022 nicht",
       "description": "Die chinesische Wirtschaft hat im zweiten Quartal an Dynamik verloren. Das Bruttoinlandsprodukt blieb hinter den Erwartungen zurück. Der schwache Konsum und die Krise am Immobilienmarkt belasten die Konjunktur.",
@@ -17,7 +53,7 @@
     {
       "title": "Was beim Unterhaltsvorschuss geplant ist - und wen das betrifft",
       "description": "Mit einem Vorschuss springt der Staat ein, wenn ein Elternteil keinen Unterhalt für die Kinder zahlt. Das ist teuer, doch die Sparpläne der Familienministerin stoßen auf massive Kritik - auch in der Koalition. Was ist geplant, was wären die Folgen?",
-      "pubDate": "2026-07-15T11:19:16+02:00",
+      "pubDate": "2026-07-15T13:17:17+02:00",
       "bild": ""
     },
     {
@@ -54,42 +90,6 @@
       "title": "US-Einwanderungsbehörde: Neue Auflagen für ICE - und Proteste",
       "description": "In den USA wird über Todesfälle im Zusammenhang mit der Einwanderungsbehörde ICE diskutiert. Medien berichten von neuen Auflagen für die Mitarbeiter. Mexiko hat wegen der Fälle den UN-Hochkommissar für Menschenrechte eingeschaltet.",
       "pubDate": "2026-07-15T10:02:40+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Übersterblichkeit: Wie die Zahl der Hitzetoten ermittelt wird",
-      "description": "Die Zahl der Hitzetoten wird in den sogenannten Alternativmedien stark angezweifelt. Doch auch wenn es sich dabei meist um Schätzungen handelt, sind die Zahlen laut Wissenschaftlern belastbar. Von C. Frahm und P. Siggelkow.",
-      "pubDate": "2026-07-15T09:03:59+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Spanien und Gibraltar heben Grenzkontrollen auf",
-      "description": "Mehr als 100 Jahre trennten Grenzkontrollen und ein Metallzaun Spanien vom britischen Überseegebiet Gibraltar. Jetzt ist damit Schluss: Ein neues Abkommen kommt vor allem Tausenden spanischen Pendlern zugute.",
-      "pubDate": "2026-07-15T08:47:04+02:00",
-      "bild": ""
-    },
-    {
-      "title": "\"Entlastungskabinett\" soll Bürokratieabbau vorantreiben",
-      "description": "Kurz vor der parlamentarischen Sommerpause kommen Minister im sogenannten Entlastungskabinett zusammen. Ziel sollen Maßnahmen zum Abbau von Regulierung sein. Worum genau geht es? Von Chris Berdrow.",
-      "pubDate": "2026-07-15T07:05:40+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Verbraucherschutz - Die Schattendatenbank der Schufa",
-      "description": "Die Schufa speichert unbemerkt von der Öffentlichkeit veraltete Daten von Millionen Verbrauchern auf längere Zeit. Das ergeben Recherchen von NDR und SZ. Alles rechtens, so die Schufa, doch Daten- und Verbraucherschützer sind alarmiert.",
-      "pubDate": "2026-07-15T06:43:52+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Abstimmung in Abgeordnetenkammer: Schlappe für Italiens Ministerpräsidentin Meloni",
-      "description": "Es ist eine knappe, aber heikle Niederlage: Italiens Ministerpräsidentin Meloni hat eine Abstimmung zum geplanten neuen Wahlrecht verloren. Die Opposition fordert bereits Neuwahlen.",
-      "pubDate": "2026-07-15T05:01:41+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Produktion in der größten Diamantenmine Südafrikas wird gestoppt",
-      "description": "Sie galten lange als Inbegriff von Luxus. Doch die Nachfrage nach echten Diamanten geht zurück, auch wegen Konkurrenz aus dem Labor. Südafrikas größte Mine wird nun stillgelegt - in einer ohnehin schon armen Region. Von S. Ueberbach.",
-      "pubDate": "2026-07-15T04:58:38+02:00",
       "bild": ""
     }
   ],
