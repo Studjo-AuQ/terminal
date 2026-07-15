@@ -1,7 +1,37 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "15.07.2026, 08:26 Uhr (UTC)",
+  "aktualisiert": "15.07.2026, 10:23 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Chinas Wirtschaft wächst so langsam wie seit Ende 2022 nicht",
+      "description": "Die chinesische Wirtschaft hat im zweiten Quartal an Dynamik verloren. Das Bruttoinlandsprodukt blieb hinter den Erwartungen zurück. Der schwache Konsum und die Krise am Immobilienmarkt belasten die Konjunktur.",
+      "pubDate": "2026-07-15T12:10:02+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Zahl der Kinder weltweit ohne Impfungen sinkt",
+      "description": "Noch immer erhalten Millionen Kinder weltweit in ihrem ersten Lebensjahr keine Impfung. Doch die Zahl sinkt, zeigt ein Bericht von WHO und UNICEF. Ein Land verzeichnet eine besonders starke Aufwärtskurve.",
+      "pubDate": "2026-07-15T12:05:15+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Was beim Unterhaltsvorschuss geplant ist - und wen das betrifft",
+      "description": "Mit einem Vorschuss springt der Staat ein, wenn ein Elternteil keinen Unterhalt für die Kinder zahlt. Das ist teuer, doch die Sparpläne der Familienministerin stoßen auf massive Kritik - auch in der Koalition. Was ist geplant, was wären die Folgen?",
+      "pubDate": "2026-07-15T11:19:16+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Machen Normen das Bauen teuer und umständlich?",
+      "description": "Wohnraum ist in vielen Städten knapp und teuer. Fachleute führen das auch auf Bürokratie zurück - die Masse deutscher Baunormen, etwa zu Treppen, Lärmschutz oder Stellplätzen. Muss das so sein? Von Laura Bisch.",
+      "pubDate": "2026-07-15T10:33:21+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Studierende geben Hälfte ihres Einkommens für Wohnen aus",
+      "description": "Mieten und Nebenkosten setzen Studierende finanziell stark unter Druck. Wer nicht mehr bei den Eltern lebt, gibt im Schnitt 54 Prozent seines verfügbaren Einkommens für Wohnen aus. Viele sind überbelastet.",
+      "pubDate": "2026-07-15T10:32:27+02:00",
+      "bild": ""
+    },
     {
       "title": "Weltraumpolitik: Raumfahrer aus USA und Russland erreichen ISS",
       "description": "Bei den Missionen zur Internationalen Raumstation arbeiten Moskau und Washington noch eng zusammen - trotz Differenzen wegen des Ukraine-Kriegs. Erstmals seit Jahren war nun sogar ein NASA-Chef bei einem Raketenstart in Baikonur dabei.",
@@ -60,36 +90,6 @@
       "title": "Produktion in der größten Diamantenmine Südafrikas wird gestoppt",
       "description": "Sie galten lange als Inbegriff von Luxus. Doch die Nachfrage nach echten Diamanten geht zurück, auch wegen Konkurrenz aus dem Labor. Südafrikas größte Mine wird nun stillgelegt - in einer ohnehin schon armen Region. Von S. Ueberbach.",
       "pubDate": "2026-07-15T04:58:38+02:00",
-      "bild": ""
-    },
-    {
-      "title": "\"Offline Clubs\": Wenn Menschen bezahlen, um gemeinsam das Handy auszuschalten",
-      "description": "Brettspiele, Bücher, Wanderungen: In einem \"Offline Club\" ist eigentlich alles erlaubt. Nur kein Smartphone. Auf der Suche nach einer echten Verbindung verzichten die Teilnehmer ein paar Stunden aufs Handy - und zahlen dafür. Von H. Rau.",
-      "pubDate": "2026-07-15T04:45:03+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Abstimmung in Nationalversammlung: Frankreich will Sterbehilfe ermöglichen",
-      "description": "In Frankreich könnte künftig der begleitete Suizid unter bestimmten Voraussetzungen erlaubt werden. Heute stimmt die Nationalversammlung darüber ab. Die Gegner haben bereits Proteste angekündigt. Von Carolin Dylla.",
-      "pubDate": "2026-07-15T03:43:06+02:00",
-      "bild": ""
-    },
-    {
-      "title": "74-jähriger Mann in Florida hingerichtet - nach 40 Jahren Haft",
-      "description": "Der US-Bundesstaat Florida hat die Todesstrafe an einem der ältesten Gefangenen in der Geschichte des Bundesstaates vollstreckt. Ein 74-Jähriger, der wegen Mordes bereits seit 40 Jahren im Gefängnis saß, starb durch die Giftspritze.",
-      "pubDate": "2026-07-15T03:39:00+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Seeblockade wieder in Kraft - Angriffe auf Iran gehen weiter",
-      "description": "Erneut blockiert das US-Militär iranische Häfen und Küstengebiete. Die vierte Nacht in Folge haben die USA zudem Luftangriffe geflogen. Und Präsident Trump droht weiter: Er will Brücken und Kraftwerke zerstören. Nicht zum ersten Mal.",
-      "pubDate": "2026-07-15T07:16:25+02:00",
-      "bild": ""
-    },
-    {
-      "title": "2:0-Sieg gegen Frankreich: Spanien erreicht WM-Finale",
-      "description": "Spaniens Nationalmannschaft hat das erste Halbfinale der Fußball-WM gewonnen. Im US-amerikanischen Arlington setzte sich das Team mit einem 2:0-Sieg gegen Frankreich durch.",
-      "pubDate": "2026-07-14T23:21:48+02:00",
       "bild": ""
     }
   ],
