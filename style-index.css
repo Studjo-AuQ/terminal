@@ -1,4 +1,41 @@
-        /* Der äußere Container: Versteckt alles, was über den Rand hinausgeht */
+/* ═══════════════════════════════════════════════════════
+   Nunito Sans – lokal gehostet (kein Google-Serverzugriff)
+   Lizenz: SIL Open Font License 1.1
+   ═══════════════════════════════════════════════════════ */
+
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito Sans';
+  font-style:  normal;
+  font-weight: 400;
+  src: url('fonts/nunito-sans-v19-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito Sans';
+  font-style:  normal;
+  font-weight: 600;
+  src: url('fonts/nunito-sans-v19-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito Sans';
+  font-style:  normal;
+  font-weight: 700;
+  src: url('fonts/nunito-sans-v19-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito Sans';
+  font-style:  normal;
+  font-weight: 800;
+  src: url('fonts/nunito-sans-v19-latin-800.woff2') format('woff2');
+}
+
+/* Der äußere Container: Versteckt alles, was über den Rand hinausgeht */
         .ticker-container {
             width: 100%;
             overflow: hidden;
