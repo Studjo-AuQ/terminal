@@ -1,17 +1,53 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "16.07.2026, 06:00 Uhr (UTC)",
+  "aktualisiert": "16.07.2026, 08:42 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "UN befürchten mehr als 500 Tote bei Bootsunglücken vor Myanmar",
+      "description": "UN-Organisationen befürchten zwei Bootsunglücke vor der Küste Myanmars mit mehr als 500 Toten. An Bord: Angehörige der Rohingya-Minderheit, von denen manche aus einem riesigen Flüchtlingslager in Bangladesch kamen.",
+      "pubDate": "2026-07-16T10:40:44+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Immer mehr tödliche Unfälle mit E-Scootern",
+      "description": "Im vergangenen Jahr ist die Zahl der E-Scooter-Unfälle mit Toten oder Verletzten weiter gestiegen. Seit 2021 hat sie sich fast verdreifacht. Vor allem junge Menschen sind betroffen. Auch Alkohol spielt vergleichsweise oft eine Rolle.",
+      "pubDate": "2026-07-16T10:32:42+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX pendelt um 25.000 Punkte",
+      "description": "Der DAX ist weiter auf Richtungssuche und setzt sein Ringen um die 25.000-Punkte-Marke fort. Deutlich interessanter ist da ein Blick in den MDAX: Uber übernimmt Delivery Hero für eine Milliardensumme.",
+      "pubDate": "2026-07-16T10:16:01+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Milliardensumme: Uber übernimmt Lieferdienst Delivery Hero",
+      "description": "Es ist eine der größten Übernahmen in der europäischen Lieferbranche: Der US-Konzern Uber kauft den deutschen Essenslieferdienst Delivery Hero. Es geht um fast 13 Milliarden Euro.",
+      "pubDate": "2026-07-16T09:29:28+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Elektroautos legen bei Neuzulassungen deutlich zu",
+      "description": "Elektroautos gewinnen weiter an Bedeutung: Ihr Anteil an den Neuzulassungen ist bundesweit deutlich gestiegen. Fast jedes vierte neue Auto fährt rein elektrisch. Doch es gibt regionale Unterschiede.",
+      "pubDate": "2026-07-16T09:21:11+02:00",
+      "bild": ""
+    },
+    {
+      "title": "EU-Kommissar Brunner fordert Ende deutscher Grenzkontrollen",
+      "description": "Sinkende Migrationszahlen, härtere Asylregeln: EU-Kommissar Brunner hat das Ende der deutschen Grenzkontrollen gefordert. SPD-Politiker Schulz warnte angesichts der Urlaubswelle vor langen Staus durch die Kontrollen.",
+      "pubDate": "2026-07-16T09:07:03+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Trump genehmigt wieder umstrittene ICE-Kontrollen",
+      "description": "Die US-Einwanderungsbehörde soll ihre Verkehrskontrollen wieder aufnehmen - obwohl erst kürzlich erneut zwei Menschen bei ICE-Einsätzen erschossen wurden. Damit setzte sich Präsident Trump über führende Beamte seiner Regierung hinweg.",
+      "pubDate": "2026-07-16T08:36:31+02:00",
+      "bild": ""
+    },
     {
       "title": "Vance räumt Fehler bei Veröffentlichung von Epstein-Akten ein",
       "description": "Die Epstein-Akten und ihre Veröffentlichung sorgten für großen Druck auf die US-Regierung. Vizepräsident Vance kritisiert nun, wie seine Regierung das handhabte - und benennt eine aus seiner Sicht Verantwortliche.",
       "pubDate": "2026-07-16T07:42:21+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Nervosität vor TSMC-Zahlen",
-      "description": "Die Berichtssaison ist in vollem Gange, zahlreiche Unternehmen öffnen ihre Bücher. Doch nicht immer sorgt das für Euphorie - gerade in der Chipbranche sind die Erwartungen extrem hoch.",
-      "pubDate": "2026-07-16T07:31:07+02:00",
       "bild": ""
     },
     {
@@ -54,42 +90,6 @@
       "title": "Zahl der Opfer in Venezuela weiter gestiegen - EU stellt Mittel bereit",
       "description": "Gut drei Wochen nach den verheerenden Erdbeben in Venezuela ist die Zahl der bestätigten Opfer nach Regierungsangaben auf 4.829 gestiegen. Die Europäische Union will weitere 20 Millionen Euro Hilfsmittel bereitstellen.",
       "pubDate": "2026-07-16T02:55:55+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Fußball-Weltmeisterschaft: Argentinien zieht mit 2:1 gegen England ins Finale",
-      "description": "Titelverteidiger Argentinien steht erneut im Endspiel der Fußball-WM. Die Südamerikaner bezwangen im Halbfinale von Atlanta England mit 2:1 und treffen im Kampf um den vierten WM-Titel auf Europameister Spanien.",
-      "pubDate": "2026-07-15T23:13:30+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Militär greift Tanker auf dem Weg zu iranischem Hafen an",
-      "description": "Seit Tagen gehen die US-Streitkräfte wieder gegen Ziele in Iran vor. Am Abend griff das US-Militär nach eigenen Angaben einen Tanker an, der einen iranischen Hafen ansteuerte. Teheran sieht sich in einem \"existenziellen Krieg\".",
-      "pubDate": "2026-07-16T04:42:43+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Frankreich erlaubt Sterbehilfe für Schwerkranke unter Auflagen",
-      "description": "Nach intensiver Debatte hat Frankreich ein Gesetz zur Sterbehilfe verabschiedet. Ein interdisziplinäres Gremium prüft jeden Antrag - und Mediziner können aus Gewissensgründen ihr Mitwirken verweigern.",
-      "pubDate": "2026-07-15T20:30:41+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Journalist Can Dündar: \"Fast alle haben Erdoğan satt\"",
-      "description": "Journalist Can Dündar musste aus der Türkei fliehen, er lebt seit 2016 in Berlin. Im rbb-Interview spricht er darüber, wie er die Lage heute in der Türkei sieht. Und warum er glaubt, dass sich Erdoğan trotz aller Versuche nicht dauerhaft halten kann.",
-      "pubDate": "2026-07-15T20:21:45+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Weiter Grenzkontrollen zwischen Deutschland und Österreich",
-      "description": "Seit mehr als zehn Jahren gibt es Grenzkontrollen zwischen Deutschland und Österreich. Das soll auch so bleiben, so die Innenminister beider Länder - zumindest, bis die Auswirkungen der EU-Asylreform klarer sind.",
-      "pubDate": "2026-07-15T19:49:08+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bundeskanzler Merz: Sommerbilanz mit angezogener Handbremse",
-      "description": "Bei der Sommerpressekonferenz bemüht sich Kanzler Merz, ein realistisches Bild von sich und dem Zustand der Koalition zu zeichnen. Seine Priorität liegt dabei erkennbar auf der Außen- und Wirtschaftspolitik. Von Corinna Emundts.",
-      "pubDate": "2026-07-15T19:40:38+02:00",
       "bild": ""
     }
   ],
