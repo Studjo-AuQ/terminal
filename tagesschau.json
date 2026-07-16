@@ -1,7 +1,49 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "16.07.2026, 08:42 Uhr (UTC)",
+  "aktualisiert": "16.07.2026, 11:05 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Chipfertiger TSMC mit fünftem Rekord-Quartal in Folge",
+      "description": "Der taiwanesische Chiphersteller TSMC profitiert weiter vom KI-Boom und hat seine Umsatzprognose für das laufende Jahr erhöht. Zudem will der Konzern mehr investieren als bislang angekündigt.",
+      "pubDate": "2026-07-16T12:58:23+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Geheime Schatten-Diplomatie - Hintertür nach Moskau?",
+      "description": "Offiziell wurde der \"Petersburger Dialog\" von deutscher Seite aufgelöst, dennoch haben sich erneut deutsche Ex-Politiker mit Putin-Getreuen getroffen. Warum machen sie das - und was weiß die Bundesregierung? Von C. Humbs und M. Pohl.",
+      "pubDate": "2026-07-16T12:53:00+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Deutsch-Französischer Ministerrat: Schadensbegrenzung nach FCAS-Bruchlandung",
+      "description": "Das FCAS-Kampfjetprojekt ist gescheitert - wie geht es jetzt weiter mit den deutsch-französischen Beziehungen? Beim Ministerrat in Brühl sprechen Kanzler Merz und Präsident Macron nicht nur über sicherheitspolitische Fragen. Von Cai Rienäcker.",
+      "pubDate": "2026-07-16T11:44:30+02:00",
+      "bild": ""
+    },
+    {
+      "title": "US-Wirtschaft läuft robust - noch",
+      "description": "In den USA hat die Berichtssaison begonnen. Ein Blick in die Bankbilanzen verrät viel über den Zustand der US-Wirtschaft. Die läuft robust - aber wie lange noch?",
+      "pubDate": "2026-07-16T11:38:04+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Waldbrände in Kanada: Toronto hat derzeit schlechteste Luftqualität weltweit",
+      "description": "Wegen heftiger Waldbrände in Kanada hat die Metropole Toronto die weltweit schlechteste Luftqualität verzeichnet. Rauchschwaden zogen bis nach New York. Hinzu kommt die Hitze. Hat das Auswirkungen auf das WM-Finale?",
+      "pubDate": "2026-07-16T11:30:01+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Ukrainischer Verteidigungsminister Fedorow tritt zurück",
+      "description": "Konflikte mit dem Armeechef, Probleme bei der Wehrpflicht: Der ukrainische Verteidigungsminister Fedorow hat seinen Rücktritt erklärt. Präsident Selenskyj hatte zuvor eine Regierungsumbildung angekündigt.",
+      "pubDate": "2026-07-16T12:01:05+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Nach Geschichtsstreit: Polnische Kommune ringt um Ukraine-Hilfe",
+      "description": "Über einen Geschichtsstreit hat sich die Beziehung zwischen Polen und der Ukraine deutlich verschlechtert. Die Folgen sind auch in polnischen Kommunen zu spüren, in denen es bislang große Hilfsbereitschaft für die Ukraine gab. Von I. Ruck und M. Karpińska.",
+      "pubDate": "2026-07-16T10:44:23+02:00",
+      "bild": ""
+    },
     {
       "title": "UN befürchten mehr als 500 Tote bei Bootsunglücken vor Myanmar",
       "description": "UN-Organisationen befürchten zwei Bootsunglücke vor der Küste Myanmars mit mehr als 500 Toten. An Bord: Angehörige der Rohingya-Minderheit, von denen manche aus einem riesigen Flüchtlingslager in Bangladesch kamen.",
@@ -34,7 +76,7 @@
     },
     {
       "title": "EU-Kommissar Brunner fordert Ende deutscher Grenzkontrollen",
-      "description": "Sinkende Migrationszahlen, härtere Asylregeln: EU-Kommissar Brunner hat das Ende der deutschen Grenzkontrollen gefordert. SPD-Politiker Schulz warnte angesichts der Urlaubswelle vor langen Staus durch die Kontrollen.",
+      "description": "Sinkende Migrationszahlen, härtere Asylregeln: EU-Kommissar Brunner hat erneut das Ende der deutschen Grenzkontrollen gefordert. SPD-Politiker Schulz warnte angesichts der Urlaubswelle vor langen Staus durch die Kontrollen.",
       "pubDate": "2026-07-16T09:07:03+02:00",
       "bild": ""
     },
@@ -48,48 +90,6 @@
       "title": "Vance räumt Fehler bei Veröffentlichung von Epstein-Akten ein",
       "description": "Die Epstein-Akten und ihre Veröffentlichung sorgten für großen Druck auf die US-Regierung. Vizepräsident Vance kritisiert nun, wie seine Regierung das handhabte - und benennt eine aus seiner Sicht Verantwortliche.",
       "pubDate": "2026-07-16T07:42:21+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wie Straßen hitzefest werden können",
-      "description": "Die extremen Temperaturen Ende Juni haben vielen Straßen stark zugesetzt. Dabei gäbe es Asphalt, der solchen Belastungen standhält. Er kommt jedoch kaum zum Einsatz - nicht nur wegen höherer Kosten. Von Jan Kerckhoff.",
-      "pubDate": "2026-07-16T06:25:37+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Urteil zum Einsturz der Morandi-Brücke in Genua erwartet",
-      "description": "Im August 2018 stürzte in Genua die Morandi-Brücke ein. Die Bilder sorgten für Entsetzen. Wer ist verantwortlich für das Unglück, bei dem 43 Menschen starben? Heute soll in erster Instanz ein Urteil fallen. Von Lisa Weiß.",
-      "pubDate": "2026-07-16T06:25:22+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Europäische Ermittler fordern Militäreinsatz gegen Kokainschmuggler",
-      "description": "Schüsse auf Motoren von Schmuggelbooten? Das könnte zumindest nach dem Willen europäischer Strafverfolger bald zum Standardrepertoire im Kampf gegen Kokain gehören - wie ein vertrauliches Dokument zeigt, das NDR, WDR und SZ vorliegt.",
-      "pubDate": "2026-07-16T06:00:41+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Rabatt für Odysseus: Warum Griechenland Filmproduktionen anzieht",
-      "description": "Christopher Nolans \"Odyssee\" wurde zum Teil in Griechenland gedreht. Doch es sind nicht nur antike Stoffe, die Produktionen in das Land führen: Förderprogramme machen Griechenland zu einem gefragten Filmstandort. Von T. Kleinjung.",
-      "pubDate": "2026-07-16T04:53:11+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Russland feuert Raketen auf Kiew ab",
-      "description": "Russland hat Kiew erneut mit ballistischen Raketen angegriffen. Laut Bürgermeister Klitschko gab es bei mehreren Einschlägen zwei Tote. Moskau wirft der Ukraine vor, den Chefingenieur von Saporischschja getötet zu haben.",
-      "pubDate": "2026-07-16T07:46:14+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ebola breitet sich in Demokratischer Republik Kongo aus",
-      "description": "Nach Regierungsangaben ist die Zahl der bestätigten Ebola-Fälle in der Demokratischen Republik Kongo auf mehr als 2.000 gestiegen. Es ist der am schnellsten wachsende Ausbruch seit Beginn der Aufzeichnungen, so die Behörden.",
-      "pubDate": "2026-07-16T03:57:50+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Zahl der Opfer in Venezuela weiter gestiegen - EU stellt Mittel bereit",
-      "description": "Gut drei Wochen nach den verheerenden Erdbeben in Venezuela ist die Zahl der bestätigten Opfer nach Regierungsangaben auf 4.829 gestiegen. Die Europäische Union will weitere 20 Millionen Euro Hilfsmittel bereitstellen.",
-      "pubDate": "2026-07-16T02:55:55+02:00",
       "bild": ""
     }
   ],
