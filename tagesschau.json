@@ -1,9 +1,63 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "16.07.2026, 15:18 Uhr (UTC)",
+  "aktualisiert": "16.07.2026, 16:50 Uhr (UTC)",
   "meldungen": [
     {
-      "title": "EuGH: FIFA-Regeln könnten gegen Kartellrecht verstoßen",
+      "title": "Für die UN heißt es sparen, sparen, sparen - und umziehen",
+      "description": "Stühlerücken in Genf: Im Palais Wilson tauschen zwei UN-Einrichtungen die Räumlichkeiten. Das Menschenrechtsbüro zieht aus, das Flüchtlingshilfswerk zieht ein. Beide haben dafür denselben Grund: sparen. Von Stefanie Dodt.",
+      "pubDate": "2026-07-16T18:42:15+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Iran-Krieg: Golfstaaten fürchten neue Eskalation",
+      "description": "Die US-Militärbasen in Kuwait, Bahrain und Jordanien werden seit Ausbruch des Kriegs von Iran immer wieder angegriffen - auch jetzt. Dort stellt sich die bange Frage: Sind die Attacken der Auftakt zu größeren Kampfhandlungen? Von Moritz Behrendt.",
+      "pubDate": "2026-07-16T18:41:56+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX kann Verluste eindämmen",
+      "description": "Der Konflikt im Nahen Osten beschäftigt auch heute wieder die Anleger am deutschen Aktienmarkt - und sorgt für Verunsicherung. Am Ende kann der DAX aber größere Verluste verhindern und behält die 25.000 Punkte im Blick.",
+      "pubDate": "2026-07-16T18:12:32+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wadephul an der NATO-Nordflanke: Alles, nur kein Alarmismus",
+      "description": "Erst Norwegen, dann Finnland: Vier Tage war Außenminister Wadephul an der NATO-Nordflanke unterwegs. Und immer wieder geht es um eine Frage: Wie kann man sich besser gegen Russland schützen? Von Christina Nagel.",
+      "pubDate": "2026-07-16T18:00:35+02:00",
+      "bild": ""
+    },
+    {
+      "title": "US-Spritpreise: Wird die Wahl an der Zapfsäule entschieden?",
+      "description": "Die Spritpreise in den USA sind enorm in die Höhe geklettert. Muss Trump dieses Problem lösen, damit seine Partei eine Chance bei den nächsten Wahlen hat? Von Paula Protzen.",
+      "pubDate": "2026-07-16T18:00:18+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Brücken-Einsturz in Genua: Gemischte Gefühle nach Urteil gegen Top-Manager",
+      "description": "Vor acht Jahre stürzte die Morandi-Brücke in Genua zusammen, 43 Menschen starben. Nun ist ist der Ex-Chef des Autobahnbetreibers verurteilt worden. Betroffene sehen das Urteil mit gemischten Gefühlen. Von Christine Auerbach",
+      "pubDate": "2026-07-16T17:59:31+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Kassenreform: Was bedeuten die Kürzungen für Psychotherapien?",
+      "description": "Das Sparpaket für die gesetzliche Krankenversicherung sieht Kürzungen in der Psychotherapie vor. Die Branche zeigt sich alarmiert und warnt vor den Folgen. Ein Gesundheitsökonom erkennt aber auch Chancen. Von Jens Eberl.",
+      "pubDate": "2026-07-16T17:29:41+02:00",
+      "bild": ""
+    },
+    {
+      "title": "BGH-Urteil: Fitnessstudio muss einfache Online-Kündigung anbieten",
+      "description": "Wer online seine Mitgliedschaft in einem Fitnessstudio kündigt, muss auf einer Seite landen, auf der es nur um die Kündigung geht - und nicht z.B. um Vertragspausen. Das BGH-Urteil lässt sich auch auf andere Online-Abos übertragen. Von A. Lagmöller.",
+      "pubDate": "2026-07-16T17:29:23+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Bundesregierung: Ostdeutsche haben seltener Spitzenämter",
+      "description": "Bis heute gibt es in Politik, Justiz oder Wirtschaft eine \"Repräsentationslücke Ost\". Heißt: Top-Jobs gehen eher an Westdeutsche. Das gesteht auch die Bundesregierung ein. Die Linke fordert Veränderung. Von F. Aischmann.",
+      "pubDate": "2026-07-16T17:27:15+02:00",
+      "bild": ""
+    },
+    {
+      "title": "EuGH äußert Zweifel an FIFA-Regeln zu Spielerberatern",
       "description": "Wie weit darf der Fußball-Weltverband FIFA in das lukrative Geschäft von Spielervermittlern eingreifen? Das höchste europäische Gericht hat nun Leitlinien vorgegeben - einige bestehende Regeln könnten gegen Kartellrecht verstoßen.",
       "pubDate": "2026-07-16T16:33:01+02:00",
       "bild": ""
@@ -11,7 +65,7 @@
     {
       "title": "Ukraine: Was die Ablösung von Verteidigungsminister Fedorow bedeutet",
       "description": "Noch im Januar galt der 35-jährige Fedorow als Shootingstar im ukrainischen Kabinett. Nun räumt der Verteidigungsminister seinen Platz schon wieder. Einige in der Ukraine treibt das sogar auf die Straße. Von Thilko Gläßgen.",
-      "pubDate": "2026-07-16T16:36:05+02:00",
+      "pubDate": "2026-07-16T17:39:25+02:00",
       "bild": ""
     },
     {
@@ -36,60 +90,6 @@
       "title": "Klingbeil will Straffreiheit nach Selbstanzeige abschaffen",
       "description": "Die Bundesregierung will härter gegen Steuerbetrug vorgehen. Künftig sollen etwa Selbstanzeigen nicht mehr generell zu Straffreiheit führen. Mit weiteren Maßnahmen hofft Finanzminister Klingbeil auf zusätzliche Einnahmen.",
       "pubDate": "2026-07-16T14:54:12+02:00",
-      "bild": ""
-    },
-    {
-      "title": "USA verhängen 25 Prozent Zoll auf viele Importe aus Brasilien",
-      "description": "Die US-Regierung will zahlreiche Waren aus Brasilien künftig mit zusätzlichen Zöllen belegen. Washington begründet den Schritt mit angeblich unfairen Handelspraktiken. Brasilien kündigte Gegenmaßnahmen an.",
-      "pubDate": "2026-07-16T14:37:37+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Spahn als Vater - Diskussion über Leihmutterschaft",
-      "description": "Früher selbst Gegner der Leihmutterschaft, hat CDU-Politiker Spahn nun die Geburt seines Sohnes durch eine Leihmutter in den USA bekannt gegeben. Die Bundesregierung stellt aber klar: In Deutschland bleibt die Praxis verboten.",
-      "pubDate": "2026-07-16T14:30:45+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Chipfertiger TSMC mit fünftem Rekord-Quartal in Folge",
-      "description": "Der taiwanesische Chiphersteller TSMC profitiert weiter vom KI-Boom und hat seine Umsatzprognose für das laufende Jahr erhöht. Zudem will der Konzern mehr investieren als bislang angekündigt.",
-      "pubDate": "2026-07-16T12:58:23+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Deutsche Schattendiplomatie - Hintertür nach Moskau?",
-      "description": "Offiziell wurde der \"Petersburger Dialog\" von deutscher Seite aufgelöst, dennoch haben sich erneut deutsche Ex-Politiker mit Putin-Getreuen getroffen. Warum machen sie das - und was weiß die Bundesregierung? Von C. Humbs und M. Pohl.",
-      "pubDate": "2026-07-16T12:53:00+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Deutsch-Französischer Ministerrat: Schadensbegrenzung nach FCAS-Bruchlandung",
-      "description": "Das FCAS-Kampfjetprojekt ist gescheitert - wie geht es jetzt weiter mit den deutsch-französischen Beziehungen? Beim Ministerrat in Brühl sprechen Kanzler Merz und Präsident Macron nicht nur über sicherheitspolitische Fragen. Von Cai Rienäcker.",
-      "pubDate": "2026-07-16T11:44:30+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Wirtschaft läuft robust - noch",
-      "description": "In den USA hat die Berichtssaison begonnen. Ein Blick in die Bankbilanzen verrät viel über den Zustand der US-Wirtschaft. Die läuft robust - aber wie lange noch? Von Heidi Radvilas.",
-      "pubDate": "2026-07-16T11:38:04+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Waldbrände in Kanada: Toronto hat derzeit schlechteste Luftqualität weltweit",
-      "description": "Wegen heftiger Waldbrände in Kanada hat die Metropole Toronto die weltweit schlechteste Luftqualität verzeichnet. Rauchschwaden zogen bis nach New York. Hinzu kommt die Hitze. Hat das Auswirkungen auf das WM-Finale?",
-      "pubDate": "2026-07-16T11:30:01+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ukrainischer Verteidigungsminister Fedorow tritt zurück",
-      "description": "Konflikte mit dem Armeechef, Probleme bei der Wehrpflicht: Der ukrainische Verteidigungsminister Fedorow hat seinen Rücktritt erklärt. Präsident Selenskyj hatte zuvor eine Regierungsumbildung angekündigt.",
-      "pubDate": "2026-07-16T12:01:05+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Nach Geschichtsstreit: Polnische Kommune ringt um Ukraine-Hilfe",
-      "description": "Über einen Geschichtsstreit hat sich die Beziehung zwischen Polen und der Ukraine deutlich verschlechtert. Die Folgen sind auch in polnischen Kommunen zu spüren, in denen es bislang große Hilfsbereitschaft für die Ukraine gab. Von I. Ruck und M. Karpińska.",
-      "pubDate": "2026-07-16T10:44:23+02:00",
       "bild": ""
     }
   ],
