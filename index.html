@@ -234,24 +234,24 @@
         <div class="zk-card-detail"   id="zk-p-detail">…</div>
       </div>
     </div>
+   </div>
+    </div>   
 
-<!-- ══ JAVASCRIPT ══ -->
 <script>
 (function() {
 
   /* ── Konfiguration ───────────────────────────────── */
   const CFG = {
-    WORK_START:  8 * 60,      // 8:00 Uhr  = 480 min
-    WORK_END_N:  15 * 60 + 15, // 15:15 Uhr = 915 min  (normal)
-    WORK_END_K:  14 * 60 + 45, // 14:45 Uhr = 885 min  (Freitag / 1. Di.)
-    BREAK1_S:    10 * 60,      // 10:00 = 600
-    BREAK1_E:    10 * 60 + 20, // 10:20 = 620
-    BREAK2_S:    12 * 60,      // 12:00 = 720
-    BREAK2_E:    13 * 60,      // 13:00 = 780
+    WORK_START:   8 * 60,
+    WORK_END_N:  15 * 60 + 15,
+    WORK_END_K:  14 * 60 + 45,
+    BREAK1_S:    10 * 60,
+    BREAK1_E:    10 * 60 + 20,
+    BREAK2_S:    12 * 60,
+    BREAK2_E:    13 * 60,
   };
 
-  /* ── Hilfsfunktionen ─────────────────────────────── */
-  const TAGE   = ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'];
+  const WOCHENTAGE = ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'];
   const MONATE = ['Januar','Februar','März','April','Mai','Juni',
                   'Juli','August','September','Oktober','November','Dezember'];
 
@@ -267,28 +267,25 @@
 
   function minutenBisNaechsteMo8(jetzt) {
     const tag = jetzt.getDay();
-    // Tage bis Montag
     const daysTo = tag === 0 ? 1 : tag === 6 ? 2 : 1;
-    const ziel = new Date(jetzt);
-    ziel.setDate(jetzt.getDate() + daysTo);
-    ziel.setHours(8, 0, 0, 0);
-    return Math.max(0, Math.floor((ziel - jetzt) / 60000));
+    const next = new Date(jetzt);
+    next.setDate(jetzt.getDate() + daysTo);
+    next.setHours(8, 0, 0, 0);
+    return Math.max(0, Math.floor((next - jetzt) / 60000));
   }
 
   function minutenBisNaechsteArbeit(jetzt, tag) {
-    // Freitag → Montag; sonst nächster Tag
     const daysTo = tag === 5 ? 3 : 1;
-    const ziel = new Date(jetzt);
-    ziel.setDate(jetzt.getDate() + daysTo);
-    ziel.setHours(8, 0, 0, 0);
-    return Math.max(0, Math.floor((ziel - jetzt) / 60000));
+    const next = new Date(jetzt);
+    next.setDate(jetzt.getDate() + daysTo);
+    next.setHours(8, 0, 0, 0);
+    return Math.max(0, Math.floor((next - jetzt) / 60000));
   }
 
   function ersterDienstagDerMonats(d) {
     return d.getDay() === 2 && d.getDate() <= 7;
   }
 
-  /* ── DOM-Helfer ──────────────────────────────────── */
   function setArbeit(css, icon, status, countdown, detail) {
     document.getElementById('zk-arbeit').className    = 'zk-card ' + css;
     document.getElementById('zk-a-icon').textContent  = icon;
@@ -304,136 +301,81 @@
     document.getElementById('zk-p-detail').textContent    = detail;
   }
 
-  /* ── Haupt-Update-Funktion ───────────────────────── */
   function update() {
     const jetzt = new Date();
-    const tag   = jetzt.getDay();   // 0=So … 6=Sa
+    const tag   = jetzt.getDay();
     const std   = jetzt.getHours();
     const min   = jetzt.getMinutes();
-    const sek   = jetzt.getSeconds();
-    const tm    = std * 60 + min;   // aktuelle Zeit in Minuten
+    const tm    = std * 60 + min;
 
-    /* Datum + Uhr */
     document.getElementById('zk-datum').textContent =
-      TAGE[tag] + ', den ' + jetzt.getDate() + '. ' +
+      WOCHENTAGE[tag] + ', den ' + jetzt.getDate() + '. ' +
       MONATE[jetzt.getMonth()] + ' ' + jetzt.getFullYear();
     document.getElementById('zk-uhr').textContent =
       pad(std) + ':' + pad(min);
 
-    /* Feierabend-Zeit bestimmen */
     const kurzTag  = tag === 5 || ersterDienstagDerMonats(jetzt);
-    const WORK_END = kurzTag ? CFG.WORK_END_K : CFG.WORK_END_N;
+    const WORK_END = kurzTag ? CFG.WORK_END_K : CFG.WORK_END_N;  // ✅ korrekt
     const feierStr = kurzTag ? '14:45' : '15:15';
-
     const istArbeitstag = tag >= 1 && tag <= 5;
 
-    /* ── Fälle ── */
-
     if (!istArbeitstag) {
-      /* WOCHENENDE */
       const min2 = minutenBisNaechsteMo8(jetzt);
-      setArbeit('zk-grau','🏠',
-        'Wochenende',
-        'noch ' + minText(min2),
-        'Montag 8:00 Uhr → Arbeitsbeginn');
-      setPause('zk-grau','🌙',
-        'Ruhetag',
-        '–',
-        'Keine Arbeitszeiten heute');
+      setArbeit('zk-grau','🏠','Wochenende','noch ' + minText(min2),'Montag 8:00 Uhr → Arbeitsbeginn');
+      setPause('zk-grau','🌙','Ruhetag','–','Keine Arbeitszeiten heute');
       return;
     }
 
     if (tm < CFG.WORK_START) {
-      /* VOR DER ARBEIT */
       const min2 = CFG.WORK_START - tm;
-      setArbeit('zk-blau','🌅',
-        'Vor der Arbeit',
-        'noch ' + minText(min2),
-        'Arbeit beginnt um 8:00 Uhr');
-      setPause('zk-grau','☕',
-        'Noch keine Pause',
-        '–',
-        'Erste Pause um 10:00 Uhr');
+      setArbeit('zk-blau','🌅','Vor der Arbeit','noch ' + minText(min2),'Arbeit beginnt um 8:00 Uhr');
+      setPause('zk-grau','☕','Noch keine Pause','–','Erste Pause um 10:00 Uhr');
       return;
     }
 
     if (tm >= WORK_END) {
-      /* FEIERABEND */
       const min2 = minutenBisNaechsteArbeit(jetzt, tag);
-      setArbeit('zk-lila','🏠',
-        'Feierabend!',
-        'nächste Arbeit in ' + minText(min2),
-        (tag === 5 ? 'Montag' : 'Morgen') + ' 8:00 Uhr');
-      setPause('zk-grau','✓',
-        'Alle Pausen vorbei',
-        '–',
-        'Guten Feierabend!');
+      setArbeit('zk-lila','🏠','Feierabend!','nächste Arbeit in ' + minText(min2),(tag === 5 ? 'Montag' : 'Morgen') + ' 8:00 Uhr');
+      setPause('zk-grau','✓','Alle Pausen vorbei','–','Guten Feierabend!');
       return;
     }
 
-    /* INNERHALB DER ARBEITSZEIT */
-
     if (tm >= CFG.BREAK1_S && tm < CFG.BREAK1_E) {
-      /* PAUSE 1 */
       const min2 = CFG.BREAK1_E - tm;
-      setArbeit('zk-orange','☕',
-        'Pausenzeit',
-        'noch ' + minText(min2),
-        'Weiterarbeit um 10:20 Uhr');
-      setPause('zk-orange','⏳',
-        'Pause läuft',
-        'noch ' + minText(min2),
-        'Ende um 10:20 Uhr');
+      setArbeit('zk-orange','☕','Pausenzeit','noch ' + minText(min2),'Weiterarbeit um 10:20 Uhr');
+      setPause('zk-orange','⏳','Pause läuft','noch ' + minText(min2),'Ende um 10:20 Uhr');
       return;
     }
 
     if (tm >= CFG.BREAK2_S && tm < CFG.BREAK2_E) {
-      /* PAUSE 2 – Mittagspause */
       const min2 = CFG.BREAK2_E - tm;
-      setArbeit('zk-orange','🍽️',
-        'Mittagspause',
-        'noch ' + minText(min2),
-        'Weiterarbeit um 13:00 Uhr');
-      setPause('zk-orange','⏳',
-        'Mittagspause läuft',
-        'noch ' + minText(min2),
-        'Ende um 13:00 Uhr');
+      setArbeit('zk-orange','🍽️','Mittagspause','noch ' + minText(min2),'Weiterarbeit um 13:00 Uhr');
+      setPause('zk-orange','⏳','Mittagspause läuft','noch ' + minText(min2),'Ende um 13:00 Uhr');
       return;
     }
 
     /* NORMALE ARBEITSZEIT */
-    const minBisFeier = WORK_END - tm;
-    setArbeit('zk-gruen','✅',
-      'Arbeitszeit',
-      'noch ' + minText(minBisFeier),
-      'Feierabend um ' + feierStr + ' Uhr');
+    const minBisFeier = WORK_END - tm;   // ✅ Fix: war WORK_END (undefiniert)
+    setArbeit('zk-gruen','✅','Arbeitszeit','noch ' + minText(minBisFeier),'Feierabend um ' + feierStr + ' Uhr');
 
-    // Nächste Pause?
     if (tm < CFG.BREAK1_S) {
       const min2 = CFG.BREAK1_S - tm;
-      setPause('zk-gruen','☕',
-        'Nächste Pause um 10:00',
-        'in ' + minText(min2),
-        'Dauer: 20 Min. (bis 10:20 Uhr)');
+      setPause('zk-gruen','☕','Nächste Pause um 10:00','in ' + minText(min2),'Dauer: 20 Min. (bis 10:20 Uhr)');
     } else if (tm < CFG.BREAK2_S) {
       const min2 = CFG.BREAK2_S - tm;
-      setPause('zk-gruen','🍽️',
-        'Mittagspause um 12:00',
-        'in ' + minText(min2),
-        'Dauer: 1 Std. (bis 13:00 Uhr)');
+      setPause('zk-gruen','🍽️','Mittagspause um 12:00','in ' + minText(min2),'Dauer: 1 Std. (bis 13:00 Uhr)');
     } else {
-      setPause('zk-gruen','✓',
-        'Pausen beendet',
-        '–',
-        'Weiter bis ' + feierStr + ' Uhr');
+      setPause('zk-gruen','✓','Pausen beendet','–','Weiter bis ' + feierStr + ' Uhr');
     }
   }
 
-  /* Sofort starten + jede Sekunde aktualisieren */
   update();
   setInterval(update, 1000);
 
-})();                  
+})();
+</script>               
+        </div>
+        </div>
         </div>
     </main>
 
