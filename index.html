@@ -124,11 +124,12 @@
     .zk-lila   { background: #f3e8ff; color: #7e22ce; }
     .zk-rot    { background: #fee2e2; color: #b61f29; }
   /* ── Navigations-Kacheln Grid ── */
+/* ── Navigations-Kacheln Grid ── */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 16px;
-  margin-top: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
 }
 
 .card {
@@ -137,7 +138,7 @@
   align-items: center;
   justify-content: flex-start;
   border-radius: 16px;
-  padding: 16px 12px;
+  padding: 20px 16px;
   text-decoration: none;
   color: #1a1a1a;
   font-weight: 700;
@@ -153,15 +154,15 @@
 
 .card-img {
   width: 100%;
-  max-width: 120px;
-  height: 90px;
+  max-width: 150px;      /* ← vorher 120px, jetzt größer */
+  height: 120px;         /* ← vorher 90px, jetzt größer  */
   object-fit: cover;
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .card h2 {
-  font-size: 0.95rem;
+  font-size: 1rem;       /* ← etwas größer als vorher */
   line-height: 1.3;
   margin: 0;
 }
@@ -184,9 +185,12 @@
 .card-color-15 { background: #f1f8e9; }
 .card-color-16 { background: #fff8e1; }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .card-img {
+    height: 90px;
   }
 }
   
@@ -304,11 +308,13 @@
       const tm    = std * 60 + min;
 
       /* Datum + Uhrzeit anzeigen */
-      document.getElementById('zk-datum').textContent =
-        WOCHENTAGE[tag] + ', den ' + jetzt.getDate() + '. ' +
-        MONATE[jetzt.getMonth()] + ' ' + jetzt.getFullYear();
-      document.getElementById('zk-uhr').textContent =
-        pad(std) + ':' + pad(min);
+     // NEU – bitte einsetzen:
+document.getElementById('zk-uhr').textContent =
+  pad(std) + ':' + pad(min);
+document.getElementById('zk-datum').textContent =
+  WOCHENTAGE[tag] + ', ' + jetzt.getDate() + '. ' +
+  MONATE[jetzt.getMonth()] + ' ' + jetzt.getFullYear();
+
 
       /* Kurztag oder Normaltag? */
       const kurzTag  = tag === 5 || ersterDienstagDerMonats(jetzt);
