@@ -32,179 +32,211 @@
        ZEITKACHEL – steht VOR den Navigations-Kacheln
        ══════════════════════════════════════════════════════ -->
   <style>
-    .zk-widget {
-      background: white;
-      border-radius: 18px;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.10);
-      overflow: hidden;
-      width: 100%;
-      margin-bottom: 20px;
-    }
 
-    /* Header: eine Zeile, Uhrzeit links, Datum rechts */
-.zk-header {
-  background: #b61f29;
-  color: white;
-  padding: 12px 22px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-}
+  /* ══ ZEITKACHEL ══ */
+  .zk-widget {
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 24px;
+  }
 
-.zk-uhr {
-  font-size: 2.4rem;
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: .03em;
-}
+  /* ── Header: Uhrzeit links, Datum rechts ── */
+  .zk-header {
+    background: #b61f29;
+    color: #ffffff;
+    padding: 14px 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: nowrap;        /* ← KEIN Umbruch */
+  }
 
-.zk-datum {
-  font-size: 2.4rem;
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: .01em;
-  text-align: right;
-}
+  .zk-uhr {
+    font-size: 3.2rem;        /* ← GRÖSSER */
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: .03em;
+    white-space: nowrap;
+  }
 
-@media (max-width: 520px) {
-  .zk-uhr,
   .zk-datum {
-    font-size: 1.4rem;
+    font-size: 3.2rem;        /* ← GLEICH GROß wie Uhrzeit */
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: .01em;
+    text-align: right;
+    white-space: nowrap;
   }
-}
 
-    /* Status-Karte */
-    .zk-card {
-      border-radius: 14px;
-      padding: 14px 16px;
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      transition: background .3s, color .3s;
-    }
-    .zk-card-icon {
+  @media (max-width: 700px) {
+    .zk-uhr,
+    .zk-datum {
       font-size: 2rem;
-      flex-shrink: 0;
-      line-height: 1;
-      margin-top: 2px;
     }
-    .zk-card-label {
-      font-size: 0.65rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: .07em;
-      opacity: .65;
-      margin-bottom: 3px;
+  }
+
+  @media (max-width: 420px) {
+    .zk-uhr,
+    .zk-datum {
+      font-size: 1.4rem;
     }
-    .zk-card-status {
-      font-size: 1rem;
-      font-weight: 800;
-      line-height: 1.25;
-      margin-bottom: 3px;
+  }
+
+  /* ── Status-Bereich: IMMER 2 Spalten ── */
+  .zk-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;   /* ← IMMER nebeneinander */
+    gap: 14px;
+    padding: 16px 18px 18px;
+  }
+
+  /* Nur auf sehr kleinen Handys untereinander */
+  @media (max-width: 380px) {
+    .zk-body {
+      grid-template-columns: 1fr;
     }
-    .zk-card-countdown {
-      font-size: 1.25rem;
-      font-weight: 800;
-      line-height: 1.1;
-    }
-    .zk-card-detail {
-      font-size: 0.78rem;
-      font-weight: 600;
-      opacity: .75;
-      margin-top: 3px;
-      line-height: 1.35;
-    }
+  }
 
-    /* Farbvarianten */
-    .zk-gruen  { background: #dcfce7; color: #15803d; }
-    .zk-orange { background: #fff3e0; color: #b45309; }
-    .zk-blau   { background: #dbeafe; color: #1e40af; }
-    .zk-grau   { background: #f1f5f9; color: #475569; }
-    .zk-lila   { background: #f3e8ff; color: #7e22ce; }
-    .zk-rot    { background: #fee2e2; color: #b61f29; }
-  /* ── Navigations-Kacheln Grid ── */
-/* ── Navigations-Kacheln Grid ── */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-  margin-top: 24px;
-}
+  /* ── Status-Karte ── */
+  .zk-card {
+    border-radius: 14px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    transition: background .3s, color .3s;
+  }
+  .zk-card-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+    line-height: 1;
+    margin-top: 2px;
+  }
+  .zk-card-label {
+    font-size: 0.65rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .07em;
+    opacity: .65;
+    margin-bottom: 3px;
+  }
+  .zk-card-status {
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.25;
+    margin-bottom: 3px;
+  }
+  .zk-card-countdown {
+    font-size: 1.25rem;
+    font-weight: 800;
+    line-height: 1.1;
+  }
+  .zk-card-detail {
+    font-size: 0.78rem;
+    font-weight: 600;
+    opacity: .75;
+    margin-top: 3px;
+    line-height: 1.35;
+  }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  border-radius: 16px;
-  padding: 20px 16px;
-  text-decoration: none;
-  color: #1a1a1a;
-  font-weight: 700;
-  text-align: center;
-  transition: transform .2s, box-shadow .2s;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
+  /* ── Farbvarianten ── */
+  .zk-gruen  { background: #dcfce7; color: #15803d; }
+  .zk-orange { background: #fff3e0; color: #b45309; }
+  .zk-blau   { background: #dbeafe; color: #1e40af; }
+  .zk-grau   { background: #f1f5f9; color: #475569; }
+  .zk-lila   { background: #f3e8ff; color: #7e22ce; }
+  .zk-rot    { background: #fee2e2; color: #b61f29; }
 
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-}
 
-.card-img {
-  width: 100%;
-  max-width: 150px;      /* ← vorher 120px, jetzt größer */
-  height: 120px;         /* ← vorher 90px, jetzt größer  */
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 12px;
-}
-
-.card h2 {
-  font-size: 1rem;       /* ← etwas größer als vorher */
-  line-height: 1.3;
-  margin: 0;
-}
-
-/* Farben */
-.card-color-1  { background: #fce4ec; }
-.card-color-2  { background: #e8f5e9; }
-.card-color-3  { background: #fff9c4; }
-.card-color-4  { background: #fbe9e7; }
-.card-color-5  { background: #f3e5f5; }
-.card-color-6  { background: #e0f2f1; }
-.card-color-7  { background: #e3f2fd; }
-.card-color-8  { background: #ede7f6; }
-.card-color-9  { background: #fff3e0; }
-.card-color-10 { background: #e1f5fe; }
-.card-color-11 { background: #f9fbe7; }
-.card-color-12 { background: #efebe9; }
-.card-color-13 { background: #fce4ec; }
-.card-color-14 { background: #e0f7fa; }
-.card-color-15 { background: #f1f8e9; }
-.card-color-16 { background: #fff8e1; }
-
-@media (max-width: 600px) {
+  /* ══ NAVIGATIONS-KACHELN ══ */
   .card-grid {
-    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 8px;
+    margin-bottom: 24px;
   }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 18px;
+    padding: 22px 14px 18px;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 700;
+    text-align: center;
+    transition: transform .2s, box-shadow .2s;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    min-height: 200px;        /* ← Mindesthöhe für gleichmäßige Kacheln */
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  }
+
   .card-img {
-    height: 90px;
+    width: 100%;
+    max-width: 140px;
+    height: 130px;            /* ← GRÖSSER als vorher */
+    object-fit: contain;      /* ← contain statt cover: Bild nicht abschneiden */
+    border-radius: 10px;
+    margin-bottom: 14px;
   }
-}
-  
-  </style>
+
+  .card h2 {
+    font-size: 1.05rem;
+    line-height: 1.3;
+    margin: 0;
+  }
+
+  /* Farben */
+  .card-color-1  { background: #fce4ec; }
+  .card-color-2  { background: #e8f5e9; }
+  .card-color-3  { background: #fff9c4; }
+  .card-color-4  { background: #fbe9e7; }
+  .card-color-5  { background: #f3e5f5; }
+  .card-color-6  { background: #e0f2f1; }
+  .card-color-7  { background: #e3f2fd; }
+  .card-color-8  { background: #ede7f6; }
+  .card-color-9  { background: #fff3e0; }
+  .card-color-10 { background: #e1f5fe; }
+  .card-color-11 { background: #f9fbe7; }
+  .card-color-12 { background: #efebe9; }
+  .card-color-13 { background: #fce4ec; }
+  .card-color-14 { background: #e0f7fa; }
+  .card-color-15 { background: #f1f8e9; }
+  .card-color-16 { background: #fff8e1; }
+
+  @media (max-width: 600px) {
+    .card-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .card-img {
+      height: 100px;
+    }
+    .card {
+      min-height: 160px;
+    }
+  }
+
+</style>
 
   <div class="zk-widget" role="region" aria-label="Tageszeit und Arbeitszeit">
 
     <!-- Kopfzeile: Datum + Uhr -->
     <!-- Kopfzeile: Uhrzeit links, Datum rechts – alles in einer Zeile -->
 <div class="zk-header">
-  <div id="zk-uhr" class="zk-uhr">…</div>
+  <div id="zk-uhr"   class="zk-uhr">…</div>
   <div id="zk-datum" class="zk-datum">…</div>
 </div>
-
 
     <!-- Status-Bereich -->
     <div class="zk-body">
