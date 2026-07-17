@@ -92,146 +92,7 @@
                 <h2>Häufige Fragen</h2>
             </a>
 
-                   
-        </div>
-    </main>
-
-    <div class="read-aloud-container">
-        <button class="btn-read-aloud" onclick="vorlesenUndMarkieren()" title="Seite vorlesen">
-            <img src="zuhoeren.jpg" alt="Ohr-Symbol">
-            <span>Vorlesen</span>
-        </button>
-    </div>
-
-    <footer style="
-  text-align: center;
-  padding: 14px 16px;
-  background: #b61f29;
-  color: white;
-  font-size: 0.85rem;
-  font-family: 'Nunito Sans', sans-serif;
-  line-height: 1.8;
-">
-  &copy; 2026 <strong>Studjo | Arbeit und Qualifizierung</strong>
-  &nbsp;·&nbsp; Evangelisches Johanneswerk gGmbH
-  &nbsp;·&nbsp; Barrierefreier Zugang
-  <br>
-  <a href="impressum.html"
-     target="_self"
-     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
-    Impressum
-  </a>
-  &nbsp;|&nbsp;
-  <a href="datenschutz.html"
-     target="_self"
-     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
-    Datenschutz
-  </a>
-</footer>
-
-
-    <script>
-// Globale Variablen
-        let isSpeaking = false;
-        let aktuelleAussage = null; // WICHTIG: Verhindert den Garbage Collection Bug des Browsers
-
-        function vorlesenUndMarkieren() {
-            // 1. Falls er gerade spricht -> Komplett stoppen
-            if (isSpeaking || window.speechSynthesis.speaking) {
-                window.speechSynthesis.cancel();
-                entferneAlleMarkierungen();
-                isSpeaking = false;
-                return;
-            }
-
-            // Sicherheitshalber die Browser-Sprachwarteschlange einmal hart zurücksetzen
-            window.speechSynthesis.cancel();
-            isSpeaking = true;
-
-            // 2. Array mit allen Elementen aufbauen
-            const elementeZumVorlesen = [];
-
-            // - Hauptüberschrift
-            const h1 = document.querySelector('h1');
-            if (h1 && h1.innerText.trim() !== "") {
-                elementeZumVorlesen.push({ text: h1.innerText, element: h1 });
-            }
-
-            // - Einleitung
-            elementeZumVorlesen.push({ text: "Hier gibt es folgende Bereiche:", element: null });
-
-            // - Alle Kacheln
-            const tiles = document.querySelectorAll('.tile');
-            tiles.forEach(tile => {
-                const h2 = tile.querySelector('h2');
-                if (h2 && h2.innerText.trim() !== "") {
-                    elementeZumVorlesen.push({ text: h2.innerText, element: tile });
-                }
-            });
-
-            // 3. Startschuss!
-            if (elementeZumVorlesen.length > 0) {
-                spieleSequenz(elementeZumVorlesen, 0);
-            } else {
-                isSpeaking = false;
-            }
-        }
-
-        // Diese Funktion arbeitet die Liste Element für Element ab
-        function spieleSequenz(elemente, index) {
-            // Abbruchbedingung: Sind wir durch oder wurde gestoppt?
-            if (index >= elemente.length || !isSpeaking) {
-                entferneAlleMarkierungen();
-                isSpeaking = false;
-                return; 
-            }
-
-            const abschnitt = elemente[index];
-            
-            // WICHTIG: In globaler Variable speichern, damit der Browser es nicht löscht
-            aktuelleAussage = new SpeechSynthesisUtterance(abschnitt.text);
-            aktuelleAussage.lang = 'de-DE';
-            aktuelleAussage.rate = 0.9; 
-
-            // Bevor er anfängt: Markierungen setzen
-            aktuelleAussage.onstart = () => {
-                entferneAlleMarkierungen();
-                if (abschnitt.element) {
-                    abschnitt.element.classList.add('is-reading');
-                }
-            };
-
-            // Wenn das Element fertig ist: Kurze Pause, dann nächstes Element
-            aktuelleAussage.onend = () => {
-                // Ein Timeout von 150 Millisekunden verhindert, dass sich der Browser aufhängt
-                setTimeout(() => {
-                    spieleSequenz(elemente, index + 1);
-                }, 150);
-            };
-
-            // Falls ein Fehler auftritt
-            aktuelleAussage.onerror = (event) => {
-                console.error("Fehler beim Vorlesen:", event);
-                entferneAlleMarkierungen();
-                isSpeaking = false;
-            };
-
-            // Befehl zum Sprechen an den Browser senden
-            window.speechSynthesis.speak(aktuelleAussage);
-        }
-
-        // Hilfsfunktion: Macht alle Kacheln wieder normal
-        function entferneAlleMarkierungen() {
-            document.querySelectorAll('.is-reading').forEach(el => {
-                el.classList.remove('is-reading');
-            });
-        }
-
-        // Service Worker
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js').catch(err => console.log('SW Info:', err));
-        }
-<!-- ══ STYLES (einmalig, ganz oben im Snippet einfügen) ══ -->
+            <!-- ══ STYLES (einmalig, ganz oben im Snippet einfügen) ══ -->
 <style>
 /* ── Zeit-Kachel: volle Breite, kein Link-Verhalten ── */
 .zk-kachel {
@@ -573,5 +434,144 @@
 
 })();        
   </div>  
-</div>
+</div>                   
+        </div>
+    </main>
+
+    <div class="read-aloud-container">
+        <button class="btn-read-aloud" onclick="vorlesenUndMarkieren()" title="Seite vorlesen">
+            <img src="zuhoeren.jpg" alt="Ohr-Symbol">
+            <span>Vorlesen</span>
+        </button>
+    </div>
+
+    <footer style="
+  text-align: center;
+  padding: 14px 16px;
+  background: #b61f29;
+  color: white;
+  font-size: 0.85rem;
+  font-family: 'Nunito Sans', sans-serif;
+  line-height: 1.8;
+">
+  &copy; 2026 <strong>Studjo | Arbeit und Qualifizierung</strong>
+  &nbsp;·&nbsp; Evangelisches Johanneswerk gGmbH
+  &nbsp;·&nbsp; Barrierefreier Zugang
+  <br>
+  <a href="impressum.html"
+     target="_self"
+     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Impressum
+  </a>
+  &nbsp;|&nbsp;
+  <a href="datenschutz.html"
+     target="_self"
+     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Datenschutz
+  </a>
+</footer>
+
+
+    <script>
+// Globale Variablen
+        let isSpeaking = false;
+        let aktuelleAussage = null; // WICHTIG: Verhindert den Garbage Collection Bug des Browsers
+
+        function vorlesenUndMarkieren() {
+            // 1. Falls er gerade spricht -> Komplett stoppen
+            if (isSpeaking || window.speechSynthesis.speaking) {
+                window.speechSynthesis.cancel();
+                entferneAlleMarkierungen();
+                isSpeaking = false;
+                return;
+            }
+
+            // Sicherheitshalber die Browser-Sprachwarteschlange einmal hart zurücksetzen
+            window.speechSynthesis.cancel();
+            isSpeaking = true;
+
+            // 2. Array mit allen Elementen aufbauen
+            const elementeZumVorlesen = [];
+
+            // - Hauptüberschrift
+            const h1 = document.querySelector('h1');
+            if (h1 && h1.innerText.trim() !== "") {
+                elementeZumVorlesen.push({ text: h1.innerText, element: h1 });
+            }
+
+            // - Einleitung
+            elementeZumVorlesen.push({ text: "Hier gibt es folgende Bereiche:", element: null });
+
+            // - Alle Kacheln
+            const tiles = document.querySelectorAll('.tile');
+            tiles.forEach(tile => {
+                const h2 = tile.querySelector('h2');
+                if (h2 && h2.innerText.trim() !== "") {
+                    elementeZumVorlesen.push({ text: h2.innerText, element: tile });
+                }
+            });
+
+            // 3. Startschuss!
+            if (elementeZumVorlesen.length > 0) {
+                spieleSequenz(elementeZumVorlesen, 0);
+            } else {
+                isSpeaking = false;
+            }
+        }
+
+        // Diese Funktion arbeitet die Liste Element für Element ab
+        function spieleSequenz(elemente, index) {
+            // Abbruchbedingung: Sind wir durch oder wurde gestoppt?
+            if (index >= elemente.length || !isSpeaking) {
+                entferneAlleMarkierungen();
+                isSpeaking = false;
+                return; 
+            }
+
+            const abschnitt = elemente[index];
+            
+            // WICHTIG: In globaler Variable speichern, damit der Browser es nicht löscht
+            aktuelleAussage = new SpeechSynthesisUtterance(abschnitt.text);
+            aktuelleAussage.lang = 'de-DE';
+            aktuelleAussage.rate = 0.9; 
+
+            // Bevor er anfängt: Markierungen setzen
+            aktuelleAussage.onstart = () => {
+                entferneAlleMarkierungen();
+                if (abschnitt.element) {
+                    abschnitt.element.classList.add('is-reading');
+                }
+            };
+
+            // Wenn das Element fertig ist: Kurze Pause, dann nächstes Element
+            aktuelleAussage.onend = () => {
+                // Ein Timeout von 150 Millisekunden verhindert, dass sich der Browser aufhängt
+                setTimeout(() => {
+                    spieleSequenz(elemente, index + 1);
+                }, 150);
+            };
+
+            // Falls ein Fehler auftritt
+            aktuelleAussage.onerror = (event) => {
+                console.error("Fehler beim Vorlesen:", event);
+                entferneAlleMarkierungen();
+                isSpeaking = false;
+            };
+
+            // Befehl zum Sprechen an den Browser senden
+            window.speechSynthesis.speak(aktuelleAussage);
+        }
+
+        // Hilfsfunktion: Macht alle Kacheln wieder normal
+        function entferneAlleMarkierungen() {
+            document.querySelectorAll('.is-reading').forEach(el => {
+                el.classList.remove('is-reading');
+            });
+        }
+
+        // Service Worker
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').catch(err => console.log('SW Info:', err));
+        }
+
             </script>
