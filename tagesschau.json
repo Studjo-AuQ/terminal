@@ -1,10 +1,40 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "17.07.2026, 03:48 Uhr (UTC)",
+  "aktualisiert": "17.07.2026, 06:23 Uhr (UTC)",
   "meldungen": [
     {
-      "title": "Wenige Monate vor Kongresswahlen: Trump schürt Misstrauen an Wahlsystem",
-      "description": "In seiner Rede an die Nation behauptet US-Präsident Trump, China habe die Wahl 2020 beeinflussen wollen und Wählerdaten gestohlen. Zweifel an der Sicherheit des Wahlsystems streut er wenige Monate vor den wichtigen Midterms.",
+      "title": "Andy Burnham wird Labour-Chef: Zwischen Hoffen und Zweifeln",
+      "description": "Andy Burnham, Ex-Bürgermeister von Manchester, wird heute neuer Labour-Chef - und am Montag Premier. In der boomenden Stadt verbinden viele mit ihm Hoffnung. Doch es gibt auch Bedenken. Von Mareike Aden.",
+      "pubDate": "2026-07-17T08:07:48+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Trump will Social-Media-Beiträge auf Truth Social zu Geld machen",
+      "description": "Das Medienunternehmen von US-Präsident Trump plant einen kostenpflichtigen Premiumzugriff zu Beiträgen auf Truth Social. Finanzfirmen sollen davon profitieren. Kritiker beklagen \"Ausnutzung staatlicher Macht\".",
+      "pubDate": "2026-07-17T07:33:39+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: Tech-Ausverkauf schickt Börsen auf Talfahrt",
+      "description": "Ein globaler Absturz bei Tech-Aktien belastet die Börsen rund um den Globus. Daran konnten auch die am Abend veröffentlichten Quartalszahlen des Streaming-Giganten Netflix nichts ändern.",
+      "pubDate": "2026-07-17T07:29:14+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Krankenkassen verlieren durch Fehlinvestitionen mindestens 170 Millionen Euro",
+      "description": "Nach Recherchen von NDR, WDR und SZ haben mindestens 17 Krankenkassen und Kassenärztliche Vereinigungen Beitragsgelder in fragwürdige Immobilienfonds investiert - und damit Millionenverluste gemacht. Doch wie konnte es dazu kommen?",
+      "pubDate": "2026-07-17T06:13:32+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wegovy-Tablette: Was die neue Abnehmpille kann",
+      "description": "Ein Medikament zum Abnehmen gibt es jetzt auch als Tablette. Für Menschen mit Spritzenangst kann das eine Erleichterung sein. Doch die neue Pille ist kein harmloser Lifestyle-Hack. Von Doris Tromballa.",
+      "pubDate": "2026-07-17T06:12:34+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Vor Kongresswahlen: Trump wirft China Diebstahl von Wahldaten vor",
+      "description": "China habe die Wahl 2020 beeinflussen wollen und Wählerdaten gestohlen - das hat US-Präsident Trump in seiner Rede an die Nation gesagt. Die neuen Zweifel an der Sicherheit des Wahlsystems streut er vor den nahenden Midterms.",
       "pubDate": "2026-07-17T05:02:57+02:00",
       "bild": ""
     },
@@ -60,36 +90,6 @@
       "title": "Marktbericht: DAX kann Verluste eindämmen",
       "description": "Der Konflikt im Nahen Osten beschäftigt auch heute wieder die Anleger am deutschen Aktienmarkt - und sorgt für Verunsicherung. Am Ende kann der DAX aber größere Verluste verhindern und behält die 25.000 Punkte im Blick.",
       "pubDate": "2026-07-16T18:12:32+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wadephul an der NATO-Nordflanke: Alles, nur kein Alarmismus",
-      "description": "Erst Norwegen, dann Finnland: Vier Tage war Außenminister Wadephul an der NATO-Nordflanke unterwegs. Und immer wieder geht es um eine Frage: Wie kann man sich besser gegen Russland schützen? Von Christina Nagel.",
-      "pubDate": "2026-07-16T18:00:35+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Spritpreise: Wird die Wahl an der Zapfsäule entschieden?",
-      "description": "Die Spritpreise in den USA sind enorm in die Höhe geklettert. Muss Trump dieses Problem lösen, damit seine Partei eine Chance bei den nächsten Wahlen hat? Von Paula Protzen.",
-      "pubDate": "2026-07-16T18:00:18+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Brücken-Einsturz in Genua: Gemischte Gefühle nach Urteil gegen Top-Manager",
-      "description": "Vor acht Jahren stürzte die Morandi-Brücke in Genua zusammen, 43 Menschen starben. Nun ist der Ex-Chef des Autobahnbetreibers verurteilt worden. Betroffene sehen das Urteil mit gemischten Gefühlen. Von Christine Auerbach",
-      "pubDate": "2026-07-16T17:59:31+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kassenreform: Was bedeuten die Kürzungen für Psychotherapien?",
-      "description": "Das Sparpaket für die gesetzliche Krankenversicherung sieht Kürzungen in der Psychotherapie vor. Die Branche zeigt sich alarmiert und warnt vor den Folgen. Ein Gesundheitsökonom erkennt aber auch Chancen. Von Jens Eberl.",
-      "pubDate": "2026-07-16T17:29:41+02:00",
-      "bild": ""
-    },
-    {
-      "title": "BGH-Urteil: Fitnessstudio muss einfache Online-Kündigung anbieten",
-      "description": "Wer online seine Mitgliedschaft in einem Fitnessstudio kündigt, muss auf einer Seite landen, auf der es nur um die Kündigung geht - und nicht z.B. um Vertragspausen. Das BGH-Urteil lässt sich auch auf andere Online-Abos übertragen. Von A. Lagmöller.",
-      "pubDate": "2026-07-16T17:29:23+02:00",
       "bild": ""
     }
   ],
