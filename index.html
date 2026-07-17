@@ -231,4 +231,348 @@
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('sw.js').catch(err => console.log('SW Info:', err));
         }
+<!-- ══ STYLES (einmalig, ganz oben im Snippet einfügen) ══ -->
+<style>
+/* ── Zeit-Kachel: volle Breite, kein Link-Verhalten ── */
+.zk-kachel {
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+  overflow: hidden;
+  width: 100%;
+  /* Nimmt volle Breite ein – ggf. grid-column: 1 / -1 ergänzen
+     wenn die anderen Kacheln in einem CSS-Grid liegen */
+}
+
+/* Header: dunkelrot, Datum + Uhr */
+.zk-header {
+  background: #b61f29;
+  color: white;
+  padding: 16px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.zk-datum {
+  font-size: 0.95rem;
+  font-weight: 700;
+  opacity: .88;
+  margin-bottom: 4px;
+  letter-spacing: .01em;
+}
+.zk-uhr {
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: .03em;
+}
+.zk-uhr-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  opacity: .7;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+/* Status-Raster: 2 Spalten */
+.zk-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  padding: 16px 18px 18px;
+}
+@media (max-width: 520px) { .zk-body { grid-template-columns: 1fr; } }
+
+/* Status-Karte */
+.zk-card {
+  border-radius: 14px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  transition: background .3s, color .3s;
+}
+.zk-card-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-top: 2px;
+}
+.zk-card-label {
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  opacity: .65;
+  margin-bottom: 3px;
+}
+.zk-card-status {
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 3px;
+}
+.zk-card-countdown {
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+.zk-card-detail {
+  font-size: 0.78rem;
+  font-weight: 600;
+  opacity: .75;
+  margin-top: 3px;
+  line-height: 1.35;
+}
+
+/* Farbvarianten */
+.zk-gruen  { background: #dcfce7; color: #15803d; }
+.zk-orange { background: #fff3e0; color: #b45309; }
+.zk-blau   { background: #dbeafe; color: #1e40af; }
+.zk-grau   { background: #f1f5f9; color: #475569; }
+.zk-lila   { background: #f3e8ff; color: #7e22ce; }
+</style>
+
+<!-- ══ HTML-STRUKTUR ══ -->
+<div class="zk-kachel" role="region" aria-label="Tageszeit und Arbeitszeit">
+
+  <!-- Kopfzeile: Datum + Uhr -->
+  <div class="zk-header">
+    <div>
+      <div class="zk-datum"    id="zk-datum">…</div>
+      <div class="zk-uhr"     id="zk-uhr">…</div>
+      <div class="zk-uhr-label">Uhr</div>
+    </div>
+    <div style="font-size:3.5rem;opacity:.85" aria-hidden="true">🕐</div>
+  </div>
+
+  <!-- Status-Bereich -->
+  <div class="zk-body">
+
+    <!-- Linke Karte: Arbeitszeit-Status -->
+    <div class="zk-card" id="zk-arbeit" aria-live="polite">
+      <div class="zk-card-icon" id="zk-a-icon">⏳</div>
+      <div>
+        <div class="zk-card-label">Arbeitszeit</div>
+        <div class="zk-card-status"   id="zk-a-status">…</div>
+        <div class="zk-card-countdown" id="zk-a-countdown"></div>
+        <div class="zk-card-detail"   id="zk-a-detail">…</div>
+      </div>
+    </div>
+
+    <!-- Rechte Karte: Pause-Status -->
+    <div class="zk-card" id="zk-pause" aria-live="polite">
+      <div class="zk-card-icon" id="zk-p-icon">☕</div>
+      <div>
+        <div class="zk-card-label">Pausenzeit</div>
+        <div class="zk-card-status"   id="zk-p-status">…</div>
+        <div class="zk-card-countdown" id="zk-p-countdown"></div>
+        <div class="zk-card-detail"   id="zk-p-detail">…</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ══ JAVASCRIPT ══ -->
+<script>
+(function() {
+
+  /* ── Konfiguration ───────────────────────────────── */
+  const CFG = {
+    WORK_START:  8 * 60,      // 8:00 Uhr  = 480 min
+    WORK_END_N:  15 * 60 + 15, // 15:15 Uhr = 915 min  (normal)
+    WORK_END_K:  14 * 60 + 45, // 14:45 Uhr = 885 min  (Freitag / 1. Di.)
+    BREAK1_S:    10 * 60,      // 10:00 = 600
+    BREAK1_E:    10 * 60 + 20, // 10:20 = 620
+    BREAK2_S:    12 * 60,      // 12:00 = 720
+    BREAK2_E:    13 * 60,      // 13:00 = 780
+  };
+
+  /* ── Hilfsfunktionen ─────────────────────────────── */
+  const TAGE   = ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'];
+  const MONATE = ['Januar','Februar','März','April','Mai','Juni',
+                  'Juli','August','September','Oktober','November','Dezember'];
+
+  function pad(n) { return String(n).padStart(2,'0'); }
+
+  function minText(m) {
+    if (m <= 0) return '0 Min.';
+    const h = Math.floor(m / 60), r = m % 60;
+    if (h === 0) return r + ' Min.';
+    if (r === 0) return h + ' Std.';
+    return h + ' Std. ' + r + ' Min.';
+  }
+
+  function minutenBisNaechsteMo8(jetzt) {
+    const tag = jetzt.getDay();
+    // Tage bis Montag
+    const daysTo = tag === 0 ? 1 : tag === 6 ? 2 : 1;
+    const ziel = new Date(jetzt);
+    ziel.setDate(jetzt.getDate() + daysTo);
+    ziel.setHours(8, 0, 0, 0);
+    return Math.max(0, Math.floor((ziel - jetzt) / 60000));
+  }
+
+  function minutenBisNaechsteArbeit(jetzt, tag) {
+    // Freitag → Montag; sonst nächster Tag
+    const daysTo = tag === 5 ? 3 : 1;
+    const ziel = new Date(jetzt);
+    ziel.setDate(jetzt.getDate() + daysTo);
+    ziel.setHours(8, 0, 0, 0);
+    return Math.max(0, Math.floor((ziel - jetzt) / 60000));
+  }
+
+  function ersterDienstagDerMonats(d) {
+    return d.getDay() === 2 && d.getDate() <= 7;
+  }
+
+  /* ── DOM-Helfer ──────────────────────────────────── */
+  function setArbeit(css, icon, status, countdown, detail) {
+    document.getElementById('zk-arbeit').className    = 'zk-card ' + css;
+    document.getElementById('zk-a-icon').textContent  = icon;
+    document.getElementById('zk-a-status').textContent    = status;
+    document.getElementById('zk-a-countdown').textContent = countdown;
+    document.getElementById('zk-a-detail').textContent    = detail;
+  }
+  function setPause(css, icon, status, countdown, detail) {
+    document.getElementById('zk-pause').className     = 'zk-card ' + css;
+    document.getElementById('zk-p-icon').textContent  = icon;
+    document.getElementById('zk-p-status').textContent    = status;
+    document.getElementById('zk-p-countdown').textContent = countdown;
+    document.getElementById('zk-p-detail').textContent    = detail;
+  }
+
+  /* ── Haupt-Update-Funktion ───────────────────────── */
+  function update() {
+    const jetzt = new Date();
+    const tag   = jetzt.getDay();   // 0=So … 6=Sa
+    const std   = jetzt.getHours();
+    const min   = jetzt.getMinutes();
+    const sek   = jetzt.getSeconds();
+    const tm    = std * 60 + min;   // aktuelle Zeit in Minuten
+
+    /* Datum + Uhr */
+    document.getElementById('zk-datum').textContent =
+      TAGE[tag] + ', den ' + jetzt.getDate() + '. ' +
+      MONATE[jetzt.getMonth()] + ' ' + jetzt.getFullYear();
+    document.getElementById('zk-uhr').textContent =
+      pad(std) + ':' + pad(min);
+
+    /* Feierabend-Zeit bestimmen */
+    const kurzTag  = tag === 5 || ersterDienstagDerMonats(jetzt);
+    const WORK_END = kurzTag ? CFG.WORK_END_K : CFG.WORK_END_N;
+    const feierStr = kurzTag ? '14:45' : '15:15';
+
+    const istArbeitstag = tag >= 1 && tag <= 5;
+
+    /* ── Fälle ── */
+
+    if (!istArbeitstag) {
+      /* WOCHENENDE */
+      const min2 = minutenBisNaechsteMo8(jetzt);
+      setArbeit('zk-grau','🏠',
+        'Wochenende',
+        'noch ' + minText(min2),
+        'Montag 8:00 Uhr → Arbeitsbeginn');
+      setPause('zk-grau','🌙',
+        'Ruhetag',
+        '–',
+        'Keine Arbeitszeiten heute');
+      return;
+    }
+
+    if (tm < CFG.WORK_START) {
+      /* VOR DER ARBEIT */
+      const min2 = CFG.WORK_START - tm;
+      setArbeit('zk-blau','🌅',
+        'Vor der Arbeit',
+        'noch ' + minText(min2),
+        'Arbeit beginnt um 8:00 Uhr');
+      setPause('zk-grau','☕',
+        'Noch keine Pause',
+        '–',
+        'Erste Pause um 10:00 Uhr');
+      return;
+    }
+
+    if (tm >= WORK_END) {
+      /* FEIERABEND */
+      const min2 = minutenBisNaechsteArbeit(jetzt, tag);
+      setArbeit('zk-lila','🏠',
+        'Feierabend!',
+        'nächste Arbeit in ' + minText(min2),
+        (tag === 5 ? 'Montag' : 'Morgen') + ' 8:00 Uhr');
+      setPause('zk-grau','✓',
+        'Alle Pausen vorbei',
+        '–',
+        'Guten Feierabend!');
+      return;
+    }
+
+    /* INNERHALB DER ARBEITSZEIT */
+
+    if (tm >= CFG.BREAK1_S && tm < CFG.BREAK1_E) {
+      /* PAUSE 1 */
+      const min2 = CFG.BREAK1_E - tm;
+      setArbeit('zk-orange','☕',
+        'Pausenzeit',
+        'noch ' + minText(min2),
+        'Weiterarbeit um 10:20 Uhr');
+      setPause('zk-orange','⏳',
+        'Pause läuft',
+        'noch ' + minText(min2),
+        'Ende um 10:20 Uhr');
+      return;
+    }
+
+    if (tm >= CFG.BREAK2_S && tm < CFG.BREAK2_E) {
+      /* PAUSE 2 – Mittagspause */
+      const min2 = CFG.BREAK2_E - tm;
+      setArbeit('zk-orange','🍽️',
+        'Mittagspause',
+        'noch ' + minText(min2),
+        'Weiterarbeit um 13:00 Uhr');
+      setPause('zk-orange','⏳',
+        'Mittagspause läuft',
+        'noch ' + minText(min2),
+        'Ende um 13:00 Uhr');
+      return;
+    }
+
+    /* NORMALE ARBEITSZEIT */
+    const minBisFeier = WORK_END - tm;
+    setArbeit('zk-gruen','✅',
+      'Arbeitszeit',
+      'noch ' + minText(minBisFeier),
+      'Feierabend um ' + feierStr + ' Uhr');
+
+    // Nächste Pause?
+    if (tm < CFG.BREAK1_S) {
+      const min2 = CFG.BREAK1_S - tm;
+      setPause('zk-gruen','☕',
+        'Nächste Pause um 10:00',
+        'in ' + minText(min2),
+        'Dauer: 20 Min. (bis 10:20 Uhr)');
+    } else if (tm < CFG.BREAK2_S) {
+      const min2 = CFG.BREAK2_S - tm;
+      setPause('zk-gruen','🍽️',
+        'Mittagspause um 12:00',
+        'in ' + minText(min2),
+        'Dauer: 1 Std. (bis 13:00 Uhr)');
+    } else {
+      setPause('zk-gruen','✓',
+        'Pausen beendet',
+        '–',
+        'Weiter bis ' + feierStr + ' Uhr');
+    }
+  }
+
+  /* Sofort starten + jede Sekunde aktualisieren */
+  update();
+  setInterval(update, 1000);
+
+})();        
             </script>
