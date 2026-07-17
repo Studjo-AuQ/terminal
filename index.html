@@ -5,12 +5,261 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Studjo Terminal</title>
 <link rel="stylesheet" href="style-index.css">
+
+<style>
+
+/* ══ TICKER ══ */
+.ticker-container {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  padding: 8px 0;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #f0f0f0;
+  box-sizing: border-box;
+}
+.ticker-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: ticker-scroll 40s linear infinite;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #b61f29;
+  padding-left: 100%;
+}
+.ticker-text:hover {
+  animation-play-state: paused;
+}
+@keyframes ticker-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+
+/* ══ ZEITKACHEL ══ */
+.zk-widget {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 24px;
+  box-sizing: border-box;
+}
+
+/* Header */
+.zk-header {
+  background: #b61f29;
+  color: #ffffff;
+  padding: 8px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+}
+.zk-uhr {
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: .03em;
+  white-space: nowrap;
+}
+.zk-datum {
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: .01em;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* Auf schmalen Bildschirmen kleiner */
+@media (max-width: 600px) {
+  .zk-uhr,
+  .zk-datum {
+    font-size: 1.1rem;
+  }
+  .zk-header {
+    padding: 8px 14px;
+  }
+}
+
+/* Status-Bereich: IMMER 2 Spalten nebeneinander */
+.zk-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  padding: 16px 18px 18px;
+  box-sizing: border-box;
+}
+
+/* Nur auf sehr schmalen Handys untereinander */
+@media (max-width: 380px) {
+  .zk-body {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Status-Karte */
+.zk-card {
+  border-radius: 14px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  transition: background .3s, color .3s;
+  box-sizing: border-box;
+}
+.zk-card-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-top: 2px;
+}
+.zk-card-label {
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  opacity: .65;
+  margin-bottom: 3px;
+}
+.zk-card-status {
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 3px;
+}
+.zk-card-countdown {
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+.zk-card-detail {
+  font-size: 0.78rem;
+  font-weight: 600;
+  opacity: .75;
+  margin-top: 3px;
+  line-height: 1.35;
+}
+
+/* Farbvarianten */
+.zk-gruen  { background: #dcfce7; color: #15803d; }
+.zk-orange { background: #fff3e0; color: #b45309; }
+.zk-blau   { background: #dbeafe; color: #1e40af; }
+.zk-grau   { background: #f1f5f9; color: #475569; }
+.zk-lila   { background: #f3e8ff; color: #7e22ce; }
+.zk-rot    { background: #fee2e2; color: #b61f29; }
+
+
+/* ══ NAVIGATIONS-KACHELN ══ */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 18px;
+  padding: 22px 14px 18px;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 700;
+  text-align: center;
+  transition: transform .2s, box-shadow .2s;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  min-height: 210px;
+  box-sizing: border-box;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+.card-img {
+  width: 100%;
+  max-width: 140px;
+  height: 130px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 14px;
+}
+.card h2 {
+  font-size: 1.05rem;
+  line-height: 1.3;
+  margin: 0;
+}
+
+/* Farben */
+.card-color-1  { background: #fce4ec; }
+.card-color-2  { background: #e8f5e9; }
+.card-color-3  { background: #fff9c4; }
+.card-color-4  { background: #fbe9e7; }
+.card-color-5  { background: #f3e5f5; }
+.card-color-6  { background: #e0f2f1; }
+.card-color-7  { background: #e3f2fd; }
+.card-color-8  { background: #ede7f6; }
+.card-color-9  { background: #fff3e0; }
+.card-color-10 { background: #e1f5fe; }
+.card-color-11 { background: #f9fbe7; }
+.card-color-12 { background: #efebe9; }
+.card-color-13 { background: #fce4ec; }
+.card-color-14 { background: #e0f7fa; }
+.card-color-15 { background: #f1f8e9; }
+.card-color-16 { background: #fff8e1; }
+
+/* Smartphone hochkant */
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  .card-img {
+    height: 100px;
+    max-width: 110px;
+  }
+  .card {
+    min-height: 170px;
+    padding: 16px 10px 14px;
+  }
+  .card h2 {
+    font-size: 0.9rem;
+  }
+}
+
+/* Sehr schmale Handys */
+@media (max-width: 360px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+/* ══ VORLESEN-BUTTON ══ */
+.read-aloud-container {
+  text-align: center;
+  margin: 16px 0;
+}
+
+</style>
 </head>
 <body>
 
 <header>
-  <div style="position: fixed; top: 0; right: 0; width: 200px; height: 200px; overflow: hidden; z-index: 9999; pointer-events: none;">
-    <div style="position: absolute; top: 55px; right: -65px; width: 260px; background-color: #B61F29; color: #FFFFFF; font-size: 12px; font-weight: 700; letter-spacing: 0.05em; padding: 8px 0; text-align: center; transform: rotate(45deg);">TESTUMGEBUNG</div>
+  <div style="position: fixed; top: 0; right: 0; width: 200px; height: 200px;
+              overflow: hidden; z-index: 9999; pointer-events: none;">
+    <div style="position: absolute; top: 55px; right: -65px; width: 260px;
+                background-color: #B61F29; color: #FFFFFF; font-size: 12px;
+                font-weight: 700; letter-spacing: 0.05em; padding: 8px 0;
+                text-align: center; transform: rotate(45deg);">TESTUMGEBUNG</div>
   </div>
   <div class="logo-container">
     <img src="header.jpg" alt="Studjo Logo">
@@ -18,273 +267,72 @@
 </header>
 
 <main id="scrollable-content">
-<h1>Herzlich willkommen am Studjo | Terminal</h1>
 
-<!-- ══ TICKER ══ -->
-<div class="ticker-container">
-  <div class="ticker-text">
-    +++ NEU: Zeiten mit Countdown +++ NEU: Höufige Fragen unten zum Nachlesen +++ Allgemeine Nachrichten in Leichter Sprache nun mit Kobinet +++ Wir freuen uns auf deine Rückmeldung zum Terminal +++
+  <h1>Herzlich willkommen am Studjo | Terminal</h1>
+
+  <!-- ══ TICKER ══ -->
+  <div class="ticker-container">
+    <div class="ticker-text">
+      +++ NEU: Besseres "Wetter" für unsere Standorte
+      +++ NEU: Allgemeine Nachrichten in Leichter Sprache
+      +++ Wir freuen uns auf deine Rückmeldung zum Terminal
+      +++ Matthias W. neue Vertrauensperson (SBV) +++
+    </div>
   </div>
-</div>
 
 
-<!-- ══════════════════════════════════════════════════════
-     ZEITKACHEL – steht VOR den Navigations-Kacheln
-     ══════════════════════════════════════════════════════ -->
-<style>
-/* ══ ZEITKACHEL ══ */
-
-  .zk-widget {
-    background: #ffffff;
-    border-radius: 18px;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.10);
-    overflow: hidden;
-    width: 100%;
-    margin-bottom: 24px;
-  }
-
-  /* ── Header: Uhrzeit links, Datum rechts ── */
-  .zk-header {
-    background: #b61f29;
-    color: #ffffff;
-    padding: 8px 28px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    flex-wrap: nowrap;        /* ← KEIN Umbruch */
-  }
-
-  .zk-uhr {
-    font-size: 1.6rem;        /* ← GRÖSSER */
-    font-weight: 900;
-    line-height: 1;
-    letter-spacing: .03em;
-    white-space: nowrap;
-  }
-
-  .zk-datum {
-    font-size: 1.6rem;        /* ← GLEICH GROß wie Uhrzeit */
-    font-weight: 900;
-    line-height: 1;
-    letter-spacing: .01em;
-    text-align: right;
-    white-space: nowrap;
-  }
-
-  @media (max-width: 700px) {
-    .zk-uhr,
-    .zk-datum {
-      font-size: 2rem;
-    }
-  }
-
-  @media (max-width: 420px) {
-    .zk-uhr,
-    .zk-datum {
-      font-size: 1.4rem;
-    }
-  }
-
-  /* ── Status-Bereich: IMMER 2 Spalten ── */
-  .zk-body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;   /* ← IMMER nebeneinander */
-    gap: 14px;
-    padding: 16px 18px 18px;
-  }
-
-  /* Nur auf sehr kleinen Handys untereinander */
-  @media (max-width: 380px) {
-    .zk-body {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  /* ── Status-Karte ── */
-  .zk-card {
-    border-radius: 14px;
-    padding: 14px 16px;
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    transition: background .3s, color .3s;
-  }
-  .zk-card-icon {
-    font-size: 2rem;
-    flex-shrink: 0;
-    line-height: 1;
-    margin-top: 2px;
-  }
-  .zk-card-label {
-    font-size: 0.65rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: .07em;
-    opacity: .65;
-    margin-bottom: 3px;
-  }
-  .zk-card-status {
-    font-size: 1rem;
-    font-weight: 800;
-    line-height: 1.25;
-    margin-bottom: 3px;
-  }
-  .zk-card-countdown {
-    font-size: 1.25rem;
-    font-weight: 800;
-    line-height: 1.1;
-  }
-  .zk-card-detail {
-    font-size: 0.78rem;
-    font-weight: 600;
-    opacity: .75;
-    margin-top: 3px;
-    line-height: 1.35;
-  }
-
-  /* ── Farbvarianten ── */
-  .zk-gruen  { background: #dcfce7; color: #15803d; }
-  .zk-orange { background: #fff3e0; color: #b45309; }
-  .zk-blau   { background: #dbeafe; color: #1e40af; }
-  .zk-grau   { background: #f1f5f9; color: #475569; }
-  .zk-lila   { background: #f3e8ff; color: #7e22ce; }
-  .zk-rot    { background: #fee2e2; color: #b61f29; }
-
-
-  /* ══ NAVIGATIONS-KACHELN ══ */
-  .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 20px;
-    margin-top: 8px;
-    margin-bottom: 24px;
-  }
-
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    border-radius: 18px;
-    padding: 22px 14px 18px;
-    text-decoration: none;
-    color: #1a1a1a;
-    font-weight: 700;
-    text-align: center;
-    transition: transform .2s, box-shadow .2s;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    min-height: 200px;        /* ← Mindesthöhe für gleichmäßige Kacheln */
-  }
-
-  .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-  }
-
-  .card-img {
-    width: 100%;
-    max-width: 140px;
-    height: 130px;            /* ← GRÖSSER als vorher */
-    object-fit: contain;      /* ← contain statt cover: Bild nicht abschneiden */
-    border-radius: 10px;
-    margin-bottom: 14px;
-  }
-
-  .card h2 {
-    font-size: 1.05rem;
-    line-height: 1.3;
-    margin: 0;
-  }
-
-  /* Farben */
-  .card-color-1  { background: #fce4ec; }
-  .card-color-2  { background: #e8f5e9; }
-  .card-color-3  { background: #fff9c4; }
-  .card-color-4  { background: #fbe9e7; }
-  .card-color-5  { background: #f3e5f5; }
-  .card-color-6  { background: #e0f2f1; }
-  .card-color-7  { background: #e3f2fd; }
-  .card-color-8  { background: #ede7f6; }
-  .card-color-9  { background: #fff3e0; }
-  .card-color-10 { background: #e1f5fe; }
-  .card-color-11 { background: #f9fbe7; }
-  .card-color-12 { background: #efebe9; }
-  .card-color-13 { background: #fce4ec; }
-  .card-color-14 { background: #e0f7fa; }
-  .card-color-15 { background: #f1f8e9; }
-  .card-color-16 { background: #fff8e1; }
-
-  @media (max-width: 600px) {
-    .card-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .card-img {
-      height: 100px;
-    }
-    .card {
-      min-height: 160px;
-    }
-  }
-
-</style>
-
+  <!-- ══ ZEITKACHEL ══ -->
   <div class="zk-widget" role="region" aria-label="Tageszeit und Arbeitszeit">
 
-    <!-- Kopfzeile: Datum + Uhr -->
-    <!-- Kopfzeile: Uhrzeit links, Datum rechts – alles in einer Zeile -->
-<div class="zk-header">
-  <div id="zk-uhr"   class="zk-uhr">…</div>
-  <div id="zk-datum" class="zk-datum">…</div>
-</div>
+    <div class="zk-header">
+      <div id="zk-uhr"   class="zk-uhr">…</div>
+      <div id="zk-datum" class="zk-datum">…</div>
+    </div>
 
-    <!-- Status-Bereich -->
     <div class="zk-body">
 
-      <!-- Linke Karte: "Jetzt …" -->
       <div class="zk-card" id="zk-arbeit" aria-live="polite">
         <div class="zk-card-icon" id="zk-a-icon">⏳</div>
         <div>
-          <div class="zk-card-label">Jetzt…</div>
+          <div class="zk-card-label">Jetzt …</div>
           <div class="zk-card-status"    id="zk-a-status">…</div>
           <div class="zk-card-countdown" id="zk-a-countdown"></div>
           <div class="zk-card-detail"    id="zk-a-detail">…</div>
         </div>
       </div>
 
-      <!-- Rechte Karte: "Als nächstes folgt …" -->
       <div class="zk-card" id="zk-pause" aria-live="polite">
         <div class="zk-card-icon" id="zk-p-icon">☕</div>
         <div>
-          <div class="zk-card-label">Bald…</div>
+          <div class="zk-card-label">Bald …</div>
           <div class="zk-card-status"    id="zk-p-status">…</div>
           <div class="zk-card-countdown" id="zk-p-countdown"></div>
           <div class="zk-card-detail"    id="zk-p-detail">…</div>
         </div>
       </div>
 
-    </div><!-- Ende .zk-body -->
-  </div><!-- Ende .zk-widget -->
+    </div>
+  </div>
 
   <script>
-  (function() {
+  (function () {
 
-    /* ── Konfiguration ───────────────────────────── */
     const CFG = {
-      WORK_START:  8 * 60,       // 08:00 = 480 min
-      WORK_END_N:  15 * 60 + 15, // 15:15 = 915 min  (Normaltag)
-      WORK_END_K:  14 * 60 + 45, // 14:45 = 885 min  (Kurztag)
-      BREAK1_S:    10 * 60,      // 10:00 = 600
-      BREAK1_E:    10 * 60 + 20, // 10:20 = 620
-      BREAK2_S:    12 * 60,      // 12:00 = 720
-      BREAK2_E:    13 * 60,      // 13:00 = 780
+      WORK_START:  8 * 60,
+      WORK_END_N:  15 * 60 + 15,
+      WORK_END_K:  14 * 60 + 45,
+      BREAK1_S:    10 * 60,
+      BREAK1_E:    10 * 60 + 20,
+      BREAK2_S:    12 * 60,
+      BREAK2_E:    13 * 60,
     };
 
-    const WOCHENTAGE = ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'];
+    const WOCHENTAGE = ['Sonntag','Montag','Dienstag','Mittwoch',
+                        'Donnerstag','Freitag','Samstag'];
     const MONATE     = ['Januar','Februar','März','April','Mai','Juni',
                         'Juli','August','September','Oktober','November','Dezember'];
 
-    function pad(n) { return String(n).padStart(2,'0'); }
+    function pad(n) { return String(n).padStart(2, '0'); }
 
     function minText(m) {
       if (m <= 0) return '0 Min.';
@@ -297,18 +345,18 @@
     function minutenBisNaechsteMo8(jetzt) {
       const tag    = jetzt.getDay();
       const daysTo = tag === 0 ? 1 : tag === 6 ? 2 : 1;
-      const ziel   = new Date(jetzt);
-      ziel.setDate(jetzt.getDate() + daysTo);
-      ziel.setHours(8, 0, 0, 0);
-      return Math.max(0, Math.floor((ziel - jetzt) / 60000));
+      const z      = new Date(jetzt);
+      z.setDate(jetzt.getDate() + daysTo);
+      z.setHours(8, 0, 0, 0);
+      return Math.max(0, Math.floor((z - jetzt) / 60000));
     }
 
     function minutenBisNaechsteArbeit(jetzt, tag) {
       const daysTo = tag === 5 ? 3 : 1;
-      const ziel   = new Date(jetzt);
-      ziel.setDate(jetzt.getDate() + daysTo);
-      ziel.setHours(8, 0, 0, 0);
-      return Math.max(0, Math.floor((ziel - jetzt) / 60000));
+      const z      = new Date(jetzt);
+      z.setDate(jetzt.getDate() + daysTo);
+      z.setHours(8, 0, 0, 0);
+      return Math.max(0, Math.floor((z - jetzt) / 60000));
     }
 
     function ersterDienstagDerMonats(d) {
@@ -331,7 +379,6 @@
       document.getElementById('zk-p-detail').textContent    = detail;
     }
 
-    /* ── Haupt-Update-Funktion ───────────────────── */
     function update() {
       const jetzt = new Date();
       const tag   = jetzt.getDay();
@@ -339,168 +386,103 @@
       const min   = jetzt.getMinutes();
       const tm    = std * 60 + min;
 
-      /* Datum + Uhrzeit anzeigen */
-     // NEU – bitte einsetzen:
-document.getElementById('zk-uhr').textContent =
-  pad(std) + ':' + pad(min);
-document.getElementById('zk-datum').textContent =
-  WOCHENTAGE[tag] + ', ' + jetzt.getDate() + '. ' +
-  MONATE[jetzt.getMonth()] + ' ' + jetzt.getFullYear();
+      document.getElementById('zk-uhr').textContent =
+        pad(std) + ':' + pad(min);
+      document.getElementById('zk-datum').textContent =
+        WOCHENTAGE[tag] + ', ' + jetzt.getDate() + '. ' +
+        MONATE[jetzt.getMonth()] + ' ' + jetzt.getFullYear();
 
-
-      /* Kurztag oder Normaltag? */
       const kurzTag  = tag === 5 || ersterDienstagDerMonats(jetzt);
       const WORK_END = kurzTag ? CFG.WORK_END_K : CFG.WORK_END_N;
       const feierStr = kurzTag ? '14:45' : '15:15';
       const istArbeitstag = tag >= 1 && tag <= 5;
 
-      /* ════════════════════════════════
-         WOCHENENDE
-         ════════════════════════════════ */
+      /* WOCHENENDE */
       if (!istArbeitstag) {
         const min2 = minutenBisNaechsteMo8(jetzt);
-        setArbeit('zk-grau','🏠',
-          'Wochenende',
-          'noch ' + minText(min2),
+        setArbeit('zk-grau','🏠','Wochenende','noch ' + minText(min2),
           'Montag 8:00 Uhr → Arbeitsbeginn');
-        setPause('zk-grau','🌙',
-          'Ruhetag',
-          '–',
-          'Keine Arbeitszeiten heute');
+        setPause('zk-grau','🌙','Ruhetag','–','Keine Arbeitszeiten heute');
         return;
       }
 
-      /* ════════════════════════════════
-         VOR DER ARBEIT
-         ════════════════════════════════ */
+      /* VOR DER ARBEIT */
       if (tm < CFG.WORK_START) {
         const min2 = CFG.WORK_START - tm;
-        setArbeit('zk-blau','🌅',
-          'Vor der Arbeit',
-          'noch ' + minText(min2),
+        setArbeit('zk-blau','🌅','Vor der Arbeit','noch ' + minText(min2),
           'Arbeit beginnt um 8:00 Uhr');
-        setPause('zk-grau','☕',
-          'Noch keine Pause',
-          '–',
+        setPause('zk-grau','☕','Noch keine Pause','–',
           'Erste Pause um 10:00 Uhr');
         return;
       }
 
-      /* ════════════════════════════════
-         FREIZEIT / FEIERABEND
-         Links:  ROT   „Freizeit"
-         Rechts: GRÜN  „Nächste Arbeitszeit"
-         ════════════════════════════════ */
+      /* FREIZEIT */
       if (tm >= WORK_END) {
-        const min2       = minutenBisNaechsteArbeit(jetzt, tag);
-        const naechster  = tag === 5 ? 'Montag' : 'Morgen';
-        setArbeit('zk-rot','🏠',
-          'Freizeit',
-          'seit ' + feierStr + ' Uhr',
-          'Guten Feierabend! 🎉');
-        setPause('zk-gruen','🌅',
-          'Nächste Arbeitszeit',
-          'in ' + minText(min2),
-          naechster + ' um 8:00 Uhr');
+        const min2      = minutenBisNaechsteArbeit(jetzt, tag);
+        const naechster = tag === 5 ? 'Montag' : 'Morgen';
+        setArbeit('zk-rot','🏠','Freizeit',
+          'seit ' + feierStr + ' Uhr','Guten Feierabend! 🎉');
+        setPause('zk-gruen','🌅','Nächste Arbeitszeit',
+          'in ' + minText(min2), naechster + ' um 8:00 Uhr');
         return;
       }
 
-      /* ════════════════════════════════
-         PAUSE 1  (10:00 – 10:20)
-         Links:  ORANGE „Pause läuft"
-         Rechts: GRÜN   „Weiterarbeit"
-         ════════════════════════════════ */
+      /* PAUSE 1 */
       if (tm >= CFG.BREAK1_S && tm < CFG.BREAK1_E) {
         const min2 = CFG.BREAK1_E - tm;
-        setArbeit('zk-orange','☕',
-          'Pause läuft',
-          'noch ' + minText(min2),
-          'Ende um 10:20 Uhr');
-        setPause('zk-gruen','✅',
-          'Arbeitszeit',
-          'ab 10:20 Uhr',
-          'Weiterarbeit in ' + minText(min2));
+        setArbeit('zk-orange','☕','Pause läuft',
+          'noch ' + minText(min2),'Ende um 10:20 Uhr');
+        setPause('zk-gruen','✅','Arbeitszeit',
+          'ab 10:20 Uhr','Weiterarbeit in ' + minText(min2));
         return;
       }
 
-      /* ════════════════════════════════
-         MITTAGSPAUSE  (12:00 – 13:00)
-         Links:  ORANGE „Pause läuft"
-         Rechts: GRÜN   „Weiterarbeit"
-         ════════════════════════════════ */
+      /* MITTAGSPAUSE */
       if (tm >= CFG.BREAK2_S && tm < CFG.BREAK2_E) {
         const min2 = CFG.BREAK2_E - tm;
-        setArbeit('zk-orange','🍽️',
-          'Pause läuft',
-          'noch ' + minText(min2),
-          'Ende um 13:00 Uhr');
-        setPause('zk-gruen','✅',
-          'Arbeitszeit',
-          'ab 13:00 Uhr',
-          'Weiterarbeit in ' + minText(min2));
+        setArbeit('zk-orange','🍽️','Pause läuft',
+          'noch ' + minText(min2),'Ende um 13:00 Uhr');
+        setPause('zk-gruen','✅','Arbeitszeit',
+          'ab 13:00 Uhr','Weiterarbeit in ' + minText(min2));
         return;
       }
 
-      /* ════════════════════════════════
-         NORMALE ARBEITSZEIT
-         ════════════════════════════════ */
+      /* NORMALE ARBEITSZEIT */
       const minBisFeier = WORK_END - tm;
 
-      /* Vor Pause 1:
-         Links:  GRÜN   „Arbeitszeit"
-         Rechts: ORANGE „Nächste Pause 10:00" */
       if (tm < CFG.BREAK1_S) {
         const min2 = CFG.BREAK1_S - tm;
-        setArbeit('zk-gruen','✅',
-          'Arbeitszeit',
-          'noch ' + minText(minBisFeier),
-          'Feierabend um ' + feierStr + ' Uhr');
-        setPause('zk-orange','☕',
-          'Nächste Pause um 10:00',
-          'in ' + minText(min2),
-          'Dauer: 20 Min. (bis 10:20 Uhr)');
+        setArbeit('zk-gruen','✅','Arbeitszeit',
+          'noch ' + minText(minBisFeier),'Feierabend um ' + feierStr + ' Uhr');
+        setPause('zk-orange','☕','Nächste Pause um 10:00',
+          'in ' + minText(min2),'Dauer: 20 Min. (bis 10:20 Uhr)');
         return;
       }
 
-      /* Vor Mittagspause:
-         Links:  GRÜN   „Arbeitszeit"
-         Rechts: ORANGE „Mittagspause 12:00" */
       if (tm < CFG.BREAK2_S) {
         const min2 = CFG.BREAK2_S - tm;
-        setArbeit('zk-gruen','✅',
-          'Arbeitszeit',
-          'noch ' + minText(minBisFeier),
-          'Feierabend um ' + feierStr + ' Uhr');
-        setPause('zk-orange','🍽️',
-          'Mittagspause um 12:00',
-          'in ' + minText(min2),
-          'Dauer: 1 Std. (bis 13:00 Uhr)');
+        setArbeit('zk-gruen','✅','Arbeitszeit',
+          'noch ' + minText(minBisFeier),'Feierabend um ' + feierStr + ' Uhr');
+        setPause('zk-orange','🍽️','Mittagspause um 12:00',
+          'in ' + minText(min2),'Dauer: 1 Std. (bis 13:00 Uhr)');
         return;
       }
 
-      /* Letzte Arbeitsphase (nach Mittagspause):
-         Links:  GRÜN „Arbeitszeit"
-         Rechts: ROT  „Freizeit kommt" */
-      setArbeit('zk-gruen','✅',
-        'Arbeitszeit',
-        'noch ' + minText(minBisFeier),
-        'Feierabend um ' + feierStr + ' Uhr');
-      setPause('zk-rot','🏠',
-        'Freizeit',
-        'in ' + minText(minBisFeier),
-        'ab ' + feierStr + ' Uhr');
+      /* LETZTE ARBEITSPHASE */
+      setArbeit('zk-gruen','✅','Arbeitszeit',
+        'noch ' + minText(minBisFeier),'Feierabend um ' + feierStr + ' Uhr');
+      setPause('zk-rot','🏠','Freizeit',
+        'in ' + minText(minBisFeier),'ab ' + feierStr + ' Uhr');
     }
 
-    /* Sofort starten + jede Sekunde aktualisieren */
     update();
     setInterval(update, 1000);
 
   })();
   </script>
-  <!-- ══ ENDE ZEITKACHEL ══ -->
 
 
-    <!-- ══ NAVIGATIONS-KACHELN ══ -->
+  <!-- ══ NAVIGATIONS-KACHELN ══ -->
   <div class="card-grid">
 
     <a href="nachrichten.html" class="card card-color-9">
@@ -572,9 +554,11 @@ document.getElementById('zk-datum').textContent =
 
 </main>
 
+
 <!-- ══ VORLESEN-BUTTON ══ -->
 <div class="read-aloud-container">
-  <button class="btn-read-aloud" onclick="vorlesenUndMarkieren()" title="Seite vorlesen">
+  <button class="btn-read-aloud" onclick="vorlesenUndMarkieren()"
+          title="Seite vorlesen">
     <img src="zuhoeren.jpg" alt="Lautsprecher-Symbol">
     <span>Vorlesen</span>
   </button>
@@ -586,9 +570,8 @@ document.getElementById('zk-datum').textContent =
   text-align: center;
   padding: 14px 16px;
   background: #b61f29;
-  color: white;
+  color: #ffffff;
   font-size: 0.85rem;
-  font-family: 'Nunito Sans', sans-serif;
   line-height: 1.8;
 ">
   © 2026 <strong>Studjo | Arbeit und Qualifizierung</strong>
@@ -609,7 +592,7 @@ document.getElementById('zk-datum').textContent =
 
 <!-- ══ VORLESEN-JAVASCRIPT ══ -->
 <script>
-let isSpeaking     = false;
+let isSpeaking      = false;
 let aktuelleAussage = null;
 
 function vorlesenUndMarkieren() {
@@ -623,27 +606,20 @@ function vorlesenUndMarkieren() {
   isSpeaking = true;
 
   const elementeZumVorlesen = [];
-
   const h1 = document.querySelector('h1');
-  if (h1 && h1.innerText.trim() !== '') {
+  if (h1 && h1.innerText.trim() !== '')
     elementeZumVorlesen.push({ text: h1.innerText, element: h1 });
-  }
 
   elementeZumVorlesen.push({ text: 'Hier gibt es folgende Bereiche:', element: null });
 
-  const cards = document.querySelectorAll('.card');
-  cards.forEach(card => {
+  document.querySelectorAll('.card').forEach(card => {
     const h2 = card.querySelector('h2');
-    if (h2 && h2.innerText.trim() !== '') {
+    if (h2 && h2.innerText.trim() !== '')
       elementeZumVorlesen.push({ text: h2.innerText, element: card });
-    }
   });
 
-  if (elementeZumVorlesen.length > 0) {
-    spieleSequenz(elementeZumVorlesen, 0);
-  } else {
-    isSpeaking = false;
-  }
+  if (elementeZumVorlesen.length > 0) spieleSequenz(elementeZumVorlesen, 0);
+  else isSpeaking = false;
 }
 
 function spieleSequenz(elemente, index) {
@@ -652,20 +628,17 @@ function spieleSequenz(elemente, index) {
     isSpeaking = false;
     return;
   }
-  const abschnitt = elemente[index];
-  aktuelleAussage = new SpeechSynthesisUtterance(abschnitt.text);
+  const abschnitt    = elemente[index];
+  aktuelleAussage    = new SpeechSynthesisUtterance(abschnitt.text);
   aktuelleAussage.lang = 'de-DE';
   aktuelleAussage.rate = 0.9;
-
   aktuelleAussage.onstart = () => {
     entferneAlleMarkierungen();
     if (abschnitt.element) abschnitt.element.classList.add('is-reading');
   };
-  aktuelleAussage.onend = () => {
+  aktuelleAussage.onend = () =>
     setTimeout(() => spieleSequenz(elemente, index + 1), 150);
-  };
-  aktuelleAussage.onerror = (event) => {
-    console.error('Fehler beim Vorlesen:', event);
+  aktuelleAussage.onerror = () => {
     entferneAlleMarkierungen();
     isSpeaking = false;
   };
@@ -673,15 +646,13 @@ function spieleSequenz(elemente, index) {
 }
 
 function entferneAlleMarkierungen() {
-  document.querySelectorAll('.is-reading').forEach(el => {
-    el.classList.remove('is-reading');
-  });
+  document.querySelectorAll('.is-reading').forEach(el =>
+    el.classList.remove('is-reading'));
 }
 
-/* Service Worker */
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js').catch(err => console.log('SW Info:', err));
-}
+if ('serviceWorker' in navigator)
+  navigator.serviceWorker.register('sw.js')
+    .catch(err => console.log('SW Info:', err));
 </script>
 
 </body>
