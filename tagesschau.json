@@ -1,7 +1,37 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "17.07.2026, 06:23 Uhr (UTC)",
+  "aktualisiert": "17.07.2026, 08:36 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Marktbericht: Schwache Tech-Vorgaben ziehen DAX nach unten",
+      "description": "Tiefrote Vorgaben aus der internationalen Tech-Branche belasten zum Wochenschluss den deutschen Aktienmarkt. Auf Wochensicht zeichnet sich ein Minus von 1,3 Prozent ab.",
+      "pubDate": "2026-07-17T10:12:46+02:00",
+      "bild": ""
+    },
+    {
+      "title": "BerlinTrend: CDU legt mit neuem Spitzenkandidaten zu",
+      "description": "Nach teils falschen Angaben des Regierenden Bürgermeisters Wegner zum tagelangen Stromausfall war die Berliner CDU in Umfragen abgestürzt. Mit dem neuen Spitzenkandidaten Evers holt sie nun wieder auf. Stärkste Kraft bliebe die Linke.",
+      "pubDate": "2026-07-17T09:28:07+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Falkland-Banner: Nach Halbfinal-Sieg droht Argentinien Ärger",
+      "description": "Das WM-Halbfinale England-Argentinien hatte schon vor dem Anpfiff eine politische Dimension. Danach hielten argentinische Spieler ein Banner hoch: \"Die Falklandinseln sind argentinisch\". Das sorgt für Diskussionen. Von O. Neuroth.",
+      "pubDate": "2026-07-17T09:26:39+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Putin-Kritiker Nadeschdin vor Gericht",
+      "description": "Boris Nadeschdin ist einer der letzten russischen Oppositionellen, die offen Kritik äußern und noch nicht im Exil oder Gefängnis sind. Nun muss er vor Gericht - und fürchtet eine Haftstrafe. Von Philip Raillon.",
+      "pubDate": "2026-07-17T09:19:56+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Netflix nutzt KI in rund 300 Filmen und Serien",
+      "description": "Netflix hat allein in diesem Jahr bei rund 300 Filmen und Serien Künstliche Intelligenz eingesetzt. Der Streamingdienst sieht darin ein Werkzeug für Kreative. An der Börse herrscht derweil Skepsis.",
+      "pubDate": "2026-07-17T08:41:23+02:00",
+      "bild": ""
+    },
     {
       "title": "Andy Burnham wird Labour-Chef: Zwischen Hoffen und Zweifeln",
       "description": "Andy Burnham, Ex-Bürgermeister von Manchester, wird heute neuer Labour-Chef - und am Montag Premier. In der boomenden Stadt verbinden viele mit ihm Hoffnung. Doch es gibt auch Bedenken. Von Mareike Aden.",
@@ -12,12 +42,6 @@
       "title": "Trump will Social-Media-Beiträge auf Truth Social zu Geld machen",
       "description": "Das Medienunternehmen von US-Präsident Trump plant einen kostenpflichtigen Premiumzugriff zu Beiträgen auf Truth Social. Finanzfirmen sollen davon profitieren. Kritiker beklagen \"Ausnutzung staatlicher Macht\".",
       "pubDate": "2026-07-17T07:33:39+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Tech-Ausverkauf schickt Börsen auf Talfahrt",
-      "description": "Ein globaler Absturz bei Tech-Aktien belastet die Börsen rund um den Globus. Daran konnten auch die am Abend veröffentlichten Quartalszahlen des Streaming-Giganten Netflix nichts ändern.",
-      "pubDate": "2026-07-17T07:29:14+02:00",
       "bild": ""
     },
     {
@@ -66,30 +90,6 @@
       "title": "Wieder fremdenfeindliche Proteste in Südafrika - aus dem Ausland gesteuert? -",
       "description": "In Südafrika gibt es wieder fremdenfeindliche Proteste. Die Organisatoren kündigen wöchentliche Demonstrationen bis November an. Die Regierung glaubt, dass die Gruppen auch aus dem Ausland finanziert werden.Von Stephan Ueberbach.",
       "pubDate": "2026-07-16T20:38:06+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Social Media: Flickenteppich bei der Alterskontrolle in der EU?",
-      "description": "Social Media ab 13, 15 oder 16 Jahren? Experten sagen: Unter 13 sollten TikTok und Co. nicht alleine genutzt werden. Daraus soll jetzt ein EU-Gesetz werden. Doch nicht alle Länder wollen diese Altersgrenze - droht ein Wildwuchs? Von C. Feld.",
-      "pubDate": "2026-07-16T18:51:09+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Für die UN heißt es sparen, sparen, sparen - und umziehen",
-      "description": "Stühlerücken in Genf: Im Palais Wilson tauschen zwei UN-Einrichtungen die Räumlichkeiten. Das Menschenrechtsbüro zieht aus, das Flüchtlingshilfswerk zieht ein. Beide haben dafür denselben Grund: sparen. Von Stefanie Dodt.",
-      "pubDate": "2026-07-16T18:42:15+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Iran-Krieg: Golfstaaten fürchten neue Eskalation",
-      "description": "Die US-Militärbasen in Kuwait, Bahrain und Jordanien werden seit Ausbruch des Kriegs von Iran immer wieder angegriffen - auch jetzt. Dort stellt sich die bange Frage: Sind die Attacken der Auftakt zu größeren Kampfhandlungen? Von Moritz Behrendt.",
-      "pubDate": "2026-07-16T18:41:56+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: DAX kann Verluste eindämmen",
-      "description": "Der Konflikt im Nahen Osten beschäftigt auch heute wieder die Anleger am deutschen Aktienmarkt - und sorgt für Verunsicherung. Am Ende kann der DAX aber größere Verluste verhindern und behält die 25.000 Punkte im Blick.",
-      "pubDate": "2026-07-16T18:12:32+02:00",
       "bild": ""
     }
   ],
