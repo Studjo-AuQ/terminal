@@ -195,6 +195,7 @@
 .zk-blau   { background: #dbeafe; color: #1e40af; }
 .zk-grau   { background: #f1f5f9; color: #475569; }
 .zk-lila   { background: #f3e8ff; color: #7e22ce; }
+.zk-rot   { background: #fee2e2; color: #b61f29; }
 </style>
 
 <!-- ══ HTML-STRUKTUR ══ -->
@@ -340,35 +341,164 @@
       return;
     }
 
-    if (tm >= CFG.BREAK1_S && tm < CFG.BREAK1_E) {
-      const min2 = CFG.BREAK1_E - tm;
-      setArbeit('zk-orange','☕','Pausenzeit','noch ' + minText(min2),'Weiterarbeit um 10:20 Uhr');
-      setPause('zk-orange','⏳','Pause läuft','noch ' + minText(min2),'Ende um 10:20 Uhr');
-      return;
-    }
+    /* ════════════════════════════════════════════════
+   WOCHENENDE  (unverändert)
+   ════════════════════════════════════════════════ */
+if (!istArbeitstag) {
+  const min2 = minutenBisNaechsteMo8(jetzt);
+  setArbeit('zk-grau','🏠',
+    'Wochenende',
+    'noch ' + minText(min2),
+    'Montag 8:00 Uhr → Arbeitsbeginn');
+  setPause('zk-grau','🌙',
+    'Ruhetag',
+    '–',
+    'Keine Arbeitszeiten heute');
+  return;
+}
 
-    if (tm >= CFG.BREAK2_S && tm < CFG.BREAK2_E) {
-      const min2 = CFG.BREAK2_E - tm;
-      setArbeit('zk-orange','🍽️','Mittagspause','noch ' + minText(min2),'Weiterarbeit um 13:00 Uhr');
-      setPause('zk-orange','⏳','Mittagspause läuft','noch ' + minText(min2),'Ende um 13:00 Uhr');
-      return;
-    }
+/* ════════════════════════════════════════════════
+   VOR DER ARBEIT  (unverändert)
+   ════════════════════════════════════════════════ */
+if (tm < CFG.WORK_START) {
+  const min2 = CFG.WORK_START - tm;
+  setArbeit('zk-blau','🌅',
+    'Vor der Arbeit',
+    'noch ' + minText(min2),
+    'Arbeit beginnt um 8:00 Uhr');
+  setPause('zk-grau','☕',
+    'Noch keine Pause',
+    '–',
+    'Erste Pause um 10:00 Uhr');
+  return;
+}
 
-    /* NORMALE ARBEITSZEIT */
-    const minBisFeier = WORK_END - tm;   // ✅ Fix: war WORK_END (undefiniert)
-    setArbeit('zk-gruen','✅','Arbeitszeit','noch ' + minText(minBisFeier),'Feierabend um ' + feierStr + ' Uhr');
+/* ════════════════════════════════════════════════
+   FEIERABEND / FREIZEIT
+   ── Links:  ROT  „Freizeit"
+   ── Rechts: GRÜN „nächste Arbeitszeit"
+   ════════════════════════════════════════════════ */
+if (tm >= WORK_END) {
+  const min2 = minutenBisNaechsteArbeit(jetzt, tag);
+  const naechsterTag = tag === 5 ? 'Montag' : 'Morgen';
 
-    if (tm < CFG.BREAK1_S) {
-      const min2 = CFG.BREAK1_S - tm;
-      setPause('zk-gruen','☕','Nächste Pause um 10:00','in ' + minText(min2),'Dauer: 20 Min. (bis 10:20 Uhr)');
-    } else if (tm < CFG.BREAK2_S) {
-      const min2 = CFG.BREAK2_S - tm;
-      setPause('zk-gruen','🍽️','Mittagspause um 12:00','in ' + minText(min2),'Dauer: 1 Std. (bis 13:00 Uhr)');
-    } else {
-      setPause('zk-gruen','✓','Pausen beendet','–','Weiter bis ' + feierStr + ' Uhr');
-    }
+  /* LINKS – rote Karte „Freizeit" */
+  setArbeit('zk-rot','🏠',
+    'Freizeit',
+    'seit ' + feierStr + ' Uhr',
+    'Guten Feierabend! 🎉');
+
+  /* RECHTS – grüne Karte „nächste Arbeitszeit" */
+  setPause('zk-gruen','🌅',
+    'Nächste Arbeitszeit',
+    'in ' + minText(min2),
+    naechsterTag + ' um 8:00 Uhr');
+  return;
+}
+
+/* ════════════════════════════════════════════════
+   PAUSE 1 (10:00 – 10:20)
+   ── Links:  ORANGE „Pausenzeit"
+   ── Rechts: GRÜN   „Weiterarbeit um 10:20"
+   ════════════════════════════════════════════════ */
+if (tm >= CFG.BREAK1_S && tm < CFG.BREAK1_E) {
+  const min2 = CFG.BREAK1_E - tm;
+
+  /* LINKS – orange Karte „Pausenzeit" */
+  setArbeit('zk-orange','☕',
+    'Pause läuft',
+    'noch ' + minText(min2),
+    'Ende um 10:20 Uhr');
+
+  /* RECHTS – grüne Karte „Weiterarbeit" */
+  setPause('zk-gruen','✅',
+    'Arbeitszeit',
+    'ab 10:20 Uhr',
+    'Weiterarbeit in ' + minText(min2));
+  return;
+}
+
+/* ════════════════════════════════════════════════
+   MITTAGSPAUSE (12:00 – 13:00)
+   ── Links:  ORANGE „Pausenzeit"
+   ── Rechts: GRÜN   „Weiterarbeit um 13:00"
+   ════════════════════════════════════════════════ */
+if (tm >= CFG.BREAK2_S && tm < CFG.BREAK2_E) {
+  const min2 = CFG.BREAK2_E - tm;
+
+  /* LINKS – orange Karte „Pausenzeit" */
+  setArbeit('zk-orange','🍽️',
+    'Pause läuft',
+    'noch ' + minText(min2),
+    'Ende um 13:00 Uhr');
+
+  /* RECHTS – grüne Karte „Weiterarbeit" */
+  setPause('zk-gruen','✅',
+    'Arbeitszeit',
+    'ab 13:00 Uhr',
+    'Weiterarbeit in ' + minText(min2));
+  return;
+}
+
+/* ════════════════════════════════════════════════
+   NORMALE ARBEITSZEIT
+   ════════════════════════════════════════════════ */
+const minBisFeier = WORK_END - tm;
+
+/* ── VOR PAUSE 1: Rechts ORANGE „Nächste Pause"
+   ────────────────────────────────────────────── */
+if (tm < CFG.BREAK1_S) {
+  const min2 = CFG.BREAK1_S - tm;
+
+  /* LINKS – grüne Karte „Arbeitszeit" */
+  setArbeit('zk-gruen','✅',
+    'Arbeitszeit',
+    'noch ' + minText(minBisFeier),
+    'Feierabend um ' + feierStr + ' Uhr');
+
+  /* RECHTS – ORANGE Karte „Nächste Pause" ← NEU */
+  setPause('zk-orange','☕',
+    'Nächste Pause um 10:00',
+    'in ' + minText(min2),
+    'Dauer: 20 Min. (bis 10:20 Uhr)');
+  return;
+}
+
+/* ── VOR MITTAGSPAUSE: Rechts ORANGE „Mittagspause"
+   ────────────────────────────────────────────────── */
+if (tm < CFG.BREAK2_S) {
+  const min2 = CFG.BREAK2_S - tm;
+
+  /* LINKS – grüne Karte „Arbeitszeit" */
+  setArbeit('zk-gruen','✅',
+    'Arbeitszeit',
+    'noch ' + minText(minBisFeier),
+    'Feierabend um ' + feierStr + ' Uhr');
+
+  /* RECHTS – ORANGE Karte „Mittagspause" ← NEU */
+  setPause('zk-orange','🍽️',
+    'Mittagspause um 12:00',
+    'in ' + minText(min2),
+    'Dauer: 1 Std. (bis 13:00 Uhr)');
+  return;
+}
+
+/* ── LETZTE ARBEITSPHASE (nach Mittagspause, vor Feierabend)
+   ── Links:  GRÜN „Arbeitszeit"
+   ── Rechts: ROT  „Freizeit"  ← NEU
+   ─────────────────────────────────────────────────────────── */
+setArbeit('zk-gruen','✅',
+  'Arbeitszeit',
+  'noch ' + minText(minBisFeier),
+  'Feierabend um ' + feierStr + ' Uhr');
+
+setPause('zk-rot','🏠',
+  'Freizeit',
+  'in ' + minText(minBisFeier),
+  'ab ' + feierStr + ' Uhr');
+
   }
-
+  }
   update();
   setInterval(update, 1000);
 
