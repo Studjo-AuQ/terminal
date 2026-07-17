@@ -41,46 +41,38 @@
       margin-bottom: 20px;
     }
 
-    /* Header: dunkelrot, Datum + Uhr */
-    .zk-header {
-      background: #b61f29;
-      color: white;
-      padding: 16px 22px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-    .zk-datum {
-      font-size: 0.95rem;
-      font-weight: 700;
-      opacity: .88;
-      margin-bottom: 4px;
-      letter-spacing: .01em;
-    }
-    .zk-uhr {
-      font-size: 2.6rem;
-      font-weight: 800;
-      line-height: 1;
-      letter-spacing: .03em;
-    }
-    .zk-uhr-label {
-      font-size: 0.75rem;
-      font-weight: 700;
-      opacity: .7;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-    }
+    /* Header: eine Zeile, Uhrzeit links, Datum rechts */
+.zk-header {
+  background: #b61f29;
+  color: white;
+  padding: 12px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
 
-    /* Status-Bereich: 2 Spalten */
-    .zk-body {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-      padding: 16px 18px 18px;
-    }
-    @media (max-width: 520px) { .zk-body { grid-template-columns: 1fr; } }
+.zk-uhr {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: .03em;
+}
+
+.zk-datum {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: .01em;
+  text-align: right;
+}
+
+@media (max-width: 520px) {
+  .zk-uhr,
+  .zk-datum {
+    font-size: 1.4rem;
+  }
+}
 
     /* Status-Karte */
     .zk-card {
@@ -203,14 +195,12 @@
   <div class="zk-widget" role="region" aria-label="Tageszeit und Arbeitszeit">
 
     <!-- Kopfzeile: Datum + Uhr -->
-    <div class="zk-header">
-      <div>
-        <div class="zk-datum" id="zk-datum">…</div>
-        <div class="zk-uhr"   id="zk-uhr">…</div>
-        <div class="zk-uhr-label">Uhr</div>
-      </div>
-      <div style="font-size:3.5rem;opacity:.85" aria-hidden="true">🕐</div>
-    </div>
+    <!-- Kopfzeile: Uhrzeit links, Datum rechts – alles in einer Zeile -->
+<div class="zk-header">
+  <div id="zk-uhr" class="zk-uhr">…</div>
+  <div id="zk-datum" class="zk-datum">…</div>
+</div>
+
 
     <!-- Status-Bereich -->
     <div class="zk-body">
