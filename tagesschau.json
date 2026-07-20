@@ -1,35 +1,83 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "20.07.2026, 10:18 Uhr (UTC)",
+  "aktualisiert": "20.07.2026, 12:33 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Proteste in Indien: \"Cockroach\"-Demo gegen Regierung in Neu-Delhi",
+      "description": "Bei einem der größten Proteste seit Jahren ist es in der indischen Hauptstadt Neu-Delhi zu heftigen Auseinandersetzungen gekommen. Die Polizei setzte Schlagstöcke ein, um die Demonstranten an einem Marsch zum Parlament zu hindern.",
+      "pubDate": "2026-07-20T14:17:45+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Für Tech-Aktien schlägt die Stunde der Wahrheit",
+      "description": "Mit Beginn der neuen Woche nimmt die Berichtssaison der Unternehmen Fahrt auf. Im Fokus stehen besonders hochbewertete US-Tech-Aktien. Können Alphabet & Co. ihr hohes Kursniveau verteidigen?",
+      "pubDate": "2026-07-20T14:00:15+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Mann stirbt bei Polizeieinsatz in Bologna - Aufklärung gefordert",
+      "description": "Bei einem Polizeieinsatz im italienischen Bologna drücken zwei Beamte einen Mann minutenlang zu Boden, bis er stirbt. Der Tod des Mannes ruft Proteste hervor. Nun versprechen die Behörden Transparenz.",
+      "pubDate": "2026-07-20T13:52:38+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Andy Burnham ist neuer Premierminister in Großbritannien",
+      "description": "Andy Burnham ist neuer Premierminister des Vereinigten Königreichs. König Charles III. beauftragte den Labour-Chef mit der Regierungsbildung. Als Hoffnungsträger seiner Partei soll Burnham das Land aus der Dauerkrise führen.",
+      "pubDate": "2026-07-20T14:29:16+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Geringste Erdbeerernte seit 31 Jahren erwartet",
+      "description": "Die Landwirte in Deutschland haben 2026 so wenige Erdbeeren geerntet wie seit mehr als 30 Jahren nicht. Auch beim Spargel ging die Menge nach Daten des Statistischen Bundesamts noch einmal zurück.",
+      "pubDate": "2026-07-20T13:12:01+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Elektroautos sind seit 2020 deutlich günstiger geworden",
+      "description": "E-Autos sind zwischen 2020 und 2025 um rund 18 Prozent günstiger geworden. Dazu kommen die staatlichen Kaufprämien, über die schon mehr als 50 Millionen Euro ausgezahlt wurden - vor allem für Tesla-Modelle.",
+      "pubDate": "2026-07-20T12:41:31+02:00",
+      "bild": ""
+    },
+    {
+      "title": "EU-Kommission verhängt 550-Millionen-Strafe gegen AliExpress",
+      "description": "Zu wenig Personal, um illegale Angebote aufzuspüren, kein entschiedenes Vorgehen gegen zwielichtige Händler: Die EU-Kommission geht gegen den chinesischen Händler AliExpress vor - mit einer Rekordstrafe. Von Kathrin Schmid.",
+      "pubDate": "2026-07-20T12:35:30+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Unionsfraktion: Abstimmung über Spahn-Nachfolge am 29. Juli",
+      "description": "Wer übernimmt nach Spahns Rücktritt den Vorsitz der Unionsfraktion? Die Abgeordneten müssen wegen dieser Frage ihre Sommerpause unterbrechen: Am 29. Juli soll in einer Sondersitzung entschieden werden.",
+      "pubDate": "2026-07-20T12:20:51+02:00",
+      "bild": ""
+    },
     {
       "title": "Neue Waldbrände in Südfrankreich ausgebrochen",
       "description": "In Südfrankreich sind mehrere Waldbrände ausgebrochen - Hunderte Feuerwehrleute sind im Einsatz, viele Menschen wurden in Sicherheit gebracht. Auf Korsika halten zwei Brände die Einsatzkräfte bereits seit einer Woche in Atem.",
-      "pubDate": "2026-07-20T12:01:40+02:00",
+      "pubDate": "2026-07-20T13:50:52+02:00",
       "bild": ""
     },
     {
       "title": "IW Köln: Mieten in Deutschland deutlich gestiegen",
-      "description": "Die Mieten in Deutschland sind laut dem Insitut der deutschen Wirtschaft im Vergleich zum Vorjahr noch einmal deutlich teurer geworden. Dabei gibt es große regionale Unterschiede auf dem Wohnungsmarkt.",
+      "description": "Die Mieten in Deutschland sind laut dem Institut der deutschen Wirtschaft im Vergleich zum Vorjahr noch einmal deutlich gestiegen. Dabei gibt es große regionale Unterschiede auf dem Wohnungsmarkt.",
       "pubDate": "2026-07-20T11:54:28+02:00",
       "bild": ""
     },
     {
       "title": "Argentinien verliert WM-Finale: \"Ich muss weinen\"",
-      "description": "Der große Traum Argentiniens ist geplatzt. Den WM-Titel konnte das Team nicht verteidigen. Auch Spekulationen um einen Messi-Rücktritt sorgten für Tränen. Doch Grund zum Feiern fand man in Buenos Aires trotzdem. Von O. Neuroth.",
+      "description": "Der große Traum Argentiniens ist geplatzt. Den WM-Titel konnte das Team nicht verteidigen. Auch Spekulationen um einen Messi-Rücktritt sorgten für Tränen. Doch Grund zum Feiern fand man in Buenos Aires trotzdem. Von Oliver Neuroth.",
       "pubDate": "2026-07-20T10:31:04+02:00",
       "bild": ""
     },
     {
       "title": "Spanien feiert WM-Titel: \"Das hier ist unbeschreiblich\"",
-      "description": "Die Fans in Spanien mussten beim WM-Finale lange warten, bis sich ihr Team gegen die Mannschaft aus Argentinien durchsetzte. Dann aber brachen in Madrid alle Dämme, und die Fans feierten die ganze Nacht den ersehnten Titel. Von A. Mundt.",
+      "description": "Die Fans in Spanien mussten beim WM-Finale lange warten, bis sich ihr Team gegen die Mannschaft aus Argentinien durchsetzte. Dann aber brachen in Madrid alle Dämme, und die Fans feierten die ganze Nacht den ersehnten Titel. Von Anna Mundt.",
       "pubDate": "2026-07-20T10:30:55+02:00",
       "bild": ""
     },
     {
       "title": "Burnham als neuer Premier: Was das Amt inzwischen so schwierig macht",
-      "description": "Andy Burnham wird heute von König Charles zum britischen Premierminister ernannt - als siebter in zehn Jahren. Wenn das Amt für ihn nicht auch zum Schleudersitz werden soll, muss er schwierige Herausforderungen meistern. Von L.-M. Röhling.",
-      "pubDate": "2026-07-20T10:19:06+02:00",
+      "description": "Andy Burnham ist der siebte britische Regierungschef in den vergangenen zehn Jahren. Wenn das Amt für ihn nicht auch zum Schleudersitz werden soll, muss er schwierige Herausforderungen meistern. Von Lisa-Maria Röhling.",
+      "pubDate": "2026-07-20T13:48:49+02:00",
       "bild": ""
     },
     {
@@ -40,56 +88,8 @@
     },
     {
       "title": "Humboldt Forum: \"Jetzt beginnt die anspruchsvollere Aufgabe\"",
-      "description": "Fünf Jahre ist es her, dass das Humboldt Forum in Berlin seine Pforten für das Publikum öffnete. Es sollte ein Debattenraum werden, ein Ort der Kolonialismus-Aufarbeitung. Ist all das gelungen? Von L. Haas und L. Babst.",
+      "description": "Fünf Jahre ist es her, dass das Humboldt Forum in Berlin seine Pforten für das Publikum öffnete. Es sollte ein Debattenraum werden, ein Ort der Kolonialismus-Aufarbeitung. Ist all das gelungen? Von Lukas Haas und Luis Babst.",
       "pubDate": "2026-07-20T09:05:44+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Union sucht nach Spahns Rücktritt neuen Fraktionschef",
-      "description": "Die Union braucht nach Spahns Rücktritt einen neuen Fraktionschef. Heute beraten die Spitzen der CDU und die Bundestagsfraktion. Nicht nur Kanzler Merz will die Personalie schnell klären. Mehrere Namen kursieren.",
-      "pubDate": "2026-07-20T11:24:27+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Was von dieser WM der Widersprüche bleibt",
-      "description": "Rekordeinschaltquoten, teure Tickets, eine zurückgenommene Rote Karte, Pfiffe für FIFA-Boss Infantino und US-Präsident Trump bei der Siegerehrung - eine WM der Widersprüche ist vorbei. Was bleibt? Von Benjamin Best.",
-      "pubDate": "2026-07-20T07:31:00+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bäcker im Interview: \"Ein Beruf mit Zukunft\"",
-      "description": "Die Zahl der Pleiten von Bäckereien in Deutschland steigt rasant. Doch dass das Handwerk ausstirbt, glaube er nicht, sagt Andreas Schmitt vom Zentralverband des Deutschen Bäckerhandwerks im tagesschau24-Interview.",
-      "pubDate": "2026-07-20T06:00:27+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Armee meldet neue Angriffe auf Iran",
-      "description": "Das US-Militär hat in der neunten Nacht in Folge Ziele in Iran bombardiert. Zudem gab es erneut iranische Angriffe in mehreren Golfstaaten - und in der Straße von Hormus soll ein Schiff in Brand geraten sein.",
-      "pubDate": "2026-07-20T08:53:10+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ukraine wirft Russland Angriff auf ziviles Schiff bei Odessa vor",
-      "description": "Russland hat nach ukrainischen Angaben einen Getreide-Frachter im Schwarzen Meer beschossen. Dabei seien zehn Menschen gestorben. Die Ukraine sprach von \"Terrorakt\" und Völkerrechtsbruch - und antwortete mit einem großangelegten Drohnenangriff.",
-      "pubDate": "2026-07-20T11:40:08+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Spanien ist Fußball-Weltmeister 2026",
-      "description": "Spanien ist zum zweiten Mal Fußball-Weltmeister. Das Team siegte im Finale in New Jersay durch ein Tor von Ferran Torres mit 1:0 nach Verlängerung gegen Titelverteidiger Argentinien um Superstar Lionel Messi.",
-      "pubDate": "2026-07-20T00:27:23+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Eskalation zwischen USA und Iran: Wie geht es in der Golfregion weiter?",
-      "description": "Die USA greifen wieder täglich iranische Ziele an - und Iran schlägt mit Attacken auf die Golfstaaten zurück. Die Situation ähnelt der im Frühjahr. Wie der Ausweg aus dem Konflikt aussehen könnte, ist ungewiss. Von Moritz Behrendt.",
-      "pubDate": "2026-07-19T21:39:15+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Mindestens fünf Tote nach Erdbeben im Zentrum Perus",
-      "description": "Ein Erdbeben hat die Andenregion Perus erschüttert. Örtliche Behörden gehen aktuell von mindestens sechs Todesopfern aus. Die Zahl der Vermissten ist noch unbekannt. Hunderte Menschen wurden obdachlos.",
-      "pubDate": "2026-07-19T21:53:43+02:00",
       "bild": ""
     }
   ],
