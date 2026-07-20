@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neuigkeiten bei Studjo</title>
+  <link rel="stylesheet" href="style-index.css">
+  <style>
+    body {
+      font-family: 'Nunito Sans', sans-serif;
+      background: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ── Zurück-Leiste oben ── */
+    .back-bar {
+      background: #b61f29;
+      color: #ffffff;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .back-bar a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.2);
+      padding: 8px 18px;
+      border-radius: 30px;
+      transition: background .2s;
+    }
+
+    .back-bar a:hover {
+      background: rgba(255,255,255,0.35);
+    }
+
+    .back-bar-title {
+      font-size: 1.1rem;
+      font-weight: 800;
+    }
+
+    /* ── Info-Box ── */
+    .info-box {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 30px 28px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+      text-align: center;
+    }
+
+    .info-box h1 {
+      color: #b61f29;
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+    }
+
+    .info-box p {
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    /* ── Öffnen-Button ── */
+    .open-btn {
+      display: inline-block;
+      background: #b61f29;
+      color: #ffffff;
+      font-size: 1.1rem;
+      font-weight: 800;
+      padding: 14px 32px;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background .2s, transform .2s;
+      box-shadow: 0 4px 12px rgba(182,31,41,0.3);
+    }
+
+    .open-btn:hover {
+      background: #8e1219;
+      transform: translateY(-2px);
+    }
+
+    .open-btn-icon {
+      font-size: 1.3rem;
+      margin-right: 8px;
+    }
+
+    /* ── Hinweis-Box ── */
+    .hinweis {
+      max-width: 600px;
+      margin: 0 auto 40px;
+      background: #fff9c4;
+      border-radius: 14px;
+      padding: 16px 20px;
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.6;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    .hinweis strong {
+      color: #b45309;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Zurück-Leiste ── -->
+  <div class="back-bar">
+    <a href="index.html">← Zurück</a>
+    <span class="back-bar-title">Neuigkeiten bei Studjo</span>
+  </div>
+
+  <!-- ── Info-Box ── -->
+  <div class="info-box">
+    <div style="font-size:3rem;margin-bottom:12px">📰</div>
+    <h1>Neuigkeiten bei Studjo</h1>
+    <p>
+      Hier findest du aktuelle Nachrichten.<br>
+      Die Seite öffnet sich in einem <strong>neuen Fenster</strong>.<br>
+      Du kannst danach hierher zurückkommen.
+    </p>
+    <a href="https://001sdbfevm-660.johanneswerk.int/Company/News"
+       target="_blank"
+       rel="noopener"
+       class="open-btn">
+      <span class="open-btn-icon">📰</span>
+      Nachrichten öffnen
+    </a>
+  </div>
+
+  <!-- ── Hinweis ── -->
+  <div class="hinweis">
+    <strong>💡 Hinweis:</strong><br>
+    Die Nachrichtenseite öffnet sich in einem neuen Fenster.<br>
+    Schließe das neue Fenster – dann bist du automatisch wieder hier.
+  </div>
+
+</body>
+</html>
