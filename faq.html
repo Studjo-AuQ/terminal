@@ -999,13 +999,13 @@
       window.speechSynthesis.cancel();
       entferneAlleMarkierungen();
       isSpeaking = false;
-      document.getElementById('vorlesen-btn').classList.remove('aktiv');
+      document.getElementById('btn-vorlesen').classList.remove('aktiv');
       return;
     }
 
     window.speechSynthesis.cancel();
     isSpeaking = true;
-    document.getElementById('vorlesen-btn').classList.add('aktiv');
+    document.getElementById('btn-vorlesen').classList.add('aktiv');
 
     const elementeZumVorlesen = [];
 
@@ -1061,7 +1061,7 @@
     if (index >= elemente.length || !isSpeaking) {
       entferneAlleMarkierungen();
       isSpeaking = false;
-      document.getElementById('vorlesen-btn').classList.remove('aktiv');
+      document.getElementById('btn-vorlesen').classList.remove('aktiv');
       return;
     }
     const abschnitt = elemente[index];
@@ -1078,7 +1078,7 @@
     aktuelleAussage.onerror = () => {
       entferneAlleMarkierungen();
       isSpeaking = false;
-      document.getElementById('vorlesen-btn').classList.remove('aktiv');
+      document.getElementById('btn-vorlesen').classList.remove('aktiv');
     };
     window.speechSynthesis.speak(aktuelleAussage);
   }
