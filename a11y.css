@@ -3,15 +3,22 @@
    Studjo Infoterminal | Evangelisches Johanneswerk
    ══════════════════════════════════════════════════════ */
 
-/* ── Steuerleiste: fixiert links unten ── */
+/* ── Steuerleiste: fixiert waagerecht unten mittig ── */
 .a11y-bar {
   position: fixed;
-  bottom: 24px;
-  left: 20px;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-direction: row;
+  gap: 12px;
   z-index: 9000;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: 8px 14px;
+  border-radius: 999px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
 }
 
 /* ── Alle Buttons ── */
@@ -76,11 +83,12 @@ body.kontrast {
 /* ── Toast-Hinweis (kurzes Einblenden) ── */
 .a11y-toast {
   position: fixed;
-  bottom: 108px;
-  left: 20px;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
   background: rgba(0, 0, 0, 0.75);
   color: #ffffff;
-  padding: 8px 16px;
+  padding: 8px 18px;
   border-radius: 20px;
   font-size: 0.9rem;
   font-weight: 700;
@@ -93,4 +101,9 @@ body.kontrast {
 
 .a11y-toast.sichtbar {
   opacity: 1;
+}
+
+/* ── Genug Abstand am Seitenende, damit Leiste nichts verdeckt ── */
+body {
+  padding-bottom: 90px;
 }
