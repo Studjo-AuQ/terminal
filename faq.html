@@ -243,46 +243,7 @@
     .quiz-feedback.richtig { display: block; background: #dcfce7; color: #15803d; border: 1px solid #bbf7d0; }
     .quiz-feedback.falsch  { display: block; background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; }
 
-    /* ══════════════════════════════════════════════════
-       VORLESEN  –  runder Button unten rechts
-       ══════════════════════════════════════════════════ */
-    .vorlesen-btn {
-      position: fixed;
-      bottom: 28px; right: 28px;
-      width: 82px; height: 82px;
-      border-radius: 50%;
-      background: var(--rot);
-      border: none; cursor: pointer;
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: center;
-      gap: 2px;
-      box-shadow: 0 4px 18px rgba(182,31,41,.35);
-      z-index: 300;
-      transition: background .2s, transform .15s;
-      font-family: inherit;
-    }
-    .vorlesen-btn:hover { background: #8b161e; transform: scale(1.06); }
-    .vorlesen-btn img  { width: 38px; height: 38px; object-fit: contain; }
-    .vorlesen-btn span {
-      font-size: 0.6rem; font-weight: 800; color: white;
-      text-transform: uppercase; letter-spacing: .06em;
-    }
-    .vorlesen-btn.aktiv {
-      animation: puls-rot 1.1s ease-in-out infinite;
-    }
-    @keyframes puls-rot {
-      0%, 100% { box-shadow: 0 4px 18px rgba(182,31,41,.35); }
-      50%       { box-shadow: 0 4px 28px rgba(182,31,41,.7); }
-    }
-
-    /* ── Vorlesen-Markierung (aktuell gelesenes Element) ── */
-    .is-reading {
-      background: rgba(182,31,41,.08) !important;
-      outline: 2px solid rgba(182,31,41,.4);
-      border-radius: 6px;
-    }
-
-    /* ── Footer ── */
+       /* ── Footer ── */
     footer {
       text-align: center; padding: 18px;
       background: var(--rot); color: white; font-size: 0.88rem;
@@ -976,16 +937,6 @@
 <footer>
   &copy; 2024 <b>Studjo | Arbeit und Qualifizierung</b> | Infoterminal | Barrierefreier Zugang
 </footer>
-
-<!-- ══════════════════════════════════════════
-     VORLESEN-BUTTON (rund, unten rechts)
-     ══════════════════════════════════════════ -->
-<button class="vorlesen-btn" id="vorlesen-btn"
-        onclick="vorlesenUndMarkieren()"
-        aria-label="Vorlesen starten oder stoppen">
-  <img src="zuhoeren.jpg" alt="Ohr-Symbol">
-  <span>Vorlesen</span>
-</button>
 
 <script>
   /* ── Kapitel auf-/zuklappen ──────────────────────────────────── */
