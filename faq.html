@@ -988,7 +988,105 @@
       : '❌ Leider falsch. Die richtige Antwort ist grün markiert.';
   }
 
-  
+  /* ══════════════════════════════════════════════════════════════
+     VORLESEN  –  sequenziell mit Markierung (wie im Anhang)
+     ══════════════════════════════════════════════════════════════ */
+  let isSpeaking     = false;
+  let aktuelleAussage = null;
+
+  function vorlesenUndMarkieren() {
+    if (isSpeaking || window.speechSynthesis.speaking) {
+      window.speechSynthesis.cancel();
+      entferneAlleMarkierungen();
+      isSpeaking = false;
+      document.getElementById('btn-vorlesen').classList.remove('aktiv');
+      return;
+    }
+
+    window.speechSynthesis.cancel();
+    isSpeaking = true;
+    document.getElementById('btn-vorlesen').classList.add('aktiv');
+
+    const elementeZumVorlesen = [];
+
+    // Seitentitel
+    const h1 = document.querySelector('h1');
+    if (h1) elementeZumVorlesen.push({ text: h1.innerText, element: h1 });
+
+    // Alle Kapitel durchgehen
+    document.querySelectorAll('.kapitel-kachel').forEach(kachel => {
+
+      // Kapiteltitel (Emojis entfernen für saubere Aussprache)
+      const titelEl = kachel.querySelector('.kachel-titel');
+      let kapitelName = titelEl ? titelEl.innerText : '';
+      kapitelName = kapitelName
+        .replace(/[\u{1F300}-\u{1F9FF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]/gu, '')
+        .trim();
+      if (titelEl) {
+        elementeZumVorlesen.push({
+          text: 'Kapitel: ' + kapitelName + '.',
+          element: kachel.querySelector('.kachel-kopf')
+        });
+      }
+
+      // Nur wenn Kapitel offen: Fragen vorlesen
+      if (kachel.classList.contains('offen')) {
+        kachel.querySelectorAll('.faq-karte').forEach(faqKarte => {
+          const frageEl = faqKarte.querySelector('.faq-frage-text');
+          if (frageEl) {
+            elementeZumVorlesen.push({
+              text: 'Frage: ' + frageEl.innerText + '.',
+              element: frageEl
+            });
+          }
+          // Wenn Frage offen: Antwort vorlesen
+          if (faqKarte.classList.contains('offen')) {
+            const antwortEl = faqKarte.querySelector('.antwort-text');
+            if (antwortEl) {
+              elementeZumVorlesen.push({
+                text: 'Antwort: ' + antwortEl.innerText + '.',
+                element: antwortEl
+              });
+            }
+          }
+        });
+      }
+    });
+
+    if (elementeZumVorlesen.length > 0) spieleSequenz(elementeZumVorlesen, 0);
+    else isSpeaking = false;
+  }
+
+  function spieleSequenz(elemente, index) {
+    if (index >= elemente.length || !isSpeaking) {
+      entferneAlleMarkierungen();
+      isSpeaking = false;
+      document.getElementById('btn-vorlesen').classList.remove('aktiv');
+      return;
+    }
+    const abschnitt = elemente[index];
+    aktuelleAussage = new SpeechSynthesisUtterance(abschnitt.text);
+    aktuelleAussage.lang  = 'de-DE';
+    aktuelleAussage.rate  = 0.9;
+    aktuelleAussage.onstart = () => {
+      entferneAlleMarkierungen();
+      if (abschnitt.element) abschnitt.element.classList.add('is-reading');
+    };
+    aktuelleAussage.onend = () => {
+      setTimeout(() => spieleSequenz(elemente, index + 1), 200);
+    };
+    aktuelleAussage.onerror = () => {
+      entferneAlleMarkierungen();
+      isSpeaking = false;
+      document.getElementById('btn-vorlesen').classList.remove('aktiv');
+    };
+    window.speechSynthesis.speak(aktuelleAussage);
+  }
+
+  function entferneAlleMarkierungen() {
+    document.querySelectorAll('.is-reading')
+      .forEach(el => el.classList.remove('is-reading'));
+  }
 
   /* ── Reset beim Verlassen (Back-Forward-Cache) ───────────────── */
   window.addEventListener('pageshow', function(e) {
