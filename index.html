@@ -86,64 +86,57 @@
   }
 }
 
-/* Status-Bereich: IMMER 2 Spalten nebeneinander */
+/* ── Status-Bereich: 2 Zeilen untereinander (IMMER) ── */
 .zk-body {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-  padding: 16px 18px 18px;
-  box-sizing: border-box;
-}
-
-/* Nur auf sehr schmalen Handys untereinander */
-@media (max-width: 380px) {
-  .zk-body {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Status-Karte */
-.zk-card {
-  border-radius: 14px;
-  padding: 14px 16px;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px 14px 12px;
+}
+
+/* ── Status-Karte: kompakte einzeilige Darstellung ── */
+.zk-card {
+  border-radius: 12px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;      /* Icon + Text vertikal zentriert */
   gap: 12px;
   transition: background .3s, color .3s;
-  box-sizing: border-box;
 }
 .zk-card-icon {
-  font-size: 2rem;
+  font-size: 1.6rem;
   flex-shrink: 0;
   line-height: 1;
-  margin-top: 2px;
 }
 .zk-card-label {
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: .07em;
   opacity: .65;
-  margin-bottom: 3px;
+  margin-bottom: 1px;
 }
 .zk-card-status {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 800;
-  line-height: 1.25;
-  margin-bottom: 3px;
+  line-height: 1.2;
+  margin-bottom: 1px;
 }
 .zk-card-countdown {
-  font-size: 1.25rem;
+  font-size: 1.0rem;
   font-weight: 800;
   line-height: 1.1;
 }
 .zk-card-detail {
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 600;
   opacity: .75;
-  margin-top: 3px;
-  line-height: 1.35;
+  margin-top: 1px;
+  line-height: 1.3;
 }
+
+/* Alle @media-Regeln für .zk-body ENTFERNEN */
+
 
 /* Farbvarianten */
 .zk-gruen  { background: #dcfce7; color: #15803d; }
@@ -215,7 +208,8 @@
 .card-color-14 { background: #e0f7fa; }
 .card-color-15 { background: #f1f8e9; }
 .card-color-16 { background: #fff8e1; }
-
+  
+<!--
 /* Smartphone hochkant */
 @media (max-width: 600px) {
   .card-grid {
@@ -242,7 +236,8 @@
     gap: 10px;
   }
 }
-
+-->
+  
 /* ══ VORLESEN-BUTTON ══ */
 .read-aloud-container {
   text-align: center;
@@ -291,26 +286,30 @@
 
     <div class="zk-body">
 
-      <div class="zk-card" id="zk-arbeit" aria-live="polite">
-        <div class="zk-card-icon" id="zk-a-icon">⏳</div>
-        <div>
-          <div class="zk-card-label">Jetzt …</div>
-          <div class="zk-card-status"    id="zk-a-status">…</div>
-          <div class="zk-card-countdown" id="zk-a-countdown"></div>
-          <div class="zk-card-detail"    id="zk-a-detail">…</div>
-        </div>
-      </div>
+      <div class="zk-body">
 
-      <div class="zk-card" id="zk-pause" aria-live="polite">
-        <div class="zk-card-icon" id="zk-p-icon">☕</div>
-        <div>
-          <div class="zk-card-label">Bald …</div>
-          <div class="zk-card-status"    id="zk-p-status">…</div>
-          <div class="zk-card-countdown" id="zk-p-countdown"></div>
-          <div class="zk-card-detail"    id="zk-p-detail">…</div>
-        </div>
-      </div>
+  <!-- Zeile 1: JETZT -->
+  <div class="zk-card" id="zk-arbeit" aria-live="polite">
+    <div class="zk-card-icon" id="zk-a-icon">⏳</div>
+    <div>
+      <div class="zk-card-label">Jetzt …</div>
+      <div class="zk-card-status"    id="zk-a-status">…</div>
+      <div class="zk-card-countdown" id="zk-a-countdown"></div>
+      <div class="zk-card-detail"    id="zk-a-detail">…</div>
+    </div>
+  </div>
 
+  <!-- Zeile 2: BALD -->
+  <div class="zk-card" id="zk-pause" aria-live="polite">
+    <div class="zk-card-icon" id="zk-p-icon">☕</div>
+    <div>
+      <div class="zk-card-label">Bald …</div>
+      <div class="zk-card-status"    id="zk-p-status">…</div>
+      <div class="zk-card-countdown" id="zk-p-countdown"></div>
+      <div class="zk-card-detail"    id="zk-p-detail">…</div>
+    </div>
+  </div>
+</div>
     </div>
   </div>
 
