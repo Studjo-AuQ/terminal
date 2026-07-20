@@ -1,11 +1,53 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "20.07.2026, 06:54 Uhr (UTC)",
+  "aktualisiert": "20.07.2026, 10:18 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Neue Waldbrände in Südfrankreich ausgebrochen",
+      "description": "In Südfrankreich sind mehrere Waldbrände ausgebrochen - Hunderte Feuerwehrleute sind im Einsatz, viele Menschen wurden in Sicherheit gebracht. Auf Korsika halten zwei Brände die Einsatzkräfte bereits seit einer Woche in Atem.",
+      "pubDate": "2026-07-20T12:01:40+02:00",
+      "bild": ""
+    },
+    {
+      "title": "IW Köln: Mieten in Deutschland deutlich gestiegen",
+      "description": "Die Mieten in Deutschland sind laut dem Insitut der deutschen Wirtschaft im Vergleich zum Vorjahr noch einmal deutlich teurer geworden. Dabei gibt es große regionale Unterschiede auf dem Wohnungsmarkt.",
+      "pubDate": "2026-07-20T11:54:28+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Argentinien verliert WM-Finale: \"Ich muss weinen\"",
+      "description": "Der große Traum Argentiniens ist geplatzt. Den WM-Titel konnte das Team nicht verteidigen. Auch Spekulationen um einen Messi-Rücktritt sorgten für Tränen. Doch Grund zum Feiern fand man in Buenos Aires trotzdem. Von O. Neuroth.",
+      "pubDate": "2026-07-20T10:31:04+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Spanien feiert WM-Titel: \"Das hier ist unbeschreiblich\"",
+      "description": "Die Fans in Spanien mussten beim WM-Finale lange warten, bis sich ihr Team gegen die Mannschaft aus Argentinien durchsetzte. Dann aber brachen in Madrid alle Dämme, und die Fans feierten die ganze Nacht den ersehnten Titel. Von A. Mundt.",
+      "pubDate": "2026-07-20T10:30:55+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Burnham als neuer Premier: Was das Amt inzwischen so schwierig macht",
+      "description": "Andy Burnham wird heute von König Charles zum britischen Premierminister ernannt - als siebter in zehn Jahren. Wenn das Amt für ihn nicht auch zum Schleudersitz werden soll, muss er schwierige Herausforderungen meistern. Von L.-M. Röhling.",
+      "pubDate": "2026-07-20T10:19:06+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: Schafft der DAX heute die Stabilisierung?",
+      "description": "Nach tagelangen US-Angriffen auf Iran und Vergeltungsschlägen in der Region droht der Konflikt weiter außer Kontrolle zu geraten. Das treibt am Morgen die Ölpreise auf den höchsten Stand seit Juni.",
+      "pubDate": "2026-07-20T09:40:00+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Humboldt Forum: \"Jetzt beginnt die anspruchsvollere Aufgabe\"",
+      "description": "Fünf Jahre ist es her, dass das Humboldt Forum in Berlin seine Pforten für das Publikum öffnete. Es sollte ein Debattenraum werden, ein Ort der Kolonialismus-Aufarbeitung. Ist all das gelungen? Von L. Haas und L. Babst.",
+      "pubDate": "2026-07-20T09:05:44+02:00",
+      "bild": ""
+    },
     {
       "title": "Union sucht nach Spahns Rücktritt neuen Fraktionschef",
       "description": "Die Union braucht nach Spahns Rücktritt einen neuen Fraktionschef. Heute beraten die Spitzen der CDU und die Bundestagsfraktion. Nicht nur Kanzler Merz will die Personalie schnell klären. Mehrere Namen kursieren.",
-      "pubDate": "2026-07-20T07:38:39+02:00",
+      "pubDate": "2026-07-20T11:24:27+02:00",
       "bild": ""
     },
     {
@@ -16,20 +58,20 @@
     },
     {
       "title": "Bäcker im Interview: \"Ein Beruf mit Zukunft\"",
-      "description": "Die Zahl der Pleiten von Bäckereien in Deutschland steigen rasant. Doch dass das Handwerk ausstirbt, glaubt Andreas Schmitt vom Zentralverband des Deutschen Bäckerhandwerks im tagesschau24-Interview nicht.",
+      "description": "Die Zahl der Pleiten von Bäckereien in Deutschland steigt rasant. Doch dass das Handwerk ausstirbt, glaube er nicht, sagt Andreas Schmitt vom Zentralverband des Deutschen Bäckerhandwerks im tagesschau24-Interview.",
       "pubDate": "2026-07-20T06:00:27+02:00",
       "bild": ""
     },
     {
       "title": "US-Armee meldet neue Angriffe auf Iran",
-      "description": "Das US-Militär hat in der neunten Nacht in Folge Ziele im Iran bombadiert. Angriffe gab es auch in mehreren Golfstaaten. Außerdem soll in der Straße von Hormus ein Schiff in Brand geraten sein.",
-      "pubDate": "2026-07-20T04:34:03+02:00",
+      "description": "Das US-Militär hat in der neunten Nacht in Folge Ziele in Iran bombardiert. Zudem gab es erneut iranische Angriffe in mehreren Golfstaaten - und in der Straße von Hormus soll ein Schiff in Brand geraten sein.",
+      "pubDate": "2026-07-20T08:53:10+02:00",
       "bild": ""
     },
     {
       "title": "Ukraine wirft Russland Angriff auf ziviles Schiff bei Odessa vor",
-      "description": "Russland hat nach ukrainischen Angaben einen Getreide-Frachter im Schwarzen Meer beschossen. Dabei starben mindestens sechs Seeleute. Die Ukraine nennt den Angriff einen \"Terrorakt\" und Völkerrechtsbruch.",
-      "pubDate": "2026-07-20T08:52:21+02:00",
+      "description": "Russland hat nach ukrainischen Angaben einen Getreide-Frachter im Schwarzen Meer beschossen. Dabei seien zehn Menschen gestorben. Die Ukraine sprach von \"Terrorakt\" und Völkerrechtsbruch - und antwortete mit einem großangelegten Drohnenangriff.",
+      "pubDate": "2026-07-20T11:40:08+02:00",
       "bild": ""
     },
     {
@@ -48,48 +90,6 @@
       "title": "Mindestens fünf Tote nach Erdbeben im Zentrum Perus",
       "description": "Ein Erdbeben hat die Andenregion Perus erschüttert. Örtliche Behörden gehen aktuell von mindestens sechs Todesopfern aus. Die Zahl der Vermissten ist noch unbekannt. Hunderte Menschen wurden obdachlos.",
       "pubDate": "2026-07-19T21:53:43+02:00",
-      "bild": ""
-    },
-    {
-      "title": "USA verlegen offenbar weitere Kampfjets nach Nahost",
-      "description": "Weiten die USA ihre Angriffe auf Iran aus? Medienberichte deuten darauf hin: Offenbar werden weitere US-Kampfflugzeuge in den Nahen Osten verlegt - auch aus Deutschland.",
-      "pubDate": "2026-07-19T20:25:27+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bahn-Boom: Wie der Wettbewerb in Italien den Fernverkehr verändert",
-      "description": "Von 2028 an sollen in Deutschland die roten Schnellzüge des Anbieters Italo fahren. In Italien hat der private Konkurrent den Markt belebt. Davon profitieren auch die Bahnreisenden - allerdings nicht überall. Von Verena Schälter.",
-      "pubDate": "2026-07-19T18:10:39+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Das Sommerinterview mit Grünen-Chefin Brantner im Faktencheck",
-      "description": "Die Grünen-Vorsitzende Brantner war im ARD-Sommerinterview zu Gast. Die meisten Aussagen von ihr halten einer Überprüfung stand. Doch zum Beispiel mit Blick auf die Wahl in Sachsen-Anhalt war sie ungenau.",
-      "pubDate": "2026-07-19T19:21:17+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Grünen-Chefin Brantner: \"Merz hat jetzt die Chance, sich zu befreien\"",
-      "description": "\"Überfällig\", aber auch eine \"Chance\": Grünen-Vorsitzende Franziska Brantner hofft im ARD-Sommerinterview nach Spahns Rücktritt auf eine Kabinettsumbildung. Und blickt mit Sorge auf die Landtagswahlen im Herbst.",
-      "pubDate": "2026-07-19T17:36:16+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Spanien: Großer Waldbrand bei Madrid außer Kontrolle",
-      "description": "Nordöstlich von Madrid versuchen mehr als 500 Einsatzkräfte am Boden und in der Luft, einen großen Waldbrand einzudämmen. Doch das Feuer breitet sich immer weiter aus. Mehrere Orte mussten bereits evakuiert werden.",
-      "pubDate": "2026-07-19T16:26:55+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wut in Venezuela: \"Ihr habt Müll gebaut!\"",
-      "description": "Viele Venezolaner werden ihre Verwandten und Freunde wohl nie aus den Erdbeben-Trümmern bergen können. Umso größer ist die Wut auf die Regierung. Angesichts der Katastrophe trauen sich nun viele, die Regierung offen zu kritisieren. Von A. Demmer.",
-      "pubDate": "2026-07-19T16:13:51+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Warum Pflegefachkraft in Australien ein Traumjob ist",
-      "description": "Während Deutschland händeringend nach Pflegekräften sucht, ist der Beruf in Australien gefragt wie selten zuvor - dank guter Bezahlung, sicherer Karriereperspektiven und gesellschaftlicher Anerkennung. Von I. Burckhardt und L. Scanu.",
-      "pubDate": "2026-07-19T15:06:40+02:00",
       "bild": ""
     }
   ],
