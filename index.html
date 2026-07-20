@@ -654,5 +654,184 @@ if ('serviceWorker' in navigator)
     .catch(err => console.log('SW Info:', err));
 </script>
 
+  <!-- ══ SCHRIFTGRÖSSE + KONTRAST ══
+     Einbauen direkt VOR </body> auf jeder Seite
+     (oder in eine gemeinsame JS-Datei auslagern) -->
+
+<style>
+  /* ── Steuerleiste: fixiert links unten ── */
+  .a11y-bar {
+    position: fixed;
+    bottom: 24px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9000;
+  }
+
+  .a11y-btn {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.20);
+    transition: transform .15s, box-shadow .15s;
+    background: #b61f29;
+    color: #ffffff;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .a11y-btn:hover,
+  .a11y-btn:focus {
+    transform: scale(1.1);
+    box-shadow: 0 5px 18px rgba(0,0,0,0.28);
+    outline: 3px solid #ffffff;
+  }
+
+  .a11y-btn:active {
+    transform: scale(0.95);
+  }
+
+  /* Kontrast-Button: aktiv = weiß mit schwarzem Rand */
+  .a11y-btn.kontrast-aktiv {
+    background: #ffffff;
+    color: #000000;
+    border: 3px solid #000000;
+  }
+
+  /* ── Kontrast-Modus: gesamte Seite ── */
+  body.kontrast {
+    filter: grayscale(100%) contrast(1.8) brightness(1.05);
+  }
+
+  /* ── Schriftgröße-Indikator (kurzes Einblenden) ── */
+  .a11y-toast {
+    position: fixed;
+    bottom: 100px;
+    left: 20px;
+    background: rgba(0,0,0,0.75);
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .3s;
+    z-index: 9001;
+  }
+
+  .a11y-toast.sichtbar {
+    opacity: 1;
+  }
+</style>
+
+
+<!-- ── Schaltflächen ── -->
+<div class="a11y-bar" role="toolbar" aria-label="Barrierefreiheit">
+
+  <button class="a11y-btn"
+          id="btn-groesser"
+          onclick="schriftGroesser()"
+          title="Schrift vergrößern"
+          aria-label="Schrift vergrößern">
+    A+
+  </button>
+
+  <button class="a11y-btn"
+          id="btn-kleiner"
+          onclick="schriftKleiner()"
+          title="Schrift verkleinern"
+          aria-label="Schrift verkleinern">
+    A−
+  </button>
+
+  <button class="a11y-btn"
+          id="btn-kontrast"
+          onclick="kontrastUmschalten()"
+          title="Kontrast umschalten"
+          aria-label="Schwarz-Weiß-Kontrast umschalten">
+    ◑
+  </button>
+
+</div>
+
+<!-- ── Toast-Hinweis ── -->
+<div class="a11y-toast" id="a11y-toast"></div>
+
+
+<script>
+(function () {
+
+  /* ── Schriftgröße-Stufen (rem auf <html>) ── */
+  const STUFEN = [14, 16, 18, 20, 22, 24];   // Pixel-Werte
+  const STD    = 1;                            // Index der Standardgröße (16px)
+  let stufe    = parseInt(localStorage.getItem('a11y-stufe') ?? STD);
+
+  /* ── Kontrast ── */
+  let kontrast = localStorage.getItem('a11y-kontrast') === '1';
+
+  /* ── Toast ── */
+  let toastTimer = null;
+  function zeigToast(text) {
+    const t = document.getElementById('a11y-toast');
+    t.textContent = text;
+    t.classList.add('sichtbar');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => t.classList.remove('sichtbar'), 1800);
+  }
+
+  /* ── Schriftgröße anwenden ── */
+  function wendeSchriftAn() {
+    document.documentElement.style.fontSize = STUFEN[stufe] + 'px';
+    localStorage.setItem('a11y-stufe', stufe);
+
+    /* Buttons deaktivieren an den Grenzen */
+    document.getElementById('btn-groesser').disabled = (stufe >= STUFEN.length - 1);
+    document.getElementById('btn-kleiner').disabled  = (stufe <= 0);
+
+    zeigToast('Schrift: ' + STUFEN[stufe] + ' px');
+  }
+
+  /* ── Kontrast anwenden ── */
+  function wendeKontrastAn() {
+    document.body.classList.toggle('kontrast', kontrast);
+    localStorage.setItem('a11y-kontrast', kontrast ? '1' : '0');
+
+    const btn = document.getElementById('btn-kontrast');
+    btn.classList.toggle('kontrast-aktiv', kontrast);
+    btn.title = kontrast ? 'Normalmodus' : 'Kontrast einschalten';
+
+    zeigToast(kontrast ? 'Kontrast: AN' : 'Kontrast: AUS');
+  }
+
+  /* ── Öffentliche Funktionen ── */
+  window.schriftGroesser = function () {
+    if (stufe < STUFEN.length - 1) { stufe++; wendeSchriftAn(); }
+  };
+
+  window.schriftKleiner = function () {
+    if (stufe > 0) { stufe--; wendeSchriftAn(); }
+  };
+
+  window.kontrastUmschalten = function () {
+    kontrast = !kontrast;
+    wendeKontrastAn();
+  };
+
+  /* ── Beim Laden sofort anwenden ── */
+  wendeSchriftAn();
+  wendeKontrastAn();
+
+})();
+</script>
+
 </body>
 </html>
