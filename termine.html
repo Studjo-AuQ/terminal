@@ -211,37 +211,7 @@
             border-top: 1px dashed rgba(0,0,0,0.1);
         }
 
-        /* --- Vorlesen & Hervorhebung --- */
-        .is-reading {
-            background-color: #ffe600 !important;
-            color: black !important;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(255, 230, 0, 0.8) !important;
-            transform: scale(1.02);
-            transition: all 0.3s ease;
-        }
-
-        .read-aloud-container {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            z-index: 1000;
-        }
-        .btn-read-aloud {
-            width: 80px; height: 80px;
-            border-radius: 50%;
-            background-color: var(--primary-red);
-            border: 4px solid white;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            cursor: pointer;
-            display: flex; flex-direction: column;
-            justify-content: center; align-items: center;
-            transition: transform 0.2s, background-color 0.2s;
-        }
-        .btn-read-aloud:hover { transform: scale(1.1); background-color: #d42430; }
-        .btn-read-aloud img { width: 45px; height: 45px; margin-bottom: 2px; }
-        .btn-read-aloud span { color: white; font-size: 0.7rem; font-weight: bold; text-transform: uppercase; }
-
+       
     </style>
 </head>
 <body>
@@ -449,13 +419,7 @@
 
         </div> </main>
 
-    <div class="read-aloud-container">
-        <button class="btn-read-aloud" onclick="vorlesenUndMarkieren()" title="Seite vorlesen">
-            <img src="zuhoeren.jpg" alt="Ohr-Symbol">
-            <span>Vorlesen</span>
-        </button>
-    </div>
-
+   
     <script>
 // =====================================================================
         // AUTOMATISCHE BILDERKENNUNG FÜR BETRIEBSSTÄTTEN
@@ -550,5 +514,31 @@
         
       
     </script>
+<!-- ══ FOOTER ══ -->
+<footer style="
+  text-align: center;
+  padding: 14px 16px;
+  background: #b61f29;
+  color: #ffffff;
+  font-size: 0.85rem;
+  line-height: 1.8;
+">
+  © 2026 <strong>Studjo | Arbeit und Qualifizierung</strong>
+   ·  Evangelisches Johanneswerk gGmbH
+   ·  Barrierefreier Zugang
+  <br>
+  <a href="impressum.html"
+     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Impressum
+  </a>
+   | 
+  <a href="datenschutz.html"
+     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Datenschutz
+  </a>
+</footer>
+    <link rel="stylesheet" href="a11y.css">
+<script src="a11y.js"></script>
+
 </body>
 </html>
