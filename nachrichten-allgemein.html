@@ -302,9 +302,30 @@
     </div>
 
 </main>
-<footer>
-    &copy; 2024 <b>Studjo | Arbeit und Qualifizierung</b> | Infoterminal | Barrierefreier Zugang
+<!-- ══ FOOTER ══ -->
+<footer style="
+  text-align: center;
+  padding: 14px 16px;
+  background: #b61f29;
+  color: #ffffff;
+  font-size: 0.85rem;
+  line-height: 1.8;
+">
+  © 2026 <strong>Studjo | Arbeit und Qualifizierung</strong>
+   ·  Evangelisches Johanneswerk gGmbH
+   ·  Barrierefreier Zugang
+  <br>
+  <a href="impressum.html"
+     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Impressum
+  </a>
+   | 
+  <a href="datenschutz.html"
+     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Datenschutz
+  </a>
 </footer>
+
 
 <script>
 const MONATE = ['Jan','Feb','Mär','Apr','Mai','Jun',
@@ -420,6 +441,8 @@ ladeFeed('kobinet.json', {
 
 // Seite alle 30 Minuten neu laden
 setTimeout(() => location.reload(), 30 * 60 * 1000);
+<link rel="stylesheet" href="a11y.css">
+<script src="a11y.js"></script>
 </script>
 </body>
 </html>
