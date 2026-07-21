@@ -1,7 +1,67 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "21.07.2026, 09:12 Uhr (UTC)",
+  "aktualisiert": "21.07.2026, 11:24 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "UN-Report: Kleine Fortschritte, doch der Hunger bleibt",
+      "description": "Die Zahl der Hungernden sinkt, doch Konflikte wie im Nahen Osten könnten die Lebensmittelversorgung massiv verschlechtern. Milliarden Menschen fehlt zudem das Geld für eine gesunde Ernährung. Von C. Auerbach.",
+      "pubDate": "2026-07-21T12:57:41+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Libanesischer Präsident Aoun trifft Trump in Washington",
+      "description": "Gegenüber der Hisbollah zeigt der libanesische Präsident Aoun klare Kante. Das kommt in Washington gut an. Nun hofft Aoun, den US-Präsidenten davon überzeugen zu können, mehr Druck auf Israel auszuüben. Von Carsten Kühntopp.",
+      "pubDate": "2026-07-21T12:56:34+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Kampf gegen Waldbrände: Was tut der Bund?",
+      "description": "Dieses Jahr könnte wieder ein Rekordjahr für Wald- und Flächenbrände werden. Zuständig für die Bekämpfung sind Länder und Kommunen - aber manche überfordert das. Was tut der Bund, um zu unterstützen? Und reicht das? Von Katrin Aue.",
+      "pubDate": "2026-07-21T12:41:26+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Mehr Fälle von sexuellem Missbrauch von Kindern",
+      "description": "Das Bundeskriminalamt hat für 2025 einen Anstieg bei Fällen von sexuellem Missbrauch von Kindern und Jugendlichen registriert. Innenminister Dobrindt nennt die Zahlen \"erschreckend hoch\" - und geht von einem noch höheren Dunkelfeld aus.",
+      "pubDate": "2026-07-21T12:41:08+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Waldbrände im Amazonas 2025 auf tiefstem Stand seit Jahrzehnten",
+      "description": "Es ist ein Hoffnungsschimmer in Zeiten des Klimawandels: Im vergangenen Jahr ist so wenig Amazonas-Regenwald abgebrannt wie seit Jahrzehnten nicht. Doch nun wächst die Sorge vor einem Super-El Niño.",
+      "pubDate": "2026-07-21T12:39:09+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Suche nach Unionsfraktionsspitze: Einer wäre Frei",
+      "description": "Bis nächste Woche die Unionsfraktion eine neue Spitze wählt, wird viel spekuliert. Ein Name, der immer wieder fällt: Thorsten Frei, derzeit Kanzleramtsminister. Für CDU-Chef und Kanzler Merz eröffnet der Spahn-Rücktritt neue Spielräume.",
+      "pubDate": "2026-07-21T12:26:30+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Was das Revival der Diddl-Maus mit Girlpower zu tun hat",
+      "description": "Girlband-Ästhetik, Eurodance - und jetzt auch Diddl. Mit den 1990er-Revivals erlebt auch die Kultmaus ein Comeback. Dabei geht es auch um die Neubewertung von Mädchenkultur. Von Hannah Rau.",
+      "pubDate": "2026-07-21T11:40:28+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Aufenthaltstitel: Schweden schraubt Erwartungen an Migranten höher",
+      "description": "Zwei Monate vor der Parlamentswahl gilt in Schweden ein schärferes Migrationsrecht. Dabei wird auch der \"Lebenswandel\" zum Kriterium für eine Aufenthaltsberechtigung - doch es bleibt offen, was damit überhaupt gemeint ist. Von C. Stichler.",
+      "pubDate": "2026-07-21T11:29:05+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Großbritanniens Premier Burnham: Lockerheit in der Downing Street",
+      "description": "Zum Amtsantritt macht der neue Premier Burnham einen lockeren Eindruck. Viele Briten wünschen sich nach dem nüchternen Starmer einen nahbaren Regierungschef. Einfach wird es aber auch für Burnham nicht, meint Franziska Hoppen.",
+      "pubDate": "2026-07-21T11:27:09+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Bonn zieht vorübergehend Großteil der Stadtbahnen aus dem Verkehr",
+      "description": "In Bonn müssen vorübergehend 60 von insgesamt 75 Straßenbahnen aus dem Verkehr gezogen werden. Nach WDR-Information hatten Prüfer Schäden an Rädern und eine lange Liste mit Mängeln festgestellt. Nun müssen die Bahnen überprüft werden.",
+      "pubDate": "2026-07-21T11:53:00+02:00",
+      "bild": ""
+    },
     {
       "title": "Wie das deutsche Verbot Leihmutterschaft ins Ausland verlagert",
       "description": "Beim Thema Leihmutterschaft klaffen in Deutschland Gesetz und Lebensrealität weit auseinander. Deshalb besteht politischer Handlungsbedarf. Von M. Blöcher, L. Busch und A. Kammerer.",
@@ -30,66 +90,6 @@
       "title": "Chile ruft nach schweren Unwettern den Katastrophenzustand aus",
       "description": "Es sind die schlimmsten Unwetter seit Jahrzehnten: In Chile kamen infolge heftiger Regenfälle mindestens zehn Menschen ums Leben. 150.000 Menschen sind ohne Strom. Das ganze Ausmaß der Schäden lässt sich noch nicht abschätzen.",
       "pubDate": "2026-07-21T09:09:51+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Gericht setzt Paramount-Übernahme von Warner vorerst aus",
-      "description": "Ein US-Gericht hat die milliardenschwere Übernahme von Warner Bros. Discovery durch Paramount für zunächst zwei Wochen gestoppt. Zwölf Bundesstaaten sehen in dem Zusammenschluss eine Gefahr für den Wettbewerb.",
-      "pubDate": "2026-07-21T08:50:42+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Vor diesen Herausforderung steht Großbritanniens neuer Premier Burnham",
-      "description": "Bereits vor seinem Amtsantritt hat der neue britische Premier Burnham über geplante Reformen gesprochen. Was will er verändern und mit welchen Hürden hat er zu kämpfen? Von Lisa-Maria Röhling.",
-      "pubDate": "2026-07-21T08:48:13+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Förderung der Filmbranche: Was kann der \"Filmbooster\" bewirken?",
-      "description": "Deutsche Filme sind wieder weltweit erfolgreich, doch der Produktionsstandort Deutschland hat schwere Zeiten hinter sich. Die Regierung will die Branche jetzt gesetzlich stärken. Wie wirkungsvoll ist der \"Filmbooster\"? Von Anke Hahn.",
-      "pubDate": "2026-07-21T08:01:02+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wie viel Hilfe es jetzt für den Heizungstausch gibt",
-      "description": "Wer plant, sich eine klimafreundliche Heizung einzubauen, kann ab heute einen neuen Förderantrag stellen. Die KfW-Bank hat das Antragsportal angepasst. Wer kann wie viel Förderung bekommen? Von Lissy Kaufmann.",
-      "pubDate": "2026-07-21T07:52:19+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Deutsche Bahn plant bundesweites Alkoholverbot an Bahnhöfen",
-      "description": "Die Deutsche Bahn will künftig an allen Bahnhöfen ein Alkoholverbot durchsetzen. Sie verspricht sich mehr Sicherheit für Mitarbeiter und Reisende. In Hamburg etwa hat man damit bereits gute Erfahrungen gemacht.",
-      "pubDate": "2026-07-21T10:34:41+02:00",
-      "bild": ""
-    },
-    {
-      "title": "USA verhängen Zölle in Höhe von 50 Prozent auf Produkte aus Kanada",
-      "description": "Der Handelsstreit zwischen den USA und Kanada spitzt sich zu. Washington verhängte nun neue Zölle in Höhe von 50 Prozent. Betroffen sind auch Produkte, die bislang unter ein Freihandelsabkommen fallen.",
-      "pubDate": "2026-07-21T07:16:59+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Aoun in Washington: Die Libanesen haben wenig Hoffnung auf Veränderung",
-      "description": "Mit der Hoffnung auf eine stabile Waffenruhe in seinem Land reist Libanons Präsident Aoun nach Washington. Seine Landsleute haben keine großen Erwartungen - zumal die Hisbollah immer noch nicht mit am Verhandlungstisch sitzt. Von S. Männer.",
-      "pubDate": "2026-07-21T06:32:15+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Militär bombadiert Iran die zehnte Nacht in Folge",
-      "description": "Statt Waffenruhe nun die zehnte Nacht in Folge schwere Angriffe: Die USA haben wieder Iran bombardiert. Die Islamische Republik griff ihrerseits US-Ziele in der Region an. US-Präsident Trump droht mit Vergeltung.",
-      "pubDate": "2026-07-21T08:27:34+02:00",
-      "bild": ""
-    },
-    {
-      "title": "DR Kongo: Zahl der Ebola-Infizierten steigt weiter",
-      "description": "Der Ebola-Ausbruch in der DR Kongo ist weiterhin nicht unter Kontrolle. Die instabile Sicherheitslage, der allgemeine Mangel und das Misstrauen in der Bevölkerung erschweren die Eindämmung. Doch es gibt auch Lichtblicke. Von B. Rühl.",
-      "pubDate": "2026-07-21T02:48:28+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Großbritanniens neuer Premier Burnham bildet Kabinett um",
-      "description": "Nach seiner Ernennung zum britischen Premier hat der Labour-Politiker Burnham Ministerposten neu besetzt. Mehrere Vertraute seines Vorgängers Starmer müssen das Kabinett verlassen. Ex-Parteichef Miliband wurde überraschend Außenminister.",
-      "pubDate": "2026-07-21T06:10:03+02:00",
       "bild": ""
     }
   ],
