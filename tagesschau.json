@@ -1,7 +1,79 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "21.07.2026, 12:57 Uhr (UTC)",
+  "aktualisiert": "21.07.2026, 15:11 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Türkei: Abgesetzter CHP-Chef Özel kündigt Gründung neuer Partei an",
+      "description": "Der durch die Justiz abgesetzte, frühere Chef der türkischen Oppositionspartei CHP, Özel, will eine neue Partei gründen. Sie soll sozialdemokratisch sein und könnte auf einen Schlag die größte Oppositionspartei im Parlament werden.",
+      "pubDate": "2026-07-21T17:04:23+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Milliarden-Deal: Microsoft baut KI-Partnerschaft mit Mistral aus",
+      "description": "Der Tech-Riese Microsoft und das französische KI-Unternehmen Mistral AI wollen ihre Zusammenarbeit deutlich ausweiten. Ein milliardenschweres Abkommen soll die KI-Infrastruktur in Europa spürbar stärken.",
+      "pubDate": "2026-07-21T17:02:11+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Bundeskartellamt verhängt Millionenbußgeld wegen Reifenpreisen",
+      "description": "Drei Unternehmen sollen den Verkauf von Reifen mit unzulässigen Preisvorgaben beeinflusst haben. Deshalb hat das Bundeskartellamt Bußgelder von fast zwölf Millionen Euro verhängt.",
+      "pubDate": "2026-07-21T17:01:47+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Ein Alkoholverbot gegen die Gewalt an Bahnhöfen?",
+      "description": "Kein Bier, kein Sektchen und kein Kurzer - die Deutsche Bahn will Alkohol an Bahnhöfen verbieten, für mehr Sicherheit. In Köln und anderen Bahnhöfen ist das schon jetzt Standard. Was hat es dort gebracht? Von Katharina Spreier.",
+      "pubDate": "2026-07-21T17:01:29+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Bundesweites Alkoholverbot in Bahnhöfen: Die wichtigen Kernpunkte",
+      "description": "Mehr Ordnung und Sicherheit in allen Bahnhöfen und Zügen: Das will die Bahn mit dem geplanten bundesweiten Alkoholverbot erreichen. Welche Regeln künftig wo gelten sollen und wie weit das Verbot überhaupt umsetzbar ist.",
+      "pubDate": "2026-07-21T17:00:59+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Rumänien meldet Angriff auf Gas-Tanker im Schwarzen Meer",
+      "description": "Vor der rumänischen Schwarzmeerküste ist offenbar ein Gas-Tanker angegriffen worden, drei Seeleute wurden dabei schwer verletzt. Rumäniens Präsident Dan vermutet einen Zusammenhang mit dem russischen Angriffskrieg gegen die Ukraine.",
+      "pubDate": "2026-07-21T16:19:33+02:00",
+      "bild": ""
+    },
+    {
+      "title": "EU sperrt Kunstbiennale in Venedig wegen Teilnahme Russlands Gelder",
+      "description": "Wegen der Teilnahme Russlands hat die EU der Biennale in Venedig einen Zuschuss über zwei Millionen Euro gestrichen. Die russische Beteiligung - die erste seit Beginn des Ukraine-Kriegs - war international kritisiert worden.",
+      "pubDate": "2026-07-21T16:16:43+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Schwimmbad-Preise sind überdurchschnittlich gestiegen",
+      "description": "Freibäder sind bei Sommerhitze eine gute Abkühlung. Doch der Spaß ist laut aktuellen Zahlen deutlich teurer geworden - und je nach Region muss man weite Wege auf sich nehmen. Gute Nachrichten gibt es dagegen bei der Ausrüstung.",
+      "pubDate": "2026-07-21T16:02:22+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Ukrainischer Armeechef Syrskyj unter Druck",
+      "description": "In der Ukraine halten die Proteste gegen die Ablösung des Verteidigungsministers Fedorow an. Sie richten sich auch gegen Armeechef Syrskyj. Auch wenn das Präsidialamt sich bald dazu äußern will - der Schaden ist angerichtet. Von S. Laack.",
+      "pubDate": "2026-07-21T15:50:14+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Tödlicher Polizeieinsatz in Bologna: Vertrauensprobe für Italiens Rechtsstaat",
+      "description": "Mehr Macht für die Polizei, weniger Toleranz im öffentlichen Raum: Die Regierung Meloni setzt auf Härte. Der Tod eines Mannes bei einem Polizeieinsatz in Bologna wirft nun die Frage auf, ob Rom den Bogen überspannt hat? Von Anna Giordano.",
+      "pubDate": "2026-07-21T15:48:50+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wo Tanken besonders teuer ist - und wo sich sparen lässt",
+      "description": "Wer mit dem Auto unterwegs ist, kann je nach Land und Region unterschiedlich viel fürs Tanken bezahlen. Wo Sprit in Europa besonders teuer oder günstig ist und worauf Reisende achten sollten. Von Michelle Goddemeier.",
+      "pubDate": "2026-07-21T15:03:27+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Tote bei Sturzfluten in afghanischer Provinz Nuristan",
+      "description": "Immer wieder gibt es verheerende Sturzfluten in Afghanistan. Nun starben in der Provinz Nuristan mindestens 23 Menschen. Viele werden noch in den Trümmern eingestürzter Gebäude vermisst.",
+      "pubDate": "2026-07-21T15:02:39+02:00",
+      "bild": ""
+    },
     {
       "title": "Heizungsaustausch: Wer jetzt mit wie viel Geld rechnen kann",
       "description": "Für den Einbau von Wärmepumpen und klimafreundlichen Heizungen gelten neue Förderregeln. Welche Haushalte mit wie viel staatlicher Unterstützung rechnen können und was beim Antrag zu beachten ist. Von Ursula Mayer.",
@@ -18,78 +90,6 @@
       "title": "UN-Report: Kleine Fortschritte, doch der Hunger bleibt",
       "description": "Die Zahl der Hungernden sinkt, doch Konflikte wie im Nahen Osten könnten die Lebensmittelversorgung massiv verschlechtern. Milliarden Menschen fehlt zudem das Geld für eine gesunde Ernährung. Von C. Auerbach.",
       "pubDate": "2026-07-21T12:57:41+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Libanesischer Präsident Aoun trifft Trump in Washington",
-      "description": "Gegenüber der Hisbollah zeigt der libanesische Präsident Aoun klare Kante. Das kommt in Washington gut an. Nun hofft Aoun, den US-Präsidenten davon überzeugen zu können, mehr Druck auf Israel auszuüben. Von Carsten Kühntopp.",
-      "pubDate": "2026-07-21T12:56:34+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kampf gegen Waldbrände: Was tut der Bund?",
-      "description": "Dieses Jahr könnte wieder ein Rekordjahr für Wald- und Flächenbrände werden. Zuständig für die Bekämpfung sind Länder und Kommunen - aber manche überfordert das. Was tut der Bund, um zu unterstützen? Und reicht das? Von Katrin Aue.",
-      "pubDate": "2026-07-21T12:41:26+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Mehr Fälle von sexuellem Missbrauch von Kindern",
-      "description": "Das Bundeskriminalamt hat für 2025 einen Anstieg bei Fällen von sexuellem Missbrauch von Kindern und Jugendlichen registriert. Innenminister Dobrindt nennt die Zahlen \"erschreckend hoch\" - und geht von einem noch höheren Dunkelfeld aus.",
-      "pubDate": "2026-07-21T12:41:08+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Waldbrände im Amazonas 2025 auf tiefstem Stand seit Jahrzehnten",
-      "description": "Es ist ein Hoffnungsschimmer in Zeiten des Klimawandels: Im vergangenen Jahr ist so wenig Amazonas-Regenwald abgebrannt wie seit Jahrzehnten nicht. Doch nun wächst die Sorge vor einem Super-El Niño.",
-      "pubDate": "2026-07-21T12:39:09+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Suche nach Unionsfraktionsspitze: Einer wäre Frei",
-      "description": "Bis nächste Woche die Unionsfraktion eine neue Spitze wählt, wird viel spekuliert. Ein Name, der immer wieder fällt: Thorsten Frei, derzeit Kanzleramtsminister. Für CDU-Chef und Kanzler Merz eröffnet der Spahn-Rücktritt neue Spielräume.",
-      "pubDate": "2026-07-21T14:16:01+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Was das Revival der Diddl-Maus mit Girlpower zu tun hat",
-      "description": "Girlband-Ästhetik, Eurodance - und jetzt auch Diddl. Mit den 1990er-Revivals erlebt auch die Kultmaus ein Comeback. Dabei geht es auch um die Neubewertung von Mädchenkultur. Von Hannah Rau.",
-      "pubDate": "2026-07-21T11:40:28+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Aufenthaltstitel: Schweden schraubt Erwartungen an Migranten höher",
-      "description": "Zwei Monate vor der Parlamentswahl gilt in Schweden ein schärferes Migrationsrecht. Dabei wird auch der \"Lebenswandel\" zum Kriterium für eine Aufenthaltsberechtigung - doch es bleibt offen, was damit überhaupt gemeint ist. Von C. Stichler.",
-      "pubDate": "2026-07-21T11:29:05+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Großbritanniens Premier Burnham: Lockerheit in der Downing Street",
-      "description": "Zum Amtsantritt macht der neue Premier Burnham einen lockeren Eindruck. Viele Briten wünschen sich nach dem nüchternen Starmer einen nahbaren Regierungschef. Einfach wird es aber auch für Burnham nicht, meint Franziska Hoppen.",
-      "pubDate": "2026-07-21T11:27:09+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bonn zieht vorübergehend Großteil der Stadtbahnen aus dem Verkehr",
-      "description": "In Bonn müssen vorübergehend 60 von insgesamt 75 Straßenbahnen aus dem Verkehr gezogen werden. Nach WDR-Information hatten Prüfer Schäden an Rädern und eine lange Liste mit Mängeln festgestellt. Nun müssen die Bahnen überprüft werden.",
-      "pubDate": "2026-07-21T11:53:00+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wie das deutsche Verbot Leihmutterschaft ins Ausland verlagert",
-      "description": "Beim Thema Leihmutterschaft klaffen in Deutschland Gesetz und Lebensrealität weit auseinander. Deshalb besteht politischer Handlungsbedarf. Von M. Blöcher, L. Busch und A. Kammerer.",
-      "pubDate": "2026-07-21T11:01:29+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: DAX weiter auf Richtungssuche",
-      "description": "Die Lage im Nahen Osten bleibt unberechenbar. Anleger klammern sich heute vor allem an die Hoffnung auf eine Neuauflage der Waffenruhe. So sinken am Morgen die Ölpreise und der DAX hält sich stabil.",
-      "pubDate": "2026-07-21T10:42:08+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Klimawandel bedroht lebenswichtige Mikroalgen",
-      "description": "Während Seetang am Strand eher stört, ist die Mikroalge für unser Überleben unabdingbar. Forschende haben herausgefunden, dass schon geringe Temperaturveränderungen Mikroalgen aus dem Gleichgewicht bringen können. Von Florian Zinner.",
-      "pubDate": "2026-07-21T09:59:07+02:00",
       "bild": ""
     }
   ],
