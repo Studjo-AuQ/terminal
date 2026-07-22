@@ -1,28 +1,52 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "22.07.2026, 04:25 Uhr (UTC)",
+  "aktualisiert": "22.07.2026, 06:19 Uhr (UTC)",
   "meldungen": [
     {
-      "title": "Londoner Polizei: Festnahmen mit Hilfe von Gesichtserkennung",
+      "title": "KI von OpenAI steuert eigenständig Hackerangriff",
+      "description": "OpenAI spricht selbst von einem \"beispiellosen Cybervorfall\": KI-Modelle der Firma brachen eigenständig aus einer Testumgebung aus, verschafften sich Zugang zum offenen Internet - und hackten ein externes Unternehmen.",
+      "pubDate": "2026-07-22T07:46:49+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Hegseth beziffert Kriegskosten in Iran auf 37,5 Milliarden Dollar",
+      "description": "US-Verteidigungsminister Hegseth hat sich den Fragen des Senatsausschusses gestellt. Denn er will mehr Geld für den Iran-Krieg. 37,5 Milliarden Dollar hat der Konflikt die USA schon gekostet - mehr als bisher angenommen.",
+      "pubDate": "2026-07-22T07:41:20+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Handelsroute: Nordwestpassage als neuer globaler Seeweg?",
+      "description": "Die Nordwestpassage galt lange als gefährlichster Seeweg der Welt. Der Klimawandel weckt Hoffnungen, dass hier eine neue Handelsroute zwischen Ostasien und Nordamerika entstehen könnte. Ein realistisches Szenario? Von M. Ganslmeier.",
+      "pubDate": "2026-07-22T07:35:58+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Braunau in Österreich: Hitlers Geburtshaus wird zu Polizeistation",
+      "description": "Erst ein Schulgebäude, dann ein Standort der Lebenshilfe, zuletzt Leerstand: Lange wurde im österreichischen Braunau diskutiert, was aus dem Geburtshaus von Hitler werden soll. Nun soll die Polizei den Ort \"neutralisieren\". Von D. Freches.",
+      "pubDate": "2026-07-22T06:50:17+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Londoner Polizei: Festnahmen mithilfe von Gesichtserkennung",
       "description": "Die Londoner Polizei preist ihre Erfahrungen mit automatisierter Gesichtserkennung. Mehr als 2.000 Gesuchte seien mit ihrer Hilfe festgenommen worden. Nun soll das Projekt ausgerollt werden. Datenschützer sind erschrocken. Von C. Prössl.",
       "pubDate": "2026-07-22T06:23:02+02:00",
       "bild": ""
     },
     {
       "title": "Iran-Krieg: Erstmals wieder Explosionen in Teheran",
-      "description": "Das US-Militär startet neue Angriffe, die elfte Nacht in Folge auf Iran. Der Krieg kehrt nun auch erstmals seit dem jüngsten Aufflammen der Konflikte in die Millionenmetropole Teheran zurück.",
+      "description": "Auch in der vergangenen Nacht hat das US-Militär Iran mit einer Welle von Angriffen überzogen. Erstmals seit dem jüngsten Aufflammen des Krieges war die Millionenmetropole Teheran wieder Ziel von Attacken.",
       "pubDate": "2026-07-22T04:20:48+02:00",
       "bild": ""
     },
     {
       "title": "Brandmauer-Debatte: Kretschmer für Gespräche mit allen Parteien",
-      "description": "Eine Bereitschaft zu Gesprächen mit allen Parteien fordert Sachsens Ministerpräsident Kretschmer - und betonte gleichzeitig, dass eine Partei wie die AfD dem Land schade.",
+      "description": "Angesichts der politischen Mehrheitsverhältnisse in Ostdeutschland fordert Sachsens Ministerpräsident Kretschmer, gesprächsbereit für alle Parteien zu sein. Wer noch über Brandmauern rede, habe die Zeichen der Zeit nicht erkannt.",
       "pubDate": "2026-07-22T03:37:48+02:00",
       "bild": ""
     },
     {
       "title": "Mittelamerika: Nicaraguas Präsident Ortega will Wahlen abschaffen",
-      "description": "Bisher wahrte das Regime in Nicaragua den Schein von Wahlen, nächstes Jahr hätten Präsidentschaftswahlen stattfinden sollen. Doch es wird keine mehr geben: Nie wieder, verkündete jetzt Präsident Ortega. Von J. Barke, ARD Mexiko City.",
+      "description": "Bisher wahrte das Regime in Nicaragua den Schein von Wahlen, nächstes Jahr hätten Präsidentschaftswahlen stattfinden sollen. Doch es wird keine mehr geben: Nie wieder, verkündete jetzt Präsident Ortega. Von J. Barke.",
       "pubDate": "2026-07-22T02:27:52+02:00",
       "bild": ""
     },
@@ -66,30 +90,6 @@
       "title": "Türkei: Abgesetzter CHP-Chef Özel kündigt Gründung neuer Partei an",
       "description": "Im Mai hatte die türkische Justiz den Oppositionspolitiker Özel als Chef der CHP-Partei abgesetzt - nun hat er die Gründung einer neuen Partei angekündigt. Sie könnte auf einen Schlag die größte Oppositionspartei im Parlament werden.",
       "pubDate": "2026-07-21T17:04:23+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Milliarden-Deal: Microsoft baut KI-Partnerschaft mit Mistral aus",
-      "description": "Der Tech-Riese Microsoft und das französische KI-Unternehmen Mistral AI wollen ihre Zusammenarbeit deutlich ausweiten. Ein milliardenschweres Abkommen soll die KI-Infrastruktur in Europa spürbar stärken.",
-      "pubDate": "2026-07-21T17:02:11+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bundeskartellamt verhängt Millionenbußgeld wegen Reifenpreisen",
-      "description": "Drei Unternehmen sollen den Verkauf von Reifen mit unzulässigen Preisvorgaben beeinflusst haben. Deshalb hat das Bundeskartellamt Bußgelder von fast zwölf Millionen Euro verhängt.",
-      "pubDate": "2026-07-21T17:01:47+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ein Alkoholverbot gegen die Gewalt an Bahnhöfen?",
-      "description": "Kein Bier, kein Sektchen und kein Kurzer - die Deutsche Bahn will Alkohol an Bahnhöfen verbieten, für mehr Sicherheit. In Köln und anderen Bahnhöfen ist das schon jetzt Standard. Was hat es dort gebracht? Von Katharina Spreier.",
-      "pubDate": "2026-07-21T17:01:29+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bundesweites Alkoholverbot in Bahnhöfen: Die wichtigen Kernpunkte",
-      "description": "Mehr Ordnung und Sicherheit in allen Bahnhöfen und Zügen: Das will die Bahn mit dem geplanten bundesweiten Alkoholverbot erreichen. Welche Regeln künftig wo gelten sollen und wie weit das Verbot überhaupt umsetzbar ist.",
-      "pubDate": "2026-07-21T17:00:59+02:00",
       "bild": ""
     }
   ],
