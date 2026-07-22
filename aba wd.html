@@ -71,16 +71,29 @@
 
     </main>
 
-    <div class="read-aloud-container">
-        <button class="btn-read-aloud" onclick="vorlesenUndMarkieren()" title="Seite vorlesen">
-            <img src="zuhoeren.jpg" alt="Ohr-Symbol">
-            <span>Vorlesen</span>
-        </button>
-    </div>
-
-    <footer>
-        &copy; 2024 <b>Studjo | Arbeit und Qualifizierung</b> | Infoterminal
-    </footer>
+       <!-- ══ FOOTER ══ -->
+<footer style="
+  text-align: center;
+  padding: 14px 16px;
+  background: #b61f29;
+  color: #ffffff;
+  font-size: 0.85rem;
+  line-height: 1.8;
+">
+  © 2026 <strong>Studjo | Arbeit und Qualifizierung</strong>
+   ·  Evangelisches Johanneswerk gGmbH
+   ·  Barrierefreier Zugang
+  <br>
+  <a href="impressum.html"
+     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Impressum
+  </a>
+   | 
+  <a href="datenschutz.html"
+     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Datenschutz
+  </a>
+</footer>
 
 <script>
 // =====================================================================
@@ -549,5 +562,7 @@ if ('serviceWorker' in navigator) {
 // Starten
 render();
 </script>
+    <link rel="stylesheet" href="a11y.css">
+<script src="a11y.js"></script>
 </body>
 </html>
