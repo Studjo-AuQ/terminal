@@ -1,10 +1,40 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "22.07.2026, 14:35 Uhr (UTC)",
+  "aktualisiert": "22.07.2026, 16:25 Uhr (UTC)",
   "meldungen": [
     {
+      "title": "Marktbericht: DAX macht Boden gut",
+      "description": "Die Hoffnung auf eine erfolgreiche Berichtssaison der Unternehmen hat heute geopolitische Sorgen in den Hintergrund gedrängt. Die Lage am Persischen Golf bleibt trotzdem brandgefährlich.",
+      "pubDate": "2026-07-22T18:22:58+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Frei als Fraktionschef: Stühlerücken für mehr Stabilität in der Union?",
+      "description": "Die Unionsfraktion ringt nach schwierigen Monaten um Geschlossenheit. Mit Thorsten Frei an der Spitze soll nun Ruhe und Stabilität einkehren. Kann das gelingen? Von Corinna Emundts.",
+      "pubDate": "2026-07-22T18:00:24+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Mutmaßlicher Epstein-Komplize tot aufgefunden",
+      "description": "Hundertfach taucht sein Name in den Epstein-Akten auf: Nun ist der selbsternannte Modelagent Daniel S. in der Nähe von Paris tot aufgefunden worden. Gegen ihn lief ein Ermittlungsverfahren wegen Menschenhandels.",
+      "pubDate": "2026-07-22T17:45:34+02:00",
+      "bild": ""
+    },
+    {
+      "title": "EU will \"Chatkontrollen\" teilweise wieder ermöglichen",
+      "description": "In der EU gibt es seit Jahren Streit über den Einsatz von sogenannten Chatkontrollen, um Kindesmissbrauch aufzudecken. Nun wurde eine vorübergehende Lösung gefunden. Verschlüsselte Nachrichten bleiben davon jedoch ausgenommen.",
+      "pubDate": "2026-07-22T17:25:12+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Uber und Delivery Hero: Lieferdienste setzen auf Quick Commerce",
+      "description": "Der Markt für Lieferdienste wächst rasant. Was der Lieferboom für Kunden bedeutet, was Uber mit Delivery Hero vorhat, welche Rolle Amazon spielen könnte - und warum es längst um mehr als Essen geht. Von Angela Göpfert.",
+      "pubDate": "2026-07-22T17:11:51+02:00",
+      "bild": ""
+    },
+    {
       "title": "Justizreform in Ungarn: Generalstaatsanwalt Nagy tritt zurück",
-      "description": "Das ungarische Justizsystem steht kurz vor einer Reform: Der Generalstaatsanwalt ist zurückgetreten. Neben Korruptionsaffären wird ihm wird vorgeworfen, Ermittlungen gegen die Regierung verschleppt zu haben. Von Oliver Soos.",
+      "description": "Das ungarische Justizsystem steht kurz vor einer Reform: Der Generalstaatsanwalt ist zurückgetreten. Neben Korruptionsaffären wird ihm vorgeworfen, Ermittlungen gegen die Regierung verschleppt zu haben. Von Oliver Soos.",
       "pubDate": "2026-07-22T16:27:26+02:00",
       "bild": ""
     },
@@ -35,7 +65,7 @@
     {
       "title": "Großeinsatz in JVA Siegburg - Aufstand geplant?",
       "description": "Andeutungen eines Inhaftierten haben in einer Justizvollzugsanstalt in Nordrhein-Westfalen einen Großeinsatz der Polizei ausgelöst. War ein gewaltsamer Aufstand geplant?",
-      "pubDate": "2026-07-22T14:48:37+02:00",
+      "pubDate": "2026-07-22T12:47:00+02:00",
       "bild": ""
     },
     {
@@ -60,36 +90,6 @@
       "title": "Proteste in Indien: Modi hat ein \"Kakerlaken\"-Problem",
       "description": "Was als Internet-Meme begann, hat sich in Indien zu einer großen Protestbewegung entwickelt. Die \"Kakerlaken\" erhöhen weiter den Druck auf die Regierung Modi - und bekommen inzwischen Rückendeckung aus der Opposition. Von F. Amler.",
       "pubDate": "2026-07-22T12:52:50+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Reichsbürger-Gruppe \"Königreich Deutschland\": Mutmaßliche Anführer angeklagt",
-      "description": "Seit Mai 2025 ist die Reichsbürger-Gruppe \"Königreich Deutschland\" verboten. Jetzt hat die Bundesanwaltschaft Anklage gegen vier mutmaßliche Köpfe der Gruppierung erhoben - darunter auch der sogenannte \"Oberste Souverän\" Peter Fitzek.",
-      "pubDate": "2026-07-22T12:36:38+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wälder in Frankreich, Spanien und Italien brennen",
-      "description": "An vielen Orten in Europa zeigt sich der Klimawandel in extremer Form: Waldbrände auf Sizilien breiten sich bei Temperaturen um 45 Grad aus. In Frankreich sterben zwei Feuerwehrleute, Hunderte Menschen müssen fliehen.",
-      "pubDate": "2026-07-22T14:27:12+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Verdacht auf Cum-Cum-Geschäfte: Ermittler durchsuchen Deutsche Bank",
-      "description": "Ermittler haben die Büros der Deutschen Bank durchsucht: Es geht um möglicherweise rechtswidrige Steuergeschäfte der Postbank. Der Schaden für den Fiskus soll sich auf Hunderte Millionen Euro belaufen, so der Verdacht. Von P. Blum und V. von Ondarza.",
-      "pubDate": "2026-07-22T15:34:20+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Anschläge in Norwegen vor 15 Jahren: \"Das Trauma sitzt in deinem Körper\"",
-      "description": "15 Jahre nach dem rechtsextremistischen Anschlag in Norwegen gedenkt das Land mit einem neuen Denkmal der Opfer. Die damals 17-jährige Hanne überlebte den Anschlag auf der Insel Utøya. Das Trauma begleitet sie bis heute. Von E. Kuch.",
-      "pubDate": "2026-07-22T11:30:05+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Samsung erwägt Milliarden-Investment bei KI-Start-up Mistral",
-      "description": "Der französische KI-Entwickler Mistral könnte bald einen weiteren prominenten Investor gewinnen. Medienberichten zufolge prüft der südkoreanische Chipkonzern Samsung einen Einstieg in Milliardenhöhe.",
-      "pubDate": "2026-07-22T11:23:40+02:00",
       "bild": ""
     }
   ],
