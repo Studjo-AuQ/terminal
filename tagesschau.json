@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "22.07.2026, 19:36 Uhr (UTC)",
+  "aktualisiert": "22.07.2026, 21:16 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Prozess gegen Nicolás Maduro soll am 1. Juni 2027 beginnen",
+      "description": "Die USA machen dem abgesetzten venezolanischen Präsidenten Nicolás Maduro ab dem 1. Juni 2027 den Prozess. Dem 63-Jährigen droht eine lebenslange Haftstrafe wegen \"Drogenterrorismus\".",
+      "pubDate": "2026-07-22T21:56:33+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Experte zu KI-Hackerangriff: \"Hochgefährlich für die globale Cybersicherheit\"",
+      "description": "Ein KI-Modell von OpenAI ist eigenständig in Computersysteme einer anderen Firma eingedrungen und hat so das Risiko von KI-Cyberattacken demonstriert. Dennis-Kenji Kipker vom Cyber Intelligence Institute in Frankfurt am Main zeigt sich nicht überrascht.",
+      "pubDate": "2026-07-22T21:41:08+02:00",
+      "bild": ""
+    },
     {
       "title": "Waldbrände in Südeuropa: Der komplexe Kampf gegen das Feuer",
       "description": "Wochenlange Hitze und Trockenheit sorgen in Spanien und Portugal weiter für Waldbrände. Einige erreichen Ausmaße, die selbst erfahrene Feuerwehrleute an ihre Grenzen bringen. Wissenschaftler sehen dafür mehrere Gründe. Von Anna Mundt.",
@@ -78,18 +90,6 @@
       "title": "ARD-Korrespondent: \"Merz hat mit Frei jemanden geholt, der klar auf Kurs ist\"",
       "description": "Thorsten Frei soll Unionsfraktionschef im Bundestag werden. Für Kanzler Merz sei er ein enger Vertrauter, auf den er sich auch schon in der Vergangenheit verlassen konnte, so ARD-Korrespondent Kuntschner.",
       "pubDate": "2026-07-22T15:50:19+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Tech-Firmen am Finanzmarkt: Was KI kostet und wer das alles bezahlt",
-      "description": "Der KI-Boom wird immer stärker über Schulden finanziert. Tech-Konzerne nehmen am Anleihemarkt Milliarden auf. Ob die Wette auf die Zukunft aufgeht, ist keine ausgemachte Sache. Von Claudia Wehrle.",
-      "pubDate": "2026-07-22T15:32:22+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Könnten KI-gestützte Hackerangriffe zur neuen Gefahr werden?",
-      "description": "Erstmals ist ein KI-System eigenständig aus einer Testumgebung ausgebrochen und hat ein anderes Unternehmen angegriffen. Welche Risiken stecken dahinter? Wie können sich Firmen und Privatpersonen schützen? Von Michelle Goddemeier.",
-      "pubDate": "2026-07-22T15:04:19+02:00",
       "bild": ""
     }
   ],
