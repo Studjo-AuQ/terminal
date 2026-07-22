@@ -1,7 +1,49 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "22.07.2026, 12:13 Uhr (UTC)",
+  "aktualisiert": "22.07.2026, 14:35 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Justizreform in Ungarn: Generalstaatsanwalt Nagy tritt zurück",
+      "description": "Das ungarische Justizsystem steht kurz vor einer Reform: Der Generalstaatsanwalt ist zurückgetreten. Neben Korruptionsaffären wird ihm wird vorgeworfen, Ermittlungen gegen die Regierung verschleppt zu haben. Von Oliver Soos.",
+      "pubDate": "2026-07-22T16:27:26+02:00",
+      "bild": ""
+    },
+    {
+      "title": "ARD-Korrespondent: \"Merz hat mit Frei jemanden geholt, der klar auf Kurs ist\"",
+      "description": "Thorsten Frei soll Unionsfraktionschef im Bundestag werden. Für Kanzler Merz sei er ein enger Vertrauter, auf den er sich auch schon in der Vergangenheit verlassen konnte, so ARD-Korrespondent Kuntschner.",
+      "pubDate": "2026-07-22T15:50:19+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Tech-Firmen am Finanzmarkt: Was KI kostet und wer das alles bezahlt",
+      "description": "Der KI-Boom wird immer stärker über Schulden finanziert. Tech-Konzerne nehmen am Anleihemarkt Milliarden auf. Ob die Wette auf die Zukunft aufgeht, ist keine ausgemachte Sache. Von Claudia Wehrle.",
+      "pubDate": "2026-07-22T15:32:22+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Könnten KI-gestützte Hackerangriffe zur neuen Gefahr werden?",
+      "description": "Erstmals ist ein KI-System eigenständig aus einer Testumgebung ausgebrochen und hat ein anderes Unternehmen angegriffen. Welche Risiken stecken dahinter? Wie können sich Firmen und Privatpersonen schützen? Von Michelle Goddemeier.",
+      "pubDate": "2026-07-22T15:04:19+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Galeria prüft mögliche Schließungen von 33 Filialen",
+      "description": "Beschäftigte der angeschlagene Kaufhauskette Galeria müssen erneut um ihre Zukunft bangen: An insgesamt 33 Standorten will das Unternehmen den Fortbestand seiner Filialen prüfen. Ein Überblick, wo Schließungen drohen.",
+      "pubDate": "2026-07-22T14:53:35+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Großeinsatz in JVA Siegburg - Aufstand geplant?",
+      "description": "Andeutungen eines Inhaftierten haben in einer Justizvollzugsanstalt in Nordrhein-Westfalen einen Großeinsatz der Polizei ausgelöst. War ein gewaltsamer Aufstand geplant?",
+      "pubDate": "2026-07-22T14:48:37+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Steigende Kraftstoffpreise: Reiche gegen neuen Tankrabatt",
+      "description": "Der Tankrabatt ist ausgelaufen, die Lage im Nahen Osten spitzt sich zu und die Preise an den Zapfsäulen steigen wieder: Trotzdem schließt Wirtschaftsministerin Reiche weitere staatliche Eingriffe aus.",
+      "pubDate": "2026-07-22T14:44:26+02:00",
+      "bild": ""
+    },
     {
       "title": "Airbus begeistert die Anleger",
       "description": "Airbus hat sich neue ehrgeizige Ziele gesetzt. Getragen von einer hohen Nachfrage nach Fracht- und Passagierflugzeugen soll der Gewinn des DAX-Konzerns bis 2029 deutlich steigen. Die Börse ist begeistert.",
@@ -11,7 +53,7 @@
     {
       "title": "Millionenprozess: Bonner Landgericht weist Klage wegen Corona-Masken ab",
       "description": "Eine Hamburger Firma forderte im Prozess um Corona-Masken fast eine halbe Milliarde Euro vom Bund. Denn der damalige Gesundheitsminister Spahn habe mehr als 350 Millionen Masken bestellt, so die Begründung. Heute ist das Urteil gefallen.",
-      "pubDate": "2026-07-22T13:43:48+02:00",
+      "pubDate": "2026-07-22T14:56:00+02:00",
       "bild": ""
     },
     {
@@ -29,13 +71,13 @@
     {
       "title": "Wälder in Frankreich, Spanien und Italien brennen",
       "description": "An vielen Orten in Europa zeigt sich der Klimawandel in extremer Form: Waldbrände auf Sizilien breiten sich bei Temperaturen um 45 Grad aus. In Frankreich sterben zwei Feuerwehrleute, Hunderte Menschen müssen fliehen.",
-      "pubDate": "2026-07-22T11:57:28+02:00",
+      "pubDate": "2026-07-22T14:27:12+02:00",
       "bild": ""
     },
     {
       "title": "Verdacht auf Cum-Cum-Geschäfte: Ermittler durchsuchen Deutsche Bank",
-      "description": "Ermittler durchsuchen seit dem Morgen Büros der Deutschen Bank: Es geht um möglicherweise rechtswidrige Steuergeschäfte der Postbank. Der Schaden für den Fiskus soll sich auf Hunderte Millionen Euro belaufen, so der Verdacht. Von P. Blum und V. von Ondarza.",
-      "pubDate": "2026-07-22T11:55:11+02:00",
+      "description": "Ermittler haben die Büros der Deutschen Bank durchsucht: Es geht um möglicherweise rechtswidrige Steuergeschäfte der Postbank. Der Schaden für den Fiskus soll sich auf Hunderte Millionen Euro belaufen, so der Verdacht. Von P. Blum und V. von Ondarza.",
+      "pubDate": "2026-07-22T15:34:20+02:00",
       "bild": ""
     },
     {
@@ -48,48 +90,6 @@
       "title": "Samsung erwägt Milliarden-Investment bei KI-Start-up Mistral",
       "description": "Der französische KI-Entwickler Mistral könnte bald einen weiteren prominenten Investor gewinnen. Medienberichten zufolge prüft der südkoreanische Chipkonzern Samsung einen Einstieg in Milliardenhöhe.",
       "pubDate": "2026-07-22T11:23:40+02:00",
-      "bild": ""
-    },
-    {
-      "title": "So will die Bundesregierung deutsche Start-ups fördern",
-      "description": "36 Seiten, 150 Maßnahmen: Mit einer neuen Strategie will die Bundesregierung neu gegründeten Unternehmen zum Durchbruch verhelfen - und verhindern, dass sie ins Ausland abwandern. Wie soll das gelingen?",
-      "pubDate": "2026-07-22T10:46:28+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Vorbereitung auf mögliche Blackouts: Wenn auf einmal der Strom weg ist",
-      "description": "In Berlin waren Anfang des Jahres etwa 50.000 Haushalte ohne Strom. Wie kann sich Deutschland besser auf solche Szenarien vorbereiten? Von Marko Rösseler und David Zajonz.",
-      "pubDate": "2026-07-22T10:43:58+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Trump genehmigt offenbar Atomabkommen mit Saudi-Arabien",
-      "description": "Kann Saudi-Arabien künftig Uran anreichern? Medienberichten zufolge hat US-Präsident Trump ein ziviles Atomabkommen mit dem Königreich vereinbart. Offenbar fehlen jedoch wichtige Schutzklauseln.",
-      "pubDate": "2026-07-22T10:34:35+02:00",
-      "bild": ""
-    },
-    {
-      "title": "So viele Autos in Deutschland zugelassen wie noch nie",
-      "description": "Die Menschen in Deutschland bewegen sich weiterhin vor allem mit dem Auto fort. Noch nie waren so viele Pkw zugelassen wie zu Beginn des laufenden Jahres. Große Unterschiede gibt es zwischen Stadt und Land.",
-      "pubDate": "2026-07-22T10:25:32+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: DAX tritt auf der Stelle",
-      "description": "Für gute Stimmung an den Börsen in Europa und in den USA sorgt die Erholung im Technologiesektor. Geopolitische Risiken, etwa der Krieg im Nahen Osten, werden derweil ausgeblendet.",
-      "pubDate": "2026-07-22T10:10:18+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Zehn Jahre nach OEZ-Anschlag: Hinterbliebene fühlen sich im Stich gelassen",
-      "description": "Vor zehn Jahren tötete ein rechtsextremer Attentäter neun Menschen am Olympia-Einkaufszentrum in München. Behörden werteten die Tat lange als unpolitischen Amoklauf - mit Folgen für die Betroffenen. Von T. Marsen.",
-      "pubDate": "2026-07-22T09:28:53+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Lob für Alkoholverbot an Bahnhöfen - aber Fragen zur Umsetzung",
-      "description": "Für das geplante Alkoholverbot an Bahnhöfen gibt es Lob aus der Politik und von Polizeigewerkschaften. Zugleich werden Zweifel an der Umsetzung und Kritik an den Folgen für bestimmte Personengruppen laut.",
-      "pubDate": "2026-07-22T09:21:58+02:00",
       "bild": ""
     }
   ],
