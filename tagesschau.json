@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "22.07.2026, 06:19 Uhr (UTC)",
+  "aktualisiert": "22.07.2026, 07:15 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Bis zu 200 Prozent: Trump kündigt Zölle auf Arzneimittel an",
+      "description": "US-Präsident Donald Trump will Arzneimittelhersteller zu einer Produktion in den USA bewegen. Für Generika kündigte er deshalb ab Sommer 2028 Strafzölle an - die auf bis zu 200 Prozent steigen sollen.",
+      "pubDate": "2026-07-22T08:55:28+02:00",
+      "bild": ""
+    },
     {
       "title": "KI von OpenAI steuert eigenständig Hackerangriff",
       "description": "OpenAI spricht selbst von einem \"beispiellosen Cybervorfall\": KI-Modelle der Firma brachen eigenständig aus einer Testumgebung aus, verschafften sich Zugang zum offenen Internet - und hackten ein externes Unternehmen.",
@@ -34,7 +40,7 @@
     },
     {
       "title": "Iran-Krieg: Erstmals wieder Explosionen in Teheran",
-      "description": "Auch in der vergangenen Nacht hat das US-Militär Iran mit einer Welle von Angriffen überzogen. Erstmals seit dem jüngsten Aufflammen des Krieges war die Millionenmetropole Teheran wieder Ziel von Attacken.",
+      "description": "Auch in der vergangenen Nacht hat die US-Armee Iran mit einer Welle von Angriffen überzogen. Erstmals seit dem jüngsten Aufflammen des Krieges wurden auch wieder militärischen Ziele in der Hauptstadt Teheran beschossen.",
       "pubDate": "2026-07-22T04:20:48+02:00",
       "bild": ""
     },
@@ -46,13 +52,13 @@
     },
     {
       "title": "Mittelamerika: Nicaraguas Präsident Ortega will Wahlen abschaffen",
-      "description": "Bisher wahrte das Regime in Nicaragua den Schein von Wahlen, nächstes Jahr hätten Präsidentschaftswahlen stattfinden sollen. Doch es wird keine mehr geben: Nie wieder, verkündete jetzt Präsident Ortega. Von J. Barke.",
+      "description": "Bisher wahrte das Regime in Nicaragua den Schein von Wahlen, nächstes Jahr hätten Präsidentschaftswahlen stattfinden sollen. Doch es wird keine mehr geben: nie wieder, verkündete jetzt Präsident Ortega. Von J. Barke.",
       "pubDate": "2026-07-22T02:27:52+02:00",
       "bild": ""
     },
     {
       "title": "Frankreich: Die Not der Weinbauern nach den Waldbränden",
-      "description": "Seit Wochen wüten in Südfrankreich massive Waldbrände. Eine Region, die es hart getroffen hat, sind die Pyrénées-Orientales - dort fielen den Flammen auch zahlreiche Weinhänge zum Opfer. Die Winzer stehen vor dem Nichts. Von Julia Borutta, ARD Paris",
+      "description": "Seit Wochen wüten in Südfrankreich massive Waldbrände. Eine Region, die es hart getroffen hat, sind die Pyrénées-Orientales - dort fielen den Flammen auch zahlreiche Weinhänge zum Opfer. Die Winzer stehen vor dem Nichts. Von Julia Borutta.",
       "pubDate": "2026-07-22T00:38:36+02:00",
       "bild": ""
     },
@@ -84,12 +90,6 @@
       "title": "Marktbericht: DAX hält sich auf hohem Niveau",
       "description": "Mit etwas Rückenwind aus New York hat sich der DAX leicht stabilisiert - und bleibt damit auf hohem Niveau nahe der runden Marke von 25.000 Punkten. Sogar eine positive Überraschung gab es heute.",
       "pubDate": "2026-07-21T18:12:50+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Türkei: Abgesetzter CHP-Chef Özel kündigt Gründung neuer Partei an",
-      "description": "Im Mai hatte die türkische Justiz den Oppositionspolitiker Özel als Chef der CHP-Partei abgesetzt - nun hat er die Gründung einer neuen Partei angekündigt. Sie könnte auf einen Schlag die größte Oppositionspartei im Parlament werden.",
-      "pubDate": "2026-07-21T17:04:23+02:00",
       "bild": ""
     }
   ],
