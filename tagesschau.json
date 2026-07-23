@@ -1,7 +1,49 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "23.07.2026, 03:56 Uhr (UTC)",
+  "aktualisiert": "23.07.2026, 06:36 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Google-Mutter Alphabet erhöht Milliardeninvestitionen in KI",
+      "description": "Der Google-Mutterkonzern Alphabet hat Umsatz und Gewinn deutlich stärker gesteigert als erwartet. Vor allem das Cloud-Geschäft wächst rasant. Gleichzeitig erhöht der Konzern seine KI-Ausgaben erneut.",
+      "pubDate": "2026-07-23T08:19:10+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Bundesregierung spricht nach KI-Hackerangriff von \"Paradigmenwechsel\"",
+      "description": "Der eigenständige Hackerangriff eines KI-Modells hat die Bundesregierung alarmiert. Die zunehmenden Fähigkeiten Künstlicher Intelligenz verändere auch die Bedrohungslage im Cyberbereich massiv, warnt das Digitalministerium.",
+      "pubDate": "2026-07-23T07:47:47+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: Anleger schwanken zwischen Bilanzen und Ölpreisen",
+      "description": "Die Berichtssaison in den USA ist in vollem Gange. Anleger schauen genau darauf, ob sich die hohen KI-Investitionen auszahlen. Doch nicht alle Tech-Giganten legen überzeugende Zahlen vor.",
+      "pubDate": "2026-07-23T07:26:58+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Huthi-Miliz beschießt saudischen Tanker im Roten Meer",
+      "description": "Am Montag hatte die Huthi-Miliz eine Seeblockade ausgerufen - nun hat sie offenbar einen saudi-arabischen Tanker im Roten Meer attackiert. Die Miliz selbst spricht von noch einem zweiten angegriffenen Schiff.",
+      "pubDate": "2026-07-23T07:12:43+02:00",
+      "bild": ""
+    },
+    {
+      "title": "EZB-Präsidentin Lagarde: Bleibt sie oder geht sie?",
+      "description": "Verlässt Lagarde die EZB vor dem Ende ihrer Amtszeit? Vor einer weiteren Zinsentscheidung sind Mitarbeitende irritiert über Spekulationen. Denn die Aufgaben der Notenbank sind nicht erledigt: Die Inflation ist viel zu hoch. Von K.-J. Jackisch.",
+      "pubDate": "2026-07-23T06:30:10+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Buddhistische Gruppen: Manipulation in Buddhas Namen?",
+      "description": "Angstmache und Druck unter dem Deckmantel des Buddhismus: Ex-Mitglieder eines Zen-Vereins aus Hessen erheben schwere Vorwürfe gegen ihren ehemaligen Meister. Der streitet die Vorwürfe ab. Von C. Hawranek und K. Paysen-Petersen.",
+      "pubDate": "2026-07-23T06:00:28+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Klimakrise: Was kostet das Nichtstun?",
+      "description": "Ökonomen warnen, die Folgen des Klimawandels belasteten die Wirtschaft immer stärker. Viele Unternehmen beklagen steigende Kosten durch zunehmende Extremwetter und fordern konsequenten Klimaschutz. Von Oda Lambrecht.",
+      "pubDate": "2026-07-23T06:00:17+02:00",
+      "bild": ""
+    },
     {
       "title": "Bundesverfassungsgericht urteilt über Abgeordnetenrechte",
       "description": "Nicht nur die Inhalte des Gebäudeenergiegesetzes hatten 2023 für viel Diskussion gesorgt: Streit gab es auch über das Tempo. Heute entscheidet das Bundesverfassungsgericht darüber, ob damals alles zu schnell ging. Von A. Stephany und M. Bauer.",
@@ -9,15 +51,15 @@
       "bild": ""
     },
     {
-      "title": "Neue US-Angriffe gegen den Iran",
+      "title": "Neue US-Angriffe gegen Iran und gegenseitige Drohungen",
       "description": "Erneut hat das US-Militär Ziele in Iran attackiert - es ist die zwölfte nächtliche Angriffswelle in Folge. US-Präsident Trump hatte seine Drohungen gegen das Land zuvor noch einmal verschärft.",
       "pubDate": "2026-07-23T03:27:29+02:00",
       "bild": ""
     },
     {
       "title": "USA und Saudi-Arabien: Atomabkommen in Washington unterzeichnet",
-      "description": "Inmitten des Iran-Kriegs haben die USA ein Abkommen zum Aufbau eines zivilen Atomprogramms in Saudi-Arabien abgeschlossen. Der US-Kongress muss die Vereinbarung jedoch noch prüfen - und dort gibt es große Bedenken.",
-      "pubDate": "2026-07-23T04:30:06+02:00",
+      "description": "Inmitten des Iran-Kriegs haben die USA ein Abkommen zum Aufbau eines zivilen Atomprogramms in Saudi-Arabien geschlossen. Der US-Kongress muss die Vereinbarung jedoch noch prüfen - und dort gibt es große Bedenken.",
+      "pubDate": "2026-07-23T06:27:39+02:00",
       "bild": ""
     },
     {
@@ -48,48 +90,6 @@
       "title": "Experte zu KI-Hackerangriff: \"Hochgefährlich für die globale Cybersicherheit\"",
       "description": "Ein KI-Modell von OpenAI ist eigenständig in Computersysteme einer anderen Firma eingedrungen und hat so das Risiko von KI-Cyberattacken demonstriert. Dennis-Kenji Kipker vom Cyber Intelligence Institute in Frankfurt am Main zeigt sich nicht überrascht.",
       "pubDate": "2026-07-22T21:41:08+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Waldbrände in Südeuropa: Der komplexe Kampf gegen das Feuer",
-      "description": "Wochenlange Hitze und Trockenheit sorgen in Spanien und Portugal weiter für Waldbrände. Einige erreichen Ausmaße, die selbst erfahrene Feuerwehrleute an ihre Grenzen bringen. Wissenschaftler sehen dafür mehrere Gründe. Von Anna Mundt.",
-      "pubDate": "2026-07-22T20:47:30+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Mychajlo Drapatyj: Ein Hoffnungsträger an der Spitze der ukrainischen Armee",
-      "description": "Der Führungswechsel in der ukrainischen Armee bringt Hoffnung auf Reformen. Der neue Oberbefehlshaber Drapatyj genießt hohes Ansehen - doch auf ihn warten große Herausforderungen. Präsident Selenskyj geht angeschlagen aus der Krise. Von S. Laack.",
-      "pubDate": "2026-07-22T19:49:27+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ukrainische Armee mit neuer Führung: \"Eine schlechte Nachricht für Russland\"",
-      "description": "Im Streit um die Führung der ukrainischen Armee sieht Sicherheitsexperte Nico Lange einen Kulturkampf zweier Generationen. Das habe Präsident Selenskyj unterschätzt. Die neue Spitze stehe für eine Kriegsführung, die Russland Probleme bereite.",
-      "pubDate": "2026-07-22T19:48:27+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Trump droht Iran bei Angriffen auf Schiffe mit Vergeltung",
-      "description": "Präsident Trump verschärft seinen Ton gegenüber Teheran erneut: Sollte Iran weiter Schiffe in der Straße von Hormus beschießen, würden die USA zivile Infrastruktur zerstören. Auch aus Teheran kommen neue Drohungen.",
-      "pubDate": "2026-07-22T19:08:30+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Thorsten Frei: Bürgermeister, Kanzleramtschef, Fraktionsvorsitz?",
-      "description": "Er gilt als fleißig, loyal und hart in der Sache: Thorsten Frei soll Unions-Fraktionsvorsitzender im Bundestag werden. Wer ist der Mann, der Jens Spahn ersetzen soll? Von Christina Nagel.",
-      "pubDate": "2026-07-22T18:57:48+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Gedenken an Attentat im Olympia-Einkaufszentrum",
-      "description": "In München ist an die neun Todesopfer des Attentats im Olympia-Einkaufszentrum vor zehn Jahren erinnert worden. Bundespräsident Steinmeier rief dazu auf, Rassismus und Antisemitismus entschieden zu bekämpfen.",
-      "pubDate": "2026-07-22T18:55:01+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: DAX macht Boden gut",
-      "description": "Die Hoffnung auf eine erfolgreiche Berichtssaison der Unternehmen hat heute geopolitische Sorgen in den Hintergrund gedrängt. Die Lage am Persischen Golf bleibt trotzdem brandgefährlich.",
-      "pubDate": "2026-07-22T18:22:58+02:00",
       "bild": ""
     }
   ],
