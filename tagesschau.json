@@ -1,7 +1,49 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "23.07.2026, 06:36 Uhr (UTC)",
+  "aktualisiert": "23.07.2026, 09:28 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Verfassungsklage wegen Beratungszeit für \"Heizungsgesetz\" abgewiesen",
+      "description": "Der Zeitplan der damaligen Ampelkoalition für das Gebäudeenergiegesetz im Sommer 2023 war nicht zu knapp. Das hat das Bundesverfassungsgericht entschieden. Im Eilverfahren hatte der klagende CDU-Politiker noch Recht bekommen.",
+      "pubDate": "2026-07-23T11:15:41+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: Anleger blicken auf Ölpreise und die EZB",
+      "description": "Angesichts der jüngsten Eskalation im Nahen Osten klettert der Ölpreis auf den höchsten Stand seit mehr als sechs Wochen. Die hohen Energiepreise trüben die Stimmung an den Finanzmärkten.",
+      "pubDate": "2026-07-23T10:24:05+02:00",
+      "bild": ""
+    },
+    {
+      "title": "US-Repräsentantenhaus billigt mehr als eine Billion Dollar fürs Pentagon",
+      "description": "Das US-Repräsentantenhaus hat für eine deutliche Erhöhung des Verteidigungshaushalts gestimmt. Das Ergebnis fiel knapp aus - auch von Trumps Republikanern gab es Nein-Stimmen. Der Etat für 2027 muss noch durch die zweite Parlamentskammer.",
+      "pubDate": "2026-07-23T10:19:32+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Innenministerium will wohl härtere Einschnitte am Informationsfreiheitsgesetz",
+      "description": "Aus MDR-Recherchen geht hervor, dass das Bundesinnenministerium unter anderem den Bundesbeauftragten für das Informationsfreiheitsgesetz abschaffen will. Die SPD kritisiert die Pläne. Von Marcus Engert.",
+      "pubDate": "2026-07-23T10:15:40+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Treffen der Außenminister: Rubio und Lawrow kommen in Manila zusammen",
+      "description": "Es sind die ersten Gespräche auf dieser Ebene seit Langem: Die Außenminister der USA und Russlands, Rubio und Lawrow, haben sich persönlich getroffen. Die EU verhängt unterdessen neue Russland-Sanktionen.",
+      "pubDate": "2026-07-23T09:39:09+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Abkommen mit den USA: Das saudische Streben nach Atomkraft",
+      "description": "Mit der Unterzeichnung eines Atomabkommens mit den USA hat Saudi-Arabien ein lange verfolgtes Ziel erreicht. Atomkraft ist Teil eines größeren Plans, zu dem auch strategische Überlegungen gehören. Von Moritz Behrendt.",
+      "pubDate": "2026-07-23T09:13:29+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Waldbrände in Frankreich und Spanien: Tausende in Sicherheit gebracht",
+      "description": "Im Südwesten Frankreichs sind mehrere Campingplätze und Ortsteile aufgrund von Waldbränden evakuiert worden. Auch in Spanien und Italien mussten Hunderte Menschen vor Bränden in Sicherheit gebracht werden.",
+      "pubDate": "2026-07-23T08:41:36+02:00",
+      "bild": ""
+    },
     {
       "title": "Google-Mutter Alphabet erhöht Milliardeninvestitionen in KI",
       "description": "Der Google-Mutterkonzern Alphabet hat Umsatz und Gewinn deutlich stärker gesteigert als erwartet. Vor allem das Cloud-Geschäft wächst rasant. Gleichzeitig erhöht der Konzern seine KI-Ausgaben erneut.",
@@ -12,12 +54,6 @@
       "title": "Bundesregierung spricht nach KI-Hackerangriff von \"Paradigmenwechsel\"",
       "description": "Der eigenständige Hackerangriff eines KI-Modells hat die Bundesregierung alarmiert. Die zunehmenden Fähigkeiten Künstlicher Intelligenz verändere auch die Bedrohungslage im Cyberbereich massiv, warnt das Digitalministerium.",
       "pubDate": "2026-07-23T07:47:47+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Anleger schwanken zwischen Bilanzen und Ölpreisen",
-      "description": "Die Berichtssaison in den USA ist in vollem Gange. Anleger schauen genau darauf, ob sich die hohen KI-Investitionen auszahlen. Doch nicht alle Tech-Giganten legen überzeugende Zahlen vor.",
-      "pubDate": "2026-07-23T07:26:58+02:00",
       "bild": ""
     },
     {
@@ -51,45 +87,9 @@
       "bild": ""
     },
     {
-      "title": "Neue US-Angriffe gegen Iran und gegenseitige Drohungen",
-      "description": "Erneut hat das US-Militär Ziele in Iran attackiert - es ist die zwölfte nächtliche Angriffswelle in Folge. US-Präsident Trump hatte seine Drohungen gegen das Land zuvor noch einmal verschärft.",
+      "title": "Neue US-Angriffe auf Iran - Teheran attackiert Golfstaaten",
+      "description": "Erneut hat das US-Militär Ziele in Iran attackiert. Es ist die zwölfte nächtliche Angriffswelle in Folge. US-Präsident Trump verschärft seine Drohungen - die Islamische Republik beschießt die Golfstaaten.",
       "pubDate": "2026-07-23T03:27:29+02:00",
-      "bild": ""
-    },
-    {
-      "title": "USA und Saudi-Arabien: Atomabkommen in Washington unterzeichnet",
-      "description": "Inmitten des Iran-Kriegs haben die USA ein Abkommen zum Aufbau eines zivilen Atomprogramms in Saudi-Arabien geschlossen. Der US-Kongress muss die Vereinbarung jedoch noch prüfen - und dort gibt es große Bedenken.",
-      "pubDate": "2026-07-23T06:27:39+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Aktuelle Dürre in Europa durch Klimawandel verursacht",
-      "description": "Die aktuelle Dürre ist nicht nur in großen Teilen Deutschlands, sondern in ganz Europa sichtbar. Aktuelle Forschung zeigt: Das ist der Klimawandel. Fehlender Regen spielt eher eine untergeordnete Rolle. Von Florian Zinner.",
-      "pubDate": "2026-07-23T01:01:35+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Porsche-Aufsichtsrat unterstützt Sparpaket",
-      "description": "Seit Monaten laufen bei Porsche Verhandlungen über weitere Sparmaßnahmen. Nun hat der Aufsichtsrat seine Unterstützung für den aktuellen Stand zugesagt. Laut Medienberichten könnten damit Tausende weitere Jobs wegfallen.",
-      "pubDate": "2026-07-23T00:45:05+02:00",
-      "bild": ""
-    },
-    {
-      "title": "EU-Kommission billigt Warner-Übernahme durch Paramount",
-      "description": "Die EU-Komission hat der geplanten Übernahme des Hollywood-Urgesteins Warner Bros. durch den Konkurrenten Paramount zugestimmt. Beim Vertrieb von Filmen in Europa gibt es jedoch Auflagen.",
-      "pubDate": "2026-07-23T00:17:48+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Prozess gegen Nicolás Maduro soll am 1. Juni 2027 beginnen",
-      "description": "Die USA machen dem abgesetzten venezolanischen Präsidenten Nicolás Maduro ab dem 1. Juni 2027 den Prozess. Dem 63-Jährigen droht eine lebenslange Haftstrafe wegen \"Drogenterrorismus\".",
-      "pubDate": "2026-07-22T21:56:33+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Experte zu KI-Hackerangriff: \"Hochgefährlich für die globale Cybersicherheit\"",
-      "description": "Ein KI-Modell von OpenAI ist eigenständig in Computersysteme einer anderen Firma eingedrungen und hat so das Risiko von KI-Cyberattacken demonstriert. Dennis-Kenji Kipker vom Cyber Intelligence Institute in Frankfurt am Main zeigt sich nicht überrascht.",
-      "pubDate": "2026-07-22T21:41:08+02:00",
       "bild": ""
     }
   ],
