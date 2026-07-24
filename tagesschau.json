@@ -1,7 +1,37 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "24.07.2026, 15:13 Uhr (UTC)",
+  "aktualisiert": "24.07.2026, 17:07 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Türkei: Kann sich Özels \"Neue Partei\" durchsetzen?",
+      "description": "Der türkische Oppositionspolitiker Özel gründet eine neue Partei. Ein Großteil der Abgeordneten seiner früheren Partei CHP will ihm folgen - doch die Neugründung birgt auch Risiken. Von Gabriele Dunkel.",
+      "pubDate": "2026-07-24T18:20:29+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX erholt sich zum Wochenschluss",
+      "description": "Zwischen neuen US-Zöllen, hohen Ölpreisen, anhaltender Unruhe in Nahost und schwachen VW-Zahlen gelingt dem DAX ein Anstieg. Dazu trug vor dem Wochenende vor allem Schwergewicht SAP bei.",
+      "pubDate": "2026-07-24T18:18:50+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Klage von Italien: EU-Generalanwalt hält Lkw-Blockabfertigungen für zulässig",
+      "description": "Am Montag müssen sich Italien-Urlauber auf lange Staus am Brenner gefasst machen. Der Grund: die Brenner-Blockabfertigung. Italien hat dagegen geklagt. Doch der EU-Generalanwalt hält die \"Lkw-Dosierung\" für zulässig. Von Björn-Hendrik Otte.",
+      "pubDate": "2026-07-24T17:40:41+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wie Merz' Personalrochade zur Hängepartie wurde",
+      "description": "Per SMS hat Verkehrsminister Schnieder über seinen Abschied informiert. Kanzler Merz will seine Position offenbar neu besetzen. Doch einen Nachfolger gibt es nicht. In der Union ist von Chaos die Rede. Merz steht unter Zeitdruck. Von Ilanit Spinner.",
+      "pubDate": "2026-07-24T17:30:20+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Verfassungsgericht kippt pauschalen Aufnahmestopp für Afghanen",
+      "description": "Ende 2025 hatte die Bundesregierung die Aufnahmezusagen für Afghanen, die in ihrer Heimat durch die Taliban gefährdet sind, pauschal widerrufen. Das Bundesverfassungsgericht gab einer Klage dagegen nun teilweise statt. Von M. Bauer und A. Stephany.",
+      "pubDate": "2026-07-24T17:29:50+02:00",
+      "bild": ""
+    },
     {
       "title": "Regensburg: Mutmaßlicher Täter war kurz vor der Tat in Polizeigewahrsam",
       "description": "Nach dem tödlichen Angriff auf einen Bankmitarbeiter in Regensburg sitzt der mutmaßliche Täter in Untersuchungshaft. Am Tag vor der Tat war der Mann in Polizeigewahrsam.",
@@ -15,9 +45,9 @@
       "bild": ""
     },
     {
-      "title": "Mehr als 60.000 Menschen wegen Waldbränden in Frankreich evakuiert",
+      "title": "Mehr als 65.000 Menschen wegen Waldbränden in Frankreich evakuiert",
       "description": "Wegen der Waldbrände an der französischen Atlantikküste müssen Zehntausende Menschen evakuiert werden, inzwischen werden dafür auch Schiffe eingesetzt. Eines der beiden großen Feuer ist auf die Größe von Paris angewachsen.",
-      "pubDate": "2026-07-24T16:32:10+02:00",
+      "pubDate": "2026-07-24T17:42:34+02:00",
       "bild": ""
     },
     {
@@ -60,36 +90,6 @@
       "title": "Wacken Open Air 2026: Zwischen Dorfacker und Wall Street",
       "description": "Das Wacken Open Air findet jedes Jahr in einem kleinen Dorf in Schleswig-Holstein statt. Doch längst ist es ein weltweites Ereignis. Mittlerweile sind auch die Besitzverhältnisse international. Was heißt das für das Festival?",
       "pubDate": "2026-07-24T15:05:51+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Batteriehersteller Varta stellt mehrere Insolvenzanträge",
-      "description": "Für den angeschlagenen Batteriehersteller Varta beginnt ein weiteres Insolvenzverfahren. Das Unternehmen bestätigte vier Insolvenzanträge. Jetzt droht die Zerschlagung.",
-      "pubDate": "2026-07-24T15:01:40+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Manöver \"Pitch Black\": Sich besser kennenlernen - für einen Ernstfall?",
-      "description": "Soldaten aus 21 Nationen beteiligen sich derzeit an der Luftwaffenübung \"Pitch Black\" über dem Norden Australiens, darunter auch die Bundeswehr. Die Region gehört zwar nicht zur NATO, wird aber strategisch immer wichtiger. Von M. Müller und J. Kurrat.",
-      "pubDate": "2026-07-24T14:53:33+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Israelische Siedler gegen Palästinenser: Gewalt im Westjordanland eskaliert",
-      "description": "Im Westjordanland hat es bei Gewalt zwischen Palästinensern und israelischen Siedlern erneut Tote gegeben: Auf beiden Seiten wurden Menschen getötet. Von Jan-Christoph Kitzler.",
-      "pubDate": "2026-07-24T16:26:57+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Russland und Ukraine: Droht die Rückkehr der Getreidekrise?",
-      "description": "Russland und die Ukraine intensivieren ihre Angriffe auch auf See. Die Ukraine greift die russische Schattenflotte an, Russland attackiert Schiffe auf dem Weg zum Hafen von Odessa. Droht eine neue Getreidekrise? Von S. Laack.",
-      "pubDate": "2026-07-24T14:33:42+02:00",
-      "bild": ""
-    },
-    {
-      "title": "EU-Kommission kritisiert Jugendschutz bei TikTok - Strafen drohen",
-      "description": "TikTok tut laut EU-Kommission zu wenig für den Schutz Minderjähriger Nutzer. Sollte sich der Verdacht erhärten und die Plattform nichts ändern, drohen hohe Strafen. TikTok selbst weist die Kritik zurück.",
-      "pubDate": "2026-07-24T13:31:24+02:00",
       "bild": ""
     }
   ],
