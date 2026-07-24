@@ -1,7 +1,73 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "24.07.2026, 13:02 Uhr (UTC)",
+  "aktualisiert": "24.07.2026, 15:13 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Regensburg: Mutmaßlicher Täter war kurz vor der Tat in Polizeigewahrsam",
+      "description": "Nach dem tödlichen Angriff auf einen Bankmitarbeiter in Regensburg sitzt der mutmaßliche Täter in Untersuchungshaft. Am Tag vor der Tat war der Mann in Polizeigewahrsam.",
+      "pubDate": "2026-07-24T16:58:43+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Polens größte Oppositionspartei spaltet sich",
+      "description": "In Polens größter Oppositionspartei ist es zum Bruch gekommen: 30 Abgeordnete verlassen die nationalkonservative PiS - und folgen Ex-Ministerpräsident Morawiecki in einen liberaleren Flügel. Eine gefährliche Konkurrenz? Von Palina Milling.",
+      "pubDate": "2026-07-24T16:51:29+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Mehr als 60.000 Menschen wegen Waldbränden in Frankreich evakuiert",
+      "description": "Wegen der Waldbrände an der französischen Atlantikküste müssen Zehntausende Menschen evakuiert werden, inzwischen werden dafür auch Schiffe eingesetzt. Eines der beiden großen Feuer ist auf die Größe von Paris angewachsen.",
+      "pubDate": "2026-07-24T16:32:10+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Kommentar: Merz' Kabinettsumbau ist ein verstolperter Neuanfang",
+      "description": "Der Umbau des Kabinetts hätte eine Chance sein können, meint Sabine Henkel. Doch der Kanzler hat den Neuanfang verstolpert. Merz verteilt Posten an Getreue, doch so mancher will den Job gar nicht. Kann so gute Regierungsarbeit gelingen?",
+      "pubDate": "2026-07-24T16:26:03+02:00",
+      "bild": ""
+    },
+    {
+      "title": "VW-Chef Blume: \"Ein Werk zu schließen, ist immer die letzte Lösung\"",
+      "description": "Schwache Verkäufe vor allem in China setzen dem VW-Konzern zu: Der Gewinn ist kräftig gesunken. Konzernchef Blume will bis Jahresende Klarheit zum Sparkurs schaffen - und weiter an der Wettbewerbsfähigkeit arbeiten.",
+      "pubDate": "2026-07-24T16:05:10+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Brände in Spanien vereinen sich zu großer Feuerfront",
+      "description": "Die Lage in den spanischen Waldbrandgebieten wird immer dramatischer. In der Region Madrid haben sich mehrere Feuer zu einem Großbrand vereint. Die Regierung rief den Notstand aus - erstmals überhaupt wegen eines Waldbrands. Von Anna Mundt.",
+      "pubDate": "2026-07-24T15:56:38+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Sultan von Brunei feiert 80. Geburtstag mit großer Parade",
+      "description": "Zum 80. Geburtstag gibt es für Bruneis Sultan eine große Parade. Zwar ist die politische Freiheit der Bevölkerung in dem südostasiatischen Staat stark eingeschränkt - dennoch ist der Alleinherrscher beliebt. Von Jennifer Johnston.",
+      "pubDate": "2026-07-24T15:41:47+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Edinburgh führt Touristensteuer ein",
+      "description": "Die schottische Hauptstadt Edinburgh hat als erste schottische Stadt eine Touristensteuer eingeführt. Von heute an müssen Besucher für Übernachtungen fünf Prozent mehr bezahlen.",
+      "pubDate": "2026-07-24T15:31:09+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Mindestens 50 Tote in Indien bei Überschwemmungen",
+      "description": "Tagelanger Monsun-Regen sorgt für schwere Überschwemmungen in Indien. Im Norden des Landes sind laut Behördenangaben 50 Menschen gestorben. Nach Medienberichten könnte die Zahl deutlich höher liegen.",
+      "pubDate": "2026-07-24T15:08:36+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wacken Open Air 2026: Zwischen Dorfacker und Wall Street",
+      "description": "Das Wacken Open Air findet jedes Jahr in einem kleinen Dorf in Schleswig-Holstein statt. Doch längst ist es ein weltweites Ereignis. Mittlerweile sind auch die Besitzverhältnisse international. Was heißt das für das Festival?",
+      "pubDate": "2026-07-24T15:05:51+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Batteriehersteller Varta stellt mehrere Insolvenzanträge",
+      "description": "Für den angeschlagenen Batteriehersteller Varta beginnt ein weiteres Insolvenzverfahren. Das Unternehmen bestätigte vier Insolvenzanträge. Jetzt droht die Zerschlagung.",
+      "pubDate": "2026-07-24T15:01:40+02:00",
+      "bild": ""
+    },
     {
       "title": "Manöver \"Pitch Black\": Sich besser kennenlernen - für einen Ernstfall?",
       "description": "Soldaten aus 21 Nationen beteiligen sich derzeit an der Luftwaffenübung \"Pitch Black\" über dem Norden Australiens, darunter auch die Bundeswehr. Die Region gehört zwar nicht zur NATO, wird aber strategisch immer wichtiger. Von M. Müller und J. Kurrat.",
@@ -10,8 +76,8 @@
     },
     {
       "title": "Israelische Siedler gegen Palästinenser: Gewalt im Westjordanland eskaliert",
-      "description": "Im Westjordanland hat es zwischen Palästinensern und israelischen Siedlern erneut Tote gegeben: Fünf Menschen wurden getötet. Israels Finanzminister Smotrich fordert, Dörfer müssten von \"Terroristen gesäubert werden\". Von J.-C. Kitzler.",
-      "pubDate": "2026-07-24T14:34:29+02:00",
+      "description": "Im Westjordanland hat es bei Gewalt zwischen Palästinensern und israelischen Siedlern erneut Tote gegeben: Auf beiden Seiten wurden Menschen getötet. Von Jan-Christoph Kitzler.",
+      "pubDate": "2026-07-24T16:26:57+02:00",
       "bild": ""
     },
     {
@@ -24,72 +90,6 @@
       "title": "EU-Kommission kritisiert Jugendschutz bei TikTok - Strafen drohen",
       "description": "TikTok tut laut EU-Kommission zu wenig für den Schutz Minderjähriger Nutzer. Sollte sich der Verdacht erhärten und die Plattform nichts ändern, drohen hohe Strafen. TikTok selbst weist die Kritik zurück.",
       "pubDate": "2026-07-24T13:31:24+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Deutsche Autohersteller sparen - mit gravierenden Folgen",
-      "description": "Volkswagen steckt in der tiefsten Krise der Firmengeschichte. Der Konkurrenz geht es ähnlich. Die Folgen der Sparmaßnahmen sind nicht nur für die Beschäftigten schwerwiegend, sondern für ganze Regionen. Von Claudia Wehrle.",
-      "pubDate": "2026-07-24T13:18:15+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wie umgehen mit Pekings Gebietsansprüchen im Südchinesischen Meer?",
-      "description": "Im Südchinesischen Meer haben sich die Spannungen zwischen China und anderen Anrainerstaaten verschärft. Pekings Gebietsansprüche überschatten auch das ASEAN-Treffen - und die chinesisch-amerikanischen Beziehungen. Von Sebastian Hesse.",
-      "pubDate": "2026-07-24T13:05:22+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Somalische Piraten halten Schiff mit acht Deutschen fest",
-      "description": "Ein Handelsschiff, das in der vergangenen Woche im Golf von Aden gekapert worden war, hat offenbar acht Deutsche an Bord. Laut der britischen Marinebehörde haben somalische Piraten den Tanker entführt.",
-      "pubDate": "2026-07-24T12:41:10+02:00",
-      "bild": ""
-    },
-    {
-      "title": "SAP-Zahlen treiben Aktie nach oben - Softwarebranche atmet auf",
-      "description": "Starke Cloud-Verträge und die Hoffnung auf neue Geschäfte durch KI haben der SAP-Aktie ordentlich ins Plus verholfen. Der DAX profitiert davon - und auch andere Softwarewerte legen zu.",
-      "pubDate": "2026-07-24T12:39:45+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bundesverfassungsgericht: Pauschaler Aufnahmestopp von Afghanen ist \"Willkür\"",
-      "description": "Der von der Bundesregierung verhängte pauschale Aufnahmestopp von gefährdeten Afghanen verstößt gegen das Verbot der Willkür. Das hat das Bundesverfassungsgericht jetzt im Falle einer Afghanin und deren zwei Söhnen entschieden.",
-      "pubDate": "2026-07-24T14:12:33+02:00",
-      "bild": ""
-    },
-    {
-      "title": "So soll das neue Kabinett aussehen",
-      "description": "Der Rücktritt von Unionsfraktionschef Spahn hat den Stein ins Rollen gebracht: Die Union wechselt auf mehreren Spitzenpositionen das Personal aus. Wer gehen muss und wer neue Ämter übernehmen soll.",
-      "pubDate": "2026-07-24T11:24:50+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Jürgen Klopp ist neuer Bundestrainer",
-      "description": "Der DFB hat Jürgen Klopp als neuen Trainer der deutschen Fußball-Nationalmannschaft nun offiziell vorgestellt. Der 59-Jährige folgt auf Julian Nagelsmann, der nach dem frühen WM-Aus zurückgetreten war.",
-      "pubDate": "2026-07-24T11:17:29+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Einschätzung zum Kabinettsumbau: \"Spahn-Rücktritt öffnet Tür für Veränderungen\"",
-      "description": "Mit dem neuen Job für Nina Warken zeige Kanzler Merz, dass er Effizienz belohne, so ARD-Korrespondent Markus Preiß. Durch Spahns Rücktritt habe sich für ihn die Möglichkeit für einen umfassenden Kabinettsumbau ergeben.",
-      "pubDate": "2026-07-24T10:57:39+02:00",
-      "bild": ""
-    },
-    {
-      "title": "PMOS - ein oft unerkanntes Gesundheitsrisiko bei Frauen",
-      "description": "Etwa jede achte Frau ist davon betroffen, trotzdem ist sie bislang kaum bekannt: die Hormonstörung PMOS - ehemals PCOS. Der neue Name und eine Leitlinie für Patientinnen sollen jetzt eine bessere Versorgung ermöglichen. Von Nina Kunze.",
-      "pubDate": "2026-07-24T10:34:08+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: DAX erholt sich zum Wochenschluss etwas",
-      "description": "Neue US-Zölle, weiter steigende Ölpreise, zugespitzte Kriegshandlungen in Nahost und neue VW-Sorgen sind zum Wochenende hin keine gute Mischung. Trotzdem schafft der DAX zunächst eine Stabilisierung.",
-      "pubDate": "2026-07-24T10:08:42+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Gericht verlängert Stopp für Warner-Übernahme durch Paramount",
-      "description": "Die milliardenschwere Übernahme von Warner Bros. Discovery durch Paramount verzögert sich weiter. Ein US-Gericht hat den vorläufigen Stopp bis Mitte August verlängert und prüft eine Klage mehrerer Bundesstaaten.",
-      "pubDate": "2026-07-24T09:50:59+02:00",
       "bild": ""
     }
   ],
