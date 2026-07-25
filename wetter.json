@@ -1,15 +1,15 @@
 {
-  "aktualisiert": "25.07.2026, 07:55 Uhr",
+  "aktualisiert": "25.07.2026, 09:40 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
-        "temp": 19,
-        "gefuehlt": 18,
-        "zustand": "Bedeckt",
-        "emoji": "☁️",
-        "wind": 5,
-        "luftfeuchte": 52,
+        "temp": 21,
+        "gefuehlt": 21,
+        "zustand": "Überwiegend klar",
+        "emoji": "🌤️",
+        "wind": 6,
+        "luftfeuchte": 45,
         "niederschlag": 0.0
       },
       "tage": [
@@ -25,20 +25,20 @@
         {
           "wochentag": "Sonntag",
           "datum": "26.07.",
-          "emoji": "🌧️",
-          "zustand": "Leichter Regen",
+          "emoji": "🌦️",
+          "zustand": "Nieselregen",
           "max": 20,
           "min": 15,
-          "niederschlag": 2.9
+          "niederschlag": 1.5
         },
         {
           "wochentag": "Montag",
           "datum": "27.07.",
           "emoji": "🌧️",
-          "zustand": "Starker Regen",
+          "zustand": "Regen",
           "max": 18,
           "min": 14,
-          "niederschlag": 18.4
+          "niederschlag": 5.5
         },
         {
           "wochentag": "Dienstag",
@@ -63,12 +63,12 @@
     {
       "stadt": "Werdohl",
       "aktuell": {
-        "temp": 20,
-        "gefuehlt": 19,
-        "zustand": "Klar",
-        "emoji": "☀️",
-        "wind": 4,
-        "luftfeuchte": 52,
+        "temp": 23,
+        "gefuehlt": 23,
+        "zustand": "Überwiegend klar",
+        "emoji": "🌤️",
+        "wind": 5,
+        "luftfeuchte": 48,
         "niederschlag": 0.0
       },
       "tage": [
@@ -122,12 +122,12 @@
     {
       "stadt": "Kierspe",
       "aktuell": {
-        "temp": 19,
-        "gefuehlt": 18,
-        "zustand": "Teils bewölkt",
-        "emoji": "⛅",
-        "wind": 5,
-        "luftfeuchte": 51,
+        "temp": 21,
+        "gefuehlt": 21,
+        "zustand": "Überwiegend klar",
+        "emoji": "🌤️",
+        "wind": 6,
+        "luftfeuchte": 52,
         "niederschlag": 0.0
       },
       "tage": [
@@ -136,27 +136,27 @@
           "datum": "25.07.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 26,
+          "max": 25,
           "min": 11,
           "niederschlag": 0.0
         },
         {
           "wochentag": "Sonntag",
           "datum": "26.07.",
-          "emoji": "🌦️",
-          "zustand": "Nieselregen",
-          "max": 21,
-          "min": 15,
-          "niederschlag": 1.6
+          "emoji": "🌧️",
+          "zustand": "Regen",
+          "max": 20,
+          "min": 14,
+          "niederschlag": 5.0
         },
         {
           "wochentag": "Montag",
           "datum": "27.07.",
-          "emoji": "🌧️",
-          "zustand": "Regen",
+          "emoji": "🌦️",
+          "zustand": "Leichter Nieselregen",
           "max": 18,
           "min": 14,
-          "niederschlag": 11.6
+          "niederschlag": 2.0
         },
         {
           "wochentag": "Dienstag",
@@ -181,12 +181,12 @@
     {
       "stadt": "Bochum",
       "aktuell": {
-        "temp": 22,
-        "gefuehlt": 20,
-        "zustand": "Klar",
-        "emoji": "☀️",
+        "temp": 24,
+        "gefuehlt": 24,
+        "zustand": "Teils bewölkt",
+        "emoji": "⛅",
         "wind": 6,
-        "luftfeuchte": 44,
+        "luftfeuchte": 39,
         "niederschlag": 0.0
       },
       "tage": [
@@ -202,11 +202,11 @@
         {
           "wochentag": "Sonntag",
           "datum": "26.07.",
-          "emoji": "🌦️",
-          "zustand": "Nieselregen",
+          "emoji": "🌧️",
+          "zustand": "Leichter Regen",
           "max": 24,
           "min": 18,
-          "niederschlag": 1.6
+          "niederschlag": 2.6
         },
         {
           "wochentag": "Montag",
@@ -214,8 +214,8 @@
           "emoji": "🌧️",
           "zustand": "Regen",
           "max": 21,
-          "min": 16,
-          "niederschlag": 7.8
+          "min": 17,
+          "niederschlag": 8.8
         },
         {
           "wochentag": "Dienstag",
