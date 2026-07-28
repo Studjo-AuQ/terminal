@@ -1,7 +1,37 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "28.07.2026, 09:19 Uhr (UTC)",
+  "aktualisiert": "28.07.2026, 11:36 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Ab heute kann über das Jugendwort des Jahres abgestimmt werden",
+      "description": "Was liegt der Jugend am häufigsten auf der Zunge? Ab heute kann unter zehn Begriffen das Jugendwort des Jahres gewählt werden. Von Ausrastern über Entschuldigungen bis zu bedeutungslosen Allzwecksantworten ist alles dabei.",
+      "pubDate": "2026-07-28T13:31:02+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Erdbeben der Stärke 7,1 erschüttert Südwesten Japans",
+      "description": "Ein schweres Erdbeben hat die Insel Kyushu im Südwesten Japans erschüttert. Medien berichten von Dutzenden Verletzten. Pro Jahr bebt die Erde in Japan rund 1.500 Mal.",
+      "pubDate": "2026-07-28T12:48:48+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Myanmar: Aung San Suu Kyis Familie fordert Lebenszeichen",
+      "description": "In Myanmar ist Friedensnobelpreisträgerin Aung San Suu Kyi angeblich aus der Haft an einen anderen Ort verlegt worden. Mehr Informationen gibt die Junta nicht heraus. Ihre Familie ist in großer Sorge. Von J. Johnston.",
+      "pubDate": "2026-07-28T12:42:08+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Sparmaßnahmen bei Porsche: Vorerst Erleichterung in Zuffenhausen",
+      "description": "Auch Porsche spürt die Krise in der Autoindustrie. Und dennoch: Nach der Betriebsversammlung herrscht bei Konzernleitung und Belegschaft positive Stimmung. Was macht Porsche anders? Von Jenni Rieger.",
+      "pubDate": "2026-07-28T12:04:07+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Debatte nach Anschlag auf CSD: Fußfessel oder Präventivhaft für Gefährder?",
+      "description": "Nach dem Anschlag auf den CSD dringen Innenminister und Unionspolitiker auf schärfere Regeln für Gefährder. Die SPD will \"alle Instrumentarien\" prüfen. Das BKA zählt bundesweit Hunderte islamistische Gefährder.",
+      "pubDate": "2026-07-28T12:37:54+02:00",
+      "bild": ""
+    },
     {
       "title": "Marktbericht: Kurssturz in Südkorea lässt Anleger kalt",
       "description": "Die Hoffnung auf eine diplomatische Lösung des Konflikts im Nahen Osten macht die Anleger mutig. Während in Asien die Furcht vor einem Platzen der KI-Blase belastet, kommen in Deutschland die Zahlen von Mercedes gut an.",
@@ -10,12 +40,12 @@
     },
     {
       "title": "Online-Buchungsrekord für Ferienwohnungen",
-      "description": "Immer mehr Ferienunterkünften werden hierzulande über große Online-Plattformen gebucht. Mit mehr als 68 Millionen Übernachtungen erreichten die Online-Buchungen sogar einen Rekord.",
+      "description": "Immer mehr Ferienunterkünfte werden hierzulande über große Online-Plattformen gebucht. Mit mehr als 68 Millionen Übernachtungen erreichten die Online-Buchungen sogar einen Rekord.",
       "pubDate": "2026-07-28T10:27:12+02:00",
       "bild": ""
     },
     {
-      "title": "Hitzewelle sorgt für Rekordabsatz von Wasser und Eis",
+      "title": "Hitzewelle im Juni sorgte für Rekordabsatz von Wasser und Eis",
       "description": "Die Hitzewelle Ende Juni hat hierzulande für Rekordverkäufe bei Mineralwasser und Speiseeis gesorgt. Aber auch Limonaden und Biermischgetränke waren als Abkühlung beliebt.",
       "pubDate": "2026-07-28T10:21:02+02:00",
       "bild": ""
@@ -60,36 +90,6 @@
       "title": "Bilger übernimmt Verkehrsressort: Neuer Minister, alte Probleme",
       "description": "Der CDU-Politiker Bilger wird neuer Verkehrsminister. Er kennt das Haus - das könnte seine Stärke und Schwäche zugleich sein. Einen Neuanfang haben sich viele in Opposition und Verkehrsbranche anders vorgestellt. Von Sarah Beham und Jan Zimmermann.",
       "pubDate": "2026-07-28T05:26:43+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Trump will per Eilantrag vor Supreme Court schärfere Wahlregeln durchsetzen",
-      "description": "In weniger als 100 Tagen wird in den USA ein neuer Kongress gewählt. US-Präsident Trump will Änderungen beim Wahlrecht, wird aber von einem Gericht blockiert. Jetzt soll ein Eilantrag beim Supreme Court die Entscheidung kippen.",
-      "pubDate": "2026-07-28T05:18:47+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Mehrere Tech-Unternehmen haben eine KI-Sicherheitsallianz gegründet",
-      "description": "Der wichtigste Hersteller von KI-Chips, Nvidia, und Industriepartner wie Microsoft, IBM haben eine KI-Sicherheitsallianz gegründet. Die Ankündigung erfolgte wenige Tage nach einer aufsehenerregenden Testpanne bei OpenAI.",
-      "pubDate": "2026-07-28T02:23:46+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Großbritannien: Burnham empfängt Selenskyj - erster ausländischer Besucher",
-      "description": "Andy Burnham setzt als neuer britischer Premier ein Zeichen und empfängt den ukrainischen Präsidenten Selenskyj. Beide betonen die engen Kontakte. Im Anschluss reist Selenskyj zu einem schwierigeren Partner.",
-      "pubDate": "2026-07-27T20:36:26+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Dobrindt nach Anschlag auf CSD: \"Präventivhaft für Gefährder zwingend notwendig\"",
-      "description": "Obwohl der mutmaßliche CSD-Attentäter von den Behörden als \"Hochrisikoperson\" eingestuft wurde, war er auf freiem Fuß. Innenminister Dobrindt plädiert daher dafür, die Bewegungsfreiheit von Gefährdern einzuschränken - bis hin zur Präventivhaft.",
-      "pubDate": "2026-07-27T20:36:37+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kabinettsumbau sorgt für Ärger mit CDU-Fraktion in Rheinland-Pfalz",
-      "description": "\"Fehlendes Vertrauen\", \"Stimmung am Boden\": Die Kritik am Umgang mit Verkehrsminister Schnieder beim Kabinettsumbau hält an. Die Mainzer CDU-Landtagsfraktion sagte nun ein geplantes Treffen mit Kanzler Merz ab. Von J. Baumert.",
-      "pubDate": "2026-07-27T18:48:16+02:00",
       "bild": ""
     }
   ],
