@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "27.07.2026, 23:36 Uhr (UTC)",
+  "aktualisiert": "28.07.2026, 03:19 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Mehrere Tech-Unternehmen haben eine KI-Sicherheitsallianz gegründet",
+      "description": "Der wichtigste Hersteller von KI-Chips, Nvidia, und Industriepartner wie Microsoft, IBM haben eine KI-Sicherheitsallianz gegründet. Die Ankündigung erfolgte wenige Tage nach einer aufsehenerregenden Testpanne bei OpenAI.",
+      "pubDate": "2026-07-28T02:23:46+02:00",
+      "bild": ""
+    },
     {
       "title": "Großbritannien: Burnham empfängt Selenskyj - erster ausländischer Besucher",
       "description": "Andy Burnham setzt als neuer britischer Premier ein Zeichen und empfängt den ukrainischen Präsidenten Selenskyj. Beide betonen die engen Kontakte. Im Anschluss reist Selenskyj zu einem schwierigeren Partner.",
@@ -84,12 +90,6 @@
       "title": "EU und USA: Leichte Hoffnung auf der Achterbahn",
       "description": "Zölle rauf, Zölle runter: US-Präsident Trump verfährt weiter nach diesem Prinzip. Zuletzt agierte er so gegenüber Kanada. Und die EU? Die schloss 2025 ein Abkommen mit den USA ab. Ein Jahr danach wird Bilanz gezogen. Von C. Feld und S. López.",
       "pubDate": "2026-07-27T15:00:45+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Sparmaßnahmen bei VW-Töchtern Audi und Porsche",
-      "description": "Bei einer Betriebsversammlung stellt Porsche das \"Zukunftspaket\" vor - es geht um Einsparungen und Jobabbau. Auch bei Audi soll noch stärker gespart werden als bisher. Der Autobauer kappte seine Prognose.",
-      "pubDate": "2026-07-27T14:58:43+02:00",
       "bild": ""
     }
   ],
