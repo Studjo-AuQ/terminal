@@ -1,7 +1,31 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "28.07.2026, 16:19 Uhr (UTC)",
+  "aktualisiert": "28.07.2026, 17:57 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Messerangriff in Regensburg: Verdächtiger in Psychiatrie verlegt",
+      "description": "Nach dem tödlichen Messerangriff in einer Bank in Regensburg sahen Ermittler zunächst keine Hinweise auf eine psychische Erkrankung des mutmaßlichen Täters. Ein Gutachter beurteilt die Situation jedoch anders.",
+      "pubDate": "2026-07-28T19:47:06+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Prozess um Anschlag auf ver.di-Demo: Anklage fordert lebenslange Haft",
+      "description": "Zwei Menschen starben, als ein Mann im Februar 2025 sein Auto in eine ver.di-Demo lenkte, viele weitere wurden verletzt. Im Prozess hat die Bundesanwaltschaft nun lebenslange Haft für den Angeklagten gefordert.",
+      "pubDate": "2026-07-28T19:21:44+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Waldbrände in Europa: Was Reisende jetzt wissen müssen",
+      "description": "In ganz Europa wüten derzeit Waldbrände, besonders heftig in Frankreich und Spanien. Auch beliebte Urlaubsregionen sind von den Feuern betroffen. Was Reisende jetzt wissen müssen.",
+      "pubDate": "2026-07-28T18:59:21+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX behauptet sich in schwierigem Umfeld",
+      "description": "Weiter fallenden Ölpreisen standen heute wachsende Sorgen im Technologiesektor gegenüber. Dem DAX gelang dennoch ein leichtes Plus, was auch an den Kursgewinnen der Autotitel lag.",
+      "pubDate": "2026-07-28T18:20:50+02:00",
+      "bild": ""
+    },
     {
       "title": "Frankreich und Spanien: Erste Erfolge im Kampf gegen die Waldbrände",
       "description": "In Frankreich und Spanien bekämpfen Tausende Einsatzkräfte die verheerenden Waldbrände. Dabei feiern sie erste Erfolge. Doch die hohen Temperaturen erschweren die Löscharbeiten. Und es droht eine weitere Hitzewelle.",
@@ -40,8 +64,8 @@
     },
     {
       "title": "Probleme in Beziehungen zu USA: Ein Sicherheitsrisiko für Israel",
-      "description": "Spätestens der Iran-Krieg hat die Beziehung der USA zu Israel verändert. In Washington wird die israelische Regierung zunehmend als Belastung wahrgenommen. Für Netanjahu geht es deshalb um viel, wenn er heute Trump trifft. Von J.-C. Kitzler.",
-      "pubDate": "2026-07-28T15:29:49+02:00",
+      "description": "Spätestens der Iran-Krieg hat die Beziehung der USA zu Israel verändert. In Washington wird die israelische Regierung zunehmend als Belastung wahrgenommen. Für Netanjahu ging es bei dem heutigen Treffen um viel. Von J.-C. Kitzler.",
+      "pubDate": "2026-07-28T19:07:48+02:00",
       "bild": ""
     },
     {
@@ -66,30 +90,6 @@
       "title": "Ab heute kann über das Jugendwort des Jahres abgestimmt werden",
       "description": "Was liegt der Jugend am häufigsten auf der Zunge? Ab heute kann unter zehn Begriffen das Jugendwort des Jahres gewählt werden. Von Ausrastern über Entschuldigungen bis zu bedeutungslosen Allzwecksantworten ist alles dabei.",
       "pubDate": "2026-07-28T13:31:02+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Anschlag auf CSD: Bekennervideo auf Handy des mutmaßlichen Täters gefunden",
-      "description": "Drei Tage nach dem CSD-Anschlag in Berlin haben Ermittler auf dem Handy von Abdul B. ein Video mit Bekenntnis zur Terrormiliz \"Islamischer Staat\" entdeckt. Es zeigt eine vermummte Person - mit hoher Wahrscheinlichkeit handelt es sich um den Tatverdächtigen.",
-      "pubDate": "2026-07-28T16:24:35+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Erdbeben der Stärke 7,1 erschüttert Südwesten Japans",
-      "description": "Ein schweres Erdbeben hat die Insel Kyushu im Südwesten Japans erschüttert. Medien berichten von mindestens einem Toten und insgesamt 50 Verletzten. Die nationale Wetterbehörde warnt zudem vor Nachbeben.",
-      "pubDate": "2026-07-28T17:12:48+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Myanmar: Aung San Suu Kyis Familie fordert Lebenszeichen",
-      "description": "In Myanmar ist Friedensnobelpreisträgerin Aung San Suu Kyi angeblich aus der Haft an einen anderen Ort verlegt worden. Mehr Informationen gibt die Junta nicht heraus. Ihre Familie ist in großer Sorge. Von J. Johnston.",
-      "pubDate": "2026-07-28T12:42:08+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Sparmaßnahmen bei Porsche: Vorerst Erleichterung in Zuffenhausen",
-      "description": "Auch Porsche spürt die Krise in der Autoindustrie. Und dennoch: Nach der Betriebsversammlung herrscht bei Konzernleitung und Belegschaft positive Stimmung. Was macht Porsche anders? Von Jenni Rieger.",
-      "pubDate": "2026-07-28T12:04:07+02:00",
       "bild": ""
     }
   ],
