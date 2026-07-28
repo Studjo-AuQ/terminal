@@ -1,7 +1,43 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "28.07.2026, 11:36 Uhr (UTC)",
+  "aktualisiert": "28.07.2026, 14:26 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Keiko Fujimori übernimmt Präsidentenamt in Peru",
+      "description": "Mit Keiko Fujimori übernimmt eine umstrittene Politikerin die Führung Perus. Viele hoffen auf mehr Sicherheit, andere fürchten eine Fortsetzung der Machtstrukturen ihres Vaters. Von X. Böttcher und O. Neuroth.",
+      "pubDate": "2026-07-28T16:15:05+02:00",
+      "bild": ""
+    },
+    {
+      "title": "USA starten angekündigte Überprüfung ihrer Truppenpräsenz in Europa",
+      "description": "US-Verteidigungsminister Hegseth hatte es im Juni angekündigt, nun starten die USA mit der Überprüfung ihrer Truppenpräsenz in Europa. Das erklärte Ziel: Europa soll selbst die Hauptverantwortung für seine Sicherheit übernehmen.",
+      "pubDate": "2026-07-28T15:48:03+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Probleme in Beziehungen zu USA: Ein Sicherheitsrisiko für Israel",
+      "description": "Spätestens der Iran-Krieg hat die Beziehung der USA zu Israel verändert. In Washington wird die israelische Regierung zunehmend als Belastung wahrgenommen. Für Netanjahu geht es deshalb um viel, wenn er heute Trump trifft. Von J.-C. Kitzler.",
+      "pubDate": "2026-07-28T15:29:49+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Reaktion auf CSD-Anschlag: \"Queerfeindlichkeit beim Namen nennen\"",
+      "description": "Mehr Ehrlichkeit von der muslimischen Gemeinschaft - das verlangt Eren Güvercin von der Alhambra-Gesellschaft nach dem CSD-Anschlag. Queerfeindlichkeit sei Realität. Darüber hinaus warnt er vor \"enthemmten\" Islamisten in Sozialen Netzwerken.",
+      "pubDate": "2026-07-28T15:15:07+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Klimawandel: Hitze gefährdet zunehmend die Trinkwasserversorgung",
+      "description": "Lange Trockenphasen und Rekordhitze setzen die Trinkwasserversorgung in Deutschland unter Druck. Viele Wasserversorger schauen pessimistisch in die Zukunft, wie eine Report Mainz-Umfrage zeigt. Von N. Maurer und D. Meiländer.",
+      "pubDate": "2026-07-28T15:02:18+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Kospi verliert 10,8 Prozent: Halbleiter-Beben in Fernost",
+      "description": "Die Sorge vor zunehmender Konkurrenz aus China hat die Halbleitertitel in Asien einbrechen lassen. Aber auch in den USA stockt die KI-Rally. Der DAX wurde dadurch ebenfalls gebremst.",
+      "pubDate": "2026-07-28T14:10:23+02:00",
+      "bild": ""
+    },
     {
       "title": "Ab heute kann über das Jugendwort des Jahres abgestimmt werden",
       "description": "Was liegt der Jugend am häufigsten auf der Zunge? Ab heute kann unter zehn Begriffen das Jugendwort des Jahres gewählt werden. Von Ausrastern über Entschuldigungen bis zu bedeutungslosen Allzwecksantworten ist alles dabei.",
@@ -9,9 +45,15 @@
       "bild": ""
     },
     {
+      "title": "Anschlag auf CSD: Bekennervideo auf Handy des mutmaßlichen Täters gefunden",
+      "description": "Drei Tage nach dem CSD-Anschlag in Berlin haben Ermittler auf dem Handy von Abdul B. ein Video mit Bekenntnis zur Terrormiliz \"Islamischer Staat\" entdeckt. Es zeigt eine vermummte Person - mit hoher Wahrscheinlichkeit handelt es sich um den Tatverdächtigen.",
+      "pubDate": "2026-07-28T16:24:35+02:00",
+      "bild": ""
+    },
+    {
       "title": "Erdbeben der Stärke 7,1 erschüttert Südwesten Japans",
-      "description": "Ein schweres Erdbeben hat die Insel Kyushu im Südwesten Japans erschüttert. Medien berichten von Dutzenden Verletzten. Pro Jahr bebt die Erde in Japan rund 1.500 Mal.",
-      "pubDate": "2026-07-28T12:48:48+02:00",
+      "description": "Ein schweres Erdbeben hat die Insel Kyushu im Südwesten Japans erschüttert. Medien berichten von Dutzenden Verletzten. In einem Einkaufszentrum sollen auch Menschen ums Leben gekommen sein.",
+      "pubDate": "2026-07-28T13:50:47+02:00",
       "bild": ""
     },
     {
@@ -29,7 +71,7 @@
     {
       "title": "Debatte nach Anschlag auf CSD: Fußfessel oder Präventivhaft für Gefährder?",
       "description": "Nach dem Anschlag auf den CSD dringen Innenminister und Unionspolitiker auf schärfere Regeln für Gefährder. Die SPD will \"alle Instrumentarien\" prüfen. Das BKA zählt bundesweit Hunderte islamistische Gefährder.",
-      "pubDate": "2026-07-28T12:37:54+02:00",
+      "pubDate": "2026-07-28T15:07:00+02:00",
       "bild": ""
     },
     {
@@ -48,48 +90,6 @@
       "title": "Hitzewelle im Juni sorgte für Rekordabsatz von Wasser und Eis",
       "description": "Die Hitzewelle Ende Juni hat hierzulande für Rekordverkäufe bei Mineralwasser und Speiseeis gesorgt. Aber auch Limonaden und Biermischgetränke waren als Abkühlung beliebt.",
       "pubDate": "2026-07-28T10:21:02+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Waldbrände in Europa - Warum wüten die Feuer diesmal so heftig?",
-      "description": "Die Zerstörung durch die Brände in Frankreich und Spanien ist massiv. Doch warum wüten die Feuer so extrem? Was sind \"Feuerwolken\"? Und muss auch Deutschland künftig mit so schweren Bränden rechnen?",
-      "pubDate": "2026-07-28T09:25:55+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Hohe Produktionskosten: Hitze macht italienischen Käse-Herstellern zu schaffen",
-      "description": "Tomate-Mozzarella gehört für viele Menschen zum Sommer. Doch die anhaltende Hitze in Italien macht den Käse-Herstellern zu schaffen. Auch Parmesan könnte teurer werden. Von Elisabeth Pongratz.",
-      "pubDate": "2026-07-28T09:11:23+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Mercedes erneut mit Gewinneinbruch in Autosparte",
-      "description": "Der Autobauer Mercedes-Benz hat im zweiten Quartal erneut deutlich weniger Autos verkauft. Gute Ergebnisse im Finanzbereich sorgten dafür, dass auf Konzernebene trotzdem noch ein Zuwachs beim Gewinn stand.",
-      "pubDate": "2026-07-28T08:23:49+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Hitzewelle schürt Sorge vor Ausbreitung von Waldbränden in Europa",
-      "description": "Seit Tagen lodern im Südwesten Frankreichs und in Spanien verheerende Waldbrände. Zuletzt sprachen beide Länder von leichten Fortschritten im Kampf gegen die Flammen. Doch nun naht die nächste Hitzeperiode.",
-      "pubDate": "2026-07-28T10:03:55+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Selenskyj bei Trump: Eine kaum für möglich gehaltene Annäherung",
-      "description": "Einen Rauswurf muss der ukrainische Präsident Selenskyj nicht mehr befürchten, wenn er heute von US-Präsident Trump im Weißen Haus empfangen wird. Im Gegenteil. Momentan stimmt es im Verhältnis. Selbst MAGA-Influencer denken um. Von S. Laack.",
-      "pubDate": "2026-07-28T07:17:47+02:00",
-      "bild": ""
-    },
-    {
-      "title": "KI im Wahlkampf in Israel: \"Wählermanipulation in nie dagewesener Art.\"",
-      "description": "Israel befindet sich im Wahlkampf, und erstmals prägt auch KI die Kampagnen. Forscher befürchten nicht nur einen Einfluss auf das Wahlverhalten, sondern auf die Akzeptanz des Wahlergebnisses. Von Bettina Meier.",
-      "pubDate": "2026-07-28T06:21:26+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bilger übernimmt Verkehrsressort: Neuer Minister, alte Probleme",
-      "description": "Der CDU-Politiker Bilger wird neuer Verkehrsminister. Er kennt das Haus - das könnte seine Stärke und Schwäche zugleich sein. Einen Neuanfang haben sich viele in Opposition und Verkehrsbranche anders vorgestellt. Von Sarah Beham und Jan Zimmermann.",
-      "pubDate": "2026-07-28T05:26:43+02:00",
       "bild": ""
     }
   ],
