@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "29.07.2026, 21:03 Uhr (UTC)",
+  "aktualisiert": "29.07.2026, 22:30 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Bilger: Stimmung in der Union und Pläne im Verkehrsministerium",
+      "description": "Laut dem neuen Verkehrsminister Bilger verlief die Sondersitzung der Unionsfraktion konstruktiv - wenn auch mit Kritik aus den Wahlkreisen. Mit seinem neuen Job will er \"die Infrastruktur in Deutschland aus den Negativschlagzeilen\" holen.",
+      "pubDate": "2026-07-30T00:01:20+02:00",
+      "bild": ""
+    },
     {
       "title": "Personalumbau in der CDU: Merz hat jetzt kein Schutzschild mehr",
       "description": "In der Fraktionssitzung machten die Unionsabgeordneten ihrem Unmut Luft. Merz' Personalumbau scheint zwar zu besänftigen - aber der Kanzler hat jetzt ein Instrument verbraucht, das ihm bald fehlen könnte. Von Tina Handel.",
@@ -84,12 +90,6 @@
       "title": "Autobauer in der Krise: Warum auch BMW jetzt viele Stellen streicht",
       "description": "Eigentlich galt BMW als \"Streber\" unter den deutschen Autobauern. Doch nun streichen auch die Münchner Tausende Stellen. Warum BMW wohl doch kein Sonderfall ist. Von Gabriel Wirth.",
       "pubDate": "2026-07-29T15:36:09+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Russland schreibt Telegram-Gründer Pawel Durow zur Fahndung aus",
-      "description": "Ukrainische Geheimdienste werben angeblich per Telegram Saboteure in Russland an. Aus Sicht des Kremls unternimmt der Messengerdienst zu wenig dagegen. Darum ist dessen Gründer jetzt als Terrorunterstützer auf die Fahndungsliste gekommen.",
-      "pubDate": "2026-07-29T15:18:26+02:00",
       "bild": ""
     }
   ],
