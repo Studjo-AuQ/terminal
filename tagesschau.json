@@ -1,10 +1,28 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "29.07.2026, 03:51 Uhr (UTC)",
+  "aktualisiert": "29.07.2026, 06:38 Uhr (UTC)",
   "meldungen": [
     {
+      "title": "Neue Angriffe dürften DAX belasten",
+      "description": "Neue Angriffe im Iran-Krieg dürften den deutschen Aktienmarkt zum Start belasten. Die Börsen in Fernost stehen weiter unter Druck. Das Zahlenwerk der Deutschen Bank dürfte dagegen gut ankommen.",
+      "pubDate": "2026-07-29T08:24:46+02:00",
+      "bild": ""
+    },
+    {
+      "title": "US-Senat bestätigt Clayton als neuen Geheimdienstchef",
+      "description": "Der US-Senat hat den von Präsident Trump vorgeschlagenen Juristen Jay Clayton als neuen Geheimdienstchef bestätigt. Die Demokraten stimmten gegen ihn. Der Staatsanwalt aus New York war nur Trumps Ersatzkandidat.",
+      "pubDate": "2026-07-29T08:19:39+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Fed-Zinsentscheid: Wiederholt die Notenbank den Fehler von 2021?",
+      "description": "Fed-Chef Warsh warnt vor gestiegenen Inflationsrisiken, hat aber bislang nicht gehandelt. Nun muss sich zeigen, ob die US-Notenbank rechtzeitig reagiert - oder einen alten Fehler wiederholt. Von Angela Göpfert.",
+      "pubDate": "2026-07-29T06:51:20+02:00",
+      "bild": ""
+    },
+    {
       "title": "Wie Wahlkämpfer in Sachsen-Anhalt auf die Kabinettsumbildung schauen",
-      "description": "Kanzler Merz wollte mit dem Personalumbau neuen Schwung erzeugen - CDU-Politiker in Sachsen-Anhalt befürchten das Gegenteil. Besonders der Umgang mit Tino Sorge sorgt für Unmut. Zerstritten erscheinen will man aber nicht. Von Hannes Leonard.",
+      "description": "Kanzler Merz wollte mit dem Personalumbau neuen Schwung erzeugen - CDU-Politiker in Sachsen-Anhalt befürchten das Gegenteil. Besonders ein Fall sorgt für Unmut. Zerstritten erscheinen will man aber nicht. Von Hannes Leonard.",
       "pubDate": "2026-07-29T05:18:43+02:00",
       "bild": ""
     },
@@ -16,14 +34,14 @@
     },
     {
       "title": "USA und Saudi-Arabien greifen Ziele im Irak an",
-      "description": "Das US-Militär hat zusammen mit Streitkräften Saudi-Arabiens Stellungen proiranischer Milizen im Irak angegriffen. Zuvor hatte das US-Militär nach eigenen Angaben ballistische Raketen aus Iran abgefangen.",
-      "pubDate": "2026-07-29T02:31:14+02:00",
+      "description": "Am Golf sind die Kampfhandlungen wieder aufgeflammt. Gemeinsam mit Saudi-Arabien griffen US-Streitkräfte pro-iranische Milizen im Irak an. Kurz zuvor wurde Raketenbeschuss aus Iran auf US-Stützpunkte gemeldet.",
+      "pubDate": "2026-07-29T07:34:54+02:00",
       "bild": ""
     },
     {
       "title": "Gespräche in Washington: Trump empfängt Selenskyj und Netanjahu",
-      "description": "Zwei hochrangige Besucher an einem Tag: US-Präsident Trump hat den ukrainischen Präsidenten Selenskyj und Israels Premier Netanjahu empfangen. Selenskyj sagte nach dem Treffen in einem \"Fox\"- Interview, Trump habe der Ukraine Patriot-Lizenzen zugesagt.",
-      "pubDate": "2026-07-28T21:16:32+02:00",
+      "description": "Zwei hochrangige Besucher an einem Tag: US-Präsident Trump hat den ukrainischen Präsidenten Selenskyj und Israels Premier Netanjahu empfangen. Selenskyj sagte nach dem Treffen, Trump habe der Ukraine \"Patriot\"-Lizenzen zugesagt.",
+      "pubDate": "2026-07-29T06:25:55+02:00",
       "bild": ""
     },
     {
@@ -72,24 +90,6 @@
       "title": "Prekäre Bedingungen für Erntehelfer: EU-Sanktionen greifen kaum",
       "description": "Bei Verstößen gegen den Arbeits- und Sozialschutz kann landwirtschaftlichen Betrieben die EU-Förderung gekürzt werden. Recherchen von Report Mainz zeigen, dass dies in der Praxis kaum geschieht. Von Daniel Hoh.",
       "pubDate": "2026-07-28T17:01:41+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Deutschland schiebt erneut Menschen nach Afghanistan ab",
-      "description": "Erneut sind Afghanen per Charterflug in ihre Heimat abgeschoben worden. Laut Innenminister Dobrindt handelte es sich überwiegend um Straftäter. Auf eine Person trifft diese Beschreibung aber nicht zu - was für Diskussionen sorgt.",
-      "pubDate": "2026-07-28T17:16:09+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Keiko Fujimori übernimmt Präsidentenamt in Peru",
-      "description": "Mit Keiko Fujimori übernimmt eine umstrittene Politikerin die Führung Perus. Viele hoffen auf mehr Sicherheit, andere fürchten eine Fortsetzung der Machtstrukturen ihres Vaters. Von X. Böttcher und O. Neuroth.",
-      "pubDate": "2026-07-28T16:15:05+02:00",
-      "bild": ""
-    },
-    {
-      "title": "USA starten angekündigte Überprüfung ihrer Truppenpräsenz in Europa",
-      "description": "US-Verteidigungsminister Hegseth hatte es im Juni angekündigt, nun starten die USA mit der Überprüfung ihrer Truppenpräsenz in Europa. Das erklärte Ziel: Europa soll selbst die Hauptverantwortung für seine Sicherheit übernehmen.",
-      "pubDate": "2026-07-28T15:48:03+02:00",
       "bild": ""
     }
   ],
