@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "29.07.2026, 22:30 Uhr (UTC)",
+  "aktualisiert": "30.07.2026, 00:04 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Medienberichte: Bahn erstmals seit sieben Jahren mit Gewinn",
+      "description": "Die Deutsche Bahn hat Medienberichten zufolge in der ersten Jahreshälfte einen Überschuss im dreistelligen Millionenbereich erzielt - der erste Gewinn seit sieben Jahren. Auch die Zahl der Fahrgäste stieg demnach deutlich.",
+      "pubDate": "2026-07-30T01:40:41+02:00",
+      "bild": ""
+    },
     {
       "title": "Bilger: Stimmung in der Union und Pläne im Verkehrsministerium",
       "description": "Laut dem neuen Verkehrsminister Bilger verlief die Sondersitzung der Unionsfraktion konstruktiv - wenn auch mit Kritik aus den Wahlkreisen. Mit seinem neuen Job will er \"die Infrastruktur in Deutschland aus den Negativschlagzeilen\" holen.",
@@ -16,8 +22,8 @@
     },
     {
       "title": "Waldbrände: Auch die Türkei und Griechenland kämpfen gegen Flammen",
-      "description": "Kräftige Winde und Hitze haben auch in der Türkei und Griechenland neue Waldbrände entfacht. Beim Kampf gegen die Flammen am griechischen Mittelmeer kamen drei Feuerwehrleute ums Leben.",
-      "pubDate": "2026-07-29T21:44:32+02:00",
+      "description": "Starke Winde und Hitze haben in der Türkei und Griechenland neue Waldbrände entfacht. Am griechischen Mittelmeer kamen drei Feuerwehrleute ums Leben. Auch in Frankreich und Spanien brachen neue Brände aus. Es gibt aber auch Hoffnungsschimmer.",
+      "pubDate": "2026-07-30T00:42:29+02:00",
       "bild": ""
     },
     {
@@ -84,12 +90,6 @@
       "title": "Wie Extremwetter zum Risiko für Festivals wird",
       "description": "Wetterextreme prägen auch die Festivalsaison 2026: Konzerte wurden wegen Hitze abgesagt oder abgebrochen, andere wegen drohender Unwetter - die dann mitunter gar nicht kamen. Wie gehen Veranstalter damit um? Von S. Straub.",
       "pubDate": "2026-07-29T16:30:06+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Autobauer in der Krise: Warum auch BMW jetzt viele Stellen streicht",
-      "description": "Eigentlich galt BMW als \"Streber\" unter den deutschen Autobauern. Doch nun streichen auch die Münchner Tausende Stellen. Warum BMW wohl doch kein Sonderfall ist. Von Gabriel Wirth.",
-      "pubDate": "2026-07-29T15:36:09+02:00",
       "bild": ""
     }
   ],
