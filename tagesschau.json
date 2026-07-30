@@ -1,17 +1,53 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "30.07.2026, 03:42 Uhr (UTC)",
+  "aktualisiert": "30.07.2026, 06:33 Uhr (UTC)",
   "meldungen": [
     {
-      "title": "Russland greift ukrainische Städte Kiew und Lwiw an",
-      "description": "Russland hat die ukrainische Hauptstadt Kiew und Lwiw im Westen des Landes mit Raketen angegriffen. In beiden Städten waren Explosionen zu hören. Präsident Selenskyj hatte zuvor vor einem \"massiven\" russischen Angriff gewarnt.",
-      "pubDate": "2026-07-30T05:17:05+02:00",
+      "title": "Mehr Tote nach Erdbeben in Japan, Hoffnung auf Überlebende schwindet",
+      "description": "Auch zwei Tage nach dem schweren Erdbeben im Südwesten Japans werden noch zahlreiche Menschen vermisst. Die Hoffnung schwindet, noch Überlebende zu finden. Die Zahl der Toten steigt auf mindestens 28.",
+      "pubDate": "2026-07-30T08:00:31+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: Anleger grübeln über Fed-Zinsentscheid nach",
+      "description": "US-Geldpolitik, KI-Euphorie und die Krise im Nahen Osten: Das sind die Themen, die den heutigen Handelstag am Aktienmarkt bestimmen werden. Bislang sieht es danach aus, als würde der DAX leicht zurückfallen.",
+      "pubDate": "2026-07-30T07:40:31+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Ab heute sind die Ressourcen der Erde aufgebraucht",
+      "description": "Der Erdüberlastungstag markiert symbolisch den Tag im Jahr, an dem die Menschheit mehr natürliche Ressourcen verbraucht hat als die Erde nachproduzieren kann. In diesem Jahr fällt er auf den 30. Juli. Von Frank Bäumer.",
+      "pubDate": "2026-07-30T07:24:51+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Städtetag fordert Milliardensummen für Klimaanpassung",
+      "description": "Hitzewellen belasten Körper, Psyche, Infrastruktur - umso mehr in Städten, in denen es kaum Möglichkeit zur Abkühlung gibt. Dem müsse man mit Investitionen entgegenwirken, fordert der Deutsche Städtetag.",
+      "pubDate": "2026-07-30T07:21:49+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Rumänien: Mit Kampfjets und Diplomatie gegen russische Drohnen",
+      "description": "Russland führt seinen Krieg gegen die Ukraine auch in unmittelbarer Nähe zu NATO-Staaten. In Rumänien schlugen schon mehrfach Drohnen ein. Die Regierung will das nicht mehr hinnehmen - und tritt gegenüber Moskau offensiver auf. Von Oliver Soos.",
+      "pubDate": "2026-07-30T06:43:16+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Einkommen im Alter: Warum Ängste Aktiensparen verhindern",
+      "description": "Angesichts klammer Rentenkassen rücken Aktien als Möglichkeit der Altersvorsorge stärker in den Fokus. Doch in Deutschland werden Investments vielfach noch misstrauisch beäugt. Von Heidi Radvilas.",
+      "pubDate": "2026-07-30T06:16:02+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Russland greift Ukraine landesweit mit Raketen an",
+      "description": "Russland hat erneut mehrere ukrainische Städte mit Raketen angegriffen, auch Kiew. Es soll landesweit mehrere Tote geben. Präsident Selenskyj hatte zuvor vor einem \"massiven\" russischen Angriff gewarnt.",
+      "pubDate": "2026-07-30T07:05:23+02:00",
       "bild": ""
     },
     {
       "title": "USA melden nach mehrtägiger Pause neue Angriffe auf Iran",
-      "description": "Nach fast einer Woche ohne Angriffe hat das US-Militär wieder Ziele in Iran attackiert. Diese seien eine Antwort auf iranische Angriffsversuche auf US-Stützpunkte in der Region, teilte das Regionalkommando CENTCOM mit.",
-      "pubDate": "2026-07-30T03:59:02+02:00",
+      "description": "Nach fast einer Woche ohne Angriffe hat das US-Militär wieder Ziele direkt in Iran attackiert. Das Regime meldet Tote - und feuerte offenbar mehrere Raketen auf Jordanien, die aber abgefangen wurden.",
+      "pubDate": "2026-07-30T08:13:48+02:00",
       "bild": ""
     },
     {
@@ -27,14 +63,14 @@
       "bild": ""
     },
     {
-      "title": "Personalumbau in der CDU: Merz hat jetzt kein Schutzschild mehr",
+      "title": "Personalumbau in der CDU: Merz hat jetzt keinen Schutzschild mehr",
       "description": "In der Fraktionssitzung machten die Unionsabgeordneten ihrem Unmut Luft. Merz' Personalumbau scheint zwar zu besänftigen - aber der Kanzler hat jetzt ein Instrument verbraucht, das ihm bald fehlen könnte. Von Tina Handel.",
       "pubDate": "2026-07-29T22:18:56+02:00",
       "bild": ""
     },
     {
       "title": "Waldbrände: Auch die Türkei und Griechenland kämpfen gegen Flammen",
-      "description": "Starke Winde und Hitze haben in der Türkei und Griechenland neue Waldbrände entfacht. Am griechischen Mittelmeer kamen drei Feuerwehrleute ums Leben. Auch in Frankreich und Spanien brachen neue Brände aus. Es gibt aber auch Hoffnungsschimmer.",
+      "description": "In Frankreich und Spanien brennt es weiter. Auch aus der Türkei und Griechenland werden neue Waldbrände gemeldet. Am griechischen Mittelmeer kamen drei Feuerwehrleute ums Leben.",
       "pubDate": "2026-07-30T00:42:29+02:00",
       "bild": ""
     },
@@ -54,42 +90,6 @@
       "title": "CSD-Attentäter: IS-Flaggen, Dschihad-Lieder und kämpfende Cousins",
       "description": "Der mutmaßliche Attentäter von Berlin kam im Mai frei - ein Schöffengericht glaubte ihm, sich vom IS losgesagt zu haben. Doch Recherchen von NDR, WDR und SZ zeigen, wie verbunden Abdul B. mit der Terrormiliz war. Von J. Diehl, F. Flade, R.Lehberger.",
       "pubDate": "2026-07-29T18:55:44+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Meilenstein bei Bauarbeiten am Brennerbasistunnel erreicht",
-      "description": "Der Brennerbasistunnel ist eines der ganz großen Verkehrsprojekte in Europa. Nun ist der Durchbruch der beiden Röhren des Eisenbahntunnels zwischen Österreich und Italien geschafft. Auf deutscher Seite geht hingegen bislang wenig voran.",
-      "pubDate": "2026-07-29T18:33:10+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Gute Quartalszahlen grenzen DAX-Verluste ein",
-      "description": "Gut aufgenommene Quartalszahlen von DAX-Konzernen haben den deutschen Leitindex heute gestützt und neue geopolitische Sorgen etwas in den Hintergrund gedrängt. Größter Gewinner im DAX waren die Papiere von Rheinmetall.",
-      "pubDate": "2026-07-29T18:23:48+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Neue Hitzewelle hat Deutschland im Griff - schwere Gewitter erwartet",
-      "description": "Erst wenige Wochen ist es her, dass in Deutschland Temperaturrekorde gebrochen wurden. Jetzt hat die nächste Hitzewelle das Land im Griff. Am Donnerstag soll es bis zu 39 Grad heiß werden. Der DWD warnt vor schweren Gewittern.",
-      "pubDate": "2026-07-29T17:32:16+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kommentar: Die Fraktion steht noch, der Kanzler wackelt",
-      "description": "Kanzler Merz erlebt einen \"Sommer des Grauens\", meint Georg Schwarte. Darüber täuscht auch nicht die Wahl von Frei zum Unionsfraktionschef hinweg. Ob Landesverbände, Wahlkämpfer oder Mitglieder - die Zweifel am Kanzler wachsen in der CDU.",
-      "pubDate": "2026-07-29T17:24:50+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Irischer Musiker Glen Hansard bei Motorradunfall gestorben",
-      "description": "Vom Straßenmusiker auf die Kinoleinwand und schließlich zum Oscar-Preisträger: Der Irish-Folk-Musiker Glen Hansard machte auch als Schauspieler Karriere. Jetzt ist der 56-Jährige bei einem Motorradunfall ums Leben gekommen.",
-      "pubDate": "2026-07-29T17:09:31+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Disziplinarverfahren gegen Münchens Ex-Oberbürgermeister Reiter beendet",
-      "description": "Das Disziplinarverfahren gegen Münchens Ex-Oberbürgermeister Reiter ist eingestellt worden - trotz bestätigter Verstöße durch Nebenämter beim FC Bayern. Die bezahlten, aber nicht genehmigten Aufgaben hatten im Kommunalwahlkampf für Wirbel gesorgt.",
-      "pubDate": "2026-07-29T16:45:51+02:00",
       "bild": ""
     }
   ],
