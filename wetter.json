@@ -1,15 +1,15 @@
 {
-  "aktualisiert": "31.07.2026, 22:54 Uhr",
+  "aktualisiert": "31.07.2026, 23:55 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
-        "temp": 19,
+        "temp": 18,
         "gefuehlt": 18,
-        "zustand": "Überwiegend klar",
-        "emoji": "🌤️",
+        "zustand": "Teils bewölkt",
+        "emoji": "⛅",
         "wind": 11,
-        "luftfeuchte": 71,
+        "luftfeuchte": 80,
         "niederschlag": 0.0
       },
       "tage": [
@@ -18,7 +18,7 @@
           "datum": "01.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 23,
+          "max": 24,
           "min": 15,
           "niederschlag": 0.0
         },
@@ -37,7 +37,7 @@
           "emoji": "🌦️",
           "zustand": "Leichter Nieselregen",
           "max": 30,
-          "min": 22,
+          "min": 18,
           "niederschlag": 0.2
         },
         {
@@ -63,12 +63,12 @@
     {
       "stadt": "Werdohl",
       "aktuell": {
-        "temp": 19,
-        "gefuehlt": 19,
+        "temp": 18,
+        "gefuehlt": 18,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 8,
-        "luftfeuchte": 78,
+        "wind": 6,
+        "luftfeuchte": 81,
         "niederschlag": 0.0
       },
       "tage": [
@@ -123,11 +123,11 @@
       "stadt": "Kierspe",
       "aktuell": {
         "temp": 19,
-        "gefuehlt": 18,
-        "zustand": "Überwiegend klar",
-        "emoji": "🌤️",
-        "wind": 13,
-        "luftfeuchte": 73,
+        "gefuehlt": 19,
+        "zustand": "Bedeckt",
+        "emoji": "☁️",
+        "wind": 12,
+        "luftfeuchte": 83,
         "niederschlag": 0.0
       },
       "tage": [
@@ -145,8 +145,8 @@
           "datum": "02.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 28,
-          "min": 17,
+          "max": 27,
+          "min": 16,
           "niederschlag": 0.0
         },
         {
@@ -155,7 +155,7 @@
           "emoji": "🌦️",
           "zustand": "Leichter Nieselregen",
           "max": 30,
-          "min": 21,
+          "min": 17,
           "niederschlag": 0.1
         },
         {
@@ -183,10 +183,10 @@
       "aktuell": {
         "temp": 20,
         "gefuehlt": 19,
-        "zustand": "Bedeckt",
-        "emoji": "☁️",
+        "zustand": "Überwiegend klar",
+        "emoji": "🌤️",
         "wind": 12,
-        "luftfeuchte": 63,
+        "luftfeuchte": 65,
         "niederschlag": 0.0
       },
       "tage": [
@@ -196,7 +196,7 @@
           "emoji": "☁️",
           "zustand": "Bedeckt",
           "max": 27,
-          "min": 17,
+          "min": 16,
           "niederschlag": 0.0
         },
         {
@@ -214,7 +214,7 @@
           "emoji": "☁️",
           "zustand": "Bedeckt",
           "max": 34,
-          "min": 24,
+          "min": 21,
           "niederschlag": 0.0
         },
         {
