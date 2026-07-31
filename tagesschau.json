@@ -1,7 +1,37 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "31.07.2026, 04:02 Uhr (UTC)",
+  "aktualisiert": "31.07.2026, 07:24 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Bei Testläufen: Anthropic-KI greift eigenständig Unternehmen an",
+      "description": "Erneut ist es zu einem schwerwiegenden KI-Zwischenfall gekommen: Diesmal ist ein Modell des OpenAI-Rivalen Anthropic bei Tests ungeplant in Systeme von Unternehmen eingedrungen.",
+      "pubDate": "2026-07-31T09:09:24+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Nach Ankunft vieler Migranten: Sánchez reist nach Ceuta",
+      "description": "In den vergangenen Tagen erreichten viele Migranten das spanische Ceuta in Nordafrika. Die örtlichen Behörden sind beunruhigt, die Aufnahmezentren überfüllt. Heute reist Premierminister Sánchez in die Exklave. Die EU bot Hilfe durch Frontex an.",
+      "pubDate": "2026-07-31T09:03:03+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Waldbrände in Südeuropa: Starker Wind macht Lage auf Kreta unkontrollierbar",
+      "description": "Andere griechische Inseln melden leichte Entspannung, aber auf Kreta bleibt die Situation angespannt: Schwere Winde entfachen immer wieder neue Brandherde. Zeitweise musste ein ganzer Urlaubsort evakuiert werden. Von M. Pompl.",
+      "pubDate": "2026-07-31T08:37:36+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Kretschmer kündigt Ablehnung der Rentenreform im Bundesrat an",
+      "description": "Die Bundesregierung will die Rentenreform vollständig umsetzen, doch im Osten gibt es Widerstand. Sachsens Ministerpräsident Kretschmer kündigte ein Nein im Bundesrat an, sollte es keine abschlagsfreie Rente nach 45 Beitragsjahren mehr geben.",
+      "pubDate": "2026-07-31T08:25:49+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX könnte wieder Kurs Richtung Rekord nehmen",
+      "description": "Starke Zahlen von Amazon treiben die Börsen in Asien an, auch die Wall Street liefert gute Vorgaben. Vor allem Tech-Titel sind gesucht. Der DAX dürfte mit einem soliden Plus in den Handel starten.",
+      "pubDate": "2026-07-31T07:28:25+02:00",
+      "bild": ""
+    },
     {
       "title": "Der verzweifelte Kampf der Feuerwehr und Freiwilliger in der Gironde",
       "description": "Zwischen Asche und Glut kämpfen Feuerwehrleute und Freiwillige gegen die Waldbrände in Frankreich - oft vergeblich. Besonders betroffen: die Gironde. Vor Ort wächst die Wut. Helfer werfen der Regierung Versäumnisse vor. Von Jean-Marie Magro.",
@@ -16,7 +46,7 @@
     },
     {
       "title": "Trump meldet Erfolg bei Friedensabkommen für Gazastreifen",
-      "description": "Kommt Bewegung in die Gaza-Verhandlungen? US-Präsident Trump spricht von einer Einigung zur Entwaffnung der Hamas. Israel ziehe dafür sein Militär ab. Die Hamas hat laut US-Kreisen grundsätzlich zugestimmt, aus Tel Aviv gibt es noch keine Reaktion.",
+      "description": "Kommt Bewegung in die Gaza-Verhandlungen? US-Präsident Trump spricht von einer Einigung zur Entwaffnung der Hamas. Israel ziehe sein Militär ab. Die Hamas soll grundsätzlich zugestimmt haben, eine israelische Reaktion gibt es noch nicht.",
       "pubDate": "2026-07-31T03:15:49+02:00",
       "bild": ""
     },
@@ -28,7 +58,7 @@
     },
     {
       "title": "Ankunft zahlreicher Migranten: Spanien entsendet Soldaten in Exklave Ceuta",
-      "description": "Binnen weniger Tage sind wohl Tausende Migranten in die spanische Nordafrika-Exklave Ceuta gelangt - am Donnerstag brach offenbar die Grenzsicherung teils zusammen. Hintergrund könnte ein Gerichtsurteil sein. Nun schickt Madrid Soldaten.",
+      "description": "Binnen weniger Tage sind wohl Hunderte Migranten in die spanische Nordafrika-Exklave Ceuta gelangt - am Donnerstag brach offenbar die Grenzsicherung teils zusammen. Hintergrund könnte ein Gerichtsurteil sein. Nun schickt Madrid Soldaten.",
       "pubDate": "2026-07-30T23:51:57+02:00",
       "bild": ""
     },
@@ -60,36 +90,6 @@
       "title": "Niedrige Flusspegel: Mehrere Länder drosseln Produktion von Atomstrom",
       "description": "Wegen Hitze und ausbleibenden Regens sind die Pegel vieler Flüsse in Europa extrem niedrig. Das wird nicht nur für die Schifffahrt zum Problem, sondern auch für Atomkraftwerke. Denn die benötigen viel Kühlwasser - und das fehlt.",
       "pubDate": "2026-07-30T21:25:08+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: DAX ohne klaren Trend",
-      "description": "Angesichts der gestiegenen Inflation und der weiterhin unsicheren Lage in Iran ist die Stimmung auf dem Parkett verhalten. Für leichte Hoffnung sorgen neueste Konjunkturdaten.",
-      "pubDate": "2026-07-30T18:25:16+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Warum Paare ihre Kinder von Leihmüttern in Mexiko austragen lassen",
-      "description": "Auch Paare aus Deutschland nutzen das Angebot: In Mexiko ist das Geschäft mit Leihmüttern hochgradig kommerzialisiert. Doch es gibt keine einheitliche Rechtslage, und das birgt Gefahren für Leihmütter und Wunscheltern. Von C. Moebus.",
-      "pubDate": "2026-07-30T19:27:13+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Spanien-Exklave Ceuta ruft wegen Migranten nach Militäreinsatz",
-      "description": "Zahlreiche Migranten sind zuletzt schwimmend in die spanische Nordafrika-Exklave Ceuta gelangt - besonders viele in den vergangenen Stunden. Der Regionalpräsident rief Madrid auf, das Militär einzusetzen.",
-      "pubDate": "2026-07-30T21:26:17+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Verhindert Israel humanitäre Hilfe im Gazastreifen?",
-      "description": "In Gaza werden sie dringend gebraucht - doch Israel lässt viele Güter für den Alltag nicht über die Grenze. Die Begründung: Die Hamas könnte sie militärisch nutzen. Hilfsorganisationen sehen das anders. Von Jan-Christoph Kitzler.",
-      "pubDate": "2026-07-30T16:12:54+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Die Verbindungen des CSD-Attentäters nach Mauretanien",
-      "description": "Der mutmaßliche CSD-Attentäter Abdul B. wollte nach Mauretanien auswandern und sich dort wohl einem radikalen Prediger aus Berlin anschließen. Wird das westafrikanische Land zum neuen Tummelplatz für Europas Dschihadisten? Von J. Diehl, F. Flade und R. Lehberger.",
-      "pubDate": "2026-07-30T15:49:09+02:00",
       "bild": ""
     }
   ],
