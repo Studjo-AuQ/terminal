@@ -1,7 +1,49 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "31.07.2026, 15:05 Uhr (UTC)",
+  "aktualisiert": "31.07.2026, 17:06 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Langzeitstudie zu Frühchen - wie gut holen sie im Leben auf?",
+      "description": "Britische Forschende haben Langzeitdaten früh geborener Menschen analysiert. Viele der Frühchen führten, so die Ergebnisse, ein gutes Leben. Einige hätten aber Probleme in Beruf, Partnerschaft und Freundschaften. Von Sedir Dabbass.",
+      "pubDate": "2026-07-31T18:55:18+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Trump-Plan für Gaza: Skepsis in Israel und bei Palästinensern",
+      "description": "\"Historisch\" nennt US-Präsident Trump das Abkommen zur Entwaffnung der Hamas - aber was genau darin steht und wie es umgesetzt werden soll, ist unklar. In Israel ist man daher skeptisch - und in Gaza haben die Menschen gar kein Vertrauen mehr. Von Jan-Christoph Kitzler.",
+      "pubDate": "2026-07-31T18:24:22+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: KI-Hoffnung stützt den DAX",
+      "description": "Starke Vorgaben aus den USA haben dem deutschen Aktienmarkt am Freitag Rückenwind gegeben. Vor allem Technologiewerte legten zu. Vor dem Wochenende überwog bei vielen Anlegern jedoch die Vorsicht.",
+      "pubDate": "2026-07-31T18:15:52+02:00",
+      "bild": ""
+    },
+    {
+      "title": "UN-Generalsekretär Guterres fordert neue Zypern-Gespräche",
+      "description": "Nikosia auf Zypern ist die letzte geteilte Hauptstadt der Welt. Durch sie verläuft eine UN-Pufferzone, die auch die Insel teilt. UN-Generalsekretär Guterres fordert nun neue Gespräche zwischen den Parteien. Von Benjamin Weber.",
+      "pubDate": "2026-07-31T17:54:32+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wie \"Rave the Planet\" die Loveparade weiterdenkt",
+      "description": "Frieden, Liebe, Toleranz - und Kommerz: Die Loveparade ist noch immer Teil der deutschen Technokultur, ihr tragisches Ende inklusive. Die Nachfolge-Veranstaltung will vieles anders machen - mit Erfolg? Von Emma Velasco Willems.",
+      "pubDate": "2026-07-31T17:41:03+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Dobrindt will Grenzkontrollen in Deutschland verlängern",
+      "description": "Angesichts zehntausender Flüchtlinge in Ceuta hält Innenminister Dobrindt an den Grenzkontrollen fest - auch wenn sie in der EU umstritten sind. Die Linke dagegen fordert, den Menschen in der spanischen Exklave jetzt schnell zu helfen und sie aufzunehmen.",
+      "pubDate": "2026-07-31T17:31:11+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Warum Ceuta und Melilla Ziel vieler Migranten sind",
+      "description": "Sie gehören zu Spanien, liegen aber in Nordafrika - umgeben von Marokko und dem Mittelmeer: Die beiden autonomen Regionen Ceuta und Melilla sind immer wieder Ziel von Migranten, die irregulär nach Europa gelangen wollen.",
+      "pubDate": "2026-07-31T17:26:38+02:00",
+      "bild": ""
+    },
     {
       "title": "Fall Abdul B.: Kamen Deradikalisierungsgespräche zu spät?",
       "description": "Der mutmaßliche CSD-Attentäter Abdul B. sollte nach einem Urteil in ein Deradikalisierungsprogramm. Doch Vorgespräche liefen ins Leere. Sein Anwalt sagt Report Mainz, Gespräche müssten in solchen Fällen schon in Untersuchungshaft beginnen.",
@@ -23,7 +65,7 @@
     {
       "title": "GEMA vs. Suno: KI-Firma darf Melodien nicht ungefragt nutzen",
       "description": "Eine unlizenzierte Nutzung von Musikstücken durch KI-Anwendungen verstößt gegen deutsches Urheberrecht. Das entschied heute das Landgericht München. Beobachter sehen darin Signalwirkung. Von Fritz Espenlaub.",
-      "pubDate": "2026-07-31T13:47:13+02:00",
+      "pubDate": "2026-07-31T17:15:41+02:00",
       "bild": ""
     },
     {
@@ -48,48 +90,6 @@
       "title": "Debatte über Fünf-Prozent-Hürde: Ist die Sperrklausel noch zeitgemäß?",
       "description": "In Deutschland hat die Debatte über die Fünf-Prozent-Hürde erneut Fahrt aufgenommen. Befürworter und Gegner streiten über die Sperrklausel. Eine Reform des Wahlrechts gilt als möglich. Von Frank Aischmann.",
       "pubDate": "2026-07-31T12:23:13+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Verbraucherpreise: Inflation in der Eurozone steigt im Juli leicht",
-      "description": "Inmitten der unsicheren wirtschaftlichen Lage steigt die Inflation in der Eurozone im Juli auf 2,9 Prozent. Im Juni war die Inflation noch gesunken. Volkswirte hatten den Anstieg erwartet.",
-      "pubDate": "2026-07-31T13:20:51+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Verwirrung über von Trump verkündete Gaza-Einigung",
-      "description": "Israel und die Hamas hätten einer Vereinbarung zugestimmt, erklärt US-Präsident Trump - die Entwaffnung der Terrororganisation sei Teil davon. Doch weder die Hamas noch Israel haben die Aussagen bisher bestätigt.",
-      "pubDate": "2026-07-31T11:53:43+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Spanische Exklave in Nordafrika: EU bietet Spanien Hilfe in Ceuta an",
-      "description": "In Ceuta spitzt sich die Migrationslage zu. Die EU bietet Spanien Hilfe an, Italiens Ministerpräsidentin sieht europäische Grenzen bedroht und erwägt, das Schengen-Abkommen auszusetzen. Frankreich will seine Grenzkontrollen verschärfen.",
-      "pubDate": "2026-07-31T17:01:05+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Medien berichten von mehr als 40.000 Migranten in Ceuta",
-      "description": "Medienberichten zufolge sollen mehr als 40.000 Migranten in die spanische Exklave Ceuta gelangt sein - auch befeuert von Gerüchten über eine Grenzöffnung. Spanien hat zusätzliche Soldaten mobilisiert. Von Stefan Ehlert.",
-      "pubDate": "2026-07-31T11:18:39+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Neues Ausbildungsjahr beginnt: Wie KI das Handwerk stärkt",
-      "description": "Das neue Ausbildungsjahr beginnt. In Zeiten von Künstlicher Intelligenz suchen junge Menschen nach zukunftssicheren Jobs. Das Handwerk scheint davon zu profitieren: Die Bewerberzahl steigt. Von Ole Hilgert.",
-      "pubDate": "2026-07-31T11:12:23+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: DAX hängt wenige Punkte unter Allzeithoch fest",
-      "description": "Der DAX kämpft im frühen Handel um ein Rekordhoch. Trotz kräftiger Hilfe durch eine starke Amazon-Bilanz gelingt der Sprung über 25.900 Punkte bislang aber nicht.",
-      "pubDate": "2026-07-31T10:55:07+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Zahl der Arbeitslosen steigt im Juli über drei Millionen",
-      "description": "Die Zahl der Arbeitslosen in Deutschland hat im Juli die Drei-Millionen-Marke überschritten. Die Bundesagentur für Arbeit begründet dies mit saisonalen Effekten - sieht jedoch auch die Fortsetzung einer Entwicklung.",
-      "pubDate": "2026-07-31T10:54:46+02:00",
       "bild": ""
     }
   ],
