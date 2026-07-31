@@ -1,17 +1,59 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "31.07.2026, 07:24 Uhr (UTC)",
+  "aktualisiert": "31.07.2026, 10:07 Uhr (UTC)",
   "meldungen": [
     {
-      "title": "Bei Testläufen: Anthropic-KI greift eigenständig Unternehmen an",
-      "description": "Erneut ist es zu einem schwerwiegenden KI-Zwischenfall gekommen: Diesmal ist ein Modell des OpenAI-Rivalen Anthropic bei Tests ungeplant in Systeme von Unternehmen eingedrungen.",
-      "pubDate": "2026-07-31T09:09:24+02:00",
+      "title": "Verbraucherpreise: Inflation in der Eurozone steigt im Juli leicht",
+      "description": "Inmitten der unsicheren wirtschaftlichen Lage steigt die Inflation in der Eurozone im Juli auf 2,9 Prozent über den Niveau des Vorjahres. Dabei bleibt sie deutlich unter ihrem Höhepunkt im Frühjahr.",
+      "pubDate": "2026-07-31T12:06:36+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Verwirrung über von Trump verkündete Gaza-Einigung",
+      "description": "Israel und die Hamas hätten einer Vereinbarung zugestimmt, erklärt US-Präsident Trump - die Entwaffnung der Terrororganisation sei Teil davon. Doch weder die Hamas noch Israel haben die Aussagen bisher bestätigt.",
+      "pubDate": "2026-07-31T11:53:43+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Spanische Exklave in Nordafrika: EU bietet Spanien Hilfe in Ceuta an",
+      "description": "In Ceuta spitzt sich die Migrationslage zu. Die EU bietet Spanien Hilfe an, Italiens Ministerpräsidentin sieht die europäischen Grenzen bedroht und erwägt, das Schengen-Abkommen auszusetzen. Auch aus den USA kommt Kritik.",
+      "pubDate": "2026-07-31T11:33:43+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Medien berichten von mehr als 40.000 Migranten in Ceuta",
+      "description": "Medienberichten zufolge sollen mehr als 40.000 Migraten in die spanische Exklave Ceuta gelangt sein - auch befeuert von Gerüchten über eine Grenzöffnung. Spanien hat zusätzliche Soldaten mobilisiert. Von Stefan Ehlert.",
+      "pubDate": "2026-07-31T11:18:39+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Neues Ausbildungsjahr beginnt: Wie KI das Handwerk stärkt",
+      "description": "Das neue Ausbildungsjahr beginnt. In Zeiten von Künstlicher Intelligenz suchen junge Menschen nach zukunftssicheren Jobs. Das Handwerk scheint davon zu profitieren: Die Bewerberzahl steigt. Von Ole Hilgert.",
+      "pubDate": "2026-07-31T11:12:23+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX hängt wenige Punkte unter Allzeithoch fest",
+      "description": "Der DAX kämpft im frühen Handel um ein Rekordhoch. Trotz kräftiger Hilfe durch eine starke Amazon-Bilanz gelingt der Sprung über 25.900 Punkte bislang aber nicht.",
+      "pubDate": "2026-07-31T10:55:07+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Zahl der Arbeitslosen steigt im Juli über drei Millionen",
+      "description": "Die Zahl der Arbeitslosen in Deutschland hat im Juli die Drei-Millionen-Marke überschritten. Die Bundesagentur für Arbeit begründet dies mit saisonalen Effekten - sieht jedoch auch die Fortsetzung einer Entwicklung.",
+      "pubDate": "2026-07-31T10:54:46+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Halbleiter unter Druck: Drei Gefahren für den KI-Boom",
+      "description": "Ohne Halbleiter funktioniert keine Künstliche Intelligenz. Doch China holt auf, die Hersteller bauen immer neue Fabriken - und plötzlich wächst die Angst vor einer weltweiten Chipschwemme. Von Angela Göpfert.",
+      "pubDate": "2026-07-31T10:36:10+02:00",
       "bild": ""
     },
     {
       "title": "Nach Ankunft vieler Migranten: Sánchez reist nach Ceuta",
-      "description": "In den vergangenen Tagen erreichten viele Migranten das spanische Ceuta in Nordafrika. Die örtlichen Behörden sind beunruhigt, die Aufnahmezentren überfüllt. Heute reist Premierminister Sánchez in die Exklave. Die EU bot Hilfe durch Frontex an.",
-      "pubDate": "2026-07-31T09:03:03+02:00",
+      "description": "In den vergangenen Tagen erreichten viele Migranten das spanische Ceuta in Nordafrika. Die örtlichen Behörden sind beunruhigt, die Aufnahmezentren überfüllt. Heute reist Premierminister Sánchez in die Exklave.",
+      "pubDate": "2026-07-31T10:00:00+02:00",
       "bild": ""
     },
     {
@@ -24,12 +66,6 @@
       "title": "Kretschmer kündigt Ablehnung der Rentenreform im Bundesrat an",
       "description": "Die Bundesregierung will die Rentenreform vollständig umsetzen, doch im Osten gibt es Widerstand. Sachsens Ministerpräsident Kretschmer kündigte ein Nein im Bundesrat an, sollte es keine abschlagsfreie Rente nach 45 Beitragsjahren mehr geben.",
       "pubDate": "2026-07-31T08:25:49+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: DAX könnte wieder Kurs Richtung Rekord nehmen",
-      "description": "Starke Zahlen von Amazon treiben die Börsen in Asien an, auch die Wall Street liefert gute Vorgaben. Vor allem Tech-Titel sind gesucht. Der DAX dürfte mit einem soliden Plus in den Handel starten.",
-      "pubDate": "2026-07-31T07:28:25+02:00",
       "bild": ""
     },
     {
@@ -54,42 +90,6 @@
       "title": "Recht auf Reparatur: Neue Pflichten für Händler und Verkäufer",
       "description": "Das neue Recht auf Reparatur tritt heute in Kraft. Hersteller müssen Elektrogeräte reparaturfreundlicher machen und Ersatzteile bereitstellen. Doch die neuen Regeln gelten nicht für alle Geräte. Von Frank Bäumer.",
       "pubDate": "2026-07-31T00:02:26+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ankunft zahlreicher Migranten: Spanien entsendet Soldaten in Exklave Ceuta",
-      "description": "Binnen weniger Tage sind wohl Hunderte Migranten in die spanische Nordafrika-Exklave Ceuta gelangt - am Donnerstag brach offenbar die Grenzsicherung teils zusammen. Hintergrund könnte ein Gerichtsurteil sein. Nun schickt Madrid Soldaten.",
-      "pubDate": "2026-07-30T23:51:57+02:00",
-      "bild": ""
-    },
-    {
-      "title": "40-Grad-Marke erneut geknackt - Abkühlung nach Gewittern",
-      "description": "Ganz so heiß wie im Juni war es nicht, doch in drei Bundesländern wurde ein neuer Juli-Rekord aufgestellt - mit bis zu 40,5 Grad. Auf die Hitze folgten vielerorts Gewitter. Am Möhnesee in NRW wurden zwei Jugendliche verletzt.",
-      "pubDate": "2026-07-30T21:21:57+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Deutsche Bahn mit Gewinn, doch die Baustellen bleiben",
-      "description": "Die Bahn meldet schwarze Zahlen, die Bahnchefin und den neuen Verkehrsminister freut's. Die bekannten Probleme sind deswegen aber nicht verschwunden. Verkehrsminister Bilger will sie \"nach und nach\" lösen. Von Andreas König.",
-      "pubDate": "2026-07-30T20:21:12+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Hamburger Datenschutzbeauftragter: Verbot von Meta Glasses möglich",
-      "description": "Der Hamburger Datenschutzbeauftragte Fuchs warnt vor Meta Smart Glasses: Die Brillen, die kaum von normalen Brillen zu unterscheiden sind, ermöglichen heimliches Filmen. Ein Verbot sei nicht ausgeschlossen. Von Antonetta Stephany.",
-      "pubDate": "2026-07-30T19:24:31+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Rakete in Polens Luftraum alarmiert NATO",
-      "description": "Nach dem Einschlag einer Rakete in Polen hat die NATO dem Land Unterstützung zugesichert. Generalsekretär Rutte sprach von einem weiteren rücksichtslosen Akt Russlands. Das Bündnis hatte als Reaktion Kampfjets aufsteigen lassen.",
-      "pubDate": "2026-07-30T18:51:23+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Niedrige Flusspegel: Mehrere Länder drosseln Produktion von Atomstrom",
-      "description": "Wegen Hitze und ausbleibenden Regens sind die Pegel vieler Flüsse in Europa extrem niedrig. Das wird nicht nur für die Schifffahrt zum Problem, sondern auch für Atomkraftwerke. Denn die benötigen viel Kühlwasser - und das fehlt.",
-      "pubDate": "2026-07-30T21:25:08+02:00",
       "bild": ""
     }
   ],
