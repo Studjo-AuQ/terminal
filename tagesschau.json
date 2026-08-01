@@ -1,15 +1,45 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "01.08.2026, 11:44 Uhr (UTC)",
+  "aktualisiert": "01.08.2026, 13:43 Uhr (UTC)",
   "meldungen": [
     {
-      "title": "Trump und Iran: Neue Angriffswelle - oder doch nur eine Drohung?",
-      "description": "Wieder einmal droht US-Präsident Trump Iran. Doch diesmal könnte tatsächlich eine der größten Angriffswellen bevorstehen, berichten US-Medien. Irans Revolutionsgarde will schon Pläne für einen Gegenschlag haben.",
-      "pubDate": "2026-08-01T13:36:52+02:00",
+      "title": "Serbien: Wie ein Musikfestival in Ungnade fiel",
+      "description": "Serbiens Behörden gehen unter Präsident Vucic vehement gegen die regierungskritische Kulturszene vor. Nun hat es das Musikfestival Exit erwischt - das größte des Balkans. Unter staatlichem Druck zog es von Serbien nach Montenegro. Von O. Soos.",
+      "pubDate": "2026-08-01T15:22:07+02:00",
       "bild": ""
     },
     {
-      "title": "SPD und Union streiten über Rente nach 45 Beitragsjahren",
+      "title": "Tricks gegen Hitze in der Stadt: Von A nach B - möglichst im Schatten",
+      "description": "Deutschland ist mittendrin in der Hitzewelle - an die 40 Grad Celsius kann das Thermometer jetzt anzeigen. Für Menschen in der Stadt wird das besonders zur Belastung. Aber es gibt ein paar Tricks. Von Rebecca Reinhard.",
+      "pubDate": "2026-08-01T14:45:42+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Mindestens zehn Tote und viele Verletzte bei russischem Angriff auf Kiew",
+      "description": "Russland verstärkt seit einigen Tagen wieder seine Luftangriffe auf die Ukraine. In der Nacht war erneut die Hauptstadt Kiew ein Ziel. Nach Behördenangaben wurden mindestens zehn Menschen getötet.",
+      "pubDate": "2026-08-01T14:41:03+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Feuer in Bordeaux unter Kontrolle - Lage bei Athen angespannt",
+      "description": "Die Waldbrände in der Nähe von Bordeaux sind eingedämmt. Das gab das französische Innenministerium bekannt. Währenddessen verschärft sich die Lage in Griechenland. Dort sind um Athen neue Feuer ausgebrochen.",
+      "pubDate": "2026-08-01T14:31:39+02:00",
+      "bild": ""
+    },
+    {
+      "title": "EU-Staaten wollen Ceuta-Treffen - und kritisieren Spanien",
+      "description": "Der Ansturm auf Ceuta hat auf europäischer Ebene ein Nachspiel: 22 Mitgliedsstaaten fordern eine Dringlichkeitssitzung der Innenminister - und kritisieren in einem offenen Brief Spanien. Dort wirft man EU-Staaten Egoismus vor.",
+      "pubDate": "2026-08-01T14:04:02+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Trump und Iran: Neue Angriffswelle - oder doch nur eine Drohung?",
+      "description": "Wieder einmal droht US-Präsident Trump Iran. Doch diesmal könnte tatsächlich eine der größten Angriffswellen bevorstehen, berichten US-Medien. Irans Revolutionsgarde will schon Pläne für einen Gegenschlag haben.",
+      "pubDate": "2026-08-01T15:26:22+02:00",
+      "bild": ""
+    },
+    {
+      "title": "SPD und Union debattieren über Rente nach 45 Beitragsjahren",
       "description": "In der Koalition treten Differenzen über die Rentenpläne immer deutlicher zutage. Auch SPD-Generalsekretär Klüssendorf will an der abschlagsfreien Rente nach 45 Beitragsjahren festhalten. Unions-Fraktionschef Frei besteht auf dem Aus.",
       "pubDate": "2026-08-01T12:12:33+02:00",
       "bild": ""
@@ -28,8 +58,8 @@
     },
     {
       "title": "Ansturm auf Exklave: Was Ceuta für die EU bedeutet",
-      "description": "Vor wenigen Wochen ist die Asylreform der EU in Kraft getreten. Doch nach Ceuta wird erneut über Migrationsregelungen diskutiert. Wie haben die Mitgliedsstaaten reagiert? Und warum gibt es Kritik an Spanien?",
-      "pubDate": "2026-08-01T10:58:53+02:00",
+      "description": "Vor wenigen Wochen ist die Asylreform der EU in Kraft getreten. Doch nach Ceuta wird erneut über Migrationsregelungen diskutiert. Was hat nicht funktioniert? Und warum gibt es Kritik an Spanien?",
+      "pubDate": "2026-08-01T14:08:55+02:00",
       "bild": ""
     },
     {
@@ -60,36 +90,6 @@
       "title": "Hitze stellt Landwirte beim Salatanbau vor neue Herausforderungen",
       "description": "Mit zunehmender Trockenheit im Sommer müssen Landwirte seit Jahren zurechtkommen. Extreme Hitzewellen aber bringen vor allem im Salatanbau neue Herausforderungen. Von A. Schuster und C. Schulze.",
       "pubDate": "2026-08-01T07:54:42+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kampf gegen Dengue in Brasilien: 190 Millionen Mücken pro Woche",
-      "description": "Brasilien sagt der Gelbfiebermücke den Kampf an. Denn sie überträgt Dengue, eines der größten Gesundheitsprobleme des Landes. Helfen soll die Zucht von Mücken, die ein ganz bestimmtes Bakterium in sich tragen. Von Oliver Neuroth.",
-      "pubDate": "2026-08-01T07:52:40+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ab August greift Rechtsanspruch auf Ganztagsbetreuung",
-      "description": "Acht Stunden Bildung und Betreuung am Tag: Ab August greift stufenweise der Rechtsanspruch auf eine Ganztagsbetreuung für Grundschulkinder. Was Eltern jetzt wissen müssen. Von Chris Berdrow.",
-      "pubDate": "2026-08-01T07:51:23+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Neue Waldbrände in Griechenland ausgebrochen",
-      "description": "Griechenland war in diesem Sommer lange vergleichsweise glimpflich davongekommen, doch auch dort gibt es nun mehrere große Waldbrände. Neben der Insel Kreta und der Halbinsel Peloponnes ist auch die Region westlich von Athen betroffen.",
-      "pubDate": "2026-08-01T05:39:23+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Mindestens neun Tote und viele Verletzte bei russischem Angriff auf Kiew",
-      "description": "Russland verstärkt seit einigen Tagen seine Luftangriffe auf die Ukraine. In der Nacht war erneut die Hauptstadt Kiew ein Ziel. Nach Behördenangaben wurden mindestens neun Menschen getötet.",
-      "pubDate": "2026-08-01T08:50:54+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kommentar: Marokko setzt die Not seiner Bevölkerung als Druckmittel ein",
-      "description": "Angesichts der Ereignisse in Ceuta die Reisefreiheit in Europa in Frage zu stellen, ist reiner Populismus, meint Hans-Günter Kellner. Wichtiger wäre, dass sich die EU weniger erpressbar macht. Denn Marokko setzt Migration als Druckmittel ein.",
-      "pubDate": "2026-08-01T03:34:43+02:00",
       "bild": ""
     }
   ],
