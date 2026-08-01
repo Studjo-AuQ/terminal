@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "01.08.2026, 21:28 Uhr (UTC)",
+  "aktualisiert": "01.08.2026, 22:31 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Tote und Verletzte bei Explosion in Moskauer Restaurant",
+      "description": "In einem Restaurant in Moskau ist es zu einer Explosion gekommen. Die Ermittler gehen laut Staatsagentur Tass von einem Anschlag mit einem Sprengsatz aus. Drei Menschen wurden getötet, mindestens 21 verletzt.",
+      "pubDate": "2026-08-01T23:53:30+02:00",
+      "bild": ""
+    },
     {
       "title": "Deutliche EU-Kritik an Spanien - EU-Innenminister beraten über Ceuta-Krise",
       "description": "Der Ansturm auf Ceuta hat auf europäischer Ebene ein Nachspiel: Am Dienstag soll eine Dringlichkeitssitzung der EU-Innenminister stattfinden. Zuvor hatten 22 Mitgliedsstaaten ein koordiniertes Vorgehen gefordert - und Spanien kritisiert.",
@@ -84,12 +90,6 @@
       "title": "Ansturm auf Exklave: Was Ceuta für die EU bedeutet",
       "description": "Vor wenigen Wochen ist die Asylreform der EU in Kraft getreten. Doch nach Ceuta wird erneut über Migrationsregelungen diskutiert. Was hat nicht funktioniert? Und warum gibt es Kritik an Spanien?",
       "pubDate": "2026-08-01T14:08:55+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Forderung nach Neuwahlen: Wie die USA die Demokratie in Venezuela bremsen",
-      "description": "Der demokratische Wandel in Venezuela stockt: Die USA scheinen Neuwahlen zu blockieren, es gibt Zweifel an echter Demokratisierung. Die wichtige Oppositionsführerin Machado ist weiterhin außen vor. Von Christina Moebus.",
-      "pubDate": "2026-08-01T10:58:49+02:00",
       "bild": ""
     }
   ],
