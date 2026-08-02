@@ -1,7 +1,25 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "02.08.2026, 04:05 Uhr (UTC)",
+  "aktualisiert": "02.08.2026, 07:08 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Wie Jordanien im Iran-Krieg zwischen die Fronten geriet",
+      "description": "Tourismus ist für Jordanien eine der wichtigsten Einnahmequellen. Doch mit dem Krieg ist vieles weggebrochen. Zuletzt wurde das Land immer öfter zum Angriffsziel - und in der Bevölkerung steigt der Frust über den Partner USA. Von Anne Armbrecht.",
+      "pubDate": "2026-08-02T09:04:54+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wie sicher sind KI-Wasserzeichen?",
+      "description": "Ab sofort müssen KI-Inhalte in der EU gekennzeichnet werden, sichtbar für Menschen und maschinenlesbar. Doch Wasserzeichen sind leicht zu zerstören, offene Modelle umgehen Labels. Was ist heute technisch möglich, und was in Zukunft? Von P. Kiss.",
+      "pubDate": "2026-08-02T08:36:56+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Migrationskrise in Ceuta: Wadephul fordert Schutz der EU-Außengrenzen",
+      "description": "Nach dem Ansturm Zehntausender Migranten auf die spanische Exklave Ceuta herrscht in der EU Unruhe. Bundesaußenminister Wadephul spricht von einem \"absoluten Stresstest\" und fordert die EU-Kommission zum Handeln auf.",
+      "pubDate": "2026-08-02T08:03:55+02:00",
+      "bild": ""
+    },
     {
       "title": "Trump sagt Angriffe auf Iran vorerst ab",
       "description": "Das US-Militär stand Berichten zufolge kurz vor einer massiven Angriffswelle auf Ziele in Iran. Nun will Trump offenbar darauf verzichten. Angeblich gibt es Fortschritte bei den Bemühungen um eine diplomatische Einigung.",
@@ -21,8 +39,8 @@
       "bild": ""
     },
     {
-      "title": "Selenskyj bittet erneut um Lieferung von Patriot-Raketen",
-      "description": "In den vergangenen Tagen hat Russland die Ukraine verstärkt mit ballistischen Raketen angegriffen. Kiew fehlen wirksame Mittel dagegen. Präsident Selenskyj bittet deshalb erneut um die Lieferung von Patriot-Abwehrraketen.",
+      "title": "Selenskyj bittet erneut um Lieferung von \"Patriot\"-Raketen",
+      "description": "In den vergangenen Tagen hat Russland die Ukraine verstärkt mit ballistischen Raketen angegriffen. Kiew fehlen wirksame Mittel dagegen. Präsident Selenskyj bittet deshalb erneut um die Lieferung von \"Patriot\"-Abwehrraketen.",
       "pubDate": "2026-08-02T01:22:00+02:00",
       "bild": ""
     },
@@ -72,24 +90,6 @@
       "title": "Tricks gegen Hitze in der Stadt: Von A nach B - möglichst im Schatten",
       "description": "Deutschland ist mittendrin in der Hitzewelle - an die 40 Grad Celsius kann das Thermometer jetzt anzeigen. Für Menschen in der Stadt wird das besonders zur Belastung. Aber es gibt ein paar Tricks. Von Rebecca Reinhard.",
       "pubDate": "2026-08-01T14:45:42+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Mindestens zehn Tote und viele Verletzte bei russischem Angriff auf Kiew",
-      "description": "Russland verstärkt seit einigen Tagen wieder seine Luftangriffe auf die Ukraine. In der Nacht war erneut die Hauptstadt Kiew ein Ziel. Nach Behördenangaben wurden mindestens zehn Menschen getötet.",
-      "pubDate": "2026-08-01T14:41:03+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Feuer in Bordeaux unter Kontrolle - Lage bei Athen angespannt",
-      "description": "Die Waldbrände in der Nähe von Bordeaux sind eingedämmt. Das gab das französische Innenministerium bekannt. Währenddessen verschärft sich die Lage in Griechenland. Dort sind um Athen neue Feuer ausgebrochen.",
-      "pubDate": "2026-08-01T17:07:09+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Trump und Iran: Neue Angriffswelle - oder doch nur eine Drohung?",
-      "description": "Wieder einmal droht US-Präsident Trump Iran. Doch diesmal könnte tatsächlich eine der größten Angriffswellen bevorstehen, berichten US-Medien. Irans Revolutionsgarde will schon Pläne für einen Gegenschlag haben.",
-      "pubDate": "2026-08-01T16:18:03+02:00",
       "bild": ""
     }
   ],
