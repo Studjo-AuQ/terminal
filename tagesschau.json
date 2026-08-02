@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "02.08.2026, 11:21 Uhr (UTC)",
+  "aktualisiert": "02.08.2026, 12:35 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Rhein verzeichnet historisch niedrige Wasserstände",
+      "description": "Die Pegelstände des Rheins und anderer deutscher Flüsse sind wegen anhaltender Trockenheit teils so niedrig wie noch nie. Das macht auch der Schifffahrt Probleme. Nordrhein-Westfalen fordert nun einen nationalen Krisenstab.",
+      "pubDate": "2026-08-02T13:51:15+02:00",
+      "bild": ""
+    },
     {
       "title": "US-Bundesstaat Washington: Waldbrand erreicht US-Großstadt Spokane",
       "description": "Ein schwerer Waldbrand bedroht die Stadt Spokane im US-Bundesstaat Washington. Tausende Menschen mussten fliehen, die Löscharbeiten werden durch den Wind erschwert. Der Gouverneur rief den Notstand aus.",
@@ -29,7 +35,7 @@
     {
       "title": "Feuer bei Athen: Waldbrände in Griechenland weiten sich aus",
       "description": "Die Brände westlich von Athen haben sich ausgeweitet. Rund 500 Feuerwehrleute sowie freiwillige Helfer sind im Einsatz, aber starke Winde machen die Löscharbeiten fast unmöglich.",
-      "pubDate": "2026-08-02T10:06:08+02:00",
+      "pubDate": "2026-08-02T14:22:09+02:00",
       "bild": ""
     },
     {
@@ -52,8 +58,8 @@
     },
     {
       "title": "Trump sagt Angriffe auf Iran vorerst ab",
-      "description": "Das US-Militär stand Berichten zufolge kurz vor einer massiven Angriffswelle auf Ziele in Iran. Nun will Trump offenbar darauf verzichten. Angeblich gibt es Fortschritte bei den Bemühungen um eine diplomatische Einigung.",
-      "pubDate": "2026-08-02T11:03:47+02:00",
+      "description": "Das US-Militär stand Berichten zufolge kurz vor einer massiven Angriffswelle auf Ziele in Iran. Nun will Trump offenbar darauf verzichten. Angeblich gibt es Fortschritte bei den Verhandlungen, doch Iran widerspricht.",
+      "pubDate": "2026-08-02T13:31:40+02:00",
       "bild": ""
     },
     {
@@ -77,19 +83,13 @@
     {
       "title": "Tote und Verletzte bei Explosion in Moskauer Restaurant",
       "description": "In einem Restaurant in Moskau hat es eine Explosion gegeben. Die Ermittler gehen laut Staatsagentur Tass von einem Anschlag mit einem Sprengsatz aus. Drei Menschen wurden getötet, mindestens 21 verletzt.",
-      "pubDate": "2026-08-02T10:48:01+02:00",
+      "pubDate": "2026-08-02T14:24:48+02:00",
       "bild": ""
     },
     {
       "title": "Deutliche EU-Kritik an Spanien - EU-Innenminister beraten über Ceuta-Krise",
       "description": "Der Ansturm auf Ceuta hat auf europäischer Ebene ein Nachspiel: Am Dienstag soll eine Dringlichkeitssitzung der EU-Innenminister stattfinden. Zuvor hatten 22 Mitgliedsstaaten ein koordiniertes Vorgehen gefordert - und Spanien kritisiert.",
       "pubDate": "2026-08-01T18:17:44+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Nach Andrang in Ceuta: Spanien verteidigt seine Migrationspolitik",
-      "description": "In Ceuta sind die Menschen verärgert - sowohl Bewohner als auch Migranten. Unklar ist, warum Marokko den Ansturm überhaupt zugelassen hat. Spanien verteidigt unterdessen seine Migrationspolitik gegen Kritik aus der EU. Von Hans-Günter Kellner.",
-      "pubDate": "2026-08-01T17:34:53+02:00",
       "bild": ""
     }
   ],
