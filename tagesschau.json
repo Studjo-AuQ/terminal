@@ -1,7 +1,25 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "02.08.2026, 00:02 Uhr (UTC)",
+  "aktualisiert": "02.08.2026, 04:05 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Trump sagt Angriffe auf Iran vorerst ab",
+      "description": "Das US-Militär stand Berichten zufolge kurz vor einer massiven Angriffswelle auf Ziele in Iran. Nun will Trump offenbar darauf verzichten. Angeblich gibt es Fortschritte bei den Bemühungen um eine diplomatische Einigung.",
+      "pubDate": "2026-08-02T05:25:18+02:00",
+      "bild": ""
+    },
+    {
+      "title": "EU-Richtlinie in Kraft: Wie sich die EU gegen KI-Gefahren wappnet",
+      "description": "Ein Vorfall bei OpenAI hat es kürzlich gezeigt: Künstliche Intelligenz kann sich selbstständig machen. Von heute an gelten in Europa neue Regeln für Unternehmen. Dabei geht es auch um KI-generierte Bilder, Videos und Audios. Von K. Schmid.",
+      "pubDate": "2026-08-02T03:13:08+02:00",
+      "bild": ""
+    },
+    {
+      "title": "13 Tote bei Absturz von Kleinflugzeug in Peru",
+      "description": "In Peru sind beim Absturz eines Kleinflugzeugs 13 Menschen ums Leben gekommen. Laut einem Medienbericht sind darunter zwei Deutsche. Sie wollten die berühmten Nasca-Linien besichtigen, die zum Weltkulturerbe zählen.",
+      "pubDate": "2026-08-02T02:54:52+02:00",
+      "bild": ""
+    },
     {
       "title": "Selenskyj bittet erneut um Lieferung von Patriot-Raketen",
       "description": "In den vergangenen Tagen hat Russland die Ukraine verstärkt mit ballistischen Raketen angegriffen. Kiew fehlen wirksame Mittel dagegen. Präsident Selenskyj bittet deshalb erneut um die Lieferung von Patriot-Abwehrraketen.",
@@ -72,24 +90,6 @@
       "title": "Trump und Iran: Neue Angriffswelle - oder doch nur eine Drohung?",
       "description": "Wieder einmal droht US-Präsident Trump Iran. Doch diesmal könnte tatsächlich eine der größten Angriffswellen bevorstehen, berichten US-Medien. Irans Revolutionsgarde will schon Pläne für einen Gegenschlag haben.",
       "pubDate": "2026-08-01T16:18:03+02:00",
-      "bild": ""
-    },
-    {
-      "title": "SPD und Union debattieren über Rente nach 45 Beitragsjahren",
-      "description": "In der Koalition treten Differenzen über die Rentenpläne immer deutlicher zutage. Auch SPD-Generalsekretär Klüssendorf will an der abschlagsfreien Rente nach 45 Beitragsjahren festhalten. Unions-Fraktionschef Frei besteht auf dem Aus.",
-      "pubDate": "2026-08-01T12:12:33+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Rekord-Niedrigwasser im Rhein belastet Binnenschifffahrt in NRW",
-      "description": "Die Pegelstände des Rheins sind auf einem historischen Tief. Das ist eine Herausforderung für die Binnenschifffahrt und Unternehmen - auch finanziell. Wie die Reeder damit umgehen und ob sich der Transport zu Wasser noch lohnt.",
-      "pubDate": "2026-08-01T11:32:00+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Nach Ansturm auf Ceuta: Migranten kehren zurück, Europa diskutiert",
-      "description": "Die meisten der in die Exklave Ceuta eingedrungenen Migranten sind offenbar bereits zurückgekehrt. Doch auf EU-Ebene haben die Bilder große Sorgen ausgelöst - und eine neue Debatte über Grenzschutz.",
-      "pubDate": "2026-08-01T11:29:53+02:00",
       "bild": ""
     }
   ],
