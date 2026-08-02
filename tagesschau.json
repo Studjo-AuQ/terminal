@@ -1,7 +1,37 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "02.08.2026, 17:34 Uhr (UTC)",
+  "aktualisiert": "02.08.2026, 19:20 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Mahnwache für die Opfer des CSD-Anschlags in Berlin",
+      "description": "Etwa eine Woche ist der Terroranschlag auf den Christopher Street Day in Berlin her. Die Wut und Trauer ist groß. Die queere Community hat der Opfer der Tat gedacht. Auch vor dem Roten Rathaus versammelten sich Menschen im Gedenken.",
+      "pubDate": "2026-08-02T21:05:01+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Leben in Prag - zwischen Hitzeschutz und Klimaskepsis",
+      "description": "Tschechien leidet unter der zweiten Hitzewelle des Jahres. Und nach den Waldbränden in Südeuropa wächst auch dort die Sorge vor Feuern. In Prag wurden fast 40 Grad gemessen - doch die Politik tut sich weiterhin schwer, die neue Realität zu akzeptieren. Von M. von Lieben.",
+      "pubDate": "2026-08-02T20:43:24+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Rückkehr aus Ceuta: Ein Nachbarort im Ausnahmezustand",
+      "description": "In Ceuta normalisiert sich die Lage nach dem Massenandrang, ganz anders sieht es im Nachbarort Fnideq aus. Die Menschen kehren erschöpft dorthin zurück, wo alles begann. Eindrücke aus einer Stadt im Ausnahmezustand. Von Stefan Ehlert.",
+      "pubDate": "2026-08-02T20:41:43+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Niedrigwasser der Donau: Ungarn erlebt \"beispiellose Energiekrise\"",
+      "description": "Fast die Hälfte des benötigten Stroms fällt in Ungarn plötzlich weg. Wegen der anhaltenden Hitze muss das Atomkraftwerk Paks abgeschaltet werden. Premier Magyar spricht von einer \"beispiellosen Krise\". Von Clemens Verenkotte.",
+      "pubDate": "2026-08-02T20:39:49+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Strand im ukrainischen Odessa: Zwischen Badebetrieb und Bombenalarm",
+      "description": "Volle Strände, spielende Kinder - und jederzeit droht ein russischer Angriff. In Odessa liegen Sommerleichtigkeit und Kriegsgefahr dicht beieinander. Immer wieder ignorieren Menschen den Luftalarm, mit teils schlimmen Folgen. Von S. Laack.",
+      "pubDate": "2026-08-02T19:41:41+02:00",
+      "bild": ""
+    },
     {
       "title": "Bas fordert Union zur Klärung bei \"Rente mit 63\" auf",
       "description": "Soll die \"Rente mit 63\" weg - oder doch nicht? Darüber gibt es in der Union derzeit Diskussion. Nun fordert SPD-Chefin Bas den Koalitionspartner auf, sich zu positionieren. Die Sozialdemokraten seien bereit, das Rentenpaket aufzuschnüren.",
@@ -53,43 +83,13 @@
     {
       "title": "US-Bundesstaat Washington: Waldbrand erreicht US-Großstadt Spokane",
       "description": "Ein schwerer Waldbrand bedroht die Stadt Spokane im US-Bundesstaat Washington. Tausende Menschen mussten fliehen, die Löscharbeiten werden durch den Wind erschwert. Der Gouverneur rief den Notstand aus.",
-      "pubDate": "2026-08-02T12:15:04+02:00",
+      "pubDate": "2026-08-02T20:14:55+02:00",
       "bild": ""
     },
     {
       "title": "Ukraine-Krieg: Moskau meldet 635 abgefangene Drohnen - mehrere Tote",
       "description": "Die Ukraine wehrt sich gegen Russlands Angriffskrieg inzwischen verstärkt mit Attacken auf russisches Staatsgebiet. Erneut gerieten dabei offenbar eine Raffinerie und ein Militärplatz ins Visier. Russland und die Ukraine meldeten mehrere Tote.",
       "pubDate": "2026-08-02T18:33:17+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wo Parken, Abwasser und Müll am meisten kosten",
-      "description": "Bei vielen Städten und Gemeinden sind die Kassen leer. Viele erhöhen nun die Gebühren: fürs Parken, Abwasser oder Müllabholung. Können sich Bürger gegen zu hohe Gebühren wehren? Von M. Schuster und J. Thürmer.",
-      "pubDate": "2026-08-02T11:37:44+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ukraine und Polen: Wie die Vergangenheit die Nachbarn spalten",
-      "description": "Zwischen Polen und Ukraine ist ein alter Streit über Massaker während des Zweiten Weltkriegs aufgeflammt. Vor Ort zeigt sich, warum das Thema weiter so heikel ist - und wie die Gräben überwunden werden können. Von Stephan Laack.",
-      "pubDate": "2026-08-02T15:06:35+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Feuer bei Athen: Waldbrände in Griechenland weiten sich aus",
-      "description": "Die Brände westlich von Athen haben sich ausgeweitet. Rund 500 Feuerwehrleute sowie freiwillige Helfer sind im Einsatz. Bei Löscharbeiten kollidierten zwei Hubschrauber - zwei der Piloten kamen beim darauffolgenden Absturz ums Leben.",
-      "pubDate": "2026-08-02T18:42:50+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wie Jordanien im Iran-Krieg zwischen die Fronten geriet",
-      "description": "Tourismus ist für Jordanien eine der wichtigsten Einnahmequellen. Doch mit dem Krieg ist vieles weggebrochen. Zuletzt wurde das Land immer öfter zum Angriffsziel - und in der Bevölkerung steigt der Frust über den Partner USA. Von Anne Armbrecht.",
-      "pubDate": "2026-08-02T09:04:54+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wie sicher sind KI-Wasserzeichen?",
-      "description": "Ab sofort müssen KI-Inhalte in der EU gekennzeichnet werden, sichtbar für Menschen und maschinenlesbar. Doch Wasserzeichen sind leicht zu zerstören, offene Modelle umgehen Labels. Was ist heute technisch möglich, und was in Zukunft? Von P. Kiss.",
-      "pubDate": "2026-08-02T08:36:56+02:00",
       "bild": ""
     }
   ],
