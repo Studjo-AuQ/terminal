@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "02.08.2026, 21:29 Uhr (UTC)",
+  "aktualisiert": "02.08.2026, 22:32 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Israel äußert Bedenken zu Trumps Plan für Gaza-Entwaffnung",
+      "description": "Schon vor Tagen hatte US-Präsident Trump eine Einigung zur Entwaffnung des Gazastreifens verkündet. Jetzt gibt es eine offizielle Reaktion aus Israel: Man habe den USA \"ernsthafte Sicherheitsbedenken\" übermittelt.",
+      "pubDate": "2026-08-03T00:06:11+02:00",
+      "bild": ""
+    },
     {
       "title": "Mahnwache für die Opfer des CSD-Anschlags in Berlin",
       "description": "Etwa eine Woche ist der Terroranschlag auf den Christopher Street Day in Berlin her. Die Wut und Trauer ist groß. Die queere Community hat der Opfer der Tat gedacht. Auch vor dem Roten Rathaus versammelten sich Menschen im Gedenken.",
@@ -84,12 +90,6 @@
       "title": "US-Bundesstaat Washington: Waldbrand erreicht US-Großstadt Spokane",
       "description": "Ein schwerer Waldbrand bedroht die Stadt Spokane im US-Bundesstaat Washington. Tausende Menschen mussten fliehen, die Löscharbeiten werden durch den Wind erschwert. Der Gouverneur rief den Notstand aus.",
       "pubDate": "2026-08-02T20:14:55+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ukraine-Krieg: Moskau meldet 635 abgefangene Drohnen - mehrere Tote",
-      "description": "Die Ukraine wehrt sich gegen Russlands Angriffskrieg inzwischen verstärkt mit Attacken auf russisches Staatsgebiet. Erneut gerieten dabei offenbar eine Raffinerie und ein Militärplatz ins Visier. Russland und die Ukraine meldeten mehrere Tote.",
-      "pubDate": "2026-08-02T18:33:17+02:00",
       "bild": ""
     }
   ],
