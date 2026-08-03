@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "03.08.2026, 19:07 Uhr (UTC)",
+  "aktualisiert": "03.08.2026, 20:44 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "US-Verhandlungen mit Iran: Trump sagt, es wird wieder geredet",
+      "description": "Zwischen den USA und Iran sind wieder Gespräche angelaufen - das behauptet zumindest US-Präsident Trump. Iran hatte zuvor mitgeteilt, es fänden keine Gespräche statt und es seien auch keine geplant.",
+      "pubDate": "2026-08-03T21:43:16+02:00",
+      "bild": ""
+    },
     {
       "title": "Selenskyj hofft auf Kriegsende bis Herbst",
       "description": "Mit verschiedenen Maßnahmen will der ukrainische Präsident Russland unter Druck setzen - und so bis Herbst zu einem Kriegsende bewegen. Selenskyj bereitet das Land aber trotzdem auch auf einen weiteren Kriegswinter vor.",
@@ -84,12 +90,6 @@
       "title": "Ceuta: Marokko gibt Sozialen Medien Schuld an Tragödie",
       "description": "Drei Tage nach dem tödlichen Massenandrang auf die spanische Exklave Ceuta hat jetzt Marokkos Innenministerium Stellung bezogen. Es führt die Tragödie vor allem auf Falschinformationen in Sozialen Medien zurück. Von Stefan Ehlert.",
       "pubDate": "2026-08-03T13:37:05+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ukraine: Neue Angriffe auf russischen Versandhändler Wildberries",
-      "description": "Die Ukraine hat erneut ein Lager des russischen Online-Händlers Wildberries angegriffen. Kiew wirft dem Unternehmen vor, auch Waren für den Angriffskrieg zu liefern. Russland spricht hingegen von Terrorangriffen auf zivile Infrastruktur.",
-      "pubDate": "2026-08-03T12:49:11+02:00",
       "bild": ""
     }
   ],
