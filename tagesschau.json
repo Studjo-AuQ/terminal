@@ -1,10 +1,34 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "04.08.2026, 03:22 Uhr (UTC)",
+  "aktualisiert": "04.08.2026, 06:12 Uhr (UTC)",
   "meldungen": [
     {
+      "title": "Marktbericht: Anleger in Rekordlaune",
+      "description": "Mit reichlich Rückenwind von der Wall Street geht der DAX in den neuen Tag. Die Hoffnung auf eine diplomatische Nahost-Lösung treibt die Kurse. Erwartet wird zudem eine Flut neuer Quartalszahlen.",
+      "pubDate": "2026-08-04T07:38:35+02:00",
+      "bild": ""
+    },
+    {
+      "title": "25 Demokratische US-Bundesstaaten klagen gegen Trumps neue Zölle",
+      "description": "Seit rund anderthalb Wochen gelten neue US-Zölle gegen 60 Handelspartner, die nun erneut zum juristischen Streitfall werden. 25 Bundesstaaten der USA haben Klage gegen die Aufschläge auf Importe eingereicht.",
+      "pubDate": "2026-08-04T07:28:28+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Vier Verletzte nach Schüssen in Köln",
+      "description": "Vier Menschen sind durch Schüsse in Köln zum Teil schwer verletzt worden. Die Schüsse sollen nach Angaben der Polizei auf einer Straße mitten im Stadtteil Mühlheim abgefeuert worden sein. Die Hintergründe sind noch unklar.",
+      "pubDate": "2026-08-04T07:46:00+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Interview zu Krise in Ceuta: \"Die Schuld Spanien zu geben, war irrational\"",
+      "description": "Ist Spanien für die Krise in Ceuta verantwortlich? Der Migrationsexperte Gerald Knaus verneint das. Die Vorwürfe gegen die Regierung seien eine irrationale Reaktion auf verstörende Bilder. Die EU müsse nun schnell eine Entscheidung treffen.",
+      "pubDate": "2026-08-04T07:18:48+02:00",
+      "bild": ""
+    },
+    {
       "title": "Ceuta-Krise: EU-Innenminister beraten über Konsequenzen",
-      "description": "Seit kurzem gilt das gemeinsame EU-Asylsystem, das Situationen wie in Ceuta verhindern soll. Doch stattdessen ist wieder Streit aufgebrochen - die EU-Innenminister wollen heute versuchen, Lehren aus der Krise zu ziehen. Von A. Meyer-Feist.",
+      "description": "Seit Kurzem gilt das gemeinsame EU-Asylsystem, das Situationen wie in Ceuta verhindern soll. Doch stattdessen ist wieder Streit aufgebrochen - die EU-Innenminister wollen heute versuchen, Lehren aus der Krise zu ziehen. Von A. Meyer-Feist.",
       "pubDate": "2026-08-04T05:00:08+02:00",
       "bild": ""
     },
@@ -21,7 +45,7 @@
       "bild": ""
     },
     {
-      "title": "Debatte um Frühverrentung: Frei sieht keinen Spielraum für Verhandlungen",
+      "title": "Debatte um abschlagsfreie Frührente: Frei sieht keinen Spielraum für Verhandlungen",
       "description": "Die Debatte um die abschlagsfreie Rente nach 45 Beitragsjahren reißt nicht ab. Nach der Kritik der CDU-Ministerpräsidenten aus dem Osten warnt Unionsfraktionschef Frei vor einem Scheitern der Reform - für Verhandlungen gebe es keinen Spielraum.",
       "pubDate": "2026-08-04T03:25:48+02:00",
       "bild": ""
@@ -66,30 +90,6 @@
       "title": "Neue Angriffe im Gazastreifen: Hoffnung weicht Resignation",
       "description": "Obwohl US-Präsident Trump eine Entwaffnung der Hamas angekündigt hatte, gehen Israels Angriffe auf den Gazastreifen weiter. Am Wochenende sind nach palästinensischen Angaben 17 Menschen getötet worden. Von Jörg Poppendieck.",
       "pubDate": "2026-08-03T17:17:34+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Stromkrise durch Niedrigwasser der Donau - Rumänien sprengt Felsen",
-      "description": "Rumänien greift wegen des niedrigen Wasserstands der Donau zu ungewöhnlichen Mitteln: Mit einer Sprengung im Fluss soll mehr Wasser zum AKW Cernavoda geleitet werden. Dort, in Ungarn und in Serbien wird zum Stromsparen aufgerufen.",
-      "pubDate": "2026-08-03T17:10:41+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Nach Andrang in Ceuta fordert Von der Leyen stärkeren EU-Grenzschutz",
-      "description": "Vorwürfe, Rechtfertigungen, Erklärungsversuche: Die Ausnahmesituation in Ceuta hat eine weitere Migrationsdebatte entfacht. EU-Kommissionspräsidentin von der Leyen bemüht sich, die Wogen zu glätten - sieht aber Handlungsbedarf beim Grenzschutz.",
-      "pubDate": "2026-08-03T17:09:23+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Longevity in China - der Traum vom langen Leben",
-      "description": "Sterben in China ist teuer. Und die Longevity-Bewegung aus den USA trifft bei reichen Chinesen auf fruchtbaren Boden. Ein ganzer Industriezweig hofft auf Milliardenumsätze, wenn Chinas Superreiche altern. Von Jörg Endriss.",
-      "pubDate": "2026-08-03T16:32:08+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Aufruf in offenem Brief: Mehr als 1.000 Juristen für AfD-Verbot",
-      "description": "Mehr als 1.000 Juristen fordern ein AfD-Verbot. In einem offenen Brief appellieren sie an die Politik, ein Verbotsverfahren einzuleiten. Es drohe ein \"ernsthafter Schaden\" für die Demokratie.",
-      "pubDate": "2026-08-03T16:09:01+02:00",
       "bild": ""
     }
   ],
