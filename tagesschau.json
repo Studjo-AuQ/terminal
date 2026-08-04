@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "04.08.2026, 09:22 Uhr (UTC)",
+  "aktualisiert": "04.08.2026, 11:40 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Verletzte, Schäden und Verkehrsprobleme durch Unwetter",
+      "description": "Gesperrte Bahnstrecken, abgedeckte Dächer und Unfälle - erste Unwetter haben bereits Teile Deutschlands getroffen und sollen nun Richtung Südwesten ziehen. Der Deutsche Wetterdienst warnt erneut vor hohen Temperaturen.",
+      "pubDate": "2026-08-04T12:22:27+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Kleinstes Modell von Boeings 737-Max-Reihe zugelassen",
+      "description": "Seit 2022 wartete Boeing auf die Zulassung seines kleinsten Flugzeugs aus der 737-MAX-Reihe. Nun hat die US-Luftfahrtbehörde FAA die 737 MAX 7 freigegeben. Zuvor hatte es mehrfach Sicherheitsmängel gegeben.",
+      "pubDate": "2026-08-04T12:14:13+02:00",
+      "bild": ""
+    },
     {
       "title": "Zahl der Erdbebenopfer in Venezuela steigt auf mehr als 6.000",
       "description": "Die Lage in Venezuela ist nach den Erdbeben Ende Juni weiterhin verheerend. Neusten offiziellen Angaben zufolge sind mehr als 6.000 Menschen getötet worden. Gleichzeitig werden aber noch Tausende vermisst.",
@@ -47,7 +59,7 @@
     {
       "title": "Vier Verletzte nach Schüssen in Köln",
       "description": "Vier Menschen sind durch Schüsse in Köln zum Teil schwer verletzt worden. Die Schüsse sollen nach Angaben der Polizei auf einer Straße mitten im Stadtteil Mühlheim abgefeuert worden sein. Die Hintergründe sind noch unklar.",
-      "pubDate": "2026-08-04T09:47:00+02:00",
+      "pubDate": "2026-08-04T11:50:00+02:00",
       "bild": ""
     },
     {
@@ -78,18 +90,6 @@
       "title": "Debatte um abschlagsfreie Frührente: Frei sieht keinen Spielraum für Verhandlungen",
       "description": "Die Debatte um die abschlagsfreie Rente nach 45 Beitragsjahren reißt nicht ab. Nach der Kritik der CDU-Ministerpräsidenten aus dem Osten warnt Unionsfraktionschef Frei vor einem Scheitern der Reform - für Verhandlungen gebe es keinen Spielraum.",
       "pubDate": "2026-08-04T03:25:48+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wirtschaftsexperte: \"Niedrigwasser ist ein Kostentreiber\"",
-      "description": "Niedrige Pegelstände werden zunehmend zum Risiko, sagt Simon Gerards Iglesias vom Institut der deutschen Wirtschaft. Im Interview mit den tagesthemen erklärt er, warum viele Unternehmen zum Transport auf den Flüssen kaum Alternativen haben.",
-      "pubDate": "2026-08-03T23:52:19+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Verhandlungen mit Iran: Trump sagt, es wird wieder geredet",
-      "description": "Zwischen den USA und Iran sind wieder Gespräche angelaufen - das behauptet zumindest US-Präsident Trump. Iran hatte zuvor mitgeteilt, es fänden keine Gespräche statt und es seien auch keine geplant.",
-      "pubDate": "2026-08-03T21:43:16+02:00",
       "bild": ""
     }
   ],
