@@ -1,7 +1,49 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "04.08.2026, 14:31 Uhr (UTC)",
+  "aktualisiert": "04.08.2026, 16:57 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Hitze, Dürre, Waldbrände: Rufe nach Reaktion der Bundesregierung",
+      "description": "Die Waldbrände in Südeuropa dominieren die Schlagzeilen. Doch auch in Deutschland sind die Folgen des Klimawandels durch Niedrigwasser und Waldbrände spürbar. Die Kritik an der Klimapolitik der Bundesregierung wird wieder lauter.",
+      "pubDate": "2026-08-04T18:36:25+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: Anleger hieven DAX wieder auf ein Allzeithoch",
+      "description": "Die Investoren hatten ein ganze Reihe von Unternehmensbilanzen zu verarbeiten. Aber vor allem richteten sich die Blicke in Richtung Naher Osten. Noch immer treiben Friedenshoffnungen den DAX weiter an.",
+      "pubDate": "2026-08-04T18:16:05+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Zahl der Asylerstanträge im Juli auf 4.311 gesunken",
+      "description": "Immer weniger Menschen suchen Asyl in Deutschland. Im Juli ging die Zahl der Erstanträge im Vergleich zu Juni 2025 um fast die Hälfte auf etwa 4.300 zurück. Der Monat ist kein Ausreißer. Auch im Halbjahresvergleich sanken die Zahlen.",
+      "pubDate": "2026-08-04T18:15:52+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Kommentar zu Ceuta: Die EU hat diesen Test nicht bestanden",
+      "description": "Sobald Druck aufkommt, bricht die Solidarität in der EU zusammen, meint Sabrina Fritz. Spaniens Regierungschef mit Vorwürfen zu überziehen, statt ihm beizustehen, war schäbig. Europa verliert zu schnell die Nerven.",
+      "pubDate": "2026-08-04T17:29:29+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Kommentar zur Entwaffnung der Hamas: Ein Deal, der keiner ist",
+      "description": "Vor wenigen Tagen verkündete US-Präsident Trump eine Einigung zur Entwaffung der Hamas im Gazasteifen. Doch die Vereinbarung ist das Papier nicht wert, auf dem sie steht, meint Jörg Poppendieck. Weder die Hamas noch Israel werden sie umsetzen.",
+      "pubDate": "2026-08-04T17:04:07+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Diplomatische Bemühungen: Naht eine Lösung für die Straße von Hormus?",
+      "description": "US-Vertreter sehen Fortschritte bei den Bemühungen um eine Einigung mit Iran. Finanzminister Bessent stellte eine baldige Öffnung der Straße von Hormus in Aussicht. Unterdessen führen auch Israel und der Libanon Gespräche.",
+      "pubDate": "2026-08-04T17:03:01+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Stromnetz auf Kuba am Montag erneut landesweit zusammengebrochen",
+      "description": "Kein Strom bei drückender Hitze - in Kuba ist es wieder zu landesweiten Blackouts gekommen. Schulunterricht fällt aus und Krankenhäuser können Patienten offenbar nur eingeschränkt behandeln. Experten warnen vor einer humanitären Krise.",
+      "pubDate": "2026-08-04T16:57:35+02:00",
+      "bild": ""
+    },
     {
       "title": "Migration in spanischer Exklave: Was lernen EU und Spanien aus Ceuta?",
       "description": "Binnen weniger Tage gelangten Zehntausende Migranten nach Ceuta. Die meisten sind zurück in Marokko, doch die Debatte über den Schutz der EU-Außengrenzen bleibt. Die Menschen in Ceuta versuchen derweil, zur Normalität zurückzukehren. Von Kristina Böker.",
@@ -48,48 +90,6 @@
       "title": "Verletzte, Schäden und Verkehrsprobleme durch Unwetter",
       "description": "Gesperrte Bahnstrecken, abgedeckte Dächer und Unfälle - erste Unwetter haben bereits Teile Deutschlands getroffen und sollen nun Richtung Südwesten ziehen. Der Deutsche Wetterdienst warnt erneut vor hohen Temperaturen.",
       "pubDate": "2026-08-04T12:22:27+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kleinstes Modell von Boeings 737-Max-Reihe zugelassen",
-      "description": "Seit 2022 wartete Boeing auf die Zulassung seines kleinsten Flugzeugs aus der 737-MAX-Reihe. Nun hat die US-Luftfahrtbehörde FAA die 737 MAX 7 freigegeben. Zuvor hatte es mehrfach Sicherheitsmängel gegeben.",
-      "pubDate": "2026-08-04T12:14:13+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Zahl der Erdbebenopfer in Venezuela steigt auf mehr als 6.000",
-      "description": "Die Lage in Venezuela ist nach den Erdbeben Ende Juni weiterhin verheerend. Neusten offiziellen Angaben zufolge sind mehr als 6.000 Menschen getötet worden. Gleichzeitig werden aber noch Tausende vermisst.",
-      "pubDate": "2026-08-04T11:13:52+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: DAX markiert neue Rekordstände",
-      "description": "Der DAX bleibt auf Klettertour - und profitiert von der Hoffnung auf eine diplomatische Einigung im Nahen Osten. Neue Unternehmensergebnisse fallen derweil gemischt aus. Spannend wird es dann am Abend.",
-      "pubDate": "2026-08-04T11:03:56+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Waldbrand in den Niederlanden - Warnung vor Brandrauch in NRW",
-      "description": "Ein Waldbrand in den Niederlanden unweit der Grenze zu Nordrhein-Westfalen ist weiter nicht unter Kontrolle. Der Brand hat auch Auswirkungen auf den Kreis Kleve: Anwohner müssen sich auf teils deutlichen Brandgeruch einstellen.",
-      "pubDate": "2026-08-04T14:22:00+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Datenfirma Palantir steigert Umsatz um mehr als 90 Prozent",
-      "description": "Der umstrittene US-Datenanalyse-Spezialist Palantir meldet für das vergangene Quartal einen Rekordumsatz - vor allem wegen des Geschäfts in den Vereinigten Staaten: Die Erlöse dort haben sich zuletzt mehr als verdoppelt.",
-      "pubDate": "2026-08-04T10:00:34+02:00",
-      "bild": ""
-    },
-    {
-      "title": "USA: Waldbrände um Spokane wüten weiter - Verdächtiger festgenommen",
-      "description": "Hunderte zerstörte Häuser, Zehntausende Menschen auf der Flucht: Im US-Bundesstaat Washington wüten weiter schwere Waldbrände. Nun ist ein Mann festgenommen worden, der eines der Feuer vorsätzlich verursacht haben soll.",
-      "pubDate": "2026-08-04T09:12:51+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Russland meldet mehrere Tote durch ukrainische Drohnenangriffe",
-      "description": "Sowohl Russland als auch die Ukraine melden mehrere Tote durch erneute Drohnenangriffe. Die Türkei prangert Attacken auf Schiffe landeseigener Reeder an. Auf der Halbinsel Krim feuerte ein russischer Soldat auf eigene Kameraden.",
-      "pubDate": "2026-08-04T13:47:19+02:00",
       "bild": ""
     }
   ],
