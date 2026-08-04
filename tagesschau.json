@@ -1,11 +1,41 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "04.08.2026, 06:12 Uhr (UTC)",
+  "aktualisiert": "04.08.2026, 09:22 Uhr (UTC)",
   "meldungen": [
     {
-      "title": "Marktbericht: Anleger in Rekordlaune",
-      "description": "Mit reichlich Rückenwind von der Wall Street geht der DAX in den neuen Tag. Die Hoffnung auf eine diplomatische Nahost-Lösung treibt die Kurse. Erwartet wird zudem eine Flut neuer Quartalszahlen.",
-      "pubDate": "2026-08-04T07:38:35+02:00",
+      "title": "Zahl der Erdbebenopfer in Venezuela steigt auf mehr als 6.000",
+      "description": "Die Lage in Venezuela ist nach den Erdbeben Ende Juni weiterhin verheerend. Neusten offiziellen Angaben zufolge sind mehr als 6.000 Menschen getötet worden. Gleichzeitig werden aber noch Tausende vermisst.",
+      "pubDate": "2026-08-04T11:13:52+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX markiert neue Rekordstände",
+      "description": "Der DAX bleibt auf Klettertour - und profitiert von der Hoffnung auf eine diplomatische Einigung im Nahen Osten. Neue Unternehmensergebnisse fallen derweil gemischt aus. Spannend wird es dann am Abend.",
+      "pubDate": "2026-08-04T11:03:56+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Waldbrand in den Niederlanden - Warnung vor Brandrauch in NRW",
+      "description": "Ein Waldbrand in den Niederlanden unweit der Grenze zu Nordrhein-Westfalen ist weiter nicht unter Kontrolle. Der Brand hat auch Auswirkungen auf den Kreis Kleve: Anwohner müssen sich auf teils deutlichen Brandgeruch einstellen.",
+      "pubDate": "2026-08-04T11:01:00+02:00",
+      "bild": ""
+    },
+    {
+      "title": "US-Datenfirma Palantir steigert Umsatz um mehr als 90 Prozent",
+      "description": "Der umstrittene US-Datenanalyse-Spezialist Palantir meldet für das vergangene Quartal einen Rekordumsatz - vor allem wegen des Geschäfts in den Vereinigten Staaten: Die Erlöse dort haben sich zuletzt mehr als verdoppelt.",
+      "pubDate": "2026-08-04T10:00:34+02:00",
+      "bild": ""
+    },
+    {
+      "title": "USA: Waldbrände um Spokane wüten weiter - Verdächtiger festgenommen",
+      "description": "Hunderte zerstörte Häuser, Zehntausende Menschen auf der Flucht: Im US-Bundesstaat Washington wüten weiter schwere Waldbrände. Nun ist ein Mann festgenommen worden, der eines der Feuer vorsätzlich verursacht haben soll.",
+      "pubDate": "2026-08-04T09:12:51+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Russland meldet mehrere Tote durch ukrainische Drohnenangriffe",
+      "description": "Die Ukraine hat in der Nacht Russland erneut mit Drohnen attackiert. In der Region Moskau starben laut russischem Verteidigungsministerium mindestens fünf Menschen. Das russische Militär griff erneut ukrainische Häfen an.",
+      "pubDate": "2026-08-04T09:09:06+02:00",
       "bild": ""
     },
     {
@@ -17,7 +47,7 @@
     {
       "title": "Vier Verletzte nach Schüssen in Köln",
       "description": "Vier Menschen sind durch Schüsse in Köln zum Teil schwer verletzt worden. Die Schüsse sollen nach Angaben der Polizei auf einer Straße mitten im Stadtteil Mühlheim abgefeuert worden sein. Die Hintergründe sind noch unklar.",
-      "pubDate": "2026-08-04T07:46:00+02:00",
+      "pubDate": "2026-08-04T09:47:00+02:00",
       "bild": ""
     },
     {
@@ -28,14 +58,14 @@
     },
     {
       "title": "Ceuta-Krise: EU-Innenminister beraten über Konsequenzen",
-      "description": "Seit Kurzem gilt das gemeinsame EU-Asylsystem, das Situationen wie in Ceuta verhindern soll. Doch stattdessen ist wieder Streit aufgebrochen - die EU-Innenminister wollen heute versuchen, Lehren aus der Krise zu ziehen. Von A. Meyer-Feist.",
+      "description": "Seit Kurzem gilt das gemeinsame EU-Asylsystem, das Situationen wie in Ceuta verhindern soll. Doch stattdessen ist wieder Streit ausgebrochen - die EU-Innenminister wollen heute versuchen, Lehren aus der Krise zu ziehen. Von A. Meyer-Feist.",
       "pubDate": "2026-08-04T05:00:08+02:00",
       "bild": ""
     },
     {
       "title": "Medienbericht: Bundesregierung erarbeitet Pläne für Zivildienst",
-      "description": "Seit Anfang des Jahres gilt ein neuer Wehrdienst. Dieser umfasst noch keine Wehrpflicht - doch die Bundesregierung will für diesen Fall vorbereitet sind. Deshalb erarbeitet sie laut Bild-Zeitung Grundlagen für einen neuen Zivildienst.",
-      "pubDate": "2026-08-04T04:59:49+02:00",
+      "description": "Seit Anfang des Jahres gilt ein neuer Wehrdienst. Dieser umfasst keine Wehrpflicht. Sollte die doch wieder eingeführt werden, könnte auch der verpflichtende Zivildienst zurückkehren. Genau dafür plant die Bundesregierung bereits.",
+      "pubDate": "2026-08-04T10:14:33+02:00",
       "bild": ""
     },
     {
@@ -60,36 +90,6 @@
       "title": "US-Verhandlungen mit Iran: Trump sagt, es wird wieder geredet",
       "description": "Zwischen den USA und Iran sind wieder Gespräche angelaufen - das behauptet zumindest US-Präsident Trump. Iran hatte zuvor mitgeteilt, es fänden keine Gespräche statt und es seien auch keine geplant.",
       "pubDate": "2026-08-03T21:43:16+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Selenskyj hofft auf Kriegsende bis Herbst",
-      "description": "Mit verschiedenen Maßnahmen will der ukrainische Präsident Russland unter Druck setzen - und so bis Herbst zu einem Kriegsende bewegen. Selenskyj bereitet das Land aber trotzdem auch auf einen weiteren Kriegswinter vor.",
-      "pubDate": "2026-08-03T20:31:59+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Unbekanntes Virus bei Rindern in Süddeutschland nachgewiesen",
-      "description": "Ein Virus, das in Deutschland bislang nicht bekannt war, sorgt bei Rindern in Baden-Württemberg für Fieber, Durchfall und weniger Milch. Übertragen wird es über Mücken. Für den Menschen besteht nach aktuellem Stand keine Gefahr.",
-      "pubDate": "2026-08-03T18:36:22+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Elf statt vier Monate: In Dänemark startet verlängerte Wehrpflicht",
-      "description": "Angesichts des Ukraine-Kriegs und der Trump-Drohungen in Bezug auf Grönland gilt in Dänemark von heute an ein längerer Wehrdienst. Zu den Männern und Frauen, die ihren Dienst antreten, gehört auch Prinzessin Isabella. Von Jana Sinram.",
-      "pubDate": "2026-08-03T18:25:40+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: DAX auf Rekordfahrt",
-      "description": "Der DAX ist mit einem neuen historischen Hoch in den August gestartet. Neue Friedenshoffnungen, die Tech-Rally und erfreuliche Unternehmenszahlen haben die Kurse steigen lassen.",
-      "pubDate": "2026-08-03T18:24:31+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Neue Angriffe im Gazastreifen: Hoffnung weicht Resignation",
-      "description": "Obwohl US-Präsident Trump eine Entwaffnung der Hamas angekündigt hatte, gehen Israels Angriffe auf den Gazastreifen weiter. Am Wochenende sind nach palästinensischen Angaben 17 Menschen getötet worden. Von Jörg Poppendieck.",
-      "pubDate": "2026-08-03T17:17:34+02:00",
       "bild": ""
     }
   ],
