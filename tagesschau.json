@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "05.08.2026, 03:17 Uhr (UTC)",
+  "aktualisiert": "05.08.2026, 06:07 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Marktbericht: DAX bleibt auf Rekordkurs",
+      "description": "Im Sog der Wall Street bleibt der DAX auf Klettertour - neue Rekorde zeichnen sich ab. In New York waren vor allem Tech-Aktien wieder gefragt. Im DAX geht derweil die Berichtssaison der Unternehmen weiter.",
+      "pubDate": "2026-08-05T07:31:07+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Arbeitgeber kritisieren Widerstand gegen Ende der \"Rente mit 63\"",
+      "description": "Das Aus der abschlagsfreien Frührente ist ein zentraler Punkt der schwarz-roten Rentenreform. Doch seit Tagen machen Teile der Koalition dagegen mobil. Der Arbeitgeberverband zeigt sich darüber \"fassungslos\".",
+      "pubDate": "2026-08-05T07:24:36+02:00",
+      "bild": ""
+    },
     {
       "title": "Hunderte Menschen nach Vulkanausbruch in Guatemala evakuiert",
       "description": "In einigen Regionen von Guatemala gilt inzwischen die höchste Warnstufe - denn der Feuervulkan ist wieder ausgebrochen. 1.400 Menschen wurden evakuiert. Behörden sperrten den Zugang zu einem Nachbarvulkan - weil sich Schaulustige in Gefahr begaben.",
@@ -16,7 +28,7 @@
     },
     {
       "title": "Russische Angriffe: Kiew wieder unter Raketenbeschuss",
-      "description": "Russland hat die ukrainische Hauptstadt Kiew erneut mit Raketen angegriffen. Behörden meldeten eine Tote und mehrere Verletzte - weitere Opfer werden unter Trümmern befürchtet.",
+      "description": "Bei erneuten russischen Attacken auf die ukrainische Hauptstadt Kiew ist laut Behörden ein Mensch getötet worden. Es gibt mehrere Verletzte. Unter den Trümmern werden weitere Opfer befürchtet.",
       "pubDate": "2026-08-05T04:18:18+02:00",
       "bild": ""
     },
@@ -78,18 +90,6 @@
       "title": "Kommentar zu Ceuta: Die EU hat diesen Test nicht bestanden",
       "description": "Sobald Druck aufkommt, bricht die Solidarität in der EU zusammen, meint Sabrina Fritz. Spaniens Regierungschef mit Vorwürfen zu überziehen, statt ihm beizustehen, war schäbig. Europa verliert zu schnell die Nerven.",
       "pubDate": "2026-08-04T17:29:29+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kommentar zur Entwaffnung der Hamas: Ein Deal, der keiner ist",
-      "description": "Vor wenigen Tagen verkündete US-Präsident Trump eine Einigung zur Entwaffung der Hamas im Gazasteifen. Doch die Vereinbarung ist das Papier nicht wert, auf dem sie steht, meint Jörg Poppendieck. Weder die Hamas noch Israel werden sie umsetzen.",
-      "pubDate": "2026-08-04T17:04:07+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Diplomatische Bemühungen: Naht eine Lösung für die Straße von Hormus?",
-      "description": "US-Vertreter sehen Fortschritte bei den Bemühungen um eine Einigung mit Iran. Finanzminister Bessent stellte eine baldige Öffnung der Straße von Hormus in Aussicht. Unterdessen führen auch Israel und der Libanon Gespräche.",
-      "pubDate": "2026-08-04T17:03:01+02:00",
       "bild": ""
     }
   ],
