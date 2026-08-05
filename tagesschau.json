@@ -1,11 +1,41 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "05.08.2026, 06:07 Uhr (UTC)",
+  "aktualisiert": "05.08.2026, 09:20 Uhr (UTC)",
   "meldungen": [
     {
-      "title": "Marktbericht: DAX bleibt auf Rekordkurs",
-      "description": "Im Sog der Wall Street bleibt der DAX auf Klettertour - neue Rekorde zeichnen sich ab. In New York waren vor allem Tech-Aktien wieder gefragt. Im DAX geht derweil die Berichtssaison der Unternehmen weiter.",
-      "pubDate": "2026-08-05T07:31:07+02:00",
+      "title": "Flughafen Leipzig: Ermittler entdecken \"unbekannte Masse\" und mutmaßlichen Zünder an Drohne",
+      "description": "Am Flughafen Leipzig-Halle wurde in der Nacht ein verdächtiger Gegenstand gefunden, der Flugverkehr daraufhin eingestellt. Nach Recherchen von NDR, WDR und Süddeutscher Zeitung soll es sich um eine präparierte Drohne handeln.",
+      "pubDate": "2026-08-05T11:03:09+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX setzt Klettertour fort",
+      "description": "Eine Fülle neuer Unternehmensergebnisse, aber auch die Hoffnung auf eine diplomatische Nahost-Lösung, bestimmen den Handelstag. Der DAX markiert im Sog der Wall Street ein neues Rekordhoch.",
+      "pubDate": "2026-08-05T10:33:59+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Schwache Konjunktur: Mittelstand steckt in der Kreditklemme",
+      "description": "Für mittelständische Betriebe wird es immer schwieriger, Darlehen von ihren Banken zu erhalten. Wegen der schlechten Wirtschaftslage werden die Geldinstitute vorsichtiger. Das erschwert den Firmen Investitionen zusätzlich. Von Axel John.",
+      "pubDate": "2026-08-05T10:04:03+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Cyclospora-Parasit: Mehr als 10.000 Durchfall-Infektionen in den USA",
+      "description": "In den USA verursacht der Cyclospora-Parasit landesweit Durchfall-Erkrankungen. Mehr als 10.000 Menschen sind betroffen, es gibt noch mehr Verdachtsfälle. Als mögliche Ursache gilt verunreinigter Eisbergsalat aus Mexiko.",
+      "pubDate": "2026-08-05T09:25:43+02:00",
+      "bild": ""
+    },
+    {
+      "title": "SpaceX mit Verlust im ersten Quartal an der Börse",
+      "description": "Die ersten Quartalszahlen der Weltraumfirma SpaceX nach ihrem Rekord-Börsengang sorgen bei Anlegern für Zurückhaltung. Zwar verdoppelte SpaceX den Umsatz beinahe, machte aber unter dem Strich erneut Verluste.",
+      "pubDate": "2026-08-05T08:34:40+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Verhaltene Reaktionen von Sozialverbänden auf Zivildienstpläne",
+      "description": "Die Bundesregierung lotet derzeit Pläne für einen Zivildienst aus. Einige Sozialverbände sorgen sich, dass dieser zu Lasten der Freiwilligendienste gehen könnte. Wünsche haben sie auch für die Dauer und Qualifizierung.",
+      "pubDate": "2026-08-05T08:09:33+02:00",
       "bild": ""
     },
     {
@@ -15,7 +45,7 @@
       "bild": ""
     },
     {
-      "title": "Hunderte Menschen nach Vulkanausbruch in Guatemala evakuiert",
+      "title": "Erste Dörfer nach Vulkanausbruch in Guatemala evakuiert",
       "description": "In einigen Regionen von Guatemala gilt inzwischen die höchste Warnstufe - denn der Feuervulkan ist wieder ausgebrochen. 1.400 Menschen wurden evakuiert. Behörden sperrten den Zugang zu einem Nachbarvulkan - weil sich Schaulustige in Gefahr begaben.",
       "pubDate": "2026-08-05T05:14:48+02:00",
       "bild": ""
@@ -27,9 +57,9 @@
       "bild": ""
     },
     {
-      "title": "Russische Angriffe: Kiew wieder unter Raketenbeschuss",
-      "description": "Bei erneuten russischen Attacken auf die ukrainische Hauptstadt Kiew ist laut Behörden ein Mensch getötet worden. Es gibt mehrere Verletzte. Unter den Trümmern werden weitere Opfer befürchtet.",
-      "pubDate": "2026-08-05T04:18:18+02:00",
+      "title": "Kiew wieder unter russischem Raketenbeschuss",
+      "description": "Die Ukraine kann derzeit kaum ballistische Raketen abwehren. Bei einer erneuten russischen Angriffswelle auf Kiew sind mindestens 17 Menschen getötet worden. Immer mehr ins Visier geraten offenbar Logistikzentren.",
+      "pubDate": "2026-08-05T08:58:28+02:00",
       "bild": ""
     },
     {
@@ -60,36 +90,6 @@
       "title": "Innenausschuss zum CSD-Anschlag: Zentrale Fragen bleiben ungeklärt",
       "description": "Wieso war der Islamist auf freiem Fuß, obwohl er als extrem gefährlich galt? Hatten die Sicherheitsbehörden das Berliner Gericht ausreichend informiert? Im Innenausschuss zum CSD-Anschlag gab es darauf keine Antworten. Von D. K. Mäurer.",
       "pubDate": "2026-08-04T19:57:34+02:00",
-      "bild": ""
-    },
-    {
-      "title": "EU-Innenminister zu Ceuta: \"Natürlich\" Solidarität mit Spanien",
-      "description": "Nachdem die meisten EU-Staaten Spanien wegen der Krise in Ceuta kritisiert hatten, betonten die europäischen Innenminister jetzt ihre Solidarität mit Madrid. Doch die Diskussion über Europas Grenzschutz geht weiter. Von Jean-Marie Magro.",
-      "pubDate": "2026-08-04T18:57:32+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Hitze, Dürre, Waldbrände: Rufe nach Reaktion der Bundesregierung",
-      "description": "Die Waldbrände in Südeuropa dominieren die Schlagzeilen. Doch auch in Deutschland sind die Folgen des Klimawandels durch Niedrigwasser und Waldbrände spürbar. Die Kritik an der Klimapolitik der Bundesregierung wird wieder lauter.",
-      "pubDate": "2026-08-04T18:36:25+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Anleger hieven DAX wieder auf ein Allzeithoch",
-      "description": "Die Investoren hatten ein ganze Reihe von Unternehmensbilanzen zu verarbeiten. Aber vor allem richteten sich die Blicke in Richtung Naher Osten. Noch immer treiben Friedenshoffnungen den DAX weiter an.",
-      "pubDate": "2026-08-04T18:16:05+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Zahl der Asylerstanträge im Juli auf 4.311 gesunken",
-      "description": "Immer weniger Menschen suchen Asyl in Deutschland. Im Juli ging die Zahl der Erstanträge im Vergleich zu Juli 2025 um fast die Hälfte auf etwa 4.300 zurück. Der Monat ist kein Ausreißer. Auch im Halbjahresvergleich sanken die Zahlen.",
-      "pubDate": "2026-08-04T18:15:52+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kommentar zu Ceuta: Die EU hat diesen Test nicht bestanden",
-      "description": "Sobald Druck aufkommt, bricht die Solidarität in der EU zusammen, meint Sabrina Fritz. Spaniens Regierungschef mit Vorwürfen zu überziehen, statt ihm beizustehen, war schäbig. Europa verliert zu schnell die Nerven.",
-      "pubDate": "2026-08-04T17:29:29+02:00",
       "bild": ""
     }
   ],
