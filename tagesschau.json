@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "05.08.2026, 14:24 Uhr (UTC)",
+  "aktualisiert": "05.08.2026, 16:16 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "SPD uneins über Abschaffung der Rente mit 63",
+      "description": "Der Plan der Bundesregierung, die \"Rente mit 63 Jahren\" abzuschaffen, führt auch innerhalb der SPD zu Debatten. So plädiert der Parlamentarische Geschäftsführer Wiese für Härtefall-Ausnahmen, etwa im Straßenbau oder der Schichtarbeit.",
+      "pubDate": "2026-08-05T17:55:48+02:00",
+      "bild": ""
+    },
     {
       "title": "Behörden: \"Sehr ernster Sicherheitsvorfall\" am Flughafen Leipzig/Halle",
       "description": "Nach dem Fund einer Drohne mit Sprengstoff am Flughafen Leipzig/Halle ist der Zünder inzwischen entschärft. Sachsens Innenminister Schuster spricht von einem \"sehr ernsten\" Vorfall. Bundesinnenminister Dobrindt reist zur Lagebesprechung nach Leipzig.",
@@ -70,7 +76,7 @@
     },
     {
       "title": "Drohnenfund am Flughafen Leipzig/Halle: Mutmaßlicher Sprengstoff und Zünder entdeckt",
-      "description": "Am Flughafen Leipzig/Halle wurde ein verdächtiger Gegenstand gefunden. Nach Informationen von NDR, WDR und Süddeutscher Zeitung handelt es sich laut einem internen Vermerk um eine mit den Sprengstoffen PETN und Semtex präparierte Drohne.",
+      "description": "Am Flughafen Leipzig/Halle wurde ein verdächtiger Gegenstand gefunden. Nach Informationen von NDR, WDR und Süddeutscher Zeitung handelt es sich um eine mit den Sprengstoffen PETN und Semtex präparierte Drohne.",
       "pubDate": "2026-08-05T15:20:54+02:00",
       "bild": ""
     },
@@ -84,12 +90,6 @@
       "title": "Schwache Konjunktur: Mittelstand steckt in der Kreditklemme",
       "description": "Für mittelständische Betriebe wird es immer schwieriger, Darlehen von ihren Banken zu erhalten. Wegen der schlechten Wirtschaftslage werden die Geldinstitute vorsichtiger. Das erschwert den Firmen Investitionen zusätzlich. Von Axel John.",
       "pubDate": "2026-08-05T10:04:03+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Cyclospora-Parasit: Mehr als 10.000 Durchfall-Infektionen in den USA",
-      "description": "In den USA verursacht der Cyclospora-Parasit landesweit Durchfall-Erkrankungen. Mehr als 10.000 Menschen sind betroffen, es gibt noch mehr Verdachtsfälle. Als mögliche Ursache gilt verunreinigter Eisbergsalat aus Mexiko.",
-      "pubDate": "2026-08-05T09:25:43+02:00",
       "bild": ""
     }
   ],
