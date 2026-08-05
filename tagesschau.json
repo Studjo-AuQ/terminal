@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "05.08.2026, 18:06 Uhr (UTC)",
+  "aktualisiert": "05.08.2026, 20:10 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "WHO: Studien zu Ebola-Medikamenten und Impfstoffen starten",
+      "description": "Studien für Medikamente und Impfstoffe gegen die Bundibugyo-Variante des Ebola-Virus haben begonnen. Gleichzeitig warnt die WHO vor der immer noch rasanten Ausbreitung der Krankheit in der Demokratischen Republik Kongo.",
+      "pubDate": "2026-08-05T21:55:09+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Drohne am Flughafen Leipzig/Halle: Dobrindt sieht \"hybrides Anschlagsszenario\"",
+      "description": "Nach dem Fund einer Drohne mit Sprengstoff am Flughafen Leipzig/Halle zeigen sich die Behörden alarmiert. Bundesinnenminister Dobrindt sprach von einer \"neuen Gefahrenqualität\".",
+      "pubDate": "2026-08-05T21:44:22+02:00",
+      "bild": ""
+    },
     {
       "title": "Nach Kürzungen von US-Hilfen in Nepal: Wenn Helfende zu Hilflosen werden",
       "description": "Seit US-Präsident Trump das Hilfsprogramm USAID eingestellt hat, zeigen sich weltweit die Folgen. In Nepal fallen dadurch viele HIV-Präventionsprogramme weg. Die Konsequenzen sind in mehrerlei Hinsicht schockierend. Von Lena Bodewein.",
@@ -23,7 +35,7 @@
     {
       "title": "Iran und Oman einigen sich auf neue Route durch Straße von Hormus",
       "description": "Nach Angaben aus Teheran haben sich Iran und Oman auf eine neue Route durch die Straße von Hormus geeinigt. Sie würde Iran deutlich mehr Kontrolle über die Wasserstraße geben. Die USA waren nicht an der Einigung beteiligt.",
-      "pubDate": "2026-08-05T18:38:28+02:00",
+      "pubDate": "2026-08-05T20:50:11+02:00",
       "bild": ""
     },
     {
@@ -78,18 +90,6 @@
       "title": "Deutschlands KI-Hoffnung: Infineon scheitert an hohen Erwartungen",
       "description": "Die Aktie des Chipherstellers Infineon wird heute abgestraft. Der Boom rund um Künstliche Intelligenz macht den DAX-Konzern zuversichtlicher. Doch die Gewinne blieben zuletzt hinter den hohen Erwartungen zurück.",
       "pubDate": "2026-08-05T14:24:33+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ifo Institut: Autoindustrie zeigt sich wieder optimistischer",
-      "description": "Die Nachfrage nach der E-Auto-Prämie ist groß, vor allem Haushalte mit mittlerem Einkommen nutzen sie. Gleichzeitig hellt sich die Stimmung in der deutschen Autoindustrie spürbar auf, so das ifo Institut.",
-      "pubDate": "2026-08-05T14:18:39+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Fördergeschäft der KfW steigt im ersten Halbjahr auf Rekordwert",
-      "description": "Die bundeseigene KfW hat zuletzt deutlich mehr Kredite und Zuschüsse vergeben als im Jahr davor. Groß war vor allem die Nachfrage nach Zuschüssen für Klimaschutz- und Umweltvorhaben.",
-      "pubDate": "2026-08-05T13:15:35+02:00",
       "bild": ""
     }
   ],
