@@ -1,7 +1,49 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "05.08.2026, 11:37 Uhr (UTC)",
+  "aktualisiert": "05.08.2026, 14:24 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Behörden: \"Sehr ernster Sicherheitsvorfall\" am Flughafen Leipzig/Halle",
+      "description": "Nach dem Fund einer Drohne mit Sprengstoff am Flughafen Leipzig/Halle ist der Zünder inzwischen entschärft. Sachsens Innenminister Schuster spricht von einem \"sehr ernsten\" Vorfall. Bundesinnenminister Dobrindt reist zur Lagebesprechung nach Leipzig.",
+      "pubDate": "2026-08-05T16:17:51+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Neue Männlichkeit in Sportserien: Ted Lasso und Co.",
+      "description": "Die neuen Sport-Helden in Serien wie \"Ted Lasso\" oder \"Off Campus\" sind sensibel und verletzlich. Diese neuen Männerbilder sind Ausdruck eines Kulturkampfes - mitten auf dem Spielfeld der Popkultur. Von Christoph Ohrem.",
+      "pubDate": "2026-08-05T15:05:42+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Einschränkungen bei der Bewässerung bedrohen Ernten von Landwirten",
+      "description": "Um Flüsse und Bachläufe zu schützen, beschränken viele Kommunen derzeit die Wasserentnahme. Die Folge: viel zu kleine Zwiebeln, vertrockneter Salat und verkümmerte Kartoffeln. Landwirte beklagen massive Ernteausfälle. Von F. Siegel.",
+      "pubDate": "2026-08-05T15:04:56+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Flüsse im Trockenstress - Ökosystem fehlt die Lebensgrundlage",
+      "description": "Wenn Flüsse kaum noch Wasser führen, trocknen Auen aus, Grundwasserreserven schrumpfen und Schadstoffe aus dem Abwasser treten konzentrierter auf. Fachleute fordern ein neues Wassermanagement und mehr Klimaschutz. Von Sabine Stöhr.",
+      "pubDate": "2026-08-05T15:02:16+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Manöver: Taiwan übt Abwehr eines potenziellen Angriff Chinas",
+      "description": "In Taiwan probt die Armee mit einem großangelegten Manöver eine Reaktion auf einen möglichen Angriff Chinas. Dabei wird auch das mobile Internet gedrosselt, um das Land auf schwere Krisen vorzubereiten.",
+      "pubDate": "2026-08-05T14:50:49+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Deutschlands KI-Hoffnung: Infineon scheitert an hohen Erwartungen",
+      "description": "Die Aktie des Chipherstellers Infineon wird heute abgestraft. Der Boom rund um Künstliche Intelligenz macht den DAX-Konzern zuversichtlicher. Doch die Gewinne blieben zuletzt hinter den hohen Erwartungen zurück.",
+      "pubDate": "2026-08-05T14:24:33+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Ifo Institut: Autoindustrie zeigt sich wieder optimistischer",
+      "description": "Die Nachfrage nach der E-Auto-Prämie ist groß, vor allem Haushalte mit mittlerem Einkommen nutzen sie. Gleichzeitig hellt sich die Stimmung in der deutschen Autoindustrie spürbar auf, so das ifo Institut.",
+      "pubDate": "2026-08-05T14:18:39+02:00",
+      "bild": ""
+    },
     {
       "title": "Fördergeschäft der KfW steigt im ersten Halbjahr auf Rekordwert",
       "description": "Die bundeseigene KfW hat zuletzt deutlich mehr Kredite und Zuschüsse vergeben als im Jahr davor. Groß war vor allem die Nachfrage nach Zuschüssen für Klimaschutz- und Umweltvorhaben.",
@@ -27,9 +69,9 @@
       "bild": ""
     },
     {
-      "title": "Flughafen Leipzig/Halle: Ermittler entdecken \"unbekannte Masse\" und mutmaßlichen Zünder an Drohne",
-      "description": "Am Flughafen Leipzig/Halle wurde ein verdächtiger Gegenstand gefunden, laut Recherchen von NDR, WDR und Süddeutscher Zeitung handelt es sich um eine präparierte Drohne. Zudem kollidierte in der Nähe ein Flugzeug mit einem unbekannten Objekt.",
-      "pubDate": "2026-08-05T11:03:09+02:00",
+      "title": "Drohnenfund am Flughafen Leipzig/Halle: Mutmaßlicher Sprengstoff und Zünder entdeckt",
+      "description": "Am Flughafen Leipzig/Halle wurde ein verdächtiger Gegenstand gefunden. Nach Informationen von NDR, WDR und Süddeutscher Zeitung handelt es sich laut einem internen Vermerk um eine mit den Sprengstoffen PETN und Semtex präparierte Drohne.",
+      "pubDate": "2026-08-05T15:20:54+02:00",
       "bild": ""
     },
     {
@@ -48,48 +90,6 @@
       "title": "Cyclospora-Parasit: Mehr als 10.000 Durchfall-Infektionen in den USA",
       "description": "In den USA verursacht der Cyclospora-Parasit landesweit Durchfall-Erkrankungen. Mehr als 10.000 Menschen sind betroffen, es gibt noch mehr Verdachtsfälle. Als mögliche Ursache gilt verunreinigter Eisbergsalat aus Mexiko.",
       "pubDate": "2026-08-05T09:25:43+02:00",
-      "bild": ""
-    },
-    {
-      "title": "SpaceX mit Verlust im ersten Quartal an der Börse",
-      "description": "Die ersten Quartalszahlen der Weltraumfirma SpaceX nach ihrem Rekord-Börsengang sorgen bei Anlegern für Zurückhaltung. Zwar verdoppelte SpaceX den Umsatz beinahe, machte aber unter dem Strich erneut Verluste.",
-      "pubDate": "2026-08-05T08:34:40+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Verhaltene Reaktionen von Sozialverbänden auf Zivildienstpläne",
-      "description": "Die Bundesregierung lotet derzeit Pläne für einen Zivildienst aus. Einige Sozialverbände sorgen sich, dass dieser zu Lasten der Freiwilligendienste gehen könnte. Wünsche haben sie auch für die Dauer und Qualifizierung.",
-      "pubDate": "2026-08-05T08:09:33+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Arbeitgeber kritisieren Widerstand gegen Ende der \"Rente mit 63\"",
-      "description": "Das Aus der abschlagsfreien Frührente ist ein zentraler Punkt der schwarz-roten Rentenreform. Doch seit Tagen machen Teile der Koalition dagegen mobil. Der Arbeitgeberverband zeigt sich darüber \"fassungslos\".",
-      "pubDate": "2026-08-05T07:24:36+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Erste Dörfer nach Vulkanausbruch in Guatemala evakuiert",
-      "description": "In einigen Regionen Guatemalas gilt die höchste Warnstufe, denn der Feuervulkan ist wieder ausgebrochen. 1.700 Menschen wurden evakuiert. Behörden sperrten den Zugang zu einem Nachbarvulkan - weil sich Schaulustige in Gefahr begaben.",
-      "pubDate": "2026-08-05T11:34:18+02:00",
-      "bild": ""
-    },
-    {
-      "title": "\"Rente mit 63\": Wer sie nutzt - und wer sich darum streitet",
-      "description": "Die Abschaffung der \"Rente mit 63\" gilt als ein entscheidender Baustein der Rentenreform der Bundesregierung. Doch der Widerstand dagegen wird lauter. Wer profitiert eigentlich von der Frühverrentung? Und wer will daran festhalten?",
-      "pubDate": "2026-08-05T05:03:45+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kiew wieder unter russischem Raketenbeschuss",
-      "description": "Die Ukraine kann derzeit kaum ballistische Raketen abwehren. Bei einer erneuten russischen Angriffswelle auf Kiew sind mindestens 17 Menschen getötet worden. Immer mehr ins Visier geraten offenbar Logistikzentren.",
-      "pubDate": "2026-08-05T13:00:32+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Prozess erst im März: Warner-Übernahme durch Paramount verzögert",
-      "description": "Diese Entscheidung könnte für Paramount teuer werden: Die Wettbewerbsklage von zwölf US-Bundesstaaten gegen den Kauf des Medienkonzerns Warner Brothers soll erst im März verhandelt werden.",
-      "pubDate": "2026-08-05T03:06:37+02:00",
       "bild": ""
     }
   ],
