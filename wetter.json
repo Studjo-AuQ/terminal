@@ -1,15 +1,15 @@
 {
-  "aktualisiert": "07.08.2026, 15:49 Uhr",
+  "aktualisiert": "07.08.2026, 16:44 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
         "temp": 20,
-        "gefuehlt": 19,
+        "gefuehlt": 18,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 7,
-        "luftfeuchte": 40,
+        "wind": 6,
+        "luftfeuchte": 43,
         "niederschlag": 0.0
       },
       "tage": [
@@ -28,7 +28,7 @@
           "emoji": "☁️",
           "zustand": "Bedeckt",
           "max": 26,
-          "min": 13,
+          "min": 12,
           "niederschlag": 0.0
         },
         {
@@ -36,7 +36,7 @@
           "datum": "09.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 30,
+          "max": 29,
           "min": 19,
           "niederschlag": 0.0
         },
@@ -67,8 +67,8 @@
         "gefuehlt": 19,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 9,
-        "luftfeuchte": 45,
+        "wind": 8,
+        "luftfeuchte": 46,
         "niederschlag": 0.0
       },
       "tage": [
@@ -77,7 +77,7 @@
           "datum": "07.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 21,
+          "max": 22,
           "min": 8,
           "niederschlag": 0.0
         },
@@ -87,7 +87,7 @@
           "emoji": "☁️",
           "zustand": "Bedeckt",
           "max": 27,
-          "min": 9,
+          "min": 10,
           "niederschlag": 0.0
         },
         {
@@ -95,7 +95,7 @@
           "datum": "09.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 30,
+          "max": 29,
           "min": 14,
           "niederschlag": 0.0
         },
@@ -104,8 +104,8 @@
           "datum": "10.08.",
           "emoji": "⛅",
           "zustand": "Teils bewölkt",
-          "max": 29,
-          "min": 16,
+          "max": 30,
+          "min": 18,
           "niederschlag": 0.0
         },
         {
@@ -113,8 +113,8 @@
           "datum": "11.08.",
           "emoji": "⛅",
           "zustand": "Teils bewölkt",
-          "max": 23,
-          "min": 11,
+          "max": 24,
+          "min": 14,
           "niederschlag": 0.0
         }
       ]
@@ -123,11 +123,11 @@
       "stadt": "Kierspe",
       "aktuell": {
         "temp": 20,
-        "gefuehlt": 19,
+        "gefuehlt": 18,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 7,
-        "luftfeuchte": 43,
+        "wind": 6,
+        "luftfeuchte": 46,
         "niederschlag": 0.0
       },
       "tage": [
@@ -185,8 +185,8 @@
         "gefuehlt": 21,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 10,
-        "luftfeuchte": 38,
+        "wind": 9,
+        "luftfeuchte": 40,
         "niederschlag": 0.0
       },
       "tage": [
@@ -205,7 +205,7 @@
           "emoji": "☁️",
           "zustand": "Bedeckt",
           "max": 29,
-          "min": 17,
+          "min": 16,
           "niederschlag": 0.0
         },
         {
@@ -213,7 +213,7 @@
           "datum": "09.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 31,
+          "max": 32,
           "min": 21,
           "niederschlag": 0.0
         },
