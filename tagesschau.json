@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "07.08.2026, 13:51 Uhr (UTC)",
+  "aktualisiert": "07.08.2026, 15:00 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Ceuta-Krise - Madrid droht Rom im Streit um Grenzkontrollen",
+      "description": "Als Reaktion auf den Ansturm auf die spanische Exklave Ceuta hat Italien das Schengen-Abkommen mit Madrid ausgesetzt. Nun fordert Spanien ultimativ ein Ende der Grenzkontrollen. Doch Rom zeigt sich unbeeindruckt.",
+      "pubDate": "2026-08-07T16:53:55+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Ebolavirus in DR Kongo verbreitet sich schneller als je zuvor",
+      "description": "In der DR Kongo ist die Zahl der bestätigten Ebola-Fälle nach Regierungsangaben auf mehr als 4.000 gestiegen. Gesundheitsexperten haben große Sorgen und wollen klären, ob eine Mutation die Ausbreitung begünstigt.",
+      "pubDate": "2026-08-07T16:46:17+02:00",
+      "bild": ""
+    },
     {
       "title": "ICE Berlin-Paris fällt wegen technischer Probleme vorerst aus",
       "description": "Der Direktzug zwischen Berlin und Paris sollte für die deutsch-französische Freundschaft stehen. Doch die Verbindung fällt nun auf unbestimmte Zeit aus. Grund sind technische Probleme mit einem Zugsicherungssystem.",
@@ -78,18 +90,6 @@
       "title": "Marktbericht: Gute Wirtschaftsdaten helfen DAX auf die Sprünge",
       "description": "Starke Exportdaten und ein Anstieg der Industrieproduktion sorgen für freundliche Stimmung an der Frankfurter Börse. Der DAX legt zum Ende der Woche mit neuem Rekordhoch leicht zu.",
       "pubDate": "2026-08-07T11:01:40+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wie sich einige Jugendliche in Ostdeutschland schleichend radikalisieren",
-      "description": "Ostalgie, soziale Medien und der Drang nach Rebellion - eine gefährliche Mischung, meint Lokaljournalistin Manuela Müller. Ihre Beobachtungen hat sie in einem Buch festgehalten: \"Die Jugend malt wieder Hakenkreuze\". Von Knut Cordsen.",
-      "pubDate": "2026-08-07T10:47:02+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ungarn schaltet Licht an Wahrzeichen wegen Energiekrise ab",
-      "description": "Ungewohnter Anblick für Einheimische und Touristen - oder besser gesagt ein Nicht-Anblick: Weil Ungarn Strom sparen muss, werden Wahrzeichen nachts nicht mehr angestrahlt. Wegen der Hitzewelle mangelt es an Kühlwasser für das AKW Paks.",
-      "pubDate": "2026-08-07T10:39:45+02:00",
       "bild": ""
     }
   ],
