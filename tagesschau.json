@@ -1,7 +1,31 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "07.08.2026, 15:00 Uhr (UTC)",
+  "aktualisiert": "07.08.2026, 16:25 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Marktbericht: Neuer DAX-Rekord nach US-Job-Daten",
+      "description": "Im Sog der Wall Street hat sich der DAX am Nachmittag zu neuen Höhen aufgeschwungen. In den USA schwächelt der Arbeitsmarkt - was Zinsängste der Anleger umgehend dämpfe und die Börse antrieb.",
+      "pubDate": "2026-08-07T18:17:53+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Erste Bundesländer lockern wegen des Niedrigwassers Lkw-Sonntagsfahrverbot",
+      "description": "Das Extrem-Niedrigwasser erschwert den Gütertransport auf dem Rhein. Nun lockern erste Bundesländer das Sonntagsfahrverbot für Lastwagen. Der Fachverband und ver.di sehen Probleme.",
+      "pubDate": "2026-08-07T17:54:48+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Ukraine greift erneut russischen Onlinehändler Wildberries an",
+      "description": "Seit einigen Wochen greift die Ukraine immer wieder Lagerhäuser des russischen Onlinehändlers Wildberries an. Russland nimmt derweil weiter ukrainische Ziele ins Visier - unter anderem im Schwarzen Meer.",
+      "pubDate": "2026-08-07T17:05:14+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Verdächtiger Drohnenflug über \"Patriot-Werft\"",
+      "description": "In Mechernich befindet sich ein wichtiger Bundeswehrstandort: Dort werden \"Patriot\"-Flugabwehrsysteme repariert. Nach Informationen von WDR, NDR und SZ soll es in der Nacht Drohnenüberflüge über der Kaserne gegeben haben.",
+      "pubDate": "2026-08-07T17:02:20+02:00",
+      "bild": ""
+    },
     {
       "title": "Ceuta-Krise - Madrid droht Rom im Streit um Grenzkontrollen",
       "description": "Als Reaktion auf den Ansturm auf die spanische Exklave Ceuta hat Italien das Schengen-Abkommen mit Madrid ausgesetzt. Nun fordert Spanien ultimativ ein Ende der Grenzkontrollen. Doch Rom zeigt sich unbeeindruckt.",
@@ -66,30 +90,6 @@
       "title": "Nationaler Sicherheitsrat tagt zu Vorfall mit Sprengstoff-Drohne",
       "description": "Nach dem Vorfall mit einer Sprengstoff-Drohne am Flughafen Leipzig/Halle hatte es Forderungen gegeben, der Nationale Sicherheitsrat müsse sich mit dem Thema befassen. Der hat nun getagt - unter Leitung von Kanzler Merz.",
       "pubDate": "2026-08-07T11:43:29+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wie gut ist Deutschland vor Drohnen geschützt?",
-      "description": "Der Flughafen Leipzig/Halle ist offenbar nur knapp einer Katastrophe entkommen. Wie konnte die mit Sprengstoff ausgerüstete Drohne so weit kommen? Wer ist für die Luftsicherheit zuständig? Und wo gibt es Lücken? Von Claudia Kornmeier.",
-      "pubDate": "2026-08-07T11:19:43+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kommunen fordern \"Kraftakt\" für Hitzeschutz und Wasserversorgung",
-      "description": "Deutschlands Flüsse führen Niedrigwasser, die Böden sind trocken, Städte überhitzt - und mancherorts wird auch die Trinkwasserversorgung knapp. Der Städte- und Gemeindebund fordert nun Hilfe von Bund und Ländern.",
-      "pubDate": "2026-08-07T11:13:58+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kommentar: Klimaschutz muss Chefsache werden",
-      "description": "Deutschland spürt gerade die dramatischen Folgen des Klimawandels. Doch die Bundesregierung lässt den Umweltminister auf verlorenem Posten kämpfen. Der Kanzler muss Klimaschutz zur Chefsache machen, meint Jakob Mayr. Das hilft auch der Wirtschaft.",
-      "pubDate": "2026-08-07T11:13:30+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Gute Wirtschaftsdaten helfen DAX auf die Sprünge",
-      "description": "Starke Exportdaten und ein Anstieg der Industrieproduktion sorgen für freundliche Stimmung an der Frankfurter Börse. Der DAX legt zum Ende der Woche mit neuem Rekordhoch leicht zu.",
-      "pubDate": "2026-08-07T11:01:40+02:00",
       "bild": ""
     }
   ],
