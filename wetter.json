@@ -1,15 +1,74 @@
 {
-  "aktualisiert": "07.08.2026, 22:27 Uhr",
+  "aktualisiert": "07.08.2026, 23:05 Uhr",
   "staedte": [
     {
-      "stadt": "Werdohl",
+      "stadt": "Lüdenscheid",
       "aktuell": {
-        "temp": 13,
+        "temp": 14,
         "gefuehlt": 13,
         "zustand": "Klar",
         "emoji": "☀️",
+        "wind": 7,
+        "luftfeuchte": 67,
+        "niederschlag": 0.0
+      },
+      "tage": [
+        {
+          "wochentag": "Samstag",
+          "datum": "08.08.",
+          "emoji": "⛅",
+          "zustand": "Teils bewölkt",
+          "max": 26,
+          "min": 12,
+          "niederschlag": 0.0
+        },
+        {
+          "wochentag": "Sonntag",
+          "datum": "09.08.",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
+          "max": 29,
+          "min": 18,
+          "niederschlag": 0.0
+        },
+        {
+          "wochentag": "Montag",
+          "datum": "10.08.",
+          "emoji": "🌦️",
+          "zustand": "Leichter Nieselregen",
+          "max": 27,
+          "min": 17,
+          "niederschlag": 0.4
+        },
+        {
+          "wochentag": "Dienstag",
+          "datum": "11.08.",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
+          "max": 21,
+          "min": 11,
+          "niederschlag": 0.0
+        },
+        {
+          "wochentag": "Mittwoch",
+          "datum": "12.08.",
+          "emoji": "☀️",
+          "zustand": "Klar",
+          "max": 26,
+          "min": 11,
+          "niederschlag": 0.0
+        }
+      ]
+    },
+    {
+      "stadt": "Werdohl",
+      "aktuell": {
+        "temp": 12,
+        "gefuehlt": 12,
+        "zustand": "Klar",
+        "emoji": "☀️",
         "wind": 3,
-        "luftfeuchte": 79,
+        "luftfeuchte": 84,
         "niederschlag": 0.0
       },
       "tage": [
@@ -68,15 +127,15 @@
         "zustand": "Klar",
         "emoji": "☀️",
         "wind": 5,
-        "luftfeuchte": 73,
+        "luftfeuchte": 75,
         "niederschlag": 0.0
       },
       "tage": [
         {
           "wochentag": "Samstag",
           "datum": "08.08.",
-          "emoji": "☁️",
-          "zustand": "Bedeckt",
+          "emoji": "🌤️",
+          "zustand": "Überwiegend klar",
           "max": 26,
           "min": 12,
           "niederschlag": 0.0
@@ -86,7 +145,7 @@
           "datum": "09.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 27,
+          "max": 28,
           "min": 18,
           "niederschlag": 0.0
         },
@@ -122,12 +181,12 @@
     {
       "stadt": "Bochum",
       "aktuell": {
-        "temp": 19,
+        "temp": 18,
         "gefuehlt": 17,
         "zustand": "Klar",
         "emoji": "☀️",
-        "wind": 9,
-        "luftfeuchte": 51,
+        "wind": 8,
+        "luftfeuchte": 60,
         "niederschlag": 0.0
       },
       "tage": [
@@ -136,7 +195,7 @@
           "datum": "08.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 29,
+          "max": 28,
           "min": 16,
           "niederschlag": 0.0
         },
@@ -145,8 +204,8 @@
           "datum": "09.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 29,
-          "min": 21,
+          "max": 31,
+          "min": 20,
           "niederschlag": 0.0
         },
         {
@@ -179,7 +238,5 @@
       ]
     }
   ],
-  "fehler": [
-    "Lüdenscheid: <urlopen error _ssl.c:983: The handshake operation timed out>"
-  ]
+  "fehler": []
 }
