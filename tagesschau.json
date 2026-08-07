@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "07.08.2026, 05:45 Uhr (UTC)",
+  "aktualisiert": "07.08.2026, 07:27 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Warum die Pläne für die Pflegereform auf Kritik stoßen",
+      "description": "Die Pflegereform dürfte der erste Härtetest für den neuen Gesundheitsminister Linnemann werden. An den Plänen gibt es auch in der Regierungskoalition Kritik. SPD und CSU pochen auf Änderungen. Von Jan Zimmermann.",
+      "pubDate": "2026-08-07T09:18:04+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Mindestens sieben Tote bei Schüssen an Schule in Thailand",
+      "description": "Ein 14-Jähriger hat laut Polizei an seiner Schule um sich geschossen und drei Lehrer und drei Schüler getötet und mindestens 15 verletzt. Anschließend tötete er sich offenbar selbst.",
+      "pubDate": "2026-08-07T08:57:00+02:00",
+      "bild": ""
+    },
     {
       "title": "Marktbericht: Anleger vor US-Jobdaten zurückhaltend",
       "description": "Vor wichtigen Daten vom US-Arbeitsmarkt möchten die Anleger die Risiken gering halten. Die Vorgaben aus den USA und Japan sind schwach, auch der DAX dürfte zunächst nur wenig weiterkommen.",
@@ -39,9 +51,9 @@
       "bild": ""
     },
     {
-      "title": "Trotz Supreme Court-Niederlage: Trump schränkt erneut Geburtsrecht ein",
-      "description": "Wer in den USA geboren wird, bekommt automatisch die Staatsbürgerschaft. Trump versuchte, diese Praxis zu Fall zu bringen - und scheiterte. Das hält ihn aber nicht ab, es erneut zu versuchen. Nun mit zwei neuen Dekreten.",
-      "pubDate": "2026-08-07T04:14:30+02:00",
+      "title": "Trump unternimmt neuen Vorstoß für Beschränkung von US-Geburtsrecht",
+      "description": "Wer in den USA geboren wird, bekommt automatisch die Staatsbürgerschaft. Trump versuchte, diese Praxis zu Fall zu bringen - und scheiterte. Das hält ihn aber nicht ab, es mit neuen Dekreten erneut zu versuchen.",
+      "pubDate": "2026-08-07T09:21:33+02:00",
       "bild": ""
     },
     {
@@ -78,18 +90,6 @@
       "title": "ARD-DeutschlandTrend: AfD legt zu, Union verliert weiter",
       "description": "Nach der Kabinettsumbildung verliert die Union weiter an Zuspruch. Dafür legt die AfD bei der Sonntagsfrage des ARD-DeutschlandTrends zu - und erreicht den bisher höchsten Wert. Von Claudia Müller.",
       "pubDate": "2026-08-06T18:00:12+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Reform des Gewaltschutzgesetzes: Was können Fußfesseln leisten?",
-      "description": "Der Anschlag auf den CSD in Berlin hat eine Sicherheitsdebatte entfacht. Unter anderem wird über elektronische Fußfesseln diskutiert, die ab Juli 2027 bundesweit eingesetzt werden. Doch können Straftaten so vermieden werden? Von Michael Stang.",
-      "pubDate": "2026-08-06T17:21:15+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Keine Infos zum Netzwerk des Abdul B.: Das Schweigen des BND",
-      "description": "Schon vor dem Anschlag waren Berliner Sicherheitsbehörden höchst besorgt über die Radikalisierung des mutmaßlichen späteren Attentäters. Sie hofften auf Hilfe des Bundesnachrichtendienstes. Vergebens. Von Michael Götschenberg.",
-      "pubDate": "2026-08-06T17:19:48+02:00",
       "bild": ""
     }
   ],
