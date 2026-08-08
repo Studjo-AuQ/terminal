@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "08.08.2026, 07:31 Uhr (UTC)",
+  "aktualisiert": "08.08.2026, 08:50 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Vor 70 Jahren: Das Unglück von Marcinelle veränderte Europa",
+      "description": "Am 8. August 1956 ereignete sich im belgischen Marcinelle eines der schwersten Grubenunglücke Europas. 262 Bergleute aus zwölf Nationen starben. Das Unglück beeinflusste auch die Entwicklung hin zur EU. Von Andreas Meyer-Feist.",
+      "pubDate": "2026-08-08T10:49:54+02:00",
+      "bild": ""
+    },
     {
       "title": "Rotes Meer: Wie die Huthi den Iran-Krieg verändern",
       "description": "Im Jemen nimmt die Gewalt wieder zu, zudem greifen die Huthi inzwischen fast täglich Schiffe im Roten Meer vor Saudi-Arabien an. Wird aus dem jemenitischen Bürgerkrieg und dem Iran-Krieg nun ein zusammenhängender Konflikt? Von Anna Osius.",
@@ -84,12 +90,6 @@
       "title": "Marktbericht: Neuer DAX-Rekord nach US-Job-Daten",
       "description": "Im Sog der Wall Street hat sich der DAX am Nachmittag zu neuen Höhen aufgeschwungen. In den USA schwächelt der Arbeitsmarkt - was Zinsängste der Anleger umgehend dämpfe und die Börse antrieb.",
       "pubDate": "2026-08-07T18:17:53+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Mehrere Bundesländer lockern Lkw-Sonntagsfahrverbot",
-      "description": "Das Niedrigwasser erschwert den Gütertransport auf dem Rhein. Nun haben mehrere Bundesländer das Sonntagsfahrverbot für Lkw gelockert. Auf den Autobahnen könnte es schon an diesem Wochenende noch voller werden.",
-      "pubDate": "2026-08-07T22:35:25+02:00",
       "bild": ""
     }
   ],
