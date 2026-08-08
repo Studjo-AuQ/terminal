@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "08.08.2026, 19:35 Uhr (UTC)",
+  "aktualisiert": "08.08.2026, 20:37 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Paris führt Helmpflicht für E-Roller-Fahrer ein",
+      "description": "Vor allem in Großstädten flitzen Menschen gerne mit E-Rollern durch die Straßen. Doch die Zahl schwerer Unfälle mit den Fahrzeugen steigt. Die Pariser Verwaltung schreibt ab sofort das Tragen von Schutzausrüstung vor.",
+      "pubDate": "2026-08-08T21:39:39+02:00",
+      "bild": ""
+    },
     {
       "title": "Mutmaßlich ukrainische Drohne explodiert in Bulgarien",
       "description": "In Bulgarien ist eine Drohne explodiert. Dabei handele es sich um einen häufig von der Ukraine verwendeten Typen, so Bulgariens Regierung. Von Absicht gehe man nicht aus - Kiew erklärte sich zur Aufklärung bereit.",
@@ -84,12 +90,6 @@
       "title": "\"Bauernhofeffekt\": Warum der Kuhstall Kinder vor Allergien schützen kann",
       "description": "Im Kuhstall gibt es unzählige Bakterien. Ein Forschungs-Team aus München hat das Rätsel gelöst, wie diese das kindliche Immunsystem beeinflussen und vor Allergien schützen können. Von Monika Haas.",
       "pubDate": "2026-08-08T12:10:21+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ukraine meldet Tote bei Luftangriffen auf Vorort von Kiew",
-      "description": "Bei einer nächtlichen Angriffswelle sind in der Ukraine vier Menschen getötet worden. Getroffen wurden Wohnhäuser und Öltanks in und um Kiew. In Russland brannten nach ukrainischen Drohnenangriffen zwei Ölraffinerien.",
-      "pubDate": "2026-08-08T11:35:38+02:00",
       "bild": ""
     }
   ],
