@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "08.08.2026, 09:44 Uhr (UTC)",
+  "aktualisiert": "08.08.2026, 10:40 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "\"Bauernhofeffekt\": Warum der Kuhstall Kinder vor Allergien schützen kann",
+      "description": "Im Kuhstall gibt es unzählige Bakterien. Ein Forschungs-Team aus München hat das Rätsel gelöst, wie diese das kindliche Immunsystem beeinflussen und vor Allergien schützen können. Von Monika Haas.",
+      "pubDate": "2026-08-08T12:10:21+02:00",
+      "bild": ""
+    },
     {
       "title": "Ukraine meldet Tote bei Luftangriffen auf Vorort von Kiew",
       "description": "Bei einer nächtlichen Angriffswelle sind in der Ukraine vier Menschen getötet worden. Getroffen wurden Wohnhäuser und Öltanks in und um Kiew. In Russland brannten nach ukrainischen Drohnenangriffen zwei Ölraffinerien.",
@@ -84,12 +90,6 @@
       "title": "US-Senat beschließt verschärfte Russland-Sanktionen",
       "description": "Der US-Senat macht den Weg frei für neue Sanktionen gegen Russland. Das Gesetz ermöglicht unter anderem Strafmaßnahmen gegen die größten Abnehmer von russischem Öl und Gas. Nun muss noch das Repräsentantenhaus darüber abstimmen.",
       "pubDate": "2026-08-07T22:47:25+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Hitzewelle im Gazastreifen: \"Die Zelte sind wie stickige Backöfen\"",
-      "description": "Hunderttausende Menschen leben noch immer in Notunterkünften in Gaza-Stadt. Krankheiten, Ungeziefer und verunreinigtes Wasser belasten ihre Gesundheit - bei Temperaturen von rund 40 Grad. Von Jörg Poppendieck.",
-      "pubDate": "2026-08-07T21:22:13+02:00",
       "bild": ""
     }
   ],
