@@ -1,5 +1,5 @@
 {
-  "aktualisiert": "08.08.2026, 13:39 Uhr",
+  "aktualisiert": "08.08.2026, 14:24 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
@@ -8,16 +8,16 @@
         "gefuehlt": 25,
         "zustand": "Klar",
         "emoji": "☀️",
-        "wind": 3,
-        "luftfeuchte": 31,
+        "wind": 4,
+        "luftfeuchte": 32,
         "niederschlag": 0.0
       },
       "tage": [
         {
           "wochentag": "Samstag",
           "datum": "08.08.",
-          "emoji": "⛅",
-          "zustand": "Teils bewölkt",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
           "max": 26,
           "min": 11,
           "niederschlag": 0.0
@@ -37,7 +37,7 @@
           "emoji": "☁️",
           "zustand": "Bedeckt",
           "max": 26,
-          "min": 17,
+          "min": 18,
           "niederschlag": 0.0
         },
         {
@@ -64,11 +64,11 @@
       "stadt": "Werdohl",
       "aktuell": {
         "temp": 27,
-        "gefuehlt": 28,
+        "gefuehlt": 27,
         "zustand": "Klar",
         "emoji": "☀️",
-        "wind": 3,
-        "luftfeuchte": 34,
+        "wind": 5,
+        "luftfeuchte": 29,
         "niederschlag": 0.0
       },
       "tage": [
@@ -123,9 +123,9 @@
       "stadt": "Kierspe",
       "aktuell": {
         "temp": 25,
-        "gefuehlt": 25,
-        "zustand": "Überwiegend klar",
-        "emoji": "🌤️",
+        "gefuehlt": 24,
+        "zustand": "Klar",
+        "emoji": "☀️",
         "wind": 4,
         "luftfeuchte": 33,
         "niederschlag": 0.0
@@ -146,7 +146,7 @@
           "emoji": "☁️",
           "zustand": "Bedeckt",
           "max": 29,
-          "min": 17,
+          "min": 18,
           "niederschlag": 0.0
         },
         {
@@ -155,7 +155,7 @@
           "emoji": "☁️",
           "zustand": "Bedeckt",
           "max": 26,
-          "min": 17,
+          "min": 16,
           "niederschlag": 0.0
         },
         {
@@ -182,11 +182,11 @@
       "stadt": "Bochum",
       "aktuell": {
         "temp": 27,
-        "gefuehlt": 26,
+        "gefuehlt": 27,
         "zustand": "Klar",
         "emoji": "☀️",
-        "wind": 5,
-        "luftfeuchte": 24,
+        "wind": 4,
+        "luftfeuchte": 27,
         "niederschlag": 0.0
       },
       "tage": [
@@ -204,8 +204,8 @@
           "datum": "09.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 30,
-          "min": 21,
+          "max": 31,
+          "min": 20,
           "niederschlag": 0.0
         },
         {
