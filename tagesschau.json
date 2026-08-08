@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "07.08.2026, 23:39 Uhr (UTC)",
+  "aktualisiert": "08.08.2026, 02:04 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "OpenAI pausiert teils Entwicklung von KI-Modell wegen Sicherheitsbedenken",
+      "description": "OpenAI hat Zweifel an einem seiner neuen Modelle - und bremst nun die interne Entwicklung. Grund sind Sicherheitsbedenken durch \"kritische\" Fähigkeiten von \"Astra\". Cyberangriffe auf hochsichere Ziele könnten möglich sein.",
+      "pubDate": "2026-08-08T03:45:58+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Pride-Parade in Prag unter verschärften Sicherheitsvorkehrungen",
+      "description": "Zehntausende queere Menschen wollen heute bei der Prager Pride für ihre Rechte demonstrieren. Doch der Anschlag beim Berliner CSD bewegt die Community im Land. Sicherheitsvorkehrungen wurden verschärft. Von Paul Vorreiter.",
+      "pubDate": "2026-08-08T02:41:36+02:00",
+      "bild": ""
+    },
     {
       "title": "Streit mit Italien über Ceuta - Spanien führt Grenzkontrollen ein",
       "description": "Als Reaktion auf den Ansturm auf die spanische Exklave Ceuta hatte Italien das Schengen-Abkommen mit Madrid ausgesetzt. Spanien forderte ein Ende - und kündigt nun seinerseits Grenzkontrollen an.",
@@ -78,18 +90,6 @@
       "title": "ICE Berlin-Paris fällt wegen technischer Probleme vorerst aus",
       "description": "Der Direktzug zwischen Berlin und Paris sollte für die deutsch-französische Freundschaft stehen. Doch die Verbindung fällt nun auf unbestimmte Zeit aus. Grund sind technische Probleme mit einem Zugsicherungssystem.",
       "pubDate": "2026-08-07T15:49:03+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Iran-Krieg: Ein bulgarisches Dorf gegen US-Flugzeuge",
-      "description": "US-Tankflugzeuge dürfen einen bulgarischen Militärflughafen nutzen, um von dort nach Nahost zu fliegen. Die Menschen vor Ort sind besorgt - denn Irans Regime droht nun Bulgarien. Von Clemens Verenkotte.",
-      "pubDate": "2026-08-07T15:01:27+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Türkei, Pakistan und Saudi-Arabien schließen Verteidigungsabkommen",
-      "description": "Vor dem Hintergrund des Nahost-Kriegs haben sich die Türkei, Pakistan und Saudi-Arabien auf ein Verteidigungsabkommen geeinigt. Jeder Angriff auf eines der Länder gelte nun als Angriff auf alle drei Bündnispartner.",
-      "pubDate": "2026-08-07T15:20:09+02:00",
       "bild": ""
     }
   ],
