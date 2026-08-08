@@ -1,14 +1,14 @@
 {
-  "aktualisiert": "08.08.2026, 22:55 Uhr",
+  "aktualisiert": "08.08.2026, 23:21 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
-        "temp": 19,
-        "gefuehlt": 17,
+        "temp": 18,
+        "gefuehlt": 16,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 9,
+        "wind": 10,
         "luftfeuchte": 48,
         "niederschlag": 0.0
       },
@@ -64,9 +64,9 @@
       "stadt": "Werdohl",
       "aktuell": {
         "temp": 16,
-        "gefuehlt": 16,
-        "zustand": "Überwiegend klar",
-        "emoji": "🌤️",
+        "gefuehlt": 15,
+        "zustand": "Klar",
+        "emoji": "☀️",
         "wind": 3,
         "luftfeuchte": 71,
         "niederschlag": 0.0
@@ -181,10 +181,10 @@
     {
       "stadt": "Bochum",
       "aktuell": {
-        "temp": 23,
+        "temp": 22,
         "gefuehlt": 21,
-        "zustand": "Teils bewölkt",
-        "emoji": "⛅",
+        "zustand": "Überwiegend klar",
+        "emoji": "🌤️",
         "wind": 6,
         "luftfeuchte": 39,
         "niederschlag": 0.0
