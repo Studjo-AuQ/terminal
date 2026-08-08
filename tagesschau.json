@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "08.08.2026, 02:04 Uhr (UTC)",
+  "aktualisiert": "08.08.2026, 03:51 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Restaurants geben reduzierte Mehrwertsteuer kaum weiter",
+      "description": "Im Januar wurde der Mehrwertsteuersatz auf Speisen in der Gastronomie reduziert. Eine neue Befragung zeigt, dass die große Mehrheit der Betriebe ihre Preise daraufhin nicht gesenkt hat. Von David Zajonz.",
+      "pubDate": "2026-08-08T05:37:50+02:00",
+      "bild": ""
+    },
     {
       "title": "OpenAI pausiert teils Entwicklung von KI-Modell wegen Sicherheitsbedenken",
       "description": "OpenAI hat Zweifel an einem seiner neuen Modelle - und bremst nun die interne Entwicklung. Grund sind Sicherheitsbedenken durch \"kritische\" Fähigkeiten von \"Astra\". Cyberangriffe auf hochsichere Ziele könnten möglich sein.",
@@ -84,12 +90,6 @@
       "title": "Ebolavirus in DR Kongo verbreitet sich schneller als je zuvor",
       "description": "In der DR Kongo ist die Zahl der bestätigten Ebola-Fälle nach Regierungsangaben auf mehr als 4.000 gestiegen. Gesundheitsexperten haben große Sorgen und wollen klären, ob eine Mutation die Ausbreitung begünstigt.",
       "pubDate": "2026-08-07T16:46:17+02:00",
-      "bild": ""
-    },
-    {
-      "title": "ICE Berlin-Paris fällt wegen technischer Probleme vorerst aus",
-      "description": "Der Direktzug zwischen Berlin und Paris sollte für die deutsch-französische Freundschaft stehen. Doch die Verbindung fällt nun auf unbestimmte Zeit aus. Grund sind technische Probleme mit einem Zugsicherungssystem.",
-      "pubDate": "2026-08-07T15:49:03+02:00",
       "bild": ""
     }
   ],
