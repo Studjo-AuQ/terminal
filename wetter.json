@@ -1,15 +1,15 @@
 {
-  "aktualisiert": "08.08.2026, 23:21 Uhr",
+  "aktualisiert": "08.08.2026, 23:52 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
-        "temp": 18,
-        "gefuehlt": 16,
-        "zustand": "Bedeckt",
-        "emoji": "☁️",
+        "temp": 19,
+        "gefuehlt": 17,
+        "zustand": "Klar",
+        "emoji": "☀️",
         "wind": 10,
-        "luftfeuchte": 48,
+        "luftfeuchte": 45,
         "niederschlag": 0.0
       },
       "tage": [
@@ -18,8 +18,8 @@
           "datum": "09.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 29,
-          "min": 18,
+          "max": 28,
+          "min": 19,
           "niederschlag": 0.0
         },
         {
@@ -63,12 +63,12 @@
     {
       "stadt": "Werdohl",
       "aktuell": {
-        "temp": 16,
-        "gefuehlt": 15,
+        "temp": 15,
+        "gefuehlt": 14,
         "zustand": "Klar",
         "emoji": "☀️",
         "wind": 3,
-        "luftfeuchte": 71,
+        "luftfeuchte": 70,
         "niederschlag": 0.0
       },
       "tage": [
@@ -124,10 +124,10 @@
       "aktuell": {
         "temp": 18,
         "gefuehlt": 16,
-        "zustand": "Bedeckt",
-        "emoji": "☁️",
-        "wind": 10,
-        "luftfeuchte": 52,
+        "zustand": "Klar",
+        "emoji": "☀️",
+        "wind": 11,
+        "luftfeuchte": 50,
         "niederschlag": 0.0
       },
       "tage": [
@@ -182,11 +182,11 @@
       "stadt": "Bochum",
       "aktuell": {
         "temp": 22,
-        "gefuehlt": 21,
-        "zustand": "Überwiegend klar",
-        "emoji": "🌤️",
-        "wind": 6,
-        "luftfeuchte": 39,
+        "gefuehlt": 20,
+        "zustand": "Klar",
+        "emoji": "☀️",
+        "wind": 11,
+        "luftfeuchte": 43,
         "niederschlag": 0.0
       },
       "tage": [
@@ -195,7 +195,7 @@
           "datum": "09.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 32,
+          "max": 31,
           "min": 20,
           "niederschlag": 0.0
         },
