@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "08.08.2026, 11:34 Uhr (UTC)",
+  "aktualisiert": "08.08.2026, 13:02 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Mehr als 200 Menschen vor Waldbrand am Gardasee in Sicherheit gebracht",
+      "description": "Am bei Urlaubern beliebten Gardasee in Italien ist ein Waldbrand ausgebrochen. Hitze und starker Wind erschweren die Löscharbeiten. Die Feuerwehr versucht vor allem, Wohnhäuser zu schützen.",
+      "pubDate": "2026-08-08T14:18:53+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Ukraine: Schutzlos gegen ballistische Raketen",
+      "description": "Russland greift die Ukraine verstärkt mit ballistischen Raketen an - mit tödlichen Folgen. Die Zahl ziviler Opfer stieg zuletzt erheblich, auch weil der Ukraine die Munition zur Flugabwehr fehlt. Von Rebecca Barth.",
+      "pubDate": "2026-08-08T13:49:08+02:00",
+      "bild": ""
+    },
     {
       "title": "US-Senat bestätigt Todd Blanche als Justizminister",
       "description": "Die Personalie war selbst in Trumps eigenen Reihen umstritten: Nur mit knapper Mehrheit hat der US-Senat Todd Blanche, Trumps früheren Anwalt, als Justizminister bestätigt. Auch zwei Republikanerinnen stimmten gegen ihn.",
@@ -58,7 +70,7 @@
     },
     {
       "title": "CDU-Spitze würde AfD-Koalition im Osten nicht dulden",
-      "description": "Normalerweise hält sich eine Bundespartei aus der Regierungsbildung in den Ländern heraus. Mit Blick auf die Wahl in Sachsen-Anhalt aber stellte Unionsfraktionschef Frei nun klar: Eine Koalition der Ost-CDU mit der AfD würde nicht geduldet.",
+      "description": "Normalerweise hält sich eine Bundespartei aus der Landespolitik heraus. Mit Blick auf die Wahl in Sachsen-Anhalt aber stellte Unionsfraktionschef Frei nun klar: Eine Koalition ostdeutscher Landesverbände mit der AfD würde nicht geduldet.",
       "pubDate": "2026-08-08T08:25:50+02:00",
       "bild": ""
     },
@@ -78,18 +90,6 @@
       "title": "OpenAI pausiert teils Entwicklung von KI-Modell wegen Sicherheitsbedenken",
       "description": "OpenAI hat Zweifel an einem seiner neuen Modelle - und pausiert teilweise die interne Entwicklung. Grund sind Sicherheitsbedenken durch \"kritische\" Fähigkeiten von \"Astra\". Cyberangriffe auf hochsichere Ziele könnten möglich sein.",
       "pubDate": "2026-08-08T03:45:58+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Pride-Parade in Prag unter verschärften Sicherheitsvorkehrungen",
-      "description": "Zehntausende queere Menschen wollen heute bei der Prager Pride für ihre Rechte demonstrieren. Doch der Anschlag beim Berliner CSD bewegt die Community im Land. Sicherheitsvorkehrungen wurden verschärft. Von Paul Vorreiter.",
-      "pubDate": "2026-08-08T02:41:36+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Streit mit Italien über Ceuta - Spanien führt Grenzkontrollen ein",
-      "description": "Als Reaktion auf den Ansturm auf die spanische Exklave Ceuta hatte Italien das Schengen-Abkommen mit Madrid ausgesetzt. Spanien forderte ein Ende - und kündigt nun seinerseits Grenzkontrollen an.",
-      "pubDate": "2026-08-07T22:09:51+02:00",
       "bild": ""
     }
   ],
