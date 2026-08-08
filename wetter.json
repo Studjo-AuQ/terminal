@@ -1,5 +1,5 @@
 {
-  "aktualisiert": "08.08.2026, 15:55 Uhr",
+  "aktualisiert": "08.08.2026, 16:24 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
@@ -67,8 +67,8 @@
         "gefuehlt": 26,
         "zustand": "Klar",
         "emoji": "☀️",
-        "wind": 3,
-        "luftfeuchte": 29,
+        "wind": 2,
+        "luftfeuchte": 30,
         "niederschlag": 0.0
       },
       "tage": [
@@ -88,7 +88,7 @@
           "zustand": "Leichter Regen",
           "max": 30,
           "min": 14,
-          "niederschlag": 0.0
+          "niederschlag": 0.1
         },
         {
           "wochentag": "Montag",
