@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "09.08.2026, 08:52 Uhr (UTC)",
+  "aktualisiert": "09.08.2026, 09:48 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Russlands Krieg in der Ukraine: Stundenlanger Luftalarm in Odessa",
+      "description": "Russische Angriffe in der Nacht, etwa auf die Hafenstadt Odessa, offenbaren erneut die Schwäche der ukrainischen Flugabwehr. Nach gegenseitigen Attacken werden auf beiden Seiten Tote gemeldet.",
+      "pubDate": "2026-08-09T11:19:11+02:00",
+      "bild": ""
+    },
     {
       "title": "Brasilien: Abholzung im Amazonas auf Zehnjahrestief",
       "description": "Im brasilianischen Amazonasgebiet ist die Abholzung deutlich zurückgegangen. Präsident Lula bezeichnet die Entwicklung als \"fantastisch\". Bis 2030 will er die Entwaldung vollständig stoppen.",
@@ -16,8 +22,8 @@
     },
     {
       "title": "Bilger will Gehälter von Bahnmanagern an Ziele knüpfen",
-      "description": "Der neue Verkehrsminister Bilger erhöht den Druck auf die Bahnspitze. Erfüllt der Konzern Ziele wie die Pünktlichkeitsquoten nicht, soll sich das einem Medienbericht zufolge auf die Gehälter von Bahnmanagern auswirken.",
-      "pubDate": "2026-08-09T06:34:19+02:00",
+      "description": "Der neue Verkehrsminister Bilger will den Druck auf die Bahnspitze erhöhen. Erfüllt der Konzern Ziele wie die Pünktlichkeitsquoten nicht, soll sich das auf die Gehälter von Bahnmanagern auswirken. Die Idee hatte auch sein Vorgänger schon.",
+      "pubDate": "2026-08-09T11:30:21+02:00",
       "bild": ""
     },
     {
@@ -84,12 +90,6 @@
       "title": "Was das Bankensterben für Kunden und Mittelstand heißt",
       "description": "Wenn die Hausbank schließt, werden Wege für Kundinnen und Kunden oft länger. Und für den Mittelstand kann das Investitionen erschweren. Größere Banken bieten aber auch neue Perspektiven. Von Johannes Lenz.",
       "pubDate": "2026-08-08T17:36:31+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Hai-Sichtungen vor New York trüben den Badespaß",
-      "description": "Ein Hai-Biss vor New Yorks Küste hatte für Schlagzeilen gesorgt. Immer wieder werden die Fische vor der Millionenmetropole gesichtet - viele Arten sind dort heimisch. Drohnen sollen nun weitere Zwischenfälle verhindern. Von Benjamin Best.",
-      "pubDate": "2026-08-08T17:28:38+02:00",
       "bild": ""
     }
   ],
