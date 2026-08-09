@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "09.08.2026, 22:38 Uhr (UTC)",
+  "aktualisiert": "09.08.2026, 23:37 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Pentagon ruft Rüstungsindustrie zu schnellerer Waffenproduktion auf",
+      "description": "Durch den Iran-Krieg sind die Raketenbestände der USA Berichten zufolge massiv geschrumpft. Die Trump-Regierung bestreitet das - doch nun ruft das Pentagon die Rüstungsindustrie auf, schneller Waffen zu produzieren.",
+      "pubDate": "2026-08-10T01:01:26+02:00",
+      "bild": ""
+    },
     {
       "title": "Selenskyj droht mit \"angemessener Antwort\" auf russische Angriffe",
       "description": "Russland hat am Sonntag die ukrainische Küstenregion Odessa schwer getroffen. Präsident Selenskyj kündigte nun eine \"angemessene Antwort an. Der Krieg werde \"für alle Russen zu Hause\" immer spürbarer werden.",
@@ -84,12 +90,6 @@
       "title": "Brasilien: Abholzung im Amazonas auf Zehnjahrestief",
       "description": "Im brasilianischen Amazonasgebiet ist die Abholzung deutlich zurückgegangen. Präsident Lula bezeichnet die Entwicklung als \"fantastisch\". Bis 2030 will er die Entwaldung vollständig stoppen.",
       "pubDate": "2026-08-09T10:13:27+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Straße von Hormus: Iran pocht auf Zugeständnisse der USA",
-      "description": "Iran und Oman haben sich bei den Verhandlungen über die Straße von Hormus offenbar angenähert. Doch zugleich stellt Teheran gegenüber Washington Maximalforderungen, die für die USA inakzeptabel sein dürften.",
-      "pubDate": "2026-08-09T09:19:55+02:00",
       "bild": ""
     }
   ],
