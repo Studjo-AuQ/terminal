@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "10.08.2026, 17:28 Uhr (UTC)",
+  "aktualisiert": "10.08.2026, 18:27 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Weitere Bundesländer lockern Lkw-Sonntagsfahrverbot",
+      "description": "Flüsse wie Rhein und Elbe haben derzeit historische Tiefstände, immer weniger Güter können per Schiff transportiert werden. Zwei weitere Bundesländer haben deshalb jetzt das Sonntagsfahrverbot für Lkw gelockert.",
+      "pubDate": "2026-08-10T20:12:50+02:00",
+      "bild": ""
+    },
     {
       "title": "Flughafen Leipzig/Halle - Die Methode \"Drohne\"",
       "description": "Laut Sicherheitskreisen soll der mutmaßliche Anschlagsversuch am Flughafen Leipzig Parallelen zu der spektakulären Anschlagsserie auf Luftfrachtpakete aufweisen. Recherchen von WDR, NDR und SZ zeigen, wie schon damals Drohnen eine wichtige Rolle spielten.",
@@ -52,8 +58,8 @@
     },
     {
       "title": "Mehr als 50 Tote bei Erdbeben in Kolumbien",
-      "description": "Bei einem schweren Erdbeben der Stärke 7,4 in Kolumbien sind mehr als 50 Menschen ums Leben gekommen. Der Geologische Dienst des Landes spricht vom schwersten Erdbeben seit einem Jahrzehnt.",
-      "pubDate": "2026-08-10T19:03:39+02:00",
+      "description": "Bei einem schweren Erdbeben der Stärke 7,4 in Kolumbien sind mindestens 50 Menschen ums Leben gekommen. Der Geologische Dienst des Landes spricht vom schwersten Erdbeben seit einem Jahrzehnt.",
+      "pubDate": "2026-08-10T19:32:46+02:00",
       "bild": ""
     },
     {
@@ -84,12 +90,6 @@
       "title": "Weltsozialforum: \"Wir müssen auf die eigenen Ressourcen setzen\"",
       "description": "Alle zwei Jahre beschäftigt sich das Weltsozialforum mit der Lage des Globalen Südens. In diesem Jahr kam man in Benin zusammen - und hatte eine selbstbewusste Botschaft für die Staaten des Nordens. Von Georg Restle.",
       "pubDate": "2026-08-10T16:33:16+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Meloni und Frederiksen warnen gemeinsam vor \"unkontrollierter Migration\"",
-      "description": "Sie gehören unterschiedlichen politischen Lagern an, haben nun aber eine gemeinsame Erklärung veröffentlicht: Darin warnen die Ministerpräsidentinnen Italiens und Dänemarks vor \"unkontrollierter Migration\".",
-      "pubDate": "2026-08-10T16:17:41+02:00",
       "bild": ""
     }
   ],
