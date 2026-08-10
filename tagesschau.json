@@ -1,7 +1,25 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "10.08.2026, 09:42 Uhr (UTC)",
+  "aktualisiert": "10.08.2026, 11:13 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "VdP-Zahlen: Mieten in Deutschland ziehen deutlich an",
+      "description": "Der Mangel an Wohnraum lässt die Mieten in Deutschland deutlich steigen, zeigen Daten der Pfandbriefbanken - am stärksten in Düsseldorf. In Berlin wird weiter über die Enteignung von Wohnungskonzernen diskutiert.",
+      "pubDate": "2026-08-10T12:36:03+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Mehrere Tote bei ukrainischem Drohnenangriff in Russland",
+      "description": "Es soll einer der bislang schwersten Drohnenangriffe der Ukraine auf Russland gewesen sein: Tief im Hinterland wurden dabei mehrere Menschen getötet und verletzt. Ziel war offenbar erneut die russische Ölindustrie.",
+      "pubDate": "2026-08-10T12:58:23+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Warum werden in Malta kaum Asylanträge gestellt?",
+      "description": "Migranten bedrängen die Grenzzäune der spanischen Exklave Ceuta, auf der italienischen Insel Lampedusa kommen seit Jahren viele Migranten an, in Griechenland auch. Doch in Malta werden kaum Asylanträge gestellt. Woran liegt das? Von Lisa Weiß.",
+      "pubDate": "2026-08-10T12:01:02+02:00",
+      "bild": ""
+    },
     {
       "title": "Anteil junger Menschen in Deutschland bleibt historisch niedrig",
       "description": "Deutschland verliert seine Jugend: Der Anteil junger Menschen bleibt auf einem historisch niedrigen Niveau. Das zeigen Daten des Statistischen Bundesamtes. Besonders in Ostdeutschland fehlen junge Leute.",
@@ -11,7 +29,7 @@
     {
       "title": "Auch Bilger will Drohnenabwehr an deutschen Flughäfen verbessern",
       "description": "Seit dem Drohnenvorfall in Leipzig wird über bessere Sicherheitsmaßnahmen an deutschen Flughäfen diskutiert. Der Bundesverkehrsminister will nun bei der Abwehr nachbessern - andere plädieren für Bundeswehreinsätze auch im Innern.",
-      "pubDate": "2026-08-10T11:16:46+02:00",
+      "pubDate": "2026-08-10T11:43:49+02:00",
       "bild": ""
     },
     {
@@ -72,24 +90,6 @@
       "title": "Juni und Juli waren in Westeuropa so warm wie noch nie",
       "description": "Viele Teile Europas litten zuletzt unter Hitzewellen, Trockenheit und Waldbränden. Neue Daten zeigen nun: In Westeuropa waren die beiden vergangenen Monate so heiß wie noch nie. Auch in den Weltmeeren wurden Höchstwerte gemessen.",
       "pubDate": "2026-08-10T05:43:43+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Niedrigwasser: Binnenschiffer warnen vor Zweiteilung des Rheins",
-      "description": "Im Rhein werden derzeit historische Tiefstände gemessen. Das wirkt sich bereits stark auf die Schifffahrt aus. Ein Branchenverband warnt sogar, der Fluss könnte bald nicht mehr durchgängig befahrbar und damit zweigeteilt sein.",
-      "pubDate": "2026-08-10T03:17:33+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Erneut Waldbrände in Spanien und Frankreich ausgebrochen",
-      "description": "Nach Dürren und Hitzewellen hatten Spanien und Frankreich zuletzt mit riesigen Waldbränden zu kämpfen. Nun sind dort neue Feuer ausgebrochen, wieder mussten Hunderte Menschen vor den Flammen fliehen.",
-      "pubDate": "2026-08-10T02:30:55+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Pentagon ruft Rüstungsindustrie zu schnellerer Waffenproduktion auf",
-      "description": "Durch den Iran-Krieg sind die Raketenbestände der USA Berichten zufolge massiv geschrumpft. Die Trump-Regierung bestreitet das - doch nun ruft das Pentagon die Rüstungsindustrie auf, schneller Waffen zu produzieren.",
-      "pubDate": "2026-08-10T01:01:26+02:00",
       "bild": ""
     }
   ],
