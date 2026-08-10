@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "10.08.2026, 18:27 Uhr (UTC)",
+  "aktualisiert": "10.08.2026, 19:35 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Russische Oppositionspartei Jabloko von Parlamentswahl ausgeschlossen",
+      "description": "Die russische Oppositionspartei Jabloko stellt sich offen gegen den Krieg - nun hat das Oberste Gericht sie von der Parlamentswahl ausgeschlossen. Geklagt hatte eine kremltreue Partei. Jabloko will das Urteil anfechten.",
+      "pubDate": "2026-08-10T20:48:40+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Erdbeben in Kolumbien - viele Tote befürchtet",
+      "description": "Bei einem schweren Erdbeben in Kolumbien sind viele Menschen ums Leben gekommen. Der Präsident nannte inzwischen eine Zahl von 111 Toten. Der Geologische Dienst des Landes spricht vom schwersten Erdbeben seit einem Jahrzehnt.",
+      "pubDate": "2026-08-10T21:07:15+02:00",
+      "bild": ""
+    },
     {
       "title": "Weitere Bundesländer lockern Lkw-Sonntagsfahrverbot",
       "description": "Flüsse wie Rhein und Elbe haben derzeit historische Tiefstände, immer weniger Güter können per Schiff transportiert werden. Zwei weitere Bundesländer haben deshalb jetzt das Sonntagsfahrverbot für Lkw gelockert.",
@@ -57,12 +69,6 @@
       "bild": ""
     },
     {
-      "title": "Mehr als 50 Tote bei Erdbeben in Kolumbien",
-      "description": "Bei einem schweren Erdbeben der Stärke 7,4 in Kolumbien sind mindestens 50 Menschen ums Leben gekommen. Der Geologische Dienst des Landes spricht vom schwersten Erdbeben seit einem Jahrzehnt.",
-      "pubDate": "2026-08-10T19:32:46+02:00",
-      "bild": ""
-    },
-    {
       "title": "True Crime: Verzerrt die Lust am Verbrechen die Realität?",
       "description": "True Crime, etwa in Podcasts, fasziniert viele Menschen und gibt ihnen das Gefühl, Gefahren besser einschätzen zu können. Doch bizarre Kriminalfälle können die Wahrnehmung von Risiken auch verzerren. Von Lukas Baumann.",
       "pubDate": "2026-08-10T17:07:31+02:00",
@@ -84,12 +90,6 @@
       "title": "Russische Oppositionspartei kämpft gegen Wahlausschluss",
       "description": "Von allen Parteien, die bei der russischen Parlamentswahl antreten dürfen, lehnt nur Jabloko den Krieg gegen die Ukraine ab. Die kremltreue Partei Rodina hat deshalb geklagt. Sie will, dass Jabloko von der Wahl ausgeschlossen wird. Von E. Nembach.",
       "pubDate": "2026-08-10T16:37:47+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Weltsozialforum: \"Wir müssen auf die eigenen Ressourcen setzen\"",
-      "description": "Alle zwei Jahre beschäftigt sich das Weltsozialforum mit der Lage des Globalen Südens. In diesem Jahr kam man in Benin zusammen - und hatte eine selbstbewusste Botschaft für die Staaten des Nordens. Von Georg Restle.",
-      "pubDate": "2026-08-10T16:33:16+02:00",
       "bild": ""
     }
   ],
