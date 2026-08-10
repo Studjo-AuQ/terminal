@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "09.08.2026, 23:37 Uhr (UTC)",
+  "aktualisiert": "10.08.2026, 02:21 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Niedrigwasser: Binnenschiffer warnen vor Zweiteilung des Rheins",
+      "description": "Im Rhein werden derzeit historische Tiefstände gemessen. Das wirkt sich bereits stark auf die Schifffahrt aus. Ein Branchenverband warnt sogar, der Fluss könnte bald nicht mehr durchgängig befahrbar und damit zweigeteilt sein.",
+      "pubDate": "2026-08-10T03:17:33+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Erneut Waldbrände in Spanien und Frankreich ausgebrochen",
+      "description": "Nach Dürren und Hitzewellen hatten Spanien und Frankreich zuletzt mit riesigen Waldbränden zu kämpfen. Nun sind dort neue Feuer ausgebrochen, wieder mussten Hunderte Menschen vor den Flammen fliehen.",
+      "pubDate": "2026-08-10T02:30:55+02:00",
+      "bild": ""
+    },
     {
       "title": "Pentagon ruft Rüstungsindustrie zu schnellerer Waffenproduktion auf",
       "description": "Durch den Iran-Krieg sind die Raketenbestände der USA Berichten zufolge massiv geschrumpft. Die Trump-Regierung bestreitet das - doch nun ruft das Pentagon die Rüstungsindustrie auf, schneller Waffen zu produzieren.",
@@ -78,18 +90,6 @@
       "title": "Hamburgs Bürgermeister Tschentscher kritisiert schwarz-rote Steuerpolitik",
       "description": "Hamburgs Bürgermeister Tschentscher hat den Kurs der Bundesregierung scharf kritisiert. Er prangert \"Steuergeschenke aus der Gießkanne\" an, die Deutschland in die Enge trieben - und fordert eine Digitalsteuer für große Tech-Konzerne.",
       "pubDate": "2026-08-09T13:11:37+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Russlands Krieg in der Ukraine: Stundenlanger Luftalarm in Odessa",
-      "description": "Russische Angriffe in der Nacht, etwa auf die Hafenstadt Odessa, offenbaren erneut die Schwäche der ukrainischen Flugabwehr. Nach gegenseitigen Attacken werden auf beiden Seiten Tote gemeldet.",
-      "pubDate": "2026-08-09T11:19:11+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Brasilien: Abholzung im Amazonas auf Zehnjahrestief",
-      "description": "Im brasilianischen Amazonasgebiet ist die Abholzung deutlich zurückgegangen. Präsident Lula bezeichnet die Entwicklung als \"fantastisch\". Bis 2030 will er die Entwaldung vollständig stoppen.",
-      "pubDate": "2026-08-09T10:13:27+02:00",
       "bild": ""
     }
   ],
