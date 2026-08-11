@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "11.08.2026, 21:23 Uhr (UTC)",
+  "aktualisiert": "11.08.2026, 22:19 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "US-Militär beschießt Tanker im Golf von Oman",
+      "description": "Die USA blockieren Schiffe, die iranische Häfen ansteuern oder von diesen ablegen. Nun hat das US-Militär einen Tanker bei dem Versuch beschossen, die amerikanische Blockade zu durchbrechen.",
+      "pubDate": "2026-08-12T00:09:02+02:00",
+      "bild": ""
+    },
     {
       "title": "Mehrheit im Parlament für Abschaffung der Todesstrafe im Libanon",
       "description": "Im Libanon gibt es keine Todesstrafe mehr. Dafür hat eine Mehrheit der Abgeordneten im Parlament gestimmt - bis auf den Hisbollah-Block. Statt der Todesstrafe droht Verurteilten künftig lebenslange Haft mit schwerer Zwangsarbeit.",
@@ -84,12 +90,6 @@
       "title": "Longlist zum Deutschen Buchpreis: Sind das auch die 20 Besten?",
       "description": "Die meistdiskutierte Liste des Literaturbetriebs ist da: die Longlist zum Deutschen Buchpreis. Auf ihr stehen 20 Romane, die die Vielfalt des Erzählens zeigen sollen. Es lässt sich streiten, ob es auch die Besten sind. Von Alexander Solloch.",
       "pubDate": "2026-08-11T13:04:01+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Tausende Urlauber sitzen nach Ausbruch des Ätna auf Sizilien fest",
-      "description": "Mitten in der Hauptreisezeit sorgt der Ätna, einer der aktivsten Vulkane Europas, auf Sizilien für große Probleme. In Catania kann am Morgen nur eine einzige Maschine starten. Viele Touristen mussten ihren Aufenthalt verlängern.",
-      "pubDate": "2026-08-11T12:45:16+02:00",
       "bild": ""
     }
   ],
