@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "11.08.2026, 16:25 Uhr (UTC)",
+  "aktualisiert": "11.08.2026, 17:31 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Wie ist die Rechtslage nach dem Drohnenfund am Flughafen Leipzig?",
+      "description": "Der Flughafen Leipzig/Halle ist offenbar nur knapp einem Drohnen-Anschlag entgangen. Der Generalbundesanwalt ermittelt, auch das Völkerrecht könnte greifen. Eine rechtliche Einordnung von Christoph Kehlbach, ARD-Rechtsredaktion",
+      "pubDate": "2026-08-11T19:00:56+02:00",
+      "bild": ""
+    },
     {
       "title": "Marktbericht: DAX erreicht neue Höhen",
       "description": "Kommt es vielleicht doch bald zu einer Verständigung im Iran-Krieg? Neue Hoffnungen darauf haben den deutschen Aktienmarkt am Nachmittag beflügelt. Der DAX steigt auf ein neues Rekordhoch.",
@@ -84,12 +90,6 @@
       "title": "Spaniens Provinzen hoffen auf die \"SoFi\"-Touristen",
       "description": "Schutzbrillen, Eis in Sonnenform, Sonderangebote und vor allem viele Besucher - die Sonnenfinsternis soll Spanien einen wirtschaftlichen Schub bescheren. Vor allem in der Provinz hoffen die Menschen auf \"SoFi-Touristen\". Von Christian Sachsinger.",
       "pubDate": "2026-08-11T11:42:37+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Doppelt so viele Mädchen wegen Essstörungen im Krankenhaus",
-      "description": "Innerhalb von 20 Jahren hat sich die Zahl der jungen Frauen und Mädchen, die wegen Essstörungen im Krankenhaus behandelt werden mussten, mehr als verdoppelt. Die häufigste Diagnose ist Magersucht.",
-      "pubDate": "2026-08-11T11:19:52+02:00",
       "bild": ""
     }
   ],
