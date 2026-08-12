@@ -1,11 +1,23 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "12.08.2026, 13:59 Uhr (UTC)",
+  "aktualisiert": "12.08.2026, 15:09 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Kabinettsbeschluss: Mehr Macht für Nachrichtendienste - das ist geplant",
+      "description": "Eingreifen statt zuschauen: Die Nachrichtendienste sollen operative Befugnisse bekommen - um etwa Sprengstoff von möglichen Angreifern unschädlich machen zu können. Ein Paradigmenwechsel. Was ist genau geplant? Von C. Kornmeier.",
+      "pubDate": "2026-08-12T16:52:09+02:00",
+      "bild": ""
+    },
+    {
+      "title": "US-Präsident Trump bestätigt heimlichen Flugzeugwechsel in Ankara",
+      "description": "Nun hat Trump es offiziell bestätigt: Der US-Präsident saß beim Abflug vom NATO-Gipfel in Ankara im Juli nicht im Regierungsflieger, sondern täuschte das nur vor. Das hätten seine Personenschützer angeordnet.",
+      "pubDate": "2026-08-12T16:10:07+02:00",
+      "bild": ""
+    },
     {
       "title": "Liveblog zur Sonnenfinsternis: ++ \"Fast überall optimale Wetterbedingungen\" ++",
       "description": "Laut Deutschem Wetterdienst wird die Sonnenfinsternis heute Abend in weiten Teilen des Landes gut zu beobachten sein. Vielerorts bilden sich lange Schlangen, um noch Spezialbrillen zu bekommen.",
-      "pubDate": "2026-08-12T15:39:48+02:00",
+      "pubDate": "2026-08-12T16:52:34+02:00",
       "bild": ""
     },
     {
@@ -78,18 +90,6 @@
       "title": "Marktbericht: Spannung vor US-Inflationsdaten",
       "description": "Der DAX ist mit leichten Aufschlägen in den Tag gestartet. Die Anleger warten vor allem auf die aktuellen Inflationsdaten aus den USA. Die Quartalszahlen des Tages sorgen für deutliche Kursausschläge.",
       "pubDate": "2026-08-12T10:26:51+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bundeswehr meldet Hunderte Drohnensichtungen in vergangenen Jahren",
-      "description": "Drohnensichtungen in der Nähe von Bundeswehr-Standorten sind längst keine Einzelfälle mehr. Die Bundeswehr spricht von mehreren hundert sicherheitsrelevanten Zwischenfällen mit Drohnen in den vergangenen Jahren.",
-      "pubDate": "2026-08-12T10:22:15+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Island erwartet totale Sonnenfinsternis mit vielen Besuchern",
-      "description": "Besonders spektakulär wird die Sonnenfinsternis in Island: Die Insel liegt teils im Kernschatten. Für gut eine Minute wird die Sonne verschwinden. Das Naturschauspiel sorgt für eine eigene Eventindustrie. Von Arne Bartram.",
-      "pubDate": "2026-08-12T10:17:02+02:00",
       "bild": ""
     }
   ],
