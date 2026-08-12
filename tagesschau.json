@@ -1,10 +1,28 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "12.08.2026, 16:27 Uhr (UTC)",
+  "aktualisiert": "12.08.2026, 17:33 Uhr (UTC)",
   "meldungen": [
     {
+      "title": "Marktbericht: Ernüchterung nach Rekordfahrt",
+      "description": "Wie gewonnen, so zerronnen. Hatte der DAX am frühen Nachmittag noch bei 26.573 Punkten einen neuen Rekord erreicht, so schmolzen diese Kursgewinne am Nachmittag dahin.",
+      "pubDate": "2026-08-12T18:55:55+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Niedrigwasser: Bahn bietet Hilfe mit mehr Güterzügen an",
+      "description": "Was tun, um die Lieferketten für Industrie und Handel auch bei Niedrigwasser aufrechtzuerhalten? Transporte könnten verlagert werden - auf die Straße und auf die Schiene. Ein konkretes Hilfsangebot kam von der Deutschen Bahn.",
+      "pubDate": "2026-08-12T18:49:45+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Umweltminister Schneider will Klimaanpassung zur Gemeinschaftsaufgabe machen",
+      "description": "Wie geht Deutschland mit den Folgen des Klimawandels um? Umweltminister Schneider fordert, die Kompetenzen für Hitzeschutz beim Bund zu bündeln. Vom Flüsse-Ausbaggern hält er wenig - anders als der Verkehrsminister. Von K. Aue.",
+      "pubDate": "2026-08-12T18:31:20+02:00",
+      "bild": ""
+    },
+    {
       "title": "Die Sonnenfinsternis im Livestream",
-      "description": "Die Sonnenfinsternis ist in weiten Teilen Europas, Nordamerikas und anderen Regionen der Welt zu sehen. Verfolgen Sie die Bilder aus Spanien hier live im Stream.",
+      "description": "Die Sonnenfinsternis ist in weiten Teilen Europas, Nordamerikas und anderen Regionen der Welt zu sehen. Verfolgen Sie die Bilder aus Island hier live im Stream.",
       "pubDate": "2026-08-12T17:14:11+02:00",
       "bild": ""
     },
@@ -27,9 +45,9 @@
       "bild": ""
     },
     {
-      "title": "Liveblog zur Sonnenfinsternis: ++ Alaska macht den Anfang ++",
-      "description": "Der US-Bundesstaat Alaska macht den Anfang: Dort war am frühen Abend die Sonnenfinsternis zu bestaunen. In Deutschland wird das erst gegen 20 Uhr der Fall sein - in weiten Teilen des Landes unter optimalen Bedingungen.",
-      "pubDate": "2026-08-12T17:51:05+02:00",
+      "title": "Liveblog: ++ Totale Sonnenfinsternis beginnt in Sibirien ++",
+      "description": "Die totale Sonnenfinsternis hat im Norden Sibiriens begonnen und zieht nun weiter Richtung Mittelmeerraum. Im US-Bundesstaat Alaska war am frühen Abend bereits die partielle Verdunkelung zu bestaunen.",
+      "pubDate": "2026-08-12T19:24:15+02:00",
       "bild": ""
     },
     {
@@ -72,24 +90,6 @@
       "title": "Regierung bringt Frühstartrente auf den Weg",
       "description": "Die Bundesregierung will dafür sorgen, dass schon Kinder Geld für das Alter zurücklegen - mit der Frühstartrente. Aus den zehn Euro, die es monatlich vom Staat für das Vorsorgedepot gibt, könnte eine stattliche Summe werden.",
       "pubDate": "2026-08-12T13:30:14+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Österreich: Wehrdienst soll länger dauern - Streit über den Zivildienst",
-      "description": "Anders als Deutschland hat Österreich die Wehrpflicht nicht ausgesetzt. Doch auch in Wien sieht man Reformbedarf und verlängert den Wehrdienst. Der Zivildienst könnte unattraktiver werden. Doch hier gibt es heftige Debatten. Von Silke Hahne.",
-      "pubDate": "2026-08-12T12:51:20+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Schutz queerer Menschen im Grundgesetz - Ataman für Abstimmung im Bundestag",
-      "description": "Sollte das Grundgesetz ergänzt werden, damit queere Personen in Deutschland besser geschützt sind? Unionsfraktionschef Frei meint: nein. Jetzt reagierte die Antidiskriminierungsbeauftragte Ataman mit einer klaren Forderung.",
-      "pubDate": "2026-08-12T12:18:29+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wie die totale Sonnenfinsternis am 11. August 1999 Millionen begeisterte",
-      "description": "Es war die letzte Sonnenfinsternis des Jahrtausends: Am 11. August 1999 hüllte der Mondschatten viele Orte in Deutschland in Finsternis. Sehen Sie hier die Bilder aus der tagesschau von dem Ereignis.",
-      "pubDate": "2026-08-12T11:23:59+02:00",
       "bild": ""
     }
   ],
