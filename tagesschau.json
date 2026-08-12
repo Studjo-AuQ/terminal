@@ -1,7 +1,25 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "12.08.2026, 08:23 Uhr (UTC)",
+  "aktualisiert": "12.08.2026, 09:42 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Wie die totale Sonnenfinsternis am 11. August 1999 Millionen begeisterte",
+      "description": "Es war die letzte Sonnenfinsternis des Jahrtausends: Am 11. August 1999 hüllte der Mondschatten viele Orte in Deutschland in Finsternis. Sehen Sie hier die Bilder aus der tagesschau von dem Ereignis.",
+      "pubDate": "2026-08-12T11:23:59+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Mindestens 15 Tote bei Bootsunglück auf Kariba-Stausee in Simbabwe",
+      "description": "Nach einem Bootsunglück auf dem Kariba-See an der Grenze zwischen Simbabwe und Sambia laufen die Rettungsarbeiten. Mindestens 15 Menschen sind ums Leben gekommen. Noch immer werden zahlreiche Passagiere vermisst.",
+      "pubDate": "2026-08-12T11:14:46+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: Spannung vor US-Inflationsdaten",
+      "description": "Der DAX ist mit leichten Aufschlägen in den Tag gestartet. Die Anleger warten vor allem auf die aktuellen Inflationsdaten aus den USA. Die Quartalszahlen des Tages sorgen für deutliche Kursausschläge.",
+      "pubDate": "2026-08-12T10:26:51+02:00",
+      "bild": ""
+    },
     {
       "title": "Bundeswehr meldet Hunderte Drohnensichtungen in vergangenen Jahren",
       "description": "Drohnensichtungen in der Nähe von Bundeswehr-Standorten sind längst keine Einzelfälle mehr. Die Bundeswehr spricht von mehreren hundert sicherheitsrelevanten Zwischenfällen mit Drohnen in den vergangenen Jahren.",
@@ -33,15 +51,9 @@
       "bild": ""
     },
     {
-      "title": "Vor US-Daten zur Inflation: DAX bleibt nahe Rekordhoch",
-      "description": "Der DAX dürfte kaum verändert in den Tag starten. Die Anleger warten vor allem auf die aktuellen Inflationsdaten aus den USA. Zudem öffnen noch einige Konzerne ihre Bücher.",
-      "pubDate": "2026-08-12T08:30:16+02:00",
-      "bild": ""
-    },
-    {
       "title": "Reform der Nachrichtendienste stößt auf Kritik der Opposition",
-      "description": "Das Kabinett will heute eine Reform der Nachrichtendienste beschließen. Sie sollen künftig aktiv gegen Angreifer vorgehen dürfen. Die Opposition befürchtet fehlende rechtsstaatliche Kontrolle und sieht einen historischen Tabubruch.",
-      "pubDate": "2026-08-12T08:09:36+02:00",
+      "description": "Das Kabinett hat die Reform der Nachrichtendienste beschlossen. Sie sollen künftig aktiv gegen Angreifer vorgehen dürfen. Die Opposition befürchtet fehlende rechtsstaatliche Kontrolle und sieht einen historischen Tabubruch.",
+      "pubDate": "2026-08-12T11:38:09+02:00",
       "bild": ""
     },
     {
@@ -52,13 +64,13 @@
     },
     {
       "title": "BAföG-Erhöhung im Kabinett: Was Studierende jetzt erwarten können",
-      "description": "Teure WG-Zimmer, Einkaufen im Supermarkt - die Preise machen Studentinnen und Studenten zu schaffen. Nach langem Ringen um eine Reform macht die Regierung heute den ersten Schritt für ein höheres BAföG.",
-      "pubDate": "2026-08-12T05:50:28+02:00",
+      "description": "Teure WG-Zimmer, Einkaufen im Supermarkt - die Preise machen Studentinnen und Studenten zu schaffen. Nach langem Ringen um eine Reform hat die Regierung heute den ersten Schritt für ein höheres BAföG gemacht.",
+      "pubDate": "2026-08-12T11:40:07+02:00",
       "bild": ""
     },
     {
       "title": "Neue Regeln der EU: Diese Verpackungen gibt es bald nicht mehr",
-      "description": "Ab heute gelten in der EU schärfere Regeln bei Verpackungen. Das Ziel: die Menge an Müll deutlich reduzieren. Nach dem Aus für Plastik-Trinkhalme heißt es für Verbraucher bald Abschied nehmen von bestimmten Verpackungen. Von Sara López.",
+      "description": "Ab heute gelten in der EU schärfere Regeln für Verpackungen. Das Ziel: die Menge an Müll deutlich reduzieren. Nach dem Aus für Plastik-Trinkhalme heißt es für Verbraucher bald Abschied nehmen von bestimmten Verpackungen. Von Sara López.",
       "pubDate": "2026-08-12T05:47:15+02:00",
       "bild": ""
     },
@@ -78,18 +90,6 @@
       "title": "US-Militär beschießt Tanker im Golf von Oman",
       "description": "Die USA blockieren Schiffe, die iranische Häfen ansteuern oder von diesen ablegen. Nun hat das US-Militär einen Tanker bei dem Versuch beschossen, die amerikanische Blockade zu durchbrechen.",
       "pubDate": "2026-08-12T00:09:02+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Mehrheit im Parlament für Abschaffung der Todesstrafe im Libanon",
-      "description": "Im Libanon gibt es keine Todesstrafe mehr. Dafür hat eine Mehrheit der Abgeordneten im Parlament gestimmt - bis auf den Hisbollah-Block. Statt der Todesstrafe droht Verurteilten künftig lebenslange Haft mit schwerer Zwangsarbeit.",
-      "pubDate": "2026-08-11T21:26:29+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Trump wegen US-Sanktionen gegen Internationalen Strafgerichtshof verklagt",
-      "description": "Im Februar 2025 hatte die US-Regierung unter Trump Sanktionen gegen Vertreter des Internationalen Strafgerichtshofs erlassen. Dafür wird der US-Präsident nun von mehreren Menschenrechtsorganisationen verklagt.",
-      "pubDate": "2026-08-11T20:20:43+02:00",
       "bild": ""
     }
   ],
