@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "12.08.2026, 00:08 Uhr (UTC)",
+  "aktualisiert": "12.08.2026, 03:05 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Anthropic führt Wasserzeichen bei KI-Texten ein",
+      "description": "Anthropic will Texte seines Chatbots Claude mit einem unsichtbaren Wasserzeichen versehen. Grund sind neue EU-Vorgaben: KI-Inhalte müssen künftig mit maschinenlesbaren Markierungen versehen werden.",
+      "pubDate": "2026-08-12T02:26:47+02:00",
+      "bild": ""
+    },
     {
       "title": "US-Militär beschießt Tanker im Golf von Oman",
       "description": "Die USA blockieren Schiffe, die iranische Häfen ansteuern oder von diesen ablegen. Nun hat das US-Militär einen Tanker bei dem Versuch beschossen, die amerikanische Blockade zu durchbrechen.",
@@ -84,12 +90,6 @@
       "title": "Rekord für Tourismus in Deutschland: So viele Übernachtungen wie nie",
       "description": "Urlaub in Deutschland war in der ersten Jahreshälfte mit rund 224 Millionen Übernachtungen so gefragt wie nie, so das Statistische Bundesamt. Der Rekord vom Vorjahr wurde gebrochen. Im Juni gingen die Übernachtungen leicht zurück.",
       "pubDate": "2026-08-11T13:12:32+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Longlist zum Deutschen Buchpreis: Sind das auch die 20 Besten?",
-      "description": "Die meistdiskutierte Liste des Literaturbetriebs ist da: die Longlist zum Deutschen Buchpreis. Auf ihr stehen 20 Romane, die die Vielfalt des Erzählens zeigen sollen. Es lässt sich streiten, ob es auch die Besten sind. Von Alexander Solloch.",
-      "pubDate": "2026-08-11T13:04:01+02:00",
       "bild": ""
     }
   ],
