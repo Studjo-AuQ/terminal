@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "12.08.2026, 15:09 Uhr (UTC)",
+  "aktualisiert": "12.08.2026, 16:27 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Die Sonnenfinsternis im Livestream",
+      "description": "Die Sonnenfinsternis ist in weiten Teilen Europas, Nordamerikas und anderen Regionen der Welt zu sehen. Verfolgen Sie die Bilder aus Spanien hier live im Stream.",
+      "pubDate": "2026-08-12T17:14:11+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Massen künstlicher Songs: Spotify will KI-Künstler klarer kennzeichnen",
+      "description": "Künftig sollen Spotify-Nutzer besser erkennen, ob sie Musik echter Künstlerinnen und Künstler hören oder von KI-Profilen. Spotify verspricht mehr Transparenz. Was können Nutzende erwarten? Von Constantin Röse.",
+      "pubDate": "2026-08-12T17:13:54+02:00",
+      "bild": ""
+    },
     {
       "title": "Kabinettsbeschluss: Mehr Macht für Nachrichtendienste - das ist geplant",
       "description": "Eingreifen statt zuschauen: Die Nachrichtendienste sollen operative Befugnisse bekommen - um etwa Sprengstoff von möglichen Angreifern unschädlich machen zu können. Ein Paradigmenwechsel. Was ist genau geplant? Von C. Kornmeier.",
@@ -15,9 +27,9 @@
       "bild": ""
     },
     {
-      "title": "Liveblog zur Sonnenfinsternis: ++ \"Fast überall optimale Wetterbedingungen\" ++",
-      "description": "Laut Deutschem Wetterdienst wird die Sonnenfinsternis heute Abend in weiten Teilen des Landes gut zu beobachten sein. Vielerorts bilden sich lange Schlangen, um noch Spezialbrillen zu bekommen.",
-      "pubDate": "2026-08-12T16:52:34+02:00",
+      "title": "Liveblog zur Sonnenfinsternis: ++ Alaska macht den Anfang ++",
+      "description": "Der US-Bundesstaat Alaska macht den Anfang: Dort war am frühen Abend die Sonnenfinsternis zu bestaunen. In Deutschland wird das erst gegen 20 Uhr der Fall sein - in weiten Teilen des Landes unter optimalen Bedingungen.",
+      "pubDate": "2026-08-12T17:51:05+02:00",
       "bild": ""
     },
     {
@@ -78,18 +90,6 @@
       "title": "Wie die totale Sonnenfinsternis am 11. August 1999 Millionen begeisterte",
       "description": "Es war die letzte Sonnenfinsternis des Jahrtausends: Am 11. August 1999 hüllte der Mondschatten viele Orte in Deutschland in Finsternis. Sehen Sie hier die Bilder aus der tagesschau von dem Ereignis.",
       "pubDate": "2026-08-12T11:23:59+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Tote und Vermisste bei Bootsunglück auf Kariba-Stausee in Simbabwe",
-      "description": "Nach einem Bootsunglück auf dem Kariba-See an der Grenze zwischen Simbabwe und Sambia laufen die Rettungsarbeiten. Laut Polizei sind mindestens 44 Menschen ums Leben gekommen. Noch immer werden zahlreiche Passagiere vermisst.",
-      "pubDate": "2026-08-12T14:44:45+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Spannung vor US-Inflationsdaten",
-      "description": "Der DAX ist mit leichten Aufschlägen in den Tag gestartet. Die Anleger warten vor allem auf die aktuellen Inflationsdaten aus den USA. Die Quartalszahlen des Tages sorgen für deutliche Kursausschläge.",
-      "pubDate": "2026-08-12T10:26:51+02:00",
       "bild": ""
     }
   ],
