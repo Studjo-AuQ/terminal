@@ -1,11 +1,41 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "13.08.2026, 12:25 Uhr (UTC)",
+  "aktualisiert": "13.08.2026, 14:00 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Berliner Kältebus angezündet - Täter muss dauerhaft in Psychiatrie",
+      "description": "Um die Jahreswende brannten mehrere Kältebusse der Berliner Stadtmission. Der mutmaßliche Täter wurde nun verurteilt: Das Berliner Landgericht ordnete die dauerhafte Unterbringung in einem psychiatrischen Krankenhaus an.",
+      "pubDate": "2026-08-13T15:41:24+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Niedrigwasser: \"Gegen fehlendes Wasser hilft keine Technik\"",
+      "description": "Das Niedrigwasser in den Flüssen wirkt sich auch auf die Kraftwerke in Deutschland aus. Das Wasserkraftwerk in Reckingen am Hochrhein produziert weniger Strom. Der Klimawandel dürfte das Problem verschärfen. Von L. Bisch und P. Jehle.",
+      "pubDate": "2026-08-13T15:37:15+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Niedriger Donaupegel: Rumänien schaltet einziges AKW komplett ab",
+      "description": "Weil die Donau zu wenig Wasser führt, muss Rumänien sein einziges Atomkraftwerk ganz herunterfahren. Damit fällt ein Fünftel der Stromproduktion des Landes aus. Wie die Menschen in Rumänien mit der Energiekrise umgehen, berichtet Silke Hahne.",
+      "pubDate": "2026-08-13T15:36:16+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Raketenstartbasis: Deutschland sucht seinen Weg ins All",
+      "description": "Könnten bald Raketen von Deutschland aus starten? Die Bundesregierung prüft den Aufbau einer eigenen Startbasis für Trägerraketen der Bundeswehr, um militärische Satelliten unabhängig ins All zu befördern. Von Bianca Schwarz.",
+      "pubDate": "2026-08-13T14:40:16+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Studie: Soviel verdienten DAX-Vorstände 2025",
+      "description": "Spitzenverdiener im DAX ist jetzt SAP-Chef Christian Klein. Doch auch andere Vorstände der großen Konzerne haben 2025 erneut mehr Geld bekommen. Das zeigt eine Auswertung von Aktionärsschützern.",
+      "pubDate": "2026-08-13T14:28:08+02:00",
+      "bild": ""
+    },
     {
       "title": "Trockenheit und Dürre: Getreideernte in Deutschland leidet stark",
       "description": "Die Hitze im Sommer hat zu großen Verlusten auf deutschen Getreidefeldern geführt. Der Raiffeisenverband rechnet mit einer unterdurchschnittlichen, aber zumindest noch ausreichenden Ernte.",
-      "pubDate": "2026-08-13T14:24:01+02:00",
+      "pubDate": "2026-08-13T15:20:02+02:00",
       "bild": ""
     },
     {
@@ -60,36 +90,6 @@
       "title": "Eskalation am Schwarzen Meer: Russland und Ukraine weiten Angriffe aus",
       "description": "Die russische Schwarzmeerküste, besonders die Hafenstadt Noworossijsk, ist laut russischen Angaben von zahlreichen ukrainischen Drohnen getroffen worden. Die beiderseitigen Angriffe scheinen sich derzeit auf die Region zu konzentrieren.",
       "pubDate": "2026-08-13T10:52:18+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: DAX-Rekordserie könnte sich fortsetzen",
-      "description": "Starke Firmenbilanzen und die Aussicht auf einen stabilen Leitzins in den USA locken die Anleger in den Aktienmarkt. Aber Fachleute warnen: Nach der jüngsten Rally könnte bald eine Konsolidierung anstehen.",
-      "pubDate": "2026-08-13T10:27:01+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kritik aus Japan: Putin besucht umstrittene Kurilen-Insel",
-      "description": "Der Besuch des russischen Präsidenten Putin auf den Kurilen-Inseln löst in Japan scharfen Protest aus. Beide Länder beanspruchen die Inselkette seit Ende des Zweiten Weltkriegs für sich.",
-      "pubDate": "2026-08-13T09:09:07+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kuba erinnert an Fidel Castro: Geburtstagsfeiern ohne Feierlaune",
-      "description": "Kubas Revolutionsführer Fidel Castro gehörte zu den schillerndsten Persönlichkeiten Lateinamerikas. Heute wäre er 100 Jahre alt geworden. Vielen in Kuba ist die Feierlaune allerdings vergangen. Von C. F. Moebus.",
-      "pubDate": "2026-08-13T08:35:34+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kampf gegen die Berliner Mauer - für Achim Neumann ein Lebensthema",
-      "description": "Der Mauerbau vor 65 Jahren war für viele in der DDR ein Schock. Eine Abriegelung des Landes vom Westen schien unvorstellbar. Für Achim Neumann wurde der Kampf gegen die Mauer zum Lebensthema. Von K. Mahrenholtz.",
-      "pubDate": "2026-08-13T08:33:43+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Trump-Sprecherin Leavitt - die oberste Influencerin des Weißen Hauses geht",
-      "description": "Karoline Leavitt hat immer Zugang zu Präsident Trump. Ihre Rolle als Sprecherin interpretierte sie neu - mit einem \"Mundwerk wie ein Maschinengewehr\". Ihr plötzlicher Abschied aus dem Weißen Haus nährt Spekulationen. Von S. Jackisch.",
-      "pubDate": "2026-08-13T08:05:33+02:00",
       "bild": ""
     }
   ],
