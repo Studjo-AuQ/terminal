@@ -1,7 +1,37 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "13.08.2026, 11:22 Uhr (UTC)",
+  "aktualisiert": "13.08.2026, 12:25 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Trockenheit und Dürre: Getreideernte in Deutschland leidet stark",
+      "description": "Die Hitze im Sommer hat zu großen Verlusten auf deutschen Getreidefeldern geführt. Der Raiffeisenverband rechnet mit einer unterdurchschnittlichen, aber zumindest noch ausreichenden Ernte.",
+      "pubDate": "2026-08-13T14:24:01+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Riesige Marienstatue in Polen soll Pilger anziehen",
+      "description": "Noch ist die gigantische Marienstatue im kleinen polnischen Dorf Konotopie nicht eingeweiht, schon machen Geschichten von Wundern die Runde. Mit dem 55 Meter hohen Monument bekommt Polen eine neue Pilgerstätte.",
+      "pubDate": "2026-08-13T13:57:07+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Drohnenvorfall am Flughafen Leipzig: Was explodierte in Kursdorf?",
+      "description": "Bevor die Sprengstoff-Drohne am Flughafen Leipzig/Halle gefunden wurde, soll es in der Nähe eine Explosion gegeben haben. Die Ermittler fragen sich, was dort detoniert sein könnte.",
+      "pubDate": "2026-08-13T13:40:03+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Gedenken an Mauerbau - Warnung vor Geschichtsvergessenheit",
+      "description": "Vor 65 Jahren begann der Bau der Mauer in Berlin. Bei der zentralen Gedenkfeier haben Spitzenpolitiker dazu gemahnt, die Erinnerung an die deutsche Teilung wachzuhalten - und vor einer Verklärung der Geschichte gewarnt.",
+      "pubDate": "2026-08-13T13:36:06+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Israelische Armee fordert Palästinenser zum Verlassen ihrer Häuser auf",
+      "description": "Seit Sonntag belagern israelische Siedler im Westjordanland Häuser palästinensischer Familien. Erst hat Israels Armee die Zelte der Siedler entfernt, jetzt fordert sie die Bewohner auf, ihre Häuser zu verlassen.",
+      "pubDate": "2026-08-13T13:35:40+02:00",
+      "bild": ""
+    },
     {
       "title": "Beschädigter Tanker: Ölteppich vor Oman breitet sich weiter aus",
       "description": "Seit mehreren Wochen strömt Öl aus einem havarierten Tanker vor der Küste des Oman. Nun hat der auslaufende Rohstoff das Festland des Landes erreicht. Umweltorganisationen befürchten eine Katastrophe.",
@@ -60,36 +90,6 @@
       "title": "Trump-Sprecherin Leavitt - die oberste Influencerin des Weißen Hauses geht",
       "description": "Karoline Leavitt hat immer Zugang zu Präsident Trump. Ihre Rolle als Sprecherin interpretierte sie neu - mit einem \"Mundwerk wie ein Maschinengewehr\". Ihr plötzlicher Abschied aus dem Weißen Haus nährt Spekulationen. Von S. Jackisch.",
       "pubDate": "2026-08-13T08:05:33+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Vor 65 Jahren: Berlin erinnert an den Mauerbau",
-      "description": "Am 13. August 1961 begann die DDR-Führung, die Berliner Mauer zu errichten. Bundestagspräsidentin Klöckner mahnt eine Erinnerungskultur an, Kulturstaatsminister Weimer warnt vor einer Verharmlosung der DDR-Diktatur.",
-      "pubDate": "2026-08-13T07:26:25+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Studie: AfD-Politik nicht auf Arbeiter ausgerichtet",
-      "description": "Die AfD holt bei Arbeitern besonders viele Stimmen. Laut einer von Panorama in Auftrag gegebenen Studie hält sie aber am marktliberalen Kurs ihrer Gründungszeit fest - und hat ihn zuletzt sogar verschärft. Von S. Friedrich und I. Schneider.",
-      "pubDate": "2026-08-13T07:16:40+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Sambia vor der Wahl: Kupfer, Reformen und hohe Preise",
-      "description": "Sambia wählt einen neuen Präsidenten und ein neues Parlament. Das Land gilt als vergleichsweise stabile Demokratie in einer krisenhaften Region. Staatschef Hichilema ist der Favorit - und doch hoffen viele auf einen Wechsel. Von S. Ueberbach.",
-      "pubDate": "2026-08-13T06:43:52+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Folgen von Dürre und Niedrigwasser - die Auswirkungen im Alltag",
-      "description": "Die Pegelstände des Rheins sinken weiter - was die Logistik massiv stört. Gleichzeitig leidet die Landwirtschaft stark unter der anhaltenden Trockenheit. Woran sind die Folgen im Alltag bereits zu merken? Von Jens Eberl.",
-      "pubDate": "2026-08-13T06:00:09+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Tschechiens Regierung plant strenge Handyregeln an Schulen",
-      "description": "Weltweit wird über Handynutzung an Schulen und Social-Media-Beschränkungen für Kinder und Jugendliche diskutiert. In Tschechien sollen Schulen nun handyfrei werden. Auch ein Social-Media-Verbot ist im Gespräch. Von P. Vorreiter.",
-      "pubDate": "2026-08-13T03:47:02+02:00",
       "bild": ""
     }
   ],
