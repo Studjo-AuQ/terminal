@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "13.08.2026, 15:31 Uhr (UTC)",
+  "aktualisiert": "13.08.2026, 17:02 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Marktbericht: Rekordserie geht erstmal nicht weiter",
+      "description": "Der Leitindex kann zwar seine 26.000-Punkte-Marke verteidigen, der DAX-Rally geht aber die Luft aus. Daran ändern auch starke Firmenbilanzen und die Aussicht auf einen stabilen US-Leitzins nichts.",
+      "pubDate": "2026-08-13T18:25:34+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Urteil gegen Airline: Passagiere dürfen mehrere Handgepäckstücke mitnehmen",
+      "description": "Das OLG Hamm hat entschieden, dass Flugreisende mehrere Handgepäckstücke kostenlos mitnehmen dürfen, solange sie zusammen das vorgegebene Maß nicht überschreiten. Geklagt hatte die Verbraucherzentrale. Von Björn-Hendrik Otte.",
+      "pubDate": "2026-08-13T18:02:24+02:00",
+      "bild": ""
+    },
     {
       "title": "Niedrigwasser: Und plötzlich liegt eine Bazooka am Ufer",
       "description": "Die Pegel im Rhein erreichen historische Tiefststände. Wo sonst Wasser fließt, kommen Kampfmittel, Munitionsreste und Blindgänger aus dem Zweiten Weltkrieg zutage. Der Kampfmittelräumdienst ist im Dauereinsatz. Von Lucretia Gather.",
@@ -78,18 +90,6 @@
       "title": "Israelische Armee fordert Palästinenser zum Verlassen ihrer Häuser auf",
       "description": "Seit Sonntag belagern israelische Siedler im Westjordanland Häuser palästinensischer Familien. Erst hat Israels Armee die Zelte der Siedler entfernt, jetzt fordert sie die Bewohner auf, ihre Häuser zu verlassen.",
       "pubDate": "2026-08-13T13:35:40+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Beschädigter Tanker: Ölteppich vor Oman breitet sich weiter aus",
-      "description": "Seit mehreren Wochen strömt Öl aus einem havarierten Tanker vor der Küste Omans. Die verschmutzte Fläche wird immer größer, Umweltorganisationen befürchten eine Katastrophe. Nun soll das Wrack geborgen werden.",
-      "pubDate": "2026-08-13T16:44:35+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Schwerarbeitspension: Wie funktioniert Österreichs Rente mit 60?",
-      "description": "In Österreich können Arbeitnehmer, die besonders schwere Arbeit verrichten, mit 60 in Rente gehen: unter klaren Voraussetzungen und mit Abschlägen. Doch um die Finanzierbarkeit des Rentensystems wird auch in Österreich gestritten. Von C. Verenkotte.",
-      "pubDate": "2026-08-13T12:23:45+02:00",
       "bild": ""
     }
   ],
