@@ -1,7 +1,37 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "13.08.2026, 05:18 Uhr (UTC)",
+  "aktualisiert": "13.08.2026, 06:58 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Kuba erinnert an Fidel Castro: Geburtstagsfeiern ohne Feierlaune",
+      "description": "Kubas Revolutionsführer Fidel Castro gehörte zu den schillerndsten Persönlichkeiten Lateinamerikas. Heute wäre er 100 Jahre alt geworden. Vielen in Kuba ist die Feierlaune allerdings vergangen. Von C. F. Moebus.",
+      "pubDate": "2026-08-13T08:35:34+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Kampf gegen die Berliner Mauer - für Achim Neumann ein Lebensthema",
+      "description": "Der Mauerbau vor 65 Jahren war für viele in der DDR ein Schock. Eine Abriegelung des Landes vom Westen schien unvorstellbar. Für Achim Neumann wurde der Kampf gegen die Mauer zum Lebensthema. Von K. Mahrenholtz.",
+      "pubDate": "2026-08-13T08:33:43+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Trump-Sprecherin Leavitt - die oberste Influencerin des Weißen Hauses geht",
+      "description": "Karoline Leavitt hat immer Zugang zu Präsident Trump. Ihre Rolle als Sprecherin interpretiert sie neu - mit einem \"Mundwerk wie ein Maschinengewehr\". Ihr plötzlicher Abschied aus dem Weißen Haus nährt Spekulationen. Von S.Jackisch.",
+      "pubDate": "2026-08-13T08:05:33+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: Anleger trauen sich zurück in den Markt",
+      "description": "Der DAX dürfte sich zum Handelsstart wieder seinem Rekordstand annähern. Für Zuversicht sorgen gestrige US-Inflationsdaten. Auch die Vorgaben aus Japan und Südkorea fallen ansprechend aus.",
+      "pubDate": "2026-08-13T07:36:04+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Vor 65 Jahren: Berlin erinnert an den Mauerbau",
+      "description": "Am 13. August 1961 begann die DDR-Führung, die Berliner Mauer zu errichten. Bundestagspräsidentin Klöckner mahnt eine Erinnerungskultur an, Kulturstaatsminister Weimer warnt vor einer Verharmlosung der DDR-Diktatur.",
+      "pubDate": "2026-08-13T07:26:25+02:00",
+      "bild": ""
+    },
     {
       "title": "Studie: AfD-Politik nicht auf Arbeiter ausgerichtet",
       "description": "Die AfD holt bei Arbeitern besonders viele Stimmen. Laut einer von Panorama in Auftrag gegebenen Studie hält sie aber am marktliberalen Kurs ihrer Gründungszeit fest - und hat ihn zuletzt sogar verschärft. Von S. Friedrich und I. Schneider.",
@@ -16,7 +46,7 @@
     },
     {
       "title": "Folgen von Dürre und Niedrigwasser - die Auswirkungen im Alltag",
-      "description": "Der Pegel im Rhein sinkt weiter - was die Logistik massiv stört. Gleichzeitig leidet die Landwirtschaft stark unter der anhaltenden Trockenheit. Woran sind die Folgen im Alltag bereits zu merken? Von Jens Eberl.",
+      "description": "Die Pegelstände des Rheins sinken weiter - was die Logistik massiv stört. Gleichzeitig leidet die Landwirtschaft stark unter der anhaltenden Trockenheit. Woran sind die Folgen im Alltag bereits zu merken? Von Jens Eberl.",
       "pubDate": "2026-08-13T06:00:09+02:00",
       "bild": ""
     },
@@ -60,36 +90,6 @@
       "title": "Millionen verfolgen Sonnenfinsternis über Deutschland",
       "description": "Es war ein Naturschauspiel, das hierzulande seit Jahren nicht mehr vorgekommen ist: eine teilweise Sonnenfinsternis. Im Maximum war die Sonne bis zu 90 Prozent vom Mond verdeckt. Zahlreiche Menschen verfolgten überall im Land das Spektakel.",
       "pubDate": "2026-08-12T20:36:27+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Ernüchterung nach Rekordfahrt",
-      "description": "Wie gewonnen, so zerronnen. Hatte der DAX am frühen Nachmittag noch bei 26.573 Punkten einen neuen Rekord erreicht, so schmolzen diese Kursgewinne am Nachmittag dahin.",
-      "pubDate": "2026-08-12T18:55:55+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Niedrigwasser: Bahn bietet Hilfe mit mehr Güterzügen an",
-      "description": "Was tun, um die Lieferketten für Industrie und Handel auch bei Niedrigwasser aufrechtzuerhalten? Transporte könnten verlagert werden - auf die Straße und auf die Schiene. Ein konkretes Hilfsangebot kam von der Deutschen Bahn.",
-      "pubDate": "2026-08-12T18:49:45+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Umweltminister Schneider will Klimaanpassung zur Gemeinschaftsaufgabe machen",
-      "description": "Wie geht Deutschland mit den Folgen des Klimawandels um? Umweltminister Schneider fordert, den Hitzeschutz zur Gemeinschaftsaufgabe von Bund, Ländern und Kommunen zu machen. Von Katrin Aue.",
-      "pubDate": "2026-08-12T19:46:21+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Massen künstlicher Songs: Spotify will KI-Künstler klarer kennzeichnen",
-      "description": "Künftig sollen Spotify-Nutzer besser erkennen, ob sie Musik echter Künstlerinnen und Künstler hören oder von KI-Profilen. Spotify verspricht mehr Transparenz. Was können Nutzende erwarten? Von Constantin Röse.",
-      "pubDate": "2026-08-12T17:13:54+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kabinettsbeschluss: Mehr Macht für Nachrichtendienste - das ist geplant",
-      "description": "Eingreifen statt zuschauen: Die Nachrichtendienste sollen operative Befugnisse bekommen - um etwa Sprengstoff von möglichen Angreifern unschädlich machen zu können. Ein Paradigmenwechsel. Was ist genau geplant? Von C. Kornmeier.",
-      "pubDate": "2026-08-12T16:52:09+02:00",
       "bild": ""
     }
   ],
