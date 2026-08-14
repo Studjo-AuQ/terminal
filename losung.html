@@ -97,23 +97,49 @@
   margin-bottom: 24px;
 }
 
-.losung-zurueck {
-  display: inline-block;
-  margin: 30px auto 0;
-  background: var(--primary-red, #b61f29);
-  color: #fff;
-  font-weight: 800;
-  font-size: 1.05rem;
-  text-decoration: none;
-  padding: 14px 32px;
-  border-radius: 30px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  transition: transform 0.2s, background-color 0.2s;
+.losung-topbar {
+  max-width: 900px;
+  margin: 0 auto 30px;
+  padding: 10px 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
 }
 
-.losung-zurueck:hover {
-  transform: translateY(-2px);
-  background-color: #d42430;
+.zurueck-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffffff;
+  color: var(--primary-red, #b61f29);
+  font-weight: 800;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 30px;
+  border: 2px solid var(--primary-red, #b61f29);
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+  white-space: nowrap;
+}
+
+.zurueck-pill:hover {
+  background-color: var(--primary-red, #b61f29);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.losung-topbar h1 {
+  margin: 0;
+  text-align: left;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.losung-icon {
+  font-size: 1.5rem;
 }
 
 .losung-status {
@@ -141,14 +167,13 @@
 
 <main id="scrollable-content">
 
-  <h1>Losung für heute</h1>
+  <div class="losung-topbar">
+    <a href="index.html" class="zurueck-pill">← Zurück</a>
+    <h1><span class="losung-icon">📖</span> Losung für heute</h1>
+  </div>
 
   <div class="losung-wrap">
     <div id="losung-inhalt" class="losung-status">Losung wird geladen …</div>
-  </div>
-
-  <div style="text-align:center;">
-    <a href="index.html" class="losung-zurueck">← Zurück zur Startseite</a>
   </div>
 
 </main>
