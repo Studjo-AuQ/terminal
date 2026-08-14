@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "14.08.2026, 02:29 Uhr (UTC)",
+  "aktualisiert": "14.08.2026, 04:24 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Warum Diesel trotz gesunkener Ölpreise so teuer bleibt",
+      "description": "Der Ölpreis ist seit seinem Kriegshoch deutlich gefallen. Doch an der Tankstelle kommt davon kaum etwas an - vor allem Diesel bleibt teuer. Was hinter der ungewöhnlichen Preisentwicklung steckt, erklärt Angela Göpfert.",
+      "pubDate": "2026-08-14T06:00:13+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Grünen-Fraktionschefin: Regierung sieht bei Spritpreis-Abzocke zu",
+      "description": "Angesichts hoher Spritpreisen spricht Grünen-Fraktionschefin Dröge von \"Abzocke\" - und die Bundesregierung schaue zu. Sie fordert eine Übergewinnsteuer für Mineralölkonzerne. Einnahmen daraus könnten an die Bürger weitergegeben werden.",
+      "pubDate": "2026-08-14T05:40:02+02:00",
+      "bild": ""
+    },
     {
       "title": "Bauernverband befürchtet teils totalen Ernteausfall",
       "description": "Die Trockenheit trifft Weizen, Kartoffeln und Zuckerrüben: Bauernpräsident Rukwied spricht von einer \"brutal angespannten\" wirtschaftlichen Lage. Er stellt Forderungen an die Politik. Denn in einigen Gebieten ist ein totaler Ernteausfall möglich.",
@@ -78,18 +90,6 @@
       "title": "Niedrigwasser: \"Gegen fehlendes Wasser hilft keine Technik\"",
       "description": "Das Niedrigwasser in den Flüssen wirkt sich auch auf die Kraftwerke in Deutschland aus. Das Wasserkraftwerk in Reckingen am Hochrhein produziert weniger Strom. Der Klimawandel dürfte das Problem verschärfen. Von L. Bisch und P. Jehle.",
       "pubDate": "2026-08-13T15:37:15+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Niedriger Donaupegel: Rumänien schaltet einziges AKW komplett ab",
-      "description": "Weil die Donau zu wenig Wasser führt, muss Rumänien sein einziges Atomkraftwerk ganz herunterfahren. Damit fällt ein Fünftel der Stromproduktion des Landes aus. Wie die Menschen in Rumänien mit der Energiekrise umgehen, berichtet Silke Hahne.",
-      "pubDate": "2026-08-13T16:32:46+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Raketenstartbasis: Deutschland sucht seinen Weg ins All",
-      "description": "Könnten bald Raketen von Deutschland aus starten? Die Bundesregierung prüft den Aufbau einer eigenen Startbasis für Trägerraketen der Bundeswehr, um militärische Satelliten unabhängig ins All zu befördern. Von Bianca Schwarz.",
-      "pubDate": "2026-08-13T14:40:16+02:00",
       "bild": ""
     }
   ],
