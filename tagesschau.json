@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "14.08.2026, 18:26 Uhr (UTC)",
+  "aktualisiert": "14.08.2026, 19:31 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Mord an US-Versicherungschef: Angeklagter Luigi M. gesteht Schüsse",
+      "description": "Luigi M. wird vorgeworfen, den Chef eines US-Krankenversicherers auf offener Straße erschossen zu haben. Nun hat er die tödlichen Schüsse gestanden. Er ist seit seiner Verhaftung auch zu einer Symbolfigur geworden.",
+      "pubDate": "2026-08-14T20:28:38+02:00",
+      "bild": ""
+    },
     {
       "title": "Waldbrand in der Eifel: \"Ein doppelter Weckruf\"",
       "description": "Seit Wochen gibt es kaum Regen, dazu extreme Temperaturen und jetzt einen Waldbrand in der Eifel. Feuerökologe Alexander Held sieht darin einen \"doppelten Weckruf\". Wie gut ist Deutschland auf solche Gefahren vorbereitet?",
@@ -11,7 +17,7 @@
     {
       "title": "NRW kämpft mit dem wohl größten Waldbrand der Landesgeschichte",
       "description": "Im nordrhein-westfälischen Hürtgenwald brennt es auf mehr als 200 Hektar. Es dürfte der größte Waldbrand in der Geschichte des Bundeslandes sein. Hunderte Menschen wurden dort evakuiert - andere Teile der Eifel könnten folgen.",
-      "pubDate": "2026-08-14T19:34:27+02:00",
+      "pubDate": "2026-08-14T20:53:38+02:00",
       "bild": ""
     },
     {
@@ -84,12 +90,6 @@
       "title": "Waldbrände in Europa: Hunderte Menschen in Sicherheit gebracht",
       "description": "Wegen schwerer Vegetationsbrände mussten in mehreren europäischen Ländern Hunderte Menschen ihre Häuser verlassen. Betroffen waren neben Frankreich und England auch Kroatien und Griechenland.",
       "pubDate": "2026-08-14T16:22:36+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Aktienkurs von HelloFresh stürzt auf Rekordtief",
-      "description": "Analysten zweifeln am Kochboxen-Lieferanten HelloFresh nach der Vorlage der Quartalszahlen. Doch das Unternehmen kämpft mit Problemen, die in der Lieferdienst-Branche nicht neu sind.",
-      "pubDate": "2026-08-14T14:19:52+02:00",
       "bild": ""
     }
   ],
