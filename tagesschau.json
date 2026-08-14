@@ -1,11 +1,47 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "14.08.2026, 05:58 Uhr (UTC)",
+  "aktualisiert": "14.08.2026, 07:44 Uhr (UTC)",
   "meldungen": [
     {
+      "title": "Vom Hoffnungsträger zur Machtmaschine - Erdogans AKP wird 25",
+      "description": "Die AKP in der Türkei feiert 25 Jahre Bestehen mit großem Selbstlob. Die Partei ist vor allem von ihrem Mitgründer Erdoğan und seinen jeweiligen Ämtern geprägt. Wofür steht die AKP heute? Von Uwe Lueb.",
+      "pubDate": "2026-08-14T09:25:02+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Farage gewinnt Nachwahl im britischen Clacton",
+      "description": "Der britische Rechtspopulist Farage zieht nach der von ihm selbst initiierten Nachwahl erneut ins Parlament ein. Die großen Parteien hatten die Abstimmung boykottiert, Farage selbst blieb der Auszählung fern.",
+      "pubDate": "2026-08-14T09:05:46+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Corona-Impfungen für Schwangere sicherer als Vorwürfe behaupten",
+      "description": "In den USA und Deutschland werden Vorwürfe laut, dass Corona-Impfungen für Schwangere nicht sicher gewesen seien. Im Zentrum der Kritik: US-Virologe Fauci, der angeblich von dem Risiko wusste. Die Vorwürfe sind allerdings falsch.",
+      "pubDate": "2026-08-14T09:05:23+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Hamburger Cum-Ex-Affäre kommt nun doch vor Gericht",
+      "description": "Hat Finanzbeamtin Daniela P. der Traditionsbank MM Warburg geholfen, zu Unrecht vereinnahmtes Steuergeld erstmal zu behalten? Das Oberlandesgericht Köln hat den Fall nach Informationen des WDR zur Hauptverhandlung zugelassen.",
+      "pubDate": "2026-08-14T08:43:20+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Vance nennt niedrige Öl- und Gaspreise als wichtigstes Kriegsziel in Iran",
+      "description": "Bisher hatte US-Präsident Trump die Angriffe in Iran vor allem mit dem Atomprogramm des Landes begründet. Vizepräsident Vance sagte nun, wichtigstes Ziel sei es, Öl und Gas für die Amerikaner bezahlbar zu halten.",
+      "pubDate": "2026-08-14T08:30:49+02:00",
+      "bild": ""
+    },
+    {
+      "title": "USA wollen mit Zöllen auf Drohnen China treffen",
+      "description": "Die USA wollen bei Drohnen aufholen - und vor allem unabhängiger von Importen aus China werden. Daher werden nun Zölle von bis zu 100 Prozent verhängt. Das dürfte den Handelsstreit mit Peking weiter verschärfen.",
+      "pubDate": "2026-08-14T08:12:30+02:00",
+      "bild": ""
+    },
+    {
       "title": "Waldbrand in der Eifel - Evakuierung in Gemeinde Hürtgenwald",
-      "description": "In der Eifel breitet sich seit Donnerstag ein Waldbrand aus und rückt immer näher an den Hürtgenwalder Ortsteil Gey heran. In der Nacht wurde die Evakuierung angeordnet, etwa 1.800 Menschen sind bislang davon betroffen.",
-      "pubDate": "2026-08-14T06:48:24+02:00",
+      "description": "In der Eifel breitet sich seit Donnerstag im Kreis Düren ein Waldbrand aus. Der Hürtgenwalder Ortsteil Gey wurde seit der Nacht vorsorglich evakuiert, etwa 2.000 Menschen sind davon betroffen.",
+      "pubDate": "2026-08-14T08:50:06+02:00",
       "bild": ""
     },
     {
@@ -54,42 +90,6 @@
       "title": "Klage über Missstände - Flugzeugträger \"USS Abraham Lincoln\" wird wohl abgelöst",
       "description": "Die Lebensmittel knapp, seit Monaten kein Landgang: US-Senatoren sorgen sich um die Marinestreitkräfte auf dem Flugzeugträger \"USS Abraham Lincoln\". Dieser soll offenbar nun abgelöst werden. Von Anne Schneider.",
       "pubDate": "2026-08-13T22:08:42+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Prozess um WM in Katar 2022: Whistleblower an Ausreise gehindert",
-      "description": "Der Ex-Mediendirektor des Organisationskomitees der WM 2022 in Katar ist ein wichtiger Zeuge, wenn es um den Vorwurf der Zwangsarbeit und des Menschenhandels geht. Doch Abdullah Ibhais darf nicht zu einem Prozess in die USA reisen. Von B. Best.",
-      "pubDate": "2026-08-13T20:16:07+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Passagierzug im Südosten Englands entgleist - wohl keine Toten",
-      "description": "Im Südosten Englands ist am späten Nachmittag ein Zug entgleist, mehrere Waggons sind dabei umgekippt. Mehrere Menschen wurden verletzt - nach bisherigen Erkenntnissen gibt es keine Toten.",
-      "pubDate": "2026-08-13T21:55:03+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Rekordserie geht erstmal nicht weiter",
-      "description": "Der Leitindex kann zwar seine 26.000-Punkte-Marke verteidigen, der DAX-Rally geht aber die Luft aus. Daran ändern auch starke Firmenbilanzen und die Aussicht auf einen stabilen US-Leitzins nichts.",
-      "pubDate": "2026-08-13T18:25:34+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Urteil gegen Airline: Passagiere dürfen mehrere Handgepäckstücke mitnehmen",
-      "description": "Das OLG Hamm hat entschieden, dass Flugreisende mehrere Handgepäckstücke kostenlos mitnehmen dürfen, solange sie zusammen das vorgegebene Maß nicht überschreiten. Geklagt hatte die Verbraucherzentrale. Von Björn-Hendrik Otte.",
-      "pubDate": "2026-08-13T18:02:24+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Niedrigwasser: Und plötzlich liegt eine Bazooka am Ufer",
-      "description": "Die Pegel im Rhein erreichen historische Tiefststände. Wo sonst Wasser fließt, kommen Kampfmittel, Munitionsreste und Blindgänger aus dem Zweiten Weltkrieg zutage. Der Kampfmittelräumdienst ist im Dauereinsatz. Von Lucretia Gather.",
-      "pubDate": "2026-08-13T17:30:17+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Was könnte gegen Niedrigwasser helfen?",
-      "description": "Das Niedrigwasser in Deutschland belastet die Wirtschaft. Auf der Suche nach Lösungen wird auch ein Ausbau der Flüsse diskutiert. Das zieht Kritik nach sich. Welche Argumente und mögliche Alternativen gibt es? Ein Überblick.",
-      "pubDate": "2026-08-13T17:29:49+02:00",
       "bild": ""
     }
   ],
