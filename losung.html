@@ -229,26 +229,26 @@
       ziel.classList.remove('losung-status');
 
       const sonntagHtml = data.sonntag
-        ? '<div class="losung-sonntag">' + data.sonntag + '</div>'
+        ? '<div class="losung-sonntag" data-vorlesen>' + data.sonntag + '</div>'
         : '';
 
       ziel.innerHTML =
         '<div class="losung-card">' +
-          '<div class="losung-datum">' + formatDatum(schluessel) + '</div>' +
+          '<div class="losung-datum" data-vorlesen>' + formatDatum(schluessel) + '</div>' +
           sonntagHtml +
 
           '<div class="losung-block">' +
-            '<div class="losung-label">Losung</div>' +
-            '<div class="losung-text">' + data.losung + '</div>' +
-            '<div class="losung-stelle">' + data.losung_stelle + '</div>' +
+            '<div class="losung-label" data-vorlesen>Losung</div>' +
+            '<div class="losung-text" data-vorlesen>' + data.losung + '</div>' +
+            '<div class="losung-stelle" data-vorlesen>' + data.losung_stelle + '</div>' +
           '</div>' +
 
           '<div class="losung-trenner"></div>' +
 
           '<div class="losung-block" style="margin-bottom:20px;">' +
-            '<div class="losung-label">Lehrtext</div>' +
-            '<div class="lehrtext-text">' + data.lehrtext + '</div>' +
-            '<div class="losung-stelle">' + data.lehrtext_stelle + '</div>' +
+            '<div class="losung-label" data-vorlesen>Lehrtext</div>' +
+            '<div class="lehrtext-text" data-vorlesen>' + data.lehrtext + '</div>' +
+            '<div class="losung-stelle" data-vorlesen>' + data.lehrtext_stelle + '</div>' +
           '</div>' +
 
           '<div class="losung-copyright">' +
