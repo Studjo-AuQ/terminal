@@ -1,5 +1,5 @@
 {
-  "aktualisiert": "14.08.2026, 10:52 Uhr",
+  "aktualisiert": "14.08.2026, 11:39 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
@@ -8,17 +8,17 @@
         "gefuehlt": 31,
         "zustand": "Klar",
         "emoji": "☀️",
-        "wind": 8,
-        "luftfeuchte": 17,
+        "wind": 9,
+        "luftfeuchte": 16,
         "niederschlag": 0.0
       },
       "tage": [
         {
           "wochentag": "Freitag",
           "datum": "14.08.",
-          "emoji": "⛅",
-          "zustand": "Teils bewölkt",
-          "max": 34,
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
+          "max": 33,
           "min": 21,
           "niederschlag": 0.0
         },
@@ -27,8 +27,8 @@
           "datum": "15.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 34,
-          "min": 21,
+          "max": 33,
+          "min": 22,
           "niederschlag": 0.0
         },
         {
@@ -36,8 +36,8 @@
           "datum": "16.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 23,
-          "min": 15,
+          "max": 24,
+          "min": 16,
           "niederschlag": 0.0
         },
         {
@@ -63,7 +63,7 @@
     {
       "stadt": "Werdohl",
       "aktuell": {
-        "temp": 34,
+        "temp": 35,
         "gefuehlt": 33,
         "zustand": "Klar",
         "emoji": "☀️",
@@ -122,12 +122,12 @@
     {
       "stadt": "Kierspe",
       "aktuell": {
-        "temp": 31,
+        "temp": 32,
         "gefuehlt": 31,
         "zustand": "Klar",
         "emoji": "☀️",
-        "wind": 6,
-        "luftfeuchte": 20,
+        "wind": 7,
+        "luftfeuchte": 18,
         "niederschlag": 0.0
       },
       "tage": [
@@ -136,7 +136,7 @@
           "datum": "14.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 34,
+          "max": 33,
           "min": 19,
           "niederschlag": 0.0
         },
@@ -145,8 +145,8 @@
           "datum": "15.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 34,
-          "min": 21,
+          "max": 33,
+          "min": 20,
           "niederschlag": 0.0
         },
         {
@@ -154,8 +154,8 @@
           "datum": "16.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 23,
-          "min": 15,
+          "max": 24,
+          "min": 16,
           "niederschlag": 0.0
         },
         {
@@ -186,7 +186,7 @@
         "zustand": "Klar",
         "emoji": "☀️",
         "wind": 10,
-        "luftfeuchte": 13,
+        "luftfeuchte": 12,
         "niederschlag": 0.0
       },
       "tage": [
@@ -195,18 +195,18 @@
           "datum": "14.08.",
           "emoji": "⛅",
           "zustand": "Teils bewölkt",
-          "max": 37,
+          "max": 36,
           "min": 24,
           "niederschlag": 0.0
         },
         {
           "wochentag": "Samstag",
           "datum": "15.08.",
-          "emoji": "☁️",
-          "zustand": "Bedeckt",
-          "max": 35,
-          "min": 22,
-          "niederschlag": 0.0
+          "emoji": "🌧️",
+          "zustand": "Leichter Regen",
+          "max": 33,
+          "min": 23,
+          "niederschlag": 1.6
         },
         {
           "wochentag": "Sonntag",
