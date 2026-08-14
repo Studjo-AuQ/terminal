@@ -223,28 +223,6 @@
             line-height: 1.7;
         }
 
-        /* ── Vorlesen ── */
-        .read-aloud-container {
-            position: fixed; bottom: 30px; right: 30px; z-index: 1000;
-        }
-        .btn-read-aloud {
-            width: 80px; height: 80px;
-            border-radius: 50%;
-            background: var(--primary-red);
-            border: 4px solid white;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            cursor: pointer;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            transition: transform 0.2s;
-            padding: 10px;
-        }
-        .btn-read-aloud:hover { transform: scale(1.1); }
-        .btn-read-aloud img   { width: 45px; height: 45px; margin-bottom: 2px; }
-        .btn-read-aloud span  { color: white; font-size: 0.7rem; font-weight: bold; text-transform: uppercase; }
-
         /* ── Footer ── */
         footer {
             text-align: center; padding: 18px;
@@ -367,32 +345,71 @@ async function ladeWetter() {
     }
 }
 
-// ── Vorlesen ─────────────────────────────────────────────
+// ── Vorlesen (an a11y-Steuerleiste angebunden) ─────────────
 let spricht = false;
-function vorlesen() {
+
+function entferneWetterMarkierungen() {
+    document.querySelectorAll('.stadt-karte.is-reading')
+        .forEach(k => k.classList.remove('is-reading'));
+}
+
+function vorlesenUndMarkieren() {
+    const btnVorlesen = document.getElementById('btn-vorlesen');
+
+    // Läuft bereits: abbrechen (Toggle)
     if (spricht || speechSynthesis.speaking) {
-        speechSynthesis.cancel(); spricht = false; return;
+        speechSynthesis.cancel();
+        entferneWetterMarkierungen();
+        spricht = false;
+        if (btnVorlesen) btnVorlesen.classList.remove('aktiv');
+        return;
     }
+
+    const karten = Array.from(document.querySelectorAll('.stadt-karte'));
+    if (karten.length === 0) return;
+
     spricht = true;
-    const texte = [];
-    document.querySelectorAll('.stadt-karte').forEach(k => {
-        const name  = k.querySelector('.stadtname')?.textContent.replace('📍','').trim() || '';
-        const temp  = k.querySelector('.gross-temp')?.textContent || '';
-        const zust  = k.querySelector('.zustand-text')?.textContent || '';
-        const wind  = k.querySelector('.karte-details')?.textContent.replace(/\s+/g,' ').trim() || '';
-        texte.push(`${name}: ${temp} Grad, ${zust}. ${wind}.`);
-    });
+    if (btnVorlesen) btnVorlesen.classList.add('aktiv');
+
     let i = 0;
     function next() {
-        if (i >= texte.length) { spricht = false; return; }
-        const u = new SpeechSynthesisUtterance(texte[i++]);
-        u.lang = 'de-DE'; u.rate = 0.9;
-        u.onend = () => setTimeout(next, 150);
-        u.onerror = () => { spricht = false; };
+        if (i >= karten.length || !spricht) {
+            entferneWetterMarkierungen();
+            spricht = false;
+            if (btnVorlesen) btnVorlesen.classList.remove('aktiv');
+            return;
+        }
+        const karte = karten[i];
+        const name  = karte.querySelector('.stadtname')?.textContent.replace('📍','').trim() || '';
+        const temp  = karte.querySelector('.gross-temp')?.textContent || '';
+        const zust  = karte.querySelector('.zustand-text')?.textContent || '';
+        const wind  = karte.querySelector('.karte-details')?.textContent.replace(/\s+/g,' ').trim() || '';
+        const text  = `${name}: ${temp} Grad, ${zust}. ${wind}.`;
+
+        const u = new SpeechSynthesisUtterance(text);
+        u.lang = 'de-DE';
+        u.rate = 0.9;
+        u.onstart = () => {
+            entferneWetterMarkierungen();
+            karte.classList.add('is-reading');
+        };
+        u.onend = () => {
+            i++;
+            setTimeout(next, 250);
+        };
+        u.onerror = () => {
+            entferneWetterMarkierungen();
+            spricht = false;
+            if (btnVorlesen) btnVorlesen.classList.remove('aktiv');
+        };
         speechSynthesis.speak(u);
     }
     next();
 }
+
+// a11y.js ruft diese Funktion automatisch auf, wenn sie unter
+// diesem Namen existiert (Vorrang vor der generischen Funktion).
+window.vorlesenUndMarkieren = vorlesenUndMarkieren;
 
 ladeWetter();
 // Alle 30 Minuten neu laden

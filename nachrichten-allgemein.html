@@ -365,8 +365,8 @@ function erstelleKarte(m, quelleText) {
             </div>
             ${bildHtml}
             <div class="card-titel-block">
-                <div class="card-titel">${m.title}</div>
-                <div class="card-teaser">${teaser}</div>
+                <div class="card-titel" data-vorlesen>${m.title}</div>
+                <div class="card-teaser" data-vorlesen>${teaser}</div>
             </div>
             <div class="card-pfeil">›</div>
         </div>
@@ -442,5 +442,8 @@ ladeFeed('kobinet.json', {
 // Seite alle 30 Minuten neu laden
 setTimeout(() => location.reload(), 30 * 60 * 1000);
 </script>
+
+<link rel="stylesheet" href="a11y.css">
+<script src="a11y.js"></script>
 </body>
 </html>
