@@ -1,0 +1,20 @@
+{
+  "_hinweis": "Diese Datei wird einmal jährlich automatisch durch die GitHub Action 'update-losungen.yml' aus der offiziellen ZIP-Datei von losungen.de neu erzeugt. Manuelle Änderungen werden beim nächsten Lauf überschrieben.",
+
+  "2026-08-14": {
+    "wochentag": "Freitag",
+    "sonntag": "",
+    "losung": "Der HERR ist mein Licht und mein Heil; vor wem sollte ich mich fürchten?",
+    "losung_stelle": "Psalm 27,1",
+    "lehrtext": "Wir haben nicht empfangen den Geist der Furcht, sondern der Kraft und der Liebe und der Besonnenheit.",
+    "lehrtext_stelle": "2. Timotheus 1,7"
+  },
+  "2026-08-15": {
+    "wochentag": "Samstag",
+    "sonntag": "",
+    "losung": "Testeintrag – wird beim ersten Action-Lauf durch die echten Daten aus der ZIP-Datei ersetzt.",
+    "losung_stelle": "Beispielstelle",
+    "lehrtext": "Testeintrag – wird beim ersten Action-Lauf durch die echten Daten aus der ZIP-Datei ersetzt.",
+    "lehrtext_stelle": "Beispielstelle"
+  }
+}
