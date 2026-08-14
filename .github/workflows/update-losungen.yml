@@ -1,0 +1,60 @@
+name: Losungen jährlich aktualisieren
+
+on:
+  # Manueller "Run workflow"-Button im Reiter "Actions" in GitHub
+  workflow_dispatch:
+
+  # Automatisch einmal jährlich, am 2. Januar um 03:00 Uhr UTC
+  # (bewusst nach Neujahr, damit die neue Jahresdatei sicher online ist)
+  schedule:
+    - cron: '0 3 2 1 *'
+
+permissions:
+  contents: write
+
+jobs:
+  update-losungen:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Offizielle Jahres-ZIP herunterladen und entpacken
+        run: |
+          set -e
+          mkdir -p quelle
+          JAHR=$(date -u +%Y)
+          URL="https://www.losungen.de/fileadmin/media-losungen/download/Losung_${JAHR}_XML.zip"
+          echo "Lade $URL"
+          curl -fsSL "$URL" -o quelle/losungen.zip
+          unzip -o quelle/losungen.zip -d quelle/entpackt
+
+          # Die enthaltene XML-Datei kann einen wechselnden Namen haben
+          # -> die erste .xml-Datei im entpackten Ordner verwenden.
+          XML_DATEI=$(find quelle/entpackt -iname "*.xml" | head -n 1)
+          if [ -z "$XML_DATEI" ]; then
+            echo "FEHLER: Keine XML-Datei im ZIP gefunden."
+            exit 1
+          fi
+          echo "Gefundene XML-Datei: $XML_DATEI"
+          cp "$XML_DATEI" quelle/losungen_jahr.xml
+
+      - name: JSON erzeugen
+        run: |
+          mkdir -p data
+          python3 scripts/build_losungen_json.py quelle/losungen_jahr.xml data/losungen.json
+
+      - name: Änderungen committen und pushen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/losungen.json
+          git diff --cached --quiet && echo "Keine Änderungen." || \
+            git commit -m "Losungen automatisch aktualisiert ($(date -u +%Y-%m-%d))"
+          git push
