@@ -1,9 +1,15 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "15.08.2026, 01:39 Uhr (UTC)",
+  "aktualisiert": "15.08.2026, 02:57 Uhr (UTC)",
   "meldungen": [
     {
-      "title": "Ankündigung des US-Präsidenten: Trump will Straße von Hormus zu US-Gebiet erklären",
+      "title": "USA wirtschaftlich unter Druck: Renditen für US-Staatsanleihen",
+      "description": "Probleme auf dem Arbeitsmarkt, eine hartnäckig hohe Inflation und noch höhere Renditen für langlaufende US-Staatsanleihen. All das belastet die Wirtschaft und die Notenbanker - auch in Europa. Von Melanie Böff.",
+      "pubDate": "2026-08-15T04:13:14+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Präsident Trump will Straße von Hormus zu US-Gebiet erklären",
       "description": "Im Iran-Krieg ist ein Frieden immer noch nicht absehbar. Nun hat US-Präsident Trump angedroht: Bald schon wolle er die Straße von Hormus zu US-Territorium erklären. Iran reagierte umgehend.",
       "pubDate": "2026-08-15T03:12:08+02:00",
       "bild": ""
@@ -84,12 +90,6 @@
       "title": "Deutsche Bahn klagt gegen Mitbenutzung ihrer Strecken",
       "description": "Auf stark belasteten Strecken muss die DB Kapazitäten für Konkurrenten freiräumen - so hat es die Bundesnetzagentur beschlossen. Das könnte in der Praxis zu massiven Problemen führen, kritisiert die Bahn. Jetzt klagt sie.",
       "pubDate": "2026-08-14T16:12:58+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Warum die Fahrrinne im Rhein bisher nicht ausgebaut wurde",
-      "description": "Über den Ausbau der Fahrrinne im Rhein wird seit Jahrzehnten diskutiert. Wegen des Niedrigwassers werden die Forderungen danach wieder lauter. Warum ist bislang nichts passiert? Von L. Colic, T. Peters, V. Schmidberger.",
-      "pubDate": "2026-08-14T16:01:01+02:00",
       "bild": ""
     }
   ],
