@@ -1,15 +1,15 @@
 {
-  "aktualisiert": "15.08.2026, 23:13 Uhr",
+  "aktualisiert": "15.08.2026, 23:41 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
-        "temp": 20,
+        "temp": 19,
         "gefuehlt": 20,
         "zustand": "Bedeckt",
         "emoji": "☁️",
         "wind": 11,
-        "luftfeuchte": 77,
+        "luftfeuchte": 78,
         "niederschlag": 0.0
       },
       "tage": [
@@ -18,18 +18,18 @@
           "datum": "16.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 26,
+          "max": 25,
           "min": 17,
           "niederschlag": 0.0
         },
         {
           "wochentag": "Montag",
           "datum": "17.08.",
-          "emoji": "🌧️",
-          "zustand": "Leichter Regen",
-          "max": 18,
-          "min": 13,
-          "niederschlag": 7.2
+          "emoji": "🌦️",
+          "zustand": "Nieselregen",
+          "max": 19,
+          "min": 14,
+          "niederschlag": 4.3
         },
         {
           "wochentag": "Dienstag",
@@ -38,7 +38,7 @@
           "zustand": "Starker Nieselregen",
           "max": 17,
           "min": 12,
-          "niederschlag": 4.4
+          "niederschlag": 4.2
         },
         {
           "wochentag": "Mittwoch",
@@ -67,8 +67,8 @@
         "gefuehlt": 20,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 5,
-        "luftfeuchte": 86,
+        "wind": 6,
+        "luftfeuchte": 89,
         "niederschlag": 0.0
       },
       "tage": [
@@ -127,7 +127,7 @@
         "zustand": "Bedeckt",
         "emoji": "☁️",
         "wind": 12,
-        "luftfeuchte": 77,
+        "luftfeuchte": 79,
         "niederschlag": 0.0
       },
       "tage": [
@@ -143,11 +143,11 @@
         {
           "wochentag": "Montag",
           "datum": "17.08.",
-          "emoji": "🌧️",
-          "zustand": "Leichter Regen",
-          "max": 19,
-          "min": 13,
-          "niederschlag": 8.2
+          "emoji": "🌦️",
+          "zustand": "Starker Nieselregen",
+          "max": 18,
+          "min": 14,
+          "niederschlag": 4.9
         },
         {
           "wochentag": "Dienstag",
@@ -155,8 +155,8 @@
           "emoji": "🌦️",
           "zustand": "Leichte Schauer",
           "max": 17,
-          "min": 11,
-          "niederschlag": 4.3
+          "min": 12,
+          "niederschlag": 4.5
         },
         {
           "wochentag": "Mittwoch",
@@ -181,12 +181,12 @@
     {
       "stadt": "Bochum",
       "aktuell": {
-        "temp": 22,
-        "gefuehlt": 21,
+        "temp": 21,
+        "gefuehlt": 20,
         "zustand": "Bedeckt",
         "emoji": "☁️",
         "wind": 13,
-        "luftfeuchte": 65,
+        "luftfeuchte": 69,
         "niederschlag": 0.0
       },
       "tage": [
@@ -202,11 +202,11 @@
         {
           "wochentag": "Montag",
           "datum": "17.08.",
-          "emoji": "🌦️",
-          "zustand": "Nieselregen",
-          "max": 20,
+          "emoji": "🌧️",
+          "zustand": "Leichter Regen",
+          "max": 21,
           "min": 16,
-          "niederschlag": 4.1
+          "niederschlag": 5.4
         },
         {
           "wochentag": "Dienstag",
@@ -214,8 +214,8 @@
           "emoji": "🌧️",
           "zustand": "Leichter Regen",
           "max": 20,
-          "min": 14,
-          "niederschlag": 4.2
+          "min": 15,
+          "niederschlag": 4.0
         },
         {
           "wochentag": "Mittwoch",
