@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "15.08.2026, 03:48 Uhr (UTC)",
+  "aktualisiert": "15.08.2026, 04:38 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Kampf gegen die Flammen im Hürtgenwald",
+      "description": "Seit Tagen brennt es im Hürtgenwald in der Eifel. Auch in der Nacht gingen die Löscharbeiten weiter. Die Feuerwehr musste ihre Einsatzzentrale verlegen - der Wind hatte sich gedreht.",
+      "pubDate": "2026-08-15T05:51:24+02:00",
+      "bild": ""
+    },
     {
       "title": "Schweres Erdbeben erschüttert Ostindonesien",
       "description": "Gebäude wankten und stürzten teilweise ein, dabei gab es auch Tote: Ein schweres Erdbeben hat die indonesische Flores-Insel getroffen. Das Beben hatte eine Stärke von 7,7.",
@@ -22,7 +28,7 @@
     },
     {
       "title": "Nach Aufrufen in Sozialen Medien: Ceuta wappnet sich für möglichen Massenandrang",
-      "description": "Auf den Straßen ist auffallend viel Polizei. Militärangehörige wurden aus dem Urlaub geholt. Stacheldrahtzäune wurden verstärkt. In Ceuta wird ein neuer Massenandrang von Migranten befürchtet. Der Grund: falsche Gerüchte.",
+      "description": "Auf den Straßen ist auffallend viel Polizei. Militärangehörige wurden aus dem Urlaub geholt. Stacheldrahtzäune verstärkt. In Ceuta wird ein neuer Massenandrang von Migranten befürchtet. Der Grund: falsche Gerüchte. Von Franka Welz.",
       "pubDate": "2026-08-15T03:10:58+02:00",
       "bild": ""
     },
@@ -84,12 +90,6 @@
       "title": "ARD: Florian Hager bleibt Intendant des Hessischen Rundfunks",
       "description": "Florian Hager bleibt für weitere fünf Jahre Intendant des Hessischen Rundfunks. Der 50-Jährige wurde heute in seinem Amt bestätigt. Er steht bereits seit 2022 an der Spitze des Senders.",
       "pubDate": "2026-08-14T20:19:37+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Waldbrände: Grüne fordern Merz zum Handeln auf",
-      "description": "Mehr Schutz vor Waldbränden: Die Grünen-Bundestagsfraktion fordert in einem dem ARD-Hauptstadtstudio vorliegenden Papier von der Bundesregierung konkrete Maßnahmen. Am Kanzler gibt es klare Kritik. Von Birthe Sönnichsen.",
-      "pubDate": "2026-08-14T16:47:02+02:00",
       "bild": ""
     }
   ],
