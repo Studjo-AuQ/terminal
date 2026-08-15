@@ -1,5 +1,5 @@
 {
-  "aktualisiert": "15.08.2026, 02:09 Uhr",
+  "aktualisiert": "15.08.2026, 03:11 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
@@ -9,7 +9,7 @@
         "zustand": "Klar",
         "emoji": "☀️",
         "wind": 7,
-        "luftfeuchte": 37,
+        "luftfeuchte": 29,
         "niederschlag": 0.0
       },
       "tage": [
@@ -18,27 +18,27 @@
           "datum": "15.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 34,
+          "max": 32,
           "min": 22,
           "niederschlag": 0.0
         },
         {
           "wochentag": "Sonntag",
           "datum": "16.08.",
-          "emoji": "☁️",
-          "zustand": "Bedeckt",
-          "max": 24,
-          "min": 18,
-          "niederschlag": 0.0
+          "emoji": "🌧️",
+          "zustand": "Regen",
+          "max": 23,
+          "min": 17,
+          "niederschlag": 3.1
         },
         {
           "wochentag": "Montag",
           "datum": "17.08.",
           "emoji": "🌦️",
-          "zustand": "Starker Nieselregen",
+          "zustand": "Leichter Nieselregen",
           "max": 20,
           "min": 15,
-          "niederschlag": 1.5
+          "niederschlag": 0.4
         },
         {
           "wochentag": "Dienstag",
@@ -67,8 +67,8 @@
         "gefuehlt": 17,
         "zustand": "Klar",
         "emoji": "☀️",
-        "wind": 3,
-        "luftfeuchte": 58,
+        "wind": 4,
+        "luftfeuchte": 59,
         "niederschlag": 0.0
       },
       "tage": [
@@ -122,12 +122,12 @@
     {
       "stadt": "Kierspe",
       "aktuell": {
-        "temp": 20,
+        "temp": 21,
         "gefuehlt": 19,
         "zustand": "Klar",
         "emoji": "☀️",
-        "wind": 5,
-        "luftfeuchte": 43,
+        "wind": 8,
+        "luftfeuchte": 31,
         "niederschlag": 0.0
       },
       "tage": [
@@ -136,27 +136,27 @@
           "datum": "15.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 34,
-          "min": 20,
+          "max": 32,
+          "min": 21,
           "niederschlag": 0.0
         },
         {
           "wochentag": "Sonntag",
           "datum": "16.08.",
-          "emoji": "☁️",
-          "zustand": "Bedeckt",
-          "max": 25,
+          "emoji": "🌦️",
+          "zustand": "Nieselregen",
+          "max": 24,
           "min": 18,
-          "niederschlag": 0.0
+          "niederschlag": 0.7
         },
         {
           "wochentag": "Montag",
           "datum": "17.08.",
           "emoji": "🌦️",
-          "zustand": "Nieselregen",
+          "zustand": "Leichter Nieselregen",
           "max": 20,
           "min": 15,
-          "niederschlag": 1.7
+          "niederschlag": 0.8
         },
         {
           "wochentag": "Dienstag",
@@ -181,12 +181,12 @@
     {
       "stadt": "Bochum",
       "aktuell": {
-        "temp": 27,
-        "gefuehlt": 25,
+        "temp": 26,
+        "gefuehlt": 23,
         "zustand": "Klar",
         "emoji": "☀️",
-        "wind": 7,
-        "luftfeuchte": 27,
+        "wind": 10,
+        "luftfeuchte": 25,
         "niederschlag": 0.0
       },
       "tage": [
@@ -195,7 +195,7 @@
           "datum": "15.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 35,
+          "max": 34,
           "min": 25,
           "niederschlag": 0.0
         },
@@ -204,18 +204,18 @@
           "datum": "16.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 26,
-          "min": 19,
+          "max": 25,
+          "min": 18,
           "niederschlag": 0.0
         },
         {
           "wochentag": "Montag",
           "datum": "17.08.",
-          "emoji": "☁️",
-          "zustand": "Bedeckt",
+          "emoji": "🌦️",
+          "zustand": "Leichter Nieselregen",
           "max": 22,
           "min": 18,
-          "niederschlag": 0.0
+          "niederschlag": 0.1
         },
         {
           "wochentag": "Dienstag",
