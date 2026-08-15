@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "15.08.2026, 19:25 Uhr (UTC)",
+  "aktualisiert": "15.08.2026, 19:47 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Brand in NRW: Bewohner dürfen nach Evakuierung zurück in ihre Häuser",
+      "description": "Bis auf 250 Meter waren die Flammen an ihre Häuser herangerückt - nun dürfen die Bewohner eines evakuierten Ortsteils in Hürtgenwald zurück. Zuvor waren Fortschritte bei der Bekämpfung des Brandes vermeldet worden.",
+      "pubDate": "2026-08-15T21:38:07+02:00",
+      "bild": ""
+    },
     {
       "title": "Waldbrand im Hohen Venn: Sorge in Grenzregion wegen Feuer in Belgien",
       "description": "Während sich die Lage im Hürtgenwald leicht entspannt, blicken die Menschen in der Region besorgt nach Belgien: Dort brennt es im Hohen Venn - die Stadt Monschau in NRW ruft die Menschen auf, sich auf eine mögliche Evakuierung vorzubereiten.",
@@ -65,7 +71,7 @@
     {
       "title": "Berlin: \"Rave the Planet\" mit verschärften Sicherheitsmaßnahmen",
       "description": "Schweigeminute, wo es sonst kaum laut genug sein kann: Hunderttausende tanzen heute bei der Berliner Technoparade \"Rave the Planet\". Zum Auftakt wurde der Opfer des CSD-Anschlags gedacht. Die Sicherheit steht im Fokus.",
-      "pubDate": "2026-08-15T16:48:34+02:00",
+      "pubDate": "2026-08-15T21:25:57+02:00",
       "bild": ""
     },
     {
@@ -84,12 +90,6 @@
       "title": "Waldbrände in Europa: Wo es gerade brennt",
       "description": "Europaweit kämpfen Feuerwehrleute gegen Waldbrände. Tausende Hektar Fläche sind verbrannt, viele Menschen mussten sich in Sicherheit bringen. Ein Überblick über die Lage von Großbritannien bis Griechenland.",
       "pubDate": "2026-08-15T14:23:54+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Tote bei schwerem israelischem Angriff im Libanon",
-      "description": "Einen so verheerenden israelischen Angriff dürfte es seit Wochen nicht gegeben haben: Im Libanon wurden mindestens elf Menschen getötet. Israel sprach von Vergeltung für einen Angriff, den die Hisbollah verübt habe.",
-      "pubDate": "2026-08-15T16:42:42+02:00",
       "bild": ""
     }
   ],
