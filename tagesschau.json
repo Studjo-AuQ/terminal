@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "15.08.2026, 12:50 Uhr (UTC)",
+  "aktualisiert": "15.08.2026, 13:35 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Wo ist der \"Geist von Anchorage\"?",
+      "description": "Als der US-Präsident den Kremlchef vor einem Jahr in Alaska begrüßte, hielt die Welt den Atem an. Danach wurde vor allem von Russland immer wieder der \"Geist von Anchorage\" beschworen. Doch was ist von dem Treffen geblieben? Von Eberhard Nembach.",
+      "pubDate": "2026-08-15T15:29:17+02:00",
+      "bild": ""
+    },
     {
       "title": "Streit um den Sabbat in Israel: Ein Café als Ort des Kulturkampfs",
       "description": "Jeden Samstag protestieren Ultraorthodoxe vor einem Café in Jerusalem, das auch am Sabbat geöffnet hat. Säkulare Israelis halten dagegen. Der Streit zeigt, wie tief der Konflikt um Religion und die Zukunft des Landes reicht. Von J. Poppendieck.",
@@ -84,12 +90,6 @@
       "title": "Schweres Erdbeben erschüttert Ostindonesien",
       "description": "Gebäude wankten und stürzten teilweise ein, dabei gab es auch Tote: Ein schweres Erdbeben hat die indonesische Flores-Insel getroffen. Das Beben hatte eine Stärke von 7,7.",
       "pubDate": "2026-08-15T11:10:40+02:00",
-      "bild": ""
-    },
-    {
-      "title": "USA wirtschaftlich unter Druck: Renditen für US-Staatsanleihen",
-      "description": "Probleme auf dem Arbeitsmarkt, eine hartnäckig hohe Inflation und noch höhere Renditen für langlaufende US-Staatsanleihen. All das belastet die Wirtschaft und die Notenbanker - auch in Europa. Von Melanie Böff.",
-      "pubDate": "2026-08-15T04:13:14+02:00",
       "bild": ""
     }
   ],
