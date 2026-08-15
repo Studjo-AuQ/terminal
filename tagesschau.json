@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "15.08.2026, 02:57 Uhr (UTC)",
+  "aktualisiert": "15.08.2026, 03:48 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Schweres Erdbeben erschüttert Ostindonesien",
+      "description": "Gebäude wankten und stürzten teilweise ein, dabei gab es auch Tote: Ein schweres Erdbeben hat die indonesische Flores-Insel getroffen. Das Beben hatte eine Stärke von 7,7.",
+      "pubDate": "2026-08-15T05:07:27+02:00",
+      "bild": ""
+    },
     {
       "title": "USA wirtschaftlich unter Druck: Renditen für US-Staatsanleihen",
       "description": "Probleme auf dem Arbeitsmarkt, eine hartnäckig hohe Inflation und noch höhere Renditen für langlaufende US-Staatsanleihen. All das belastet die Wirtschaft und die Notenbanker - auch in Europa. Von Melanie Böff.",
@@ -84,12 +90,6 @@
       "title": "Waldbrände: Grüne fordern Merz zum Handeln auf",
       "description": "Mehr Schutz vor Waldbränden: Die Grünen-Bundestagsfraktion fordert in einem dem ARD-Hauptstadtstudio vorliegenden Papier von der Bundesregierung konkrete Maßnahmen. Am Kanzler gibt es klare Kritik. Von Birthe Sönnichsen.",
       "pubDate": "2026-08-14T16:47:02+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Deutsche Bahn klagt gegen Mitbenutzung ihrer Strecken",
-      "description": "Auf stark belasteten Strecken muss die DB Kapazitäten für Konkurrenten freiräumen - so hat es die Bundesnetzagentur beschlossen. Das könnte in der Praxis zu massiven Problemen führen, kritisiert die Bahn. Jetzt klagt sie.",
-      "pubDate": "2026-08-14T16:12:58+02:00",
       "bild": ""
     }
   ],
