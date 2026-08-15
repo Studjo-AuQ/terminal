@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "15.08.2026, 07:35 Uhr (UTC)",
+  "aktualisiert": "15.08.2026, 08:36 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Deutsche Bahn will alte Güterwaggons wieder in Betrieb nehmen",
+      "description": "Der Rhein-Pegel bei Kaub in Rheinland-Pfalz beträgt noch wenige Zentimeter, die Schifffahrt ist stark eingeschränkt. Die Bahn will dabei helfen, mehr Güter auf die Schiene zu verlagern. Eine Wirtschaftsweise warnt vor steigenden Preisen.",
+      "pubDate": "2026-08-15T10:20:55+02:00",
+      "bild": ""
+    },
     {
       "title": "Millionen-Goldfund auf belgischer Baustelle",
       "description": "Goldbarren und Münzen im Wert von neun Millionen Euro sind in Belgien bei der Renovierung eines historischen Gebäudes aufgetaucht. Der Schatz war offenbar in Kellerwände eingemauert - und befindet sich jetzt in der Obhut der Polizei.",
@@ -84,12 +90,6 @@
       "title": "Waldbrand in der Eifel: \"Ein doppelter Weckruf\"",
       "description": "Seit Wochen gibt es kaum Regen, dazu extreme Temperaturen und jetzt einen Waldbrand in der Eifel. Feuerökologe Alexander Held sieht darin einen \"doppelten Weckruf\". Wie gut ist Deutschland auf solche Gefahren vorbereitet?",
       "pubDate": "2026-08-14T18:49:59+02:00",
-      "bild": ""
-    },
-    {
-      "title": "NRW kämpft mit dem wohl größten Waldbrand der Landesgeschichte",
-      "description": "Im nordrhein-westfälischen Hürtgenwald brennt es auf mehr als 200 Hektar. Es dürfte der größte Waldbrand in der Geschichte des Bundeslandes sein. Hunderte Menschen wurden dort evakuiert - andere Teile der Eifel könnten folgen.",
-      "pubDate": "2026-08-15T00:53:28+02:00",
       "bild": ""
     }
   ],
