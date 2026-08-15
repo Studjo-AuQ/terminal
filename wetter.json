@@ -1,15 +1,15 @@
 {
-  "aktualisiert": "15.08.2026, 15:13 Uhr",
+  "aktualisiert": "15.08.2026, 15:42 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
-        "temp": 28,
-        "gefuehlt": 26,
+        "temp": 26,
+        "gefuehlt": 24,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 11,
-        "luftfeuchte": 32,
+        "wind": 10,
+        "luftfeuchte": 39,
         "niederschlag": 0.0
       },
       "tage": [
@@ -27,18 +27,18 @@
           "datum": "16.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 24,
-          "min": 18,
+          "max": 26,
+          "min": 17,
           "niederschlag": 0.0
         },
         {
           "wochentag": "Montag",
           "datum": "17.08.",
-          "emoji": "🌦️",
-          "zustand": "Leichter Nieselregen",
-          "max": 18,
-          "min": 14,
-          "niederschlag": 1.0
+          "emoji": "🌧️",
+          "zustand": "Leichter Regen",
+          "max": 19,
+          "min": 13,
+          "niederschlag": 4.5
         },
         {
           "wochentag": "Dienstag",
@@ -46,7 +46,7 @@
           "emoji": "🌦️",
           "zustand": "Leichte Schauer",
           "max": 18,
-          "min": 14,
+          "min": 13,
           "niederschlag": 10.1
         },
         {
@@ -63,12 +63,12 @@
     {
       "stadt": "Werdohl",
       "aktuell": {
-        "temp": 28,
+        "temp": 27,
         "gefuehlt": 26,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 15,
-        "luftfeuchte": 41,
+        "wind": 14,
+        "luftfeuchte": 43,
         "niederschlag": 0.0
       },
       "tage": [
@@ -122,12 +122,12 @@
     {
       "stadt": "Kierspe",
       "aktuell": {
-        "temp": 28,
-        "gefuehlt": 27,
+        "temp": 25,
+        "gefuehlt": 24,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 11,
-        "luftfeuchte": 33,
+        "wind": 13,
+        "luftfeuchte": 41,
         "niederschlag": 0.0
       },
       "tage": [
@@ -145,18 +145,18 @@
           "datum": "16.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 24,
-          "min": 18,
+          "max": 26,
+          "min": 17,
           "niederschlag": 0.0
         },
         {
           "wochentag": "Montag",
           "datum": "17.08.",
-          "emoji": "🌦️",
-          "zustand": "Leichter Nieselregen",
-          "max": 17,
-          "min": 14,
-          "niederschlag": 0.4
+          "emoji": "🌧️",
+          "zustand": "Leichter Regen",
+          "max": 18,
+          "min": 12,
+          "niederschlag": 5.1
         },
         {
           "wochentag": "Dienstag",
@@ -164,7 +164,7 @@
           "emoji": "🌦️",
           "zustand": "Leichte Schauer",
           "max": 18,
-          "min": 13,
+          "min": 12,
           "niederschlag": 10.8
         },
         {
@@ -181,12 +181,12 @@
     {
       "stadt": "Bochum",
       "aktuell": {
-        "temp": 28,
+        "temp": 29,
         "gefuehlt": 28,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 9,
-        "luftfeuchte": 34,
+        "wind": 14,
+        "luftfeuchte": 32,
         "niederschlag": 0.0
       },
       "tage": [
@@ -196,7 +196,7 @@
           "emoji": "☁️",
           "zustand": "Bedeckt",
           "max": 31,
-          "min": 23,
+          "min": 24,
           "niederschlag": 0.0
         },
         {
@@ -204,18 +204,18 @@
           "datum": "16.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 26,
-          "min": 19,
+          "max": 28,
+          "min": 18,
           "niederschlag": 0.0
         },
         {
           "wochentag": "Montag",
           "datum": "17.08.",
           "emoji": "🌦️",
-          "zustand": "Nieselregen",
-          "max": 20,
+          "zustand": "Starker Nieselregen",
+          "max": 21,
           "min": 16,
-          "niederschlag": 2.0
+          "niederschlag": 4.1
         },
         {
           "wochentag": "Dienstag",
