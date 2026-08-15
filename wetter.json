@@ -1,15 +1,15 @@
 {
-  "aktualisiert": "15.08.2026, 21:13 Uhr",
+  "aktualisiert": "15.08.2026, 21:42 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
-        "temp": 21,
-        "gefuehlt": 21,
+        "temp": 20,
+        "gefuehlt": 20,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 11,
-        "luftfeuchte": 69,
+        "wind": 10,
+        "luftfeuchte": 70,
         "niederschlag": 0.0
       },
       "tage": [
@@ -19,7 +19,7 @@
           "emoji": "☁️",
           "zustand": "Bedeckt",
           "max": 31,
-          "min": 21,
+          "min": 20,
           "niederschlag": 0.0
         },
         {
@@ -27,7 +27,7 @@
           "datum": "16.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 25,
+          "max": 26,
           "min": 17,
           "niederschlag": 0.0
         },
@@ -36,9 +36,9 @@
           "datum": "17.08.",
           "emoji": "🌧️",
           "zustand": "Leichter Regen",
-          "max": 19,
-          "min": 14,
-          "niederschlag": 6.1
+          "max": 18,
+          "min": 13,
+          "niederschlag": 5.7
         },
         {
           "wochentag": "Dienstag",
@@ -46,7 +46,7 @@
           "emoji": "🌦️",
           "zustand": "Starker Nieselregen",
           "max": 17,
-          "min": 12,
+          "min": 11,
           "niederschlag": 4.3
         },
         {
@@ -63,12 +63,12 @@
     {
       "stadt": "Werdohl",
       "aktuell": {
-        "temp": 19,
-        "gefuehlt": 21,
+        "temp": 18,
+        "gefuehlt": 20,
         "zustand": "Bedeckt",
         "emoji": "☁️",
         "wind": 4,
-        "luftfeuchte": 80,
+        "luftfeuchte": 83,
         "niederschlag": 0.0
       },
       "tage": [
@@ -122,12 +122,12 @@
     {
       "stadt": "Kierspe",
       "aktuell": {
-        "temp": 21,
-        "gefuehlt": 21,
+        "temp": 20,
+        "gefuehlt": 20,
         "zustand": "Bedeckt",
         "emoji": "☁️",
         "wind": 10,
-        "luftfeuchte": 70,
+        "luftfeuchte": 64,
         "niederschlag": 0.0
       },
       "tage": [
@@ -145,7 +145,7 @@
           "datum": "16.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 25,
+          "max": 26,
           "min": 17,
           "niederschlag": 0.0
         },
@@ -154,9 +154,9 @@
           "datum": "17.08.",
           "emoji": "🌧️",
           "zustand": "Leichter Regen",
-          "max": 18,
-          "min": 14,
-          "niederschlag": 7.5
+          "max": 17,
+          "min": 13,
+          "niederschlag": 3.7
         },
         {
           "wochentag": "Dienstag",
@@ -164,7 +164,7 @@
           "emoji": "🌦️",
           "zustand": "Leichte Schauer",
           "max": 17,
-          "min": 12,
+          "min": 11,
           "niederschlag": 4.5
         },
         {
@@ -185,8 +185,8 @@
         "gefuehlt": 23,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 12,
-        "luftfeuchte": 75,
+        "wind": 13,
+        "luftfeuchte": 69,
         "niederschlag": 0.0
       },
       "tage": [
@@ -196,7 +196,7 @@
           "emoji": "☁️",
           "zustand": "Bedeckt",
           "max": 31,
-          "min": 22,
+          "min": 23,
           "niederschlag": 0.0
         },
         {
@@ -204,18 +204,18 @@
           "datum": "16.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 26,
+          "max": 27,
           "min": 18,
           "niederschlag": 0.0
         },
         {
           "wochentag": "Montag",
           "datum": "17.08.",
-          "emoji": "🌧️",
-          "zustand": "Regen",
+          "emoji": "🌦️",
+          "zustand": "Starker Nieselregen",
           "max": 20,
           "min": 16,
-          "niederschlag": 7.5
+          "niederschlag": 4.6
         },
         {
           "wochentag": "Dienstag",
@@ -224,7 +224,7 @@
           "zustand": "Leichter Regen",
           "max": 20,
           "min": 14,
-          "niederschlag": 4.7
+          "niederschlag": 4.5
         },
         {
           "wochentag": "Mittwoch",
