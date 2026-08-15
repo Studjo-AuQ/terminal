@@ -1,5 +1,5 @@
 {
-  "aktualisiert": "15.08.2026, 15:42 Uhr",
+  "aktualisiert": "15.08.2026, 16:15 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
@@ -9,7 +9,7 @@
         "zustand": "Bedeckt",
         "emoji": "☁️",
         "wind": 10,
-        "luftfeuchte": 39,
+        "luftfeuchte": 42,
         "niederschlag": 0.0
       },
       "tage": [
@@ -63,12 +63,12 @@
     {
       "stadt": "Werdohl",
       "aktuell": {
-        "temp": 27,
-        "gefuehlt": 26,
+        "temp": 26,
+        "gefuehlt": 25,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 14,
-        "luftfeuchte": 43,
+        "wind": 13,
+        "luftfeuchte": 49,
         "niederschlag": 0.0
       },
       "tage": [
@@ -102,31 +102,31 @@
         {
           "wochentag": "Dienstag",
           "datum": "18.08.",
-          "emoji": "🌧️",
-          "zustand": "Regen",
-          "max": 20,
-          "min": 12,
-          "niederschlag": 13.3
+          "emoji": "🌦️",
+          "zustand": "Leichte Schauer",
+          "max": 18,
+          "min": 15,
+          "niederschlag": 8.0
         },
         {
           "wochentag": "Mittwoch",
           "datum": "19.08.",
-          "emoji": "☁️",
-          "zustand": "Bedeckt",
+          "emoji": "🌧️",
+          "zustand": "Leichter Regen",
           "max": 20,
-          "min": 15,
-          "niederschlag": 0.0
+          "min": 17,
+          "niederschlag": 8.1
         }
       ]
     },
     {
       "stadt": "Kierspe",
       "aktuell": {
-        "temp": 25,
+        "temp": 26,
         "gefuehlt": 24,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 13,
+        "wind": 11,
         "luftfeuchte": 41,
         "niederschlag": 0.0
       },
@@ -181,11 +181,11 @@
     {
       "stadt": "Bochum",
       "aktuell": {
-        "temp": 29,
+        "temp": 30,
         "gefuehlt": 28,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 14,
+        "wind": 13,
         "luftfeuchte": 32,
         "niederschlag": 0.0
       },
