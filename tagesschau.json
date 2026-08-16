@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "16.08.2026, 19:25 Uhr (UTC)",
+  "aktualisiert": "16.08.2026, 19:47 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Waldbrände auf griechischer Insel Salamis - zwei Tote",
+      "description": "In Griechenland kämpft die Feuerwehr gegen Waldbrände. Auf der Insel Salamis bei Athen brachen Feuer in der Nähe von Stränden aus. Mindestens zwei Menschen starben. Urlauber und Einwohner wurden mit Booten in Sicherheit gebracht.",
+      "pubDate": "2026-08-16T21:44:47+02:00",
+      "bild": ""
+    },
     {
       "title": "Waldbrand in Belgien bringt Einsatzkräfte an ihre Grenzen",
       "description": "Der Waldbrand im Naturschutzgebiet Hohes Venn an der deutsch-belgischen Grenze breitet sich aus. Internationale Hilfe ist eingetroffen. Die Feuerwehr kämpft mit schwierigen Bedingungen. Auf deutscher Seite bangen die Menschen im Ort Monschau.",
@@ -84,12 +90,6 @@
       "title": "Amanal Petros sichert sich EM-Gold im Marathon",
       "description": "Im Marathon bei der Leichtathletik-EM hat der WM-Zweite Amanal Petros die Goldmedaille gewonnen. Der 31-Jährige beendete das Rennen in Birmingham in nur 2:09:11 Stunden. Zweiter wurde der Italiener Pietro Riva.",
       "pubDate": "2026-08-16T11:46:47+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Reisebus mit Pilgergruppe in Ungarn verunglückt - zwölf Tote",
-      "description": "In Ungarn hat sich in der Nacht ein schweres Busunglück ereignet, zwölf Menschen starben. Ersten Erkenntnissen zufolge soll der Fahrer eingeschlafen sein. Im Bus saß eine Pilgergruppe aus Polen.",
-      "pubDate": "2026-08-16T11:18:50+02:00",
       "bild": ""
     }
   ],
