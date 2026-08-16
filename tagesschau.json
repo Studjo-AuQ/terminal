@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "16.08.2026, 14:54 Uhr (UTC)",
+  "aktualisiert": "16.08.2026, 15:28 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Dieser Sommer ist selbst für Italien extrem",
+      "description": "Der Fluss Po trocknet nahezu aus, Menschen ächzen wegen der Hitze: Auch wenn sich Italien mit heißen Sommern auskennt, ist dieses Jahr eine besondere Herausforderung - unter anderem auch für die Winzer.",
+      "pubDate": "2026-08-16T17:16:26+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Nach der Hitze gibt es in Teilen Deutschlands Abkühlung und Regen",
+      "description": "In Teilen Deutschlands ist es mit der Hitze vorbei - und auch Regen wird erwartet. Am Montag kann es im Süden kräftige Schauer geben, genauso wie im Norden und Osten. Im Westen und der Mitte soll es trocken bleiben.",
+      "pubDate": "2026-08-16T17:06:30+02:00",
+      "bild": ""
+    },
     {
       "title": "Überblick: Waldbrände in Deutschland",
       "description": "Nicht nur im Westen Nordrhein-Westfalens ist die Feuerwehr wegen Waldbränden im Einsatz. Auch in anderen Regionen Deutschlands sind Wald- oder Vegetationsflächen in Brand geraten. Wo brennt es und wie ist die Lage dort?",
@@ -76,20 +88,8 @@
     },
     {
       "title": "Hurrikan \"Lala\" bringt Starkregen und Stromausfälle nach Hawaii",
-      "description": "Tausende Menschen sind ohne Strom, Straßen überflutet: Der Tropensturm \"Lala\" ist zum Hurrikan geworden und zieht dicht an Hawaii vorbei. Auch Maui und Oahu müssen sich auf Sturm und Starkregen einstellen.",
-      "pubDate": "2026-08-16T09:23:29+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Russland greift Kiew erneut mit ballistischen Raketen an",
-      "description": "Die ukrainische Hauptstadt ist erneut mit Raketen angegriffen worden, in zwei Stadtteilen brachen Feuer aus. Aus anderen Landesteilen wurden mindestens drei Tote gemeldet. Auch Russland meldet Angriffe und Todesopfer.",
-      "pubDate": "2026-08-16T11:43:04+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Neue Lage im Heimatland: Immer mehr Syrer verlieren Schutzstatus",
-      "description": "Nach dem Sturz von Syriens Machthaber Assad hat sich die Lage im Land geändert. Deswegen wird syrischen Flüchtlingen in Deutschland immer häufiger der Schutzstatus aberkannt.",
-      "pubDate": "2026-08-16T08:59:34+02:00",
+      "description": "Ein Toter, 130.000 Menschen ohne Strom, Straßen überflutet, Häuser weggerissen: Hurrikan \"Lala\" zieht dicht an Hawaii vorbei. Auch Maui und Oahu müssen sich auf Sturm und Starkregen einstellen.",
+      "pubDate": "2026-08-16T17:25:54+02:00",
       "bild": ""
     }
   ],
