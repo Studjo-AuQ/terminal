@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "16.08.2026, 07:36 Uhr (UTC)",
+  "aktualisiert": "16.08.2026, 08:37 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "NATO-Kampfjet schießt Drohne über Rumänien ab",
+      "description": "Ein Kampfjet der NATO hat eine Drohne über Rumänien abgeschossen - es war die vierte, die in diesem Jahr über dem Land abgefangen wurde. Zuletzt hatte es wiederholt Vorfälle in osteuropäischen NATO-Ländern gegeben.",
+      "pubDate": "2026-08-16T10:35:21+02:00",
+      "bild": ""
+    },
     {
       "title": "Hurrikan \"Lala\" bringt Starkregen und Stromausfälle nach Hawaii",
       "description": "Tausende Menschen sind ohne Strom, Straßen überflutet: Der Tropensturm \"Lala\" ist zum Hurrikan geworden und zieht dicht an Hawaii vorbei. Auch Maui und Oahu müssen sich auf Sturm und Starkregen einstellen.",
@@ -58,8 +64,8 @@
     },
     {
       "title": "Grenzregion bei Monschau in NRW: Waldbrand in Belgien rückt immer näher",
-      "description": "Der Waldbrand im Hohen Venn ist nur noch wenige Kilometer von der deutschen Grenze entfernt. Die Stadt Monschau in NRW hat Einwohner aufgerufen, sich auf eine mögliche Evakuierung vorzubereiten - und warnt vor starker Rauchbelastung.",
-      "pubDate": "2026-08-16T07:08:20+02:00",
+      "description": "Der Waldbrand im Hohen Venn ist nur noch wenige Kilometer von der deutschen Grenze entfernt. Monschau in NRW hat Einwohner aufgerufen, sich auf eine Evakuierung vorzubereiten - einigen wird wegen des Rauchs jetzt schon empfohlen zu gehen.",
+      "pubDate": "2026-08-16T10:31:50+02:00",
       "bild": ""
     },
     {
@@ -84,12 +90,6 @@
       "title": "Spanische Exklave Ceuta: Viele Sicherheitskräfte, Chaos ausgeblieben",
       "description": "Wegen Gerüchten in Sozialen Medien hatten sich Spanien und Marokko auf einen neuen Andrang von Migranten auf Ceuta vorbereitet. Auf marokkanischer Seite gab es zwar Festnahmen - doch das befürchtete Chaos wie Ende Juli blieb bisher aus.",
       "pubDate": "2026-08-15T22:03:58+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Neue Erkenntnisse: Wie viel Kaffee ist gesund?",
-      "description": "Bis zu fünf Tassen Kaffee am Tag gelten für die meisten gesunden Erwachsenen als unbedenklich - möglicherweise sogar als gesund. Was die Forschung zu Herz, Diabetes und Pestizidrückständen zeigt. Von Doris Tromballa.",
-      "pubDate": "2026-08-15T18:15:34+02:00",
       "bild": ""
     }
   ],
