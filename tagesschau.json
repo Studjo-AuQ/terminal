@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "16.08.2026, 08:37 Uhr (UTC)",
+  "aktualisiert": "16.08.2026, 09:33 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Reisebus mit Pilgergruppe in Ungarn verunglückt - zwölf Tote",
+      "description": "In Ungarn hat sich in der Nacht ein schweres Busunglück ereignet, zwölf Menschen starben. Ersten Erkenntnissen zufolge soll der Fahrer eingeschlafen sein. Im Bus saß eine Pilgergruppe aus Polen.",
+      "pubDate": "2026-08-16T11:18:50+02:00",
+      "bild": ""
+    },
     {
       "title": "NATO-Kampfjet schießt Drohne über Rumänien ab",
       "description": "Ein Kampfjet der NATO hat eine Drohne über Rumänien abgeschossen - es war die vierte, die in diesem Jahr über dem Land abgefangen wurde. Zuletzt hatte es wiederholt Vorfälle in osteuropäischen NATO-Ländern gegeben.",
@@ -84,12 +90,6 @@
       "title": "Liebmann schwimmt über 1.500 Meter Freistil Weltrekord und holt EM-Gold",
       "description": "Johannes Liebmann hat EM-Gold über 1.500 Meter Freistil gewonnen. Bei der Schwimm-Europameisterschaft stellte der 19-Jährige mit gut 14 Minuten und 26 Sekunden einen neuen Weltrekord auf.",
       "pubDate": "2026-08-15T20:04:47+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Spanische Exklave Ceuta: Viele Sicherheitskräfte, Chaos ausgeblieben",
-      "description": "Wegen Gerüchten in Sozialen Medien hatten sich Spanien und Marokko auf einen neuen Andrang von Migranten auf Ceuta vorbereitet. Auf marokkanischer Seite gab es zwar Festnahmen - doch das befürchtete Chaos wie Ende Juli blieb bisher aus.",
-      "pubDate": "2026-08-15T22:03:58+02:00",
       "bild": ""
     }
   ],
