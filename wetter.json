@@ -1,15 +1,15 @@
 {
-  "aktualisiert": "16.08.2026, 22:44 Uhr",
+  "aktualisiert": "16.08.2026, 23:13 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
-        "temp": 17,
+        "temp": 18,
         "gefuehlt": 17,
-        "zustand": "Bedeckt",
-        "emoji": "☁️",
+        "zustand": "Überwiegend klar",
+        "emoji": "🌤️",
         "wind": 6,
-        "luftfeuchte": 66,
+        "luftfeuchte": 61,
         "niederschlag": 0.0
       },
       "tage": [
@@ -17,28 +17,28 @@
           "wochentag": "Montag",
           "datum": "17.08.",
           "emoji": "🌧️",
-          "zustand": "Leichter Regen",
+          "zustand": "Regen",
           "max": 18,
-          "min": 14,
-          "niederschlag": 3.9
+          "min": 13,
+          "niederschlag": 9.4
         },
         {
           "wochentag": "Dienstag",
           "datum": "18.08.",
           "emoji": "🌧️",
-          "zustand": "Leichter Regen",
-          "max": 15,
-          "min": 13,
-          "niederschlag": 6.8
+          "zustand": "Regen",
+          "max": 16,
+          "min": 12,
+          "niederschlag": 11.4
         },
         {
           "wochentag": "Mittwoch",
           "datum": "19.08.",
-          "emoji": "🌦️",
-          "zustand": "Schauer",
+          "emoji": "🌧️",
+          "zustand": "Regen",
           "max": 18,
           "min": 14,
-          "niederschlag": 13.1
+          "niederschlag": 13.6
         },
         {
           "wochentag": "Donnerstag",
@@ -67,8 +67,8 @@
         "gefuehlt": 16,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 2,
-        "luftfeuchte": 78,
+        "wind": 3,
+        "luftfeuchte": 79,
         "niederschlag": 0.0
       },
       "tage": [
@@ -124,10 +124,10 @@
       "aktuell": {
         "temp": 17,
         "gefuehlt": 16,
-        "zustand": "Teils bewölkt",
-        "emoji": "⛅",
-        "wind": 8,
-        "luftfeuchte": 72,
+        "zustand": "Überwiegend klar",
+        "emoji": "🌤️",
+        "wind": 5,
+        "luftfeuchte": 64,
         "niederschlag": 0.0
       },
       "tage": [
@@ -138,25 +138,25 @@
           "zustand": "Regen",
           "max": 17,
           "min": 14,
-          "niederschlag": 6.3
+          "niederschlag": 9.2
         },
         {
           "wochentag": "Dienstag",
           "datum": "18.08.",
           "emoji": "🌧️",
           "zustand": "Leichter Regen",
-          "max": 15,
-          "min": 13,
-          "niederschlag": 9.5
+          "max": 16,
+          "min": 12,
+          "niederschlag": 10.3
         },
         {
           "wochentag": "Mittwoch",
           "datum": "19.08.",
-          "emoji": "🌦️",
-          "zustand": "Schauer",
+          "emoji": "🌧️",
+          "zustand": "Regen",
           "max": 18,
           "min": 14,
-          "niederschlag": 13.2
+          "niederschlag": 14.3
         },
         {
           "wochentag": "Donnerstag",
@@ -185,19 +185,19 @@
         "gefuehlt": 20,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 7,
-        "luftfeuchte": 56,
+        "wind": 8,
+        "luftfeuchte": 53,
         "niederschlag": 0.0
       },
       "tage": [
         {
           "wochentag": "Montag",
           "datum": "17.08.",
-          "emoji": "🌦️",
-          "zustand": "Starker Nieselregen",
+          "emoji": "🌧️",
+          "zustand": "Leichter Regen",
           "max": 21,
           "min": 16,
-          "niederschlag": 3.4
+          "niederschlag": 6.7
         },
         {
           "wochentag": "Dienstag",
@@ -205,8 +205,8 @@
           "emoji": "🌧️",
           "zustand": "Leichter Regen",
           "max": 18,
-          "min": 16,
-          "niederschlag": 8.1
+          "min": 15,
+          "niederschlag": 8.6
         },
         {
           "wochentag": "Mittwoch",
@@ -215,7 +215,7 @@
           "zustand": "Regen",
           "max": 22,
           "min": 16,
-          "niederschlag": 9.8
+          "niederschlag": 10.1
         },
         {
           "wochentag": "Donnerstag",
