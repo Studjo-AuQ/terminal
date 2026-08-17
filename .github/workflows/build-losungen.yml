@@ -1,0 +1,53 @@
+name: Losungen aus hochgeladener XML-Datei erzeugen
+
+on:
+  # Läuft automatisch los, sobald eine neue/aktualisierte XML-Datei
+  # im Ordner "quelle/" hochgeladen wird (z.B. jährlich im Januar).
+  push:
+    paths:
+      - 'quelle/*.xml'
+
+  # Manueller "Run workflow"-Button im Reiter "Actions" in GitHub
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-losungen:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Neueste XML-Datei in quelle/ finden
+        run: |
+          set -e
+          XML_DATEI=$(ls -t quelle/*.xml 2>/dev/null | head -n 1)
+          if [ -z "$XML_DATEI" ]; then
+            echo "FEHLER: Keine .xml-Datei im Ordner 'quelle/' gefunden."
+            echo "Bitte die von losungen.de heruntergeladene Datei dort ablegen."
+            exit 1
+          fi
+          echo "Verwende Datei: $XML_DATEI"
+          echo "XML_DATEI=$XML_DATEI" >> "$GITHUB_ENV"
+
+      - name: JSON erzeugen
+        run: |
+          mkdir -p data
+          python3 scripts/build_losungen_json.py "$XML_DATEI" data/losungen.json
+
+      - name: Änderungen committen und pushen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/losungen.json
+          git diff --cached --quiet && echo "Keine Änderungen." || \
+            git commit -m "Losungen aktualisiert aus $XML_DATEI ($(date -u +%Y-%m-%d))"
+          git push
