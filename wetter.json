@@ -1,5 +1,5 @@
 {
-  "aktualisiert": "17.08.2026, 17:20 Uhr",
+  "aktualisiert": "17.08.2026, 17:52 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
@@ -9,7 +9,7 @@
         "zustand": "Bedeckt",
         "emoji": "☁️",
         "wind": 6,
-        "luftfeuchte": 91,
+        "luftfeuchte": 92,
         "niederschlag": 0.0
       },
       "tage": [
@@ -19,7 +19,7 @@
           "emoji": "🌧️",
           "zustand": "Leichter Regen",
           "max": 17,
-          "min": 13,
+          "min": 14,
           "niederschlag": 5.0
         },
         {
@@ -28,7 +28,7 @@
           "emoji": "🌧️",
           "zustand": "Regen",
           "max": 16,
-          "min": 13,
+          "min": 12,
           "niederschlag": 10.9
         },
         {
@@ -36,7 +36,7 @@
           "datum": "19.08.",
           "emoji": "🌦️",
           "zustand": "Starker Nieselregen",
-          "max": 17,
+          "max": 18,
           "min": 14,
           "niederschlag": 5.2
         },
@@ -67,7 +67,7 @@
         "gefuehlt": 17,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 5,
+        "wind": 4,
         "luftfeuchte": 81,
         "niederschlag": 0.0
       },
@@ -127,7 +127,7 @@
         "zustand": "Bedeckt",
         "emoji": "☁️",
         "wind": 5,
-        "luftfeuchte": 91,
+        "luftfeuchte": 96,
         "niederschlag": 0.0
       },
       "tage": [
@@ -137,7 +137,7 @@
           "emoji": "🌧️",
           "zustand": "Leichter Regen",
           "max": 17,
-          "min": 13,
+          "min": 14,
           "niederschlag": 6.4
         },
         {
@@ -146,7 +146,7 @@
           "emoji": "🌧️",
           "zustand": "Regen",
           "max": 16,
-          "min": 12,
+          "min": 14,
           "niederschlag": 12.2
         },
         {
@@ -154,7 +154,7 @@
           "datum": "19.08.",
           "emoji": "🌦️",
           "zustand": "Starker Nieselregen",
-          "max": 17,
+          "max": 19,
           "min": 14,
           "niederschlag": 6.2
         },
@@ -182,11 +182,11 @@
       "stadt": "Bochum",
       "aktuell": {
         "temp": 18,
-        "gefuehlt": 17,
+        "gefuehlt": 18,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 9,
-        "luftfeuchte": 72,
+        "wind": 8,
+        "luftfeuchte": 75,
         "niederschlag": 0.0
       },
       "tage": [
@@ -204,7 +204,7 @@
           "datum": "18.08.",
           "emoji": "🌧️",
           "zustand": "Leichter Regen",
-          "max": 19,
+          "max": 18,
           "min": 16,
           "niederschlag": 7.7
         },
