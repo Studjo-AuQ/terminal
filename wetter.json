@@ -1,27 +1,18 @@
 {
-  "aktualisiert": "17.08.2026, 21:48 Uhr",
+  "aktualisiert": "17.08.2026, 22:16 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
         "temp": 14,
-        "gefuehlt": 15,
-        "zustand": "Überwiegend klar",
-        "emoji": "🌤️",
+        "gefuehlt": 14,
+        "zustand": "Teils bewölkt",
+        "emoji": "⛅",
         "wind": 1,
-        "luftfeuchte": 88,
+        "luftfeuchte": 89,
         "niederschlag": 0.0
       },
       "tage": [
-        {
-          "wochentag": "Montag",
-          "datum": "17.08.",
-          "emoji": "🌧️",
-          "zustand": "Leichter Regen",
-          "max": 17,
-          "min": 14,
-          "niederschlag": 5.0
-        },
         {
           "wochentag": "Dienstag",
           "datum": "18.08.",
@@ -57,6 +48,15 @@
           "max": 20,
           "min": 13,
           "niederschlag": 0.3
+        },
+        {
+          "wochentag": "Samstag",
+          "datum": "22.08.",
+          "emoji": "🌦️",
+          "zustand": "Leichter Nieselregen",
+          "max": 20,
+          "min": 12,
+          "niederschlag": 1.2
         }
       ]
     },
@@ -65,22 +65,13 @@
       "aktuell": {
         "temp": 13,
         "gefuehlt": 13,
-        "zustand": "Überwiegend klar",
-        "emoji": "🌤️",
-        "wind": 2,
-        "luftfeuchte": 93,
+        "zustand": "Nebel",
+        "emoji": "🌫️",
+        "wind": 1,
+        "luftfeuchte": 95,
         "niederschlag": 0.0
       },
       "tage": [
-        {
-          "wochentag": "Montag",
-          "datum": "17.08.",
-          "emoji": "🌦️",
-          "zustand": "Leichte Schauer",
-          "max": 17,
-          "min": 13,
-          "niederschlag": 4.7
-        },
         {
           "wochentag": "Dienstag",
           "datum": "18.08.",
@@ -116,6 +107,15 @@
           "max": 22,
           "min": 14,
           "niederschlag": 6.6
+        },
+        {
+          "wochentag": "Samstag",
+          "datum": "22.08.",
+          "emoji": "🌫️",
+          "zustand": "Nebel",
+          "max": 21,
+          "min": 13,
+          "niederschlag": 0.0
         }
       ]
     },
@@ -126,20 +126,11 @@
         "gefuehlt": 15,
         "zustand": "Überwiegend klar",
         "emoji": "🌤️",
-        "wind": 3,
-        "luftfeuchte": 92,
+        "wind": 2,
+        "luftfeuchte": 94,
         "niederschlag": 0.0
       },
       "tage": [
-        {
-          "wochentag": "Montag",
-          "datum": "17.08.",
-          "emoji": "🌧️",
-          "zustand": "Leichter Regen",
-          "max": 17,
-          "min": 14,
-          "niederschlag": 6.4
-        },
         {
           "wochentag": "Dienstag",
           "datum": "18.08.",
@@ -175,6 +166,15 @@
           "max": 20,
           "min": 12,
           "niederschlag": 0.3
+        },
+        {
+          "wochentag": "Samstag",
+          "datum": "22.08.",
+          "emoji": "🌦️",
+          "zustand": "Leichter Nieselregen",
+          "max": 20,
+          "min": 11,
+          "niederschlag": 0.9
         }
       ]
     },
@@ -182,23 +182,14 @@
       "stadt": "Bochum",
       "aktuell": {
         "temp": 17,
-        "gefuehlt": 18,
-        "zustand": "Klar",
-        "emoji": "☀️",
-        "wind": 5,
-        "luftfeuchte": 78,
+        "gefuehlt": 17,
+        "zustand": "Überwiegend klar",
+        "emoji": "🌤️",
+        "wind": 6,
+        "luftfeuchte": 80,
         "niederschlag": 0.0
       },
       "tage": [
-        {
-          "wochentag": "Montag",
-          "datum": "17.08.",
-          "emoji": "🌧️",
-          "zustand": "Leichter Regen",
-          "max": 21,
-          "min": 16,
-          "niederschlag": 3.7
-        },
         {
           "wochentag": "Dienstag",
           "datum": "18.08.",
@@ -234,6 +225,15 @@
           "max": 22,
           "min": 15,
           "niederschlag": 0.3
+        },
+        {
+          "wochentag": "Samstag",
+          "datum": "22.08.",
+          "emoji": "🌦️",
+          "zustand": "Leichter Nieselregen",
+          "max": 22,
+          "min": 13,
+          "niederschlag": 1.5
         }
       ]
     }
