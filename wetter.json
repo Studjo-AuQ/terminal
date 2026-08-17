@@ -1,5 +1,5 @@
 {
-  "aktualisiert": "17.08.2026, 16:18 Uhr",
+  "aktualisiert": "17.08.2026, 16:53 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
@@ -8,8 +8,8 @@
         "gefuehlt": 16,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 9,
-        "luftfeuchte": 83,
+        "wind": 7,
+        "luftfeuchte": 87,
         "niederschlag": 0.0
       },
       "tage": [
@@ -67,8 +67,8 @@
         "gefuehlt": 17,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 6,
-        "luftfeuchte": 80,
+        "wind": 5,
+        "luftfeuchte": 81,
         "niederschlag": 0.0
       },
       "tage": [
@@ -123,11 +123,11 @@
       "stadt": "Kierspe",
       "aktuell": {
         "temp": 16,
-        "gefuehlt": 17,
+        "gefuehlt": 16,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 8,
-        "luftfeuchte": 87,
+        "wind": 6,
+        "luftfeuchte": 93,
         "niederschlag": 0.0
       },
       "tage": [
@@ -181,12 +181,12 @@
     {
       "stadt": "Bochum",
       "aktuell": {
-        "temp": 19,
-        "gefuehlt": 19,
+        "temp": 18,
+        "gefuehlt": 18,
         "zustand": "Bedeckt",
         "emoji": "☁️",
         "wind": 9,
-        "luftfeuchte": 75,
+        "luftfeuchte": 77,
         "niederschlag": 0.0
       },
       "tage": [
