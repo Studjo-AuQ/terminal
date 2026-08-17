@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "17.08.2026, 10:38 Uhr (UTC)",
+  "aktualisiert": "17.08.2026, 11:31 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Deutsche verreisen häufiger im Inland",
+      "description": "Die Deutschen haben im vergangenen Jahr so viele Reisen im eigenen Land unternommen wie noch nie. Das lag vor allem an einer gestiegenen Zahl von Geschäftsreisen innerhalb Deutschlands.",
+      "pubDate": "2026-08-17T12:46:23+02:00",
+      "bild": ""
+    },
     {
       "title": "Hilfe für minderjährige Mädchen in der Ungewissheit von Ceuta",
       "description": "In die spanischen Exklave Ceuta sind auch viele Mädchen gekommen, die Asyl suchen, um ihre Eltern in der Heimat zu unterstützen. Ihre Zukunft ist ungewiss. Doch es gibt Menschen, die den Minderjährigen helfen. Von F. Welz.",
@@ -84,12 +90,6 @@
       "title": "Waldbrand in Belgien bringt Einsatzkräfte an ihre Grenzen",
       "description": "Der Waldbrand im Naturschutzgebiet Hohes Venn an der deutsch-belgischen Grenze breitet sich aus. Internationale Hilfe ist eingetroffen. Die Feuerwehr kämpft mit schwierigen Bedingungen. Auf deutscher Seite wurde der Ort Monschau teilweise evakuiert.",
       "pubDate": "2026-08-16T23:22:36+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Nach Erdbeben mit mehr als 50 Toten: Hilfsmaßnahmen in Indonesien laufen an",
-      "description": "Nach dem schweren Erdbeben im Osten Indonesiens ist die Zahl der Opfer auf mehr als 50 gestiegen. Such- und Rettungsmaßnahmen laufen, Tausende Soldaten und Polizisten helfen im Katastrophengebiet. Nachbeben erschweren die Arbeit.",
-      "pubDate": "2026-08-16T19:10:26+02:00",
       "bild": ""
     }
   ],
