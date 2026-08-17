@@ -1,20 +1,2922 @@
 {
-  "_hinweis": "Diese Datei wird einmal jährlich automatisch durch die GitHub Action 'update-losungen.yml' aus der offiziellen ZIP-Datei von losungen.de neu erzeugt. Manuelle Änderungen werden beim nächsten Lauf überschrieben.",
-
-  "2026-08-14": {
-    "wochentag": "Freitag",
+  "2026-01-01": {
+    "lehrtext": "Darin ist erschienen die Liebe Gottes unter uns, dass Gott seinen eingebornen Sohn gesandt hat in die Welt, damit wir durch ihn leben sollen.",
+    "lehrtext_stelle": "1. Johannes 4,9",
+    "losung": "Der HERR wird aufheben die Schmach seines Volks in allen Landen.",
+    "losung_stelle": "Jesaja 25,8",
+    "sonntag": "Neujahr",
+    "wochentag": "Donnerstag"
+  },
+  "2026-01-02": {
+    "lehrtext": "Vergeltet nicht Böses mit Bösem oder Scheltwort mit Scheltwort, sondern segnet vielmehr, weil ihr dazu berufen seid, auf dass ihr Segen erbt.",
+    "lehrtext_stelle": "1. Petrus 3,9",
+    "losung": "Der HERR segnet, die ihn fürchten, die Kleinen und die Großen.",
+    "losung_stelle": "Psalm 115,13",
     "sonntag": "",
-    "losung": "Der HERR ist mein Licht und mein Heil; vor wem sollte ich mich fürchten?",
-    "losung_stelle": "Psalm 27,1",
-    "lehrtext": "Wir haben nicht empfangen den Geist der Furcht, sondern der Kraft und der Liebe und der Besonnenheit.",
-    "lehrtext_stelle": "2. Timotheus 1,7"
+    "wochentag": "Freitag"
+  },
+  "2026-01-03": {
+    "lehrtext": "Mein Lieber, du handelst treu in dem, was du an den Brüdern tust, zumal an fremden.",
+    "lehrtext_stelle": "3. Johannes 1,5",
+    "losung": "HERR, deine Augen, sind sie nicht auf Treue gerichtet?",
+    "losung_stelle": "Jeremia 5,3",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-01-04": {
+    "lehrtext": "Der Kranke antwortete Jesus: Herr, ich habe keinen Menschen, der mich in den Teich bringt, wenn das Wasser sich bewegt; wenn ich aber hinkomme, so steigt ein anderer vor mir hinein. Jesus spricht zu ihm: Steh auf, nimm dein Bett und geh hin!",
+    "lehrtext_stelle": "Johannes 5,7-8",
+    "losung": "Ich harrte des HERRN, und er neigte sich zu mir und hörte mein Schreien.",
+    "losung_stelle": "Psalm 40,2",
+    "sonntag": "2. Sonntag nach Weihnachten",
+    "wochentag": "Sonntag"
+  },
+  "2026-01-05": {
+    "lehrtext": "Er aber, unser Herr Jesus Christus, und Gott, unser Vater, der uns geliebt und uns einen ewigen Trost gegeben hat und eine gute Hoffnung durch Gnade, der tröste eure Herzen und stärke euch in allem guten Werk und Wort.",
+    "lehrtext_stelle": "2. Thessalonicher 2,16-17",
+    "losung": "Der HERR ist seines Volkes Stärke.",
+    "losung_stelle": "Psalm 28,8",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-01-06": {
+    "lehrtext": "Jesus sagt zu den Jüngern: Ihr Kleingläubigen, warum seid ihr so furchtsam?, und stand auf und bedrohte den Wind und das Meer; und es ward eine große Stille.",
+    "lehrtext_stelle": "Matthäus 8,26",
+    "losung": "Du herrschest über das ungestüme Meer, du stillest seine Wellen, wenn sie sich erheben.",
+    "losung_stelle": "Psalm 89,10",
+    "sonntag": "Epiphanias",
+    "wochentag": "Dienstag"
+  },
+  "2026-01-07": {
+    "lehrtext": "Wer die Wahrheit tut, der kommt zu dem Licht, damit offenbar wird, dass seine Werke in Gott getan sind.",
+    "lehrtext_stelle": "Johannes 3,21",
+    "losung": "So kehrt nun um von euren bösen Wegen. Warum wollt ihr sterben?",
+    "losung_stelle": "Hesekiel 33,11",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-01-08": {
+    "lehrtext": "/Jesus betete:/ Vater, ich will, dass, wo ich bin, auch die bei mir seien, die du mir gegeben hast, damit sie meine Herrlichkeit sehen, die du mir gegeben hast.",
+    "lehrtext_stelle": "Johannes 17,24",
+    "losung": "HERR, du hast angefangen, deinem Knecht zu offenbaren deine Herrlichkeit und deine starke Hand.",
+    "losung_stelle": "5. Mose 3,24",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-01-09": {
+    "lehrtext": "Unsre Hoffnung steht fest für euch, weil wir wissen: Wie ihr an den Leiden teilhabt, so habt ihr auch am Trost teil.",
+    "lehrtext_stelle": "2. Korinther 1,7",
+    "losung": "Ich will sie trösten und sie erfreuen nach ihrer Betrübnis.",
+    "losung_stelle": "Jeremia 31,13",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-01-10": {
+    "lehrtext": "Hab acht auf dich selbst und auf die Lehre; beharre in diesen Stücken! Denn wenn du das tust, wirst du dich selbst retten und die, die dich hören.",
+    "lehrtext_stelle": "1. Timotheus 4,16",
+    "losung": "Das sei ferne von uns, dass wir uns auflehnen gegen den HERRN und uns heute von ihm abwenden.",
+    "losung_stelle": "Josua 22,29",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-01-11": {
+    "lehrtext": "Gehet hin in alle Welt und predigt das Evangelium aller Kreatur.",
+    "lehrtext_stelle": "Markus 16,15",
+    "losung": "Gott, der HERR, der Mächtige, redet und ruft der Welt zu vom Aufgang der Sonne bis zu ihrem Niedergang.",
+    "losung_stelle": "Psalm 50,1",
+    "sonntag": "1. Sonntag nach Epiphanias",
+    "wochentag": "Sonntag"
+  },
+  "2026-01-12": {
+    "lehrtext": "Jesus bedrohte den unreinen Geist und machte den Knaben gesund und gab ihn seinem Vater wieder.",
+    "lehrtext_stelle": "Lukas 9,42",
+    "losung": "HERR, es ist dir nicht schwer, dem Schwachen gegen den Starken zu helfen.",
+    "losung_stelle": "2. Chronik 14,10",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-01-13": {
+    "lehrtext": "/Jesus sprach:/ Wer mich liebt, der wird mein Wort halten; und mein Vater wird ihn lieben, und wir werden zu ihm kommen und Wohnung bei ihm nehmen.",
+    "lehrtext_stelle": "Johannes 14,23",
+    "losung": "/Der HERR spricht:/ Wer mich ehrt, den will ich auch ehren; wer aber mich verachtet, der soll wieder verachtet werden.",
+    "losung_stelle": "1. Samuel 2,30",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-01-14": {
+    "lehrtext": "Der Engel des Herrn tat in der Nacht die Türen des Gefängnisses auf und führte die Apostel heraus und sprach: Geht hin und tretet im Tempel auf und redet zum Volk alle Worte dieses Lebens.",
+    "lehrtext_stelle": "Apostelgeschichte 5,19-20",
+    "losung": "Der Engel des HERRN lagert sich um die her, die ihn fürchten, und hilft ihnen heraus.",
+    "losung_stelle": "Psalm 34,8",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-01-15": {
+    "lehrtext": "Ja, alle Völker werden kommen und anbeten vor dir, denn deine Urteile sind offenbar geworden.",
+    "lehrtext_stelle": "Offenbarung 15,4",
+    "losung": "Kommt herzu, lasst uns dem HERRN frohlocken und jauchzen dem Hort unsres Heils!",
+    "losung_stelle": "Psalm 95,1",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-01-16": {
+    "lehrtext": "Wir sind durch einen Geist alle zu einem Leib getauft, wir seien Juden oder Griechen, Sklaven oder Freie, und sind alle mit einem Geist getränkt.",
+    "lehrtext_stelle": "1. Korinther 12,13",
+    "losung": "Wir wollen mit euch gehen, denn wir haben gehört, dass Gott mit euch ist.",
+    "losung_stelle": "Sacharja 8,23",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-01-17": {
+    "lehrtext": "Als Bartimäus hörte, dass es Jesus von Nazareth war, fing er an zu schreien und zu sagen: Jesus, du Sohn Davids, erbarme dich meiner!",
+    "lehrtext_stelle": "Markus 10,47",
+    "losung": "Der HERR ist deine Zuversicht.",
+    "losung_stelle": "Psalm 91,9",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-01-18": {
+    "lehrtext": "Es wird mit uns sein Gnade, Barmherzigkeit und Friede von Gott, dem Vater, und von Jesus Christus, dem Sohn des Vaters, in Wahrheit und Liebe.",
+    "lehrtext_stelle": "2. Johannes 1,3",
+    "losung": "/Der HERR spricht:/ Frieden mache ich zu deiner Wache und Gerechtigkeit zu deiner Obrigkeit.",
+    "losung_stelle": "Jesaja 60,17",
+    "sonntag": "2. Sonntag nach Epiphanias",
+    "wochentag": "Sonntag"
+  },
+  "2026-01-19": {
+    "lehrtext": "/Jesus spricht:/ Die Worte, die ich zu euch geredet habe, die sind Geist und sind Leben.",
+    "lehrtext_stelle": "Johannes 6,63",
+    "losung": "Frage doch zuerst nach dem Wort des HERRN!",
+    "losung_stelle": "2. Chronik 18,4",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-01-20": {
+    "lehrtext": "Wir sind nicht ausgeklügelten Fabeln gefolgt, als wir euch kundgetan haben die Kraft und das Kommen unseres Herrn Jesus Christus; sondern wir haben seine Herrlichkeit mit eigenen Augen gesehen.",
+    "lehrtext_stelle": "2. Petrus 1,16",
+    "losung": "Wo Träume sich mehren und Nichtigkeiten und viele Worte, da fürchte Gott!",
+    "losung_stelle": "Prediger 5,6",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-01-21": {
+    "lehrtext": "So sind wir denn allezeit getrost und wissen: Solange wir im Leibe wohnen, weilen wir fern von dem Herrn; denn wir wandeln im Glauben und nicht im Schauen.",
+    "lehrtext_stelle": "2. Korinther 5,6-7",
+    "losung": "Meine Seele dürstet nach Gott, nach dem lebendigen Gott. Wann werde ich dahin kommen, dass ich Gottes Angesicht schaue?",
+    "losung_stelle": "Psalm 42,3",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-01-22": {
+    "lehrtext": "Ihr hattet keine Hoffnung und wart ohne Gott in der Welt. Jetzt aber in Christus Jesus seid ihr, die ihr einst fern wart, nahe geworden durch das Blut Christi.",
+    "lehrtext_stelle": "Epheser 2,12-13",
+    "losung": "Die er aus den Ländern zusammengebracht hat von Osten und Westen, von Norden und Süden: Die sollen dem HERRN danken für seine Güte und für seine Wunder, die er an den Menschenkindern tut.",
+    "losung_stelle": "Psalm 107,3.8",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-01-23": {
+    "lehrtext": "Jesus wird König sein über das Haus Jakob in Ewigkeit, und seine Herrschaft wird kein Ende haben.",
+    "lehrtext_stelle": "Lukas 1,33",
+    "losung": "Der HERR wird König sein immer und ewig.",
+    "losung_stelle": "2. Mose 15,18",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-01-24": {
+    "lehrtext": "Ihr seid erbaut auf den Grund der Apostel und Propheten, da Jesus Christus der Eckstein ist.",
+    "lehrtext_stelle": "Epheser 2,20",
+    "losung": "Ihre Gemeinde soll vor mir fest gegründet stehen.",
+    "losung_stelle": "Jeremia 30,20",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-01-25": {
+    "lehrtext": "Gottes unsichtbares Wesen – das ist seine ewige Kraft und Gottheit – wird seit der Schöpfung der Welt, wenn man es mit Vernunft wahrnimmt, an seinen Werken ersehen.",
+    "lehrtext_stelle": "Römer 1,20",
+    "losung": "Ich habe die Erde gemacht und Menschen und Tiere, die auf Erden sind, durch meine große Kraft und meinen ausgereckten Arm und gebe sie, wem ich will.",
+    "losung_stelle": "Jeremia 27,5",
+    "sonntag": "3. Sonntag nach Epiphanias",
+    "wochentag": "Sonntag"
+  },
+  "2026-01-26": {
+    "lehrtext": "Insbesondere bitte ich euch nun, vor Gott einzutreten für alle Menschen in Bitte, Gebet, Fürbitte und Danksagung, für die Könige und alle Amtsträger.",
+    "lehrtext_stelle": "1. Timotheus 2,1-2",
+    "losung": "Gott ändert Zeit und Stunde; er setzt Könige ab und setzt Könige ein.",
+    "losung_stelle": "Daniel 2,21",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-01-27": {
+    "lehrtext": "Wohlan, die ihr sagt: Heute oder morgen werden wir in die und die Stadt aufbrechen, ein Jahr dort verbringen, gute Geschäfte machen und Gewinne erzielen! Ihr solltet sagen: Wenn der Herr es will, werden wir leben und dies oder jenes tun.",
+    "lehrtext_stelle": "Jakobus 4,13.15",
+    "losung": "Meine Gedanken sind nicht eure Gedanken, und eure Wege sind nicht meine Wege, spricht der HERR.",
+    "losung_stelle": "Jesaja 55,8",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-01-28": {
+    "lehrtext": "Jaïrus bat Jesus sehr und sprach: Meine Tochter liegt in den letzten Zügen; komm und lege ihr die Hände auf, dass sie gesund werde und lebe.",
+    "lehrtext_stelle": "Markus 5,23",
+    "losung": "Verlass mich nicht, HERR, mein Gott, sei nicht ferne von mir!",
+    "losung_stelle": "Psalm 38,22",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-01-29": {
+    "lehrtext": "Der Geheilte stand auf und nahm sogleich sein Bett und ging hinaus vor aller Augen, sodass sie sich alle entsetzten und Gott priesen und sprachen: Wir haben solches noch nie gesehen.",
+    "lehrtext_stelle": "Markus 2,12",
+    "losung": "HERR, mein Gott, groß sind deine Wunder und deine Gedanken, die du an uns beweisest; dir ist nichts gleich!",
+    "losung_stelle": "Psalm 40,6",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-01-30": {
+    "lehrtext": "Jesus nahm die fünf Brote und zwei Fische und sah auf zum Himmel, dankte und brach die Brote und gab sie den Jüngern, dass sie sie ihnen austeilten, und die zwei Fische teilte er unter sie alle. Und sie aßen alle und wurden satt.",
+    "lehrtext_stelle": "Markus 6,41-42",
+    "losung": "/Der HERR sprach zu seinem Volk:/ Siehe, ich will euch Getreide, Wein und Öl die Fülle schicken, dass ihr genug daran haben sollt.",
+    "losung_stelle": "Joel 2,19",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-01-31": {
+    "lehrtext": "Der Gelähmte sprang auf, konnte stehen und gehen und ging mit ihnen in den Tempel, lief und sprang umher und lobte Gott.",
+    "lehrtext_stelle": "Apostelgeschichte 3,8",
+    "losung": "HERR, du lässest mich fröhlich singen von deinen Werken, und ich rühme die Taten deiner Hände.",
+    "losung_stelle": "Psalm 92,5",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-02-01": {
+    "lehrtext": "/Jesus spricht:/ Bleibt in meiner Liebe!",
+    "lehrtext_stelle": "Johannes 15,9",
+    "losung": "Eure Liebe ist wie der Tau, der frühmorgens vergeht!",
+    "losung_stelle": "Hosea 6,4",
+    "sonntag": "Letzter Sonntag nach Epiphanias",
+    "wochentag": "Sonntag"
+  },
+  "2026-02-02": {
+    "lehrtext": "Werft euer Vertrauen nicht weg, welches eine große Belohnung hat.",
+    "lehrtext_stelle": "Hebräer 10,35",
+    "losung": "Die Israeliten schrien zu dem HERRN, und der HERR erweckte ihnen einen Retter, der sie errettete.",
+    "losung_stelle": "Richter 3,9",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-02-03": {
+    "lehrtext": "Hat nicht Gott erwählt die Armen in der Welt, die im Glauben reich sind und Erben des Reichs, das er verheißen hat denen, die ihn lieb haben?",
+    "lehrtext_stelle": "Jakobus 2,5",
+    "losung": "Wer den Armen verspottet, verhöhnt dessen Schöpfer; und wer sich über eines andern Unglück freut, wird nicht ungestraft bleiben.",
+    "losung_stelle": "Sprüche 17,5",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-02-04": {
+    "lehrtext": "/Jesus spricht:/ Ich bin der Weinstock, ihr seid die Reben. Wer in mir bleibt und ich in ihm, der bringt viel Frucht.",
+    "lehrtext_stelle": "Johannes 15,5",
+    "losung": "Wessen Zuversicht der HERR ist, der ist wie ein Baum, am Wasser gepflanzt, der seine Wurzeln zum Bach hin streckt. Er sorgt sich nicht, wenn ein dürres Jahr kommt, sondern bringt ohne Aufhören Früchte.",
+    "losung_stelle": "Jeremia 17,7.8",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-02-05": {
+    "lehrtext": "Der Herr ist treu; der wird euch stärken und bewahren vor dem Bösen.",
+    "lehrtext_stelle": "2. Thessalonicher 3,3",
+    "losung": "Bewahre mich, Gott; denn ich traue auf dich.",
+    "losung_stelle": "Psalm 16,1",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-02-06": {
+    "lehrtext": "Der König wird ihnen antworten und sagen: Wahrlich, ich sage euch: Was ihr nicht getan habt einem von diesen Geringsten, das habt ihr mir auch nicht getan.",
+    "lehrtext_stelle": "Matthäus 25,45",
+    "losung": "Du, Herr, bist gerecht, wir aber müssen uns alle heute schämen.",
+    "losung_stelle": "Daniel 9,7",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-02-07": {
+    "lehrtext": "Christus ist unser Friede.",
+    "lehrtext_stelle": "Epheser 2,14",
+    "losung": "Seine Herrschaft wird groß und des Friedens kein Ende sein.",
+    "losung_stelle": "Jesaja 9,6",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-02-08": {
+    "lehrtext": "Sie waren täglich einmütig beieinander im Tempel und brachen das Brot hier und dort in den Häusern, hielten die Mahlzeiten mit Freude und lauterem Herzen und lobten Gott und fanden Wohlwollen beim ganzen Volk.",
+    "lehrtext_stelle": "Apostelgeschichte 2,46-47",
+    "losung": "Der HERR hat Großes an uns getan; des sind wir fröhlich.",
+    "losung_stelle": "Psalm 126,3",
+    "sonntag": "2. Sonntag vor der Passionszeit – Sexagesimae",
+    "wochentag": "Sonntag"
+  },
+  "2026-02-09": {
+    "lehrtext": "/Jesus spricht:/ Ihr seid meine Freunde, wenn ihr tut, was ich euch gebiete.",
+    "lehrtext_stelle": "Johannes 15,14",
+    "losung": "Wenn ein Fremdling bei euch wohnt in eurem Lande, den sollt ihr nicht bedrücken.",
+    "losung_stelle": "3. Mose 19,33",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-02-10": {
+    "lehrtext": "/Paulus schreibt:/ Mir ist Barmherzigkeit widerfahren, dass Christus Jesus an mir als Erstem alle Geduld erweise, zum Vorbild denen, die an ihn glauben sollten zum ewigen Leben.",
+    "lehrtext_stelle": "1. Timotheus 1,16",
+    "losung": "/Jakob sprach:/ HERR, ich bin zu gering aller Barmherzigkeit und aller Treue, die du an deinem Knechte getan hast.",
+    "losung_stelle": "1. Mose 32,11",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-02-11": {
+    "lehrtext": "Gott hat sein Volk nicht verstoßen, das er zuvor erwählt hat.",
+    "lehrtext_stelle": "Römer 11,2",
+    "losung": "Ist nicht Ephraim mein teurer Sohn und mein liebes Kind? Denn sooft ich ihm auch drohe, muss ich doch seiner gedenken; darum bricht mir mein Herz, dass ich mich seiner erbarmen muss, spricht der HERR.",
+    "losung_stelle": "Jeremia 31,20",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-02-12": {
+    "lehrtext": "Ihr wisst, dass Jesus Christus erschienen ist, damit er die Sünden wegnehme, und in ihm ist keine Sünde.",
+    "lehrtext_stelle": "1. Johannes 3,5",
+    "losung": "Ich tilge deine Missetat wie eine Wolke und deine Sünden wie den Nebel. Kehre dich zu mir, denn ich erlöse dich!",
+    "losung_stelle": "Jesaja 44,22",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-02-13": {
+    "lehrtext": "Wie ihr nun Christus Jesus, den Herrn, angenommen habt, so lebt nun auch in ihm: verwurzelt in ihm und aufgebaut auf diesem Fundament, gefestigt im Glauben, so wie ihr unterrichtet worden seid.",
+    "lehrtext_stelle": "Kolosser 2,6-7",
+    "losung": "Werdet ihr der Stimme des HERRN nicht gehorchen, so wird die Hand des HERRN gegen euch sein wie gegen eure Väter.",
+    "losung_stelle": "1. Samuel 12,15",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-02-14": {
+    "lehrtext": "So hatte nun die Gemeinde Frieden in ganz Judäa und Galiläa und Samarien und baute sich auf und lebte in der Furcht des Herrn und mehrte sich unter dem Beistand des Heiligen Geistes.",
+    "lehrtext_stelle": "Apostelgeschichte 9,31",
+    "losung": "Der das Leben seiner Getreuen behütet, wird sie retten aus der Hand der Frevler.",
+    "losung_stelle": "Psalm 97,10",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-02-15": {
+    "lehrtext": "Seid untereinander freundlich und herzlich und vergebt einer dem andern, wie auch Gott euch vergeben hat in Christus.",
+    "lehrtext_stelle": "Epheser 4,32",
+    "losung": "/Josefs Brüder baten ihn:/ Nun vergib doch diese Missetat uns, den Dienern des Gottes deines Vaters!",
+    "losung_stelle": "1. Mose 50,17",
+    "sonntag": "Sonntag vor der Passionszeit – Estomihi (Sei mir ein starker Fels! Psalm 31,3)",
+    "wochentag": "Sonntag"
+  },
+  "2026-02-16": {
+    "lehrtext": "Der Menschensohn wird die Engel senden und wird seine Auserwählten versammeln von den vier Winden, vom Ende der Erde bis zum Ende des Himmels.",
+    "lehrtext_stelle": "Markus 13,27",
+    "losung": "Siehe, ich will meinen Engel senden, der vor mir her den Weg bereiten soll.",
+    "losung_stelle": "Maleachi 3,1",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-02-17": {
+    "lehrtext": "Sie sollen das Geheimnis Gottes erkennen: Christus. In ihm sind alle Schätze der Weisheit und Erkenntnis verborgen.",
+    "lehrtext_stelle": "Kolosser 2,2-3",
+    "losung": "Was verborgen ist, ist des HERRN, unseres Gottes; was aber offenbart ist, das gilt uns und unsern Kindern ewiglich.",
+    "losung_stelle": "5. Mose 29,28",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-02-18": {
+    "lehrtext": "Es kam eine Furcht über sie alle, und sie redeten miteinander und sprachen: Was ist das für ein Wort? Jesus gebietet mit Vollmacht und Gewalt den unreinen Geistern, und sie fahren aus.",
+    "lehrtext_stelle": "Lukas 4,36",
+    "losung": "HERR, lass mir deine Gnade widerfahren, deine Hilfe nach deinem Wort.",
+    "losung_stelle": "Psalm 119,41",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-02-19": {
+    "lehrtext": "Der Gott der Geduld und des Trostes gebe euch, dass ihr einträchtig gesinnt seid untereinander, wie es Christus Jesus entspricht, damit ihr einmütig mit einem Munde Gott lobt, den Vater unseres Herrn Jesus Christus.",
+    "lehrtext_stelle": "Römer 15,5-6",
+    "losung": "Lobet, ihr Völker, unsern Gott, lasst seinen Ruhm weit erschallen, der unsre Seelen am Leben erhält und lässt unsere Füße nicht gleiten.",
+    "losung_stelle": "Psalm 66,8-9",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-02-20": {
+    "lehrtext": "Gott gebe euch viel Barmherzigkeit und Frieden und Liebe!",
+    "lehrtext_stelle": "Judas 1,2",
+    "losung": "Du, HERR, wollest deine Barmherzigkeit nicht von mir wenden; lass deine Güte und Treue allewege mich behüten.",
+    "losung_stelle": "Psalm 40,12",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-02-21": {
+    "lehrtext": "/Paulus schreibt:/ Ist jemand in Christus, so ist er eine neue Kreatur; das Alte ist vergangen, siehe, Neues ist geworden.",
+    "lehrtext_stelle": "2. Korinther 5,17",
+    "losung": "Gedenkt nicht an das Frühere und achtet nicht auf das Vorige! Denn siehe, ich will ein Neues schaffen, jetzt wächst es auf, erkennt ihr’s denn nicht?",
+    "losung_stelle": "Jesaja 43,18-19",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-02-22": {
+    "lehrtext": "Ihr kennt die Gnade unseres Herrn Jesus Christus: Obwohl er reich ist, wurde er doch arm um euretwillen, auf dass ihr durch seine Armut reich würdet.",
+    "lehrtext_stelle": "2. Korinther 8,9",
+    "losung": "Die Elenden werden wieder Freude haben am HERRN, und die Ärmsten unter den Menschen werden fröhlich sein in dem Heiligen Israels.",
+    "losung_stelle": "Jesaja 29,19",
+    "sonntag": "1. Sonntag der Passionszeit – Invokavit (Er ruft mich an, darum will ich ihn erhören. Psalm 91,15)",
+    "wochentag": "Sonntag"
+  },
+  "2026-02-23": {
+    "lehrtext": "Gepriesen sei der Herr, der Gott Israels! Denn er hat sich seines Volkes angenommen und ihm Erlösung verschafft.",
+    "lehrtext_stelle": "Lukas 1,68",
+    "losung": "Ruft laut, rühmt und sprecht: HERR, hilf deinem Volk!",
+    "losung_stelle": "Jeremia 31,7",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-02-24": {
+    "lehrtext": "Wenn ein Bruder oder eine Schwester nackt ist und Mangel hat an täglicher Nahrung und jemand unter euch spricht zu ihnen: Geht hin in Frieden, wärmt euch und sättigt euch!, ihr gebt ihnen aber nicht, was der Leib nötig hat – was hilft ihnen das?",
+    "lehrtext_stelle": "Jakobus 2,15-16",
+    "losung": "Ich weiß, dass der HERR des Elenden Sache führen und den Armen Recht schaffen wird.",
+    "losung_stelle": "Psalm 140,13",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-02-25": {
+    "lehrtext": "Und siehe, eine Stimme aus der Wolke sprach: Dies ist mein lieber Sohn, an dem ich Wohlgefallen habe; den sollt ihr hören!",
+    "lehrtext_stelle": "Matthäus 17,5",
+    "losung": "Ich, der HERR, habe dich gerufen in Gerechtigkeit und halte dich bei der Hand.",
+    "losung_stelle": "Jesaja 42,6",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-02-26": {
+    "lehrtext": "Wenn ihr auch leidet um der Gerechtigkeit willen, so seid ihr doch selig.",
+    "lehrtext_stelle": "1. Petrus 3,14",
+    "losung": "Der Gerechten Pfad glänzt wie das Licht am Morgen, das immer heller leuchtet bis zum vollen Tag.",
+    "losung_stelle": "Sprüche 4,18",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-02-27": {
+    "lehrtext": "Sollte Gott nicht Recht schaffen seinen Auserwählten, die zu ihm Tag und Nacht rufen, und sollte er bei ihnen lange warten? Ich sage euch: Er wird ihnen Recht schaffen in Kürze.",
+    "lehrtext_stelle": "Lukas 18,7-8",
+    "losung": "Ach, HERR, lass doch deine Ohren aufmerken, dass du das Gebet hörst, das ich jetzt vor dir bete Tag und Nacht für deine Knechte.",
+    "losung_stelle": "Nehemia 1,6",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-02-28": {
+    "lehrtext": "Wir sind sein Werk, geschaffen in Christus Jesus zu guten Werken, die Gott zuvor bereitet hat, dass wir darin wandeln sollen.",
+    "lehrtext_stelle": "Epheser 2,10",
+    "losung": "Wie kehrt ihr alles um! Als ob der Ton dem Töpfer gleich wäre, dass das Werk spräche von seinem Meister: Er hat mich nicht gemacht!, und ein Bildwerk spräche von seinem Bildner: Er versteht nichts!",
+    "losung_stelle": "Jesaja 29,16",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-03-01": {
+    "lehrtext": "Das ist die Liebe zu Gott, dass wir seine Gebote halten; und seine Gebote sind nicht schwer.",
+    "lehrtext_stelle": "1. Johannes 5,3",
+    "losung": "Achtet ernstlich darauf um eures Lebens willen, dass ihr den HERRN, euren Gott, lieb habt.",
+    "losung_stelle": "Josua 23,11",
+    "sonntag": "2. Sonntag der Passionszeit – Reminiszere (Gedenke, HERR, an deine Barmherzigkeit! Psalm 25,6)",
+    "wochentag": "Sonntag"
+  },
+  "2026-03-02": {
+    "lehrtext": "Viele werden kommen von Osten und von Westen und mit Abraham und Isaak und Jakob im Himmelreich zu Tisch sitzen.",
+    "lehrtext_stelle": "Matthäus 8,11",
+    "losung": "Es werden sich zum HERRN bekehren aller Welt Enden.",
+    "losung_stelle": "Psalm 22,28",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-03-03": {
+    "lehrtext": "/Johannes der Täufer sprach:/ Kehrt um! Denn nahe gekommen ist das Himmelreich.",
+    "lehrtext_stelle": "Matthäus 3,2",
+    "losung": "Die Israeliten schrien zu dem HERRN und sprachen: Wir haben an dir gesündigt, denn wir haben unsern Gott verlassen.",
+    "losung_stelle": "Richter 10,10",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-03-04": {
+    "lehrtext": "Wenn nun ihr, die ihr doch böse seid, dennoch euren Kindern gute Gaben zu geben wisst, wie viel mehr wird euer Vater im Himmel Gutes geben denen, die ihn bitten!",
+    "lehrtext_stelle": "Matthäus 7,11",
+    "losung": "Habe deine Lust am HERRN; der wird dir geben, was dein Herz wünscht.",
+    "losung_stelle": "Psalm 37,4",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-03-05": {
+    "lehrtext": "Herr, unser Gott, du bist würdig, zu nehmen Preis und Ehre und Kraft; denn du hast alle Dinge geschaffen, und durch deinen Willen waren sie und wurden sie geschaffen.",
+    "lehrtext_stelle": "Offenbarung 4,11",
+    "losung": "Meine Hand hat die Erde gegründet, und meine Rechte hat den Himmel ausgespannt. Ich rufe, und alles steht da.",
+    "losung_stelle": "Jesaja 48,13",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-03-06": {
+    "lehrtext": "Jesus sprach zu dem Oberen: Es fehlt dir noch eines. Verkaufe alles, was du hast, und gib’s den Armen, so wirst du einen Schatz im Himmel haben, und komm und folge mir nach!",
+    "lehrtext_stelle": "Lukas 18,22",
+    "losung": "Der Gerechte erkennt die Sache der Armen.",
+    "losung_stelle": "Sprüche 29,7",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-03-07": {
+    "lehrtext": "Jesus spricht: Wer mich sieht, der sieht den Vater.",
+    "lehrtext_stelle": "Johannes 14,9",
+    "losung": "Warum sollen die Heiden sagen: Wo ist denn ihr Gott? Unser Gott ist im Himmel; er kann schaffen, was er will.",
+    "losung_stelle": "Psalm 115,2-3",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-03-08": {
+    "lehrtext": "Jesus sprach zu ihm: Zachäus, steig eilend herunter; denn ich muss heute in deinem Haus einkehren.",
+    "lehrtext_stelle": "Lukas 19,5",
+    "losung": "Herr, hab ich Gnade gefunden vor deinen Augen, so geh nicht an deinem Knecht vorüber.",
+    "losung_stelle": "1. Mose 18,3",
+    "sonntag": "3. Sonntag der Passionszeit – Okuli (Meine Augen sehen stets auf den HERRN. Psalm 25,15)",
+    "wochentag": "Sonntag"
+  },
+  "2026-03-09": {
+    "lehrtext": "Gott hat aus einem Menschen das ganze Menschengeschlecht gemacht, damit sie auf dem ganzen Erdboden wohnen.",
+    "lehrtext_stelle": "Apostelgeschichte 17,26",
+    "losung": "Himmel und Erde sind dein, du hast gegründet den Erdkreis und was darinnen ist. Nord und Süd hast du geschaffen.",
+    "losung_stelle": "Psalm 89,12-13",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-03-10": {
+    "lehrtext": "Hilf uns, deinen Dienern, deine Botschaft mutig und offen zu verkünden.",
+    "lehrtext_stelle": "Apostelgeschichte 4,29",
+    "losung": "Fürchte dich nicht, ich bin mit dir; weiche nicht, denn ich bin dein Gott.",
+    "losung_stelle": "Jesaja 41,10",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-03-11": {
+    "lehrtext": "Am Abend brachten sie viele Besessene zu ihm; und er trieb die Geister aus durch sein Wort und machte alle Kranken gesund.",
+    "lehrtext_stelle": "Matthäus 8,16",
+    "losung": "Meine Seele verlangt nach deinem Heil; ich hoffe auf dein Wort.",
+    "losung_stelle": "Psalm 119,81",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-03-12": {
+    "lehrtext": "Gott hat Jesus wegen unserer Verfehlungen in den Tod gegeben. Und er hat ihn auferweckt, damit wir vor Gott gerecht sind.",
+    "lehrtext_stelle": "Römer 4,25",
+    "losung": "Durch seine Wunden sind wir geheilt.",
+    "losung_stelle": "Jesaja 53,5",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-03-13": {
+    "lehrtext": "Petrus schrie: Herr, rette mich! Jesus aber streckte sogleich die Hand aus und ergriff ihn und sprach zu ihm: Du Kleingläubiger, warum hast du gezweifelt?",
+    "lehrtext_stelle": "Matthäus 14,30-31",
+    "losung": "Der HERR festigt dem die Schritte, dessen Weg ihm gefällt. Kommt er zu Fall, so stürzt er doch nicht, denn der HERR stützt seine Hand.",
+    "losung_stelle": "Psalm 37,23-24",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-03-14": {
+    "lehrtext": "Zur Freiheit seid ihr berufen worden, liebe Brüder und Schwestern. Auf eins jedoch gebt acht: dass die Freiheit nicht zu einem Vorwand für die Selbstsucht werde, sondern dient einander in der Liebe!",
+    "lehrtext_stelle": "Galater 5,13",
+    "losung": "Ich bin der HERR, dein Gott, der ich dich aus Ägyptenland, aus der Knechtschaft, geführt habe.",
+    "losung_stelle": "2. Mose 20,2",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-03-15": {
+    "lehrtext": "Verkauft man nicht zwei Sperlinge für einen Groschen? Dennoch fällt keiner von ihnen auf die Erde ohne euren Vater. Darum fürchtet euch nicht; ihr seid kostbarer als viele Sperlinge.",
+    "lehrtext_stelle": "Matthäus 10,29.31",
+    "losung": "Bei Gott steht die Kraft zu helfen und fallen zu lassen.",
+    "losung_stelle": "2. Chronik 25,8",
+    "sonntag": "4. Sonntag der Passionszeit – Lätare (Freuet euch mit Jerusalem! Jesaja 66,10)",
+    "wochentag": "Sonntag"
+  },
+  "2026-03-16": {
+    "lehrtext": "/Paulus schreibt an Timotheus:/ Du kennst von Kind auf die heiligen Schriften, die dich unterweisen können zur Seligkeit durch den Glauben an Christus Jesus.",
+    "lehrtext_stelle": "2. Timotheus 3,15",
+    "losung": "Gott, du hast mich von Jugend auf gelehrt, und noch jetzt verkündige ich deine Wunder.",
+    "losung_stelle": "Psalm 71,17",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-03-17": {
+    "lehrtext": "/Jesus betete:/ Vater, du hast dem Sohn Macht gegeben über alle Menschen, auf dass er ihnen alles gebe, was du ihm gegeben hast: das ewige Leben.",
+    "lehrtext_stelle": "Johannes 17,1.2",
+    "losung": "Sehet, dass ich’s allein bin und ist kein Gott neben mir! Ich kann töten und lebendig machen, ich kann schlagen und kann heilen, und niemand kann aus meiner Hand reißen.",
+    "losung_stelle": "5. Mose 32,39",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-03-18": {
+    "lehrtext": "Wahrlich, wahrlich, ich sage euch: Wenn ihr den Vater um etwas bitten werdet in meinem Namen, wird er’s euch geben.",
+    "lehrtext_stelle": "Johannes 16,23",
+    "losung": "Wende dich zu mir und sei mir gnädig; stärke deinen Knecht mit deiner Kraft!",
+    "losung_stelle": "Psalm 86,16",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-03-19": {
+    "lehrtext": "/Jesus spricht:/ Ich bin gekommen, damit sie das Leben haben und volle Genüge.",
+    "lehrtext_stelle": "Johannes 10,10",
+    "losung": "Ich will die Übriggebliebenen meiner Herde sammeln aus allen Ländern und will sie wiederbringen zu ihren Weideplätzen, dass sie fruchtbar sein sollen und sich mehren.",
+    "losung_stelle": "Jeremia 23,3",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-03-20": {
+    "lehrtext": "Ich elender Mensch! Wer wird mich erlösen von diesem Leib des Todes? Dank sei Gott durch Jesus Christus, unsern Herrn!",
+    "lehrtext_stelle": "Römer 7,24-25",
+    "losung": "Sieh an meinen Jammer und mein Elend und vergib mir alle meine Sünden!",
+    "losung_stelle": "Psalm 25,18",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-03-21": {
+    "lehrtext": "Gott sei Dank für seine unaussprechliche Gabe!",
+    "lehrtext_stelle": "2. Korinther 9,15",
+    "losung": "Wenn du gegessen hast und satt bist, sollst du den HERRN, deinen Gott, loben.",
+    "losung_stelle": "5. Mose 8,10",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-03-22": {
+    "lehrtext": "Ihr wisst, dass keine Lüge aus der Wahrheit kommt.",
+    "lehrtext_stelle": "1. Johannes 2,21",
+    "losung": "Du sollst nicht falsch Zeugnis reden wider deinen Nächsten.",
+    "losung_stelle": "2. Mose 20,16",
+    "sonntag": "5. Sonntag der Passionszeit – Judika (Schaffe mir Recht, Gott! Psalm 43,1)",
+    "wochentag": "Sonntag"
+  },
+  "2026-03-23": {
+    "lehrtext": "/Jesus spricht:/ Ich und der Vater sind eins.",
+    "lehrtext_stelle": "Johannes 10,30",
+    "losung": "Ich, ich bin der HERR, und außer mir ist kein Heiland.",
+    "losung_stelle": "Jesaja 43,11",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-03-24": {
+    "lehrtext": "Jesus sprach: Vater, willst du, so nimm diesen Kelch von mir; doch nicht mein, sondern dein Wille geschehe! Es erschien ihm aber ein Engel vom Himmel und stärkte ihn.",
+    "lehrtext_stelle": "Lukas 22,42-43",
+    "losung": "Der HERR wird seinen Engel vor dir her senden.",
+    "losung_stelle": "1. Mose 24,7",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-03-25": {
+    "lehrtext": "Jesus sprach zu seinen Jüngern: Der Menschensohn wird überantwortet werden in die Hände der Menschen, und sie werden ihn töten; und wenn er getötet ist, so wird er nach drei Tagen auferstehen.",
+    "lehrtext_stelle": "Markus 9,31",
+    "losung": "HERR, steh auf, dass nicht Menschen die Oberhand gewinnen.",
+    "losung_stelle": "Psalm 9,20",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-03-26": {
+    "lehrtext": "Gott hat uns dazu vorherbestimmt, seine Kinder zu sein durch Jesus Christus nach dem Wohlgefallen seines Willens, zum Lob seiner herrlichen Gnade.",
+    "lehrtext_stelle": "Epheser 1,5-6",
+    "losung": "Ich will den HERRN loben allezeit; sein Lob soll immerdar in meinem Munde sein.",
+    "losung_stelle": "Psalm 34,2",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-03-27": {
+    "lehrtext": "Wer auf den Boden seiner selbstsüchtigen Natur sät, wird von seiner Selbstsucht das Verderben ernten. Aber wer auf den Boden von Gottes Geist sät, wird von diesem Geist das ewige Leben ernten.",
+    "lehrtext_stelle": "Galater 6,8",
+    "losung": "Gerechtigkeit führt zum Leben; aber dem Bösen nachjagen führt zum Tode.",
+    "losung_stelle": "Sprüche 11,19",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-03-28": {
+    "lehrtext": "Einer aber unter den zehn aussätzigen Männern, als er sah, dass er gesund geworden war, kehrte er um und pries Gott mit lauter Stimme.",
+    "lehrtext_stelle": "Lukas 17,15",
+    "losung": "Lass uns leben, so wollen wir deinen Namen anrufen.",
+    "losung_stelle": "Psalm 80,19",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-03-29": {
+    "lehrtext": "Sie nahmen Palmzweige und gingen hinaus Jesus entgegen und schrien: Hosianna! Gelobt sei, der da kommt im Namen des Herrn, der König von Israel!",
+    "lehrtext_stelle": "Johannes 12,13",
+    "losung": "Mose sprach zu dem HERRN: Wenn nicht dein Angesicht vorangeht, so führe uns nicht von hier hinauf.",
+    "losung_stelle": "2. Mose 33,15",
+    "sonntag": "6. Sonntag der Passionszeit – Palmsonntag",
+    "wochentag": "Sonntag"
+  },
+  "2026-03-30": {
+    "lehrtext": "/Paulus schreibt:/ Ich werde es nicht wagen, etwas vorzubringen, das nicht Christus durch mich gewirkt hat. Er hat es durch mein Wort und meine Tat bewirkt, dass die Völker nun Gott gehorsam sind.",
+    "lehrtext_stelle": "Römer 15,18",
+    "losung": "Ihr sollt nichts dazutun zu dem, was ich euch gebiete, und sollt auch nichts davontun, auf dass ihr bewahrt die Gebote des HERRN, eures Gottes.",
+    "losung_stelle": "5. Mose 4,2",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-03-31": {
+    "lehrtext": "Musste nicht der Christus dies erleiden und in seine Herrlichkeit eingehen?",
+    "lehrtext_stelle": "Lukas 24,26",
+    "losung": "Der HERR, unser Gott, ist gerecht in allen seinen Werken, die er tut.",
+    "losung_stelle": "Daniel 9,14",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-04-01": {
+    "lehrtext": "Alle Zungen sollen bekennen, dass Jesus Christus der Herr ist, zur Ehre Gottes, des Vaters.",
+    "lehrtext_stelle": "Philipper 2,11",
+    "losung": "Ich will dir danken in großer Gemeinde; unter vielem Volk will ich dich rühmen.",
+    "losung_stelle": "Psalm 35,18",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-04-02": {
+    "lehrtext": "Jesus nahm den Kelch und dankte, gab ihnen den und sprach: Trinket alle daraus; das ist mein Blut des Bundes, das vergossen wird für viele zur Vergebung der Sünden.",
+    "lehrtext_stelle": "Matthäus 26,27-28",
+    "losung": "Wohl dem, dessen Hilfe der Gott Jakobs ist, der seine Hoffnung setzt auf den HERRN.",
+    "losung_stelle": "Psalm 146,5",
+    "sonntag": "Gründonnerstag",
+    "wochentag": "Donnerstag"
+  },
+  "2026-04-03": {
+    "lehrtext": "Die um den Thron sprachen mit großer Stimme: Das Lamm, das geschlachtet ist, ist würdig, zu nehmen Kraft und Reichtum und Weisheit und Stärke und Ehre und Preis und Lob.",
+    "lehrtext_stelle": "Offenbarung 5,12",
+    "losung": "Lobt den HERRN, alle Völker! Rühmt ihn, ihr Nationen alle!",
+    "losung_stelle": "Psalm 117,1",
+    "sonntag": "Karfreitag",
+    "wochentag": "Freitag"
+  },
+  "2026-04-04": {
+    "lehrtext": "In meines Vaters Hause sind viele Wohnungen. Wenn’s nicht so wäre, hätte ich dann zu euch gesagt: Ich gehe hin, euch die Stätte zu bereiten?",
+    "lehrtext_stelle": "Johannes 14,2",
+    "losung": "Wie lieblich sind deine Wohnungen, HERR Zebaoth!",
+    "losung_stelle": "Psalm 84,2",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-04-05": {
+    "lehrtext": "Der letzte Feind, der vernichtet wird, ist der Tod.",
+    "lehrtext_stelle": "1. Korinther 15,26",
+    "losung": "Du bereitest vor mir einen Tisch im Angesicht meiner Feinde. Du salbest mein Haupt mit Öl und schenkest mir voll ein.",
+    "losung_stelle": "Psalm 23,5",
+    "sonntag": "Osterfest",
+    "wochentag": "Sonntag"
+  },
+  "2026-04-06": {
+    "lehrtext": "Denn ich bin gewiss, dass weder Tod noch Leben, weder Engel noch Mächte noch Gewalten, weder Gegenwärtiges noch Zukünftiges, weder Hohes noch Tiefes noch irgendeine andere Kreatur uns scheiden kann von der Liebe Gottes, die in Christus Jesus ist, unserm Herrn.",
+    "lehrtext_stelle": "Römer 8,38-39",
+    "losung": "Er behütete sein Volk wie seinen Augapfel.",
+    "losung_stelle": "5. Mose 32,10",
+    "sonntag": "Ostermontag",
+    "wochentag": "Montag"
+  },
+  "2026-04-07": {
+    "lehrtext": "Da wird dann der König sagen zu denen zu seiner Rechten: Kommt her, ihr Gesegneten meines Vaters, ererbt das Reich, das euch bereitet ist von Anbeginn der Welt! Ich bin nackt gewesen und ihr habt mich gekleidet.",
+    "lehrtext_stelle": "Matthäus 25,34.36",
+    "losung": "Der HERR schafft Recht den Waisen und Witwen und hat Fremdlinge lieb, dass er ihnen Speise und Kleider gibt. Darum sollt ihr auch die Fremdlinge lieben.",
+    "losung_stelle": "5. Mose 10,18-19",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-04-08": {
+    "lehrtext": "Da wird dann der König sagen zu denen zu seiner Rechten: Kommt her, ihr Gesegneten meines Vaters, ererbt das Reich, das euch bereitet ist von Anbeginn der Welt! Ich bin ein Fremder gewesen und ihr habt mich aufgenommen.",
+    "lehrtext_stelle": "Matthäus 25,34.35",
+    "losung": "Bedrückt nicht die Witwen, Waisen, Fremdlinge und Armen!",
+    "losung_stelle": "Sacharja 7,10",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-04-09": {
+    "lehrtext": "/Jesus spricht:/ Euer Vater weiß, was ihr braucht, noch ehe ihr ihn bittet.",
+    "lehrtext_stelle": "Matthäus 6,8",
+    "losung": "Sei nicht schnell mit deinem Munde und lass dein Herz nicht eilen, etwas zu reden vor Gott; denn Gott ist im Himmel und du auf Erden; darum lass deiner Worte wenig sein.",
+    "losung_stelle": "Prediger 5,1",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-04-10": {
+    "lehrtext": "Jesus sprach zu den Jüngern: Als ich euch ausgesandt habe ohne Geldbeutel, ohne Tasche und ohne Schuhe, habt ihr je Mangel gehabt? Sie sprachen: Nein, keinen.",
+    "lehrtext_stelle": "Lukas 22,35",
+    "losung": "/Der HERR sprach zu Jakob:/ Siehe, ich bin mit dir und will dich behüten, wo du hinziehst, und will dich wieder herbringen in dies Land.",
+    "losung_stelle": "1. Mose 28,15",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-04-11": {
+    "lehrtext": "Der Übeltäter sprach: Jesus, gedenke an mich, wenn du in dein Reich kommst! Und Jesus sprach zu ihm: Wahrlich, ich sage dir: Heute wirst du mit mir im Paradies sein.",
+    "lehrtext_stelle": "Lukas 23,42-43",
+    "losung": "Meine Schuld ist mir über den Kopf gewachsen; sie wiegt zu schwer, ich kann sie nicht mehr tragen.",
+    "losung_stelle": "Psalm 38,5",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-04-12": {
+    "lehrtext": "Jesus kam, obwohl die Türen verschlossen waren, und er trat in ihre Mitte und sprach: Friede sei mit euch!",
+    "lehrtext_stelle": "Johannes 20,26",
+    "losung": "Sei nun wieder zufrieden, meine Seele; denn der HERR tut dir Gutes.",
+    "losung_stelle": "Psalm 116,7",
+    "sonntag": "1. Sonntag nach Ostern – Quasimodogeniti (Wie die neugeborenen Kindlein. 1.Petrus 2,2)",
+    "wochentag": "Sonntag"
+  },
+  "2026-04-13": {
+    "lehrtext": "So seht nun sorgfältig darauf, wie ihr euer Leben führt, nicht als Unweise, sondern als Weise.",
+    "lehrtext_stelle": "Epheser 5,15",
+    "losung": "Meine Zeit steht in deinen Händen.",
+    "losung_stelle": "Psalm 31,16",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-04-14": {
+    "lehrtext": "Wenn wir unsre Sünden bekennen, so ist er treu und gerecht, dass er uns die Sünden vergibt und reinigt uns von aller Ungerechtigkeit.",
+    "lehrtext_stelle": "1. Johannes 1,9",
+    "losung": "David sprach zum HERRN: Ich habe schwer gesündigt, dass ich das getan habe. Und nun, HERR, nimm weg die Schuld deines Knechts.",
+    "losung_stelle": "2. Samuel 24,10",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-04-15": {
+    "lehrtext": "Kein Mensch hat Gott jemals gesehen. Nur der Eine, der selbst Gott ist und mit dem Vater in engster Gemeinschaft steht, hat uns gesagt und gezeigt, wer Gott ist.",
+    "lehrtext_stelle": "Johannes 1,18",
+    "losung": "Vor dem HERRN her kam ein großer und gewaltiger Sturmwind, der Berge zerriss und Felsen zerbrach, in dem Sturmwind aber war der HERR nicht. Und nach dem Sturmwind kam ein Erdbeben, in dem Erdbeben aber war der HERR nicht. Und nach dem Erdbeben kam ein Feuer, in dem Feuer aber war der HERR nicht. Nach dem Feuer aber kam das Flüstern eines sanften Windhauchs.",
+    "losung_stelle": "1. Könige 19,11-12",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-04-16": {
+    "lehrtext": "Seid barmherzig, wie auch euer Vater barmherzig ist.",
+    "lehrtext_stelle": "Lukas 6,36",
+    "losung": "Der HERR sprach zu Jona: Meinst du, dass du mit Recht zürnst?",
+    "losung_stelle": "Jona 4,4",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-04-17": {
+    "lehrtext": "Jesus sprach: Jüngling, ich sage dir, steh auf! Und der Tote richtete sich auf und fing an zu reden, und Jesus gab ihn seiner Mutter.",
+    "lehrtext_stelle": "Lukas 7,14-15",
+    "losung": "Gott, du holst mich wieder herauf aus den Tiefen der Erde. Du machst mich sehr groß und tröstest mich wieder.",
+    "losung_stelle": "Psalm 71,20-21",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-04-18": {
+    "lehrtext": "Darum, weil wir ein Reich empfangen, das nicht erschüttert wird, lasst uns dankbar sein und so Gott dienen mit Scheu und Furcht, wie es ihm gefällt.",
+    "lehrtext_stelle": "Hebräer 12,28",
+    "losung": "Der HERR, dein Gott, ist ein verzehrendes Feuer und ein eifernder Gott.",
+    "losung_stelle": "5. Mose 4,24",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-04-19": {
+    "lehrtext": "Ihr irrtet umher wie Schafe, doch jetzt seid ihr zurückgekehrt zum Hirten, zum Beschützer eurer Seelen.",
+    "lehrtext_stelle": "1. Petrus 2,25",
+    "losung": "Ich will das Verlorene wieder suchen und das Verirrte zurückbringen und das Verwundete verbinden und das Schwache stärken.",
+    "losung_stelle": "Hesekiel 34,16",
+    "sonntag": "2. Sonntag nach Ostern – Miserikordias Domini (Die Erde ist voll der Güte des HERRN. Psalm 33,5)",
+    "wochentag": "Sonntag"
+  },
+  "2026-04-20": {
+    "lehrtext": "/Jesus sprach:/ Es ist gut für euch, dass ich weggehe. Denn wenn ich nicht weggehe, kommt der Tröster nicht zu euch. Wenn ich aber gehe, werde ich ihn zu euch senden.",
+    "lehrtext_stelle": "Johannes 16,7",
+    "losung": "Haltet mich nicht auf, denn der HERR hat Gnade zu meiner Reise gegeben.",
+    "losung_stelle": "1. Mose 24,56",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-04-21": {
+    "lehrtext": "Dem alleinigen Gott, unserm Heiland durch unsern Herrn Jesus Christus, sei Ehre und Majestät und Gewalt und Macht vor aller Zeit, jetzt und in alle Ewigkeit! Amen.",
+    "lehrtext_stelle": "Judas 1,25",
+    "losung": "Gott, du bleibst, wie du bist, und deine Jahre nehmen kein Ende.",
+    "losung_stelle": "Psalm 102,28",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-04-22": {
+    "lehrtext": "Alle Schrift, von Gott eingegeben, ist nütze zur Lehre, zur Zurechtweisung, zur Besserung, zur Erziehung in der Gerechtigkeit.",
+    "lehrtext_stelle": "2. Timotheus 3,16",
+    "losung": "Du erkennst ja in deinem Herzen, dass der HERR, dein Gott, dich erzogen hat, wie ein Mann seinen Sohn erzieht.",
+    "losung_stelle": "5. Mose 8,5",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-04-23": {
+    "lehrtext": "Deshalb beuge ich meine Knie vor dem Vater, von dem jedes Geschlecht im Himmel und auf Erden seinen Namen hat.",
+    "lehrtext_stelle": "Epheser 3,14-15",
+    "losung": "Der Himmel ist der Himmel des HERRN; aber die Erde hat er den Menschenkindern gegeben.",
+    "losung_stelle": "Psalm 115,16",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-04-24": {
+    "lehrtext": "Jesus sprach: Wer die Hand an den Pflug legt und sieht zurück, der ist nicht geschickt für das Reich Gottes.",
+    "lehrtext_stelle": "Lukas 9,62",
+    "losung": "Pflüget ein Neues und säet nicht unter die Dornen!",
+    "losung_stelle": "Jeremia 4,3",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-04-25": {
+    "lehrtext": "Das Evangelium muss zuvor gepredigt werden unter allen Völkern.",
+    "lehrtext_stelle": "Markus 13,10",
+    "losung": "Das Erdreich erschrickt und wird still, wenn Gott sich aufmacht zu richten, dass er helfe allen Elenden auf Erden.",
+    "losung_stelle": "Psalm 76,9-10",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-04-26": {
+    "lehrtext": "Es ist erschienen die heilsame Gnade Gottes allen Menschen und erzieht uns, dass wir absagen dem gottlosen Wesen und den weltlichen Begierden und besonnen, gerecht und fromm in dieser Welt leben.",
+    "lehrtext_stelle": "Titus 2,11-12",
+    "losung": "Gott hat den Menschen aufrichtig gemacht; aber sie suchen viele Künste.",
+    "losung_stelle": "Prediger 7,29",
+    "sonntag": "3. Sonntag nach Ostern – Jubilate (Jauchzet Gott, alle Lande! Psalm 66,1)",
+    "wochentag": "Sonntag"
+  },
+  "2026-04-27": {
+    "lehrtext": "Seht die Lilien, wie sie wachsen: Sie arbeiten nicht, auch spinnen sie nicht. Ich sage euch aber, dass auch Salomo in aller seiner Herrlichkeit nicht gekleidet gewesen ist wie eine von ihnen.",
+    "lehrtext_stelle": "Lukas 12,27",
+    "losung": "Zeige deinen Knechten deine Werke und deine Herrlichkeit ihren Kindern.",
+    "losung_stelle": "Psalm 90,16",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-04-28": {
+    "lehrtext": "/Jesus spricht:/ Wer zu mir kommt, den werde ich nicht hinausstoßen.",
+    "lehrtext_stelle": "Johannes 6,37",
+    "losung": "Ach, Herr, du großer und schrecklicher Gott, der du Bund und Gnade bewahrst denen, die dich lieben und deine Gebote halten! Wir haben gesündigt und Unrecht getan.",
+    "losung_stelle": "Daniel 9,4-5",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-04-29": {
+    "lehrtext": "Da sie ihn nicht zu Jesus bringen konnten wegen der Menge, deckten sie das Dach auf, wo er war, gruben es auf und ließen das Bett herunter, auf dem der Gelähmte lag.",
+    "lehrtext_stelle": "Markus 2,4",
+    "losung": "Tu deinen Mund auf für die Stummen und für die Sache aller, die verlassen sind.",
+    "losung_stelle": "Sprüche 31,8",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-04-30": {
+    "lehrtext": "Der Herr verzögert nicht die Verheißung, wie es einige für eine Verzögerung halten; sondern er hat Geduld mit euch und will nicht, dass jemand verloren werde, sondern dass jedermann zur Buße finde.",
+    "lehrtext_stelle": "2. Petrus 3,9",
+    "losung": "Tausend Jahre sind vor dir wie der Tag, der gestern vergangen ist, und wie eine Nachtwache.",
+    "losung_stelle": "Psalm 90,4",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-05-01": {
+    "lehrtext": "Wer sollte dich, Herr, nicht fürchten und deinen Namen nicht preisen? Denn du allein bist heilig!",
+    "lehrtext_stelle": "Offenbarung 15,4",
+    "losung": "Mich sollst du fürchten und dich zurechtweisen lassen.",
+    "losung_stelle": "Zefanja 3,7",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-05-02": {
+    "lehrtext": "Wer von sich sagt, dass er mit Gott verbunden ist, soll auch so leben, wie Jesus gelebt hat.",
+    "lehrtext_stelle": "1. Johannes 2,6",
+    "losung": "Lass meinen Gang in deinem Wort fest sein und lass kein Unrecht über mich herrschen.",
+    "losung_stelle": "Psalm 119,133",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-05-03": {
+    "lehrtext": "Nikodemus sprach zu Jesus: Rabbi, wir wissen, dass du ein Lehrer bist, von Gott gekommen; denn niemand kann die Zeichen tun, die du tust, es sei denn Gott mit ihm.",
+    "lehrtext_stelle": "Johannes 3,2",
+    "losung": "Gideon sprach zu dem HERRN: Hab ich Gnade vor dir gefunden, so mach mir doch ein Zeichen, dass du es bist, der mit mir redet.",
+    "losung_stelle": "Richter 6,17",
+    "sonntag": "4. Sonntag nach Ostern – Kantate (Singet dem HERRN ein neues Lied! Psalm 98,1)",
+    "wochentag": "Sonntag"
+  },
+  "2026-05-04": {
+    "lehrtext": "/Jesus spricht:/ Kommt her zu mir, alle, die ihr mühselig und beladen seid; ich will euch erquicken.",
+    "lehrtext_stelle": "Matthäus 11,28",
+    "losung": "Gelobt sei der Herr täglich. Gott legt uns eine Last auf, aber er hilft uns auch.",
+    "losung_stelle": "Psalm 68,20",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-05-05": {
+    "lehrtext": "Der Gott, der gesagt hat: Aus der Finsternis soll Licht aufstrahlen, er ist es, der es hat aufstrahlen lassen in unseren Herzen, so dass die Erkenntnis aufleuchtet, die Erkenntnis der Herrlichkeit Gottes auf dem Angesicht Jesu Christi.",
+    "lehrtext_stelle": "2. Korinther 4,6",
+    "losung": "Der HERR hebe sein Angesicht über dich und gebe dir Frieden.",
+    "losung_stelle": "4. Mose 6,26",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-05-06": {
+    "lehrtext": "Christus hat in den Tagen seines irdischen Lebens Bitten und Flehen mit lautem Schreien und mit Tränen vor den gebracht, der ihn aus dem Tod erretten konnte; und er ist erhört worden, weil er Gott in Ehren hielt.",
+    "lehrtext_stelle": "Hebräer 5,7",
+    "losung": "Sie werden weinend kommen, aber ich will sie trösten und leiten. Ich will sie zu Wasserbächen führen auf ebenem Wege, auf dem sie nicht straucheln; denn ich bin Israels Vater.",
+    "losung_stelle": "Jeremia 31,9",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-05-07": {
+    "lehrtext": "Am Morgen, noch vor Tage, stand Jesus auf und ging hinaus. Und er ging an eine einsame Stätte und betete dort.",
+    "lehrtext_stelle": "Markus 1,35",
+    "losung": "HERR, frühe wollest du meine Stimme hören, frühe will ich mich zu dir wenden und aufmerken.",
+    "losung_stelle": "Psalm 5,4",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-05-08": {
+    "lehrtext": "Jesus sprach: Mir ist gegeben alle Gewalt im Himmel und auf Erden.",
+    "lehrtext_stelle": "Matthäus 28,18",
+    "losung": "Der HERR, unser Gott, verlasse uns nicht und ziehe die Hand nicht ab von uns.",
+    "losung_stelle": "1. Könige 8,57",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-05-09": {
+    "lehrtext": "Gott tröstet uns in aller unserer Bedrängnis, damit wir auch trösten können, die in allerlei Bedrängnis sind, mit dem Trost, mit dem wir selber getröstet werden von Gott.",
+    "lehrtext_stelle": "2. Korinther 1,4",
+    "losung": "Ich will euch retten, dass ihr ein Segen sein sollt.",
+    "losung_stelle": "Sacharja 8,13",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-05-10": {
+    "lehrtext": "Das sagt der Heilige, der Wahrhaftige: Ich kenne deine Werke. Siehe, ich habe vor dir eine Tür aufgetan, die niemand zuschließen kann; du hast eine kleine Kraft und hast mein Wort bewahrt und hast meinen Namen nicht verleugnet.",
+    "lehrtext_stelle": "Offenbarung 3,7.8",
+    "losung": "Unser Gott, den wir verehren, kann uns erretten aus dem glühenden Feuerofen. Und wenn er’s nicht tut, so sollst du dennoch wissen, dass wir deinen Gott nicht ehren und das goldene Bild nicht anbeten werden.",
+    "losung_stelle": "Daniel 3,17.18",
+    "sonntag": "5. Sonntag nach Ostern – Rogate (Betet!)",
+    "wochentag": "Sonntag"
+  },
+  "2026-05-11": {
+    "lehrtext": "Heilig, heilig, heilig ist Gott der Herr, der Allmächtige, der da war und der da ist und der da kommt.",
+    "lehrtext_stelle": "Offenbarung 4,8",
+    "losung": "Es ist niemand heilig wie der HERR, außer dir ist keiner.",
+    "losung_stelle": "1. Samuel 2,2",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-05-12": {
+    "lehrtext": "Des Gerechten Gebet vermag viel, wenn es ernstlich ist.",
+    "lehrtext_stelle": "Jakobus 5,16",
+    "losung": "Der HERR wendet sich zum Gebet der Verlassenen und verschmäht ihr Gebet nicht.",
+    "losung_stelle": "Psalm 102,18",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-05-13": {
+    "lehrtext": "Jesus rief laut: Vater, ich befehle meinen Geist in deine Hände! Und als er das gesagt hatte, verschied er.",
+    "lehrtext_stelle": "Lukas 23,46",
+    "losung": "In Gottes Hand ist die Seele von allem, was lebt.",
+    "losung_stelle": "Hiob 12,10",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-05-14": {
+    "lehrtext": "Jesus sprach zu den Jüngern: So steht’s geschrieben, dass der Christus leiden wird und auferstehen von den Toten am dritten Tage; und dass gepredigt wird in seinem Namen Buße zur Vergebung der Sünden unter allen Völkern. Von Jerusalem an seid ihr dafür Zeugen.",
+    "lehrtext_stelle": "Lukas 24,46-48",
+    "losung": "Dein Herz eifre nicht gegen die Sünder, sondern jederzeit nach der Furcht des HERRN.",
+    "losung_stelle": "Sprüche 23,17",
+    "sonntag": "Christi Himmelfahrt",
+    "wochentag": "Donnerstag"
+  },
+  "2026-05-15": {
+    "lehrtext": "Bemüht euch deshalb nach Kräften, dass zu eurem Glauben das richtige Verhalten kommt. Zum richtigen Verhalten soll die Erkenntnis kommen, zur Erkenntnis die Selbstbeherrschung, zur Selbstbeherrschung die Standhaftigkeit, zur Standhaftigkeit die Ausübung des Glaubens, zur Ausübung des Glaubens die geschwisterliche Liebe und zur geschwisterlichen Liebe die Liebe überhaupt.",
+    "lehrtext_stelle": "2. Petrus 1,5-7",
+    "losung": "Kommt, wir wollen uns dem HERRN zuwenden zu einem ewigen Bunde, der nimmermehr vergessen werden soll!",
+    "losung_stelle": "Jeremia 50,5",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-05-16": {
+    "lehrtext": "Gott widersteht den Hochmütigen, aber den Demütigen gibt er Gnade.",
+    "lehrtext_stelle": "1. Petrus 5,5",
+    "losung": "Gott ist weise und mächtig; wer stellte sich ihm entgegen und blieb unversehrt?",
+    "losung_stelle": "Hiob 9,4",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-05-17": {
+    "lehrtext": "Jesus rief mit lauter Stimme: Lazarus, komm heraus! Und der Verstorbene kam heraus, gebunden mit Grabtüchern an Füßen und Händen, und sein Gesicht war verhüllt mit einem Schweißtuch.",
+    "lehrtext_stelle": "Johannes 11,43-44",
+    "losung": "HERR, du hast mich heraufgeholt aus dem Totenreich, zum Leben mich zurückgerufen von denen, die hinab zur Grube fuhren.",
+    "losung_stelle": "Psalm 30,4",
+    "sonntag": "6. Sonntag nach Ostern – Exaudi (HERR, höre meine Stimme! Psalm 27,7)",
+    "wochentag": "Sonntag"
+  },
+  "2026-05-18": {
+    "lehrtext": "/Jesus spricht:/ Wer von sich aus redet, sucht die eigene Ehre; wer aber die Ehre dessen sucht, der ihn gesandt hat, der ist glaubwürdig, und keine Ungerechtigkeit ist in ihm.",
+    "lehrtext_stelle": "Johannes 7,18",
+    "losung": "Nicht uns, HERR, nicht uns, sondern deinem Namen gib Ehre um deiner Gnade und Treue willen!",
+    "losung_stelle": "Psalm 115,1",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-05-19": {
+    "lehrtext": "Ja, lieber Mensch, wer bist du denn, dass du mit Gott rechten willst? Spricht etwa ein Werk zu seinem Meister: Warum hast du mich so gemacht?",
+    "lehrtext_stelle": "Römer 9,20",
+    "losung": "HERR, du bist doch unser Vater! Wir sind Ton, du bist unser Töpfer, und wir alle sind deiner Hände Werk.",
+    "losung_stelle": "Jesaja 64,7",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-05-20": {
+    "lehrtext": "Die Jünger zogen aus und predigten an allen Orten. Und der Herr wirkte mit ihnen und bekräftigte das Wort durch die mitfolgenden Zeichen.",
+    "lehrtext_stelle": "Markus 16,20",
+    "losung": "Ich will singen von der Gnade des HERRN ewiglich und seine Treue verkünden mit meinem Munde für und für.",
+    "losung_stelle": "Psalm 89,2",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-05-21": {
+    "lehrtext": "Mit Psalmen, Lobgesängen und geistlichen Liedern singt Gott dankbar in euren Herzen.",
+    "lehrtext_stelle": "Kolosser 3,16",
+    "losung": "Lobet Gott für seine Taten, lobet ihn in seiner großen Herrlichkeit!",
+    "losung_stelle": "Psalm 150,2",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-05-22": {
+    "lehrtext": "Er selbst, der Vater, hat euch lieb.",
+    "lehrtext_stelle": "Johannes 16,27",
+    "losung": "Der HERR ist dein Ruhm, und er ist dein Gott.",
+    "losung_stelle": "5. Mose 10,21",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-05-23": {
+    "lehrtext": "Er lässt seine Sonne aufgehen über Böse und Gute und lässt regnen über Gerechte und Ungerechte.",
+    "lehrtext_stelle": "Matthäus 5,45",
+    "losung": "Gott tut große Dinge, die wir nicht begreifen.",
+    "losung_stelle": "Hiob 37,5",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-05-24": {
+    "lehrtext": "Es geschah plötzlich ein Brausen vom Himmel wie von einem gewaltigen Sturm und erfüllte das ganze Haus, in dem sie saßen. Und sie wurden alle erfüllt von dem Heiligen Geist.",
+    "lehrtext_stelle": "Apostelgeschichte 2,2.4",
+    "losung": "Machet die Tore weit und die Türen in der Welt hoch, dass der König der Ehre einziehe!",
+    "losung_stelle": "Psalm 24,7",
+    "sonntag": "Pfingstfest",
+    "wochentag": "Sonntag"
+  },
+  "2026-05-25": {
+    "lehrtext": "Es wohnten in Jerusalem Juden, die waren gottesfürchtige Männer aus allen Völkern unter dem Himmel. Sie entsetzten sich aber, verwunderten sich und sprachen: Wir hören sie in unsern Sprachen die großen Taten Gottes verkünden.",
+    "lehrtext_stelle": "Apostelgeschichte 2,5.7.11",
+    "losung": "Mächtig waltet über uns seine Güte, und die Treue des HERRN währt in Ewigkeit. Halleluja.",
+    "losung_stelle": "Psalm 117,2",
+    "sonntag": "Pfingstmontag",
+    "wochentag": "Montag"
+  },
+  "2026-05-26": {
+    "lehrtext": "Weist die zurecht, die sich an keine Ordnung halten, ermutigt die Verzagten, steht den Schwachen bei, habt Geduld mit allen!",
+    "lehrtext_stelle": "1. Thessalonicher 5,14",
+    "losung": "Die ihr den HERRN liebet, hasset das Arge!",
+    "losung_stelle": "Psalm 97,10",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-05-27": {
+    "lehrtext": "Obwohl es solche gibt, die Götter genannt werden, es sei im Himmel oder auf Erden, wie es ja viele Götter und viele Herren gibt, so haben wir doch nur #einen# Gott, den Vater, von dem alle Dinge sind und wir zu ihm, und #einen# Herrn, Jesus Christus, durch den alle Dinge sind und wir durch ihn.",
+    "lehrtext_stelle": "1. Korinther 8,5-6",
+    "losung": "HERR, wer ist dir gleich unter den Göttern? Wer ist dir gleich, der so herrlich und heilig ist, schrecklich, löblich und wundertätig?",
+    "losung_stelle": "2. Mose 15,11",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-05-28": {
+    "lehrtext": "Christus ist auferweckt von den Toten als Erstling unter denen, die entschlafen sind.",
+    "lehrtext_stelle": "1. Korinther 15,20",
+    "losung": "Ich weiß, dass mein Erlöser lebt.",
+    "losung_stelle": "Hiob 19,25",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-05-29": {
+    "lehrtext": "/Der reiche Mensch sprach:/ Liebe Seele, du hast einen großen Vorrat für viele Jahre; habe nun Ruhe, iss, trink und habe guten Mut! Aber Gott sprach zu ihm: Du Narr! Diese Nacht wird man deine Seele von dir fordern. Und wem wird dann gehören, was du bereitet hast?",
+    "lehrtext_stelle": "Lukas 12,19-20",
+    "losung": "Ich habe erkannt, HERR, dass der Mensch nicht über seinen Weg bestimmt.",
+    "losung_stelle": "Jeremia 10,23",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-05-30": {
+    "lehrtext": "/Jesus erzählt im Gleichnis:/ Der Sohn machte sich auf und kam zu seinem Vater. Als er aber noch weit entfernt war, sah ihn sein Vater und es jammerte ihn, und er lief und fiel ihm um den Hals und küsste ihn.",
+    "lehrtext_stelle": "Lukas 15,20",
+    "losung": "Der HERR, der gütig ist, wolle gnädig sein allen, die ihr Herz darauf richten, Gott zu suchen.",
+    "losung_stelle": "2. Chronik 30,18-19",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-05-31": {
+    "lehrtext": "O welch eine Tiefe des Reichtums, beides, der Weisheit und der Erkenntnis Gottes! Wie unbegreiflich sind seine Gerichte und unerforschlich seine Wege!",
+    "lehrtext_stelle": "Römer 11,33",
+    "losung": "Wie schwer sind für mich, Gott, deine Gedanken! Wie ist ihre Summe so groß!",
+    "losung_stelle": "Psalm 139,17",
+    "sonntag": "Trinitatis (Dreieinigkeit)",
+    "wochentag": "Sonntag"
+  },
+  "2026-06-01": {
+    "lehrtext": "Das Wort ward Fleisch und wohnte unter uns, und wir sahen seine Herrlichkeit, eine Herrlichkeit als des eingeborenen Sohnes vom Vater, voller Gnade und Wahrheit.",
+    "lehrtext_stelle": "Johannes 1,14",
+    "losung": "Ich will rühmen Gottes Wort; ich will rühmen des HERRN Wort.",
+    "losung_stelle": "Psalm 56,11",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-06-02": {
+    "lehrtext": "Wer zu Gott kommen will, der muss glauben, dass er ist und dass er denen, die ihn suchen, ihren Lohn gibt.",
+    "lehrtext_stelle": "Hebräer 11,6",
+    "losung": "/Boas sprach zu Rut:/ Du bist gekommen zu dem HERRN, dass du unter seinen Flügeln Zuflucht hättest.",
+    "losung_stelle": "Rut 2,12",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-06-03": {
+    "lehrtext": "Jesus antwortete und sprach zu ihnen: Geht und verkündet Johannes, was ihr gesehen und gehört habt: Blinde sehen, Lahme gehen, Aussätzige werden rein und Taube hören, Tote stehen auf, Armen wird das Evangelium gepredigt.",
+    "lehrtext_stelle": "Lukas 7,22",
+    "losung": "Der HERR macht die Blinden sehend.",
+    "losung_stelle": "Psalm 146,8",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-06-04": {
+    "lehrtext": "Niemand gehe zu weit und übervorteile seinen Bruder im Handel. Denn der Herr straft dies alles.",
+    "lehrtext_stelle": "1. Thessalonicher 4,6",
+    "losung": "Der HERR, dein Gott, wird dir Glück geben zu allen Werken deiner Hände.",
+    "losung_stelle": "5. Mose 30,9",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-06-05": {
+    "lehrtext": "Marta sprach zu Jesus: Herr, wärst du hier gewesen, mein Bruder wäre nicht gestorben. Aber auch jetzt weiß ich: Was du bittest von Gott, das wird dir Gott geben.",
+    "lehrtext_stelle": "Johannes 11,21-22",
+    "losung": "Harre des HERRN! Sei getrost und unverzagt und harre des HERRN!",
+    "losung_stelle": "Psalm 27,14",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-06-06": {
+    "lehrtext": "Aus Davids Geschlecht hat Gott, wie er verheißen hat, Jesus kommen lassen als Heiland für das Volk Israel.",
+    "lehrtext_stelle": "Apostelgeschichte 13,23",
+    "losung": "/David betete:/ So bekräftige nun, HERR, Gott, das Wort in Ewigkeit, das du über deinen Knecht und über sein Haus geredet hast, und tu, wie du geredet hast!",
+    "losung_stelle": "2. Samuel 7,25",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-06-07": {
+    "lehrtext": "/Jesus Christus spricht:/ In der Welt habt ihr Angst; aber seid getrost, ich habe die Welt überwunden.",
+    "lehrtext_stelle": "Johannes 16,33",
+    "losung": "HERR, wenn ich mitten in der Angst wandle, so erquickst du mich.",
+    "losung_stelle": "Psalm 138,7",
+    "sonntag": "1. Sonntag nach Trinitatis",
+    "wochentag": "Sonntag"
+  },
+  "2026-06-08": {
+    "lehrtext": "Simon sprach: Meister, wir haben die ganze Nacht gearbeitet und nichts gefangen; aber auf dein Wort hin will ich die Netze auswerfen.",
+    "lehrtext_stelle": "Lukas 5,5",
+    "losung": "Ich dachte, ich arbeitete vergeblich und verzehrte meine Kraft umsonst und unnütz. Doch mein Recht ist bei dem HERRN und mein Lohn bei meinem Gott.",
+    "losung_stelle": "Jesaja 49,4",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-06-09": {
+    "lehrtext": "/Paulus sprach:/ Diese Nacht trat zu mir der Engel des Gottes, dem ich gehöre und dem ich diene, und sprach: Fürchte dich nicht, Paulus, du musst vor den Kaiser gestellt werden; und siehe, Gott hat dir geschenkt alle, die mit dir fahren.",
+    "lehrtext_stelle": "Apostelgeschichte 27,23-24",
+    "losung": "Jakob zog seinen Weg. Und es begegneten ihm die Engel Gottes.",
+    "losung_stelle": "1. Mose 32,2",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-06-10": {
+    "lehrtext": "Jesus sprach zu ihnen: Wer an mich glaubt, den wird nimmermehr dürsten.",
+    "lehrtext_stelle": "Johannes 6,35",
+    "losung": "Wohlan, alle, die ihr durstig seid, kommt her zum Wasser!",
+    "losung_stelle": "Jesaja 55,1",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-06-11": {
+    "lehrtext": "/Paulus schreibt:/ Wir dachten bei uns selbst, zum Tode verurteilt zu sein. Das geschah aber, damit wir unser Vertrauen nicht auf uns selbst setzten, sondern auf Gott, der die Toten auferweckt, der uns aus solcher Todesnot errettet hat und erretten wird.",
+    "lehrtext_stelle": "2. Korinther 1,9-10",
+    "losung": "Habe ich dir nicht geboten: Sei getrost und unverzagt?",
+    "losung_stelle": "Josua 1,9",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-06-12": {
+    "lehrtext": "Gott hat die Macht, euch jede Gabe im Überfluss zu schenken. So habt ihr in jeder Hinsicht und zu jeder Zeit alles, was ihr zum Leben braucht. Und ihr habt immer noch mehr als genug, anderen reichlich Gutes zu tun.",
+    "lehrtext_stelle": "2. Korinther 9,8",
+    "losung": "Der HERR, dein Gott, führt dich in ein gutes Land, ein Land, darin Bäche und Quellen sind und Wasser in der Tiefe.",
+    "losung_stelle": "5. Mose 8,7",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-06-13": {
+    "lehrtext": "Lasst uns laufen mit Geduld in dem Kampf, der uns bestimmt ist, und aufsehen zu Jesus, dem Anfänger und Vollender des Glaubens.",
+    "lehrtext_stelle": "Hebräer 12,1-2",
+    "losung": "Jünglinge werden müde und matt, und Männer straucheln und fallen; aber die auf den HERRN harren, kriegen neue Kraft, dass sie auffahren mit Flügeln wie Adler, dass sie laufen und nicht matt werden.",
+    "losung_stelle": "Jesaja 40,30-31",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-06-14": {
+    "lehrtext": "Die Jünger sprachen untereinander: Brannte nicht unser Herz in uns, da er mit uns redete auf dem Wege und uns die Schrift öffnete?",
+    "lehrtext_stelle": "Lukas 24,32",
+    "losung": "Ich will ihnen ein Herz geben, dass sie mich erkennen sollen, dass ich der HERR bin.",
+    "losung_stelle": "Jeremia 24,7",
+    "sonntag": "2. Sonntag nach Trinitatis",
+    "wochentag": "Sonntag"
+  },
+  "2026-06-15": {
+    "lehrtext": "/Jesus spricht:/ Ich bin das Licht der Welt. Wer mir nachfolgt, der wird nicht wandeln in der Finsternis, sondern wird das Licht des Lebens haben.",
+    "lehrtext_stelle": "Johannes 8,12",
+    "losung": "Siehe, Finsternis bedeckt das Erdreich und Dunkel die Völker; aber über dir geht auf der HERR, und seine Herrlichkeit erscheint über dir.",
+    "losung_stelle": "Jesaja 60,2",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-06-16": {
+    "lehrtext": "Wer aus Gott geboren ist, den bewahrt er und der Böse tastet ihn nicht an.",
+    "lehrtext_stelle": "1. Johannes 5,18",
+    "losung": "Wer den HERRN fürchtet, hat eine sichere Festung.",
+    "losung_stelle": "Sprüche 14,26",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-06-17": {
+    "lehrtext": "Wir haben unsre Hoffnung auf den lebendigen Gott gesetzt, welcher ist der Heiland aller Menschen, besonders der Gläubigen.",
+    "lehrtext_stelle": "1. Timotheus 4,10",
+    "losung": "Ich, der HERR, bin dein Heiland, und ich, der Mächtige, dein Erlöser.",
+    "losung_stelle": "Jesaja 60,16",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-06-18": {
+    "lehrtext": "Seht zu, Brüder und Schwestern, dass niemand unter euch ein böses, ungläubiges Herz habe und abfalle von dem lebendigen Gott.",
+    "lehrtext_stelle": "Hebräer 3,12",
+    "losung": "Als der Pharao sah, dass Regen, Donner und Hagel aufhörten, versündigte er sich weiter und verhärtete sein Herz.",
+    "losung_stelle": "2. Mose 9,34",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-06-19": {
+    "lehrtext": "Zur Freiheit hat uns Christus befreit! So steht nun fest und lasst euch nicht wieder das Joch der Knechtschaft auflegen!",
+    "lehrtext_stelle": "Galater 5,1",
+    "losung": "Du stellst meine Füße auf weiten Raum.",
+    "losung_stelle": "Psalm 31,9",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-06-20": {
+    "lehrtext": "Zacharias forderte eine kleine Tafel und schrieb: Er heißt Johannes. Und sie wunderten sich alle. Und sogleich wurde sein Mund und seine Zunge aufgetan, und er redete und lobte Gott.",
+    "lehrtext_stelle": "Lukas 1,63-64",
+    "losung": "Meine Lippen und meine Seele, die du erlöst hast, sollen fröhlich sein und dir lobsingen.",
+    "losung_stelle": "Psalm 71,23",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-06-21": {
+    "lehrtext": "/Paulus schreibt:/ Der Herr hat zu mir gesagt: Lass dir an meiner Gnade genügen; denn meine Kraft vollendet sich in der Schwachheit.",
+    "lehrtext_stelle": "2. Korinther 12,9",
+    "losung": "Ich rief zu dem HERRN in meiner Angst, und er antwortete mir.",
+    "losung_stelle": "Jona 2,3",
+    "sonntag": "3. Sonntag nach Trinitatis",
+    "wochentag": "Sonntag"
+  },
+  "2026-06-22": {
+    "lehrtext": "Wir gehören ganz zu Christus – vorausgesetzt, wir halten bis zuletzt an der Zuversicht fest, die wir am Anfang hatten.",
+    "lehrtext_stelle": "Hebräer 3,14",
+    "losung": "So spricht der HERR: Ich gedenke der Treue deiner Jugend und der Liebe deiner Brautzeit, wie du mir folgtest in der Wüste, im Lande, da man nicht sät.",
+    "losung_stelle": "Jeremia 2,2",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-06-23": {
+    "lehrtext": "Gott hat den Herrn auferweckt und wird auch uns auferwecken durch seine Kraft.",
+    "lehrtext_stelle": "1. Korinther 6,14",
+    "losung": "Wir haben einen Gott, der da hilft, und den HERRN, der vom Tode errettet.",
+    "losung_stelle": "Psalm 68,21",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-06-24": {
+    "lehrtext": "/Johannes der Täufer sprach:/ Bringt also Frucht, die der Umkehr entspricht!",
+    "lehrtext_stelle": "Matthäus 3,8",
+    "losung": "HERR, zürne nicht so sehr und gedenke nicht ewig der Sünde! Sieh doch an, dass wir alle dein Volk sind!",
+    "losung_stelle": "Jesaja 64,8",
+    "sonntag": "Johannistag",
+    "wochentag": "Mittwoch"
+  },
+  "2026-06-25": {
+    "lehrtext": "Da sprach sein Herr zu ihm: Recht so, du guter und treuer Knecht, du bist über wenigem treu gewesen, ich will dich über viel setzen; geh hinein zu deines Herrn Freude!",
+    "lehrtext_stelle": "Matthäus 25,21",
+    "losung": "Seid getrost und lasst eure Hände nicht sinken; denn euer Werk hat seinen Lohn.",
+    "losung_stelle": "2. Chronik 15,7",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-06-26": {
+    "lehrtext": "Da Jesus geboren war zu Bethlehem in Judäa zur Zeit des Königs Herodes, siehe, da kamen Weise aus dem Morgenland nach Jerusalem und sprachen: Wo ist der neugeborene König der Juden? Wir haben seinen Stern aufgehen sehen und sind gekommen, ihn anzubeten.",
+    "lehrtext_stelle": "Matthäus 2,1-2",
+    "losung": "Und du, Bethlehem Efrata, die du klein bist unter den Tausenden in Juda, aus dir soll mir der kommen, der in Israel Herr sei, dessen Ausgang von Anfang und von Ewigkeit her gewesen ist.",
+    "losung_stelle": "Micha 5,1",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-06-27": {
+    "lehrtext": "Einst wart ihr Finsternis, jetzt aber seid ihr Licht im Herrn. Lebt als Kinder des Lichts.",
+    "lehrtext_stelle": "Epheser 5,8",
+    "losung": "HERR, neige mein Herz nicht zum Bösen.",
+    "losung_stelle": "Psalm 141,4",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-06-28": {
+    "lehrtext": "Petrus aber sprach: Silber und Gold habe ich nicht; was ich aber habe, das gebe ich dir: Im Namen Jesu Christi von Nazareth steh auf und geh umher!",
+    "lehrtext_stelle": "Apostelgeschichte 3,6",
+    "losung": "Du gibst meinen Schritten weiten Raum, und meine Knöchel wanken nicht.",
+    "losung_stelle": "2. Samuel 22,37",
+    "sonntag": "4. Sonntag nach Trinitatis",
+    "wochentag": "Sonntag"
+  },
+  "2026-06-29": {
+    "lehrtext": "Zieht nicht mit den Ungläubigen an einem Strang. Wie passen Gerechtigkeit und Gesetzlosigkeit zusammen? Oder was hat das Licht mit der Finsternis zu tun?",
+    "lehrtext_stelle": "2. Korinther 6,14",
+    "losung": "Hasst das Böse und liebt das Gute, richtet das Recht auf im Tor, vielleicht wird der HERR, der Gott Zebaoth, gnädig sein.",
+    "losung_stelle": "Amos 5,15",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-06-30": {
+    "lehrtext": "Folgt nun dem Beispiel Gottes als geliebte Kinder, und führt euer Leben in der Liebe, wie auch Christus uns geliebt und sich für uns hingegeben hat als Gabe und Opfer für Gott.",
+    "lehrtext_stelle": "Epheser 5,1-2",
+    "losung": "Kehrt um, ihr abtrünnigen Kinder, spricht der HERR, denn ich bin euer Herr! Und ich will euch holen und will euch bringen nach Zion.",
+    "losung_stelle": "Jeremia 3,14",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-07-01": {
+    "lehrtext": "Erforscht euch selbst, ob ihr im Glauben steht; prüft euch selbst! Oder erkennt ihr an euch selbst nicht, dass Jesus Christus in euch ist?",
+    "lehrtext_stelle": "2. Korinther 13,5",
+    "losung": "Die Furcht des HERRN ist der Anfang der Erkenntnis.",
+    "losung_stelle": "Sprüche 1,7",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-07-02": {
+    "lehrtext": "/Der Engel sprach zu Josef:/ Maria wird einen Sohn gebären, dem sollst du den Namen Jesus geben, denn er wird sein Volk retten von ihren Sünden.",
+    "lehrtext_stelle": "Matthäus 1,21",
+    "losung": "HERR, verdirb dein Volk und dein Erbe nicht, das du durch deine große Kraft erlöst hast!",
+    "losung_stelle": "5. Mose 9,26",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-07-03": {
+    "lehrtext": "Jesus sprach zu dem Tauben: Hefata!, das heißt: Tu dich auf! Und sogleich taten sich seine Ohren auf, und die Fessel seiner Zunge wurde gelöst, und er redete richtig.",
+    "lehrtext_stelle": "Markus 7,34-35",
+    "losung": "Wenn der HERR spricht, so geschieht’s; wenn er gebietet, so steht’s da.",
+    "losung_stelle": "Psalm 33,9",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-07-04": {
+    "lehrtext": "So sind wir nun Botschafter an Christi statt, denn Gott ermahnt durch uns; so bitten wir nun an Christi statt: Lasst euch versöhnen mit Gott!",
+    "lehrtext_stelle": "2. Korinther 5,20",
+    "losung": "Ich hörte die Stimme des Herrn, wie er sprach: Wen soll ich senden? Wer will unser Bote sein? Ich aber sprach: Hier bin ich, sende mich!",
+    "losung_stelle": "Jesaja 6,8",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-07-05": {
+    "lehrtext": "/Paulus schreibt an Timotheus:/ Dankbar erinnere ich mich daran, wie aufrichtig du glaubst. Es ist derselbe Glaube, der schon in deiner Großmutter Lois und in deiner Mutter Eunike wohnte. Und ich bin überzeugt, er wohnt auch in dir.",
+    "lehrtext_stelle": "2. Timotheus 1,5",
+    "losung": "Du bist mein Gott von meiner Mutter Schoß an.",
+    "losung_stelle": "Psalm 22,11",
+    "sonntag": "5. Sonntag nach Trinitatis",
+    "wochentag": "Sonntag"
+  },
+  "2026-07-06": {
+    "lehrtext": "/Jesus spricht:/ Wer mir dienen will, der folge mir nach; und wo ich bin, da soll mein Diener auch sein.",
+    "lehrtext_stelle": "Johannes 12,26",
+    "losung": "So habt nun acht, dass ihr tut, wie euch der HERR, euer Gott, geboten hat, und weicht nicht, weder zur Rechten noch zur Linken.",
+    "losung_stelle": "5. Mose 5,32",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-07-07": {
+    "lehrtext": "Petrus sprach zu ihm: Äneas, Jesus Christus macht dich gesund; steh auf und mach dir selber das Bett. Und sogleich stand er auf.",
+    "lehrtext_stelle": "Apostelgeschichte 9,34",
+    "losung": "Du hast mein Leben aus dem Verderben geführt, HERR, mein Gott!",
+    "losung_stelle": "Jona 2,7",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-07-08": {
+    "lehrtext": "/Jesus spricht:/ Ein neues Gebot gebe ich euch, dass ihr euch untereinander liebt, wie ich euch geliebt habe, damit auch ihr einander lieb habt.",
+    "lehrtext_stelle": "Johannes 13,34",
+    "losung": "Muss ich nicht das halten und reden, was mir der HERR in den Mund gibt?",
+    "losung_stelle": "4. Mose 23,12",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-07-09": {
+    "lehrtext": "Seinen Heiligen wollte Gott kundtun, was der herrliche Reichtum dieses Geheimnisses unter den Völkern ist, nämlich Christus in euch, die Hoffnung der Herrlichkeit.",
+    "lehrtext_stelle": "Kolosser 1,27",
+    "losung": "Es ist ein Gott im Himmel, der Geheimnisse offenbart.",
+    "losung_stelle": "Daniel 2,28",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-07-10": {
+    "lehrtext": "Alles, was ihr tut mit Worten oder mit Werken, das tut alles im Namen des Herrn Jesus und dankt Gott, dem Vater, durch ihn.",
+    "lehrtext_stelle": "Kolosser 3,17",
+    "losung": "Alles, was dir vor die Hände kommt, es zu tun mit deiner Kraft, das tu.",
+    "losung_stelle": "Prediger 9,10",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-07-11": {
+    "lehrtext": "Die aber im Boot waren, fielen vor Jesus nieder und sprachen: Du bist wahrhaftig Gottes Sohn!",
+    "lehrtext_stelle": "Matthäus 14,33",
+    "losung": "Seid stille und erkennet, dass ich Gott bin!",
+    "losung_stelle": "Psalm 46,11",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-07-12": {
+    "lehrtext": "Der Engel des Herrn erschien dem Josef im Traum in Ägypten und sprach: Steh auf, nimm das Kindlein und seine Mutter mit dir und zieh hin in das Land Israel; sie sind gestorben, die dem Kindlein nach dem Leben getrachtet haben.",
+    "lehrtext_stelle": "Matthäus 2,19-20",
+    "losung": "HERR, du bist der Armen Schutz gewesen in der Trübsal, eine Zuflucht vor dem Ungewitter, ein Schatten vor der Hitze, wenn die Tyrannen wüten.",
+    "losung_stelle": "Jesaja 25,4",
+    "sonntag": "6. Sonntag nach Trinitatis",
+    "wochentag": "Sonntag"
+  },
+  "2026-07-13": {
+    "lehrtext": "/Jesus spricht:/ Mein Gericht ist gerecht; denn ich suche nicht meinen Willen, sondern den Willen dessen, der mich gesandt hat.",
+    "lehrtext_stelle": "Johannes 5,30",
+    "losung": "Der HERR kommt, das Erdreich zu richten. Er wird den Erdkreis richten mit Gerechtigkeit und die Völker, wie es recht ist.",
+    "losung_stelle": "Psalm 98,9",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-07-14": {
+    "lehrtext": "Ich hörte eine große Stimme von dem Thron her, die sprach: Siehe da, die Hütte Gottes bei den Menschen! Und er wird bei ihnen wohnen, und sie werden seine Völker sein, und er selbst, Gott mit ihnen, wird ihr Gott sein.",
+    "lehrtext_stelle": "Offenbarung 21,3",
+    "losung": "Siehe, da ist Gott der HERR! Er kommt gewaltig, und sein Arm wird herrschen.",
+    "losung_stelle": "Jesaja 40,10",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-07-15": {
+    "lehrtext": "Also hat Gott die Welt geliebt, dass er seinen eingeborenen Sohn gab, auf dass alle, die an ihn glauben, nicht verloren werden, sondern das ewige Leben haben.",
+    "lehrtext_stelle": "Johannes 3,16",
+    "losung": "Mein Herz wendet sich gegen mich, all mein Mitleid ist entbrannt. Ich will nicht tun nach meinem grimmigen Zorn. Denn ich bin Gott und nicht ein Mensch, heilig in deiner Mitte.",
+    "losung_stelle": "Hosea 11,8.9",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-07-16": {
+    "lehrtext": "Jesus spricht zu seiner Mutter: Frau, siehe, das ist dein Sohn! Danach spricht er zu dem Jünger: Siehe, das ist deine Mutter! Und von der Stunde an nahm sie der Jünger zu sich.",
+    "lehrtext_stelle": "Johannes 19,26-27",
+    "losung": "Gott ist unsre Zuversicht und Stärke, eine Hilfe in den großen Nöten, die uns getroffen haben. Darum fürchten wir uns nicht.",
+    "losung_stelle": "Psalm 46,2-3",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-07-17": {
+    "lehrtext": "/Jesus spricht:/ Ich will euch nicht als Waisen zurücklassen; ich komme zu euch.",
+    "lehrtext_stelle": "Johannes 14,18",
+    "losung": "So schau nun vom Himmel und sieh herab von deiner heiligen, herrlichen Wohnung! Wo ist nun dein Eifer und deine Macht?",
+    "losung_stelle": "Jesaja 63,15",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-07-18": {
+    "lehrtext": "Einer komme dem andern mit Ehrerbietung zuvor.",
+    "lehrtext_stelle": "Römer 12,10",
+    "losung": "Gott schuf sie als Mann und Frau und segnete sie und gab ihnen den Namen »Mensch«.",
+    "losung_stelle": "1. Mose 5,2",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-07-19": {
+    "lehrtext": "Gott hat den, der von keiner Sünde wusste, für uns zur Sünde gemacht, auf dass wir in ihm die Gerechtigkeit würden, die vor Gott gilt.",
+    "lehrtext_stelle": "2. Korinther 5,21",
+    "losung": "Ach, HERR, strafe mich nicht in deinem Zorn und züchtige mich nicht in deinem Grimm!",
+    "losung_stelle": "Psalm 6,2",
+    "sonntag": "7. Sonntag nach Trinitatis",
+    "wochentag": "Sonntag"
+  },
+  "2026-07-20": {
+    "lehrtext": "/Jesus spricht:/ Ich bin dazu geboren und in die Welt gekommen, dass ich die Wahrheit bezeuge. Wer aus der Wahrheit ist, der hört meine Stimme.",
+    "lehrtext_stelle": "Johannes 18,37",
+    "losung": "Die Worte des HERRN sind lauter wie Silber, im Tiegel geschmolzen, geläutert siebenmal.",
+    "losung_stelle": "Psalm 12,7",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-07-21": {
+    "lehrtext": "Als Jesus schon nahe am Abhang des Ölbergs war, fing die ganze Menge der Jünger an, mit Freuden Gott zu loben mit lauter Stimme über alle Taten, die sie gesehen hatten.",
+    "lehrtext_stelle": "Lukas 19,37",
+    "losung": "Freuet euch mit Jerusalem und seid fröhlich über die Stadt, alle, die ihr sie lieb habt! Freuet euch mit ihr, alle, die ihr über sie traurig gewesen seid.",
+    "losung_stelle": "Jesaja 66,10",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-07-22": {
+    "lehrtext": "Das Volk verwunderte sich, als sie sahen, dass die Stummen redeten, die Verkrüppelten gesund waren, die Lahmen gingen und die Blinden sahen; und sie priesen den Gott Israels.",
+    "lehrtext_stelle": "Matthäus 15,31",
+    "losung": "Der HERR sprach zu Mose: Das ganze Volk, in dessen Mitte du bist, soll des HERRN Werk sehen.",
+    "losung_stelle": "2. Mose 34,10",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-07-23": {
+    "lehrtext": "Es wurde ein Mann herbeigetragen, der war gelähmt von Mutterleibe an; den setzte man täglich vor das Tor des Tempels, das da heißt das Schöne, damit er um Almosen bettelte bei denen, die in den Tempel gingen.",
+    "lehrtext_stelle": "Apostelgeschichte 3,2",
+    "losung": "Ich liege gefangen und kann nicht heraus, mein Auge vergeht vor Elend. HERR, ich rufe zu dir täglich.",
+    "losung_stelle": "Psalm 88,9-10",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-07-24": {
+    "lehrtext": "Wir wissen, dass er, der Jesus, den Herrn, auferweckt hat, mit Jesus auch uns auferwecken und mit euch vor sich hinstellen wird.",
+    "lehrtext_stelle": "2. Korinther 4,14",
+    "losung": "Gott tut große Dinge, die nicht zu erforschen, und Wunder, die nicht zu zählen sind.",
+    "losung_stelle": "Hiob 9,10",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-07-25": {
+    "lehrtext": "Gelobt sei Gott, der Vater unseres Herrn Jesus Christus, der Vater der Barmherzigkeit und Gott allen Trostes.",
+    "lehrtext_stelle": "2. Korinther 1,3",
+    "losung": "Ein Vater der Waisen und ein Helfer der Witwen ist Gott in seiner heiligen Wohnung, ein Gott, der die Einsamen nach Hause bringt, der die Gefangenen herausführt, dass es ihnen wohlgehe.",
+    "losung_stelle": "Psalm 68,6-7",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-07-26": {
+    "lehrtext": "Selig sind, die Frieden stiften; denn sie werden Gottes Kinder heißen.",
+    "lehrtext_stelle": "Matthäus 5,9",
+    "losung": "Josef sprach zu seinen Brüdern: Zankt nicht auf dem Wege!",
+    "losung_stelle": "1. Mose 45,24",
+    "sonntag": "8. Sonntag nach Trinitatis",
+    "wochentag": "Sonntag"
+  },
+  "2026-07-27": {
+    "lehrtext": "Als Pilatus auf dem Richterstuhl saß, schickte seine Frau zu ihm und ließ ihm sagen: Habe du nichts zu schaffen mit diesem Gerechten; denn ich habe heute viel erlitten im Traum um seinetwillen.",
+    "lehrtext_stelle": "Matthäus 27,19",
+    "losung": "Die Augen des HERRN merken auf die Gerechten und seine Ohren auf ihr Schreien.",
+    "losung_stelle": "Psalm 34,16",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-07-28": {
+    "lehrtext": "Singt und musiziert dem Herrn aus vollem Herzen.",
+    "lehrtext_stelle": "Epheser 5,19",
+    "losung": "Täglich rühmen wir uns Gottes und preisen deinen Namen ewiglich.",
+    "losung_stelle": "Psalm 44,9",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-07-29": {
+    "lehrtext": "/Paulus schreibt:/ Dass ich meine Fesseln für Christus trage, das ist im ganzen Prätorium und bei allen andern offenbar geworden, und die meisten Brüder in dem Herrn haben durch meine Gefangenschaft Zuversicht gewonnen und sind umso kühner geworden, das Wort zu reden ohne Scheu.",
+    "lehrtext_stelle": "Philipper 1,13-14",
+    "losung": "Meine Tränen sind meine Speise Tag und Nacht, weil man täglich zu mir sagt: Wo ist nun dein Gott?",
+    "losung_stelle": "Psalm 42,4",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-07-30": {
+    "lehrtext": "Das sagt der Heilige, der Wahrhaftige: Weil du mein Wort von der Geduld bewahrt hast, will auch ich dich bewahren vor der Stunde der Versuchung.",
+    "lehrtext_stelle": "Offenbarung 3,7.10",
+    "losung": "Die vom Volk, die ihren Gott kennen, werden stark sein und danach handeln.",
+    "losung_stelle": "Daniel 11,32",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-07-31": {
+    "lehrtext": "Betet, dass ihr nicht in Anfechtung fallt!",
+    "lehrtext_stelle": "Lukas 22,40",
+    "losung": "Siehe, ich will mein Volk schmelzen und prüfen.",
+    "losung_stelle": "Jeremia 9,6",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-08-01": {
+    "lehrtext": "Lasst euer Leben vom Geist Gottes bestimmt sein und richtet es danach aus. Dann werdet ihr nicht euren selbstsüchtigen Wünschen nachgeben.",
+    "lehrtext_stelle": "Galater 5,16",
+    "losung": "Du sollst nicht begehren deines Nächsten Haus noch alles, was sein ist.",
+    "losung_stelle": "5. Mose 5,21",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-08-02": {
+    "lehrtext": "Da ihr Gott erkannt habt, ja vielmehr von Gott erkannt seid, wie wendet ihr euch dann wieder den schwachen und dürftigen Mächten zu, denen ihr von Neuem dienen wollt?",
+    "lehrtext_stelle": "Galater 4,9",
+    "losung": "Die Völker hören auf Zeichendeuter und Wahrsager; dir aber hat der HERR, dein Gott, so etwas verwehrt.",
+    "losung_stelle": "5. Mose 18,14",
+    "sonntag": "9. Sonntag nach Trinitatis",
+    "wochentag": "Sonntag"
+  },
+  "2026-08-03": {
+    "lehrtext": "Die Apostel und die Brüder und Schwestern priesen Gott und sprachen: Nun hat Gott also auch den anderen Völkern die Umkehr zum Leben gewährt.",
+    "lehrtext_stelle": "Apostelgeschichte 11,18",
+    "losung": "Erkennet, dass der HERR Gott ist!",
+    "losung_stelle": "Psalm 100,3",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-08-04": {
+    "lehrtext": "Auf Gott hoffen wir, er werde uns auch hinfort erretten.",
+    "lehrtext_stelle": "2. Korinther 1,10",
+    "losung": "/Der HERR spricht:/ Ihr habt gesehen, wie ich euch getragen habe auf Adlerflügeln und euch zu mir gebracht.",
+    "losung_stelle": "2. Mose 19,4",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-08-05": {
+    "lehrtext": "Ihr werdet euch freuen, die ihr jetzt eine kleine Zeit, wenn es sein soll, traurig seid in mancherlei Anfechtungen, auf dass euer Glaube bewährt und viel kostbarer befunden werde als vergängliches Gold.",
+    "lehrtext_stelle": "1. Petrus 1,6-7",
+    "losung": "Gideon sprach zu dem Engel des HERRN: Ist der HERR mit uns, warum ist uns dann das alles widerfahren?",
+    "losung_stelle": "Richter 6,13",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-08-06": {
+    "lehrtext": "Der Kerkermeister freute sich mit seinem ganzen Hause, dass er zum Glauben an Gott gekommen war.",
+    "lehrtext_stelle": "Apostelgeschichte 16,34",
+    "losung": "Du machst fröhlich, was da lebet im Osten wie im Westen.",
+    "losung_stelle": "Psalm 65,9",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-08-07": {
+    "lehrtext": "Christus ist gekommen und hat im Evangelium Frieden verkündigt euch, die ihr fern wart, und Frieden denen, die nahe waren.",
+    "lehrtext_stelle": "Epheser 2,17",
+    "losung": "Jauchze, du Tochter Zion! Frohlocke, Israel! Freue dich und sei fröhlich von ganzem Herzen, du Tochter Jerusalem! Denn der HERR hat deine Strafe weggenommen.",
+    "losung_stelle": "Zefanja 3,14-15",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-08-08": {
+    "lehrtext": "Bittet, so wird euch gegeben; suchet, so werdet ihr finden; klopfet an, so wird euch aufgetan.",
+    "lehrtext_stelle": "Matthäus 7,7",
+    "losung": "Du bist der Gott, der mir hilft; täglich harre ich auf dich.",
+    "losung_stelle": "Psalm 25,5",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-08-09": {
+    "lehrtext": "Der Menschensohn ist’s, der den guten Samen sät. Der Acker ist die Welt.",
+    "lehrtext_stelle": "Matthäus 13,37-38",
+    "losung": "Siehe, was ich früher verkündigt habe, ist gekommen. So verkündige ich auch Neues; ehe denn es sprosst, lasse ich’s euch hören.",
+    "losung_stelle": "Jesaja 42,9",
+    "sonntag": "10. Sonntag nach Trinitatis (Israelsonntag)",
+    "wochentag": "Sonntag"
+  },
+  "2026-08-10": {
+    "lehrtext": "Wenn der Menschensohn kommen wird in seiner Herrlichkeit und alle Engel mit ihm, dann wird er sich setzen auf den Thron seiner Herrlichkeit, und alle Völker werden vor ihm versammelt werden.",
+    "lehrtext_stelle": "Matthäus 25,31-32",
+    "losung": "Der HERR hat seinen Thron im Himmel errichtet, und sein Reich herrscht über alles.",
+    "losung_stelle": "Psalm 103,19",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-08-11": {
+    "lehrtext": "Simon Petrus antwortete Jesus: Herr, wohin sollen wir gehen? Du hast Worte des ewigen Lebens; und wir haben geglaubt und erkannt: Du bist der Heilige Gottes.",
+    "lehrtext_stelle": "Johannes 6,68-69",
+    "losung": "Tu mir kund den Weg, den ich gehen soll; denn mich verlangt nach dir.",
+    "losung_stelle": "Psalm 143,8",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-08-12": {
+    "lehrtext": "Weil ihr nun Kinder seid, hat Gott den Geist seines Sohnes gesandt in unsre Herzen, der da ruft: Abba, lieber Vater!",
+    "lehrtext_stelle": "Galater 4,6",
+    "losung": "Wie sich ein Vater über Kinder erbarmt, so erbarmt sich der HERR über die, die ihn fürchten.",
+    "losung_stelle": "Psalm 103,13",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-08-13": {
+    "lehrtext": "Auf alle Gottesverheißungen ist in Jesus Christus das Ja; darum sprechen wir auch durch ihn das Amen, Gott zur Ehre.",
+    "lehrtext_stelle": "2. Korinther 1,20",
+    "losung": "Er gedenkt ewiglich an seinen Bund, an das Wort, das er verheißen hat für tausend Geschlechter.",
+    "losung_stelle": "Psalm 105,8",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-08-14": {
+    "lehrtext": "Er antwortete: Der Mensch, der Jesus heißt, machte einen Brei und strich ihn auf meine Augen und sprach: Geh zum Teich Siloah und wasche dich! Ich ging hin und wusch mich und wurde sehend.",
+    "lehrtext_stelle": "Johannes 9,11",
+    "losung": "Leben und Wohltat hast du an mir getan, und deine Obhut hat meinen Odem bewahrt.",
+    "losung_stelle": "Hiob 10,12",
+    "sonntag": "",
+    "wochentag": "Freitag"
   },
   "2026-08-15": {
-    "wochentag": "Samstag",
+    "lehrtext": "Der Samariter fiel nieder auf sein Angesicht zu Jesu Füßen und dankte ihm.",
+    "lehrtext_stelle": "Lukas 17,16",
+    "losung": "Kommt, lasst uns anbeten und knien und niederfallen vor dem HERRN, der uns gemacht hat.",
+    "losung_stelle": "Psalm 95,6",
     "sonntag": "",
-    "losung": "Testeintrag – wird beim ersten Action-Lauf durch die echten Daten aus der ZIP-Datei ersetzt.",
-    "losung_stelle": "Beispielstelle",
-    "lehrtext": "Testeintrag – wird beim ersten Action-Lauf durch die echten Daten aus der ZIP-Datei ersetzt.",
-    "lehrtext_stelle": "Beispielstelle"
+    "wochentag": "Samstag"
+  },
+  "2026-08-16": {
+    "lehrtext": "Gott hat uns nicht bestimmt zum Zorn, sondern dazu, die Seligkeit zu besitzen durch unsern Herrn Jesus Christus.",
+    "lehrtext_stelle": "1. Thessalonicher 5,9",
+    "losung": "In meinem Zorn habe ich dich geschlagen, aber in meiner Gnade erbarme ich mich über dich.",
+    "losung_stelle": "Jesaja 60,10",
+    "sonntag": "11. Sonntag nach Trinitatis",
+    "wochentag": "Sonntag"
+  },
+  "2026-08-17": {
+    "lehrtext": "Jesus sprach: Gebt dem Kaiser, was des Kaisers ist, und Gott, was Gottes ist!",
+    "lehrtext_stelle": "Markus 12,17",
+    "losung": "Der HERR hat das Recht lieb.",
+    "losung_stelle": "Psalm 37,28",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-08-18": {
+    "lehrtext": "Maria setzte sich dem Herrn zu Füßen und hörte seiner Rede zu.",
+    "lehrtext_stelle": "Lukas 10,39",
+    "losung": "Gott der HERR hat mir das Ohr geöffnet. Und ich bin nicht ungehorsam und weiche nicht zurück.",
+    "losung_stelle": "Jesaja 50,5",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-08-19": {
+    "lehrtext": "Darum seid auch ihr bereit! Denn der Menschensohn kommt zu einer Stunde, da ihr’s nicht meint.",
+    "lehrtext_stelle": "Matthäus 24,44",
+    "losung": "Der Tag des HERRN kommt und ist nahe.",
+    "losung_stelle": "Joel 2,1",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-08-20": {
+    "lehrtext": "Wie viele ihn aufnahmen, denen gab er Macht, Gottes Kinder zu werden: denen, die an seinen Namen glauben.",
+    "lehrtext_stelle": "Johannes 1,12",
+    "losung": "Meine Wohnung soll unter ihnen sein, und ich will ihr Gott sein, und sie sollen mein Volk sein.",
+    "losung_stelle": "Hesekiel 37,27",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-08-21": {
+    "lehrtext": "Ihr werdet euch freuen mit unaussprechlicher und herrlicher Freude, wenn ihr das Ziel eures Glaubens erlangt, nämlich der Seelen Seligkeit.",
+    "lehrtext_stelle": "1. Petrus 1,8-9",
+    "losung": "Die Erlösten des HERRN werden heimkehren. Wonne und Freude werden sie ergreifen, aber Trauern und Seufzen wird von ihnen fliehen.",
+    "losung_stelle": "Jesaja 51,11",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-08-22": {
+    "lehrtext": "Aus #einem# Munde kommt Loben und Fluchen. Das soll nicht so sein, meine Brüder und Schwestern.",
+    "lehrtext_stelle": "Jakobus 3,10",
+    "losung": "Meine Zunge soll singen von deinem Wort; denn alle deine Gebote sind gerecht.",
+    "losung_stelle": "Psalm 119,172",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-08-23": {
+    "lehrtext": "Wer euch einen Becher Wasser zu trinken gibt deshalb, weil ihr Christus angehört, wahrlich, ich sage euch: Er wird nicht um seinen Lohn kommen.",
+    "lehrtext_stelle": "Markus 9,41",
+    "losung": "Sie litten keinen Durst, als der HERR sie leitete in der Wüste. Er ließ ihnen Wasser aus dem Felsen fließen.",
+    "losung_stelle": "Jesaja 48,21",
+    "sonntag": "12. Sonntag nach Trinitatis",
+    "wochentag": "Sonntag"
+  },
+  "2026-08-24": {
+    "lehrtext": "Als die Athener von der Auferstehung der Toten hörten, begannen die einen zu spotten; die andern aber sprachen: Wir wollen dich darüber ein andermal weiterhören.",
+    "lehrtext_stelle": "Apostelgeschichte 17,32",
+    "losung": "/Gott spricht:/ Von nun an lasse ich dich Neues hören und Verborgenes, das du nicht wusstest.",
+    "losung_stelle": "Jesaja 48,6",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-08-25": {
+    "lehrtext": "/Jesus spricht:/ Bisher habt ihr um nichts gebeten in meinem Namen. Bittet, so werdet ihr empfangen, auf dass eure Freude vollkommen sei.",
+    "lehrtext_stelle": "Johannes 16,24",
+    "losung": "Ich rufe zu Gott, dem Allerhöchsten, zu Gott, der meine Sache zum guten Ende führt.",
+    "losung_stelle": "Psalm 57,3",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-08-26": {
+    "lehrtext": "/Jesus betete:/ Ich bitte nicht, dass du sie aus der Welt nimmst, sondern dass du sie bewahrst vor dem Bösen.",
+    "lehrtext_stelle": "Johannes 17,15",
+    "losung": "/Der HERR spricht:/ Er liebt mich, darum will ich ihn erretten.",
+    "losung_stelle": "Psalm 91,14",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-08-27": {
+    "lehrtext": "Mein Gott wird all eurem Mangel abhelfen nach seinem Reichtum in Herrlichkeit in Christus Jesus.",
+    "lehrtext_stelle": "Philipper 4,19",
+    "losung": "Mein Volk soll meiner Gaben die Fülle haben, spricht der HERR.",
+    "losung_stelle": "Jeremia 31,14",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-08-28": {
+    "lehrtext": "Jesus sprach: Sei getrost, meine Tochter, dein Glaube hat dir geholfen. Und die Frau wurde gesund zu derselben Stunde.",
+    "lehrtext_stelle": "Matthäus 9,22",
+    "losung": "HERR, führe meine Sache und erlöse mich; erquicke mich durch dein Wort.",
+    "losung_stelle": "Psalm 119,154",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-08-29": {
+    "lehrtext": "/Paulus schreibt:/ Mir ist alles und jedes vertraut: beides, satt sein und hungern, beides, Überfluss haben und Mangel leiden; ich vermag alles durch den, der mich mächtig macht.",
+    "lehrtext_stelle": "Philipper 4,12-13",
+    "losung": "Ich bin arm und elend; der HERR aber sorgt für mich.",
+    "losung_stelle": "Psalm 40,18",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-08-30": {
+    "lehrtext": "/Paulus sprach im Sturmwind:/ Ich ermahne euch, etwas zu essen; denn das dient zu eurer Rettung; es wird keinem von euch ein Haar vom Haupt fallen.",
+    "lehrtext_stelle": "Apostelgeschichte 27,34",
+    "losung": "Der Engel des HERRN rührte Elia an und sprach: Steh auf und iss! Denn du hast einen weiten Weg vor dir.",
+    "losung_stelle": "1. Könige 19,7",
+    "sonntag": "13. Sonntag nach Trinitatis",
+    "wochentag": "Sonntag"
+  },
+  "2026-08-31": {
+    "lehrtext": "Einen fröhlichen Geber hat Gott lieb.",
+    "lehrtext_stelle": "2. Korinther 9,7",
+    "losung": "/Jakob gelobte Gott:/ Von allem, was du mir gibst, will ich dir den Zehnten geben.",
+    "losung_stelle": "1. Mose 28,22",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-09-01": {
+    "lehrtext": "Jedes Haus wird von jemandem erbaut; der aber alles erbaut hat, das ist Gott.",
+    "lehrtext_stelle": "Hebräer 3,4",
+    "losung": "So spricht der HERR, dein Erlöser, der dich von Mutterleibe bereitet hat: Ich bin der HERR, der alles schafft, der den Himmel ausbreitet allein und die Erde fest macht ohne Gehilfen.",
+    "losung_stelle": "Jesaja 44,24",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-09-02": {
+    "lehrtext": "Was gering ist vor der Welt und was verachtet ist, das hat Gott erwählt, was nichts ist, damit er zunichtemache, was etwas ist.",
+    "lehrtext_stelle": "1. Korinther 1,28",
+    "losung": "So spricht der HERR Zebaoth: Wer euch antastet, der tastet seinen Augapfel an.",
+    "losung_stelle": "Sacharja 2,12",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-09-03": {
+    "lehrtext": "Tod, wo ist dein Sieg? Tod, wo ist dein Stachel? Gott aber sei Dank, der uns den Sieg gibt durch unsern Herrn Jesus Christus!",
+    "lehrtext_stelle": "1. Korinther 15,55.57",
+    "losung": "Auf dich, HERR, sehen meine Augen; ich traue auf dich, gib mich nicht in den Tod dahin.",
+    "losung_stelle": "Psalm 141,8",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-09-04": {
+    "lehrtext": "Betet an den, der gemacht hat Himmel und Erde und Meer und die Wasserquellen!",
+    "lehrtext_stelle": "Offenbarung 14,7",
+    "losung": "Vom Aufgang der Sonne bis zu ihrem Niedergang sei gelobet der Name des HERRN!",
+    "losung_stelle": "Psalm 113,3",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-09-05": {
+    "lehrtext": "Die auf dem Fels sind die, welche das Wort hören und freudig aufnehmen. Doch sie haben keine Wurzeln: Eine Zeit lang glauben sie, in der Zeit der Versuchung aber fallen sie ab.",
+    "lehrtext_stelle": "Lukas 8,13",
+    "losung": "Keiner wird zuschanden, der auf dich harret; aber zuschanden werden die leichtfertigen Verächter.",
+    "losung_stelle": "Psalm 25,3",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-09-06": {
+    "lehrtext": "Gott hat uns nicht gegeben den Geist der Furcht, sondern der Kraft und der Liebe und der Besonnenheit.",
+    "lehrtext_stelle": "2. Timotheus 1,7",
+    "losung": "Fürchtet euch nicht, wenn euch die Leute schmähen, und entsetzt euch nicht, wenn sie euch verhöhnen!",
+    "losung_stelle": "Jesaja 51,7",
+    "sonntag": "14. Sonntag nach Trinitatis",
+    "wochentag": "Sonntag"
+  },
+  "2026-09-07": {
+    "lehrtext": "Jesus ergriff das Kind bei der Hand und sprach zu ihm: Talita kum! – das heißt übersetzt: Mädchen, ich sage dir, steh auf! Und sogleich stand das Mädchen auf und ging umher.",
+    "lehrtext_stelle": "Markus 5,41-42",
+    "losung": "Ich preise dich, HERR; denn du hast mich aus der Tiefe gezogen.",
+    "losung_stelle": "Psalm 30,2",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-09-08": {
+    "lehrtext": "Die Gnade des Herrn Jesus sei mit allen!",
+    "lehrtext_stelle": "Offenbarung 22,21",
+    "losung": "Wer auf den HERRN hofft, den wird die Güte umfangen.",
+    "losung_stelle": "Psalm 32,10",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-09-09": {
+    "lehrtext": "Christus hat uns freigekauft vom Fluch des Gesetzes, indem er für uns zum Fluch geworden ist - es steht nämlich geschrieben: Verflucht ist jeder, der am Holz hängt.",
+    "lehrtext_stelle": "Galater 3,13",
+    "losung": "Unser Gott wandte den Fluch in einen Segen.",
+    "losung_stelle": "Nehemia 13,2",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-09-10": {
+    "lehrtext": "Hier ist von den Heiligen Standhaftigkeit gefordert, hier sind gefordert, die festhalten an den Geboten Gottes und am Glauben an Jesus!",
+    "lehrtext_stelle": "Offenbarung 14,12",
+    "losung": "Ein Geduldiger ist besser als ein Starker und wer sich selbst beherrscht, besser als einer, der Städte einnimmt.",
+    "losung_stelle": "Sprüche 16,32",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-09-11": {
+    "lehrtext": "Seid allezeit fröhlich!",
+    "lehrtext_stelle": "1. Thessalonicher 5,16",
+    "losung": "David und ganz Israel tanzten mit aller Macht vor Gott her, mit Liedern, mit Harfen, mit Psaltern, mit Pauken, mit Zimbeln und mit Trompeten.",
+    "losung_stelle": "1. Chronik 13,8",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-09-12": {
+    "lehrtext": "Maria Magdalena geht und verkündigt den Jüngern: »Ich habe den Herrn gesehen«, und was er zu ihr gesagt habe.",
+    "lehrtext_stelle": "Johannes 20,18",
+    "losung": "Hüte dich nur und bewahre deine Seele gut, dass du nicht vergisst, was deine Augen gesehen haben.",
+    "losung_stelle": "5. Mose 4,9",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-09-13": {
+    "lehrtext": "Ein reiner und unbefleckter Gottesdienst vor Gott, dem Vater, ist der: die Waisen und Witwen in ihrer Trübsal besuchen.",
+    "lehrtext_stelle": "Jakobus 1,27",
+    "losung": "Der HERR ist des Armen Schutz, ein Schutz in Zeiten der Not.",
+    "losung_stelle": "Psalm 9,10",
+    "sonntag": "15. Sonntag nach Trinitatis",
+    "wochentag": "Sonntag"
+  },
+  "2026-09-14": {
+    "lehrtext": "/Petrus sprach:/ Euch und euren Kindern gilt diese Verheißung und allen, die fern sind, so viele der Herr, unser Gott, herzurufen wird.",
+    "lehrtext_stelle": "Apostelgeschichte 2,39",
+    "losung": "Siehe, es kommt die Zeit, spricht der HERR, da will ich mit dem Hause Israel und mit dem Hause Juda einen neuen Bund schließen.",
+    "losung_stelle": "Jeremia 31,31",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-09-15": {
+    "lehrtext": "Wenn sie euch hinführen und überantworten werden, so sorgt euch nicht vorher, was ihr reden sollt; sondern was euch in jener Stunde gegeben wird, das redet. Denn ihr seid’s nicht, die da reden, sondern der Heilige Geist.",
+    "lehrtext_stelle": "Markus 13,11",
+    "losung": "Der HERR wird für euch streiten, und ihr werdet stille sein.",
+    "losung_stelle": "2. Mose 14,14",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-09-16": {
+    "lehrtext": "/Jesus spricht:/ Ich bin die Tür. Wenn jemand durch mich hineingeht, wird er gerettet werden.",
+    "lehrtext_stelle": "Johannes 10,9",
+    "losung": "Deine Güte, HERR, sei über uns, wie wir auf dich hoffen.",
+    "losung_stelle": "Psalm 33,22",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-09-17": {
+    "lehrtext": "Petrus wurde im Gefängnis festgehalten; aber die Gemeinde betete ohne Aufhören für ihn zu Gott.",
+    "lehrtext_stelle": "Apostelgeschichte 12,5",
+    "losung": "Führe mich aus dem Kerker, dass ich preise deinen Namen.",
+    "losung_stelle": "Psalm 142,8",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-09-18": {
+    "lehrtext": "Petrus dachte an das Wort, das Jesus gesagt hatte: Ehe der Hahn kräht, wirst du mich dreimal verleugnen. Und er ging hinaus und weinte bitterlich.",
+    "lehrtext_stelle": "Matthäus 26,75",
+    "losung": "Ihr sollt einer mit dem andern reden: »Was hat der HERR geantwortet?«, und: »Was hat der HERR gesagt?«",
+    "losung_stelle": "Jeremia 23,35",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-09-19": {
+    "lehrtext": "Wenn jemand sündigt, so haben wir einen Fürsprecher bei dem Vater, Jesus Christus, der gerecht ist.",
+    "lehrtext_stelle": "1. Johannes 2,1",
+    "losung": "/Gott spricht:/ Ich will nicht immerdar hadern und nicht ewiglich zürnen.",
+    "losung_stelle": "Jesaja 57,16",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-09-20": {
+    "lehrtext": "/Paulus schreibt:/ Der Herr wird mich erlösen von allem Übel und mich retten in sein himmlisches Reich. Ihm sei Ehre von Ewigkeit zu Ewigkeit! Amen.",
+    "lehrtext_stelle": "2. Timotheus 4,18",
+    "losung": "Die dein Heil lieben, lass allewege sagen: Der HERR sei hoch gelobt!",
+    "losung_stelle": "Psalm 40,17",
+    "sonntag": "16. Sonntag nach Trinitatis",
+    "wochentag": "Sonntag"
+  },
+  "2026-09-21": {
+    "lehrtext": "Elisabeths Nachbarn und Verwandten hörten, dass der Herr große Barmherzigkeit an ihr getan hatte, und freuten sich mit ihr.",
+    "lehrtext_stelle": "Lukas 1,58",
+    "losung": "Nun hat der HERR mir gegeben, was ich von ihm erbeten habe.",
+    "losung_stelle": "1. Samuel 1,27",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-09-22": {
+    "lehrtext": "Josef hatte einen Acker und verkaufte ihn und brachte das Geld und legte es den Aposteln zu Füßen.",
+    "lehrtext_stelle": "Apostelgeschichte 4,37",
+    "losung": "Sie gaben’s dem HERRN freiwillig von ganzem Herzen.",
+    "losung_stelle": "1. Chronik 29,9",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-09-23": {
+    "lehrtext": "Sagt Dank Gott, dem Vater, allezeit für alles, im Namen unseres Herrn Jesus Christus.",
+    "lehrtext_stelle": "Epheser 5,20",
+    "losung": "Lobe den HERRN, meine Seele, und vergiss nicht, was er dir Gutes getan hat.",
+    "losung_stelle": "Psalm 103,2",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-09-24": {
+    "lehrtext": "/Der Seher Johannes schreibt:/ Siehe, eine große Schar, die niemand zählen konnte, aus allen Nationen und Stämmen und Völkern und Sprachen; die riefen mit großer Stimme: Das Heil ist bei unserm Gott, der auf dem Thron sitzt, und bei dem Lamm!",
+    "lehrtext_stelle": "Offenbarung 7,9.10",
+    "losung": "Die Völker, die um euch her übrig geblieben sind, sollen erfahren, dass ich der HERR bin, der da baut, was niedergerissen ist, und pflanzt, was verheert war.",
+    "losung_stelle": "Hesekiel 36,36",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-09-25": {
+    "lehrtext": "Es ist über alle derselbe Herr, reich für alle, die ihn anrufen.",
+    "lehrtext_stelle": "Römer 10,12",
+    "losung": "Wohl dem Volk, dessen Gott der HERR ist!",
+    "losung_stelle": "Psalm 144,15",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-09-26": {
+    "lehrtext": "Es wird gepredigt werden dies Evangelium vom Reich in der ganzen Welt zum Zeugnis für alle Völker.",
+    "lehrtext_stelle": "Matthäus 24,14",
+    "losung": "Seine Herrschaft wird sein von einem Meer bis zum andern und bis an die Enden der Erde.",
+    "losung_stelle": "Sacharja 9,10",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-09-27": {
+    "lehrtext": "/Jesus betete:/ Ich habe ihnen deinen Namen kundgetan und werde ihn kundtun, damit die Liebe, mit der du mich liebst, in ihnen sei und ich in ihnen.",
+    "lehrtext_stelle": "Johannes 17,26",
+    "losung": "Der HERR verstößt sein Volk nicht um seines großen Namens willen.",
+    "losung_stelle": "1. Samuel 12,22",
+    "sonntag": "17. Sonntag nach Trinitatis",
+    "wochentag": "Sonntag"
+  },
+  "2026-09-28": {
+    "lehrtext": "/Jesus spricht:/ Nicht ihr habt mich erwählt, sondern ich habe euch erwählt.",
+    "lehrtext_stelle": "Johannes 15,16",
+    "losung": "Ich will dich mir verloben auf ewig, ich will dich mir verloben in Gerechtigkeit und Recht, in Gnade und Barmherzigkeit.",
+    "losung_stelle": "Hosea 2,21",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-09-29": {
+    "lehrtext": "Amen, Lob und Ehre und Weisheit und Dank und Preis und Kraft und Stärke sei unserm Gott von Ewigkeit zu Ewigkeit!",
+    "lehrtext_stelle": "Offenbarung 7,12",
+    "losung": "Gelobet sei der Name Gottes von Ewigkeit zu Ewigkeit, denn ihm gehören Weisheit und Stärke!",
+    "losung_stelle": "Daniel 2,20",
+    "sonntag": "Michaelistag",
+    "wochentag": "Dienstag"
+  },
+  "2026-09-30": {
+    "lehrtext": "Die Frau spricht zu Jesus: Ich weiß, dass der Messias kommt, der da Christus heißt. Wenn dieser kommt, wird er uns alles verkündigen. Jesus spricht zu ihr: Ich bin’s, der mit dir redet.",
+    "lehrtext_stelle": "Johannes 4,25-26",
+    "losung": "Wenn ihr den HERRN sucht, wird er sich von euch finden lassen.",
+    "losung_stelle": "2. Chronik 15,2",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-10-01": {
+    "lehrtext": "Der Herr weiß die Frommen aus der Versuchung zu erretten.",
+    "lehrtext_stelle": "2. Petrus 2,9",
+    "losung": "Gott, der du uns viel Angst und Not hast erfahren lassen, du wirst uns wieder beleben.",
+    "losung_stelle": "Psalm 71,20",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-10-02": {
+    "lehrtext": "/Jesus spricht:/ Wer diese meine Rede hört und tut sie, der gleicht einem klugen Mann, der sein Haus auf Fels baute.",
+    "lehrtext_stelle": "Matthäus 7,24",
+    "losung": "Rede, HERR, denn dein Knecht hört.",
+    "losung_stelle": "1. Samuel 3,9",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-10-03": {
+    "lehrtext": "/Jesus spricht:/ Nicht was zum Mund hineingeht, macht den Menschen unrein; sondern was aus dem Mund herauskommt, das macht den Menschen unrein.",
+    "lehrtext_stelle": "Matthäus 15,11",
+    "losung": "Dies Volk naht mir mit seinem Munde und ehrt mich mit seinen Lippen, aber ihr Herz ist fern von mir.",
+    "losung_stelle": "Jesaja 29,13",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-10-04": {
+    "lehrtext": "Ob ihr nun esst oder trinkt oder was ihr auch tut, das tut alles zu Gottes Ehre.",
+    "lehrtext_stelle": "1. Korinther 10,31",
+    "losung": "Steht auf! Lobet den HERRN, euren Gott, von Ewigkeit zu Ewigkeit! Und man lobe seinen herrlichen Namen, der erhaben ist über allen Preis und Ruhm!",
+    "losung_stelle": "Nehemia 9,5",
+    "sonntag": "Erntedankfest",
+    "wochentag": "Sonntag"
+  },
+  "2026-10-05": {
+    "lehrtext": "Die Frau entgegnete: Ja, Herr! Aber die Hunde fressen doch die Krümel, die vom Tisch ihrer Herren herunterfallen. Darauf antwortete Jesus: Frau, dein Glaube ist groß! Was du willst, soll dir geschehen!",
+    "lehrtext_stelle": "Matthäus 15,27-28",
+    "losung": "Ich habe es gewagt, zu meinem Herrn zu reden, obwohl ich Staub und Asche bin.",
+    "losung_stelle": "1. Mose 18,27",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-10-06": {
+    "lehrtext": "/Jesus Christus spricht:/ Ich lebe, und ihr sollt auch leben.",
+    "lehrtext_stelle": "Johannes 14,19",
+    "losung": "Lass mich nicht zuschanden werden, denn ich traue auf dich!",
+    "losung_stelle": "Psalm 25,20",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-10-07": {
+    "lehrtext": "Seht zu, dass keiner dem andern Böses mit Bösem vergelte, sondern jagt allezeit dem Guten nach, füreinander und für jedermann.",
+    "lehrtext_stelle": "1. Thessalonicher 5,15",
+    "losung": "Suchet das Gute und nicht das Böse, auf dass ihr lebet.",
+    "losung_stelle": "Amos 5,14",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-10-08": {
+    "lehrtext": "Siehe, der Bauer wartet auf die kostbare Frucht der Erde und ist dabei geduldig, bis sie empfange den Frühregen und Spätregen.",
+    "lehrtext_stelle": "Jakobus 5,7",
+    "losung": "Die Weissagung wird ja noch erfüllt werden zu ihrer Zeit. Wenn sie sich auch hinzieht, so harre ihrer.",
+    "losung_stelle": "Habakuk 2,3",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-10-09": {
+    "lehrtext": "Christus Jesus ist hier, der gestorben ist, ja mehr noch, der auch auferweckt ist, der zur Rechten Gottes ist und für uns eintritt.",
+    "lehrtext_stelle": "Römer 8,34",
+    "losung": "Siehe, Gott der HERR hilft mir; wer will mich verdammen?",
+    "losung_stelle": "Jesaja 50,9",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-10-10": {
+    "lehrtext": "Die Jünger sprachen untereinander: Wer ist der, dass ihm Wind und Meer gehorsam sind!",
+    "lehrtext_stelle": "Markus 4,41",
+    "losung": "Ist denn die Hand des HERRN zu kurz?",
+    "losung_stelle": "4. Mose 11,23",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-10-11": {
+    "lehrtext": "Thomas sprach zu Jesus: Mein Herr und mein Gott!",
+    "lehrtext_stelle": "Johannes 20,28",
+    "losung": "Gideon sprach: Ich will nicht Herrscher über euch sein, sondern der HERR soll Herrscher über euch sein.",
+    "losung_stelle": "Richter 8,23",
+    "sonntag": "19. Sonntag nach Trinitatis",
+    "wochentag": "Sonntag"
+  },
+  "2026-10-12": {
+    "lehrtext": "/Maria sprach:/ Seine Barmherzigkeit währet für und für bei denen, die ihn fürchten.",
+    "lehrtext_stelle": "Lukas 1,50",
+    "losung": "Ich gedenke an die früheren Zeiten; ich sinne nach über all deine Taten und spreche von den Werken deiner Hände.",
+    "losung_stelle": "Psalm 143,5",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-10-13": {
+    "lehrtext": "Jesus sah einen Zöllner mit Namen Levi am Zoll sitzen und sprach zu ihm: Folge mir nach! Und er verließ alles, stand auf und folgte ihm nach.",
+    "lehrtext_stelle": "Lukas 5,27-28",
+    "losung": "Auch wir wollen dem HERRN dienen; denn er ist unser Gott.",
+    "losung_stelle": "Josua 24,18",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-10-14": {
+    "lehrtext": "Wenn du ein Mahl machst, so lade Arme, Verkrüppelte, Lahme und Blinde ein, dann wirst du selig sein, denn sie haben nichts, um es dir zu vergelten.",
+    "lehrtext_stelle": "Lukas 14,13-14",
+    "losung": "Dem Gerechten muss das Licht immer wieder aufgehen und Freude den aufrichtigen Herzen.",
+    "losung_stelle": "Psalm 97,11",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-10-15": {
+    "lehrtext": "Siehe, ich stehe vor der Tür und klopfe an. Wenn jemand meine Stimme hören wird und die Tür auftun, zu dem werde ich hineingehen und das Abendmahl mit ihm halten und er mit mir.",
+    "lehrtext_stelle": "Offenbarung 3,20",
+    "losung": "Der HERR ist freundlich dem, der auf ihn harrt, und dem Menschen, der nach ihm fragt.",
+    "losung_stelle": "Klagelieder 3,25",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-10-16": {
+    "lehrtext": "Die Frucht des Lichts ist lauter Güte und Gerechtigkeit und Wahrheit.",
+    "lehrtext_stelle": "Epheser 5,9",
+    "losung": "Gottes Hilfe ist nahe denen, die ihn fürchten, dass Güte und Treue einander begegnen, Gerechtigkeit und Friede sich küssen.",
+    "losung_stelle": "Psalm 85,10.11",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-10-17": {
+    "lehrtext": "Einer trage des andern Last, so werdet ihr das Gesetz Christi erfüllen.",
+    "lehrtext_stelle": "Galater 6,2",
+    "losung": "Schafft Recht und Gerechtigkeit und errettet den Beraubten von des Frevlers Hand und bedrängt nicht die Fremdlinge, Waisen und Witwen und tut niemand Gewalt an.",
+    "losung_stelle": "Jeremia 22,3",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-10-18": {
+    "lehrtext": "Jesus sprach zu ihnen: Steht nicht geschrieben: Mein Haus wird ein Bethaus heißen für alle Völker?",
+    "lehrtext_stelle": "Markus 11,17",
+    "losung": "Ich will Frieden geben an dieser Stätte, spricht der HERR Zebaoth.",
+    "losung_stelle": "Haggai 2,9",
+    "sonntag": "20. Sonntag nach Trinitatis",
+    "wochentag": "Sonntag"
+  },
+  "2026-10-19": {
+    "lehrtext": "Verkündige das Wort, tritt dafür ein, zur Zeit oder Unzeit, widerlege, tadle, bitte, in aller Geduld, wo die Lehre es gebietet!",
+    "lehrtext_stelle": "2. Timotheus 4,2",
+    "losung": "Des Priesters Lippen sollen die Lehre bewahren, dass man aus seinem Munde Weisung suche; denn er ist ein Bote des HERRN Zebaoth.",
+    "losung_stelle": "Maleachi 2,7",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-10-20": {
+    "lehrtext": "/Paulus sprach:/ Ich bin umhergegangen und habe eure Heiligtümer angesehen und fand einen Altar, auf dem stand geschrieben: Dem unbekannten Gott. Nun verkündige ich euch, was ihr unwissend verehrt.",
+    "lehrtext_stelle": "Apostelgeschichte 17,23",
+    "losung": "Sie haben sich Götter von Gold gemacht. Vergib ihnen doch ihre Sünde!",
+    "losung_stelle": "2. Mose 32,31.32",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-10-21": {
+    "lehrtext": "Unser tägliches Brot gib uns heute.",
+    "lehrtext_stelle": "Matthäus 6,11",
+    "losung": "Der HERR wird dich immerdar führen und dich sättigen in der Dürre.",
+    "losung_stelle": "Jesaja 58,11",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-10-22": {
+    "lehrtext": "/Jesus Christus spricht:/ Ich bin der gute Hirte und kenne die Meinen und die Meinen kennen mich.",
+    "lehrtext_stelle": "Johannes 10,14",
+    "losung": "Der HERR hat uns gemacht und nicht wir selbst zu seinem Volk und zu Schafen seiner Weide.",
+    "losung_stelle": "Psalm 100,3",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-10-23": {
+    "lehrtext": "Simon Petrus sprach: Du bist der Christus, des lebendigen Gottes Sohn!",
+    "lehrtext_stelle": "Matthäus 16,16",
+    "losung": "Siehe, es kommt die Zeit, spricht der HERR, dass ich dem David einen gerechten Spross erwecken will. Der soll ein König sein, der wohl regieren und Recht und Gerechtigkeit im Lande üben wird.",
+    "losung_stelle": "Jeremia 23,5",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-10-24": {
+    "lehrtext": "Ihr seid also nicht mehr Fremde ohne Bürgerrecht, ihr seid vielmehr Mitbürger der Heiligen und Hausgenossen Gottes.",
+    "lehrtext_stelle": "Epheser 2,19",
+    "losung": "Der HERR hat offenbart seinen heiligen Arm vor den Augen aller Völker, dass aller Welt Enden sehen das Heil unsres Gottes.",
+    "losung_stelle": "Jesaja 52,10",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-10-25": {
+    "lehrtext": "Der Vater hat uns errettet aus der Macht der Finsternis und hat uns versetzt in das Reich seines geliebten Sohnes.",
+    "lehrtext_stelle": "Kolosser 1,13",
+    "losung": "Gott, deine Güte ist besser als Leben.",
+    "losung_stelle": "Psalm 63,4",
+    "sonntag": "21. Sonntag nach Trinitatis",
+    "wochentag": "Sonntag"
+  },
+  "2026-10-26": {
+    "lehrtext": "Weißt du nicht, dass Gottes Güte dich zur Umkehr leitet?",
+    "lehrtext_stelle": "Römer 2,4",
+    "losung": "Aber mit dir will ich nicht ein Ende machen. Ich will dich mit Maßen züchtigen, doch ungestraft kann ich dich nicht lassen.",
+    "losung_stelle": "Jeremia 30,11",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-10-27": {
+    "lehrtext": "/Petrus sprach:/ Nun erfahre ich in Wahrheit, dass Gott die Person nicht ansieht; sondern in jedem Volk, wer ihn fürchtet und Recht tut, der ist ihm angenehm.",
+    "lehrtext_stelle": "Apostelgeschichte 10,34-35",
+    "losung": "Steh auf, Gott, richte die Erde, denn dein Eigentum sind die Nationen alle.",
+    "losung_stelle": "Psalm 82,8",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-10-28": {
+    "lehrtext": "Jesus sprach zu ihr: Frau, du bist erlöst von deiner Krankheit! Und legte die Hände auf sie; und sogleich richtete sie sich auf und pries Gott.",
+    "lehrtext_stelle": "Lukas 13,12-13",
+    "losung": "Lobe den HERRN, der dein Leben vom Verderben erlöst, der dich krönet mit Gnade und Barmherzigkeit.",
+    "losung_stelle": "Psalm 103,2.4",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-10-29": {
+    "lehrtext": "Jesus sprach zu Simon und Andreas: Kommt, folgt mir nach; ich will euch zu Menschenfischern machen!",
+    "lehrtext_stelle": "Markus 1,17",
+    "losung": "Samuel sprach zu Saul: Du aber steh jetzt still, dass ich dir kundtue, was Gott gesagt hat.",
+    "losung_stelle": "1. Samuel 9,27",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-10-30": {
+    "lehrtext": "Maria sprach: Meine Seele erhebt den Herrn, und mein Geist freuet sich Gottes, meines Heilandes; denn er hat die Niedrigkeit seiner Magd angesehen.",
+    "lehrtext_stelle": "Lukas 1,46-48",
+    "losung": "Der HERR hebt auf den Dürftigen aus dem Staub.",
+    "losung_stelle": "1. Samuel 2,8",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-10-31": {
+    "lehrtext": "Alle, die glauben, werden ohne Verdienst gerecht aus seiner Gnade durch die Erlösung, die durch Christus Jesus geschehen ist.",
+    "lehrtext_stelle": "Römer 3,24",
+    "losung": "Unrecht Gut hilft nicht; aber Gerechtigkeit errettet vom Tode.",
+    "losung_stelle": "Sprüche 10,2",
+    "sonntag": "Reformationstag",
+    "wochentag": "Samstag"
+  },
+  "2026-11-01": {
+    "lehrtext": "/Jesus sprach:/ Ihr werdet meine Zeugen sein in Jerusalem und in ganz Judäa und Samarien und bis an das Ende der Erde.",
+    "lehrtext_stelle": "Apostelgeschichte 1,8",
+    "losung": "Er wird herrlich werden bis an die Enden der Erde.",
+    "losung_stelle": "Micha 5,3",
+    "sonntag": "22. Sonntag nach Trinitatis",
+    "wochentag": "Sonntag"
+  },
+  "2026-11-02": {
+    "lehrtext": "Gott hat einen Tag festgesetzt, an dem er den Erdkreis richten wird in Gerechtigkeit durch einen Mann, den er dazu bestimmt hat, indem er ihn vor allen Menschen beglaubigte durch die Auferstehung von den Toten.",
+    "lehrtext_stelle": "Apostelgeschichte 17,31",
+    "losung": "Der HERR wird richten die Völker.",
+    "losung_stelle": "Psalm 7,9",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-11-03": {
+    "lehrtext": "Denn von ihm und durch ihn und zu ihm sind alle Dinge. Ihm sei Ehre in Ewigkeit! Amen.",
+    "lehrtext_stelle": "Römer 11,36",
+    "losung": "Weißt du nicht? Hast du nicht gehört? Der HERR, der ewige Gott, der die Enden der Erde geschaffen hat, wird nicht müde noch matt, sein Verstand ist unausforschlich.",
+    "losung_stelle": "Jesaja 40,28",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-11-04": {
+    "lehrtext": "/Jesus Christus spricht:/ Ihr habt nun Traurigkeit; aber ich will euch wiedersehen, und euer Herz soll sich freuen, und eure Freude soll niemand von euch nehmen.",
+    "lehrtext_stelle": "Johannes 16,22",
+    "losung": "Der HERR wird Zion wieder trösten.",
+    "losung_stelle": "Sacharja 1,17",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-11-05": {
+    "lehrtext": "/Jesus Christus spricht:/ Niemand wird meine Schafe aus meiner Hand reißen.",
+    "lehrtext_stelle": "Johannes 10,28",
+    "losung": "Er wird auftreten und sie weiden in der Kraft des HERRN.",
+    "losung_stelle": "Micha 5,3",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-11-06": {
+    "lehrtext": "Ich bin hungrig gewesen und ihr habt mir zu essen gegeben.",
+    "lehrtext_stelle": "Matthäus 25,35",
+    "losung": "Brich dem Hungrigen dein Brot!",
+    "losung_stelle": "Jesaja 58,7",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-11-07": {
+    "lehrtext": "Es geschah ein großes Erdbeben. Denn ein Engel des Herrn kam vom Himmel herab, trat hinzu und wälzte den Stein weg und setzte sich darauf.",
+    "lehrtext_stelle": "Matthäus 28,2",
+    "losung": "Du machst Winde zu deinen Boten und Feuerflammen zu deinen Dienern.",
+    "losung_stelle": "Psalm 104,4",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-11-08": {
+    "lehrtext": "Seid darauf bedacht, zu wahren die Einigkeit im Geist durch das Band des Friedens.",
+    "lehrtext_stelle": "Epheser 4,3",
+    "losung": "Abram sprach zu Lot: Es soll kein Zank sein zwischen mir und dir und zwischen meinen und deinen Hirten; denn wir sind Brüder.",
+    "losung_stelle": "1. Mose 13,8",
+    "sonntag": "Drittletzter Sonntag des Kirchenjahres",
+    "wochentag": "Sonntag"
+  },
+  "2026-11-09": {
+    "lehrtext": "Wenn uns unser Herz verdammt, ist Gott größer als unser Herz und erkennt alle Dinge.",
+    "lehrtext_stelle": "1. Johannes 3,20",
+    "losung": "Unsre Missetaten stellst du vor dich, unsre unerkannte Sünde ins Licht vor deinem Angesicht.",
+    "losung_stelle": "Psalm 90,8",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-11-10": {
+    "lehrtext": "Die Jünger wurden erfüllt von Freude und Heiligem Geist.",
+    "lehrtext_stelle": "Apostelgeschichte 13,52",
+    "losung": "Seid getrost und unverzagt alle, die ihr des HERRN harret!",
+    "losung_stelle": "Psalm 31,25",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-11-11": {
+    "lehrtext": "/Jesus spricht:/ Wer da bittet, der empfängt; und wer da sucht, der findet; und wer da anklopft, dem wird aufgetan.",
+    "lehrtext_stelle": "Matthäus 7,8",
+    "losung": "Ich will auf den HERRN schauen und harren auf den Gott meines Heils; mein Gott wird mich erhören.",
+    "losung_stelle": "Micha 7,7",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-11-12": {
+    "lehrtext": "Geh zuerst hin und versöhne dich mit deinem Bruder, und dann komm und opfere deine Gabe.",
+    "lehrtext_stelle": "Matthäus 5,24",
+    "losung": "Gib acht auf deine Füße, wenn du zum Hause Gottes gehst. Und tritt hinzu, um zu hören.",
+    "losung_stelle": "Prediger 4,17",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-11-13": {
+    "lehrtext": "Jesus sagte zu seinen Eltern: Warum habt ihr mich gesucht? Wusstet ihr nicht, dass ich im Haus meines Vaters sein muss?",
+    "lehrtext_stelle": "Lukas 2,49",
+    "losung": "Lass deine Augen offen stehen über diesem Hause Nacht und Tag, über der Stätte, von der du gesagt hast: Da soll mein Name sein.",
+    "losung_stelle": "1. Könige 8,29",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-11-14": {
+    "lehrtext": "/Paulus sprach:/ Wir verkündigen euch die Verheißung, die an die Väter ergangen ist, dass Gott sie uns, ihren Kindern, erfüllt hat, indem er Jesus auferweckte.",
+    "lehrtext_stelle": "Apostelgeschichte 13,32-33",
+    "losung": "Der HERR, unser Gott, sei mit uns, wie er mit unseren Vorfahren war.",
+    "losung_stelle": "1. Könige 8,57",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-11-15": {
+    "lehrtext": "Die Pforten der Hölle sollen meine Gemeinde nicht überwältigen.",
+    "lehrtext_stelle": "Matthäus 16,18",
+    "losung": "Sie sollen sicher wohnen, und niemand soll sie schrecken.",
+    "losung_stelle": "Hesekiel 34,28",
+    "sonntag": "Vorletzter Sonntag des Kirchenjahres",
+    "wochentag": "Sonntag"
+  },
+  "2026-11-16": {
+    "lehrtext": "/Hananias sagte zu Paulus:/ Der Gott unserer Vorfahren hat dich dazu bestimmt, seinen Willen zu erkennen. Du durftest den Gerechten sehen und seine Stimme hören. Denn du wirst als Zeuge für ihn auftreten. Dann wirst du allen Menschen weitersagen, was du gesehen und gehört hast.",
+    "lehrtext_stelle": "Apostelgeschichte 22,14-15",
+    "losung": "HERR, wer sollte dich nicht fürchten, du König der Völker? Dir muss man gehorchen.",
+    "losung_stelle": "Jeremia 10,7",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-11-17": {
+    "lehrtext": "Johannes sieht, dass Jesus zu ihm kommt, und spricht: Siehe, das ist Gottes Lamm, das der Welt Sünde trägt!",
+    "lehrtext_stelle": "Johannes 1,29",
+    "losung": "Er hat die Sünde vieler getragen, und für die Übeltäter trat er ein.",
+    "losung_stelle": "Jesaja 53,12",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-11-18": {
+    "lehrtext": "/Jesus sagte über die Sünderin:/ Ihre vielen Sünden sind vergeben, denn sie hat viel geliebt; wem aber wenig vergeben wird, der liebt wenig.",
+    "lehrtext_stelle": "Lukas 7,47",
+    "losung": "Herzlich lieb habe ich dich, HERR, meine Stärke!",
+    "losung_stelle": "Psalm 18,2",
+    "sonntag": "Buss- und Bettag",
+    "wochentag": "Mittwoch"
+  },
+  "2026-11-19": {
+    "lehrtext": "Gott, der reich ist an Barmherzigkeit, hat in seiner großen Liebe, mit der er uns geliebt hat, auch uns, die wir tot waren in den Sünden, mit Christus lebendig gemacht.",
+    "lehrtext_stelle": "Epheser 2,4-5",
+    "losung": "Ich will sie retten von allen ihren Abwegen, auf denen sie gesündigt haben, und will sie reinigen, und sie sollen mein Volk sein.",
+    "losung_stelle": "Hesekiel 37,23",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-11-20": {
+    "lehrtext": "/Jesus sprach zu Simon Petrus:/ Ich habe für dich gebeten, dass dein Glaube nicht aufhöre. Und wenn du dann umkehrst, so stärke deine Brüder.",
+    "lehrtext_stelle": "Lukas 22,32",
+    "losung": "/Der HERR sprach zu Mose:/ Geh hin: Ich will mit deinem Munde sein und dich lehren, was du sagen sollst.",
+    "losung_stelle": "2. Mose 4,12",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-11-21": {
+    "lehrtext": "Das Wort Gottes ist lebendig und kräftig und schärfer als jedes zweischneidige Schwert und dringt durch, bis es scheidet Seele und Geist, auch Mark und Bein, und ist ein Richter der Gedanken und Sinne des Herzens.",
+    "lehrtext_stelle": "Hebräer 4,12",
+    "losung": "Mein Wort wird nicht wieder leer zu mir zurückkommen, sondern wird tun, was mir gefällt, und ihm wird gelingen, wozu ich es sende.",
+    "losung_stelle": "Jesaja 55,11",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-11-22": {
+    "lehrtext": "Das auf dem guten Land sind die, die das Wort hören und behalten in einem feinen, guten Herzen und bringen Frucht in Geduld.",
+    "lehrtext_stelle": "Lukas 8,15",
+    "losung": "Gleichwie der Regen und Schnee vom Himmel fällt und nicht wieder dahin zurückkehrt, sondern feuchtet die Erde und macht sie fruchtbar und lässt wachsen, dass sie gibt Samen zu säen und Brot zu essen, so soll das Wort, das aus meinem Munde geht, auch sein.",
+    "losung_stelle": "Jesaja 55,10-11",
+    "sonntag": "Letzter Sonntag des Kirchenjahres – Ewigkeitssonntag",
+    "wochentag": "Sonntag"
+  },
+  "2026-11-23": {
+    "lehrtext": "Jedes Geschöpf im Himmel und auf der Erde und unter der Erde und auf dem Meer, und alles, was darin ist, hörte ich rufen: Ihm, der auf dem Thron sitzt, und dem Lamm seien Lob, Ehre und Preis und die Herrschaft, von Ewigkeit zu Ewigkeit.",
+    "lehrtext_stelle": "Offenbarung 5,13",
+    "losung": "HERR, du bist’s allein, du hast gemacht den Himmel und aller Himmel Himmel mit ihrem ganzen Heer, die Erde und alles, was darauf ist, die Meere und alles, was darinnen ist.",
+    "losung_stelle": "Nehemia 9,6",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-11-24": {
+    "lehrtext": "Segnet, die euch verfolgen; segnet, und verflucht sie nicht.",
+    "lehrtext_stelle": "Römer 12,14",
+    "losung": "Du sollst der Menge nicht auf dem Weg zum Bösen folgen.",
+    "losung_stelle": "2. Mose 23,2",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-11-25": {
+    "lehrtext": "/Jesus spricht:/ Das ist mein Gebot, dass ihr euch untereinander liebt, wie ich euch liebe.",
+    "lehrtext_stelle": "Johannes 15,12",
+    "losung": "Ich wandle in weitem Raum; denn ich suche deine Befehle.",
+    "losung_stelle": "Psalm 119,45",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-11-26": {
+    "lehrtext": "Hört nicht auf, Gott zu danken.",
+    "lehrtext_stelle": "Kolosser 2,7",
+    "losung": "Hiskia wurde todkrank; und er betete zum HERRN. Der redete mit ihm und gab ihm ein Wunderzeichen. Aber Hiskia vergalt nicht nach dem, was ihm geschehen war; denn sein Herz überhob sich.",
+    "losung_stelle": "2. Chronik 32,24-25",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-11-27": {
+    "lehrtext": "In ihm war das Leben, und das Leben war das Licht der Menschen.",
+    "lehrtext_stelle": "Johannes 1,4",
+    "losung": "Du, HERR, bist meine Leuchte; der HERR macht meine Finsternis licht.",
+    "losung_stelle": "2. Samuel 22,29",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-11-28": {
+    "lehrtext": "Ehre sei Gott in der Höhe und Friede auf Erden bei den Menschen seines Wohlgefallens.",
+    "lehrtext_stelle": "Lukas 2,14",
+    "losung": "Wie lieblich sind auf den Bergen die Füße des Freudenboten, der da Frieden verkündigt, Gutes predigt, Heil verkündigt, der da sagt zu Zion: Dein Gott ist König!",
+    "losung_stelle": "Jesaja 52,7",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-11-29": {
+    "lehrtext": "Tröstet euch untereinander und einer erbaue den andern, wie ihr auch tut.",
+    "lehrtext_stelle": "1. Thessalonicher 5,11",
+    "losung": "Jonatan ging hin zu David und stärkte sein Vertrauen auf Gott.",
+    "losung_stelle": "1. Samuel 23,16",
+    "sonntag": "1. Sonntag im Advent",
+    "wochentag": "Sonntag"
+  },
+  "2026-11-30": {
+    "lehrtext": "Umso fester haben wir das prophetische Wort, und ihr tut gut daran, dass ihr darauf achtet als auf ein Licht, das da scheint an einem dunklen Ort, bis der Tag anbricht und der Morgenstern aufgeht in euren Herzen.",
+    "lehrtext_stelle": "2. Petrus 1,19",
+    "losung": "Der Storch unter dem Himmel weiß seine Zeit, Turteltaube, Schwalbe und Drossel halten die Zeit ein, in der sie wiederkommen sollen; aber mein Volk will das Recht des HERRN nicht wissen.",
+    "losung_stelle": "Jeremia 8,7",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-12-01": {
+    "lehrtext": "/Jesus spricht:/ So, sage ich euch, ist Freude vor den Engeln Gottes über einen Sünder, der Buße tut.",
+    "lehrtext_stelle": "Lukas 15,10",
+    "losung": "Kehrt zurück, ihr abtrünnigen Kinder, so will ich euch heilen von eurem Ungehorsam. »Siehe, wir kommen zu dir; denn du bist der HERR, unser Gott.«",
+    "losung_stelle": "Jeremia 3,22",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-12-02": {
+    "lehrtext": "Darum sollen wir desto mehr achten auf das Wort, das wir hören, damit wir nicht am Ziel vorbeitreiben.",
+    "lehrtext_stelle": "Hebräer 2,1",
+    "losung": "Neigt eure Ohren her und kommt her zu mir! Höret, so werdet ihr leben!",
+    "losung_stelle": "Jesaja 55,3",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-12-03": {
+    "lehrtext": "Abraham wusste aufs Allergewisseste: Was Gott verheißt, das kann er auch tun.",
+    "lehrtext_stelle": "Römer 4,21",
+    "losung": "Ich habe dich bereitet, dass du mein Knecht seist. Israel, ich vergesse dich nicht!",
+    "losung_stelle": "Jesaja 44,21",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-12-04": {
+    "lehrtext": "Durch die herzliche Barmherzigkeit unseres Gottes wird uns besuchen das aufgehende Licht aus der Höhe, auf dass es erscheine denen, die sitzen in Finsternis und Schatten des Todes, und richte unsere Füße auf den Weg des Friedens.",
+    "lehrtext_stelle": "Lukas 1,78-79",
+    "losung": "Die da sitzen mussten in Finsternis und Dunkel, gefangen in Zwang und Eisen, die dann zum HERRN riefen in ihrer Not und er half ihnen aus ihren Ängsten: Die sollen dem HERRN danken für seine Güte und für seine Wunder, die er an den Menschenkindern tut.",
+    "losung_stelle": "Psalm 107,10.13.15",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-12-05": {
+    "lehrtext": "Jesus Christus gestern und heute und derselbe auch in Ewigkeit.",
+    "lehrtext_stelle": "Hebräer 13,8",
+    "losung": "Ich bin der Erste, und ich bin der Letzte, und außer mir ist kein Gott.",
+    "losung_stelle": "Jesaja 44,6",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-12-06": {
+    "lehrtext": "Dankt dem Vater mit Freude! Er hat euch fähig gemacht, Anteil zu haben am Erbe der Heiligen, die im Licht leben.",
+    "lehrtext_stelle": "Kolosser 1,12",
+    "losung": "Wer Dank opfert, der preiset mich, und da ist der Weg, dass ich ihm zeige das Heil Gottes.",
+    "losung_stelle": "Psalm 50,23",
+    "sonntag": "2. Sonntag im Advent",
+    "wochentag": "Sonntag"
+  },
+  "2026-12-07": {
+    "lehrtext": "Auch die Schöpfung wird frei werden von der Knechtschaft der Vergänglichkeit zu der herrlichen Freiheit der Kinder Gottes.",
+    "lehrtext_stelle": "Römer 8,21",
+    "losung": "In Gottes Hand sind die Tiefen der Erde, und die Höhen der Berge sind auch sein.",
+    "losung_stelle": "Psalm 95,4",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-12-08": {
+    "lehrtext": "Bringt euren Leib dar als lebendiges, heiliges, Gott wohlgefälliges Opfer - dies sei euer vernünftiger Gottesdienst!",
+    "lehrtext_stelle": "Römer 12,1",
+    "losung": "Singet dem HERRN und lobet seinen Namen, verkündet von Tag zu Tag sein Heil!",
+    "losung_stelle": "Psalm 96,2",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-12-09": {
+    "lehrtext": "/Jesus Christus spricht:/ Bleibt in mir und ich in euch. Wie die Rebe keine Frucht bringen kann aus sich selbst, wenn sie nicht am Weinstock bleibt, so auch ihr nicht, wenn ihr nicht an mir bleibt.",
+    "lehrtext_stelle": "Johannes 15,4",
+    "losung": "Der Gerechte ist wie ein Baum, gepflanzt an den Wasserbächen, der seine Frucht bringt zu seiner Zeit, und seine Blätter verwelken nicht.",
+    "losung_stelle": "Psalm 1,3",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-12-10": {
+    "lehrtext": "/Maria sprach:/ Siehe, von nun an werden mich selig preisen alle Kindeskinder. Denn er hat große Dinge an mir getan, der da mächtig ist und dessen Name heilig ist.",
+    "lehrtext_stelle": "Lukas 1,48-49",
+    "losung": "Kommt her, höret zu alle, die ihr Gott fürchtet; ich will erzählen, was er an mir getan hat.",
+    "losung_stelle": "Psalm 66,16",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-12-11": {
+    "lehrtext": "Kein Geschöpf ist vor ihm verborgen, sondern es ist alles bloß und aufgedeckt vor den Augen dessen, dem wir Rechenschaft geben müssen.",
+    "lehrtext_stelle": "Hebräer 4,13",
+    "losung": "Siehe, es ist kein Wort auf meiner Zunge, das du, HERR, nicht alles wüsstest.",
+    "losung_stelle": "Psalm 139,4",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-12-12": {
+    "lehrtext": "Sie sind Israeliten, denen die Kindschaft gehört und die Herrlichkeit und die Bundesschlüsse und das Gesetz und der Gottesdienst und die Verheißungen.",
+    "lehrtext_stelle": "Römer 9,4",
+    "losung": "HERR, schone dein Volk und lass dein Erbteil nicht zuschanden werden!",
+    "losung_stelle": "Joel 2,17",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-12-13": {
+    "lehrtext": "Die Welt vergeht, mit ihrem Begehren; wer aber den Willen Gottes tut, der bleibt in Ewigkeit.",
+    "lehrtext_stelle": "1. Johannes 2,17",
+    "losung": "Die Frau nahm von der Frucht und aß und gab ihrem Mann, der bei ihr war, auch davon und er aß.",
+    "losung_stelle": "1. Mose 3,6",
+    "sonntag": "3. Sonntag im Advent",
+    "wochentag": "Sonntag"
+  },
+  "2026-12-14": {
+    "lehrtext": "Jesus sprach: Viele werden kommen unter meinem Namen und sagen: Ich bin’s, und: Die Zeit ist herbeigekommen. – Lauft ihnen nicht nach!",
+    "lehrtext_stelle": "Lukas 21,8",
+    "losung": "Weh den törichten Propheten, die ihrem eigenen Geist folgen und nichts geschaut haben!",
+    "losung_stelle": "Hesekiel 13,3",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-12-15": {
+    "lehrtext": "Vergib uns unsre Sünden; denn auch wir vergeben jedem, der an uns schuldig wird.",
+    "lehrtext_stelle": "Lukas 11,4",
+    "losung": "Wasche dein Herz von der Bosheit, auf dass dir geholfen werde. Wie lange wollen bei dir bleiben deine heillosen Gedanken?",
+    "losung_stelle": "Jeremia 4,14",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-12-16": {
+    "lehrtext": "Brüder und Schwestern, freut euch, lasst euch zurechtbringen, lasst euch mahnen, habt einerlei Sinn, haltet Frieden!",
+    "lehrtext_stelle": "2. Korinther 13,11",
+    "losung": "Du sollst deinen Bruder nicht hassen in deinem Herzen, sondern du sollst deinen Nächsten zurechtweisen, damit du nicht seinetwegen Schuld auf dich lädst.",
+    "losung_stelle": "3. Mose 19,17",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-12-17": {
+    "lehrtext": "Was zuvor geschrieben ist, das ist uns zur Lehre geschrieben, damit wir durch Geduld und den Trost der Schrift Hoffnung haben.",
+    "lehrtext_stelle": "Römer 15,4",
+    "losung": "Wenn ich auch noch so viele meiner Gebote aufschreibe, so werden sie doch geachtet wie eine fremde Lehre.",
+    "losung_stelle": "Hosea 8,12",
+    "sonntag": "",
+    "wochentag": "Donnerstag"
+  },
+  "2026-12-18": {
+    "lehrtext": "Es kam eine große Menge zu Jesus; die hatten bei sich Lahme, Blinde, Verkrüppelte, Stumme und viele andere und legten sie ihm vor die Füße, und er heilte sie.",
+    "lehrtext_stelle": "Matthäus 15,30",
+    "losung": "Aus der Tiefe rufe ich, HERR, zu dir. Herr, höre meine Stimme!",
+    "losung_stelle": "Psalm 130,1-2",
+    "sonntag": "",
+    "wochentag": "Freitag"
+  },
+  "2026-12-19": {
+    "lehrtext": "Bei Gott ist kein Ding unmöglich.",
+    "lehrtext_stelle": "Lukas 1,37",
+    "losung": "Dir, HERR, ist niemand gleich; du bist groß, und dein Name ist groß, wie du es mit der Tat beweist.",
+    "losung_stelle": "Jeremia 10,6",
+    "sonntag": "",
+    "wochentag": "Samstag"
+  },
+  "2026-12-20": {
+    "lehrtext": "Und die Völker werden wandeln in ihrem Licht; und die Könige auf Erden werden ihre Herrlichkeit in sie bringen.",
+    "lehrtext_stelle": "Offenbarung 21,24",
+    "losung": "Dennoch soll die Stadt Gottes fein lustig bleiben mit ihren Brünnlein, da die heiligen Wohnungen des Höchsten sind. Gott ist bei ihr drinnen, darum wird sie fest bleiben.",
+    "losung_stelle": "Psalm 46,5-6",
+    "sonntag": "4. Sonntag im Advent",
+    "wochentag": "Sonntag"
+  },
+  "2026-12-21": {
+    "lehrtext": "Stephanus rief den Herrn an und sprach: Herr Jesus, nimm meinen Geist auf!",
+    "lehrtext_stelle": "Apostelgeschichte 7,59",
+    "losung": "Du führst, Herr, meine Sache und erlöst mein Leben.",
+    "losung_stelle": "Klagelieder 3,58",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-12-22": {
+    "lehrtext": "/Elisabeth sprach zu Maria:/ Gesegnet bist du unter den Frauen, und gesegnet ist die Frucht deines Leibes!",
+    "lehrtext_stelle": "Lukas 1,42",
+    "losung": "Der HERR mehre euch, euch und eure Kinder!",
+    "losung_stelle": "Psalm 115,14",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-12-23": {
+    "lehrtext": "Im Herrn ist weder die Frau etwas ohne den Mann noch ist der Mann etwas ohne die Frau. Denn wie die Frau vom Mann stammt, so ist der Mann durch die Frau; alles aber kommt von Gott.",
+    "lehrtext_stelle": "1. Korinther 11,11-12",
+    "losung": "Gott schuf den Menschen zu seinem Bilde, zum Bilde Gottes schuf er ihn und schuf sie als Mann und Frau.",
+    "losung_stelle": "1. Mose 1,27",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-12-24": {
+    "lehrtext": "Wir haben gesehen und bezeugen, dass der Vater den Sohn gesandt hat als Heiland der Welt.",
+    "lehrtext_stelle": "1. Johannes 4,14",
+    "losung": "HERR, du bist unser Gott, gegen dich vermag kein Mensch etwas.",
+    "losung_stelle": "2. Chronik 14,10",
+    "sonntag": "Heiliger Abend",
+    "wochentag": "Donnerstag"
+  },
+  "2026-12-25": {
+    "lehrtext": "Und da die Engel von ihnen gen Himmel fuhren, sprachen die Hirten untereinander: Lasst uns nun gehen gen Bethlehem und die Geschichte sehen, die da geschehen ist, die uns der Herr kundgetan hat.",
+    "lehrtext_stelle": "Lukas 2,15",
+    "losung": "Dein Wort ist meines Fußes Leuchte und ein Licht auf meinem Wege.",
+    "losung_stelle": "Psalm 119,105",
+    "sonntag": "Weihnachtsfest",
+    "wochentag": "Freitag"
+  },
+  "2026-12-26": {
+    "lehrtext": "Als aber die Zeit erfüllt war, sandte Gott seinen Sohn, geboren von einer Frau und unter das Gesetz getan, auf dass er die, die unter dem Gesetz waren, loskaufte, damit wir die Kindschaft empfingen.",
+    "lehrtext_stelle": "Galater 4,4-5",
+    "losung": "Ich will wachen über meinem Wort, dass ich’s tue.",
+    "losung_stelle": "Jeremia 1,12",
+    "sonntag": "2. Weihnachtstag",
+    "wochentag": "Samstag"
+  },
+  "2026-12-27": {
+    "lehrtext": "In Jesus Christus haben wir die Erlösung durch sein Blut, die Vergebung der Sünden, nach dem Reichtum seiner Gnade.",
+    "lehrtext_stelle": "Epheser 1,7",
+    "losung": "Wohl dem, dem die Übertretungen vergeben sind, dem die Sünde bedeckt ist!",
+    "losung_stelle": "Psalm 32,1",
+    "sonntag": "1. Sonntag nach Weihnachten",
+    "wochentag": "Sonntag"
+  },
+  "2026-12-28": {
+    "lehrtext": "Friede sei mit den Brüdern und Schwestern und Liebe mit Glauben von Gott, dem Vater, und dem Herrn Jesus Christus!",
+    "lehrtext_stelle": "Epheser 6,23",
+    "losung": "Boas sprach zu den Schnittern: Der HERR sei mit euch! Sie antworteten: Der HERR segne dich!",
+    "losung_stelle": "Rut 2,4",
+    "sonntag": "",
+    "wochentag": "Montag"
+  },
+  "2026-12-29": {
+    "lehrtext": "Spricht Jesus zum dritten Mal zu ihm: Simon, Sohn des Johannes, hast du mich lieb? Petrus wurde traurig, weil er zum dritten Mal zu ihm sagte: Hast du mich lieb?, und sprach zu ihm: Herr, du weißt alle Dinge, du weißt, dass ich dich lieb habe.",
+    "lehrtext_stelle": "Johannes 21,17",
+    "losung": "Gott, du kennst meine Torheit, und meine Schuld ist dir nicht verborgen.",
+    "losung_stelle": "Psalm 69,6",
+    "sonntag": "",
+    "wochentag": "Dienstag"
+  },
+  "2026-12-30": {
+    "lehrtext": "Brüder und Schwestern: Was wahrhaftig ist, was ehrbar, was gerecht, was rein, was liebenswert, was einen guten Ruf hat, sei es eine Tugend, sei es ein Lob – darauf seid bedacht!",
+    "lehrtext_stelle": "Philipper 4,8",
+    "losung": "Halte dich ferne von einer Sache, bei der Lüge im Spiel ist.",
+    "losung_stelle": "2. Mose 23,7",
+    "sonntag": "",
+    "wochentag": "Mittwoch"
+  },
+  "2026-12-31": {
+    "lehrtext": "/Jesus spricht:/ Wer den Willen tut meines Vaters im Himmel, der ist mir Bruder und Schwester und Mutter.",
+    "lehrtext_stelle": "Matthäus 12,50",
+    "losung": "So halte nun die Gebote des HERRN, deines Gottes, dass du in seinen Wegen wandelst und ihn fürchtest.",
+    "losung_stelle": "5. Mose 8,6",
+    "sonntag": "Altjahresabend",
+    "wochentag": "Donnerstag"
   }
 }
