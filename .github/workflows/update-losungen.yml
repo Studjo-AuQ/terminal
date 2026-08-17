@@ -25,6 +25,12 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: System-Zertifikate aktualisieren
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --reinstall ca-certificates
+          sudo update-ca-certificates
+
       - name: Offizielle Jahres-ZIP herunterladen und entpacken
         run: |
           set -e
@@ -32,7 +38,20 @@ jobs:
           JAHR=$(date -u +%Y)
           URL="https://www.losungen.de/fileadmin/media-losungen/download/Losung_${JAHR}_XML.zip"
           echo "Lade $URL"
-          curl -fsSL "$URL" -o quelle/losungen.zip
+
+          if ! curl -fSL --retry 3 --retry-delay 5 --tlsv1.2 -v \
+                "$URL" -o quelle/losungen.zip 2> quelle/curl-log.txt; then
+            echo "════════════════════════════════════════════════════"
+            echo "FEHLER beim Download. Ausführliches curl-Protokoll:"
+            echo "════════════════════════════════════════════════════"
+            cat quelle/curl-log.txt
+            echo "════════════════════════════════════════════════════"
+            echo "Mögliche Ursachen: falsche/geänderte URL, SSL-Zertifikat-"
+            echo "problem, oder die Datei liegt (noch) nicht unter diesem"
+            echo "Pfad. Bitte die Zeilen oben prüfen bzw. weitergeben."
+            exit 1
+          fi
+
           unzip -o quelle/losungen.zip -d quelle/entpackt
 
           # Die enthaltene XML-Datei kann einen wechselnden Namen haben
