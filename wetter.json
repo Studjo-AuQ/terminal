@@ -1,5 +1,5 @@
 {
-  "aktualisiert": "17.08.2026, 10:24 Uhr",
+  "aktualisiert": "17.08.2026, 10:54 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
@@ -9,7 +9,7 @@
         "zustand": "Leichter Nieselregen",
         "emoji": "🌦️",
         "wind": 6,
-        "luftfeuchte": 95,
+        "luftfeuchte": 94,
         "niederschlag": 0.1
       },
       "tage": [
@@ -37,7 +37,7 @@
           "emoji": "🌦️",
           "zustand": "Starker Nieselregen",
           "max": 17,
-          "min": 14,
+          "min": 15,
           "niederschlag": 5.2
         },
         {
@@ -67,9 +67,9 @@
         "gefuehlt": 15,
         "zustand": "Leichte Schauer",
         "emoji": "🌦️",
-        "wind": 5,
-        "luftfeuchte": 86,
-        "niederschlag": 0.0
+        "wind": 7,
+        "luftfeuchte": 84,
+        "niederschlag": 0.1
       },
       "tage": [
         {
@@ -126,8 +126,8 @@
         "gefuehlt": 14,
         "zustand": "Leichter Nieselregen",
         "emoji": "🌦️",
-        "wind": 5,
-        "luftfeuchte": 97,
+        "wind": 4,
+        "luftfeuchte": 96,
         "niederschlag": 0.1
       },
       "tage": [
@@ -154,8 +154,8 @@
           "datum": "19.08.",
           "emoji": "🌦️",
           "zustand": "Starker Nieselregen",
-          "max": 17,
-          "min": 14,
+          "max": 18,
+          "min": 15,
           "niederschlag": 6.2
         },
         {
@@ -185,8 +185,8 @@
         "gefuehlt": 16,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 7,
-        "luftfeuchte": 86,
+        "wind": 9,
+        "luftfeuchte": 83,
         "niederschlag": 0.0
       },
       "tage": [
