@@ -1,16 +1,16 @@
 {
-  "aktualisiert": "18.08.2026, 13:36 Uhr",
+  "aktualisiert": "18.08.2026, 14:25 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
         "temp": 16,
         "gefuehlt": 16,
-        "zustand": "Leichter Nieselregen",
-        "emoji": "🌦️",
-        "wind": 18,
-        "luftfeuchte": 97,
-        "niederschlag": 0.1
+        "zustand": "Bedeckt",
+        "emoji": "☁️",
+        "wind": 15,
+        "luftfeuchte": 98,
+        "niederschlag": 0.0
       },
       "tage": [
         {
@@ -20,25 +20,25 @@
           "zustand": "Regen",
           "max": 16,
           "min": 12,
-          "niederschlag": 9.8
+          "niederschlag": 10.3
         },
         {
           "wochentag": "Mittwoch",
           "datum": "19.08.",
           "emoji": "🌦️",
-          "zustand": "Starker Nieselregen",
-          "max": 18,
+          "zustand": "Nieselregen",
+          "max": 17,
           "min": 14,
-          "niederschlag": 2.2
+          "niederschlag": 2.1
         },
         {
           "wochentag": "Donnerstag",
           "datum": "20.08.",
-          "emoji": "🌦️",
-          "zustand": "Nieselregen",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
           "max": 20,
           "min": 14,
-          "niederschlag": 1.2
+          "niederschlag": 0.0
         },
         {
           "wochentag": "Freitag",
@@ -64,11 +64,11 @@
       "stadt": "Werdohl",
       "aktuell": {
         "temp": 18,
-        "gefuehlt": 18,
+        "gefuehlt": 19,
         "zustand": "Bedeckt",
         "emoji": "☁️",
         "wind": 12,
-        "luftfeuchte": 91,
+        "luftfeuchte": 90,
         "niederschlag": 0.0
       },
       "tage": [
@@ -124,11 +124,11 @@
       "aktuell": {
         "temp": 16,
         "gefuehlt": 16,
-        "zustand": "Leichter Nieselregen",
+        "zustand": "Nieselregen",
         "emoji": "🌦️",
         "wind": 17,
-        "luftfeuchte": 98,
-        "niederschlag": 0.1
+        "luftfeuchte": 100,
+        "niederschlag": 0.2
       },
       "tage": [
         {
@@ -138,7 +138,7 @@
           "zustand": "Regen",
           "max": 17,
           "min": 12,
-          "niederschlag": 8.3
+          "niederschlag": 10.2
         },
         {
           "wochentag": "Mittwoch",
@@ -146,17 +146,17 @@
           "emoji": "🌦️",
           "zustand": "Nieselregen",
           "max": 18,
-          "min": 14,
-          "niederschlag": 2.2
+          "min": 15,
+          "niederschlag": 1.6
         },
         {
           "wochentag": "Donnerstag",
           "datum": "20.08.",
-          "emoji": "🌧️",
-          "zustand": "Leichter Regen",
+          "emoji": "🌦️",
+          "zustand": "Leichter Nieselregen",
           "max": 20,
           "min": 14,
-          "niederschlag": 2.5
+          "niederschlag": 0.1
         },
         {
           "wochentag": "Freitag",
@@ -182,12 +182,12 @@
       "stadt": "Bochum",
       "aktuell": {
         "temp": 19,
-        "gefuehlt": 18,
-        "zustand": "Bedeckt",
-        "emoji": "☁️",
-        "wind": 22,
-        "luftfeuchte": 89,
-        "niederschlag": 0.0
+        "gefuehlt": 19,
+        "zustand": "Leichter Nieselregen",
+        "emoji": "🌦️",
+        "wind": 15,
+        "luftfeuchte": 91,
+        "niederschlag": 0.1
       },
       "tage": [
         {
@@ -197,25 +197,25 @@
           "zustand": "Leichter Regen",
           "max": 19,
           "min": 16,
-          "niederschlag": 6.7
+          "niederschlag": 7.9
         },
         {
           "wochentag": "Mittwoch",
           "datum": "19.08.",
           "emoji": "🌧️",
           "zustand": "Leichter Regen",
-          "max": 20,
+          "max": 19,
           "min": 17,
-          "niederschlag": 4.8
+          "niederschlag": 3.5
         },
         {
           "wochentag": "Donnerstag",
           "datum": "20.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 22,
+          "max": 23,
           "min": 16,
-          "niederschlag": 0.7
+          "niederschlag": 0.3
         },
         {
           "wochentag": "Freitag",
