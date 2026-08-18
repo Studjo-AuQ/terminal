@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "18.08.2026, 05:03 Uhr (UTC)",
+  "aktualisiert": "18.08.2026, 05:56 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Ukraine greift Moskau mit Hunderten Drohnen an",
+      "description": "Die Region Moskau soll mit Hunderten Drohnen angegriffen worden sein. Dabei wurde offenbar erneut ein Wildberries-Lager getroffen. Für massive Verstimmungen sorgt ein Bericht über britische Drohnen für die Ukraine.",
+      "pubDate": "2026-08-18T07:44:31+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: Ölpreise ziehen an, DAX fällt zurück",
+      "description": "Die Vorgaben aus Asien und den USA fallen schwach aus. Die Ölpreise steigen wieder spürbar an, damit dürfte die Inflation bald wieder ein Thema an den Märkten werden. Der DAX dürfte nachgeben.",
+      "pubDate": "2026-08-18T07:38:07+02:00",
+      "bild": ""
+    },
     {
       "title": "US-Verhandler Kushner sieht \"sehr positive Gespräche\" mit Iran",
       "description": "Der US-Unterhändler für den Nahen Osten, Kushner, hat sich zuversichtlich über die US-Gespräche mit Iran geäußert. Bei seinem Besuch in Israel betonte er auch, es seien Fortschritte im Gazastreifen möglich.",
@@ -78,18 +90,6 @@
       "title": "3D-Hirngewebemodell soll Alzheimer-Forschung verbessern",
       "description": "Münchner Forschende haben ein 3D-Gewebemodell aus menschlichen Hirnzellen entwickelt. Es soll helfen, Alzheimer besser zu verstehen und neue Wirkstoffe zu testen. Von Jan Kerckhoff.",
       "pubDate": "2026-08-17T16:57:53+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ukraine: Russland legt Internet-Warenlager in Trümmer",
-      "description": "Auch Russland setzt im Krieg gegen die Ukraine auf Angriffe gegen Online-Händler. Mit Raketen werden Lager der Unternehmen Rozetka und Epizentr attackiert - der wirtschaftliche Schaden ist enorm. Von F. Kellermann.",
-      "pubDate": "2026-08-17T16:13:56+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Amthor gegen Grundgesetzänderung für Klimaanpassung",
-      "description": "Staatsminister Amthor von der CDU hat sich gegen \"abstrakte Diskussionen über eine Verfassungsänderung\" ausgesprochen. Zuvor hatten verschiedene SPD-Ministerien dafür plädiert, Klima- und Hitzeschutz im Grundgesetz festzuschreiben.",
-      "pubDate": "2026-08-17T15:16:24+02:00",
       "bild": ""
     }
   ],
