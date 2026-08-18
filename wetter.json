@@ -1,5 +1,5 @@
 {
-  "aktualisiert": "18.08.2026, 19:47 Uhr",
+  "aktualisiert": "18.08.2026, 20:15 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
@@ -67,7 +67,7 @@
         "gefuehlt": 19,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 7,
+        "wind": 6,
         "luftfeuchte": 93,
         "niederschlag": 0.0
       },
@@ -126,7 +126,7 @@
         "gefuehlt": 17,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 10,
+        "wind": 9,
         "luftfeuchte": 97,
         "niederschlag": 0.0
       },
@@ -181,11 +181,11 @@
     {
       "stadt": "Bochum",
       "aktuell": {
-        "temp": 19,
+        "temp": 18,
         "gefuehlt": 20,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 11,
+        "wind": 10,
         "luftfeuchte": 93,
         "niederschlag": 0.0
       },
