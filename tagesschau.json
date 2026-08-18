@@ -1,7 +1,37 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "18.08.2026, 10:35 Uhr (UTC)",
+  "aktualisiert": "18.08.2026, 11:31 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "China-Shops mit deutscher Tarnung täuschen Verbraucher",
+      "description": "Online-Shops mit deutschsprachigen Namen und Webadressen, die aber gar nicht in Deutschland sitzen, nehmen zu. Für Verbraucher kann das problematisch werden, denn Lieferzeiten, Rücksendungen und Qualität sind selten gut.",
+      "pubDate": "2026-08-18T13:18:28+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Forschungszentrum soll Drohnenabwehr verbessern",
+      "description": "Nach zahlreichen Drohnenvorfällen an Flughäfen hat die Bundesregierung in Sachsen-Anhalt ein neues Forschungszentrum eröffnet. Dort sollen auch gezielte Abwehrmöglichkeiten gegen die wachsende Bedrohung entwickelt werden.",
+      "pubDate": "2026-08-18T12:59:09+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Schlechte Erntebilanz wegen Hitze und Trockenheit",
+      "description": "Der heiße, trockene Sommer in vielen Teilen Deutschlands hat die Erträge von Landwirten einbrechen lassen. Besonders im Süden und Westen litten die Pflanzen extrem. Die Bauern müssen sich darauf einstellen. Von Anke Hahn.",
+      "pubDate": "2026-08-18T12:54:37+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Angriffe über queere Datingplattformen",
+      "description": "Junge Männer organisieren sich in Gruppen, um über queere Dating-Apps Gewalt auszuüben. Sie vernetzen sich etwa auf Discord-Servern und teilen Aufnahmen ihrer Taten - wie eine Recherche von team.recherche zeigt.",
+      "pubDate": "2026-08-18T12:39:00+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Jobverluste jetzt auch bei Dienstleistungen",
+      "description": "Die Konjunkturflaute in Deutschland greift um sich: Erstmals seit der Corona-Krise sinkt die Zahl der Beschäftigten im Dienstleistungssektor. Zudem ist das Firmensterben so ausgeprägt wie seit fast 20 Jahren nicht.",
+      "pubDate": "2026-08-18T12:38:52+02:00",
+      "bild": ""
+    },
     {
       "title": "Marktbericht: DAX-Schwäche hält bislang an",
       "description": "Die Sorgen über die Lage im Nahen Osten werden immer mehr zu einer Belastung für den Aktienmarkt. Der DAX fällt erneut zurück, relativ erfreuliche Daten vom Wohnungsmarkt bringen keine Wende.",
@@ -60,36 +90,6 @@
       "title": "Interview zu Unfällen mit E-Scootern: \"Jeder Helm ist eine Hilfe\"",
       "description": "Sie sind praktisch, schnell und unkompliziert auszuleihen: E-Scooter. Doch die Zahl der Unfälle in Deutschland steigt. Chirurg Michael Zyskowski erklärt, was die Roller gefährlich macht und welche Maßnahmen helfen könnten.",
       "pubDate": "2026-08-18T04:59:10+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Dänemark reglementiert Nutzung Künstlicher Intelligenz an Schulen",
-      "description": "In Dänemark gelten zum Start ins neue Schuljahr verschärfte Regeln für den Einsatz von Künstlicher Intelligenz. So sollen etwa mehr Aufgaben in der Schule erledigt und Prüfungen stärker überwacht werden. Von Arne Bartram.",
-      "pubDate": "2026-08-18T04:58:39+02:00",
-      "bild": ""
-    },
-    {
-      "title": "So können Drohnen im Katastrophenfall helfen",
-      "description": "Heute wird ein neues Forschungszentrum zur Drohnenabwehr eröffnet. An dem Standort in Sachsen-Anhalt zeigt sich aber auch, welche Rolle Drohnen im Katastrophenschutz spielen. Ein Einblick, wie Forschende dort arbeiten. Von Boris Geiger.",
-      "pubDate": "2026-08-18T04:57:57+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wie sich Nordkoreas Diktator Kim aus der Isolation löst",
-      "description": "Nordkorea steht wohl kurz davor, weitere Soldaten nach Russland zu schicken. Pjöngjang profitiert politisch und militärisch. Die strategische Position von Diktator Kim ist gut wie lange nicht mehr. Von Ulrich Mendgen.",
-      "pubDate": "2026-08-18T04:57:34+02:00",
-      "bild": ""
-    },
-    {
-      "title": "London: Tausende bei Mahnwache für tot aufgefundenen Arday",
-      "description": "Jason Arday war der jüngste schwarze Professor der britischen Elite-Uni Cambridge. Doch nach Plagiatsvorwürfen trat er zurück - und wurde vor wenigen Tagen tot aufgefunden. Die Uni spricht von einer \"rassistischen Hetzjagd\".",
-      "pubDate": "2026-08-18T04:57:30+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Deutsch-belgische Grenzregion: Waldbrand-Lage stabil - doch es droht Wind",
-      "description": "Der Waldbrand im belgischen Naturschutzgebiet Hohes Venn hat sich nicht weiter der deutschen Stadt Monschau angenähert. Entwarnung gibt die Feuerwehr aber nicht - für Dienstag ist starker Wind vorhergesagt.",
-      "pubDate": "2026-08-17T19:04:10+02:00",
       "bild": ""
     }
   ],
