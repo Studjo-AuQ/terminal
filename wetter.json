@@ -1,15 +1,15 @@
 {
-  "aktualisiert": "18.08.2026, 02:11 Uhr",
+  "aktualisiert": "18.08.2026, 03:15 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
-        "temp": 13,
-        "gefuehlt": 14,
-        "zustand": "Bedeckt",
-        "emoji": "☁️",
-        "wind": 4,
-        "luftfeuchte": 95,
+        "temp": 12,
+        "gefuehlt": 12,
+        "zustand": "Teils bewölkt",
+        "emoji": "⛅",
+        "wind": 5,
+        "luftfeuchte": 96,
         "niederschlag": 0.0
       },
       "tage": [
@@ -19,7 +19,7 @@
           "emoji": "🌧️",
           "zustand": "Leichter Regen",
           "max": 16,
-          "min": 13,
+          "min": 12,
           "niederschlag": 9.4
         },
         {
@@ -28,7 +28,7 @@
           "emoji": "🌧️",
           "zustand": "Starker Regen",
           "max": 17,
-          "min": 14,
+          "min": 15,
           "niederschlag": 22.6
         },
         {
@@ -65,10 +65,10 @@
       "aktuell": {
         "temp": 12,
         "gefuehlt": 12,
-        "zustand": "Nebel",
-        "emoji": "🌫️",
-        "wind": 0,
-        "luftfeuchte": 98,
+        "zustand": "Leichter Regen",
+        "emoji": "🌧️",
+        "wind": 2,
+        "luftfeuchte": 95,
         "niederschlag": 0.0
       },
       "tage": [
@@ -122,12 +122,12 @@
     {
       "stadt": "Kierspe",
       "aktuell": {
-        "temp": 14,
-        "gefuehlt": 14,
-        "zustand": "Bedeckt",
-        "emoji": "☁️",
-        "wind": 3,
-        "luftfeuchte": 95,
+        "temp": 13,
+        "gefuehlt": 13,
+        "zustand": "Überwiegend klar",
+        "emoji": "🌤️",
+        "wind": 4,
+        "luftfeuchte": 96,
         "niederschlag": 0.0
       },
       "tage": [
@@ -136,7 +136,7 @@
           "datum": "18.08.",
           "emoji": "🌧️",
           "zustand": "Leichter Regen",
-          "max": 17,
+          "max": 16,
           "min": 12,
           "niederschlag": 8.6
         },
@@ -181,12 +181,12 @@
     {
       "stadt": "Bochum",
       "aktuell": {
-        "temp": 17,
-        "gefuehlt": 17,
+        "temp": 16,
+        "gefuehlt": 16,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 6,
-        "luftfeuchte": 79,
+        "wind": 7,
+        "luftfeuchte": 82,
         "niederschlag": 0.0
       },
       "tage": [
@@ -195,7 +195,7 @@
           "datum": "18.08.",
           "emoji": "🌧️",
           "zustand": "Regen",
-          "max": 19,
+          "max": 18,
           "min": 16,
           "niederschlag": 9.0
         },
@@ -204,7 +204,7 @@
           "datum": "19.08.",
           "emoji": "🌦️",
           "zustand": "Starker Nieselregen",
-          "max": 19,
+          "max": 20,
           "min": 17,
           "niederschlag": 3.0
         },
