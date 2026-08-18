@@ -1,16 +1,16 @@
 {
-  "aktualisiert": "18.08.2026, 05:00 Uhr",
+  "aktualisiert": "18.08.2026, 05:52 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
-        "temp": 13,
+        "temp": 14,
         "gefuehlt": 13,
-        "zustand": "Leichter Nieselregen",
-        "emoji": "🌦️",
-        "wind": 6,
-        "luftfeuchte": 96,
-        "niederschlag": 0.1
+        "zustand": "Leichter Regen",
+        "emoji": "🌧️",
+        "wind": 8,
+        "luftfeuchte": 95,
+        "niederschlag": 0.4
       },
       "tage": [
         {
@@ -64,11 +64,11 @@
       "stadt": "Werdohl",
       "aktuell": {
         "temp": 13,
-        "gefuehlt": 13,
+        "gefuehlt": 14,
         "zustand": "Leichter Regen",
         "emoji": "🌧️",
         "wind": 3,
-        "luftfeuchte": 94,
+        "luftfeuchte": 95,
         "niederschlag": 0.3
       },
       "tage": [
@@ -122,13 +122,13 @@
     {
       "stadt": "Kierspe",
       "aktuell": {
-        "temp": 13,
-        "gefuehlt": 14,
-        "zustand": "Leichter Nieselregen",
-        "emoji": "🌦️",
-        "wind": 5,
+        "temp": 14,
+        "gefuehlt": 13,
+        "zustand": "Leichter Regen",
+        "emoji": "🌧️",
+        "wind": 7,
         "luftfeuchte": 98,
-        "niederschlag": 0.1
+        "niederschlag": 0.4
       },
       "tage": [
         {
@@ -185,8 +185,8 @@
         "gefuehlt": 16,
         "zustand": "Nieselregen",
         "emoji": "🌦️",
-        "wind": 7,
-        "luftfeuchte": 86,
+        "wind": 6,
+        "luftfeuchte": 84,
         "niederschlag": 0.2
       },
       "tage": [
@@ -195,7 +195,7 @@
           "datum": "18.08.",
           "emoji": "🌧️",
           "zustand": "Regen",
-          "max": 18,
+          "max": 19,
           "min": 16,
           "niederschlag": 9.0
         },
