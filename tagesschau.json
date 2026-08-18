@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "18.08.2026, 12:58 Uhr (UTC)",
+  "aktualisiert": "18.08.2026, 13:50 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Stiftung Denkmalschutz: Mehr als 1.000 Denkmale binnen zwei Jahren verloren",
+      "description": "Sie sind geschützt und werden dennoch abgerissen oder komplett umgebaut: Laut Stiftung Denkmalschutz sind so binnen zwei Jahren 1.077 Baudenkmale verloren gegangen. Mit ihrem Schwarzbuch macht die Organisation darauf aufmerksam.",
+      "pubDate": "2026-08-18T15:33:14+02:00",
+      "bild": ""
+    },
+    {
+      "title": "BVR-Prognose: Niedrigwasser bremst Konjunktur nur vorübergehend",
+      "description": "Die deutsche Wirtschaft wird in diesem Jahr stärker wachsen - davon geht zumindest der Verband der Genossenschaftsbanken aus. Seine Prognose hat er entsprechend angepasst.",
+      "pubDate": "2026-08-18T15:12:38+02:00",
+      "bild": ""
+    },
     {
       "title": "Löscharbeiten im deutsch-belgischen Grenzgebiet - Brandgeruch in Köln",
       "description": "Noch immer bekämpfen 170 Einsatzkräfte die Feuer im belgischen Naturschutzgebiet Hohes Venn. Die Bürger in der Grenzstadt Monschau sollen in ihren Häusern bleiben, der Brandgeruch ist bis Köln und Wuppertal wahrnehmbar.",
@@ -77,19 +89,7 @@
     {
       "title": "Unfall bei Kamen: A2 bis abends in beide Richtungen gesperrt",
       "description": "Ein Schwertransporter liegt auf der A2 bei Kamen quer. Er hatte einen Kran geladen, der jetzt die Gegenfahrbahn blockiert. In dem Bereich wurden deshalb bis auf Weiteres beide Richtungen voll gesperrt.",
-      "pubDate": "2026-08-18T11:45:00+02:00",
-      "bild": ""
-    },
-    {
-      "title": "SADC-Gipfel: Fremdenfeindlichkeit schadet Südafrikas Ansehen",
-      "description": "Seit Monaten gibt es in Südafrika fremdenfeindliche Proteste - auch während des Gipfels der regionalen Staatengemeinschaft SADC. Für das Ansehen bei den Nachbarn sind sie ein massives Problem. Von Stephan Ueberbach.",
-      "pubDate": "2026-08-18T08:13:05+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Zehn Menschen bei russischen Angriffen im Gebiet Charkiw getötet",
-      "description": "Im Osten der Ukraine sind bei russischen Angriffen mindestens zehn Menschen getötet worden. Die ukrainische Armee setzte Hunderte Drohnen gegen die Region Moskau ein. Details zu Schäden liegen nicht vor.",
-      "pubDate": "2026-08-18T10:30:20+02:00",
+      "pubDate": "2026-08-18T15:36:00+02:00",
       "bild": ""
     }
   ],
