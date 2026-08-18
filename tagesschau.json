@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "18.08.2026, 06:57 Uhr (UTC)",
+  "aktualisiert": "18.08.2026, 07:47 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Unfall bei Kamen: A2 bis abends in beide Richtungen gesperrt",
+      "description": "Ein Schwertransporter liegt auf der A2 bei Kamen quer. Er hatte einen Kran geladen, der jetzt die Gegenfahrbahn blockiert. In dem Bereich wurden deshalb bis auf Weiteres beide Richtungen voll gesperrt.",
+      "pubDate": "2026-08-18T06:56:00+02:00",
+      "bild": ""
+    },
     {
       "title": "SADC-Gipfel: Fremdenfeindlichkeit schadet Südafrikas Ansehen",
       "description": "Seit Monaten gibt es in Südafrika fremdenfeindliche Proteste - auch während des Gipfels des regionalen Staatengemeinschaft SADC. Für das Ansehen bei den Nachbarn sind sie ein massives Problem. Von Stephan Ueberbach.",
@@ -22,8 +28,8 @@
     },
     {
       "title": "US-Verhandler Kushner sieht \"sehr positive Gespräche\" mit Iran",
-      "description": "Der US-Unterhändler für den Nahen Osten, Kushner, hat sich zuversichtlich über die US-Gespräche mit Iran geäußert. Bei seinem Besuch in Israel betonte er auch, es seien Fortschritte im Gazastreifen möglich.",
-      "pubDate": "2026-08-18T05:27:51+02:00",
+      "description": "Konkretes gab es nicht - aber US-Unterhändler Kushner hat sich zuversichtlich über die US-Gespräche mit Iran geäußert. Bei seinem Israel-Besuch betonte der Trump-Schwiegersohn auch, es seien Fortschritte in Gaza möglich.",
+      "pubDate": "2026-08-18T09:10:44+02:00",
       "bild": ""
     },
     {
@@ -84,12 +90,6 @@
       "title": "\"Zombiefeuer\": Warum Brände im ausgetrockneten Moor schwer bekämpfbar sind",
       "description": "Im belgischen Hohen Venn lauert die Gefahr unterirdisch: Neben Bäumen und Gräsern brennen Teile des Toorfmoores. Dort können die Brände lange Zeit unbemerkt unter der Erde schwelen. Warum die sogenannten Zombiefeuer so gefährlich sind.",
       "pubDate": "2026-08-17T17:29:47+02:00",
-      "bild": ""
-    },
-    {
-      "title": "3D-Hirngewebemodell soll Alzheimer-Forschung verbessern",
-      "description": "Münchner Forschende haben ein 3D-Gewebemodell aus menschlichen Hirnzellen entwickelt. Es soll helfen, Alzheimer besser zu verstehen und neue Wirkstoffe zu testen. Von Jan Kerckhoff.",
-      "pubDate": "2026-08-17T16:57:53+02:00",
       "bild": ""
     }
   ],
