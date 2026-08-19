@@ -1,16 +1,16 @@
 {
-  "aktualisiert": "19.08.2026, 18:23 Uhr",
+  "aktualisiert": "19.08.2026, 19:01 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
         "temp": 15,
         "gefuehlt": 16,
-        "zustand": "Leichter Regen",
-        "emoji": "🌧️",
-        "wind": 6,
+        "zustand": "Leichter Nieselregen",
+        "emoji": "🌦️",
+        "wind": 1,
         "luftfeuchte": 97,
-        "niederschlag": 0.4
+        "niederschlag": 0.1
       },
       "tage": [
         {
@@ -19,35 +19,35 @@
           "emoji": "🌧️",
           "zustand": "Regen",
           "max": 18,
-          "min": 14,
-          "niederschlag": 10.5
+          "min": 15,
+          "niederschlag": 16.6
         },
         {
           "wochentag": "Donnerstag",
           "datum": "20.08.",
           "emoji": "🌦️",
-          "zustand": "Nieselregen",
-          "max": 18,
+          "zustand": "Starker Nieselregen",
+          "max": 19,
           "min": 14,
-          "niederschlag": 1.4
+          "niederschlag": 3.3
         },
         {
           "wochentag": "Freitag",
           "datum": "21.08.",
           "emoji": "🌧️",
-          "zustand": "Leichter Regen",
+          "zustand": "Regen",
           "max": 17,
           "min": 12,
-          "niederschlag": 4.3
+          "niederschlag": 4.0
         },
         {
           "wochentag": "Samstag",
           "datum": "22.08.",
           "emoji": "🌦️",
-          "zustand": "Leichte Schauer",
+          "zustand": "Nieselregen",
           "max": 16,
           "min": 11,
-          "niederschlag": 6.7
+          "niederschlag": 1.9
         },
         {
           "wochentag": "Sonntag",
@@ -68,8 +68,8 @@
         "zustand": "Leichter Regen",
         "emoji": "🌧️",
         "wind": 3,
-        "luftfeuchte": 93,
-        "niederschlag": 0.4
+        "luftfeuchte": 94,
+        "niederschlag": 0.0
       },
       "tage": [
         {
@@ -93,11 +93,11 @@
         {
           "wochentag": "Freitag",
           "datum": "21.08.",
-          "emoji": "🌦️",
-          "zustand": "Leichte Schauer",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
           "max": 21,
           "min": 13,
-          "niederschlag": 0.8
+          "niederschlag": 0.1
         },
         {
           "wochentag": "Samstag",
@@ -106,7 +106,7 @@
           "zustand": "Gewitter",
           "max": 17,
           "min": 13,
-          "niederschlag": 4.1
+          "niederschlag": 7.0
         },
         {
           "wochentag": "Sonntag",
@@ -114,7 +114,7 @@
           "emoji": "🌫️",
           "zustand": "Nebel",
           "max": 19,
-          "min": 10,
+          "min": 9,
           "niederschlag": 0.0
         }
       ]
@@ -124,11 +124,11 @@
       "aktuell": {
         "temp": 15,
         "gefuehlt": 16,
-        "zustand": "Regen",
-        "emoji": "🌧️",
-        "wind": 6,
-        "luftfeuchte": 96,
-        "niederschlag": 0.8
+        "zustand": "Leichter Nieselregen",
+        "emoji": "🌦️",
+        "wind": 4,
+        "luftfeuchte": 97,
+        "niederschlag": 0.1
       },
       "tage": [
         {
@@ -138,34 +138,34 @@
           "zustand": "Regen",
           "max": 19,
           "min": 15,
-          "niederschlag": 10.9
+          "niederschlag": 19.0
         },
         {
           "wochentag": "Donnerstag",
           "datum": "20.08.",
-          "emoji": "🌦️",
-          "zustand": "Starker Nieselregen",
-          "max": 18,
+          "emoji": "🌧️",
+          "zustand": "Leichter Regen",
+          "max": 19,
           "min": 14,
-          "niederschlag": 2.0
+          "niederschlag": 5.2
         },
         {
           "wochentag": "Freitag",
           "datum": "21.08.",
-          "emoji": "🌧️",
-          "zustand": "Leichter Regen",
-          "max": 18,
+          "emoji": "🌦️",
+          "zustand": "Leichter Nieselregen",
+          "max": 17,
           "min": 12,
-          "niederschlag": 2.7
+          "niederschlag": 0.5
         },
         {
           "wochentag": "Samstag",
           "datum": "22.08.",
           "emoji": "🌦️",
-          "zustand": "Starker Nieselregen",
+          "zustand": "Schauer",
           "max": 16,
           "min": 11,
-          "niederschlag": 3.3
+          "niederschlag": 4.4
         },
         {
           "wochentag": "Sonntag",
@@ -183,11 +183,11 @@
       "aktuell": {
         "temp": 16,
         "gefuehlt": 17,
-        "zustand": "Leichter Nieselregen",
-        "emoji": "🌦️",
+        "zustand": "Bedeckt",
+        "emoji": "☁️",
         "wind": 5,
-        "luftfeuchte": 87,
-        "niederschlag": 0.1
+        "luftfeuchte": 90,
+        "niederschlag": 0.0
       },
       "tage": [
         {
@@ -197,40 +197,40 @@
           "zustand": "Regen",
           "max": 19,
           "min": 16,
-          "niederschlag": 14.4
+          "niederschlag": 18.0
         },
         {
           "wochentag": "Donnerstag",
           "datum": "20.08.",
-          "emoji": "🌧️",
-          "zustand": "Leichter Regen",
+          "emoji": "🌦️",
+          "zustand": "Nieselregen",
           "max": 21,
           "min": 16,
-          "niederschlag": 2.4
+          "niederschlag": 0.6
         },
         {
           "wochentag": "Freitag",
           "datum": "21.08.",
           "emoji": "🌧️",
-          "zustand": "Starker Regen",
-          "max": 20,
+          "zustand": "Leichter Regen",
+          "max": 19,
           "min": 15,
-          "niederschlag": 15.0
+          "niederschlag": 3.1
         },
         {
           "wochentag": "Samstag",
           "datum": "22.08.",
           "emoji": "🌦️",
-          "zustand": "Nieselregen",
+          "zustand": "Leichter Nieselregen",
           "max": 19,
           "min": 13,
-          "niederschlag": 2.0
+          "niederschlag": 0.7
         },
         {
           "wochentag": "Sonntag",
           "datum": "23.08.",
-          "emoji": "☁️",
-          "zustand": "Bedeckt",
+          "emoji": "⛅",
+          "zustand": "Teils bewölkt",
           "max": 19,
           "min": 11,
           "niederschlag": 0.0
