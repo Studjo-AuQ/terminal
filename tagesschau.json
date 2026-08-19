@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "19.08.2026, 12:58 Uhr (UTC)",
+  "aktualisiert": "19.08.2026, 13:52 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Wie Kürzungen die humanitäre Hilfe verändern",
+      "description": "Die humanitäre Hilfe steht weltweit immer stärker unter Druck. In vielen Ländern werden die Mittel gekürzt - auch durch die Bundesregierung. Was bedeutet das für Helfer und Menschen in Not? Von N. Markwald und C. Buckenmaier.",
+      "pubDate": "2026-08-19T15:05:26+02:00",
+      "bild": ""
+    },
     {
       "title": "Nach Waldbrand in Südfrankreich: Wie kann der Wald resilienter werden?",
       "description": "Der verheerende Waldbrand bei Bordeaux hat 420 Quadratkilometer zerstört - und noch immer brennen Glutnester. Experten sehen die Pinienmonokulturen als einen der größten Risikofaktoren. Wie kann der Wald resilienter gemacht werden? Von C. Dylla.",
@@ -70,26 +76,20 @@
     },
     {
       "title": "Prozess gegen İmamoğlu: Wenn der Angeklagte nur per Fernglas zu sehen ist",
-      "description": "Ein überdimensionierter Gerichtssaal, ein fragwürdiges Verfahren: Seit März läuft der Prozess gegen Istanbuls abgesetzten Oberbürgermeister İmamoğlu. BIslang durfte er sich nicht verteidigen. Katharina Willinger hat einen Tag im Gericht verfolgt.",
+      "description": "Ein überdimensionierter Gerichtssaal, ein fragwürdiges Verfahren: Seit März läuft der Prozess gegen Istanbuls abgesetzten Oberbürgermeister İmamoğlu. Bislang durfte er sich nicht verteidigen. Katharina Willinger hat einen Tag im Gericht verfolgt.",
       "pubDate": "2026-08-19T11:26:04+02:00",
       "bild": ""
     },
     {
       "title": "Weiterer Verdächtiger wegen Nord-Stream-Anschlägen festgenommen",
       "description": "Ermittler in Kroatien haben einen zweiten Verdächtigen im Fall der Sprengung der Nord-Stream-Pipelines festgenommen. Er soll einer der Taucher gewesen sein, die die Sprengsätze an den Pipelines angebracht haben.",
-      "pubDate": "2026-08-19T11:15:44+02:00",
+      "pubDate": "2026-08-19T14:58:09+02:00",
       "bild": ""
     },
     {
       "title": "Warum Italien und Deutschland wieder über Migranten streiten",
       "description": "Seit Juni gilt das neue EU-Asylsystem GEAS. Nun will Deutschland wieder Migranten nach Italien überstellen, die dort in die EU eingereist sind. Italien aber lehnt das ab. Warum die Fronten so verhärtet sind, erklärt Lisa Weiß.",
       "pubDate": "2026-08-19T10:28:54+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Hilfsorganisationen: Angriffe auf Helfer erreichen Höchstwert",
-      "description": "Angriffe auf Helfer humanitärer Organisationen erreichten laut UN 2025 einen Höchststand. 907 Helfer seien im vergangenen Jahr getötet, verletzt oder entführt worden. Besonders gefährlich war es im Gazastreifen.",
-      "pubDate": "2026-08-19T10:17:27+02:00",
       "bild": ""
     }
   ],
