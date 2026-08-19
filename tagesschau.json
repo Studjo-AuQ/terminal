@@ -1,7 +1,25 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "19.08.2026, 06:59 Uhr (UTC)",
+  "aktualisiert": "19.08.2026, 07:48 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Marktbericht: Anleihen machen Aktien Konkurrenz",
+      "description": "Der DAX hält sich zur Wochenmitte stabil. Positive Konjunkturdaten tragen dazu bei. Doch die Sorgen der Investoren gelten den Anleihemärkten. Sie werden zur Konkurrenz für Aktien.",
+      "pubDate": "2026-08-19T09:40:43+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Zollstreit in Nordamerika: USA stoppen Zölle gegen Kanada im letzten Moment",
+      "description": "Weniger als zwei Stunden vor Inkrafttreten neuer US-Zölle haben sich die USA und Kanada auf eine dreitägige Verschiebung geeinigt. Beide Seiten wollen die Frist für weitere Verhandlungen nutzen - doch der Streit geht weiter.",
+      "pubDate": "2026-08-19T09:10:04+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Bundesanleihen: Hohe Zinsen treffen Staat, Hauskäufer und Anleger",
+      "description": "Die Renditen langlaufender Bundesanleihen sind deutlich gestiegen. Das macht Anleihen für Anleger wieder attraktiver - doch für den Staat, Hauskäufer und Unternehmen wird geliehenes Geld immer teurer. Von Angela Göpfert.",
+      "pubDate": "2026-08-19T09:07:52+02:00",
+      "bild": ""
+    },
     {
       "title": "Roboterbauer Unitree startet erfolgreich an der Börse",
       "description": "Der chinesische Roboterbauer Unitree hat ein erfolgreiches Börsendebüt gefeiert. Die Aktie lag mehr als 600 Prozent über ihrem Ausgabepreis. Noch übersteigt die Milliardenbewertung die Geschäftszahlen um ein Vielfaches.",
@@ -21,12 +39,6 @@
       "bild": ""
     },
     {
-      "title": "Marktbericht: Noch hält die 26.000er-Marke im DAX",
-      "description": "Die Sorgen von Investoren werden größer. Das liegt vor allem am US-Anleihenmarkt. Dort steigen die Renditen immer weiter. Das belastet vor allem Tech-Aktien.",
-      "pubDate": "2026-08-19T07:31:17+02:00",
-      "bild": ""
-    },
-    {
       "title": "Gedenken an Zhu und Jiang: Erinnerung an ein etwas freieres China",
       "description": "China gedenkt seiner früheren Führer Zhu und Jiang. Die Staatsführung würdigt ihre Verdienste - dabei hatte sie einst gefürchtet, durch die Reformen ihrer Ära die Kontrolle zu verlieren. Von Jörg Endriss.",
       "pubDate": "2026-08-19T07:06:12+02:00",
@@ -34,7 +46,7 @@
     },
     {
       "title": "Waldbrand in Belgien weiter nicht unter Kontrolle - Hoffnung auf Regen",
-      "description": "Einsatzkräfte versuchen weiter, den Waldbrand im Hohen Venn in Belgien unter Kontrolle zu bringen. Es gibt einen Lichtblick: mehr Regen. Noch könnten die aus Monschau in NRW evakuierten Bewohner aber nicht zurück.",
+      "description": "Einsatzkräfte versuchen weiter, den Waldbrand im Hohen Venn in Belgien unter Kontrolle zu bringen. Es gibt einen Lichtblick: mehr Regen. Noch können die aus Monschau in NRW evakuierten Bewohner aber nicht zurück.",
       "pubDate": "2026-08-19T06:40:29+02:00",
       "bild": ""
     },
@@ -78,18 +90,6 @@
       "title": "Grenzkontrollen sollen bis mindestens März 2027 verlängert werden",
       "description": "Bundesinnenminister Dobrindt will die Kontrollen an den deutschen Außengrenzen erneut verlängern. Sollte die EU-Kommission nicht widersprechen, gilt die Regelung bis Mitte März kommenden Jahres.",
       "pubDate": "2026-08-18T20:50:31+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wagenknecht und das BSW: Mit Schlagzeilen in den Überlebenskampf",
-      "description": "Vor der heißen Phase des Wahlkampfs in Sachsen-Anhalt versucht vor allem Gründerin Sahra Wagenknecht, mit der AfD ins Gespräch zu kommen. Was geht da vor sich? Von Frank Aischmann.",
-      "pubDate": "2026-08-18T20:00:13+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marokkos Jugend sieht zu Hause keine Perspektive",
-      "description": "Marokko erlebt einen Wirtschaftsboom, aber der kommt bei vielen nicht an. Vor allem junge Menschen wollen auswandern - was der Andrang auf Ceuta beispielhaft gezeigt hat. Für den Frust gibt es nicht nur wirtschaftliche Gründe. Von S. Ehlert.",
-      "pubDate": "2026-08-18T19:13:05+02:00",
       "bild": ""
     }
   ],
