@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "19.08.2026, 18:44 Uhr (UTC)",
+  "aktualisiert": "19.08.2026, 19:31 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Tote bei israelischem Luftangriff auf Polizeiwache in Gaza",
+      "description": "Bei einem israelischen Luftangriff auf eine Polizeiwache in Gaza sind nach palästinensischen Angaben neun Menschen getötet worden. Israels Armee erklärte, der Angriff habe einem Hamas-Kommandeur gegolten.",
+      "pubDate": "2026-08-19T20:48:36+02:00",
+      "bild": ""
+    },
     {
       "title": "Nach Hackerangriff in Berlin: Problemlösung könnte noch Tage dauern",
       "description": "Auch Tage nach dem Hackerangriff auf das Berliner Landesnetz ist noch immer nicht absehbar, wann die betroffenen Behörden wieder voll funktionsfähig sind. Nach ersten Erkenntnissen flossen zumindest keine sensiblen Daten ab.",
@@ -84,12 +90,6 @@
       "title": "Empörung und Kritik nach US-Entscheidung zu Strafgerichtshof",
       "description": "Die US-Regierung hat Sanktionen gegen die Präsidentin des Internationalen Strafgerichtshofs angekündigt - und damit Empörung ausgelöst. Bundesjustizministerin Hubig spricht von einem \"Frontalangriff auf das Völkerrecht\".",
       "pubDate": "2026-08-19T14:27:31+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Waldbrände in Europa: Feuer in Belgien ist \"eingekreist\"",
-      "description": "Das Feuer in Belgien ist noch nicht unter Kontrolle - aber eingekreist. Die evakuierten Menschen aus dem benachbarten Monschau dürfen wieder in ihre Häuser zurückkehren. Und es gibt noch einen Lichtblick.",
-      "pubDate": "2026-08-19T16:30:09+02:00",
       "bild": ""
     }
   ],
