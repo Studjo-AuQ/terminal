@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "19.08.2026, 17:32 Uhr (UTC)",
+  "aktualisiert": "19.08.2026, 18:44 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Nach Hackerangriff in Berlin: Problemlösung könnte noch Tage dauern",
+      "description": "Auch Tage nach dem Hackerangriff auf das Berliner Landesnetz ist noch immer nicht absehbar, wann die betroffenen Behörden wieder voll funktionsfähig sind. Nach ersten Erkenntnissen flossen zumindest keine sensiblen Daten ab.",
+      "pubDate": "2026-08-19T20:29:18+02:00",
+      "bild": ""
+    },
     {
       "title": "Fast jeder vierte Erwachsene schläft zu wenig",
       "description": "Weniger als sieben Stunden Schlaf pro Nacht? Experten zufolge ist das zu kurz - und ungesund. In Deutschland trifft das aber auf viele Menschen zu. Vor allem eine Gruppe ist besonders betroffen, wie eine Untersuchung zeigt.",
@@ -84,12 +90,6 @@
       "title": "Waldbrände in Europa: Feuer in Belgien ist \"eingekreist\"",
       "description": "Das Feuer in Belgien ist noch nicht unter Kontrolle - aber eingekreist. Die evakuierten Menschen aus dem benachbarten Monschau dürfen wieder in ihre Häuser zurückkehren. Und es gibt noch einen Lichtblick.",
       "pubDate": "2026-08-19T16:30:09+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Autofahrer könnten beim Wechsel der Kfz-Versicherung besonders viel sparen",
-      "description": "Erstmals seit Jahren deuten sich keine großen Preissprünge bei Kfz-Versicherungen an. Zuvor waren die Prämien vor allem wegen steigender Reparaturkosten deutlich gestiegen. Nun sind Experten zufolge günstige Angebote für Wechsler möglich.",
-      "pubDate": "2026-08-19T14:19:18+02:00",
       "bild": ""
     }
   ],
