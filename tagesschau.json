@@ -1,11 +1,23 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "20.08.2026, 05:05 Uhr (UTC)",
+  "aktualisiert": "20.08.2026, 05:58 Uhr (UTC)",
   "meldungen": [
     {
+      "title": "Marktbericht: Steigende Zinserwartungen machen Anlegern Sorgen",
+      "description": "Noch dürfte sich der DAX über der Marke von 26.000 Punkten halten. Aber die Krisensignale vom Anleihemarkt sorgen für schlechte Stimmung und in den USA steigen die Staatsschulden fast ungebremst.",
+      "pubDate": "2026-08-20T07:47:37+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Prinz Harry und Meghan kehren wohl nach Großbritannien zurück",
+      "description": "Anfang 2020 entschieden sich der britische Prinz Harry und seine Frau Meghan, ihre königlichen Pflichten abzugeben und ins Ausland zu ziehen. Nun steht Medienberichten zufolge die Rückkehr des Paares in ihre Heimat kurz bevor.",
+      "pubDate": "2026-08-20T07:27:15+02:00",
+      "bild": ""
+    },
+    {
       "title": "Massive russische Angriffe auf die ukrainische Hauptstadt Kiew",
-      "description": "Russland hat die ukrainische Hauptstadt Kiew erneut massiv angegriffen. Mindestens drei Menschen wurden getötet, mehrere verletzt. Polen reagierte mit einer militärischen Luftoperation zum Schutz seines Luftraums.",
-      "pubDate": "2026-08-20T05:35:37+02:00",
+      "description": "Russland hat die ukrainische Hauptstadt Kiew erneut massiv angegriffen. Mindestens sechs Menschen wurden getötet, mehr als 30 verletzt. Polen reagierte mit einer militärischen Luftoperation zum Schutz seines Luftraums.",
+      "pubDate": "2026-08-20T07:31:24+02:00",
       "bild": ""
     },
     {
@@ -78,18 +90,6 @@
       "title": "Wie KI in der öffentlichen Verwaltung helfen kann",
       "description": "Ob KI-Avatare, Chat- oder Voicebots: Viele Städte- und Gemeindeverwaltungen nutzen KI. Auf einer internationalen Konferenz in Bremen diskutieren Fachleute derzeit über die neuesten Entwicklungen. Von M. Lang und L. Boucheligua.",
       "pubDate": "2026-08-19T16:37:16+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Obdachlosigkeit in Großbritannien: Burnham will Obdachlose von Straße holen",
-      "description": "In Großbritannien schlafen Tausende Menschen auf der Straße. Der neue Premier Burnham will das ändern - und kündigte ein Millionenprogramm an. Die Opposition spricht von Planlosigkeit.",
-      "pubDate": "2026-08-19T16:21:24+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wie Kürzungen die humanitäre Hilfe verändern",
-      "description": "Die humanitäre Hilfe steht weltweit immer stärker unter Druck. In vielen Ländern werden die Mittel gekürzt - auch durch die Bundesregierung. Was bedeutet das für Helfer und Menschen in Not? Von N. Markwald und C. Buckenmaier.",
-      "pubDate": "2026-08-19T15:05:26+02:00",
       "bild": ""
     }
   ],
