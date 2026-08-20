@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "20.08.2026, 17:02 Uhr (UTC)",
+  "aktualisiert": "20.08.2026, 17:57 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Spanien richtet Unterkünfte für Migranten in Exklave Ceuta ein",
+      "description": "Im Juli gelangten Zehntausende Migranten von Marokko aus in die spanische Exklave Ceuta - die meisten kehrten danach zurück. Für die dort verbliebenen Menschen richtet Spaniens Regierung jetzt Unterkünfte ein.",
+      "pubDate": "2026-08-20T19:28:42+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX-Schwäche hält an",
+      "description": "Der DAX ist heute weiter auf Talfahrt gegangen. Am Vormittag rutschte er unter die psychologisch wichtige Marke von 26.000 Punkten. Der Leitindex hat sich damit weiter von seinem Rekordhoch entfernt.",
+      "pubDate": "2026-08-20T19:04:25+02:00",
+      "bild": ""
+    },
     {
       "title": "West-Nil-Virus: 157 Fälle in Griechenland gemeldet",
       "description": "Dutzende Menschen haben sich in Südeuropa in den vergangenen Wochen mit dem West-Nil-Virus infiziert. In Griechenland hat sich die Zahl seit Ende Juli vervierfacht, seit Jahresbeginn starben dort 13 Menschen nach einer Infektion.",
@@ -51,7 +63,7 @@
       "bild": ""
     },
     {
-      "title": "Kinderärzte: Neue U-Untersuchung für Neun- bis Zehnjährige kommt",
+      "title": "Kinderärzte: Neue Untersuchung für Neun- bis Zehnjährige kommt",
       "description": "Bei der Geburt eines Kindes erhalten Eltern ein gelbes Heft, das alle Vorsorgeuntersuchungen auflistet. Jetzt kommt noch die U10 hinzu, ein Check-up für Neun- bis Zehnjährige, der eine Lücke schließen soll. Von A. Braun und P. Kiss.",
       "pubDate": "2026-08-20T16:45:23+02:00",
       "bild": ""
@@ -78,18 +90,6 @@
       "title": "Forschungserfolg treibt Aktien von Moderna & Co.",
       "description": "Die beiden US-Pharma-Unternehmen Moderna und Merck haben möglicherweise einen Durchbruch bei einem potenziellen Impfstoff gegen schwarzen Hautkrebs erreicht. Das kommt bei Anlegern und Analysten gut an.",
       "pubDate": "2026-08-20T14:34:28+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Medizinischer Dienst: Mehr Todesfälle durch Behandlungsfehler",
-      "description": "In Deutschland wurden im vergangenen Jahr mehr als 3.000 medizinische Behandlungsfehler bestätigt. 97 von ihnen hatten tödliche Folgen, zeigt eine aktuelle Statistik. Doch die Dunkelziffer liegt vermutlich deutlich höher.",
-      "pubDate": "2026-08-20T14:22:24+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Nord-Stream-Pipelines: Ein Anschlag mit politischer Sprengkraft?",
-      "description": "Zum zweiten Mal lässt die Bundesanwaltschaft einen mutmaßlich an den Nord-Stream-Anschlägen beteiligten Taucher festnehmen. Der Fall hat auch eine politische Dimension - wie sich in aktuellen Wahlkämpfen zeigt. Von Christina Nagel.",
-      "pubDate": "2026-08-20T14:14:11+02:00",
       "bild": ""
     }
   ],
