@@ -1,10 +1,28 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "20.08.2026, 07:00 Uhr (UTC)",
+  "aktualisiert": "20.08.2026, 08:06 Uhr (UTC)",
   "meldungen": [
     {
+      "title": "\"Beispielloser Wirtschaftskrieg\" - was steckt hinter Trumps Drohung?",
+      "description": "Weder militärisch noch diplomatisch geht es für Trump in Iran voran. Nun droht er Iran und allen Staaten, die das Regime unterstützen, mit einem \"beispiellosen Wirtschaftskrieg\". Wie ist das zu deuten?",
+      "pubDate": "2026-08-20T09:25:53+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Krieg in Nahost: Immer mehr Israelis verlassen das Land",
+      "description": "Die Zahl der Menschen, die Israel verlassen, übersteigt mittlerweile die Zahl derjenigen, die zuziehen. Ein Grund: der wachsende Einfluss ultraorthodoxer Parteien. Ökonomisch könnte der Trend zum Auswandern heikel werden. Von Jörg Poppendieck.",
+      "pubDate": "2026-08-20T09:22:10+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Tote und Schäden nach heftigen Unwettern in Teilen Deutschland",
+      "description": "Weggerissene Wände, abgedeckte Dächer, entwurzelte Bäume - heftige Unwetter haben schwere Schäden in mehreren Bundesländern angerichtet. In Brandenburg und Hessen tobten Tornados, in Rheinland-Pfalz kam eine Frau ums Leben.",
+      "pubDate": "2026-08-20T09:21:07+02:00",
+      "bild": ""
+    },
+    {
       "title": "Evergrande-Gründer Xu in China zu lebenslanger Haft verurteilt",
-      "description": "In China ist das Urteil gegen den Gründer des insolventen Immobilienkonzerns Evergrande gefallen: Xu Jianyin muss lebenslang in Haft. Ihm und weiteren ehemaligen Mitarbeitern wurden unter anderem Betrug und Korruption vorgeworfen.",
+      "description": "In China ist das Urteil gegen den Gründer des insolventen Immobilienkonzerns Evergrande gefallen: Xu Jiayin muss lebenslang in Haft. Ihm und weiteren ehemaligen Mitarbeitern wurden unter anderem Betrug und Korruption vorgeworfen.",
       "pubDate": "2026-08-20T08:57:14+02:00",
       "bild": ""
     },
@@ -28,8 +46,8 @@
     },
     {
       "title": "Massive russische Angriffe auf die ukrainische Hauptstadt Kiew",
-      "description": "Russland hat die ukrainische Hauptstadt Kiew erneut massiv angegriffen. Mindestens sechs Menschen wurden getötet, mehr als 30 verletzt. Polen reagierte mit einer militärischen Luftoperation zum Schutz seines Luftraums.",
-      "pubDate": "2026-08-20T07:31:24+02:00",
+      "description": "Russland hat die ukrainische Hauptstadt Kiew erneut massiv angegriffen. Mindestens zwölf Menschen wurden getötet, mehr als 30 verletzt. Polen reagierte mit einer militärischen Luftoperation zum Schutz seines Luftraums.",
+      "pubDate": "2026-08-20T09:03:37+02:00",
       "bild": ""
     },
     {
@@ -53,7 +71,7 @@
     {
       "title": "Nach Hackerangriff in Berlin: Problemlösung könnte noch Tage dauern",
       "description": "Auch Tage nach dem Hackerangriff auf das Berliner Landesnetz ist noch immer nicht absehbar, wann die betroffenen Behörden wieder voll funktionsfähig sind. Nach ersten Erkenntnissen flossen zumindest keine sensiblen Daten ab.",
-      "pubDate": "2026-08-20T08:56:39+02:00",
+      "pubDate": "2026-08-20T09:56:22+02:00",
       "bild": ""
     },
     {
@@ -72,24 +90,6 @@
       "title": "Arbeiterwohlfahrt will Bündelung von Sozialleistungen",
       "description": "In der Diskussion um eine Reform des Sozialstaats hat die Arbeiterwohlfahrt eigene Vorschläge präsentiert. Unter anderem soll mit einem \"Erwerbsbooster\" die Armut verringert werden. Von Dagmar Pepping.",
       "pubDate": "2026-08-19T18:40:30+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Erkrankung des Bayern-Profis: Was steckt hinter Musialas Zusammenbrüchen?",
-      "description": "Bayern-Profi Musiala bricht erneut zusammen, ist für mehrere Sekunden außer Gefecht gesetzt. Damit wird öffentlich über eine bisher weitgehend unbekannte Erkrankung gesprochen: Absencen. Was steckt dahinter? Von F. Wittig.",
-      "pubDate": "2026-08-19T17:58:21+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Sieben weitere Gesundheitszonen in der DR Kongo von Ebola betroffen",
-      "description": "In der DR Kongo melden sieben weitere Gesundheitszonen erste Ebola-Infektionen. Die Zahl der Infizierten und Toten im Land steigt weiter an. Viele Menschen können nicht behandelt werden.",
-      "pubDate": "2026-08-19T17:16:24+02:00",
-      "bild": ""
-    },
-    {
-      "title": "UV-Strahlung hat in Europa deutlich zugenommen",
-      "description": "Hautkrebs ist die häufigste Krebserkrankung in Deutschland - Hauptursache ist die UV-Strahlung der Sonne. Und die hat deutschland- und europaweit in den vergangenen Jahren zugenommen, wie eine neue Studie zeigt. Von Florian Zinner.",
-      "pubDate": "2026-08-19T17:04:19+02:00",
       "bild": ""
     }
   ],
