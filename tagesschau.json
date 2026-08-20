@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "20.08.2026, 05:58 Uhr (UTC)",
+  "aktualisiert": "20.08.2026, 07:00 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Evergrande-Gründer Xu in China zu lebenslanger Haft verurteilt",
+      "description": "In China ist das Urteil gegen den Gründer des insolventen Immobilienkonzerns Evergrande gefallen: Xu Jianyin muss lebenslang in Haft. Ihm und weiteren ehemaligen Mitarbeitern wurden unter anderem Betrug und Korruption vorgeworfen.",
+      "pubDate": "2026-08-20T08:57:14+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Terrorismusverdacht: Bundesanwaltschaft ermittelt im Fall der \"Com\"-Gruppen",
+      "description": "Sicherheitsbehörden warnen vor Online-Netzwerken, in denen junge Täter Chatpartner zu Straftaten anstiften. Nach SWR-Informationen ermittelt nun in einem Fall die Bundesanwaltschaft: unter anderem wegen Terrorismus-Vorwürfen. Von E. Beres und P. Reichert.",
+      "pubDate": "2026-08-20T08:45:33+02:00",
+      "bild": ""
+    },
     {
       "title": "Marktbericht: Steigende Zinserwartungen machen Anlegern Sorgen",
       "description": "Noch dürfte sich der DAX über der Marke von 26.000 Punkten halten. Aber die Krisensignale vom Anleihemarkt sorgen für schlechte Stimmung und in den USA steigen die Staatsschulden fast ungebremst.",
@@ -22,7 +34,7 @@
     },
     {
       "title": "Fedorow fordert Wahlen in der Ukraine - während des Krieges",
-      "description": "Wahlen mitten im Krieg? In der Ukraine galt das bislang als Tabu. Ex-Verteidigungsminister Fedorow hat diese Forderung nun offen in den Raum gestellt und damit eine Debatte angestoßen. Kritiker sehen dahinter ein Kalkül. Von Florian Kellermann.",
+      "description": "Wahlen mitten im Krieg? In der Ukraine galt das bislang als tabu. Ex-Verteidigungsminister Fedorow hat diese Forderung nun offen in den Raum gestellt und damit eine Debatte angestoßen. Kritiker sehen dahinter ein Kalkül. Von Florian Kellermann.",
       "pubDate": "2026-08-20T05:05:04+02:00",
       "bild": ""
     },
@@ -41,7 +53,7 @@
     {
       "title": "Nach Hackerangriff in Berlin: Problemlösung könnte noch Tage dauern",
       "description": "Auch Tage nach dem Hackerangriff auf das Berliner Landesnetz ist noch immer nicht absehbar, wann die betroffenen Behörden wieder voll funktionsfähig sind. Nach ersten Erkenntnissen flossen zumindest keine sensiblen Daten ab.",
-      "pubDate": "2026-08-19T20:29:18+02:00",
+      "pubDate": "2026-08-20T08:56:39+02:00",
       "bild": ""
     },
     {
@@ -78,18 +90,6 @@
       "title": "UV-Strahlung hat in Europa deutlich zugenommen",
       "description": "Hautkrebs ist die häufigste Krebserkrankung in Deutschland - Hauptursache ist die UV-Strahlung der Sonne. Und die hat deutschland- und europaweit in den vergangenen Jahren zugenommen, wie eine neue Studie zeigt. Von Florian Zinner.",
       "pubDate": "2026-08-19T17:04:19+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Selenskyj entlässt Vize-Präsidialamtschefin nach Razzia in Kiew",
-      "description": "Erneut gehen die ukrainischen Antikorruptionsbehörden gegen Abgeordnete und das Umfeld von Präsident Selenskyj vor. Zugleich wächst der politische Druck: Ex-Verteidigungsminister Fedorow fordert Wahlen - auch während des Krieges.",
-      "pubDate": "2026-08-19T16:39:03+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wie KI in der öffentlichen Verwaltung helfen kann",
-      "description": "Ob KI-Avatare, Chat- oder Voicebots: Viele Städte- und Gemeindeverwaltungen nutzen KI. Auf einer internationalen Konferenz in Bremen diskutieren Fachleute derzeit über die neuesten Entwicklungen. Von M. Lang und L. Boucheligua.",
-      "pubDate": "2026-08-19T16:37:16+02:00",
       "bild": ""
     }
   ],
