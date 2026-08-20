@@ -1,7 +1,25 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "20.08.2026, 03:03 Uhr (UTC)",
+  "aktualisiert": "20.08.2026, 04:09 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Massive russische Angriffe auf die ukrainische Hauptstadt Kiew",
+      "description": "Russland hat die ukrainische Hauptstadt Kiew erneut massiv angegriffen. Mindestens drei Menschen wurden getötet, mehrere verletzt. Polen reagierte mit einer militärischen Luftoperation zum Schutz seines Luftraums.",
+      "pubDate": "2026-08-20T05:35:37+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Fedorow fordert Wahlen in der Ukraine - während des Krieges",
+      "description": "Wahlen mitten im Krieg? In der Ukraine galt das bislang als Tabu. Ex-Verteidigungsminister Fedorow hat diese Forderung nun offen in den Raum gestellt und damit eine Debatte angestoßen. Kritiker sehen dahinter ein Kalkül. Von Florian Kellermann.",
+      "pubDate": "2026-08-20T05:05:04+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Ernährungssicherheit: Wie sinnvoll sind die Maßnahmen der Politik?",
+      "description": "Braucht es Agrarsubventionen, um die Lebensmittelversorgung in Europa zu sichern? Eine neue Studie des NABU stellt ein zentrales Argument von Bundeslandwirtschaftsminister Rainer infrage. Von Eva Huber.",
+      "pubDate": "2026-08-20T05:04:50+02:00",
+      "bild": ""
+    },
     {
       "title": "Tote bei israelischem Luftangriff auf Polizeiwache in Gaza",
       "description": "Bei einem israelischen Luftangriff auf eine Polizeiwache in Gaza sind nach palästinensischen Angaben neun Menschen getötet worden. Israels Armee erklärte, der Angriff habe einem Hamas-Kommandeur gegolten.",
@@ -72,24 +90,6 @@
       "title": "Wie Kürzungen die humanitäre Hilfe verändern",
       "description": "Die humanitäre Hilfe steht weltweit immer stärker unter Druck. In vielen Ländern werden die Mittel gekürzt - auch durch die Bundesregierung. Was bedeutet das für Helfer und Menschen in Not? Von N. Markwald und C. Buckenmaier.",
       "pubDate": "2026-08-19T15:05:26+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Nach Waldbrand in Südfrankreich: Wie kann der Wald resilienter werden?",
-      "description": "Der verheerende Waldbrand bei Bordeaux hat 420 Quadratkilometer zerstört - und noch immer brennen Glutnester. Experten sehen die Pinienmonokulturen als einen der größten Risikofaktoren. Wie kann der Wald resilienter gemacht werden? Von C. Dylla.",
-      "pubDate": "2026-08-19T14:54:13+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Die Spritpreise sind wegen Niedrigwassers erneut gestiegen",
-      "description": "Tanken ist wieder teurer: Die Preise für Benzin und Diesel sind an deutschen Tankstellen zuletzt um mehrere Cent gestiegen. Das liegt auch an historisch niedrigen Pegelständen des Rhein.",
-      "pubDate": "2026-08-19T14:30:40+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Empörung und Kritik nach US-Entscheidung zu Strafgerichtshof",
-      "description": "Die US-Regierung hat Sanktionen gegen die Präsidentin des Internationalen Strafgerichtshofs angekündigt - und damit Empörung ausgelöst. Bundesjustizministerin Hubig spricht von einem \"Frontalangriff auf das Völkerrecht\".",
-      "pubDate": "2026-08-19T14:27:31+02:00",
       "bild": ""
     }
   ],
