@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "20.08.2026, 13:01 Uhr (UTC)",
+  "aktualisiert": "20.08.2026, 14:09 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Urlaub in Dänemark boomt - vor allem bei Deutschen",
+      "description": "Dänemark ist als Reiseziel beliebt wie noch nie. Zwischen Januar und Juni kamen mehr Übernachtungsgäste als jemals zuvor in das Land. Die Urlauber kamen zu einem großen Teil aus Deutschland - doch nicht nur.",
+      "pubDate": "2026-08-20T16:03:48+02:00",
+      "bild": ""
+    },
     {
       "title": "Plagiatsvorwürfe: Berliner Senatorin lässt ihre Doktorarbeit prüfen",
       "description": "Die Doktorarbeit von Berlins Justizsenatorin Badenberg soll etwa 80 Plagiate beinhalten. Dem widerspricht die CDU-Politikerin. Sie bittet nun die Universität zu Köln um eine Prüfung ihrer Dissertation.",
@@ -84,12 +90,6 @@
       "title": "Hoffnung auf Impfstoff gegen schwarzen Hautkrebs",
       "description": "Mit der Entwicklung eines mRNA-basierten Impfstoffes könnte den US-Konzernen Merck und Moderna ein Erfolg in der Behandlung von schwarzem Hautkrebs gelungen sein. Finale Ergebnisse einer klinischen Studie machen Hoffnung.",
       "pubDate": "2026-08-20T10:10:35+02:00",
-      "bild": ""
-    },
-    {
-      "title": "\"Beispielloser Wirtschaftskrieg\" - was steckt hinter Trumps Drohung?",
-      "description": "Weder militärisch noch diplomatisch geht es für Trump in Iran voran. Nun droht er Iran und allen Staaten, die das Regime unterstützen, mit einem \"beispiellosen Wirtschaftskrieg\". Wie ist das zu deuten?",
-      "pubDate": "2026-08-20T11:26:25+02:00",
       "bild": ""
     }
   ],
