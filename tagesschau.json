@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "21.08.2026, 08:07 Uhr (UTC)",
+  "aktualisiert": "21.08.2026, 09:09 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Marktbericht: Anleger ringen um die Marke von 26.000 Punkten",
+      "description": "Wird der DAX zum fünften Mal in Folge mit Verlusten aus dem Handel gehen? Nach einem deutlichen Kursrutsch wagen sich einige Anleger zum Wochenschluss wieder zurück in den Markt. Aber die Lage bleibt fragil.",
+      "pubDate": "2026-08-21T10:36:43+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Schneider besucht die Ukraine: Umweltschutz in Kriegszeiten",
+      "description": "Der Krieg gegen die Ukraine bedroht auch die Natur: Die Tschernobyl-Schutzhülle ist beschädigt, große Teile der ukrainischen Wälder sind besetzt. Umweltminister Schneider war vor Ort - und will helfen. Von Dominic Hebestreit.",
+      "pubDate": "2026-08-21T10:12:16+02:00",
+      "bild": ""
+    },
     {
       "title": "Russland unter Verdacht: Geheimes Waffendepot bei Berlin entdeckt",
       "description": "Sicherheitsbehörden haben nach Informationen von WDR, NDR und SZ am Stadtrand von Berlin ein Versteck mit zwei scharfen Waffen entdeckt. Nach Einschätzung der Behörden soll es sich um ein Depot russischer Agenten für mögliche Anschläge handeln.",
@@ -10,7 +22,7 @@
     },
     {
       "title": "Studie: Aufmerksamkeit kann Juckreiz lindern",
-      "description": "Juckreiz ist unangenehm und lästig, viele versuchen daher etwa nach einem Mückenstich, sich abzulenken. Was aber passiert, wenn man das Gegenteil macht? Eine neue Studie liefert Antworten. Von Julia Nestlen.",
+      "description": "Juckreiz ist unangenehm und lästig. Viele versuchen sich daher abzulenken - wie etwa nach einem Mückenstich. Was aber passiert, wenn man das Gegenteil macht? Eine neue Studie liefert Antworten. Von Julia Nestlen.",
       "pubDate": "2026-08-21T09:54:39+02:00",
       "bild": ""
     },
@@ -33,12 +45,6 @@
       "bild": ""
     },
     {
-      "title": "Marktbericht: Anleger finden keine Kaufgründe",
-      "description": "Nach vier Tagen mit Kursverlusten dürfte der DAX wenig dynamisch in den letzten Handelstag der Woche starten. Der Anleihemarkt bleibt ein wichtiges Thema, hohe Energiepreise und Inflationssorgen ebenfalls.",
-      "pubDate": "2026-08-21T07:28:58+02:00",
-      "bild": ""
-    },
-    {
       "title": "Schiffsverkehr durch Panamakanal wird wegen Trockenheit reduziert",
       "description": "Trotz Regenzeit ist es ungewöhnlich trocken in Panama. Das hat nun auch Konsequenzen für die Schifffahrt: Ab kommendem Monat wird die Zahl der Schiffspassagen durch den Panamakanal gesenkt.",
       "pubDate": "2026-08-21T07:27:24+02:00",
@@ -47,7 +53,7 @@
     {
       "title": "Wirtschaft mahnt in Brief an Regierung Umsetzung von Reformen an",
       "description": "Große deutsche Konzerne wie Audi und Siemens sowie Arbeitgeber der Metall- und Elektroindustrie fordern die Regierung auf, Reformen \"schleunigst\" umzusetzen. Sie bemängeln auch die hohe Beitragsbelastung in der Sozialversicherung.",
-      "pubDate": "2026-08-21T06:45:28+02:00",
+      "pubDate": "2026-08-21T10:44:16+02:00",
       "bild": ""
     },
     {
@@ -84,12 +90,6 @@
       "title": "Auf Baustelle entdeckt: Wem gehört der Goldschatz von Dendermonde?",
       "description": "Der Fund machte weltweit Schlagzeilen: In Belgien entdeckten Bauarbeiter bei Renovierungsarbeiten Gold im Wert von rund neun Millionen Euro. Doch wem gehört es? Die Spur könnte zu einer Brauereifamilie führen. Von S. Fritz.",
       "pubDate": "2026-08-20T20:31:09+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ballett: Tanzen unter Druck an deutschen Theatern",
-      "description": "Kurze Karrieren, hoher Konkurrenzdruck: Balletttänzer gehören zur verwundbarsten Gruppe an deutschen Theatern. Am Saarbrücker Staatstheater soll es zudem zu sexuellen Übergriffen gekommen sein. Von A. Kremer.",
-      "pubDate": "2026-08-20T20:21:48+02:00",
       "bild": ""
     }
   ],
