@@ -1,7 +1,37 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "21.08.2026, 11:35 Uhr (UTC)",
+  "aktualisiert": "21.08.2026, 13:00 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Acht Tote bei Flugzeugabsturz auf US-Luftwaffenstützpunkt in Alaska",
+      "description": "An einer abgelegenen Radarstation im Westen Alaskas ist ein Charterflugzeug verunglückt - alle acht Passagiere kamen dabei ums Leben. Die Fachleute führten dort offenbar eine Mission durch - welche, ist unklar.",
+      "pubDate": "2026-08-21T14:50:12+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Aktivisten von Tiananmen-Mahnwachen in Hongkong verurteilt",
+      "description": "Sie sollen zu \"illegalen\" Aktionen angestachelt haben: Zwei ehemalige Organisatoren von Mahnwachen für das Tiananmen-Massaker in Peking müssen wohl für Jahre in Hongkong in Haft. Europäische Regierungen kritisieren das.",
+      "pubDate": "2026-08-21T14:28:59+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Kunst vs. KI: Ist ein Bild ohne Kamera noch ein Foto?",
+      "description": "KI-generierte Bilder sind eine Herausforderung, die Einordnung fällt schwer: Ist das nun Kunst oder Manipulation? Ein Blick auf die Geschichte der Fotografie zeigt: Kontroversen gab es schon immer. Von L. Fettich.",
+      "pubDate": "2026-08-21T14:11:09+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Deutsche Industrie wächst so stark wie zuletzt 2022",
+      "description": "Trotz Niedrigwasser im Rhein und ungeklärter Lage am Persischen Golf hat die deutsche Industrie ihr Wachstum beschleunigt. So stark wie seit vier Jahren nicht mehr, heißt es im Einkaufsmanager-Index von S&P Global.",
+      "pubDate": "2026-08-21T13:53:00+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Hessen: Autofahrer verletzt Passanten - offenbar medizinischer Notfall",
+      "description": "Im hessischen Hofgeismar ist ein 68-Jähriger mit seinem Auto durch die Fußgängerzone gefahren und gegen ein Kaufhaus geprallt. Acht Menschen wurden verletzt. Beim Fahrer gab es offenbar einen medizinischen Notfall.",
+      "pubDate": "2026-08-21T14:46:54+02:00",
+      "bild": ""
+    },
     {
       "title": "Nord-Stream-Verdächtiger kommt nach Festnahme in Kroatien in U-Haft",
       "description": "Er soll einer der Taucher gewesen sein, die Sprengstoff an den Nord-Stream-Pipelines anbrachten. Nach der Festnahme des Ukrainers in Kroatien entscheidet nun ein Gericht über seine Auslieferung. Zunächst kommt er in Untersuchungshaft.",
@@ -41,7 +71,7 @@
     {
       "title": "Russland unter Verdacht: Geheimes Waffendepot bei Berlin entdeckt",
       "description": "Sicherheitsbehörden haben nach Informationen von WDR, NDR und SZ am Stadtrand von Berlin ein Versteck mit zwei scharfen Waffen entdeckt. Nach Einschätzung der Behörden soll es sich um ein Depot russischer Agenten für mögliche Anschläge handeln.",
-      "pubDate": "2026-08-21T10:00:22+02:00",
+      "pubDate": "2026-08-21T14:42:47+02:00",
       "bild": ""
     },
     {
@@ -60,36 +90,6 @@
       "title": "NATO-Ostflanke: Auch deutsche Soldaten bauen Polens \"Ostschild\"",
       "description": "Mit Panzergräben und Betonigeln befestigt Polen seine Grenzen. Auch deutsche Soldaten helfen beim Bau des \"Ostschilds\". Das Projekt soll die Verteidigung an der NATO-Ostflanke stärken. Von Palina Milling.",
       "pubDate": "2026-08-21T08:56:37+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Behindertenbeauftragter fordert besseren Schutz für Frauen mit Behinderung",
-      "description": "Frauen mit Behinderung, die in Wohneinrichtungen leben, erfahren häufig Gewalt. Dennoch gibt es laut Recherchen des SWR vielerorts keine Pflicht, dort Frauenbeauftragte einzusetzen. Das fordert nun der Bundesbehindertenbeauftragte.",
-      "pubDate": "2026-08-21T08:01:23+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Schiffsverkehr durch Panamakanal wird wegen Trockenheit reduziert",
-      "description": "Trotz Regenzeit ist es ungewöhnlich trocken in Panama. Das hat nun auch Konsequenzen für die Schifffahrt: Ab kommendem Monat wird die Zahl der Schiffspassagen durch den Panamakanal gesenkt.",
-      "pubDate": "2026-08-21T07:27:24+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wirtschaft mahnt in Brief an Regierung Umsetzung von Reformen an",
-      "description": "Große deutsche Konzerne wie Audi und Siemens sowie Arbeitgeber der Metall- und Elektroindustrie fordern die Regierung auf, Reformen \"schleunigst\" umzusetzen. Sie bemängeln auch die hohe Beitragsbelastung in der Sozialversicherung.",
-      "pubDate": "2026-08-21T10:44:16+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Vor Landtagswahl: Klingbeil bei Wahlkampf in Sachsen-Anhalt",
-      "description": "In Sachsen-Anhalt hat die SPD vor der Landtagswahl einen schweren Stand. Auch für Parteichef Klingbeil steht bei der Wahl viel auf dem Spiel. Beim Wahlkampf vor Ort spürt er die Unzufriedenheit. Von Nicole Kohnert.",
-      "pubDate": "2026-08-21T05:31:37+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Erdbeben erschüttert Andenregion in Peru",
-      "description": "Erst vor zehn Tagen hatte ein starkes Erdbeben den Westen Kolumbiens erschüttert. Nun hat es Peru getroffen. Die Auswirkungen sind auch in der Hauptstadt Lima zu spüren. Berichte über Tote gibt es bisher nicht.",
-      "pubDate": "2026-08-21T02:30:43+02:00",
       "bild": ""
     }
   ],
