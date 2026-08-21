@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "21.08.2026, 05:06 Uhr (UTC)",
+  "aktualisiert": "21.08.2026, 06:00 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Marktbericht: Anleger finden keine Kaufgründe",
+      "description": "Nach vier Tagen mit Kursverlusten dürfte der DAX wenig dynamisch in den letzten Handelstag der Woche starten. Der Anleihemarkt bleibt ein wichtiges Thema, hohe Energiepreise und Inflationssorgen ebenfalls.",
+      "pubDate": "2026-08-21T07:28:58+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Schiffsverkehr durch Panamakanal wird wegen Trockenheit reduziert",
+      "description": "Trotz Regenzeit ist es ungewöhnlich trocken in Panama. Das hat nun auch Konsequenzen für die Schifffahrt: Ab kommendem Monat wird die Zahl der Schiffspassagen durch den Panamakanal gesenkt.",
+      "pubDate": "2026-08-21T07:27:24+02:00",
+      "bild": ""
+    },
     {
       "title": "Wirtschaft mahnt in Brief an Regierung Umsetzung von Reformen an",
       "description": "Große deutsche Konzerne wie Audi und Siemens sowie Arbeitgeber der Metall- und Elektroindustrie fordern die Regierung auf, Reformen \"schleunigst\" umzusetzen. Sie bemängeln auch die hohe Beitragsbelastung in der Sozialversicherung.",
@@ -78,18 +90,6 @@
       "title": "Mehr als 100 Tote bei Einsturz von Goldmine in Zentralafrika",
       "description": "Mindestens 100 Menschen sind am Dienstag bei einem Erdrutsch in einer Goldmine in der Zentralafrikanischen Republik ums Leben gekommen. Rettungskräfte suchen nach Überlebenden. Heute konnten sie jedoch nur weitere Leichen bergen.",
       "pubDate": "2026-08-20T18:02:10+02:00",
-      "bild": ""
-    },
-    {
-      "title": "DGB-Ausbildungsreport: Jeder zweite Azubi ist psychisch belastet",
-      "description": "Finanzielle Sorgen, angespannter Wohnungsmarkt und Druck im Berufsleben: Immer mehr Auszubildenden macht das zu schaffen, so der aktuelle Ausbildungsreport des DGB. Der Gewerkschaftsbund sieht die Politik in der Pflicht. Von F. Siegel.",
-      "pubDate": "2026-08-20T17:43:10+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Hitzetote in Deutschland: Warum Experten mehr Prävention fordern",
-      "description": "Mindestens 14.000 Menschen sind in diesem Jahr hitzebedingt zu Tode gekommen - mehr als in jedem einzelnen Gesamtjahr zuvor. Prävention hätte helfen können. Wie reagiert die Politik? Von Isabell Karras.",
-      "pubDate": "2026-08-20T17:12:43+02:00",
       "bild": ""
     }
   ],
