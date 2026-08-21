@@ -1,35 +1,35 @@
 {
-  "aktualisiert": "21.08.2026, 02:20 Uhr",
+  "aktualisiert": "21.08.2026, 03:28 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
-        "temp": 12,
+        "temp": 13,
         "gefuehlt": 12,
-        "zustand": "Klar",
-        "emoji": "☀️",
-        "wind": 10,
-        "luftfeuchte": 94,
+        "zustand": "Bedeckt",
+        "emoji": "☁️",
+        "wind": 9,
+        "luftfeuchte": 96,
         "niederschlag": 0.0
       },
       "tage": [
         {
           "wochentag": "Freitag",
           "datum": "21.08.",
-          "emoji": "🌧️",
-          "zustand": "Regen",
-          "max": 18,
+          "emoji": "🌦️",
+          "zustand": "Nieselregen",
+          "max": 19,
           "min": 12,
-          "niederschlag": 5.8
+          "niederschlag": 0.6
         },
         {
           "wochentag": "Samstag",
           "datum": "22.08.",
           "emoji": "🌧️",
-          "zustand": "Starker Regen",
+          "zustand": "Regen",
           "max": 16,
-          "min": 12,
-          "niederschlag": 22.4
+          "min": 11,
+          "niederschlag": 10.4
         },
         {
           "wochentag": "Sonntag",
@@ -37,8 +37,8 @@
           "emoji": "🌦️",
           "zustand": "Leichter Nieselregen",
           "max": 16,
-          "min": 8,
-          "niederschlag": 0.4
+          "min": 9,
+          "niederschlag": 0.1
         },
         {
           "wochentag": "Montag",
@@ -68,7 +68,7 @@
         "zustand": "Bedeckt",
         "emoji": "☁️",
         "wind": 5,
-        "luftfeuchte": 89,
+        "luftfeuchte": 88,
         "niederschlag": 0.0
       },
       "tage": [
@@ -123,10 +123,10 @@
       "stadt": "Kierspe",
       "aktuell": {
         "temp": 12,
-        "gefuehlt": 11,
-        "zustand": "Klar",
-        "emoji": "☀️",
-        "wind": 8,
+        "gefuehlt": 12,
+        "zustand": "Bedeckt",
+        "emoji": "☁️",
+        "wind": 7,
         "luftfeuchte": 97,
         "niederschlag": 0.0
       },
@@ -134,28 +134,28 @@
         {
           "wochentag": "Freitag",
           "datum": "21.08.",
-          "emoji": "🌧️",
-          "zustand": "Starker Regen",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
           "max": 18,
           "min": 12,
-          "niederschlag": 12.4
+          "niederschlag": 0.0
         },
         {
           "wochentag": "Samstag",
           "datum": "22.08.",
           "emoji": "🌧️",
-          "zustand": "Starker Regen",
-          "max": 16,
-          "min": 12,
-          "niederschlag": 15.7
+          "zustand": "Regen",
+          "max": 17,
+          "min": 11,
+          "niederschlag": 9.3
         },
         {
           "wochentag": "Sonntag",
           "datum": "23.08.",
-          "emoji": "🌦️",
-          "zustand": "Leichter Nieselregen",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
           "max": 16,
-          "min": 9,
+          "min": 8,
           "niederschlag": 0.1
         },
         {
@@ -183,30 +183,30 @@
       "aktuell": {
         "temp": 16,
         "gefuehlt": 15,
-        "zustand": "Überwiegend klar",
-        "emoji": "🌤️",
+        "zustand": "Klar",
+        "emoji": "☀️",
         "wind": 12,
-        "luftfeuchte": 83,
+        "luftfeuchte": 85,
         "niederschlag": 0.0
       },
       "tage": [
         {
           "wochentag": "Freitag",
           "datum": "21.08.",
-          "emoji": "🌧️",
-          "zustand": "Starker Regen",
-          "max": 21,
+          "emoji": "🌦️",
+          "zustand": "Starker Nieselregen",
+          "max": 22,
           "min": 16,
-          "niederschlag": 13.1
+          "niederschlag": 1.3
         },
         {
           "wochentag": "Samstag",
           "datum": "22.08.",
-          "emoji": "🌦️",
-          "zustand": "Nieselregen",
-          "max": 20,
+          "emoji": "🌧️",
+          "zustand": "Regen",
+          "max": 19,
           "min": 15,
-          "niederschlag": 1.1
+          "niederschlag": 3.3
         },
         {
           "wochentag": "Sonntag",
