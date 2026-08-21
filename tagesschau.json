@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "21.08.2026, 21:30 Uhr (UTC)",
+  "aktualisiert": "21.08.2026, 22:31 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Mehr als 300 Migranten von Holzboot vor Mauretanien gerettet",
+      "description": "Vor der Küste Mauretaniens hat die Küstenwache mehr als 300 Menschen von einem manövrierunfähigen Holzboot gerettet. Sie waren wohl auf dem Weg zu den Kanarischen Inseln - eine Route, die immer gefährlicher wird.",
+      "pubDate": "2026-08-22T00:04:29+02:00",
+      "bild": ""
+    },
     {
       "title": "Diplomatin Birkett führt bei Testabstimmung über Amt des UN-Generalsekretärs",
       "description": "Wer folgt auf Guterres? In einer zweiten Abstimmung setzte sich die Guyanerin Birkett an die Spitze der Liste für das Amt des UN-Generalsekretärs. Die Präsidentin der Generalversammlung Baerbock wirbt für mehr Transparenz - und wird dafür angefeindet.",
@@ -84,12 +90,6 @@
       "title": "USA erstatten deutschen Firmen Hunderte Millionen Euro an Zöllen",
       "description": "Es war ein herber Rückschlag für US-Präsident Trump: Der Supreme Court hatte einen Teil seiner umstrittenen Zölle gekippt. Eine aktuelle Auswertung zeigt, das allein deutsche Firmen fast 800 Millionen Euro zurückbekommen haben.",
       "pubDate": "2026-08-21T15:11:16+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Acht Tote bei Flugzeugabsturz auf US-Luftwaffenstützpunkt in Alaska",
-      "description": "An einer abgelegenen Radarstation im Westen Alaskas ist ein Charterflugzeug verunglückt - alle acht Passagiere kamen dabei ums Leben. Die Fachleute führten dort offenbar eine Mission durch - welche, ist unklar.",
-      "pubDate": "2026-08-21T14:50:12+02:00",
       "bild": ""
     }
   ],
