@@ -1,14 +1,14 @@
 {
-  "aktualisiert": "21.08.2026, 15:56 Uhr",
+  "aktualisiert": "21.08.2026, 16:28 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
         "temp": 18,
-        "gefuehlt": 18,
+        "gefuehlt": 19,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 3,
+        "wind": 2,
         "luftfeuchte": 64,
         "niederschlag": 0.0
       },
@@ -63,38 +63,38 @@
     {
       "stadt": "Werdohl",
       "aktuell": {
-        "temp": 20,
-        "gefuehlt": 20,
-        "zustand": "Bedeckt",
-        "emoji": "☁️",
-        "wind": 7,
-        "luftfeuchte": 58,
+        "temp": 19,
+        "gefuehlt": 19,
+        "zustand": "Gewitter mit Hagel",
+        "emoji": "⛈️",
+        "wind": 5,
+        "luftfeuchte": 65,
         "niederschlag": 0.0
       },
       "tage": [
         {
           "wochentag": "Freitag",
           "datum": "21.08.",
-          "emoji": "🌦️",
-          "zustand": "Leichte Schauer",
+          "emoji": "⛈️",
+          "zustand": "Gewitter mit Hagel",
           "max": 20,
           "min": 13,
-          "niederschlag": 0.1
+          "niederschlag": 12.6
         },
         {
           "wochentag": "Samstag",
           "datum": "22.08.",
-          "emoji": "⛈️",
-          "zustand": "Gewitter",
+          "emoji": "🌦️",
+          "zustand": "Leichte Schauer",
           "max": 18,
-          "min": 12,
-          "niederschlag": 12.7
+          "min": 13,
+          "niederschlag": 6.4
         },
         {
           "wochentag": "Sonntag",
           "datum": "23.08.",
-          "emoji": "🌫️",
-          "zustand": "Nebel",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
           "max": 19,
           "min": 8,
           "niederschlag": 0.0
@@ -123,10 +123,10 @@
       "stadt": "Kierspe",
       "aktuell": {
         "temp": 18,
-        "gefuehlt": 18,
+        "gefuehlt": 19,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 2,
+        "wind": 1,
         "luftfeuchte": 66,
         "niederschlag": 0.0
       },
@@ -181,12 +181,12 @@
     {
       "stadt": "Bochum",
       "aktuell": {
-        "temp": 21,
+        "temp": 20,
         "gefuehlt": 19,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 13,
-        "luftfeuchte": 58,
+        "wind": 14,
+        "luftfeuchte": 64,
         "niederschlag": 0.0
       },
       "tage": [
