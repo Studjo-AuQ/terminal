@@ -1,11 +1,17 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "21.08.2026, 17:35 Uhr (UTC)",
+  "aktualisiert": "21.08.2026, 18:46 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Korruptionsskandal in der Ukraine weitet sich aus",
+      "description": "Der jüngste Korruptionsskandal in der Ukraine weitet sich aus: Nun soll eine beteiligte staatseigene Bank privatisiert werden. Auch im Umfeld des Präsidenten wird ermittelt. Die Opposition wirft ihm Geldwäsche vor. Von Florian Kellermann.",
+      "pubDate": "2026-08-21T20:30:11+02:00",
+      "bild": ""
+    },
     {
       "title": "Tote und Verletzte nach Angriffen auf ukrainisches Einkaufszentrum",
       "description": "Russland hat ein belebtes Einkaufszentrum in der Heimatstadt des ukrainischen Präsidenten angegriffen. Es gibt viele Tote und Verletzte. Selenskyj spricht von einem \"hinterhältigen Angriff\" in zwei Wellen.",
-      "pubDate": "2026-08-21T19:20:18+02:00",
+      "pubDate": "2026-08-21T20:12:58+02:00",
       "bild": ""
     },
     {
@@ -39,9 +45,9 @@
       "bild": ""
     },
     {
-      "title": "Mehrere Verletzte bei Angriff an schwedischer Schule",
-      "description": "Ein Mann hat am Nachmittag an einer schwedischen Schule Menschen mit einer Waffe angegriffen. Es gibt mehrere Verletzte in der Stadt Fagersta in der Provinz Västmanland. Der mutmaßliche Täter soll sich in Gewahrsam befinden.",
-      "pubDate": "2026-08-21T18:12:38+02:00",
+      "title": "Verletzte bei Schwert-Angriff an schwedischer Schule",
+      "description": "In Schweden hat ein Mann mit einem Schwert mehrere Menschen in einer Schule angegriffen. Es gibt mehrere Verletzte in der Stadt Fagersta in der Provinz Västmanland. Der mutmaßliche Täter ist in Gewahrsam.",
+      "pubDate": "2026-08-21T20:17:45+02:00",
       "bild": ""
     },
     {
@@ -84,12 +90,6 @@
       "title": "Aktivisten von Tiananmen-Mahnwachen in Hongkong verurteilt",
       "description": "Sie sollen zu \"illegalen\" Aktionen angestachelt haben: Zwei ehemalige Organisatoren von Mahnwachen für das Tiananmen-Massaker in Peking müssen wohl für Jahre in Hongkong in Haft. Europäische Regierungen kritisieren das.",
       "pubDate": "2026-08-21T14:28:59+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kunst vs. KI: Ist ein Bild ohne Kamera noch ein Foto?",
-      "description": "KI-generierte Bilder sind eine Herausforderung, die Einordnung fällt schwer: Ist das nun Kunst oder Manipulation? Ein Blick auf die Geschichte der Fotografie zeigt: Kontroversen gab es schon immer. Von L. Fettich.",
-      "pubDate": "2026-08-21T14:11:09+02:00",
       "bild": ""
     }
   ],
