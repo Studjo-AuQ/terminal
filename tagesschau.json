@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "21.08.2026, 14:07 Uhr (UTC)",
+  "aktualisiert": "21.08.2026, 15:04 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Mehrere Verletzte bei Angriff an schwedischer Schule",
+      "description": "Ein Mann hat am Nachmittag an einer schwedischen Schule Menschen mit einer Waffe angegriffen. Es gibt mehrere Verletzte in der Stadt in der Provinz Västmanland. Der mutmaßliche Täter soll sich in Gewahrsam befinden.",
+      "pubDate": "2026-08-21T16:19:32+02:00",
+      "bild": ""
+    },
     {
       "title": "Mehr als 300 Festnahmen wegen Bränden in Griechenland",
       "description": "In Griechenland gab es zuletzt mehrere schwere Waldbrände. Trockenheit und Hitze sorgen dafür, dass sich die Feuer ausbreiten. Die Behörden gehen gegen Brandstifter vor.",
@@ -59,7 +65,7 @@
     {
       "title": "Hessen: Autofahrer verletzt Passanten - offenbar medizinischer Notfall",
       "description": "Im hessischen Hofgeismar ist ein 68-Jähriger mit seinem Auto durch die Fußgängerzone gefahren und gegen ein Kaufhaus geprallt. Acht Menschen wurden verletzt. Beim Fahrer gab es offenbar einen medizinischen Notfall.",
-      "pubDate": "2026-08-21T14:46:54+02:00",
+      "pubDate": "2026-08-21T16:46:26+02:00",
       "bild": ""
     },
     {
@@ -84,12 +90,6 @@
       "title": "Gefährliche Sicherheitslücke bei Arzneimittelpackungen",
       "description": "Der Manipulationsschutz von Arzneimittelpackungen soll vor Fälschungen schützen. Doch Recherchen von Plusminus zeigen: Bei zahllosen Packungen versagt dieser Schutz offenbar. Die Aufsichtsbehörden kennen das Risiko seit Jahren.",
       "pubDate": "2026-08-21T11:47:13+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Anleger ringen um die Marke von 26.000 Punkten",
-      "description": "Wird der DAX zum fünften Mal in Folge mit Verlusten aus dem Handel gehen? Nach einem deutlichen Kursrutsch wagen sich einige Anleger zum Wochenschluss wieder zurück in den Markt. Aber die Lage bleibt fragil.",
-      "pubDate": "2026-08-21T10:36:43+02:00",
       "bild": ""
     }
   ],
