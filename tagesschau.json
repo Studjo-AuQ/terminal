@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "20.08.2026, 23:31 Uhr (UTC)",
+  "aktualisiert": "21.08.2026, 01:45 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Erdbeben erschüttert Andenregion in Peru",
+      "description": "Erst vor zehn Tagen hatte ein starkes Erdbeben den Westen Kolumbiens erschüttert. Nun hat es Peru getroffen. Die Auswirkungen sind auch in der Hauptstadt Lima zu spüren. Berichte über Tote gibt es bisher nicht.",
+      "pubDate": "2026-08-21T02:30:43+02:00",
+      "bild": ""
+    },
     {
       "title": "Umgang mit Migranten in Ceuta: Politische und humanitäre Bankrotterklärung",
       "description": "Die meisten Migranten, die von Marokko aus in die spanische Exklave Ceuta gelangten, sind zurückgekehrt. Die Verbliebenen werden jetzt in Unterkünfte verlegt, Minderjährige aufs spanische Festland gebracht. Das sei zu wenig und komme zu spät, meint Franka Welz.",
@@ -84,12 +90,6 @@
       "title": "Kurs der Bundesregierung: \"Klimapolitik von der Kür zur Pflicht machen\"",
       "description": "Die Wochen voller Hitze, Niedrigwasser und Waldbrände waren unübersehbar - auch für die Bundesregierung. Politikwissenschaftlerin Lena Partzsch erklärt, wie es um die deutsche Klimapolitik steht und welchen Stellenwert sie hat.",
       "pubDate": "2026-08-20T17:11:19+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ungarns öffentlich-rechtliches Fernsehen sendet wieder Nachrichten",
-      "description": "Unter Orban galt Ungarns öffentlich-rechtlicher Sender M1 als Sprachrohr der Regierung - das will der neue Regierungschef Magyar ändern. Nach einer Zwangspause sendet M1 nun wieder Nachrichten. Doch es gibt auch Kritik. Von D. Freches.",
-      "pubDate": "2026-08-20T17:08:15+02:00",
       "bild": ""
     }
   ],
