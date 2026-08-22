@@ -1,16 +1,16 @@
 {
-  "aktualisiert": "22.08.2026, 05:53 Uhr",
+  "aktualisiert": "22.08.2026, 06:27 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
         "temp": 12,
         "gefuehlt": 12,
-        "zustand": "Leichter Nieselregen",
-        "emoji": "🌦️",
-        "wind": 4,
-        "luftfeuchte": 96,
-        "niederschlag": 0.1
+        "zustand": "Bedeckt",
+        "emoji": "☁️",
+        "wind": 5,
+        "luftfeuchte": 95,
+        "niederschlag": 0.0
       },
       "tage": [
         {
@@ -67,8 +67,8 @@
         "gefuehlt": 14,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 3,
-        "luftfeuchte": 91,
+        "wind": 4,
+        "luftfeuchte": 89,
         "niederschlag": 0.0
       },
       "tage": [
@@ -124,11 +124,11 @@
       "aktuell": {
         "temp": 12,
         "gefuehlt": 12,
-        "zustand": "Nieselregen",
+        "zustand": "Leichter Nieselregen",
         "emoji": "🌦️",
         "wind": 4,
         "luftfeuchte": 98,
-        "niederschlag": 0.2
+        "niederschlag": 0.1
       },
       "tage": [
         {
@@ -183,9 +183,9 @@
       "aktuell": {
         "temp": 15,
         "gefuehlt": 15,
-        "zustand": "Bedeckt",
-        "emoji": "☁️",
-        "wind": 6,
+        "zustand": "Teils bewölkt",
+        "emoji": "⛅",
+        "wind": 7,
         "luftfeuchte": 81,
         "niederschlag": 0.0
       },
