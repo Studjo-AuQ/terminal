@@ -1,5 +1,5 @@
 {
-  "aktualisiert": "22.08.2026, 04:57 Uhr",
+  "aktualisiert": "22.08.2026, 05:27 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
@@ -68,7 +68,7 @@
         "zustand": "Bedeckt",
         "emoji": "☁️",
         "wind": 4,
-        "luftfeuchte": 94,
+        "luftfeuchte": 93,
         "niederschlag": 0.0
       },
       "tage": [
@@ -182,10 +182,10 @@
       "stadt": "Bochum",
       "aktuell": {
         "temp": 15,
-        "gefuehlt": 15,
+        "gefuehlt": 14,
         "zustand": "Klar",
         "emoji": "☀️",
-        "wind": 6,
+        "wind": 7,
         "luftfeuchte": 78,
         "niederschlag": 0.0
       },
