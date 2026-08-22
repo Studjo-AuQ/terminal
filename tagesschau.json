@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "21.08.2026, 23:54 Uhr (UTC)",
+  "aktualisiert": "22.08.2026, 01:39 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "US-Ermittlungen gegen TikTok enden mit 400-Millionen-Dollar-Vergleich",
+      "description": "Die US-Regierung warf TikTok vor, illegal Daten von Kindern gesammelt zu haben. Nach dem Besitzerwechsel im US-Geschäft und einer Zahlung von mehreren hundert Millionen Dollar enden die Ermittlungen.",
+      "pubDate": "2026-08-22T03:03:05+02:00",
+      "bild": ""
+    },
     {
       "title": "Mehr als 300 Migranten von Holzboot vor Mauretanien gerettet",
       "description": "Vor der Küste Mauretaniens hat die Küstenwache mehr als 300 Menschen von einem manövrierunfähigen Holzboot gerettet. Sie waren wohl auf dem Weg zu den Kanarischen Inseln - eine Route, die immer gefährlicher wird.",
@@ -84,12 +90,6 @@
       "title": "Europäisches Asylsystem: Italien fordert Kompensation für Asylsuchende",
       "description": "Eigentlich soll das neue EU-Asylsystem Staaten wie Italien entlasten. Doch nun wollen andere Länder Tausende Asylsuchende dorthin zurückschicken. Ein neuer Streit bahnt sich an. Der Druck auf die Regierung Meloni wächst. Von T. Kleinjung.",
       "pubDate": "2026-08-21T15:29:30+02:00",
-      "bild": ""
-    },
-    {
-      "title": "USA erstatten deutschen Firmen Hunderte Millionen Euro an Zöllen",
-      "description": "Es war ein herber Rückschlag für US-Präsident Trump: Der Supreme Court hatte einen Teil seiner umstrittenen Zölle gekippt. Eine aktuelle Auswertung zeigt, das allein deutsche Firmen fast 800 Millionen Euro zurückbekommen haben.",
-      "pubDate": "2026-08-21T15:11:16+02:00",
       "bild": ""
     }
   ],
