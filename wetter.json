@@ -1,5 +1,5 @@
 {
-  "aktualisiert": "22.08.2026, 10:46 Uhr",
+  "aktualisiert": "22.08.2026, 11:14 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
@@ -64,11 +64,11 @@
       "stadt": "Werdohl",
       "aktuell": {
         "temp": 17,
-        "gefuehlt": 15,
+        "gefuehlt": 16,
         "zustand": "Bedeckt",
         "emoji": "☁️",
         "wind": 10,
-        "luftfeuchte": 69,
+        "luftfeuchte": 68,
         "niederschlag": 0.0
       },
       "tage": [
@@ -182,11 +182,11 @@
       "stadt": "Bochum",
       "aktuell": {
         "temp": 19,
-        "gefuehlt": 17,
-        "zustand": "Teils bewölkt",
-        "emoji": "⛅",
-        "wind": 13,
-        "luftfeuchte": 57,
+        "gefuehlt": 18,
+        "zustand": "Überwiegend klar",
+        "emoji": "🌤️",
+        "wind": 14,
+        "luftfeuchte": 55,
         "niederschlag": 0.0
       },
       "tage": [
