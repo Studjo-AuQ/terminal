@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "22.08.2026, 06:51 Uhr (UTC)",
+  "aktualisiert": "22.08.2026, 07:37 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Handelsgespräche gescheitert - USA verhängen Strafzölle gegen Kanada",
+      "description": "Die Verhandlungen über ein Handelsabkommen zwischen den USA und Kanada sind gescheitert. Washington setzte daraufhin Strafzölle in Kraft - erstmals auch auf Waren, die unter das Freihandelsabkommen fallen.",
+      "pubDate": "2026-08-22T09:23:20+02:00",
+      "bild": ""
+    },
     {
       "title": "Diebstahl in der Pflege: Wie sich Betroffene schützen können",
       "description": "Pflege- und hilfsbedürftige Menschen können leicht zu Opfern von Diebstahl werden. Die Kriminalstatistik zeigt, dass bei ihnen immer öfter Wertsachen entwendet werden. Was die Polizei rät. Von Peter Allgaier und Oliver Christa.",
@@ -46,7 +52,7 @@
     },
     {
       "title": "Korruptionsskandal in der Ukraine weitet sich aus",
-      "description": "Der jüngste Korruptionsskandal in der Ukraine weitet sich aus: Nun soll eine beteiligte staatseigene Bank privatisiert werden. Auch im Umfeld des Präsidenten wird ermittelt. Die Opposition wirft ihm Geldwäsche vor. Von Florian Kellermann.",
+      "description": "Der jüngste Korruptionsskandal in der Ukraine weitet sich aus: Eine beteiligte staatseigene Bank soll privatisiert werden. Auch im Umfeld des Präsidenten wird ermittelt. Die Opposition erhebt schwere Vorwürfe. Von Florian Kellermann.",
       "pubDate": "2026-08-21T20:30:11+02:00",
       "bild": ""
     },
@@ -84,12 +90,6 @@
       "title": "Irans Präsident sieht guten Zeitpunkt für Kriegsende mit den USA",
       "description": "Trotz der massiven US-Angriffe im vergangenen halben Jahr scheint das iranische Regime weiter fest an der Macht zu sein. Präsident Peseschkian spricht sich jetzt für ein Ende des Krieges aus. Er sieht sein Land im Vorteil.",
       "pubDate": "2026-08-21T17:21:40+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ein Toter nach Schwertangriff an schwedischer Schule",
-      "description": "In einer Schule in einer Kleinstadt in Zentralschweden hat ein 18-Jähriger mit einem Schwert mehrere Personen angegriffen. Ein Mensch starb, drei weitere wurden verletzt. Die Polizei nahm den mutmaßlichen Täter fest.",
-      "pubDate": "2026-08-21T22:01:48+02:00",
       "bild": ""
     }
   ],
