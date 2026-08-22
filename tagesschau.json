@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "22.08.2026, 07:37 Uhr (UTC)",
+  "aktualisiert": "22.08.2026, 08:37 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Zahl der Todesopfer nach Angriff auf ukrainisches Einkaufszentrum gestiegen",
+      "description": "Nach dem russischen Drohnenangriff auf ein Einkaufszentrum in Krywyj Rih ist die Zahl der Toten auf 16 gestiegen. Die Ukraine attackierte erneut eine russische Ölraffinerie und einen Logistikbetrieb - dieses Mal nicht Wildberries.",
+      "pubDate": "2026-08-22T10:16:59+02:00",
+      "bild": ""
+    },
     {
       "title": "Handelsgespräche gescheitert - USA verhängen Strafzölle gegen Kanada",
       "description": "Die Verhandlungen über ein Handelsabkommen zwischen den USA und Kanada sind gescheitert. Washington setzte daraufhin Strafzölle in Kraft - erstmals auch auf Waren, die unter das Freihandelsabkommen fallen.",
@@ -84,12 +90,6 @@
       "title": "Prinz Harry und Elton John müssen Prozesskosten in Millionenhöhe begleichen",
       "description": "Eine Woche haben Prinz Harry, Elton John und weitere Kläger Zeit, um Prozesskosten in Höhe von elf Millionen Euro zu begleichen. Sie hatten eine Klage wegen möglicher Verletzung der Privatsphäre gegen die Zeitung Daily Mail verloren.",
       "pubDate": "2026-08-21T18:00:40+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Irans Präsident sieht guten Zeitpunkt für Kriegsende mit den USA",
-      "description": "Trotz der massiven US-Angriffe im vergangenen halben Jahr scheint das iranische Regime weiter fest an der Macht zu sein. Präsident Peseschkian spricht sich jetzt für ein Ende des Krieges aus. Er sieht sein Land im Vorteil.",
-      "pubDate": "2026-08-21T17:21:40+02:00",
       "bild": ""
     }
   ],
