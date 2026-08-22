@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "22.08.2026, 10:30 Uhr (UTC)",
+  "aktualisiert": "22.08.2026, 11:26 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Trauer und Fassungslosigkeit nach Schwertangriff in Schweden",
+      "description": "Der Angriff an einer Schule schockiert Schweden. Ein 18-Jähriger hatte gestern mit einem Schwert eine Schülerin getötet und mehrere verletzt. Der Täter soll frühere Schulmassaker verherrlicht haben. Von Christian Stichler.",
+      "pubDate": "2026-08-22T13:23:43+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Humanoide Roboter: Kann Deutschland beim Boom mithalten?",
+      "description": "China gibt bei humanoiden Robotern das Tempo vor. Doch Deutschland hat durchaus Chancen - ausgerechnet für die kriselnden Autozulieferer könnte der neue Milliardenmarkt zum Wachstumstreiber werden. Von Angela Göpfert.",
+      "pubDate": "2026-08-22T13:02:46+02:00",
+      "bild": ""
+    },
     {
       "title": "Jabloko-Chef Rybakow: \"In Russland denken viele wie wir\"",
       "description": "Die russische Oppositionspartei Jabloko lehnt den Ukraine-Krieg ab und darf nach einem Gerichtsurteil nicht an der Parlamentswahl im September teilnehmen. Parteichef Rybakow spricht im Interview über die Gründe dafür - und über den Rückhalt im Land.",
@@ -21,8 +33,8 @@
       "bild": ""
     },
     {
-      "title": "Handelsgespräche gescheitert - USA verhängen Strafzölle gegen Kanada",
-      "description": "Die Verhandlungen über ein Handelsabkommen zwischen den USA und Kanada sind gescheitert. Washington setzte daraufhin Strafzölle in Kraft - erstmals auch auf Waren, die unter das Freihandelsabkommen fallen.",
+      "title": "Handelsgespräche gescheitert - USA verhängen neue Zölle gegen Kanada",
+      "description": "Die Verhandlungen über ein Handelsabkommen zwischen den USA und Kanada sind gescheitert. Washington setzte daraufhin weitere Zölle in Kraft - erstmals auch auf Waren, die unter das Freihandelsabkommen fallen.",
       "pubDate": "2026-08-22T09:23:20+02:00",
       "bild": ""
     },
@@ -78,18 +90,6 @@
       "title": "Tote und Verletzte nach Angriffen auf ukrainisches Einkaufszentrum",
       "description": "Russland hat ein belebtes Einkaufszentrum in der Heimatstadt des ukrainischen Präsidenten angegriffen. Es gibt viele Tote und Verletzte. Selenskyj spricht von einem \"hinterhältigen Angriff\" in zwei Wellen.",
       "pubDate": "2026-08-21T22:26:30+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ukraine verbietet beliebte Zeichentrickserie \"Mascha und der Bär\"",
-      "description": "Die ukrainische Regierung hat die beliebte russische Animationsserie \"Mascha und der Bär\" verboten. Sie darf im Land nicht mehr gezeigt werden. Hintergrund sind die Werbeeinnahmen durch die Serie, die Russland zugutekommen.",
-      "pubDate": "2026-08-21T18:35:44+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: DAX geht mit Gewinn aus der Woche",
-      "description": "Nach vier Verlusttagen in Folge ist der DAX heute mit einem Plus aus dem Handel gegangen. Auf Wochensicht schneidet der Leitindex schlechter ab. Die Risiken bleiben.",
-      "pubDate": "2026-08-21T18:27:50+02:00",
       "bild": ""
     }
   ],
