@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "22.08.2026, 11:26 Uhr (UTC)",
+  "aktualisiert": "22.08.2026, 11:49 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Langlebigkeit - Hype oder wissenschaftlich belegbar?",
+      "description": "Wie kann es gelingen, möglichst gesund alt zu werden? Ist Longevity nur ein Hype oder gibt es wissenschaftliche Fakten? Ein Kongress im September will informieren. Initiator Kluge rät im Interview zur Vorsicht.",
+      "pubDate": "2026-08-22T13:35:22+02:00",
+      "bild": ""
+    },
     {
       "title": "Trauer und Fassungslosigkeit nach Schwertangriff in Schweden",
       "description": "Der Angriff an einer Schule schockiert Schweden. Ein 18-Jähriger hatte gestern mit einem Schwert eine Schülerin getötet und mehrere verletzt. Der Täter soll frühere Schulmassaker verherrlicht haben. Von Christian Stichler.",
@@ -84,12 +90,6 @@
       "title": "Korruptionsskandal in der Ukraine weitet sich aus",
       "description": "Der jüngste Korruptionsskandal in der Ukraine weitet sich aus: Eine beteiligte staatseigene Bank soll privatisiert werden. Auch im Umfeld des Präsidenten wird ermittelt. Die Opposition erhebt schwere Vorwürfe. Von Florian Kellermann.",
       "pubDate": "2026-08-21T20:30:11+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Tote und Verletzte nach Angriffen auf ukrainisches Einkaufszentrum",
-      "description": "Russland hat ein belebtes Einkaufszentrum in der Heimatstadt des ukrainischen Präsidenten angegriffen. Es gibt viele Tote und Verletzte. Selenskyj spricht von einem \"hinterhältigen Angriff\" in zwei Wellen.",
-      "pubDate": "2026-08-21T22:26:30+02:00",
       "bild": ""
     }
   ],
