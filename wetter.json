@@ -1,15 +1,15 @@
 {
-  "aktualisiert": "22.08.2026, 20:14 Uhr",
+  "aktualisiert": "22.08.2026, 20:46 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
-        "temp": 13,
+        "temp": 12,
         "gefuehlt": 11,
         "zustand": "Klar",
         "emoji": "☀️",
-        "wind": 9,
-        "luftfeuchte": 78,
+        "wind": 7,
+        "luftfeuchte": 83,
         "niederschlag": 0.0
       },
       "tage": [
@@ -27,8 +27,8 @@
           "datum": "23.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 18,
-          "min": 10,
+          "max": 17,
+          "min": 8,
           "niederschlag": 0.0
         },
         {
@@ -36,8 +36,8 @@
           "datum": "24.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 20,
-          "min": 9,
+          "max": 21,
+          "min": 8,
           "niederschlag": 0.0
         },
         {
@@ -65,10 +65,10 @@
       "aktuell": {
         "temp": 14,
         "gefuehlt": 13,
-        "zustand": "Teils bewölkt",
-        "emoji": "⛅",
+        "zustand": "Überwiegend klar",
+        "emoji": "🌤️",
         "wind": 4,
-        "luftfeuchte": 71,
+        "luftfeuchte": 77,
         "niederschlag": 0.0
       },
       "tage": [
@@ -127,7 +127,7 @@
         "zustand": "Klar",
         "emoji": "☀️",
         "wind": 8,
-        "luftfeuchte": 83,
+        "luftfeuchte": 85,
         "niederschlag": 0.0
       },
       "tage": [
@@ -145,8 +145,8 @@
           "datum": "23.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 18,
-          "min": 9,
+          "max": 17,
+          "min": 7,
           "niederschlag": 0.0
         },
         {
@@ -154,8 +154,8 @@
           "datum": "24.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 20,
-          "min": 8,
+          "max": 21,
+          "min": 7,
           "niederschlag": 0.0
         },
         {
@@ -181,12 +181,12 @@
     {
       "stadt": "Bochum",
       "aktuell": {
-        "temp": 17,
-        "gefuehlt": 15,
+        "temp": 16,
+        "gefuehlt": 14,
         "zustand": "Klar",
         "emoji": "☀️",
-        "wind": 12,
-        "luftfeuchte": 64,
+        "wind": 10,
+        "luftfeuchte": 71,
         "niederschlag": 0.0
       },
       "tage": [
@@ -204,8 +204,8 @@
           "datum": "23.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 20,
-          "min": 14,
+          "max": 19,
+          "min": 13,
           "niederschlag": 0.0
         },
         {
@@ -213,7 +213,7 @@
           "datum": "24.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 23,
+          "max": 24,
           "min": 12,
           "niederschlag": 0.0
         },
@@ -223,7 +223,7 @@
           "emoji": "☁️",
           "zustand": "Bedeckt",
           "max": 25,
-          "min": 12,
+          "min": 13,
           "niederschlag": 0.0
         },
         {
