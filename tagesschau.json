@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "22.08.2026, 19:27 Uhr (UTC)",
+  "aktualisiert": "22.08.2026, 19:49 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "China: Humanoider Roboter schneller über 100 Meter als Usain Bolt",
+      "description": "Bei der Weltmeisterschaft humanoider Roboter in China hat ein chinesisches Modell den 100-Meter-Weltrekord von Usain Bolt unterboten. Es war nicht das erste Mal, dass Roboter schneller als Menschen laufen.",
+      "pubDate": "2026-08-22T21:29:05+02:00",
+      "bild": ""
+    },
     {
       "title": "Wie Künstliche Intelligenz die Justiz ausbremst",
       "description": "Vor allem die Sozialgerichte erleben das Phänomen: Immer mehr Kläger nutzen offenbar Künstliche Intelligenz, um Eingaben zu formulieren. Für die Justiz bedeutet das viel Arbeit mit teils unsinnigen Schriftsätzen. Von T. Denzel.",
@@ -84,12 +90,6 @@
       "title": "Zahl der Todesopfer nach Angriff auf ukrainisches Einkaufszentrum gestiegen",
       "description": "Nach dem russischen Drohnenangriff auf ein Einkaufszentrum in Krywyj Rih ist die Zahl der Toten auf 16 gestiegen. Die Ukraine attackierte erneut eine russische Ölraffinerie und einen Logistikbetrieb - dieses Mal nicht Wildberries.",
       "pubDate": "2026-08-22T10:16:59+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Handelsgespräche gescheitert - USA verhängen neue Zölle gegen Kanada",
-      "description": "Die Verhandlungen über ein Handelsabkommen zwischen den USA und Kanada sind gescheitert. Washington setzte daraufhin weitere Zölle in Kraft. Die Reaktion des Nachbarn fällt hart aus: Regierungschef Carney spricht von Vergeltung.",
-      "pubDate": "2026-08-22T19:04:55+02:00",
       "bild": ""
     }
   ],
