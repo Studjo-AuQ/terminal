@@ -1,15 +1,15 @@
 {
-  "aktualisiert": "23.08.2026, 18:18 Uhr",
+  "aktualisiert": "23.08.2026, 18:55 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
-        "temp": 15,
-        "gefuehlt": 14,
-        "zustand": "Klar",
-        "emoji": "☀️",
-        "wind": 4,
-        "luftfeuchte": 62,
+        "temp": 14,
+        "gefuehlt": 13,
+        "zustand": "Überwiegend klar",
+        "emoji": "🌤️",
+        "wind": 2,
+        "luftfeuchte": 69,
         "niederschlag": 0.0
       },
       "tage": [
@@ -27,7 +27,7 @@
           "datum": "24.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 21,
+          "max": 20,
           "min": 9,
           "niederschlag": 0.0
         },
@@ -35,10 +35,10 @@
           "wochentag": "Dienstag",
           "datum": "25.08.",
           "emoji": "🌦️",
-          "zustand": "Leichter Nieselregen",
+          "zustand": "Nieselregen",
           "max": 21,
           "min": 12,
-          "niederschlag": 1.4
+          "niederschlag": 0.9
         },
         {
           "wochentag": "Mittwoch",
@@ -46,29 +46,29 @@
           "emoji": "🌦️",
           "zustand": "Nieselregen",
           "max": 22,
-          "min": 14,
-          "niederschlag": 2.9
+          "min": 15,
+          "niederschlag": 1.9
         },
         {
           "wochentag": "Donnerstag",
           "datum": "27.08.",
-          "emoji": "⛈️",
-          "zustand": "Gewitter",
-          "max": 27,
+          "emoji": "🌦️",
+          "zustand": "Leichter Nieselregen",
+          "max": 26,
           "min": 16,
-          "niederschlag": 7.2
+          "niederschlag": 1.2
         }
       ]
     },
     {
       "stadt": "Werdohl",
       "aktuell": {
-        "temp": 16,
-        "gefuehlt": 16,
+        "temp": 15,
+        "gefuehlt": 14,
         "zustand": "Teils bewölkt",
         "emoji": "⛅",
         "wind": 3,
-        "luftfeuchte": 64,
+        "luftfeuchte": 71,
         "niederschlag": 0.0
       },
       "tage": [
@@ -122,12 +122,12 @@
     {
       "stadt": "Kierspe",
       "aktuell": {
-        "temp": 14,
+        "temp": 13,
         "gefuehlt": 13,
         "zustand": "Klar",
         "emoji": "☀️",
-        "wind": 4,
-        "luftfeuchte": 66,
+        "wind": 2,
+        "luftfeuchte": 72,
         "niederschlag": 0.0
       },
       "tage": [
@@ -136,7 +136,7 @@
           "datum": "23.08.",
           "emoji": "🌫️",
           "zustand": "Nebel",
-          "max": 17,
+          "max": 16,
           "min": 7,
           "niederschlag": 0.0
         },
@@ -145,7 +145,7 @@
           "datum": "24.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 21,
+          "max": 20,
           "min": 8,
           "niederschlag": 0.0
         },
@@ -153,28 +153,28 @@
           "wochentag": "Dienstag",
           "datum": "25.08.",
           "emoji": "🌦️",
-          "zustand": "Starker Nieselregen",
+          "zustand": "Nieselregen",
           "max": 20,
-          "min": 13,
-          "niederschlag": 1.9
+          "min": 12,
+          "niederschlag": 0.6
         },
         {
           "wochentag": "Mittwoch",
           "datum": "26.08.",
           "emoji": "🌦️",
-          "zustand": "Leichte Schauer",
-          "max": 22,
-          "min": 14,
-          "niederschlag": 4.9
+          "zustand": "Starker Nieselregen",
+          "max": 23,
+          "min": 15,
+          "niederschlag": 2.9
         },
         {
           "wochentag": "Donnerstag",
           "datum": "27.08.",
-          "emoji": "⛈️",
-          "zustand": "Gewitter",
-          "max": 27,
+          "emoji": "🌦️",
+          "zustand": "Leichter Nieselregen",
+          "max": 26,
           "min": 16,
-          "niederschlag": 5.7
+          "niederschlag": 1.2
         }
       ]
     },
@@ -211,29 +211,29 @@
         {
           "wochentag": "Dienstag",
           "datum": "25.08.",
-          "emoji": "☁️",
-          "zustand": "Bedeckt",
+          "emoji": "🌦️",
+          "zustand": "Leichter Nieselregen",
           "max": 25,
           "min": 14,
-          "niederschlag": 0.0
+          "niederschlag": 0.6
         },
         {
           "wochentag": "Mittwoch",
           "datum": "26.08.",
           "emoji": "🌦️",
           "zustand": "Leichter Nieselregen",
-          "max": 24,
+          "max": 25,
           "min": 16,
-          "niederschlag": 1.4
+          "niederschlag": 1.0
         },
         {
           "wochentag": "Donnerstag",
           "datum": "27.08.",
           "emoji": "🌦️",
-          "zustand": "Leichte Schauer",
-          "max": 29,
+          "zustand": "Leichter Nieselregen",
+          "max": 28,
           "min": 18,
-          "niederschlag": 7.8
+          "niederschlag": 1.2
         }
       ]
     }
