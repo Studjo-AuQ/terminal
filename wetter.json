@@ -1,15 +1,15 @@
 {
-  "aktualisiert": "23.08.2026, 08:55 Uhr",
+  "aktualisiert": "23.08.2026, 09:22 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
         "temp": 14,
-        "gefuehlt": 12,
+        "gefuehlt": 13,
         "zustand": "Überwiegend klar",
         "emoji": "🌤️",
-        "wind": 7,
-        "luftfeuchte": 71,
+        "wind": 8,
+        "luftfeuchte": 66,
         "niederschlag": 0.0
       },
       "tage": [
@@ -63,12 +63,12 @@
     {
       "stadt": "Werdohl",
       "aktuell": {
-        "temp": 15,
+        "temp": 16,
         "gefuehlt": 14,
-        "zustand": "Teils bewölkt",
-        "emoji": "⛅",
-        "wind": 10,
-        "luftfeuchte": 65,
+        "zustand": "Bedeckt",
+        "emoji": "☁️",
+        "wind": 11,
+        "luftfeuchte": 61,
         "niederschlag": 0.0
       },
       "tage": [
@@ -122,12 +122,12 @@
     {
       "stadt": "Kierspe",
       "aktuell": {
-        "temp": 13,
-        "gefuehlt": 12,
+        "temp": 14,
+        "gefuehlt": 13,
         "zustand": "Bedeckt",
         "emoji": "☁️",
-        "wind": 7,
-        "luftfeuchte": 81,
+        "wind": 8,
+        "luftfeuchte": 76,
         "niederschlag": 0.0
       },
       "tage": [
@@ -186,7 +186,7 @@
         "zustand": "Bedeckt",
         "emoji": "☁️",
         "wind": 9,
-        "luftfeuchte": 63,
+        "luftfeuchte": 60,
         "niederschlag": 0.0
       },
       "tage": [
