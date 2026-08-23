@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "23.08.2026, 17:49 Uhr (UTC)",
+  "aktualisiert": "23.08.2026, 18:38 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "OpenAI startet Werbegeschäft in Europa: Wie sich KI finanzieren lässt",
+      "description": "Von Montag an wird ChatGPT in Europa Werbung enthalten. Obwohl OpenAI-Chef Altman lange dagegen war, setzt der Konzern nun genau darauf, um die KI zu finanzieren. Welche Folgen das hat, erklärt Lilli-Marie Hiltscher.",
+      "pubDate": "2026-08-23T20:34:43+02:00",
+      "bild": ""
+    },
     {
       "title": "Berliner Senatsverwaltungen sind nach Hackerangriff wieder online",
       "description": "Die Berliner Verwaltung ist wieder komplett online. Nach einem Hackerangriff waren zwei Senatsverwaltungen tagelang vom IT-Netz abgetrennt, diverse Dienstleistungen waren eingeschränkt. Die Hintergründe werden weiterhin ermittelt.",
@@ -17,7 +23,7 @@
     {
       "title": "AfD-Vorsitzender Chrupalla nennt Klimawandel \"Nebenthema\"",
       "description": "Deutschland erlebt einen Extremsommer mit Hitzetoten und Waldbränden. Der AfD-Vorsitzende Chrupalla kritisiert dennoch einen \"Klima-Hype\". Wichtig sei, den Strom für Klimageräte bezahlbar zu machen, sagte er im ARD-Sommerinterview.",
-      "pubDate": "2026-08-23T19:18:40+02:00",
+      "pubDate": "2026-08-23T20:05:46+02:00",
       "bild": ""
     },
     {
@@ -84,12 +90,6 @@
       "title": "Gottesanbeterin breitet sich in Deutschland aus",
       "description": "Lange galt sie hierzulande als Exotin, doch mittlerweile hat sich die Gottesanbeterin sprunghaft verbreitet - eine Folge des Klimawandels. Vor allem in zwei Regionen Deutschlands ist das Insekt zu finden.",
       "pubDate": "2026-08-23T13:31:55+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Krieg gegen die Ukraine: Urlaub unter Beschuss an Russlands Küste",
-      "description": "Es ist Sommer, und die Menschen in Russland zieht es an die Strände der Schwarzmeerküste. Doch dort gibt es zunehmend Luftalarm - und so zeigt sich der Krieg gegen die Ukraine den Russen auch im Urlaub. Von Silke Diettrich.",
-      "pubDate": "2026-08-23T09:02:36+02:00",
       "bild": ""
     }
   ],
