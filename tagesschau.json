@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "23.08.2026, 05:56 Uhr (UTC)",
+  "aktualisiert": "23.08.2026, 06:54 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Tote und Entführte bei Angriff auf Dorf in Nigeria",
+      "description": "In Nigeria haben Islamisten ein Dorf überfallen. Dutzende Menschen wurde getötet oder entführt - wie viele genau, ist unklar. Hinter dem Angriff steckt offenbar ein Ableger der Terrorgruppe \"Islamischer Staat\".",
+      "pubDate": "2026-08-23T08:17:34+02:00",
+      "bild": ""
+    },
     {
       "title": "Schildkröten in Mexiko: Vom gefundenen Fressen zum Touri-Highlight",
       "description": "Einst vor allem bei Wilderern berühmt, hat sich ein kleiner Strand im mexikanischen Bundesstaat Oaxaca mittlerweile zum Paradies für Ökotourismus gewandelt. Die Stars sind Meeresschildkröten. Von Christina Fee Moebus.",
@@ -10,8 +16,8 @@
     },
     {
       "title": "Experte warnt vor \"Handelskrieg\" zwischen Kanada und USA",
-      "description": "Nach geplatzten Verhandlungen drohen Kanada und die USA in einen Zollkonflikt mit offenem Ende zu geraten. Ein Experte warnt vor hohen Kosten, US-Konzerne wollen neue Gespräche, und aus Kanada kommt Kritik an Trump.",
-      "pubDate": "2026-08-23T05:07:24+02:00",
+      "description": "Die Zoll-Gespräche zwischen den USA und Kanada sind gescheitert - jetzt treten neue US-Zölle in Kraft. Ein neuer \"Handelskrieg\" droht, denn Kanada will mit Gegenzöllen antworten. Beide Seiten geben sich gegenseitig die Schuld.",
+      "pubDate": "2026-08-23T08:51:06+02:00",
       "bild": ""
     },
     {
@@ -84,12 +90,6 @@
       "title": "Kanzler Merz besucht Waldbrandgebiet in NRW",
       "description": "Sommerpause, Urlaub, terminfreie Zeit: Für die Abwesenheit von Kanzler Merz gibt es viele Begriffe. Doch nun ist er wieder da - im Waldbrandgebiet in NRW. Dort ist das Feuer gelöscht, für die Brandherde des Kanzlers gilt das nicht.",
       "pubDate": "2026-08-22T14:12:54+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Klingbeil macht Vorstoß für Übergewinnsteuer bei Ölkonzernen",
-      "description": "Während die Spritpreise im Zuge des Iran-Kriegs stark gestiegen sind, machen Ölkonzerne höhere Gewinne. Finanzminister Klingbeil will diese deshalb zur Kasse bitten und fordert - zusammen mit anderen EU-Staaten - eine Übergewinnsteuer.",
-      "pubDate": "2026-08-22T14:10:42+02:00",
       "bild": ""
     }
   ],
