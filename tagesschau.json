@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "24.08.2026, 09:56 Uhr (UTC)",
+  "aktualisiert": "24.08.2026, 10:45 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "VW-Belegschaft kritisiert Kommunikation des Vorstands in Krisenzeit",
+      "description": "Die VW-Belegschaft kritisiert die Kommunikation des Vorstands scharf. Eine interne Umfrage zeigt die Verunsicherung der Mitarbeiter. Die Konzernspitze soll nun auf Betriebsversammlungen Antworten geben.",
+      "pubDate": "2026-08-24T12:09:10+02:00",
+      "bild": ""
+    },
     {
       "title": "Ankündigung zum Unabhängigkeitstag: EU gibt Milliarden für Ukraine frei",
       "description": "Zum heutigen Unabhängigkeitstag der Ukraine hat die EU neue Finanzhilfen in Milliardenhöhe genehmigt - auch vor dem Hintergrund intensivierter russischer Angriffe. Viele Verbündete der Ukraine treffen sich heute in Kiew.",
@@ -28,8 +34,8 @@
     },
     {
       "title": "Unternehmer Klaus-Michael Kühne im Alter von 89 Jahren gestorben",
-      "description": "Der einflussreiche Unternehmer und Multimilliardär Kühne ist im Alter von 89 Jahren gestorben. Das bestätigte der Konzern Kühne+Nagel. Sein Vermögen soll wohl an die von ihm gegründete Stiftung gehen.",
-      "pubDate": "2026-08-24T11:20:17+02:00",
+      "description": "Er galt als einer der einflussreichsten Geschäftsmänner und als einer der reichsten Deutschen: Klaus-Michael Kühne ist im Alter von 89 Jahren gestorben. Er habe \"wie kein anderer für Logistik und den globalen Handel\" gestanden, teile sein Unternehmen mit.",
+      "pubDate": "2026-08-24T12:01:21+02:00",
       "bild": ""
     },
     {
@@ -84,12 +90,6 @@
       "title": "Mehrere Leichen nach Bootsunglück vor Tunesien geborgen",
       "description": "Die Zahl der Todesopfer ist nach dem Bootsunglück vor der Küste des nordafrikanischen Landes weiter gestiegen. Von den 15 Insassen wird nur noch ein Mensch vermisst. Die Migranten wollten offenbar nach Italien.",
       "pubDate": "2026-08-23T23:38:32+02:00",
-      "bild": ""
-    },
-    {
-      "title": "OpenAI startet Werbegeschäft in Europa: Wie sich KI finanzieren lässt",
-      "description": "Von heute an wird ChatGPT in Europa Werbung enthalten. Obwohl OpenAI-Chef Altman lange dagegen war, setzt der Konzern nun genau darauf, um die KI zu finanzieren. Welche Folgen das hat, erklärt Lilli-Marie Hiltscher.",
-      "pubDate": "2026-08-23T20:34:43+02:00",
       "bild": ""
     }
   ],
