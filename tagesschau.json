@@ -1,7 +1,37 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "24.08.2026, 16:05 Uhr (UTC)",
+  "aktualisiert": "24.08.2026, 17:06 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Handelsstreit mit Kanada: USA verdoppeln Zölle auf Autos",
+      "description": "Am Wochenende war der Zollstreit zwischen den USA und Kanada neu ausgebrochen. Jetzt legt US-Präsident Trump nach und kündigt deutlich höhere Abgaben auf Autos und Autoteile aus dem Nachbarland an.",
+      "pubDate": "2026-08-24T18:49:19+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Unabhängigkeitstag der Ukraine - Kapitulation kommt nicht in Frage",
+      "description": "Mitten im russischen Angriffskrieg feiert die Ukraine ihre Unabhängigkeit. Präsident Selenskyj pocht auf die Stärke seines Landes - und erhält weitere Rüstungshilfe der EU und aus Großbritannien. Von F. Kellermann.",
+      "pubDate": "2026-08-24T18:48:03+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Italien: Gedenken an Opfer der Erdbeben vor zehn Jahren in Amatrice",
+      "description": "Vor zehn Jahren wurde die Region um Amatrice in Italien von schweren Erdbeben erschüttert - 300 Menschen starben. Zum Gedenken heute kam auch Ministerpräsidentin Meloni. Der Wiederaufbau läuft weiter schleppend.",
+      "pubDate": "2026-08-24T18:44:15+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: Seitwärts in die neue Woche",
+      "description": "Der deutsche Aktienmarkt ist mit leichten Abschlägen in eine ereignisreiche Woche gestartet. Vor neuen Zahlen von Nvidia und zur US-Inflation wagten sich viele Anleger nicht aus der Deckung.",
+      "pubDate": "2026-08-24T18:42:05+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Kinos verzeichnen Plus bei Ticketverkäufen",
+      "description": "In deutschen Kinos wurden im ersten Halbjahr 2026 so viele Tickets verkauft wie zuletzt vor der Corona-Pandemie. Vor allem zwei neue Hollywood-Produktionen lockten zahlreiche Zuschauer in die Kinosäle.",
+      "pubDate": "2026-08-24T18:07:35+02:00",
+      "bild": ""
+    },
     {
       "title": "EU-Klimadienst Copernicus: 21,1 Grad - Weltmeere warm wie nie",
       "description": "So warm wie am vergangenen Wochenende waren die Weltmeere noch nie. Laut dem EU-Programm Copernicus wurden im Schnitt 21,1 Grad gemessen. Für die Klimaexperten kommt der neue Rekord zu einem ungewöhnlichen Zeitpunkt.",
@@ -60,36 +90,6 @@
       "title": "Kasachstan: Klare Mehrheit für Regierungspartei bei Parlamentswahl",
       "description": "In Kasachstan kann Präsident Tokajew seine Macht weiter ausbauen: Bei der Parlamentswahl gewinnt seine Regierungspartei deutlich. Gleichzeitig ermöglicht ihm eine Verfassungsreform eine erneute Kandidatur 2029.",
       "pubDate": "2026-08-24T11:34:48+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Greenpeace geht von Milliardeneinbußen in Wirtschaft durch Hitze aus",
-      "description": "Niedrige Flusspegel, schlechte Ernten, Waldbrände - die Hitze bringt einer Schätzung von Greenpeace zufolge wirtschaftliche Einbußen in zweistelliger Milliardenhöhe mit sich. Zu den Folgekosten der Hitze gibt es bereits mehrere Studien.",
-      "pubDate": "2026-08-24T11:17:12+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Anstehende Nvidia-Zahlen machen Anleger nervös",
-      "description": "Zwar steht die Bilanz des US-Chipkonzerns Nvidia erst am Mittwoch an, trotzdem blicken die Anleger bereits nervös in Richtung USA. Hierzulande steht die Krise des Autokonzerns Volkswagen im Fokus.",
-      "pubDate": "2026-08-24T11:09:59+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Unternehmer Klaus-Michael Kühne im Alter von 89 Jahren gestorben",
-      "description": "Er galt als einer der einflussreichsten Geschäftsmänner und als einer der reichsten Deutschen: Klaus-Michael Kühne ist im Alter von 89 Jahren gestorben. Der gebürtige Hamburger förderte auch Sport und Kultur.",
-      "pubDate": "2026-08-24T14:42:04+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Tote bei Angriffen in Charkiw und Krasnodar",
-      "description": "Die Ukraine feiert heute den 35. Jahrestag ihrer Unabhängigkeit - unter dem Eindruck des russischen Angriffskriegs. In der Nacht griff Russland die Großstadt Charkiw an. Die Ukraine wiederum nahm einen Onlinehändler ins Visier.",
-      "pubDate": "2026-08-24T10:28:34+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Cherson: Leben mit der russischen Menschenjagd",
-      "description": "Im ukrainischen Cherson werden Menschen zur Zielscheibe russischer Drohnen. Für die Bewohner bedeutet dies einen täglichen Überlebenskampf. Den ertragen manche von ihnen irgendwann einfach nicht mehr. Von R. Barth.",
-      "pubDate": "2026-08-24T09:01:49+02:00",
       "bild": ""
     }
   ],
