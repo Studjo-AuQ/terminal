@@ -1,24 +1,24 @@
 {
-  "aktualisiert": "24.08.2026, 02:18 Uhr",
+  "aktualisiert": "24.08.2026, 03:29 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "aktuell": {
-        "temp": 10,
+        "temp": 9,
         "gefuehlt": 8,
         "zustand": "Klar",
         "emoji": "☀️",
         "wind": 8,
-        "luftfeuchte": 87,
+        "luftfeuchte": 88,
         "niederschlag": 0.0
       },
       "tage": [
         {
           "wochentag": "Montag",
           "datum": "24.08.",
-          "emoji": "🌤️",
-          "zustand": "Überwiegend klar",
-          "max": 21,
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
+          "max": 20,
           "min": 9,
           "niederschlag": 0.0
         },
@@ -27,18 +27,18 @@
           "datum": "25.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 22,
+          "max": 23,
           "min": 11,
           "niederschlag": 0.0
         },
         {
           "wochentag": "Mittwoch",
           "datum": "26.08.",
-          "emoji": "🌦️",
-          "zustand": "Starker Nieselregen",
+          "emoji": "🌧️",
+          "zustand": "Regen",
           "max": 22,
           "min": 14,
-          "niederschlag": 4.2
+          "niederschlag": 5.2
         },
         {
           "wochentag": "Donnerstag",
@@ -68,7 +68,7 @@
         "zustand": "Nebel",
         "emoji": "🌫️",
         "wind": 2,
-        "luftfeuchte": 100,
+        "luftfeuchte": 99,
         "niederschlag": 0.0
       },
       "tage": [
@@ -126,16 +126,16 @@
         "gefuehlt": 7,
         "zustand": "Klar",
         "emoji": "☀️",
-        "wind": 8,
-        "luftfeuchte": 90,
+        "wind": 6,
+        "luftfeuchte": 92,
         "niederschlag": 0.0
       },
       "tage": [
         {
           "wochentag": "Montag",
           "datum": "24.08.",
-          "emoji": "🌤️",
-          "zustand": "Überwiegend klar",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
           "max": 20,
           "min": 8,
           "niederschlag": 0.0
@@ -143,20 +143,20 @@
         {
           "wochentag": "Dienstag",
           "datum": "25.08.",
-          "emoji": "🌦️",
-          "zustand": "Leichter Nieselregen",
-          "max": 21,
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
+          "max": 22,
           "min": 13,
-          "niederschlag": 0.2
+          "niederschlag": 0.0
         },
         {
           "wochentag": "Mittwoch",
           "datum": "26.08.",
           "emoji": "🌧️",
-          "zustand": "Leichter Regen",
+          "zustand": "Regen",
           "max": 22,
           "min": 14,
-          "niederschlag": 4.7
+          "niederschlag": 7.5
         },
         {
           "wochentag": "Donnerstag",
@@ -183,18 +183,18 @@
       "aktuell": {
         "temp": 13,
         "gefuehlt": 12,
-        "zustand": "Klar",
-        "emoji": "☀️",
+        "zustand": "Überwiegend klar",
+        "emoji": "🌤️",
         "wind": 7,
-        "luftfeuchte": 75,
+        "luftfeuchte": 76,
         "niederschlag": 0.0
       },
       "tage": [
         {
           "wochentag": "Montag",
           "datum": "24.08.",
-          "emoji": "⛅",
-          "zustand": "Teils bewölkt",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
           "max": 24,
           "min": 13,
           "niederschlag": 0.0
@@ -204,7 +204,7 @@
           "datum": "25.08.",
           "emoji": "☁️",
           "zustand": "Bedeckt",
-          "max": 26,
+          "max": 27,
           "min": 14,
           "niederschlag": 0.0
         },
@@ -212,10 +212,10 @@
           "wochentag": "Mittwoch",
           "datum": "26.08.",
           "emoji": "🌦️",
-          "zustand": "Nieselregen",
+          "zustand": "Leichter Nieselregen",
           "max": 23,
           "min": 17,
-          "niederschlag": 6.7
+          "niederschlag": 4.4
         },
         {
           "wochentag": "Donnerstag",
