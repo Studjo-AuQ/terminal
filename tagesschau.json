@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "24.08.2026, 05:19 Uhr (UTC)",
+  "aktualisiert": "24.08.2026, 06:04 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Marktbericht: DAX vor schwunglosem Wochenstart",
+      "description": "In dieser Woche warten die Anleger gespannt auf die Bilanz des US-Chipherstellers Nvidia. Auch ein Treffen von US-Notenbankern steht im Fokus. Der DAX dürfte deshalb schwunglos in den Montag starten.",
+      "pubDate": "2026-08-24T07:39:25+02:00",
+      "bild": ""
+    },
     {
       "title": "Leisten wir uns zu viele Jobs, die dem Wohlstand nichts bringen?",
       "description": "Deutschland hat ein Problem: Die Wirtschaft wächst nicht mehr so stark, wie sie müsste, um den Wohlstand zu halten. Wird zu viel verwaltet und berichtet, statt Investitionen und neue Ideen ins Land zu holen?",
@@ -84,12 +90,6 @@
       "title": "Wie die Urlaubserholung zurück im Job möglichst lange anhält",
       "description": "Der Urlaub ist um, die Erholung weicht dem Alltagsstress. Doch muss das sein? Wie lässt sich das Urlaubsgefühl in den Alltag hinüberretten - zumindest eine Zeit lang? Von Laura Lippert.",
       "pubDate": "2026-08-23T15:52:16+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Präsidentenwahl: \"Schlimmste Krise in Kosovo seit dem Krieg\"",
-      "description": "Der Kosovo erlebt eine beispiellose Verfassungskrise. Auch nach drei Wahlen in kurzer Folge hat sich das Parlament nicht auf einen neuen Präsidenten verständigen können. Ein Ausweg ist nicht absehbar. Von S. Hahne.",
-      "pubDate": "2026-08-23T15:40:30+02:00",
       "bild": ""
     }
   ],
