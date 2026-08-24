@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "24.08.2026, 14:19 Uhr (UTC)",
+  "aktualisiert": "24.08.2026, 15:11 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Gas aus Norwegen: Uniper schließt Liefervertrag mit Equinor",
+      "description": "Schon jetzt bezieht Deutschland den größten Anteil seiner Gaslieferungen aus Norwegen - langfristig soll es noch mehr werden. Dazu hat der staatliche Gashändler Uniper einen umfangreichen Liefervertrag abgeschlossen.",
+      "pubDate": "2026-08-24T17:04:43+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wie Apfelbauern mit Hitze und Trockenheit umgehen",
+      "description": "Der heimische Apfelanbau kämpft nicht nur mit günstiger Konkurrenz aus dem Ausland: Auch Hitze und ausbleibender Regen belasten Betriebe. Wie Apfelbauern damit umgehen und was in Zukunft helfen könnte. Von M. Holzreiter.",
+      "pubDate": "2026-08-24T16:43:53+02:00",
+      "bild": ""
+    },
     {
       "title": "Marktbericht: Bitcoin meldet sich fulminant zurück",
       "description": "Was ist los beim Bitcoin? In wenigen Tagen ist die Kryptowährung um mehr als 25 Prozent nach oben geschossen. Experten machen vor allem drei Kurstreiber aus. Von Detlev Landmesser.",
@@ -78,18 +90,6 @@
       "title": "Leisten wir uns zu viele Jobs, die dem Wohlstand nichts bringen?",
       "description": "Deutschland hat ein Problem: Die Wirtschaft wächst nicht mehr so stark, wie sie müsste, um den Wohlstand zu halten. Wird zu viel verwaltet und berichtet, statt Investitionen und Ideen ins Land zu holen? Von Bianca v. d. Au.",
       "pubDate": "2026-08-24T06:18:06+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wahl in Sachsen-Anhalt: Lackmustest für die Linke",
-      "description": "Die Linke präsentiert heute ihr Programm für ein \"zukunftsfestes Sachsen-Anhalt\". Die Partei kämpft um ein starkes Ergebnis bei der Wahl - mit prominenter Unterstützung. Aus Berlin kam aber nicht nur Rückenwind. Von Alexander Budweg.",
-      "pubDate": "2026-08-24T06:00:02+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Verhandlungsbeginn: Sammelklage gegen E.ON wegen Fernwärmepreisen",
-      "description": "Um mehrere Hundert Prozent sollen sich die Preise vom Anbieter E.ON für Fernwärme in einigen Fällen erhöht haben. Der Verbraucherzentrale Bundesverband klagt - heute beginnt die Verhandlung. Für Betroffene könnte es um Tausende Euro gehen. Von J. Eberl.",
-      "pubDate": "2026-08-24T05:00:37+02:00",
       "bild": ""
     }
   ],
