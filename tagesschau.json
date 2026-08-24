@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "24.08.2026, 07:39 Uhr (UTC)",
+  "aktualisiert": "24.08.2026, 08:56 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Tote bei Angriffen in Charkiw und Krasnodar",
+      "description": "Die Ukraine feiert heute den 35. Jahrestag ihrer Unabhängigkeit - unter dem Eindruck des russischen Angriffskriegs. In der Nacht griff Russland die Großstadt Charkiw an. Die Ukraine wiederum nahm einen Onlinehändler ins Visier.",
+      "pubDate": "2026-08-24T10:28:34+02:00",
+      "bild": ""
+    },
     {
       "title": "Cherson: Leben mit der russischen Menschenjagd",
       "description": "Im ukrainischen Cherson werden Menschen zur Zielscheibe russischer Drohnen. Für die Bewohner bedeutet dies einen täglichen Überlebenskampf. Den ertragen manche von ihnen irgendwann einfach nicht mehr. Von R. Barth.",
@@ -33,7 +39,7 @@
       "bild": ""
     },
     {
-      "title": "Evakuierungen wegen Brände im US-Bundesstaat Nevada",
+      "title": "Evakuierungen wegen Bränden im US-Bundesstaat Nevada",
       "description": "Die als \"Hawk Fire\" bezeichneten Brände im US-Bundesstaat Nevada haben die ersten Wohnviertel der Großstadt Reno erreicht. Die Behörden rufen Zehntausende Menschen dazu auf, ihre Häuser zu verlassen.",
       "pubDate": "2026-08-24T04:21:21+02:00",
       "bild": ""
@@ -45,8 +51,8 @@
       "bild": ""
     },
     {
-      "title": "30 Tote nach Abrutsch einer Mülldeponie im westafrikanischen Guinea",
-      "description": "Mindestens 30 Menschen sind beim Abrutsch einer Mülldeponie im westafrikanischen Guinea ums Leben gekommen, weitere wurden verletzt. Schwerer Regen hatte die Deponie in der Hauptstadt Conakry aufgeweicht.",
+      "title": "Guinea: 30 Tote nach Abrutschen einer Mülldeponie",
+      "description": "Mindestens 30 Menschen sind beim Abrutschen einer Mülldeponie im westafrikanischen Guinea ums Leben gekommen, weitere wurden verletzt. Schwerer Regen hatte die Deponie in der Hauptstadt Conakry aufgeweicht.",
       "pubDate": "2026-08-24T00:44:33+02:00",
       "bild": ""
     },
@@ -84,12 +90,6 @@
       "title": "Iran reagiert mit Drohungen auf US-Drohungen",
       "description": "Noch immer gibt es keine Einigung im Iran-Krieg. Die USA drohen mit einem \"Wirtschaftskrieg\", Teheran reagiert scharf. Jeder, der sich daran beteilige, werde als \"Feind\" gesehen. Doch die ökonomischen Probleme Irans wachsen offenbar.",
       "pubDate": "2026-08-23T17:25:53+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Außenminister Wadephul lobt den Widerstandswillen Charkiws",
-      "description": "Das ukrainische Charkiw liegt nur rund 30 Kilometer von der Front entfernt - häufig steht sie unter russischem Beschuss. Dennoch besuchte Außenminister Wadephul die Millionenstadt. Dabei würdigte er den Widerstandswillen der Bewohner.",
-      "pubDate": "2026-08-23T16:21:56+02:00",
       "bild": ""
     }
   ],
