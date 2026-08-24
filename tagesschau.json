@@ -1,7 +1,37 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "24.08.2026, 08:56 Uhr (UTC)",
+  "aktualisiert": "24.08.2026, 09:56 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Ankündigung zum Unabhängigkeitstag: EU gibt Milliarden für Ukraine frei",
+      "description": "Zum heutigen Unabhängigkeitstag der Ukraine hat die EU neue Finanzhilfen in Milliardenhöhe genehmigt - auch vor dem Hintergrund intensivierter russischer Angriffe. Viele Verbündete der Ukraine treffen sich heute in Kiew.",
+      "pubDate": "2026-08-24T11:42:47+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Kasachstan: Klare Mehrheit für Regierungspartei bei Parlamentswahl",
+      "description": "In Kasachstan kann Präsident Tokajew seine Macht weiter ausbauen: Bei der Parlamentswahl gewinnt seine Regierungspartei deutlich. Gleichzeitig ermöglicht ihm eine Verfassungsreform eine erneute Kandidatur 2029.",
+      "pubDate": "2026-08-24T11:34:48+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Greenpeace geht von Milliardeneinbußen in Wirtschaft durch Hitze aus",
+      "description": "Niedrige Flusspegel, schlechte Ernten, Waldbrände - die Hitze bringt einer Schätzung von Greenpeace zufolge wirtschaftliche Einbußen in zweistelliger Milliardenhöhe mit sich. Zu den Folgekosten der Hitze gibt es bereits mehrere Studien.",
+      "pubDate": "2026-08-24T11:17:12+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: Anstehende Nvidia-Zahlen machen Anleger nervös",
+      "description": "Zwar steht die Bilanz des US-Chipkonzerns Nvidia erst am Mittwoch an, trotzdem blicken die Anleger bereits nervös in Richtung USA. Hierzulande steht die Krise des Autokonzerns Volkswagen im Fokus.",
+      "pubDate": "2026-08-24T11:09:59+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Unternehmer Klaus-Michael Kühne im Alter von 89 Jahren gestorben",
+      "description": "Der einflussreiche Unternehmer und Multimilliardär Kühne ist im Alter von 89 Jahren gestorben. Das bestätigte der Konzern Kühne+Nagel. Sein Vermögen soll wohl an die von ihm gegründete Stiftung gehen.",
+      "pubDate": "2026-08-24T11:20:17+02:00",
+      "bild": ""
+    },
     {
       "title": "Tote bei Angriffen in Charkiw und Krasnodar",
       "description": "Die Ukraine feiert heute den 35. Jahrestag ihrer Unabhängigkeit - unter dem Eindruck des russischen Angriffskriegs. In der Nacht griff Russland die Großstadt Charkiw an. Die Ukraine wiederum nahm einen Onlinehändler ins Visier.",
@@ -12,12 +42,6 @@
       "title": "Cherson: Leben mit der russischen Menschenjagd",
       "description": "Im ukrainischen Cherson werden Menschen zur Zielscheibe russischer Drohnen. Für die Bewohner bedeutet dies einen täglichen Überlebenskampf. Den ertragen manche von ihnen irgendwann einfach nicht mehr. Von R. Barth.",
       "pubDate": "2026-08-24T09:01:49+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: DAX vor schwunglosem Wochenstart",
-      "description": "In dieser Woche warten die Anleger gespannt auf die Bilanz des US-Chipherstellers Nvidia. Auch ein Treffen von US-Notenbankern steht im Fokus. Der DAX dürfte deshalb schwunglos in den Montag starten.",
-      "pubDate": "2026-08-24T07:39:25+02:00",
       "bild": ""
     },
     {
@@ -66,30 +90,6 @@
       "title": "OpenAI startet Werbegeschäft in Europa: Wie sich KI finanzieren lässt",
       "description": "Von heute an wird ChatGPT in Europa Werbung enthalten. Obwohl OpenAI-Chef Altman lange dagegen war, setzt der Konzern nun genau darauf, um die KI zu finanzieren. Welche Folgen das hat, erklärt Lilli-Marie Hiltscher.",
       "pubDate": "2026-08-23T20:34:43+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Berliner Senatsverwaltungen sind nach Hackerangriff wieder online",
-      "description": "Die Berliner Verwaltung ist wieder komplett online. Nach einem Hackerangriff waren zwei Senatsverwaltungen tagelang vom IT-Netz abgetrennt, diverse Dienstleistungen waren eingeschränkt. Die Hintergründe werden weiterhin ermittelt.",
-      "pubDate": "2026-08-23T18:15:18+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Das ARD-Sommerinterview mit AfD-Chef Chrupalla im Faktencheck",
-      "description": "Der AfD-Vorsitzende Chrupalla war im ARD-Sommerinterview zu Gast. Viele Aussagen halten einer Überprüfung stand. Doch beim Thema Klimawandel lag er daneben, einige Aussagen zur Migration waren ebenfalls falsch.",
-      "pubDate": "2026-08-23T18:40:57+02:00",
-      "bild": ""
-    },
-    {
-      "title": "AfD-Vorsitzender Chrupalla nennt Klimawandel \"Nebenthema\"",
-      "description": "Deutschland erlebt einen Extremsommer mit Hitzetoten und Waldbränden. Der AfD-Vorsitzende Chrupalla kritisiert dennoch einen \"Klima-Hype\". Wichtig sei, den Strom für Klimageräte bezahlbar zu machen, sagte er im ARD-Sommerinterview.",
-      "pubDate": "2026-08-23T20:05:46+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Iran reagiert mit Drohungen auf US-Drohungen",
-      "description": "Noch immer gibt es keine Einigung im Iran-Krieg. Die USA drohen mit einem \"Wirtschaftskrieg\", Teheran reagiert scharf. Jeder, der sich daran beteilige, werde als \"Feind\" gesehen. Doch die ökonomischen Probleme Irans wachsen offenbar.",
-      "pubDate": "2026-08-23T17:25:53+02:00",
       "bild": ""
     }
   ],
