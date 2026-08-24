@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "24.08.2026, 03:10 Uhr (UTC)",
+  "aktualisiert": "24.08.2026, 04:22 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Leisten wir uns zu viele Jobs, die dem Wohlstand nichts bringen?",
+      "description": "Deutschland hat ein Problem: Die Wirtschaft wächst nicht mehr so stark, wie sie müsste, um den Wohlstand zu halten. Wird zu viel verwaltet und berichtet, statt Investitionen und neue Ideen ins Land zu holen?",
+      "pubDate": "2026-08-24T06:18:06+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wahl in Sachsen-Anhalt: Lackmustest für die Linke",
+      "description": "Die Linke präsentiert heute ihr Programm für ein \"zukunftsfestes Sachsen-Anhalt\". Die Partei kämpft um ein starkes Ergebnis bei der Wahl - mit prominenter Unterstützung. Aus Berlin kam aber nicht nur Rückenwind. Von Alexander Budweg.",
+      "pubDate": "2026-08-24T06:00:02+02:00",
+      "bild": ""
+    },
     {
       "title": "Verhandlungsbeginn: Sammelklage gegen E.ON wegen Fernwärmepreisen",
       "description": "Um mehrere Hundert Prozent sollen sich die Preise vom Anbieter E.ON für Fernwärme in einigen Fällen erhöht haben. Der Verbraucherzentrale Bundesverband klagt - heute beginnt die Verhandlung. Für Betroffene könnte es um Tausende Euro gehen. Von J. Eberl.",
@@ -78,18 +90,6 @@
       "title": "Präsidentenwahl: \"Schlimmste Krise in Kosovo seit dem Krieg\"",
       "description": "Der Kosovo erlebt eine beispiellose Verfassungskrise. Auch nach drei Wahlen in kurzer Folge hat sich das Parlament nicht auf einen neuen Präsidenten verständigen können. Ein Ausweg ist nicht absehbar. Von S. Hahne.",
       "pubDate": "2026-08-23T15:40:30+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Rhein-Fähren fahren wieder - Binnenschiffe haben weiter Probleme",
-      "description": "Die Hitzewelle hat Deutschlands Flüssen erheblich zugesetzt. Auf dem Rhein läuft nun zumindest der Fährbetrieb wieder an. Bis sich die Lage für die großen Binnenschiffe normalisiert, dürfte es aber noch Wochen dauern.",
-      "pubDate": "2026-08-23T14:51:05+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Selenskyj rechnet mit Mobilisierung Hunderttausender russischer Soldaten",
-      "description": "Lange hatte Kremlchef Putin zu den ukrainischen Angriffen auf Raffinerien und Logistikzentren geschwiegen - nun droht er mit einer harten Antwort. Die Ukraine geht davon aus, dass Moskau bald Hunderttausende Soldaten mobilisieren will.",
-      "pubDate": "2026-08-23T14:22:33+02:00",
       "bild": ""
     }
   ],
