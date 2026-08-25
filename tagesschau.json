@@ -1,7 +1,25 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "25.08.2026, 08:09 Uhr (UTC)",
+  "aktualisiert": "25.08.2026, 09:09 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Marktbericht: Anleger erfreut über starke Konjunkturdaten",
+      "description": "Das deutsche Wirtschaftswachstum fällt etwas stärker aus als erwartet, ein erfreuliches Signal für die Anleger. Der DAX legt im frühen Handel zu. Aber vor wichtigen Terminen bleibt die Stimmung angespannt.",
+      "pubDate": "2026-08-25T10:59:48+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Konzernumbau beim Autohersteller: Was VW in China anders macht",
+      "description": "Volkswagen steht vor einem Konzernumbau. In China lässt sich bereits beobachten, wie sich das Unternehmen verändern könnte. Dort produziert VW vergleichsweise günstige E-Autos. Aber taugt das Modell auch für Deutschland? Von Jörg Endriss.",
+      "pubDate": "2026-08-25T10:50:16+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Deutsche Wirtschaft im Frühjahr etwas stärker gewachsen als erwartet",
+      "description": "Trotz des Iran-Kriegs hat die deutsche Wirtschaft im zweiten Quartal ein leichtes Wachstum geschafft - vor allem wegen des Exportgeschäfts. Die Stimmung in den Chefetagen der Unternehmen hellt sich weiter auf.",
+      "pubDate": "2026-08-25T10:16:09+02:00",
+      "bild": ""
+    },
     {
       "title": "Handelsstreit zwischen USA und Kanada: Trumps Zölle, Carneys Härte",
       "description": "Mit neuen Zöllen will US-Präsident Trump Kanada empfindlich treffen. Doch Premier Carney gibt nicht nach - und droht selbst mit Gegenzöllen. Kann das gut gehen? Von Giselle Ucar.",
@@ -18,12 +36,6 @@
       "title": "Tornado zieht über Südfrankreich - mehrere Verletzte",
       "description": "Im Süden Frankreichs hat ein Tornado zahlreiche Häuser beschädigt. Mehrere Menschen wurden durch den Sturm verletzt, am Montagabend kam es zu Ausfällen im Bahn- und Flugverkehr.",
       "pubDate": "2026-08-25T08:31:33+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Anleger nervös in der Woche der Wahrheit",
-      "description": "Vor den Anlegern liegen wichtige Termine: Am Mittwoch legt der Chipriese Nvidia seine Bilanz vor, am Freitag hält der US-Notenbank-Chef eine Rede. Deshalb bleiben die Investoren zurückhaltend.",
-      "pubDate": "2026-08-25T07:31:32+02:00",
       "bild": ""
     },
     {
@@ -78,18 +90,6 @@
       "title": "US-Finanzminister droht mit Sanktionen gegen Irans Handelspartner",
       "description": "Die USA wollen Iran wirtschaftlich isolieren und haben Sanktionen gegen Teherans Wirtschaftspartner angekündigt. Wer Handel mit dem Land treibe, werde die \"Wucht der amerikanischen Macht\" zu spüren bekommen, so Finanzminister Bessent.",
       "pubDate": "2026-08-24T22:56:51+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wie Kürzungen im Bundeshaushalt die Musikbranche treffen",
-      "description": "Seit Wochen wird über die Sparvorhaben der Bundesregierung diskutiert. Laut Haushaltsentwurf für 2027 soll auch bei der Kultur gespart werden. Wo und welche Folgen das haben könnte? Von A. K. Schleithoff.",
-      "pubDate": "2026-08-24T19:50:45+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Handelsstreit mit Kanada: USA verdoppeln Zölle auf Autos",
-      "description": "Am Wochenende war der Zollstreit zwischen den USA und Kanada neu ausgebrochen. Jetzt legt US-Präsident Trump nach und kündigt deutlich höhere Abgaben auf Autos und Autoteile aus dem Nachbarland an.",
-      "pubDate": "2026-08-25T00:56:35+02:00",
       "bild": ""
     }
   ],
