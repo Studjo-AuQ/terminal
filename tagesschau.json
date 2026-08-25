@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "25.08.2026, 01:41 Uhr (UTC)",
+  "aktualisiert": "25.08.2026, 03:05 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Hinweise auf massive Missstände in oberbayerischer Rehaklinik",
+      "description": "BR-Recherchen zeigen schwere Missstände in einer geriatrischen Rehaklinik in Oberbayern. Ein weiteres Haus der Betreiber wurde im Frühjahr aus ähnlichen Gründen geschlossen. Hauptgesellschafter ist ein Finanzinvestor.",
+      "pubDate": "2026-08-25T05:00:27+02:00",
+      "bild": ""
+    },
     {
       "title": "US-Krieg gegen Iran: Oman zwischen den Fronten",
       "description": "Das Sultanat verhandelt mit Iran über ein Abkommen zur Straße von Hormus. Für Teheran ist die Zusammenarbeit strategisch wichtig, für Oman ist sie ein Balanceakt: Denn der engste Verbündete, die USA, drohen mit Eskalation. Von Paul Jens.",
@@ -84,12 +90,6 @@
       "title": "Wie Apfelbauern mit Hitze und Trockenheit umgehen",
       "description": "Der heimische Apfelanbau kämpft nicht nur mit günstiger Konkurrenz aus dem Ausland: Auch Hitze und ausbleibender Regen belasten Betriebe. Wie Apfelbauern damit umgehen und was in Zukunft helfen könnte. Von M. Holzreiter.",
       "pubDate": "2026-08-24T16:43:53+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Bitcoin meldet sich fulminant zurück",
-      "description": "Was ist los beim Bitcoin? In wenigen Tagen ist die Kryptowährung um mehr als 25 Prozent nach oben geschossen. Experten machen vor allem drei Kurstreiber aus. Von Detlev Landmesser.",
-      "pubDate": "2026-08-24T14:25:38+02:00",
       "bild": ""
     }
   ],
