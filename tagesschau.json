@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "25.08.2026, 15:23 Uhr (UTC)",
+  "aktualisiert": "25.08.2026, 16:09 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Slowakische Polizei vereitelt Anschlag auf Drohnenfabrik",
+      "description": "Improvisiertes Napalm und ein handschriftlicher Plan: In der Slowakei haben Ermittler nach eigenen Angaben einen Anschlag auf eine Drohnenfabrik verhindert. Drei Männer wurden festgenommen - einer von ihnen in Deutschland.",
+      "pubDate": "2026-08-25T17:42:47+02:00",
+      "bild": ""
+    },
     {
       "title": "Rede über Zuwanderung - Steinmeier fordert Absage an völkische Ideologie",
       "description": "Es ist die erste Publikumsveranstaltung des Bundespräsidenten in seinem Übergangsquartier - und Steinmeier nutzt sie für eine Warnung vor einem Rückfall in völkisches Denken. Er sagt auch, Zuwanderung koste Kraft.",
@@ -84,12 +90,6 @@
       "title": "ifo-Index: Die Zuversicht in der Wirtschaft wächst",
       "description": "Zum vierten Mal in Folge ist im August der ifo-Index gestiegen. Die Stimmung in den Chefetagen der Unternehmen hellt sich damit weiter auf. Deutschland trotzt damit auch den wirtschaftlichen Folgen des Iran-Kriegs.",
       "pubDate": "2026-08-25T12:06:33+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Handelsstreit zwischen USA und Kanada: Trumps Zölle, Carneys Härte",
-      "description": "Mit neuen Zöllen will US-Präsident Trump Kanada empfindlich treffen. Doch Premier Carney gibt nicht nach - und droht selbst mit Gegenzöllen. Kann das gut gehen? Von Giselle Ucar.",
-      "pubDate": "2026-08-25T09:20:17+02:00",
       "bild": ""
     }
   ],
