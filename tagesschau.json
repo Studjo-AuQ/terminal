@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "25.08.2026, 05:59 Uhr (UTC)",
+  "aktualisiert": "25.08.2026, 07:03 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Tornado zieht über Südfrankreich - mehrere Verletzte",
+      "description": "Im Süden Frankreichs hat ein Tornado zahlreiche Häuser beschädigt. Mehrere Menschen wurden durch den Sturm verletzt, am Montagabend kam es zu Ausfällen im Bahn- und Flugverkehr.",
+      "pubDate": "2026-08-25T08:31:33+02:00",
+      "bild": ""
+    },
     {
       "title": "Marktbericht: Anleger nervös in der Woche der Wahrheit",
       "description": "Vor den Anlegern liegen wichtige Termine: Am Mittwoch legt der Chipriese Nvidia seine Bilanz vor, am Freitag hält der US-Notenbank-Chef eine Rede. Deshalb bleiben die Investoren zurückhaltend.",
@@ -84,12 +90,6 @@
       "title": "Italien: Gedenken an Opfer der Erdbeben vor zehn Jahren in Amatrice",
       "description": "Vor zehn Jahren wurde die Region um Amatrice in Italien von schweren Erdbeben erschüttert - 300 Menschen starben. Zum Gedenken heute kam auch Ministerpräsidentin Meloni. Der Wiederaufbau läuft weiter schleppend.",
       "pubDate": "2026-08-24T18:44:15+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Seitwärts in die neue Woche",
-      "description": "Der deutsche Aktienmarkt ist mit leichten Abschlägen in eine ereignisreiche Woche gestartet. Vor neuen Zahlen von Nvidia und zur US-Inflation wagten sich viele Anleger nicht aus der Deckung.",
-      "pubDate": "2026-08-24T18:42:05+02:00",
       "bild": ""
     }
   ],
