@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "25.08.2026, 05:07 Uhr (UTC)",
+  "aktualisiert": "25.08.2026, 05:59 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Marktbericht: Anleger nervös in der Woche der Wahrheit",
+      "description": "Vor den Anlegern liegen wichtige Termine: Am Mittwoch legt der Chipriese Nvidia seine Bilanz vor, am Freitag hält der US-Notenbank-Chef eine Rede. Deshalb bleiben die Investoren zurückhaltend.",
+      "pubDate": "2026-08-25T07:31:32+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Nach UN-Job: Baerbock wechselt an die Columbia-Universität",
+      "description": "Baerbock wird auch nach ihrem Amt bei der UN-Generalversammlung in New York bleiben. Die Grünen-Politikerin soll laut Medienberichten im Herbst an die Columbia-Universität wechseln - und dort zu internationaler politischer Führung lehren.",
+      "pubDate": "2026-08-25T07:30:03+02:00",
+      "bild": ""
+    },
     {
       "title": "Referendum über EU-Beitrittsverhandlungen: Brüssel hofft auf ein Ja aus Island",
       "description": "Island stimmt am Wochenende über EU-Beitrittsverhandlungen ab. Nicht zuletzt aus geopolitischen Gründen setzt man in Brüssel auf Zustimmung - und versucht, beim schwierigen Thema Fischerei auf die Isländer zuzugehen. Von Thomas Spickhofen.",
@@ -78,18 +90,6 @@
       "title": "Marktbericht: Seitwärts in die neue Woche",
       "description": "Der deutsche Aktienmarkt ist mit leichten Abschlägen in eine ereignisreiche Woche gestartet. Vor neuen Zahlen von Nvidia und zur US-Inflation wagten sich viele Anleger nicht aus der Deckung.",
       "pubDate": "2026-08-24T18:42:05+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kinos verzeichnen Plus bei Ticketverkäufen",
-      "description": "In deutschen Kinos wurden im ersten Halbjahr 2026 so viele Tickets verkauft wie zuletzt vor der Corona-Pandemie. Vor allem zwei neue Hollywood-Produktionen lockten zahlreiche Zuschauer in die Kinosäle.",
-      "pubDate": "2026-08-24T18:07:35+02:00",
-      "bild": ""
-    },
-    {
-      "title": "EU-Klimadienst Copernicus: 21,1 Grad - Weltmeere warm wie nie",
-      "description": "So warm wie am vergangenen Wochenende waren die Weltmeere noch nie. Laut dem EU-Programm Copernicus wurden im Schnitt 21,1 Grad gemessen. Für die Klimaexperten kommt der neue Rekord zu einem ungewöhnlichen Zeitpunkt.",
-      "pubDate": "2026-08-24T17:15:43+02:00",
       "bild": ""
     }
   ],
