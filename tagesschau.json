@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "25.08.2026, 09:09 Uhr (UTC)",
+  "aktualisiert": "25.08.2026, 10:02 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Kabinettsklausur: Merz ruft zur Zuversicht auf",
+      "description": "Bei der Kabinettsklausur in Neuhardenberg geht es zum Auftakt um die Stärkung der schwächelnden deutschen Wirtschaft. Kanzler Merz sieht keinen Grund, \"uns kleinzumachen\".",
+      "pubDate": "2026-08-25T12:00:40+02:00",
+      "bild": ""
+    },
     {
       "title": "Marktbericht: Anleger erfreut über starke Konjunkturdaten",
       "description": "Das deutsche Wirtschaftswachstum fällt etwas stärker aus als erwartet, ein erfreuliches Signal für die Anleger. Der DAX legt im frühen Handel zu. Aber vor wichtigen Terminen bleibt die Stimmung angespannt.",
@@ -39,7 +45,7 @@
       "bild": ""
     },
     {
-      "title": "Nach UN-Job: Baerbock wechselt an die Columbia-Universität",
+      "title": "Baerbock wechselt an die Columbia-Universität",
       "description": "Baerbock wird auch nach ihrem Amt bei der UN-Generalversammlung in New York bleiben. Die Grünen-Politikerin soll laut Medienberichten im Herbst an die Columbia-Universität wechseln - und dort zu internationaler politischer Führung lehren.",
       "pubDate": "2026-08-25T07:30:03+02:00",
       "bild": ""
@@ -64,7 +70,7 @@
     },
     {
       "title": "US-Krieg gegen Iran: Oman zwischen den Fronten",
-      "description": "Das Sultanat verhandelt mit Iran über ein Abkommen zur Straße von Hormus. Für Teheran ist die Zusammenarbeit strategisch wichtig, für Oman ist sie ein Balanceakt: Denn der engste Verbündete, die USA, drohen mit Eskalation. Von Paul Jens.",
+      "description": "Das Sultanat verhandelt mit Iran über ein Abkommen zur Straße von Hormus. Für Iran ist die Zusammenarbeit strategisch wichtig, für Oman ist sie ein Balanceakt: Denn der engste Verbündete, die USA, drohen mit Eskalation. Von Paul Jens.",
       "pubDate": "2026-08-25T03:38:19+02:00",
       "bild": ""
     },
@@ -84,12 +90,6 @@
       "title": "Kabinettsklausur der Bundesregierung: Neustart in Neuhardenberg?",
       "description": "Die Erwartungen sind hoch vor der Kabinettsklausur im Schloss Neuhardenberg. Die schwarz-rote Koalition will Handlungsfähigkeit beweisen. Doch miese Umfragewerte und Gegenwind aus den eigenen Reihen belasten die Stimmung. Von Dagmar Pepping.",
       "pubDate": "2026-08-24T21:38:42+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Finanzminister droht mit Sanktionen gegen Irans Handelspartner",
-      "description": "Die USA wollen Iran wirtschaftlich isolieren und haben Sanktionen gegen Teherans Wirtschaftspartner angekündigt. Wer Handel mit dem Land treibe, werde die \"Wucht der amerikanischen Macht\" zu spüren bekommen, so Finanzminister Bessent.",
-      "pubDate": "2026-08-24T22:56:51+02:00",
       "bild": ""
     }
   ],
