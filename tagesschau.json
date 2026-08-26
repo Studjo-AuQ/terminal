@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "26.08.2026, 06:01 Uhr (UTC)",
+  "aktualisiert": "26.08.2026, 07:27 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Pakistan: Tote bei Brand auf Säuglingsstation in Islamabad",
+      "description": "Bei einem Feuer in einem Krankenhaus sind in der pakistanischen Hauptstadt mindestens 14 Neugeborene gestorben. Ersten Erkenntnissen zufolge könnte ein Defekt in einer Klimaanlage Ursache für den Brand sein.",
+      "pubDate": "2026-08-26T08:36:15+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Bundesregierung berät auf Kabinettsklausur über Klimakrise und Reformen",
+      "description": "Die Wirtschaft drängt, die Reformvorhaben türmen sich, und beim Thema Klimawandel sind Union und SPD uneins. Viel Gesprächsstoff für den zweiten Tag der Kabinettsklausur. Dennoch zeigen sich beide Koalitionspartner optimistisch - und kämpferisch.",
+      "pubDate": "2026-08-26T08:05:56+02:00",
+      "bild": ""
+    },
     {
       "title": "Marktbericht: Gute Vorgaben für den DAX",
       "description": "Die Vorgaben aus den USA und Asien sind recht gut, was dem DAX zu einem verhalten positiven Start verhelfen dürfte. Über allem schwebt jedoch die Unsicherheit vor den Nvidia-Zahlen am Abend.",
@@ -16,7 +28,7 @@
     },
     {
       "title": "Russlands Raketen zerstören die ukrainische Wirtschaft",
-      "description": "Angriffe auf Stahlwerke oder Schiffe mit Getreide - Russland nutzt seine Luftüberlegenheit, um die ukrainische Wirtschaft zu zerstören. Hauptproblem der Ukraine: Die Abhängigkeit vom US-Luftabwehrsystem \"Patriot\". Von F. Kellermann.",
+      "description": "Angriffe auf Stahlwerke oder Schiffe mit Getreide - Russland nutzt seine Luftüberlegenheit, um die ukrainische Wirtschaft zu zerstören. Hauptproblem der Ukraine: die Abhängigkeit vom US-Flugabwehrsystem \"Patriot\". Von F. Kellermann.",
       "pubDate": "2026-08-26T06:54:42+02:00",
       "bild": ""
     },
@@ -78,18 +90,6 @@
       "title": "Kanada kündigt Vergeltungszölle gegen USA von bis zu 50 Prozent an",
       "description": "Gegenzölle von bis zu 50 Prozent auf bestimmte Importe aus den Vereinigten Staaten: So lautet die Antwort der kanadischen Regierung auf die neuen US-Zölle. Der Konflikt zwischen den Nachbarstaaten spitzt sich zu.",
       "pubDate": "2026-08-25T18:46:12+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Firmen werden optimistischer - das Beispiel des Kabelherstellers Lapp",
-      "description": "Die Stimmung in der deutschen Wirtschaft hat sich aufgehellt, der ifo-Geschäftsklimaindex steigt. Der Kabelhersteller Lapp aus Stuttgart spürt das ebenfalls. Erfolgreich ist das Unternehmen mit einer Abkehr von seinen Wurzeln. Von Laura Bisch.",
-      "pubDate": "2026-08-25T18:39:48+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Konjunkturdaten bringen neuen Schwung",
-      "description": "Erfreulich robuste Daten aus der deutschen Wirtschaft haben den DAX am Dienstag aus seiner Lethargie gerissen. Vor wichtigen Terminen bleibt die Stimmung aber angespannt.",
-      "pubDate": "2026-08-25T18:23:57+02:00",
       "bild": ""
     }
   ],
