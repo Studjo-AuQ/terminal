@@ -1,7 +1,25 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "26.08.2026, 08:20 Uhr (UTC)",
+  "aktualisiert": "26.08.2026, 09:20 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Marktbericht: DAX startet verhalten",
+      "description": "Der DAX startet mit leichten Abschlägen in den Mittwoch. Vor den Nvidia-Zahlen am Abend wollen viele Anleger nicht ins Risiko gehen. Denn das Ereignis ist häufig marktbewegend.",
+      "pubDate": "2026-08-26T10:50:21+02:00",
+      "bild": ""
+    },
+    {
+      "title": "\"Zombiefeuer\": Wie gefährlich sind diese wiederkehrenden Feuer?",
+      "description": "Waldbrände überall in Europa - dabei war auch immer wieder von \"Zombiefeuern\" die Rede. Was steckt dahinter? Und wie groß ist die Gefahr, dass auch in Deutschland bereits totgeglaubte Feuer plötzlich wiederkehren? Von Frank Bäumer.",
+      "pubDate": "2026-08-26T10:38:51+02:00",
+      "bild": ""
+    },
+    {
+      "title": "\"Airport-Malaria\": Ein Toter nach Infektion am Frankfurter Flughafen",
+      "description": "Ein Fraport-Mitarbeiter ist infolge einer Malaria-Infektion gestorben. Insgesamt haben sich offenbar sechs Menschen infiziert. Die sogenannte Airport-Malaria gilt als seltener Übertragungsweg der Krankheit.",
+      "pubDate": "2026-08-26T10:36:31+02:00",
+      "bild": ""
+    },
     {
       "title": "Migranten und Forscher warnen vor AfD-Regierung in Sachsen-Anhalt",
       "description": "Was würde passieren, wenn die AfD in Sachsen-Anhalt regieren würde? Um ihre Sorge auszudrücken, schließen viele Menschen mit Migrationshintergrund heute in Magdeburg ihre Geschäfte. Forscher warnen, ohne Migration werde das Wachstum zurückgehen.",
@@ -17,13 +35,7 @@
     {
       "title": "Bundesregierung berät auf Kabinettsklausur über Klimakrise und Reformen",
       "description": "Die Wirtschaft drängt, die Reformvorhaben türmen sich, und beim Thema Klimawandel sind Union und SPD uneins. Viel Gesprächsstoff für den zweiten Tag der Kabinettsklausur. Dennoch zeigen sich beide Koalitionspartner optimistisch - und kämpferisch.",
-      "pubDate": "2026-08-26T08:05:56+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Gute Vorgaben für den DAX",
-      "description": "Die Vorgaben aus den USA und Asien sind recht gut, was dem DAX zu einem verhalten positiven Start verhelfen dürfte. Über allem schwebt jedoch die Unsicherheit vor den Nvidia-Zahlen am Abend.",
-      "pubDate": "2026-08-26T07:44:55+02:00",
+      "pubDate": "2026-08-26T10:38:53+02:00",
       "bild": ""
     },
     {
@@ -78,18 +90,6 @@
       "title": "Supreme Court der USA: Was das Urteil zur Briefwahl bedeutet",
       "description": "Das jüngste Urteil des US Supreme Court zur Briefwahl ist nur ein Etappensieg für Trump - denn der juristische Streit ist noch lange nicht zu Ende. Doch die Entscheidung könnte für Unruhe bei den Zwischenwahlen sorgen.",
       "pubDate": "2026-08-25T22:01:08+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Film \"Everytime\" als deutscher Beitrag für Oscar-Verleihung nominiert",
-      "description": "Der Film \"Everytime\" von Sandra Wollner ist die offizielle Oscar-Einreichung aus Deutschland. Darüber hinaus könnten erstmals zwei weitere deutsche Produktionen ins Rennen um den Oscar als \"Bester internationaler Film\" gehen.",
-      "pubDate": "2026-08-25T20:44:57+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Medienberichte - CIA-Chef Ratcliffe zu Geheimbesuch in Moskau",
-      "description": "Der Direktor des US-Auslandsgeheimdienstes CIA, Ratcliffe, ist Medienberichten zufolge nach Moskau geflogen. Die Ukraine soll demnach vorab informiert worden sein. Weder die USA noch Russland bestätigen die Reise.",
-      "pubDate": "2026-08-25T20:42:34+02:00",
       "bild": ""
     }
   ],
