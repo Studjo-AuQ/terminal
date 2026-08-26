@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "26.08.2026, 05:06 Uhr (UTC)",
+  "aktualisiert": "26.08.2026, 06:01 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Marktbericht: Gute Vorgaben für den DAX",
+      "description": "Die Vorgaben aus den USA und Asien sind recht gut, was dem DAX zu einem verhalten positiven Start verhelfen dürfte. Über allem schwebt jedoch die Unsicherheit vor den Nvidia-Zahlen am Abend.",
+      "pubDate": "2026-08-26T07:44:55+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Trauer um Ikone Dolly Parton: \"Sie schuf Lieder und Glück\"",
+      "description": "Dolly Parton war unerschrocken und hatte einen eisernen Willen. Sie begeisterte Generationen - und setzte sich auch immer wieder für soziale Belange ein. Im Alter von 80 Jahren ist die Country-Sängerin gestorben. Von Carsten Kühntopp.",
+      "pubDate": "2026-08-26T07:12:12+02:00",
+      "bild": ""
+    },
     {
       "title": "Russlands Raketen zerstören die ukrainische Wirtschaft",
       "description": "Angriffe auf Stahlwerke oder Schiffe mit Getreide - Russland nutzt seine Luftüberlegenheit, um die ukrainische Wirtschaft zu zerstören. Hauptproblem der Ukraine: Die Abhängigkeit vom US-Luftabwehrsystem \"Patriot\". Von F. Kellermann.",
@@ -78,18 +90,6 @@
       "title": "Marktbericht: Konjunkturdaten bringen neuen Schwung",
       "description": "Erfreulich robuste Daten aus der deutschen Wirtschaft haben den DAX am Dienstag aus seiner Lethargie gerissen. Vor wichtigen Terminen bleibt die Stimmung aber angespannt.",
       "pubDate": "2026-08-25T18:23:57+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Slowakische Polizei vereitelt Anschlag auf Drohnenfabrik",
-      "description": "Improvisiertes Napalm und ein handschriftlicher Plan: In der Slowakei haben Ermittler nach eigenen Angaben einen Anschlag auf eine Drohnenfabrik verhindert. Drei Männer wurden festgenommen - einer von ihnen in Deutschland.",
-      "pubDate": "2026-08-25T17:42:47+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Rede über Zuwanderung - Steinmeier fordert Absage an völkische Ideologie",
-      "description": "Es ist die erste Publikumsveranstaltung des Bundespräsidenten in seinem Übergangsquartier - und Steinmeier nutzt sie für eine Warnung vor einem Rückfall in völkisches Denken. Er sagt auch, Zuwanderung koste Kraft.",
-      "pubDate": "2026-08-25T16:55:55+02:00",
       "bild": ""
     }
   ],
