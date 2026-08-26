@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "26.08.2026, 04:11 Uhr (UTC)",
+  "aktualisiert": "26.08.2026, 05:06 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Russlands Raketen zerstören die ukrainische Wirtschaft",
+      "description": "Angriffe auf Stahlwerke oder Schiffe mit Getreide - Russland nutzt seine Luftüberlegenheit, um die ukrainische Wirtschaft zu zerstören. Hauptproblem der Ukraine: Die Abhängigkeit vom US-Luftabwehrsystem \"Patriot\". Von F. Kellermann.",
+      "pubDate": "2026-08-26T06:54:42+02:00",
+      "bild": ""
+    },
     {
       "title": "Schattendatenbank: Der Schufa droht eine Sammelklage",
       "description": "Der Schufa drohen im Zusammenhang mit der sogenannten Schattendatenbank rechtliche Konsequenzen. Die gemeinnützige europäische Datenschutzorganisation NOYB will gerichtlich gegen Deutschlands größte Wirtschaftsauskunftei vorgehen. Von Peter Hornung.",
@@ -21,9 +27,9 @@
       "bild": ""
     },
     {
-      "title": "Kommentar: Verunsicherung vor US-Briefwahl als Strategie",
-      "description": "Die Briefwahl für die anstehenden Kongresswahlen in den USA steht bevor. Doch der juristische Kampf um eine Anordnung von US-Präsident Trump sorgt für Verunsicherung. Das könnte zum Problem werden, meint Samuel Jackisch.",
-      "pubDate": "2026-08-26T04:05:36+02:00",
+      "title": "Kommentar: Die Verwirrung um die Briefwahl nützt Trump",
+      "description": "Der juristische Kampf um die Briefwahl sorgt für Verunsicherung. US-Präsident Trump muss vor Gericht noch nicht mal gewinnen. Ihm nutzt allein schon die Verwirrung, die er mit seiner unbelegten Behauptung anrichtet, meint Samuel Jackisch.",
+      "pubDate": "2026-08-26T06:25:23+02:00",
       "bild": ""
     },
     {
@@ -84,12 +90,6 @@
       "title": "Rede über Zuwanderung - Steinmeier fordert Absage an völkische Ideologie",
       "description": "Es ist die erste Publikumsveranstaltung des Bundespräsidenten in seinem Übergangsquartier - und Steinmeier nutzt sie für eine Warnung vor einem Rückfall in völkisches Denken. Er sagt auch, Zuwanderung koste Kraft.",
       "pubDate": "2026-08-25T16:55:55+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Die Wirtschaft schöpft wieder Hoffnung - das sind die Gründe",
-      "description": "Lange Zeit zeigten die Wirtschaftsdaten in Deutschland vor allem nach unten. Nun machen die jüngsten Konjunkturzahlen etwas Hoffnung. Wie kommt das? Und ist diese Entwicklung auch wirklich nachhaltig?",
-      "pubDate": "2026-08-25T16:28:43+02:00",
       "bild": ""
     }
   ],
