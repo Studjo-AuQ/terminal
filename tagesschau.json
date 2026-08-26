@@ -1,7 +1,25 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "26.08.2026, 11:57 Uhr (UTC)",
+  "aktualisiert": "26.08.2026, 13:09 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Zweifel wegen des KI-Booms: SAP-Aktie tief im Minus",
+      "description": "Der Softwareriese SAP gilt als eines der wenigen deutschen Tech-Unternehmen mit überregionaler Bedeutung. Aber der KI-Hype setzt der gesamten Branche zu und sorgt für viel Volatilität. Was kann Künstliche Intelligenz wirklich?",
+      "pubDate": "2026-08-26T14:43:15+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Nach Kabinettsklausur: Merz fordert eine \"neue Zuversicht\"",
+      "description": "Kanzler Merz will nach der schwarz-roten Kabinettsklausur ein Signal des Aufbruchs senden: Deutschland müsse den \"Missmut abschütteln\". Zugleich verweist er auf erste Anzeichen einer wirtschaftlichen Erholung.",
+      "pubDate": "2026-08-26T14:34:29+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Aufbruchstimmung in Syrien nach Auflösung von kurdischem Militärbündnis",
+      "description": "Die USA haben Syrien von der Terrorliste genommen, das kurdisch geführte Militärbündnis SDF löst sich auf: Das Land ist in Bewegung. Die Kurden wollen nun für weitreichende Minderheitenrechte kämpfen. Von Anna Osius.",
+      "pubDate": "2026-08-26T14:02:04+02:00",
+      "bild": ""
+    },
     {
       "title": "Russisches Haus in Berlin - Spionage getarnt als Kulturpflege?",
       "description": "Das Russische Haus in Berlin bestreitet Spionagevorwürfe. Dabei zeigt ein KGB-Lehrbuch, wie Moskau schon seit Jahrzehnten kulturelle Einrichtungen als Deckmantel für Spionage nutzt. Von Florian Flade und Roman Lehberger.",
@@ -9,9 +27,9 @@
       "bild": ""
     },
     {
-      "title": "Viele Tote nach Sturzflut in Nepal - Hunderte Reisende vermisst",
-      "description": "Wassermassen, die ganze Dörfer wegreißen: Bei einer Sturzflut in Nepal sind mindestens acht Menschen ums Leben gekommen. Hunderte Menschen werden noch vermisst, unter ihnen auch viele Touristen.",
-      "pubDate": "2026-08-26T13:44:41+02:00",
+      "title": "Viele Tote nach Sturzflut in Nepal - Hunderte vermisst",
+      "description": "Wassermassen, die ganze Dörfer wegreißen: Bei einer Sturzflut in Nepal sind mindestens 22 Menschen ums Leben gekommen. Hunderte Menschen werden noch vermisst, unter ihnen auch viele Touristen.",
+      "pubDate": "2026-08-26T14:45:09+02:00",
       "bild": ""
     },
     {
@@ -29,7 +47,7 @@
     {
       "title": "Klingbeil: \"Keine Zuckersteuer auf zuckerfreie Getränke\"",
       "description": "Die geplante Zuckersteuer sorgt weiter für Gesprächsstoff. Für welche Art von Getränken soll sie gelten? Finanzminister Klingbeil stellte nun klar, dass er keine Abgabe auf zuckerfreie Getränke erheben wolle.",
-      "pubDate": "2026-08-26T13:54:20+02:00",
+      "pubDate": "2026-08-26T15:04:49+02:00",
       "bild": ""
     },
     {
@@ -72,24 +90,6 @@
       "title": "\"Airport-Malaria\": Ein Toter nach Infektion am Frankfurter Flughafen",
       "description": "Ein Fraport-Mitarbeiter ist infolge einer Malaria-Infektion gestorben. Insgesamt haben sich offenbar sechs Menschen infiziert. Die sogenannte Airport-Malaria gilt als seltener Übertragungsweg der Krankheit.",
       "pubDate": "2026-08-26T10:36:31+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Migranten und Forscher warnen vor AfD-Regierung in Sachsen-Anhalt",
-      "description": "Was würde passieren, wenn die AfD in Sachsen-Anhalt regieren würde? Um ihre Sorge auszudrücken, schließen viele Menschen mit Migrationshintergrund heute in Magdeburg ihre Geschäfte. Forscher warnen, ohne Migration werde das Wachstum zurückgehen.",
-      "pubDate": "2026-08-26T10:15:59+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Pakistan: Tote bei Brand auf Säuglingsstation in Islamabad",
-      "description": "Bei einem Feuer in einem Krankenhaus sind in der pakistanischen Hauptstadt mindestens 14 Neugeborene gestorben. Ersten Erkenntnissen zufolge könnte ein Defekt in einer Klimaanlage Ursache für den Brand sein.",
-      "pubDate": "2026-08-26T08:36:15+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bundesregierung berät auf Kabinettsklausur über Klimakrise und Reformen",
-      "description": "Die Wirtschaft drängt, die Reformvorhaben türmen sich, und beim Thema Klimawandel sind Union und SPD uneins. Viel Gesprächsstoff für den zweiten Tag der Kabinettsklausur. Dennoch zeigen sich beide Koalitionspartner optimistisch - und kämpferisch.",
-      "pubDate": "2026-08-26T10:38:53+02:00",
       "bild": ""
     }
   ],
