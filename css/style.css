@@ -1,0 +1,304 @@
+/* ═══════════════════════════════════════════════════════
+   Nunito Sans – lokal gehostet (kein Google-Serverzugriff)
+   Lizenz: SIL Open Font License 1.1
+   ═══════════════════════════════════════════════════════ */
+
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito Sans';
+  font-style:  normal;
+  font-weight: 400;
+  src: url('../fonts/nunito-sans-v19-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito Sans';
+  font-style:  normal;
+  font-weight: 600;
+  src: url('../fonts/nunito-sans-v19-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito Sans';
+  font-style:  normal;
+  font-weight: 700;
+  src: url('../fonts/nunito-sans-v19-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito Sans';
+  font-style:  normal;
+  font-weight: 800;
+  src: url('../fonts/nunito-sans-v19-latin-800.woff2') format('woff2');
+}
+
+/* --- Grundeinstellungen & Variablen --- */
+:root {
+    --primary-red: #b61f29; 
+    --secondary-grey: #8a8d8f;
+    --bg-color: #f9f9f9;
+    --card-bg: #ffffff;
+    --text-color: #0f2f37;
+
+    /* --- PASTELL-FARBVARIABLEN --- */
+    --pastel-1: #e1f5fe;   /* Eis-Blau */
+    --pastel-2: #e8f5e9;   /* Mint-Grün */
+    --pastel-3: #fffde7;   /* Cremiges Gelb */
+    --pastel-4: #fce4ec;   /* Puder-Rosa */
+    --pastel-5: #f3e5f5;   /* Blasser Lavendel */
+    --pastel-6: #fff3e0;   /* Pfirsich-Creme */
+    --pastel-7: #efebe9;   /* Licht-Grau */
+    --pastel-8: #e0f7fa;   /* Azur-Weiß */
+    --pastel-9: #f1f8e9;   /* Helles Limette */
+    --pastel-10: #fbe9e7;  /* Helles Koralle */
+    --pastel-11: #ffffff;  /* JW Weiß */
+    --pastel-12: #ffebee;  /* Blasses Rot/Rosa */
+    --pastel-13: #e8eaf6;  /* Blasses Indigo */
+    --pastel-14: #e0f2f1;  /* Blasses Teal/Minze */
+    --pastel-15: #fff3e0;  /* Blasses Apricot */
+    --pastel-16: #eceff1;  /* Blasses Blaugrau */
+    --pastel-17: #f4ecea;  /* Blasses Kaffeebraun */
+    --pastel-18: #fce4ec;  /* Blasses Weinrot/Mauve */
+    --pastel-19: #e0f2f1;  /* Blasses Petrol/Aqua */
+    --pastel-20: #f1f8e9;  /* Blasses Oliv */
+    --pastel-21: #fff0e0;  /* Blasses Rost/Terracotta */
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif; /* Einmal hier reicht für die ganze Seite */
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- Header & Logo --- */
+header {
+    background-color: white;
+    padding: 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --- Hauptinhalt --- */
+main {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 90%; /* Geändert für bessere mobile Darstellung (war 60%) */
+    box-sizing: border-box;
+}
+
+/* Für Desktop-Bildschirme machen wir es wieder etwas schmaler (wie deine 60%) */
+@media (min-width: 1024px) {
+    main {
+        width: 60%;
+    }
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-red);
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+/* --- Das Kachel-Raster (Grid) --- */
+.tile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* --- Design der Kacheln --- */
+.tile {
+    /* Fallback ist var(--bg-color), wird aber durch die Farb-Klassen überschrieben */
+    background-color: var(--tile-bg, var(--bg-color)); 
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 30px;
+    
+    /* Standard-Hover-Farbe, wird durch Farb-Klassen überschrieben */
+    --tile-hover-color: var(--primary-red); 
+    
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-bottom: 4px solid transparent; 
+}
+
+.tile {
+  position: relative;
+}
+
+/* --- Badge intern --- */
+<!--
+a[href*="johanneswerk.int"]::after {
+  content: "🔒 Intern";
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: #b61f29;
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 5px;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  pointer-events: none; /* Badge blockiert den Klick nicht */
+}
+-->
+.tile[href*="johanneswerk.int"]::after,
+.tile:has(a[href*="johanneswerk.int"])::after {
+    content: "🔒 intern";
+    position: absolute;      /* relativ zur Kachel, NICHT zum Fenster */
+    top: 8px;
+    right: 8px;
+    background-color: #b61f29;
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 5px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    pointer-events: none;    /* verhindert Klick-Blockierung */
+    z-index: 2;
+    /* kein hover – immer sichtbar */
+}
+
+
+/* --- Pastellfarben (1 bis 20) - Komplett ohne !important --- */
+.tile-color-1  { --tile-bg: var(--pastel-1);  --tile-hover-color: #0288d1; }
+.tile-color-2  { --tile-bg: var(--pastel-2);  --tile-hover-color: #558b2f; }
+.tile-color-3  { --tile-bg: var(--pastel-3);  --tile-hover-color: #fdd835; }
+.tile-color-4  { --tile-bg: var(--pastel-4);  --tile-hover-color: #d81b60; }
+.tile-color-5  { --tile-bg: var(--pastel-5);  --tile-hover-color: #8e24aa; }
+.tile-color-6  { --tile-bg: var(--pastel-6);  --tile-hover-color: #fb8c00; }
+.tile-color-7  { --tile-bg: var(--pastel-7);  --tile-hover-color: #6d4c41; }
+.tile-color-8  { --tile-bg: var(--pastel-8);  --tile-hover-color: #00bcd4; }
+.tile-color-9  { --tile-bg: var(--pastel-9);  --tile-hover-color: #afb42b; }
+.tile-color-10 { --tile-bg: var(--pastel-10); --tile-hover-color: #ff5722; }
+.tile-color-11 { --tile-bg: var(--pastel-11); --tile-hover-color: #000000; }
+.tile-color-12 { --tile-bg: var(--pastel-12); --tile-hover-color: #283593; }
+.tile-color-13 { --tile-bg: var(--pastel-13); --tile-hover-color: #00695c; }
+.tile-color-14 { --tile-bg: var(--pastel-14); --tile-hover-color: #ef6c00; }
+.tile-color-15 { --tile-bg: var(--pastel-15); --tile-hover-color: #455a64; }
+.tile-color-16 { --tile-bg: var(--pastel-16); --tile-hover-color: #5d4037; }
+.tile-color-17 { --tile-bg: var(--pastel-17); --tile-hover-color: #ad1457; }
+.tile-color-18 { --tile-bg: var(--pastel-18); --tile-hover-color: #00838f; }
+.tile-color-19 { --tile-bg: var(--pastel-19); --tile-hover-color: #33691e; }
+.tile-color-20 { --tile-bg: var(--pastel-20); --tile-hover-color: #e65100; }
+
+.tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(15,47,55,0.5);
+    border-bottom: 3px solid var(--tile-hover-color);
+}
+
+.tile h2 {
+    margin-top: 10px;
+    color: var(--text-color);
+    font-size: 1.3rem; 
+    margin-bottom: 0;
+}
+
+/* --- Design der Metacom-Platzhalter Bilder --- */
+.tile-img {
+    width: 100px; 
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 5px; 
+    border: 2px solid var(--secondary-grey); 
+    border-radius: 8px;
+    padding: 5px;
+    background-color: white;
+}
+
+/* --- Button und Highlighting --- */
+.read-aloud-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-read-aloud {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--primary-red);
+    border: 4px solid white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s, background-color 0.2s;
+    padding: 10px;
+}
+
+.btn-read-aloud:hover {
+    transform: scale(1.1);
+    background-color: #d42430;
+}
+
+.btn-read-aloud img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 2px;
+}
+
+.btn-read-aloud span {
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.is-reading {
+    background-color: #ffe600 !important;
+    color: black !important;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 230, 0, 0.8) !important;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #b61f29;
+    color: white;
+    margin-top: auto;
+    font-size: 0.9rem;
+}

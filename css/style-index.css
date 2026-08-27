@@ -1,0 +1,295 @@
+/* ═══════════════════════════════════════════════════════
+   Nunito Sans – lokal gehostet (kein Google-Serverzugriff)
+   Lizenz: SIL Open Font License 1.1
+   ═══════════════════════════════════════════════════════ */
+
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito Sans';
+  font-style:  normal;
+  font-weight: 400;
+  src: url('fonts/nunito-sans-v19-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito Sans';
+  font-style:  normal;
+  font-weight: 600;
+  src: url('fonts/nunito-sans-v19-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito Sans';
+  font-style:  normal;
+  font-weight: 700;
+  src: url('fonts/nunito-sans-v19-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito Sans';
+  font-style:  normal;
+  font-weight: 800;
+  src: url('fonts/nunito-sans-v19-latin-800.woff2') format('woff2');
+}
+
+/* Der äußere Container: Versteckt alles, was über den Rand hinausgeht */
+        .ticker-container {
+            width: 100%;
+            overflow: hidden;
+            background-color: var(--bg-color); /* Hintergrundfarbe JW hellgrau */
+            color: var(--primary-red);         /* Textfarbe JW rot */
+            padding: 10px 0;
+            white-space: nowrap;       /* Verhindert Zeilenumbrüche */
+            box-sizing: border-box;
+            font-family: Calibri, sans-serif;
+            font-size: 24px;
+        }
+
+        /* Der Text, der animiert wird */
+        .ticker-text {
+            display: inline-block;
+            padding-left: 100%; /* Startet ganz rechts außerhalb des Bildschirms */
+            animation: ticker 20s linear infinite; /* 20s ist die Geschwindigkeit */
+        }
+
+        /* Zusatz-Feature: Pausiert die Laufleiste, wenn man mit der Maus darüberfährt */
+        .ticker-container:hover .ticker-text {
+            animation-play-state: paused;
+        }
+
+        /* Die eigentliche Bewegung von rechts nach links */
+        @keyframes ticker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        /* --- Grundeinstellungen & Variablen --- */
+        :root {
+            --primary-red: #b61f29; 
+            --secondary-grey: #8a8d8f;
+            --bg-color: #f9f9f9;
+            --card-bg: #ffffff;
+            --text-color: #0f2f37;
+
+            /* --- PASTELL-FARBVARIABLEN --- */
+            --pastel-1: #e1f5fe; --pastel-2: #e8f5e9; --pastel-3: #fffde7;
+            --pastel-4: #fce4ec; --pastel-5: #f3e5f5; --pastel-6: #fff3e0;
+            --pastel-7: #efebe9; --pastel-8: #e0f7fa; --pastel-9: #f1f8e9;
+            --pastel-10: #fbe9e7; --pastel-14: #e0f2f1;
+        }
+
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+            margin: 0; padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex; flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* --- Header & Logo --- */
+        header {
+            background-color: white;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .logo-container { max-width: 1200px; margin: 0 auto; }
+        .logo-container img { width: 100%; height: auto; display: block; }
+
+        /* --- Hauptinhalt --- */
+        main {
+            flex: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            width: 90%; /* Etwas breiter für mobile Geräte */
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary-red);
+            font-weight: 700;
+            margin-bottom: 0px;
+            padding: 10px; /* Ein wenig Padding, damit das Highlight bei h1 besser aussieht */
+        }
+
+        /* --- Das Kachel-Raster --- */
+        .tile-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .tile {
+            background-color: var(--bg-color);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: var(--text-color);
+            padding: 30px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border-bottom: 4px solid transparent; 
+        }
+
+.tile {
+  position: relative;
+}
+
+/* --- Badge intern --- */
+<!--
+a[href*="johanneswerk.int"]::after {
+  content: "🔒 Intern";
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: #b61f29;
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 5px;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  pointer-events: none; /* Badge blockiert den Klick nicht */
+}
+-->
+.tile[href*="johanneswerk.int"]::after,
+.tile:has(a[href*="johanneswerk.int"])::after {
+    content: "🔒 intern";
+    position: absolute;      /* relativ zur Kachel, NICHT zum Fenster */
+    top: 8px;
+    right: 8px;
+    background-color: #b61f29;
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 5px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    pointer-events: none;    /* verhindert Klick-Blockierung */
+    z-index: 2;
+    /* kein hover – immer sichtbar */
+}
+
+        /* Farbkachel-Logik */
+        .tile-color-1 { background-color: var(--pastel-1) !important; --hover-c: #0288d1; }
+        .tile-color-2 { background-color: var(--pastel-2) !important; --hover-c: #558b2f; }
+        .tile-color-3 { background-color: var(--pastel-3) !important; --hover-c: #fdd835; }
+        .tile-color-4 { background-color: var(--pastel-4) !important; --hover-c: #d81b60; }
+        .tile-color-5 { background-color: var(--pastel-5) !important; --hover-c: #8e24aa; }
+        .tile-color-6 { background-color: var(--pastel-6) !important; --hover-c: #fb8c00; }
+        .tile-color-7 { background-color: var(--pastel-7) !important; --hover-c: #6d4c41; }
+        .tile-color-8 { background-color: var(--pastel-8) !important; --hover-c: #00bcd4; }
+        .tile-color-9 { background-color: var(--pastel-9) !important; --hover-c: #afb42b; }
+        .tile-color-10 { background-color: var(--pastel-10) !important; --hover-c: #ff5722; }
+        .tile-color-14 { background-color: var(--pastel-14) !important; --hover-c: #ef6c00; }
+
+        .tile:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(15,47,55,0.2);
+            border-bottom: 4px solid var(--hover-c);
+        }
+
+        .tile h2 { margin-top: 10px; font-size: 1.3rem; }
+        .tile-img {
+            width: 100px; height: 100px;
+            object-fit: contain;
+            margin-bottom: 5px; 
+            border: 2px solid var(--secondary-grey); 
+            border-radius: 8px;
+            padding: 5px;
+            background-color: white;
+        }
+
+        /* --- VORLESEN BUTTON --- */
+        .read-aloud-container {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-read-aloud {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: var(--primary-red);
+            border: 4px solid white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.2s, background-color 0.2s;
+            padding: 10px;
+        }
+
+        .btn-read-aloud:hover {
+            transform: scale(1.1);
+            background-color: #d42430;
+        }
+
+        .btn-read-aloud img {
+            width: 45px; /* Platz für das Metacom Symbol */
+            height: 45px;
+            margin-bottom: 2px;
+        }
+
+        .btn-read-aloud span {
+            color: white;
+            font-size: 0.7rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* --- HIGHLIGHTING BEIM VORLESEN (NEU) --- */
+        .is-reading {
+            background-color: #ffe600 !important;
+            color: black !important;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(255, 230, 0, 0.8) !important;
+            transform: scale(1.05); /* Kachel wird beim Vorlesen minimal größer */
+            transition: all 0.3s ease;
+        }
+        
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--primary-red);
+            color: white;
+            margin-top: auto;
+            font-size: 0.9rem;
+        }
+
+/* --- TESTUMGEBUNG BADGE --- */   ← hier neu anfügen
+.badge-testumgebung {
+    position: fixed;
+    top: 20px;
+    right: -38px;
+    background-color: #BA7517;
+    color: #412402;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    padding: 7px 56px;
+    transform: rotate(45deg);
+    transform-origin: center;
+    z-index: 9999;
+    pointer-events: none;
+    white-space: nowrap;
+}
