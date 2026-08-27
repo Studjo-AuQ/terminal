@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karte – Studjo</title>
+    <style>
+        :root {
+            --primary-red: #b61f29;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Nunito Sans', Calibri, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header {
+            background-color: white;
+            padding: 10px 16px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            flex-shrink: 0;
+        }
+        .back-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            gap: 12px;
+        }
+        .back-button {
+            background-color: var(--primary-red);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-family: inherit;
+            white-space: nowrap;
+        }
+        .bst-label {
+            font-size: 1.0rem;
+            font-weight: 700;
+            color: var(--primary-red);
+            text-align: center;
+            flex: 1;
+        }
+        .content-frame {
+            flex: 1;
+            border: none;
+            width: 100%;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: var(--primary-red);
+            color: white;
+            font-size: 0.8rem;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="back-nav">
+            <a href="opnv.html" class="back-button">← Zurück</a>
+            <div class="bst-label" id="bst-label">Karte wird geladen…</div>
+            <img src="../symbole/header.jpg" style="height: 40px;" alt="Studjo Logo">
+        </div>
+    </header>
+
+    <iframe id="maps-frame" class="content-frame" src="" allowfullscreen loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+
+    <footer>
+        &copy; 2024 <b>Studjo | Arbeit und Qualifizierung</b> | Infoterminal | Barrierefreier Zugang
+    </footer>
+
+<script>
+    // Liest URL-Parameter aus (z. B. maps.html?q=Freisenbergstraße+33...&name=FBS)
+    const params   = new URLSearchParams(window.location.search);
+    const adresse  = params.get('q')    || '';
+    const bstName  = params.get('name') || 'Betriebsstätte';
+
+    // Titel setzen
+    document.getElementById('bst-label').textContent = '📍 ' + bstName;
+
+    // Google Maps Embed-URL zusammenbauen (kein API-Key nötig)
+    if (adresse) {
+        const embedUrl = 'https://maps.google.com/maps?q='
+            + encodeURIComponent(adresse)
+            + '&output=embed&hl=de&z=16';
+        document.getElementById('maps-frame').src = embedUrl;
+    } else {
+        document.getElementById('maps-frame').src =
+            'https://maps.google.com/maps?q=Studjo+Lüdenscheid&output=embed&hl=de';
+    }
+</script>
+
+</body>
+</html>

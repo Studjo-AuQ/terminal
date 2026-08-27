@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nachrichten – Studjo</title>
+        <style>
+                    :root {
+            --primary-red:  #b61f29;
+            --dark-red:     #8b161e;
+            --bg-color:     #f9f9f9;
+            --text-color:   #0f2f37;
+            --grey:         #8a8d8f;
+            --kobinet-gruen:#1b6b3a;   /* ← Farbe für kobinet-Tab */
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header { background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+        .logo-container { max-width: 1200px; margin: 0 auto; }
+        .logo-container img { width: 100%; height: auto; display: block; }
+        main {
+            flex: 1;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 24px 20px 40px;
+            width: 100%;
+        }
+        /* ── Top Bar ── */
+        .top-bar {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: white;
+            color: var(--primary-red);
+            border: 2px solid var(--primary-red);
+            border-radius: 999px;
+            padding: 8px 20px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-decoration: none;
+            font-family: inherit;
+            transition: background 0.2s, color 0.2s;
+            white-space: nowrap;
+        }
+        .back-button:hover { background: var(--primary-red); color: white; }
+        h1 { font-size: 1.45rem; font-weight: 800; color: var(--primary-red); flex: 1; }
+        /* ── Tab-Umschalter ── */
+        .tab-bar {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .tab-btn {
+            flex: 1;
+            min-width: 160px;
+            padding: 14px 20px;
+            border-radius: 12px;
+            border: 2px solid #e0e0e0;
+            background: white;
+            color: var(--grey);
+            font-family: inherit;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.2s;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            line-height: 1.3;
+        }
+        .tab-btn:hover {
+            border-color: var(--primary-red);
+            color: var(--primary-red);
+        }
+        .tab-btn.aktiv {
+            background: var(--primary-red);
+            border-color: var(--primary-red);
+            color: white;
+            box-shadow: 0 4px 12px rgba(182,31,41,0.25);
+        }
+        /* Tagesschau-Tab aktiv: blau */
+        .tab-btn.aktiv.tagesschau-btn {
+            background: #1a237e;
+            border-color: #1a237e;
+            box-shadow: 0 4px 12px rgba(26,35,126,0.25);
+        }
+        /* kobinet-Tab aktiv: grün */
+        .tab-btn.aktiv.kobinet-btn {
+            background: var(--kobinet-gruen);
+            border-color: var(--kobinet-gruen);
+            box-shadow: 0 4px 12px rgba(27,107,58,0.25);
+        }
+        .tab-btn .tab-emoji { font-size: 1.3rem; display: block; margin-bottom: 3px; }
+        .tab-btn .tab-sub   { font-size: 0.75rem; font-weight: 400; opacity: 0.8; }
+        /* ── Info-Leiste ── */
+        .source-bar {
+            background: white;
+            border-left: 6px solid var(--primary-red);
+            border-radius: 10px;
+            padding: 10px 16px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 6px;
+            font-size: 0.85rem;
+        }
+        .source-label { color: var(--grey); font-weight: 600; }
+        .source-label strong { color: var(--text-color); }
+        .refresh-info { color: var(--grey); font-size: 0.80rem; }
+        .refresh-info span { font-weight: 700; color: var(--text-color); }
+        /* ── Tab-Panels ── */
+        .tab-panel { display: none; }
+        .tab-panel.aktiv { display: block; }
+        /* ── Lade / Fehler / Warten ── */
+        .loading-box { text-align: center; padding: 50px 20px; color: var(--grey); }
+        .spinner {
+            width: 44px; height: 44px;
+            border: 5px solid #ddd;
+            border-top-color: var(--primary-red);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 14px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .info-box {
+            border-radius: 12px;
+            padding: 18px 22px;
+            text-align: center;
+            font-size: 0.92rem;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+        .info-box.gelb  { background:#fff3cd; border:1px solid #ffc107; color:#664d03; }
+        .info-box.blau  { background:#e3f2fd; border:1px solid #90caf9; color:#0d47a1; }
+        /* ── News-Karten ── */
+        .news-grid { display: flex; flex-direction: column; gap: 14px; }
+        .news-card {
+            background: white;
+            border-radius: 14px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+            overflow: hidden;
+            cursor: pointer;
+            transition: box-shadow 0.2s, transform 0.15s;
+            border-left: 5px solid #e0e0e0;
+        }
+        .news-card:hover {
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+            transform: translateY(-1px);
+        }
+        .news-card.offen { border-left-color: var(--primary-red); }
+        /* Tagesschau: blauer Akzent */
+        .tab-panel.tagesschau .news-card.offen    { border-left-color: #1a237e; }
+        .tab-panel.tagesschau .news-card:hover    { box-shadow: 0 6px 18px rgba(26,35,126,0.13); }
+        .tab-panel.tagesschau .card-datum .tag    { color: #1a237e; }
+        .tab-panel.tagesschau .news-card.offen .card-pfeil { color: #1a237e; }
+        /* kobinet: grüner Akzent */
+        .tab-panel.kobinet .news-card.offen       { border-left-color: var(--kobinet-gruen); }
+        .tab-panel.kobinet .news-card:hover       { box-shadow: 0 6px 18px rgba(27,107,58,0.13); }
+        .tab-panel.kobinet .card-datum .tag       { color: var(--kobinet-gruen); }
+        .tab-panel.kobinet .news-card.offen .card-pfeil { color: var(--kobinet-gruen); }
+        .card-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            padding: 14px 16px;
+        }
+        .card-datum {
+            min-width: 68px;
+            text-align: center;
+            background: var(--bg-color);
+            border-radius: 8px;
+            padding: 7px 5px;
+            flex-shrink: 0;
+        }
+        .card-datum .tag   { font-size: 1.4rem; font-weight: 800; color: var(--primary-red); line-height: 1; }
+        .card-datum .monat { font-size: 0.72rem; font-weight: 700; color: var(--grey); text-transform: uppercase; letter-spacing: 0.5px; }
+        .card-bild {
+            width: 80px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 8px;
+            flex-shrink: 0;
+            background: #eee;
+        }
+        .card-titel-block { flex: 1; min-width: 0; }
+        .card-titel  { font-size: 1.0rem; font-weight: 700; color: var(--text-color); line-height: 1.35; margin-bottom: 3px; }
+        .card-teaser { font-size: 0.86rem; color: #666; line-height: 1.5; }
+        .card-pfeil  {
+            font-size: 1.2rem; color: var(--grey);
+            transition: transform 0.2s, color 0.2s;
+            align-self: center; flex-shrink: 0; padding-left: 6px;
+        }
+        .news-card.offen .card-pfeil { transform: rotate(90deg); color: var(--primary-red); }
+        .card-inhalt { display: none; padding: 0 16px 16px; border-top: 1px solid #f0f0f0; }
+        .news-card.offen .card-inhalt { display: block; }
+        .card-inhalt-text {
+            font-size: 0.95rem; line-height: 1.8;
+            color: var(--text-color); padding-top: 12px;
+            white-space: pre-line;
+        }
+        .card-inhalt-quelle {
+            margin-top: 12px; padding-top: 10px;
+            border-top: 1px solid #eee;
+            font-size: 0.78rem; color: var(--grey);
+        }
+        footer {
+            text-align: center; padding: 18px;
+            background: var(--primary-red); color: white; font-size: 0.88rem;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo-container">
+        <img src="../symbole/header.jpg" alt="Studjo Logo Arbeit und Qualifizierung">
+    </div>
+</header>
+<main>
+    <div class="top-bar">
+        <a href="../index.html" class="back-button">← Zurück</a>
+        <h1>📰 Nachrichten</h1>
+    </div>
+
+    <!-- ── Tab-Umschalter ── -->
+    <div class="tab-bar">
+        <button class="tab-btn aktiv" onclick="zeigeTab('leicht', this)">
+            <span class="tab-emoji">🟢</span>
+            Leichte Sprache
+            <span class="tab-sub">Deutschlandfunk Nachrichten leicht</span>
+        </button>
+        <button class="tab-btn tagesschau-btn" onclick="zeigeTab('tagesschau', this)">
+            <span class="tab-emoji">📺</span>
+            Tagesschau aktuell
+            <span class="tab-sub">Alle aktuellen Nachrichten</span>
+        </button>
+        <!-- ── NEU: kobinet-Tab ── -->
+        <button class="tab-btn kobinet-btn" onclick="zeigeTab('kobinet', this)">
+            <span class="tab-emoji">♿</span>
+            kobinet – Teilhabe
+            <span class="tab-sub">Behinderung &amp; Inklusion</span>
+        </button>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         TAB 1: Leichte Sprache
+         ══════════════════════════════════════════════════ -->
+    <div class="tab-panel aktiv" id="panel-leicht">
+        <div class="source-bar">
+            <div class="source-label">Quelle: <strong id="quelle-leicht">Nachrichten in Leichter Sprache</strong></div>
+            <div class="refresh-info">Stand: <span id="stand-leicht">wird geladen…</span></div>
+        </div>
+        <div class="loading-box" id="lade-leicht"><div class="spinner"></div><p>Wird geladen…</p></div>
+        <div class="info-box gelb" id="fehler-leicht" style="display:none">⚠️ Nachrichten konnten nicht geladen werden.</div>
+        <div class="info-box blau" id="warten-leicht" style="display:none">⏳ Inhalte werden eingerichtet – bitte in 30 Minuten erneut aufrufen.</div>
+        <div class="news-grid leicht" id="grid-leicht"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         TAB 2: Tagesschau
+         ══════════════════════════════════════════════════ -->
+    <div class="tab-panel tagesschau" id="panel-tagesschau">
+        <div class="source-bar" style="border-left-color:#1a237e;">
+            <div class="source-label">Quelle: <strong id="quelle-tagesschau">Tagesschau</strong></div>
+            <div class="refresh-info">Stand: <span id="stand-tagesschau">wird geladen…</span></div>
+        </div>
+        <div class="loading-box" id="lade-tagesschau"><div class="spinner"></div><p>Wird geladen…</p></div>
+        <div class="info-box gelb" id="fehler-tagesschau" style="display:none">⚠️ Nachrichten konnten nicht geladen werden.</div>
+        <div class="info-box blau" id="warten-tagesschau" style="display:none">⏳ Inhalte werden eingerichtet – bitte in 30 Minuten erneut aufrufen.</div>
+        <div class="news-grid tagesschau" id="grid-tagesschau"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         TAB 3: kobinet  ← KORRIGIERT
+         Nutzt dieselbe Struktur und dieselbe ladeFeed()-Funktion
+         ══════════════════════════════════════════════════ -->
+    <div class="tab-panel kobinet" id="panel-kobinet">
+        <div class="source-bar" style="border-left-color:var(--kobinet-gruen);">
+            <div class="source-label">Quelle: <strong id="quelle-kobinet">kobinet-nachrichten.org</strong></div>
+            <div class="refresh-info">Stand: <span id="stand-kobinet">wird geladen…</span></div>
+        </div>
+        <div class="loading-box" id="lade-kobinet"><div class="spinner"></div><p>Wird geladen…</p></div>
+        <div class="info-box gelb" id="fehler-kobinet" style="display:none">⚠️ Nachrichten konnten nicht geladen werden.</div>
+        <div class="info-box blau" id="warten-kobinet" style="display:none">⏳ Inhalte werden eingerichtet – bitte in 30 Minuten erneut aufrufen.</div>
+        <div class="news-grid kobinet" id="grid-kobinet"></div>
+    </div>
+
+</main>
+<!-- ══ FOOTER ══ -->
+<footer style="
+  text-align: center;
+  padding: 14px 16px;
+  background: #b61f29;
+  color: #ffffff;
+  font-size: 0.85rem;
+  line-height: 1.8;
+">
+  © 2026 <strong>Studjo | Arbeit und Qualifizierung</strong>
+   ·  Evangelisches Johanneswerk gGmbH
+   ·  Barrierefreier Zugang
+  <br>
+  <a href="impressum.html"
+     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Impressum
+  </a>
+   | 
+  <a href="datenschutz.html"
+     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Datenschutz
+  </a>
+</footer>
+
+
+<script>
+const MONATE = ['Jan','Feb','Mär','Apr','Mai','Jun',
+                'Jul','Aug','Sep','Okt','Nov','Dez'];
+
+// ── Tab umschalten ────────────────────────────────────────────────────────
+function zeigeTab(name, btn) {
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('aktiv'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('aktiv'));
+    document.getElementById('panel-' + name).classList.add('aktiv');
+    btn.classList.add('aktiv');
+}
+
+// ── Datum formatieren ─────────────────────────────────────────────────────
+function formatDatum(s) {
+    if (!s) return { tag: '–', monat: '' };
+    const d = new Date(s);
+    if (isNaN(d)) return { tag: '–', monat: '' };
+    return { tag: d.getDate(), monat: MONATE[d.getMonth()] };
+}
+
+// ── Einzelne News-Karte erstellen ─────────────────────────────────────────
+function erstelleKarte(m, quelleText) {
+    const { tag, monat } = formatDatum(m.pubDate);
+    const text   = m.description || '';
+    const teaser = text.substring(0, 140) + (text.length > 140 ? ' …' : '');
+    const bildHtml = m.bild
+        ? `<img src="${m.bild}" alt="" class="card-bild" onerror="this.style.display='none'">`
+        : '';
+    const karte = document.createElement('div');
+    karte.className = 'news-card';
+    karte.innerHTML = `
+        <div class="card-header">
+            <div class="card-datum">
+                <div class="tag">${tag}</div>
+                <div class="monat">${monat}</div>
+            </div>
+            ${bildHtml}
+            <div class="card-titel-block">
+                <div class="card-titel" data-vorlesen>${m.title}</div>
+                <div class="card-teaser" data-vorlesen>${teaser}</div>
+            </div>
+            <div class="card-pfeil">›</div>
+        </div>
+        <div class="card-inhalt">
+            <div class="card-inhalt-text">${text || '(Kein weiterer Text verfügbar)'}</div>
+            <div class="card-inhalt-quelle">Quelle: ${quelleText}</div>
+        </div>`;
+    karte.addEventListener('click', function () {
+        const warOffen = this.classList.contains('offen');
+        this.closest('.news-grid').querySelectorAll('.news-card.offen')
+            .forEach(k => k.classList.remove('offen'));
+        if (!warOffen) {
+            this.classList.add('offen');
+            setTimeout(() =>
+                this.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+        }
+    });
+    return karte;
+}
+
+// ── Feed aus lokalem JSON laden ───────────────────────────────────────────
+async function ladeFeed(jsonDatei, ids) {
+    const { gridId, ladeId, fehlerID, wartenId, quelleId, standId } = ids;
+    try {
+        const r = await fetch(jsonDatei + '?v=' + Date.now());
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        const daten = await r.json();
+        document.getElementById(ladeId).style.display = 'none';
+        if (daten.quelle)       document.getElementById(quelleId).textContent = daten.quelle;
+        if (daten.aktualisiert) document.getElementById(standId).textContent  = daten.aktualisiert;
+        if (!daten.meldungen || !daten.meldungen.length) {
+            document.getElementById(wartenId).style.display = 'block';
+            return;
+        }
+        const grid = document.getElementById(gridId);
+        grid.innerHTML = '';
+        daten.meldungen.forEach(m =>
+            grid.appendChild(erstelleKarte(m, daten.quelle || jsonDatei)));
+    } catch (err) {
+        console.error(jsonDatei, err);
+        document.getElementById(ladeId).style.display   = 'none';
+        document.getElementById(fehlerID).style.display = 'block';
+    }
+}
+
+// ── Alle drei Feeds laden ─────────────────────────────────────────────────
+ladeFeed('../nachrichten.json', {
+    gridId:  'grid-leicht',
+    ladeId:  'lade-leicht',
+    fehlerID:'fehler-leicht',
+    wartenId:'warten-leicht',
+    quelleId:'quelle-leicht',
+    standId: 'stand-leicht',
+});
+ladeFeed('../tagesschau.json', {
+    gridId:  'grid-tagesschau',
+    ladeId:  'lade-tagesschau',
+    fehlerID:'fehler-tagesschau',
+    wartenId:'warten-tagesschau',
+    quelleId:'quelle-tagesschau',
+    standId: 'stand-tagesschau',
+});
+// ── NEU: kobinet – nutzt dieselbe Funktion ────────────────────────────────
+ladeFeed('../kobinet.json', {
+    gridId:  'grid-kobinet',
+    ladeId:  'lade-kobinet',
+    fehlerID:'fehler-kobinet',
+    wartenId:'warten-kobinet',
+    quelleId:'quelle-kobinet',
+    standId: 'stand-kobinet',
+});
+
+// Seite alle 30 Minuten neu laden
+setTimeout(() => location.reload(), 30 * 60 * 1000);
+</script>
+
+<link rel="stylesheet" href="../css/a11y.css">
+<script src="../js/a11y.js"></script>
+</body>
+</html>

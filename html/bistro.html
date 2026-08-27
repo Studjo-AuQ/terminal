@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studjo Bistro – Studjo</title>
+    <style>
+        :root { --primary-red: #b61f29; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Nunito Sans', Calibri, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header {
+            background-color: white;
+            padding: 10px 16px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            flex-shrink: 0;
+        }
+        .back-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            gap: 12px;
+        }
+        .back-button {
+            background-color: var(--primary-red);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-family: inherit;
+            white-space: nowrap;
+        }
+        .page-label {
+            font-size: 1.0rem;
+            font-weight: 700;
+            color: var(--primary-red);
+            text-align: center;
+            flex: 1;
+        }
+        .content-frame {
+            flex: 1;
+            border: none;
+            width: 100%;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: var(--primary-red);
+            color: white;
+            font-size: 0.8rem;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="back-nav">
+            <a href="speiseplan.html" class="back-button">← Zurück</a>
+            <div class="page-label">🍽️ Studjo Bistro – Angebot &amp; Infos</div>
+            <img src="../symbole/header.jpg" style="height: 40px;" alt="Studjo Logo">
+        </div>
+    </header>
+
+    <iframe
+        src="https://www.johanneswerk.de/angebote/industrie-geschaeftskunden/angebot/studjo-bistro-95/"
+        class="content-frame"
+        allowfullscreen
+        loading="lazy"
+        sandbox="allow-scripts allow-same-origin allow-forms allow-popups-to-escape-sandbox">
+    </iframe>
+
+    <footer>
+        &copy; 2024 <b>Studjo | Arbeit und Qualifizierung</b> | Infoterminal | Barrierefreier Zugang
+    </footer>
+
+</body>
+</html>

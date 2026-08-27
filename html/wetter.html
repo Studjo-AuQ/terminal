@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wetter – Studjo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-red:  #b61f29;
+            --bg-color:     #f9f9f9;
+            --text-color:   #0f2f37;
+            --grey:         #8a8d8f;
+            --card-bg:      #ffffff;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ── Header ── */
+        header { background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+        .logo-container { max-width: 1200px; margin: 0 auto; }
+        .logo-container img { width: 100%; height: auto; display: block; }
+
+        /* ── Main ── */
+        main {
+            flex: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px 20px 40px;
+            width: 100%;
+        }
+
+        /* ── Top Bar ── */
+        .top-bar {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 22px;
+            flex-wrap: wrap;
+        }
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: white;
+            color: var(--primary-red);
+            border: 2px solid var(--primary-red);
+            border-radius: 999px;
+            padding: 8px 20px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-decoration: none;
+            font-family: inherit;
+            transition: background 0.2s, color 0.2s;
+        }
+        .back-button:hover { background: var(--primary-red); color: white; }
+
+        h1 { font-size: 1.5rem; font-weight: 800; color: var(--primary-red); flex: 1; }
+
+        /* ── Stand-Leiste ── */
+        .stand-bar {
+            background: white;
+            border-left: 6px solid var(--primary-red);
+            border-radius: 10px;
+            padding: 10px 16px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 6px;
+            font-size: 0.85rem;
+        }
+        .stand-bar .quelle { color: var(--grey); font-weight: 600; }
+        .stand-bar .quelle strong { color: var(--text-color); }
+        .stand-bar .zeit { color: var(--grey); font-size: 0.80rem; }
+        .stand-bar .zeit span { font-weight: 700; color: var(--text-color); }
+
+        /* ── Stadtgitter ── */
+        .stadt-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* ── Stadt-Karte ── */
+        .stadt-karte {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+
+        /* Kopf mit Stadtname */
+        .karte-kopf {
+            background: linear-gradient(135deg, #1565c0 0%, #0288d1 100%);
+            color: white;
+            padding: 14px 18px 10px;
+        }
+        .karte-kopf .stadtname {
+            font-size: 1.1rem;
+            font-weight: 800;
+            letter-spacing: 0.3px;
+        }
+        .karte-kopf .aktuell-reihe {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 6px;
+        }
+        .karte-kopf .gross-temp {
+            font-size: 2.8rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+        .karte-kopf .wetter-emoji {
+            font-size: 2.2rem;
+            line-height: 1;
+        }
+        .karte-kopf .zustand-block {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        .karte-kopf .zustand-text {
+            font-size: 0.92rem;
+            font-weight: 600;
+            opacity: 0.95;
+        }
+        .karte-kopf .gefuehlt {
+            font-size: 0.78rem;
+            opacity: 0.75;
+        }
+
+        /* Detail-Zeile (Wind, Luftfeuchte) */
+        .karte-details {
+            display: flex;
+            gap: 0;
+            background: #e3f0fb;
+            padding: 8px 18px;
+            font-size: 0.82rem;
+            color: #1a3a5c;
+            font-weight: 600;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        /* 5-Tage-Vorschau */
+        .vorschau-kopf {
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--grey);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 10px 18px 4px;
+        }
+
+        .vorschau-tage {
+            display: flex;
+            padding: 0 14px 14px;
+            gap: 6px;
+        }
+        .tag-kachel {
+            flex: 1;
+            background: var(--bg-color);
+            border-radius: 10px;
+            padding: 8px 4px;
+            text-align: center;
+            font-size: 0.75rem;
+        }
+        .tag-kachel.heute {
+            background: #e3f2fd;
+            border: 1px solid #90caf9;
+        }
+        .tag-name  { font-weight: 700; color: var(--text-color); font-size: 0.72rem; }
+        .tag-datum { color: var(--grey); font-size: 0.68rem; }
+        .tag-emoji { font-size: 1.3rem; margin: 3px 0; display: block; }
+        .tag-temp  { font-weight: 700; color: #1565c0; font-size: 0.80rem; }
+        .tag-min   { color: var(--grey); font-size: 0.72rem; }
+        .tag-regen { color: #0288d1; font-size: 0.68rem; margin-top: 2px; }
+
+        /* ── Lade / Fehler ── */
+        .loading-box { text-align: center; padding: 60px 20px; color: var(--grey); }
+        .spinner {
+            width: 44px; height: 44px;
+            border: 5px solid #ddd;
+            border-top-color: var(--primary-red);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 14px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .fehler-box {
+            display: none;
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 12px;
+            padding: 18px 22px;
+            text-align: center;
+            font-size: 0.92rem;
+            color: #664d03;
+        }
+        .warten-box {
+            display: none;
+            background: #e3f2fd;
+            border: 1px solid #90caf9;
+            border-radius: 12px;
+            padding: 18px 22px;
+            text-align: center;
+            font-size: 0.92rem;
+            color: #0d47a1;
+            line-height: 1.7;
+        }
+
+        /* ── Footer ── */
+        footer {
+            text-align: center; padding: 18px;
+            background: var(--primary-red); color: white; font-size: 0.88rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <a href="../index.html" target="_self">
+            <img src="../symbole/header.jpg" alt="Studjo Logo">
+        </a>
+    </div>
+</header>
+
+<main>
+    <div class="top-bar">
+        <a href="../index.html" class="back-button">← Zurück</a>
+        <h1>🌤️ Wetter an unseren Standorten</h1>
+    </div>
+
+    <div class="stand-bar">
+        <div class="quelle">Quelle: <strong>Open-Meteo (openmeteo.com)</strong></div>
+        <div class="zeit">Stand: <span id="stand-zeit">wird geladen…</span> · Aktualisierung alle 30 Minuten</div>
+    </div>
+
+    <div class="loading-box" id="loading-box">
+        <div class="spinner"></div>
+        <p>Wetterdaten werden geladen…</p>
+    </div>
+    <div class="fehler-box" id="fehler-box">
+        ⚠️ Wetterdaten konnten nicht geladen werden. Bitte Seite neu laden.
+    </div>
+    <div class="warten-box" id="warten-box">
+        ⏳ Wetterdaten werden eingerichtet – bitte in ca. 30 Minuten erneut aufrufen.<br>
+        <small>Der Workflow muss einmalig auf GitHub gestartet werden.</small>
+    </div>
+
+    <div class="stadt-grid" id="stadt-grid"></div>
+</main>
+
+<script>
+const WOCHENTAGE_KURZ = ['So','Mo','Di','Mi','Do','Fr','Sa'];
+
+function erstelleStadtKarte(stadtDaten) {
+    const a = stadtDaten.aktuell;
+    const heute = new Date();
+
+    // Tageskacheln (5 Tage)
+    const tageHtml = stadtDaten.tage.map((tag, i) => {
+        const istHeute = i === 0;
+        const regenHtml = tag.niederschlag > 0
+            ? `<div class="tag-regen">💧 ${tag.niederschlag} mm</div>` : '';
+        return `
+            <div class="tag-kachel${istHeute ? ' heute' : ''}">
+                <div class="tag-name">${istHeute ? 'Heute' : tag.wochentag.substring(0,2)}</div>
+                <div class="tag-datum">${tag.datum}</div>
+                <span class="tag-emoji">${tag.emoji}</span>
+                <div class="tag-temp">${tag.max}°</div>
+                <div class="tag-min">${tag.min}°</div>
+                ${regenHtml}
+            </div>`;
+    }).join('');
+
+    const karte = document.createElement('div');
+    karte.className = 'stadt-karte';
+    karte.innerHTML = `
+        <div class="karte-kopf">
+            <div class="stadtname">📍 ${stadtDaten.stadt}</div>
+            <div class="aktuell-reihe">
+                <div class="gross-temp">${a.temp}°</div>
+                <div class="wetter-emoji">${a.emoji}</div>
+                <div class="zustand-block">
+                    <div class="zustand-text">${a.zustand}</div>
+                    <div class="gefuehlt">Gefühlt ${a.gefuehlt}°C</div>
+                </div>
+            </div>
+        </div>
+        <div class="karte-details">
+            <span>💨 Wind ${a.wind} km/h</span>
+            <span>💧 Feuchte ${a.luftfeuchte} %</span>
+            ${a.niederschlag > 0 ? `<span>🌧️ ${a.niederschlag} mm</span>` : ''}
+        </div>
+        <div class="vorschau-kopf">5-Tage-Vorschau</div>
+        <div class="vorschau-tage">${tageHtml}</div>`;
+    return karte;
+}
+
+async function ladeWetter() {
+    const grid     = document.getElementById('stadt-grid');
+    const ladeBox  = document.getElementById('loading-box');
+    const fehlerBox= document.getElementById('fehler-box');
+    const wartenBox= document.getElementById('warten-box');
+
+    try {
+        const r = await fetch('../wetter.json?v=' + Date.now());
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        const daten = await r.json();
+
+        ladeBox.style.display = 'none';
+
+        if (daten.aktualisiert) {
+            document.getElementById('stand-zeit').textContent = daten.aktualisiert;
+        }
+
+        if (!daten.staedte || !daten.staedte.length) {
+            wartenBox.style.display = 'block';
+            return;
+        }
+
+        grid.innerHTML = '';
+        daten.staedte.forEach(s => grid.appendChild(erstelleStadtKarte(s)));
+
+    } catch (err) {
+        console.error(err);
+        ladeBox.style.display  = 'none';
+        fehlerBox.style.display = 'block';
+    }
+}
+
+// ── Vorlesen (an a11y-Steuerleiste angebunden) ─────────────
+let spricht = false;
+
+function entferneWetterMarkierungen() {
+    document.querySelectorAll('.stadt-karte.is-reading')
+        .forEach(k => k.classList.remove('is-reading'));
+}
+
+function vorlesenUndMarkieren() {
+    const btnVorlesen = document.getElementById('btn-vorlesen');
+
+    // Läuft bereits: abbrechen (Toggle)
+    if (spricht || speechSynthesis.speaking) {
+        speechSynthesis.cancel();
+        entferneWetterMarkierungen();
+        spricht = false;
+        if (btnVorlesen) btnVorlesen.classList.remove('aktiv');
+        return;
+    }
+
+    const karten = Array.from(document.querySelectorAll('.stadt-karte'));
+    if (karten.length === 0) return;
+
+    spricht = true;
+    if (btnVorlesen) btnVorlesen.classList.add('aktiv');
+
+    let i = 0;
+    function next() {
+        if (i >= karten.length || !spricht) {
+            entferneWetterMarkierungen();
+            spricht = false;
+            if (btnVorlesen) btnVorlesen.classList.remove('aktiv');
+            return;
+        }
+        const karte = karten[i];
+        const name  = karte.querySelector('.stadtname')?.textContent.replace('📍','').trim() || '';
+        const temp  = karte.querySelector('.gross-temp')?.textContent || '';
+        const zust  = karte.querySelector('.zustand-text')?.textContent || '';
+        const wind  = karte.querySelector('.karte-details')?.textContent.replace(/\s+/g,' ').trim() || '';
+        const text  = `${name}: ${temp} Grad, ${zust}. ${wind}.`;
+
+        const u = new SpeechSynthesisUtterance(text);
+        u.lang = 'de-DE';
+        u.rate = 0.9;
+        u.onstart = () => {
+            entferneWetterMarkierungen();
+            karte.classList.add('is-reading');
+        };
+        u.onend = () => {
+            i++;
+            setTimeout(next, 250);
+        };
+        u.onerror = () => {
+            entferneWetterMarkierungen();
+            spricht = false;
+            if (btnVorlesen) btnVorlesen.classList.remove('aktiv');
+        };
+        speechSynthesis.speak(u);
+    }
+    next();
+}
+
+// a11y.js ruft diese Funktion automatisch auf, wenn sie unter
+// diesem Namen existiert (Vorrang vor der generischen Funktion).
+window.vorlesenUndMarkieren = vorlesenUndMarkieren;
+
+ladeWetter();
+// Alle 30 Minuten neu laden
+setTimeout(() => location.reload(), 30 * 60 * 1000);
+</script>
+<!-- ══ FOOTER ══ -->
+<footer style="
+  text-align: center;
+  padding: 14px 16px;
+  background: #b61f29;
+  color: #ffffff;
+  font-size: 0.85rem;
+  line-height: 1.8;
+">
+  © 2026 <strong>Studjo | Arbeit und Qualifizierung</strong>
+   ·  Evangelisches Johanneswerk gGmbH
+   ·  Barrierefreier Zugang
+  <br>
+  <a href="impressum.html"
+     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Impressum
+  </a>
+   | 
+  <a href="datenschutz.html"
+     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Datenschutz
+  </a>
+</footer>
+    
+    <link rel="stylesheet" href="../css/a11y.css">
+<script src="../js/a11y.js"></script>
+</body>
+</html>
