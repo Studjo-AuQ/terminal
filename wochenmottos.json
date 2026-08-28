@@ -1,0 +1,504 @@
+{
+  "wochenmottos": [
+    {
+      "woche": 1,
+      "thema": "Arbeitsverhalten",
+      "motto": "Ich starte gut in den Tag.",
+      "erklaerungen": [
+        "Ein guter Start macht den Anfang leichter.",
+        "Ich bin bereit für meine Arbeit.",
+        "So kann der Tag gut beginnen."
+      ]
+    },
+    {
+      "woche": 2,
+      "thema": "Pünktlichkeit",
+      "motto": "Ich bin pünktlich bei der Arbeit.",
+      "erklaerungen": [
+        "Andere können sich auf mich verlassen.",
+        "Die Arbeit kann pünktlich beginnen.",
+        "Ich fühle mich weniger gestresst."
+      ]
+    },
+    {
+      "woche": 3,
+      "thema": "Hilfsbereitschaft",
+      "motto": "Ich helfe gerne mit.",
+      "erklaerungen": [
+        "Zu zweit geht die Arbeit oft leichter.",
+        "Andere freuen sich über meine Hilfe.",
+        "Ich fühle mich gebraucht."
+      ]
+    },
+    {
+      "woche": 4,
+      "thema": "Teamarbeit",
+      "motto": "Gemeinsam sind wir stark.",
+      "erklaerungen": [
+        "Zusammen schaffen wir mehr als allein.",
+        "Jeder bringt seine Stärken mit ein.",
+        "Das Team hilft mir, wenn ich Hilfe brauche."
+      ]
+    },
+    {
+      "woche": 5,
+      "thema": "Einsatz",
+      "motto": "Ich gebe mein Bestes.",
+      "erklaerungen": [
+        "Ich muss nicht perfekt sein.",
+        "Mein Einsatz zählt.",
+        "Andere sehen, dass ich mich anstrenge."
+      ]
+    },
+    {
+      "woche": 6,
+      "thema": "Sorgfalt",
+      "motto": "Ich arbeite Schritt für Schritt.",
+      "erklaerungen": [
+        "So verliere ich nicht den Überblick.",
+        "Fehler passieren seltener.",
+        "Ich bleibe ruhig bei der Arbeit."
+      ]
+    },
+    {
+      "woche": 7,
+      "thema": "Fragen und Lernen",
+      "motto": "Ich frage, wenn ich etwas nicht weiß.",
+      "erklaerungen": [
+        "Fragen ist nichts Schlimmes.",
+        "So verstehe ich meine Aufgabe besser.",
+        "Ich mache dann weniger Fehler."
+      ]
+    },
+    {
+      "woche": 8,
+      "thema": "Zuhören",
+      "motto": "Ich höre gut zu.",
+      "erklaerungen": [
+        "Ich verstehe dann besser, was zu tun ist.",
+        "So kann ich meine Arbeit besser machen.",
+        "Auch andere merken: Ich nehme sie ernst."
+      ]
+    },
+    {
+      "woche": 9,
+      "thema": "Freundlichkeit",
+      "motto": "Ich gehe freundlich mit anderen um.",
+      "erklaerungen": [
+        "Freundlichkeit macht den Tag schöner.",
+        "Andere sind dann auch freundlich zu mir.",
+        "Die Stimmung im Team wird besser."
+      ]
+    },
+    {
+      "woche": 10,
+      "thema": "Wertschätzung",
+      "motto": "Ein freundliches Wort tut gut.",
+      "erklaerungen": [
+        "Kleine Worte können viel bewirken.",
+        "Andere fühlen sich gesehen.",
+        "Ich mache damit jemandem eine Freude."
+      ]
+    },
+    {
+      "woche": 11,
+      "thema": "Zuverlässigkeit",
+      "motto": "Ich kann mich auf mich verlassen.",
+      "erklaerungen": [
+        "Ich halte, was ich sage.",
+        "Andere vertrauen mir dann mehr.",
+        "Das gibt mir ein gutes Gefühl."
+      ]
+    },
+    {
+      "woche": 12,
+      "thema": "Qualität",
+      "motto": "Ich achte auf meine Arbeit.",
+      "erklaerungen": [
+        "Ich schaue genau hin, was ich tue.",
+        "So wird meine Arbeit gut.",
+        "Ich bin stolz auf ein gutes Ergebnis."
+      ]
+    },
+    {
+      "woche": 13,
+      "thema": "Verantwortung",
+      "motto": "Ich mache meine Sache gut.",
+      "erklaerungen": [
+        "Ich kümmere mich um meine Aufgabe.",
+        "Andere können sich auf mich verlassen.",
+        "Das macht mich zufrieden."
+      ]
+    },
+    {
+      "woche": 14,
+      "thema": "Rücksicht",
+      "motto": "Wir achten aufeinander.",
+      "erklaerungen": [
+        "Ich sehe, wie es anderen geht.",
+        "Rücksicht macht das Miteinander leichter.",
+        "So fühlen sich alle wohler."
+      ]
+    },
+    {
+      "woche": 15,
+      "thema": "Ruhe",
+      "motto": "Ich bleibe ruhig und gelassen.",
+      "erklaerungen": [
+        "Ruhe hilft mir, klar zu denken.",
+        "Ich muss nicht sofort reagieren.",
+        "Ruhe steckt auch andere an."
+      ]
+    },
+    {
+      "woche": 16,
+      "thema": "Bedürfnisse äußern",
+      "motto": "Ich sage, was ich brauche.",
+      "erklaerungen": [
+        "Andere können mir nur helfen, wenn sie es wissen.",
+        "Ich muss nichts erraten lassen.",
+        "Das macht vieles einfacher."
+      ]
+    },
+    {
+      "woche": 17,
+      "thema": "Hilfe annehmen",
+      "motto": "Ich kann um Hilfe bitten.",
+      "erklaerungen": [
+        "Niemand muss alles allein können.",
+        "Hilfe holen ist keine Schwäche.",
+        "So geht die Arbeit leichter von der Hand."
+      ]
+    },
+    {
+      "woche": 18,
+      "thema": "Anerkennung",
+      "motto": "Ich lobe auch andere.",
+      "erklaerungen": [
+        "Ein Lob freut jeden Menschen.",
+        "Ich zeige damit, dass ich es sehe.",
+        "Das macht die Stimmung im Team besser."
+      ]
+    },
+    {
+      "woche": 19,
+      "thema": "Eigenständigkeit",
+      "motto": "Ich sehe, was zu tun ist.",
+      "erklaerungen": [
+        "Ich schaue selbst, wo ich anpacken kann.",
+        "Das entlastet das ganze Team.",
+        "Ich bin stolz, wenn ich mitdenke."
+      ]
+    },
+    {
+      "woche": 20,
+      "thema": "Ordnung",
+      "motto": "Ich räume meinen Arbeitsplatz auf.",
+      "erklaerungen": [
+        "Ein aufgeräumter Platz macht das Arbeiten leichter.",
+        "Ich finde meine Sachen schneller wieder.",
+        "Auch andere freuen sich über Ordnung."
+      ]
+    },
+    {
+      "woche": 21,
+      "thema": "Ordnung",
+      "motto": "Ordnung macht die Arbeit leichter.",
+      "erklaerungen": [
+        "Wenn alles seinen Platz hat, geht die Arbeit schneller.",
+        "Ich muss nicht lange suchen.",
+        "Ordnung gibt Sicherheit."
+      ]
+    },
+    {
+      "woche": 22,
+      "thema": "Sicherheit",
+      "motto": "Ich passe gut auf.",
+      "erklaerungen": [
+        "So kann nichts passieren.",
+        "Ich schütze mich und andere.",
+        "Aufpassen hilft, sicher zu arbeiten."
+      ]
+    },
+    {
+      "woche": 23,
+      "thema": "Sicherheit",
+      "motto": "Ich arbeite sicher.",
+      "erklaerungen": [
+        "Sicheres Arbeiten schützt mich.",
+        "Es schützt auch meine Kolleginnen und Kollegen.",
+        "Regeln helfen dabei, dass nichts passiert."
+      ]
+    },
+    {
+      "woche": 24,
+      "thema": "Gesundheit und Pausen",
+      "motto": "Ich mache Pausen und tanke Kraft.",
+      "erklaerungen": [
+        "Pausen tun meinem Körper gut.",
+        "Nach der Pause kann ich mich besser konzentrieren.",
+        "Kraft tanken ist wichtig für mich."
+      ]
+    },
+    {
+      "woche": 25,
+      "thema": "Gesundheit und Pausen",
+      "motto": "Nach einer Pause geht es weiter.",
+      "erklaerungen": [
+        "Eine Pause ist kein Stillstand.",
+        "Danach fällt mir die Arbeit leichter.",
+        "Ich starte erholt in den nächsten Abschnitt."
+      ]
+    },
+    {
+      "woche": 26,
+      "thema": "Lernen",
+      "motto": "Ich kann etwas Neues lernen.",
+      "erklaerungen": [
+        "Neues lernen macht mich sicherer.",
+        "Ich muss nicht alles schon können.",
+        "Jeder Tag kann etwas Neues bringen."
+      ]
+    },
+    {
+      "woche": 27,
+      "thema": "Übung",
+      "motto": "Übung macht mich sicherer.",
+      "erklaerungen": [
+        "Je öfter ich etwas mache, desto leichter geht es.",
+        "Ich muss nicht gleich alles perfekt können.",
+        "Übung gibt mir mehr Sicherheit."
+      ]
+    },
+    {
+      "woche": 28,
+      "thema": "Umgang mit Fehlern",
+      "motto": "Fehler sind okay. Ich lerne daraus.",
+      "erklaerungen": [
+        "Jeder Mensch macht mal Fehler.",
+        "Aus Fehlern kann ich etwas lernen.",
+        "Danach mache ich es beim nächsten Mal besser."
+      ]
+    },
+    {
+      "woche": 29,
+      "thema": "Durchhalten",
+      "motto": "Ich probiere es noch einmal.",
+      "erklaerungen": [
+        "Ein zweiter Versuch lohnt sich oft.",
+        "Ich gebe mir eine neue Chance.",
+        "So merke ich, was ich schon besser kann."
+      ]
+    },
+    {
+      "woche": 30,
+      "thema": "Durchhalten",
+      "motto": "Ich bleibe dran.",
+      "erklaerungen": [
+        "Auch schwierige Aufgaben werden leichter, wenn ich weitermache.",
+        "Ich gebe nicht gleich auf.",
+        "Durchhalten macht mich stolz."
+      ]
+    },
+    {
+      "woche": 31,
+      "thema": "Problemlösung",
+      "motto": "Zusammen finden wir eine Lösung.",
+      "erklaerungen": [
+        "Zu zweit fällt uns oft mehr ein.",
+        "Ich muss ein Problem nicht allein lösen.",
+        "Gemeinsam geht es leichter."
+      ]
+    },
+    {
+      "woche": 32,
+      "thema": "Respekt",
+      "motto": "Ich respektiere andere.",
+      "erklaerungen": [
+        "Jeder Mensch ist anders. Das ist gut so.",
+        "Respekt macht das Miteinander angenehm.",
+        "So behandeln mich andere auch mit Respekt."
+      ]
+    },
+    {
+      "woche": 33,
+      "thema": "Wertschätzung",
+      "motto": "Jeder Mensch ist wichtig.",
+      "erklaerungen": [
+        "Jeder Mensch hat seinen Wert.",
+        "Jeder bringt etwas Eigenes mit.",
+        "Das gilt auch für mich."
+      ]
+    },
+    {
+      "woche": 34,
+      "thema": "Zuhören",
+      "motto": "Ich lasse andere ausreden.",
+      "erklaerungen": [
+        "So fühlen sich andere ernst genommen.",
+        "Ich verstehe besser, was gemeint ist.",
+        "Ausreden lassen ist ein Zeichen von Respekt."
+      ]
+    },
+    {
+      "woche": 35,
+      "thema": "Fairness",
+      "motto": "Ich bin fair zu anderen.",
+      "erklaerungen": [
+        "Fairness macht das Zusammensein leichter.",
+        "Ich behandle andere so, wie ich behandelt werden möchte.",
+        "Das schafft Vertrauen."
+      ]
+    },
+    {
+      "woche": 36,
+      "thema": "Teamarbeit",
+      "motto": "Wir sind ein gutes Team.",
+      "erklaerungen": [
+        "Zusammen erreichen wir mehr.",
+        "Jeder hat seinen Platz im Team.",
+        "Das macht die Arbeit schöner."
+      ]
+    },
+    {
+      "woche": 37,
+      "thema": "Hilfsbereitschaft",
+      "motto": "Ich frage: Kann ich helfen?",
+      "erklaerungen": [
+        "Diese Frage zeigt, dass ich an andere denke.",
+        "Manchmal braucht jemand nur ein kleines bisschen Hilfe.",
+        "Helfen macht mich zufrieden."
+      ]
+    },
+    {
+      "woche": 38,
+      "thema": "Dankbarkeit",
+      "motto": "Ich sage Danke.",
+      "erklaerungen": [
+        "Ein Danke ist eine kleine Geste mit großer Wirkung.",
+        "Andere freuen sich, wenn ich Danke sage.",
+        "Danke sagen kostet nichts und tut gut."
+      ]
+    },
+    {
+      "woche": 39,
+      "thema": "Meinung sagen",
+      "motto": "Ich sage freundlich meine Meinung.",
+      "erklaerungen": [
+        "Meine Meinung ist wichtig.",
+        "Ich kann sie ruhig und freundlich sagen.",
+        "So hören andere besser zu."
+      ]
+    },
+    {
+      "woche": 40,
+      "thema": "Kompromisse",
+      "motto": "Ich kann auch mal nachgeben.",
+      "erklaerungen": [
+        "Nicht immer muss ich Recht haben.",
+        "Nachgeben ist manchmal die bessere Lösung.",
+        "So finden wir leichter eine gemeinsame Lösung."
+      ]
+    },
+    {
+      "woche": 41,
+      "thema": "Zusammenarbeit",
+      "motto": "Wir schaffen das zusammen.",
+      "erklaerungen": [
+        "Gemeinsam wirkt eine Aufgabe kleiner.",
+        "Ich bin nicht allein damit.",
+        "Zusammen macht Arbeiten mehr Freude."
+      ]
+    },
+    {
+      "woche": 42,
+      "thema": "Kommunikation",
+      "motto": "Ich achte auf meine Worte.",
+      "erklaerungen": [
+        "Worte können viel bewirken.",
+        "Freundliche Worte tun anderen gut.",
+        "So bleibt die Stimmung gut."
+      ]
+    },
+    {
+      "woche": 43,
+      "thema": "Freundlichkeit",
+      "motto": "Ein Lächeln macht den Tag schöner.",
+      "erklaerungen": [
+        "Ein Lächeln kostet nichts.",
+        "Es steckt andere Menschen an.",
+        "Der Tag fühlt sich dann leichter an."
+      ]
+    },
+    {
+      "woche": 44,
+      "thema": "Erfolg",
+      "motto": "Ich freue mich über kleine Erfolge.",
+      "erklaerungen": [
+        "Auch kleine Schritte zählen.",
+        "Freude gibt mir neue Kraft.",
+        "Ich muss nicht auf das große Ziel warten."
+      ]
+    },
+    {
+      "woche": 45,
+      "thema": "Selbstvertrauen",
+      "motto": "Ich bin stolz auf meine Arbeit.",
+      "erklaerungen": [
+        "Stolz zu sein tut gut.",
+        "Ich habe etwas geschafft.",
+        "Das gibt mir Selbstvertrauen."
+      ]
+    },
+    {
+      "woche": 46,
+      "thema": "Motivation",
+      "motto": "Heute kann ich etwas Gutes tun.",
+      "erklaerungen": [
+        "Jeder Tag bietet eine neue Chance.",
+        "Ich muss nicht groß handeln, um Gutes zu tun.",
+        "Schon Kleinigkeiten können helfen."
+      ]
+    },
+    {
+      "woche": 47,
+      "thema": "gute Stimmung",
+      "motto": "Ich bringe gute Laune mit.",
+      "erklaerungen": [
+        "Gute Laune steckt andere an.",
+        "Sie macht die Arbeit angenehmer.",
+        "Ich fühle mich damit auch selbst besser."
+      ]
+    },
+    {
+      "woche": 48,
+      "thema": "persönliche Entwicklung",
+      "motto": "Ich mache heute einen Schritt nach vorn.",
+      "erklaerungen": [
+        "Auch ein kleiner Schritt bringt mich weiter.",
+        "Ich muss nicht alles auf einmal schaffen.",
+        "Jeder Schritt zählt."
+      ]
+    },
+    {
+      "woche": 49,
+      "thema": "Teamzugehörigkeit",
+      "motto": "Ich bin wichtig für unser Team.",
+      "erklaerungen": [
+        "Meine Aufgabe hat einen Wert.",
+        "Ohne mich fehlt etwas im Team.",
+        "Ich gehöre dazu."
+      ]
+    },
+    {
+      "woche": 50,
+      "thema": "Zusammenarbeit",
+      "motto": "Gemeinsam machen wir unsere Arbeit gut.",
+      "erklaerungen": [
+        "Zusammen sind wir stärker als allein.",
+        "Jeder trägt seinen Teil dazu bei.",
+        "Am Ende sind wir gemeinsam stolz auf das Ergebnis."
+      ]
+    }
+  ]
+}

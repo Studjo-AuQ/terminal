@@ -1,0 +1,113 @@
+/* ══════════════════════════════════════════════════════
+   wochenmotto.css
+   Studjo Terminal | Evangelisches Johanneswerk
+   Ergänzung speziell für wochenmotto.html
+   ══════════════════════════════════════════════════════ */
+
+.wm-box {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
+    padding: 28px 24px;
+    margin: 0 auto 30px;
+    max-width: 700px;
+}
+
+/* Dezente Anzeige der Kalenderwoche */
+.wm-kw {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--secondary-grey, #6b6b6b);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin: 0 0 12px;
+    text-align: center;
+}
+
+/* Das Motto selbst: klar im Vordergrund, große Schrift */
+.wm-motto {
+    font-size: 1.9rem;
+    font-weight: 800;
+    line-height: 1.4;
+    color: var(--primary-red, #b61f29);
+    text-align: center;
+    margin: 0 0 24px;
+}
+
+@media (max-width: 600px) {
+    .wm-motto { font-size: 1.5rem; }
+}
+
+/* Klickbarer/antippbarer Bereich zum Aufklappen der Erklärung.
+   Großzügige Fläche für gute Bedienbarkeit mit dem Finger. */
+.wm-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    min-height: 64px;
+    background-color: #f3f3f3;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-color, #0f2f37);
+    padding: 14px 18px;
+    box-sizing: border-box;
+    transition: background-color 0.2s;
+}
+
+.wm-toggle:hover {
+    background-color: #ececec;
+}
+
+/* Deutlich sichtbarer Tastatur-Fokus */
+.wm-toggle:focus-visible {
+    outline: 3px solid var(--primary-red, #b61f29);
+    outline-offset: 2px;
+}
+
+.wm-toggle[aria-expanded="true"] {
+    background-color: #fbe9e7;
+    border-color: var(--primary-red, #b61f29);
+}
+
+.wm-pfeil {
+    font-size: 1rem;
+}
+
+/* Aufklapp-Bereich mit den Erklärungssätzen */
+.wm-erklaerung {
+    margin-top: 16px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 5px solid var(--primary-red, #b61f29);
+    border-radius: 8px;
+}
+
+.wm-erklaerung ul {
+    margin: 0;
+    padding-left: 22px;
+}
+
+.wm-erklaerung li {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.wm-erklaerung li:last-child {
+    margin-bottom: 0;
+}
+
+/* Fehlermeldung, falls die JSON-Datei nicht geladen werden kann */
+.wm-fehler {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--primary-red, #b61f29);
+    text-align: center;
+    margin: 0;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wochenmotto | Studjo Terminal</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="wochenmotto.css">
+</head>
+<body>
+
+<header>
+  <div class="logo-container">
+    <img src="header.jpg" alt="Studjo Logo">
+  </div>
+</header>
+
+<main id="scrollable-content">
+
+  <h1>Wochenmotto</h1>
+
+  <div class="wm-box" id="wm-box">
+
+    <p class="wm-kw" id="wm-kw">Diese Woche: KW …</p>
+
+    <p class="wm-motto" id="wm-motto">…</p>
+
+    <button type="button"
+            class="wm-toggle"
+            id="wm-toggle"
+            aria-expanded="false"
+            aria-controls="wm-erklaerung">
+      <span>Was bedeutet das?</span>
+      <span class="wm-pfeil" aria-hidden="true">▼</span>
+    </button>
+
+    <div class="wm-erklaerung"
+         id="wm-erklaerung"
+         role="region"
+         aria-label="Erklärung zum Wochenmotto"
+         hidden>
+      <ul id="wm-erklaerung-liste">
+        <!-- wird per JavaScript befüllt -->
+      </ul>
+    </div>
+
+  </div>
+
+  <p style="text-align:center;">
+    <a href="index.html" style="color:var(--primary-red);font-weight:700;text-decoration:none;">
+      ← Zurück zur Startseite
+    </a>
+  </p>
+
+</main>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  © 2026 <strong>Studjo | Arbeit und Qualifizierung</strong>
+   ·  Evangelisches Johanneswerk gGmbH
+   ·  Barrierefreier Zugang
+  <br>
+  <a href="impressum.html" style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Impressum
+  </a>
+   | 
+  <a href="datenschutz.html" style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Datenschutz
+  </a>
+</footer>
+
+<script src="wochenmotto.js"></script>
+
+<link rel="stylesheet" href="a11y.css">
+<script src="a11y.js"></script>
+</body>
+</html>
