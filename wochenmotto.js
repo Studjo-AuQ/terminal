@@ -73,7 +73,8 @@
 
     if (!eintrag) { zeigeFehler(); return; }
 
-    kwEl.textContent = 'Diese Woche: KW ' + isoWoche;
+    kwEl.textContent =
+      'Diese Woche: KW ' + isoWoche + '  ·  ' + eintrag.emoji + ' ' + eintrag.thema;
     mottoEl.textContent = eintrag.motto;
 
     listeEl.innerHTML = '';

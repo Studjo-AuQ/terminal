@@ -9,15 +9,25 @@
 h1 {
     text-align: left;
     font-weight: 800;
+    margin: 0;
 }
 
-/* Zurück-Button oben auf der Seite: runde/ovale Einkreisung,
+/* Zurück-Button + Überschrift in einer gemeinsamen Zeile */
+.wm-header-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+/* Zurück-Button: runde/ovale Einkreisung,
    bei Mouse-Over bzw. Tastatur-Fokus füllt er sich rot */
 .back-button {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    margin: 0 0 24px;
+    flex-shrink: 0;
     padding: 10px 24px;
     border: 2px solid var(--primary-red, #b61f29);
     border-radius: 999px;
