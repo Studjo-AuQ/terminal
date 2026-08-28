@@ -1,7 +1,55 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "27.08.2026, 21:07 Uhr (UTC)",
+  "aktualisiert": "28.08.2026, 05:34 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Partielle Mondfinsternis über Deutschland von Wolken verdeckt",
+      "description": "Selbst Frühaufsteher hatten kaum Chancen, die partielle Mondfinsternis über Deutschland zu beobachten. Eine Wolkendecke versperrte fast überall die Sicht. Aber die nächsten Gelegenheiten kommen bald.",
+      "pubDate": "2026-08-28T07:24:58+02:00",
+      "bild": ""
+    },
+    {
+      "title": "AfD-Spitzenkandidat Siegmund: Das Gesicht des Machtanspruchs",
+      "description": "Ulrich Siegmund will als AfD-Spitzenkandidat in Sachsen-Anhalt Ministerpräsident werden. Er gilt als charismatischer Verkäufer der AfD-Vorstellungen, weniger als Hardliner, der sie im Hintergrund intellektuell ausarbeitet. Von L. Frohmüller.",
+      "pubDate": "2026-08-28T07:01:47+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Rechenzentren in Deutschland - Wettlauf um die Unabhängigkeit",
+      "description": "Deutschland will digital souveräner werden, dafür sollen viele neue Rechenzentren entstehen. Doch viele Projekte gehören zu US-Tech-Konzernen. Das zeigt eine Auswertung von NDR und Süddeutscher Zeitung.",
+      "pubDate": "2026-08-28T06:00:43+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Regenfälle im Flutgebiet - Zahl der Toten in Nepal steigt an",
+      "description": "In Nepal melden die Behörden mittlerweile etwa 470 Tote. Und Regenfälle könnten neue Gefahren bringen.",
+      "pubDate": "2026-08-28T05:40:39+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Iran: Sechs Monate Krieg und kein Ende in Sicht",
+      "description": "US-Präsident Trump und Israels Premier Netanjahu hatten auf einen Durchmarsch gesetzt, als sie am 28. Februar Iran angreifen ließen. Es kam anders - mit weitreichenden Konsequenzen für die Region. Von Tina Fuchs.",
+      "pubDate": "2026-08-28T04:38:59+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Verbraucherschützer fordern nach Meta-Vergleich Konsequenzen",
+      "description": "In den USA hat der Facebook-Mutterkonzern nach einem Prozess um Social-Media-Sucht von Kindern Änderungen versprochen. Verbraucherschützer fordern nun auch Konsequenzen in Deutschland.",
+      "pubDate": "2026-08-28T04:11:44+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Flensburg: Ostsee-Anrainer beraten über hybride Bedrohungen",
+      "description": "Bundesinnenminister Dobrindt berät heute mit seinen Amtskollegen aus den Ostsee-Anrainerstaaten über die Abwehr hybrider Bedrohungen. Im Mittelpunkt: ein gemeinsames Vorgehen gegen Drohnen. Von Claudia Kornmeier.",
+      "pubDate": "2026-08-28T04:04:49+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Streit zwischen USA und Kanada - Trump nennt Ontariosee um",
+      "description": "Der Ontariosee liegt zwischen den USA und Kanada. Im Augenblick entzweit ein Streit die beiden Nachbarn. US-Präsident Trump sorgt nun mit einer Namensänderung für weiteren Ärger in Kanada.",
+      "pubDate": "2026-08-28T00:26:50+02:00",
+      "bild": ""
+    },
     {
       "title": "Bündnis will Opfer rechtsextremer Angriffe unterstützen",
       "description": "Gewerkschaften, Kirchen, Sportverbände: Sie wollen Menschen, die von Rechtsextremisten angegriffen oder bedroht werden, praktisch unterstützen. Hilfe soll es etwa nach Anschlägen oder bei Drohungen gegen Ehrenamtliche geben.",
@@ -42,54 +90,6 @@
       "title": "Villena in Spanien - Bedeutender Schatz aus der Bronzezeit gestohlen",
       "description": "Sie kamen frühmorgens und brauchten nur wenige Minuten: Unbekannte haben im spanischen Villena einen prähistorischen Goldschatz gestohlen. Die Ermittler prüfen offenbar, ob der Diebstahl gezielt in Auftrag gegeben wurde.",
       "pubDate": "2026-08-27T18:46:03+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Der DAX kommt nicht voran",
-      "description": "Trotz Rückenwind aus dem US-Tech-Sektor haben sich die DAX-Anleger heute stark zurückgehalten. Investoren blicken auf das Notenbankertreffen in den Vereinigten Staaten. Unter Druck stand die T-Aktie.",
-      "pubDate": "2026-08-27T18:29:15+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Was über den Besuch von CIA-Chef Ratcliffe in Moskau bekannt ist",
-      "description": "Nach einem Besuch von CIA-Chef Ratcliffe in Moskau wird über den Zweck der Reise spekuliert. In US-Medien hieß es, Ratcliffe habe Russland vor einem Angriff auf die NATO gewarnt. Der Kreml spricht von \"Schauergeschichten\".",
-      "pubDate": "2026-08-27T20:22:07+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Zwei Tote an Schule in Gosen-Neu Zittau bei Berlin",
-      "description": "Bei einer Gewalttat an einer Schule in Gosen-Neu Zittau in Brandenburg sind nach rbb-Informationen zwei Personen getötet worden. Ein Mann sei festgenommen worden. Hinweise auf eine Amoktat gibt es laut Polizei nicht.",
-      "pubDate": "2026-08-27T21:12:52+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Nach Sturzflut im Himalaya - Mehr als 380 Tote und hunderte Vermisste",
-      "description": "Nach der Sturzflut im Himalaya suchen Rettungskräfte weiter nach Überlebenden. Die Flutwelle hatte ganze Dörfer mitgerissen. Augenzeugen berichten von dramatischen Szenen - während in Nepal eine weitere Flutwelle droht.",
-      "pubDate": "2026-08-27T19:38:21+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Zwei Tote an Schule in Gosen-Neu Zittau bei Berlin",
-      "description": "Bei einer Gewalttat an einer Schule in Gosen-Neu Zittau in Brandenburg sind nach rbb-Informationen zwei Personen getötet worden. Ein Mann sei festgenommen worden. Hinweise auf eine Amoktat gibt es laut Polizei nicht.",
-      "pubDate": "2026-08-27T16:19:05+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Mindestens zwölf Menschen bei Waldbränden in Algerien gestorben",
-      "description": "Mehrere Regionen Algeriens sind von Waldbränden betroffen, besonders im Nordosten des Landes. Es gibt erste Todesopfer. Menschen fliehen vor den Feuern, einige wichtige Verbindungsstraßen mussten gesperrt werden.",
-      "pubDate": "2026-08-27T15:59:58+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Geberländer fordern massive Kürzungen beim EU-Budget",
-      "description": "Nach Beratungen über das EU-Budget fordert Deutschland gemeinsam mit fünf anderen EU-Ländern Kürzungen in Milliardenhöhe. Die bisherigen Pläne der EU-Kommission seien \"schlicht unbezahlbar\", erklärte Kanzler Merz.",
-      "pubDate": "2026-08-27T15:52:44+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bosnisch-serbischer Kriegsverbrecher Ratko Mladic ist tot",
-      "description": "Wegen Völkermords und Verbrechen gegen die Menschlichkeit im Bosnienkrieg war er zu lebenslanger Haft verurteilt worden. Nun ist der frühere bosnisch-serbische Armeechef Ratko Mladic in einem Gefängnis in Den Haag gestorben.",
-      "pubDate": "2026-08-27T17:15:07+02:00",
       "bild": ""
     }
   ],
