@@ -4,6 +4,41 @@
    Ergänzung speziell für wochenmotto.html
    ══════════════════════════════════════════════════════ */
 
+/* Überschrift: linksbündig und fett (überschreibt die zentrierte
+   Standard-Überschrift aus style.css) */
+h1 {
+    text-align: left;
+    font-weight: 800;
+}
+
+/* Zurück-Button oben auf der Seite: runde/ovale Einkreisung,
+   bei Mouse-Over bzw. Tastatur-Fokus füllt er sich rot */
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 24px;
+    padding: 10px 24px;
+    border: 2px solid var(--primary-red, #b61f29);
+    border-radius: 999px;
+    background-color: #ffffff;
+    color: var(--primary-red, #b61f29);
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.back-button:hover {
+    background-color: var(--primary-red, #b61f29);
+    color: #ffffff;
+}
+
+.back-button:focus-visible {
+    outline: 3px solid var(--text-color, #0f2f37);
+    outline-offset: 3px;
+}
+
 .wm-box {
     background-color: #ffffff;
     border-radius: 16px;
