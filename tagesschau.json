@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "30.08.2026, 21:26 Uhr (UTC)",
+  "aktualisiert": "30.08.2026, 23:46 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "USA greifen offenbar iranische Raketenwerfer an",
+      "description": "Nachdem sich die USA zuletzt zurückhaltend in Bezug auf Iran gezeigt hatten, haben sie nun offenbar erneut angegriffen. Ziel waren iranische Raketenwerfer auf der Insel Larak. Iran griff unmittelbar danach zwei US-Stützpunkte in Jordanien an.",
+      "pubDate": "2026-08-31T01:35:59+02:00",
+      "bild": ""
+    },
     {
       "title": "Islands Nein zu EU-Beitrittsgesprächen: Angst war stärker als Europa",
       "description": "Island sagt Nein zu neuen Beitrittsverhandlungen mit der EU und setzt auf einen eigenen Weg. Auch finanzstarke Kampagnen beeinflussten die Debatte. Doch am Ende, meint Jana Sinram, überwog ein Wunsch: der nach Souveränität.",
@@ -84,12 +90,6 @@
       "title": "Mit Russlands Hilfe: Junta in Niger schlägt Aufstand von Soldaten nieder",
       "description": "Für die USA und Frankreich war Niger bis 2023 ein wichtiger Ausgangspunkt für Einsätze gegen Dschihadisten in der Sahelregion. Dann kam es zum Putsch. Nun gab es wieder einen Aufstand - der mit Russlands Hilfe niedergeschlagen wurde.",
       "pubDate": "2026-08-30T12:23:45+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Isländer stimmen per Referendum gegen EU-Beitrittsverhandlungen",
-      "description": "Die Menschen in Island haben sich gegen die Wiederaufnahme von Beitrittsverhandlungen mit der Europäischen Union entschieden. Das Ergebnis des Referendums fiel mit 52,8 zu 47,2 Prozent der Stimmen allerdings knapp aus.",
-      "pubDate": "2026-08-30T12:12:39+02:00",
       "bild": ""
     }
   ],
