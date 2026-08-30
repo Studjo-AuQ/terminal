@@ -1,7 +1,49 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "30.08.2026, 13:57 Uhr (UTC)",
+  "aktualisiert": "30.08.2026, 18:02 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Referendum in Island: Ein Nein - aber keine Abkehr von Europa",
+      "description": "Die Isländer haben sich in einem Referendum gegen eine Wiederaufnahme von EU-Beitrittsgesprächen entschieden. Doch die knappe Abstimmung zeigt: Die Frage nach Islands Platz in Europa ist noch längst nicht geklärt. Von Arne Bartram.",
+      "pubDate": "2026-08-30T19:42:47+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Das ARD-Sommerinterview mit Bundeskanzler und CDU-Chef Merz im Faktencheck",
+      "description": "Der Bundeskanzler und CDU-Vorsitzende Merz war im ARD-Sommerinterview zu Gast. Beim Thema Schuldenquote waren seine Aussagen mindestens irreführend. Die Aussagen von Merz im Faktencheck.",
+      "pubDate": "2026-08-30T19:23:12+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Merz im ARD-Sommerinterview: \"Es wird am Ende zusammengezählt\"",
+      "description": "Der Kanzler und seine Regierung stecken im Umfragetief. Dennoch zeigt sich Merz im ARD-Sommerinterview optimistisch. Die Wirtschaft erhole sich bereits - und wichtig sei vor allem, dass Deutschland langfristig gut aufgestellt sei.",
+      "pubDate": "2026-08-30T19:55:49+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Warum türkische TV-Serien so erfolgreich sind",
+      "description": "Fernsehserien aus der Türkei sind ein Exportschlager. Sie werden weltweit verkauft und erreichen Hunderte Millionen Zuschauer. Am Set herrscht enormer Druck - und auch die Regierung mischt mit. Von Dariush Movahedian.",
+      "pubDate": "2026-08-30T17:56:19+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Angriffe gegen NATO-Staaten: \"Putin eskaliert\"",
+      "description": "Russlands Präsident Putin eskaliert den Konflikt mit der NATO, sagt Militärhistoriker Neitzel. Deshalb müsse man ihm entschiedener entgegentreten. Und die Nachrichtendienste sollten den Bürgern deutlich machen, wie ernst die Lage wirklich sei.",
+      "pubDate": "2026-08-30T17:12:40+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Neues Weltraumteleskop ins All gestartet",
+      "description": "Mehr als 35 Jahre ist \"Hubble\" schon im Einsatz, entsprechend altersschwach ist das Weltraumteleskop. Jetzt ist ein Nachfolger ins All gestartet. Er ist deutlich leistungsstärker. Von U. Gradwohl und L. Boucheligua.",
+      "pubDate": "2026-08-30T16:45:42+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Ebola-Impfungen in der DR Kongo: \"Hoffnung auf weniger schwere Krankheitsverläufe\"",
+      "description": "In der DR Kongo haben die Impfungen gegen Ebola begonnen - mit einem Stoff, der nicht für den derzeit grassierenden Erreger entwickelt wurde. Der Infektiologe Leif Erik Sander erklärt, warum das Mittel im Kampf gegen die Epidemie trotzdem so wichtig ist.",
+      "pubDate": "2026-08-30T16:14:07+02:00",
+      "bild": ""
+    },
     {
       "title": "Nach Sturzflut in Nepal: Die lange Suche nach Gewissheit",
       "description": "Noch immer werden Hunderte in Nepal und China vermisst. Sie könnten kilometerweit ins Tal gerissen worden sein, die Identifikation der Toten ist daher schwierig. Für die Angehörigen ist die Ungewissheit eine Qual. Von L. Bodewein und M. Spieker.",
@@ -11,7 +53,7 @@
     {
       "title": "Gefängnisausbruch in Duisburg - Häftling flieht über das Dach",
       "description": "Mit einer waghalsigen Aktion ist am Morgen ein Mann aus der JVA Duisburg-Hamborn entkommen. Der Häftling sägte das Gitter am Fenster seiner Zelle durch und floh über das Dach der Anstalt. Die Fahndung läuft.",
-      "pubDate": "2026-08-30T15:32:46+02:00",
+      "pubDate": "2026-08-30T17:11:00+02:00",
       "bild": ""
     },
     {
@@ -21,9 +63,9 @@
       "bild": ""
     },
     {
-      "title": "Passagierschiff gekentert - Mehrere Tote vor Zypern",
-      "description": "Vor der Küste Nordzyperns ist ein Schiff mit mehr als 260 Menschen an Bord gekentert. Küstenwache und Rettungsteams sind im Einsatz. Offenbar gibt es mehrere Todesopfer.",
-      "pubDate": "2026-08-30T15:02:10+02:00",
+      "title": "Mindestens acht Menschen sterben bei Fährunglück vor Zypern",
+      "description": "Vor der Küste Nordzyperns ist ein Schiff mit mehr als 260 Menschen an Bord gekentert. Mindestens acht Menschen kamen dabei ums Leben. Mehr als 20 Personen sind offenbar noch in der Fähre eingeschlossen.",
+      "pubDate": "2026-08-30T17:46:00+02:00",
       "bild": ""
     },
     {
@@ -40,7 +82,7 @@
     },
     {
       "title": "Isländer stimmen per Referendum gegen EU-Beitrittsverhandlungen",
-      "description": "Die Menschen in Island haben sich gegen die Wiederaufnahme von Beitrittsverhandlungen mit der Europäischen Union entschieden. Das Ergebnis des Referendums fiel mit 52,8 zu 47,2 der Stimmen allerdings knapp aus.",
+      "description": "Die Menschen in Island haben sich gegen die Wiederaufnahme von Beitrittsverhandlungen mit der Europäischen Union entschieden. Das Ergebnis des Referendums fiel mit 52,8 zu 47,2 Prozent der Stimmen allerdings knapp aus.",
       "pubDate": "2026-08-30T12:12:39+02:00",
       "bild": ""
     },
@@ -48,48 +90,6 @@
       "title": "Superreiche in New York: \"Wir wollen mehr Steuern zahlen\"",
       "description": "Eine Gruppe schwerreicher New Yorker fordert, höher besteuert zu werden. In ihrem neuen Bürgermeister Mamdani haben sie dabei einen politischen Mitstreiter - dessen Mantra im Wahlkampf war \"tax the rich\". Von Marion Schmickler.",
       "pubDate": "2026-08-30T08:29:42+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Tote und Verletzte nach Schüssen bei Techno-Veranstaltung in der Schweiz",
-      "description": "Bei einem Rave im schweizerischen Aarau, westlich von Zürich, sind in der Nacht Schüsse gefallen. Die Polizei spricht von einer Toten und fünf Verletzten. Die Hintergründe der Tat sind noch unklar.",
-      "pubDate": "2026-08-30T10:29:48+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Antisemitismusbeauftragter: Wer folgt auf Felix Klein?",
-      "description": "Nach dem Weggang von Felix Klein bleibt das Amt des Antisemitismusbeauftragten unbesetzt. Angesichts steigender antisemitischer Vorfälle sorgt die Verzögerung bei der Nachfolge für Kritik. Von Dietrich Karl Mäurer.",
-      "pubDate": "2026-08-30T08:00:46+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Knappes Rennen bei EU-Referendum in Island",
-      "description": "Noch sind nicht alle Stimmen in Island ausgezählt. Die beiden Lager beim Referendum über die Aufnahme von EU-Beitrittsverhandlungen lagen fast gleich auf, doch kurz vor Ende der Auszählung zeichnet sich ein Nein immer deutlicher ab.",
-      "pubDate": "2026-08-30T09:13:42+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Nepal und China: Opferzahl steigt, Suche nach Vermissten geht weiter",
-      "description": "Nach der Flut im Himalaya werden in China laut den Behörden drei Deutsche vermisst. Nepals Katastrophenschutz mahnt zur Vorsicht: Gefährlich könnte der Fluss Bhotekoshi werden. Die Zahl der Opfer stieg unterdessen auf 750.",
-      "pubDate": "2026-08-30T07:16:43+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Westjordanland: Netanjahu verurteilt Siedlergewalt ungewöhnlich scharf",
-      "description": "In einem seit Wochen von israelischen Siedlern belagerten Dorf im Westjordanland ist es erneut zu Gewalt gekommen. Die Täter schadeten \"Israels Ansehen in der Welt\", kritisierte nun Premier Netanjahu.",
-      "pubDate": "2026-08-30T04:14:23+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Haakon hält erste emotionale Ansprache als König von Norwegen",
-      "description": "In seiner ersten Rede als norwegischer König hat Haakon VIII. seinen verstorbenen Vater geehrt. Harald V. sei ein großzügiger König gewesen, der allen mit Respekt begegnet sei. Auf ihn selbst warte nun eine große Aufgabe, so Haakon.",
-      "pubDate": "2026-08-29T21:05:42+02:00",
-      "bild": ""
-    },
-    {
-      "title": "37 Tote bei Angriff nahe Kiew - Ukraine spricht von Fahrlässigkeit",
-      "description": "Nach einem schweren russischen Angriff mit 37 Toten spricht der ukrainische Präsident Selenskyj von Fahrlässigkeit. Offenbar gab es Verstöße gegen Vorschriften zur Munitionslagerung. Ermittlungen wurden eingeleitet.",
-      "pubDate": "2026-08-29T20:42:43+02:00",
       "bild": ""
     }
   ],
