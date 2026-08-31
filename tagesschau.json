@@ -1,11 +1,77 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "31.08.2026, 05:08 Uhr (UTC)",
+  "aktualisiert": "31.08.2026, 11:47 Uhr (UTC)",
   "meldungen": [
     {
-      "title": "Nach Sturzflut im Grand Canyon: Suche nach 15 Menschen",
-      "description": "Nach einer Sturzflut im Grand Canyon Nationalpark im Westen der USA wird nach 15 Menschen gesucht. Es ist unklar, ob die Menschen vermisst werden oder ob sie sich woanders aufhalten. Die plötzliche Flut hatte sich am Samstag ereignet.",
-      "pubDate": "2026-08-31T03:11:11+02:00",
+      "title": "Niedrigwasser und Inflation: Pegelstände runter - Preise rauf?",
+      "description": "Langsam normalisiert sich der Wasserstand des Rhein, der auch eine wichtige Transportroute ist. Rechtzeitig genug, damit ein Preisschock ausbleibt? Von Axel John.",
+      "pubDate": "2026-08-31T12:44:03+02:00",
+      "bild": ""
+    },
+    {
+      "title": "EU-Aufbaufonds für Italien: Was haben die 200 Milliarden Euro gebracht?",
+      "description": "Geld für Straßen, Züge, Energie und sogar den Trevi-Brunnen: Mit den Corona-Hilfen der EU investiert Italien in vielen Feldern. Das Wiederaufbauprogramm läuft nun aus. War es ein Erfolg? Experten sind skeptisch. Von N. Nützel.",
+      "pubDate": "2026-08-31T12:28:00+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Rasanter Anstieg bei ausländischen Investitionen in Deutschland",
+      "description": "Deutschland bleibt für ausländische Unternehmen attraktiv - ihre Direktinvestitionen sind einer Studie zufolge im vergangenen Jahr deutlich gestiegen. Allerdings hat sich verändert, woher das Geld kommt.",
+      "pubDate": "2026-08-31T11:06:42+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Statistik: Mehr Männer in jüngeren Altersgruppen",
+      "description": "Unter jungen Erwachsenen gibt es in Deutschland deutlich mehr Männer als Frauen. Das hat das Statistische Bundesamt untersucht. Ab 50 Jahren dreht sich das Geschlechterverhältnis.",
+      "pubDate": "2026-08-31T11:04:25+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Abschnitt des Highway 1 wegen Bränden in Kalifornien gesperrt",
+      "description": "Die Küstenstraße ist eine legendäre Route für Touristen aus aller Welt - nun musste der Highway 1 in Kalifornien wegen Bränden gesperrt werden. Es ist auch für die Tourismusbranche ein schwerer Schlag.",
+      "pubDate": "2026-08-31T10:59:16+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: Der Kater nach dem DAX-Rekord?",
+      "description": "Zinssorgen, Inflationsangst und eine mögliche Eskalation im Nahen Osten - die Themen an der Börse sind vielfältig. Nach dem Rekordhoch vom Freitag bleiben die Investoren heute zunächst zurückhaltend.",
+      "pubDate": "2026-08-31T10:36:51+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Schüsse auf ein Café in Köln",
+      "description": "In der Kölner Südstadt sind am Morgen vor einem Café mehrere Schüsse gefallen. Verletzte gab es laut Polizei nicht. Die Einsatzkräfte fahnden jetzt nach einem männlichen Tatverdächtigen.",
+      "pubDate": "2026-08-31T12:51:00+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Bericht: Korallenriffe haben kaum noch Zeit zur Erholung",
+      "description": "Korallenriffe weltweit geraten zunehmend unter Druck: Immer häufiger gibt es schwere Bleichen - und die Zeit zur Erholung wird immer kürzer. Experten warnen vor einer \"Abwärtsspirale\".",
+      "pubDate": "2026-08-31T10:11:46+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Fährunglück vor Nordzypern: Schwere Vorwürfe gegen Schiffsbesatzung",
+      "description": "Nach dem Fährunglück vor der Küste Nordzyperns gibt es Vorwürfe gegen die Crew: Der Kapitän soll von Bord geflüchtet sein, Fluchtwege waren wohl teils versperrt. Die Bergung des Schiffdatenschreibers soll Aufklärung bringen.",
+      "pubDate": "2026-08-31T10:01:35+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Bilanz des DWD: Zweitwärmster Sommer seit Aufzeichnungsbeginn",
+      "description": "Hitze, Dürre und Unwetter: Der diesjährige Sommer erreichte laut Deutschem Wetterdienst \"Dimensionen, wie sie in Deutschland bislang nicht beobachtet wurden\". Nur 2003 war es wärmer.",
+      "pubDate": "2026-08-31T13:13:44+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Nach Sturzflut im Himalaya: Kinder allein nach Flut",
+      "description": "Die verheerende Flut in Nepal und Tibet hat mehr als 900 Menschen getötet. Die Überlebenden stehen meist vor dem Nichts - darunter auch viele Kinder. Ihre Rettung verlief dramatisch. Wie geht es für sie weiter? Von Lena Bodewein.",
+      "pubDate": "2026-08-31T07:50:10+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Nach Sturzflut im Grand Canyon: Ein Toter und mehrere Vermisste",
+      "description": "Eine Sturzflut im Grand Canyon Nationalpark im Westen der USA hat einen Menschen getötet, nach 15 weiteren wird noch gesucht. Es ist unklar, ob die Menschen vermisst werden oder ob sie sich woanders aufhalten.",
+      "pubDate": "2026-08-31T07:27:46+02:00",
       "bild": ""
     },
     {
@@ -16,80 +82,14 @@
     },
     {
       "title": "USA greifen Iran erneut an",
-      "description": "Nachdem sich die USA zuletzt zurückhaltend in Bezug auf Iran gezeigt hatten, haben sie das Land nun erneut angegriffen. Ziel waren iranische Raketenwerfer auf der Insel Larak. Iran antwortete mit dem Beschuss von zwei US-Stützpunkten in Jordanien.",
-      "pubDate": "2026-08-31T06:42:57+02:00",
+      "description": "Einen Monat lang herrschte relative Ruhe am Golf. Nun haben die USA wieder iranische Stellungen angegriffen. Ziel waren nach US-Angaben iranische Raketenwerfer auf der Insel Larak. Teheran antwortete mit Gegenangriffen.",
+      "pubDate": "2026-08-31T10:05:00+02:00",
       "bild": ""
     },
     {
       "title": "Islands Nein zu EU-Beitrittsgesprächen: Angst war stärker als Europa",
       "description": "Island sagt Nein zu neuen Beitrittsverhandlungen mit der EU und setzt auf einen eigenen Weg. Auch finanzstarke Kampagnen beeinflussten die Debatte. Doch am Ende, meint Jana Sinram, überwog ein Wunsch: der nach Souveränität.",
       "pubDate": "2026-08-30T20:35:28+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Referendum in Island: Ein Nein - aber keine Abkehr von Europa",
-      "description": "Die Isländer haben sich in einem Referendum gegen eine Wiederaufnahme von EU-Beitrittsgesprächen entschieden. Doch die knappe Abstimmung zeigt: Die Frage nach Islands Platz in Europa ist noch längst nicht geklärt. Von Arne Bartram.",
-      "pubDate": "2026-08-30T19:42:47+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Das ARD-Sommerinterview mit Bundeskanzler und CDU-Chef Merz im Faktencheck",
-      "description": "Der Bundeskanzler und CDU-Vorsitzende Merz war im ARD-Sommerinterview zu Gast. Bei den Themen Migration, Klimaschutz und Ölpreis waren seine Aussagen ungenau.",
-      "pubDate": "2026-08-30T22:12:13+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Merz im ARD-Sommerinterview: \"Es wird am Ende zusammengezählt\"",
-      "description": "Der Kanzler und seine Regierung stecken im Umfragetief. Dennoch zeigt sich Merz im ARD-Sommerinterview optimistisch. Die Wirtschaft erhole sich bereits - und wichtig sei vor allem, dass Deutschland langfristig gut aufgestellt sei.",
-      "pubDate": "2026-08-30T19:55:49+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Warum türkische TV-Serien so erfolgreich sind",
-      "description": "Fernsehserien aus der Türkei sind ein Exportschlager. Sie werden weltweit verkauft und erreichen Hunderte Millionen Zuschauer. Am Set herrscht enormer Druck - und auch die Regierung mischt mit. Von Dariush Movahedian.",
-      "pubDate": "2026-08-30T17:56:19+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Angriffe gegen NATO-Staaten: \"Putin eskaliert\"",
-      "description": "Russlands Präsident Putin eskaliert den Konflikt mit der NATO, sagt Militärhistoriker Neitzel. Deshalb müsse man ihm entschiedener entgegentreten. Und die Nachrichtendienste sollten den Bürgern deutlich machen, wie ernst die Lage wirklich sei.",
-      "pubDate": "2026-08-30T17:12:40+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Neues Weltraumteleskop ins All gestartet",
-      "description": "Mehr als 35 Jahre ist \"Hubble\" schon im Einsatz, entsprechend altersschwach ist das Weltraumteleskop. Jetzt ist ein Nachfolger ins All gestartet. Er ist deutlich leistungsstärker. Von U. Gradwohl und L. Boucheligua.",
-      "pubDate": "2026-08-30T16:45:42+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ebola-Impfungen in der DR Kongo: \"Hoffnung auf weniger schwere Krankheitsverläufe\"",
-      "description": "In der DR Kongo haben die Impfungen gegen Ebola begonnen - mit einem Stoff, der nicht für den derzeit grassierenden Erreger entwickelt wurde. Der Infektiologe Leif Erik Sander erklärt, warum das Mittel im Kampf gegen die Epidemie trotzdem so wichtig ist.",
-      "pubDate": "2026-08-30T16:14:07+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Nach Sturzflut in Nepal: Die lange Suche nach Gewissheit",
-      "description": "Noch immer werden Hunderte in Nepal und China vermisst. Sie könnten kilometerweit ins Tal gerissen worden sein, die Identifikation der Toten ist daher schwierig. Für die Angehörigen ist die Ungewissheit eine Qual. Von L. Bodewein und M. Spieker.",
-      "pubDate": "2026-08-30T15:52:40+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Gefängnisausbruch in Duisburg - Häftling flieht über das Dach",
-      "description": "Mit einer waghalsigen Aktion ist am Morgen ein Mann aus der JVA Duisburg-Hamborn entkommen. Der Häftling sägte das Gitter am Fenster seiner Zelle durch und floh über das Dach der Anstalt. Die Fahndung läuft.",
-      "pubDate": "2026-08-30T17:11:00+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Deutschland hat unter G20-Staaten die höchsten Strompreise",
-      "description": "Seit Langem beklagen Wirtschaftsverbände den im internationalen Vergleich hohen Strompreis in Deutschland. Eine Analyse des Portals Verivox hat nun ergeben: Unter den G20-Ländern ist Strom hierzulande am teuersten.",
-      "pubDate": "2026-08-30T15:29:59+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Mindestens acht Menschen sterben bei Fährunglück vor Zypern",
-      "description": "Vor der Küste Nordzyperns ist ein Schiff mit mehr als 260 Menschen an Bord gekentert. Mindestens acht Menschen kamen dabei ums Leben. Der Kapitän und sieben Crewmitglieder wurden festgenommen.",
-      "pubDate": "2026-08-30T20:26:09+02:00",
       "bild": ""
     }
   ],
