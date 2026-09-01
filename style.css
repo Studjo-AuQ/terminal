@@ -121,6 +121,136 @@ h1 {
     margin-bottom: 40px;
 }
 
+/* --- Zurück-Button + Überschrift in einer Zeile (mehrfach genutzt) --- */
+.page-header-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.page-header-row h1 {
+    margin: 0;
+    text-align: left;
+    font-weight: 800;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    padding: 10px 24px;
+    border: 2px solid var(--primary-red);
+    border-radius: 999px;
+    background-color: #ffffff;
+    color: var(--primary-red);
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.back-button:hover {
+    background-color: var(--primary-red);
+    color: #ffffff;
+}
+
+.back-button:focus-visible {
+    outline: 3px solid var(--text-color);
+    outline-offset: 3px;
+}
+
+/* --- Heutiges Tagesangebot (automatisch erkannt) --- */
+.sp-heute-bereich {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 24px;
+    margin-bottom: 30px;
+}
+
+.sp-heute-titel {
+    margin: 0 0 18px;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--primary-red);
+}
+
+.sp-heute-lade {
+    text-align: center;
+    color: var(--secondary-grey);
+    padding: 30px 10px;
+}
+
+.sp-heute-spinner {
+    width: 34px; height: 34px;
+    border: 4px solid #ddd;
+    border-top-color: var(--primary-red);
+    border-radius: 50%;
+    animation: sp-heute-spin 0.8s linear infinite;
+    margin: 0 auto 12px;
+}
+
+@keyframes sp-heute-spin { to { transform: rotate(360deg); } }
+
+.sp-heute-wochenende p,
+.sp-heute-fehler p {
+    text-align: center;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.sp-heute-karten {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.sp-heute-karte {
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+}
+
+.sp-heute-spalten-titel {
+    font-weight: 800;
+    font-size: 0.95rem;
+    color: var(--primary-red);
+    margin: 0 0 10px;
+}
+
+.sp-heute-bild {
+    width: 100%;
+    max-width: 220px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.sp-heute-text {
+    white-space: pre-line;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+}
+
+.sp-heute-hinweis {
+    margin: 18px 0 0;
+    font-size: 0.8rem;
+    color: var(--secondary-grey);
+    text-align: center;
+}
+
+.sp-heute-hinweis a,
+.sp-heute-wochenende a,
+.sp-heute-fehler a {
+    color: var(--primary-red);
+    font-weight: 700;
+}
+
 /* --- Das Kachel-Raster (Grid) --- */
 .tile-grid {
     display: grid;
