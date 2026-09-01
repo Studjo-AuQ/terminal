@@ -1,7 +1,61 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "01.09.2026, 01:59 Uhr (UTC)",
+  "aktualisiert": "01.09.2026, 07:43 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Zahl der Toten nach Sturzflut im Himalaya steigt auf 1.000",
+      "description": "Nach der Flutkatastrophe im Himalaya steigt die Zahl der Toten auf mehr 1.000. Es gibt weiterhin Tausende Vermisste. Hilfsorganisationen warnen zudem vor katastrophalen hygienischen Bedingungen und Krankheiten wie Dengue-Fieber oder Cholera.",
+      "pubDate": "2026-09-01T08:55:01+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Pflegebeauftragte: \"Die Pflegekassen werden nicht pleitegehen\"",
+      "description": "Die Pflegekassen sind unterfinanziert, selbst mit einem Notdarlehen kommen sie nicht aus dem Milliardendefizit. Die Pflegebeauftragte der Bundesregierung, Staffler, verweist auf die Pflegereform und versichert: Man werde die Kassen nicht pleitegehen lassen.",
+      "pubDate": "2026-09-01T08:45:08+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Shein startet mit deutlichem Minus an Hongkonger Börse",
+      "description": "Der chinesische Billigmodehändler Shein hat bei seinem Börsengang in Hongkong enttäuscht. Die Aktien fielen um bis zu acht Prozent unter den Ausgabepreis. Schon zuvor war der Hype spürbar zurückgegangen.",
+      "pubDate": "2026-09-01T08:27:14+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: Geldpolitik und Ölpreis belasten die Anlegerlaune",
+      "description": "Der anziehende Ölpreis und die Aussicht auf steigende Leitzinsen in den USA und der Eurozone belasten die Stimmung am Markt. Vor frischen Inflationsdaten bleiben die Anleger zurückhaltend.",
+      "pubDate": "2026-09-01T07:30:07+02:00",
+      "bild": ""
+    },
+    {
+      "title": "US-Behörde FTC und Bundesstaaten verklagen Amazon",
+      "description": "Mit manipulierten Auktionen für Online-Werbung soll sich Amazon zweistellige Milliardenbeträge erschlichen haben. Das wirft die US-Wettbewerbsbehörder FTC dem Konzern vor - und klagt zusammen mit 22 Bundesstaaten.",
+      "pubDate": "2026-09-01T06:47:47+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Mord an Rapper Tupac Shakur: Angeklagter schuldig gesprochen",
+      "description": "Er soll der Drahtzieher hinter dem Tod von Tupac Shakur gewesen sein: Der frühere Gang-Anführer Duane Davis ist im Prozess um den Mord des US-Rappers schuldig gesprochen worden. Jedoch soll er nicht selbst auf Shakur geschossen haben.",
+      "pubDate": "2026-09-01T04:18:12+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Außenminister Wadephul in Nordafrika: Migration statt Wirtschaft",
+      "description": "Wenige Wochen nach dem Massenansturm von Migranten auf Ceuta steht die Migration über die Mittelmeerroute weiter im Fokus. Ein Thema, um das Außenminister Wadephul bei seinem Besuch in Nordafrika nicht herumkommt. Von D. von Osten.",
+      "pubDate": "2026-09-01T04:17:52+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Supreme Court: Trump darf Ballsaal im Weißen Haus vorerst weiterbauen",
+      "description": "Der Rechtsstreit um den Bau des Ballsaals am Weißen Haus ist noch nicht abgeschlossen, doch die Arbeiten daran dürfen laut dem Supreme Court weiterlaufen. Damit könnte der Rohbau bereits vor Ende des Verfahrens fertig sein.",
+      "pubDate": "2026-09-01T04:17:13+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Kein Handys mehr an Frankreichs Schulen - auch nicht in der Oberstufe",
+      "description": "Willkommen zurück - heißt es heute an französischen Schulen. Mit einer Neuerung: Nun gilt für alle Jahrgänge ein Handyverbot, auch für die Oberstufe. Aber wie setzt man das um, wenn die Schulkommunikation digitalisiert wurde? Von Julia Borutta.",
+      "pubDate": "2026-09-01T04:12:02+02:00",
+      "bild": ""
+    },
     {
       "title": "Öl-Deal mit den USA: Was das Abkommen für Venezuela bedeutet",
       "description": "Etwa ein Fünftel des Ölvorkommens Venezuelas soll künftig den USA gehören. Die Vorteile des Deals liegen für Washington auf der Hand. Doch hilft das Abkommen auch der maroden venezolanischen Wirtschaft? Von Jenny Barke.",
@@ -9,9 +63,9 @@
       "bild": ""
     },
     {
-      "title": "Störung bei Microsoft: Maildienst Outlook lahmgelegt",
-      "description": "Microsoft-Nutzer weltweit haben aktuell erhebliche Probleme, auf ihre E-Mails des Dienstes Outlook zuzugreifen. Sowohl der Login als auch der Empfang und Versand von Mails sind betroffen.",
-      "pubDate": "2026-09-01T02:46:50+02:00",
+      "title": "E-Mail-Störung bei Microsoft: Systeme laufen wieder an",
+      "description": "Ein Fehler in der Cloud-Infrastruktur von Exchange Online hat weltweit für Probleme im E-Mail-Verkehr der Microsoft-Systeme gesorgt. Die Systeme erholen sich - doch nicht alle Nutzer sind schon wieder online.",
+      "pubDate": "2026-09-01T07:29:08+02:00",
       "bild": ""
     },
     {
@@ -36,60 +90,6 @@
       "title": "Drohnenvorfall in Leipzig: Wann und wie reagiert die Bundesregierung?",
       "description": "Wer steckt hinter den Sprengstoff-Drohnen am Flughafen Leipzig? Vieles deutet auf Russland als Drahtzieher hin. Doch noch steht eine offizielle Schuldzuweisung der Bundesregierung aus. Welche Konsequenzen sind denkbar? Von Markus Sambale.",
       "pubDate": "2026-08-31T20:30:16+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Warntag, Steuer, Garantie: Was sich im September ändert",
-      "description": "Nicht erschrecken: Im September gibt es bundesweit Alarm - beim Warntag werden Sirenen und Warn-Apps getestet. Ein neues Label zeigt künftig die Garantiezeit. Und es gibt Vereinfachungen bei Steuerberatungen.",
-      "pubDate": "2026-08-31T19:00:05+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Vor 50 Jahren gab es den ersten Indexfonds für Privatanleger",
-      "description": "Vor 50 Jahren ging der erste Indexfonds für Privatanleger an den Start. Er gilt als Vorläufer der heutigen ETFs und hat den Vermögensaufbau an der Börse einem breiteren Publikum geöffnet.",
-      "pubDate": "2026-08-31T18:46:46+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wadephul in Tunesien und Algerien: Mehr Stabilität - für weniger Migration",
-      "description": "Außenminister Wadephul will bei Besuchen in Tunesien und Algerien für mehr Zusammenarbeit in Wirtschaft und Sicherheit werben. Er sieht dort entscheidende Hebel, um die Migration aus Nordafrika zu verringern.",
-      "pubDate": "2026-08-31T18:45:31+02:00",
-      "bild": ""
-    },
-    {
-      "title": "\"Europa macht sich abhängig von nicht lupenreinen Demokratien\"",
-      "description": "2023 hat die EU ein Migrationsabkommen mit Tunesien abgeschlossen. Brüssel betrachtet es als Erfolg. Doch die Migrationsforscherin Kohlenberger sieht die Vereinbarung im Interview mit tagesschau24 kritisch.",
-      "pubDate": "2026-08-31T18:44:32+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Herbe Verluste zum Monatsende",
-      "description": "Neue Militärschläge im Persischen Golf und Zinssorgen haben den DAX zu Wochenbeginn in die Knie gezwungen. Der August endet dennoch mit einem Monatsplus von 2,5 Prozent.",
-      "pubDate": "2026-08-31T18:23:35+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Griechenlands Feuerwehr: Zwischen Saisonarbeit und Arbeitslosigkeit",
-      "description": "Jedes Jahr löscht die griechische Feuerwehr Tausende Waldbrände, der Job ist gefährlich. Dennoch haben viele bei der nationalen Berufsfeuerwehr nur Saisonverträge - und im Winter keinen Job. Dagegen regt sich nun Protest. Von A. Halder.",
-      "pubDate": "2026-08-31T18:22:52+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Siedlergewalt im Westjordanland: Netanjahu versucht den Balanceakt",
-      "description": "Wegen der Gewalt von Siedlern im Westjordanland steht Premier Netanjahu unter Druck. Nach dem jüngsten Vorfall fand er zwar ungewohnt scharfe Worte. Doch vor den Wahlen will er die Siedlerbewegung keinesfalls verprellen. Von Julia Ley.",
-      "pubDate": "2026-08-31T17:32:56+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Apfel-Produzenten unter Druck",
-      "description": "Die Apfel-Ernte fällt wegen Frost und Hitze, aber auch aus natürlichen Gründen geringer aus. Obwohl die Preise steigen, haben Obstbauern wenig davon. Sie leiden unter hohen Kosten und scharfer Konkurrenz. Von Klaus-Rainer Jackisch.",
-      "pubDate": "2026-08-31T16:43:46+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Landtagswahl in Sachsen-Anhalt: CDU vor der Zerreißprobe?",
-      "description": "Bei der Landtagswahl in Sachsen-Anhalt droht der CDU ein Dilemma: Die AfD liegt deutlich vorn. Koalitionen erscheinen schwierig. Parteichef Merz hat klare Worte, aber wenig Spielraum. Von Sabine Henkel.",
-      "pubDate": "2026-08-31T16:10:36+02:00",
       "bild": ""
     }
   ],
