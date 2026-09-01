@@ -81,33 +81,78 @@
 </footer>
 <script src="script.js" defer></script>
       <script>
-        (function() {
-            // KONFIGURATION
-            // Setze hier den Montag ein, an dem der Link die Endung ":0" hatte
-            const startReferenz = new Date("2026-03-23"); 
-            const basisURL = "https://001sdbfevm-660.johanneswerk.int/Manual/WebViewer?OID=D67363000%3A";
+        (function () {
+            /* ═══════════════════════════════════════════════════
+               Öffentliche Speisepläne – ohne ConSense-Zugangsdaten
 
-            const heute = new Date();
-            const msProWoche = 604800000; // 7 Tage in Millisekunden
-            
-            // Berechne vergangene Wochen seit Startdatum
-            const wochenIndex = Math.floor((heute - startReferenz) / msProWoche);
+               Ablage der PDFs im Repo unter: speiseplaene/
+               Dateiname-Schema:  speiseplan_<ISO-Jahr>-KW<zweistellig>.pdf
+               Beispiel:          speiseplaene/speiseplan_2026-KW36.pdf
 
-            
-            // Links im HTML aktualisieren
-            const ids = ["link-woche-0", "link-woche-1", "link-woche-2"];
+               Jede Woche einfach EINE neue PDF-Datei mit passendem
+               Namen in den Ordner "speiseplaene" hochladen (GitHub-
+               Weboberfläche: Add file > Upload files). Alte Dateien
+               können liegen bleiben, es muss nichts umbenannt oder
+               verkettet werden – die Zuordnung erfolgt automatisch
+               über das heutige Datum.
+               ═══════════════════════════════════════════════════ */
+
+            const ORDNER = 'speiseplaene/';
+
+            // ISO-8601-Kalenderwoche UND zugehöriges ISO-Jahr berechnen
+            // (wichtig für den Jahreswechsel, z. B. KW53/2026 -> KW1/2027)
+            function getISOWocheJahr(datum) {
+                const d = new Date(Date.UTC(
+                    datum.getFullYear(), datum.getMonth(), datum.getDate()
+                ));
+                const wochentag = (d.getUTCDay() + 6) % 7; // Montag = 0
+                d.setUTCDate(d.getUTCDate() - wochentag + 3); // auf Donnerstag springen
+                const isoJahr = d.getUTCFullYear();
+
+                const jahresStart = new Date(Date.UTC(isoJahr, 0, 4));
+                const startWochentag = (jahresStart.getUTCDay() + 6) % 7;
+                jahresStart.setUTCDate(jahresStart.getUTCDate() - startWochentag + 3);
+
+                const wocheMs = 7 * 24 * 60 * 60 * 1000;
+                const woche = 1 + Math.round((d - jahresStart) / wocheMs);
+                return { jahr: isoJahr, woche: woche };
+            }
+
+            function dateiname(offsetWochen) {
+                const datum = new Date();
+                datum.setDate(datum.getDate() + offsetWochen * 7);
+                const { jahr, woche } = getISOWocheJahr(datum);
+                const wocheStr = String(woche).padStart(2, '0');
+                return ORDNER + 'speiseplan_' + jahr + '-KW' + wocheStr + '.pdf';
+            }
+
+            const ids = ['link-woche-0', 'link-woche-1', 'link-woche-2'];
+
             ids.forEach((id, index) => {
                 const element = document.getElementById(id);
-                if (element) {
-                let revision = wochenIndex + index;
-                if (revision === 11) {
-                    revision = 12;
-                } else if (revision > 11) {
-                    revision = revision + 1;
-                }
-                element.href = basisURL + revision;
-                console.log(id + " → Revision " + revision);
-                }
+                if (!element) return;
+
+                const pfad = dateiname(index);
+                element.href = pfad;
+
+                // Prüfen, ob die Datei schon existiert. Falls nicht
+                // (z. B. noch nicht hochgeladen), Kachel deutlich als
+                // "in Vorbereitung" kennzeichnen statt auf eine kaputte
+                // Seite zu verlinken.
+                fetch(pfad, { method: 'HEAD' })
+                    .then(antwort => {
+                        if (!antwort.ok) throw new Error('nicht gefunden');
+                    })
+                    .catch(() => {
+                        element.classList.add('tile-in-vorbereitung');
+                        element.setAttribute('aria-disabled', 'true');
+                        element.removeAttribute('href');
+                        const h2 = element.querySelector('h2');
+                        if (h2) h2.insertAdjacentHTML(
+                            'afterend',
+                            '<p class="tile-hinweis">Noch nicht veröffentlicht</p>'
+                        );
+                    });
             });
         })();
     </script>     
