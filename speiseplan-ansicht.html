@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Speiseplan | Studjo Terminal</title>
+<link rel="stylesheet" href="speiseplan-ansicht.css">
+</head>
+<body>
+
+<div class="sp-header">
+  <a href="speiseplan.html" target="_self" class="back-button">
+    <span aria-hidden="true">←</span> Zurück
+  </a>
+  <span class="sp-titel" id="sp-titel">📄 Speiseplan</span>
+  <a href="#" id="sp-download" class="sp-download" hidden>
+    <span aria-hidden="true">⬇</span> Download
+  </a>
+</div>
+
+<div class="sp-frame-wrap">
+  <iframe id="sp-iframe" title="Speiseplan PDF" hidden></iframe>
+  <div id="sp-fehler" class="sp-fehler" hidden>
+    <p>Dieser Speiseplan ist noch nicht veröffentlicht.</p>
+  </div>
+</div>
+
+<script src="speiseplan-ansicht.js"></script>
+</body>
+</html>

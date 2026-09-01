@@ -23,17 +23,17 @@
                 <h2>Hier geht's zur&uuml;ck...</h2>
             </a>
 
-            <a id="link-woche-0" href="#" target="_blank" class="tile tile-color-3">
+            <a id="link-woche-0" href="speiseplan-ansicht.html?woche=0" target="_self" class="tile tile-color-3">
                 <img src="Speiseplan diese Woche.jpg" alt="Diese Woche" class="tile-img">
                 <h2>Aktuelle Woche</h2>
             </a>
 
-            <a id="link-woche-1" href="#" target="_blank" class="tile tile-color-3">
+            <a id="link-woche-1" href="speiseplan-ansicht.html?woche=1" target="_self" class="tile tile-color-3">
                 <img src="Speiseplan kommende Woche.jpg" alt="N&auml;chste Woche" class="tile-img">
                 <h2>N&auml;chste Woche</h2>
             </a>
 
-            <a id="link-woche-2" href="#" target="_blank" class="tile tile-color-3">
+            <a id="link-woche-2" href="speiseplan-ansicht.html?woche=2" target="_self" class="tile tile-color-3">
                 <img src="Speiseplan kommende kommende Woche.jpg" alt="In 2 Wochen" class="tile-img">
                 <h2>In 2 Wochen</h2>
             </a>
@@ -80,82 +80,6 @@
   </a>
 </footer>
 <script src="script.js" defer></script>
-      <script>
-        (function () {
-            /* ═══════════════════════════════════════════════════
-               Öffentliche Speisepläne – ohne ConSense-Zugangsdaten
-
-               Ablage der PDFs im Repo unter: speiseplaene/
-               Dateiname-Schema:  speiseplan_<ISO-Jahr>-KW<zweistellig>.pdf
-               Beispiel:          speiseplaene/speiseplan_2026-KW36.pdf
-
-               Jede Woche einfach EINE neue PDF-Datei mit passendem
-               Namen in den Ordner "speiseplaene" hochladen (GitHub-
-               Weboberfläche: Add file > Upload files). Alte Dateien
-               können liegen bleiben, es muss nichts umbenannt oder
-               verkettet werden – die Zuordnung erfolgt automatisch
-               über das heutige Datum.
-               ═══════════════════════════════════════════════════ */
-
-            const ORDNER = 'speiseplaene/';
-
-            // ISO-8601-Kalenderwoche UND zugehöriges ISO-Jahr berechnen
-            // (wichtig für den Jahreswechsel, z. B. KW53/2026 -> KW1/2027)
-            function getISOWocheJahr(datum) {
-                const d = new Date(Date.UTC(
-                    datum.getFullYear(), datum.getMonth(), datum.getDate()
-                ));
-                const wochentag = (d.getUTCDay() + 6) % 7; // Montag = 0
-                d.setUTCDate(d.getUTCDate() - wochentag + 3); // auf Donnerstag springen
-                const isoJahr = d.getUTCFullYear();
-
-                const jahresStart = new Date(Date.UTC(isoJahr, 0, 4));
-                const startWochentag = (jahresStart.getUTCDay() + 6) % 7;
-                jahresStart.setUTCDate(jahresStart.getUTCDate() - startWochentag + 3);
-
-                const wocheMs = 7 * 24 * 60 * 60 * 1000;
-                const woche = 1 + Math.round((d - jahresStart) / wocheMs);
-                return { jahr: isoJahr, woche: woche };
-            }
-
-            function dateiname(offsetWochen) {
-                const datum = new Date();
-                datum.setDate(datum.getDate() + offsetWochen * 7);
-                const { jahr, woche } = getISOWocheJahr(datum);
-                const wocheStr = String(woche).padStart(2, '0');
-                return ORDNER + 'speiseplan_' + jahr + '-KW' + wocheStr + '.pdf';
-            }
-
-            const ids = ['link-woche-0', 'link-woche-1', 'link-woche-2'];
-
-            ids.forEach((id, index) => {
-                const element = document.getElementById(id);
-                if (!element) return;
-
-                const pfad = dateiname(index);
-                element.href = pfad;
-
-                // Prüfen, ob die Datei schon existiert. Falls nicht
-                // (z. B. noch nicht hochgeladen), Kachel deutlich als
-                // "in Vorbereitung" kennzeichnen statt auf eine kaputte
-                // Seite zu verlinken.
-                fetch(pfad, { method: 'HEAD' })
-                    .then(antwort => {
-                        if (!antwort.ok) throw new Error('nicht gefunden');
-                    })
-                    .catch(() => {
-                        element.classList.add('tile-in-vorbereitung');
-                        element.setAttribute('aria-disabled', 'true');
-                        element.removeAttribute('href');
-                        const h2 = element.querySelector('h2');
-                        if (h2) h2.insertAdjacentHTML(
-                            'afterend',
-                            '<p class="tile-hinweis">Noch nicht veröffentlicht</p>'
-                        );
-                    });
-            });
-        })();
-    </script>     
 <link rel="stylesheet" href="a11y.css">
 <script src="a11y.js"></script>
 </body>

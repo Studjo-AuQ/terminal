@@ -219,26 +219,6 @@ a[href*="johanneswerk.int"]::after {
     border-bottom: 3px solid var(--tile-hover-color);
 }
 
-/* --- Kachel "noch nicht veröffentlicht" (z. B. Speiseplan) --- */
-.tile.tile-in-vorbereitung {
-    opacity: 0.55;
-    cursor: default;
-    pointer-events: none;
-}
-
-.tile.tile-in-vorbereitung:hover {
-    transform: none;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    border-bottom: 4px solid transparent;
-}
-
-.tile-hinweis {
-    margin: 4px 0 0;
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: var(--secondary-grey);
-}
-
 .tile h2 {
     margin-top: 10px;
     color: var(--text-color);
