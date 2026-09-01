@@ -13,15 +13,36 @@
     <span aria-hidden="true">←</span> Zurück
   </a>
   <span class="sp-titel" id="sp-titel">📄 Speiseplan</span>
-</div>
-
-<div class="sp-frame-wrap">
-  <iframe id="sp-iframe" title="Speiseplan PDF" hidden></iframe>
-  <div id="sp-fehler" class="sp-fehler" hidden>
-    <p>Dieser Speiseplan ist noch nicht veröffentlicht.</p>
+  <div class="sp-seiten-nav" id="sp-seiten-nav" hidden>
+    <button type="button" id="sp-btn-prev" aria-label="Vorherige Seite">‹</button>
+    <span id="sp-seiten-info">Seite 1 von 1</span>
+    <button type="button" id="sp-btn-next" aria-label="Nächste Seite">›</button>
   </div>
 </div>
 
-<script src="speiseplan-ansicht.js"></script>
+<div class="sp-frame-wrap" id="sp-frame-wrap">
+  <div class="sp-lade" id="sp-lade">
+    <div class="sp-spinner"></div>
+    Speiseplan wird geladen …
+  </div>
+  <div id="sp-fehler" class="sp-fehler" hidden>
+    <p>Dieser Speiseplan ist noch nicht veröffentlicht.</p>
+  </div>
+  <div class="sp-canvas-wrap" id="sp-canvas-wrap" hidden>
+    <canvas id="sp-canvas"></canvas>
+    <div class="sp-tages-rahmen" id="sp-tages-rahmen" hidden></div>
+  </div>
+</div>
+
+<!-- Für Screenreader/Vorlesen: Hinweis, welcher Tag markiert ist.
+     Visuell unsichtbar, aber für die Vorlese-Funktion vorhanden. -->
+<div class="sp-sr-only" id="sp-sr-hinweis"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.min.mjs" type="module"></script>
+<script src="speiseplan-erkennung.js"></script>
+<script type="module" src="speiseplan-ansicht.js"></script>
+
+<link rel="stylesheet" href="a11y.css">
+<script src="a11y.js"></script>
 </body>
 </html>
