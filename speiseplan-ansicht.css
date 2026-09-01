@@ -63,25 +63,6 @@ html, body {
     outline-offset: 3px;
 }
 
-.sp-download {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    flex-shrink: 0;
-    padding: 8px 18px;
-    border-radius: 999px;
-    background-color: #f3f3f3;
-    color: var(--text-color, #0f2f37);
-    font-weight: 700;
-    font-size: 0.95rem;
-    text-decoration: none;
-    transition: background-color 0.2s;
-}
-
-.sp-download:hover {
-    background-color: #e6e6e6;
-}
-
 .sp-frame-wrap {
     position: fixed;
     top: 68px; left: 0; right: 0; bottom: 0;

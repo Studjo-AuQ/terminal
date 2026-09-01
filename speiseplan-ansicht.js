@@ -50,15 +50,14 @@
     const pfad     = dateiname(offset);
     const iframeEl = document.getElementById('sp-iframe');
     const fehlerEl = document.getElementById('sp-fehler');
-    const dlEl     = document.getElementById('sp-download');
 
     fetch(pfad, { method: 'HEAD' })
         .then(antwort => {
             if (!antwort.ok) throw new Error('nicht gefunden');
-            iframeEl.src = pfad;
+            // #toolbar=0 schaltet die browser-eigene PDF-Werkzeugleiste
+            // (Download, Drucken, …) ab – wichtig im Kiosk-Modus.
+            iframeEl.src = pfad + '#toolbar=0';
             iframeEl.hidden = false;
-            dlEl.href = pfad;
-            dlEl.hidden = false;
         })
         .catch(() => {
             fehlerEl.hidden = false;

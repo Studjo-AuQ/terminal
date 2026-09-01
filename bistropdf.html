@@ -146,7 +146,9 @@
     fetch(PDF_DATEI, { method: 'HEAD' })
         .then(antwort => {
             if (!antwort.ok) throw new Error('nicht gefunden');
-            iframe.src = PDF_DATEI;
+            // #toolbar=0 schaltet die browser-eigene PDF-Werkzeugleiste
+            // (Download, Drucken, …) ab – wichtig im Kiosk-Modus.
+            iframe.src = PDF_DATEI + '#toolbar=0';
             iframe.style.display = 'block';
             ladeMeldu.style.display = 'none';
         })
