@@ -10,9 +10,8 @@
    Reihenfolge Montag–Freitag erscheinen.
    ══════════════════════════════════════════════════════ */
 
-import * as pdfjsLib from 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.min.mjs';
-pdfjsLib.GlobalWorkerOptions.workerSrc =
-    'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.worker.min.mjs';
+import * as pdfjsLib from './pdfjs/pdf.min.mjs';
+pdfjsLib.GlobalWorkerOptions.workerSrc = './pdfjs/pdf.worker.min.mjs';
 
 const ORDNER = 'speiseplaene/';
 const TITEL  = ['Aktuelle Woche', 'Nächste Woche', 'In 2 Wochen'];

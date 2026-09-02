@@ -60,20 +60,5 @@ window.SpeiseplanErkennung = (function () {
         return (tag + 6) % 7; // umrechnen auf 0=Montag … 6=Sonntag
     }
 
-    /* Probiert mehrere Datei-Kandidaten (z. B. unterschiedliche
-       Groß-/Kleinschreibung) per HEAD-Request durch und gibt den
-       ERSTEN tatsächlich vorhandenen Pfad zurück, oder null, wenn
-       keiner existiert. Robuster gegenüber manuellen Tippfehlern
-       beim wöchentlichen Hochladen. */
-    async function findeDatei(kandidaten) {
-        for (const pfad of kandidaten) {
-            try {
-                const antwort = await fetch(pfad, { method: 'HEAD' });
-                if (antwort.ok) return pfad;
-            } catch (e) { /* nächsten Kandidaten versuchen */ }
-        }
-        return null;
-    }
-
-    return { findeLinien, heutigerWochentagIndex, findeDatei };
+    return { findeLinien, heutigerWochentagIndex };
 })();
