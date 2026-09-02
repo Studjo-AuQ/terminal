@@ -1,19 +1,23 @@
 /* ══════════════════════════════════════════════════════
-   speiseplan-heute.js
+   speiseplan-heute.js  (Version 2 – in sich geschlossen,
+   verbesserte OCR-Qualität)
    Studjo Terminal | Evangelisches Johanneswerk
 
-   Liest automatisch das heutige Tagesangebot aus dem
-   "aktuelle Woche"-PDF (Seite 1 = Tabelle, Seite 2 =
-   passende Essensbilder) und zeigt es direkt auf
-   speiseplan.html an.
-
-   WICHTIG: Das PDF enthält keinen echten Text (nur ein
-   eingebettetes Bild) – die drei Gerichte werden daher per
-   Texterkennung (OCR, Tesseract.js) erkannt. Das läuft
-   vollständig im Browser (keine Cloud, DSGVO-konform),
-   kann aber ein paar Sekunden dauern und ist nicht zu
-   100 % fehlerfrei – daher der Hinweis in der Anzeige und
-   ein Link zum Original-PDF als Kontrolle.
+   Änderungen gegenüber Version 1:
+   - Keine Abhängigkeit mehr zu speiseplan-erkennung.js
+     (verhindert Datei-Sync-Fehler zwischen mehreren Dateien)
+   - Die Tabellen-Zelle wird für die Texterkennung in deutlich
+     höherer Auflösung gerendert (statt 1754px Seitenbreite
+     jetzt 3200px) – kleine Schrift wird dadurch spürbar
+     schärfer erkannt.
+   - Vor der Texterkennung wird die Zelle in Graustufen
+     umgewandelt und stark kontrastiert (Schwarz/Weiß) –
+     das ist der wichtigste Hebel für bessere OCR-Ergebnisse
+     bei gedrucktem Text.
+   - Tesseract bekommt den Hinweis, dass es sich um einen
+     einzelnen, gleichmäßigen Textblock handelt (kein
+     Zeitungslayout mit mehreren Spalten) – das verbessert
+     die Zeilenerkennung innerhalb der kleinen Zelle.
    ══════════════════════════════════════════════════════ */
 
 import * as pdfjsLib from './pdfjs/pdf.min.mjs';
@@ -21,8 +25,6 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = './pdfjs/pdf.worker.min.mjs';
 
 const ORDNER = 'speiseplaene/';
 const WOCHENTAGE = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag'];
-// Feste Spaltenbezeichnungen (passend zum aktuellen Catering-Layout).
-// Ändert das Catering-Team die Spaltentitel, hier anpassen.
 const SPALTEN_LABEL = ['Regionales und Klassiker', 'Gut & Wertvoll', 'Kaltmahlzeit'];
 
 function getISOWocheJahr(datum) {
@@ -49,11 +51,52 @@ function kandidatenAktuelleWoche() {
     ];
 }
 
-/* Schneidet jede Zeile an der ersten öffnenden eckigen Klammer ab –
-   übrig bleibt nur der Speisename vor den Zusatz-Angaben (Allergene,
-   kcal usw.). Robuster als eine Klammer-Entfernung per Regex, da bei
-   OCR-Fehlern die schließende Klammer "]" öfter falsch erkannt wird
-   als die öffnende "[". */
+async function findeDatei(kandidaten) {
+    for (const pfad of kandidaten) {
+        try {
+            const antwort = await fetch(pfad, { method: 'HEAD' });
+            if (antwort.ok) return pfad;
+        } catch (e) { /* nächsten Kandidaten versuchen */ }
+    }
+    return null;
+}
+
+function findeLinien(canvas, achse, schwelle = 0.5, dunkelWert = 130) {
+    const ctx = canvas.getContext('2d');
+    const { width, height } = canvas;
+    const bild = ctx.getImageData(0, 0, width, height).data;
+
+    const laenge = achse === 'horizontal' ? height : width;
+    const breite = achse === 'horizontal' ? width : height;
+    const kandidaten = [];
+
+    for (let i = 0; i < laenge; i++) {
+        let dunkleAnzahl = 0;
+        for (let j = 0; j < breite; j += 2) {
+            const x = achse === 'horizontal' ? j : i;
+            const y = achse === 'horizontal' ? i : j;
+            const idx = (y * width + x) * 4;
+            const grau = (bild[idx] + bild[idx + 1] + bild[idx + 2]) / 3;
+            if (grau < dunkelWert) dunkleAnzahl++;
+        }
+        if (dunkleAnzahl > (breite / 2) * schwelle) kandidaten.push(i);
+    }
+
+    const gruppen = [];
+    kandidaten.forEach(pos => {
+        const letzte = gruppen[gruppen.length - 1];
+        if (letzte && pos - letzte[letzte.length - 1] <= 10) letzte.push(pos);
+        else gruppen.push([pos]);
+    });
+    return gruppen.map(g => Math.round(g.reduce((a, b) => a + b, 0) / g.length));
+}
+
+function heutigerWochentagIndex() {
+    const tag = new Date().getDay();
+    return (tag + 6) % 7;
+}
+
+/* Schneidet jede Zeile an der ersten öffnenden eckigen Klammer ab. */
 function bereinigeText(roh) {
     return roh
         .split(/\n+/)
@@ -66,7 +109,6 @@ function bereinigeText(roh) {
         .join('\n');
 }
 
-/* Rendert eine PDF-Seite in gewünschter Auflösung auf einen neuen Canvas */
 async function rendereSeite(pdfDokument, nummer, zielBreite) {
     const seite = await pdfDokument.getPage(nummer);
     const basis = seite.getViewport({ scale: 1 });
@@ -80,7 +122,6 @@ async function rendereSeite(pdfDokument, nummer, zielBreite) {
     return canvas;
 }
 
-/* Schneidet einen Bereich aus einem Canvas in einen neuen Canvas */
 function schneideZu(quelle, x, y, breite, hoehe) {
     const ziel = document.createElement('canvas');
     ziel.width = breite;
@@ -89,15 +130,35 @@ function schneideZu(quelle, x, y, breite, hoehe) {
     return ziel;
 }
 
-async function start() {
-    const bereich    = document.getElementById('sp-heute-bereich');
-    const ladeEl     = document.getElementById('sp-heute-lade');
-    const fehlerEl   = document.getElementById('sp-heute-fehler');
-    const kartenWrap = document.getElementById('sp-heute-karten');
-    const wochenendEl = document.getElementById('sp-heute-wochenende');
-    const tagLabelEl = document.getElementById('sp-heute-tag-label');
+/* Graustufen + harter Schwarz/Weiß-Kontrast – der wichtigste
+   einzelne Hebel für bessere OCR-Ergebnisse bei sauber
+   gedrucktem Text auf hellem Hintergrund. */
+function schwarzWeiss(quelle, schwellenwert = 165) {
+    const ziel = document.createElement('canvas');
+    ziel.width = quelle.width;
+    ziel.height = quelle.height;
+    const ctx = ziel.getContext('2d');
+    ctx.drawImage(quelle, 0, 0);
 
-    const wochentagIndex = window.SpeiseplanErkennung.heutigerWochentagIndex(); // 0=Mo…6=So
+    const bild = ctx.getImageData(0, 0, ziel.width, ziel.height);
+    const daten = bild.data;
+    for (let i = 0; i < daten.length; i += 4) {
+        const grau = 0.299 * daten[i] + 0.587 * daten[i + 1] + 0.114 * daten[i + 2];
+        const wert = grau > schwellenwert ? 255 : 0;
+        daten[i] = daten[i + 1] = daten[i + 2] = wert;
+    }
+    ctx.putImageData(bild, 0, 0);
+    return ziel;
+}
+
+async function start() {
+    const ladeEl      = document.getElementById('sp-heute-lade');
+    const fehlerEl    = document.getElementById('sp-heute-fehler');
+    const kartenWrap  = document.getElementById('sp-heute-karten');
+    const wochenendEl = document.getElementById('sp-heute-wochenende');
+    const tagLabelEl  = document.getElementById('sp-heute-tag-label');
+
+    const wochentagIndex = heutigerWochentagIndex();
 
     if (wochentagIndex > 4) {
         ladeEl.hidden = true;
@@ -111,7 +172,7 @@ async function start() {
     let stufe = 'Datei suchen';
 
     try {
-        const pfad = await window.SpeiseplanErkennung.findeDatei(kandidaten);
+        const pfad = await findeDatei(kandidaten);
 
         if (!pfad) {
             ladeEl.hidden = true;
@@ -126,12 +187,13 @@ async function start() {
         stufe = 'PDF laden';
         const pdfDokument = await pdfjsLib.getDocument(pfad).promise;
 
+        // Höhere Auflösung für bessere OCR-Qualität bei kleiner Schrift
         stufe = 'Seite 1 rendern';
-        const seite1 = await rendereSeite(pdfDokument, 1, 1754);
+        const seite1 = await rendereSeite(pdfDokument, 1, 3200);
 
         stufe = 'Tabellenraster erkennen';
-        const linienY = window.SpeiseplanErkennung.findeLinien(seite1, 'horizontal', 0.5, 130);
-        const linienX = window.SpeiseplanErkennung.findeLinien(seite1, 'vertikal', 0.5, 130);
+        const linienY = findeLinien(seite1, 'horizontal', 0.5, 130);
+        const linienX = findeLinien(seite1, 'vertikal', 0.5, 130);
 
         if (linienY.length < 7 || linienX.length < 4) {
             throw new Error('Tabellenraster auf Seite 1 nicht wie erwartet erkannt (Linien Y: ' +
@@ -141,19 +203,20 @@ async function start() {
         const zeileStart = linienY[1 + wochentagIndex];
         const zeileEnde  = linienY[2 + wochentagIndex];
 
-        // Seite 2 (Essensbilder) nur bei Bedarf rendern
         let seite2 = null;
         let linienY2 = null, linienX2 = null;
         if (pdfDokument.numPages > 1) {
             stufe = 'Seite 2 (Bilder) rendern';
             seite2 = await rendereSeite(pdfDokument, 2, 1754);
-            linienY2 = window.SpeiseplanErkennung.findeLinien(seite2, 'horizontal', 0.5, 100);
-            linienX2 = window.SpeiseplanErkennung.findeLinien(seite2, 'vertikal', 0.5, 100);
+            linienY2 = findeLinien(seite2, 'horizontal', 0.5, 100);
+            linienX2 = findeLinien(seite2, 'vertikal', 0.5, 100);
         }
 
         stufe = 'Texterkennung (OCR)';
-        // Tesseract.js: EIN Worker für alle drei Spalten wiederverwenden
         const worker = await Tesseract.createWorker('deu');
+        // PSM 6 = "Ein einzelner, gleichmäßiger Textblock" – passend für
+        // eine kleine, isolierte Tabellenzelle statt einer ganzen Seite.
+        await worker.setParameters({ tessedit_pageseg_mode: '6' });
 
         const spaltenGrenzen = [linienX[0], linienX[1], linienX[2], linienX[3]];
 
@@ -161,17 +224,16 @@ async function start() {
             const x0 = spaltenGrenzen[spalte];
             const x1 = spaltenGrenzen[spalte + 1];
 
-            const zelle = schneideZu(seite1, x0, zeileStart, x1 - x0, zeileEnde - zeileStart);
-            const { data } = await worker.recognize(zelle);
+            const zelleRoh = schneideZu(seite1, x0, zeileStart, x1 - x0, zeileEnde - zeileStart);
+            const zelleSw  = schwarzWeiss(zelleRoh);
+
+            const { data } = await worker.recognize(zelleSw);
             const text = bereinigeText(data.text);
 
             const karte = kartenWrap.children[spalte];
             karte.querySelector('.sp-heute-spalten-titel').textContent = SPALTEN_LABEL[spalte] || '';
             karte.querySelector('.sp-heute-text').textContent = text || '(nicht erkannt)';
 
-            // Passendes Bild aus Seite 2 zuschneiden (gleiche Zeile,
-            // gleiche Spaltenposition A1/A2/A3). Schlägt das fehl,
-            // bleibt einfach nur der Text stehen.
             try {
                 if (seite2 && linienY2 && linienY2.length >= 7 && linienX2 && linienX2.length >= 5) {
                     const by0 = linienY2[1 + wochentagIndex];

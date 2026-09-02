@@ -146,17 +146,6 @@ html, body {
     height: auto;
 }
 
-/* Farbiger Rahmen um die heutige Zeile. Position/Größe wird
-   per JavaScript passend zur erkannten Tabellenzeile gesetzt. */
-.sp-tages-rahmen {
-    position: absolute;
-    border: 4px solid #2e7d32;
-    background-color: rgba(46, 125, 50, 0.08);
-    border-radius: 6px;
-    pointer-events: none;
-    box-shadow: 0 0 0 2px rgba(46,125,50,0.3);
-}
-
 /* Für Screenreader/Vorlesen sichtbar, optisch aber unsichtbar */
 .sp-sr-only {
     position: absolute;

@@ -1,13 +1,22 @@
 /* ══════════════════════════════════════════════════════
-   speiseplan-ansicht.js
+   speiseplan-ansicht.js  (Version 2 – in sich geschlossen)
    Studjo Terminal | Evangelisches Johanneswerk
 
-   Rendert das Speiseplan-PDF (2 Seiten: 1 = Tabelle mit
-   Text, 2 = Essensbilder) per PDF.js auf einen Canvas.
-   Auf Seite 1 wird die Zeile des heutigen Wochentags anhand
-   der erkannten Tabellen-Rasterlinien farbig umrandet – ganz
-   ohne Texterkennung, da die Wochentage immer in fester
-   Reihenfolge Montag–Freitag erscheinen.
+   WICHTIG: Diese Datei ist bewusst komplett eigenständig und
+   hat KEINE Abhängigkeit mehr zu speiseplan-erkennung.js.
+   Grund: Bei mehreren einzeln hochgeladenen Dateien kann es
+   passieren, dass eine alte Version einer Datei liegen bleibt,
+   während eine andere Datei schon eine neue Funktion daraus
+   erwartet ("... is not a function"). Mit nur einer Datei kann
+   das nicht mehr passieren.
+
+   Der farbige Rahmen um den heutigen Tag wird außerdem nicht
+   mehr als separates, absolut positioniertes Element über dem
+   Canvas gezeichnet (das ist fehleranfällig: CSS-Skalierung,
+   Scroll-Position, getBoundingClientRect – jede Kleinigkeit
+   kann die Position verschieben). Stattdessen wird der Rahmen
+   direkt in denselben Canvas gezeichnet, in dem auch das PDF
+   liegt – gleiches Koordinatensystem, keine Umrechnung nötig.
    ══════════════════════════════════════════════════════ */
 
 import * as pdfjsLib from './pdfjs/pdf.min.mjs';
@@ -18,25 +27,18 @@ const TITEL  = ['Aktuelle Woche', 'Nächste Woche', 'In 2 Wochen'];
 const WOCHENTAGE = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag'];
 
 function getISOWocheJahr(datum) {
-    const d = new Date(Date.UTC(
-        datum.getFullYear(), datum.getMonth(), datum.getDate()
-    ));
+    const d = new Date(Date.UTC(datum.getFullYear(), datum.getMonth(), datum.getDate()));
     const wochentag = (d.getUTCDay() + 6) % 7;
     d.setUTCDate(d.getUTCDate() - wochentag + 3);
     const isoJahr = d.getUTCFullYear();
-
     const jahresStart = new Date(Date.UTC(isoJahr, 0, 4));
     const startWochentag = (jahresStart.getUTCDay() + 6) % 7;
     jahresStart.setUTCDate(jahresStart.getUTCDate() - startWochentag + 3);
-
     const wocheMs = 7 * 24 * 60 * 60 * 1000;
     const woche = 1 + Math.round((d - jahresStart) / wocheMs);
     return { jahr: isoJahr, woche: woche };
 }
 
-/* Mehrere übliche Schreibweisen probieren, falls beim manuellen
-   Hochladen die Groß-/Kleinschreibung oder die führende Null beim
-   Dateinamen abweicht. */
 function kandidatenFuer(offsetWochen) {
     const datum = new Date();
     datum.setDate(datum.getDate() + offsetWochen * 7);
@@ -50,6 +52,48 @@ function kandidatenFuer(offsetWochen) {
     ];
 }
 
+async function findeDatei(kandidaten) {
+    for (const pfad of kandidaten) {
+        try {
+            const antwort = await fetch(pfad, { method: 'HEAD' });
+            if (antwort.ok) return pfad;
+        } catch (e) { /* nächsten Kandidaten versuchen */ }
+    }
+    return null;
+}
+
+/* Findet dunkle, durchgehende horizontale Linien (Tabellenraster)
+   direkt im übergebenen Canvas. */
+function findeHorizontaleLinien(canvas, schwelle = 0.5, dunkelWert = 130) {
+    const ctx = canvas.getContext('2d');
+    const { width, height } = canvas;
+    const bild = ctx.getImageData(0, 0, width, height).data;
+
+    const kandidaten = [];
+    for (let y = 0; y < height; y++) {
+        let dunkleAnzahl = 0;
+        for (let x = 0; x < width; x += 2) {
+            const idx = (y * width + x) * 4;
+            const grau = (bild[idx] + bild[idx + 1] + bild[idx + 2]) / 3;
+            if (grau < dunkelWert) dunkleAnzahl++;
+        }
+        if (dunkleAnzahl > (width / 2) * schwelle) kandidaten.push(y);
+    }
+
+    const gruppen = [];
+    kandidaten.forEach(pos => {
+        const letzte = gruppen[gruppen.length - 1];
+        if (letzte && pos - letzte[letzte.length - 1] <= 10) letzte.push(pos);
+        else gruppen.push([pos]);
+    });
+    return gruppen.map(g => Math.round(g.reduce((a, b) => a + b, 0) / g.length));
+}
+
+function heutigerWochentagIndex() {
+    const tag = new Date().getDay(); // 0=Sonntag … 6=Samstag
+    return (tag + 6) % 7; // 0=Montag … 6=Sonntag
+}
+
 const params = new URLSearchParams(window.location.search);
 let offset = parseInt(params.get('woche'), 10);
 if (isNaN(offset) || offset < 0 || offset > 2) offset = 0;
@@ -58,16 +102,15 @@ document.getElementById('sp-titel').textContent =
     '📄 Speiseplan – ' + (TITEL[offset] || 'Aktuelle Woche');
 
 const kandidaten   = kandidatenFuer(offset);
-const ladeEl      = document.getElementById('sp-lade');
-const fehlerEl    = document.getElementById('sp-fehler');
-const canvasWrap  = document.getElementById('sp-canvas-wrap');
-const canvas      = document.getElementById('sp-canvas');
-const rahmenEl    = document.getElementById('sp-tages-rahmen');
-const srHinweisEl = document.getElementById('sp-sr-hinweis');
-const navEl       = document.getElementById('sp-seiten-nav');
-const btnPrev     = document.getElementById('sp-btn-prev');
-const btnNext     = document.getElementById('sp-btn-next');
-const seitenInfo  = document.getElementById('sp-seiten-info');
+const ladeEl       = document.getElementById('sp-lade');
+const fehlerEl     = document.getElementById('sp-fehler');
+const canvasWrap   = document.getElementById('sp-canvas-wrap');
+const canvas       = document.getElementById('sp-canvas');
+const srHinweisEl  = document.getElementById('sp-sr-hinweis');
+const navEl        = document.getElementById('sp-seiten-nav');
+const btnPrev      = document.getElementById('sp-btn-prev');
+const btnNext      = document.getElementById('sp-btn-next');
+const seitenInfo   = document.getElementById('sp-seiten-info');
 
 let pdfDokument   = null;
 let aktuelleSeite = 1;
@@ -76,7 +119,6 @@ async function renderSeite(nummer) {
     const seite = await pdfDokument.getPage(nummer);
     const basisViewport = seite.getViewport({ scale: 1 });
 
-    // An verfügbare Breite anpassen, max. 1400px für gute Lesbarkeit
     const verfuegbar = Math.min(window.innerWidth - 40, 1400);
     const skalierung = verfuegbar / basisViewport.width;
     const viewport   = seite.getViewport({ scale: skalierung });
@@ -86,17 +128,13 @@ async function renderSeite(nummer) {
 
     await seite.render({ canvasContext: canvas.getContext('2d'), viewport }).promise;
 
-    rahmenEl.hidden = true;
     srHinweisEl.textContent = '';
 
     if (nummer === 1) {
-        // Die Umrandung ist ein Zusatz-Feature. Falls die Erkennung aus
-        // irgendeinem Grund fehlschlägt, soll der Speiseplan trotzdem
-        // ganz normal angezeigt werden – nur eben ohne Umrandung.
         try {
-            markiereHeutigenTag();
+            zeichneTagesRahmen();
         } catch (fehler) {
-            console.warn('Tages-Umrandung konnte nicht berechnet werden (Speiseplan wird trotzdem angezeigt):', fehler);
+            console.warn('Tages-Rahmen konnte nicht gezeichnet werden (PDF wird trotzdem angezeigt):', fehler);
         }
     }
 
@@ -106,38 +144,26 @@ async function renderSeite(nummer) {
     btnNext.disabled = nummer >= pdfDokument.numPages;
 }
 
-function markiereHeutigenTag() {
-    const wochentagIndex = window.SpeiseplanErkennung.heutigerWochentagIndex(); // 0=Mo…6=So
-    if (wochentagIndex > 4) return; // Wochenende: keine Zeile zum Markieren
+/* Zeichnet den farbigen Rahmen direkt in den Canvas (gleiches
+   Koordinatensystem wie das PDF – keine Umrechnung nötig). */
+function zeichneTagesRahmen() {
+    const wochentagIndex = heutigerWochentagIndex();
+    if (wochentagIndex > 4) return; // Wochenende
 
-    const linienY = window.SpeiseplanErkennung.findeLinien(canvas, 'horizontal');
-    // Erwartet: [oberer Rand, Ende Kopfzeile, Mo/Di-Grenze, Di/Mi-Grenze, ...,
-    //            unterer Rand]. Die 5 Tagesbereiche liegen zwischen den
-    // Linien ab Index 1 (nach der Kopfzeile).
-    if (linienY.length < 7) return; // Tabellenlayout nicht wie erwartet – lieber nichts markieren
+    const linienY = findeHorizontaleLinien(canvas);
+    if (linienY.length < 7) return; // Layout nicht wie erwartet – lieber nichts zeichnen
 
     const startY = linienY[1 + wochentagIndex];
     const endeY  = linienY[2 + wochentagIndex];
     if (startY === undefined || endeY === undefined) return;
 
-    const linienX = window.SpeiseplanErkennung.findeLinien(canvas, 'vertikal');
-    const startX = linienX.length ? linienX[0] : 0;
-    const endeX  = linienX.length ? linienX[linienX.length - 1] : canvas.width;
-
-    const wrapRect   = canvasWrap.getBoundingClientRect();
-    const canvasRect = canvas.getBoundingClientRect();
-    const offsetLinks = canvasRect.left - wrapRect.left + canvasWrap.scrollLeft;
-    const offsetOben  = canvasRect.top  - wrapRect.top  + canvasWrap.scrollTop;
-
-    // Skalierung: Canvas-Pixel -> tatsächlich dargestellte Größe (CSS)
-    const skalaX = canvasRect.width  / canvas.width;
-    const skalaY = canvasRect.height / canvas.height;
-
-    rahmenEl.style.left   = (offsetLinks + startX * skalaX - 4) + 'px';
-    rahmenEl.style.top    = (offsetOben  + startY * skalaY - 4) + 'px';
-    rahmenEl.style.width  = ((endeX - startX) * skalaX + 8) + 'px';
-    rahmenEl.style.height = ((endeY - startY) * skalaY + 8) + 'px';
-    rahmenEl.hidden = false;
+    const ctx = canvas.getContext('2d');
+    const rand = 6;
+    ctx.save();
+    ctx.strokeStyle = '#2e7d32';
+    ctx.lineWidth = 6;
+    ctx.strokeRect(rand, startY + rand / 2, canvas.width - rand * 2, (endeY - startY) - rand);
+    ctx.restore();
 
     srHinweisEl.textContent =
         'Heute ist ' + WOCHENTAGE[wochentagIndex] + '. ' +
@@ -151,8 +177,6 @@ function wechselSeite(richtung) {
 btnPrev.addEventListener('click', () => wechselSeite(-1));
 btnNext.addEventListener('click', () => wechselSeite(1));
 
-// Bei Fenstergrößenänderung (z. B. Tablet-Drehung) neu rendern,
-// damit die Umrandung weiterhin exakt sitzt
 let resizeTimer;
 window.addEventListener('resize', () => {
     clearTimeout(resizeTimer);
@@ -162,7 +186,7 @@ window.addEventListener('resize', () => {
 (async function start() {
     let stufe = 'Datei suchen';
     try {
-        const pfad = await window.SpeiseplanErkennung.findeDatei(kandidaten);
+        const pfad = await findeDatei(kandidaten);
 
         if (!pfad) {
             ladeEl.hidden = true;
