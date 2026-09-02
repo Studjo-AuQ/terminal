@@ -114,6 +114,7 @@ const seitenInfo   = document.getElementById('sp-seiten-info');
 
 let pdfDokument   = null;
 let aktuelleSeite = 1;
+let seite1Original = null; // Referenz auf die geladene Seite 1 für die Rahmen-Erkennung
 
 async function renderSeite(nummer) {
     const seite = await pdfDokument.getPage(nummer);
@@ -131,8 +132,9 @@ async function renderSeite(nummer) {
     srHinweisEl.textContent = '';
 
     if (nummer === 1) {
+        seite1Original = seite;
         try {
-            zeichneTagesRahmen();
+            await zeichneTagesRahmen(seite);
         } catch (fehler) {
             console.warn('Tages-Rahmen konnte nicht gezeichnet werden (PDF wird trotzdem angezeigt):', fehler);
         }
@@ -144,25 +146,47 @@ async function renderSeite(nummer) {
     btnNext.disabled = nummer >= pdfDokument.numPages;
 }
 
-/* Zeichnet den farbigen Rahmen direkt in den Canvas (gleiches
-   Koordinatensystem wie das PDF – keine Umrechnung nötig). */
-function zeichneTagesRahmen() {
+/* Zeichnet den farbigen Rahmen auf den sichtbaren Canvas.
+   Die LINIEN-ERKENNUNG läuft dabei bewusst auf einem separaten,
+   immer gleich hoch aufgelösten Hilfs-Canvas (1754px Breite) statt
+   auf dem sichtbaren Canvas – auf kleinen Handy-Bildschirmen ist der
+   sichtbare Canvas oft so schmal, dass die dünnen Tabellenlinien
+   beim Verkleinern verschwimmen und nicht mehr zuverlässig gefunden
+   werden. Das gefundene Ergebnis wird anschließend proportional auf
+   die tatsächliche Anzeigegröße umgerechnet. */
+async function zeichneTagesRahmen(seite) {
     const wochentagIndex = heutigerWochentagIndex();
     if (wochentagIndex > 4) return; // Wochenende
 
-    const linienY = findeHorizontaleLinien(canvas);
+    const ANALYSE_BREITE = 1754;
+    const basisViewport = seite.getViewport({ scale: 1 });
+    const analyseSkala = ANALYSE_BREITE / basisViewport.width;
+    const analyseViewport = seite.getViewport({ scale: analyseSkala });
+
+    const analyseCanvas = document.createElement('canvas');
+    analyseCanvas.width = analyseViewport.width;
+    analyseCanvas.height = analyseViewport.height;
+    await seite.render({ canvasContext: analyseCanvas.getContext('2d'), viewport: analyseViewport }).promise;
+
+    const linienY = findeHorizontaleLinien(analyseCanvas);
     if (linienY.length < 7) return; // Layout nicht wie erwartet – lieber nichts zeichnen
 
     const startY = linienY[1 + wochentagIndex];
     const endeY  = linienY[2 + wochentagIndex];
     if (startY === undefined || endeY === undefined) return;
 
+    // Umrechnung von der Analyse-Auflösung auf die tatsächliche
+    // Anzeigegröße des sichtbaren Canvas
+    const skalaFaktor = canvas.height / analyseCanvas.height;
+    const startYSkaliert = startY * skalaFaktor;
+    const endeYSkaliert  = endeY * skalaFaktor;
+
     const ctx = canvas.getContext('2d');
     const rand = 6;
     ctx.save();
     ctx.strokeStyle = '#2e7d32';
     ctx.lineWidth = 6;
-    ctx.strokeRect(rand, startY + rand / 2, canvas.width - rand * 2, (endeY - startY) - rand);
+    ctx.strokeRect(rand, startYSkaliert + rand / 2, canvas.width - rand * 2, (endeYSkaliert - startYSkaliert) - rand);
     ctx.restore();
 
     srHinweisEl.textContent =

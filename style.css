@@ -67,6 +67,14 @@
     --pastel-21: #fff0e0;  /* Blasses Rost/Terracotta */
 }
 
+/* WICHTIG: Einige Elemente (z. B. .sp-heute-karten) setzen "display"
+   für ihren normalen Zustand. Ohne diese Regel würde diese eigene
+   Angabe gegen das hidden-Attribut gewinnen, das Element bliebe also
+   sichtbar, obwohl es als "hidden" markiert ist. */
+[hidden] {
+    display: none !important;
+}
+
 body {
     font-family: 'Nunito Sans', sans-serif; /* Einmal hier reicht für die ganze Seite */
     margin: 0;

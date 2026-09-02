@@ -5,6 +5,16 @@
 
 * { box-sizing: border-box; }
 
+/* WICHTIG: Mehrere Elemente auf dieser Seite setzen "display: flex"
+   für ihren normalen Zustand. Ohne diese Regel gewinnt diese eigene
+   Regel gegen das hidden-Attribut (gleiche CSS-Spezifität, aber
+   unsere Regel kommt zuletzt) – das Element bliebe sichtbar, obwohl
+   es als "hidden" markiert ist. Diese Regel stellt sicher, dass
+   hidden immer greift, unabhängig von anderen display-Angaben. */
+[hidden] {
+    display: none !important;
+}
+
 html, body {
     margin: 0;
     padding: 0;
