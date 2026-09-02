@@ -44,15 +44,19 @@ function dateinameAktuelleWoche() {
     return ORDNER + 'speiseplan_' + jahr + '-KW' + String(woche).padStart(2, '0') + '.pdf';
 }
 
-/* Entfernt Klammer-Zusätze wie "[ML, GG / 0, 3 / kcal: 167]" und
-   räumt Zeilenumbrüche/Leerzeichen auf – übrig bleibt nur der
-   eigentliche Speisename. */
+/* Schneidet jede Zeile an der ersten öffnenden eckigen Klammer ab –
+   übrig bleibt nur der Speisename vor den Zusatz-Angaben (Allergene,
+   kcal usw.). Robuster als eine Klammer-Entfernung per Regex, da bei
+   OCR-Fehlern die schließende Klammer "]" öfter falsch erkannt wird
+   als die öffnende "[". */
 function bereinigeText(roh) {
     return roh
-        .replace(/\[[^\]]*\]?/g, '')   // Klammerinhalte entfernen (auch unvollständig erkannte)
-        .replace(/[|_~]/g, '')
         .split(/\n+/)
-        .map(z => z.trim())
+        .map(zeile => {
+            const klammerIndex = zeile.indexOf('[');
+            const gekuerzt = klammerIndex >= 0 ? zeile.slice(0, klammerIndex) : zeile;
+            return gekuerzt.replace(/[|_~]/g, '').trim();
+        })
         .filter(z => z.length > 1)
         .join('\n');
 }
@@ -99,22 +103,32 @@ async function start() {
     tagLabelEl.textContent = WOCHENTAGE[wochentagIndex];
 
     const pfad = dateinameAktuelleWoche();
+    let stufe = 'Datei prüfen';
 
     try {
         const kopfAntwort = await fetch(pfad, { method: 'HEAD' });
-        if (!kopfAntwort.ok) throw new Error('PDF nicht gefunden');
+        if (!kopfAntwort.ok) {
+            ladeEl.hidden = true;
+            fehlerEl.querySelector('p').textContent =
+                'Das Tagesangebot konnte gerade nicht automatisch erkannt werden. ' +
+                'Schau bitte direkt im Speiseplan nach.';
+            fehlerEl.hidden = false;
+            return;
+        }
 
+        stufe = 'PDF laden';
         const pdfDokument = await pdfjsLib.getDocument(pfad).promise;
 
-        // Seite 1 (Tabelle) in guter Auflösung rendern, um die OCR-Qualität
-        // der einzelnen Zellen zu verbessern
+        stufe = 'Seite 1 rendern';
         const seite1 = await rendereSeite(pdfDokument, 1, 1754);
 
+        stufe = 'Tabellenraster erkennen';
         const linienY = window.SpeiseplanErkennung.findeLinien(seite1, 'horizontal', 0.5, 130);
         const linienX = window.SpeiseplanErkennung.findeLinien(seite1, 'vertikal', 0.5, 130);
 
         if (linienY.length < 7 || linienX.length < 4) {
-            throw new Error('Tabellenraster auf Seite 1 nicht wie erwartet erkannt');
+            throw new Error('Tabellenraster auf Seite 1 nicht wie erwartet erkannt (Linien Y: ' +
+                linienY.length + ', X: ' + linienX.length + ')');
         }
 
         const zeileStart = linienY[1 + wochentagIndex];
@@ -124,11 +138,13 @@ async function start() {
         let seite2 = null;
         let linienY2 = null, linienX2 = null;
         if (pdfDokument.numPages > 1) {
+            stufe = 'Seite 2 (Bilder) rendern';
             seite2 = await rendereSeite(pdfDokument, 2, 1754);
             linienY2 = window.SpeiseplanErkennung.findeLinien(seite2, 'horizontal', 0.5, 100);
             linienX2 = window.SpeiseplanErkennung.findeLinien(seite2, 'vertikal', 0.5, 100);
         }
 
+        stufe = 'Texterkennung (OCR)';
         // Tesseract.js: EIN Worker für alle drei Spalten wiederverwenden
         const worker = await Tesseract.createWorker('deu');
 
@@ -147,18 +163,23 @@ async function start() {
             karte.querySelector('.sp-heute-text').textContent = text || '(nicht erkannt)';
 
             // Passendes Bild aus Seite 2 zuschneiden (gleiche Zeile,
-            // gleiche Spaltenposition A1/A2/A3)
-            if (seite2 && linienY2 && linienY2.length >= 7 && linienX2 && linienX2.length >= 5) {
-                const by0 = linienY2[1 + wochentagIndex];
-                const by1 = linienY2[2 + wochentagIndex];
-                const bx0 = linienX2[1 + spalte];
-                const bx1 = linienX2[2 + spalte];
-                if ([by0, by1, bx0, bx1].every(v => v !== undefined)) {
-                    const bild = schneideZu(seite2, bx0, by0, bx1 - bx0, by1 - by0);
-                    const img = karte.querySelector('.sp-heute-bild');
-                    img.src = bild.toDataURL('image/jpeg', 0.85);
-                    img.hidden = false;
+            // gleiche Spaltenposition A1/A2/A3). Schlägt das fehl,
+            // bleibt einfach nur der Text stehen.
+            try {
+                if (seite2 && linienY2 && linienY2.length >= 7 && linienX2 && linienX2.length >= 5) {
+                    const by0 = linienY2[1 + wochentagIndex];
+                    const by1 = linienY2[2 + wochentagIndex];
+                    const bx0 = linienX2[1 + spalte];
+                    const bx1 = linienX2[2 + spalte];
+                    if ([by0, by1, bx0, bx1].every(v => v !== undefined)) {
+                        const bild = schneideZu(seite2, bx0, by0, bx1 - bx0, by1 - by0);
+                        const img = karte.querySelector('.sp-heute-bild');
+                        img.src = bild.toDataURL('image/jpeg', 0.85);
+                        img.hidden = false;
+                    }
                 }
+            } catch (bildFehler) {
+                console.warn('Bild für Spalte ' + spalte + ' konnte nicht zugeschnitten werden:', bildFehler);
             }
         }
 
@@ -168,8 +189,12 @@ async function start() {
         kartenWrap.hidden = false;
 
     } catch (fehler) {
-        console.error('Tagesangebot konnte nicht ermittelt werden:', fehler);
+        console.error('Tagesangebot konnte nicht ermittelt werden (Schritt: ' + stufe + '):', fehler);
         ladeEl.hidden = true;
+        fehlerEl.querySelector('p').textContent =
+            'Das Tagesangebot konnte nicht automatisch erkannt werden. ' +
+            '(Technischer Fehler bei „' + stufe + '“: ' + (fehler && fehler.message ? fehler.message : fehler) + ') ' +
+            'Schau bitte direkt im Speiseplan nach.';
         fehlerEl.hidden = false;
     }
 }

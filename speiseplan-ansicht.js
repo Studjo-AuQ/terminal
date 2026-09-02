@@ -83,7 +83,14 @@ async function renderSeite(nummer) {
     srHinweisEl.textContent = '';
 
     if (nummer === 1) {
-        markiereHeutigenTag();
+        // Die Umrandung ist ein Zusatz-Feature. Falls die Erkennung aus
+        // irgendeinem Grund fehlschlägt, soll der Speiseplan trotzdem
+        // ganz normal angezeigt werden – nur eben ohne Umrandung.
+        try {
+            markiereHeutigenTag();
+        } catch (fehler) {
+            console.warn('Tages-Umrandung konnte nicht berechnet werden (Speiseplan wird trotzdem angezeigt):', fehler);
+        }
     }
 
     aktuelleSeite = nummer;
@@ -146,21 +153,34 @@ window.addEventListener('resize', () => {
 });
 
 (async function start() {
+    let stufe = 'Datei prüfen';
     try {
         const antwort = await fetch(pfad, { method: 'HEAD' });
-        if (!antwort.ok) throw new Error('nicht gefunden');
+        if (!antwort.ok) {
+            ladeEl.hidden = true;
+            fehlerEl.querySelector('p').textContent =
+                'Dieser Speiseplan ist noch nicht veröffentlicht.';
+            fehlerEl.hidden = false;
+            return;
+        }
 
+        stufe = 'PDF laden';
         pdfDokument = await pdfjsLib.getDocument(pfad).promise;
 
         ladeEl.hidden = true;
         canvasWrap.hidden = false;
         if (pdfDokument.numPages > 1) navEl.hidden = false;
 
+        stufe = 'Seite anzeigen';
         await renderSeite(1);
 
     } catch (fehler) {
-        console.error('Speiseplan konnte nicht geladen werden:', fehler);
+        console.error('Fehler beim Anzeigen des Speiseplans (Schritt: ' + stufe + '):', fehler);
         ladeEl.hidden = true;
+        canvasWrap.hidden = true;
+        fehlerEl.querySelector('p').textContent =
+            'Der Speiseplan konnte nicht angezeigt werden. ' +
+            '(Technischer Fehler bei „' + stufe + '“: ' + (fehler && fehler.message ? fehler.message : fehler) + ')';
         fehlerEl.hidden = false;
     }
 })();
