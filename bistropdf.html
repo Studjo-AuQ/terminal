@@ -52,18 +52,52 @@
             flex: 1;
         }
 
-        /* ── PDF-Bereich (Iframe) ── */
+        /* ── Toolbar: Seiten-Navigation (nur bei mehrseitigen PDFs) ── */
+        .pdf-toolbar {
+            background: #3d4043;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            padding: 8px 16px;
+            flex-shrink: 0;
+            font-size: 0.9rem;
+            font-family: Calibri, sans-serif;
+        }
+        .pdf-toolbar button {
+            background: #5a5f63;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 5px 14px;
+            font-size: 0.88rem;
+            font-weight: bold;
+            cursor: pointer;
+            font-family: inherit;
+            transition: background 0.15s;
+        }
+        .pdf-toolbar button:hover   { background: var(--primary-red); }
+        .pdf-toolbar button:disabled { background: #3a3d40; color: #888; cursor: default; }
+        #page-info { min-width: 100px; text-align: center; }
+
+        /* ── Canvas-Bereich ── */
         .pdf-viewport {
             flex: 1;
-            position: relative;
+            overflow-y: auto;
+            overflow-x: auto;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 16px;
             background: #525659;
         }
 
-        #pdf-iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            display: none;
+        #pdf-canvas {
+            display: block;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+            background: white;
+            max-width: 100%;
         }
 
         /* ── Ladeanimation ── */
@@ -115,6 +149,12 @@
         </div>
     </header>
 
+    <div class="pdf-toolbar" id="pdf-toolbar" style="display:none;">
+        <button id="btn-prev" onclick="wechselSeite(-1)" disabled>‹ Zurück</button>
+        <span id="page-info">Seite 1 von 1</span>
+        <button id="btn-next" onclick="wechselSeite(1)" disabled>Weiter ›</button>
+    </div>
+
     <div class="pdf-viewport" id="pdf-viewport">
         <div class="loading-msg" id="loading-msg">
             <div class="spinner"></div>
@@ -124,39 +164,94 @@
             ⚠️ Der Speiseplan konnte nicht geladen werden.<br>
             Bitte wende dich an das Bistro-Team.
         </div>
-        <iframe id="pdf-iframe" title="Bistro Speiseplan PDF"></iframe>
+        <canvas id="pdf-canvas" style="display:none;"></canvas>
     </div>
 
     <footer>
         &copy; 2026 <b>Studjo | Arbeit und Qualifizierung</b> | Infoterminal | Barrierefreier Zugang
     </footer>
 
-<script>
+<!-- PDF.js über CDN – rendert das PDF selbst per JavaScript/Canvas.
+     Läuft unabhängig davon, ob der Browser/Kiosk-Modus einen eigenen
+     PDF-Betrachter mitbringt oder nicht (im Gegensatz zu einem
+     einfachen <iframe src="datei.pdf">, das genau daran scheitern
+     kann und dann nur einen Download-/Öffnen-Link zeigt). -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.min.mjs" type="module"></script>
+
+<script type="module">
+    import * as pdfjsLib from 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.min.mjs';
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+        'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.worker.min.mjs';
+
     // ── Konfiguration ──────────────────────────────────────────
     const PDF_DATEI = 'bistroplan.pdf'; // ← Dateiname bei Bedarf anpassen
     // ──────────────────────────────────────────────────────────
 
-    const iframe    = document.getElementById('pdf-iframe');
+    let pdfDokument   = null;
+    let aktuelleSeite = 1;
+
+    const canvas    = document.getElementById('pdf-canvas');
+    const ctx       = canvas.getContext('2d');
     const ladeMeldu = document.getElementById('loading-msg');
     const fehlerMsg = document.getElementById('error-msg');
+    const toolbar   = document.getElementById('pdf-toolbar');
+    const pageInfo  = document.getElementById('page-info');
+    const btnPrev   = document.getElementById('btn-prev');
+    const btnNext   = document.getElementById('btn-next');
+    const viewport  = document.getElementById('pdf-viewport');
 
-    // Erst prüfen, ob die Datei überhaupt existiert, bevor sie im
-    // Iframe geöffnet wird – so gibt es nie eine kaputte/leere
-    // Ansicht ohne Rückmeldung.
-    fetch(PDF_DATEI, { method: 'HEAD' })
-        .then(antwort => {
-            if (!antwort.ok) throw new Error('nicht gefunden');
-            // #toolbar=0 schaltet die browser-eigene PDF-Werkzeugleiste
-            // (Download, Drucken, …) ab – wichtig im Kiosk-Modus.
-            iframe.src = PDF_DATEI + '#toolbar=0';
-            iframe.style.display = 'block';
-            ladeMeldu.style.display = 'none';
-        })
-        .catch(fehler => {
-            console.error('PDF-Ladefehler:', fehler);
-            ladeMeldu.style.display = 'none';
-            fehlerMsg.style.display = 'block';
-        });
+    async function ladeSeite(seitenNummer) {
+        const seite = await pdfDokument.getPage(seitenNummer);
+
+        const verfuegbreite = viewport.clientWidth - 32;
+        const basisViewport = seite.getViewport({ scale: 1 });
+        const skalierung    = Math.min(
+            verfuegbreite / basisViewport.width,
+            (viewport.clientHeight - 32) / basisViewport.height,
+            2.0
+        );
+        const skaliertViewport = seite.getViewport({ scale: skalierung });
+
+        canvas.width  = skaliertViewport.width;
+        canvas.height = skaliertViewport.height;
+
+        await seite.render({
+            canvasContext: ctx,
+            viewport: skaliertViewport
+        }).promise;
+
+        canvas.style.display = 'block';
+        ladeMeldu.style.display = 'none';
+        pageInfo.textContent = `Seite ${seitenNummer} von ${pdfDokument.numPages}`;
+        btnPrev.disabled = seitenNummer <= 1;
+        btnNext.disabled = seitenNummer >= pdfDokument.numPages;
+        aktuelleSeite = seitenNummer;
+        viewport.scrollTop = 0;
+    }
+
+    function wechselSeite(richtung) {
+        const ziel = aktuelleSeite + richtung;
+        if (ziel >= 1 && ziel <= pdfDokument.numPages) {
+            ladeSeite(ziel);
+        }
+    }
+    window.wechselSeite = wechselSeite;
+
+    try {
+        const ladeAuftrag = pdfjsLib.getDocument(PDF_DATEI);
+        pdfDokument = await ladeAuftrag.promise;
+
+        if (pdfDokument.numPages > 1) {
+            toolbar.style.display = 'flex';
+        }
+
+        await ladeSeite(1);
+
+    } catch (fehler) {
+        console.error('PDF-Ladefehler:', fehler);
+        ladeMeldu.style.display  = 'none';
+        fehlerMsg.style.display  = 'block';
+    }
 </script>
 
 </body>

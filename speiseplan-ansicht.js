@@ -35,12 +35,20 @@ function getISOWocheJahr(datum) {
     return { jahr: isoJahr, woche: woche };
 }
 
-function dateiname(offsetWochen) {
+/* Mehrere übliche Schreibweisen probieren, falls beim manuellen
+   Hochladen die Groß-/Kleinschreibung oder die führende Null beim
+   Dateinamen abweicht. */
+function kandidatenFuer(offsetWochen) {
     const datum = new Date();
     datum.setDate(datum.getDate() + offsetWochen * 7);
     const { jahr, woche } = getISOWocheJahr(datum);
-    return ORDNER + 'speiseplan_' + jahr + '-KW' +
-        String(woche).padStart(2, '0') + '.pdf';
+    const woche2 = String(woche).padStart(2, '0');
+    return [
+        ORDNER + 'speiseplan_' + jahr + '-KW' + woche2 + '.pdf',
+        ORDNER + 'Speiseplan_' + jahr + '-KW' + woche2 + '.pdf',
+        ORDNER + 'speiseplan_' + jahr + '-KW' + woche + '.pdf',
+        ORDNER + 'Speiseplan_' + jahr + '-KW' + woche + '.pdf',
+    ];
 }
 
 const params = new URLSearchParams(window.location.search);
@@ -50,7 +58,7 @@ if (isNaN(offset) || offset < 0 || offset > 2) offset = 0;
 document.getElementById('sp-titel').textContent =
     '📄 Speiseplan – ' + (TITEL[offset] || 'Aktuelle Woche');
 
-const pfad        = dateiname(offset);
+const kandidaten   = kandidatenFuer(offset);
 const ladeEl      = document.getElementById('sp-lade');
 const fehlerEl    = document.getElementById('sp-fehler');
 const canvasWrap  = document.getElementById('sp-canvas-wrap');
@@ -153,13 +161,15 @@ window.addEventListener('resize', () => {
 });
 
 (async function start() {
-    let stufe = 'Datei prüfen';
+    let stufe = 'Datei suchen';
     try {
-        const antwort = await fetch(pfad, { method: 'HEAD' });
-        if (!antwort.ok) {
+        const pfad = await window.SpeiseplanErkennung.findeDatei(kandidaten);
+
+        if (!pfad) {
             ladeEl.hidden = true;
-            fehlerEl.querySelector('p').textContent =
-                'Dieser Speiseplan ist noch nicht veröffentlicht.';
+            fehlerEl.querySelector('p').innerHTML =
+                'Dieser Speiseplan ist noch nicht veröffentlicht.<br>' +
+                '<small>Erwartete Datei: ' + kandidaten[0] + '</small>';
             fehlerEl.hidden = false;
             return;
         }

@@ -39,9 +39,15 @@ function getISOWocheJahr(datum) {
     return { jahr: isoJahr, woche: woche };
 }
 
-function dateinameAktuelleWoche() {
+function kandidatenAktuelleWoche() {
     const { jahr, woche } = getISOWocheJahr(new Date());
-    return ORDNER + 'speiseplan_' + jahr + '-KW' + String(woche).padStart(2, '0') + '.pdf';
+    const woche2 = String(woche).padStart(2, '0');
+    return [
+        ORDNER + 'speiseplan_' + jahr + '-KW' + woche2 + '.pdf',
+        ORDNER + 'Speiseplan_' + jahr + '-KW' + woche2 + '.pdf',
+        ORDNER + 'speiseplan_' + jahr + '-KW' + woche + '.pdf',
+        ORDNER + 'Speiseplan_' + jahr + '-KW' + woche + '.pdf',
+    ];
 }
 
 /* Schneidet jede Zeile an der ersten öffnenden eckigen Klammer ab –
@@ -102,15 +108,17 @@ async function start() {
 
     tagLabelEl.textContent = WOCHENTAGE[wochentagIndex];
 
-    const pfad = dateinameAktuelleWoche();
-    let stufe = 'Datei prüfen';
+    const kandidaten = kandidatenAktuelleWoche();
+    let stufe = 'Datei suchen';
 
     try {
-        const kopfAntwort = await fetch(pfad, { method: 'HEAD' });
-        if (!kopfAntwort.ok) {
+        const pfad = await window.SpeiseplanErkennung.findeDatei(kandidaten);
+
+        if (!pfad) {
             ladeEl.hidden = true;
-            fehlerEl.querySelector('p').textContent =
-                'Das Tagesangebot konnte gerade nicht automatisch erkannt werden. ' +
+            fehlerEl.querySelector('p').innerHTML =
+                'Das Tagesangebot konnte gerade nicht automatisch erkannt werden.<br>' +
+                '<small>Erwartete Datei: ' + kandidaten[0] + '</small><br>' +
                 'Schau bitte direkt im Speiseplan nach.';
             fehlerEl.hidden = false;
             return;
