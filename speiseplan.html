@@ -16,71 +16,24 @@
     </header>
 
     <main>
-        <div class="page-header-row">
-            <a href="index.html" target="_self" class="back-button">
-                <span aria-hidden="true">←</span> Zurück
-            </a>
-            <h1><b>Angebot - Mittagessen</b></h1>
-        </div>
-
-        <!-- ══ Heutiges Tagesangebot (automatisch aus dem PDF erkannt) ══ -->
-        <section class="sp-heute-bereich" id="sp-heute-bereich" aria-label="Heutiges Tagesangebot">
-            <h2 class="sp-heute-titel">
-                🍽️ Heute (<span id="sp-heute-tag-label">…</span>) im Angebot
-            </h2>
-
-            <div class="sp-heute-lade" id="sp-heute-lade">
-                <div class="sp-heute-spinner"></div>
-                Tagesangebot wird erkannt …
-            </div>
-
-            <div class="sp-heute-wochenende" id="sp-heute-wochenende" hidden>
-                <p>Heute ist Wochenende – kein Mittagsangebot. Schau dir gern den
-                   <a href="speiseplan-ansicht.html?woche=0">ganzen Wochenplan</a> an.</p>
-            </div>
-
-            <div class="sp-heute-fehler" id="sp-heute-fehler" hidden>
-                <p>Das Tagesangebot konnte gerade nicht automatisch erkannt werden.
-                   Schau bitte direkt im <a href="speiseplan-ansicht.html?woche=0">Speiseplan</a> nach.</p>
-            </div>
-
-            <div class="sp-heute-karten" id="sp-heute-karten" hidden>
-                <div class="sp-heute-karte">
-                    <p class="sp-heute-spalten-titel"></p>
-                    <img class="sp-heute-bild" alt="" hidden>
-                    <p class="sp-heute-text"></p>
-                </div>
-                <div class="sp-heute-karte">
-                    <p class="sp-heute-spalten-titel"></p>
-                    <img class="sp-heute-bild" alt="" hidden>
-                    <p class="sp-heute-text"></p>
-                </div>
-                <div class="sp-heute-karte">
-                    <p class="sp-heute-spalten-titel"></p>
-                    <img class="sp-heute-bild" alt="" hidden>
-                    <p class="sp-heute-text"></p>
-                </div>
-            </div>
-
-            <p class="sp-heute-hinweis">
-                🤖 Automatisch aus dem PDF erkannt (Bilderkennung) – kann gelegentlich
-                kleine Fehler enthalten. Im Zweifel gilt der
-                <a href="speiseplan-ansicht.html?woche=0">Original-Speiseplan</a>.
-            </p>
-        </section>
-
+        <h1><b>Angebot - Mittagessen</b></h1>
         <div class="tile-grid">   
-            <a id="link-woche-0" href="speiseplan-ansicht.html?woche=0" target="_self" class="tile tile-color-3">
+            <a href="index.html" target="_self" class="tile tile-color-11">
+                <img src="back.jpg" alt="zur&uuml;ck" class="tile-img">
+                <h2>Hier geht's zur&uuml;ck...</h2>
+            </a>
+
+            <a id="link-woche-0" href="#" target="_blank" class="tile tile-color-3">
                 <img src="Speiseplan diese Woche.jpg" alt="Diese Woche" class="tile-img">
                 <h2>Aktuelle Woche</h2>
             </a>
 
-            <a id="link-woche-1" href="speiseplan-ansicht.html?woche=1" target="_self" class="tile tile-color-3">
+            <a id="link-woche-1" href="#" target="_blank" class="tile tile-color-3">
                 <img src="Speiseplan kommende Woche.jpg" alt="N&auml;chste Woche" class="tile-img">
                 <h2>N&auml;chste Woche</h2>
             </a>
 
-            <a id="link-woche-2" href="speiseplan-ansicht.html?woche=2" target="_self" class="tile tile-color-3">
+            <a id="link-woche-2" href="#" target="_blank" class="tile tile-color-3">
                 <img src="Speiseplan kommende kommende Woche.jpg" alt="In 2 Wochen" class="tile-img">
                 <h2>In 2 Wochen</h2>
             </a>
@@ -127,9 +80,37 @@
   </a>
 </footer>
 <script src="script.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/5.0.4/tesseract.min.js"></script>
-<script src="speiseplan-erkennung.js"></script>
-<script type="module" src="speiseplan-heute.js"></script>
+      <script>
+        (function() {
+            // KONFIGURATION
+            // Setze hier den Montag ein, an dem der Link die Endung ":0" hatte
+            const startReferenz = new Date("2026-03-23"); 
+            const basisURL = "https://001sdbfevm-660.johanneswerk.int/Manual/WebViewer?OID=D67363000%3A";
+
+            const heute = new Date();
+            const msProWoche = 604800000; // 7 Tage in Millisekunden
+            
+            // Berechne vergangene Wochen seit Startdatum
+            const wochenIndex = Math.floor((heute - startReferenz) / msProWoche);
+
+            
+            // Links im HTML aktualisieren
+            const ids = ["link-woche-0", "link-woche-1", "link-woche-2"];
+            ids.forEach((id, index) => {
+                const element = document.getElementById(id);
+                if (element) {
+                let revision = wochenIndex + index;
+                if (revision === 11) {
+                    revision = 12;
+                } else if (revision > 11) {
+                    revision = revision + 1;
+                }
+                element.href = basisURL + revision;
+                console.log(id + " → Revision " + revision);
+                }
+            });
+        })();
+    </script>     
 <link rel="stylesheet" href="a11y.css">
 <script src="a11y.js"></script>
 </body>
