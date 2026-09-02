@@ -1,11 +1,71 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "02.09.2026, 05:39 Uhr (UTC)",
+  "aktualisiert": "02.09.2026, 11:04 Uhr (UTC)",
   "meldungen": [
     {
-      "title": "Marktbericht: DAX vor weiteren Verlusten",
-      "description": "Das sind keine guten Vorgaben: Angesichts weiterer Angriffe im Persischen Golf und weiter steigenden Ölpreisen sind die asiatischen Märkte eingeknickt. Dem DAX droht der dritte Verlusttag.",
-      "pubDate": "2026-09-02T07:38:17+02:00",
+      "title": "Streit um Protestbus - Verkehrsrecht gegen Grundrechte?",
+      "description": "2025 störte der Protestbus des \"Zentrums für Politische Schönheit\" das ARD-Sommerinterview mit AfD-Chefin Weidel - und bekam bundesweit Aufmerksamkeit. Auch die Polizei beschäftigt sich seitdem laut MDR intensiv mit dem Fahrzeug.",
+      "pubDate": "2026-09-02T12:59:15+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Deutsche-Bank-Chef warnt vor Abschottung und Nationalismus",
+      "description": "Deutsche-Bank-Chef Christian Sewing hat vor der Landtagswahl in Sachsen-Anhalt vor dem Aufstieg populistischer Parteien gewarnt. Wirtschaftlich und gesellschaftlich stehe viel auf dem Spiel.",
+      "pubDate": "2026-09-02T12:51:01+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Einsatz am Umspannwerk in Bergheim: Ermittlungen wegen verfassungsfeindlicher Sabotage",
+      "description": "Nach der Störung an einem Umspannwerk bei Köln wird wegen verfassungsfeindlicher Sabotage ermittelt. NRW-Innenminister Reul sprach von einem Anfangsverdacht. Geprüft werde in zwei Richtungen - \"fremdstaatlich gelenkte Sabotage\" und Linksextremismus.",
+      "pubDate": "2026-09-02T12:52:56+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Hybride Angriffe und Anschläge in Tschechien und der Slowakei",
+      "description": "Während Deutschland wegen des Leipziger Drohnenvorfalls Strafen gegen Russland verhängt, ermitteln die Behörden in Tschechien und der Slowakei in ganz ähnlichen Fällen. Auch hier im Fokus: Lieferungen für die Ukraine. Von M. Allweiss.",
+      "pubDate": "2026-09-02T11:57:05+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Nach Drohnenfund in Leipzig: EU berät neue Sanktionen gegen Russland",
+      "description": "Nach dem Anschlagsversuch in Leipzig berät die EU neue Sanktionen gegen Russland. Die Tat weise \"alle Merkmale von staatlich gefördertem Terrorismus\" auf, sagte Chefdiplomatin Kallas. Alle EU-Staaten stünden hinter Deutschland.",
+      "pubDate": "2026-09-02T11:56:32+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Reform im Kabinett: Das soll sich bei der Einkommensteuer ändern",
+      "description": "Union und SPD wollen ein zentrales Finanzvorhaben auf den Weg bringen - Entlastungen bei der Steuer vor allem für kleinere Einkommen. Wie die konkreten Maßnahmen aussehen und was die Steuerreform bringen soll.",
+      "pubDate": "2026-09-02T11:32:51+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX bleibt unter Druck",
+      "description": "Eine neue Welle von Inflationssorgen belastet die Weltbörsen. Grund ist die neue Eskalation im Iran-Krieg. Der DAX gibt zum Handelsstart weiter nach, hat seine Talfahrt aber deutlich verlangsamt.",
+      "pubDate": "2026-09-02T10:51:51+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Was hilft gegen die gestiegene Inflation?",
+      "description": "Die Euro-Inflation liegt inzwischen bei 3,3 Prozent. Grund ist vor allem das teure Rohöl als Folge des Iran-Kriegs - ein Dilemma für Europas Notenbanker. Steigen die Preise bald womöglich noch schneller? Von Angela Göpfert.",
+      "pubDate": "2026-09-02T09:03:04+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Verzweifelte Suche nach Vermissten in Nepal dauert an",
+      "description": "Auch eine Woche nach der verheerenden Sturzflut in Nepal und China suchen Rettungskräfte nach Überlebenden - trotz erschütternder Bilder, trotz steigender Opferzahlen. Denn es gibt sie: die Momente, die Hoffnung geben. Von Lena Bodewein.",
+      "pubDate": "2026-09-02T08:56:14+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Russische Desinformation? Fake-Streit zwischen Tschechien und Polen",
+      "description": "Polnische Gebietsansprüche im Grenzgebiet zu Tschechien galten bislang als bedeutungslose Fußnote der Geschichte. Bis es kürzlich hieß, Polen bestehe auf die Rückgabe. Mittlerweile ist klar: Alles frei erfunden. Von Danko Handrick.",
+      "pubDate": "2026-09-02T08:50:20+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Verletzte nach Explosion in Augsburger Innenstadt",
+      "description": "Durch die Explosion eines unbekannten Gegenstandes in der Augsburger Innenstadt sind zwei Menschen leicht verletzt worden. Auch der Augsburger Hauptbahnhof wurde wegen eines verdächtigen Gegenstandes gesperrt. Inzwischen gab die Polizei Entwarnung.",
+      "pubDate": "2026-09-02T10:58:59+02:00",
       "bild": ""
     },
     {
@@ -17,7 +77,7 @@
     {
       "title": "Großeinsatz am Umspannwerk in Bergheim in Nordrhein-Westfalen",
       "description": "In der Nacht gab es einen Störfall an einem Umspannwerk in Bergheim in Nordrhein-Westfalen. Die Polizei geht von einer vorsätzlichen Tat aus. Die allgemeine Stromversorgung sei nicht betroffen.",
-      "pubDate": "2026-09-02T07:19:00+02:00",
+      "pubDate": "2026-09-02T12:31:00+02:00",
       "bild": ""
     },
     {
@@ -30,66 +90,6 @@
       "title": "Kaputte Regierungsmaschine verhindert Klingbeil-Rückreise",
       "description": "Das Bundeskabinett will heute die Einkommenssteuerreform auf den Weg bringen. Der zuständige Minister wird nicht dabei sein. Finanzminister Klingbeil sitzt wegen eines kaputten Regierungsjets in den USA fest. Von Philipp Eckstein.",
       "pubDate": "2026-09-02T05:26:40+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Filmfestfan wartet seit Tagen am roten Teppich in Venedig",
-      "description": "Penélope Cruz, Javier Bardem, Orlando Bloom: Viele Stars haben sich für die Filmfestspiele Venedig angekündigt. Am roten Teppich wartet seit Tagen ein 25-jähriger Fan auf sie. Vor allem aber auf George Clooney, wie Lisa Weiß berichtet.",
-      "pubDate": "2026-09-02T03:46:49+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Putin bezeichnet deutsche Strafmaßnahmen als schweren Fehler",
-      "description": "Siegesgewiss - so präsentierte sich der russische Präsident bei einer Pressekonferenz. In der Ukraine rückten russische Soldaten vielerorts vor, so Putin. Und die deutschen Strafmaßnahmen seien ein \"schwerer Fehler\".",
-      "pubDate": "2026-09-02T02:43:28+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kommentar zu Sanktionen gegen Russland: Auch politische Waffen sind schmerzhaft",
-      "description": "Deutschland benennt Russland als Drahtzieher des Anschlagsversuchs, ohne sich provozieren zu lassen. Die Regierung hat damit einen Balanceakt geschafft, meint Markus Sambale. Denn die Demokratie nutzt andere Waffen.",
-      "pubDate": "2026-09-01T21:56:04+02:00",
-      "bild": ""
-    },
-    {
-      "title": "USA und Iran melden erneut heftige Angriffe",
-      "description": "Die USA melden neue Angriffe auf iranische Ziele nahe der Straße von Hormus. Iranische Staatsmedien berichten von zivilen Opfern. Als Reaktion auf die US-Attacken beschoss Iran offenbar Jordanien mit ballistischen Raketen.",
-      "pubDate": "2026-09-02T01:02:44+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kurzschlüsse nahe Kohlekraftwerk: Sabotage sollte wohl Blackout auslösen",
-      "description": "In Brandenburg haben Unbekannte mit selbstgebauten Flugkörpern Kurzschlüsse an einer Hochspannungsleitung verursacht. Zu einem Stromausfall kam es nicht, aber Brandenburgs Innenminister warnt: \"Das war kein Kinderstreich.\"",
-      "pubDate": "2026-09-01T21:09:43+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Anschlagsversuch mit Drohnen: \"Bekanntes Muster russischer Operationen\"",
-      "description": "Die Spuren des Anschlagversuchs am Flughafen Leipzig/Halle sollen zu sogenannten Wegwerfagenten eines russischen Geheimdienstes führen. Michael Götschenberg erklärt, wie Ermittler und Bundesregierung zu diesem Schluss kamen.",
-      "pubDate": "2026-09-01T19:54:06+02:00",
-      "bild": ""
-    },
-    {
-      "title": "\"The Art of Johnny Depp\" in Düsseldorf: Kitsch oder Imagepflege?",
-      "description": "Johnny Depp ist zurück. Zwischen Fanmomenten, umstrittener Kunst und einem Image, das nach dem Rosenkrieg schwer beschädigt schien, inszeniert er als als Maler und Rockmusiker im Düsseldorfer Schloss Benrath. Von Philine Elster.",
-      "pubDate": "2026-09-01T19:22:05+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ist der Hype um Shein & Co. vorbei?",
-      "description": "Der chinesische Billig-Onlinehändler Shein verpatzt sein Börsendebut. Die Zeiten des hohen Wachstums scheinen für das Unternehmen vorbei zu sein. Im Fokus von Investoren sind andere Branchen. Von Noel Schmidt.",
-      "pubDate": "2026-09-01T19:18:25+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Flutkatastrophe im Himalaya: Was die Katastrophe für Tibet bedeutet",
-      "description": "Mehr als 1.000 Tote, Tausende Vermisste: das Ausmaß der Katastrophe nach der Sturzflut wird immer sichtbarer - zumindest in Nepal. Aus dem von China kontrollierten Tibet hingegegen kommen kaum Informationen. Von Antje Bonhage.",
-      "pubDate": "2026-09-01T19:17:56+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: DAX verliert erneut deutlich",
-      "description": "Steigende Zinsen haben die Anleger zum Start in den September nervös gemacht. Der DAX verliert heute erneut mehr als ein Prozent und fällt unter die Marke von 26.000 Punkten.",
-      "pubDate": "2026-09-01T18:33:27+02:00",
       "bild": ""
     }
   ],
