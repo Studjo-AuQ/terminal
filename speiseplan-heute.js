@@ -25,7 +25,7 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = './pdfjs/pdf.worker.min.mjs';
 
 const ORDNER = 'speiseplaene/';
 const WOCHENTAGE = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag'];
-const SPALTEN_LABEL = ['Regionales und Klassiker', 'Gut & Wertvoll', 'Kaltmahlzeit'];
+const SPALTEN_LABEL = ['Regionales & Klassiker', 'Gut & Wertvoll', 'Kaltmahlzeit'];
 
 function getISOWocheJahr(datum) {
     const d = new Date(Date.UTC(datum.getFullYear(), datum.getMonth(), datum.getDate()));
@@ -131,7 +131,13 @@ function bereinigeText(roh) {
         .map(zeile => {
             const klammerIndex = zeile.indexOf('[');
             const gekuerzt = klammerIndex >= 0 ? zeile.slice(0, klammerIndex) : zeile;
-            return gekuerzt.replace(/[|_~]/g, '').trim();
+            let sauber = gekuerzt.replace(/[|_~]/g, '').trim();
+            // Zusätzliche Sicherheit: maximal 3 Wörter je Zeile. Fängt
+            // Fälle ab, in denen die Klammer von der Texterkennung gar
+            // nicht erst erkannt wurde und sonst lange Zahlenkolonnen
+            // stehen blieben.
+            sauber = sauber.split(/\s+/).slice(0, 3).join(' ');
+            return sauber;
         })
         .filter(z => z.length > 1)
         .join('\n');
@@ -151,6 +157,8 @@ async function rendereSeite(pdfDokument, nummer, zielBreite) {
 }
 
 function schneideZu(quelle, x, y, breite, hoehe) {
+    x = Math.round(x); y = Math.round(y);
+    breite = Math.round(breite); hoehe = Math.round(hoehe);
     const ziel = document.createElement('canvas');
     ziel.width = breite;
     ziel.height = hoehe;
@@ -227,18 +235,33 @@ async function start() {
         stufe = 'PDF laden';
         const pdfDokument = await pdfjsLib.getDocument(pfad).promise;
 
-        // Höhere Auflösung für bessere OCR-Qualität bei kleiner Schrift
-        stufe = 'Seite 1 rendern';
-        const seite1 = await rendereSeite(pdfDokument, 1, 3200);
+        // WICHTIG: Die Linien-Erkennung läuft bewusst bei 1754px Breite –
+        // das ist exakt die Auflösung, die auf speiseplan-ansicht.html für
+        // den grünen Rahmen bereits zuverlässig getestet ist. Bei der
+        // höheren 3200px-Auflösung (nur für die eigentliche OCR-Bildschärfe
+        // gedacht) hat sich die Linien-Erkennung als weniger zuverlässig
+        // gezeigt und konnte in Einzelfällen eine falsche Zeile treffen.
+        stufe = 'Seite 1 rendern (Analyse)';
+        const seite1Analyse = await rendereSeite(pdfDokument, 1, 1754);
 
         stufe = 'Tabellenraster erkennen';
-        const linienY = findeLinien(seite1, 'horizontal', 0.5, 130);
-        const linienX = findeLinien(seite1, 'vertikal', 0.5, 130);
+        const linienYAnalyse = findeLinien(seite1Analyse, 'horizontal', 0.5, 130);
+        const linienXAnalyse = findeLinien(seite1Analyse, 'vertikal', 0.5, 130);
 
-        if (linienY.length < 7 || linienX.length < 4) {
+        if (linienYAnalyse.length < 7 || linienXAnalyse.length < 4) {
             throw new Error('Tabellenraster auf Seite 1 nicht wie erwartet erkannt (Linien Y: ' +
-                linienY.length + ', X: ' + linienX.length + ')');
+                linienYAnalyse.length + ', X: ' + linienXAnalyse.length + ')');
         }
+
+        stufe = 'Seite 1 rendern (hohe Auflösung für OCR)';
+        const seite1 = await rendereSeite(pdfDokument, 1, 3200);
+
+        // Die bei 1754px gefundenen Positionen auf die 3200px-Version
+        // hochrechnen (gleiches Prinzip wie bei der Rahmen-Skalierung
+        // auf speiseplan-ansicht.html)
+        const hochSkala = seite1.width / seite1Analyse.width;
+        const linienY = linienYAnalyse.map(y => y * hochSkala);
+        const linienX = linienXAnalyse.map(x => x * hochSkala);
 
         const zeileStart = linienY[1 + wochentagIndex];
         const zeileEnde  = linienY[2 + wochentagIndex];
@@ -250,6 +273,28 @@ async function start() {
             seite2 = await rendereSeite(pdfDokument, 2, 1754);
             linienY2 = findeLinien(seite2, 'horizontal', 0.5, 100);
             linienX2 = findeLinien(seite2, 'vertikal', 0.5, 100);
+
+            // Plausibilitäts-Check: Liegt die gewählte Zeile auf Seite 1
+            // (prozentual zur Seitenhöhe) etwa an derselben Stelle wie auf
+            // Seite 2? Große Abweichung deutet auf eine falsch erkannte
+            // Zeile hin (z. B. durch eine zusätzliche Fehl-Linie auf einer
+            // der beiden Seiten).
+            if (linienY2 && linienY2.length >= 7) {
+                const mitteSeite1 = ((zeileStart + zeileEnde) / 2) / seite1.height;
+                const by0Check = linienY2[1 + wochentagIndex];
+                const by1Check = linienY2[2 + wochentagIndex];
+                if (by0Check !== undefined && by1Check !== undefined) {
+                    const mitteSeite2 = ((by0Check + by1Check) / 2) / seite2.height;
+                    const abweichung = Math.abs(mitteSeite1 - mitteSeite2);
+                    if (abweichung > 0.08) {
+                        console.warn(
+                            'Plausibilitäts-Warnung: Zeilen-Position auf Seite 1 (' +
+                            (mitteSeite1 * 100).toFixed(1) + '%) weicht deutlich von Seite 2 (' +
+                            (mitteSeite2 * 100).toFixed(1) + '%) ab – möglicherweise falsche Zeile erkannt.'
+                        );
+                    }
+                }
+            }
         }
 
         stufe = 'Texterkennung (OCR)';

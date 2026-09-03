@@ -129,11 +129,6 @@ function findeHorizontaleLinien(canvas, schwelle = 0.5, dunkelWert = 130) {
     return gruppen.map(g => Math.round(g.reduce((a, b) => a + b, 0) / g.length));
 }
 
-function heutigerWochentagIndex() {
-    const tag = new Date().getDay(); // 0=Sonntag … 6=Samstag
-    return (tag + 6) % 7; // 0=Montag … 6=Sonntag
-}
-
 const params = new URLSearchParams(window.location.search);
 let offset = parseInt(params.get('woche'), 10);
 if (isNaN(offset) || offset < 0 || offset > 2) offset = 0;
@@ -170,7 +165,7 @@ async function renderSeite(nummer) {
 
     srHinweisEl.textContent = '';
 
-    if (nummer === 1) {
+    if (nummer === 1 && offset === 0) {
         seite1Original = seite;
         try {
             await zeichneTagesRahmen(seite);
@@ -194,7 +189,9 @@ async function renderSeite(nummer) {
    werden. Das gefundene Ergebnis wird anschließend proportional auf
    die tatsächliche Anzeigegröße umgerechnet. */
 async function zeichneTagesRahmen(seite) {
-    const wochentagIndex = (offset === 0) ? effektivesZiel().wochentagIndex : heutigerWochentagIndex();
+    // Diese Funktion wird nur noch aufgerufen, wenn offset === 0 ist
+    // (siehe renderSeite) – daher hier immer der effektive Zieltag.
+    const { wochentagIndex } = effektivesZiel();
     if (wochentagIndex > 4) return; // Wochenende (bei offset 0 durch effektivesZiel() bereits ausgeschlossen)
 
     const ANALYSE_BREITE = 1754;
@@ -228,7 +225,7 @@ async function zeichneTagesRahmen(seite) {
     ctx.strokeRect(rand, startYSkaliert + rand / 2, canvas.width - rand * 2, (endeYSkaliert - startYSkaliert) - rand);
     ctx.restore();
 
-    const bezeichnung = (offset === 0) ? effektivesZiel().label : 'Heute';
+    const bezeichnung = effektivesZiel().label;
     srHinweisEl.textContent =
         bezeichnung + ': ' + WOCHENTAGE[wochentagIndex] + '. ' +
         'Die entsprechende Zeile ist auf dem Speiseplan grün umrandet.';

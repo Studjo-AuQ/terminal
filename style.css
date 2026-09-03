@@ -225,19 +225,30 @@ h1 {
 
 .sp-heute-spalten-titel {
     font-weight: 800;
-    font-size: 0.95rem;
+    font-size: 0.8rem;
     color: var(--primary-red);
     margin: 0 0 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 6px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sp-heute-spalten-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 /* A1/A2/A3-Badges – Farben passend zur Spaltenkennzeichnung
    auf Seite 2 der Speiseplan-PDFs (Bildergalerie) */
 .sp-badge {
     display: inline-block;
+    flex-shrink: 0;
     padding: 2px 9px;
     border-radius: 999px;
     font-size: 0.75rem;
