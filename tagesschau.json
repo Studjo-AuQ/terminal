@@ -1,11 +1,29 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "03.09.2026, 17:45 Uhr (UTC)",
+  "aktualisiert": "03.09.2026, 20:52 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "VW-Aufsichtsrat beschließt Sparmaßnahmen - 50.000 Stellen weg",
+      "description": "Einen Tag früher als geplant hat der VW-Aufsichtsrat einem Sparplan zugestimmt: 50.000 Jobs sollen wegfallen, und vier Werke stehen vor dem Aus, wenn keine alternative Verwendung für sie gefunden wird.",
+      "pubDate": "2026-09-03T21:45:37+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Warum in der Wahl auch ein Risiko für die AfD steckt",
+      "description": "Die AfD liegt vor der Landtagswahl in Sachsen-Anhalt in Umfragen vorn und hofft auf ein bundesweites Signal. Doch es gibt auch Risiken - und Zweifel an der Regierungsfähigkeit der Partei. Von Benjamin Großkopff.",
+      "pubDate": "2026-09-03T20:00:34+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Brandanschlag in München - Starke Hinweise auf hybriden Hintergrund",
+      "description": "Nach Informationen des ARD-Hauptstadtstudios gibt es starke Hinweise darauf, dass auch der Brandanschlag nahe eines Rüstungsunternehmens in München im Auftrag eines russischen Geheimdienstes verübt worden sein könnte. Von M. Götschenberg.",
+      "pubDate": "2026-09-03T19:46:02+02:00",
+      "bild": ""
+    },
     {
       "title": "Ig-Nobelpreise: Unterhosen verbuddeln für die Wissenschaft",
       "description": "Erst lachen, dann nachdenken: Um einen Ig-Nobelpreis zu bekommen, muss ein Forschungsthema lustig wirken - aber trotzdem etwas Ernsthaftes dahinterstecken. Dieses Jahr wird der Preis zum ersten Mal in Zürich vergeben. Von David Beck.",
-      "pubDate": "2026-09-03T19:19:26+02:00",
+      "pubDate": "2026-09-03T21:40:23+02:00",
       "bild": ""
     },
     {
@@ -72,24 +90,6 @@
       "title": "Deutscher Umweltpreis für Klimajuristin und Membranforscher",
       "description": "Klares Wasser aus Klärschlamm und klare Regeln für den Klimaschutz: Für ihr Engagement zu diesen Themen erhalten ein Membranfilter-Ingenieur und eine Juristin den Deutschen Umweltpreis.",
       "pubDate": "2026-09-03T14:04:29+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Hedgefonds Elliott beflügelt die Telekom-Aktie",
-      "description": "Die Telekom-Aktie ist im Aufwind: Grund ist die wachsende Beteiligung des US-Hedgefonds Elliott am Bonner Konzern. Was wird aus der Fusion mit der US-Tochter T-Mobile?",
-      "pubDate": "2026-09-03T14:00:20+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Immer mehr neue Autos fahren elektrisch",
-      "description": "E-Autos sind bei deutschen Käufern beliebt, fast jedes dritte neu zugelassene Auto im August war ein reiner Elektro-Pkw. Grund für die Entwicklung dürfte auch die E-Auto-Prämie des Bundes sein.",
-      "pubDate": "2026-09-03T13:43:20+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wirtschaftsinstitute korrigieren Wachstumsprognosen nach oben",
-      "description": "Es soll wieder bergauf gehen in der Wirtschaft: Mehrere Forschungsinstitute heben ihre Prognose für das aktuelle Jahr deutlich an. Doch die Inflation bleibt hoch - und könnte zur Belastung werden.",
-      "pubDate": "2026-09-03T13:07:18+02:00",
       "bild": ""
     }
   ],
