@@ -125,22 +125,55 @@ function findeLinien(canvas, achse, schwelle = 0.5, dunkelWert = 130) {
 }
 
 /* Schneidet jede Zeile an der ersten öffnenden eckigen Klammer ab. */
+/* Version 2 – behebt einen Fehler der Vorgängerversion: Tesseract
+   teilt eine lange Klammer-Angabe manchmal auf zwei eigene "Zeilen"
+   auf (z. B. "Erbsen [GG, WZ, ... /" auf einer Zeile, "kcal: 249]"
+   auf der nächsten). Da die alte Version jede Zeile einzeln
+   behandelt hat, fehlte auf der zweiten Zeile die öffnende Klammer,
+   sodass der Rest ungefiltert durchrutschte.
+
+   Neuer Ansatz:
+   1. Alle Zeilen der Zelle werden zu einem durchgehenden Text
+      zusammengefügt. Dadurch bilden eine über zwei OCR-Zeilen
+      verteilte öffnende und schließende Klammer wieder ein
+      vollständiges Paar.
+   2. Vollständige [...]-Blöcke werden entfernt und dienen dabei
+      GLEICHZEITIG als Trenner zwischen den einzelnen Gerichten einer
+      Zelle (Muster: "Gericht 1 [Code] Gericht 2 [Code] Gericht 3
+      [Code]").
+   3. Nur falls die Texterkennung eine Klammer komplett übersehen hat,
+      greift ein Sicherheitsnetz: typische Klammer-Inhalte (kcal-
+      Angabe) werden gezielt entfernt, und übermäßig lange Reste
+      werden am Wortende gekürzt statt mitten im Wort. */
 function bereinigeText(roh) {
-    return roh
+    let text = roh.replace(/\s*\n\s*/g, ' ');
+
+    // Vollständige Klammer-Blöcke entfernen UND als Trenner zwischen
+    // den Gerichten nutzen
+    text = text.replace(/\[[^\]]*\]/g, '\n');
+
+    // Sicherheitsnetz: falls die öffnende Klammer trotzdem fehlte
+    text = text.replace(/kcal:?\s*\d+\s*\]?/gi, '\n');
+    text = text.replace(/[\[\]]/g, ' ');
+
+    return text
         .split(/\n+/)
-        .map(zeile => {
-            const klammerIndex = zeile.indexOf('[');
-            const gekuerzt = klammerIndex >= 0 ? zeile.slice(0, klammerIndex) : zeile;
-            let sauber = gekuerzt.replace(/[|_~]/g, '').trim();
-            // Zusätzliche Sicherheit: maximal 3 Wörter je Zeile. Fängt
-            // Fälle ab, in denen die Klammer von der Texterkennung gar
-            // nicht erst erkannt wurde und sonst lange Zahlenkolonnen
-            // stehen blieben.
-            sauber = sauber.split(/\s+/).slice(0, 3).join(' ');
-            return sauber;
-        })
-        .filter(z => z.length > 1)
+        .map(zeile => zeile.replace(/[|_~]/g, '').replace(/\s+/g, ' ').trim())
+        // Nur Zeilen mit echten Buchstaben behalten (filtert reine
+        // Zahlen-/Code-Reste wie ", 12, 3, 2" heraus)
+        .filter(zeile => zeile.length > 1 && /[a-zäöüß]/i.test(zeile))
+        // Sicherheitsnetz gegen sehr lange Reste (nur falls eine
+        // Klammer komplett unerkannt blieb) – kürzt am Wortende,
+        // nicht mitten im Wort
+        .map(zeile => kuerzeAmWortende(zeile, 60))
         .join('\n');
+}
+
+function kuerzeAmWortende(zeile, maxLaenge) {
+    if (zeile.length <= maxLaenge) return zeile;
+    const geschnitten = zeile.slice(0, maxLaenge);
+    const letzteLeerstelle = geschnitten.lastIndexOf(' ');
+    return (letzteLeerstelle > 10 ? geschnitten.slice(0, letzteLeerstelle) : geschnitten).trim() + '…';
 }
 
 async function rendereSeite(pdfDokument, nummer, zielBreite) {
