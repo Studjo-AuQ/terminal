@@ -1,7 +1,79 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "03.09.2026, 04:13 Uhr (UTC)",
+  "aktualisiert": "03.09.2026, 09:07 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Marktbericht: Unsichere Zinspolitik hält Anleger vom Kaufen ab",
+      "description": "Die Aussicht auf steigende Zinsen lässt die Anleger das Risiko am Aktienmarkt scheuen. Der DAX bleibt weiter tief unter der Marke von 26.000 Punkten gefangen. Setzt der US-Jobmarkt morgen Impulse?",
+      "pubDate": "2026-09-03T10:52:35+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Super E10 erreicht neuen Höchststand infolge des Iran-Kriegs",
+      "description": "Es ist ein neuer Schock an den Zapfsäulen: Benzin ist wegen der neuen Kämpfe so teuer wie noch nie. Doch es lohnt ein genauer Blick. Denn wird die Inflation berücksichtigt, waren die Spritpreise schon mal höher.",
+      "pubDate": "2026-09-03T10:49:41+02:00",
+      "bild": ""
+    },
+    {
+      "title": "El Niño wird laut WMO-Bericht sehr stark ausfallen",
+      "description": "Die Weltwetterorganisation WMO ist sich sicher: In den kommenden Monaten wird es einen sehr starken El Niño geben - mit extremer Hitze, Dürren und Überschwemmungen. Die WMO und andere Wetterdienste verstärkten ihre Frühwarnmaßnahmen.",
+      "pubDate": "2026-09-03T10:54:55+02:00",
+      "bild": ""
+    },
+    {
+      "title": "George Clooney bei Filmfestspielen Venedig für Lebenswerk geehrt",
+      "description": "Zum Auftakt der 83. Filmfestspiele in Venedig ist der US-Schauspieler George Clooney für sein Lebenswerk ausgezeichnet worden. In den Wettbewerb um den Goldenen Löwen geht auch ein Film des deutschen Regisseurs Werner Herzog.",
+      "pubDate": "2026-09-03T10:02:31+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Streit über Haushalt: Frankreichs Premier warnt vor Zins-Lawine",
+      "description": "Frankreich hat einen enormen Schuldenberg angehäuft. Die Regierung muss fürchten, dass das Land bald so horrende Zinsen zahlen muss, dass jede Hoffnung auf eine Sanierung der Staatsfinanzen aussichtslos ist. Von Julia Borutta.",
+      "pubDate": "2026-09-03T09:14:39+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Brandattacke: LKA vermutet Anschlagsversuch auf Rüstungsunternehmen",
+      "description": "In München sind Brandsätze auf die Baustelle der Firma Rohde & Schwarz geworfen worden. Das Bayerische Landeskriminalamt (LKA) vermutet einen Anschlagsversuch. Zwei Menschen wurden festgenommen.",
+      "pubDate": "2026-09-03T09:57:19+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Neun Verletzte nach Attacke auf AfD-Stand in Rheinland-Pfalz",
+      "description": "Bei einer Attacke auf einen AfD-Informationsstand im rheinland-pfälzischen Bad Kreuznach sind neun Menschen leicht verletzt worden. Der Stand wurde mit einer reizenden Flüssigkeit bespritzt. Ein Tatverdächtiger wurde laut Polizei ermittelt.",
+      "pubDate": "2026-09-03T08:33:00+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Nach Angriffen: Sicherheit kritischer Infrastruktur im Fokus",
+      "description": "Wie kann kritische Infrastruktur in Deutschland besser geschützt werden? Wer ist dafür verantwortlich und welche Rechte sind dazu nötig? Nach Angriffen auf das Stromnetz ist in der Politik eine Debatte darüber entbrannt.",
+      "pubDate": "2026-09-03T08:59:54+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Norwegen beschlagnahmt russisches Schiff vor Spitzbergen",
+      "description": "Ein russisches Schiff für Expeditionskreuzfahrten ist vor Spitzbergen von norwegischen Behörden beschlagnahmt worden. Grund sind Entschädigungsforderungen des ukrainischen Energiekonzerns Naftogaz. Russland reagierte empört.",
+      "pubDate": "2026-09-03T10:53:07+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Nach deutschen Strafmaßnahmen: Goethe-Institut in Russland wird geschlossen",
+      "description": "Als Reaktion auf den Anschlagsversuch am Flughafen Leipzig/Halle will die Bundesregierung den Vertrag mit dem Russischen Haus kündigen. Moskau zieht nun nach und schließt Niederlassungen des Goethe-Instituts im Land.",
+      "pubDate": "2026-09-03T11:02:54+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Forderung der AfD: Wie geht Heimunterricht in Österreich?",
+      "description": "Bildungspflicht statt Schulpflicht ist eine zentrale Forderung der AfD vor der Landtagswahl in Sachsen-Anhalt. Als Vorbild nennt die Partei Österreich. Wie funktioniert der \"häusliche Unterricht\" dort? Von Andreas Herz.",
+      "pubDate": "2026-09-03T07:01:53+02:00",
+      "bild": ""
+    },
+    {
+      "title": "11KM-Podcast: Rendite statt Reha? Wenn die Klinik für Patienten zur Gefahr wird",
+      "description": "Verwahrlosung, Personalmangel und laufende Ermittlungen wegen Todesfällen: 11KM berichtet über anscheinend gravierende Missstände in zwei bayerischen Reha-Kliniken und lückenhafte Kontrollen.",
+      "pubDate": "2026-09-03T06:30:25+02:00",
+      "bild": ""
+    },
     {
       "title": "Iran greift erneut Ziele in Kuwait an",
       "description": "Das Golfemirat Kuwait hat einen neuen iranischen Luftangriff auf sein Staatsgebiet gemeldet. Die Flugabwehr ist demnach im Einsatz, um Raketen und Drohnen abzuwehren. Iran sieht darin eine Antwort auf \"Amerikas Verbrechen\".",
@@ -17,79 +89,7 @@
     {
       "title": "Demonstrationen in Spanien für Ceuta und gegen Sánchez",
       "description": "Mehr als einen Monat nach dem Ansturm auf Ceuta sind Zehntausende Menschen in ganz Spanien auf die Straße gegangen. Ihr Protest richtete sich gegen die Migrationspolitik der Zentralregierung. In einigen Städten gab es auch Gegendemos.",
-      "pubDate": "2026-09-03T03:34:38+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Freispruch nach Mord an maltesischer Journalistin Caruana Galizia",
-      "description": "Wer ließ die maltesische Journalistin Daphne Caruana Galizia ermorden? Diese Frage bleibt auch nach fast neun Jahren unbeantwortet. Geschworene sprachen einen Unternehmer vom Vorwurf frei, Drahtzieher des Anschlags gewesen zu sein.",
-      "pubDate": "2026-09-03T00:56:35+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Mehr als 3.000 Tote - WHO-Chef fordert mehr Einsatz gegen Ebola",
-      "description": "WHO-Chef Tedros hat die internationale Gemeinschaft zu mehr Anstrengung bei der Bekämpfung der Ebola-Epidemie aufgefordert. Das Maßnahmenpaket der kongolesischen Regierung müsse schneller finanziert werden.",
-      "pubDate": "2026-09-02T22:09:49+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ernteausfälle durch Hitze - Agrarminister Rainer kündigt Hilfen für Bauern an",
-      "description": "Die durch Hitze und Trockenheit geschmälerte Ernte ist laut Bundesagrarminister Rainer eine \"herbe Enttäuschung\" für viele Landwirte. Der CSU-Politiker kündigte Hilfen für die betroffenen Betriebe an.",
-      "pubDate": "2026-09-02T20:30:29+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ermittlungen nach Tiefflügen über Rugby-Stadion in Südafrika",
-      "description": "In Südafrika sind zwei Passagierflugzeuge vor einem Rugby-Spiel nur wenige Meter über die Köpfe der Zuschauer geflogen. Was als Showeinlage geplant war, ging vielen Zuschauern offenbar zu weit. Nun ermittelt die Luftfahrtbehörde.",
-      "pubDate": "2026-09-02T20:19:24+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Warum die Zukunft der VW-Werke wohl noch länger ungewiss bleibt",
-      "description": "Freitag soll der VW-Aufsichtsrat über den Sparkurs und mögliche Werksschließungen beraten. Doch es gibt viel Streit und Drohkulissen. Ein Kompromiss ist nicht in Sicht - und einigen scheint das ganz recht zu sein. Von A. Deutskens.",
-      "pubDate": "2026-09-02T20:06:02+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Umfrage zu Berlin-Wahl: CDU wieder vorn, Linke verliert",
-      "description": "Zweieinhalb Wochen vor der Abgeordnetenhauswahl verliert die Linkspartei im BerlinTrend an Zuspruch und fällt hinter die CDU zurück. Die regierende Koalition aus CDU und SPD hätte aber keine Mehrheit mehr.",
-      "pubDate": "2026-09-02T18:48:29+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Institut für Bevölkerungsforschung: Was Menschen vom Kinderkriegen abhält",
-      "description": "Viele Menschen in Deutschland würden gern mehr Kinder kriegen, als sie tatsächlich bekommen. Das zeigen neue Daten des Bundesinstituts für Bevölkerungsforschung. Die Gründe sind vielfältig. Von Joachim Budde.",
-      "pubDate": "2026-09-02T18:40:26+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Hohe Ölpreise drücken die Stimmung",
-      "description": "Das Anlageumfeld bleibt weiter herausfordernd. Denn wieder höhere Ölpreise schieben die Inflationserwartungen an. In einem solchen Umfeld blieben die DAX-Anleger vorsichtig.",
-      "pubDate": "2026-09-02T18:30:29+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Stellenabbau bei Uber trifft auch Führungskräfte",
-      "description": "Der US-Fahrdienstvermittler Uber will rund 3.300 Stellen streichen. Besonders Führungskräfte sollen davon betroffen sein. Von Gabi Biesinger.",
-      "pubDate": "2026-09-02T17:46:08+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Warum die Fünf-Prozent-Hürde in Sachsen-Anhalt eine große Rolle spielt",
-      "description": "Grüne und BSW kratzen in Sachsen-Anhalt an der Fünf-Prozent-Hürde. Für die FDP könnte es schwierig werden. Scheitern die Parteien, dürfte das die Sitzverteilung erheblich verändern - und der AfD zugutekommen. Von F. Aischmann.",
-      "pubDate": "2026-09-02T17:03:41+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Moskau bestellt Geschäftsträger der deutschen Botschaft ein",
-      "description": "Die Ankündigung neuer Sanktionen wegen des Anschlagsversuchs am Flughafen Leipzig/Halle stößt in Moskau auf scharfen Protest. Das russische Außenministerium bestellte den Geschäftsträger der deutschen Botschaft ein.",
-      "pubDate": "2026-09-02T17:03:13+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Mindestens 22 Menschen sterben bei Busunglück in Ägypten",
-      "description": "In Ägypten ist auf einer kurvigen Straße zwischen den Badeorten Dahab und Nuwaiba ein Bus einen Abhang hinuntergestürzt. 22 Reisende starben. Unfallursache war womöglich ein geplatzter Reifen.",
-      "pubDate": "2026-09-02T16:38:50+02:00",
+      "pubDate": "2026-09-03T07:39:36+02:00",
       "bild": ""
     }
   ],
