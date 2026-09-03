@@ -39,9 +39,7 @@ function getISOWocheJahr(datum) {
     return { jahr: isoJahr, woche: woche };
 }
 
-function kandidatenFuer(offsetWochen) {
-    const datum = new Date();
-    datum.setDate(datum.getDate() + offsetWochen * 7);
+function kandidatenFuerDatum(datum) {
     const { jahr, woche } = getISOWocheJahr(datum);
     const woche2 = String(woche).padStart(2, '0');
     return [
@@ -50,6 +48,48 @@ function kandidatenFuer(offsetWochen) {
         ORDNER + 'speiseplan_' + jahr + '-KW' + woche + '.pdf',
         ORDNER + 'Speiseplan_' + jahr + '-KW' + woche + '.pdf',
     ];
+}
+
+/* Ab 15:00 Uhr wird bereits der Folgetag angezeigt/umrandet
+   ("Morgen"), um Mitternacht springt es automatisch auf "Heute"
+   zurück. Fällt der Zieltag aufs Wochenende, wird auf den nächsten
+   Montag weitergesprungen. Gilt nur für die Kachel "Aktuelle Woche"
+   (woche=0) – bei "Nächste Woche"/"In 2 Wochen" ergibt ein
+   Zeitversatz konzeptionell keinen Sinn. */
+function effektivesZiel() {
+    const jetzt = new Date();
+    let ziel = new Date(jetzt);
+    let istMorgen = false;
+
+    if (jetzt.getHours() >= 15) {
+        ziel.setDate(ziel.getDate() + 1);
+        istMorgen = true;
+    }
+
+    let wochentagIndex = (ziel.getDay() + 6) % 7;
+    let uebersprungen = false;
+    while (wochentagIndex > 4) {
+        ziel.setDate(ziel.getDate() + 1);
+        wochentagIndex = (ziel.getDay() + 6) % 7;
+        uebersprungen = true;
+    }
+
+    let label;
+    if (uebersprungen) label = WOCHENTAGE[wochentagIndex];
+    else if (istMorgen) label = 'Morgen';
+    else label = 'Heute';
+
+    return { ziel, wochentagIndex, label };
+}
+
+/* Basisdatum für die Dateisuche: bei "Aktuelle Woche" (offset 0)
+   der ggf. verschobene effektive Zieltag, bei den anderen beiden
+   Kacheln unverändert das echte heutige Datum + Wochen-Offset. */
+function basisDatumFuerOffset(offsetWochen) {
+    if (offsetWochen === 0) return effektivesZiel().ziel;
+    const datum = new Date();
+    datum.setDate(datum.getDate() + offsetWochen * 7);
+    return datum;
 }
 
 async function findeDatei(kandidaten) {
@@ -101,7 +141,6 @@ if (isNaN(offset) || offset < 0 || offset > 2) offset = 0;
 document.getElementById('sp-titel').textContent =
     '📄 Speiseplan – ' + (TITEL[offset] || 'Aktuelle Woche');
 
-const kandidaten   = kandidatenFuer(offset);
 const ladeEl       = document.getElementById('sp-lade');
 const fehlerEl     = document.getElementById('sp-fehler');
 const canvasWrap   = document.getElementById('sp-canvas-wrap');
@@ -155,8 +194,8 @@ async function renderSeite(nummer) {
    werden. Das gefundene Ergebnis wird anschließend proportional auf
    die tatsächliche Anzeigegröße umgerechnet. */
 async function zeichneTagesRahmen(seite) {
-    const wochentagIndex = heutigerWochentagIndex();
-    if (wochentagIndex > 4) return; // Wochenende
+    const wochentagIndex = (offset === 0) ? effektivesZiel().wochentagIndex : heutigerWochentagIndex();
+    if (wochentagIndex > 4) return; // Wochenende (bei offset 0 durch effektivesZiel() bereits ausgeschlossen)
 
     const ANALYSE_BREITE = 1754;
     const basisViewport = seite.getViewport({ scale: 1 });
@@ -189,8 +228,9 @@ async function zeichneTagesRahmen(seite) {
     ctx.strokeRect(rand, startYSkaliert + rand / 2, canvas.width - rand * 2, (endeYSkaliert - startYSkaliert) - rand);
     ctx.restore();
 
+    const bezeichnung = (offset === 0) ? effektivesZiel().label : 'Heute';
     srHinweisEl.textContent =
-        'Heute ist ' + WOCHENTAGE[wochentagIndex] + '. ' +
+        bezeichnung + ': ' + WOCHENTAGE[wochentagIndex] + '. ' +
         'Die entsprechende Zeile ist auf dem Speiseplan grün umrandet.';
 }
 
@@ -207,16 +247,18 @@ window.addEventListener('resize', () => {
     resizeTimer = setTimeout(() => { if (pdfDokument) renderSeite(aktuelleSeite); }, 300);
 });
 
-(async function start() {
+async function start() {
     let stufe = 'Datei suchen';
     try {
-        const pfad = await findeDatei(kandidaten);
+        const pfad = await findeDatei(kandidatenFuerDatum(basisDatumFuerOffset(offset)));
 
         if (!pfad) {
             ladeEl.hidden = true;
+            canvasWrap.hidden = true;
+            navEl.hidden = true;
             fehlerEl.querySelector('p').innerHTML =
                 'Dieser Speiseplan ist noch nicht veröffentlicht.<br>' +
-                '<small>Erwartete Datei: ' + kandidaten[0] + '</small>';
+                '<small>Erwartete Datei: ' + kandidatenFuerDatum(basisDatumFuerOffset(offset))[0] + '</small>';
             fehlerEl.hidden = false;
             return;
         }
@@ -225,8 +267,9 @@ window.addEventListener('resize', () => {
         pdfDokument = await pdfjsLib.getDocument(pfad).promise;
 
         ladeEl.hidden = true;
+        fehlerEl.hidden = true;
         canvasWrap.hidden = false;
-        if (pdfDokument.numPages > 1) navEl.hidden = false;
+        navEl.hidden = (pdfDokument.numPages <= 1);
 
         stufe = 'Seite anzeigen';
         await renderSeite(1);
@@ -240,4 +283,20 @@ window.addEventListener('resize', () => {
             '(Technischer Fehler bei „' + stufe + '“: ' + (fehler && fehler.message ? fehler.message : fehler) + ')';
         fehlerEl.hidden = false;
     }
-})();
+}
+
+ladeEl.hidden = false;
+let letztesBasisdatum = basisDatumFuerOffset(offset).toDateString();
+start();
+
+// Terminal-Seiten bleiben oft dauerhaft geöffnet. Alle 5 Minuten
+// prüfen, ob sich das Basisdatum geändert hat (15-Uhr-Grenze bei
+// "Aktuelle Woche", oder ganz normal Mitternacht) – nur dann wird
+// neu geladen, um unnötige Arbeit zu vermeiden.
+setInterval(() => {
+    const neuesBasisdatum = basisDatumFuerOffset(offset).toDateString();
+    if (neuesBasisdatum !== letztesBasisdatum) {
+        letztesBasisdatum = neuesBasisdatum;
+        start();
+    }
+}, 5 * 60 * 1000);

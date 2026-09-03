@@ -228,7 +228,27 @@ h1 {
     font-size: 0.95rem;
     color: var(--primary-red);
     margin: 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
+
+/* A1/A2/A3-Badges – Farben passend zur Spaltenkennzeichnung
+   auf Seite 2 der Speiseplan-PDFs (Bildergalerie) */
+.sp-badge {
+    display: inline-block;
+    padding: 2px 9px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 0.02em;
+}
+
+.sp-badge-a1 { background-color: #1565c0; } /* blau */
+.sp-badge-a2 { background-color: #757575; } /* grau */
+.sp-badge-a3 { background-color: #2e7d32; } /* grün */
 
 .sp-heute-bild {
     width: 100%;

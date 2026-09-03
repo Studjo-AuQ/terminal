@@ -40,8 +40,8 @@ function getISOWocheJahr(datum) {
     return { jahr: isoJahr, woche: woche };
 }
 
-function kandidatenAktuelleWoche() {
-    const { jahr, woche } = getISOWocheJahr(new Date());
+function kandidatenFuerDatum(datum) {
+    const { jahr, woche } = getISOWocheJahr(datum);
     const woche2 = String(woche).padStart(2, '0');
     return [
         ORDNER + 'speiseplan_' + jahr + '-KW' + woche2 + '.pdf',
@@ -49,6 +49,39 @@ function kandidatenAktuelleWoche() {
         ORDNER + 'speiseplan_' + jahr + '-KW' + woche + '.pdf',
         ORDNER + 'Speiseplan_' + jahr + '-KW' + woche + '.pdf',
     ];
+}
+
+/* Ab 15:00 Uhr wird bereits der Folgetag angezeigt (Beschriftung
+   "Morgen"), damit Beschäftigte sich schon auf morgen einstellen
+   können. Um Mitternacht springt die Beschriftung automatisch auf
+   "Heute" zurück, da dann kein Zeitversatz mehr vorliegt. Fällt der
+   Zieltag auf ein Wochenende, wird auf den nächsten Montag
+   weitergesprungen (Beschriftung zeigt dann den Wochentagsnamen
+   statt "Morgen", da es sich um mehr als einen Tag Vorlauf handelt). */
+function effektivesZiel() {
+    const jetzt = new Date();
+    let ziel = new Date(jetzt);
+    let istMorgen = false;
+
+    if (jetzt.getHours() >= 15) {
+        ziel.setDate(ziel.getDate() + 1);
+        istMorgen = true;
+    }
+
+    let wochentagIndex = (ziel.getDay() + 6) % 7;
+    let uebersprungen = false;
+    while (wochentagIndex > 4) {
+        ziel.setDate(ziel.getDate() + 1);
+        wochentagIndex = (ziel.getDay() + 6) % 7;
+        uebersprungen = true;
+    }
+
+    let label;
+    if (uebersprungen) label = WOCHENTAGE[wochentagIndex];
+    else if (istMorgen) label = 'Morgen';
+    else label = 'Heute';
+
+    return { ziel, wochentagIndex, label };
 }
 
 async function findeDatei(kandidaten) {
@@ -89,11 +122,6 @@ function findeLinien(canvas, achse, schwelle = 0.5, dunkelWert = 130) {
         else gruppen.push([pos]);
     });
     return gruppen.map(g => Math.round(g.reduce((a, b) => a + b, 0) / g.length));
-}
-
-function heutigerWochentagIndex() {
-    const tag = new Date().getDay();
-    return (tag + 6) % 7;
 }
 
 /* Schneidet jede Zeile an der ersten öffnenden eckigen Klammer ab. */
@@ -152,23 +180,35 @@ function schwarzWeiss(quelle, schwellenwert = 165) {
 }
 
 async function start() {
-    const ladeEl      = document.getElementById('sp-heute-lade');
-    const fehlerEl    = document.getElementById('sp-heute-fehler');
-    const kartenWrap  = document.getElementById('sp-heute-karten');
-    const wochenendEl = document.getElementById('sp-heute-wochenende');
-    const tagLabelEl  = document.getElementById('sp-heute-tag-label');
+    const ladeEl        = document.getElementById('sp-heute-lade');
+    const fehlerEl      = document.getElementById('sp-heute-fehler');
+    const kartenWrap    = document.getElementById('sp-heute-karten');
+    const wochenendEl   = document.getElementById('sp-heute-wochenende');
+    const tagLabelEl    = document.getElementById('sp-heute-tag-label');
+    const heuteMorgenEl = document.getElementById('sp-heute-heute-morgen');
 
-    const wochentagIndex = heutigerWochentagIndex();
+    // Zustände zurücksetzen (wichtig für die automatische
+    // Neuprüfung bei langer Laufzeit auf dem Terminal)
+    ladeEl.hidden = false;
+    fehlerEl.hidden = true;
+    kartenWrap.hidden = true;
+    wochenendEl.hidden = true;
+
+    const { ziel, wochentagIndex, label } = effektivesZiel();
 
     if (wochentagIndex > 4) {
+        // Sollte durch effektivesZiel() nicht mehr vorkommen
+        // (Wochenende wird automatisch auf Montag verschoben),
+        // bleibt als Sicherheitsnetz bestehen.
         ladeEl.hidden = true;
         wochenendEl.hidden = false;
         return;
     }
 
+    heuteMorgenEl.textContent = (label === 'Heute' || label === 'Morgen') ? label : 'Am';
     tagLabelEl.textContent = WOCHENTAGE[wochentagIndex];
 
-    const kandidaten = kandidatenAktuelleWoche();
+    const kandidaten = kandidatenFuerDatum(ziel);
     let stufe = 'Datei suchen';
 
     try {
@@ -231,7 +271,7 @@ async function start() {
             const text = bereinigeText(data.text);
 
             const karte = kartenWrap.children[spalte];
-            karte.querySelector('.sp-heute-spalten-titel').textContent = SPALTEN_LABEL[spalte] || '';
+            karte.querySelector('.sp-heute-spalten-name').textContent = SPALTEN_LABEL[spalte] || '';
             karte.querySelector('.sp-heute-text').textContent = text || '(nicht erkannt)';
 
             try {
@@ -268,4 +308,19 @@ async function start() {
     }
 }
 
-document.addEventListener('DOMContentLoaded', start);
+document.addEventListener('DOMContentLoaded', () => {
+    let letzterZielTag = effektivesZiel().ziel.toDateString();
+    start();
+
+    // Alle 5 Minuten prüfen, ob sich der effektive Zieltag geändert hat
+    // (z. B. weil es 15:00 Uhr oder Mitternacht wurde). Nur in diesem
+    // Fall wird die komplette Erkennung neu durchlaufen – nicht bei
+    // jeder Prüfung, um unnötige OCR-Läufe zu vermeiden.
+    setInterval(() => {
+        const neuerZielTag = effektivesZiel().ziel.toDateString();
+        if (neuerZielTag !== letzterZielTag) {
+            letzterZielTag = neuerZielTag;
+            start();
+        }
+    }, 5 * 60 * 1000);
+});
