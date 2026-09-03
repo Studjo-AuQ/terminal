@@ -33,13 +33,19 @@
   </div>
 </div>
 
-<!-- Für Screenreader/Vorlesen: Hinweis, welcher Tag markiert ist.
-     Visuell unsichtbar, aber für die Vorlese-Funktion vorhanden. -->
+<!-- Für echte Screenreader (VoiceOver/NVDA/TalkBack): Hinweis, welcher
+     Tag markiert ist. Visuell unsichtbar. Bewusst UNABHÄNGIG von der
+     eigenen a11y-Steuerleiste, die auf dieser Seite entfernt wurde
+     (siehe Kommentar unten) – echte Screenreader lesen das trotzdem. -->
 <div class="sp-sr-only" id="sp-sr-hinweis"></div>
 
 <script type="module" src="speiseplan-ansicht.js"></script>
 
-<link rel="stylesheet" href="a11y.css">
-<script src="a11y.js"></script>
+<!-- Bewusst OHNE a11y.css/a11y.js auf dieser Seite: Der Inhalt ist ein
+     als Bild gerenderter PDF-Canvas, kein echter Text. Die eigene
+     Schriftgrößen-/Kontrast-/Vorlesen-Steuerleiste hätte hier keine
+     Wirkung (Schrift vergrößert sich nicht, Kontrast macht nur den
+     Hintergrund weiß, Vorlesen liest nichts vor) und würde nur
+     verwirren. -->
 </body>
 </html>
