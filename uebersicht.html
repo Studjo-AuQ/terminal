@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Übersicht – Studjo Terminal</title>
+
+  <style>
+    :root {
+      --rot:  #b61f29;
+      --bg:   #f9f9f9;
+      --text: #0f2f37;
+      --grau: #8a8d8f;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Nunito Sans', sans-serif;
+      background: var(--bg); color: var(--text);
+      min-height: 100vh; display: flex; flex-direction: column;
+    }
+
+    /* ── Header ── */
+    header { background: white; box-shadow: 0 2px 10px rgba(0,0,0,.06); }
+    .logo-container { max-width: 1200px; margin: 0 auto; }
+    .logo-container img { width: 100%; height: auto; display: block; }
+
+    /* ── Main ── */
+    main {
+      flex: 1; max-width: 960px; margin: 0 auto;
+      padding: 24px 20px 100px; width: 100%;
+    }
+
+    /* ── Top-Bar ── */
+    .top-bar {
+      display: flex; align-items: center; gap: 16px;
+      margin-bottom: 24px; flex-wrap: wrap;
+    }
+    .back-button {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: white; color: var(--rot);
+      border: 2px solid var(--rot); border-radius: 999px;
+      padding: 8px 20px; font-weight: 700; font-size: 0.95rem;
+      text-decoration: none; font-family: inherit;
+      transition: background .2s, color .2s; white-space: nowrap;
+    }
+    .back-button:hover { background: var(--rot); color: white; }
+    h1 { font-size: 1.5rem; font-weight: 800; color: var(--rot); flex: 1; }
+
+    .einleitung {
+      font-size: 1rem; line-height: 1.6; margin-bottom: 22px;
+      background: white; border-radius: 12px; padding: 14px 18px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.05);
+    }
+
+    /* ══════════════════════════════════════════════════
+       KAPITEL-KACHELN
+       ══════════════════════════════════════════════════ */
+    .kapitel-liste { display: flex; flex-direction: column; gap: 14px; }
+
+    .kapitel-kachel {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px rgba(0,0,0,.08);
+      border-left: 6px solid #e0e0e0;
+    }
+
+    /* Kapitel-Farben (linker Rand + Kopf-Hintergrund + Titel/Nr) */
+    .k1  { border-left-color: #0f2f37; } .k1  .kachel-kopf { background: #e8ecec; } .k1  .kachel-titel, .k1  .kachel-nr { color: #0f2f37; }
+    .k2  { border-left-color: var(--rot); } .k2  .kachel-kopf { background: #fde8e9; } .k2  .kachel-titel, .k2  .kachel-nr { color: var(--rot); }
+    .k3  { border-left-color: #1565c0; } .k3  .kachel-kopf { background: #dbeafe; } .k3  .kachel-titel, .k3  .kachel-nr { color: #1565c0; }
+    .k4  { border-left-color: #6d4c41; } .k4  .kachel-kopf { background: #efebe9; } .k4  .kachel-titel, .k4  .kachel-nr { color: #6d4c41; }
+    .k5  { border-left-color: #ef6c00; } .k5  .kachel-kopf { background: #fff3e0; } .k5  .kachel-titel, .k5  .kachel-nr { color: #ef6c00; }
+    .k6  { border-left-color: #4338ca; } .k6  .kachel-kopf { background: #e0e7ff; } .k6  .kachel-titel, .k6  .kachel-nr { color: #4338ca; }
+    .k7  { border-left-color: #616161; } .k7  .kachel-kopf { background: #f1f5f9; } .k7  .kachel-titel, .k7  .kachel-nr { color: #616161; }
+    .k8  { border-left-color: #ad1457; } .k8  .kachel-kopf { background: #fce4ec; } .k8  .kachel-titel, .k8  .kachel-nr { color: #ad1457; }
+    .k9  { border-left-color: #f9a825; } .k9  .kachel-kopf { background: #fff8e1; } .k9  .kachel-titel, .k9  .kachel-nr { color: #b28704; }
+    .k10 { border-left-color: #7e22ce; } .k10 .kachel-kopf { background: #f3e8ff; } .k10 .kachel-titel, .k10 .kachel-nr { color: #7e22ce; }
+    .k11 { border-left-color: #00838f; } .k11 .kachel-kopf { background: #e0f7fa; } .k11 .kachel-titel, .k11 .kachel-nr { color: #00838f; }
+    .k12 { border-left-color: #2e7d32; } .k12 .kachel-kopf { background: #e8f5e9; } .k12 .kachel-titel, .k12 .kachel-nr { color: #2e7d32; }
+    .k13 { border-left-color: #0288d1; } .k13 .kachel-kopf { background: #e1f5fe; } .k13 .kachel-titel, .k13 .kachel-nr { color: #0288d1; }
+    .k14 { border-left-color: #37474f; } .k14 .kachel-kopf { background: #eceff1; } .k14 .kachel-titel, .k14 .kachel-nr { color: #37474f; }
+    .k15 { border-left-color: #8e24aa; } .k15 .kachel-kopf { background: #f3e5f5; } .k15 .kachel-titel, .k15 .kachel-nr { color: #8e24aa; }
+    .k16 { border-left-color: #c25e00; } .k16 .kachel-kopf { background: #fff0e0; } .k16 .kachel-titel, .k16 .kachel-nr { color: #c25e00; }
+    .k17 { border-left-color: #d81b60; } .k17 .kachel-kopf { background: #fce4ec; } .k17 .kachel-titel, .k17 .kachel-nr { color: #d81b60; }
+
+    /* ── Kapitel-Kopf (klickbare Leiste) ── */
+    .kachel-kopf {
+      display: flex; align-items: center; gap: 16px;
+      padding: 14px 18px; cursor: pointer; user-select: none;
+      transition: filter .15s;
+    }
+    .kachel-kopf:hover { filter: brightness(.97); }
+
+    .kachel-metacom {
+      width: 72px; height: 72px;
+      object-fit: cover; border-radius: 10px;
+      border: 2px solid rgba(255,255,255,.7);
+      flex-shrink: 0; background: white;
+    }
+
+    /* Ersatz-Symbol für Kapitel ohne eigenes Kachel-Bild (1 und 2) */
+    .kachel-metacom-ersatz {
+      width: 72px; height: 72px;
+      border-radius: 10px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2.1rem; background: white;
+      border: 2px solid rgba(255,255,255,.7);
+    }
+    .k2 .kachel-metacom-ersatz {
+      background: var(--rot); color: white;
+      font-weight: 800; font-size: 1.9rem;
+    }
+
+    .kachel-text-block { flex: 1; }
+    .kachel-nr    { font-size: 0.72rem; font-weight: 700; opacity: .7; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 2px; }
+    .kachel-titel { font-size: 1.15rem; font-weight: 800; line-height: 1.25; }
+
+    .kachel-pfeil {
+      font-size: 1.4rem; color: var(--grau);
+      transition: transform .25s; flex-shrink: 0; padding: 0 4px;
+    }
+    .kapitel-kachel.offen .kachel-pfeil { transform: rotate(90deg); }
+
+    .kachel-inhalt { display: none; padding: 4px 20px 20px; }
+    .kapitel-kachel.offen .kachel-inhalt { display: block; }
+
+    .antwort-text {
+      font-size: 1.02rem; line-height: 1.8;
+      color: var(--text); padding-top: 4px;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center; padding: 14px 16px;
+      background: var(--rot); color: #ffffff;
+      font-size: 0.85rem; line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-container">
+    <img src="header.jpg" alt="Studjo – Arbeit und Qualifizierung">
+  </div>
+</header>
+
+<main>
+  <div class="top-bar">
+    <a href="index.html" class="back-button" target="_self">← Zurück</a>
+    <h1>📋 Übersicht</h1>
+  </div>
+
+  <p class="einleitung">
+    Hier wird jeder Bereich vom Terminal kurz erklärt.
+    Tippe auf ein Kapitel. Dann öffnet sich die Erklärung.
+  </p>
+
+  <div class="kapitel-liste">
+
+    <!-- KAPITEL 1: TERMINAL ALLGEMEIN -->
+    <div class="kapitel-kachel k1" id="kapitel-1">
+      <div class="kachel-kopf" onclick="toggleKapitel('kapitel-1')">
+        <div class="kachel-metacom-ersatz">🖥️</div>
+        <div class="kachel-text-block">
+          <div class="kachel-nr">Kapitel 1</div>
+          <div class="kachel-titel">Terminal allgemein</div>
+        </div>
+        <div class="kachel-pfeil">›</div>
+      </div>
+      <div class="kachel-inhalt">
+        <p class="antwort-text">
+          Das Terminal ist der große Bildschirm hier.
+          Hier stehen wichtige Infos für dich.
+          Du tippst einfach auf eine Kachel.
+        </p>
+      </div>
+    </div>
+
+    <!-- KAPITEL 2: BARRIEREFREIHEIT -->
+    <div class="kapitel-kachel k2" id="kapitel-2">
+      <div class="kachel-kopf" onclick="toggleKapitel('kapitel-2')">
+        <div class="kachel-metacom-ersatz">H</div>
+        <div class="kachel-text-block">
+          <div class="kachel-nr">Kapitel 2</div>
+          <div class="kachel-titel">Barrierefreiheit</div>
+        </div>
+        <div class="kachel-pfeil">›</div>
+      </div>
+      <div class="kachel-inhalt">
+        <p class="antwort-text">
+          Das "H" ist unten rechts auf vielen Seiten.
+          Du kannst damit die Schrift größer machen.
+          Du kannst dir Texte auch vorlesen lassen.
+        </p>
+      </div>
+    </div>
+
+    <!-- KAPITEL 3: NEUIGKEITEN BEI STUDJO -->
+    <div class="kapitel-kachel k3" id="kapitel-3">
+      <div class="kachel-kopf" onclick="toggleKapitel('kapitel-3')">
+        <img src="Neues.jpg" alt="" class="kachel-metacom">
+        <div class="kachel-text-block">
+          <div class="kachel-nr">Kapitel 3</div>
+          <div class="kachel-titel">📰 Neuigkeiten bei Studjo</div>
+        </div>
+        <div class="kachel-pfeil">›</div>
+      </div>
+      <div class="kachel-inhalt">
+        <p class="antwort-text">
+          Hier stehen die neuesten Nachrichten von Studjo.
+          Zum Beispiel Änderungen oder wichtige Infos.
+          Tippe auf die Kachel für mehr Infos.
+        </p>
+      </div>
+    </div>
+
+    <!-- KAPITEL 4: TERMINE -->
+    <div class="kapitel-kachel k4" id="kapitel-4">
+      <div class="kachel-kopf" onclick="toggleKapitel('kapitel-4')">
+        <img src="termine.jpg" alt="" class="kachel-metacom">
+        <div class="kachel-text-block">
+          <div class="kachel-nr">Kapitel 4</div>
+          <div class="kachel-titel">📅 Termine</div>
+        </div>
+        <div class="kachel-pfeil">›</div>
+      </div>
+      <div class="kachel-inhalt">
+        <p class="antwort-text">
+          Hier findest du wichtige Termine.
+          Zum Beispiel Feste oder Fortbildungen.
+          So verpasst du nichts Wichtiges.
+        </p>
+      </div>
+    </div>
+
+    <!-- KAPITEL 5: SPEISEPLAN -->
+    <div class="kapitel-kachel k5" id="kapitel-5">
+      <div class="kachel-kopf" onclick="toggleKapitel('kapitel-5')">
+        <img src="Essen.jpg" alt="" class="kachel-metacom">
+        <div class="kachel-text-block">
+          <div class="kachel-nr">Kapitel 5</div>
+          <div class="kachel-titel">🍽️ Speiseplan</div>
+        </div>
+        <div class="kachel-pfeil">›</div>
+      </div>
+      <div class="kachel-inhalt">
+        <p class="antwort-text">
+          Hier siehst du, was es zu essen gibt.
+          Du siehst auch Bilder von den Gerichten.
+          So weißt du schon vorher, was es gibt.
+        </p>
+      </div>
+    </div>
+
+    <!-- KAPITEL 6: ARBEITSBEGLEITENDE ANGEBOTE -->
+    <div class="kapitel-kachel k6" id="kapitel-6">
+      <div class="kachel-kopf" onclick="toggleKapitel('kapitel-6')">
+        <img src="Aba.jpg" alt="" class="kachel-metacom">
+        <div class="kachel-text-block">
+          <div class="kachel-nr">Kapitel 6</div>
+          <div class="kachel-titel">🎯 Arbeitsbegleitende Angebote</div>
+        </div>
+        <div class="kachel-pfeil">›</div>
+      </div>
+      <div class="kachel-inhalt">
+        <p class="antwort-text">
+          Hier stehen Angebote neben der Arbeit.
+          Zum Beispiel Kurse oder Bewegung.
+          Du kannst dort etwas Neues lernen.
+        </p>
+      </div>
+    </div>
+
+    <!-- KAPITEL 7: WERKSTATTORDNUNG UND REGELN -->
+    <div class="kapitel-kachel k7" id="kapitel-7">
+      <div class="kachel-kopf" onclick="toggleKapitel('kapitel-7')">
+        <img src="Regeln.jpg" alt="" class="kachel-metacom">
+        <div class="kachel-text-block">
+          <div class="kachel-nr">Kapitel 7</div>
+          <div class="kachel-titel">📖 Werkstattordnung und Regeln</div>
+        </div>
+        <div class="kachel-pfeil">›</div>
+      </div>
+      <div class="kachel-inhalt">
+        <p class="antwort-text">
+          Hier stehen die Regeln für die Werkstatt.
+          Die Regeln gelten für alle Menschen hier.
+          Sie helfen, dass es allen gut geht.
+        </p>
+      </div>
+    </div>
+
+    <!-- KAPITEL 8: GEWALTSCHUTZ -->
+    <div class="kapitel-kachel k8" id="kapitel-8">
+      <div class="kachel-kopf" onclick="toggleKapitel('kapitel-8')">
+        <img src="Gewalt.jpg" alt="" class="kachel-metacom">
+        <div class="kachel-text-block">
+          <div class="kachel-nr">Kapitel 8</div>
+          <div class="kachel-titel">🛡️ Gewaltschutz</div>
+        </div>
+        <div class="kachel-pfeil">›</div>
+      </div>
+      <div class="kachel-inhalt">
+        <p class="antwort-text">
+          Hier bekommst du Hilfe bei Gewalt.
+          Du bist hier sicher und wirst ernst genommen.
+          Du kannst dich jederzeit melden.
+        </p>
+      </div>
+    </div>
+
+    <!-- KAPITEL 9: ARBEITSSICHERHEIT -->
+    <div class="kapitel-kachel k9" id="kapitel-9">
+      <div class="kachel-kopf" onclick="toggleKapitel('kapitel-9')">
+        <img src="Arbeitssicherheit.jpg" alt="" class="kachel-metacom">
+        <div class="kachel-text-block">
+          <div class="kachel-nr">Kapitel 9</div>
+          <div class="kachel-titel">⚠️ Arbeitssicherheit</div>
+        </div>
+        <div class="kachel-pfeil">›</div>
+      </div>
+      <div class="kachel-inhalt">
+        <p class="antwort-text">
+          Hier lernst du, wie du sicher arbeitest.
+          Sicherheit schützt dich und andere Menschen.
+          Bei Fragen frag deine Gruppenleitung.
+        </p>
+      </div>
+    </div>
+
+    <!-- KAPITEL 10: WERKSTATTRAT UND FRAUENBEAUFTRAGTE -->
+    <div class="kapitel-kachel k10" id="kapitel-10">
+      <div class="kachel-kopf" onclick="toggleKapitel('kapitel-10')">
+        <img src="Werkstattrat.jpg" alt="" class="kachel-metacom">
+        <div class="kachel-text-block">
+          <div class="kachel-nr">Kapitel 10</div>
+          <div class="kachel-titel">🗣️ Werkstattrat und Frauenbeauftragte</div>
+        </div>
+        <div class="kachel-pfeil">›</div>
+      </div>
+      <div class="kachel-inhalt">
+        <p class="antwort-text">
+          Der Werkstattrat setzt sich für dich ein.
+          Die Frauenbeauftragte hilft bei Fragen von Frauen.
+          Beide sind für dich da.
+        </p>
+      </div>
+    </div>
+
+    <!-- KAPITEL 11: INFO-FILME -->
+    <div class="kapitel-kachel k11" id="kapitel-11">
+      <div class="kachel-kopf" onclick="toggleKapitel('kapitel-11')">
+        <img src="Filme.jpg" alt="" class="kachel-metacom">
+        <div class="kachel-text-block">
+          <div class="kachel-nr">Kapitel 11</div>
+          <div class="kachel-titel">🎬 Info-Filme</div>
+        </div>
+        <div class="kachel-pfeil">›</div>
+      </div>
+      <div class="kachel-inhalt">
+        <p class="antwort-text">
+          Hier kannst du kurze Filme anschauen.
+          Die Filme erklären wichtige Themen.
+          Das hilft dir beim Verstehen.
+        </p>
+      </div>
+    </div>
+
+    <!-- KAPITEL 12: ALLGEMEINE NACHRICHTEN -->
+    <div class="kapitel-kachel k12" id="kapitel-12">
+      <div class="kachel-kopf" onclick="toggleKapitel('kapitel-12')">
+        <img src="news.jpg" alt="" class="kachel-metacom">
+        <div class="kachel-text-block">
+          <div class="kachel-nr">Kapitel 12</div>
+          <div class="kachel-titel">🌍 Allgemeine Nachrichten</div>
+        </div>
+        <div class="kachel-pfeil">›</div>
+      </div>
+      <div class="kachel-inhalt">
+        <p class="antwort-text">
+          Hier stehen Nachrichten aus der Welt.
+          Die Texte sind in Leichter Sprache.
+          So verstehst du alles gut.
+        </p>
+      </div>
+    </div>
+
+    <!-- KAPITEL 13: WETTER -->
+    <div class="kapitel-kachel k13" id="kapitel-13">
+      <div class="kachel-kopf" onclick="toggleKapitel('kapitel-13')">
+        <img src="wetter.jpg" alt="" class="kachel-metacom">
+        <div class="kachel-text-block">
+          <div class="kachel-nr">Kapitel 13</div>
+          <div class="kachel-titel">🌤️ Wetter</div>
+        </div>
+        <div class="kachel-pfeil">›</div>
+      </div>
+      <div class="kachel-inhalt">
+        <p class="antwort-text">
+          Hier siehst du das Wetter von heute.
+          Du siehst auch das Wetter der nächsten Tage.
+          So weißt du, was du anziehen sollst.
+        </p>
+      </div>
+    </div>
+
+    <!-- KAPITEL 14: ADRESSEN UND FAHRPLÄNE -->
+    <div class="kapitel-kachel k14" id="kapitel-14">
+      <div class="kachel-kopf" onclick="toggleKapitel('kapitel-14')">
+        <img src="OPNV.jpg" alt="" class="kachel-metacom">
+        <div class="kachel-text-block">
+          <div class="kachel-nr">Kapitel 14</div>
+          <div class="kachel-titel">🚌 Adressen und Fahrpläne</div>
+        </div>
+        <div class="kachel-pfeil">›</div>
+      </div>
+      <div class="kachel-inhalt">
+        <p class="antwort-text">
+          Hier findest du Busse und Bahnen.
+          Du siehst, wann sie fahren.
+          Das hilft dir beim Nachhause-Kommen.
+        </p>
+      </div>
+    </div>
+
+    <!-- KAPITEL 15: LOSUNG FÜR HEUTE -->
+    <div class="kapitel-kachel k15" id="kapitel-15">
+      <div class="kachel-kopf" onclick="toggleKapitel('kapitel-15')">
+        <img src="losung.jpg" alt="" class="kachel-metacom">
+        <div class="kachel-text-block">
+          <div class="kachel-nr">Kapitel 15</div>
+          <div class="kachel-titel">📖 Losung für heute</div>
+        </div>
+        <div class="kachel-pfeil">›</div>
+      </div>
+      <div class="kachel-inhalt">
+        <p class="antwort-text">
+          Hier steht ein Satz aus der Bibel.
+          Der Satz gehört zum heutigen Tag.
+          Du kannst ihn dir auch vorlesen lassen.
+        </p>
+      </div>
+    </div>
+
+    <!-- KAPITEL 16: WOCHENMOTTO -->
+    <div class="kapitel-kachel k16" id="kapitel-16">
+      <div class="kachel-kopf" onclick="toggleKapitel('kapitel-16')">
+        <img src="wochenmotto.jpg" alt="" class="kachel-metacom">
+        <div class="kachel-text-block">
+          <div class="kachel-nr">Kapitel 16</div>
+          <div class="kachel-titel">🌟 Wochenmotto</div>
+        </div>
+        <div class="kachel-pfeil">›</div>
+      </div>
+      <div class="kachel-inhalt">
+        <p class="antwort-text">
+          Hier steht ein Motto für diese Woche.
+          Das Motto soll dich freundlich begleiten.
+          Du kannst mehr dazu lesen.
+        </p>
+      </div>
+    </div>
+
+    <!-- KAPITEL 17: HÄUFIGE FRAGEN -->
+    <div class="kapitel-kachel k17" id="kapitel-17">
+      <div class="kachel-kopf" onclick="toggleKapitel('kapitel-17')">
+        <img src="faq.jpg" alt="" class="kachel-metacom">
+        <div class="kachel-text-block">
+          <div class="kachel-nr">Kapitel 17</div>
+          <div class="kachel-titel">❓ Häufige Fragen</div>
+        </div>
+        <div class="kachel-pfeil">›</div>
+      </div>
+      <div class="kachel-inhalt">
+        <p class="antwort-text">
+          Hier findest du Antworten auf viele Fragen.
+          Zum Beispiel über Urlaub oder Krankheit.
+          Tippe einfach auf eine Frage.
+        </p>
+      </div>
+    </div>
+
+  </div><!-- /kapitel-liste -->
+</main>
+
+<!-- ══ FOOTER ══ -->
+<footer style="
+  text-align: center;
+  padding: 14px 16px;
+  background: #b61f29;
+  color: #ffffff;
+  font-size: 0.85rem;
+  line-height: 1.8;
+">
+  © 2026 <strong>Studjo | Arbeit und Qualifizierung</strong>
+   ·  Evangelisches Johanneswerk gGmbH
+   ·  Barrierefreier Zugang
+  <br>
+  <a href="uebersicht.html"
+     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Übersicht
+  </a>
+   | 
+  <a href="impressum.html"
+     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Impressum
+  </a>
+   | 
+  <a href="datenschutz.html"
+     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Datenschutz
+  </a>
+</footer>
+
+<script>
+  /* ── Kapitel auf-/zuklappen (immer nur eines offen) ── */
+  function toggleKapitel(id) {
+    const kachel   = document.getElementById(id);
+    const warOffen = kachel.classList.contains('offen');
+    document.querySelectorAll('.kapitel-kachel.offen')
+      .forEach(k => k.classList.remove('offen'));
+    if (!warOffen) {
+      kachel.classList.add('offen');
+      setTimeout(() =>
+        kachel.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60);
+    }
+  }
+
+  /* ── Reset beim Zurückkommen (Back-Forward-Cache) ── */
+  window.addEventListener('pageshow', function (e) {
+    if (e.persisted) { window.location.reload(); }
+  });
+</script>
+
+<!-- Bewusst KEINE eigene vorlesenUndMarkieren()-Funktion hier: die
+     generische Vorlesen-Funktion aus a11y.js erfasst .kachel-titel und
+     .antwort-text bereits automatisch (dieselben Klassennamen wie auf
+     faq.html) und liest sie in der richtigen Reihenfolge vor. -->
+<link rel="stylesheet" href="a11y.css">
+<script src="a11y.js"></script>
+
+</body>
+</html>
