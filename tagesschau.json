@@ -1,7 +1,79 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "04.09.2026, 01:14 Uhr (UTC)",
+  "aktualisiert": "04.09.2026, 06:27 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Nepal: Zwei Arbeiter neun Tage nach Sturzflut aus Tunnel gerettet",
+      "description": "In Nepal konnten rund anderthalb Wochen nach der katastrophalen Sturzflut zwei Arbeiter lebend aus einem Tunnel gerettet werden. Noch immer sollen Hunderte Arbeiter in dem Tunnelsystem verschüttet sein.",
+      "pubDate": "2026-09-04T07:48:29+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Zahl der Geflüchteten in Deutschland 2026 leicht gesunken",
+      "description": "Die Zahl der in Deutschland lebenden Geflüchteten ist leicht auf etwa 3,5 Millionen Menschen gesunken. Laut Bundesregierung liegt das an Abschiebungen, Ausreisen und Einbürgerungen, sowie weniger neuen Flüchtlingen aus der Ukraine.",
+      "pubDate": "2026-09-04T07:39:40+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX fester vor US-Arbeitsmarktdaten",
+      "description": "Kann sich der DAX über 26.000 Punkten halten? Die Hoffnung auf eine Zinspause in den USA hat die Wall Street gestern angetrieben. Aber heute steht mit den US-Arbeitsmarktdaten der nächste wichtige Termin an.",
+      "pubDate": "2026-09-04T07:36:30+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Technikmesse IFA startet in Berlin - China im Fokus",
+      "description": "Was einmal als Schaufenster deutscher Technik begann, ist heute Bühne für eine globale Industrie. Wer durch die IFA-Technikmesse geht, merkt schnell, dass sich die Gewichte verschoben haben: Die meisten Aussteller kommen aus China.",
+      "pubDate": "2026-09-04T07:12:14+02:00",
+      "bild": ""
+    },
+    {
+      "title": "ARD-DeutschlandTrend: Mehrheit will staatliche Hilfen für Autoindustrie",
+      "description": "Deutschlands Autoindustrie steckt in der Krise. Verantwortung dafür sehen die Menschen laut ARD-DeutschlandTrend bei den Herstellern selbst. Trotzdem sprechen sie sich dafür aus, der Branche zu helfen.",
+      "pubDate": "2026-09-04T06:57:44+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Sparpläne bei den Krankenkassen: Frauenärzte fürchten Folgen für Schwangere",
+      "description": "Ab 2027 ändert sich die Finanzierung der Schwangerschaftsvorsorge. Frauenärzte warnen vor Engpässen. Die Krankenkassen widersprechen. Von Jule Lampe.",
+      "pubDate": "2026-09-04T06:45:12+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Parteitag von Reform UK: Britische Rechtspopulisten unter Druck",
+      "description": "Lange lag die Reform UK-Partei von Nigel Farage vorne in den Umfragen. Doch Finanz- und Spendenskandale, Konkurrenz von rechtsaußen und die Beliebtheit des neuen Premiers Burnham setzen der Partei zu. Von M. Aden.",
+      "pubDate": "2026-09-04T05:10:20+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Italiens Ministerpräsidentin Meloni stellt Regierungsrekord auf",
+      "description": "Was in anderen Ländern die Regel ist, reicht in Italien für einen Rekord: Seit knapp vier Jahren regiert Ministerpräsidentin Meloni ununterbrochen - länger als jeder Regierungschef vor ihr. Wie hat sie das geschafft? Von Anna Giordano.",
+      "pubDate": "2026-09-04T05:10:01+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Trump will Geld von Europa für Ukraine-Hilfen zurück",
+      "description": "US-Präsident Trump will von europäischen Staaten die Rückzahlung von US-Militärhilfen für die Ukraine fordern. Es gehe dabei um \"Hunderte Milliarden Dollar\", die sein Vorgänger Biden der Ukraine und der NATO geschenkt habe. Von A. Schneider.",
+      "pubDate": "2026-09-04T05:08:47+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wahlkampf in Sachsen-Anhalt: Kanzler Merz auf Distanz",
+      "description": "Kurz vor der Landtagswahl besucht Friedrich Merz erneut Sachsen-Anhalt. Mit Ministerpräsident Schulze besichtigt er eine Raffinerie und warnt vor einer AfD-Regierung. Zu Wählern spricht er aber nicht. Von Philip Kuntschner.",
+      "pubDate": "2026-09-04T05:08:38+02:00",
+      "bild": ""
+    },
+    {
+      "title": "El Niño: Sorge in Brasilien vor neuen Überschwemmungen",
+      "description": "Im brasilianischen Porto Alegre gab es erst vor zwei Jahren eine verheerende Flutkatastrophe. Durch das Klimaphänomen El Niño drohen nun neue Überschwemmungen - ist die Stadt diesmal besser vorbereitet? Von A. Herrberg.",
+      "pubDate": "2026-09-04T05:08:30+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Das sind die Punkte des VW-Sparplans",
+      "description": "Abbau von Zehntausenden Stellen, vier Werke auf der Kippe - und das ist noch nicht alles. VW hat ein gigantisches Sparprogramm auf den Weg gebracht. Was der Konzern plant - und was Experten dazu sagen. Ein Überblick.",
+      "pubDate": "2026-09-04T05:08:21+02:00",
+      "bild": ""
+    },
     {
       "title": "VW-Aufsichtsrat beschließt Sparmaßnahmen - 50.000 Stellen weg",
       "description": "Einen Tag früher als geplant hat der VW-Aufsichtsrat einem Sparplan zugestimmt: 50.000 Jobs sollen wegfallen, und vier Werke stehen vor dem Aus, wenn keine alternative Verwendung für sie gefunden wird.",
@@ -18,78 +90,6 @@
       "title": "Brandanschlag in München - Starke Hinweise auf hybriden Hintergrund",
       "description": "Nach Informationen des ARD-Hauptstadtstudios gibt es starke Hinweise darauf, dass auch der Brandanschlag nahe eines Rüstungsunternehmens in München im Auftrag eines russischen Geheimdienstes verübt worden sein könnte. Von M. Götschenberg.",
       "pubDate": "2026-09-03T19:46:02+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ig-Nobelpreise: Unterhosen verbuddeln für die Wissenschaft",
-      "description": "Erst lachen, dann nachdenken: Um einen Ig-Nobelpreis zu bekommen, muss ein Forschungsthema lustig wirken - aber trotzdem etwas Ernsthaftes dahinterstecken. Dieses Jahr wird der Preis zum ersten Mal in Zürich vergeben. Von David Beck.",
-      "pubDate": "2026-09-03T21:40:23+02:00",
-      "bild": ""
-    },
-    {
-      "title": "BGH entscheidet Sampling-Rechtsstreit zugunsten von Moses Pelham",
-      "description": "Seit 27 Jahren wird ein Rechtsstreit zwischen der Elektroband Kraftwerk und dem Musikproduzenten Moses Pelham geführt. Nun hat der Bundesgerichtshof ein entscheidendes Urteil gefällt - mit Auswirkungen über den Fall hinaus. Von Max Bauer.",
-      "pubDate": "2026-09-03T19:04:38+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: DAX macht Boden gut",
-      "description": "Der jüngste Ausverkauf beim DAX ist zumindest kurzfristig gestoppt. Unklare Zins- und Inflationserwartungen aber bleiben, so dass die Lage angespannt bleibt. Positiv fiel heute die T-Aktie auf.",
-      "pubDate": "2026-09-03T18:31:52+02:00",
-      "bild": ""
-    },
-    {
-      "title": "ARD-DeutschlandTrend: Deutsche fühlen sich durch Russland bedroht",
-      "description": "Eine Mehrheit sieht durch Russland die Sicherheit Deutschlands stark bedroht. Das gilt laut ARD-DeutschlandTrend vor allem für ältere Menschen sowie Anhänger aller im Bundestag vertretenen Parteien - mit einer Ausnahme. Von Florian Riesewieck.",
-      "pubDate": "2026-09-03T18:00:08+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Frauenrechtsaktivistin Gloria Steinem mit 92 Jahren gestorben",
-      "description": "Sie war eine der führenden Stimmen der Frauenbewegung in den USA. Nun ist die Journalistin und Buchautorin Gloria Steinem im Alter von 92 Jahren in New York gestorben. Von Martin Ganslmeier.",
-      "pubDate": "2026-09-03T17:12:26+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Alphaville kritisiert Ausladung - darf doch auftreten, tut es aber nicht",
-      "description": "Zuerst wurde Alphaville von einem Festival ausgeladen, jetzt darf die Band doch auftreten - will aber nicht. Politische Botschaften auf der Bühne wollte sie sich nicht verbieten lassen. Sänger Marian Gold erklärt im Interview, warum.",
-      "pubDate": "2026-09-03T19:40:41+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Vertrauliches Lagebild - BKA zählt bereits 165 mutmaßliche Sabotageakte",
-      "description": "Bundesweit gab es in diesem Jahr bereits mehr als 160 Sabotageverdachtsfälle. Zudem wurden mehr als 740 verdächtige Drohnensichtungen gezählt. Das geht aus einem internen BKA-Lagebild hervor, das NDR, WDR und SZ vorliegt.",
-      "pubDate": "2026-09-03T16:00:22+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Junge Menschen trinken seltener Alkohol - Rauschtrinken weiter beliebt",
-      "description": "Junge Menschen in Deutschland trinken laut einer Studie seltener Alkohol. Der Vollrausch reizt allerdings nach wie vor einen konstanten Anteil der Jugendlichen - und zwar vor allem unter jungen Männern.",
-      "pubDate": "2026-09-03T15:44:42+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kanu-Olympiasieger Rauhe wird neuer Sportstaatsminister",
-      "description": "Vom Spitzensport in die Spitzenpolitik: Olympiasieger Ronald Rauhe wird Sportstaatsminister im Kanzleramt. Mit Politik hatte er bisher nicht viel zu tun. Aber der Kanzler wollte jemanden mit Sport-Erfahrung.",
-      "pubDate": "2026-09-03T15:20:44+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wetterphänomen El Niño wird überall zu spüren sein",
-      "description": "Dürren, Überschwemmungen, Taifune: Die Weltwetterorganisation rechnet in diesem Jahr mit einem Rekord-El-Niño - und zahlreichen Opfern im Pazifikraum. Auch Europa wird betroffen sein - aber auf andere Weise. Von Frank Bäumer.",
-      "pubDate": "2026-09-03T14:27:19+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Frankreich und Polen stellen sich nach Drohnen-Vorfall hinter Deutschland",
-      "description": "Russland die Stirn bieten und die Ukraine weiter unterstützen: Beim Treffen des Weimarer Dreiecks gibt es nach den Drohnen-Vorfällen Rückendeckung aus Frankreich und Polen für Deutschlands Kurs. Neue Maßnahmen gibt es aber nicht. Von D. von Osten.",
-      "pubDate": "2026-09-03T14:08:57+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Deutscher Umweltpreis für Klimajuristin und Membranforscher",
-      "description": "Klares Wasser aus Klärschlamm und klare Regeln für den Klimaschutz: Für ihr Engagement zu diesen Themen erhalten ein Membranfilter-Ingenieur und eine Juristin den Deutschen Umweltpreis.",
-      "pubDate": "2026-09-03T14:04:29+02:00",
       "bild": ""
     }
   ],
