@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "05.09.2026, 18:04 Uhr (UTC)",
+  "aktualisiert": "05.09.2026, 20:38 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "US-Rekordschulden von 40 Billionen Dollar beunruhigen Ökonomen",
+      "description": "Die US-Staatsschulden liegen inzwischen bei mehr als 40 Billionen Dollar. Immer mehr Geld aus dem Haushalt fließt so in Zinszahlungen - und weniger bleibt übrig für Investitionen in die Zukunft des Landes. Von Anne Schneider.",
+      "pubDate": "2026-09-05T21:14:33+02:00",
+      "bild": ""
+    },
     {
       "title": "Öffentliche Fahndung der Polizei: Sabotage-Verdächtiger weiter flüchtig",
       "description": "Ein 48-Jähriger hat sich in zwei Schreiben zu den versuchten Sabotageakten gegen das Stromnetz bekannt. Darin nennt er seinen Namen, er wurde aber noch nicht gefasst. Nun setzt die Polizei auf eine öffentliche Fahndung.",
@@ -82,14 +88,8 @@
     },
     {
       "title": "Hacker leaken Daten aus Berliner Landesnetz - BSI alarmiert",
-      "description": "Personalakten, Stundenzettel, Telefonnummern - im Darknet haben Hacker etwa 1,4 Millionen Daten veröffentlicht, die von der Berliner Verwaltung gestohlen wurden. Das zuständige Bundesamt warnt vor Risiken infolge des Leaks.",
+      "description": "Personalakten, Stundenzettel, Telefonnummern - im Darknet haben Hacker etwa 1,4 Millionen Daten veröffentlicht, die sie der Berliner Verwaltung gestohlen hatten. Das zuständige Bundesamt warnt vor Risiken infolge des Leaks.",
       "pubDate": "2026-09-05T16:03:56+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Flutkatastrophe im Himalaya: Nepals Wut auf die Verursacher des Klimawandels",
-      "description": "Nach der Sturzflut im Himalaya mit mehr als 1.000 Toten ist die Zerstörung groß. Während die Überlebenden ihre Habseligkeiten bergen, wächst der Zorn: Nepal stößt kaum CO2 aus, wird aber immer härter vom Klimawandel getroffen. Von L. Bodewein.",
-      "pubDate": "2026-09-05T09:29:51+02:00",
       "bild": ""
     }
   ],
