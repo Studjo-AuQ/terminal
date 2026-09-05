@@ -1,7 +1,43 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "05.09.2026, 12:32 Uhr (UTC)",
+  "aktualisiert": "05.09.2026, 15:54 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "USA greifen iranische Öltanker an",
+      "description": "Vor der Küste Irans hat das US-Militär drei iranische Öltanker außer Gefecht gesetzt. Es spricht von einer Reaktion auf Attacken der Revolutionsgarde: Diese soll zuvor Raketen auf Marineschiffe abgefeuert haben.",
+      "pubDate": "2026-09-05T17:17:36+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wahl in Sachsen-Anhalt: Welche Koalitionsoptionen gibt es?",
+      "description": "In den Umfragen zur Landtagswahl in Sachsen-Anhalt liegt die AfD vorne - zur Alleinregierung würde es demnach aber nicht reichen. Welche Szenarien denkbar sind und vor welchen Problemen die Parteien stehen.",
+      "pubDate": "2026-09-05T17:08:27+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Vermummte legen Hafen im südenglischen Dover lahm",
+      "description": "Mit Sturmhauben maskierte Personen haben zeitweise den Verkehr im südenglischen Hafen von Dover lahmgelegt. Offenbar handelte es sich um eine Protestaktion gegen Migranten, die regelmäßig in Schlauchbooten an der britischen Küste ankommen.",
+      "pubDate": "2026-09-05T16:42:26+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Vor den Wahlen in Ostdeutschland: Engagiert - und trotzdem machtlos",
+      "description": "Ob Fußballverein in Berlin, Krankenhausinitiative in Sachsen-Anhalt oder Bürgermeister in Mecklenburg-Vorpommern: Sie alle wollen etwas bewegen - und stoßen dabei immer wieder an Grenzen. Das kann Vertrauen in die Politik kosten. Von C. Bazydlo.",
+      "pubDate": "2026-09-05T16:09:11+02:00",
+      "bild": ""
+    },
+    {
+      "title": "50 Jahre Muppet Show: Die Kunst des gepflegten Unsinns",
+      "description": "Kleine Puppen mit großen Klappen - vor 50 Jahren startete die Muppet Show. Mit Miss Piggys und Kermits frechen Witzen, Musik und prominenten Gästen wurde aus Puppentheater eine weltweite Erfolgsgeschichte. Von Franziska Hoppen.",
+      "pubDate": "2026-09-05T15:17:16+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Kolumbien: Die harte Hand des Präsidenten fordert erste Opfer",
+      "description": "Kolumbiens neuer Präsident de la Espriella versprach, hart gegen bewaffnete Gruppen vorzugehen. In den ersten Wochen seiner Amtszeit lässt er seinen Worten mit enormem Tempo Taten folgen. Von Jenny Barke.",
+      "pubDate": "2026-09-05T14:49:26+02:00",
+      "bild": ""
+    },
     {
       "title": "Schüsse auf Kölner Bar abgefeuert - Polizei leitet Fahndung ein",
       "description": "In Köln wurden in der Nacht Schüsse auf eine Bar abgefeuert. Es ist nicht die erste Attacke auf einen Gastronomiebetrieb. Die Polizei ermittelt, ob es sich bei den Taten um Erpressungsversuche handeln könnte.",
@@ -10,8 +46,8 @@
     },
     {
       "title": "US-Sondergesandte Witkoff und Kushner zu Gesprächen in Moskau angekommen",
-      "description": "Neuer Anlauf in den US-Vermittlungen zwischen Russland und der Ukraine: Die Sondergesandten Kushner und Witkoff sind in Moskau gelandet. Morgen geht es für Gespräche nach Kiew. Die gegenseitigen Angriffe gehen derweil weiter.",
-      "pubDate": "2026-09-05T12:55:56+02:00",
+      "description": "Neuer Anlauf in den US-Vermittlungen zwischen Russland und der Ukraine: Die Sondergesandten Kushner und Witkoff sind in Moskau gelandet. Morgen geht es für Gespräche nach Kiew. Für gegenseitige Angriffe auf die Hauptstädte soll eine Feuerpause gelten.",
+      "pubDate": "2026-09-05T14:38:20+02:00",
       "bild": ""
     },
     {
@@ -23,7 +59,7 @@
     {
       "title": "Deutscher Schauspieler Michael Mendl mit 82 Jahren gestorben",
       "description": "Der deutsche Schauspieler Michael Mendl ist im Alter von 82 Jahren gestorben. Seinen Durchbruch hatte er im \"Tatort\". Insgesamt wirkte er in mehr als 200 Film- und Fernsehproduktionen mit.",
-      "pubDate": "2026-09-05T12:34:54+02:00",
+      "pubDate": "2026-09-05T17:15:07+02:00",
       "bild": ""
     },
     {
@@ -35,7 +71,7 @@
     {
       "title": "Hacker leaken Daten aus Berliner Landesnetz - BSI alarmiert",
       "description": "Personalakten, Stundenzettel, Telefonnummern - im Darknet haben Hacker etwa 1,4 Millionen Daten veröffentlicht, die von der Berliner Verwaltung gestohlen wurden. Das zuständige Bundesamt warnt vor Risiken infolge des Leaks.",
-      "pubDate": "2026-09-05T13:46:55+02:00",
+      "pubDate": "2026-09-05T16:03:56+02:00",
       "bild": ""
     },
     {
@@ -54,42 +90,6 @@
       "title": "Warum Schweden seine Gefangenen in Estland unterbringt",
       "description": "Steigende Kriminalität und verschärftes Strafrecht - in Schwedens Gefängnissen wird der Platz knapp. Das Land verlegt deshalb jetzt einen Teil seiner Häftlinge nach Estland. Es ist ein Deal, der nicht unumstritten ist. Von Christian Stichler.",
       "pubDate": "2026-09-05T08:10:34+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ist Sachsen-Anhalt wirtschaftlich abgehängt?",
-      "description": "Die Wirtschaftslage ist bei der Wahl in Sachsen-Anhalt ein wichtiges Thema. Das Bundesland altert und schrumpft, die Arbeitslosigkeit ist eher hoch. Manche Sorgen kennen aber auch Westregionen - und es gibt Standort-Vorteile. Von Bianca von der Au.",
-      "pubDate": "2026-09-05T07:25:59+02:00",
-      "bild": ""
-    },
-    {
-      "title": "So ist die Stimmung vor der Landtagswahl in Sachsen-Anhalt",
-      "description": "Vor der Landtagswahl in Sachsen-Anhalt dominieren Unzufriedenheit und Misstrauen. Die AfD führt in Umfragen. Integration, Bildung und Wirtschaft sind die wichtigsten Themen. Von Katharina Gebauer.",
-      "pubDate": "2026-09-05T07:25:50+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Friedensbemühungen - Trump-Gesandte reisen nach Moskau und Kiew",
-      "description": "US-Präsident Trump entsendet seine Unterhändler Witkoff und Kushner zu neuen Gesprächen über ein Ende des russischen Angriffskrieges gegen die Ukraine. Es sollen diesmal auch Verhandlungen in Kiew geplant sein.",
-      "pubDate": "2026-09-05T06:26:54+02:00",
-      "bild": ""
-    },
-    {
-      "title": "UN stimmen für neue Weltkarte - Afrika größer dargestellt",
-      "description": "Wer eine Weltkarte zückt, nutzt meist eine Mercator-Karte. Doch die für die Seefahrt entwickelte Karte verzerrt die Größenverhältnisse und lässt Afrika zu klein erscheinen. Die UN stimmten nun für eine neue, flächentreue Weltkarte.",
-      "pubDate": "2026-09-05T11:41:31+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Neue Vorwürfe gegen Farages Rechtspopulisten",
-      "description": "Die britischen Rechtspopulisten von Reform UK um Nigel Farage haben ihren Parteitag fortgesetzt - und müssen sich mit neuen Vorwürfen auseinandersetzen. Wieder geht es um Geld. Von Franziska Hoppen.",
-      "pubDate": "2026-09-05T00:05:27+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Sabotage an Umspannwerken - Polizei fahndet nach Verdächtigem aus NRW",
-      "description": "Nach der Sabotage an Umspannwerken in Nordrhein-Westfalen und Brandenburg fahndet die Polizei nach einem Verdächtigen. Der Mann hatte Bekennerschreiben verfasst. Ob er aber auch der Täter ist, ist noch offen.",
-      "pubDate": "2026-09-04T21:30:24+02:00",
       "bild": ""
     }
   ],
