@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "05.09.2026, 20:38 Uhr (UTC)",
+  "aktualisiert": "05.09.2026, 22:45 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Rakete Spectrum erreicht Orbit - \"Deutschland kann Raumfahrt\"",
+      "description": "Meilenstein in der deutschen Raumfahrtgeschichte: Die Trägerrakete Spectrum hat bei einem Testflug vom norwegischen Weltraumbahnhof Andøya aus den Orbit erreicht. Das Raketen-Unternehmen spricht von einer europäischen Premiere.",
+      "pubDate": "2026-09-06T00:20:33+02:00",
+      "bild": ""
+    },
+    {
+      "title": "US-Sondergesandte Witkoff und Kushner treffen Putin in Moskau",
+      "description": "Mit einer \"Idee für den Frieden\" sind die US-Sondergesandten Witkoff und Kushner nach Russland gereist und dort von Präsident Putin empfangen worden. Details des Friedensplans bleiben unbekannt - als nächstes wird er in Kiew vorgestellt.",
+      "pubDate": "2026-09-05T22:42:55+02:00",
+      "bild": ""
+    },
     {
       "title": "US-Rekordschulden von 40 Billionen Dollar beunruhigen Ökonomen",
       "description": "Die US-Staatsschulden liegen inzwischen bei mehr als 40 Billionen Dollar. Immer mehr Geld aus dem Haushalt fließt so in Zinszahlungen - und weniger bleibt übrig für Investitionen in die Zukunft des Landes. Von Anne Schneider.",
@@ -78,18 +90,6 @@
       "title": "Deutscher Schauspieler Michael Mendl mit 82 Jahren gestorben",
       "description": "Der deutsche Schauspieler Michael Mendl ist im Alter von 82 Jahren gestorben. Seinen Durchbruch hatte er im \"Tatort\". Insgesamt wirkte er in mehr als 200 Film- und Fernsehproduktionen mit.",
       "pubDate": "2026-09-05T17:15:07+02:00",
-      "bild": ""
-    },
-    {
-      "title": "EU-Kommission plant schärfere Regeln für Airbnb & Co.",
-      "description": "Sie blockieren dringend benötigten Wohnraum und treiben Mieten nach oben: Daher will die EU nun gegen Kurzzeitvermieter wie Airbnb vorgehen. In Paris, Barcelona und Venedig gibt es bereits Regeln, aber jetzt sind einheitliche Vorschriften geplant.",
-      "pubDate": "2026-09-05T11:17:45+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Hacker leaken Daten aus Berliner Landesnetz - BSI alarmiert",
-      "description": "Personalakten, Stundenzettel, Telefonnummern - im Darknet haben Hacker etwa 1,4 Millionen Daten veröffentlicht, die sie der Berliner Verwaltung gestohlen hatten. Das zuständige Bundesamt warnt vor Risiken infolge des Leaks.",
-      "pubDate": "2026-09-05T16:03:56+02:00",
       "bild": ""
     }
   ],
