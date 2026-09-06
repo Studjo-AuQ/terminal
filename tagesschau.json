@@ -1,11 +1,29 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "06.09.2026, 21:37 Uhr (UTC)",
+  "aktualisiert": "06.09.2026, 23:42 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Mindestens fünf Tote nach Unfall mit Amazon-Frachtflugzeug in Miami",
+      "description": "In Miami ist ein Amazon-Frachtflugzeug über die Landebahn hinausgeschossen und mit mehreren Fahrzeugen zusammengeprallt. Laut den Behörden kamen mindestens fünf Menschen ums Leben. Der Flugverkehr ist erheblich eingeschränkt.",
+      "pubDate": "2026-09-07T00:39:26+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Kommentar zur Wahl in Sachsen-Anhalt: Ratlos mit Ansage",
+      "description": "Die AfD hat die Wahl in Sachsen-Anhalt gewonnen. Das ist keine Überraschung. Doch weder Wahlsieger noch die anderen Parteien haben einen Plan, was sie mit dem Ergebnis machen, meint Gabor Halasz.",
+      "pubDate": "2026-09-06T23:52:36+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Sorge bei jüdischen Organisationen und Kirchen nach AfD-Erfolg",
+      "description": "Nach dem AfD-Sieg in Sachsen-Anhalt äußern sich Kirchen und jüdische Organisationen besorgt. Holocaust-Überlebende wie Charlotte Knobloch reagieren fassungslos. In mehreren Städten gab es Demonstrationen.",
+      "pubDate": "2026-09-06T23:39:17+02:00",
+      "bild": ""
+    },
     {
       "title": "Analyse zur Wahl in Sachsen-Anhalt: Ein Land - zwei Lager",
       "description": "Die AfD profitiert von der Unzufriedenheit der Menschen, aber sie überzeugt viele auch inhaltlich mehr als die anderen Parteien, wie Umfragen zeigen. Für die meisten Wähler in Sachsen-Anhalt war die Kernfrage: für oder gegen die AfD? Von H. Schwesinger.",
-      "pubDate": "2026-09-06T22:56:09+02:00",
+      "pubDate": "2026-09-06T23:53:59+02:00",
       "bild": ""
     },
     {
@@ -59,7 +77,7 @@
     {
       "title": "Reaktionen auf Wahl in Sachsen-Anhalt: AfD-Chefs sehen \"klaren Regierungsauftrag\"",
       "description": "Die AfD feiert ihren Wahlsieg in Sachsen-Anhalt überschwänglich. Die Parteichefs Weidel und Chrupalla sehen in Spitzenkandidat Siegmund den nächsten Ministerpräsidenten. Die CDU lehnt eine Koalition mit der AfD weiter ab.",
-      "pubDate": "2026-09-06T21:29:48+02:00",
+      "pubDate": "2026-09-06T23:42:58+02:00",
       "bild": ""
     },
     {
@@ -72,24 +90,6 @@
       "title": "Warum konnte die AfD in Sachsen-Anhalt so stark zulegen?",
       "description": "Die AfD ist in Sachsen-Anhalt klar stärkste Kraft geworden. Was sind die Gründe? Was sagen Wählende über die Partei? Wo sehen sie die Kompetenzen? Eine Erklärung in Umfrage-Grafiken von infratest dimap.",
       "pubDate": "2026-09-06T18:51:09+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wie die Wählenden in Sachsen-Anhalten wanderten",
-      "description": "Woher kommen die Zugewinne der AfD? Von welchen Parteien wandten sich frühere Wählerinnen und Wähler ab? Und wem gaben sie diesmal ihre Stimme? Die Wählerwanderung in Sachsen-Anhalt auf Basis der Zahlen von infratest dimap.",
-      "pubDate": "2026-09-06T18:46:56+02:00",
-      "bild": ""
-    },
-    {
-      "title": "++ Liveticker zur Sachsen-Anhalt-Wahl: Siegmund lehnt BSW-Vorschlag ab ++",
-      "description": "Das BSW hatte vorgeschlagen, einen überparteilichen Ministerpräsidenten mit wechselnden Mehrheiten zu wählen. AfD-Spitzenkandidat Siegmund lehnt das ab, die Idee halte er für \"Gewurschtel\". Die FDP-Spitzenkandidatin Hüskens will zurücktreten.",
-      "pubDate": "2026-09-06T23:34:23+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wahl in Sachsen Anhalt: Der größte Wahlerfolg der AfD",
-      "description": "Die CDU erlebt in Sachsen-Anhalt laut ARD-Prognose ein Desaster. Die AfD liegt bei Männern und Frauen, jungen wie älteren Wählern vorn. Abzuwarten bleibt, ob es das BSW in den Landtag schafft - und welche Mehrheiten dann möglich sind. Von Jörg Schönenborn.",
-      "pubDate": "2026-09-06T18:11:32+02:00",
       "bild": ""
     }
   ],
