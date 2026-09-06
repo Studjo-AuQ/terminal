@@ -1,7 +1,43 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "06.09.2026, 17:17 Uhr (UTC)",
+  "aktualisiert": "06.09.2026, 19:26 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Hackerangriff: Neues Datenpaket aus Berliner Landesnetz aufgetaucht",
+      "description": "Nach dem Hackerangriff auf das Berliner Landesnetz sind weitere Daten im Darknet aufgetaucht. Bei der betroffenen Senatsbauverwaltung könnte es jetzt zu Einschränkungen kommen.",
+      "pubDate": "2026-09-06T20:51:30+02:00",
+      "bild": ""
+    },
+    {
+      "title": "US-Sondergesandte in Kiew: Noch kein Durchbruch bei Friedensgesprächen",
+      "description": "Nach ihrem Treffen mit dem russischen Präsidenten sind die US-Vermittler Witkoff und Kushner weiter nach Kiew gereist. Dort zeigten sie sich verhalten optimistisch. Präsident Selenskyj hofft auf die Wiederaufnahme trilateraler Verhandlungen.",
+      "pubDate": "2026-09-06T20:38:04+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wer Die Linke in Sachsen-Anhalt wählte und warum",
+      "description": "Die Linke bleibt drittstärkste Kraft in Sachsen-Anhalt. Was bewegt ihre Wähler? Was wünschen sie sich? Ein Überblick mit Umfrage-Grafiken von infratest dimap.",
+      "pubDate": "2026-09-06T20:04:18+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wie die Wählenden in Sachsen-Anhalt über das BSW denken",
+      "description": "Das BSW trat zum ersten Mal in Sachsen-Anhalt bei einer Landtagswahl an. Welche Themen bewegten und überzeugten ihre Wählenden? Was erwarten sie? Ein Überblick mit Umfrage-Grafiken von infratest dimap.",
+      "pubDate": "2026-09-06T19:56:45+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Reaktionen auf Wahl in Sachsen-Anhalt: AfD-Chefs sehen \"klaren Regierungsauftrag\"",
+      "description": "Die AfD feiert ihren Wahlsieg in Sachsen-Anhalt überschwänglich. Die Parteichefs Weidel und Chrupalla sehen in Spitzenkandidat Siegmund den nächsten Ministerpräsidenten. Die CDU lehnt eine Koalition mit der AfD weiter ab.",
+      "pubDate": "2026-09-06T20:47:53+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wahlverhalten bei der Landtagswahl in Sachsen-Anhalt 2026",
+      "description": "Für wen stimmten Frauen in Sachsen-Anhalt und für wen Männer? Welche Partei war bei jungen Wählenden stark und welche bei älteren? Das Wahlverhalten der Bevölkerungsgruppen im interaktiven Überblick.",
+      "pubDate": "2026-09-06T19:52:55+02:00",
+      "bild": ""
+    },
     {
       "title": "Warum konnte die AfD in Sachsen-Anhalt so stark zulegen?",
       "description": "Die AfD ist in Sachsen-Anhalt klar stärkste Kraft geworden. Was sind die Gründe? Was sagen Wählende über die Partei? Wo sehen sie die Kompetenzen? Eine Erklärung in Umfrage-Grafiken von infratest dimap.",
@@ -15,9 +51,9 @@
       "bild": ""
     },
     {
-      "title": "++ Liveticker zur Sachsen-Anhalt-Wahl: Neue Hochrechnung: AfD bei 44,4 Prozent ++",
-      "description": "44,5 Prozent für die AfD laut ARD-Hochrechnung - das schockiert viele in Berlin. SPD-Generalsekretär Klüssendorf bezeichnete das Abschneiden der in Sachsen-Anhalt als rechtsextremistisch eingestuften Partei als \"wirklich dramatisch\".",
-      "pubDate": "2026-09-06T19:06:16+02:00",
+      "title": "++ Liveticker zur Sachsen-Anhalt-Wahl: BSW laut Hochrechnung im Landtag ++",
+      "description": "Das BSW hat der aktuellen Hochrechnung zufolge den Einzug in den neu gewählten Landtag von Sachsen-Anhalt knapp geschafft. Die FDP scheitert hingegen an der Fünf-Prozent-Hürde. Nun will die Spitzenkandidatin Hüskens zurücktreten.",
+      "pubDate": "2026-09-06T21:21:49+02:00",
       "bild": ""
     },
     {
@@ -34,8 +70,8 @@
     },
     {
       "title": "Hochrechnung zur Wahl in Sachsen-Anhalt: AfD mit Rekordergebnis - CDU stürzt ab",
-      "description": "Die AfD gewinnt erstmals eine Landtagswahl in Sachsen-Anhalt und erreicht laut ARD-Hochrechnung ein Rekordergebnis. Die CDU verliert deutlich. Linke, Grüne und SPD ziehen sicher ins Parlament ein. Das BSW muss zittern.",
-      "pubDate": "2026-09-06T19:13:54+02:00",
+      "description": "Die AfD gewinnt erstmals eine Landtagswahl in Sachsen-Anhalt und erreicht laut ARD-Hochrechnung ein Rekordergebnis. Die CDU verliert deutlich. Linke, SPD und Grüne ziehen sicher ins Parlament ein. Das BSW bewältigt vermutlich die Fünf-Prozent-Hürde.",
+      "pubDate": "2026-09-06T21:25:11+02:00",
       "bild": ""
     },
     {
@@ -54,42 +90,6 @@
       "title": "Bundespolitiker fordern Konsequenzen nach Hackerangriff in Berlin",
       "description": "Nach dem Hackerangriff in Berlin wurden offenbar auch hochsensible Daten zu Bundeswehr und kritischer Infrastruktur veröffentlicht. CDU-Sicherheitsexperte Kiesewetter sieht eine \"Katastrophe noch nicht absehbaren Ausmaßes\". Von J. F. Willems.",
       "pubDate": "2026-09-06T14:18:50+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Hambacher Forst: Großfahndung nach mutmaßlichem Stromnetz-Saboteur",
-      "description": "Seit Tagen sucht die Polizei nach einem 48-Jährigen aus NRW, der für versuchte Sabotageakte gegen das deutsche Stromnetz verantwortlich sein soll. Jetzt läuft ein Großeinsatz am Hambacher Forst.",
-      "pubDate": "2026-09-06T14:14:36+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ist das Leben in New York für junge Berufstätige noch bezahlbar?",
-      "description": "Galoppierende Preise treffen in den USA besonders junge Leute in den großen Städten. Beispiel New York: Hier müssen auch Berufstätige erfinderisch werden, wenn es um Ausgaben im Alltag geht. Von Martina Buttler.",
-      "pubDate": "2026-09-06T13:18:04+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Landtagswahl in Sachsen-Anhalt: Sorgen um Wirtschaft und steigende Preise",
-      "description": "Die CDU kämpft bei der Wahl in Sachsen-Anhalt mit einer AfD im Höhenflug - und mit Gegenwind aus Berlin. Die Unzufriedenheit mit Kanzler Merz ist groß, die Beunruhigung bei Wählerinnen und Wählern auch. Von Jörg Schönenborn.",
-      "pubDate": "2026-09-06T13:01:43+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wie Kairos Müllstadt vom Iran-Krieg profitiert",
-      "description": "Mehr als 20 Millionen Menschen leben laut Schätzungen im Großraum Kairo - dennoch gibt es kein öffentliches System zur Müllentsorgung. Fast alles landet in der \"Müllstadt\". Dort ist derzeit vor allem ein Material nachgefragt. Von Paul Jens.",
-      "pubDate": "2026-09-06T12:47:32+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Tote und Verletzte bei neuen Angriffen Israels im Libanon",
-      "description": "Israel hat erneut Ziele im Libanon angegriffen. Dabei starben nach libanesischen Angaben vier Menschen, 20 weitere wurden verletzt, darunter auch Frauen und Kinder. Zuvor soll die Hisbollah israelische Soldaten mit Drohnen attackiert haben.",
-      "pubDate": "2026-09-06T12:17:03+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Gesandte in Russland und der Ukraine: Krieg und Friedensgespräche",
-      "description": "Nach ihrem Treffen mit Kremlchef Putin in Moskau sind die US-Sondergesandten Kushner und Witkoff in Kiew eingetroffen, um mit Präsident Selenskyj zu reden. Während der Gespräche gilt in beiden Städten eine Waffenruhe - andernorts gehen die Angriffe weiter.",
-      "pubDate": "2026-09-06T12:40:04+02:00",
       "bild": ""
     }
   ],
