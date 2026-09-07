@@ -14,7 +14,12 @@
         </div>
     </header>
     <main>
-        <h1><b>Fahrplanauskunft f&uuml;r Busse</b></h1>
+        <div class="page-header-row">
+    <a href="index.html" target="_self" class="back-button">
+        <span aria-hidden="true">←</span> Zurück
+    </a>
+    <h1>🚌 Fahrplanauskunft f&uuml;r Busse</h1>
+</div>
 
         <style>
     /* Überschreibt das Standard-tile-grid für diese Seite:
@@ -31,12 +36,6 @@
     }
 </style>
 <div class="tile-grid">
-
-    <!-- Kachel 1: Zurück -->
-    <a href="index.html" target="_self" class="tile tile-color-11">
-        <img src="back.jpg" alt="zurück" class="tile-img">
-        <h2>Hier geht's zurück...</h2>
-    </a>
 
     <!-- Kachel 2: Fahrplanauskunft -->
     <a href="anzeige busse.html" target="_self" class="tile tile-color-8">
@@ -325,16 +324,20 @@ function adresseKopieren(btn, text) {
     <!-- ══ FOOTER ══ -->
 <footer style="
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 16px;
   background: #b61f29;
   color: #ffffff;
   font-size: 0.85rem;
-  line-height: 1.8;
+  line-height: 1.6;
 ">
   © 2026 <strong>Studjo | Arbeit und Qualifizierung</strong>
-   ·  Evangelisches Johanneswerk gGmbH
-   ·  Barrierefreier Zugang
+   ·  Evangelisches Johanneswerk gGmbH
   <br>
+  <a href="index.html"
+     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Startseite
+  </a>
+   | 
   <a href="uebersicht.html"
      style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
     Übersicht
@@ -344,7 +347,7 @@ function adresseKopieren(btn, text) {
      style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
     Impressum
   </a>
-   | 
+   | 
   <a href="datenschutz.html"
      style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
     Datenschutz
