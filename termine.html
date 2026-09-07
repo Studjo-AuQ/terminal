@@ -600,6 +600,19 @@
         // =====================================================================
         // VORLESEN JE SPALTE (unabhängig vom "H"-Button)
         // =====================================================================
+
+        /* Bereitet einen Text für die Sprachausgabe auf:
+           - Entfernt Emojis (werden sonst z. B. als "Ein Uhr" wörtlich
+             vorgelesen, siehe 🕐)
+           - Wandelt Uhrzeit-Spannen wie "13:00 – 16:00" in "von 13:00
+             bis 16:00" um, damit sie als Zeitspanne verstanden werden
+             statt als zwei einzelne Uhrzeiten hintereinander */
+        function bereiteVorlesenText(text) {
+            text = text.replace(/\p{Extended_Pictographic}/gu, '');
+            text = text.replace(/(\d{1,2}[:.]\d{2})\s*[–—-]\s*(\d{1,2}[:.]\d{2})/g, 'von $1 bis $2');
+            return text.replace(/\s+/g, ' ').trim();
+        }
+
         function vorleseSpalte(button) {
             if (!('speechSynthesis' in window)) {
                 alert('Dein Browser unterstützt leider keine Sprachausgabe.');
@@ -617,7 +630,9 @@
             if (warAktiv) return;
 
             const spalte = button.closest('.termine-column');
-            const titel = spalte.querySelector('.termine-header-titel').innerText.trim();
+            const titel = bereiteVorlesenText(
+                spalte.querySelector('.termine-header-titel').innerText
+            );
 
             const abschnitte = [titel + '.'];
 
@@ -628,7 +643,7 @@
                 const teile = [];
                 karte.querySelectorAll('.event-date, .event-title, .event-time, .event-note')
                     .forEach(el => {
-                        const text = el.innerText.trim();
+                        const text = bereiteVorlesenText(el.innerText);
                         if (text) teile.push(text);
                     });
                 if (teile.length > 0) abschnitte.push(teile.join(', ') + '.');
