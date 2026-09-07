@@ -50,44 +50,59 @@ function kandidatenFuerDatum(datum) {
     ];
 }
 
-/* Ab 15:00 Uhr wird bereits der Folgetag angezeigt/umrandet
-   ("Morgen"), um Mitternacht springt es automatisch auf "Heute"
-   zurück. Fällt der Zieltag aufs Wochenende, wird auf den nächsten
-   Montag weitergesprungen. Gilt nur für die Kachel "Aktuelle Woche"
-   (woche=0) – bei "Nächste Woche"/"In 2 Wochen" ergibt ein
-   Zeitversatz konzeptionell keinen Sinn. */
-function effektivesZiel() {
+/* ── Wochen-Auswahl (welche der 3 PDF-Dateien) ──
+   Wechselt NUR montags um 7:00 Uhr, unabhängig von der Tageszeit
+   sonst. Das Wochenende (Sa/So) gehört durch die normale ISO-Woche-
+   Berechnung ohnehin schon zur gerade laufenden (Freitag-)Woche –
+   nur der Montagmorgen braucht eine kleine Verzögerung, damit die
+   3 Kacheln nicht schon um Mitternacht umspringen. */
+function wochenBasisDatum() {
     const jetzt = new Date();
+    if (jetzt.getDay() === 1 && jetzt.getHours() < 7) {
+        const zurueck = new Date(jetzt);
+        zurueck.setDate(zurueck.getDate() - 3); // auf Freitag der Vorwoche zurück
+        return zurueck;
+    }
+    return jetzt;
+}
+
+/* ── Blackout-Fenster für die Tages-Vorschau ──
+   Freitag ab 15:00 Uhr bis Montag 7:00 Uhr: kein Werkstattbetrieb,
+   daher auch keine "Heute/Morgen"-Umrandung. */
+function istBlackout(jetzt) {
+    const tag = jetzt.getDay(); // 0=So … 6=Sa
+    if (tag === 6 || tag === 0) return true;
+    if (tag === 5 && jetzt.getHours() >= 15) return true;
+    if (tag === 1 && jetzt.getHours() < 7) return true;
+    return false;
+}
+
+/* Ab 15:00 Uhr (Mo-Do) wird bereits der Folgetag umrandet ("Morgen"),
+   um Mitternacht springt es automatisch auf "Heute" zurück. Während
+   des Blackout-Fensters (siehe oben) wird nichts umrandet. Gilt nur
+   für die Kachel "Aktuelle Woche" (woche=0). */
+function effektiverTag() {
+    const jetzt = new Date();
+    if (istBlackout(jetzt)) return null;
+
     let ziel = new Date(jetzt);
     let istMorgen = false;
-
     if (jetzt.getHours() >= 15) {
         ziel.setDate(ziel.getDate() + 1);
         istMorgen = true;
     }
 
-    let wochentagIndex = (ziel.getDay() + 6) % 7;
-    let uebersprungen = false;
-    while (wochentagIndex > 4) {
-        ziel.setDate(ziel.getDate() + 1);
-        wochentagIndex = (ziel.getDay() + 6) % 7;
-        uebersprungen = true;
-    }
-
-    let label;
-    if (uebersprungen) label = WOCHENTAGE[wochentagIndex];
-    else if (istMorgen) label = 'Morgen';
-    else label = 'Heute';
-
+    const wochentagIndex = (ziel.getDay() + 6) % 7;
+    const label = istMorgen ? 'Morgen' : 'Heute';
     return { ziel, wochentagIndex, label };
 }
 
-/* Basisdatum für die Dateisuche: bei "Aktuelle Woche" (offset 0)
-   der ggf. verschobene effektive Zieltag, bei den anderen beiden
-   Kacheln unverändert das echte heutige Datum + Wochen-Offset. */
+/* Basisdatum für die Dateisuche: IMMER das stabile Wochen-Basisdatum
+   (siehe wochenBasisDatum) plus den Wochen-Offset der jeweiligen
+   Kachel – unabhängig von der Tageszeit. So können "Aktuelle Woche"
+   und "Nächste Woche" nie auf dieselbe Datei zeigen. */
 function basisDatumFuerOffset(offsetWochen) {
-    if (offsetWochen === 0) return effektivesZiel().ziel;
-    const datum = new Date();
+    const datum = new Date(wochenBasisDatum());
     datum.setDate(datum.getDate() + offsetWochen * 7);
     return datum;
 }
@@ -190,9 +205,10 @@ async function renderSeite(nummer) {
    die tatsächliche Anzeigegröße umgerechnet. */
 async function zeichneTagesRahmen(seite) {
     // Diese Funktion wird nur noch aufgerufen, wenn offset === 0 ist
-    // (siehe renderSeite) – daher hier immer der effektive Zieltag.
-    const { wochentagIndex } = effektivesZiel();
-    if (wochentagIndex > 4) return; // Wochenende (bei offset 0 durch effektivesZiel() bereits ausgeschlossen)
+    // (siehe renderSeite).
+    const tag = effektiverTag();
+    if (tag === null) return; // Blackout-Fenster (Wochenende/Freitagnachmittag/Montagfrüh) – nichts umranden
+    const { wochentagIndex } = tag;
 
     const ANALYSE_BREITE = 1754;
     const basisViewport = seite.getViewport({ scale: 1 });
@@ -225,7 +241,7 @@ async function zeichneTagesRahmen(seite) {
     ctx.strokeRect(rand, startYSkaliert + rand / 2, canvas.width - rand * 2, (endeYSkaliert - startYSkaliert) - rand);
     ctx.restore();
 
-    const bezeichnung = effektivesZiel().label;
+    const bezeichnung = tag.label;
     srHinweisEl.textContent =
         bezeichnung + ': ' + WOCHENTAGE[wochentagIndex] + '. ' +
         'Die entsprechende Zeile ist auf dem Speiseplan grün umrandet.';
@@ -283,17 +299,17 @@ async function start() {
 }
 
 ladeEl.hidden = false;
-let letztesBasisdatum = basisDatumFuerOffset(offset).toDateString();
+let letzterZustand = basisDatumFuerOffset(offset).toDateString() + '|' + istBlackout(new Date());
 start();
 
 // Terminal-Seiten bleiben oft dauerhaft geöffnet. Alle 5 Minuten
-// prüfen, ob sich das Basisdatum geändert hat (15-Uhr-Grenze bei
-// "Aktuelle Woche", oder ganz normal Mitternacht) – nur dann wird
-// neu geladen, um unnötige Arbeit zu vermeiden.
+// prüfen, ob sich das Basisdatum ODER der Blackout-Status geändert
+// hat (z. B. Montag 7 Uhr für die Datei, Freitag 15 Uhr fürs
+// Blackout-Fenster) – nur dann wird neu geladen.
 setInterval(() => {
-    const neuesBasisdatum = basisDatumFuerOffset(offset).toDateString();
-    if (neuesBasisdatum !== letztesBasisdatum) {
-        letztesBasisdatum = neuesBasisdatum;
+    const neuerZustand = basisDatumFuerOffset(offset).toDateString() + '|' + istBlackout(new Date());
+    if (neuerZustand !== letzterZustand) {
+        letzterZustand = neuerZustand;
         start();
     }
 }, 5 * 60 * 1000);

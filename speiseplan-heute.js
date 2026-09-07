@@ -51,36 +51,49 @@ function kandidatenFuerDatum(datum) {
     ];
 }
 
-/* Ab 15:00 Uhr wird bereits der Folgetag angezeigt (Beschriftung
-   "Morgen"), damit Beschäftigte sich schon auf morgen einstellen
-   können. Um Mitternacht springt die Beschriftung automatisch auf
-   "Heute" zurück, da dann kein Zeitversatz mehr vorliegt. Fällt der
-   Zieltag auf ein Wochenende, wird auf den nächsten Montag
-   weitergesprungen (Beschriftung zeigt dann den Wochentagsnamen
-   statt "Morgen", da es sich um mehr als einen Tag Vorlauf handelt). */
-function effektivesZiel() {
+/* ── Wochen-Auswahl (welche PDF-Datei) ──
+   Wechselt NUR montags um 7:00 Uhr, unabhängig von der Tageszeit
+   sonst. Wichtig: Diese Funktion bestimmt AUSSCHLIESSLICH, welche
+   Woche als "aktuelle Woche" gilt – unabhängig davon, ob gerade
+   "Heute" oder schon "Morgen" angezeigt wird (siehe effektiverTag). */
+function wochenBasisDatum() {
     const jetzt = new Date();
+    if (jetzt.getDay() === 1 && jetzt.getHours() < 7) {
+        const zurueck = new Date(jetzt);
+        zurueck.setDate(zurueck.getDate() - 3); // auf Freitag der Vorwoche zurück
+        return zurueck;
+    }
+    return jetzt;
+}
+
+/* ── Blackout-Fenster ──
+   Freitag ab 15:00 Uhr bis Montag 7:00 Uhr: kein Werkstattbetrieb,
+   daher auch kein "Heute/Morgen"-Tagesangebot. */
+function istBlackout(jetzt) {
+    const tag = jetzt.getDay(); // 0=So … 6=Sa
+    if (tag === 6 || tag === 0) return true;
+    if (tag === 5 && jetzt.getHours() >= 15) return true;
+    if (tag === 1 && jetzt.getHours() < 7) return true;
+    return false;
+}
+
+/* Ab 15:00 Uhr (Mo-Do) wird bereits der Folgetag angezeigt
+   (Beschriftung "Morgen"), um Mitternacht springt es automatisch auf
+   "Heute" zurück. Während des Blackout-Fensters (siehe oben) liefert
+   diese Funktion null – dann wird die Wochenend-Meldung angezeigt. */
+function effektiverTag() {
+    const jetzt = new Date();
+    if (istBlackout(jetzt)) return null;
+
     let ziel = new Date(jetzt);
     let istMorgen = false;
-
     if (jetzt.getHours() >= 15) {
         ziel.setDate(ziel.getDate() + 1);
         istMorgen = true;
     }
 
-    let wochentagIndex = (ziel.getDay() + 6) % 7;
-    let uebersprungen = false;
-    while (wochentagIndex > 4) {
-        ziel.setDate(ziel.getDate() + 1);
-        wochentagIndex = (ziel.getDay() + 6) % 7;
-        uebersprungen = true;
-    }
-
-    let label;
-    if (uebersprungen) label = WOCHENTAGE[wochentagIndex];
-    else if (istMorgen) label = 'Morgen';
-    else label = 'Heute';
-
+    const wochentagIndex = (ziel.getDay() + 6) % 7;
+    const label = istMorgen ? 'Morgen' : 'Heute';
     return { ziel, wochentagIndex, label };
 }
 
@@ -125,46 +138,30 @@ function findeLinien(canvas, achse, schwelle = 0.5, dunkelWert = 130) {
 }
 
 /* Schneidet jede Zeile an der ersten öffnenden eckigen Klammer ab. */
-/* Version 2 – behebt einen Fehler der Vorgängerversion: Tesseract
-   teilt eine lange Klammer-Angabe manchmal auf zwei eigene "Zeilen"
-   auf (z. B. "Erbsen [GG, WZ, ... /" auf einer Zeile, "kcal: 249]"
-   auf der nächsten). Da die alte Version jede Zeile einzeln
-   behandelt hat, fehlte auf der zweiten Zeile die öffnende Klammer,
-   sodass der Rest ungefiltert durchrutschte.
+/* Version 3 – zusätzlicher Vertrauens-Filter (Bug: Tesseract erkennt
+   gelegentlich einzelne Wörter/Zeilen falsch, z. B. "mit Vanillesoße"
+   wird zu "u lesoße". Das ist kein Struktur-Problem (Klammern werden
+   schon richtig erkannt), sondern ein reiner Zeichen-Erkennungsfehler.
+   Tesseract liefert für jede erkannte Zeile eine eigene Vertrauens-
+   Angabe (0-100) mit – Zeilen unterhalb der Schwelle werden jetzt
+   komplett verworfen statt als Buchstabensalat angezeigt zu werden.
+   Besser eine fehlende Zeile als eine falsche. */
+const MINDEST_KONFIDENZ = 55;
 
-   Neuer Ansatz:
-   1. Alle Zeilen der Zelle werden zu einem durchgehenden Text
-      zusammengefügt. Dadurch bilden eine über zwei OCR-Zeilen
-      verteilte öffnende und schließende Klammer wieder ein
-      vollständiges Paar.
-   2. Vollständige [...]-Blöcke werden entfernt und dienen dabei
-      GLEICHZEITIG als Trenner zwischen den einzelnen Gerichten einer
-      Zelle (Muster: "Gericht 1 [Code] Gericht 2 [Code] Gericht 3
-      [Code]").
-   3. Nur falls die Texterkennung eine Klammer komplett übersehen hat,
-      greift ein Sicherheitsnetz: typische Klammer-Inhalte (kcal-
-      Angabe) werden gezielt entfernt, und übermäßig lange Reste
-      werden am Wortende gekürzt statt mitten im Wort. */
-function bereinigeText(roh) {
-    let text = roh.replace(/\s*\n\s*/g, ' ');
+function bereinigeZeilen(zeilenMitKonfidenz) {
+    const guteZeilen = zeilenMitKonfidenz
+        .filter(z => z.confidence === undefined || z.confidence >= MINDEST_KONFIDENZ)
+        .map(z => z.text);
 
-    // Vollständige Klammer-Blöcke entfernen UND als Trenner zwischen
-    // den Gerichten nutzen
+    let text = guteZeilen.join(' ');
     text = text.replace(/\[[^\]]*\]/g, '\n');
-
-    // Sicherheitsnetz: falls die öffnende Klammer trotzdem fehlte
     text = text.replace(/kcal:?\s*\d+\s*\]?/gi, '\n');
     text = text.replace(/[\[\]]/g, ' ');
 
     return text
         .split(/\n+/)
         .map(zeile => zeile.replace(/[|_~]/g, '').replace(/\s+/g, ' ').trim())
-        // Nur Zeilen mit echten Buchstaben behalten (filtert reine
-        // Zahlen-/Code-Reste wie ", 12, 3, 2" heraus)
         .filter(zeile => zeile.length > 1 && /[a-zäöüß]/i.test(zeile))
-        // Sicherheitsnetz gegen sehr lange Reste (nur falls eine
-        // Klammer komplett unerkannt blieb) – kürzt am Wortende,
-        // nicht mitten im Wort
         .map(zeile => kuerzeAmWortende(zeile, 60))
         .join('\n');
 }
@@ -235,21 +232,26 @@ async function start() {
     kartenWrap.hidden = true;
     wochenendEl.hidden = true;
 
-    const { ziel, wochentagIndex, label } = effektivesZiel();
+    const tag = effektiverTag();
 
-    if (wochentagIndex > 4) {
-        // Sollte durch effektivesZiel() nicht mehr vorkommen
-        // (Wochenende wird automatisch auf Montag verschoben),
-        // bleibt als Sicherheitsnetz bestehen.
+    if (tag === null) {
+        // Blackout-Fenster: Freitag ab 15 Uhr bis Montag 7 Uhr
         ladeEl.hidden = true;
         wochenendEl.hidden = false;
         return;
     }
 
+    const { ziel, wochentagIndex, label } = tag;
+
     heuteMorgenEl.textContent = (label === 'Heute' || label === 'Morgen') ? label : 'Am';
     tagLabelEl.textContent = WOCHENTAGE[wochentagIndex];
 
-    const kandidaten = kandidatenFuerDatum(ziel);
+    // WICHTIG: Die Datei-Auswahl nutzt bewusst NICHT "ziel" (das kann
+    // durch die 15-Uhr-Vorschau schon der Folgetag sein), sondern das
+    // stabile Wochen-Basisdatum – Datei und Vorschautag sind zwei
+    // unabhängige Dinge. Innerhalb einer Woche ist das ohnehin
+    // dieselbe Datei, das ist hier nur zur Klarheit sauber getrennt.
+    const kandidaten = kandidatenFuerDatum(wochenBasisDatum());
     let stufe = 'Datei suchen';
 
     try {
@@ -346,7 +348,17 @@ async function start() {
             const zelleSw  = schwarzWeiss(zelleRoh);
 
             const { data } = await worker.recognize(zelleSw);
-            const text = bereinigeText(data.text);
+
+            // Tesseract liefert idealerweise data.lines mit Vertrauens-
+            // Wert je Zeile. Falls das aus irgendeinem Grund fehlt
+            // (abhängig von Tesseract.js-Version), auf den reinen Text
+            // ohne Vertrauens-Filter zurückfallen, statt ganz zu
+            // scheitern.
+            const zeilenMitKonfidenz = (data.lines && data.lines.length > 0)
+                ? data.lines.map(l => ({ text: l.text, confidence: l.confidence }))
+                : data.text.split('\n').map(t => ({ text: t, confidence: undefined }));
+
+            const text = bereinigeZeilen(zeilenMitKonfidenz);
 
             const karte = kartenWrap.children[spalte];
             karte.querySelector('.sp-heute-spalten-name').textContent = SPALTEN_LABEL[spalte] || '';
@@ -387,17 +399,16 @@ async function start() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    let letzterZielTag = effektivesZiel().ziel.toDateString();
+    let letzterZustand = wochenBasisDatum().toDateString() + '|' + istBlackout(new Date());
     start();
 
-    // Alle 5 Minuten prüfen, ob sich der effektive Zieltag geändert hat
-    // (z. B. weil es 15:00 Uhr oder Mitternacht wurde). Nur in diesem
-    // Fall wird die komplette Erkennung neu durchlaufen – nicht bei
-    // jeder Prüfung, um unnötige OCR-Läufe zu vermeiden.
+    // Alle 5 Minuten prüfen, ob sich das Wochen-Basisdatum ODER der
+    // Blackout-Status geändert hat (z. B. Montag 7 Uhr oder Freitag
+    // 15 Uhr) – nur dann wird die komplette Erkennung neu durchlaufen.
     setInterval(() => {
-        const neuerZielTag = effektivesZiel().ziel.toDateString();
-        if (neuerZielTag !== letzterZielTag) {
-            letzterZielTag = neuerZielTag;
+        const neuerZustand = wochenBasisDatum().toDateString() + '|' + istBlackout(new Date());
+        if (neuerZustand !== letzterZustand) {
+            letzterZustand = neuerZustand;
             start();
         }
     }, 5 * 60 * 1000);
