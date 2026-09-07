@@ -212,7 +212,44 @@
         }
 
        
-    </style>
+    
+/* ── Einheitliche Kopfzeile: Zurück-Button + Überschrift ── */
+.page-header-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+.page-header-row h1 {
+    margin: 0;
+    text-align: left;
+    font-weight: 800;
+}
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    padding: 10px 24px;
+    border: 2px solid var(--primary-red);
+    border-radius: 999px;
+    background-color: #ffffff;
+    color: var(--primary-red);
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+.back-button:hover {
+    background-color: var(--primary-red);
+    color: #ffffff;
+}
+.back-button:focus-visible {
+    outline: 3px solid var(--text-color, #0f2f37);
+    outline-offset: 3px;
+}
+</style>
 </head>
 <body>
 
@@ -223,18 +260,16 @@
     </header>
 
     <main>
-        <div class="top-header-area">
-            <div></div> <div class="top-header-text">
-                <h1>Jahrestermine 2026</h1>
-                <div style="margin-bottom: 12px;">
-                    <a href="index.html" class="btn-back">← Zurück zur Startseite</a>
-                </div>
-                <p style="color:var(--secondary-grey); margin:0; font-size:1.0rem; font-weight:500;">
+        <div class="page-header-row">
+    <a href="index.html" target="_self" class="back-button">
+        <span aria-hidden="true">←</span> Zurück
+    </a>
+    <h1>📅 Jahrestermine 2026</h1>
+</div>
+<p style="color:var(--secondary-grey); margin:0; font-size:1.0rem; font-weight:500;">
                     Übersicht aller wichtigen Veranstaltungen
                 </p>
-            </div>
-
-            <div></div> </div>
+            
         <div class="termine-grid">
 
             <div class="termine-column cat-sozial">
@@ -517,16 +552,20 @@
 <!-- ══ FOOTER ══ -->
 <footer style="
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 16px;
   background: #b61f29;
   color: #ffffff;
   font-size: 0.85rem;
-  line-height: 1.8;
+  line-height: 1.6;
 ">
   © 2026 <strong>Studjo | Arbeit und Qualifizierung</strong>
-   ·  Evangelisches Johanneswerk gGmbH
-   ·  Barrierefreier Zugang
+   ·  Evangelisches Johanneswerk gGmbH
   <br>
+  <a href="index.html"
+     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Startseite
+  </a>
+   | 
   <a href="uebersicht.html"
      style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
     Übersicht
@@ -536,7 +575,7 @@
      style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
     Impressum
   </a>
-   | 
+   | 
   <a href="datenschutz.html"
      style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
     Datenschutz
