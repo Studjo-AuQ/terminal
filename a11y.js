@@ -177,6 +177,15 @@
   /* Elemente überspringen, die in diesen Containern stecken */
   const SKIP_SELEKTOREN = '.a11y-bar, #btn-help, footer, nav, .quiz-box, button, script, style';
 
+  /* Entfernt Emojis vor der Sprachausgabe. Manche Sprachausgaben
+     (z. B. unter Windows/Edge) lesen Emojis sonst wörtlich als ihre
+     Bildbeschreibung vor (z. B. "Ein Uhr" für 🕐, "Buch" für 📖) –
+     das ist verwirrend, daher werden Emojis hier grundsätzlich
+     entfernt, nicht mitgesprochen. */
+  function entferneEmojis(text) {
+    return text.replace(/\p{Extended_Pictographic}/gu, '').replace(/\s+/g, ' ').trim();
+  }
+
   function vorlesenGenerisch() {
     if (isSpeaking || window.speechSynthesis.speaking) {
       window.speechSynthesis.cancel();
@@ -198,7 +207,7 @@
       .filter(el => el.offsetParent !== null)        // nur sichtbare
       .filter(el => (el.innerText || '').trim().length > 2)
       .map(el => ({
-        text:    el.innerText.trim().replace(/\s+/g, ' '),
+        text:    entferneEmojis(el.innerText.trim().replace(/\s+/g, ' ')),
         element: el
       }));
 

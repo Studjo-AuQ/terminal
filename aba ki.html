@@ -461,7 +461,7 @@ function vorlesenUndMarkieren() {
 
     // 1. Hauptüberschrift
     const h1 = document.querySelector('h1');
-    if (h1) elementeZumVorlesen.push({ text: h1.innerText, element: h1 });
+    if (h1) elementeZumVorlesen.push({ text: entferneEmojis(h1.innerText), element: h1 });
 
     // 2. Die heutige Spalte direkt und zielsicher über die CSS-Klasse greifen!
     const heuteSpalte = document.querySelector('.heute-column');

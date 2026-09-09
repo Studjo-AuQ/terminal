@@ -13,6 +13,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+/* Entfernt Emojis vor der Sprachausgabe (werden von manchen
+   Sprachausgaben sonst wörtlich als Bildbeschreibung vorgelesen,
+   z. B. "Buch" für 📖 – das ist verwirrend). */
+function entferneEmojis(text) {
+    return text.replace(/\p{Extended_Pictographic}/gu, '').replace(/\s+/g, ' ').trim();
+}
+
 function vorlesenUndMarkieren() {
     // 1. NEU: Prüfen, ob der Browser das Vorlesen überhaupt unterstützt
     if (!('speechSynthesis' in window)) {
@@ -37,7 +44,7 @@ function vorlesenUndMarkieren() {
     // H1 einsammeln
     const h1 = document.querySelector('h1');
     if (h1 && h1.innerText.trim() !== "") {
-        elementeZumVorlesen.push({ text: h1.innerText, element: h1 });
+        elementeZumVorlesen.push({ text: entferneEmojis(h1.innerText), element: h1 });
     }
 
     // Überleitung
@@ -48,7 +55,7 @@ function vorlesenUndMarkieren() {
     tiles.forEach(tile => {
         const h2 = tile.querySelector('h2');
         if (h2 && h2.innerText.trim() !== "") {
-            elementeZumVorlesen.push({ text: h2.innerText, element: tile });
+            elementeZumVorlesen.push({ text: entferneEmojis(h2.innerText), element: tile });
         }
     });
 
