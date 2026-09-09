@@ -1,16 +1,82 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "09.09.2026, 06:33 Uhr (UTC)",
+  "aktualisiert": "09.09.2026, 12:15 Uhr (UTC)",
   "meldungen": [
     {
-      "title": "Eskalation im Iran-Krieg: DAX dürfte unter 26.000 Punkte fallen",
-      "description": "Eine neue Eskalation am Persischen Golf lässt weiteren Druck auf den deutschen Aktienmarkt erwarten. Der DAX wird zwei Stunden vor Handelsbeginn etwa 0,6 Prozent tiefer gesehen.",
-      "pubDate": "2026-09-09T07:27:05+02:00",
+      "title": "Vom Problemfall zum Erfolg: Zehn Jahre Elbphilharmonie in Hamburg",
+      "description": "Die Hamburger Elbphilharmonie hat sich vom teuren Projekt zu einem Konzerthaus von internationaler Strahlkraft entwickelt. Die Akustik ihres kristallklaren Klangs hat auch ihre Tücken. Von Marcus Stäbler.",
+      "pubDate": "2026-09-04T15:07:00+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Regionalklassen: Wo die Kfz-Versicherung am teuersten ist",
+      "description": "Die Beiträge zur Kfz-Versicherung richten sich unter anderem nach der Regionalklasse. Nun hat der Branchenverband diese neu berechnet - und sich dabei an der Schadenbilanz in den Zulassungsbezirken orientiert.",
+      "pubDate": "2026-09-09T13:39:29+02:00",
+      "bild": ""
+    },
+    {
+      "title": "EU könnte Fördermittel für Sachsen-Anhalt einfrieren",
+      "description": "In Ungarn und Polen war es schon Praxis: Die EU fror Fördermittel ein. Sollte auch eine mögliche AfD-Regierung in Sachsen-Anhalt EU-Grundrechte brechen, droht dem Land ein Zahlungsstopp - und damit ein Finanzloch. Von J.-M. Magro.",
+      "pubDate": "2026-09-09T13:33:13+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Airlines fordern Konsequenzen nach Flugchaos in Großbritannien",
+      "description": "Wegen einer Störung im System der Flugsicherung sind in Großbritannien weit über 1.000 Flüge ausgefallen, auch heute kommt es noch zu zahlreichen Ausfällen und Verspätungen. Mehrere Airlines äußerten scharfe Kritik an der Flugsicherung.",
+      "pubDate": "2026-09-09T13:32:09+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: Ölpreis steigt erstmals seit Juli über 100 Dollar",
+      "description": "Der Ölpreis ist am Morgen wegen der weiteren militärischen Eskalation am Persischen Golf auf mehr als 100 Dollar pro Barrel gestiegen. Grund ist die Sorge vor Lieferunterbrechungen aus dem Nahen Osten.",
+      "pubDate": "2026-09-09T13:08:06+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Merz gegen die AfD im Bundestag: \"Sie sind eine destruktive Kraft\"",
+      "description": "Hoher Lärmpegel, viele Zwischenrufe, scharfe Attacken: In der Generaldebatte des Bundestags haben sich AfD-Chefin Weidel und Kanzler Merz ein hartes Rededuell geliefert. Auch die Bundestagspräsidentin muss eingreifen.",
+      "pubDate": "2026-09-09T11:37:28+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Aufnahmeprogramme für Afghanen: Erneut Geld für Ausstieg geboten",
+      "description": "Die Bundesregierung bietet gefährdeten Afghaninnen und Afghanen in Pakistan erneut Geld für den Ausstieg aus Aufnahmeprogrammen. Familien, die nicht annehmen, könnten die deutsche Unterstützung in wenigen Tagen verlieren. Von C. Kornmeier.",
+      "pubDate": "2026-09-09T11:28:42+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Boom der Batteriespeicher",
+      "description": "In Deutschland entstehen immer mehr große Batteriespeicher, die Schwankungen im Stromnetz ausgleichen. Jüngstes Beispiel ist Aachen. Wo einst Elektronik produziert wurde, werden Riesen-Akkus errichtet. Von Philipp Wundersee.",
+      "pubDate": "2026-09-09T11:26:04+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Liveblog zur Generaldebatte: ++ Miersch fordert Demokraten auf, an einem Strang zu ziehen ++",
+      "description": "Drei Tage nach dem AfD-Wahlsieg in Sachsen-Anhalt haben sich AfD-Chefin Weidel und CDU-Chef Merz im Bundestag einen Schlagabtausch geliefert. SPD-Fraktionschef Miersch appellierte in der Generaldebatte an den Zusammenhalt der demokratischen Parteien.",
+      "pubDate": "2026-09-09T13:13:10+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Eskalation im Iran-Krieg: DAX driftet nach unten",
+      "description": "Eine neue Eskalation am Persischen Golf hat den Ölpreis wieder über 100 Dollar getrieben. Das nährt die Sorge vor einer hartnäckigen Inflation. Der DAX steht deutlich unter Druck.",
+      "pubDate": "2026-09-09T10:46:02+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Handels-Gastronomie: Imbisse in Geschäften gefragt wie nie",
+      "description": "Frikadellen vom Baumarkt-Parkplatz, belegte Brötchen im Möbelhaus: Der Verkauf von Essen in Geschäften boomt. Einer Studie zufolge ist damit im vergangenen Jahr so viel Umsatz erzielt worden wie noch nie.",
+      "pubDate": "2026-09-09T10:09:03+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Tote nach russischen Angriffen in mehreren Regionen der Ukraine",
+      "description": "Bei russischen Angriffen in der Ukraine sind mehrere Menschen getötet worden. Ein Grenzübergang zu Moldau und die Hafenstadt Mykolajiw wurden getroffen. Auch Kiew geriet wieder ins Visier - gestern wurden dort bereits fünf Tote gemeldet.",
+      "pubDate": "2026-09-09T13:46:11+02:00",
       "bild": ""
     },
     {
       "title": "Apple-Aktie: Wird der KI-Rückstand zum Vorteil?",
-      "description": "Apple gilt bei Künstlicher Intelligenz als Nachzügler - Symbol dafür ist Siri. Warum ausgerechnet geringere KI-Ausgaben zum Vorteil werden könnten und was den iPhone-Konzern jetzt unter Druck setzt. Von Angela Göpfert.",
+      "description": "Apple gilt bei künstlicher Intelligenz als Nachzügler - Symbol dafür ist Siri. Warum ausgerechnet geringere KI-Ausgaben zum Vorteil werden könnten und was den iPhone-Konzern jetzt unter Druck setzt. Von Angela Göpfert.",
       "pubDate": "2026-09-09T07:13:06+02:00",
       "bild": ""
     },
@@ -23,73 +89,7 @@
     {
       "title": "USA kündigen Einfuhrverbot für einige kanadische Waren an",
       "description": "Der Zollkonflikt zwischen den USA und Kanada geht in die nächste Runde: Nach den jüngsten Zöllen aus Ottawa hat Washington jetzt milliardenschwere Einfuhrverbote für bestimmte kanadische Produkte angekündigt.",
-      "pubDate": "2026-09-09T05:57:55+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Norwegens König Harald V. wird in Oslo beigesetzt",
-      "description": "Mehr als drei Jahrzehnte regierte er Norwegen, heute wird König Harald V. in Oslo beigesetzt. Zehntausende Norweger geben ihm das letzte Geleit - zusammen mit Staatsgästen aus aller Welt. Von Arne Bartram.",
-      "pubDate": "2026-09-09T05:08:50+02:00",
-      "bild": ""
-    },
-    {
-      "title": "USA zerstören fünf iranische Öltanker - Iran reagiert mit Angriffen",
-      "description": "US-Streitkräfte haben nach eigenen Angaben fünf iranische Öltanker zerstört und einen davon versenkt. Iran meldete, noch in der Nacht mit Gegenangriffen reagiert zu haben, unter anderem auf US-Schiffe.",
-      "pubDate": "2026-09-09T08:28:42+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wie der Konflikt im Jemen wieder aufflammt",
-      "description": "Mit Angriffen auf Ölanlagen Saudi-Arabiens verschärft die Huthi-Miliz den Konflikt mit dem Nachbarland. Die von Saudi-Arabien unterstützte Regierung Jemens geht gegen die Huthi vor. Droht eine Eskalation? Welche Rolle spielt Iran? Von M. Behrendt.",
-      "pubDate": "2026-09-09T05:08:13+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Generaldebatte mit Wahldesaster im Rücken",
-      "description": "In der Generaldebatte über den Haushalt spricht Kanzler Merz heute im Bundestag. Als Oppositionspolitiker war er für harte Attacken bekannt. Jetzt muss er selbst mit heftiger Kritik rechnen - vor allem nach der Wahl in Sachsen-Anhalt. Von S. Henkel.",
-      "pubDate": "2026-09-09T05:08:05+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bahn-Streik in den Niederlanden - auch Deutschland betroffen",
-      "description": "Ein Streik dürfte den Bahnverkehr in den Niederlanden heute weitgehend zum Stillstand bringen. Betroffen sind auch mehrere Verbindungen von und nach Deutschland. Hintergrund sind geplante Einschnitte im Sozialsystem.",
-      "pubDate": "2026-09-09T01:08:56+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Brisanter Bericht: Was wusste Netanjahu vor dem Hamas-Überfall 2023?",
-      "description": "Dass Israels Premier Netanjahu Warnungen vor dem Hamas-Überfall am 7. Oktober 2023 ignoriert haben soll, war bereits bekannt. Nun erreicht der Vorwurf durch eine brisante Enthüllung eine neue Dimension - und das kurz vor der Wahl. Von J. Ley",
-      "pubDate": "2026-09-08T22:03:18+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Liveblog zu Sachsen-Anhalt:++ Klingbeil spricht von \"klarem Signal an Berlin\" ++",
-      "description": "SPD-Chef Klingbeil kündigt in den tagesthemen an, Politik besser erklären zu wollen. Der geschäftsführende Ministerpräsident von Sachsen-Anhalt, Schulze, ist als neuer Chef der CDU-Landtagsfraktion gewählt worden.",
-      "pubDate": "2026-09-08T23:01:22+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Pistorius verspricht mehr Waffen - Trump telefoniert mit Putin",
-      "description": "Verteidigungsminister Pistorius sagt der Ukraine weitere Abfangraketen zu. Während Kiews Unterstützer ihre Hilfe ausbauen, spricht Moskau nach einem Telefonat zwischen Putin und Trump von einer möglichen Wiederannäherung an die USA.",
-      "pubDate": "2026-09-08T18:47:44+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Sachsen-Anhalt: Viele AfD-Maßnahmen zur Migration wären rechtlich unzulässig",
-      "description": "Eine \"migrationspolitische Kehrtwende\" und eine Vielzahl von Einzelmaßnahmen kündigt die AfD in Sachsen-Anhalt in ihrem Regierungsprogramm an. Doch zwei Drittel davon wären rechtlich überhaupt nicht umsetzbar. Von Max Bauer.",
-      "pubDate": "2026-09-08T18:44:06+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: DAX schafft eine Punktlandung",
-      "description": "Die Misere am Ölmarkt hält die Anleger weiter vom Aktienkauf ab. Immerhin konnte der DAX am Ende sein Niveau halten. Hervorragende Nachrichten gab es von der Elektrobranche.",
-      "pubDate": "2026-09-08T18:37:27+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Sexualisiertes Fehlverhalten: Fast 2000 Verdachtsfälle bei der Bundeswehr",
-      "description": "Eine Auflistung aus dem Verteidigungsministerium gibt Aufschluss über Verdachtsfälle von sexualisiertem Fehlverhalten innerhalb der Bundeswehr, die in den letzten fünf Jahren gemeldet wurden - insgesamt gab es fast 2.000 solcher Meldungen.",
-      "pubDate": "2026-09-08T18:20:31+02:00",
+      "pubDate": "2026-09-09T09:16:24+02:00",
       "bild": ""
     }
   ],
