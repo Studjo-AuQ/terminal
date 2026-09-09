@@ -1,10 +1,58 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "09.09.2026, 01:08 Uhr (UTC)",
+  "aktualisiert": "09.09.2026, 06:33 Uhr (UTC)",
   "meldungen": [
     {
+      "title": "Eskalation im Iran-Krieg: DAX dürfte unter 26.000 Punkte fallen",
+      "description": "Eine neue Eskalation am Persischen Golf lässt weiteren Druck auf den deutschen Aktienmarkt erwarten. Der DAX wird zwei Stunden vor Handelsbeginn etwa 0,6 Prozent tiefer gesehen.",
+      "pubDate": "2026-09-09T07:27:05+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Apple-Aktie: Wird der KI-Rückstand zum Vorteil?",
+      "description": "Apple gilt bei Künstlicher Intelligenz als Nachzügler - Symbol dafür ist Siri. Warum ausgerechnet geringere KI-Ausgaben zum Vorteil werden könnten und was den iPhone-Konzern jetzt unter Druck setzt. Von Angela Göpfert.",
+      "pubDate": "2026-09-09T07:13:06+02:00",
+      "bild": ""
+    },
+    {
+      "title": "11KM-Podcast: CDU nach Sachsen-Anhalt - was nun, Herr Merz?",
+      "description": "Die Landtagswahl in Sachsen-Anhalt ist eine Zäsur für die CDU und ihren Bundeskanzler Friedrich Merz. 11KM analysiert das desaströse CDU-Wahlergebnis und seine Folgen.",
+      "pubDate": "2026-09-09T06:57:22+02:00",
+      "bild": ""
+    },
+    {
+      "title": "USA kündigen Einfuhrverbot für einige kanadische Waren an",
+      "description": "Der Zollkonflikt zwischen den USA und Kanada geht in die nächste Runde: Nach den jüngsten Zöllen aus Ottawa hat Washington jetzt milliardenschwere Einfuhrverbote für bestimmte kanadische Produkte angekündigt.",
+      "pubDate": "2026-09-09T05:57:55+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Norwegens König Harald V. wird in Oslo beigesetzt",
+      "description": "Mehr als drei Jahrzehnte regierte er Norwegen, heute wird König Harald V. in Oslo beigesetzt. Zehntausende Norweger geben ihm das letzte Geleit - zusammen mit Staatsgästen aus aller Welt. Von Arne Bartram.",
+      "pubDate": "2026-09-09T05:08:50+02:00",
+      "bild": ""
+    },
+    {
+      "title": "USA zerstören fünf iranische Öltanker - Iran reagiert mit Angriffen",
+      "description": "US-Streitkräfte haben nach eigenen Angaben fünf iranische Öltanker zerstört und einen davon versenkt. Iran meldete, noch in der Nacht mit Gegenangriffen reagiert zu haben, unter anderem auf US-Schiffe.",
+      "pubDate": "2026-09-09T08:28:42+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wie der Konflikt im Jemen wieder aufflammt",
+      "description": "Mit Angriffen auf Ölanlagen Saudi-Arabiens verschärft die Huthi-Miliz den Konflikt mit dem Nachbarland. Die von Saudi-Arabien unterstützte Regierung Jemens geht gegen die Huthi vor. Droht eine Eskalation? Welche Rolle spielt Iran? Von M. Behrendt.",
+      "pubDate": "2026-09-09T05:08:13+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Generaldebatte mit Wahldesaster im Rücken",
+      "description": "In der Generaldebatte über den Haushalt spricht Kanzler Merz heute im Bundestag. Als Oppositionspolitiker war er für harte Attacken bekannt. Jetzt muss er selbst mit heftiger Kritik rechnen - vor allem nach der Wahl in Sachsen-Anhalt. Von S. Henkel.",
+      "pubDate": "2026-09-09T05:08:05+02:00",
+      "bild": ""
+    },
+    {
       "title": "Bahn-Streik in den Niederlanden - auch Deutschland betroffen",
-      "description": "Ein Streik dürfe den Bahnverkehr in den Niederlanden heute weitgehend zum Stillstand bringen. Betroffen sind auch mehrere Verbindungen von und nach Deutschland. Hintergrund sind geplante Einschnitte im Sozialsystem.",
+      "description": "Ein Streik dürfte den Bahnverkehr in den Niederlanden heute weitgehend zum Stillstand bringen. Betroffen sind auch mehrere Verbindungen von und nach Deutschland. Hintergrund sind geplante Einschnitte im Sozialsystem.",
       "pubDate": "2026-09-09T01:08:56+02:00",
       "bild": ""
     },
@@ -42,54 +90,6 @@
       "title": "Sexualisiertes Fehlverhalten: Fast 2000 Verdachtsfälle bei der Bundeswehr",
       "description": "Eine Auflistung aus dem Verteidigungsministerium gibt Aufschluss über Verdachtsfälle von sexualisiertem Fehlverhalten innerhalb der Bundeswehr, die in den letzten fünf Jahren gemeldet wurden - insgesamt gab es fast 2.000 solcher Meldungen.",
       "pubDate": "2026-09-08T18:20:31+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Zahl der Opfer durch Streubomben laut Hilfsorganisationen verdreifacht",
-      "description": "1.063 Menschen wurden im vergangenen Jahr durch Streubomben getötet oder verletzt - das sind dreimal so viele wie 2024. Besonders stark betroffen ist laut einer Erhebung von Nichtregierungsorganisationen die Ukraine. Von Sandra Biegger.",
-      "pubDate": "2026-09-08T17:50:54+02:00",
-      "bild": ""
-    },
-    {
-      "title": "PISA-Ergebnisse entfachen neue Bildungsdebatte",
-      "description": "Die Ergebnisse der aktuellen PISA-Studie lassen sich nicht schönreden: Bildungsexperten, Politiker und gesellschaftliche Akteure zeigen sich deshalb einhellig alarmiert und fordern politische Konsequenzen.",
-      "pubDate": "2026-09-08T17:24:49+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Großbritannien sanktioniert Handel mit Siedlungen im Westjordanland",
-      "description": "Großbritannien will ein Handelsverbot für Waren aus völkerrechtswidrigen israelischen Siedlungen im Westjordanland verhängen. Israel reagiert mit Gegenmaßnahmen: Das britische Konsulat in Jerusalem soll geschlossen werden.",
-      "pubDate": "2026-09-08T18:53:32+02:00",
-      "bild": ""
-    },
-    {
-      "title": "NRW-Ministerpräsident Wüst für AfD-Prüfung durch Bund-Länder-Gruppe",
-      "description": "Wie geht man mit einer Partei um, deren Landesverband als rechtsextrem eingestuft wird und eine Wahl gewonnen hat? CDU-Ministerpräsident Wüst schlägt eine Bund-Länder-Arbeitsgruppe vor. Unterstützung kommt von den Grünen, die CSU ist skeptisch.",
-      "pubDate": "2026-09-08T16:18:52+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wachsende Verschuldung: Dem Staat drohen gewaltige Zinskosten",
-      "description": "Nicht nur die Staatsschulden steigen, auch die Zinszahlungen klettern neuen Berechnungen zufolge in den kommenden Jahren deutlich nach oben. Das vermindert den Spielraum für den Haushalt. Von Till Bücker.",
-      "pubDate": "2026-09-08T15:53:46+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Rauchen senkt laut WHO Chance auf Schwangerschaft deutlich",
-      "description": "Wer raucht, hat schlechtere Aussichten, Vater oder Mutter zu werden. Bei Männern kann die Spermienqualität sinken, bei Frauen steigt das Risiko von Unfruchtbarkeit. Die WHO warnt auch vor den Folgen des Passivrauchens.",
-      "pubDate": "2026-09-08T15:46:02+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Klingbeil verteidigt Neuverschuldung in Etatdebatte",
-      "description": "Es ist der größte Haushalt, über den der Bundestag je debattiert hat: 555 Milliarden Euro sind für 2027 veranschlagt, die Neuverschuldung steigt auf über 200 Milliarden Euro. Die Opposition sparte nicht mit Kritik. Von Maximilian Ulrich.",
-      "pubDate": "2026-09-08T15:26:40+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Einbruch in Museum in Südfrankreich: Renoir-Gemälde gestohlen",
-      "description": "Es werden Erinnerungen an den Einbruch in den Louvre wach: In Südfrankreich sind wertvolle Gemälde des impressionistischen Künstlers Renoir aus einem Museum gestohlen worden. Einen Teil der Beute ließen die Täter bei ihrer Flucht zurück.",
-      "pubDate": "2026-09-08T15:00:58+02:00",
       "bild": ""
     }
   ],
