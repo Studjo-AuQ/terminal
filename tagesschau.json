@@ -1,7 +1,61 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "10.09.2026, 05:10 Uhr (UTC)",
+  "aktualisiert": "10.09.2026, 09:58 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Tote nach russischem Angriff auf Einkaufszentrum in Sumy",
+      "description": "Russland und die Ukraine haben ihre gegenseitigen Angriffe fortgesetzt. Bei einer russischen Attacke auf ein Einkaufszentrum starben laut Behörden zwei Menschen. Die Ukraine nahm russische Infrastruktur und den Badeort Sotschi ins Visier.",
+      "pubDate": "2026-09-10T11:33:23+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: EZB-Zinsentscheid sorgt für Stillstand am Markt",
+      "description": "Vor dem EZB-Zinsentscheid bleiben die Anleger zurückhaltend, der DAX tritt im frühen Handel auf der Stelle. Vor allem die hohen Ölpreise schüren die Sorgen vor anhaltend hohen Verbraucherpreisen.",
+      "pubDate": "2026-09-10T11:13:06+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Unionspolitiker rütteln an Klingbeils Steuerplänen",
+      "description": "In der Unionsfraktion regt sich Widerstand gegen die Steuerpläne der Bundesregierung: Mehrere Mitglieder fordern höhere Entlastungen als bisher vorgesehen. Einem Bericht zufolge wollen einige Abgeordnete dem Vorhaben so nicht zustimmen.",
+      "pubDate": "2026-09-10T10:09:02+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Bundesweiter Warntag: Warum es heute ab 11 Uhr laut wurde",
+      "description": "Sirenen heulten, Mobiltelefone schrillten, Digitalradios schalteten sich von selbst ein - zum sechsten Mal hat heute der bundesweite Warntag stattgefunden. Antworten auf wichtige Fragen.",
+      "pubDate": "2026-09-10T11:20:25+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Umfrage: Unzufriedenheit über Hausarzt-Versorgung wächst",
+      "description": "Deutschlandweit fehlen Tausende Hausarztpraxen. Die Unzufriedenheit darüber hat Folgen auch für das Wahlverhalten von Bürgern, so eine Umfrage. Eine Kommune in Rheinland-Pfalz versucht, dagegenzuhalten. Von A. John und J. Baumert.",
+      "pubDate": "2026-09-10T09:03:04+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Teures Heizöl - warten oder kaufen?",
+      "description": "Der Ölpreis ist hoch, die Heizsaison beginnt schon bald. Viele Verbraucher sind verunsichert. Lohnt es sich jetzt, Heizöl zu bestellen? Oder soll man auf sinkende Preise warten? Von Felix Mannheim und Jörg Marksteiner.",
+      "pubDate": "2026-09-10T08:33:33+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Trump lockt auf Parteitag Wähler mit 5.000-Dollar-Versprechen",
+      "description": "Den Republikanern droht bei den US-Kongresswahlen im November eine Schlappe. Die Umfragewerte von Präsident Trump sinken. Er versucht, das Ruder herumzureißen - und verspricht im Falle eines Wahlsiegs 5.000 Dollar für jeden Erwachsenen.",
+      "pubDate": "2026-09-10T09:03:50+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Dubai: Schlechte Aussichten für die Organisierte Kriminalität",
+      "description": "Dubai gilt nicht nur als Luxusziel, sondern auch als Zufluchtsort für Kriminelle. Deutschland will die Zusammenarbeit mit der Justiz verbessern. Beim Besuch von Präsident bin Zayed heute soll ein Abkommen unterzeichnet werden. Von P. Eckstein, B. Strunz und M. Sarti.",
+      "pubDate": "2026-09-10T08:00:12+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Spanischer Geheimdienst warnte vor Ausnahmesituation in Ceuta",
+      "description": "Ende Juli kamen binnen Stunden Zehntausende Migranten nach Ceuta. Neue Dokumente zeigen nun: Der spanische Geheimdienst hatte vor der beispiellosen Massenankunft von Menschen aus Marokko in der Exklave gewarnt.",
+      "pubDate": "2026-09-10T07:15:06+02:00",
+      "bild": ""
+    },
     {
       "title": "11KM-Podcast: Krimi um Puff-Immobilie: Das \"Pascha\", der Anwalt und die Millionen",
       "description": "Das \"Pascha\" in Köln gilt als größter Puff Europas. Als es kurz vor der Pleite stand, kauften Chinesen das Bordell. 11KM über einen echten Wirtschaftskrimi.",
@@ -36,60 +90,6 @@
       "title": "Argentiniens Präsident Milei wittert Chance im Falkland-Streit",
       "description": "Argentiniens Präsident Milei heizt den alten Konflikt um die Falklandinseln wieder an. Dabei hofft er auf Rückendeckung von US-Präsident Trump. Konzerne, die vor den Inseln nach Öl suchen, stehen zunehmend unter Druck. Von Anne Herrberg.",
       "pubDate": "2026-09-10T02:29:28+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Fernsehpreis-Verleihung mit politischen Botschaften",
-      "description": "Begleitet von politischen Statements ist der Deutsche Fernsehpreis verliehen worden. Etwa bei der Auszeichnung für den Mehrteiler \"Olivia\" über das Leben von Olivia Jones warb Hauptdarsteller Hegemann für eine freie Gesellschaft.",
-      "pubDate": "2026-09-10T01:44:53+02:00",
-      "bild": ""
-    },
-    {
-      "title": "BSW geht in Sachsen-Anhalt in Gespräche mit AfD",
-      "description": "Eingeladen hatte die AfD alle Parteien - CDU, SPD, Grüne und Linke lehnten das Gesprächsangebot zur Regierungsbildung in Sachsen-Anhalt aber ab. Anders das BSW: Die Parteien wollen unter anderem über \"Friedenspolitik\" sprechen.",
-      "pubDate": "2026-09-10T01:11:07+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Apple-Präsentation: Neues iPhone ist faltbar und sehr teuer",
-      "description": "Bei seinem großen Werbe-Event hat Apple das erste faltbare iPhone präsentiert. Obwohl Falthandys als Nischensegment gelten und die Konkurrenz sie schon länger anbietet, setzt Apple große Erwartungen in das teure Gerät. Von G. Biesinger.",
-      "pubDate": "2026-09-09T21:58:46+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bundeskanzler Merz: AfD-Verbot löst das Problem nicht",
-      "description": "Der Umgang mit der AfD beschäftigt die Politik nach der Wahl in Sachsen-Anhalt verstärkt - auch die Frage nach einem Verbotsverfahren. Der Kanzler bleibt skeptisch und sieht einen anderen Weg.",
-      "pubDate": "2026-09-09T21:38:18+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Rekord-Etat: Jeder fünfte Euro für die Verteidigung",
-      "description": "So viel Geld wie noch nie steht 2027 für die Bundeswehr bereit. Doch mit dem Rekord-Etat kommen die Fragen: Wird das Geld richtig eingesetzt? Und was bleibt für andere Aufgaben des Staates? Von Christina Nagel und Philipp Jahn.",
-      "pubDate": "2026-09-09T20:30:48+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Harald V. beigesetzt - Trauerfeier für einen geliebten König",
-      "description": "35 Jahre war er König von Norwegen. Nun ist Harald V. in Oslo beigesetzt worden. Mehr als 100.000 Menschen gaben ihm das letzte Geleit - und machten noch einmal deutlich, wie beliebt der König war. Von Jana Sinram.",
-      "pubDate": "2026-09-09T19:42:47+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bundesgerichtshof: Kaskoversicherte tragen \"Werkstattrisiko\"",
-      "description": "Rechnet eine Autowerkstatt für eine Reparatur mehr ab als nötig, muss die Kaskoversicherung nicht dafür zahlen. Das Risiko trägt der Versicherte, entschied der Bundesgerichtshof. Von Antonetta Stephany.",
-      "pubDate": "2026-09-09T18:56:39+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Sachsen-Anhalts CDU sucht ihren Kurs - und ihren Chef",
-      "description": "Nach der Wahlniederlage ist die CDU in Sachsen-Anhalt gespalten, gemäßigte Stimmen kommen kaum zu Wort. Ein neuer Landesvorstand könnte die Lager einen. Doch nicht alle, die dafür im Gespräch sind, bringen das Potenzial mit. Von Lars Frohmüller.",
-      "pubDate": "2026-09-09T18:50:18+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bericht über Warnung vor Hamas-Überfall: Netanjahu plant Klage",
-      "description": "Ein Bericht der Zeitung Haaretz erhebt einen brisanten Vorwurf gegen Israels Premier Netanjahu: Er soll eine ausdrückliche Warnung vor einem Großangriff der Hamas eineinhalb Wochen vor dem Überfall ignoriert haben. Netanjahu dementiert - und will klagen.",
-      "pubDate": "2026-09-09T18:22:13+02:00",
       "bild": ""
     }
   ],
