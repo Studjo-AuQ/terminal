@@ -447,6 +447,12 @@ function render() {
 let isSpeaking = false;
 let aktuelleAussage = null;
 
+// Entfernt Emojis vor der Sprachausgabe (werden von manchen
+// Sprachausgaben sonst wörtlich als Bildbeschreibung vorgelesen).
+function entferneEmojis(text) {
+    return text.replace(/\p{Extended_Pictographic}/gu, '').replace(/\s+/g, ' ').trim();
+}
+
 function vorlesenUndMarkieren() {
     if (isSpeaking || window.speechSynthesis.speaking) {
         window.speechSynthesis.cancel();

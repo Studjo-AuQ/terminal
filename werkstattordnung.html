@@ -38,8 +38,16 @@
             background:rgba(0,0,0,0.6); align-items:center; justify-content:center; padding:20px;">
   <div onclick="event.stopPropagation()"
        style="background:#fff; border-radius:16px; padding:30px 30px 26px;
-              text-align:left; max-width:420px; width:100%; position:relative;
+              text-align:left; max-width:580px; width:100%; position:relative;
               box-shadow:0 10px 40px rgba(0,0,0,0.35);">
+    <button type="button"
+            onclick="vorleseInfoText(this)"
+            aria-label="Info vorlesen"
+            style="position:absolute; top:10px; right:52px; background:#f1f1f1; border:none;
+                   border-radius:50%; width:32px; height:32px; font-size:1.05rem; cursor:pointer;
+                   line-height:1; display:flex; align-items:center; justify-content:center;">
+      👂
+    </button>
     <button type="button"
             onclick="document.getElementById('info-popup').style.display='none'"
             aria-label="Schließen"
@@ -47,20 +55,58 @@
                    border-radius:50%; width:32px; height:32px; font-size:1.1rem; cursor:pointer;
                    line-height:1;">✕</button>
 
-    <h2 style="margin:0 0 16px; color:var(--primary-red); font-size:1.3rem; font-weight:800;">
+    <h2 style="margin:0 0 16px; color:#b61f29; font-size:1.3rem; font-weight:800;">
       Kurze Info
     </h2>
 
-    <ul style="margin:0; padding-left:22px; font-size:1rem; line-height:1.8; color:var(--text-color);">
+    <ul style="margin:0; padding-left:22px; font-size:1rem; line-height:1.8; color:#0f2f37;">
       <li>Die Werkstattordnung hat Regeln für Mitarbeitende.</li>
       <li>So sind alle über die Abläufe informiert.</li>
       <li>Die Rechte und Pflichten sind aktuell bei ConSense.</li>
       <li>Du kannst die Kacheln aber nur mit Studjo-PC öffnen.</li>
-        <li>Bei Fragen hilft dir deine Gruppenleitung weiter.</li>
-      
+      <li>Bei Fragen hilft dir deine Gruppenleitung weiter.</li>
     </ul>
   </div>
 </div>
+
+<script>
+  /* Liest ausschließlich den Inhalt des Info-Popups vor (Überschrift +
+     Aufzählungspunkte), unabhängig vom "H"-Button. Emojis werden dabei
+     entfernt, damit sie nicht wörtlich vorgelesen werden. */
+  function vorleseInfoText(button) {
+      if (!('speechSynthesis' in window)) {
+          alert('Dein Browser unterstützt leider keine Sprachausgabe.');
+          return;
+      }
+      const warAktiv = button.classList.contains('aktiv');
+      window.speechSynthesis.cancel();
+      document.querySelectorAll('.info-ohr-aktiv').forEach(b => {
+          b.classList.remove('info-ohr-aktiv', 'aktiv');
+          b.style.background = '#f1f1f1';
+      });
+      if (warAktiv) return;
+
+      const popup = document.getElementById('info-popup');
+      const ueberschrift = popup.querySelector('h2')?.innerText || '';
+      const listenpunkte = Array.from(popup.querySelectorAll('li')).map(li => li.innerText);
+      const roh = [ueberschrift, ...listenpunkte].join('. ');
+      const text = roh.replace(/\p{Extended_Pictographic}/gu, '').replace(/\s+/g, ' ').trim();
+
+      const ansage = new SpeechSynthesisUtterance(text);
+      ansage.lang = 'de-DE';
+      ansage.rate = 0.95;
+      const zuruecksetzen = () => {
+          button.classList.remove('aktiv', 'info-ohr-aktiv');
+          button.style.background = '#f1f1f1';
+      };
+      ansage.onend = zuruecksetzen;
+      ansage.onerror = zuruecksetzen;
+
+      button.classList.add('aktiv', 'info-ohr-aktiv');
+      button.style.background = '#ffe600';
+      window.speechSynthesis.speak(ansage);
+  }
+</script>
 
         <div class="tile-grid">  
             <a href="https://001sdbfevm-660.johanneswerk.int/Manual/WebViewer?OID=D4444200%3A6" target="_blank" class="tile tile-color-1">

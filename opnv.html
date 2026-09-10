@@ -19,6 +19,15 @@
         <span aria-hidden="true">←</span> Zurück
     </a>
     <h1>🚌 Fahrplanauskunft f&uuml;r Busse</h1>
+    <button type="button"
+            onclick="document.getElementById('info-popup').style.display='flex'"
+            aria-label="Kurze Info anzeigen"
+            style="margin-left:auto; flex-shrink:0; background:#ffffff; border:3px solid #b61f29;
+                   border-radius:50%; width:52px; height:52px; cursor:pointer;
+                   display:flex; align-items:center; justify-content:center;
+                   font-size:1.9rem; padding:0; line-height:1;">
+        ℹ️
+    </button>
 </div>
 
         <style>
@@ -395,5 +404,80 @@ function adresseKopieren(btn, text) {
 </script>
  <link rel="stylesheet" href="a11y.css">
 <script src="a11y.js"></script>   
+
+<!-- ══ INFO-POPUP (Probelauf) ══ -->
+<div id="info-popup"
+     onclick="this.style.display='none'"
+     style="display:none; position:fixed; inset:0; z-index:2000;
+            background:rgba(0,0,0,0.6); align-items:center; justify-content:center; padding:20px;">
+  <div onclick="event.stopPropagation()"
+       style="background:#fff; border-radius:16px; padding:30px 30px 26px;
+              text-align:left; max-width:580px; width:100%; position:relative;
+              box-shadow:0 10px 40px rgba(0,0,0,0.35);">
+    <button type="button"
+            onclick="vorleseInfoText(this)"
+            aria-label="Info vorlesen"
+            style="position:absolute; top:10px; right:52px; background:#f1f1f1; border:none;
+                   border-radius:50%; width:32px; height:32px; font-size:1.05rem; cursor:pointer;
+                   line-height:1; display:flex; align-items:center; justify-content:center;">
+      👂
+    </button>
+    <button type="button"
+            onclick="document.getElementById('info-popup').style.display='none'"
+            aria-label="Schließen"
+            style="position:absolute; top:10px; right:10px; background:#f1f1f1; border:none;
+                   border-radius:50%; width:32px; height:32px; font-size:1.1rem; cursor:pointer;
+                   line-height:1;">✕</button>
+
+    <h2 style="margin:0 0 16px; color:#b61f29; font-size:1.3rem; font-weight:800;">
+      Kurze Info
+    </h2>
+
+    <ul style="margin:0; padding-left:22px; font-size:1rem; line-height:1.8; color:#0f2f37;">
+      <li>Hier findest du Busse und Bahnen.</li>
+      <li>Du siehst, wann sie fahren.</li>
+      <li>Das hilft dir beim Nachhause-Kommen.</li>
+      <li>Die Fahrpläne kommen von den Verkehrsbetrieben.</li>
+      <li>Bei Fragen hilft dir deine Gruppenleitung weiter.</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  function vorleseInfoText(button) {
+      if (!('speechSynthesis' in window)) {
+          alert('Dein Browser unterstützt leider keine Sprachausgabe.');
+          return;
+      }
+      const warAktiv = button.classList.contains('aktiv');
+      window.speechSynthesis.cancel();
+      document.querySelectorAll('.info-ohr-aktiv').forEach(b => {
+          b.classList.remove('info-ohr-aktiv', 'aktiv');
+          b.style.background = '#f1f1f1';
+      });
+      if (warAktiv) return;
+
+      const popup = document.getElementById('info-popup');
+      const ueberschrift = popup.querySelector('h2')?.innerText || '';
+      const listenpunkte = Array.from(popup.querySelectorAll('li')).map(li => li.innerText);
+      const roh = [ueberschrift, ...listenpunkte].join('. ');
+      const text = roh.replace(/\p{Extended_Pictographic}/gu, '').replace(/\s+/g, ' ').trim();
+
+      const ansage = new SpeechSynthesisUtterance(text);
+      ansage.lang = 'de-DE';
+      ansage.rate = 0.95;
+      const zuruecksetzen = () => {
+          button.classList.remove('aktiv', 'info-ohr-aktiv');
+          button.style.background = '#f1f1f1';
+      };
+      ansage.onend = zuruecksetzen;
+      ansage.onerror = zuruecksetzen;
+
+      button.classList.add('aktiv', 'info-ohr-aktiv');
+      button.style.background = '#ffe600';
+      window.speechSynthesis.speak(ansage);
+  }
+</script>
+
 </body>
 </html>
