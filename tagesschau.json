@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "10.09.2026, 20:44 Uhr (UTC)",
+  "aktualisiert": "10.09.2026, 23:03 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Ermittlungen gegen Krach in drei Fällen",
+      "description": "Die Staatsanwaltschaft Hannover ermittelt in drei Fällen gegen den Berliner SPD-Spitzenkandidaten Krach. Es geht um Verrat von Geschäftsgeheimnissen und den Anfangsverdacht auf Vorteilsnahme. Krach weist die Vorwürfe zurück.",
+      "pubDate": "2026-09-11T00:03:41+02:00",
+      "bild": ""
+    },
     {
       "title": "Huthi-Miliz nimmt laut Berichten Hafenstadt im Jemen ein",
       "description": "Die Huthi haben im Jemen eine Offensive auf das Küstengebiet gestartet. Medienberichten zufolge nahm die vom Iran unterstützte Miliz nun die Hafenstadt Mokka ein - und kontrolliert damit einen Zugang zu einer strategisch wichtigen Meerenge.",
@@ -84,12 +90,6 @@
       "title": "Finanzministerium will Krypto-Gewinne künftig besteuern",
       "description": "Gewinne aus Kryptogeschäften werden bislang anders besteuert als reguläre Finanzprodukte. Dies möchte das Finanzministerium ändern. Ein Referentenentwurf, der dem ARD-Hauptstadtstudio, plant eine Änderung ab 2027. Von Lissy Kaufmann.",
       "pubDate": "2026-09-10T15:11:29+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Historischer Teppich in Londoner Museum zieht Menschenmassen an",
-      "description": "Auf 70 Metern Länge erzählt der Wandteppich von Bayeux die normannische Invasion Englands und die Thronbesteigung von Wilhelm \"dem Eroberer\". In London erobert er als seltene Leihgabe die Herzen der Museumsbesucher. Von. C. Prössl.",
-      "pubDate": "2026-09-10T15:00:40+02:00",
       "bild": ""
     }
   ],
