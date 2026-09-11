@@ -1,17 +1,71 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "11.09.2026, 06:33 Uhr (UTC)",
+  "aktualisiert": "11.09.2026, 12:08 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Huthi-Miliz erobert Insel in wichtiger Meerenge Bab al-Mandab",
+      "description": "Die mit Iran verbündete Huthi-Miliz ist am Roten Meer offenbar weiter vorgerückt. Laut jemenitischen Regierungsquellen eroberte sie auch eine strategisch wichtige Insel in der Meerenge Bab al-Mandab.",
+      "pubDate": "2026-09-11T13:24:09+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Geschäfte sollen künftig Kartenzahlung anbieten müssen",
+      "description": "Geschäfte, Restaurants und Dienstleister sollen nach Plänen von Finanzminister Klingbeil künftig neben Bargeld auch mindestens eine digitale Bezahlmöglichkeit anbieten müssen. Was das für Konsumenten und Unternehmen bedeutet.",
+      "pubDate": "2026-09-11T13:14:28+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Oktoberfest: So gut schützen Impfungen vor Atemwegsinfekten",
+      "description": "Die \"Wiesn-Grippe\" gibt es eigentlich nicht. Doch nach dem Oktoberfestbesuch klagen viele über Husten und Schnupfen. Welche Viren dahinterstecken und welche Impfungen helfen können. Von Doris Tromballa.",
+      "pubDate": "2026-09-11T12:29:58+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wie der 11. September die US-Außenpolitik verändert hat",
+      "description": "Der \"Krieg gegen den Terror\", die Logik von Präventivkriegen: Die Anschläge am 11. September 2001 hatten dramatische Folgen für die Außen- und Sicherheitspolitik der USA - die bis heute nachwirken. Von Carsten Kühntopp.",
+      "pubDate": "2026-09-11T11:33:10+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Zeitenwende für Rot-Grün: Berlin und der Schock vom 11. September",
+      "description": "Die deutsche Politik reagiert vor 25 Jahren bestürzt auf die Nachricht von den Anschlägen in New York. Aber sie fasst sich schnell, schnürt zwei Sicherheitspakete und beschließt die Beteiligung am Afghanistan-Einsatz. Von J. Mayr.",
+      "pubDate": "2026-09-11T11:21:08+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX hält sich vor US-Inflationsdaten stabil",
+      "description": "Der DAX ist nach den jüngsten Kursverlusten auf einem vorsichtigen Erholungskurs. Vor wichtigen US-Inflationsdaten legt der deutsche Leitindex zwar leicht zu. Auf Wochensicht dürfte das Minus aber hoch bleiben.",
+      "pubDate": "2026-09-11T11:20:29+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Arbeitsministerin Bas verspricht Übergangslösung für \"Rente mit 63\"",
+      "description": "Arbeitsministerin Bas hat in der Haushaltsdebatte die geplante Rentenreform der Bundesregierung verteidigt - auch die Abschaffung der abschlagsfreien Rente nach 45 Beitragsjahren. Betroffenen verspricht sie jedoch Übergangslösungen.",
+      "pubDate": "2026-09-11T13:44:51+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Kritik an Wegfall der Info-Pflicht bei höheren Krankenkassenbeiträgen",
+      "description": "Wird die Krankenkasse teurer, muss sie ihren Mitgliedern das nicht mehr aktiv mitteilen. Die Info-Pflicht wurde gestrichen. \"Ein Unding\", kritisieren Verbraucherschützer. Die Bundesregierung müsse diesen Fehler korrigieren.",
+      "pubDate": "2026-09-11T10:43:10+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Rente, Gesundheit, Pflege: Welche Reformpläne jetzt geändert werden könnten",
+      "description": "Rente, Gesundheit, Pflege: Die Kritik an den Reformplänen der Bundesregierung ist nach der Wahl in Sachsen-Anhalt noch lauter geworden. Wo könnte jetzt nachjustiert werden? Ein Überblick.",
+      "pubDate": "2026-09-11T10:05:35+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Debatte über mögliches AfD-Verbotsverfahren geht weiter",
+      "description": "Die Debatte über ein mögliches Verbotsverfahren der AfD hält an. Der Vorsitzende der Innenministerkonferenz, Grote, unterstützte den Vorschlag, die Voraussetzungen für ein Verbot zu prüfen. Andere sind skeptisch.",
+      "pubDate": "2026-09-11T09:01:21+02:00",
+      "bild": ""
+    },
     {
       "title": "11KM-Podcast: Wie der Terror von 9/11 Deutschland verändert hat",
       "description": "Vor 25 Jahren erschütterte 9/11 die Welt. Nach dem Anschlag rückte auch Hamburg ins Zentrum der Ermittlungen. 11KM über die Frage, was das mit der Stadt und mit Deutschland gemacht hat.",
       "pubDate": "2026-09-11T07:45:25+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: EZB-Zinserhöhung vergrault die Anleger",
-      "description": "Die Ölpreise steigen, Leitzinsen, Anleiherenditen und Inflation ebenfalls. Die Zeiten für die Anleger am Aktienmarkt sind derzeit schwierig - der DAX dürfte weiter zurückfallen und sein Wochenminus ausbauen.",
-      "pubDate": "2026-09-11T07:37:44+02:00",
       "bild": ""
     },
     {
@@ -23,7 +77,7 @@
     {
       "title": "Elektromobilität: Baut Deutschland die falschen Ladesäulen?",
       "description": "Der Erfolg der E-Mobilität hängt nicht nur von den Fahrzeugen, sondern auch von der Ladeinfrastruktur ab. Je mehr Ladesäulen, desto besser - das war lange die Devise. Doch stimmt das noch? Von Thomas Eckert.",
-      "pubDate": "2026-09-11T06:23:49+02:00",
+      "pubDate": "2026-09-11T13:13:36+02:00",
       "bild": ""
     },
     {
@@ -36,60 +90,6 @@
       "title": "Wie der 11. September die deutsche Gesellschaft prägte",
       "description": "Der 11. September 2001 prägte auch die deutsche Gesellschaft. Insbesondere Muslime und Menschen mit Einwanderungsgeschichte fühlen sich seitdem misstrauisch beäugt. Von C. Horn und K. Nastarowitz.",
       "pubDate": "2026-09-11T03:37:15+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Mehrere Tote nach Busunglück in der Schweiz",
-      "description": "Ein Reisebus ist in der Schweiz von der Straße abgekommen, dabei wurden nach Polizeiangaben mehrere Menschen getötet. Der Bus eines niederländischen Reiseveranstalters war mit mit knapp 50 Menschen an Bord unterwegs.",
-      "pubDate": "2026-09-11T03:03:39+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ukraine: Fünf Tote bei Angriff auf Einkaufszentrum in Pawlohrad",
-      "description": "Erst am Donnerstag waren in Sumy drei Menschen bei einem russischen Angriff auf ein Einkaufszentrum getötet worden - nun wurde eines in Pawlohrad getroffen. Laut Behörden starben dabei fünf Menschen, mehr als 60 wurden verletzt.",
-      "pubDate": "2026-09-11T02:57:21+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ermittlungen gegen Krach in drei Fällen",
-      "description": "Die Staatsanwaltschaft Hannover ermittelt in drei Fällen gegen den Berliner SPD-Spitzenkandidaten Krach. Es geht um Verrat von Geschäftsgeheimnissen und den Anfangsverdacht auf Vorteilsnahme. Krach weist die Vorwürfe zurück.",
-      "pubDate": "2026-09-11T00:03:41+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Huthi-Miliz nimmt laut Berichten Hafenstadt im Jemen ein",
-      "description": "Die Huthi haben im Jemen eine Offensive auf das Küstengebiet gestartet. Medienberichten zufolge nahm die vom Iran unterstützte Miliz nun die Hafenstadt Mokka ein - und kontrolliert damit einen Zugang zu einer strategisch wichtigen Meerenge.",
-      "pubDate": "2026-09-10T21:23:15+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Emirate investieren 40 Milliarden Euro in Deutschland",
-      "description": "Deutschland und die Vereinigten Arabischen Emirate wollen ihre Beziehungen ausbauen. Der Golfstaat plant Investitionen von 40 Milliarden Euro. Zudem darf die Fluggesellschaft Emirates eine weitere deutsche Stadt anfliegen. Von Nicole Markwald.",
-      "pubDate": "2026-09-10T20:24:58+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Was die AfD in den Schulen in Sachsen-Anhalt verändern könnte",
-      "description": "Mehr Bismarck, weniger Hitler; Inklusion abschaffen und Unterricht zu Hause: Im Bereich der Bildungspolitik hat die AfD in Sachsen-Anhalt viele Pläne. Doch nicht alles, was politisch gefordert wird, ist rechtlich auch möglich. Von A. Tadey.",
-      "pubDate": "2026-09-10T20:03:25+02:00",
-      "bild": ""
-    },
-    {
-      "title": "USA: Oberstes Gericht lehnt Wahlkreisänderung in Missouri ab",
-      "description": "Weniger als zwei Monate vor den Midterms muss US-Präsident Trump einen Rückschlag hinnehmen: Der Supreme Court lehnte den Neuzuschnitt der Wahlkreise in Missouri ab. Die Änderung könnte zu Chaos führen. Von S. Jackisch.",
-      "pubDate": "2026-09-10T19:18:47+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Der DAX dreht ins Minus",
-      "description": "Der DAX hat weiter an Boden verloren. Denn die Zinserhöhung der EZB war zwar erwartet worden, könnte aber nicht die letzte gewesen sein. Besonders die hohen Ölpreise lasten weiter auf dem Markt.",
-      "pubDate": "2026-09-10T18:32:35+02:00",
-      "bild": ""
-    },
-    {
-      "title": "ARD-Vorwahlumfrage für Berlin: Linke liegt hauchdünn vor der CDU",
-      "description": "Es könnte eng werden bei der Wahl in Berlin: Die Linke liegt der ARD-Umfrage zufolge knapp vor der CDU. Das BSW würde es nicht ins Abgeordnetenhaus schaffen. Von Florian Riesewieck.",
-      "pubDate": "2026-09-10T18:00:31+02:00",
       "bild": ""
     }
   ],
