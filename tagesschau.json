@@ -1,7 +1,19 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "10.09.2026, 23:03 Uhr (UTC)",
+  "aktualisiert": "11.09.2026, 01:23 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Mehrere Tote nach Busunglück in der Schweiz",
+      "description": "Ein Reisebus ist in der Schweiz von der Straße abgekommen, dabei wurden nach Polizeiangaben mehrere Menschen getötet. Der Bus eines niederländischen Reiseveranstalters war mit mit knapp 50 Menschen an Bord unterwegs.",
+      "pubDate": "2026-09-11T03:03:39+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Ukraine: Fünf Tote bei Angriff auf Einkaufszentrum in Pawlohrad",
+      "description": "Erst am Donnerstag waren in Sumy drei Menschen bei einem russischen Angriff auf ein Einkaufszentrum getötet worden - nun wurde eines in Pawlohrad getroffen. Laut Behörden starben dabei fünf Menschen, mehr als 60 wurden verletzt.",
+      "pubDate": "2026-09-11T02:57:21+02:00",
+      "bild": ""
+    },
     {
       "title": "Ermittlungen gegen Krach in drei Fällen",
       "description": "Die Staatsanwaltschaft Hannover ermittelt in drei Fällen gegen den Berliner SPD-Spitzenkandidaten Krach. Es geht um Verrat von Geschäftsgeheimnissen und den Anfangsverdacht auf Vorteilsnahme. Krach weist die Vorwürfe zurück.",
@@ -78,18 +90,6 @@
       "title": "Ausstellung in Düsseldorf: De Saint Phalle und die Kraft weiblicher Lebensfreude",
       "description": "Rund, bunt, riesengroß - die Frauenfiguren von Niki de Saint Phalle sind weltbekannt. Wie die Künstlerin von der Düsternis zur Farbe fand und warum ihr Werk aktueller denn je ist, zeigt eine Ausstellung in Düsseldorf. Von M. Berger.",
       "pubDate": "2026-09-10T15:44:27+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Haushaltsberatungen: Dobrindt verteidigt höhere Ausgaben",
-      "description": "Mehr Geld für Polizei und Cyberschutz: Bei den Haushaltsberatungen im Bundestag hat Innenminister Dobrindt seinen Kurs verteidigt. Grüne und Linke kritisierten Kürzungen bei politischer Bildung und Integration.",
-      "pubDate": "2026-09-10T15:33:02+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Finanzministerium will Krypto-Gewinne künftig besteuern",
-      "description": "Gewinne aus Kryptogeschäften werden bislang anders besteuert als reguläre Finanzprodukte. Dies möchte das Finanzministerium ändern. Ein Referentenentwurf, der dem ARD-Hauptstadtstudio, plant eine Änderung ab 2027. Von Lissy Kaufmann.",
-      "pubDate": "2026-09-10T15:11:29+02:00",
       "bild": ""
     }
   ],
