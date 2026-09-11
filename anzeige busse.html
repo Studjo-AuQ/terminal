@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anzeige Busse</title>
   <style>
-        /* Übernimm deine Variablen aus der opnv.txt */
         :root {
             --primary-red: #b61f29;
             --bg-color: #f9f9f9;
@@ -16,7 +15,7 @@
             margin: 0;
             display: flex;
             flex-direction: column;
-            height: 100vh; /* Ganze Bildschirmhöhe */
+            height: 100vh;
         }
         header {
             background-color: white;
@@ -40,12 +39,62 @@
             border-radius: 8px;
             font-weight: bold;
         }
-        /* Der Bereich für die externe Webseite */
         .content-frame {
-            flex: 1; /* Füllt den Rest des Bildschirms aus */
+            flex: 1;
             border: none;
             width: 100%;
+            display: none;
         }
+
+        /* ── Zustimmungs-Gate ── */
+        #consent-gate {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f4f4f4;
+            padding: 24px;
+            text-align: center;
+        }
+        .consent-box {
+            max-width: 480px;
+            background: #fff;
+            border-radius: 16px;
+            padding: 32px 28px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+        }
+        .consent-box .icon { font-size: 2.4rem; margin-bottom: 10px; }
+        .consent-box h2 {
+            margin: 0 0 14px;
+            color: var(--primary-red);
+            font-size: 1.25rem;
+            font-weight: 800;
+        }
+        .consent-box p {
+            margin: 0 0 10px;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+        .consent-box .hinweis-klein {
+            font-size: 0.85rem;
+            color: #5a5a5a;
+            margin-bottom: 22px;
+        }
+        .consent-box .hinweis-klein a { color: var(--primary-red); }
+        .consent-button {
+            background: var(--primary-red);
+            color: #fff;
+            border: none;
+            border-radius: 999px;
+            padding: 14px 32px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            cursor: pointer;
+            font-family: inherit;
+        }
+        .consent-button:hover { background: #96181f; }
+
         footer {
             text-align: center;
             padding: 10px;
@@ -53,7 +102,6 @@
             color: white;
             font-size: 0.8rem;
         }
-
     </style>
     </head>
 <body>
@@ -65,9 +113,38 @@
         </div>
     </header>
 
-    <iframe src="https://www.mobil.nrw/fahrplanauskunft.html" class="content-frame"></iframe>
+    <!-- Zustimmungs-Gate: Fahrplanauskunft wird erst nach Klick geladen -->
+    <div id="consent-gate">
+        <div class="consent-box">
+            <div class="icon">🚌</div>
+            <h2>Externe Inhalte von mobil.nrw</h2>
+            <p>
+                Die Fahrplanauskunft wird direkt von <strong>mobil.nrw</strong> geladen.
+                Dabei können Daten wie deine IP-Adresse an den Anbieter übertragen werden.
+            </p>
+            <p class="hinweis-klein">
+                Mehr dazu in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.
+            </p>
+            <button type="button" class="consent-button" onclick="inhaltLaden()">
+                Zustimmen und Fahrplanauskunft laden
+            </button>
+        </div>
+    </div>
+
+    <iframe id="content-frame" src="" class="content-frame"></iframe>
+
     <footer>
-        &copy; 2024 <b>Studjo | Arbeit und Qualifizierung</b> | Infoterminal | Barrierefreier Zugang
+        &copy; 2026 <b>Studjo | Arbeit und Qualifizierung</b> | Infoterminal | Barrierefreier Zugang
     </footer>
+
+<script>
+    function inhaltLaden() {
+        document.getElementById('consent-gate').style.display = 'none';
+        const frame = document.getElementById('content-frame');
+        frame.src = 'https://www.mobil.nrw/fahrplanauskunft.html';
+        frame.style.display = 'block';
+    }
+</script>
+
 </body>
 </html>

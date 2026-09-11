@@ -51,7 +51,70 @@
             flex: 1;
             border: none;
             width: 100%;
+            display: none;
         }
+
+        /* ── Zustimmungs-Gate ── */
+        #consent-gate {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f4f4f4;
+            padding: 24px;
+            text-align: center;
+        }
+        .consent-box {
+            max-width: 480px;
+            background: #fff;
+            border-radius: 16px;
+            padding: 32px 28px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+        }
+        .consent-box .icon { font-size: 2.4rem; margin-bottom: 10px; }
+        .consent-box h2 {
+            margin: 0 0 14px;
+            color: var(--primary-red);
+            font-size: 1.25rem;
+            font-weight: 800;
+        }
+        .consent-box p {
+            margin: 0 0 10px;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #0f2f37;
+        }
+        .consent-box .hinweis-klein {
+            font-size: 0.85rem;
+            color: #5a5a5a;
+            margin-bottom: 22px;
+        }
+        .consent-box .hinweis-klein a { color: var(--primary-red); }
+        .consent-button {
+            background: var(--primary-red);
+            color: #fff;
+            border: none;
+            border-radius: 999px;
+            padding: 14px 32px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            cursor: pointer;
+            font-family: inherit;
+        }
+        .consent-button:hover { background: #96181f; }
+
+        /* ── Lade-/Fehleranzeige ── */
+        #status-anzeige {
+            flex: 1;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            text-align: center;
+            font-size: 1.05rem;
+            color: #5a5a5a;
+        }
+
         footer {
             text-align: center;
             padding: 10px;
@@ -67,37 +130,108 @@
     <header>
         <div class="back-nav">
             <a href="opnv.html" class="back-button">← Zurück</a>
-            <div class="bst-label" id="bst-label">Karte wird geladen…</div>
+            <div class="bst-label" id="bst-label">Karte</div>
             <img src="header.jpg" style="height: 40px;" alt="Studjo Logo">
         </div>
     </header>
 
+    <!-- Zustimmungs-Gate: Karte wird erst nach Klick geladen -->
+    <div id="consent-gate">
+        <div class="consent-box">
+            <div class="icon">🗺️</div>
+            <h2>Externe Karte von OpenStreetMap</h2>
+            <p>
+                Diese Karte wird direkt von <strong>openstreetmap.org</strong> geladen.
+                Dabei können Daten wie deine IP-Adresse an den Anbieter übertragen werden.
+            </p>
+            <p class="hinweis-klein">
+                Mehr dazu in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.
+            </p>
+            <button type="button" class="consent-button" onclick="karteLaden()">
+                Zustimmen und Karte laden
+            </button>
+        </div>
+    </div>
+
+    <div id="status-anzeige"></div>
+
     <iframe id="maps-frame" class="content-frame" src="" allowfullscreen loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
-        sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+        sandbox="allow-scripts allow-same-origin"></iframe>
 
     <footer>
-        &copy; 2024 <b>Studjo | Arbeit und Qualifizierung</b> | Infoterminal | Barrierefreier Zugang
+        &copy; 2026 <b>Studjo | Arbeit und Qualifizierung</b> | Infoterminal | Barrierefreier Zugang
     </footer>
 
 <script>
     // Liest URL-Parameter aus (z. B. maps.html?q=Freisenbergstraße+33...&name=FBS)
-    const params   = new URLSearchParams(window.location.search);
-    const adresse  = params.get('q')    || '';
-    const bstName  = params.get('name') || 'Betriebsstätte';
+    const params  = new URLSearchParams(window.location.search);
+    const adresse = params.get('q')    || '';
+    const bstName = params.get('name') || 'Betriebsstätte';
 
-    // Titel setzen
     document.getElementById('bst-label').textContent = '📍 ' + bstName;
 
-    // Google Maps Embed-URL zusammenbauen (kein API-Key nötig)
-    if (adresse) {
-        const embedUrl = 'https://maps.google.com/maps?q='
-            + encodeURIComponent(adresse)
-            + '&output=embed&hl=de&z=16';
-        document.getElementById('maps-frame').src = embedUrl;
-    } else {
-        document.getElementById('maps-frame').src =
-            'https://maps.google.com/maps?q=Studjo+Lüdenscheid&output=embed&hl=de';
+    const gate   = document.getElementById('consent-gate');
+    const status = document.getElementById('status-anzeige');
+    const frame  = document.getElementById('maps-frame');
+
+    function zeigeStatus(text) {
+        gate.style.display = 'none';
+        status.style.display = 'flex';
+        status.textContent = text;
+    }
+
+    async function karteLaden() {
+        if (!adresse) {
+            zeigeStatus('⚠️ Keine Adresse übergeben.');
+            return;
+        }
+
+        zeigeStatus('Karte wird geladen …');
+
+        try {
+            // Nominatim = der offizielle, freie Geokodierungsdienst von
+            // OpenStreetMap. Wandelt die Adresse in Koordinaten um, da
+            // OpenStreetMap (anders als Google) keine direkte
+            // Adress-Einbettung anbietet.
+            const url = 'https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&countrycodes=de&q='
+                + encodeURIComponent(adresse);
+            const antwort = await fetch(url);
+            if (!antwort.ok) throw new Error('Nominatim-Fehler: ' + antwort.status);
+
+            const ergebnisse = await antwort.json();
+            if (!ergebnisse || ergebnisse.length === 0) {
+                throw new Error('Adresse nicht gefunden');
+            }
+
+            const lat = parseFloat(ergebnisse[0].lat);
+            const lon = parseFloat(ergebnisse[0].lon);
+
+            // Kleinen Kartenausschnitt um den Marker herum berechnen
+            const deltaLat = 0.003;
+            const deltaLon = 0.005;
+            const bbox = [
+                (lon - deltaLon).toFixed(5),
+                (lat - deltaLat).toFixed(5),
+                (lon + deltaLon).toFixed(5),
+                (lat + deltaLat).toFixed(5)
+            ].join(',');
+
+            const embedUrl = 'https://www.openstreetmap.org/export/embed.html'
+                + '?bbox=' + encodeURIComponent(bbox)
+                + '&layer=mapnik'
+                + '&marker=' + lat.toFixed(5) + ',' + lon.toFixed(5);
+
+            frame.src = embedUrl;
+            frame.onload = () => {
+                status.style.display = 'none';
+                frame.style.display = 'block';
+            };
+
+        } catch (fehler) {
+            console.error('Karte konnte nicht geladen werden:', fehler);
+            zeigeStatus('⚠️ Die Karte konnte nicht geladen werden. Bitte wende dich an deine Gruppenleitung.');
+        }
     }
 </script>
 
