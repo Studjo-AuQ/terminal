@@ -1,11 +1,29 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "12.09.2026, 00:31 Uhr (UTC)",
+  "aktualisiert": "12.09.2026, 05:33 Uhr (UTC)",
   "meldungen": [
     {
+      "title": "BRICS-Gipfel im Zeichen globaler Ungewissheiten",
+      "description": "Putin, Xi, Modi: Beim BRICS-Gipfel in Neu-Delhi treffen selbstbewusste Staatenlenker aufeinander. Bei vielen Themen liegen sie weit auseinander. Was kann das Treffen bei den globalen Krisen - von Ukraine bis Iran - bewirken? Von Lena Bodewein.",
+      "pubDate": "2026-09-12T07:18:36+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Griechische Reeder: Verschwiegen, einflussreich, risikofreudig",
+      "description": "Trotz weltweiter Krisen boomt das Geschäft der griechischen Reeder. Das kleine Land liegt bei den Transportkapazitäten weltweit auf Platz 1. Doch immer wieder sind die Reeder auch in Grauzonen unterwegs. Von Astrid Halder.",
+      "pubDate": "2026-09-12T07:04:13+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Abwehr von Drohnen - die Sicherheitslücke am Himmel",
+      "description": "Drohnen sind günstig, leicht zu beschaffen - und können für Verunsicherung sorgen. Laut Bundeskriminalamt gab es 2025 mehr als 1.000 verdächtige Drohnensichtungen. Wie gut sind Deutschlands Abwehrsysteme? Von H. Buchholz und P. Weimar.",
+      "pubDate": "2026-09-12T05:12:30+02:00",
+      "bild": ""
+    },
+    {
       "title": "Frankreich: Mehr als 40 Verletzte bei Zugunglück",
-      "description": "Ein Teil eines Zugs in Nordfrankreich ist nach einer Kollision entgleist. Mehr als 40 Menschen wurden nach vorläufigen Angaben verletzt, darunter eine Frau schwer. An Bord des Verkehrsmittels waren rund 180 Passagiere.",
-      "pubDate": "2026-09-11T23:31:05+02:00",
+      "description": "Ein Teil eines Zugs in Nordfrankreich ist nach einer Kollision entgleist. Mehr als 40 Menschen wurden verletzt, darunter eine Person schwer. An Bord des Regionalzuges waren rund 180 Passagiere. Die Unfallursache ist noch unklar.",
+      "pubDate": "2026-09-12T05:41:39+02:00",
       "bild": ""
     },
     {
@@ -72,24 +90,6 @@
       "title": "KI-Entwickler Anthropic blockiert Biowaffen-Recherchen",
       "description": "Das US-Unternehmen Anthropic hat nach eigenen Angaben mehrere Fälle missbräuchlicher Nutzung seines KI-Modells unterbunden. Dabei sei es auch um mutmaßliche Cyberspionage aus Russland und biologische Waffen gegangen.",
       "pubDate": "2026-09-11T15:37:07+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Anschlagspläne: Hamas-Unterstützer in Berlin angeklagt",
-      "description": "Mutmaßliche Mitglieder der Hamas sollen von Deutschland aus Waffen besorgt haben. Jetzt wurden sie angeklagt. Der Vorwurf: Zum zweiten Jahrestag des Überfalls auf Israel wollten sie Anschläge auf Juden verüben.",
-      "pubDate": "2026-09-11T15:14:35+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Was eine AfD-Regierung für den Verfassungsschutz bedeuten könnte",
-      "description": "Der Landesverfassungsschutz hat die AfD in Sachsen-Anhalt als gesichert rechtsextremistisch eingestuft. Nun könnte die Partei dort regieren. Was hieße das für die Behörde und den Informationsaustausch? Von A. Stephany und A. Tadey.",
-      "pubDate": "2026-09-11T14:22:02+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Firmenpleiten in Deutschland auf höchstem Stand seit 2013",
-      "description": "Im ersten Halbjahr ist die Zahl der Firmenpleiten in Deutschland auf den höchsten Stand seit 2013 gestiegen. Gleichzeitig gibt es aber auch besonders viele Neugründungen von Start-up-Unternehmen.",
-      "pubDate": "2026-09-11T14:21:33+02:00",
       "bild": ""
     }
   ],
