@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "12.09.2026, 13:58 Uhr (UTC)",
+  "aktualisiert": "12.09.2026, 16:58 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Protest in vielen Städten: Zehntausende demonstrieren gegen rechts",
+      "description": "Zehntausende Menschen sind in Deutschland gegen Rechtsextremismus und für Demokratie auf die Straße gegangen. Demos gab es in mehr als 35 Städten. Eine Forderung: Die Prüfung eines AfD-Verbotsverfahrens.",
+      "pubDate": "2026-09-12T18:39:40+02:00",
+      "bild": ""
+    },
     {
       "title": "Wie die Stadt Wittenberge ihr Industrie-Erbe neu nutzen will",
       "description": "Wo früher Nähmaschinen produziert wurden, sollen nun Touristen übernachten, Start-ups arbeiten und Konzerte stattfinden. Wie die brandenburgische Stadt Wittenberge - zwischen Hamburg und Berlin gelegen - ihr Industrie-Erbe nutzt. Von J. Piwon.",
@@ -27,9 +33,9 @@
       "bild": ""
     },
     {
-      "title": "Zug entgleist in Frankreich - Ermittler schließen Sabotage nicht aus",
-      "description": "In Nordfrankreich entgleist ein Zug, mehr als 40 Menschen werden verletzt. Französische Medien berichten nun, dass es möglicherweise kein Unglück war. Offenbar fanden Ermittler einen Schienenteil auf der Strecke.",
-      "pubDate": "2026-09-12T12:45:13+02:00",
+      "title": "Zug entgleist in Frankreich: Ermittler gehen Sabotage-Verdacht nach",
+      "description": "In Nordfrankreich entgleist ein Zug, mehr als 40 Menschen werden verletzt. Die Staatsanwaltschaft prüft nun, ob es sich um Sabotage handelt. Denn Ermittler fanden ein Schienenteil auf der Strecke.",
+      "pubDate": "2026-09-12T16:57:44+02:00",
       "bild": ""
     },
     {
@@ -84,12 +90,6 @@
       "title": "Abwehr von Drohnen - die Sicherheitslücke am Himmel",
       "description": "Drohnen sind günstig, leicht zu beschaffen - und können für Verunsicherung sorgen. Laut Bundeskriminalamt gab es 2025 mehr als 1.000 verdächtige Drohnensichtungen. Wie gut sind Deutschlands Abwehrsysteme? Von H. Buchholz und P. Weimar.",
       "pubDate": "2026-09-12T05:12:30+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Frankreich: Mehr als 40 Verletzte bei Zugunglück",
-      "description": "Ein Teil eines Zugs in Nordfrankreich ist nach einer Kollision entgleist. Mehr als 40 Menschen wurden verletzt, darunter eine Person schwer. An Bord des Regionalzuges waren rund 180 Passagiere. Die Unfallursache ist noch unklar.",
-      "pubDate": "2026-09-12T05:41:39+02:00",
       "bild": ""
     }
   ],
