@@ -58,11 +58,6 @@
       border-radius: 0 8px 8px 0; padding: 10px 14px;
       font-size: 0.82rem; color: #5a4500; margin-bottom: 20px; line-height: 1.5;
     }
-    .info-box {
-      background: #e8f0fe; border-left: 3px solid #1a56c4;
-      border-radius: 0 8px 8px 0; padding: 10px 14px;
-      font-size: 0.85rem; color: #1a3a7a; margin: 10px 0; line-height: 1.5;
-    }
     .ok-box {
       background: #eafaea; border-left: 3px solid #2a7a2a;
       border-radius: 0 8px 8px 0; padding: 10px 14px;
@@ -192,13 +187,6 @@ Telefon: +49 511 33 06 03-0<br>
         <td>Jeweiliger Betreiber der Zielseite</td>
       </tr>
       <tr>
-        <td><strong>OpenStreetMap / Nominatim</strong><br><small>(Standort-Karten)</small></td>
-        <td>Anzeige der Lage einer Betriebsstätte</td>
-        <td>IP-Adresse, Geräte-/Browserinformationen – erst nach Klick auf "Zustimmen und laden"</td>
-        <td>Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)</td>
-        <td>OpenStreetMap Foundation, UK</td>
-      </tr>
-      <tr>
         <td><strong>mobil.nrw</strong><br><small>(Fahrplanauskunft)</small></td>
         <td>Anzeige der Busfahrplanauskunft</td>
         <td>IP-Adresse, Geräte-/Browserinformationen – erst nach Klick auf "Zustimmen und laden"</td>
@@ -279,14 +267,28 @@ Telefon: +49 511 33 06 03-0<br>
 
   <!-- ── 7. Eingebundene Karten- und Fahrplandienste ── -->
   <div class="karte">
-    <h2>7. Eingebundene Karten- und Fahrplandienste (nur nach Zustimmung)</h2>
+    <h2>7. Standort-Karten und eingebundene Fahrplandienste</h2>
+
+    <h3>Standort-Karten unserer Betriebsstätten</h3>
     <p>
-      An einigen Stellen im Infoterminal – bei der Anzeige der Standorte
-      unserer Betriebsstätten sowie bei den Fahrplan- und Abfahrtsauskünften
-      unter "Adressen und Fahrpläne" – bieten wir dir die Möglichkeit, Karten-
-      bzw. Fahrplandienste externer Anbieter direkt einzusehen. Diese Inhalte
-      werden <strong>nicht automatisch geladen</strong>, sondern erst,
-      nachdem du auf der jeweiligen Seite aktiv auf
+      Die Kartenausschnitte zu unseren Betriebsstätten unter "Adressen und
+      Fahrpläne" sind <strong>als Bilddatei lokal in diesem Infoterminal
+      hinterlegt</strong>. Beim Ansehen dieser Kartenausschnitte wird
+      <strong>keine Verbindung zu einem externen Kartendienst aufgebaut</strong>
+      und es werden dabei keine Daten an Dritte übertragen.
+    </p>
+    <p>
+      Die Kartenausschnitte selbst stammen von OpenStreetMap. Bildnachweis:
+      Kartenausschnitt © <a href="https://www.openstreetmap.org/copyright"
+      target="_blank" rel="noopener">OpenStreetMap-Mitwirkende</a>.
+    </p>
+
+    <h3>Fahrplan- und Abfahrtsauskünfte (mobil.nrw, VRR)</h3>
+    <p>
+      Für die Fahrplan- und Abfahrtsauskünfte unter "Adressen und Fahrpläne"
+      bieten wir dir die Möglichkeit, die Dienste externer Anbieter direkt
+      einzusehen. Diese Inhalte werden <strong>nicht automatisch geladen</strong>,
+      sondern erst, nachdem du auf der jeweiligen Seite aktiv auf
       "Zustimmen und laden" geklickt hast. Vor deiner Zustimmung wird dir
       angezeigt, welcher externe Anbieter beteiligt ist.
     </p>
@@ -303,37 +305,22 @@ Telefon: +49 511 33 06 03-0<br>
       der Seite wirst du erneut gefragt.
     </p>
 
-    <h3>OpenStreetMap und Nominatim (Standort-Karten)</h3>
-    <p>
-      Für die Anzeige der Standort-Karten unserer Betriebsstätten nutzen wir
-      den freien Kartendienst OpenStreetMap sowie dessen Geokodierungsdienst
-      Nominatim, beide betrieben von der OpenStreetMap Foundation,
-      St John's Innovation Centre, Cowley Road, Cambridge, CB4 0WS,
-      Vereinigtes Königreich. Weitere Informationen findest du in der
-      <a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">
-      Datenschutzerklärung der OpenStreetMap Foundation</a>.
-    </p>
-
     <h3>mobil.nrw (Fahrplanauskunft)</h3>
     <p>
       Für die allgemeine Fahrplanauskunft binden wir den Dienst mobil.nrw
-      ein. Informationen zum Datenschutz des Anbieters findest du auf dessen
-      Website <a href="https://www.mobil.nrw" target="_blank" rel="noopener">www.mobil.nrw</a>.
+      ein. Informationen zum Datenschutz des Anbieters findest du unter
+      <a href="https://www.mobil.nrw/datenschutz.html" target="_blank" rel="noopener">
+      www.mobil.nrw/datenschutz.html</a>.
     </p>
 
     <h3>VRR Abfahrtsmonitor</h3>
     <p>
       Für die Anzeige aktueller Abfahrtszeiten binden wir den
       Abfahrtsmonitor des Verkehrsverbunds Rhein-Ruhr (VRR AöR) ein.
-      Informationen zum Datenschutz des Anbieters findest du auf dessen
-      Website <a href="https://www.vrr.de" target="_blank" rel="noopener">www.vrr.de</a>.
+      Informationen zum Datenschutz des Anbieters findest du unter
+      <a href="https://www.vrr.de/datenschutz/" target="_blank" rel="noopener">
+      www.vrr.de/datenschutz/</a>.
     </p>
-
-    <div class="info-box">
-      ℹ️ Die genauen Datenschutz-Links der Anbieter mobil.nrw und VRR können
-      sich ändern – bitte bei Gelegenheit über die jeweilige Anbieter-Startseite
-      verifizieren und diese Erklärung bei Bedarf aktualisieren.
-    </div>
   </div>
 
   <!-- ── 8. Keine Cookies ── -->
