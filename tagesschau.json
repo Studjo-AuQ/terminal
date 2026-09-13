@@ -1,11 +1,53 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "13.09.2026, 09:41 Uhr (UTC)",
+  "aktualisiert": "13.09.2026, 14:12 Uhr (UTC)",
   "meldungen": [
     {
-      "title": "Viele Vermisste nach Fährunglück in Indonesien",
-      "description": "In Indonesien ist eine Fähre mit mehr als 240 Menschen an Bord gesunken. Ein Großteil der Passagiere wird noch vermisst. Ein Such- und Rettungseinsatz dauert bei rauer See noch an.",
-      "pubDate": "2026-09-13T10:31:18+02:00",
+      "title": "Ukraine: Russische Drohne trifft Passagierzug nach Warschau",
+      "description": "In der Ukraine ist ein Passagierzug von Kiew nach Warschau von einer russischen Drohne getroffen worden. Verletzt wurde dabei niemand. Polen ist nach dem Angriff unmittelbar an seiner Grenze alarmiert.",
+      "pubDate": "2026-09-13T16:03:27+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Festnahmen bei Razzien gegen LGBTQ-Vereine in der Türkei",
+      "description": "Türkische Behörden gehen hart gegen LGBTQ-Vereine vor: Bei Razzien wurden mehrere Menschen festgenommen. Die Staatsanwaltschaft spricht von einer Aktion zum Schutz der Familie, Menschenrechtler kritisieren staatlich gelenkte Diskriminierung.",
+      "pubDate": "2026-09-13T16:09:26+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Kupferpreis auf Rekordhoch: Warum es für Verbraucher teuer werden könnte",
+      "description": "Kupfer kostet so viel wie nie. US-Zollsorgen, KI, Stromnetze und E-Autos treiben den Kupferpreis. Wo der Preisschub für Verbraucher spürbar werden könnte - vom Bauen bis zur Stromrechnung. Von Angela Göpfert.",
+      "pubDate": "2026-09-13T15:03:38+02:00",
+      "bild": ""
+    },
+    {
+      "title": "China 50 Jahre nach Maos Tod: Immer noch untersteht alles der Partei",
+      "description": "50 Jahre nach dem Tod von Chinas Staatsgründer Mao Zedong ist die Volksrepublik ein kapitalistisches Land - seine Metropolen geprägt von Malls und Wolkenkratzern. Und doch kontrolliert die Kommunistische Partei weiterhin alles. Von Eva Lamby-Schmitt.",
+      "pubDate": "2026-09-13T13:24:56+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Goethe-Institute in Russland geschlossen",
+      "description": "Nach mehr als 30 Jahren endet die Arbeit der Goethe-Institute in Russland. Die drei verbliebenen Standorte sind geschlossen. Moskau reagiert damit auf deutsche Strafmaßnahmen gegen Russland. Von Stephan Laack.",
+      "pubDate": "2026-09-13T12:26:53+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Kenia: Gewaltexzesse im Auftrag der Regierung?",
+      "description": "Motorradgangs, die Veranstaltungen der Opposition mit Macheten angreifen: Ein Jahr vor der Präsidentenwahl in Kenia wird das Land mit Gewalt überzogen. Die Opposition macht dafür auch die Regierung verantwortlich. Von Georg Restle.",
+      "pubDate": "2026-09-13T12:24:51+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Söder zu Kanzlersturz-Spekulationen: \"Von der CSU auf keinen Fall\"",
+      "description": "Was wird aus Kanzler Merz? In der CDU rumort es, Gerüchte über einen Kanzlersturz machen die Runde. Von der CSU werde Merz nicht gestürzt, versicherte Parteichef Söder nun. Für die CDU sei er nicht zuständig.",
+      "pubDate": "2026-09-13T12:11:59+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Tote und Vermisste nach Fährunglück in Indonesien",
+      "description": "In Indonesien ist eine Fähre mit mehr als 240 Menschen an Bord gesunken. Ein Großteil der Passagiere wird noch vermisst, bisher wurden sechs Todesopfer gemeldet. Der Such- und Rettungseinstz dauert bei rauer See noch an.",
+      "pubDate": "2026-09-13T12:18:20+02:00",
       "bild": ""
     },
     {
@@ -48,48 +90,6 @@
       "title": "Zwischen Rohstoffen und Macht: Der Kampf um die Arktis",
       "description": "Die Arktis wirkt wie eine Region am Rand der Welt - und wird doch immer wichtiger: militärisch und wirtschaftlich. Das sieht auch die EU so und trifft sich zu Beratungen in Finnland - auch Kanzler Merz ist dabei. Von Christina Nagel.",
       "pubDate": "2026-09-13T02:03:56+02:00",
-      "bild": ""
-    },
-    {
-      "title": "OpenAI-Chef verschiebt Börsengang wegen Sicherheitsbedenken",
-      "description": "Das Unternehmen OpenAI bereitet sich seit Längerem auf den Börsengang vor. Doch Firmenchef Altman hält den Zeitpunkt für ungünstig und gibt dem Chef von Anthropic recht, der eine Drosselung der KI-Entwicklung fordert.",
-      "pubDate": "2026-09-13T01:53:35+02:00",
-      "bild": ""
-    },
-    {
-      "title": "\"Woman Unknown\" gewinnt Goldenen Löwen in Venedig",
-      "description": "Eine Auszeichnung bei den Filmfestspielen in Venedig zählt für Filmschaffende zu den wichtigsten Ehrungen. In diesem Jahr ging der Goldene Löwe für den besten Film an \"Women Unknown\" von May el-Toukhy. Einen Preis gab es auch für eine Gaza-Doku.",
-      "pubDate": "2026-09-12T22:36:15+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Präsident Trump in Irland: Golf, Proteste und ein heikles Thema",
-      "description": "US-Präsident Trump besucht Irland - und ein Golfturnier in seinem eigenem Golfclub. Ein kleines Dorf steht Kopf, viele demonstrieren gegen den Besuch - und dann wird plötzlich die Einheit Irlands zum Thema. Von Mareike Aden.",
-      "pubDate": "2026-09-12T19:55:57+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Droht der nächste Ölpreis-Schock?",
-      "description": "Erst die Straße von Hormus, nun die Meerenge Bab al-Mandab und eine beschädigte Pipeline. Der größte Ölexporteur der Welt, Saudi-Arabien, hat eine Reihe von Problemen. Wie entwickelt sich der Ölpreis? Welche Folgen hat das für Deutschland?",
-      "pubDate": "2026-09-12T19:31:20+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Gefahr durch Russland: Was macht Europa gegen hybride Bedrohungen?",
-      "description": "Sabotage, Drohungen, Drohnen-Vorfälle: Wegen der wachsenden Gefahr durch hybride Angriffe rücken die europäischen Partner zusammen und versuchen, Härte zu zeigen. Kritiker vermissen jedoch ein gesamteuropäisches Konzept. Von Olga Chladkova.",
-      "pubDate": "2026-09-12T18:59:53+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Protest in vielen Städten: Zehntausende demonstrieren gegen Rechtsextremismus",
-      "description": "Zehntausende Menschen sind in Deutschland gegen Rechtsextremismus und für Demokratie auf die Straße gegangen. Demos gab es in mehr als 35 Städten. Eine Forderung: Die Prüfung eines AfD-Verbotsverfahrens.",
-      "pubDate": "2026-09-12T19:38:32+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wie die Stadt Wittenberge ihr Industrie-Erbe neu nutzen will",
-      "description": "Wo früher Nähmaschinen produziert wurden, sollen nun Touristen übernachten, Start-ups arbeiten und Konzerte stattfinden. Wie die brandenburgische Stadt Wittenberge - zwischen Hamburg und Berlin gelegen - ihr Industrie-Erbe nutzt. Von J. Piwon.",
-      "pubDate": "2026-09-12T15:22:03+02:00",
       "bild": ""
     }
   ],
