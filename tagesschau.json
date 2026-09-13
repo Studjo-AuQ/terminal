@@ -1,11 +1,23 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "13.09.2026, 14:12 Uhr (UTC)",
+  "aktualisiert": "13.09.2026, 17:34 Uhr (UTC)",
   "meldungen": [
     {
+      "title": "Nach Angriffen auf Öl-Infrastruktur: Saudi-Arabien unter Druck",
+      "description": "Nach dem Huthi-Vormarsch und dem Angriff auf eine Pipeline wächst der Druck auf Saudi-Arabien - denn nach der Straße von Hormus ist nun auch die Ausweichroute für Ölexporte vorerst nicht nutzbar. Von den USA kommt keine Hilfe. Von A. Osius.",
+      "pubDate": "2026-09-13T17:56:14+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Sachsen-Anhalt: Wie realistisch sind die Rundfunk-Pläne der AfD?",
+      "description": "Noch am Wahlabend bekräftigte AfD-Spitzenkandidat Siegmund in der tagesschau seine Absicht, den Medienstaatsvertrag zu kündigen. Was sind die juristischen Knackpunkte? Von Alena Lagmöller und Frank Bräutigam.",
+      "pubDate": "2026-09-13T16:28:14+02:00",
+      "bild": ""
+    },
+    {
       "title": "Ukraine: Russische Drohne trifft Passagierzug nach Warschau",
-      "description": "In der Ukraine ist ein Passagierzug von Kiew nach Warschau von einer russischen Drohne getroffen worden. Verletzt wurde dabei niemand. Polen ist nach dem Angriff unmittelbar an seiner Grenze alarmiert.",
-      "pubDate": "2026-09-13T16:03:27+02:00",
+      "description": "In der Ukraine ist ein Passagierzug von Kiew nach Warschau von einer russischen Drohne attackiert worden. Verletzt wurde dabei niemand. Auch eine Tankstelle in der Grenzregion zu Polen wurde getroffen.",
+      "pubDate": "2026-09-13T17:08:51+02:00",
       "bild": ""
     },
     {
@@ -22,7 +34,7 @@
     },
     {
       "title": "China 50 Jahre nach Maos Tod: Immer noch untersteht alles der Partei",
-      "description": "50 Jahre nach dem Tod von Chinas Staatsgründer Mao Zedong ist die Volksrepublik ein kapitalistisches Land - seine Metropolen geprägt von Malls und Wolkenkratzern. Und doch kontrolliert die Kommunistische Partei weiterhin alles. Von Eva Lamby-Schmitt.",
+      "description": "50 Jahre nach dem Tod von Chinas Staatsgründer Mao Zedong ist die Volksrepublik ein kapitalistisches Land - seine Metropolen sind geprägt von Malls und Wolkenkratzern. Und doch kontrolliert die Kommunistische Partei weiterhin alles. Von Eva Lamby-Schmitt.",
       "pubDate": "2026-09-13T13:24:56+02:00",
       "bild": ""
     },
@@ -78,18 +90,6 @@
       "title": "Unkontrollierbare Risiken: KI-Bosse in den USA wollen Entwicklung bremsen",
       "description": "Angesichts der Risiken muss die Entwicklung von KI dringend verlangsamt werden, meint der Chef von Anthropic und fordert Regulierungen. Unterstützung bekommt er von OpenAI-Chef Altman und Tech-Unternehmer Musk. Von Gabi Biesinger.",
       "pubDate": "2026-09-13T06:47:55+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ermittler sehen keine Hinweise auf Anschlag bei Zugunglück",
-      "description": "Bei der Entgleisung eines Zuges in der Normandie werden mehr als 40 Menschen verletzt. Hinweise auf einen Anschlag gibt es jedoch laut Staatsanwalt nicht - damit widerspricht er der Darstellung einiger Politiker.",
-      "pubDate": "2026-09-13T04:44:07+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Zwischen Rohstoffen und Macht: Der Kampf um die Arktis",
-      "description": "Die Arktis wirkt wie eine Region am Rand der Welt - und wird doch immer wichtiger: militärisch und wirtschaftlich. Das sieht auch die EU so und trifft sich zu Beratungen in Finnland - auch Kanzler Merz ist dabei. Von Christina Nagel.",
-      "pubDate": "2026-09-13T02:03:56+02:00",
       "bild": ""
     }
   ],
