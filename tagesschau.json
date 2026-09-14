@@ -1,7 +1,79 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "14.09.2026, 13:54 Uhr (UTC)",
+  "aktualisiert": "14.09.2026, 19:11 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Schock und Trotz nach Razzien gegen LGBTQ-Vereine in der Türkei",
+      "description": "In der Türkei wurden am Wochenende zahlreiche Aktivisten und Aktivistinnen für LGBTQ-Rechte festgenommen. NGOs und Zivilgesellschaft verurteilen die Razzien - es sei das bisher größte Vorgehen gegen die Community. Von B. Weber.",
+      "pubDate": "2026-09-14T20:38:34+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Klingbeil stellt Bedingungen für Commerzbank-Übernahme",
+      "description": "Die Übernahme der Commerzbank durch die italienische UniCredit ist kaum noch abzuwenden - trotz aller bisherigen Widerstände, auch aus der Bundesregierung. Nun versucht Finanzminister Klingbeil, rote Linien zu ziehen.",
+      "pubDate": "2026-09-14T20:32:08+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Was steckt hinter der Debatte über eine KI-Bremse?",
+      "description": "Nach bedrohlichen Zwischenfällen im Zusammenhang mit KI-Modellen ist eine globale Debatte über schärfere Regeln für die Technologie entbrannt. Vorne mit dabei: ausgerechnet die führenden Entwickler OpenAI und Anthropic.",
+      "pubDate": "2026-09-14T20:20:40+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wirbel nach Rekordspenden für Farages Reform-UK-Partei",
+      "description": "Verschiedene Vorwürfe zum zweifelhaften Umgang mit Großspenden sind noch nicht ausgestanden, da erhält Reform UK erneut enorme Zuwendungen. Von zwei umstrittenen Krypto-Unternehmern gab es mehr als 80 Millionen Euro. Von L.-M. Röhling.",
+      "pubDate": "2026-09-14T20:19:43+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Oasis kündigt Konzerte in Deutschland an",
+      "description": "Nach langem Streit ging Oasis im vergangenen Jahr auf Reunion-Tournee - seither hofften Fans auch hierzulande auf Konzerte. Nun ist es soweit: Erstmals seit mehr als 15 Jahren sind wieder zwei Auftritte in Deutschland geplant.",
+      "pubDate": "2026-09-14T18:54:42+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Arktis-Gipfel: Die EU richtet ihren Blick Richtung Norden",
+      "description": "Mit dem Klimawandel verändert sich die Bedeutung der Arktis - wirtschaftlich und sicherheitspolitisch. Darauf will die EU reagieren. Ein Gipfel in Finnland sollte den Anfang machen. Von A. Meyer-Feist.",
+      "pubDate": "2026-09-14T18:28:06+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: KI- und Zinssorgen bremsen DAX",
+      "description": "Ein ganzer Mix ungünstiger Nachrichten hat den Start in die neue Woche belastet. Der DAX konnte seine Verluste allerdings im Verlauf eingrenzen.",
+      "pubDate": "2026-09-14T18:21:36+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Pistorius will Soldaten zum Dienst in Litauen auch verpflichten",
+      "description": "Verteidigungsminister Pistorius hatte bei der Litauen-Brigade erst auf Freiwilligkeit gesetzt - doch Hunderte Spezialisten fehlen noch. Nun sollen Soldaten auch zum Dienst in der Brigade verpflichtet werden.",
+      "pubDate": "2026-09-14T18:20:32+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Drängt Moskau Schüler wegen Fachkräftemangel in den Arbeitsmarkt?",
+      "description": "Immer mehr Schülern in Russland wird die Aufnahme in die Oberstufe verweigert. Stattdessen sollen sie offenbar möglichst früh auf dem Arbeitsmarkt landen - denn dort fehlen die Fachkräfte. Liegt das auch am Krieg gegen die Ukraine? Von S. Laack.",
+      "pubDate": "2026-09-14T17:06:02+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Berliner CSD-Attentäter soll Bekennervideo an IS-Kontakt geschickt haben",
+      "description": "Der Berliner CSD-Attentäter hatte vor seiner Tat ein Bekennervideo aufgenommen. Nach Recherchen von WDR und SZ soll Abdul B. das Video an eine britische Islamistin in Syrien verschickt haben - veröffentlicht wurde es aber nie.",
+      "pubDate": "2026-09-14T17:00:27+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Israelische NGO kritisiert Israels Politik im Westjordanland",
+      "description": "Die israelische Menschenrechtsorganisation B'Tselem erhebt schwere Vorwürfe gegen Israels Politik im Westjordanland: Die Maßnahmen seien Teil einer systematischen Strategie zur Zerstörung der palästinensischen Lebensgrundlagen. Von J. Segador.",
+      "pubDate": "2026-09-14T16:41:53+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Schweden steht nach Parlamentswahl vor schwieriger Regierungsbildung",
+      "description": "Gebannt wartet Schweden auf das Endergebnis der Parlamentswahl. Derzeit liegt die Opposition knapp vor dem Regierungslager. Doch ganz gleich, wer gewinnt: Die Bildung einer handlungsfähigen Regierung dürfte schwierig werden. Von Jana Sinram.",
+      "pubDate": "2026-09-14T16:12:14+02:00",
+      "bild": ""
+    },
     {
       "title": "EU-Staaten wollen Interessen in der Arktis schützen",
       "description": "Schifffahrtsrouten, Bodenschätze und Sicherheitspolitik: Deutschland und weitere europäische Staaten fordern eine stärkere Rolle der EU in der Arktis - vor allem wegen der Bedrohung aus Moskau.",
@@ -18,78 +90,6 @@
       "title": "Bund und UniCredit verhandeln über Commerzbank-Übernahme",
       "description": "Die UniCredit hat am Finanzmarkt Realitäten geschaffen, und die Politik muss reagieren. Heute wird Bankchef Orcel im Finanzministerium empfangen. Es geht um die geplante Übernahme der Commerzbank.",
       "pubDate": "2026-09-14T14:27:59+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Russische Drohnenangriffe - Vor allem Kiew ist im Visier",
-      "description": "Die russischen Luftangriffe auf die Ukraine sind intensiver geworden. Dazu kommt: Die Drohnen sind inzwischen oft schneller und schwieriger abzufangen. Besonders betroffen sind die Anwohner in den Vororten Kiews. Von P. Sawicki.",
-      "pubDate": "2026-09-14T14:11:29+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Trump kündigt Ende der Zölle auf irischen Whiskey an",
-      "description": "US-Präsident Trump hat die Aufhebung der Zölle auf irischen Whiskey angekündigt. Während seiner Irlandreise am Wochenende sei er um eine Aufhebung der Zölle gebeten worden, sagte Trump auf dem Golfplatz.",
-      "pubDate": "2026-09-14T13:09:07+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bundesanwaltschaft: Anklage gegen mutmaßliche Russland-Spionin",
-      "description": "Sie soll ein pro-russisches Netzwerk in Berlin aufgebaut und Informationen zur deutschen Verteidigungspolitik an den Kreml geliefert haben: Jetzt hat die Bundesanwaltschaft Anklage gegen die mutmaßliche Spionin Russlands erhoben.",
-      "pubDate": "2026-09-14T13:03:53+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Berlin-Wahl: Wie Stefan Evers zum CDU-Spitzenkandidaten wurde",
-      "description": "Jahrelang zog Stefan Evers eher im Hintergrund die Fäden. Jetzt steht der bisherige Finanzsenator erstmals selbst an der Spitze eines CDU-Wahlkampfs - die größte Bewährungsprobe seiner Karriere. Von Andre Kartschall.",
-      "pubDate": "2026-09-14T12:22:07+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Golftstaaten: Krisentreffen zur Lage in Straße von Hormus verschoben",
-      "description": "Das für heute geplante Treffen der Golfstaaten zum Konflikt über die Straße von Hormus ist verschoben. Eine Rolle spielten dabei offenbar die erneuten Angriffe der Huthi-Miliz im Jemen auf Saudi-Arabien. Derweil steigen die Öl- und Benzinpreise.",
-      "pubDate": "2026-09-14T12:10:56+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Anleger fürchten straffere Geldpolitik",
-      "description": "Zum Wochenstart drücken höhere Ölpreise und die Aussicht auf steigende Zinsen auf die Stimmung der Anleger. Die Notenbanken von England, Japan und den USA werden in dieser Woche ihre Entscheidung verkünden.",
-      "pubDate": "2026-09-14T10:50:05+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Indonesien: Suche nach Vermissten in Wrack von Fähre",
-      "description": "Nach dem Fährunglück in Indonesien suchen Rettungskräfte nach den noch mehr als 100 Vermissten in der Javasee. Ihre Hoffnung: Im Inneren der gekenterten Fähre könnten noch Menschen am Leben sein.",
-      "pubDate": "2026-09-14T10:23:33+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Tankstellenverband erwartet Spritpreise um die drei Euro",
-      "description": "Der Schock an den Zapfsäulen ist zurück. Wegen der Eskalation im Nahen Osten werden Benzin und Diesel immer teurer - am Wochenende gab es ein neues Allzeithoch. Auch die Preise für Heizöl und Gas steigen deutlich.",
-      "pubDate": "2026-09-14T13:52:20+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Trump gegen Regulierung: \"Wer bei KI gewinnt, gewinnt\"",
-      "description": "Mehr staatliche Regulierung für Künstliche Intelligenz - mit dieser Forderung haben Tech-Bosse für Aufsehen gesorgt. Doch US-Präsident Trump hält davon wenig: Für ihn steht der US-Vorsprung bei KI gegenüber China im Vordergrund.",
-      "pubDate": "2026-09-14T10:43:06+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Nach Angriff auf Zug in der Ukraine: Polen wirft Russland Eskalation vor",
-      "description": "Nach einem russischen Drohnenangriff auf einen Zug in der Ukraine nach Warschau hat Polens Krisenstab getagt. Seit Wochen gibt es Warnungen vor einer möglichen Zuspitzung, die auch Polen erreichen könnte. Von Palina Milling.",
-      "pubDate": "2026-09-14T09:08:39+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Parlamentswahl in Schweden: Keine strahlenden Sieger und ein Verlierer",
-      "description": "Schweden hat gewählt - aber noch lange keine Regierung. Sowohl die Sozialdemokraten als stärkste Kraft als auch die Konservativen brauchen Partner. Die rechtspopulistischen Schwedendemokraten büßten überraschend Stimmen ein. Von Arne Bartram.",
-      "pubDate": "2026-09-14T07:49:34+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Hitze, Feuer, Fluten: Wie das Mittelmeer Europas Wetter verändert",
-      "description": "Das Mittelmeer wird immer heißer. Die Folge: Hitze, Brände, Fluten. 11KM darüber, wie sich das Klima des Mittelmeerraums gerade fundamental verändert.",
-      "pubDate": "2026-09-14T07:00:50+02:00",
       "bild": ""
     }
   ],
