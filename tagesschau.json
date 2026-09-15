@@ -1,11 +1,53 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "15.09.2026, 01:20 Uhr (UTC)",
+  "aktualisiert": "15.09.2026, 06:35 Uhr (UTC)",
   "meldungen": [
     {
+      "title": "Mecklenburg-Vorpommern: Wahlkampf zwischen Euphorie und Entgeisterung",
+      "description": "Wohin steuert Mecklenburg-Vorpommern? Mit Blick auf die Umfragewerte ist der Nordosten politisch entzweit. Über Themen und Stimmungen, die diesen Wahlkampf prägen. Von Christoph Cyrulies.",
+      "pubDate": "2026-09-15T07:53:49+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX-Schwäche dürfte anhalten",
+      "description": "Die Lage im Nahen Osten bleibt angespannt, die Energiepreise steigen - genau wie die Inflationssorgen: Der DAX dürfte heute weiter zurückfallen. Langsam gerät die Marke von 25.000 Punkten wieder ins Blickfeld.",
+      "pubDate": "2026-09-15T07:52:53+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Verlängerung von EU-Sanktionen gegen Russland vorerst blockiert",
+      "description": "Die EU wird ihre Strafmaßnahmen gegen rund 3.000 russische Personen und Einrichtungen vorerst nicht wie geplant um ein Jahr verlängern. Grund: Die Slowakei und Frankreich wollen offenbar einen Oligarchen von der Sanktionsliste streichen.",
+      "pubDate": "2026-09-15T07:24:12+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Noch nie so viele Start-ups gegründet wie im ersten Halbjahr 2026",
+      "description": "Noch nie wurden so viele Unternehmen mit innovativen Geschäftsideen gegründet - vor allem dank Künstlicher Intelligenz. Die Start-up-Szene blickt optimistisch in die Zukunft. Von Steffen Clement.",
+      "pubDate": "2026-09-15T06:43:29+02:00",
+      "bild": ""
+    },
+    {
+      "title": "US-Fernsehpreise: \"Widow's Bay\" und \"The Pitt\" räumen bei Emmys ab",
+      "description": "Die Horror-Comedyserie \"Widow's Bay\" ist der große Gewinner bei den Emmys - mit 14 Auszeichnungen. Als beste Drama-Serie wurde bei der Verleihung in Los Angeles wie schon im vergangenen Jahr \"The Pitt\" prämiert.",
+      "pubDate": "2026-09-15T07:27:27+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Supreme Court: Niederlage für Trump im Streit um Briefwahl",
+      "description": "Noch vor den Zwischenwahlen im November wollte die US-Regierung verschärfte Briefwahlregeln durchsetzen - doch damit ist sie jetzt vor dem Supreme Court gescheitert. Bei den Demokraten sorgt die Entscheidung für Erleichterung.",
+      "pubDate": "2026-09-15T06:52:00+02:00",
+      "bild": ""
+    },
+    {
+      "title": "US-Regierung hebt Klimaregeln für Kraftwerke auf",
+      "description": "Es ist ein weiterer Schritt der Trump-Regierung, Umweltauflagen abzuschaffen: Die Umweltbehörde nimmt Regeln zurück, die den Treibhausgasausstoß für Kohle- und Gaskraftwerke begrenzen. Umweltschützer wollen klagen.",
+      "pubDate": "2026-09-15T03:19:00+02:00",
+      "bild": ""
+    },
+    {
       "title": "Litauen: NATO-Kampfjets schießen Drohne ab",
-      "description": "Kampfjets der NATO haben eine Drohne abgeschossen, die in den litauischen Luftraum eingedrungen war. Der unbemannte Flugkörper war nahe der Hauptstadt Vilnius gesichtet worden. Litauens Präsident Nauseda dankte der NATO.",
-      "pubDate": "2026-09-15T02:46:06+02:00",
+      "description": "Kampfjets der NATO haben eine Drohne abgeschossen, die in den litauischen Luftraum eingedrungen war. Angaben zur Herkunft der Drohne gibt es bisher nicht. Litauens Präsident Nauseda dankte der NATO.",
+      "pubDate": "2026-09-15T07:15:19+02:00",
       "bild": ""
     },
     {
@@ -48,48 +90,6 @@
       "title": "Arktis-Gipfel: Die EU richtet ihren Blick Richtung Norden",
       "description": "Mit dem Klimawandel verändert sich die Bedeutung der Arktis - wirtschaftlich und sicherheitspolitisch. Darauf will die EU reagieren. Ein Gipfel in Finnland sollte den Anfang machen. Von A. Meyer-Feist.",
       "pubDate": "2026-09-14T18:28:06+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: KI- und Zinssorgen bremsen DAX",
-      "description": "Ein ganzer Mix ungünstiger Nachrichten hat den Start in die neue Woche belastet. Der DAX konnte seine Verluste allerdings im Verlauf eingrenzen.",
-      "pubDate": "2026-09-14T18:21:36+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Pistorius will Soldaten zum Dienst in Litauen auch verpflichten",
-      "description": "Verteidigungsminister Pistorius hatte bei der Litauen-Brigade erst auf Freiwilligkeit gesetzt - doch Hunderte Spezialisten fehlen noch. Nun sollen Soldaten auch zum Dienst in der Brigade verpflichtet werden.",
-      "pubDate": "2026-09-14T18:20:32+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Drängt Moskau Schüler wegen Fachkräftemangel in den Arbeitsmarkt?",
-      "description": "Immer mehr Schülern in Russland wird die Aufnahme in die Oberstufe verweigert. Stattdessen sollen sie offenbar möglichst früh auf dem Arbeitsmarkt landen - denn dort fehlen die Fachkräfte. Liegt das auch am Krieg gegen die Ukraine? Von S. Laack.",
-      "pubDate": "2026-09-14T17:06:02+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Berliner CSD-Attentäter soll Bekennervideo an IS-Kontakt geschickt haben",
-      "description": "Der Berliner CSD-Attentäter hatte vor seiner Tat ein Bekennervideo aufgenommen. Nach Recherchen von WDR und SZ soll Abdul B. das Video an eine britische Islamistin in Syrien verschickt haben - veröffentlicht wurde es aber nie.",
-      "pubDate": "2026-09-14T17:00:27+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Israelische NGO kritisiert Israels Politik im Westjordanland",
-      "description": "Die israelische Menschenrechtsorganisation B'Tselem erhebt schwere Vorwürfe gegen Israels Politik im Westjordanland: Die Maßnahmen seien Teil einer systematischen Strategie zur Zerstörung der palästinensischen Lebensgrundlagen. Von J. Segador.",
-      "pubDate": "2026-09-14T16:41:53+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Schweden steht nach Parlamentswahl vor schwieriger Regierungsbildung",
-      "description": "Gebannt wartet Schweden auf das Endergebnis der Parlamentswahl. Derzeit liegt die Opposition knapp vor dem Regierungslager. Doch ganz gleich, wer gewinnt: Die Bildung einer handlungsfähigen Regierung dürfte schwierig werden. Von Jana Sinram.",
-      "pubDate": "2026-09-14T16:12:14+02:00",
-      "bild": ""
-    },
-    {
-      "title": "EU-Staaten wollen Interessen in der Arktis schützen",
-      "description": "Schifffahrtsrouten, Bodenschätze und Sicherheitspolitik: Deutschland und weitere europäische Staaten fordern eine stärkere Rolle der EU in der Arktis - vor allem wegen der Bedrohung aus Moskau.",
-      "pubDate": "2026-09-14T15:43:23+02:00",
       "bild": ""
     }
   ],
