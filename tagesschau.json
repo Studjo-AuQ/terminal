@@ -1,11 +1,83 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "16.09.2026, 14:20 Uhr (UTC)",
+  "aktualisiert": "16.09.2026, 18:21 Uhr (UTC)",
   "meldungen": [
     {
-      "title": "Berliner Grünen-Spitzenkandidat Graf: Moderator sucht Koalition",
+      "title": "DDR-Bürgerrechtler Martin Gutzeit gestorben",
+      "description": "Martin Gutzeit war 1989 Mitbegründer der Ost-SPD und später langjähriger Berliner Beauftragter für die Stasi-Unterlagen. Nun ist er im Alter von 74 Jahren in Berlin gestorben.",
+      "pubDate": "2026-09-16T20:20:26+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Syrien: Größte Proteste seit Sturz von Assad",
+      "description": "Gleich zweimal in kurzer Zeit hat die syrische Regierung Energiepreise erhöht. Dagegen regt sich im Land nun breiter Protest. Die Energiekrise hängt weniger mit der Entwicklung rund um Iran zusammen - sondern mit einem anderen Krieg. Von M. Behrendt.",
+      "pubDate": "2026-09-16T20:11:51+02:00",
+      "bild": ""
+    },
+    {
+      "title": "US-Notenbank erhöht Leitzins erstmals seit 2023",
+      "description": "Im Kampf gegen die hartnäckig hohe Inflation hebt die US-Notenbank Fed den Leitzins an. Er wurde um einen Viertelpunkt erhöht - auf die neue Spanne von 3,75 bis 4,00 Prozent. Experten hatten mit diesem Schritt gerechnet.",
+      "pubDate": "2026-09-16T20:17:05+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Vier Jahre \"Frau, Leben, Freiheit\": Was von Irans Protesten geblieben ist",
+      "description": "Vor vier Jahren starb eine junge Kurdin nach ihrer Festnahme durch die Sittenpolizei in Iran, es folgten landesweite Proteste. Frauen haben sich seitdem kleine Freiräume erkämpft - doch die Repression hat sich weiter verschärft. Von Antonia Rüller.",
+      "pubDate": "2026-09-16T19:40:33+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Debatte über Spritpreise: Reiche will Mehrwertsteuer auf Sprit senken",
+      "description": "Angesichts hoher Spritpreise hat die Politik Entlastung versprochen - aber es ist unklar, wie die aussehen könnte. Nach Unionsfraktionschef Frei sprach sich nun auch Wirtschaftsministerin Reiche für eine befristete Senkung der Mehrwertsteuer aus.",
+      "pubDate": "2026-09-16T19:15:59+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Streit um Kultureinrichtung: Trump verweigert Kennedy Center Renovierung",
+      "description": "Das Kennedy Center ist nach einem Sturm in schlechtem Zustand. Es müsste dringend renoviert werden. Doch US-Präsident Trump will nur zustimmen, wenn er anschließend wieder seinen Namen am Gebäude anbringen darf. Von C. Kühntopp.",
+      "pubDate": "2026-09-16T19:03:09+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Südukraine: Mehrere Tote nach russischem Angriff auf Linienbus",
+      "description": "Tote, Verletzte und schwere Schäden in der Südukraine: Russland hat laut ukrainischen Angaben einen Bus und zwei Züge mit Drohnen angegriffen. Mindestens fünf Menschen seien getötet worden. Präsident Selenskyj spricht von einem \"Akt der Barbarei\".",
+      "pubDate": "2026-09-16T18:40:52+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX schließt im Plus - Fed im Fokus",
+      "description": "Der deutsche Aktienmarkt hat am Mittwoch zugelegt. Rückenwind kam vor allem von gesunkenen Ölpreisen und gefragten Aktien aus dem KI- und Halbleiterbereich. Im Fokus der Anleger stand zugleich die US-Geldpolitik.",
+      "pubDate": "2026-09-16T18:25:03+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Von der Leyen will neuen transatlantischen Bund mit Kanada",
+      "description": "Wo steht die EU? Und was sind die Pläne für die kommenden Monate? EU-Kommissionschefin von der Leyen hat in ihrer Grundsatzrede in Straßburg die Prioritäten skizziert - eine ihrer vielen Initiativen ist eine engere Partnerschaft mit Kanada. Von Christian Feld.",
+      "pubDate": "2026-09-16T17:32:58+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wegen Flüchtlingsunterkunft: Dorf in England stimmt symbolisch für Unabhängigkeit",
+      "description": "Aus Protest gegen die Unterbringung von Flüchtlingen hat ein englisches Dorf symbolisch dafür gestimmt, aus dem Vereinigten Königreich auszutreten. Unterstützung bekommt es dabei von der Rechtsaußen-Partei Restore Britain. Von Franziska Hoppen.",
+      "pubDate": "2026-09-16T17:18:10+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Nach Gesprächen mit den USA: Belarus entlässt 25 politische Häftlinge",
+      "description": "Belarus hat 25 politische Häftlinge entlassen - im Austausch gegen gelockerte US-Sanktionen. Zuvor hatte es Gespräche mit dem US-Sondergesandten Coale gegeben. Etwa 900 Menschen sind laut Menschenrechtlern weiterhin in Haft. Von Stephan Laack.",
+      "pubDate": "2026-09-16T17:09:33+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Zollreform: EU führt neue Gebühr für kleine Online-Pakete ein",
+      "description": "Auf kleine Pakete von Online-Shops aus Nicht-EU-Ländern wird künftig eine Abgabe fällig. Grund ist die Flut von Billig-Waren, die lange zollfrei waren. Zahlen müssen Online-Plattformen wie Shein.",
+      "pubDate": "2026-09-16T16:44:20+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Berliner Grünen-Spitzenkandidat Graf: Pragmatisch - und wenig bekannt",
       "description": "Die Berliner Grünen haben gute Chancen, im nächsten Senat mitzuregieren. Spitzenkandidat Werner Graf setzt auf einen moderaten Wahlkampf, der ihm viele Optionen offenhalten soll. Von T. Schmutzler und M. Kell.",
-      "pubDate": "2026-09-16T15:58:42+02:00",
+      "pubDate": "2026-09-16T17:39:25+02:00",
       "bild": ""
     },
     {
@@ -16,80 +88,8 @@
     },
     {
       "title": "Gazastreifen: Tote bei Einsturz von ausgebombtem Wohnhaus",
-      "description": "Im Gazastreifen ist ein mehrstöckiges Wohnhaus eingestürzt. Es gibt zahlreiche Tote, noch fast 100 weitere Menschen werden vermisst. Helfer graben mit bloßen Händen nach ihnen. Das Gebäude war zuvor durch israelische Angriffe beschädigt worden.",
-      "pubDate": "2026-09-16T15:03:01+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Mindestens 60 Tote bei Einsturz von Goldmine im Sudan",
-      "description": "Beim Einsturz einer Goldmine im Sudan sind mindestens 60 Menschen ums Leben gekommen. Möglicherweise könnten weitere Arbeiter noch verschüttet sein. Das Land ist ein weltweit wichtiger Goldproduzent. Von Moritz Behrendt.",
-      "pubDate": "2026-09-16T14:54:35+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Social Media erst ab 13 Jahren - was die EU plant",
-      "description": "Die EU plant Altersbeschränkungen für TikTok, Instagram und Co: In Deutschland und anderen Mitgliedsstaaten soll der Zugang zu Sozialen Netzwerken erst ab 13 Jahren erlaubt werden. Was Brüssel plant - ein Überblick.",
-      "pubDate": "2026-09-16T14:40:13+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Senat stoppt Gesetz - Kryptowährungen unter Druck",
-      "description": "Ein US-Gesetz zur Regulierung von Kryptowährungen ist im Senat gescheitert. Das ist eine Niederlage für Donald Trump und setzt die Kurse unter Druck. Der Bitcoin fällt zeitweise unter 75.000 Dollar.",
-      "pubDate": "2026-09-16T14:37:06+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Regierung legt Aktionsplan gegen Sozialbetrug vor",
-      "description": "Die Bundesregierung verschärft den Kampf gegen Sozialleistungsmissbrauch. Ein neuer Aktionsplan setzt auf mehr Datenabgleich, mehr Kontrollen und strengere Regeln. Auch KI soll helfen. Von J.-P. Bartels und T. Aßmann.",
-      "pubDate": "2026-09-16T14:01:27+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kreditkarten-Schulden: Der Alltag der Amerikaner läuft auf Pump",
-      "description": "Nicht nur die Staatsschulden der USA sind enorm - auch viele Verbraucher sind angesichts hoher Lebenshaltungskosten im Minus. Viele jüngere Amerikaner haben hohe offene Kreditkarten-Rechnungen. Von Melanie Böff.",
-      "pubDate": "2026-09-16T13:36:53+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Warum der Dollar trotz höherer US-Zinsen schwach bleibt",
-      "description": "Die US-Notenbank steht vor der ersten Zinserhöhung seit 2023. Doch der Dollar profitiert kaum. Hohe öffentliche Schulden und der Konflikt zwischen Trump und der Fed belasten das Vertrauen in die Weltleitwährung. Von Angela Göpfert.",
-      "pubDate": "2026-09-16T13:35:55+02:00",
-      "bild": ""
-    },
-    {
-      "title": "25 Jahre Haft für Kosovos Ex-Präsident Thaci wegen Kriegsverbrechen",
-      "description": "Das Kosovo-Sondertribunal in Den Haag hat den ehemaligen Präsidenten Thaci wegen Kriegsverbrechen zu 25 Jahren Haft verurteilt. In Pristina löste das Urteil Proteste aus. Vielen gilt Thaci als Nationalheld.",
-      "pubDate": "2026-09-16T13:48:26+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Von der Leyen zur Lage der Union: Neuer Krisenmechanismus und mehr Bündnisse",
-      "description": "Wie kann sich Europa besser gegen Bedrohungen wappnen? Mit dieser Frage befasste sich die EU-Kommissionspräsidentin in ihrer diesjährigen Rede zur Lage der Union. Ihre Antworten: Mit einem neuen Sicherheitsmechanismus und mehr Zusammenarbeit.",
-      "pubDate": "2026-09-16T12:02:53+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Regierung legt Zehn-Punkte-Plan gegen Terror vor",
-      "description": "Die Bundesregierung will entschlossener gegen Terror, Propaganda und Gewalt vorgehen. Gefährder sollen künftig stärker überwacht, Messerangriffe härter bestraft werden. Justizministerin Hubig sprach von einer \"ernsten Gefahr\".",
-      "pubDate": "2026-09-16T12:52:32+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Gemeinsame Erklärung: CDU-Ministerpräsidenten stellen sich hinter Merz",
-      "description": "Kanzler Merz steht massiv unter Druck. Kurz vor den Landtagswahlen in Mecklenburg-Vorpommern und Berlin melden sich nun alle acht CDU-Ministerpräsidenten zu Wort - und stellen sich hinter Merz. Der reagiert erleichtert.",
-      "pubDate": "2026-09-16T13:19:59+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: DAX startet mit Gewinnen vor US-Zinsentscheid",
-      "description": "Ermutigt durch sinkende Ölpreise zeigen sich die Anlegerinnen und Anleger zur Wochenmitte wieder etwas risikofreudiger. Vor der Zinsentscheidung der US-Notenbank am Abend stabilisiert sich der DAX.",
-      "pubDate": "2026-09-16T11:00:34+02:00",
-      "bild": ""
-    },
-    {
-      "title": "ADAC: Mehr Staus in den Sommerferien 2026",
-      "description": "Mehr Staus, die aber kürzer dauerten als vergangenes Jahr: So fasst der ADAC die Sommerferien-Saison 2026 zusammen. Die Rekordpreise an den Tankstellen haben viele Autofahrer offenbar nicht davon abgehalten, mit dem Auto unterwegs zu sein.",
-      "pubDate": "2026-09-16T10:16:57+02:00",
+      "description": "Im Gazastreifen ist ein mehrstöckiges Wohnhaus eingestürzt. Es gibt mindestens 20 Tote, fast 100 Menschen werden noch vermisst. Helfer graben mit bloßen Händen nach ihnen. Das Gebäude war zuvor durch israelische Angriffe beschädigt worden.",
+      "pubDate": "2026-09-16T19:13:18+02:00",
       "bild": ""
     }
   ],
