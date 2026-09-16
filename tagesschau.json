@@ -1,11 +1,83 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "16.09.2026, 09:28 Uhr (UTC)",
+  "aktualisiert": "16.09.2026, 14:20 Uhr (UTC)",
   "meldungen": [
     {
+      "title": "Berliner Grünen-Spitzenkandidat Graf: Moderator sucht Koalition",
+      "description": "Die Berliner Grünen haben gute Chancen, im nächsten Senat mitzuregieren. Spitzenkandidat Werner Graf setzt auf einen moderaten Wahlkampf, der ihm viele Optionen offenhalten soll. Von T. Schmutzler und M. Kell.",
+      "pubDate": "2026-09-16T15:58:42+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Neuer Bluttest weckt Hoffnung auf Früherkennung bei Bauchspeicheldrüsenkrebs",
+      "description": "Tumore der Bauchspeicheldrüse sind meist erst erkennbar, wenn man sie kaum noch behandeln kann. Ein neuer Bluttest kann bei der Früherkennung helfen. Hoffnung weckt auch ein neuer Wirkstoff. Von Julia Jakob",
+      "pubDate": "2026-09-16T15:22:15+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Gazastreifen: Tote bei Einsturz von ausgebombtem Wohnhaus",
+      "description": "Im Gazastreifen ist ein mehrstöckiges Wohnhaus eingestürzt. Es gibt zahlreiche Tote, noch fast 100 weitere Menschen werden vermisst. Helfer graben mit bloßen Händen nach ihnen. Das Gebäude war zuvor durch israelische Angriffe beschädigt worden.",
+      "pubDate": "2026-09-16T15:03:01+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Mindestens 60 Tote bei Einsturz von Goldmine im Sudan",
+      "description": "Beim Einsturz einer Goldmine im Sudan sind mindestens 60 Menschen ums Leben gekommen. Möglicherweise könnten weitere Arbeiter noch verschüttet sein. Das Land ist ein weltweit wichtiger Goldproduzent. Von Moritz Behrendt.",
+      "pubDate": "2026-09-16T14:54:35+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Social Media erst ab 13 Jahren - was die EU plant",
+      "description": "Die EU plant Altersbeschränkungen für TikTok, Instagram und Co: In Deutschland und anderen Mitgliedsstaaten soll der Zugang zu Sozialen Netzwerken erst ab 13 Jahren erlaubt werden. Was Brüssel plant - ein Überblick.",
+      "pubDate": "2026-09-16T14:40:13+02:00",
+      "bild": ""
+    },
+    {
+      "title": "US-Senat stoppt Gesetz - Kryptowährungen unter Druck",
+      "description": "Ein US-Gesetz zur Regulierung von Kryptowährungen ist im Senat gescheitert. Das ist eine Niederlage für Donald Trump und setzt die Kurse unter Druck. Der Bitcoin fällt zeitweise unter 75.000 Dollar.",
+      "pubDate": "2026-09-16T14:37:06+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Regierung legt Aktionsplan gegen Sozialbetrug vor",
+      "description": "Die Bundesregierung verschärft den Kampf gegen Sozialleistungsmissbrauch. Ein neuer Aktionsplan setzt auf mehr Datenabgleich, mehr Kontrollen und strengere Regeln. Auch KI soll helfen. Von J.-P. Bartels und T. Aßmann.",
+      "pubDate": "2026-09-16T14:01:27+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Kreditkarten-Schulden: Der Alltag der Amerikaner läuft auf Pump",
+      "description": "Nicht nur die Staatsschulden der USA sind enorm - auch viele Verbraucher sind angesichts hoher Lebenshaltungskosten im Minus. Viele jüngere Amerikaner haben hohe offene Kreditkarten-Rechnungen. Von Melanie Böff.",
+      "pubDate": "2026-09-16T13:36:53+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Warum der Dollar trotz höherer US-Zinsen schwach bleibt",
+      "description": "Die US-Notenbank steht vor der ersten Zinserhöhung seit 2023. Doch der Dollar profitiert kaum. Hohe öffentliche Schulden und der Konflikt zwischen Trump und der Fed belasten das Vertrauen in die Weltleitwährung. Von Angela Göpfert.",
+      "pubDate": "2026-09-16T13:35:55+02:00",
+      "bild": ""
+    },
+    {
+      "title": "25 Jahre Haft für Kosovos Ex-Präsident Thaci wegen Kriegsverbrechen",
+      "description": "Das Kosovo-Sondertribunal in Den Haag hat den ehemaligen Präsidenten Thaci wegen Kriegsverbrechen zu 25 Jahren Haft verurteilt. In Pristina löste das Urteil Proteste aus. Vielen gilt Thaci als Nationalheld.",
+      "pubDate": "2026-09-16T13:48:26+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Von der Leyen zur Lage der Union: Neuer Krisenmechanismus und mehr Bündnisse",
+      "description": "Wie kann sich Europa besser gegen Bedrohungen wappnen? Mit dieser Frage befasste sich die EU-Kommissionspräsidentin in ihrer diesjährigen Rede zur Lage der Union. Ihre Antworten: Mit einem neuen Sicherheitsmechanismus und mehr Zusammenarbeit.",
+      "pubDate": "2026-09-16T12:02:53+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Regierung legt Zehn-Punkte-Plan gegen Terror vor",
+      "description": "Die Bundesregierung will entschlossener gegen Terror, Propaganda und Gewalt vorgehen. Gefährder sollen künftig stärker überwacht, Messerangriffe härter bestraft werden. Justizministerin Hubig sprach von einer \"ernsten Gefahr\".",
+      "pubDate": "2026-09-16T12:52:32+02:00",
+      "bild": ""
+    },
+    {
       "title": "Gemeinsame Erklärung: CDU-Ministerpräsidenten stellen sich hinter Merz",
-      "description": "Kanzler Merz steht massiv unter Druck. Kurz vor den Landtagswahlen in Mecklenburg-Vorpommern und Berlin melden sich nun alle acht CDU-Ministerpräsidenten in der Personaldebatte zu Wort - und stellen sich hinter Merz.",
-      "pubDate": "2026-09-16T11:13:15+02:00",
+      "description": "Kanzler Merz steht massiv unter Druck. Kurz vor den Landtagswahlen in Mecklenburg-Vorpommern und Berlin melden sich nun alle acht CDU-Ministerpräsidenten zu Wort - und stellen sich hinter Merz. Der reagiert erleichtert.",
+      "pubDate": "2026-09-16T13:19:59+02:00",
       "bild": ""
     },
     {
@@ -18,78 +90,6 @@
       "title": "ADAC: Mehr Staus in den Sommerferien 2026",
       "description": "Mehr Staus, die aber kürzer dauerten als vergangenes Jahr: So fasst der ADAC die Sommerferien-Saison 2026 zusammen. Die Rekordpreise an den Tankstellen haben viele Autofahrer offenbar nicht davon abgehalten, mit dem Auto unterwegs zu sein.",
       "pubDate": "2026-09-16T10:16:57+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ozonloch über der Antarktis schrumpft 2025 weiter",
-      "description": "Das Ozonloch über der Antarktis wird kleiner - und war 2025 so klein wie selten seit Anfang der 90er-Jahre. Die Weltwetterorganisation spricht von einer Erfolgsgeschichte und sieht die Ozonschicht auf dem Weg der Erholung.",
-      "pubDate": "2026-09-16T10:11:31+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Saudi-Arabien wehrt offenbar Huthi-Drohne bei Mekka ab",
-      "description": "Für Muslime ist Mekka heilig. Nun soll die Huthi-Miliz die Stadt mit einer Drohne attackiert haben - das meldete das saudi-arabische Militär, das den Angriff nach eigenen Angaben abwehren konnte. Riad spricht von einer \"Roten Linie\".",
-      "pubDate": "2026-09-16T10:06:16+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Russlands Satellitenpläne: Bundeswehr warnt vor Putins Starlink-Alternative",
-      "description": "Russland will mit Rasswet eine Alternative zu Starlink schaffen. In einem vertraulichen Bericht, der WDR und NDR vorliegt, warnt die Bundeswehr vor einem Erfolg des Projekts aus militärischer Sicht - und zweifelt gleichzeitig am Zeitplan.",
-      "pubDate": "2026-09-16T09:54:02+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Drei Tote bei Absturz von TV-Helikopter in Los Angeles",
-      "description": "Sie wollten über einen schweren Autounfall in Los Angeles berichten - stürzten dann aber selbst mit ihrem TV-Helikopter ab. Bei dem Unglück in Los Angeles kamen mindestens drei Menschen ums Leben, es könnte aber noch mehr Opfer geben.",
-      "pubDate": "2026-09-16T09:46:20+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Debatte über Spritpreis-Entlastungen: Reiche gegen Preisdeckel und Übergewinnsteuer",
-      "description": "Kanzler Merz hat Entlastungen beim Spritpreis angekündigt. Doch wie? Preisdeckel und Übergewinnsteuer hält das Wirtschaftsministerium für problematisch. Unionsfraktionschef Frei schlägt nun eine Senkung der Mehrwertsteuer auf Sprit vor.",
-      "pubDate": "2026-09-16T09:26:59+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Drohne über Litauen war laut Regierung mit Sprengstoff bestückt",
-      "description": "Die Vorfälle mit Flugobjekten im NATO-Gebiet häufen sich: In Litauen wurde gestern eine Drohne abgeschossen. Ersten Erkenntnissen zufolge war sie mit Sprengstoff beladen. Woher sie stammt, ist weiter unklar.",
-      "pubDate": "2026-09-16T08:39:59+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Mecklenburg-Vorpommern: Wie Schwesig und Holm um den Wahlsieg ringen",
-      "description": "Schafft die SPD mit Ministerpräsidentin Schwesig die Aufholjagd in Mecklenburg-Vorpommern und wird stärkste Kraft? Im Wahlkampf muss sie sich mit AfD-Mann Holm auseinandersetzen, der sie auch in ihrem Wahlkreis herausfordert. Von Michael Seidel.",
-      "pubDate": "2026-09-16T08:13:18+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Pistorius in Washington: Lob und engere Verteidigungskooperation",
-      "description": "Trotz heftiger Kritik in der Vergangenheit sparten Verteidigungsminister Pistorius und sein US-Amtskollege Hegseth bei ihrem Treffen in Washington nicht mit Lob füreinander. Bei Rüstungsprojekten wollen sie enger zusammenarbeiten. Von Ralf Borchard.",
-      "pubDate": "2026-09-16T07:42:14+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Streit über Wahlrechtsreform: Melonis Zitterpartie",
-      "description": "Das Kabinett Meloni regiert Italien inzwischen länger als jeder seiner Vorgänger in der Nachkriegszeit. Und doch sitzt Meloni längst nicht mehr so fest im Sattel. Ein Streit über eine Wahlrechtsreform belastet ihre Koalition schwer. Von A. Giordano.",
-      "pubDate": "2026-09-16T06:29:45+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Prozess gegen Thaci: Wird Kosovos Ex-Präsident verurteilt?",
-      "description": "Hashim Thaci hat den Kosovo mit der Kosovarischen Befreiungsarmee in die Unabhängigkeit geführt. Hat der Ex-Präsident dabei Kriegsverbrechen begangen? Ein Sondertribunal in Den Haag fällt heute sein Urteil. Von Andreas Herz.",
-      "pubDate": "2026-09-16T05:06:56+02:00",
-      "bild": ""
-    },
-    {
-      "title": "E-Mails zeigen: Ministerium nannte niedrigeren Masken-Marktpreis",
-      "description": "Laut Plusminus-Recherche zeigen E-Mails, dass ein Beamter des Gesundheitsministeriums im April 2020 von einem Marktpreis von 1,95 Euro pro Maske ausging. Wenige Tage zuvor hatte Jens Spahn jedoch 100 Millionen Masken für 5,40 Euro bestellt.",
-      "pubDate": "2026-09-16T05:02:36+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Deutschland und USA wollen bei Rüstung mehr zusammenarbeiten",
-      "description": "Verteidigungsminister Pistorius ist zu Besuch in Washington: Mit seinem Amtskollegen Hegseth einigte er sich auf eine engere Zusammenarbeit. Der US-Minister lobte Deutschlands Fortschritte bei der Stärkung der NATO.",
-      "pubDate": "2026-09-16T04:32:18+02:00",
       "bild": ""
     }
   ],
