@@ -1,11 +1,17 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "16.09.2026, 21:36 Uhr (UTC)",
+  "aktualisiert": "17.09.2026, 00:16 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "US-Kongress stimmt für schärfere Sanktionen gegen Russland",
+      "description": "Es ist der wohl bedeutendste Vorstoß der USA zur Unterstützung der Ukraine, seit Trump zurück im Amt ist: Nach dem Senat hat nun auch das Repräsentantenhaus neuen Sanktionen zugestimmt. Nun fehlt nur noch die Unterschrift des Präsidenten.",
+      "pubDate": "2026-09-17T02:13:23+02:00",
+      "bild": ""
+    },
     {
       "title": "US-Notenbank erhöht Leitzins erstmals seit 2023",
       "description": "Im Kampf gegen die hartnäckig hohe Inflation hebt die US-Notenbank Fed den Leitzins an. Er wurde um einen Viertelpunkt erhöht - auf die neue Spanne von 3,75 bis 4,00 Prozent. Experten hatten mit diesem Schritt gerechnet.",
-      "pubDate": "2026-09-16T23:03:12+02:00",
+      "pubDate": "2026-09-17T02:07:20+02:00",
       "bild": ""
     },
     {
@@ -84,12 +90,6 @@
       "title": "Neuer Bluttest weckt Hoffnung auf Früherkennung bei Bauchspeicheldrüsenkrebs",
       "description": "Tumore der Bauchspeicheldrüse sind meist erst erkennbar, wenn man sie kaum noch behandeln kann. Ein neuer Bluttest kann bei der Früherkennung helfen. Hoffnung weckt auch ein neuer Wirkstoff. Von Julia Jakob.",
       "pubDate": "2026-09-16T15:22:15+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Gazastreifen: Tote bei Einsturz von ausgebombtem Wohnhaus",
-      "description": "Im Gazastreifen ist ein mehrstöckiges Wohnhaus eingestürzt. Es gibt mindestens 20 Tote, fast 100 Menschen werden noch vermisst. Helfer graben mit bloßen Händen nach ihnen. Das Gebäude war zuvor durch israelische Angriffe beschädigt worden.",
-      "pubDate": "2026-09-16T19:13:18+02:00",
       "bild": ""
     }
   ],
