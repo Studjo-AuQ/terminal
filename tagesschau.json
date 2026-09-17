@@ -1,95 +1,95 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "17.09.2026, 10:20 Uhr (UTC)",
+  "aktualisiert": "17.09.2026, 15:15 Uhr (UTC)",
   "meldungen": [
     {
-      "title": "Erneute Läden in Frankfurt am Main durch Explosionen beschädigt",
+      "title": "Forscher zur KI-Entwicklung: Risiken ernst nehmen, aber nicht dramatisieren",
+      "description": "Öffentlichkeitswirksam haben zuletzt große Entwickler für mehr Regulierung der eigenen Technologie plädiert. Forscher in Deutschland relativieren die Warnungen, trotz aller Risiken, jedoch - und nehmen die Entwickler in die Pflicht. Von Sven Kästner.",
+      "pubDate": "2026-09-17T17:11:53+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Bundesanwaltschaft: Islamist soll Anschlag auf Kirche vorbereitet haben",
+      "description": "Ein 24-jähriger Iraker soll eine Kirche in Bremen als Anschlagsziel ausgewählt und sich schon eine Schusswaffe beschafft haben. Nach Angaben der Bundesanwaltschaft wurde er nun in Brandenburg festgenommen.",
+      "pubDate": "2026-09-17T16:29:47+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Frankfurt am Main: An Malaria erkrankte Person gestorben",
+      "description": "In Frankfurt am Main ist eine Person, die an Malaria erkrankt war, gestorben. Sie und eine weitere erkrankte Person haben laut Gesundheitsamt nahe dem Flughafen gewohnt. Ein Malaria-Gebiet hatten beide zuvor nicht bereist.",
+      "pubDate": "2026-09-17T17:11:09+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Nach Parlamentswahl in Schweden: Knapper Sieg für Mitte-links-Lager",
+      "description": "Der von Ulf Kristersson geführte konservativ-rechte Parteienblock musste bei der Wahl in Schweden eine Niederlage hinnehmen. Der Regierungschef trat zurück. Die bisherige Opposition steht mit Magdalena Andersson vor einer schwierigen Regierungsbildung.",
+      "pubDate": "2026-09-17T17:13:34+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Urteil des Bundesgerichtshofs: Orange gehört Obi nicht allein",
+      "description": "Die Baumarktkette Obi kann laut einem BGH-Urteil keinen Markenschutz für die Farbe Orange beanspruchen. Verbraucher sehen die Farbe nicht als Hinweis auf ein bestimmtes Unternehmen, so die Begründung.",
+      "pubDate": "2026-09-17T14:55:34+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Warum die SPD jetzt auf Manuela Schwesig hofft",
+      "description": "Die SPD hofft bei der Wahl in Mecklenburg-Vorpommern auf die Zugkraft von Ministerpräsidentin Schwesig. Ein Erfolg könnte die Partei etwas stabilisieren, doch die Stimmung bleibt angespannt. Von Anne-Katrin Mellmann und Moritz Rödle.",
+      "pubDate": "2026-09-17T16:33:03+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Plan der EU-Kommission: Drei Altersstufen für Soziale Medien",
+      "description": "Unter 13, bis 15 und bis 18 - in diesen Schritten soll die Nutzung Sozialer Medien durch Minderjährige geregelt werden: Das schlägt die EU-Kommission mit dem EU Kids Act vor. Süchtig machende Funktionen sollen ganz verboten werden. Von K. Schmid.",
+      "pubDate": "2026-09-17T14:45:28+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Folgenschwere Luftangriffe: UN-Bericht wirft USA Kriegsverbrechen in Iran vor",
+      "description": "Nach Angaben von UN-Berichterstattern könnten zwei US-Angriffe in Iran als Kriegsverbrechen gewertet werden. Darunter ist eine Attacke auf eine Mädchenschule zu Beginn des Jahres. Aber auch die iranische Regierung wird scharf kritisiert.",
+      "pubDate": "2026-09-17T14:31:47+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Zinserhöhung der US-Notenbank - ein Signal an Donald Trump?",
+      "description": "US-Präsident Trump möchte niedrigere Zinsen. Doch die Notenbank Federal Reserve hat den Leitzins erhöht. Was sagt die Entscheidung über die Unabhängigkeit von Fed-Chef Warsh? Von Michelle Goddemeier.",
+      "pubDate": "2026-09-17T14:31:22+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Nach OpenAI-Warnung: Forderungen nach Regulierung und \"guter\" KI",
+      "description": "Angesichts immer neuer Zwischenfälle mit Künstlicher Intelligenz wollen mehrere große Firmen die Entwicklung verlangsamen. Es werden aber auch Rufe nach mehr Regulierung laut - und im Hintergrund wird an \"guter\" KI gebaut.",
+      "pubDate": "2026-09-17T14:18:15+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Premier Carney: Kanada ist offen für EU-Sondermitgliedschaft",
+      "description": "Kein volles EU-Mitglied, aber eine Art Sondermitgliedschaft - das könnte Kanada bekommen. Die EU hat einen solchen Vorschlag gemacht, Premier Carney begrüßt den Vorstoß. Ob es wirklich dazu kommt, ist aber ungewiss.",
+      "pubDate": "2026-09-17T13:50:29+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Was Wähler in Russlands Provinz beschäftigt",
+      "description": "Brennende Ölterminals, Drohnenangriffe, Benzinmangel an den Tankstellen: Wird sich die aktuelle Situation in Russland auf die Parlamentswahl ab Freitag auswirken? Eine Reportage aus der Stadt Twer. Von S. Diettrich.",
+      "pubDate": "2026-09-17T12:33:12+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wie klimafreundlich sind die DAX-Unternehmen?",
+      "description": "Wie gut setzen deutsche Unternehmen ihre Klimaziele um? Der Klima-Report einer Frankfurter Beratungsfirma versucht den Fortschritt messbar zu machen. Maßstab ist dabei der Beitrag zur Erderwärmung - gemessen in Temperaturen. Von Katharina Wilhelm.",
+      "pubDate": "2026-09-17T12:29:54+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Erneut Läden in Frankfurt am Main durch Explosionen beschädigt",
       "description": "In Frankfurt am Main hat es in der Nacht erneut Explosionen gegeben. Ein Café und eine Shisha-Bar wurden beschädigt. Die Polizei nahm eine Person fest. Erst in den vergangenen Tagen waren mehrere Sprengsätze hochgegangen.",
-      "pubDate": "2026-09-17T12:10:07+02:00",
+      "pubDate": "2026-09-17T14:04:02+02:00",
       "bild": ""
     },
     {
       "title": "Marktbericht: DAX rückt nach US-Zinsentscheid weiter vor",
       "description": "Die Zinserhöhung in den USA erschreckt die Anleger nicht, der DAX legt solide zu. Unterstützung erhält der deutsche Leitindex auch von ermutigenden Signalen aus der Industrie.",
       "pubDate": "2026-09-17T11:40:06+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Klimawandel war ein Hauptgrund für Felssturz im Himalaya",
-      "description": "Ein neuer Bericht über die Ursachen der Sturzflut im Himalaya zeigt: Der Klimawandel hatte einen weit größeren Anteil an der Katastrophe als zunächst vermutet. Ein dabei entdecktes, kaum bekanntes Phänomen könnte auch in den Alpen relevant sein. Von Frank Bäumer.",
-      "pubDate": "2026-09-17T11:29:24+02:00",
-      "bild": ""
-    },
-    {
-      "title": "SPD-Spitzenkandidat Krach: Lieber nach vorne schauen",
-      "description": "Der Spitzenkandidat der Berliner SPD hat ein erklärtes Ziel: Er will das Rote Rathaus für die SPD zurückerobern. Aber die Umfragen sind für nicht gerade ermutigend. Zudem gibt es Ermittlungen gegen ihn. Von Martin Polansky.",
-      "pubDate": "2026-09-17T11:10:09+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wahlarena Berlin: Zwischen Schlagabtausch und Sondierungsgesprächen",
-      "description": "Wenige Tage vor der Berlin-Wahl haben sich sechs Spitzenkandidaten in der Wahlarena den Fragen der Zuschauer gestellt. Dabei wurden teils deutliche Unterschiede deutlich, an denen Gespräche nach der Wahl scheitern könnten.",
-      "pubDate": "2026-09-17T11:09:59+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Auftragsbestand in der Industrie steigt auf Rekordhoch",
-      "description": "Die Auftragsbücher deutscher Industrieunternehmen sind so voll wie noch nie. Besonders Aufträge für Flugzeuge, Schiffe, Züge und auch Militärfahrzeuge sorgen für viel Extrageschäft im Verarbeitenden Gewerbe.",
-      "pubDate": "2026-09-17T11:00:03+02:00",
-      "bild": ""
-    },
-    {
-      "title": "FAQ: So eng ist die EU schon mit Kanada verflochten",
-      "description": "Kanada als erstes \"assoziiertes Mitglied\" der EU soll weitere wirtschaftliche Vorteile bringen. Schon seit einiger Zeit wächst der Handel zwischen dem Land und der Europäischen Union deutlich. Worum geht es dabei? Von Marcus Pfeiffer.",
-      "pubDate": "2026-09-17T10:08:26+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Italien verzichtet ein Jahr lang weitgehend auf Kfz-Steuer",
-      "description": "Italien erhebt angesichts der hohen Spritpreise ein Jahr lang keine Kfz-Steuer auf kleine Autos und Motorroller. Auch Frankreich hat regiert - das Land verlängert staatliche Zuschüsse für einzelne Branchen.",
-      "pubDate": "2026-09-17T09:27:35+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Repräsentantenhaus beschließt Sanktionen gegen Russland",
-      "description": "Lange wurde gerungen, jetzt hat auch das US-Repräsentantenhaus neue Sanktionen gegen Russland beschlossen. Damit können auch die Handelspartner Moskaus ins Visier genommen werden. Aber ist Trump bereit, das auch umzusetzen? Von Ralf Borchard.",
-      "pubDate": "2026-09-17T09:25:46+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Diesel-Allzeithoch - Sprit-Entlastungen laut Frei ab Oktober möglich",
-      "description": "Nach Benzin ist jetzt auch Diesel so teuer wie nie zuvor. Doch wie genau die Bundesregierung die hohen Preise abfedern will, ist noch unklar. Unionsfraktionschef Frei stellt aber eine schnelle Entlastung in Aussicht.",
-      "pubDate": "2026-09-17T10:07:33+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Malaria-Fälle im Umfeld des Frankfurter Flughafens festgestellt",
-      "description": "Im Umfeld des Frankfurter Flughafens sind zwei Menschen an Malaria erkrankt. Sie wurden offenbar von eingeschleppten Mücken gestochen. Laut Experten ist das Risiko für weitere Infektionen jedoch gering.",
-      "pubDate": "2026-09-17T10:16:05+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bericht der WMO: Wasserspeicher schrumpfen weltweit",
-      "description": "Schmelzende Gletscher, weniger Wasser in Flüssen: Die Wasserreserven schwinden seit Jahren, warnt die Weltwetterorganisation. Damit gehe auch der Puffer für Dürrejahre verloren - mit Folgen für Bevölkerung und Wirtschaft.",
-      "pubDate": "2026-09-17T07:55:02+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Präsident Trump droht EU wegen Annäherung an Kanada",
-      "description": "Während Kanada und die EU noch überlegen, wie sie künftig enger zusammenarbeiten wollen, macht US-Präsident Trump bereits klar: Er hält die Idee für \"lächerlich\" - und droht mit neuen Zöllen.",
-      "pubDate": "2026-09-17T07:20:35+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wie stellt Kanada sich die \"einzigartige Allianz\" vor?",
-      "description": "Kanada und die EU wollen noch mehr zusammenarbeiten. Wie genau das aussehen könnte, ist noch unklar. In seiner Rede vor dem EU-Parlament könnte Premier Carney heute ein paar der offenen Fragen beantworten. Von Giselle Ucar.",
-      "pubDate": "2026-09-17T06:30:03+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wenn das Girokonto mehr als 100 Euro kostet: Wie der Wechsel gelingt",
-      "description": "Das Girokonto ist praktisch unverzichtbar. Doch vor allem bei vielen Filialbanken fällt mittlerweile eine Kontoführungsgebühr an - Kosten, die sich oft vermeiden lassen. Von L.-M. Hiltscher und L. Sallamon.",
-      "pubDate": "2026-09-17T06:28:03+02:00",
       "bild": ""
     }
   ],
