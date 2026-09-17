@@ -1,7 +1,85 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "17.09.2026, 05:12 Uhr (UTC)",
+  "aktualisiert": "17.09.2026, 10:20 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Erneute Läden in Frankfurt am Main durch Explosionen beschädigt",
+      "description": "In Frankfurt am Main hat es in der Nacht erneut Explosionen gegeben. Ein Café und eine Shisha-Bar wurden beschädigt. Die Polizei nahm eine Person fest. Erst in den vergangenen Tagen waren mehrere Sprengsätze hochgegangen.",
+      "pubDate": "2026-09-17T12:10:07+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX rückt nach US-Zinsentscheid weiter vor",
+      "description": "Die Zinserhöhung in den USA erschreckt die Anleger nicht, der DAX legt solide zu. Unterstützung erhält der deutsche Leitindex auch von ermutigenden Signalen aus der Industrie.",
+      "pubDate": "2026-09-17T11:40:06+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Klimawandel war ein Hauptgrund für Felssturz im Himalaya",
+      "description": "Ein neuer Bericht über die Ursachen der Sturzflut im Himalaya zeigt: Der Klimawandel hatte einen weit größeren Anteil an der Katastrophe als zunächst vermutet. Ein dabei entdecktes, kaum bekanntes Phänomen könnte auch in den Alpen relevant sein. Von Frank Bäumer.",
+      "pubDate": "2026-09-17T11:29:24+02:00",
+      "bild": ""
+    },
+    {
+      "title": "SPD-Spitzenkandidat Krach: Lieber nach vorne schauen",
+      "description": "Der Spitzenkandidat der Berliner SPD hat ein erklärtes Ziel: Er will das Rote Rathaus für die SPD zurückerobern. Aber die Umfragen sind für nicht gerade ermutigend. Zudem gibt es Ermittlungen gegen ihn. Von Martin Polansky.",
+      "pubDate": "2026-09-17T11:10:09+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wahlarena Berlin: Zwischen Schlagabtausch und Sondierungsgesprächen",
+      "description": "Wenige Tage vor der Berlin-Wahl haben sich sechs Spitzenkandidaten in der Wahlarena den Fragen der Zuschauer gestellt. Dabei wurden teils deutliche Unterschiede deutlich, an denen Gespräche nach der Wahl scheitern könnten.",
+      "pubDate": "2026-09-17T11:09:59+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Auftragsbestand in der Industrie steigt auf Rekordhoch",
+      "description": "Die Auftragsbücher deutscher Industrieunternehmen sind so voll wie noch nie. Besonders Aufträge für Flugzeuge, Schiffe, Züge und auch Militärfahrzeuge sorgen für viel Extrageschäft im Verarbeitenden Gewerbe.",
+      "pubDate": "2026-09-17T11:00:03+02:00",
+      "bild": ""
+    },
+    {
+      "title": "FAQ: So eng ist die EU schon mit Kanada verflochten",
+      "description": "Kanada als erstes \"assoziiertes Mitglied\" der EU soll weitere wirtschaftliche Vorteile bringen. Schon seit einiger Zeit wächst der Handel zwischen dem Land und der Europäischen Union deutlich. Worum geht es dabei? Von Marcus Pfeiffer.",
+      "pubDate": "2026-09-17T10:08:26+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Italien verzichtet ein Jahr lang weitgehend auf Kfz-Steuer",
+      "description": "Italien erhebt angesichts der hohen Spritpreise ein Jahr lang keine Kfz-Steuer auf kleine Autos und Motorroller. Auch Frankreich hat regiert - das Land verlängert staatliche Zuschüsse für einzelne Branchen.",
+      "pubDate": "2026-09-17T09:27:35+02:00",
+      "bild": ""
+    },
+    {
+      "title": "US-Repräsentantenhaus beschließt Sanktionen gegen Russland",
+      "description": "Lange wurde gerungen, jetzt hat auch das US-Repräsentantenhaus neue Sanktionen gegen Russland beschlossen. Damit können auch die Handelspartner Moskaus ins Visier genommen werden. Aber ist Trump bereit, das auch umzusetzen? Von Ralf Borchard.",
+      "pubDate": "2026-09-17T09:25:46+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Diesel-Allzeithoch - Sprit-Entlastungen laut Frei ab Oktober möglich",
+      "description": "Nach Benzin ist jetzt auch Diesel so teuer wie nie zuvor. Doch wie genau die Bundesregierung die hohen Preise abfedern will, ist noch unklar. Unionsfraktionschef Frei stellt aber eine schnelle Entlastung in Aussicht.",
+      "pubDate": "2026-09-17T10:07:33+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Malaria-Fälle im Umfeld des Frankfurter Flughafens festgestellt",
+      "description": "Im Umfeld des Frankfurter Flughafens sind zwei Menschen an Malaria erkrankt. Sie wurden offenbar von eingeschleppten Mücken gestochen. Laut Experten ist das Risiko für weitere Infektionen jedoch gering.",
+      "pubDate": "2026-09-17T10:16:05+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Bericht der WMO: Wasserspeicher schrumpfen weltweit",
+      "description": "Schmelzende Gletscher, weniger Wasser in Flüssen: Die Wasserreserven schwinden seit Jahren, warnt die Weltwetterorganisation. Damit gehe auch der Puffer für Dürrejahre verloren - mit Folgen für Bevölkerung und Wirtschaft.",
+      "pubDate": "2026-09-17T07:55:02+02:00",
+      "bild": ""
+    },
+    {
+      "title": "US-Präsident Trump droht EU wegen Annäherung an Kanada",
+      "description": "Während Kanada und die EU noch überlegen, wie sie künftig enger zusammenarbeiten wollen, macht US-Präsident Trump bereits klar: Er hält die Idee für \"lächerlich\" - und droht mit neuen Zöllen.",
+      "pubDate": "2026-09-17T07:20:35+02:00",
+      "bild": ""
+    },
     {
       "title": "Wie stellt Kanada sich die \"einzigartige Allianz\" vor?",
       "description": "Kanada und die EU wollen noch mehr zusammenarbeiten. Wie genau das aussehen könnte, ist noch unklar. In seiner Rede vor dem EU-Parlament könnte Premier Carney heute ein paar der offenen Fragen beantworten. Von Giselle Ucar.",
@@ -12,84 +90,6 @@
       "title": "Wenn das Girokonto mehr als 100 Euro kostet: Wie der Wechsel gelingt",
       "description": "Das Girokonto ist praktisch unverzichtbar. Doch vor allem bei vielen Filialbanken fällt mittlerweile eine Kontoführungsgebühr an - Kosten, die sich oft vermeiden lassen. Von L.-M. Hiltscher und L. Sallamon.",
       "pubDate": "2026-09-17T06:28:03+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kritik an Aussetzung des Familiennachzugs wächst",
-      "description": "Seit mehr als einem Jahr ist der Familiennachzug für subsidiär Schutzberechtigte ausgesetzt. Was das für Betroffene bedeutet und warum es auch innerhalb der Koalition Kritik daran gibt. Von Bianca Schwarz.",
-      "pubDate": "2026-09-17T06:00:50+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kampf um die Straße von Hormus: Eine Bedrohung auch für die Umwelt",
-      "description": "Minen in der Straße von Hormus, Beschuss von Tankern: Satellitenbilder zeigen nun, was das für die Umwelt bedeutet. Rund um die Meerenge gibt es laut Greenpeace mehrere Ölteppiche. Viele Schutzgebiete seien bedroht. Von N. Amin.",
-      "pubDate": "2026-09-17T05:47:49+02:00",
-      "bild": ""
-    },
-    {
-      "title": "OpenAI veröffentlicht weitere KI-Zwischenfälle",
-      "description": "Künstliche Intelligenz entwickelt sich rasend schnell - mit teils ungewollten Folgen. Zuletzt löste etwa ein Hacker-Angriff durch KI-Software von OpenAI weltweit Sorgen aus. Jetzt gab der Entwickler weitere Probleme bekannt.",
-      "pubDate": "2026-09-17T05:14:12+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Kongress stimmt für schärfere Sanktionen gegen Russland",
-      "description": "Es ist der wohl bedeutendste Vorstoß der USA zur Unterstützung der Ukraine, seit Trump zurück im Amt ist: Nach dem Senat hat nun auch das Repräsentantenhaus neuen Sanktionen zugestimmt. Nun fehlt nur noch die Unterschrift des Präsidenten.",
-      "pubDate": "2026-09-17T02:13:23+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Notenbank erhöht Leitzins erstmals seit 2023",
-      "description": "Im Kampf gegen die hartnäckig hohe Inflation hebt die US-Notenbank Fed den Leitzins an. Er wurde um einen Viertelpunkt erhöht - auf die neue Spanne von 3,75 bis 4,00 Prozent. Experten hatten mit diesem Schritt gerechnet.",
-      "pubDate": "2026-09-17T02:07:20+02:00",
-      "bild": ""
-    },
-    {
-      "title": "DDR-Bürgerrechtler Martin Gutzeit gestorben",
-      "description": "Martin Gutzeit war 1989 Mitbegründer der Ost-SPD und später langjähriger Berliner Beauftragter für die Stasi-Unterlagen. Nun ist er im Alter von 74 Jahren in Berlin gestorben.",
-      "pubDate": "2026-09-16T20:20:26+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Syrien: Größte Proteste seit Sturz von Assad",
-      "description": "Gleich zweimal in kurzer Zeit hat die syrische Regierung Energiepreise erhöht. Dagegen regt sich im Land nun breiter Protest. Die Energiekrise hängt weniger mit der Entwicklung rund um Iran zusammen - sondern mit einem anderen Krieg. Von M. Behrendt.",
-      "pubDate": "2026-09-16T20:11:51+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Vier Jahre \"Frau, Leben, Freiheit\": Was von Irans Protesten geblieben ist",
-      "description": "Vor vier Jahren starb eine junge Kurdin nach ihrer Festnahme durch die Sittenpolizei in Iran, es folgten landesweite Proteste. Frauen haben sich seitdem kleine Freiräume erkämpft - doch die Repression hat sich weiter verschärft. Von Antonia Rüller.",
-      "pubDate": "2026-09-16T19:40:33+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Debatte über Spritpreise: Reiche will Mehrwertsteuer auf Sprit senken",
-      "description": "Angesichts hoher Spritpreise hat die Politik Entlastung versprochen - aber es ist unklar, wie die aussehen könnte. Nach Unionsfraktionschef Frei sprach sich nun auch Wirtschaftsministerin Reiche für eine befristete Senkung der Mehrwertsteuer aus.",
-      "pubDate": "2026-09-16T19:15:59+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Streit um Kultureinrichtung: Trump verweigert Kennedy Center Renovierung",
-      "description": "Das Kennedy Center ist nach einem Sturm in schlechtem Zustand. Es müsste dringend renoviert werden. Doch US-Präsident Trump will nur zustimmen, wenn er anschließend wieder seinen Namen am Gebäude anbringen darf. Von C. Kühntopp.",
-      "pubDate": "2026-09-16T19:03:09+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Südukraine: Mehrere Tote nach russischem Angriff auf Linienbus",
-      "description": "Tote, Verletzte und schwere Schäden in der Südukraine: Russland hat laut ukrainischen Angaben einen Bus und zwei Züge mit Drohnen angegriffen. Mindestens fünf Menschen seien getötet worden. Präsident Selenskyj spricht von einem \"Akt der Barbarei\".",
-      "pubDate": "2026-09-16T18:40:52+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: DAX schließt im Plus - Fed im Fokus",
-      "description": "Der deutsche Aktienmarkt hat am Mittwoch zugelegt. Rückenwind kam vor allem von gesunkenen Ölpreisen und gefragten Aktien aus dem KI- und Halbleiterbereich. Im Fokus der Anleger stand zugleich die US-Geldpolitik.",
-      "pubDate": "2026-09-16T18:25:03+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Von der Leyen will neuen transatlantischen Bund mit Kanada",
-      "description": "Wo steht die EU? Und was sind die Pläne für die kommenden Monate? EU-Kommissionschefin von der Leyen hat in ihrer Grundsatzrede in Straßburg die Prioritäten skizziert - eine ihrer vielen Initiativen ist eine engere Partnerschaft mit Kanada. Von Christian Feld.",
-      "pubDate": "2026-09-16T17:32:58+02:00",
       "bild": ""
     }
   ],
