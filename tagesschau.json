@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "17.09.2026, 19:13 Uhr (UTC)",
+  "aktualisiert": "17.09.2026, 22:23 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Wie Russland den ukrainischen Buchmarkt angreift",
+      "description": "Wegen verstärkter Luftangriffe musste die Kiewer Buchmesse in diesem Jahr abgesagt werden. Russland zerstört Bücher aber auch direkt - durch Raketen auf Lagerhallen. Für viele ein gezielter Angriff auf die ukrainische Kultur. Von F. Kellermann.",
+      "pubDate": "2026-09-17T22:13:01+02:00",
+      "bild": ""
+    },
     {
       "title": "Hybride Angriffe: Polens Regierungschef Tusk warnt vor \"russischem Plan\"",
       "description": "An der Ostflanke der NATO wachsen die Sorgen vor russischen Angriffen. Angesichts jüngster Vorfälle im polnisch-ukrainischen Grenzgebiet warnt Regierungschef Tusk nun vor einem russischen Plan, Ukraine-Verbündete gezielt anzugreifen.",
@@ -84,12 +90,6 @@
       "title": "Premier Carney: Kanada ist offen für EU-Sondermitgliedschaft",
       "description": "Kein volles EU-Mitglied, aber eine Art Sondermitgliedschaft - das könnte Kanada bekommen. Die EU hat einen solchen Vorschlag gemacht, Premier Carney begrüßt den Vorstoß. Ob es wirklich dazu kommt, ist aber ungewiss.",
       "pubDate": "2026-09-17T13:50:29+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Was Wähler in Russlands Provinz beschäftigt",
-      "description": "Brennende Ölterminals, Drohnenangriffe, Benzinmangel an den Tankstellen: Wird sich die aktuelle Situation in Russland auf die Parlamentswahl ab Freitag auswirken? Eine Reportage aus der Stadt Twer. Von S. Diettrich.",
-      "pubDate": "2026-09-17T12:33:12+02:00",
       "bild": ""
     }
   ],
