@@ -1,7 +1,55 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "18.09.2026, 11:00 Uhr (UTC)",
+  "aktualisiert": "18.09.2026, 15:06 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Die AfD und ihr Spitzenpersonal: Zwischen Volksnähe und Krawall",
+      "description": "Die Landtagswahlen in Sachsen-Anhalt und jetzt in Mecklenburg-Vorpommern sind bei der AfD geprägt von einem anderen Typ Politiker als zuvor. Welche Strategie steckt dahinter? Benjamin Großkopff analysiert die Inszenierung der Wahlkämpfe.",
+      "pubDate": "2026-09-18T16:27:34+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Spenden für Midterms: Rekordsummen für die Kongress-Zwischenwahlen",
+      "description": "Nie zuvor floss in den USA so viel Geld in den Wahlkampf für Kongress-Zwischenwahlen. Zu den größten Spendern zählen einzelne Milliardäre. Hinzu kommt \"Dark Money\", also Spenden, die niemandem zugeordnet werden können. Von Ralf Borchard.",
+      "pubDate": "2026-09-18T16:21:12+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Die neue Kölner Oper eröffnet - nach 14 Jahren Bauzeit und Milliardenkosten",
+      "description": "14 Jahre Bau-Chaos, bis zu 1,5 Milliarden Euro Kosten: Die Sanierung der Kölner Oper gilt als eines der größten kommunalen Bau-Desaster. Jetzt wird wieder gespielt - und die Stadt fordert eine \"Bühne für alle\". Kann das gelingen?",
+      "pubDate": "2026-09-18T16:17:42+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Autobombe detoniert: Tote und Verletzte nach Anschlag in Pakistan",
+      "description": "Der Nordwesten Pakistans gilt als Unruheregion. Nun gab es dort - im Grenzgebiet zu Afghanistan - erneut einen verheerenden Anschlag mit vielen Toten und Verletzten. Noch ist unklar, wer dahinter steckt.",
+      "pubDate": "2026-09-18T14:46:17+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Volkswagen verliert Platz in Europas wichtigster Börsenliga",
+      "description": "Nach Börsenschluss am Freitag gehört die Volkswagen-Aktie nicht mehr zum europäischen Leitindex. Für das operative Geschäft ändert sich dadurch nichts - für die Aktie kann der Schritt kurzfristig dennoch Folgen haben.",
+      "pubDate": "2026-09-18T13:40:02+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Mecklenburg-Vorpommern: Wer könnte nach der Wahl regieren?",
+      "description": "Die Zuspitzung im Wahlkampf in Mecklenburg-Vorpommern zwischen SPD und AfD droht die kleineren Parteien zu zerreiben. Doch von diesen hängt ab, wie einfach oder kompliziert die Regierungsbildung wird. Von Michael Seidel.",
+      "pubDate": "2026-09-18T13:23:36+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Anschlag auf Synagoge in NRW: Ermittler vermuten antisemitisches Motiv",
+      "description": "Auf die Synagoge der Jüdischen Kultusgemeinde in Wuppertal ist ein Brandanschlag verübt worden. Ein aus Afghanistan stammender Mann wurde festgenommen. Die Ermittler gehen von einem antisemitischen Motiv aus.",
+      "pubDate": "2026-09-18T14:18:00+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Italien erwägt Marinemission im Roten Meer zum Schutz von Frachtern",
+      "description": "Die Huthi-Miliz kontrolliert die Meerenge Bab al-Mandab im Roten Meer weitgehend. Ohne auf die EU zu warten, will Italien dort Schiffe mit der eigenen Marine schützen. Die Ankündigung dürfte vor allem ein Signal in Richtung Brüssel sein.",
+      "pubDate": "2026-09-18T13:02:32+02:00",
+      "bild": ""
+    },
     {
       "title": "Putin stellt Nestlé in Russland unter Zwangsverwaltung",
       "description": "Auch nach Ausbruch des Ukraine-Krieges produzierte Nestlé weiter in Russland. Nun stellt Präsident Putin das Russland-Geschäft des Schweizer Lebensmittelkonzerns per Dekret unter Zwangsverwaltung. Es ist nicht der erste Konzern, dem das passiert.",
@@ -42,54 +90,6 @@
       "title": "Studie: In der EU sinkt die Impfquote bei Kindern",
       "description": "In vielen EU-Ländern gehen die Impfquoten bei Kindern zurück. Auch Deutschland ist betroffen, wie aus einer Studie hervorgeht. Auslöser war demnach vor allem die Corona-Pandemie.",
       "pubDate": "2026-09-18T08:27:57+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Spritpreise: Hoppermann schlägt bis zu 25 Cent Entlastung pro Liter vor",
-      "description": "Wie können Autofahrer und Spediteure angesichts der hohen Spritpreise entlastet werden? Viele Vorschläge liegen auf dem Tisch, nun hat CDU-Generalsekretärin Hoppermann erstmals konkrete Eckdaten ins Spiel gebracht.",
-      "pubDate": "2026-09-18T08:31:11+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Mehr Pflanzen, weniger Fleisch: Schweiz stimmt über Ernährungsinitiative ab",
-      "description": "\"Tu ma lieber die Möhrchen\", könnte es bald in der Schweiz heißen. Eine Initiative fordert mehr pflanzliche Lebensmittel und weniger Tierhaltung. Dahinter steckt die Frage: Inwieweit will sich das Land künftig selbst versorgen? Von S. Biegger.",
-      "pubDate": "2026-09-18T07:06:59+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Duma-Wahl in Russland: Alles unter Kontrolle - und doch ein Stresstest?",
-      "description": "In Russland hat die Parlamentswahl begonnen. Parteien, die den Ukraine-Krieg kritisieren, sind bei der dreitägigen Abstimmung nicht zugelassen. Doch vom Abschneiden einzelner Kandidaten könnte ein Signal ausgehen. Von S. Laack.",
-      "pubDate": "2026-09-18T07:04:24+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Renommierter Körber-Preis für Zellforscherin Wickström",
-      "description": "Die Zellbiologin Wickström erforscht, was in unseren Zellen bei mechanischem Druck passiert. Das ist auch für die Krebsforschung relevant. Heute erhält die Finnin den diesjährigen Körber-Preis für Europäische Wissenschaft. Von Veronika Simon.",
-      "pubDate": "2026-09-18T05:22:27+02:00",
-      "bild": ""
-    },
-    {
-      "title": "EU-Finanzminister beraten in Dublin über mögliche Übergewinnsteuer",
-      "description": "Die EU-Finanzminister beraten heute in Dublin über mögliche Entlastungen für Autofahrer. Bundesfinanzminister Klingbeil wirbt für eine Übergewinnsteuer, doch sein Vorschlag ist umstritten - auch unter Ökonomen. Von Sarah López.",
-      "pubDate": "2026-09-18T04:55:53+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Nach Schließung des Konsulats: Deutschlands schwieriger Kurs gegenüber Russland",
-      "description": "Flagge eingeholt, Personal ausgeflogen: Das russische Generalkonsulat in Bonn ist seit heute als Reaktion auf den Leipziger Drohnen-Vorfall geschlossen. Außenminister Wadephul nennt das eine harte Reaktion, er setzt aber weiter auf Dialog. Von M. Sambale.",
-      "pubDate": "2026-09-18T04:52:54+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Polizei registriert Hunderte Straftaten im Berliner Wahlkampf",
-      "description": "Im Berliner Wahlkampf hat die Polizei seit Anfang August mehr als 1.200 beschädigte Wahlplakate und 39 Angriffe auf Parteimitglieder und Wahlkämpfer registriert. Besonders häufig betroffen war die AfD. Auch andere Parteien meldeten Übergriffe.",
-      "pubDate": "2026-09-18T04:01:20+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wie Russland den ukrainischen Buchmarkt angreift",
-      "description": "Wegen verstärkter Luftangriffe musste die Kiewer Buchmesse in diesem Jahr abgesagt werden. Russland zerstört Bücher aber auch direkt - durch Raketen auf Lagerhallen. Für viele ein gezielter Angriff auf die ukrainische Kultur. Von F. Kellermann.",
-      "pubDate": "2026-09-17T22:13:01+02:00",
       "bild": ""
     }
   ],
