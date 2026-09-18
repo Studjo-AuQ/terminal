@@ -1,7 +1,55 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "18.09.2026, 05:44 Uhr (UTC)",
+  "aktualisiert": "18.09.2026, 11:00 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Putin stellt Nestlé in Russland unter Zwangsverwaltung",
+      "description": "Auch nach Ausbruch des Ukraine-Krieges produzierte Nestlé weiter in Russland. Nun stellt Präsident Putin das Russland-Geschäft des Schweizer Lebensmittelkonzerns per Dekret unter Zwangsverwaltung. Es ist nicht der erste Konzern, dem das passiert.",
+      "pubDate": "2026-09-18T11:49:03+02:00",
+      "bild": ""
+    },
+    {
+      "title": "FAQ: Wie gefährlich sind die aktuellen Malaria-Fälle?",
+      "description": "In Frankfurt am Main ist erneut ein Mensch an der Tropenkrankheit Malaria gestorben, er soll von einer eingeschleppten Mücke infiziert worden sein. Drohen weitere Fälle? Und sinken mit dem Herbst die Risiken?",
+      "pubDate": "2026-09-18T11:28:36+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: Anleger trotz sinkender Ölpreise zurückhaltend",
+      "description": "Obwohl die Rohöl-Preise weiter sinken, steht der DAX unter Verkaufsdruck. In der Nähe der 26.000-Punkte-Marke fehlen Anlegern die Kaufargumente. Steigende Erzeugerpreise deuten auf eine anhaltend hohe Inflation hin.",
+      "pubDate": "2026-09-18T10:59:44+02:00",
+      "bild": ""
+    },
+    {
+      "title": "EU-Verpackungsverordnung - für kleine Händler ein \"bürokratisches Monster\"?",
+      "description": "Mit einer Verordnung will die EU für weniger Verpackungsmüll und mehr Recycling sorgen. Doch sie trifft damit nicht nur Onlineriesen wie Amazon, sondern auch kleine Händlerinnen und Händler. Von R. Schirra und T. Kukral.",
+      "pubDate": "2026-09-18T10:03:21+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Juristentag plädiert für Schutzkonzept bei Sterbehilfe",
+      "description": "Das Bundesverfassungsgericht hat das Recht auf selbstbestimmtes Sterben gestärkt. Doch wie lässt sich sicherstellen, dass die Entscheidung frei getroffen wird? Der Juristentag fordert Regeln für Beratung und Aufklärung. Von Frank Bräutigam.",
+      "pubDate": "2026-09-18T10:01:05+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Hohe Preise: Welche Energiekosten auf die Verbraucher zukommen",
+      "description": "Der Iran-Krieg hat Energie stark verteuert. Wo sind die Preise bereits besonders stark angestiegen? Und worauf müssen sich Haushalte mit Blick auf die kommenden Monate noch einstellen? Von Till Bücker.",
+      "pubDate": "2026-09-18T09:20:19+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Studie: In der EU sinkt die Impfquote bei Kindern",
+      "description": "In vielen EU-Ländern gehen die Impfquoten bei Kindern zurück. Auch Deutschland ist betroffen, wie aus einer Studie hervorgeht. Auslöser war demnach vor allem die Corona-Pandemie.",
+      "pubDate": "2026-09-18T08:27:57+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Spritpreise: Hoppermann schlägt bis zu 25 Cent Entlastung pro Liter vor",
+      "description": "Wie können Autofahrer und Spediteure angesichts der hohen Spritpreise entlastet werden? Viele Vorschläge liegen auf dem Tisch, nun hat CDU-Generalsekretärin Hoppermann erstmals konkrete Eckdaten ins Spiel gebracht.",
+      "pubDate": "2026-09-18T08:31:11+02:00",
+      "bild": ""
+    },
     {
       "title": "Mehr Pflanzen, weniger Fleisch: Schweiz stimmt über Ernährungsinitiative ab",
       "description": "\"Tu ma lieber die Möhrchen\", könnte es bald in der Schweiz heißen. Eine Initiative fordert mehr pflanzliche Lebensmittel und weniger Tierhaltung. Dahinter steckt die Frage: Inwieweit will sich das Land künftig selbst versorgen? Von S. Biegger.",
@@ -42,54 +90,6 @@
       "title": "Wie Russland den ukrainischen Buchmarkt angreift",
       "description": "Wegen verstärkter Luftangriffe musste die Kiewer Buchmesse in diesem Jahr abgesagt werden. Russland zerstört Bücher aber auch direkt - durch Raketen auf Lagerhallen. Für viele ein gezielter Angriff auf die ukrainische Kultur. Von F. Kellermann.",
       "pubDate": "2026-09-17T22:13:01+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Hybride Angriffe: Polens Regierungschef Tusk warnt vor \"russischem Plan\"",
-      "description": "An der Ostflanke der NATO wachsen die Sorgen vor russischen Angriffen. Angesichts jüngster Vorfälle im polnisch-ukrainischen Grenzgebiet warnt Regierungschef Tusk nun vor einem russischen Plan, Ukraine-Verbündete gezielt anzugreifen.",
-      "pubDate": "2026-09-17T20:21:41+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kanadas Premier offen für Idee einer assoziierten EU-Mitgliedschaft",
-      "description": "Kanadas Premier Carney hat sich im Europaparlament in Straßburg für eine stärkere Zusammenarbeit seines Landes mit der EU ausgesprochen. Eine Partnerschaft müsse auf Werten begründet sein, nicht auf Eigensinn. Von Andreas Meyer-Feist.",
-      "pubDate": "2026-09-17T19:19:34+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: DAX schließt nach US-Zinserhöhung im Plus",
-      "description": "Der DAX hat nach der Zinserhöhung der US-Notenbank zugelegt. Rückenwind kam von fallenden Ölpreisen. Nach Übernahmespekulationen führt der Diagnostikkonzern Qiagen den deutschen Leitindex an.",
-      "pubDate": "2026-09-17T18:40:52+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Forscher zur KI-Entwicklung: Risiken ernst nehmen, aber nicht dramatisieren",
-      "description": "Öffentlichkeitswirksam haben zuletzt große KI-Entwickler für mehr Regulierung der eigenen Technologie plädiert. Einige deutsche Forscher relativieren die Warnungen nun, trotz aller Risiken - und nehmen die Entwickler in die Pflicht. Von Sven Kästner.",
-      "pubDate": "2026-09-17T17:11:53+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bundesanwaltschaft: Islamist soll Anschlag auf Kirche vorbereitet haben",
-      "description": "Ein 24-jähriger Iraker soll eine Kirche in Bremen als Anschlagsziel ausgewählt und sich schon eine Schusswaffe beschafft haben. Nach Angaben der Bundesanwaltschaft wurde er nun in Brandenburg festgenommen.",
-      "pubDate": "2026-09-17T16:29:47+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Frankfurt am Main: An Malaria erkrankte Person gestorben",
-      "description": "In Frankfurt am Main ist eine Person, die an Malaria erkrankt war, gestorben. Sie und eine weitere erkrankte Person haben laut Gesundheitsamt nahe dem Flughafen gewohnt. Ein Malaria-Gebiet hatten beide zuvor nicht bereist.",
-      "pubDate": "2026-09-17T17:11:09+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Nach Parlamentswahl in Schweden: Knapper Sieg für Mitte-links-Lager",
-      "description": "Der von Ulf Kristersson geführte konservativ-rechte Parteienblock musste bei der Wahl in Schweden eine Niederlage hinnehmen. Der Regierungschef trat zurück. Die bisherige Opposition steht mit Magdalena Andersson vor einer schwierigen Regierungsbildung.",
-      "pubDate": "2026-09-17T17:13:34+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Urteil des Bundesgerichtshofs: Orange gehört Obi nicht allein",
-      "description": "Die Baumarktkette Obi kann laut einem BGH-Urteil keinen Markenschutz für die Farbe Orange beanspruchen. Verbraucher sehen die Farbe nicht als Hinweis auf ein bestimmtes Unternehmen, so die Begründung.",
-      "pubDate": "2026-09-17T14:55:34+02:00",
       "bild": ""
     }
   ],
