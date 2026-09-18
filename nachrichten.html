@@ -35,47 +35,83 @@
                           
 
         <div class="news-grid" id="news-grid">
-            
-      <!-- AB HIER DIE NEUIGKEITEN PRO ABSCHNITT KOPIEREN, AKTUALISIEREN ODER LÖSCHEN--> 
 
-     <div class="news-card">
-                <img src="news004footer.jpg" alt="Fußzeile mit Übersicht" class="news-img">
-                <div class="news-content">
-                    <div class="news-date">7. September 2026</div>
-                    <h2 class="news-title">Übersicht in Fußzeile</h2>
-                    <p class="news-text">Ganz unten ist die neue Fußzeile.<br />Dort findest du auch eine Übersicht.<br /> Das erklärt alle Inhalte hier.<br />Und gibt dir Tipps zur Bedienung.</p>
+      <!-- AB HIER DIE NEUIGKEITEN PRO ABSCHNITT KOPIEREN, AKTUALISIEREN ODER LÖSCHEN-->
+
+            <div class="news-card">
+                <div class="news-kopf" onclick="toggleNews(this)">
+                    <img src="Neues.jpg" alt="" class="news-img">
+                    <div class="news-content">
+                        <div class="news-date">7. September 2026</div>
+                        <h2 class="news-title">Übersicht in Fußzeile</h2>
+                        <p class="news-teaser">Ganz unten ist die neue Fußzeile. Dort findest du auch eine Übersicht.</p>
+                    </div>
+                    <div class="news-pfeil">›</div>
+                </div>
+                <div class="news-mehr">
+                    <p class="news-text">Das erklärt alle Inhalte hier.<br>Und gibt dir Tipps zur Bedienung.</p>
                 </div>
             </div>
-            
-            <div class="news-card">
-                <img src="losung.jpg" alt="Zeiten" class="news-img">
-                <div class="news-content">
-                    <div class="news-date">14. August 2026</div>
-                    <h2 class="news-title">Tages-Losung</h2>
-                    <p class="news-text">Eine neue Kachel zeigt dir:<br />Die Losung vom Tag.<br />Das ist ein Vers aus der Bibel.<br />Lies oder lass ihn dir vorlesen.</p>
-                </div>            </div>      
 
-<div class="news-card">
-                <img src="news-003zeiten.jpg" alt="Zeiten" class="news-img">
-                <div class="news-content">
-                    <div class="news-date">20. Juli 2026</div>
-                    <h2 class="news-title">Infos zu Zeiten</h2>
-                    <p class="news-text">Auf der Startseite siehst du:<br />Zeiten für Arbeit, Pause oder Freizeit.<br />So kannst du dich gut orientieren.<br />Die Angaben gelten für Vollzeit.</p>
-                </div>            </div>       
-                      
-            
             <div class="news-card">
-                <img src="news-002wetter.jpg" alt="Wetterbericht" class="news-img">
-                <div class="news-content">
-                    <div class="news-date">26. Juni 2026</div>
-                    <h2 class="news-title">Wetterbericht verbessert</h2>
-                    <p class="news-text">Der Bereich "Wetter" ist nun übersichtlicher.<br />Dort siehst du nun alle Standorte auf einen Blick.<br />Und eine 5-Tage-Vorschau.</p>
+                <div class="news-kopf" onclick="toggleNews(this)">
+                    <img src="Neues.jpg" alt="" class="news-img">
+                    <div class="news-content">
+                        <div class="news-date">14. August 2026</div>
+                        <h2 class="news-title">Tages-Losung</h2>
+                        <p class="news-teaser">Eine neue Kachel zeigt dir: Die Losung vom Tag.</p>
+                    </div>
+                    <div class="news-pfeil">›</div>
                 </div>
-            </div>         
-            
+                <div class="news-mehr">
+                    <p class="news-text">Das ist ein Vers aus der Bibel.<br>Lies oder lass ihn dir vorlesen.</p>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-kopf" onclick="toggleNews(this)">
+                    <img src="Neues.jpg" alt="" class="news-img">
+                    <div class="news-content">
+                        <div class="news-date">20. Juli 2026</div>
+                        <h2 class="news-title">Infos zu Zeiten</h2>
+                        <p class="news-teaser">Auf der Startseite siehst du: Zeiten für Arbeit, Pause oder Freizeit.</p>
+                    </div>
+                    <div class="news-pfeil">›</div>
+                </div>
+                <div class="news-mehr">
+                    <p class="news-text">So kannst du dich gut orientieren.<br>Die Angaben gelten für Vollzeit.</p>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-kopf" onclick="toggleNews(this)">
+                    <img src="Neues.jpg" alt="" class="news-img">
+                    <div class="news-content">
+                        <div class="news-date">26. Juni 2026</div>
+                        <h2 class="news-title">Wetterbericht verbessert</h2>
+                        <p class="news-teaser">Der Bereich "Wetter" ist nun übersichtlicher.</p>
+                    </div>
+                    <div class="news-pfeil">›</div>
+                </div>
+                <div class="news-mehr">
+                    <p class="news-text">Dort siehst du nun alle Standorte auf einen Blick.<br>Und eine 5-Tage-Vorschau.</p>
+                </div>
+            </div>
+
         </div>
 
+        <script>
+          function toggleNews(kopf) {
+              const karte = kopf.closest('.news-card');
+              const warOffen = karte.classList.contains('offen');
+              document.querySelectorAll('.news-card.offen')
+                  .forEach(k => k.classList.remove('offen'));
+              if (!warOffen) karte.classList.add('offen');
+          }
+        </script>
+
     </main>
+
 <footer style="
   position: relative;
   text-align: center;
