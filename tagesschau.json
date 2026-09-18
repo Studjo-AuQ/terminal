@@ -1,7 +1,49 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "18.09.2026, 15:06 Uhr (UTC)",
+  "aktualisiert": "18.09.2026, 18:36 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Pistorius nimmt in Texas ersten F-35A-Jet für Bundeswehr entgegen",
+      "description": "In Texas hat Bundesverteidigungsminister Pistorius den ersten von 35 Kampfjets des Typs F-35A übernommen. Die Flugzeuge sind vom gegnerischen Radar nur schwer zu orten. Pistorius sprach von einer \"neuen Ära für die Luftwaffe\".",
+      "pubDate": "2026-09-18T20:30:08+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Klingbeil dringt wegen Spritpreisen auf europäische Übergewinnsteuer",
+      "description": "Wegen der hohen Spritpreise übt Finanzminister Klingbeil scharfe Kritik an der EU-Kommission. Er fordert eine Übergewinnsteuer für Ölkonzerne auf EU-Ebene. Doch Brüssel zeigt wenig Interesse. Von Sarah López.",
+      "pubDate": "2026-09-18T19:42:39+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Projekt in Dänemark gestartet: Greensand soll CO2-Speicher Europas werden",
+      "description": "Mit dem Projekt Greensand ist das erste CO2-Einlagerungsprojekt in der EU gestartet. Unter der Nordsee soll in Zukunft klimaschädliches CO2 dauerhaft im Meeresboden gespeichert werden. Doch es gibt auch Kritik. Von A. Bartram.",
+      "pubDate": "2026-09-18T19:03:15+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Bolivien: Forscher entdecken neue Katzenart \"Leopardus tilcayo\"",
+      "description": "Erstmals seit mehr als hundert Jahren haben Forscher in Südamerika eine bislang unbekannte Katzenart entdeckt. Das Tier ist hellbraun gefleckt und kleiner als eine Hauskatze. Es trägt nun den Namen \"Leopardus tilcayo\".",
+      "pubDate": "2026-09-18T19:02:36+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX gibt am großen Verfallstag nach",
+      "description": "Der deutsche Aktienmarkt hat die Woche mit Verlusten beendet. Die Anleger blickten mit Sorge auf die unsichere Lage im Nahen Osten. Auch der große Verfallstag sorgte für Bewegung.",
+      "pubDate": "2026-09-18T18:25:06+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Berlin-Wahl - Kristin Brinker von der AfD: Spitzenkandidatin ohne Regierungschancen",
+      "description": "Kristin Brinker tritt zum dritten Mal als Spitzenkandidatin der AfD in Berlin an. Ihre Partei kann mit Zuwächsen rechnen. Doch eine Regierungsoption hat sie wohl nicht; niemand will mit ihr koalieren. Von Jonas Wintermantel und Markus Reher.",
+      "pubDate": "2026-09-18T18:20:49+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Investor Warren Buffett übergibt an seinen Sohn",
+      "description": "Mit 96 Jahren übergibt Warren Buffett einen weiteren Teil seines Imperiums. Den Vorsitz des Verwaltungsrats übernimmt sein Sohn Howard. Ganz zurückziehen wird sich der legendäre Investor aber weiterhin nicht.",
+      "pubDate": "2026-09-18T17:27:15+02:00",
+      "bild": ""
+    },
     {
       "title": "Die AfD und ihr Spitzenpersonal: Zwischen Volksnähe und Krawall",
       "description": "Die Landtagswahlen in Sachsen-Anhalt und jetzt in Mecklenburg-Vorpommern sind bei der AfD geprägt von einem anderen Typ Politiker als zuvor. Welche Strategie steckt dahinter? Benjamin Großkopff analysiert die Inszenierung der Wahlkämpfe.",
@@ -23,7 +65,7 @@
     {
       "title": "Autobombe detoniert: Tote und Verletzte nach Anschlag in Pakistan",
       "description": "Der Nordwesten Pakistans gilt als Unruheregion. Nun gab es dort - im Grenzgebiet zu Afghanistan - erneut einen verheerenden Anschlag mit vielen Toten und Verletzten. Noch ist unklar, wer dahinter steckt.",
-      "pubDate": "2026-09-18T14:46:17+02:00",
+      "pubDate": "2026-09-18T19:22:37+02:00",
       "bild": ""
     },
     {
@@ -40,56 +82,14 @@
     },
     {
       "title": "Anschlag auf Synagoge in NRW: Ermittler vermuten antisemitisches Motiv",
-      "description": "Auf die Synagoge der Jüdischen Kultusgemeinde in Wuppertal ist ein Brandanschlag verübt worden. Ein aus Afghanistan stammender Mann wurde festgenommen. Die Ermittler gehen von einem antisemitischen Motiv aus.",
-      "pubDate": "2026-09-18T14:18:00+02:00",
+      "description": "Auf die Synagoge der Jüdischen Kultusgemeinde in Wuppertal ist ein Brandanschlag verübt worden. Ein aus Afghanistan stammender Verdächtiger ist in Untersuchungshaft. Die Ermittler gehen von einem antisemitischen Motiv aus.",
+      "pubDate": "2026-09-18T17:19:00+02:00",
       "bild": ""
     },
     {
       "title": "Italien erwägt Marinemission im Roten Meer zum Schutz von Frachtern",
       "description": "Die Huthi-Miliz kontrolliert die Meerenge Bab al-Mandab im Roten Meer weitgehend. Ohne auf die EU zu warten, will Italien dort Schiffe mit der eigenen Marine schützen. Die Ankündigung dürfte vor allem ein Signal in Richtung Brüssel sein.",
       "pubDate": "2026-09-18T13:02:32+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Putin stellt Nestlé in Russland unter Zwangsverwaltung",
-      "description": "Auch nach Ausbruch des Ukraine-Krieges produzierte Nestlé weiter in Russland. Nun stellt Präsident Putin das Russland-Geschäft des Schweizer Lebensmittelkonzerns per Dekret unter Zwangsverwaltung. Es ist nicht der erste Konzern, dem das passiert.",
-      "pubDate": "2026-09-18T11:49:03+02:00",
-      "bild": ""
-    },
-    {
-      "title": "FAQ: Wie gefährlich sind die aktuellen Malaria-Fälle?",
-      "description": "In Frankfurt am Main ist erneut ein Mensch an der Tropenkrankheit Malaria gestorben, er soll von einer eingeschleppten Mücke infiziert worden sein. Drohen weitere Fälle? Und sinken mit dem Herbst die Risiken?",
-      "pubDate": "2026-09-18T11:28:36+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Anleger trotz sinkender Ölpreise zurückhaltend",
-      "description": "Obwohl die Rohöl-Preise weiter sinken, steht der DAX unter Verkaufsdruck. In der Nähe der 26.000-Punkte-Marke fehlen Anlegern die Kaufargumente. Steigende Erzeugerpreise deuten auf eine anhaltend hohe Inflation hin.",
-      "pubDate": "2026-09-18T10:59:44+02:00",
-      "bild": ""
-    },
-    {
-      "title": "EU-Verpackungsverordnung - für kleine Händler ein \"bürokratisches Monster\"?",
-      "description": "Mit einer Verordnung will die EU für weniger Verpackungsmüll und mehr Recycling sorgen. Doch sie trifft damit nicht nur Onlineriesen wie Amazon, sondern auch kleine Händlerinnen und Händler. Von R. Schirra und T. Kukral.",
-      "pubDate": "2026-09-18T10:03:21+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Juristentag plädiert für Schutzkonzept bei Sterbehilfe",
-      "description": "Das Bundesverfassungsgericht hat das Recht auf selbstbestimmtes Sterben gestärkt. Doch wie lässt sich sicherstellen, dass die Entscheidung frei getroffen wird? Der Juristentag fordert Regeln für Beratung und Aufklärung. Von Frank Bräutigam.",
-      "pubDate": "2026-09-18T10:01:05+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Hohe Preise: Welche Energiekosten auf die Verbraucher zukommen",
-      "description": "Der Iran-Krieg hat Energie stark verteuert. Wo sind die Preise bereits besonders stark angestiegen? Und worauf müssen sich Haushalte mit Blick auf die kommenden Monate noch einstellen? Von Till Bücker.",
-      "pubDate": "2026-09-18T09:20:19+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Studie: In der EU sinkt die Impfquote bei Kindern",
-      "description": "In vielen EU-Ländern gehen die Impfquoten bei Kindern zurück. Auch Deutschland ist betroffen, wie aus einer Studie hervorgeht. Auslöser war demnach vor allem die Corona-Pandemie.",
-      "pubDate": "2026-09-18T08:27:57+02:00",
       "bild": ""
     }
   ],
