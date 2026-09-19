@@ -1,7 +1,31 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "19.09.2026, 09:20 Uhr (UTC)",
+  "aktualisiert": "19.09.2026, 13:19 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Auch Googles KI hackte Unternehmen",
+      "description": "Wiederholt haben KI-Systeme bei Tests unerwartet auf fremde Systeme zugegriffen. Nun wurden solche Vorfälle auch bei Googles Gemini bekannt. In der Debatte um KI-Sicherheit lässt Kalifornien mögliche strengere Sicherheitsvorgaben prüfen.",
+      "pubDate": "2026-09-19T15:09:00+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wie geht China mit den Gefahren durch Künstliche Intelligenz um?",
+      "description": "Debatten um die Eindämmung der Gefahren durch Künstliche Intelligenz enden in den USA meist mit dem Hinweis, dass China dann einen gefährlichen Vorsprung erlange. Doch wo steht Peking in der Debatte? Von Jörg Endriss.",
+      "pubDate": "2026-09-19T15:08:46+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wie sich Lokaljournalismus weiterentwickelt",
+      "description": "Klicks, neue Kanäle, Künstliche Intelligenz: Der Lokaljournalismus befindet sich im Wandel. Wie Zeitungen mit den Herausforderungen umgehen, zeigt eine Redaktion des Böblinger Boten. Wie kann sie sich behaupten? Von Laura Bisch.",
+      "pubDate": "2026-09-19T14:20:39+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Was ist über das mögliche Grönland-Abkommen bekannt?",
+      "description": "Im Streit um US-Ansprüche auf Grönland scheint sich eine Einigung zwischen den USA, Dänemark und Grönland abzuzeichnen - in Form eines gemeinsamen Abkommens. Was darüber bekannt ist - und worin die Brisanz im Streit um die Insel liegt.",
+      "pubDate": "2026-09-19T13:02:09+02:00",
+      "bild": ""
+    },
     {
       "title": "Abgeordnetenhauswahl: So lief der Wahlkampf in Berlin",
       "description": "Last-Minute-Spitzenkandidatenwechsel, Terroranschlag, Korruptions-Ermittlungen: Berlin hat einen außergewöhnlichen Wahlkampf erlebt. Nicht zuletzt deshalb ist das Rennen um Platz eins so eng wie nie.",
@@ -11,7 +35,7 @@
     {
       "title": "++ Liveblog zu den Wahlen in MV und Berlin: Parteien beenden Wahlkampf ++",
       "description": "Vor dem Wahlen in Mecklenburg-Vorpommern und Berlin beenden die Parteien heute ihren Wahlkampf. Bundeskanzler Merz erhält vor dem Wahlsonntag weitere Rückendeckung aus seiner eigenen Partei.",
-      "pubDate": "2026-09-19T11:15:25+02:00",
+      "pubDate": "2026-09-19T14:38:26+02:00",
       "bild": ""
     },
     {
@@ -23,7 +47,7 @@
     {
       "title": "Viel Kritik und ein wenig Lob für Spritpreis-Entlastungspaket",
       "description": "Mit Tankrabatt und Spritpreisdeckel will die Bundesregierung gegen hohe Kraftstoffpreise vorgehen. Die Maßnahmen stoßen größtenteils auf Kritik - sie seien zu wenig zielgenau. Doch es gibt auch Zustimmung.",
-      "pubDate": "2026-09-19T10:18:52+02:00",
+      "pubDate": "2026-09-19T14:39:46+02:00",
       "bild": ""
     },
     {
@@ -66,30 +90,6 @@
       "title": "Dänemark und USA verkünden Einigung im Grönland-Streit",
       "description": "Mit seinen Forderungen und Drohungen in Bezug auf Grönland sorgte US-Präsident Trump für Spannungen in der NATO. Nun wollen die USA, Dänemark und Grönland ein Abkommen schließen. Laut Grönlands Regierungschef soll es allen nützen.",
       "pubDate": "2026-09-19T01:54:48+02:00",
-      "bild": ""
-    },
-    {
-      "title": "USA-Reise von Pistorius: Es ist etwas in Bewegung gekommen",
-      "description": "Vier Tage war Verteidigungsminister Pistorius in den USA. In Washington, New York und Fort Worth in Texas wird schnell klar, dass sich etwas verändert hat: Das Interesse der USA am Bündnispartner scheint neu erwacht. Von C. Nagel.",
-      "pubDate": "2026-09-19T00:40:52+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Fragen und Antworten: Was plant Koalition jetzt gegen die Spritpreise?",
-      "description": "Die Bundesregierung hat auf die hohen Spritpreise reagiert. Welche Maßnahmen sind ab wann geplant? Wer hat sich in der Koalition durchgesetzt? Und: Welche Kritik gibt es? Die wichtigsten Fragen und Antworten.",
-      "pubDate": "2026-09-19T04:05:33+02:00",
-      "bild": ""
-    },
-    {
-      "title": "US-Präsident Trump verbietet CNN Zugang zum Weißen Haus",
-      "description": "Der Sender CNN und weitere Medien sollen keinen Zugang mehr zum Weißen Haus erhalten. US-Präsident Trump wirft ihnen vor, \"Erfindungen und Lügen\" zu verbreiten. Es ist nicht das erste Mal, dass Trump gegen Journalisten vorgeht.",
-      "pubDate": "2026-09-19T03:44:22+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Pistorius nimmt in Texas ersten F-35A-Jet für Bundeswehr entgegen",
-      "description": "In Texas hat Bundesverteidigungsminister Pistorius den ersten von 35 Kampfjets des Typs F-35A übernommen. Die Flugzeuge sind vom gegnerischen Radar nur schwer zu orten. Pistorius sprach von einer \"neuen Ära für die Luftwaffe\".",
-      "pubDate": "2026-09-18T20:30:08+02:00",
       "bild": ""
     }
   ],
