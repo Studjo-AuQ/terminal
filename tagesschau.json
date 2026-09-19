@@ -1,7 +1,37 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "19.09.2026, 00:05 Uhr (UTC)",
+  "aktualisiert": "19.09.2026, 04:55 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "CDU vor den Wahlen: Für den Kanzler geht es ums Amt",
+      "description": "Die Zukunft von Friedrich Merz hängt an den Wahlen in Berlin und Mecklenburg-Vorpommern. Verpasst die CDU ihre Ziele deutlich, dürfte es ungemütlich werden für den Kanzler. Seine Herausforderer zögern noch. Von Tina Handel.",
+      "pubDate": "2026-09-19T05:14:59+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Radikalisierung von Jugendlichen: Die Macht der Islamisten im Netz",
+      "description": "Islamistische Propaganda erreicht Jugendliche längst mitten in ihrem digitalen Alltag. Recherchen von BR und SWR zeigen, wie Radikalisierung über Social Media und Gaming funktioniert - und wie schwer es für Familien ist, darauf zu reagieren.",
+      "pubDate": "2026-09-19T05:10:46+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Weißstorch oder Beethoven: Europäer reden bei neuen Banknoten mit",
+      "description": "Das Design der Euroscheine ist in die Jahre gekommen. Bei der anstehenden Überarbeitung lässt die EZB die Bürgerinnen und Bürger jetzt mitreden. Noch bis Montag kann abgestimmt werden. Von Ursula Mayer.",
+      "pubDate": "2026-09-19T05:09:49+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Oktoberfest beginnt - München für zwei Wochen in Feierlaune",
+      "description": "In München beginnt das Oktoberfest. Zum ersten Mal bekommt Bayerns Ministerpräsident Söder das erste Wiesn-Bier von einem Grünen gereicht - dem neuen Oberbürgermeister Krause.",
+      "pubDate": "2026-09-19T05:04:33+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Entlastungen: Spritpreisdeckel dürfte für Diskussionen sorgen",
+      "description": "Die Bundesregierung will die Spritpreise in zwei Schritten senken: erst mit einem Tankrabatt, ab Januar mit einem Preisdeckel. Doch der dürfte noch für Streit in der Koalition sorgen. Von Maximilian Ulrich.",
+      "pubDate": "2026-09-19T02:52:21+02:00",
+      "bild": ""
+    },
     {
       "title": "Dänemark und USA verkünden Durchbruch im Grönland-Streit",
       "description": "US-Präsident Trump sorgte mit seinen Ansprüchen auf Grönland für Spannungen innerhalb der NATO. Nun wollen die USA, Dänemark und Grönland ein Abkommen schließen. Laut Grönlands Regierungschef nützt es allen.",
@@ -17,13 +47,13 @@
     {
       "title": "Fragen und Antworten: Was plant Koalition jetzt gegen die Spritpreise?",
       "description": "Die Bundesregierung hat auf die hohen Spritpreise reagiert. Welche Maßnahmen sind ab wann geplant? Wer hat sich in der Koalition durchgesetzt? Und: Welche Kritik gibt es? Die wichtigsten Fragen und Antworten.",
-      "pubDate": "2026-09-19T00:00:25+02:00",
+      "pubDate": "2026-09-19T04:05:33+02:00",
       "bild": ""
     },
     {
       "title": "US-Präsident Trump verbietet CNN Zugang zum Weißen Haus",
       "description": "Der Sender CNN und weitere Medien sollen keinen Zugang mehr zum Weißen Haus erhalten. US-Präsident Trump wirft ihnen vor, \"Erfindungen und Lügen\" zu verbreiten. Es ist nicht das erste Mal, dass Trump gegen Journalisten vorgeht.",
-      "pubDate": "2026-09-18T23:07:18+02:00",
+      "pubDate": "2026-09-19T03:44:22+02:00",
       "bild": ""
     },
     {
@@ -60,36 +90,6 @@
       "title": "Berlin-Wahl - Kristin Brinker von der AfD: Spitzenkandidatin ohne Regierungschancen",
       "description": "Kristin Brinker tritt zum dritten Mal als Spitzenkandidatin der AfD in Berlin an. Ihre Partei kann mit Zuwächsen rechnen. Doch eine Regierungsoption hat sie wohl nicht; niemand will mit ihr koalieren. Von Jonas Wintermantel und Markus Reher.",
       "pubDate": "2026-09-18T18:20:49+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Investor Warren Buffett übergibt an seinen Sohn",
-      "description": "Mit 96 Jahren übergibt Warren Buffett einen weiteren Teil seines Imperiums. Den Vorsitz des Verwaltungsrats übernimmt sein Sohn Howard. Ganz zurückziehen wird sich der legendäre Investor aber weiterhin nicht.",
-      "pubDate": "2026-09-18T17:27:15+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Die AfD und ihr Spitzenpersonal: Zwischen Volksnähe und Krawall",
-      "description": "Die Landtagswahlen in Sachsen-Anhalt und jetzt in Mecklenburg-Vorpommern sind bei der AfD geprägt von einem anderen Typ Politiker als zuvor. Welche Strategie steckt dahinter? Benjamin Großkopff analysiert die Inszenierung der Wahlkämpfe.",
-      "pubDate": "2026-09-18T16:27:34+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Spenden für Midterms: Rekordsummen für die Kongress-Zwischenwahlen",
-      "description": "Nie zuvor floss in den USA so viel Geld in den Wahlkampf für Kongress-Zwischenwahlen. Zu den größten Spendern zählen einzelne Milliardäre. Hinzu kommt \"Dark Money\", also Spenden, die niemandem zugeordnet werden können. Von Ralf Borchard.",
-      "pubDate": "2026-09-18T16:21:12+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Die neue Kölner Oper eröffnet - nach 14 Jahren Bauzeit und Milliardenkosten",
-      "description": "14 Jahre Bau-Chaos, bis zu 1,5 Milliarden Euro Kosten: Die Sanierung der Kölner Oper gilt als eines der größten kommunalen Bau-Desaster. Jetzt wird wieder gespielt - und die Stadt fordert eine \"Bühne für alle\". Kann das gelingen?",
-      "pubDate": "2026-09-18T16:17:42+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Autobombe detoniert: Tote und Verletzte nach Anschlag in Pakistan",
-      "description": "Der Nordwesten Pakistans gilt als Unruheregion. Nun gab es dort - im Grenzgebiet zu Afghanistan - erneut einen verheerenden Anschlag mit vielen Toten und Verletzten. Noch ist unklar, wer dahinter steckt.",
-      "pubDate": "2026-09-18T19:22:37+02:00",
       "bild": ""
     }
   ],
