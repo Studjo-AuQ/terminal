@@ -1,7 +1,25 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "19.09.2026, 13:19 Uhr (UTC)",
+  "aktualisiert": "19.09.2026, 16:43 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Weißes Haus verweigert Journalisten von CNN, MS NOW und Politico Zugang",
+      "description": "US-Präsident Trump hatte angekündigt, CNN, MS NOW und Politico aus dem Weißen Haus zu verbannen. Und tatsächlich: Die Reporter wurden heute abgewiesen, ihre Presseausweise deaktiviert.",
+      "pubDate": "2026-09-19T17:53:33+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Krankenkassen sollen doch über Beitragsanhebung informieren müssen",
+      "description": "Gesundheitsminister Linnemann will das Aus der Informationspflicht für gesetzliche Krankenkassen über Beitragserhöhungen wieder rückgängig machen. Vor allem Verbraucherschützer hatten die Abschaffung der Pflicht scharf kritisiert.",
+      "pubDate": "2026-09-19T17:46:45+02:00",
+      "bild": ""
+    },
+    {
+      "title": "USA: Trump setzt neues Sanktionspaket gegen Russland in Kraft",
+      "description": "Einreiseverbote, Strafzölle und eingefrorene Vermögen: US-Präsident Trump hat verschärfte Sanktionen gegen Russland mit seiner Unterschrift in Kraft gesetzt. Eine scharfe Reaktion aus Russland folgte prompt.",
+      "pubDate": "2026-09-19T16:52:46+02:00",
+      "bild": ""
+    },
     {
       "title": "Auch Googles KI hackte Unternehmen",
       "description": "Wiederholt haben KI-Systeme bei Tests unerwartet auf fremde Systeme zugegriffen. Nun wurden solche Vorfälle auch bei Googles Gemini bekannt. In der Debatte um KI-Sicherheit lässt Kalifornien mögliche strengere Sicherheitsvorgaben prüfen.",
@@ -35,7 +53,7 @@
     {
       "title": "++ Liveblog zu den Wahlen in MV und Berlin: Parteien beenden Wahlkampf ++",
       "description": "Vor dem Wahlen in Mecklenburg-Vorpommern und Berlin beenden die Parteien heute ihren Wahlkampf. Bundeskanzler Merz erhält vor dem Wahlsonntag weitere Rückendeckung aus seiner eigenen Partei.",
-      "pubDate": "2026-09-19T14:38:26+02:00",
+      "pubDate": "2026-09-19T17:39:08+02:00",
       "bild": ""
     },
     {
@@ -72,24 +90,6 @@
       "title": "Weißstorch oder Beethoven: Europäer reden bei neuen Banknoten mit",
       "description": "Das Design der Euroscheine ist in die Jahre gekommen. Bei der anstehenden Überarbeitung lässt die EZB die Bürgerinnen und Bürger jetzt mitreden. Noch bis Montag kann abgestimmt werden. Von Ursula Mayer.",
       "pubDate": "2026-09-19T05:09:49+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Oktoberfest beginnt - München für zwei Wochen in Feierlaune",
-      "description": "In München beginnt das Oktoberfest. Zum ersten Mal bekommt Bayerns Ministerpräsident Söder das erste Wiesn-Bier von einem Grünen gereicht - dem neuen Oberbürgermeister Krause.",
-      "pubDate": "2026-09-19T05:04:33+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Entlastungen: Spritpreisdeckel dürfte für Diskussionen sorgen",
-      "description": "Die Bundesregierung will die Spritpreise in zwei Schritten senken: erst mit einem Tankrabatt, ab Januar mit einem Preisdeckel. Doch der dürfte noch für Streit in der Koalition sorgen. Von Maximilian Ulrich.",
-      "pubDate": "2026-09-19T02:52:21+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Dänemark und USA verkünden Einigung im Grönland-Streit",
-      "description": "Mit seinen Forderungen und Drohungen in Bezug auf Grönland sorgte US-Präsident Trump für Spannungen in der NATO. Nun wollen die USA, Dänemark und Grönland ein Abkommen schließen. Laut Grönlands Regierungschef soll es allen nützen.",
-      "pubDate": "2026-09-19T01:54:48+02:00",
       "bild": ""
     }
   ],
