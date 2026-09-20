@@ -1,7 +1,37 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "20.09.2026, 00:01 Uhr (UTC)",
+  "aktualisiert": "20.09.2026, 05:17 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Warum wir noch immer so viel Essen wegwerfen",
+      "description": "Jedes Jahr landen in Deutschland fast elf Millionen Tonnen genießbare Lebensmittel im Müll. Warum ändert sich seit Jahren kaum was? Und was können wir von unseren Nachbarn lernen? Von Edgar Verheyen.",
+      "pubDate": "2026-09-20T05:38:41+02:00",
+      "bild": ""
+    },
+    {
+      "title": "FAQ: Was Sie zur Wahl in Berlin wissen müssen",
+      "description": "Vier Parteien liegen in den Umfragen dicht beieinander, CDU und Linke konkurrieren um die Spitze: Die Berlin-Wahl verspricht spannend zu werden. Wie die Wahl abläuft und warum ihr Ausgang vieles ändern könnte.",
+      "pubDate": "2026-09-20T05:38:24+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Was zur Wahl in Mecklenburg-Vorpommern wichtig ist",
+      "description": "Es ist ein Zweikampf zwischen der in Umfragen führenden AfD und der regierenden SPD: In Mecklenburg-Vorpommern kämpft Manuela Schwesig um den Wahlsieg. Warum es für ein Zweierbündnis nicht reichen dürfte - und was noch wichtig ist.",
+      "pubDate": "2026-09-20T05:38:16+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Duma-Wahl in Russland endet: Der Wahlsieger steht wohl jetzt schon fest",
+      "description": "Drei Tage lang haben die Russen ein neues Parlament gewählt, ab 20 Uhr werden die Stimmen ausgezählt. Ein Sieg der Regierungspartei gilt als sicher. Wahlbeobachter berichten von Manipulationsversuchen und anderen Regelverstößen.",
+      "pubDate": "2026-09-20T05:29:28+02:00",
+      "bild": ""
+    },
+    {
+      "title": "US-Medien kritisierten Trumps Hausverbot als rechtswidrigen Angriff auf die Pressefreiheit",
+      "description": "Der Hausausweis abgenommen, der Zutritt zum Weißen Haus verwehrt: Die Entscheidung des US-Präsidenten, Journalisten von CNN, MS NOW und Politico den Zutritt zu verwehren, stößt auf breite Kritik. Viele sehen die Pressefreiheit in Gefahr.",
+      "pubDate": "2026-09-20T03:55:19+02:00",
+      "bild": ""
+    },
     {
       "title": "Unzufriedenheit mit Senat erreicht neuen Höchststand",
       "description": "Vor der Wahl zum Berliner Abgeordnetenhaus ist laut Infratest Dimap nur noch jeder Fünfte mit der Arbeit des Senats zufrieden. Damit ist die Landesregierung in Berlin so unbeliebt wie zuletzt keine andere in Deutschland vor einer Wahl.",
@@ -60,36 +90,6 @@
       "title": "Wie geht China mit den Gefahren durch Künstliche Intelligenz um?",
       "description": "Debatten um die Eindämmung der Gefahren durch Künstliche Intelligenz enden in den USA meist mit dem Hinweis, dass China dann einen gefährlichen Vorsprung erlange. Doch wo steht Peking in der Debatte? Von Jörg Endriss.",
       "pubDate": "2026-09-19T15:08:46+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wie sich Lokaljournalismus weiterentwickelt",
-      "description": "Klicks, neue Kanäle, Künstliche Intelligenz: Der Lokaljournalismus befindet sich im Wandel. Wie Zeitungen mit den Herausforderungen umgehen, zeigt eine Redaktion des Böblinger Boten. Wie kann sie sich behaupten? Von Laura Bisch.",
-      "pubDate": "2026-09-19T14:20:39+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Was ist über das mögliche Grönland-Abkommen bekannt?",
-      "description": "Im Streit um US-Ansprüche auf Grönland scheint sich eine Einigung zwischen den USA, Dänemark und Grönland abzuzeichnen - in Form eines gemeinsamen Abkommens. Was darüber bekannt ist - und worin die Brisanz im Streit um die Insel liegt.",
-      "pubDate": "2026-09-19T13:02:09+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Abgeordnetenhauswahl: So lief der Wahlkampf in Berlin",
-      "description": "Last-Minute-Spitzenkandidatenwechsel, Terroranschlag, Korruptions-Ermittlungen: Berlin hat einen außergewöhnlichen Wahlkampf erlebt. Nicht zuletzt deshalb ist das Rennen um Platz eins so eng wie nie.",
-      "pubDate": "2026-09-19T11:17:23+02:00",
-      "bild": ""
-    },
-    {
-      "title": "++ Liveblog zu den Wahlen in MV und Berlin: Parteien haben Wahlkampf beendet ++",
-      "description": "Vor dem Wahlen in Mecklenburg-Vorpommern und Berlin haben die Parteien heute ihren Wahlkampf beendet. Bundeskanzler Merz erhält vor dem Wahlsonntag weitere Rückendeckung aus seiner eigenen Partei.",
-      "pubDate": "2026-09-19T22:24:16+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Vier Kinofilme und eine neue Serie über die Beatles",
-      "description": "Vier Kinofilme, eine BBC/ZDF-Serie über ihre Hamburger Jahre, neue Bücher, Shows und ein Podcast im NDR: Die Geschichte der Beatles lässt die Menschen nicht los. Von O. Bandixen.",
-      "pubDate": "2026-09-19T10:40:31+02:00",
       "bild": ""
     }
   ],
