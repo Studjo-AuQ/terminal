@@ -1,7 +1,43 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "20.09.2026, 05:17 Uhr (UTC)",
+  "aktualisiert": "20.09.2026, 10:00 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Künstliche Intelligenz: US-Präsident Trump kündigt \"AI Force\" an",
+      "description": "Nach Hacking-Vorfällen plädierten selbst führende KI-Firmen dafür, die Entwicklung der Technologie zu drosseln. US-Präsident Trump sieht das allerdings anders. Nun kündigt er eine \"AI Force\" an, die das Wachstum von KI beaufsichtigen soll.",
+      "pubDate": "2026-09-20T10:58:11+02:00",
+      "bild": ""
+    },
+    {
+      "title": "US-Militär meldet erneut Tote bei Angriff auf angebliches Schmugglerboot",
+      "description": "Unter Präsident Trump gehen die USA in der Karibik seit vergangenem Jahr mit gezielten Angriffen gegen mutmaßliche Drogenboote vor. Bei einem neuerlichen Einsatz sind dabei nach Militärangaben erneut vier Menschen gestorben.",
+      "pubDate": "2026-09-20T09:59:20+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Ukrainische Drohnenangriffe auf Region Moskau - mehrere Tote",
+      "description": "Bei Angriffen der Ukraine mit Hunderten Drohnen hat es in Russland mindestens zwei Tote gegeben. In der Region um Moskau wurde eine Raffinerie getroffen. Auch bei russischen Angriffen starben mehrere Menschen.",
+      "pubDate": "2026-09-20T11:33:43+02:00",
+      "bild": ""
+    },
+    {
+      "title": "++ Liveticker zur Berlin-Wahl: Auch SPD-Spitzenkandidat Krach an der Urne ++",
+      "description": "Nach dem Grünen-Politiker Graf hat auch SPD-Spitzenkandidat Krach in Berlin seine Stimme abgegeben. 2,5 Millionen Menschen sind in der Hauptstadt wahlberechtigt.",
+      "pubDate": "2026-09-20T11:58:24+02:00",
+      "bild": ""
+    },
+    {
+      "title": "++ Liveticker zur Mecklenburg-Vorpommern-Wahl: Holm hat schon abgestimmt++",
+      "description": "AfD-Kandidat Holm hat in Schwerin bereits seine Stimme abgegeben. SPD und AfD lagen in Umfragen zuletzt Kopf-an-Kopf: Der Wahlkampf in Mecklenburg-Vorpommern sei von Zuspitzung geprägt gewesen, sagt Politikwissenschaftler Müller.",
+      "pubDate": "2026-09-20T11:00:25+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wirtschaftsweise Veronika Grimm nennt neuen Tankrabatt \"zynisch\"",
+      "description": "Die Bundesregierung will erneut die Energiesteuer auf Kraftstoffe senken und einen Spritpreisdeckel einführen, um Verbraucher zu entlasten. Die Ökonomin Grimm kritisiert das als opportunistisch - und warnt vor weitreichenden Konsequenzen.",
+      "pubDate": "2026-09-20T07:57:07+02:00",
+      "bild": ""
+    },
     {
       "title": "Warum wir noch immer so viel Essen wegwerfen",
       "description": "Jedes Jahr landen in Deutschland fast elf Millionen Tonnen genießbare Lebensmittel im Müll. Warum ändert sich seit Jahren kaum was? Und was können wir von unseren Nachbarn lernen? Von Edgar Verheyen.",
@@ -54,42 +90,6 @@
       "title": "Duma-Wahl: Warum Snegowskij keine Chance gegen Tolstoj hat",
       "description": "Seine Jabloko-Partei ist von der Duma-Wahl ausgeschlossen. Aber als Direktkandidat darf Artjom Snegowskij in Moskau antreten. Hat er eine Chance? Sein Gegenkandidat ist der Vizepräsident der Duma, Pjotr Tolstoj. Norbert Hahn über ein ungleiches Duell.",
       "pubDate": "2026-09-19T20:03:33+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Generalinspekteur Breuer wird Vorsitzender des NATO-Militärausschusses",
-      "description": "Es ist einer der einflussreichsten Posten bei der NATO - und künftig hat ihn ein Deutscher inne: Generalinspekteur Breuer ist zum neuen Vorsitzenden des NATO-Militärausschusses gewählt worden. Er wird damit Berater von Generalsekretär Rutte.",
-      "pubDate": "2026-09-19T19:58:34+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Weißes Haus verweigert Journalisten von CNN, MS NOW und Politico Zugang",
-      "description": "US-Präsident Trump hatte angekündigt, CNN, MS NOW und Politico aus dem Weißen Haus zu verbannen. Und tatsächlich: Die Reporter wurden heute abgewiesen, ihre Presseausweise deaktiviert.",
-      "pubDate": "2026-09-19T17:53:33+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Krankenkassen sollen doch über Beitragsanhebung informieren müssen",
-      "description": "Gesundheitsminister Linnemann will das Aus der Informationspflicht für gesetzliche Krankenkassen über Beitragserhöhungen wieder rückgängig machen. Vor allem Verbraucherschützer hatten die Abschaffung der Pflicht scharf kritisiert.",
-      "pubDate": "2026-09-19T17:46:45+02:00",
-      "bild": ""
-    },
-    {
-      "title": "USA: Trump setzt neues Sanktionspaket gegen Russland in Kraft",
-      "description": "Einreiseverbote, Strafzölle und eingefrorene Vermögen: US-Präsident Trump hat verschärfte Sanktionen gegen Russland mit seiner Unterschrift in Kraft gesetzt. Eine scharfe Reaktion aus Russland folgte prompt.",
-      "pubDate": "2026-09-19T16:52:46+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Auch Googles KI hackte Unternehmen",
-      "description": "Wiederholt haben KI-Systeme bei Tests unerwartet auf fremde Systeme zugegriffen. Nun wurden solche Vorfälle auch bei Googles Gemini bekannt. In der Debatte um KI-Sicherheit lässt Kalifornien mögliche strengere Sicherheitsvorgaben prüfen.",
-      "pubDate": "2026-09-19T15:09:00+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wie geht China mit den Gefahren durch Künstliche Intelligenz um?",
-      "description": "Debatten um die Eindämmung der Gefahren durch Künstliche Intelligenz enden in den USA meist mit dem Hinweis, dass China dann einen gefährlichen Vorsprung erlange. Doch wo steht Peking in der Debatte? Von Jörg Endriss.",
-      "pubDate": "2026-09-19T15:08:46+02:00",
       "bild": ""
     }
   ],
