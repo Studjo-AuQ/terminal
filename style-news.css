@@ -172,6 +172,22 @@
             margin: 0;
         }
 
+        .news-ohr {
+            flex-shrink: 0;
+            background: #f1f1f1;
+            border: none;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+        }
+        .news-ohr:hover { background: #e6e6e6; }
+
         .news-pfeil {
             font-size: 1.4rem;
             color: var(--secondary-grey);
