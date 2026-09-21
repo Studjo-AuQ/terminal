@@ -1,7 +1,73 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "21.09.2026, 01:29 Uhr (UTC)",
+  "aktualisiert": "21.09.2026, 07:02 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Livestream: Sondersendung zu den Wahlen in MV und Berlin auf tagesschau24",
+      "description": "Aktuelle Meldungen, vertiefende Analysen und Interviews: Verfolgen Sie das Programm des ARD-Nachrichtenkanals tagesschau24 hier.",
+      "pubDate": "2026-09-21T08:59:27+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Vor Trump-Xi-Gipfel: China und USA beraten über KI",
+      "description": "Die USA und China befinden sich in einem Wettlauf um den Vorsprung bei Künstlicher Intelligenz. Diese Woche wollen die Präsidenten bei einem Treffen über KI sprechen. Vertreter beider Staaten haben nun vorab über die Risiken beraten.",
+      "pubDate": "2026-09-21T08:54:14+02:00",
+      "bild": ""
+    },
+    {
+      "title": "++ Liveticker: Parteivize Prien - CDU pur \"nicht die Lösung\" ++",
+      "description": "Ein Grund für die Verluste von CDU und SPD bei den Wahlen ist laut SPD-Fraktionschef Miersch, dass die Reformen der Bundesregierung derzeit vor allem für Kürzungen stünden. AfD-Spitzenkandidat Holm glaubt nicht an eine Regierungsbeteiligung in MV.",
+      "pubDate": "2026-09-21T09:00:28+02:00",
+      "bild": ""
+    },
+    {
+      "title": "IG Metall ruft bundesweit zu Protest in der Autoindustrie auf",
+      "description": "Ob Wolfsburg, Zwickau oder Stuttgart - die IG Metall ruft für heute zu Protesten in der Autoindustrie auf. Die Gewerkschaft wendet sich gegen die zunehmenden Einschnitte für Beschäftigte. Es sollen Aktionen an mehr als 200 Orten geben.",
+      "pubDate": "2026-09-21T08:09:26+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: Anleger nehmen Wahlausgang gelassen auf",
+      "description": "Das Gesprächsthema am Aktienmarkt werden heute die Wahlausgänge in Mecklenburg-Vorpommern und Berlin sein. Der sinkende Ölpreis stützt den DAX, vor allem die Konjunktur dürfte in dieser Woche im Blickpunkt stehen.",
+      "pubDate": "2026-09-21T07:28:55+02:00",
+      "bild": ""
+    },
+    {
+      "title": "11KM-Podcast: Scheuer vor Gericht - Das Maut-Debakel",
+      "description": "Ex-Bundesverkehrsminister Andreas Scheuer steht vor Gericht - wegen des Vorwurfs der Falschaussage in Zusammenhang mit dem Maut-Debakel. Der Podcast 11KM über Hintergründe und Bedeutung des Prozesses.",
+      "pubDate": "2026-09-21T06:47:22+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Immer mehr Produktrückrufe bei Lebensmitteln",
+      "description": "Immer mehr Lebensmittel werden vorsorglich aus dem Handel genommen, doch die Rückrufe erreichen nicht alle Verbraucher. Hinzu kommt: Es gibt nicht genug Kontrollen. Von Martin Küstermann.",
+      "pubDate": "2026-09-21T06:45:15+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Mecklenburg-Vorpommern und Berlin: Fünf Erkenntnisse aus den Wahlen",
+      "description": "Was haben die Wahlen in Mecklenburg-Vorpommern und Berlin gebracht? Die Ränder sind stärker, auf die SPD könnte eine Personaldebatte zukommen, die AfD entdeckt einen neuen Feelgood-Sound. Tina Handel mit fünf Erkenntnissen aus der Doppelwahl.",
+      "pubDate": "2026-09-21T05:26:35+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Selenskyj kündigt Treffen mit Trump diese Woche in New York an",
+      "description": "Der Staatschef der Ukraine, Selenskyj, hat für seinen Besuch in New York diese Woche ein Treffen mit US-Präsident Trump angekündigt. Zuvor hatte er demnach mit Trump telefoniert. Das Treffen könne \"vieles verändern\", so Selenskyj.",
+      "pubDate": "2026-09-21T05:17:57+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Ex-Verkehrsminister Scheuer vor Gericht: Vorwurf der Falschaussage",
+      "description": "Das Aus der Pkw-Maut vor sieben Jahren kostete deutsche Steuerzahler Hunderte Millionen Euro. Nun muss sich Ex-Verkehrsminister Scheuer vor Gericht verantworten: Er soll vor dem Untersuchungsausschuss falsch ausgesagt haben. Von B. Sönnichsen.",
+      "pubDate": "2026-09-21T04:36:45+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Nach Protestwelle: Deutsche Welle behält griechischen Dienst doch",
+      "description": "Sie ist nur eine kleine Redaktion, doch die Entscheidung, den griechischen Dienst der Deutschen Welle zu schließen, wurde zum Politikum. Die breite Kritik aus Griechenland überraschte den Rundfunkrat offenbar. Nun kam die Kehrtwende. Von J. Riemann.",
+      "pubDate": "2026-09-21T04:22:58+02:00",
+      "bild": ""
+    },
     {
       "title": "++ Liveticker zur Mecklenburg-Vorpommern-Wahl: Schwesig verteidigt Direktmandat ++",
       "description": "Ministerpräsidentin Schwesig hat erneut das Direktmandat in ihrem Wahlkreis gewonnen und sich damit gegen den AfD-Kandidaten Holm durchgesetzt. Das BSW zeigt sich enttäuscht über den knapp verpassten Einzug in den Landtag.",
@@ -24,72 +90,6 @@
       "title": "Mecklenburg-Vorpommern: Wahlkarte zur Landtagswahl 2026",
       "description": "Wer liegt in welchen Wahlkreisen und Gemeinden vorne? Welche Partei hat wo ihre Hochburgen? Die interaktive Karte zeigt detaillierte Ergebnisse der Landtagswahl 2026 in Mecklenburg-Vorpommern.",
       "pubDate": "2026-09-20T22:23:11+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Analyse: Warum die SPD in Mecklenburg-Vorpommern hinter der AfD liegt",
-      "description": "Warum gelang Ministerpräsidentin Schwesig mit dem Slogan \"Frau gegen Blau\" eine Aufholjagd? Warum lag die AfD trotzdem vorne? Umfragen von infratest dimap liefern dazu ebenso Erklärungen wie ein Detail, das die CDU alarmieren muss. Von H. Schwesinger.",
-      "pubDate": "2026-09-20T23:21:39+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Russland: Kremlpartei liegt bei Duma-Wahl vorne - wie erwartet",
-      "description": "Russland hat erstmals seit Beginn des Kriegs gegen die Ukraine ein neues Parlament gewählt. Laut Hochrechnungen gewann erwartungsgemäß die Kremlpartei Geeintes Russland. Unregelmäßigkeiten überschatteten die Wahl.",
-      "pubDate": "2026-09-20T22:03:02+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Berlin: Karte mit den Ergebnissen der Abgeordnetenhauswahl 2026",
-      "description": "Wer liegt in welchen Wahlkreisen, Bezirken und Wahlbezirken vorne? Welche Partei hat wo ihre Hochburgen? Die interaktive Karte zeigt detaillierte Ergebnisse der Abgeordnetenhauswahl 2026 in Berlin.",
-      "pubDate": "2026-09-20T23:25:25+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Nach den Landtagswahlen: Merz spielt auf Zeit",
-      "description": "Noch vor den ersten Hochrechnungen trat Kanzler Merz ans Mikro. Als Parteivorsitzender und Kanzler wolle er die Reformen voranbringen, betonte er. Der Druck auf ihn und die Bundesregierung dürfte hoch bleiben. Von Tina Handel.",
-      "pubDate": "2026-09-20T20:20:08+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Nach Landtagswahlen: Zwischen Desaster und Jubel",
-      "description": "Kanzler Merz hat nach den Wahlen bekräftigt, die aus seiner Sicht nötigen Reformen durchsetzen zu wollen. Vizekanzler Klingbeil von der SPD räumte ein, das Thema Rente habe zu \"großer Verunsicherung\" geführt. Die AfD sieht sich erneut gestärkt.",
-      "pubDate": "2026-09-20T23:03:42+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Abgeordnetenhaus Berlin: Wichtigste Umfragen im Überblick",
-      "description": "In Berlin ist ein weiteres knappes Rennen um das Rote Rathaus zu Ende gegangen. Was sind die Hauptgründe für das Ergebnis? Eine Erklärung in Umfragegrafiken von infratest dimap.",
-      "pubDate": "2026-09-20T18:16:19+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Mecklenburg-Vorpommern: Wichtigste Umfragen im Überblick",
-      "description": "Die Landtagswahl hat die politische Landschaft im Nordosten massiv verändert. Was sind die Hauptgründe für dieses Ergebnis? Eine Erklärung in Umfrage-Grafiken von infratest dimap.",
-      "pubDate": "2026-09-20T18:12:56+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wählerwanderung in Berlin - wer holte Stimmen von wem?",
-      "description": "Wer bekam besonders viele Stimmen von früheren Nichtwählern? Woher kamen die Zugewinne etwa der AfD und Linkspartei? Und an wen gab andere Parteien Stimmen ab? Die Wählerwanderung auf Basis der Zahlen von infratest dimap.",
-      "pubDate": "2026-09-20T18:10:02+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wählerwanderung: Wer in Mecklenburg-Vorpommern wo Stimmen holte",
-      "description": "Woher kommen die Zugewinne der AfD? Von welchen Parteien wandten sich frühere Wählerinnen und Wähler ab? Und wem gaben sie diesmal ihre Stimme? Die Wählerwanderung auf Basis der Zahlen von infratest dimap.",
-      "pubDate": "2026-09-20T18:08:05+02:00",
-      "bild": ""
-    },
-    {
-      "title": "So wählten die Bevölkerungsgruppen in Berlin",
-      "description": "Wie stark unterscheidet sich das Wahlverhalten zwischen Jüngeren und Älteren, zwischen Männern und Frauen in Berlin? So schnitten die Parteien in den verschiedenen Bevölkerungsgruppen ab.",
-      "pubDate": "2026-09-20T18:05:44+02:00",
-      "bild": ""
-    },
-    {
-      "title": "So wählten die Bevölkerungsgruppen in Mecklenburg-Vorpommern 2026",
-      "description": "Wem gaben Arbeiter in Mecklenburg-Vorpommern mehrheitlich ihre Stimme? Wer hatte den größten Rückhalt bei Frauen und wer bei Männern? Das Wahlverhalten der Bevölkerungsgruppen im interaktiven Überblick.",
-      "pubDate": "2026-09-20T18:05:07+02:00",
       "bild": ""
     }
   ],
