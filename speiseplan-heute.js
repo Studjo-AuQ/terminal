@@ -66,18 +66,24 @@ function wochenBasisDatum() {
     return jetzt;
 }
 
+/* Umschaltzeitpunkt für "Morgen"-Vorschau bzw. Wochenend-Blackout:
+   13:15 Uhr (vorher 15:00 Uhr). */
+function abUmschaltzeit(jetzt) {
+    return jetzt.getHours() > 13 || (jetzt.getHours() === 13 && jetzt.getMinutes() >= 15);
+}
+
 /* ── Blackout-Fenster ──
-   Freitag ab 15:00 Uhr bis Montag 7:00 Uhr: kein Werkstattbetrieb,
+   Freitag ab 13:15 Uhr bis Montag 7:00 Uhr: kein Werkstattbetrieb,
    daher auch kein "Heute/Morgen"-Tagesangebot. */
 function istBlackout(jetzt) {
     const tag = jetzt.getDay(); // 0=So … 6=Sa
     if (tag === 6 || tag === 0) return true;
-    if (tag === 5 && jetzt.getHours() >= 15) return true;
+    if (tag === 5 && abUmschaltzeit(jetzt)) return true;
     if (tag === 1 && jetzt.getHours() < 7) return true;
     return false;
 }
 
-/* Ab 15:00 Uhr (Mo-Do) wird bereits der Folgetag angezeigt
+/* Ab 13:15 Uhr (Mo-Do) wird bereits der Folgetag angezeigt
    (Beschriftung "Morgen"), um Mitternacht springt es automatisch auf
    "Heute" zurück. Während des Blackout-Fensters (siehe oben) liefert
    diese Funktion null – dann wird die Wochenend-Meldung angezeigt. */
@@ -87,7 +93,7 @@ function effektiverTag() {
 
     let ziel = new Date(jetzt);
     let istMorgen = false;
-    if (jetzt.getHours() >= 15) {
+    if (abUmschaltzeit(jetzt)) {
         ziel.setDate(ziel.getDate() + 1);
         istMorgen = true;
     }
@@ -235,7 +241,7 @@ async function start() {
     const tag = effektiverTag();
 
     if (tag === null) {
-        // Blackout-Fenster: Freitag ab 15 Uhr bis Montag 7 Uhr
+        // Blackout-Fenster: Freitag ab 13:15 Uhr bis Montag 7 Uhr
         ladeEl.hidden = true;
         wochenendEl.hidden = false;
         return;
@@ -247,7 +253,7 @@ async function start() {
     tagLabelEl.textContent = WOCHENTAGE[wochentagIndex];
 
     // WICHTIG: Die Datei-Auswahl nutzt bewusst NICHT "ziel" (das kann
-    // durch die 15-Uhr-Vorschau schon der Folgetag sein), sondern das
+    // durch die 13:15-Uhr-Vorschau schon der Folgetag sein), sondern das
     // stabile Wochen-Basisdatum – Datei und Vorschautag sind zwei
     // unabhängige Dinge. Innerhalb einer Woche ist das ohnehin
     // dieselbe Datei, das ist hier nur zur Klarheit sauber getrennt.
@@ -404,7 +410,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Alle 5 Minuten prüfen, ob sich das Wochen-Basisdatum ODER der
     // Blackout-Status geändert hat (z. B. Montag 7 Uhr oder Freitag
-    // 15 Uhr) – nur dann wird die komplette Erkennung neu durchlaufen.
+    // 13:15 Uhr) – nur dann wird die komplette Erkennung neu durchlaufen.
     setInterval(() => {
         const neuerZustand = wochenBasisDatum().toDateString() + '|' + istBlackout(new Date());
         if (neuerZustand !== letzterZustand) {

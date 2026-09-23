@@ -66,18 +66,24 @@ function wochenBasisDatum() {
     return jetzt;
 }
 
+/* Umschaltzeitpunkt für "Morgen"-Umrandung bzw. Wochenend-Blackout:
+   13:15 Uhr (vorher 15:00 Uhr). */
+function abUmschaltzeit(jetzt) {
+    return jetzt.getHours() > 13 || (jetzt.getHours() === 13 && jetzt.getMinutes() >= 15);
+}
+
 /* ── Blackout-Fenster für die Tages-Vorschau ──
-   Freitag ab 15:00 Uhr bis Montag 7:00 Uhr: kein Werkstattbetrieb,
+   Freitag ab 13:15 Uhr bis Montag 7:00 Uhr: kein Werkstattbetrieb,
    daher auch keine "Heute/Morgen"-Umrandung. */
 function istBlackout(jetzt) {
     const tag = jetzt.getDay(); // 0=So … 6=Sa
     if (tag === 6 || tag === 0) return true;
-    if (tag === 5 && jetzt.getHours() >= 15) return true;
+    if (tag === 5 && abUmschaltzeit(jetzt)) return true;
     if (tag === 1 && jetzt.getHours() < 7) return true;
     return false;
 }
 
-/* Ab 15:00 Uhr (Mo-Do) wird bereits der Folgetag umrandet ("Morgen"),
+/* Ab 13:15 Uhr (Mo-Do) wird bereits der Folgetag umrandet ("Morgen"),
    um Mitternacht springt es automatisch auf "Heute" zurück. Während
    des Blackout-Fensters (siehe oben) wird nichts umrandet. Gilt nur
    für die Kachel "Aktuelle Woche" (woche=0). */
@@ -87,7 +93,7 @@ function effektiverTag() {
 
     let ziel = new Date(jetzt);
     let istMorgen = false;
-    if (jetzt.getHours() >= 15) {
+    if (abUmschaltzeit(jetzt)) {
         ziel.setDate(ziel.getDate() + 1);
         istMorgen = true;
     }
@@ -304,7 +310,7 @@ start();
 
 // Terminal-Seiten bleiben oft dauerhaft geöffnet. Alle 5 Minuten
 // prüfen, ob sich das Basisdatum ODER der Blackout-Status geändert
-// hat (z. B. Montag 7 Uhr für die Datei, Freitag 15 Uhr fürs
+// hat (z. B. Montag 7 Uhr für die Datei, Freitag 13:15 Uhr fürs
 // Blackout-Fenster) – nur dann wird neu geladen.
 setInterval(() => {
     const neuerZustand = basisDatumFuerOffset(offset).toDateString() + '|' + istBlackout(new Date());
