@@ -1,7 +1,43 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "23.09.2026, 14:23 Uhr (UTC)",
+  "aktualisiert": "23.09.2026, 18:33 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Ex-Hollywood-Produzent Harvey Weinstein erneut verurteilt",
+      "description": "Die Enthüllungen über die Übergriffe von Hollywood-Produzent Weinstein lösten vor fast zehn Jahren die weltweite MeToo-Bewegung aus. Nun ist der 74-Jährige erneut wegen Sexualdelikten zu einer langen Haft verurteilt worden.",
+      "pubDate": "2026-09-23T20:27:35+02:00",
+      "bild": ""
+    },
+    {
+      "title": "EU streicht Oligarchen von Sanktionsliste: Ein Kompromiss, der für Diskussionen sorgt",
+      "description": "Die EU hat zwei russische Oligarchen von der Sanktionsliste gestrichen. Im Gegenzug wurde inzwischen ein Franzose in Aserbaidschan begnadigt. Hat sich die EU erpressbar gemacht? In Brüssel versucht man, sich zu erklären. Von T. Spickhofen.",
+      "pubDate": "2026-09-23T18:50:49+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX baut Verluste aus",
+      "description": "Der wieder steigende Öl-Preis drückt den DAX weiter ins Minus. Die jüngst aufgekeimte Hoffnung auf eine Entspannung am Öl-Markt ist vorerst wieder dahin.",
+      "pubDate": "2026-09-23T18:00:34+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Neuer Sender übernimmt: Niederlande nehmen wieder am ESC teil",
+      "description": "Nach einem Jahr Abwesenheit wollen die Niederlande 2027 wieder beim Eurovision Song Contest mit dabei sein. Der öffentlich-rechtliche Rundfunk übernimmt vom bisherigen Sender. Ein erneuter Boykott wegen der Teilnahme Israels ist damit vom Tisch.",
+      "pubDate": "2026-09-23T17:44:34+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Berlin zieht Olympia-Bewerbung zurück",
+      "description": "Zuletzt waren Berlin ohnehin nur noch Außenseiterchancen eingeräumt worden. Nun will die Stadt ihre Bewerbung für die Olympischen Spiele zurückziehen. Das dürfte auch am Ergebnis der Abgeordnetenhauswahl liegen.",
+      "pubDate": "2026-09-23T18:23:08+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Große Staubwolke durch massiven Felssturz an der Zugspitze",
+      "description": "Im Grenzgebiet zwischen Deutschland und Österreich hat es einen größeren Felssturz gegeben. Eine riesige Staubwolke hängt seitdem über Deutschlands höchstem Berg. Verletzt wurde nach Angaben der Bergwacht niemand.",
+      "pubDate": "2026-09-23T16:27:45+02:00",
+      "bild": ""
+    },
     {
       "title": "Wieder Tote bei russischen Angriffen auf zivile Infrastruktur in der Ukraine",
       "description": "Russland hat die Ukraine in der Nacht mit neuen Angriffen überzogen. Landesweit starben mehre Menschen, Dutzende wurden verletzt. Polen meldete eine erneute Verletzung seines Luftraums durch einen russischen Militärhubschrauber.",
@@ -10,7 +46,7 @@
     },
     {
       "title": "Kabinett beschließt Gesetzentwurf für digitalen Kassenbon ab 2028",
-      "description": "Weniger Papier, weniger Bürokratie und auch weniger Steuerbetrug: Darauf setzt das Kabinett mit einem neuen Gesetzentwurf. Ab 2028 sollen Kassenbons künftig digital werden. Für wen es Ausnahmen geben soll - und was der Einzelhandel kritisiert.",
+      "description": "Weniger Papier, weniger Bürokratie und auch weniger Steuerbetrug: Darauf setzt das Kabinett mit einem neuen Gesetzentwurf. Ab 2028 sollen Kassenbons digital werden. Für wen es Ausnahmen geben soll - und was der Einzelhandel kritisiert.",
       "pubDate": "2026-09-23T15:36:24+02:00",
       "bild": ""
     },
@@ -54,42 +90,6 @@
       "title": "Beratung über Strafverschärfung bei Delikten mit K.-o.-Tropfen",
       "description": "Wer K.-o.-Tropfen für eine Vergewaltigung oder einen Raub einsetzt, soll künftig mindestens fünf Jahre ins Gefängnis. Der Bundestag berät heute über den Gesetzentwurf. Justizministerin Hubig setzt zusätzlich auf Aufklärung.",
       "pubDate": "2026-09-23T11:30:19+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Warnungen vor Koalition mit der Linken in Berlin",
-      "description": "Nach dem Berliner Wahlerfolg nimmt die Linke Kurs aufs Rote Rathaus. Die möglichen Koalitionspartner äußern Bedenken - wegen antisemitischer Tendenzen in der Partei. Andere warnen vor den Folgen für Juden in der Hauptstadt.",
-      "pubDate": "2026-09-23T11:08:41+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: DAX gibt frühe Gewinne ab",
-      "description": "Neue Friedenshoffnungen haben den DAX einen guten Start beschert. Mittlerweile ist das Plus jedoch dahin. Möglicherweise liegt das an der Zurückhaltung internationaler Investoren.",
-      "pubDate": "2026-09-23T10:39:22+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Berliner Polizei geht gegen illegalen Schusswaffenhandel vor",
-      "description": "Im Zuge von Ermittlungen wegen illegalen Schusswaffenhandels hat die Berliner Polizei Wohnungen und Lokale in der Hauptstadt durchsucht. Mehrere Menschen wurden festgenommen, Schusswaffen und Munition sichergestellt.",
-      "pubDate": "2026-09-23T12:06:25+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Können Wohnungen in Berlin vergesellschaftet werden?",
-      "description": "Die Linke will in Berlin Wohnungen von großen Konzernen vergesellschaften. Im Fokus steht ein Artikel aus dem Grundgesetz, der noch nie angewandt wurde. Juristisch ist das Vorgehen umstritten. Von A. Stephany, A. Lagmöller und M. Bauer.",
-      "pubDate": "2026-09-23T10:17:39+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Deutschland tritt UN-Hochseeschutzabkommen bei",
-      "description": "Plastikmüll, Überfischung und Klimawandel belasten die Ozeane. Zum Schutz der Hochsee gibt es deshalb ein UN-Abkommen - und Deutschland ist dem nun beigetreten. Es geht um den Schutz von zwei Dritteln der Meeresfläche.",
-      "pubDate": "2026-09-23T09:07:18+02:00",
-      "bild": ""
-    },
-    {
-      "title": "USA prüfen wegen hoher Spritpreise Exportstopp für Diesel",
-      "description": "Angesichts der gestiegenen Treibstoffpreise in den USA hat sich US-Präsident Trump für einen Diesel-Exportstopp ausgesprochen. Zuletzt ergriffen die USA einen solchen Schritt während der Ölkrise der 1970er-Jahre.",
-      "pubDate": "2026-09-23T08:22:27+02:00",
       "bild": ""
     }
   ],
