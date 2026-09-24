@@ -1,7 +1,49 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "24.09.2026, 00:47 Uhr (UTC)",
+  "aktualisiert": "24.09.2026, 06:00 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Wadephul wirft Moskau Eskalation in Europa durch Hybrid-Angriffe vor",
+      "description": "\"Neue Stufe erreicht\": Außenminister Wadephul hat Russland vor den UN eine Eskalation vorgeworfen. Der Drohnenvorfall am Flughafen Leipzig/Halle sei kein Einzelfall. Er skizzierte auch einen Weg aus dem Konflikt.",
+      "pubDate": "2026-09-24T07:57:58+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: Ölpreis und Zinsängste belasten die Börsen",
+      "description": "Der DAX dürfte heute zum Handelsbeginn sinken. Der kräftige Anstieg des Ölpreises schürt neue Inflations- und Zinssorgen. Im Fokus stehen zudem der Trump-Xi-Gipfel und die neue Konjunkturprognose.",
+      "pubDate": "2026-09-24T07:26:00+02:00",
+      "bild": ""
+    },
+    {
+      "title": "11KM-Podcast: Wie das überlastete Stromnetz die Energiewende ausbremst",
+      "description": "Immer mehr Unternehmen wollen weg von Kohle oder Gas, bekommen aber keinen Stromanschluss. 11KM über das überlastete deutsche Stromnetz, das die Energiewende und die Wirtschaft ausbremst.",
+      "pubDate": "2026-09-24T06:43:17+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Staatsbesuch in den USA: Xi bringt schwierige Themen mit",
+      "description": "Probleme gibt es viele: Chinas Präsident Xi ist in den USA gelandet. Wie geht es bei KI, Zöllen, Iran und Taiwan weiter? US-Präsident Trump braucht den Erfolg eher als sein umschmeichelter Gast. Von Ralf Borchard.",
+      "pubDate": "2026-09-24T06:42:27+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Organspende: Argumente für und gegen die Widerspruchslösung",
+      "description": "Weil zu wenig Organe verfügbar sind, sterben viele schwerstkranke Patienten. Drei Vorschläge, das zu ändern, werden heute im Bundestag debattiert. Zankapfel ist die Widerspruchslösung. Was spricht dafür und was dagegen? Von Daniela Remus.",
+      "pubDate": "2026-09-24T06:12:17+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Rüstungsindustrie präsentiert ihre Produkte auf Verteidigungsmesse",
+      "description": "Drohnen, die andere Drohnen einfangen, KI-gesteuerte Abfangsysteme und Sensoren, die den Luftraum überwachen: Auf der neuen Verteidigungsmesse Euro Defence Expo zeigt die Branche, wie sie auf veränderte Bedrohungen reagieren will. Von Jens Eberl.",
+      "pubDate": "2026-09-24T05:32:22+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Reform der Nachrichtendienste - Revolution oder Tabubruch?",
+      "description": "Sabotage im Ausland und Eindringen in Privatwohnungen: Heute diskutiert der Bundestag über die Bundesnachrichtendienst- und Verfassungsschutzreform. Die Opposition warnt vor einem Bruch mit Lehren aus der Geschichte. Von Markus Sambale.",
+      "pubDate": "2026-09-24T05:02:58+02:00",
+      "bild": ""
+    },
     {
       "title": "Hoffen auf Israel: die Drusen auf den Golanhöhen",
       "description": "Auf den von Israel annektierten Golanhöhen fühlten sich die meisten Drusen jahrzehntelang Syrien zugehörig, man lehnte die israelische Staatsbürgerschaft ab. Doch Krieg und Gewalt erschüttern alte Gewissheiten. Von Natalie Amiri.",
@@ -9,7 +51,7 @@
       "bild": ""
     },
     {
-      "title": "Tech-Bosse warnen UN-Sicherheitsrat vor KI",
+      "title": "Techbosse warnen UN-Sicherheitsrat vor KI",
       "description": "Die Chefs der größten US-amerikanischen KI-Firmen OpenAI und Anthropic, Altman und Amodei, warnen weiter vor ihrer eigenen Technologie. Vor dem UN-Sicherheitsrat boten beide an, an stärkerer Regulierung mitzuwirken. Von Giselle Ucar.",
       "pubDate": "2026-09-24T01:58:22+02:00",
       "bild": ""
@@ -48,48 +90,6 @@
       "title": "Marktbericht: DAX baut Verluste aus",
       "description": "Der wieder steigende Öl-Preis drückt den DAX weiter ins Minus. Die jüngst aufgekeimte Hoffnung auf eine Entspannung am Öl-Markt ist vorerst wieder dahin.",
       "pubDate": "2026-09-23T18:00:34+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Neuer Sender übernimmt: Niederlande nehmen wieder am ESC teil",
-      "description": "Nach einem Jahr Abwesenheit wollen die Niederlande 2027 wieder beim Eurovision Song Contest mit dabei sein. Der öffentlich-rechtliche Rundfunk übernimmt vom bisherigen Sender. Ein erneuter Boykott wegen der Teilnahme Israels ist damit vom Tisch.",
-      "pubDate": "2026-09-23T17:44:34+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Berlin zieht Olympia-Bewerbung zurück",
-      "description": "Zuletzt waren Berlin ohnehin nur noch Außenseiterchancen eingeräumt worden. Nun will die Stadt ihre Bewerbung für die Olympischen Spiele zurückziehen. Das dürfte auch am Ergebnis der Abgeordnetenhauswahl liegen.",
-      "pubDate": "2026-09-23T18:23:08+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Große Staubwolke durch massiven Felssturz an der Zugspitze",
-      "description": "Im Grenzgebiet zwischen Deutschland und Österreich hat es einen größeren Felssturz gegeben. Eine riesige Staubwolke hängt seitdem über Deutschlands höchstem Berg. Verletzt wurde nach Angaben der Bergwacht niemand.",
-      "pubDate": "2026-09-23T16:27:45+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wieder Tote bei russischen Angriffen auf zivile Infrastruktur in der Ukraine",
-      "description": "Russland hat die Ukraine in der Nacht mit neuen Angriffen überzogen. Landesweit starben mehrere Menschen. Polen meldete eine erneute Verletzung seines Luftraums durch einen russischen Militärhubschrauber.",
-      "pubDate": "2026-09-23T16:19:14+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kabinett beschließt Gesetzentwurf für digitalen Kassenbon ab 2028",
-      "description": "Weniger Papier, weniger Bürokratie und auch weniger Steuerbetrug: Darauf setzt das Kabinett mit einem neuen Gesetzentwurf. Ab 2028 sollen Kassenbons digital werden. Für wen es Ausnahmen geben soll - und was der Einzelhandel kritisiert.",
-      "pubDate": "2026-09-23T15:36:24+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Xi in den USA: Trump und Chinas Staatschef vor schwierigen Gesprächen",
-      "description": "Erstmals seit zehn Jahren reist Chinas Staatschef Xi zum Staatsbesuch in die USA. Vor dem Treffen mit Trump wirbt Peking demonstrativ für bessere Beziehungen. Doch zugleich gibt es zahlreiche Interessengegensätze. Von Christoph Kober.",
-      "pubDate": "2026-09-23T15:35:40+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Versandapotheke der Drogeriemarktkette dm vor Gericht",
-      "description": "Seit Dezember 2025 verkauft dm über ein Tochterunternehmen rezeptfreie Medikamente. Dagegen hat die Wettbewerbszentrale geklagt. Eine Vermischung von Drogerie- und Apothekenangebot sei unzulässig. Von Kolja Schwartz.",
-      "pubDate": "2026-09-23T15:01:00+02:00",
       "bild": ""
     }
   ],
