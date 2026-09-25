@@ -1,11 +1,47 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "24.09.2026, 20:43 Uhr (UTC)",
+  "aktualisiert": "25.09.2026, 04:34 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Macron will Ölhafen in Saudi-Arabien militärisch schützen",
+      "description": "Um die Ölinfrastruktur Saudi-Arabiens zu schützen, kündigt Frankreich an, Militärgerät und Truppen ans Rote Meer zu schicken. Direkt in den Konflikt mit der Huthi-Miliz wolle er aber nicht einsteigen, sagte Präsident Macron.",
+      "pubDate": "2026-09-25T05:44:09+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Manipulationsskandal an der türkischen Börse",
+      "description": "Die türkische Börse wird von einem Manipulationsskandal erschüttert. Mehrere Investmentfirmen sollen einzelne Aktienkurse künstlich in die Höhe getrieben haben. Hunderttausende Anleger könnten betroffen sein. Von Pia Masurczak.",
+      "pubDate": "2026-09-25T05:22:52+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Schulen in Singapur: Den Lernerfolg nicht der KI überlassen",
+      "description": "Der KI die Hausaufgaben überlassen: Die Möglichkeiten künstlicher Intelligenz sind für Schüler verführerisch. Singapur hat deshalb eigene KI-Tools für den Unterricht entwickelt - von denen auch Lehrer profitieren. Von J. Johnston.",
+      "pubDate": "2026-09-25T05:22:44+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Entlastung im Bundestag: So schnell soll der Tankrabatt kommen",
+      "description": "Mit einem neuen Tankrabatt will die Bundesregierung die Spritpreise möglichst schnell senken. Heute sollen der Bundestag und Bundesrat darüber entscheiden. Wie hoch der Rabatt ausfällt und was noch geplant ist.",
+      "pubDate": "2026-09-25T05:22:34+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Ägäis: Spannungen zwischen Griechenland und der Türkei nehmen zu",
+      "description": "Griechenland und die Türkei beschuldigen sich gegenseitig, für zunehmende Spannungen zwischen beiden Ländern verantwortlich zu sein. Es geht um Hoheitsgewässer, Besitzansprüche und Einfluss im Mittelmeerraum. Von Jasper Riemann.",
+      "pubDate": "2026-09-25T04:48:00+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Berliner CDU-Fraktion wählt Evers an ihre Spitze",
+      "description": "Berlins Finanzsenator Evers wird künftig die CDU-Fraktion im Abgeordnetenhaus führen. Er sei offen für eine Koalition mit der SPD und den Grünen - zunächst wolle er aber die Sondierungsgespräche der Linkspartei abwarten",
+      "pubDate": "2026-09-25T00:56:25+02:00",
+      "bild": ""
+    },
     {
       "title": "Netanjahu-Rede bei UN - Dutzende Diplomaten verlassen Saal",
       "description": "Eklat bei den Vereinten Nationen: Als Israels Premier ans Rednerpult trat, verließen Dutzende Diplomaten den Saal. Netanjahu reagierte scharf - und verteidigte die Kriege in Nahost.",
-      "pubDate": "2026-09-24T21:51:55+02:00",
+      "pubDate": "2026-09-24T23:51:23+02:00",
       "bild": ""
     },
     {
@@ -54,42 +90,6 @@
       "title": "Kämpfe in Tigray-Region im Norden Äthiopiens eskalieren",
       "description": "Im Norden Äthiopiens ist ein alter Konflikt wieder voll entbrannt: Die \"Volksbefreiungsfront\" von Tigray will zurück an die Macht. Beobachter warnen vor einem Flächenbrand am Horn von Afrika. Von Karin Bensch.",
       "pubDate": "2026-09-24T17:18:06+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wie Wien erfolgreich gegen Wohnungsnot und hohe Mieten vorgeht",
-      "description": "In vielen europäischen Hauptstädten herrscht Wohnungsnot. Österreich geht seit mehr als 100 Jahren in seiner Hauptstadt mit Gemeindebauten dagegen vor. Die Mieten dort sind vergleichsweise günstig. Wie geht das? Von Silke Hahne.",
-      "pubDate": "2026-09-24T16:58:34+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Trotz vorläufigen Richterspruchs: Weißes Haus weist Reporter weiter ab",
-      "description": "In seinem Dauerstreit mit den Medien hatte US-Präsident Trump unter anderem CNN den Zugang zum Weißen Haus verweigert. Ein Richter setzte die Entscheidung außer Kraft - doch das Weiße Haus sperrt sich.",
-      "pubDate": "2026-09-24T16:47:55+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Staatsanwaltschaft Dortmund ermittelt gegen 105-jährigen NS-Wachmann",
-      "description": "Wegen Beihilfe zu vielfachem Mord ermittelt die Staatsanwaltschaft Dortmund gegen einen 105-jährigen Ex-Wachmann des NS-Kriegsgefangenenlagers Senne. Solche Ermittlungen gibt es nur noch selten.",
-      "pubDate": "2026-09-24T16:45:27+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Nächster Anlauf im Bundestag zu umstrittenen Organspende-Regeln",
-      "description": "Kontrovers, emotional und persönlich: Mit einer ersten Lesung hat der Bundestag begonnen, das Thema Organspende neu anzugehen. Bei einem sind sich alle einig - es gibt zu wenig Spenden in Deutschland.",
-      "pubDate": "2026-09-24T16:35:19+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Israelisches Wahlkomitee schließt arabische Parteien von Parlamentswahl aus",
-      "description": "Gut einen Monat vor der Parlamentswahl in Israel hat das Wahlkomitee alle arabischen Parteien ausgeschlossen. Das Oberste Gericht könnte die Entscheidung zwar noch kippen - politische Schäden könnten jedoch bleiben.",
-      "pubDate": "2026-09-24T16:33:06+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Banken in Deutschland bewähren sich im Stresstest - mit Ausnahmen",
-      "description": "Der deutsche Bankenmarkt zeigt sich weitgehend krisenfest - das ist das Ergebnis des neuen Stresstests von Bundesbank und Finanzaufsicht. Dabei werden bestimmte Schocks und Verwerfungen simuliert. Von Ursula Mayer.",
-      "pubDate": "2026-09-24T16:29:16+02:00",
       "bild": ""
     }
   ],
