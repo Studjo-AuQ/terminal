@@ -1,7 +1,73 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "26.09.2026, 06:32 Uhr (UTC)",
+  "aktualisiert": "26.09.2026, 12:09 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Durchtrennte Kabel in Gelsenkirchen: Zugausfälle und Umleitungen im Ruhrgebiet",
+      "description": "Durchtrennte Kabel bei Gelsenkirchen haben für massive Störungen im Nah- und Fernverkehr im Ruhrgebiet gesorgt. Laut Polizei sind die unbekannten Täter sehr grob vorgegangen: Dadurch sind Signale und Steuerungsanlagen ausgefallen.",
+      "pubDate": "2026-09-26T13:09:00+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Bildungsministerin Prien: \"Verbot von Stolpersteinen ist Skandal\"",
+      "description": "Stolpersteine erinnern an die Opfer des Nationalsozialismus. Im sächsischen Heidenau sollen laut einem Beschluss des Stadtrats keine neuen mehr verlegt werden. Bundesbildungsministerin Prien spricht von einem Skandal.",
+      "pubDate": "2026-09-26T13:27:04+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Jubiläum des Comics \"Tim und Struppi\": Beliebt wie eh und je",
+      "description": "Die Comics über den Reporter Tim und seinen Hund Struppi gab es schon vor dem Krieg. Doch vor 80 Jahren feierten sie den Durchbruch. Der Erfolg hält bis heute an. Neue Bücher durften nach dem Tod von Erfinder Hergé aber nicht erscheinen. Von A. Meyer-Feist.",
+      "pubDate": "2026-09-26T13:11:51+02:00",
+      "bild": ""
+    },
+    {
+      "title": "DGB protestiert in mehreren Städten gegen Sozialreformen",
+      "description": "Der Deutsche Gewerkschaftsbund (DGB) protestiert gegen die Sozialpolitik der Bundesregierung. In mehreren Städten gibt es Kundgebungen. Die geplanten Maßnahmen gingen zu Lasten der Arbeitnehmer, sagte DGB-Chefin Fahimi.",
+      "pubDate": "2026-09-26T14:05:22+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wie lange gibt es diesen Gletscher noch? Weltkarte zeigt Schmelze",
+      "description": "Durch den Klimawandel schmelzen Gletscher - das ist bekannt. Doch wie lange wird es jeden einzelnen noch geben? Eine interaktive Karte zeigt, wie sie sich in Zukunft entwickeln - je nach Klimaszenario. Von v. Sperber und v. Liebe.",
+      "pubDate": "2026-09-26T11:16:37+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Kann die Linke in der Hauptstadt regieren?",
+      "description": "Die Abgeordnetenhauswahl in Berlin hat die Linke gewonnen. Aber was ist der Sieg wert? Antisemitismusvorwürfe lassen die möglichen Koalitionspartner SPD und Grüne zögern. Einige Linke sehen eine Diffamierungskampagne. Von C. Buckenmaier.",
+      "pubDate": "2026-09-26T11:16:05+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Außenminister Wadephul spricht vor UN-Generalversammlung",
+      "description": "Bundesaußenminister Wadephul vertritt heute Kanzler Merz bei den Vereinten Nationen. Die Unterstützung der Ukraine wird in seiner Rede vor der UN-Generalversammlung voraussichtlich im Mittelpunkt stehen.",
+      "pubDate": "2026-09-26T11:11:14+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wie eine Brücke ein Dorf belebt",
+      "description": "Leere Häuser, wenige Kinder, klamme Kasse: Mörsdorf in Rheinland-Pfalz kämpfte mit Zukunftssorgen. Jetzt kommen Touristen in den Ort - und bringen Trubel, aber auch Geld. Wie das gelungen ist? Mit einer außergewöhnlichen Brücke. Von Michael Eiden.",
+      "pubDate": "2026-09-26T10:07:43+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Überschwemmungen: Behörden rufen Katastrophenfall in Bangkok aus",
+      "description": "Überflutete Straßen und vollgelaufene Kanäle - in der thailändischen Hauptstadt Bangkok herrscht nach tagelangen Regenfällen Notstand. Der Wetterdienst warnt vor neuen Regenfällen.",
+      "pubDate": "2026-09-26T09:59:24+02:00",
+      "bild": ""
+    },
+    {
+      "title": "US-Präsident Trump schließt CNN von Reise aus",
+      "description": "Der Streit von US-Präsident Trump mit US-Medien schien nach einem Richterspruch vorerst beigelegt. Die betroffenen Journalisten bekamen wieder Zugang zum Weißen Haus. Doch nun darf CNN den Präsidenten nicht auf einer Reise begleiten.",
+      "pubDate": "2026-09-26T09:43:28+02:00",
+      "bild": ""
+    },
+    {
+      "title": "OpenAI informiert über weiteres Fehlverhalten von KI",
+      "description": "Erneut haben sich KI-Modelle des US-Unternehmens OpenAI selbstständig gemacht. Diesmal hatten sie Webseiten der US-Regierung im Visier. Zudem verbreitete die KI Fotos von Nutzern.",
+      "pubDate": "2026-09-26T08:47:22+02:00",
+      "bild": ""
+    },
     {
       "title": "Iran macht Vorschlag für Öffnung der Straße von Hormus",
       "description": "Seit Monaten ist die Straße von Hormus weitgehend blockiert - mit Folgen für die Wirtschaft. Iran hat den USA nun einen Plan übermittelt. Präsident Trump scheint aber nicht interessiert. Saudi-Arabien meldet neue Angriffe in der Region.",
@@ -17,79 +83,13 @@
     {
       "title": "Deutsche Olympia-Bewerbung: Wer macht das Rennen?",
       "description": "Der Deutsche Olympische Sportbund entscheidet heute über die deutsche Olympia-Bewerbung. Was Sie zur Abstimmung und der Konkurrenz wissen müssen - und wie es danach weitergeht.",
-      "pubDate": "2026-09-26T06:00:21+02:00",
+      "pubDate": "2026-09-26T08:53:27+02:00",
       "bild": ""
     },
     {
       "title": "SPD stoppt vorerst Pflegereform: \"Das lassen wir nicht zu\"",
       "description": "Kommende Woche wollte das Bundeskabinett die geplante Reform in der Pflege auf den Weg bringen - doch das wird wohl nicht klappen. Die SPD will nachverhandeln und droht nach Informationen des ARD-Hauptstadtstudios mit Blockade. Von A. Budweg.",
       "pubDate": "2026-09-25T20:38:15+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Muss Spahn nun auch um seinen Platz im Haushaltsausschuss bangen?",
-      "description": "Nach seinem Rücktritt als Fraktionschef sitzt Jens Spahn nun im Haushaltsausschuss. Doch in der Union gibt es nach ARD-Informationen Unmut - über einen Urlaub Spahns während einer Ausschusssitzung. Von M. Rödle und P. Kuntschner.",
-      "pubDate": "2026-09-25T20:20:24+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Diego Garcia - Streit um einen Militärstützpunkt",
-      "description": "Eigentlich wollte London die Insel Diego Garcia an Mauritius zurückgeben. Doch US-Präsident Trump stoppte den \"schrecklichen\" Deal. Für ihn geht es um einen der wichtigsten US-Militärstützpunkte. Von Stephan Ueberbach.",
-      "pubDate": "2026-09-25T18:47:04+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Rückruf bei VW, Audi und Seat: Das müssen Besitzer jetzt wissen",
-      "description": "Eine fehlerhafte Schraube kann bei Autos des VW-Konzerns zu einem Ausfall der Lenkung führen. Allein in Deutschland müssen fast eine Million Fahrzeuge vorsorglich in die Werkstatt. Welche Modelle betroffen sind - und was zu tun ist.",
-      "pubDate": "2026-09-25T18:44:11+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Neue Friedenshoffnungen machen DAX-Anlegern Mut",
-      "description": "Neue Hoffnungen auf einen Frieden im Nahen Osten lassen die Ölpreise zum Wochenschluss sinken. Das macht den Anlegern an der Börse Mut. Gleichzeitig bewegt eine mögliche Übernahme die Kurse.",
-      "pubDate": "2026-09-25T18:31:47+02:00",
-      "bild": ""
-    },
-    {
-      "title": "BASF wirft ein Auge auf Konkurrent Evonik",
-      "description": "Der Chemieindustrie könnte ein milliardenschwerer Deal bevorstehen: Der Konzern BASF zeigt Interesse am Konkurrenten Evonik. Die Spekulationen haben an der Börse bereits für Bewegung gesorgt.",
-      "pubDate": "2026-09-25T17:37:05+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bundestag und Bundesrat beschließen erneuten \"Tankrabatt\"",
-      "description": "Der \"Tankrabatt\" kommt wieder. Diesmal gilt die Preissenkung sogar drei Monate lang. Das sind gute Nachrichten für Autofahrer, Spediteure und Landwirte. Es gibt aber auch Kritik an der Maßnahme.",
-      "pubDate": "2026-09-25T16:36:26+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Proteste gegen Wehrpflicht - Tausende Schüler demonstrieren bundesweit",
-      "description": "Das Gesetz über den neuen Wehrdienst ist Anfang des Jahres in Kraft getreten. Damit will die Regierung mehr junge Menschen für die Bundeswehr gewinnen. Nun gab es in vielen Städten Schüler-Proteste gegen eine mögliche Wehrpflicht.",
-      "pubDate": "2026-09-25T15:56:05+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Papst Leo XIV. in Frankreich: Treffen mit Macron in Paris",
-      "description": "Papst Leo XIV. ist zu seinem ersten Frankreich-Besuch in Paris eingetroffen. Beim Treffen mit Präsident Macron sprach er über Sterbehilfe und KI. In den kommenden Tagen werden Hunderttausende Gläubige erwartet.",
-      "pubDate": "2026-09-25T15:34:08+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bundestag berät erstmals über \"Frühstartrente\" ab sechs Jahren",
-      "description": "Mit der Altersvorsorge kann man nicht früh genug anfangen - oft entscheidet aber die Finanzlage des Elternhauses mit. Künftig will der Staat helfen - mit einem Monatsbeitrag und Hoffnung auf den Zinsenzinseffekt.",
-      "pubDate": "2026-09-25T15:11:27+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Die Backstreet Boys spielen zehn Abende in Düsseldorf",
-      "description": "Die Backstreet Boys spielen zehn Konzerte in Düsseldorf, Fans aus aller Welt reisen an. Warum immer mehr Stars auf Residencies setzen und was das für Fans, Städte und die Konzertbranche bedeutet. Von Theresa Fröhlich.",
-      "pubDate": "2026-09-25T15:01:38+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Halter von E-Scootern haften künftig bei Unfällen",
-      "description": "E-Scooter-Unfallopfer sollen einfacher an Schadensersatz kommen. Der Bundesrat hat einem Gesetz zugestimmt, das die Haftungsregeln ändert - künftig sollen die Vermieter das Haftungsrisiko tragen.",
-      "pubDate": "2026-09-25T14:06:53+02:00",
       "bild": ""
     }
   ],
