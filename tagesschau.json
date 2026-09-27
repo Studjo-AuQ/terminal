@@ -1,7 +1,73 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "27.09.2026, 07:00 Uhr (UTC)",
+  "aktualisiert": "27.09.2026, 13:13 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Milchprodukte könnten spürbar teurer werden",
+      "description": "Milch, Joghurt und Quark könnten bald deutlich teurer werden. Die Molkereien wollen höhere Preise durchsetzen. Eine Rolle spielt dabei auch das Klima im tropischen Pazifik - und der Proteinhype.",
+      "pubDate": "2026-09-27T14:44:33+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Sizilien: Ätna legt erneut Flugbetrieb in Catania lahm",
+      "description": "Der Ätna stößt wieder Asche aus - zum Leidwesen vieler Sizilien-Urlauber. Am Flughafen Catania geht vorübergehend nichts mehr, Starts und Landungen sind ausgesetzt worden.",
+      "pubDate": "2026-09-27T14:40:57+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Polen: Wenn der Krieg näher kommt",
+      "description": "Drohnen und Raketen, die nah an der polnischen Grenze einschlagen - der Krieg gegen die Ukraine rückt spürbar an den Alltag der Menschen heran. Schutzräume und Warn-SMS gewinnen an Bedeutung. Wie ist die Stimmung vor Ort? Von P. Milling.",
+      "pubDate": "2026-09-27T14:01:01+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wurde Israel von Ägypten vor Hamas-Überfall gewarnt?",
+      "description": "Der Hamas-Terrorangriff von 2023 beschäftigt Israel bis heute. Einem Bericht zufolge wurde Israel von Ägypten vor dem Angriff gewarnt. Premier Netanjahu bestreitet das, doch die Vorwürfe setzen ihn vor der anstehenden Wahl unter Druck.",
+      "pubDate": "2026-09-27T13:27:48+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Papst Leo XIV. besucht Marienheiligtum in Grotte von Lourdes",
+      "description": "Die Grotte von Lourdes gilt als Ort der Heilung, der Wunder. Und so ist sie das erste Anlaufziel für Papst Leo XIV. in der französischen Kleinstadt. Die, so die Hoffnung, für die Kirche auch ein Ort der Vergebung werden könnte. Von Anna Giordano.",
+      "pubDate": "2026-09-27T12:44:27+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Labour-Parteitag: Premier Burnham und sein Plan für den Norden",
+      "description": "Andy Burnham ist keine 100 Tage im Amt, da steht sein erster Labour-Parteitag als Premierminister an. Er will die Briten für sich gewinnen - auch mit Geld und Einfluss für den Norden. Von Christoph Prössl.",
+      "pubDate": "2026-09-27T12:26:11+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Sprengstoffverdacht: Festnahmen bei britischem Luftwaffenstützpunkt",
+      "description": "Großeinsatz der britischen Polizei nach Sprengstoffverdacht: Am Luftwaffenstützpunkt Fairford hat die Polizei mehrere Männer festgenommen. Fairford wird derzeit auch von den USA genutzt - für Angriffe auf Iran. Das sorgt für politische Brisanz.",
+      "pubDate": "2026-09-27T13:38:38+02:00",
+      "bild": ""
+    },
+    {
+      "title": "KI-Entwickler OpenAI pausiert Training nach Zwischenfall",
+      "description": "Im Alltag ist KI für viele Menschen ein nützliches Werkzeug. Doch jenseits von Chatbots machen sich KI-Agenten immer wieder selbstständig und durchbrechen Grenzen. Bei OpenAI ist dies erneut passiert. Das Unternehmen pausiert deshalb die Entwicklung.",
+      "pubDate": "2026-09-27T11:12:24+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Halten Fertighäuser, was sie versprechen?",
+      "description": "Der Bau des eigenen Hauses ist teuer. Deshalb boomen Fertighäuser, denn sie versprechen Planbarkeit und Tempo - am besten noch mit Festpreis. Doch wie günstig und kalkulierbar ist das wirklich? Von A. Jancevski und L.-M. Hiltscher.",
+      "pubDate": "2026-09-27T11:10:56+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Südafrika: 17 Tote bei Schusswaffenangriff nahe Johannesburg",
+      "description": "Es gilt als eines der schwersten Gewaltverbrechen in Südafrika der vergangenen Jahre: Nahe der Metropole Johannesburg wurden bei einem Schusswaffenangriff 17 Menschen getötet. Auch bei Kapstadt gab es einen Angriff.",
+      "pubDate": "2026-09-27T11:10:40+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Rente nach 45 Beitragsjahren - sinnvoll oder ungerecht?",
+      "description": "Die Debatte über die Rentenreform wird hoch emotional geführt. Der Blick auf die Zahlen macht aber klar: Irgendetwas muss passieren. Denn das deutsche Rentensystem steht unter Druck. Von Jan-Peter Bartels.",
+      "pubDate": "2026-09-27T09:21:42+02:00",
+      "bild": ""
+    },
     {
       "title": "EU geht gegen \"Greenwashing\" in der Werbung vor",
       "description": "\"Grün\", \"nachhaltig\", \"klimaneutral\" - eine ab heute geltende EU-Richtlinie soll für mehr Klarheit bei Umwelt-Aussagen sorgen. Kritik gibt es an der deutschen Umsetzung. Was passiert nun mit Produkten in alten Verpackungen? Von Sarah López.",
@@ -17,79 +83,13 @@
     {
       "title": "EU stellt 710 Millionen Euro für weltweite Krisenhilfe bereit",
       "description": "Weltweit leiden Menschen unter den Folgen von Naturkatastrophen oder Konflikten. EU-Kommissionspräsidentin von der Leyen hat nun weitere Hilfen für sie angekündigt. Ein Großteil des Geldes soll nach Afrika fließen.",
-      "pubDate": "2026-09-27T03:07:57+02:00",
+      "pubDate": "2026-09-27T09:05:01+02:00",
       "bild": ""
     },
     {
       "title": "Sturm an der US-Ostküste: Ein Toter, viele Haushalte ohne Strom",
       "description": "Ein schwerer Sturm hat im Nordosten der USA den Flugverkehr teilweise lahmgelegt und zu Stromausfällen geführt. In New York kam ein Mensch durch einen umgestürzten Baum ums Leben. Viele Veranstaltungen wurden abgesagt.",
       "pubDate": "2026-09-27T08:57:10+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Zehntausende demonstrieren nach Zwangsräumung von 87-Jähriger in Madrid",
-      "description": "Unmut über Wohnungsnot und hohe Mieten gibt es auch in Spanien schon lange. Doch die Zwangsräumung der Wohnung einer 87-Jährigen bringt für viele nun offenbar das Fass zum Überlaufen. Zehntausende gingen in Madrid auf die Straße.",
-      "pubDate": "2026-09-27T01:37:30+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wadephul zum Treffen mit Lawrow: \"Mit Gegnern muss man verhandeln\"",
-      "description": "Es war das erste Treffen der Chefdiplomaten Deutschlands und Russlands seit Beginn des russischen Angriffs auf die Ukraine. In den tagesthemen erklärt Bundesaußenminister Wadephul, wie es zum Treffen mit Lawrow kam - und wie er es bewertet.",
-      "pubDate": "2026-09-27T00:29:36+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Berliner SPD will mit Linken und Grünen sondieren",
-      "description": "Der Vorstand der Berliner SPD hat sich nach Informationen des rbb zu Sondierungsgesprächen mit Linkspartei und Grünen bereit erklärt. Damit haben nun alle drei Parteien Sondierungen zugestimmt.",
-      "pubDate": "2026-09-26T22:07:54+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kommentar zur deutschen Olympiabewerbung: München ist qualifizierter Außenseiter",
-      "description": "Mit München bewirbt sich der Deutsche Olympische Sportbund für die Sommerspiele 2036, 2040 oder 2044. Das Konzept ist gut und die Bevölkerung nachweislich sportbegeistert, meint Dirk Walsdorff. Das bringt Außenseiter-Chancen.",
-      "pubDate": "2026-09-26T20:23:42+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wadephul trifft überraschend Lawrow in New York",
-      "description": "Zum ersten Mal seit Beginn des russischen Überfalls auf die Ukraine hat ein deutscher Chefdiplomat den russischen Außenminister getroffen. Das kurze Treffen zwischen Wadephul und Lawrow fand am Rande der UN-Generaldebatte statt.",
-      "pubDate": "2026-09-26T21:00:59+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Trump lehnt Irans Vorschlag zur Öffnung der Straße von Hormus ab",
-      "description": "Die Straße von Hormus ist seit Beginn des Iran-Kriegs für die Schifffahrt praktisch blockiert. Iran unterbreitete den USA am Rande der UN-Generalversammlung einen Vorschlag zur Öffnung. Den lehnte US-Präsident Trump nun ab.",
-      "pubDate": "2026-09-26T17:50:22+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Pflege in Schweden: So lange wie möglich zu Hause",
-      "description": "Schweden setzt bei der Altenpflege konsequent auf die Betreuung zu Hause. Ein gut ausgebauter Pflegedienst macht das möglich. Die Höhe des Eigenbeitrags ist begrenzt - doch Fachkräfte werden knapp. Von J. Sinram.",
-      "pubDate": "2026-09-26T17:29:01+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Dobrindt will schnelle Eingreiftruppe der EU-Grenzschutzagentur Frontex",
-      "description": "Die europäischen Grenzschutzagentur soll laut Innenminister Dobrindt künftig schnell auf Massenankünfte von Migranten wie etwa im Sommer in Ceuta reagieren. Auch sonst sollen die Befugnisse von Frontex gestärkt werden.",
-      "pubDate": "2026-09-26T17:27:14+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Papst Leo XIV. feiert Messe mit 800.000 Menschen in Paris",
-      "description": "Papst Leo XIV. hat seinen Aufenthalt in Paris mit einer großen Messe beendet. Das Verhältnis zwischen Frankreich und dem Vatikan ist nicht frei von Spannungen - trotzdem wurde der Papst von einer riesigen Menschenmenge gefeiert.",
-      "pubDate": "2026-09-26T18:25:33+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Exklusiv: SPD will Eigenanteil für Pflegeheimkosten deckeln",
-      "description": "Die SPD will die geplante Reform in der Pflege nachverhandeln. Ein Papier, das dem ARD-Hauptstadtstudio exklusiv vorliegt, beschreibt, wie ein Pflegedeckel aussehen könnte: Der \"einrichtungseinheitliche\" Eigenanteil soll dabei sinken. Von M. Rödle.",
-      "pubDate": "2026-09-26T14:30:06+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Durchtrennte Kabel in Gelsenkirchen: Zugausfälle und Umleitungen im Ruhrgebiet",
-      "description": "Durchtrennte Kabel bei Gelsenkirchen haben zeitweise für Störungen im Nah- und Fernverkehr im Ruhrgebiet gesorgt. Laut Polizei sind die unbekannten Täter sehr grob vorgegangen: Dadurch fielen Signale und Steuerungsanlagen aus.",
-      "pubDate": "2026-09-26T13:09:00+02:00",
       "bild": ""
     }
   ],
