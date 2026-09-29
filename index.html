@@ -420,6 +420,8 @@
     </div>
   </div>
 
+  <script src="gong.js"></script>
+
   <script>
   (function () {
 
@@ -470,66 +472,17 @@
     }
 
     /* ══ GONG (Klingelzeichen) ══
-       Technik: Web Audio API (AudioContext) statt <audio>-Element.
-       Das ist der von Browsern (inkl. iOS Safari) offiziell empfohlene
-       Weg für zeitgesteuerte Sounds: Die Datei wird einmal beim Laden
-       der Seite geladen und dekodiert (das braucht KEINE
-       Nutzer-Interaktion und liefert uns sofort eine Fehlermeldung,
-       falls die Datei fehlt). Nur das eigentliche "Loslegen" des
-       AudioContext (audioContext.resume()) erfordert eine
-       Nutzer-Interaktion – das passiert bei JEDER Berührung des
-       Terminals (nicht nur beim Glocken-Icon). resume() ist im
-       Gegensatz zu play()/pause() eines <audio>-Elements robust gegen
-       Mehrfachaufrufe und race conditions.
-       Ein-/Aus-Zustand wird pro Gerät in localStorage gemerkt. */
-    let gongAktiv = (localStorage.getItem('studjo-gong-aktiv') !== 'false'); // Standard: AN
-    let audioContext   = null;
-    let gongBuffer     = null;   // dekodierte Tondatei, sobald geladen
-    let audioBereit    = false;  // AudioContext läuft (nach erster Interaktion)
-    let audioFehler    = null;   // 'datei' | 'nicht_unterstuetzt' | null
-    const gongHeuteAusgeloest = new Set(); // Schlüssel "Datum|Ereignis"
-
-    function holeAudioContext() {
-      if (audioContext) return audioContext;
-      const Ctx = window.AudioContext || window.webkitAudioContext;
-      if (!Ctx) { audioFehler = 'nicht_unterstuetzt'; return null; }
-      audioContext = new Ctx();
-      return audioContext;
-    }
-
-    function ladeGongDatei() {
-      const ctx = holeAudioContext();
-      if (!ctx) { aktualisiereGongIcon(); return; }
-      fetch('dingdong.mp3')
-        .then(antwort => {
-          if (!antwort.ok) throw new Error('HTTP ' + antwort.status);
-          return antwort.arrayBuffer();
-        })
-        .then(daten => ctx.decodeAudioData(daten))
-        .then(dekodiert => { gongBuffer = dekodiert; audioFehler = null; aktualisiereGongIcon(); })
-        .catch(() => { audioFehler = 'datei'; aktualisiereGongIcon(); });
-    }
-
-    function versucheFreischaltung() {
-      const ctx = holeAudioContext();
-      if (!ctx) return;
-      if (ctx.state === 'running') { audioBereit = true; return; }
-      ctx.resume().then(() => {
-        audioBereit = (ctx.state === 'running');
-        aktualisiereGongIcon();
-      }).catch(() => { /* nächste Berührung versucht es erneut */ });
-    }
-    // Jede Berührung/jeder Klick irgendwo auf dem Terminal zählt –
-    // nicht nur ein Tap auf das Glocken-Icon selbst.
-    ['touchstart', 'click', 'keydown'].forEach(ereignis =>
-      document.addEventListener(ereignis, versucheFreischaltung, { passive: true })
-    );
-
-    function aktualisiereGongIcon() {
+       Die eigentliche Gong-Engine (Web Audio API, Zeitplan,
+       Freischaltung, Datei laden) läuft zentral in a11y.js – dort
+       läuft sie auf JEDER Seite, die a11y.js einbindet, nicht nur
+       hier auf der Startseite. Hier binden wir nur den sichtbaren
+       Glocken-Button an die von a11y.js bereitgestellte Schnittstelle
+       (window.studjoGong) an. */
+    function aktualisiereGongIcon(status) {
       const btn = document.getElementById('zk-gong-btn');
       if (!btn) return;
       btn.classList.remove('zk-gong-aus', 'zk-gong-locked', 'zk-gong-fehler');
-      if (audioFehler) {
+      if (status.fehler) {
         btn.textContent = '⚠️';
         btn.setAttribute('aria-label',
           'Tondatei konnte nicht geladen werden. Bitte prüfen, ob dingdong.mp3 ' +
@@ -537,57 +490,23 @@
         btn.classList.add('zk-gong-fehler');
         return;
       }
-      btn.textContent = gongAktiv ? '🔔' : '🔕';
-      btn.setAttribute('aria-pressed', String(gongAktiv));
-      btn.setAttribute('aria-label', gongAktiv
+      btn.textContent = status.aktiv ? '🔔' : '🔕';
+      btn.setAttribute('aria-pressed', String(status.aktiv));
+      btn.setAttribute('aria-label', status.aktiv
         ? 'Klingelzeichen ist an – zum Ausschalten antippen'
         : 'Klingelzeichen ist aus – zum Einschalten antippen');
-      if (!gongAktiv) btn.classList.add('zk-gong-aus');
-      else if (!audioBereit) btn.classList.add('zk-gong-locked');
+      if (!status.aktiv) btn.classList.add('zk-gong-aus');
+      else if (!status.bereit) btn.classList.add('zk-gong-locked');
     }
 
-    function spieleGong(nochOft) {
-      if (nochOft <= 0 || !audioContext || !gongBuffer) return;
-      const quelle = audioContext.createBufferSource();
-      quelle.buffer = gongBuffer;
-      quelle.connect(audioContext.destination);
-      if (nochOft > 1) {
-        quelle.onended = () => setTimeout(() => spieleGong(nochOft - 1), 300);
-      }
-      quelle.start(0);
+    if (window.studjoGong) {
+      window.studjoGong.aufStatusAenderung(aktualisiereGongIcon);
+      document.getElementById('zk-gong-btn').addEventListener('click', () => {
+        const status = window.studjoGong.status();
+        if (status.fehler) return; // Fehler-Icon ist kein Schalter
+        window.studjoGong.umschalten();
+      });
     }
-
-    function pruefeGong(jetzt, tm, WORK_END) {
-      if (!gongAktiv || !audioContext || audioContext.state !== 'running') return;
-      const heute = jetzt.toDateString();
-      const ereignisse = [
-        ['arbeitsbeginn',   CFG.WORK_START, 1],
-        ['pause1-beginn',   CFG.BREAK1_S,   1],
-        ['pause1-ende',     CFG.BREAK1_E,   2],
-        ['mittag-beginn',   CFG.BREAK2_S,   1],
-        ['mittag-ende',     CFG.BREAK2_E,   2],
-        ['feierabend',      WORK_END,       2],
-      ];
-      for (const [name, minuten, mal] of ereignisse) {
-        if (tm === minuten) {
-          const schluessel = heute + '|' + name;
-          if (!gongHeuteAusgeloest.has(schluessel)) {
-            gongHeuteAusgeloest.add(schluessel);
-            spieleGong(mal);
-          }
-        }
-      }
-    }
-
-    document.getElementById('zk-gong-btn').addEventListener('click', () => {
-      if (audioFehler) return; // Fehler-Icon ist kein Schalter
-      gongAktiv = !gongAktiv;
-      localStorage.setItem('studjo-gong-aktiv', String(gongAktiv));
-      versucheFreischaltung(); // Klick zählt selbst als Interaktion
-      aktualisiereGongIcon();
-    });
-    ladeGongDatei();
-    aktualisiereGongIcon();
 
     function setArbeit(css, icon, status, countdown, detail) {
       document.getElementById('zk-arbeit').className        = 'zk-card ' + css;
@@ -622,8 +541,6 @@
       const WORK_END = kurzTag ? CFG.WORK_END_K : CFG.WORK_END_N;
       const feierStr = kurzTag ? '14:45' : '15:15';
       const istArbeitstag = tag >= 1 && tag <= 5;
-
-      if (istArbeitstag) pruefeGong(jetzt, tm, WORK_END);
 
       /* WOCHENENDE */
       if (!istArbeitstag) {
