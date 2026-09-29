@@ -75,6 +75,49 @@
   white-space: nowrap;
 }
 
+/* Gruppe: Uhrzeit + Gong-Schalter zusammen links */
+.zk-uhr-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Gong-Ein/Aus-Schalter (Glocken-Icon) */
+.zk-gong-btn {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.20);
+  color: #ffffff;
+  font-size: 1.25rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: background .2s ease, opacity .2s ease;
+}
+.zk-gong-btn:active {
+  background: rgba(255,255,255,0.34);
+}
+.zk-gong-btn.zk-gong-aus {
+  opacity: .5;
+}
+/* Dezenter Hinweis: Ton ist aktiviert, aber vom Browser noch nicht
+   freigeschaltet (Autoplay-Sperre) – verschwindet nach dem ersten
+   Antippen des Terminals automatisch. */
+@keyframes zk-gong-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255,255,255,0.55); }
+  50%      { box-shadow: 0 0 0 7px rgba(255,255,255,0); }
+}
+.zk-gong-btn.zk-gong-locked {
+  animation: zk-gong-pulse 1.8s ease-in-out infinite;
+}
+
 /* Auf schmalen Bildschirmen kleiner */
 @media (max-width: 600px) {
   .zk-uhr,
@@ -83,6 +126,11 @@
   }
   .zk-header {
     padding: 8px 14px;
+  }
+  .zk-gong-btn {
+    width: 34px;
+    height: 34px;
+    font-size: 1.05rem;
   }
 }
 
@@ -328,7 +376,11 @@
   <div class="zk-widget" role="region" aria-label="Tageszeit und Arbeitszeit">
 
     <div class="zk-header">
-      <div id="zk-uhr"   class="zk-uhr">…</div>
+      <div class="zk-uhr-wrap">
+        <div id="zk-uhr" class="zk-uhr">…</div>
+        <button id="zk-gong-btn" class="zk-gong-btn" type="button"
+                aria-pressed="true" aria-label="Klingelzeichen ein-/ausschalten">🔔</button>
+      </div>
       <div id="zk-datum" class="zk-datum">…</div>
     </div>
 
@@ -410,6 +462,99 @@
       return d.getDay() === 2 && d.getDate() <= 7;
     }
 
+    /* ══ GONG (Klingelzeichen) ══
+       - Ein Audio-Element, das per Timer zur passenden Uhrzeit
+         abgespielt wird (1x oder 2x hintereinander).
+       - Ein-/Aus-Zustand wird pro Gerät in localStorage gemerkt.
+       - Browser (v.a. Chrome/Android) verbieten automatisches
+         Abspielen mit Ton ohne vorherige Nutzer-Interaktion. Deshalb
+         "hört" die Seite auf die erste Berührung/den ersten Klick
+         irgendwo auf dem Terminal und spielt die Datei dabei einmal
+         lautlos kurz an ("Weckruf") – danach funktionieren die
+         zeitgesteuerten Gongs für den Rest dieses Seitenaufrufs ohne
+         weitere Interaktion. Solange nicht freigeschaltet, pulsiert
+         das Glocken-Icon dezent als Hinweis. */
+    const gongAudio = new Audio('dingdong.mp3');
+    gongAudio.preload = 'auto';
+
+    let gongAktiv = (localStorage.getItem('studjo-gong-aktiv') !== 'false'); // Standard: AN
+    let audioFreigeschaltet = false;
+    const gongHeuteAusgeloest = new Set(); // Schlüssel "Datum|Ereignis"
+
+    function aktualisiereGongIcon() {
+      const btn = document.getElementById('zk-gong-btn');
+      if (!btn) return;
+      btn.textContent = gongAktiv ? '🔔' : '🔕';
+      btn.setAttribute('aria-pressed', String(gongAktiv));
+      btn.setAttribute('aria-label', gongAktiv
+        ? 'Klingelzeichen ist an – zum Ausschalten antippen'
+        : 'Klingelzeichen ist aus – zum Einschalten antippen');
+      btn.classList.toggle('zk-gong-aus', !gongAktiv);
+      btn.classList.toggle('zk-gong-locked', gongAktiv && !audioFreigeschaltet);
+    }
+
+    function versucheAudioFreizuschalten() {
+      if (audioFreigeschaltet) return;
+      const ergebnis = gongAudio.play();
+      const erfolgreich = () => {
+        audioFreigeschaltet = true;
+        gongAudio.pause();
+        gongAudio.currentTime = 0;
+        aktualisiereGongIcon();
+      };
+      if (ergebnis && typeof ergebnis.then === 'function') {
+        ergebnis.then(erfolgreich).catch(() => { /* nächster Tap versucht es erneut */ });
+      } else {
+        erfolgreich();
+      }
+    }
+    document.addEventListener('touchstart', versucheAudioFreizuschalten, { passive: true });
+    document.addEventListener('click', versucheAudioFreizuschalten);
+
+    function spieleGong(nochOft) {
+      if (nochOft <= 0) return;
+      gongAudio.currentTime = 0;
+      const weiter = () => {
+        gongAudio.removeEventListener('ended', weiter);
+        if (nochOft > 1) setTimeout(() => spieleGong(nochOft - 1), 300);
+      };
+      gongAudio.addEventListener('ended', weiter);
+      const ergebnis = gongAudio.play();
+      if (ergebnis && typeof ergebnis.catch === 'function') {
+        ergebnis.catch(() => gongAudio.removeEventListener('ended', weiter));
+      }
+    }
+
+    function pruefeGong(jetzt, tm, WORK_END) {
+      if (!gongAktiv) return;
+      const heute = jetzt.toDateString();
+      const ereignisse = [
+        ['arbeitsbeginn',   CFG.WORK_START, 1],
+        ['pause1-beginn',   CFG.BREAK1_S,   1],
+        ['pause1-ende',     CFG.BREAK1_E,   2],
+        ['mittag-beginn',   CFG.BREAK2_S,   1],
+        ['mittag-ende',     CFG.BREAK2_E,   2],
+        ['feierabend',      WORK_END,       2],
+      ];
+      for (const [name, minuten, mal] of ereignisse) {
+        if (tm === minuten) {
+          const schluessel = heute + '|' + name;
+          if (!gongHeuteAusgeloest.has(schluessel)) {
+            gongHeuteAusgeloest.add(schluessel);
+            spieleGong(mal);
+          }
+        }
+      }
+    }
+
+    document.getElementById('zk-gong-btn').addEventListener('click', () => {
+      gongAktiv = !gongAktiv;
+      localStorage.setItem('studjo-gong-aktiv', String(gongAktiv));
+      versucheAudioFreizuschalten(); // Umschalten zählt selbst als Interaktion
+      aktualisiereGongIcon();
+    });
+    aktualisiereGongIcon();
+
     function setArbeit(css, icon, status, countdown, detail) {
       document.getElementById('zk-arbeit').className        = 'zk-card ' + css;
       document.getElementById('zk-a-icon').textContent      = icon;
@@ -443,6 +588,8 @@
       const WORK_END = kurzTag ? CFG.WORK_END_K : CFG.WORK_END_N;
       const feierStr = kurzTag ? '14:45' : '15:15';
       const istArbeitstag = tag >= 1 && tag <= 5;
+
+      if (istArbeitstag) pruefeGong(jetzt, tm, WORK_END);
 
       /* WOCHENENDE */
       if (!istArbeitstag) {
