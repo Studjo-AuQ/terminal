@@ -47,39 +47,98 @@
   box-sizing: border-box;
 }
 
-/* Header */
-.zk-header {
+/* Eine einzige kompakte Zeile: Datum/Uhrzeit → Gong → Pfeil →
+   aktuelle Phase → Pfeil → nächste Phase. Ersetzt die frühere
+   dreizeilige Darstellung (rote Kopfzeile + 2 Statuskarten), damit
+   sofort sichtbar bleibt, dass darunter noch mehr Kacheln per Wischen
+   erreichbar sind. */
+.zk-row {
   background: #b61f29;
   color: #ffffff;
-  padding: 8px 22px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  flex-wrap: nowrap;
-  box-sizing: border-box;
-}
-.zk-uhr {
-  font-size: 1.6rem;
-  font-weight: 900;
-  line-height: 1;
-  letter-spacing: .03em;
-  white-space: nowrap;
-}
-.zk-datum {
-  font-size: 1.6rem;
-  font-weight: 900;
-  line-height: 1;
-  letter-spacing: .01em;
-  text-align: right;
-  white-space: nowrap;
-}
-
-/* Gruppe: Uhrzeit + Gong-Schalter zusammen links */
-.zk-uhr-wrap {
+  padding: 10px 16px;
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+}
+
+/* Datum + Uhrzeit eng gestapelt, linksbündig */
+.zk-zeit-block {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  line-height: 1.15;
+}
+.zk-datum-klein {
+  font-size: 0.62rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  opacity: .85;
+  white-space: nowrap;
+}
+.zk-uhr-klein {
+  font-size: 1.3rem;
+  font-weight: 900;
+  letter-spacing: .02em;
+  white-space: nowrap;
+}
+
+/* Pfeile zwischen den Blöcken */
+.zk-pfeil {
+  font-size: 1.2rem;
+  font-weight: 700;
+  opacity: .7;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+/* Kompakter Phasen-Block (aktuell ODER nächste Phase) */
+.zk-mini {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  padding: 6px 12px;
+  flex: 1 1 0;
+  min-width: 0;
+}
+.zk-mini-icon {
+  font-size: 1.3rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.zk-mini-text {
+  min-width: 0;
+}
+.zk-mini-label {
+  font-size: 0.56rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  opacity: .7;
+  line-height: 1;
+  margin-bottom: 1px;
+}
+.zk-mini-status {
+  font-size: 0.92rem;
+  font-weight: 800;
+  line-height: 1.15;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.zk-mini-countdown {
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+/* Die "Bald"-Phase ist bewusst etwas zurückhaltender dargestellt als
+   die aktuelle Phase, damit klar bleibt, was gerade JETZT gilt. */
+.zk-mini-bald {
+  opacity: .82;
 }
 
 /* Gong-Ein/Aus-Schalter (Glocken-Icon) */
@@ -127,12 +186,31 @@
 
 /* Auf schmalen Bildschirmen kleiner */
 @media (max-width: 600px) {
-  .zk-uhr,
-  .zk-datum {
+  .zk-row {
+    padding: 8px 10px;
+    gap: 6px;
+  }
+  .zk-uhr-klein {
+    font-size: 1.05rem;
+  }
+  .zk-datum-klein {
+    font-size: 0.55rem;
+  }
+  .zk-pfeil {
+    font-size: 1rem;
+  }
+  .zk-mini {
+    padding: 5px 8px;
+    gap: 6px;
+  }
+  .zk-mini-icon {
     font-size: 1.1rem;
   }
-  .zk-header {
-    padding: 8px 14px;
+  .zk-mini-status {
+    font-size: 0.8rem;
+  }
+  .zk-mini-countdown {
+    font-size: 0.68rem;
   }
   .zk-gong-btn {
     width: 34px;
@@ -141,53 +219,16 @@
   }
 }
 
-/* ── Status-Bereich: 2 Zeilen untereinander (IMMER) ── */
-.zk-body {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 10px 14px 12px;
-}
-
-/* ── Status-Karte: kompakte einzeilige Darstellung ── */
-.zk-card {
-  border-radius: 12px;
-  padding: 10px 14px;
-  display: flex;
-  align-items: center;      /* Icon + Text vertikal zentriert */
-  gap: 12px;
-  transition: background .3s, color .3s;
-}
-.zk-card-icon {
-  font-size: 1.6rem;
-  flex-shrink: 0;
-  line-height: 1;
-}
-.zk-card-label {
-  font-size: 0.6rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: .07em;
-  opacity: .65;
-  margin-bottom: 1px;
-}
-.zk-card-status {
-  font-size: 0.95rem;
-  font-weight: 800;
-  line-height: 1.2;
-  margin-bottom: 1px;
-}
-.zk-card-countdown {
-  font-size: 1.0rem;
-  font-weight: 800;
-  line-height: 1.1;
-}
-.zk-card-detail {
-  font-size: 0.72rem;
-  font-weight: 600;
-  opacity: .75;
-  margin-top: 1px;
-  line-height: 1.3;
+/* Auf sehr schmalen Bildschirmen: Zeile darf umbrechen, statt Inhalte
+   unleserlich zu quetschen. */
+@media (max-width: 420px) {
+  .zk-row {
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+  .zk-mini {
+    flex-basis: 100%;
+  }
 }
 
 
@@ -382,41 +423,40 @@
   <!-- ══ ZEITKACHEL ══ -->
   <div class="zk-widget" role="region" aria-label="Tageszeit und Arbeitszeit">
 
-    <div class="zk-header">
-      <div class="zk-uhr-wrap">
-        <div id="zk-uhr" class="zk-uhr">…</div>
-        <button id="zk-gong-btn" class="zk-gong-btn" type="button"
-                aria-pressed="true" aria-label="Klingelzeichen ein-/ausschalten">🔔</button>
+    <div class="zk-row">
+
+      <div class="zk-zeit-block">
+        <div id="zk-datum" class="zk-datum-klein">…</div>
+        <div id="zk-uhr"   class="zk-uhr-klein">…</div>
       </div>
-      <div id="zk-datum" class="zk-datum">…</div>
-    </div>
 
-    <div class="zk-body">
+      <button id="zk-gong-btn" class="zk-gong-btn" type="button"
+              aria-pressed="true" aria-label="Klingelzeichen ein-/ausschalten">🔔</button>
 
-      <div class="zk-body">
+      <div class="zk-pfeil" aria-hidden="true">→</div>
 
-  <!-- Zeile 1: JETZT -->
-  <div class="zk-card" id="zk-arbeit" aria-live="polite">
-    <div class="zk-card-icon" id="zk-a-icon">⏳</div>
-    <div>
-      <div class="zk-card-label">Jetzt …</div>
-      <div class="zk-card-status"    id="zk-a-status">…</div>
-      <div class="zk-card-countdown" id="zk-a-countdown"></div>
-      <div class="zk-card-detail"    id="zk-a-detail">…</div>
-    </div>
-  </div>
+      <!-- Aktuelle Phase (JETZT) -->
+      <div class="zk-mini" id="zk-arbeit" aria-live="polite">
+        <div class="zk-mini-icon" id="zk-a-icon">⏳</div>
+        <div class="zk-mini-text">
+          <div class="zk-mini-label">Jetzt</div>
+          <div class="zk-mini-status"    id="zk-a-status">…</div>
+          <div class="zk-mini-countdown" id="zk-a-countdown"></div>
+        </div>
+      </div>
 
-  <!-- Zeile 2: BALD -->
-  <div class="zk-card" id="zk-pause" aria-live="polite">
-    <div class="zk-card-icon" id="zk-p-icon">☕</div>
-    <div>
-      <div class="zk-card-label">Bald …</div>
-      <div class="zk-card-status"    id="zk-p-status">…</div>
-      <div class="zk-card-countdown" id="zk-p-countdown"></div>
-      <div class="zk-card-detail"    id="zk-p-detail">…</div>
-    </div>
-  </div>
-</div>
+      <div class="zk-pfeil" aria-hidden="true">→</div>
+
+      <!-- Nächste Phase (BALD) -->
+      <div class="zk-mini zk-mini-bald" id="zk-pause" aria-live="polite">
+        <div class="zk-mini-icon" id="zk-p-icon">☕</div>
+        <div class="zk-mini-text">
+          <div class="zk-mini-label">Bald</div>
+          <div class="zk-mini-status"    id="zk-p-status">…</div>
+          <div class="zk-mini-countdown" id="zk-p-countdown"></div>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -508,20 +548,24 @@
       });
     }
 
+    /* "detail" (z. B. "Feierabend um 15:15 Uhr") wird bewusst nicht mehr
+       angezeigt – die Uhrzeit steckt ohnehin schon im Countdown, eine
+       eigene Zeile dafür würde die kompakte Zeile sprengen. Der
+       Parameter bleibt in den Aufrufen unten erhalten (einfacher, als
+       an jeder der ca. 10 Aufrufstellen ein Argument zu entfernen),
+       wird hier aber schlicht ignoriert. */
     function setArbeit(css, icon, status, countdown, detail) {
-      document.getElementById('zk-arbeit').className        = 'zk-card ' + css;
+      document.getElementById('zk-arbeit').className        = 'zk-mini ' + css;
       document.getElementById('zk-a-icon').textContent      = icon;
       document.getElementById('zk-a-status').textContent    = status;
       document.getElementById('zk-a-countdown').textContent = countdown;
-      document.getElementById('zk-a-detail').textContent    = detail;
     }
 
     function setPause(css, icon, status, countdown, detail) {
-      document.getElementById('zk-pause').className         = 'zk-card ' + css;
+      document.getElementById('zk-pause').className         = 'zk-mini zk-mini-bald ' + css;
       document.getElementById('zk-p-icon').textContent      = icon;
       document.getElementById('zk-p-status').textContent    = status;
       document.getElementById('zk-p-countdown').textContent = countdown;
-      document.getElementById('zk-p-detail').textContent    = detail;
     }
 
     function update() {
