@@ -117,6 +117,13 @@
 .zk-gong-btn.zk-gong-locked {
   animation: zk-gong-pulse 1.8s ease-in-out infinite;
 }
+/* Tondatei konnte nicht geladen werden (z. B. falscher Dateiname) –
+   bewusst statisch, damit es sich vom "noch nicht freigeschaltet"-
+   Pulsieren oben unterscheidet. */
+.zk-gong-btn.zk-gong-fehler {
+  background: rgba(255,255,255,0.40);
+  cursor: default;
+}
 
 /* Auf schmalen Bildschirmen kleiner */
 @media (max-width: 600px) {
@@ -463,70 +470,95 @@
     }
 
     /* ══ GONG (Klingelzeichen) ══
-       - Ein Audio-Element, das per Timer zur passenden Uhrzeit
-         abgespielt wird (1x oder 2x hintereinander).
-       - Ein-/Aus-Zustand wird pro Gerät in localStorage gemerkt.
-       - Browser (v.a. Chrome/Android) verbieten automatisches
-         Abspielen mit Ton ohne vorherige Nutzer-Interaktion. Deshalb
-         "hört" die Seite auf die erste Berührung/den ersten Klick
-         irgendwo auf dem Terminal und spielt die Datei dabei einmal
-         lautlos kurz an ("Weckruf") – danach funktionieren die
-         zeitgesteuerten Gongs für den Rest dieses Seitenaufrufs ohne
-         weitere Interaktion. Solange nicht freigeschaltet, pulsiert
-         das Glocken-Icon dezent als Hinweis. */
-    const gongAudio = new Audio('dingdong.mp3');
-    gongAudio.preload = 'auto';
-
+       Technik: Web Audio API (AudioContext) statt <audio>-Element.
+       Das ist der von Browsern (inkl. iOS Safari) offiziell empfohlene
+       Weg für zeitgesteuerte Sounds: Die Datei wird einmal beim Laden
+       der Seite geladen und dekodiert (das braucht KEINE
+       Nutzer-Interaktion und liefert uns sofort eine Fehlermeldung,
+       falls die Datei fehlt). Nur das eigentliche "Loslegen" des
+       AudioContext (audioContext.resume()) erfordert eine
+       Nutzer-Interaktion – das passiert bei JEDER Berührung des
+       Terminals (nicht nur beim Glocken-Icon). resume() ist im
+       Gegensatz zu play()/pause() eines <audio>-Elements robust gegen
+       Mehrfachaufrufe und race conditions.
+       Ein-/Aus-Zustand wird pro Gerät in localStorage gemerkt. */
     let gongAktiv = (localStorage.getItem('studjo-gong-aktiv') !== 'false'); // Standard: AN
-    let audioFreigeschaltet = false;
+    let audioContext   = null;
+    let gongBuffer     = null;   // dekodierte Tondatei, sobald geladen
+    let audioBereit    = false;  // AudioContext läuft (nach erster Interaktion)
+    let audioFehler    = null;   // 'datei' | 'nicht_unterstuetzt' | null
     const gongHeuteAusgeloest = new Set(); // Schlüssel "Datum|Ereignis"
+
+    function holeAudioContext() {
+      if (audioContext) return audioContext;
+      const Ctx = window.AudioContext || window.webkitAudioContext;
+      if (!Ctx) { audioFehler = 'nicht_unterstuetzt'; return null; }
+      audioContext = new Ctx();
+      return audioContext;
+    }
+
+    function ladeGongDatei() {
+      const ctx = holeAudioContext();
+      if (!ctx) { aktualisiereGongIcon(); return; }
+      fetch('dingdong.mp3')
+        .then(antwort => {
+          if (!antwort.ok) throw new Error('HTTP ' + antwort.status);
+          return antwort.arrayBuffer();
+        })
+        .then(daten => ctx.decodeAudioData(daten))
+        .then(dekodiert => { gongBuffer = dekodiert; audioFehler = null; aktualisiereGongIcon(); })
+        .catch(() => { audioFehler = 'datei'; aktualisiereGongIcon(); });
+    }
+
+    function versucheFreischaltung() {
+      const ctx = holeAudioContext();
+      if (!ctx) return;
+      if (ctx.state === 'running') { audioBereit = true; return; }
+      ctx.resume().then(() => {
+        audioBereit = (ctx.state === 'running');
+        aktualisiereGongIcon();
+      }).catch(() => { /* nächste Berührung versucht es erneut */ });
+    }
+    // Jede Berührung/jeder Klick irgendwo auf dem Terminal zählt –
+    // nicht nur ein Tap auf das Glocken-Icon selbst.
+    ['touchstart', 'click', 'keydown'].forEach(ereignis =>
+      document.addEventListener(ereignis, versucheFreischaltung, { passive: true })
+    );
 
     function aktualisiereGongIcon() {
       const btn = document.getElementById('zk-gong-btn');
       if (!btn) return;
+      btn.classList.remove('zk-gong-aus', 'zk-gong-locked', 'zk-gong-fehler');
+      if (audioFehler) {
+        btn.textContent = '⚠️';
+        btn.setAttribute('aria-label',
+          'Tondatei konnte nicht geladen werden. Bitte prüfen, ob dingdong.mp3 ' +
+          '(genau so geschrieben) im Hauptverzeichnis des Repos liegt.');
+        btn.classList.add('zk-gong-fehler');
+        return;
+      }
       btn.textContent = gongAktiv ? '🔔' : '🔕';
       btn.setAttribute('aria-pressed', String(gongAktiv));
       btn.setAttribute('aria-label', gongAktiv
         ? 'Klingelzeichen ist an – zum Ausschalten antippen'
         : 'Klingelzeichen ist aus – zum Einschalten antippen');
-      btn.classList.toggle('zk-gong-aus', !gongAktiv);
-      btn.classList.toggle('zk-gong-locked', gongAktiv && !audioFreigeschaltet);
+      if (!gongAktiv) btn.classList.add('zk-gong-aus');
+      else if (!audioBereit) btn.classList.add('zk-gong-locked');
     }
-
-    function versucheAudioFreizuschalten() {
-      if (audioFreigeschaltet) return;
-      const ergebnis = gongAudio.play();
-      const erfolgreich = () => {
-        audioFreigeschaltet = true;
-        gongAudio.pause();
-        gongAudio.currentTime = 0;
-        aktualisiereGongIcon();
-      };
-      if (ergebnis && typeof ergebnis.then === 'function') {
-        ergebnis.then(erfolgreich).catch(() => { /* nächster Tap versucht es erneut */ });
-      } else {
-        erfolgreich();
-      }
-    }
-    document.addEventListener('touchstart', versucheAudioFreizuschalten, { passive: true });
-    document.addEventListener('click', versucheAudioFreizuschalten);
 
     function spieleGong(nochOft) {
-      if (nochOft <= 0) return;
-      gongAudio.currentTime = 0;
-      const weiter = () => {
-        gongAudio.removeEventListener('ended', weiter);
-        if (nochOft > 1) setTimeout(() => spieleGong(nochOft - 1), 300);
-      };
-      gongAudio.addEventListener('ended', weiter);
-      const ergebnis = gongAudio.play();
-      if (ergebnis && typeof ergebnis.catch === 'function') {
-        ergebnis.catch(() => gongAudio.removeEventListener('ended', weiter));
+      if (nochOft <= 0 || !audioContext || !gongBuffer) return;
+      const quelle = audioContext.createBufferSource();
+      quelle.buffer = gongBuffer;
+      quelle.connect(audioContext.destination);
+      if (nochOft > 1) {
+        quelle.onended = () => setTimeout(() => spieleGong(nochOft - 1), 300);
       }
+      quelle.start(0);
     }
 
     function pruefeGong(jetzt, tm, WORK_END) {
-      if (!gongAktiv) return;
+      if (!gongAktiv || !audioContext || audioContext.state !== 'running') return;
       const heute = jetzt.toDateString();
       const ereignisse = [
         ['arbeitsbeginn',   CFG.WORK_START, 1],
@@ -548,11 +580,13 @@
     }
 
     document.getElementById('zk-gong-btn').addEventListener('click', () => {
+      if (audioFehler) return; // Fehler-Icon ist kein Schalter
       gongAktiv = !gongAktiv;
       localStorage.setItem('studjo-gong-aktiv', String(gongAktiv));
-      versucheAudioFreizuschalten(); // Umschalten zählt selbst als Interaktion
+      versucheFreischaltung(); // Klick zählt selbst als Interaktion
       aktualisiereGongIcon();
     });
+    ladeGongDatei();
     aktualisiereGongIcon();
 
     function setArbeit(css, icon, status, countdown, detail) {
