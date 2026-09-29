@@ -1,7 +1,61 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "29.09.2026, 00:18 Uhr (UTC)",
+  "aktualisiert": "29.09.2026, 06:03 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Putin stockt russische Armee weiter auf",
+      "description": "Russland erleidet stetig hohe Verluste in der Ukraine. Nun ordnet Präsident Putin die erneute Aufstockung der Armee an. Nach Erkenntnissen Kiews sollen auch neue ausländische Kämpfer eingesetzt werden.",
+      "pubDate": "2026-09-29T07:50:11+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: Schwache Wall Street drückt auf die Stimmung",
+      "description": "Die Aktienmärkte hängen weiter am Ölpreis und damit an der Lage im Nahen Osten. Im Augenblick agieren die Anleger verunsichert, die Vorgaben aus den USA fallen schwach aus.",
+      "pubDate": "2026-09-29T07:30:37+02:00",
+      "bild": ""
+    },
+    {
+      "title": "11KM-Podcast: Unter den Rock gefilmt - Geschäft mit Oktoberfest-Videos",
+      "description": "Im Internet finden sich Tausende heimlich aufgenommene Videos von Frauen auf dem \"Teufelsrad\", einem Fahrgeschäft auf dem Oktoberfest. 11KM über das Geschäft mit den Aufnahmen und die Personen dahinter.",
+      "pubDate": "2026-09-29T07:21:28+02:00",
+      "bild": ""
+    },
+    {
+      "title": "OpenAI stoppt Veröffentlichung von neuem KI-Modell wegen Sicherheitsbedenken",
+      "description": "Erneut hat ein KI-Modell des Unternehmens OpenAI in Tests zu eigenständig agiert - und wird daher aus Sicherheitsgründen vorerst nicht veröffentlicht. Auch in Tests anderer KI-Modelle hatte es bereits ähnliche Zwischenfälle gegeben.",
+      "pubDate": "2026-09-29T07:03:40+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Weltwirtschaftsforum in Davos: Wirbel um angebliche Attentatspläne auf Trump",
+      "description": "Während des Weltwirtschaftsforums gab es nach ARD-Recherchen den Verdacht, dass ein Anschlag auf US-Präsident Trump geplant sein könnte. Eine Mitarbeiterin des Forums wurde zeitweise festgenommen. Von S. Dodt und T. Knellwolf.",
+      "pubDate": "2026-09-29T06:00:56+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Australien: Walkadaver sorgt für Hai-Alarm am Stadtstrand von Perth",
+      "description": "Ein Walkadaver sorgt an der Westküste Australiens für Aufregung. Direkt am beliebten Stadtstrand von Perth lockt der tote Buckelwal offenbar auch Haie an. Die Behörden haben reagiert - zwei Wochen nach einem tödlichen Haiangriff. Von F. Bahrdt.",
+      "pubDate": "2026-09-29T05:59:31+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Verteidigung im All: Bundeswehr und Rüstungsbranche bündeln Kräfte",
+      "description": "Moderne Streitkräfte sind von Satelliten abhängig - das Weltall wird für die Verteidigung wichtiger. Beim Netzwerk-Event \"Mission-K\" in Kalkar nähern sich Bundeswehr und Rüstungsbranche an. Kommen sie sich zu nah? Von O. Neuroth.",
+      "pubDate": "2026-09-29T05:00:33+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Oktoberfest - Das Geschäft mit den \"Teufelsrad\"-Videos",
+      "description": "Tausende voyeuristische \"Teufelsrad\"-Videos stellen Frauen sexualisiert zur Schau. BR-Recherchen zeigen, wer hinter solchen Videos vom Oktoberfest steckt. Doch rechtlich sind die Akteure meist nicht belangbar.",
+      "pubDate": "2026-09-29T05:00:27+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Nach Zwangsräumung in Madrid: 87-Jährige darf in ihre Wohnung zurück",
+      "description": "Die 87-jährige Mieterin, deren Wohnung zwangsgeräumt wurde, soll nach Hause zurückkehren können. Nach landesweiten Protesten will die spanische Regierung nun ein Dekret beschließen - gegen steigende Mieten und Wohnungsnot. Von H.-G. Kellner.",
+      "pubDate": "2026-09-29T02:31:37+02:00",
+      "bild": ""
+    },
     {
       "title": "Türkei: Comedian Göktaş zu 18 Monaten Haft verurteilt",
       "description": "Der türkische Comedian Deniz Göktaş ist zu rund 18 Monaten Haft verurteilt worden - unter anderem wegen Präsidentenbeleidigung. Bis zum Abschluss des Berufungsverfahrens kommt er jedoch auf freien Fuß. Von Benjamin Weber.",
@@ -36,60 +90,6 @@
       "title": "Russland stellt Metros Vermögenswerte unter Zwangsverwaltung",
       "description": "Die Metro AG hat nach Beginn des Ukraine-Kriegs sein Geschäft in Russland weitergeführt. Jetzt hat der russische Präsident Putin diesen Teil des Handelskonzerns unter Zwangsverwaltung gestellt. Zuvor war es schon anderen Unternehmen so ergangen.",
       "pubDate": "2026-09-28T19:14:23+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Worum Union und SPD bei der Pflegereform ringen",
-      "description": "Die Pflegereform hat ein Finanzierungsproblem, darin sind sich Union und SPD einig. Doch bei der Frage nach Lösungen liegen die Koalitionspartner weit auseinander. Gelingt der Durchbruch bis zur Kabinettssitzung am Mittwoch? Von I. Karras.",
-      "pubDate": "2026-09-28T18:30:58+02:00",
-      "bild": ""
-    },
-    {
-      "title": "\"Starship\"-Rakete erreicht erstmals Erdumlaufbahn",
-      "description": "Eine \"Starship\"-Rakete ist erstmals in den Orbit gelangt. Dort setzte sie mehrere Satelliten aus. Geplant war, dass die Riesen-Rakete die Erde sechsmal umrundet - wegen technischer Probleme landete sie aber schon Stunden früher im Pazifik.",
-      "pubDate": "2026-09-28T20:05:57+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: DAX gibt nur wenig nach",
-      "description": "Trotz steigender Ölpreise hielt sich der DAX zum Wochenstart recht gut. Dabei stützte die Hoffnung auf weitere Gespräche zwischen den USA und Iran. Bewegung gab es bei kleineren Konzernen.",
-      "pubDate": "2026-09-28T18:21:45+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Regierungsbildung in Schweden: Andersson gibt auf - kommt jetzt Kristersson?",
-      "description": "Die Parlamentswahl haben die Sozialdemokraten gewonnen. Doch die Bemühungen von Parteichefin Andersson um eine Regierung sind gescheitert. Erhält nun Schwedens bisheriger Ministerpräsident Kristersson seine Chance? Von Jana Sinram.",
-      "pubDate": "2026-09-28T18:05:59+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Europäische Verbraucherschützer mahnen Airlines ab",
-      "description": "Wenn ein Flug annulliert wird, steht Kunden eine Erstattung des Ticketpreises zu. Doch manche Airlines machen es ihren Kunden dabei schwer, wenn über Vermittler gebucht wurde. Verbraucherschützer halten das für unzulässig.",
-      "pubDate": "2026-09-28T17:45:38+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ramaphosa will \"alle Register\" gegen Gewalt in Südafrika ziehen",
-      "description": "Am Wochenende starben in Südafrika mindestens 28 Menschen durch Schusswaffen. Sicherheitsexperten sehen ein Muster aus Gewaltbereitschaft, organisiertem Verbrechen und schwacher Polizei. Präsident Ramaphosa kündigt harte Maßnahmen an. Von S. Ueberbach.",
-      "pubDate": "2026-09-28T16:39:04+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Luftwaffenstützpunkt in Großbritannien: Festgenommene sind Briten",
-      "description": "Nach dem möglichen Anschlagsversuch nahe eines britischen Luftwaffenstützpunktes gibt es neue Erkenntnisse. Die Festgenommenen sind Briten - unter Auflagen wurden sie freigelassen. Die Polizei prüft einen möglichen Auftrag eines \"fremden Staats\".",
-      "pubDate": "2026-09-28T17:37:31+02:00",
-      "bild": ""
-    },
-    {
-      "title": "SPD und Sozialverbände drängen auf Änderungen der geplanten Pflegereform",
-      "description": "Eigentlich soll das Bundeskabinett am Mittwoch die Pflegereform auf den Weg bringen. Doch die SPD fordert vor einem Treffen der Koalitionsspitzen am Abend erneut Änderungen. Auch Sozialverbände üben Kritik.",
-      "pubDate": "2026-09-28T16:20:19+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Polen investiert massiv in die Drohnenabwehr an der Ostgrenze",
-      "description": "In Ostpolen, im Grenzgebiet zur Ukraine, ist die Lage angespannt. Eine effektive Drohnenabwehr wird für das Land immer wichtiger. Nun baut Polen im Eiltempo ein komplexes System auf. Von Palina Milling.",
-      "pubDate": "2026-09-28T16:11:06+02:00",
       "bild": ""
     }
   ],
