@@ -327,6 +327,18 @@
   <div style="position:relative;">
     <h1>Willkommen am Studjo | Terminal</h1>
     <button type="button"
+            id="scroll-down-btn"
+            onclick="document.getElementById('seitenende').scrollIntoView({behavior:'smooth', block:'start'})"
+            aria-label="Nach unten scrollen, um alle Kacheln zu sehen"
+            style="position:absolute; left:20px; top:50%; transform:translateY(-50%);
+                   flex-shrink:0; background:#ffffff; border:3px solid #b61f29;
+                   border-radius:50%; width:52px; height:52px; cursor:pointer;
+                   display:flex; align-items:center; justify-content:center;
+                   font-size:1.9rem; padding:0; line-height:1; color:#b61f29;
+                   animation: scroll-hinweis-pulse 2.4s ease-in-out infinite;">
+        ↓
+    </button>
+    <button type="button"
             onclick="document.getElementById('info-popup').style.display='flex'"
             aria-label="Kurze Info anzeigen"
             style="position:absolute; right:20px; top:50%; transform:translateY(-50%);
@@ -337,6 +349,42 @@
         ℹ️
     </button>
   </div>
+
+  <style>
+    /* Dezenter Puls am Pfeil-runter-Button, damit auffällt, dass es
+       darunter noch mehr zu entdecken gibt. */
+    @keyframes scroll-hinweis-pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(182,31,41,0.35); }
+      50%      { box-shadow: 0 0 0 9px rgba(182,31,41,0); }
+    }
+    /* Dezenter Schatten am unteren Bildschirmrand, solange noch nicht
+       bis ganz nach unten gescrollt wurde – zusätzlicher Hinweis,
+       dass die Seite weitergeht. Verschwindet automatisch, sobald das
+       Seitenende erreicht ist (siehe Skript weiter unten). */
+    #scroll-hinweis-schatten {
+      position: fixed;
+      left: 0; right: 0; bottom: 0;
+      height: 26px;
+      pointer-events: none;
+      background: linear-gradient(to top, rgba(15,47,55,0.16), rgba(15,47,55,0));
+      z-index: 900;
+      transition: opacity .25s ease;
+    }
+  </style>
+  <div id="scroll-hinweis-schatten" aria-hidden="true"></div>
+  <script>
+    (function () {
+      const schatten = document.getElementById('scroll-hinweis-schatten');
+      function aktualisieren() {
+        const nochZuScrollen = document.documentElement.scrollHeight
+          - window.innerHeight - window.scrollY;
+        schatten.style.opacity = (nochZuScrollen < 12) ? '0' : '1';
+      }
+      window.addEventListener('scroll', aktualisieren, { passive: true });
+      window.addEventListener('resize', aktualisieren);
+      aktualisieren();
+    })();
+  </script>
 
 <!-- ══ INFO-POPUP ══ -->
 <div id="info-popup"
@@ -754,7 +802,7 @@
 </main>
 
 <!-- ══ FOOTER ══ -->
-<footer style="
+<footer id="seitenende" style="
   position: relative;
   text-align: center;
   padding: 10px 60px 10px 16px;
