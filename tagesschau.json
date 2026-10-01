@@ -1,7 +1,85 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "01.10.2026, 13:47 Uhr (UTC)",
+  "aktualisiert": "01.10.2026, 19:23 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Gescheiterte Hinrichtung in den USA sorgt für Entsetzen - Debatte über Todesstrafe",
+      "description": "Nach der fehlgeschlagenen Hinrichtung einer verurteilten Mörderin in den USA dringen Menschenrechtler auf die Abschaffung der Todesstrafe. Zum Zustand der Frau, die zwei Giftspritzen überlebt hat, ist weiterhin wenig bekannt.",
+      "pubDate": "2026-10-01T21:11:40+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Warum es schon wieder Diskussionen über die Zuckersteuer gibt",
+      "description": "Dass eine Zuckersteuer kommen soll, war eigentlich schon geklärt. Dennoch bremst das Kanzleramt jetzt bei einem Entwurf aus dem Finanzministerium. Was steckt dahinter? Warum drängt das Thema? Von Nicole Kohnert.",
+      "pubDate": "2026-10-01T19:49:18+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Bundeswehr reagiert mit erstem Drohnenregiment auf Ukraine-Krieg",
+      "description": "Die Bundeswehr wird ein eigenes Drohnenregiment mit bis zu 600 Soldaten aufstellen - eine Konsequenz aus dem Ukraine-Krieg. Das kündigte Verteidigungsminister Pistorius an. Wo es stationiert wird, ist noch nicht bekannt.",
+      "pubDate": "2026-10-01T19:25:59+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX schließt unter 25.000 Punkten",
+      "description": "Steigende Energiepreise und weiter anziehende Anleiherenditen haben den Aktienmarkt geschwächt. Der DAX hat erstmals seit Juli unterhalb der psychologisch wichtige Marke von 25.000 Punkten geschlossen.",
+      "pubDate": "2026-10-01T18:41:56+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Frankreichs Regierung schnürt Sparpaket, die Bevölkerung protestiert",
+      "description": "Mit einem harten Sparkurs will Frankreichs Regierung das Haushaltsdefizit wieder in den Griff bekommen. Die Bevölkerung protestiert - besonders Schüler demonstrieren mit zunehmender Gewalt gegen Missstände an Schulen.",
+      "pubDate": "2026-10-01T18:26:29+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Bundeswehr-Einsatz im Irak beendet - Soldaten kehren zurück",
+      "description": "Nach mehr als einem Jahrzehnt der Bundeswehr-Präsenz im Irak sind die letzten 28 Soldaten und Soldatinnen wieder zurück in Deutschland. Das Verteidigungsministerium arbeitet bereits an einer neuen Zusammenarbeit.",
+      "pubDate": "2026-10-01T18:05:21+02:00",
+      "bild": ""
+    },
+    {
+      "title": "ARD-DeutschlandTrend: Drei Viertel der Deutschen spüren vor allem Belastungen",
+      "description": "Inmitten weltweiter Krisen und innenpolitischer Herausforderungen erreicht die Bewertung der Bundesregierung Tiefstwerte, zeigt der ARD-DeutschlandTrend. Versprochene Entlastungen werden vermisst. Von C. Müller.",
+      "pubDate": "2026-10-01T18:00:14+02:00",
+      "bild": ""
+    },
+    {
+      "title": "BGH kippt Preiserhöhung bei Amazon Prime",
+      "description": "Eine Preiserhöhung von Amazon Prime vor vier Jahren ist laut BGH-Urteil unwirksam. Bestimmte Kundinnen und Kunden können jetzt Geld zurückverlangen. Verbraucherschützer raten zur Sammelklage. Von Klaus Hempel.",
+      "pubDate": "2026-10-01T17:47:54+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Netanjahu schreibt dem Flydubai-Co-Piloten islamistische Gesinnung zu",
+      "description": "Nach der Gewalttat auf einem Flydubai-Flug nach Tel Aviv laufen die Untersuchungen, wie es zu der Auseinandersetzung im Cockpit kam. Israels Premier Netanjahu geht von einer islamistischen Radikalisierung des Co-Piloten aus.",
+      "pubDate": "2026-10-01T17:27:15+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Durchschnittsalter auf dem Land steigt stärker als in Städten",
+      "description": "In ländlichen Gemeinden steigt das Durchschnittsalter der Menschen deutlich stärker als in Großstädten. Insgesamt lag der Altersschnitt in Deutschland vergangenes Jahr bei 45 Jahren - mit Unterschieden zwischen den Bundesländern.",
+      "pubDate": "2026-10-01T16:23:02+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Start des neuen \"Tankrabatts\": Spritpreise sinken deutlich",
+      "description": "Der neue \"Tankrabatt\" macht sich an den Zapfsäulen bemerkbar: Benzin und Diesel sind zum Start deutlich billiger geworden. Doch wie lange hält die Entlastung? Das Bundeskartellamt will die Preise genau beobachten. Von Jens Eberl.",
+      "pubDate": "2026-10-01T16:11:15+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Bremst Israel deutsche Gaza-Hilfe aus?",
+      "description": "Deutschland hat Israel Lkw-Scanner ausgeliehen. Die Idee: mehr Lkw können am Grenzübergang durchleuchtet werden, mehr Hilfe kann nach Gaza gelangen. Doch die Scanner sind gar nicht in Betrieb, wie Recherchen des ARD-Studios Tel Aviv zeigen. Von Björn Dake.",
+      "pubDate": "2026-10-01T15:53:48+02:00",
+      "bild": ""
+    },
+    {
+      "title": "EU schafft rechtliche Basis für Abschiebezentren in Drittstaaten",
+      "description": "Zwei Monate nach der Krise in Ceuta verschärfen die EU-Länder ihre Asylregeln weiter. Künftig dürfen sie umstrittene Abschiebezentren in Drittstaaten betreiben. Innenminister Dobrindt hofft noch in diesem Jahr auf eine erste Vereinbarung.",
+      "pubDate": "2026-10-01T15:48:13+02:00",
+      "bild": ""
+    },
     {
       "title": "Erst Hausarzt, dann Facharzt - Baden-Württemberg als Vorreiter",
       "description": "Der Hausarzt als erste Anlaufstelle: Die Bundesregierung will das System der Primärversorgung bundesweit einführen. In Baden-Württemberg gibt es das System seit fast 20 Jahren. Wie läuft es dort? Von Fabian Siegel.",
@@ -12,84 +90,6 @@
       "title": "VW kündigt Tarifverträge: Was heißt das für Beschäftigte?",
       "description": "Im Zuge des verschärften Sparprogramms hat das Volkswagen-Management einen Großteil der bestehenden Tarifverträge gekündigt. Was bedeutet das für Beschäftigte?",
       "pubDate": "2026-10-01T15:19:39+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Rüstungskonzern KNDS bekräftigt Börsenpläne",
-      "description": "Als KNDS den für Juli geplanten Börsengang kurzfristig abgesagt hat, war die Enttäuschung groß. Jetzt hat KNDS-Chef Alary in einem Interview klargemacht: Man will an die Börse. Vielleicht noch dieses Jahr.",
-      "pubDate": "2026-10-01T14:32:53+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Das BSW heißt ab heute BSW - Wagenknecht nicht mehr im Parteinamen",
-      "description": "Das Bündnis Sahra Wagenknecht gibt es nicht mehr. Seit heute hat der Parteiname nichts mehr mit der Gründerin zu tun. Das Kürzel BSW steht nun für Bündnis für Soziale Gerechtigkeit und Wirtschaftliche Vernunft. Von Frank Aischmann.",
-      "pubDate": "2026-10-01T14:28:48+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Teile des Batterieherstellers Varta gehen ins Insolvenzverfahren",
-      "description": "Für vier Gesellschaften des angeschlagenen Batterieherstellers Varta beginnt ein Insolvenzsverfahren. Ziel ist es, neue Eigentümer für die Firmen zu finden. Die Chancen stehen wohl nicht schlecht.",
-      "pubDate": "2026-10-01T13:38:57+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Warum Schwarz-Rot auf den \"Tankrabatt\" setzt",
-      "description": "Eigentlich wollte die Regierung hohe Spritpreise nicht einfach \"wegsubventionieren\". Doch seit heute gilt die Neuauflage des \"Tankrabatts\". Warum Union und SPD trotz Kritik darauf setzen - und was danach kommen soll. Von A.-K. Mellmann und B. Großkopff.",
-      "pubDate": "2026-10-01T13:11:49+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Neuer \"Tankrabatt\" startet mit stark fallenden Preisen",
-      "description": "Seit Mitternacht gilt der neue \"Tankrabatt\" und zeigt schnell Wirkung. E10 kostete am Morgen mancherorts sogar weniger als zwei Euro. Unklar ist, ob die gesamte Entlastung bei Verbrauchern ankommen wird - die Maßnahme bleibt umstritten.",
-      "pubDate": "2026-10-01T13:59:27+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kanzleramt bremst beim Gesetzentwurf zur Zuckersteuer",
-      "description": "Die geplante Zuckersteuer sorgt weiter für Schlagzeilen: Der von Finanzminister Klingbeil vorgelegte Gesetzentwurf stößt auf Widerstand im Kanzleramt. Der Entwurf weiche von Empfehlungen einer Finanzkommission ab.",
-      "pubDate": "2026-10-01T13:01:33+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Abgeordnetenhauswahl in Berlin: Rot-Grün-Rot führt Vorgespräche",
-      "description": "Spitzenvertreter von Linken, Grünen und SPD in Berlin treffen sich zu Vorgesprächen. Vor möglichen Sondierungen sollen dabei erstmal Positionen zu Antisemitismus und Organisierter Kriminalität abgeklopft werden.",
-      "pubDate": "2026-10-01T11:47:47+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Für die Schweizer Gletscher war 2026 ein verheerendes Jahr",
-      "description": "Seit Jahrtausenden prägen Gletscher die Schweizer Alpen. Doch neueste Zahlen geben Grund zur Sorge: Die Gletscher schmelzen weiter dramatisch und haben dieses Jahr mehr als fünf Prozent ihres Volumens verloren. Von Sandra Biegger.",
-      "pubDate": "2026-10-01T11:36:52+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Südafrikas Präsident räumt Versäumnisse bei Gewalt gegen Frauen ein",
-      "description": "Südafrika wird von mehreren Morden an Frauen erschüttert. Präsident Ramaphosa hat nun Versäumnisse beim Kampf gegen geschlechtsbezogene Gewalt eingeräumt und Maßnahmen angekündigt - die halten Kritiker für längst überfällig. Von S. Ueberbach.",
-      "pubDate": "2026-10-01T11:25:58+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Reformpläne: Hohe Erwartungen an die Pflegekommission",
-      "description": "Der erste Schritt zur Stabilisierung der Pflegeversicherung ist getan - viele schwierige Fragen sollen von einer Kommission geklärt werden. Ein zentraler SPD-Vorschlag soll dort laut Gesundheitsminister Linnemann aber kein Thema sein.",
-      "pubDate": "2026-10-01T10:50:11+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Überwachung in China: Der Staat will alles sehen",
-      "description": "Mehr als 700 Millionen Kameras, die durch KI und Gesichtserkennung vernetzt sind, digitale Beobachtung im Internet: China betreibt das umfassendste Überwachungssystem der Welt. Viele finden das aber gar nicht schlimm. Von Christoph Kober.",
-      "pubDate": "2026-10-01T10:23:14+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Neue Ausreiseverbote für Chinas \"nationale Sicherheit\"",
-      "description": "Peking verhängt für immer mehr Chinesen Ausreiseverbote. Nun soll ein weit gefasstes neues Gesetz die Abwanderung von Know-how, Technologie und Talenten verhindern - vor allem in die USA. Von Marie von Mallinckrodt.",
-      "pubDate": "2026-10-01T10:22:51+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: DAX fällt unter 25.000 Punkte",
-      "description": "Belastet von Inflationssorgen und der Befürchtung steigender Zinsen ist der DAX mit Verlusten in den Oktober gestartet. Dabei fiel sogar die psychologisch wichtige Marke von 25.000 Punkten.",
-      "pubDate": "2026-10-01T10:26:21+02:00",
       "bild": ""
     }
   ],
