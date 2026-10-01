@@ -11,7 +11,7 @@
    a11y.js nichts). Der Gong soll aber überall funktionieren,
    daher eine eigene, schlanke Datei ohne Abhängigkeiten.
 
-   Enthält zwei unabhängige Teile:
+   Enthält drei unabhängige Teile:
      1. Die Gong-Engine (Zeitplan, Ton abspielen, Freischaltung)
      2. Eine kleine Verbesserung für "← Zurück"-Buttons, damit
         der Browser die Seite beim Zurückgehen aus dem Bfcache
@@ -19,6 +19,10 @@
         das hält den bereits freigeschalteten Gong über die
         Navigation hinweg am Leben und erspart erneutes Antippen
         nach jeder Rückkehr zur Startseite.
+     3. Die Anmeldung des Service Workers (sw.js) für Offline-
+        Fähigkeit und Installierbarkeit (PWA) – läuft dadurch
+        automatisch auf jeder Seite mit, ohne dass jede Seite
+        selbst eine eigene Registrierung bräuchte.
 
    Die Uhrzeiten unten müssen mit der Zeitkachel in index.html
    synchron gehalten werden, falls sich die Arbeitszeiten mal
@@ -215,5 +219,34 @@
       });
     });
   });
+
+
+  /* ════════════════════════════════════════════════════
+     4. SERVICE-WORKER-REGISTRIERUNG (Offline/PWA)
+     Macht die Seite installierbar und lässt bereits besuchte
+     Seiten auch ohne Internet weiter funktionieren (sw.js
+     übernimmt die eigentliche Caching-Strategie).
+
+     Update-Verhalten bewusst automatisch statt mit einer
+     "Update verfügbar"-Schaltfläche: Die Zielgruppe soll sich
+     um nichts kümmern müssen. Sobald eine neue Version von
+     sw.js aktiv wird (z. B. weil Marc etwas aktualisiert hat
+     und das Gerät kurz online war), lädt die gerade offene
+     Seite sich EINMALIG automatisch neu, damit sie die neue
+     Version zeigt – ganz ohne Zutun der Werkstattbeschäftigten. */
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js').catch(() => {
+      /* Offline beim allerersten Besuch oder Registrierung aus
+         anderem Grund nicht möglich – die Seite funktioniert dann
+         einfach ganz normal online weiter, nur ohne Offline-Vorteil. */
+    });
+
+    let schonNeuGeladen = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (schonNeuGeladen) return;
+      schonNeuGeladen = true;
+      window.location.reload();
+    });
+  }
 
 })();
