@@ -1,11 +1,59 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "01.10.2026, 00:06 Uhr (UTC)",
+  "aktualisiert": "01.10.2026, 06:25 Uhr (UTC)",
   "meldungen": [
     {
-      "title": "US-Verteidigungsminister Hegseth verschlankt US-Armee - neue Rolle für Musk",
-      "description": "Der US-Verteidigungsminister strukturiert weiter die Armee um: Künftig soll es 20 Prozent weniger Offiziere und Planstellen geben. Zudem kommt Elon Musk eine neue Rolle zu: Der Tech-Milliardär soll die künftige Kriegsführung erforschen.",
-      "pubDate": "2026-10-01T01:16:22+02:00",
+      "title": "Gescheiterte Hinrichtung: Verurteilte überlebt zwei Giftspritzen",
+      "description": "Vor 30 Jahren wurde Christa Pike in den USA wegen Mordes zum Tode verurteilt. Nun sollte die Hinrichtung nach langem juristischen Tauziehen vollzogen werden - doch die Verurteilte überlebte.",
+      "pubDate": "2026-10-01T07:56:36+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX dürfte mit Verlusten starten",
+      "description": "Der neue Monat verheißt zunächst keine Gewinne für den deutschen Leitindex. Schwache Vorgaben aus Asien und die hohen Renditen der Staatsanleihen dürften den DAX ins Minus drücken.",
+      "pubDate": "2026-10-01T07:26:20+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Freiwilliger Spritpreisdeckel - auch in Deutschland denkbar?",
+      "description": "In Frankreich und Italien begrenzen große Mineralölkonzerne die Preise an ihren Tankstellen. Dafür verzichten sie auf einen Teil ihrer Gewinne. Könnten Konzerne in Deutschland das auch machen? Von Michelle Goddemeier.",
+      "pubDate": "2026-10-01T06:51:25+02:00",
+      "bild": ""
+    },
+    {
+      "title": "11KM-Podcast: Huthi im Jemen - wie die Miliz den Welthandel bremst",
+      "description": "Die Huthi-Miliz kontrolliert nun die Meerenge Bab al-Mandab und bedroht damit den internationalen Handel. 11KM analysiert, wie es soweit kommen konnte und welche Lösung es bräuchte.",
+      "pubDate": "2026-10-01T06:26:10+02:00",
+      "bild": ""
+    },
+    {
+      "title": "EU-Innenminister in Luxemburg: \"Müssen jetzt über Ceuta sprechen\"",
+      "description": "Die EU-Innenminister beraten heute in Luxemburg über Abschiebungen. Dabei wird es zudem um die Lage in Ceuta gehen. Ein weiteres Thema sind sogenannte Return Hubs außerhalb der EU, die auch der Bundesinnenminister will. Von K. Schmidt.",
+      "pubDate": "2026-10-01T05:26:32+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Was Autofahrer zum Start des neuen \"Tankrabatts\" wissen müssen",
+      "description": "Ab heute gilt ein neuer \"Tankrabatt\". Wie kommen Kunden an günstigeren Sprit? Wann lohnt sich das Tanken und wie viel kann man sparen? Was man zum Start des \"Tankrabatts\" wissen muss.",
+      "pubDate": "2026-10-01T04:55:03+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Supreme Court erlaubt Hinrichtung von Frau in Tennessee",
+      "description": "Zunächst war die Vollstreckung des Todesurteils im Fall Christa Pike gestoppt worden. Dann kippte der Oberste Gerichtshof in den USA die Entscheidung. Schließlich gab es Unregelmäßigkeiten beim Vollzug der Todesstrafe: Die Verurteilte überlebte.",
+      "pubDate": "2026-10-01T04:40:55+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Burkaverbot und Sprachquote an Italiens Schulen in Kraft",
+      "description": "Nicht nur Schüler, sondern auch Eltern sind betroffen: In Italien gilt jetzt an Schulen ein Verschleierungsverbot und eine Sprachquote. Staatschef Mattarella unterschrieb am Abend ein Gesetzesdekret der rechten Meloni-Regierung.",
+      "pubDate": "2026-10-01T02:28:55+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Generale und Admirale - Hegseth streicht ein Fünftel aller Stellen",
+      "description": "US-Verteidigungsminister Hegseth kürzt die Stellen von Generälen und Admiralen drastisch zusammen. Ein Vorgänger kritisiert die Entscheidung deutlich. Elon Musk bekommt vom Pentagon eine wichtige Rolle.",
+      "pubDate": "2026-10-01T07:45:02+02:00",
       "bild": ""
     },
     {
@@ -27,7 +75,7 @@
       "bild": ""
     },
     {
-      "title": "Linke-Politiker Kocak gibt Sitz im Innenausschuss des Bundestages auf",
+      "title": "Linkspartei-Abgeordneter Kocak gibt Sitz im Innenausschuss des Bundestages auf",
       "description": "Der Berliner Linken-Politiker Kocak zieht sich endgültig aus dem Innenausschuss des Bundestages zurück. Kocak werden Kontakte ins Clan-Milieu vorgeworfen.",
       "pubDate": "2026-09-30T20:59:10+02:00",
       "bild": ""
@@ -42,54 +90,6 @@
       "title": "Unter einem Dach: Wie Kita-Kinder und Senioren voneinander lernen",
       "description": "Sie singen und spielen gemeinsam - und schenken sich Lebensfreude: Im Harz leben Kita-Kinder und Pflegeheimbewohner unter einem Dach. Fachleute sehen in dem Modell auch einen Hoffnungsschimmer im Kampf gegen Demenz. Von R. Nordin Mencke.",
       "pubDate": "2026-09-30T19:01:51+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Frankreich: Antisemitismus-Vorwürfe gegen LePens Parteichef Bardella",
-      "description": "Ein investigatives Portal erhebt schwere Vorwürfe gegen Jordan Bardella, Chef des rechtsnationalen Rassemblement National. In seinen Anfängen als Politiker soll er antisemitische Textnachrichten verschickt haben. Von J. Borutta.",
-      "pubDate": "2026-09-30T18:59:44+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Zinsängste schrecken DAX-Anleger ab",
-      "description": "Am deutschen Aktienmarkt überwog heute die Sorge vor steigenden Zinsen. Zuvor zeigten Inflationsdaten aus der Eurozone eine Teuerung deutlich über dem Ziel der EZB. Aber auch Einzelwerte standen im Fokus.",
-      "pubDate": "2026-09-30T18:22:36+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Übung der Heimatschutzdivision: Spannungsfall an der Autobahnbrücke",
-      "description": "Vergangenes Jahr wurde die Heimatschutzdivision der Bundeswehr gegründet. Zu ihren Aufgaben gehört der Schutz kritischer Infrastruktur und Drohnenabwehr. Jetzt lief die erste große Übung im öffentlichen Raum. Von Philipp Jahn.",
-      "pubDate": "2026-09-30T17:57:43+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Versuchter Terror? Gewaltvorfall in Cockpit von Flydubai-Maschine",
-      "description": "An Bord einer Maschine von Dubai nach Tel Aviv hat ein Pilot auf seinen Kollegen mit einem Messer eingestochen. 180 Israelis waren an Bord. Israels Regierung spricht bereits von einem Anschlagsversuch.",
-      "pubDate": "2026-09-30T17:55:45+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kommentar zur Pflegereform: Regierung setzt wieder mal aufs Vertagen",
-      "description": "Das Bundeskabinett hat nach langem Hin und Her den Gesetzentwurf zur Pflege beschlossen. Doch diese Pflegereform ist vor allem eine Vertagungsreform, meint Dietrich Karl Mäurer. Strukturelle Veränderungen fehlen weiter.",
-      "pubDate": "2026-09-30T17:32:10+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Erste Reformschritte beschlossen: Was sich bei der Pflege ändern soll",
-      "description": "Nach langem Ringen hat sich sie Bundesregierung auf ein \"Pflegeneuordnungsgesetz\" geeinigt. Das setzt zunächst darauf, das System am Laufen zu halten. Für Kinderlose wird es teurer. Was sich sonst noch ändern soll - ein Überblick.",
-      "pubDate": "2026-09-30T17:24:32+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Pflegegesetz im Kabinett: Die große Reform ist erstmal vertagt",
-      "description": "Es gibt nun ein Pflegegesetz - doch die große Strukturreform soll erst 2027 folgen. Wie stehen Union und SPD nach der Einigung da? Und werden die geplanten Einsparungen ausreichen? Von Tina Handel.",
-      "pubDate": "2026-09-30T17:19:50+02:00",
-      "bild": ""
-    },
-    {
-      "title": "EU will krisenfeste Kommunikation für Europas Rettungsdienste",
-      "description": "Meist scheitert die grenzübergreifende Kommunikation von Polizei und Rettungsdiensten in Europa an technischen Problemen. Das will die EU-Kommission jetzt ändern - gerade auch für Krisenfälle. Von Andreas Meyer-Feist.",
-      "pubDate": "2026-09-30T17:03:58+02:00",
       "bild": ""
     }
   ],
