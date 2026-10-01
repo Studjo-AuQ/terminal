@@ -201,4 +201,62 @@
     });
   });
 
+
+  /* ════════════════════════════════════════════════════
+     3. "STARTSEITE"-LINK IM FOOTER
+     Anders als der "← Zurück"-Button ("eine Seite zurück")
+     bedeutet "Startseite": "egal wie tief ich navigiert bin,
+     bring mich direkt zu index.html". Ein einfaches
+     history.back() wäre dafür nur zufällig richtig, wenn man
+     genau eine Ebene tief ist. Stattdessen merkt sich jede
+     Seite beim Laden ihre eigene Navigationstiefe (wie viele
+     Klicks von der Startseite entfernt) in sessionStorage –
+     so weiß der Footer-Link immer, wie viele Schritte er per
+     history.go() zurückgehen muss, und bleibt dabei genauso
+     Bfcache-freundlich wie der Zurück-Button. */
+  let navTiefe = 1; // sicherer Standardwert, falls sessionStorage nicht verfügbar ist
+  try {
+    const dateiname = (location.pathname.split('/').pop() || 'index.html');
+    if (dateiname === 'index.html' || dateiname === '') {
+      navTiefe = 0;
+    } else {
+      const vomEigenenUrsprung = document.referrer && document.referrer.indexOf(location.origin) === 0;
+      const vorherigeTiefe = parseInt(sessionStorage.getItem('studjo-nav-tiefe'), 10);
+      navTiefe = (vomEigenenUrsprung && !isNaN(vorherigeTiefe)) ? vorherigeTiefe + 1 : 1;
+    }
+    sessionStorage.setItem('studjo-nav-tiefe', String(navTiefe));
+  } catch (e) { /* sessionStorage evtl. blockiert – sicherer Standardwert bleibt bestehen */ }
+
+  /* Wichtiger Zusatz gegen einen sonst schleichenden Fehler: Wird eine
+     Seite per "← Zurück" aus dem Bfcache wiederhergestellt, läuft der
+     obige Code NICHT erneut (kein Skript-Neustart bei Bfcache-
+     Wiederherstellung) – die zuvor von einer TIEFEREN Unterseite
+     gesetzte, mittlerweile veraltete Tiefe würde in sessionStorage
+     "kleben bleiben". Landet man dann erneut auf dieser Unterseite,
+     würde auf dieser veralteten (zu hohen) Tiefe aufgebaut und der
+     "Startseite"-Link am Ende zu viele Schritte zurückgehen wollen –
+     das ließ den Sicherheits-Check fehlschlagen und den Link auf eine
+     normale, volle Neuladung zurückfallen (Gong wird zurückgesetzt).
+     "pageshow" feuert sowohl beim ersten Laden als auch bei jeder
+     Bfcache-Wiederherstellung dieser Seite – wir tragen die für DIESE
+     Seite korrekte, bereits oben ermittelte Tiefe dann jedes Mal neu
+     ein und überschreiben damit zuverlässig jeden veralteten Wert. */
+  window.addEventListener('pageshow', () => {
+    try { sessionStorage.setItem('studjo-nav-tiefe', String(navTiefe)); } catch (e) { /* siehe oben */ }
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('footer a[href="index.html"]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        if (navTiefe <= 0) { e.preventDefault(); return; } // schon auf der Startseite
+        if (window.history.length > navTiefe) {
+          e.preventDefault();
+          window.history.go(-navTiefe);
+        }
+        // sonst: normaler Link-Klick zum href-Ziel (z. B. Seite direkt
+        // per Lesezeichen geöffnet, keine ausreichende Chronik)
+      });
+    });
+  });
+
 })();

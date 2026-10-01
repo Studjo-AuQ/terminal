@@ -325,7 +325,7 @@
 <main id="scrollable-content">
 
   <div style="position:relative;">
-    <h1>Willkommen am Studjo | Terminal</h1>
+    <h1 id="seitenanfang">Willkommen am Studjo | Terminal</h1>
     <button type="button"
             id="scroll-down-btn"
             onclick="document.getElementById('seitenende').scrollIntoView({behavior:'smooth', block:'start'})"
@@ -624,7 +624,7 @@
       const tm    = std * 60 + min;
 
       document.getElementById('zk-uhr').textContent =
-        pad(std) + ':' + pad(min);
+        pad(std) + ':' + pad(min) + ' Uhr';
       document.getElementById('zk-datum').textContent =
         WOCHENTAGE[tag] + ', ' + jetzt.getDate() + '. ' +
         MONATE[jetzt.getMonth()] + ' ' + jetzt.getFullYear();
@@ -805,7 +805,7 @@
 <footer id="seitenende" style="
   position: relative;
   text-align: center;
-  padding: 10px 60px 10px 16px;
+  padding: 10px 60px 10px 60px;
   background: #b61f29;
   color: #ffffff;
   font-size: 0.85rem;
@@ -814,11 +814,6 @@
   © 2026 <strong>Studjo | Arbeit und Qualifizierung</strong>
    ·  Evangelisches Johanneswerk gGmbH
   <br>
-  <a href="index.html"
-     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
-    Startseite
-  </a>
-   | 
   <a href="uebersicht.html"
      style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
     Übersicht
@@ -843,6 +838,17 @@
                  display:flex; align-items:center; justify-content:center;
                  font-size:1.25rem; padding:0; color:#fff; line-height:1;">
     📱
+  </button>
+
+  <button type="button"
+          onclick="document.getElementById('seitenanfang').scrollIntoView({behavior:'smooth', block:'start'})"
+          aria-label="Nach oben zur Seitenüberschrift scrollen"
+          style="position:absolute; left:14px; top:50%; transform:translateY(-50%);
+                 background:rgba(255,255,255,0.18); border:2px solid rgba(255,255,255,0.55);
+                 border-radius:8px; width:38px; height:38px; cursor:pointer;
+                 display:flex; align-items:center; justify-content:center;
+                 font-size:1.25rem; padding:0; color:#fff; line-height:1;">
+    ⬆️
   </button>
 </footer>
 
