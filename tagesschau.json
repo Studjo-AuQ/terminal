@@ -1,10 +1,82 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "02.10.2026, 02:30 Uhr (UTC)",
+  "aktualisiert": "02.10.2026, 09:35 Uhr (UTC)",
   "meldungen": [
     {
-      "title": "\"Maricarmen\"-Dekrete: Spanien stimmt über Wohnungsgesetze ab",
-      "description": "Nach den anhaltenden Protesten aufgrund der Zwangsräumung einer Rentnerin in Madrid, stimmt nun das Parlament ab - unter anderem geht es um stärkeren Mieterschutz und günstigere Mieten. Von Hans-Günter Kellner.",
+      "title": "Deutschland zum Tag der Deutschen Einheit zu Gast in Bremen",
+      "description": "Mehr als 700 Veranstaltungen und prominente Gäste: Bremen verwandelt sich zum 3. Oktober in eine Festivalmeile. Bürgermeister Bovenschulte erwartet einen Tag der \"gelebten deutschen Einheit\". 400.000 Menschen werden erwartet.",
+      "pubDate": "2026-10-02T11:31:59+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Tankrabatt für Autofahrer, aber kein Nachlass beim Heizen: ungerecht?",
+      "description": "Autofahrer profitieren seit dem 1. Oktober vom \"Tankrabatt\". Hausbesitzer mit Ölheizung gehen leer aus. Fachleute sehen darin ein Gerechtigkeitsproblem - warnen aber vor neuen, teuren Steuernachlässen. Von O. Bemelmann und S. Groß.",
+      "pubDate": "2026-10-02T11:22:31+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Kaufhauskette Galeria taumelt in die vierte Insolvenz",
+      "description": "Deutschlands letzte große Warenhauskette Galeria hat erneut Insolvenz angemeldet - es ist bereits die vierte innerhalb von sechs Jahren. Wie es mit den etwa 12.000 Mitarbeitenden in den 83 Warenhäusern weitergeht, ist unklar.",
+      "pubDate": "2026-10-02T11:17:56+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Nach BGH-Urteil - Amazon senkt Preis für langjährige Prime-Kunden",
+      "description": "Das Bundesverfassungericht hatte eine Preiserhöhung von Amazon Prime für rechtswidrig erklärt. Der Konzern hat nun reagiert: Für langjährige Prime-Kunden gilt vorübergehend wieder der alte Preis. Betroffene können zudem Geld zurückfordern.",
+      "pubDate": "2026-10-02T11:08:12+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX wieder über 25.000 Punkten",
+      "description": "Der DAX hat vor der Veröffentlichung der US-Arbeitsmarktdaten zugelegt. Anleger erhoffen sich von den Zahlen neue Hinweise auf die Geldpolitik der US-Notenbank Federal Reserve.",
+      "pubDate": "2026-10-02T10:15:46+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Copernicus: Sommer in Westeuropa war so heiß wie nie zuvor",
+      "description": "Der Sommer in Westeuropa war so heiß und trocken wie nie zuvor. Auch bei den Hitzetagen gab es diesen Sommer laut dem EU-Klimadienst Copernicus einen neuen Höchststand - mit ernsten Folgen für die Gesundheit.",
+      "pubDate": "2026-10-02T09:28:09+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Gestopptes Fregatten-Projekt: Werft will 4,7 Milliarden Euro von Deutschland",
+      "description": "Massive Verzögerungen und eine Kostenexplosion - im Juni hatte Verteidigungsminister Pistorius ein neues Fregatten-Projekt für die Bundeswehr gestoppt. Nun fordert die betroffene niederländische Werft Milliarden vom Bund.",
+      "pubDate": "2026-10-02T09:19:51+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Commerzbank: Braucht Deutschland schärferes Übernahmerecht?",
+      "description": "Die Fälle Commerzbank, Hugo Boss und ProSiebenSat.1 zeigen, wie leicht Investoren in Deutschland ihre Kontrolle ausbauen können. Andere Länder setzen beim Aktionärsschutz strengere Grenzen. Von Angela Göpfert.",
+      "pubDate": "2026-10-02T09:16:35+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Luftangriffe auf Kiew dauern an - Brücken gesperrt",
+      "description": "Russland greift weiter ukrainische Infrastruktur an. Am Morgen wurde die Südbrücke in Kiew von einer Drohne getroffen. Die wichtige Ost-West-Verbindung sowie weitere Brücken wurden gesperrt.",
+      "pubDate": "2026-10-02T08:52:44+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Gescheiterte Hinrichtung heizt Debatte über Todesstrafe neu an",
+      "description": "Der Fall einer Mörderin, die ihre versuchte Hinrichtung überlebte, hat die Debatte über die Todesstrafe in den USA wieder angeheizt. Die Frau ist offenbar weiter in kritischem Zustand. Ihr Anwalt spricht von diversen Pannen. Von Giselle Ucar.",
+      "pubDate": "2026-10-02T07:45:36+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Astronauten erreichen ISS in Rekordzeit",
+      "description": "So schnell war noch kein US-Raumschiff an der ISS: Knapp acht Stunden nach dem Start hat eine \"Dragon\"-Kapsel die Weltraumstation erreicht. An Bord sind vier Raumfahrer aus den USA, Kanada und Russland.",
+      "pubDate": "2026-10-02T07:22:09+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Datenpannen von Top-Spionen - Handynummer von BND-Vize im Internet",
+      "description": "Sensible Daten eines der Vizechefs des Bundesnachrichtendienstes kursieren seit Jahren im Internet. Kein Einzelfall, wie Recherchen von WDR und SZ zeigen. Mehrere europäische Geheimdienstchefs sind demnach von Datenpannen betroffen.",
+      "pubDate": "2026-10-02T06:00:48+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Scheitern Spaniens Wohnungsgesetze noch im Parlament?",
+      "description": "Nach den Protesten aufgrund der Zwangsräumung der Wohnung einer Rentnerin in Madrid stimmt nun das Parlament ab - doch eine Mehrheit für stärkeren Mieterschutz ist alles andere als sicher. Von Hans-Günter Kellner.",
       "pubDate": "2026-10-02T03:49:37+02:00",
       "bild": ""
     },
@@ -18,78 +90,6 @@
       "title": "Gescheiterte Hinrichtung in den USA sorgt für Entsetzen - Debatte über Todesstrafe",
       "description": "Nach der fehlgeschlagenen Hinrichtung einer verurteilten Mörderin in den USA dringen Menschenrechtler auf die Abschaffung der Todesstrafe. Zum Zustand der Frau, die zwei Giftspritzen überlebt hat, ist weiterhin wenig bekannt.",
       "pubDate": "2026-10-01T21:11:40+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Warum es schon wieder Diskussionen über die Zuckersteuer gibt",
-      "description": "Dass eine Zuckersteuer kommen soll, war eigentlich schon geklärt. Dennoch bremst das Kanzleramt jetzt bei einem Entwurf aus dem Finanzministerium. Was steckt dahinter? Warum drängt das Thema? Von Nicole Kohnert.",
-      "pubDate": "2026-10-01T19:49:18+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bundeswehr reagiert mit erstem Drohnenregiment auf Ukraine-Krieg",
-      "description": "Die Bundeswehr wird ein eigenes Drohnenregiment mit bis zu 600 Soldaten aufstellen - eine Konsequenz aus dem Ukraine-Krieg. Das kündigte Verteidigungsminister Pistorius an. Wo es stationiert wird, ist noch nicht bekannt.",
-      "pubDate": "2026-10-01T19:25:59+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: DAX schließt unter 25.000 Punkten",
-      "description": "Steigende Energiepreise und weiter anziehende Anleiherenditen haben den Aktienmarkt geschwächt. Der DAX hat erstmals seit Juli unterhalb der psychologisch wichtige Marke von 25.000 Punkten geschlossen.",
-      "pubDate": "2026-10-01T18:41:56+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Frankreichs Regierung schnürt Sparpaket, die Bevölkerung protestiert",
-      "description": "Mit einem harten Sparkurs will Frankreichs Regierung das Haushaltsdefizit wieder in den Griff bekommen. Die Bevölkerung protestiert - besonders Schüler demonstrieren mit zunehmender Gewalt gegen Missstände an Schulen.",
-      "pubDate": "2026-10-01T23:02:22+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bundeswehr-Einsatz im Irak beendet - Soldaten kehren zurück",
-      "description": "Nach mehr als einem Jahrzehnt der Bundeswehr-Präsenz im Irak sind die letzten 28 Soldaten und Soldatinnen wieder zurück in Deutschland. Das Verteidigungsministerium arbeitet bereits an einer neuen Zusammenarbeit.",
-      "pubDate": "2026-10-01T18:05:21+02:00",
-      "bild": ""
-    },
-    {
-      "title": "ARD-DeutschlandTrend: Drei Viertel der Deutschen spüren vor allem Belastungen",
-      "description": "Inmitten weltweiter Krisen und innenpolitischer Herausforderungen erreicht die Bewertung der Bundesregierung Tiefstwerte, zeigt der ARD-DeutschlandTrend. Versprochene Entlastungen werden vermisst. Von C. Müller.",
-      "pubDate": "2026-10-01T18:00:14+02:00",
-      "bild": ""
-    },
-    {
-      "title": "BGH kippt Preiserhöhung bei Amazon Prime",
-      "description": "Eine Preiserhöhung von Amazon Prime vor vier Jahren ist laut BGH-Urteil unwirksam. Bestimmte Kundinnen und Kunden können jetzt Geld zurückverlangen. Verbraucherschützer raten zur Sammelklage. Von Klaus Hempel.",
-      "pubDate": "2026-10-01T17:47:54+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Netanjahu schreibt dem Flydubai-Co-Piloten islamistische Gesinnung zu",
-      "description": "Nach der Gewalttat auf einem Flydubai-Flug nach Tel Aviv laufen die Untersuchungen, wie es zu der Auseinandersetzung im Cockpit kam. Israels Premier Netanjahu geht von einer islamistischen Radikalisierung des Co-Piloten aus.",
-      "pubDate": "2026-10-01T21:54:14+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Durchschnittsalter auf dem Land steigt stärker als in Städten",
-      "description": "In ländlichen Gemeinden steigt das Durchschnittsalter der Menschen deutlich stärker als in Großstädten. Insgesamt lag der Altersschnitt in Deutschland vergangenes Jahr bei 45 Jahren - mit Unterschieden zwischen den Bundesländern.",
-      "pubDate": "2026-10-01T16:23:02+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Start des neuen \"Tankrabatts\": Spritpreise sinken deutlich",
-      "description": "Der neue \"Tankrabatt\" macht sich an den Zapfsäulen bemerkbar: Benzin und Diesel sind zum Start deutlich billiger geworden. Doch wie lange hält die Entlastung? Das Bundeskartellamt will die Preise genau beobachten. Von Jens Eberl.",
-      "pubDate": "2026-10-01T16:11:15+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bremst Israel deutsche Gaza-Hilfe aus?",
-      "description": "Deutschland hat Israel Lkw-Scanner ausgeliehen. Die Idee: mehr Lkw können am Grenzübergang durchleuchtet werden, mehr Hilfe kann nach Gaza gelangen. Doch die Scanner sind gar nicht in Betrieb, wie Recherchen des ARD-Studios Tel Aviv zeigen. Von Björn Dake.",
-      "pubDate": "2026-10-01T15:53:48+02:00",
-      "bild": ""
-    },
-    {
-      "title": "EU schafft rechtliche Basis für Abschiebezentren in Drittstaaten",
-      "description": "Zwei Monate nach der Krise in Ceuta verschärfen die EU-Länder ihre Asylregeln weiter. Künftig dürfen sie umstrittene Abschiebezentren in Drittstaaten betreiben. Innenminister Dobrindt hofft noch in diesem Jahr auf eine erste Vereinbarung.",
-      "pubDate": "2026-10-01T15:48:13+02:00",
       "bild": ""
     }
   ],
