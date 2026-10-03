@@ -478,63 +478,6 @@
   </div>
 </div>
 
-<!-- ══ KALENDER-POPUP (Feiertage/Brückentage, komplett offline berechnet) ══ -->
-<div id="kalender-overlay"
-     role="dialog" aria-modal="true" aria-labelledby="kalender-titel"
-     style="display:none; position:fixed; inset:0; z-index:2100;
-            background:rgba(0,0,0,0.6); align-items:center; justify-content:center; padding:20px;">
-  <div onclick="event.stopPropagation()"
-       style="background:#fff; border-radius:16px; padding:22px 22px 20px;
-              text-align:left; max-width:420px; width:100%; position:relative;
-              box-shadow:0 10px 40px rgba(0,0,0,0.35); max-height:90vh; overflow-y:auto;
-              box-sizing:border-box;">
-
-    <button type="button"
-            id="kalender-schliessen-btn"
-            aria-label="Kalender schließen"
-            style="position:absolute; top:10px; right:10px; background:#f1f1f1; border:none;
-                   border-radius:50%; width:32px; height:32px; font-size:1.1rem; cursor:pointer;
-                   line-height:1;">✕</button>
-
-    <div style="display:flex; align-items:center; justify-content:center; gap:14px; margin:0 40px 14px 0;">
-      <button type="button" id="kalender-zurueck" aria-label="Vorheriger Monat"
-              style="background:#f1f1f1; border:none; border-radius:10px; width:38px; height:38px;
-                     font-size:1.1rem; cursor:pointer; flex-shrink:0;">◀</button>
-      <h2 id="kalender-titel" style="margin:0; color:#b61f29; font-size:1.2rem; font-weight:800;
-                                      text-align:center; flex:1; min-width:0;">Monat Jahr</h2>
-      <button type="button" id="kalender-vor" aria-label="Nächster Monat"
-              style="background:#f1f1f1; border:none; border-radius:10px; width:38px; height:38px;
-                     font-size:1.1rem; cursor:pointer; flex-shrink:0;">▶</button>
-    </div>
-
-    <div style="display:grid; grid-template-columns:repeat(7,1fr); gap:3px; text-align:center;
-                font-size:0.72rem; font-weight:800; color:#8a8d8f; margin-bottom:4px;">
-      <div>Mo</div><div>Di</div><div>Mi</div><div>Do</div><div>Fr</div><div>Sa</div><div>So</div>
-    </div>
-
-    <div id="kalender-raster" style="display:grid; grid-template-columns:repeat(7,1fr); gap:3px;"></div>
-
-    <div style="display:flex; flex-wrap:wrap; gap:10px 16px; margin-top:14px; font-size:0.78rem; color:#0f2f37;">
-      <span>🎉 Feiertag</span>
-      <span>🌉 Brückentag</span>
-      <span>📍 Heute</span>
-    </div>
-
-    <div id="kalender-info"
-         style="margin-top:14px; padding:12px; border-radius:10px; background:#f4f4f4;
-                line-height:1.5; font-size:0.95rem; color:#0f2f37; min-height:1.5em;">
-      Tippe auf einen Tag für mehr Informationen.
-    </div>
-
-    <button type="button" id="kalender-heute-btn"
-            style="display:block; width:100%; margin-top:12px; padding:10px; border:none;
-                   border-radius:10px; background:#b61f29; color:#fff; font-size:1rem;
-                   font-weight:800; cursor:pointer;">
-      Heute
-    </button>
-  </div>
-</div>
-
 <script>
   function vorleseInfoText(button) {
       if (!('speechSynthesis' in window)) {
@@ -589,6 +532,7 @@
         <div class="zk-uhr-zeile">
           <span id="zk-uhr" class="zk-uhr-klein">…</span>
           <button id="zk-kalender-btn" class="zk-kalender-btn" type="button"
+                  data-kalender-oeffnen
                   aria-label="Kalender mit Feiertagen öffnen">📅</button>
         </div>
       </div>
@@ -628,6 +572,8 @@
   </div>
 
   <script src="gong.js"></script>
+  <script src="feiertage.js"></script>
+  <script src="kalender.js"></script>
 
   <script>
   (function () {
@@ -679,120 +625,11 @@
     }
 
     /* ══ FEIERTAGE, BRÜCKENTAGE, WEIHNACHTS-ÜBERGANG ══
-       Komplett rechnerisch ermittelt (Oster-Formel nach Gauß) – es
-       muss hier nie von Hand ein Datum gepflegt werden, auch nicht
-       für zukünftige Jahre. Gilt für Nordrhein-Westfalen. */
-
-    /* Datum des Ostersonntags für ein gegebenes Jahr (Gauß'sche
-       Osterformel). Alle beweglichen Feiertage leiten sich davon ab. */
-    function ostersonntag(jahr) {
-      const a = jahr % 19;
-      const b = Math.floor(jahr / 100);
-      const c = jahr % 100;
-      const d = Math.floor(b / 4);
-      const e = b % 4;
-      const f = Math.floor((b + 8) / 25);
-      const g = Math.floor((b - f + 1) / 3);
-      const h = (19 * a + b - d - g + 15) % 30;
-      const i = Math.floor(c / 4);
-      const k = c % 4;
-      const l = (32 + 2 * e + 2 * i - h - k) % 7;
-      const m = Math.floor((a + 11 * h + 22 * l) / 451);
-      const monatIndex0 = Math.floor((h + l - 7 * m + 114) / 31) - 1; // 2=März, 3=April
-      const tag = ((h + l - 7 * m + 114) % 31) + 1;
-      return new Date(jahr, monatIndex0, tag);
-    }
-
-    function tagePlus(basis, n) {
-      const d = new Date(basis);
-      d.setDate(d.getDate() + n);
-      return d;
-    }
-
-    function datumSchluessel(d) {
-      return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
-    }
-
-    /* Die 11 gesetzlichen Feiertage in NRW. */
-    function nrwFeiertage(jahr) {
-      const ostern = ostersonntag(jahr);
-      const liste = [
-        [new Date(jahr, 0, 1),        'Neujahr'],
-        [tagePlus(ostern, -2),        'Karfreitag'],
-        [tagePlus(ostern, 1),         'Ostermontag'],
-        [new Date(jahr, 4, 1),        'Tag der Arbeit'],
-        [tagePlus(ostern, 39),        'Christi Himmelfahrt'],
-        [tagePlus(ostern, 50),        'Pfingstmontag'],
-        [tagePlus(ostern, 60),        'Fronleichnam'],
-        [new Date(jahr, 9, 3),        'Tag der Deutschen Einheit'],
-        [new Date(jahr, 10, 1),       'Allerheiligen'],
-        [new Date(jahr, 11, 25),      '1. Weihnachtstag'],
-        [new Date(jahr, 11, 26),      '2. Weihnachtstag'],
-      ];
-      const karte = new Map();
-      liste.forEach(([datum, name]) => karte.set(datumSchluessel(datum), name));
-      return karte;
-    }
-
-    /* Brückentage, an denen Studjo ebenfalls grundsätzlich
-       geschlossen ist: der Freitag nach Christi Himmelfahrt und der
-       Freitag nach Fronleichnam (beide Feiertage fallen immer auf
-       einen Donnerstag, der jeweilige Brückentag damit immer auf den
-       Freitag danach). */
-    function nrwBrueckentage(jahr) {
-      const ostern = ostersonntag(jahr);
-      const liste = [
-        [tagePlus(ostern, 40), 'Brückentag nach Christi Himmelfahrt'],
-        [tagePlus(ostern, 61), 'Brückentag nach Fronleichnam'],
-      ];
-      const karte = new Map();
-      liste.forEach(([datum, name]) => karte.set(datumSchluessel(datum), name));
-      return karte;
-    }
-
-    function istArbeitsfreierTag(datum) {
-      const tag = datum.getDay();
-      if (tag === 0 || tag === 6) return true;
-      const schluessel = datumSchluessel(datum);
-      const jahr = datum.getFullYear();
-      return nrwFeiertage(jahr).has(schluessel) || nrwBrueckentage(jahr).has(schluessel);
-    }
-
-    /* Nächster echter Arbeitstag ab einem gegebenen Datum – überspringt
-       Wochenenden UND Feiertage/Brückentage (z. B. nach Christi
-       Himmelfahrt geht es nicht am Freitag weiter, sondern erst am
-       Montag, weil der Freitag ebenfalls Brückentag ist). */
-    function naechsterArbeitstag(von) {
-      const d = new Date(von);
-      do { d.setDate(d.getDate() + 1); } while (istArbeitsfreierTag(d));
-      return d;
-    }
-
-    /* "Morgen" bzw. den Wochentagsnamen für ein Zieldatum relativ zu
-       jetzt – passend zum bereits an anderer Stelle verwendeten Stil. */
-    function tagBezeichnung(ziel, jetzt) {
-      const heute0 = new Date(jetzt.getFullYear(), jetzt.getMonth(), jetzt.getDate());
-      const ziel0  = new Date(ziel.getFullYear(), ziel.getMonth(), ziel.getDate());
-      const diffTage = Math.round((ziel0 - heute0) / 86400000);
-      return diffTage === 1 ? 'Morgen' : WOCHENTAGE[ziel.getDay()];
-    }
-
-    /* Prüft, ob HEUTE ein Feiertag oder Brückentag ist. Liefert
-       null, wenn nicht – dann läuft die normale Arbeitszeit-Logik
-       unverändert weiter. */
-    function pruefeFeiertagOderBrueckentag(jetzt) {
-      const schluessel = datumSchluessel(jetzt);
-      const jahr = jetzt.getFullYear();
-      const feiertage = nrwFeiertage(jahr);
-      if (feiertage.has(schluessel)) {
-        return { typ: 'feiertag', name: feiertage.get(schluessel) };
-      }
-      const brueckentage = nrwBrueckentage(jahr);
-      if (brueckentage.has(schluessel)) {
-        return { typ: 'brueckentag', name: brueckentage.get(schluessel) };
-      }
-      return null;
-    }
+       Die eigentliche Berechnung (Oster-Formel, NRW-Feiertage,
+       Brückentage) lebt jetzt zentral in feiertage.js – wird auch
+       vom Kalender-Popup (kalender.js) genutzt. "F" ist die dort
+       bereitgestellte Schnittstelle (window.StudjoFeiertage). */
+    const F = window.StudjoFeiertage;
 
     /* Freundliche Jahresendgrüße vom 23. bis 30. Dezember – rein
        kalendarisch, jedes Jahr automatisch, keine Datenpflege nötig.
@@ -840,140 +677,9 @@
       });
     }
 
-    /* ══ KALENDER-POPUP ══
-       Nutzt dieselben, bereits oben definierten und getesteten
-       Funktionen (ostersonntag/nrwFeiertage/nrwBrueckentage) wie die
-       Zeitkachel – komplett offline, keine externe Abhängigkeit.
-       Schulferien sind bewusst (noch) nicht enthalten, da sie sich
-       nicht berechnen lassen (siehe Rückmeldung an Marc). */
-    let kalenderAnsicht = new Date(); // Monat/Jahr, die gerade angezeigt werden
-    let kalenderLetzterFokus = null;
-
-    function kalenderTagInfo(datum) {
-      const schluessel = datumSchluessel(datum);
-      const jahr = datum.getFullYear();
-      const feiertage = nrwFeiertage(jahr);
-      if (feiertage.has(schluessel)) {
-        return { art: 'feiertag', name: feiertage.get(schluessel) };
-      }
-      const brueckentage = nrwBrueckentage(jahr);
-      if (brueckentage.has(schluessel)) {
-        return { art: 'brueckentag', name: brueckentage.get(schluessel) };
-      }
-      return null;
-    }
-
-    function zeichneKalender() {
-      const jahr = kalenderAnsicht.getFullYear();
-      const monat = kalenderAnsicht.getMonth();
-      document.getElementById('kalender-titel').textContent = MONATE[monat] + ' ' + jahr;
-
-      const raster = document.getElementById('kalender-raster');
-      raster.innerHTML = '';
-
-      const ersterTag = new Date(jahr, monat, 1);
-      let startVersatz = ersterTag.getDay(); // 0=So..6=Sa
-      startVersatz = startVersatz === 0 ? 6 : startVersatz - 1; // Montag-Start
-
-      for (let i = 0; i < startVersatz; i++) {
-        const leer = document.createElement('div');
-        raster.appendChild(leer);
-      }
-
-      const heute = new Date();
-      const heuteSchluessel = datumSchluessel(heute);
-      const tageImMonat = new Date(jahr, monat + 1, 0).getDate();
-
-      for (let tag = 1; tag <= tageImMonat; tag++) {
-        const datum = new Date(jahr, monat, tag);
-        const info = kalenderTagInfo(datum);
-        const istHeute = datumSchluessel(datum) === heuteSchluessel;
-        const istWochenende = datum.getDay() === 0 || datum.getDay() === 6;
-
-        const zelle = document.createElement('button');
-        zelle.type = 'button';
-        zelle.textContent = String(tag);
-        zelle.setAttribute('aria-label',
-          WOCHENTAGE[datum.getDay()] + ', ' + tag + '. ' + MONATE[monat] +
-          (info ? ' – ' + (info.art === 'feiertag' ? 'Feiertag' : 'Brückentag') + ': ' + info.name : '')
-        );
-
-        let hintergrund = '#ffffff', textfarbe = '#0f2f37', rand = '1px solid #e5e5e5';
-        if (istWochenende) { hintergrund = '#f5f5f5'; }
-        if (info && info.art === 'feiertag')   { hintergrund = '#fde8ea'; textfarbe = '#b61f29'; rand = '1px solid #f0b4ba'; }
-        if (info && info.art === 'brueckentag') { hintergrund = '#fff3d6'; textfarbe = '#8a5a00'; rand = '1px solid #f0d090'; }
-        if (istHeute) { rand = '2px solid #b61f29'; }
-
-        zelle.style.cssText =
-          'min-height:40px; border-radius:8px; cursor:pointer; font-size:0.9rem; font-weight:' +
-          (istHeute ? '900' : '600') + '; display:flex; flex-direction:column; align-items:center; ' +
-          'justify-content:center; gap:1px; background:' + hintergrund + '; color:' + textfarbe +
-          '; border:' + rand + '; padding:2px;';
-
-        if (info) {
-          const symbol = document.createElement('span');
-          symbol.setAttribute('aria-hidden', 'true');
-          symbol.style.fontSize = '0.6rem';
-          symbol.textContent = info.art === 'feiertag' ? '🎉' : '🌉';
-          zelle.appendChild(symbol);
-        }
-
-        zelle.addEventListener('click', () => kalenderZeigeTagInfo(datum, info));
-        raster.appendChild(zelle);
-      }
-    }
-
-    function kalenderZeigeTagInfo(datum, info) {
-      const info_el = document.getElementById('kalender-info');
-      const datumText = WOCHENTAGE[datum.getDay()] + ', ' + datum.getDate() + '. ' +
-        MONATE[datum.getMonth()] + ' ' + datum.getFullYear();
-      if (!info) {
-        info_el.innerHTML = '<strong>' + datumText + '</strong><br>Ganz normaler Tag.';
-        return;
-      }
-      const art = info.art === 'feiertag' ? '🎉 Feiertag' : '🌉 Brückentag';
-      info_el.innerHTML = '<strong>' + datumText + '</strong><br>' + art + ': ' + info.name +
-        '<br>Studjo ist an diesem Tag geschlossen.';
-    }
-
-    function oeffneKalender() {
-      kalenderAnsicht = new Date();
-      kalenderLetzterFokus = document.activeElement;
-      zeichneKalender();
-      document.getElementById('kalender-info').innerHTML = 'Tippe auf einen Tag für mehr Informationen.';
-      const overlay = document.getElementById('kalender-overlay');
-      overlay.style.display = 'flex';
-      document.getElementById('kalender-zurueck').focus();
-    }
-
-    function schliesseKalender() {
-      document.getElementById('kalender-overlay').style.display = 'none';
-      if (kalenderLetzterFokus) kalenderLetzterFokus.focus();
-    }
-
-    document.getElementById('zk-kalender-btn').addEventListener('click', oeffneKalender);
-    document.getElementById('kalender-schliessen-btn').addEventListener('click', schliesseKalender);
-    document.getElementById('kalender-overlay').addEventListener('click', (e) => {
-      if (e.target === e.currentTarget) schliesseKalender(); // nur bei Klick auf den dunklen Hintergrund
-    });
-    document.getElementById('kalender-zurueck').addEventListener('click', () => {
-      kalenderAnsicht.setMonth(kalenderAnsicht.getMonth() - 1);
-      zeichneKalender();
-    });
-    document.getElementById('kalender-vor').addEventListener('click', () => {
-      kalenderAnsicht.setMonth(kalenderAnsicht.getMonth() + 1);
-      zeichneKalender();
-    });
-    document.getElementById('kalender-heute-btn').addEventListener('click', () => {
-      kalenderAnsicht = new Date();
-      zeichneKalender();
-      kalenderZeigeTagInfo(new Date(), kalenderTagInfo(new Date()));
-    });
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && document.getElementById('kalender-overlay').style.display === 'flex') {
-        schliesseKalender();
-      }
-    });
+    /* Das Kalender-Popup selbst (HTML, Zeichnen, Öffnen/Schließen)
+       lebt jetzt komplett in kalender.js – der 📅-Button unten trägt
+       dafür nur noch das Attribut data-kalender-oeffnen. */
 
     /* "detail" (z. B. "Feierabend um 15:15 Uhr") wird bewusst nicht mehr
        angezeigt – die Uhrzeit steckt ohnehin schon im Countdown, eine
@@ -1015,17 +721,27 @@
       const grussEl = document.getElementById('zk-weihnachtsgruss');
       if (grussEl) grussEl.hidden = !istWeihnachtsUebergang(jetzt);
 
-      /* FEIERTAG ODER BRÜCKENTAG: Studjo ist komplett geschlossen.
-         Hat Vorrang vor der normalen Arbeitstag-/Wochenend-Logik. */
-      const besondererTag = pruefeFeiertagOderBrueckentag(jetzt);
-      if (besondererTag) {
-        const naechster = naechsterArbeitstag(jetzt);
-        const label = besondererTag.typ === 'feiertag' ? 'Feiertag' : 'Brückentag';
-        setArbeit('zk-lila', '🎉', besondererTag.name, 'Studjo geschlossen',
-          label + ' – kein Betrieb heute');
+      /* FEIERTAG, BRÜCKENTAG ODER BETRIEBSSCHLIESSUNG: Studjo ist
+         komplett geschlossen. Hat Vorrang vor der normalen
+         Arbeitstag-/Wochenend-Logik. Nutzt dieselbe zusammengeführte
+         Prüfung wie der Kalender (kalender.js) – inklusive der in
+         termine.html gepflegten Schließungstage, damit hier nichts
+         ein zweites Mal von Hand gepflegt werden muss.
+         Ausnahme: Ein gesetzlicher Feiertag, der auf ein Wochenende
+         fällt, überschreibt hier NICHT die normale Wochenend-Anzeige
+         – das Wochenende ist ohnehin schon geschlossen, eine eigene
+         Karte dafür wäre nur eine leere Wiederholung. */
+      let primaer = window.StudjoKalender ? window.StudjoKalender.tagesInfo(jetzt).primaer : null;
+      if (primaer && primaer.art === 'feiertag' && primaer.details.length === 0) {
+        primaer = null; // Feiertag am Wochenende -> normale Wochenend-Logik übernehmen lassen
+      }
+      if (primaer) {
+        const naechster = F.naechsterArbeitstag(jetzt);
+        const icon = primaer.art === 'schliessung' ? '🔒' : (primaer.art === 'feiertag' ? '🎉' : '🌉');
+        const countdownText = primaer.details.length ? primaer.details[0] : 'Studjo geschlossen';
+        setArbeit('zk-lila', icon, primaer.titel, countdownText, '');
         setPause('zk-gruen', '🌅', 'Nächster Arbeitstag',
-          tagBezeichnung(naechster, jetzt) + ' um 8:00 Uhr',
-          'Weiter geht’s am ' + WOCHENTAGE[naechster.getDay()]);
+          F.tagBezeichnung(naechster, jetzt) + ' um 8:00 Uhr', '');
         return;
       }
 

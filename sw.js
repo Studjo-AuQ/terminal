@@ -34,6 +34,8 @@ const CORE_DATEIEN = [
   'style.css',
   'style-index.css',
   'gong.js',
+  'feiertage.js',
+  'kalender.js',
   'a11y.js',
   'a11y.css',
   'favicon.ico',
