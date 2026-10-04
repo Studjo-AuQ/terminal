@@ -235,7 +235,9 @@
      Seite sich EINMALIG automatisch neu, damit sie die neue
      Version zeigt – ganz ohne Zutun der Werkstattbeschäftigten. */
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js').catch(() => {
+    navigator.serviceWorker.register('sw.js').then(() => {
+      if (navigator.serviceWorker.controller) versucheVorladen();
+    }).catch(() => {
       /* Offline beim allerersten Besuch oder Registrierung aus
          anderem Grund nicht möglich – die Seite funktioniert dann
          einfach ganz normal online weiter, nur ohne Offline-Vorteil. */
@@ -243,10 +245,78 @@
 
     let schonNeuGeladen = false;
     navigator.serviceWorker.addEventListener('controllerchange', () => {
+      versucheVorladen(); // gilt auch für den allerersten Besuch (siehe unten)
       if (schonNeuGeladen) return;
       schonNeuGeladen = true;
       window.location.reload();
     });
+  }
+
+
+  /* ════════════════════════════════════════════════════
+     5. UNTERSEITEN IM HINTERGRUND VORLADEN (nur von der
+     Startseite aus)
+     Grund: Ohne das zeigt der Browser bei einer Unterseite, die
+     noch nie einzeln besucht wurde, im Offline-Fall seine eigene,
+     unschöne Standard-Fehlerseite statt offline.html – der
+     Service Worker kann ja nur zeigen, was er schon kennt.
+
+     Statt dafür eine Liste aller Seiten von Hand zu pflegen
+     (die bei jeder neuen Unterseite veralten würde), liest diese
+     Funktion die Links direkt aus der Startseite selbst aus und
+     folgt ihnen dann rekursiv ein paar Ebenen tief – so werden
+     praktisch alle über Links erreichbaren Seiten automatisch
+     gefunden, auch künftig neu hinzugefügte, ganz ohne dass hier
+     je etwas von Hand ergänzt werden müsste.
+
+     Jeder fetch() läuft dabei ganz normal über den Service Worker
+     und landet dadurch von selbst im Cache – es ist also keine
+     eigene Lade-Logik im Service Worker nötig.
+
+     Höchstens einmal pro Tag (lokal gemerkt), damit nicht bei
+     jedem Start der Startseite unnötig 30+ Seiten neu geladen
+     werden. */
+  const VORLADEN_SCHLUESSEL = 'studjo-vorladen-zeitpunkt';
+  const VORLADEN_ABSTAND_MS = 24 * 60 * 60 * 1000; // 1 Tag
+
+  async function versucheVorladen() {
+    const dateiname = (location.pathname.split('/').pop() || 'index.html');
+    if (dateiname !== 'index.html' && dateiname !== '') return; // nur von der Startseite anstoßen
+
+    try {
+      const zuletzt = parseInt(localStorage.getItem(VORLADEN_SCHLUESSEL), 10);
+      if (!isNaN(zuletzt) && (Date.now() - zuletzt) < VORLADEN_ABSTAND_MS) return;
+      localStorage.setItem(VORLADEN_SCHLUESSEL, String(Date.now()));
+    } catch (e) { /* localStorage evtl. blockiert - dann halt jedes Mal vorladen, nicht schlimm */ }
+
+    const besucht = new Set();
+    const warteschlange = eigenePfadeAufSeite(document);
+    const MAX_SEITEN = 60; // Sicherheitsgrenze, damit sich nichts aufschaukeln kann
+
+    while (warteschlange.length && besucht.size < MAX_SEITEN) {
+      const pfad = warteschlange.shift();
+      if (besucht.has(pfad)) continue;
+      besucht.add(pfad);
+      try {
+        const antwort = await fetch(pfad);
+        if (!antwort.ok) continue;
+        const text = await antwort.text();
+        const doc = new DOMParser().parseFromString(text, 'text/html');
+        eigenePfadeAufSeite(doc).forEach(p => { if (!besucht.has(p)) warteschlange.push(p); });
+      } catch (e) {
+        /* einzelne Seite nicht erreichbar/fehlerhaft - Rest der
+           Liste trotzdem weiter abarbeiten */
+      }
+    }
+  }
+
+  function eigenePfadeAufSeite(doc) {
+    const pfade = new Set();
+    doc.querySelectorAll('a[href$=".html"]').forEach((a) => {
+      const href = a.getAttribute('href');
+      if (href && !href.includes('://') && !href.startsWith('//')) pfade.add(href);
+    });
+    return [...pfade];
   }
 
 })();

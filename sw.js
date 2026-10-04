@@ -71,20 +71,51 @@ self.addEventListener('activate', (event) => {
   );
 });
 
+/* Winzige, fest einprogrammierte Not-Antwort als allerletzte
+   Rettungsstufe – falls aus irgendeinem Grund (sollte eigentlich nie
+   vorkommen) selbst offline.html nicht im Cache zu finden wäre.
+   Verhindert, dass stattdessen die hässliche Standard-Fehlerseite
+   des Browsers erscheint. */
+function minimaleOfflineAntwort() {
+  return new Response(
+    '<!DOCTYPE html><html lang="de"><head><meta charset="UTF-8">' +
+    '<meta name="viewport" content="width=device-width, initial-scale=1.0">' +
+    '<title>Kein Internet – Studjo Terminal</title></head>' +
+    '<body style="font-family:-apple-system,\'Segoe UI\',Arial,sans-serif;' +
+    'text-align:center;padding:60px 20px;color:#0f2f37;">' +
+    '<div style="font-size:3rem;">📶</div>' +
+    '<h1 style="color:#b61f29;font-size:1.6rem;">Kein Internet gerade</h1>' +
+    '<p style="font-size:1.1rem;">Diese Seite braucht Internet.<br>' +
+    'Bitte versuche es gleich noch einmal.</p>' +
+    '<button onclick="location.reload()" style="font-size:1.1rem;font-weight:800;' +
+    'color:#fff;background:#b61f29;border:none;border-radius:999px;' +
+    'padding:14px 32px;cursor:pointer;">Noch einmal versuchen</button>' +
+    '</body></html>',
+    { status: 200, headers: { 'Content-Type': 'text/html; charset=utf-8' } }
+  );
+}
+
 /* Netzwerk zuerst, mit Timeout – für Inhalte, bei denen Aktualität
    wichtiger ist als Geschwindigkeit (Seitenaufrufe, Daten-Dateien).
    Fällt bei Zeitüberschreitung oder Offline auf die zuletzt
-   gespeicherte Version zurück, als letzte Rettung auf offline.html. */
+   gespeicherte Version zurück, als nächste Stufe auf offline.html,
+   und als allerletzte Stufe auf eine fest einprogrammierte
+   Not-Antwort (siehe oben) – es gibt also KEINEN Pfad mehr, der bei
+   der Standard-Fehlerseite des Browsers enden könnte. */
 function netzwerkZuerst(request, timeoutMs) {
   return new Promise((resolve) => {
     let entschieden = false;
-    const aufCacheAusweichen = () => {
-      caches.match(request).then((treffer) => {
-        if (entschieden) return;
-        entschieden = true;
-        resolve(treffer || caches.match('offline.html'));
-      });
-    };
+
+    async function aufCacheAusweichen() {
+      if (entschieden) return;
+      const eigenerTreffer = await caches.match(request);
+      if (entschieden) return;
+      entschieden = true;
+      if (eigenerTreffer) { resolve(eigenerTreffer); return; }
+      const offlineSeite = await caches.match('offline.html');
+      resolve(offlineSeite || minimaleOfflineAntwort());
+    }
+
     const timer = setTimeout(aufCacheAusweichen, timeoutMs);
 
     fetch(request).then((antwort) => {
