@@ -1,10 +1,40 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "04.10.2026, 14:18 Uhr (UTC)",
+  "aktualisiert": "04.10.2026, 18:18 Uhr (UTC)",
   "meldungen": [
     {
+      "title": "Regierung im Jemen verkündet Großoffensive gegen Huthi-Miliz",
+      "description": "Nach militärischen Erfolgen der Huthi will Jemens international anerkannte Regierung nun in die Offensive gehen. Ziel sei es, das Land aus dem Griff der Miliz zu befreien. Doch das dürfte nicht so einfach sein. Von Anna Osius.",
+      "pubDate": "2026-10-04T19:43:26+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Pfefferspray-Angriff auf Linken-Geschäftsstelle in Oranienburg",
+      "description": "Mitglieder der Linksjugend sind in der Geschäftsstelle der Linken in Oranienburg mit Pfefferspray attackiert worden. Die Polizei sucht nach drei Personen. Eine von ihnen soll kurz vor dem Angriff gefragt haben, ob man hier AfD wählen könne.",
+      "pubDate": "2026-10-04T19:20:09+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Merz: Ukraine-Hilfen \"notwendig für die Stabilität Europas\"",
+      "description": "Kanzler Merz hat bei seinem Besuch in Kiew erneut Russland zu einem Ende des Krieges aufgefordert. Im Bericht aus Berlin sagte er, für die Stabilität Europas seien weitere Hilfen für die Ukraine wichtig - genau wie eine zuverlässige Bundesregierung.",
+      "pubDate": "2026-10-04T18:43:05+02:00",
+      "bild": ""
+    },
+    {
+      "title": "125 Jahre Nobelpreis: Was macht die Auszeichnung so bedeutend?",
+      "description": "Von morgen an wird wieder verkündet, wer die diesjährigen Nobelpreise erhält - und das seit mittlerweile 125 Jahren. Warum hat die Auszeichnung eine so hohe Bedeutung? Und wie werden die Preisträger ermittelt? Von Nina Kunze.",
+      "pubDate": "2026-10-04T18:06:59+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Hamburg behält Vorsitz der Justizministerkonferenz",
+      "description": "Die Regierungsbildung in Sachsen-Anhalt wirbelt auch auf Länderebene einiges durcheinander. Hamburg hätte den Vorsitz der Justizministerkonferenz eigentlich abgeben müssen - macht nun aber weiter.",
+      "pubDate": "2026-10-04T16:51:32+02:00",
+      "bild": ""
+    },
+    {
       "title": "Wahl in Brasilien: Kommen die Bolsonaros zurück?",
-      "description": "Bei der Wahl in Brasilien geht es heute darum, ob die Bolsonaros zurück an die Macht kommen. Flávio Bolsonaro tritt an - er wurde von seinem inhaftierten Vater als Erbe auserkoren. Von Xenia Böttcher.",
+      "description": "Bei der Wahl in Brasilien geht es heute darum, ob die Bolsonaros zurück an die Macht kommen. Flávio Bolsonaro tritt an - er wurde von seinem verurteilten Vater als Erbe auserkoren. Von Xenia Böttcher.",
       "pubDate": "2026-10-04T16:06:39+02:00",
       "bild": ""
     },
@@ -28,7 +58,7 @@
     },
     {
       "title": "Rekord-Wiesn: 7,4 Millionen Besucher auf dem Oktoberfest",
-      "description": "Das Oktoberfest hat in diesem Jahr einen neuen Besucherrekord verzeichnet. Insgesamt zählten die Veranstalter in den vergangenen zwei Wochen 7,4 Millionen Besucher. Auch beim Bierkonsum gab es ein Plus.",
+      "description": "Das Oktoberfest hat in diesem Jahr einen neuen Besucherrekord verzeichnet. Insgesamt zählten die Veranstalter in den vergangenen zwei Wochen 7,4 Millionen Menschen auf der Wiesn. Überschattet wurde das Fest von zwei Unfällen.",
       "pubDate": "2026-10-04T14:32:14+02:00",
       "bild": ""
     },
@@ -60,36 +90,6 @@
       "title": "Krieg gegen die Ukraine: Merz besucht Kiew - Russland greift Brücke an",
       "description": "Während Kanzler Merz Kiew besucht, hat ein russischer Angriff auf eine Brücke dort Alarm ausgelöst. Merz sagte dem Land Unterstützung zu und trifft sich mit Präsident Selenskyj. Russland begehe \"tägliche Kriegsverbrechen\".",
       "pubDate": "2026-10-04T11:39:12+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Schneider fordert anderen Umgang mit Wasser",
-      "description": "Wegen der niedrigen Pegelstände hat Bundesumweltminister Schneider ein Umdenken im Umgang mit Wasser angemahnt. Er rief die Bundesländer zu massiven Investitionen in die Wasserinfrastruktur auf.",
-      "pubDate": "2026-10-04T13:49:51+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Lula gegen Bolsonaro: Ein Duell bekannter Namen in Brasilien",
-      "description": "Heute wählt Brasilien. Wie beim letzten Mal heißt es: Lula gegen einen Bolsonaro. Ein 80-Jähriger gegen den Sohn des Ex-Präsidenten. Auch für US-Präsident Trump ist der Ausgang von großer Bedeutung. Von Anne Herrberg.",
-      "pubDate": "2026-10-04T08:09:05+02:00",
-      "bild": ""
-    },
-    {
-      "title": "140 Jahre Seemannsmission: Eine Pause von den Weltmeeren",
-      "description": "Zeitdruck, Kriege und Krisen machen die Arbeit für Seefahrer immer härter. Seit 140 Jahren hilft die Deutsche Seemannsmission, den Bordalltag kurz zu vergessen - so wie im Hamburger Seemannsclub Duckdalben. Von Sophia Stritzel.",
-      "pubDate": "2026-10-04T08:00:33+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Krieg gegen die Ukraine: Kanzler Merz besucht Kiew",
-      "description": "Es soll auch um weitere militärische Unterstützung gehen: Bundeskanzler Merz ist zu einem Solidaritätsbesuch in Kiew eingetroffen. Zuvor hatte Russland vor Reisen in die Ukraine gewarnt.",
-      "pubDate": "2026-10-04T06:44:05+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bosnien und Herzegowina: Mit neuer Technik mehr Vertrauen in die Wahlen",
-      "description": "In Bosnien und Herzegowina werden das Parlament, das dreiköpfige Staatspräsidium und die Regionalregierungen gewählt. Neue Technik soll dabei helfen, Manipulationen zu erschweren. Von S. Hahne.",
-      "pubDate": "2026-10-04T05:04:08+02:00",
       "bild": ""
     }
   ],
