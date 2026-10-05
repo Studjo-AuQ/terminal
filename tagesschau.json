@@ -1,7 +1,49 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "05.10.2026, 00:39 Uhr (UTC)",
+  "aktualisiert": "05.10.2026, 06:46 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Stichwahl nötig: Brasilien rückt weiter nach rechts",
+      "description": "Bolsonaro oder Lula? Bei der Präsidentschaftswahl in Brasilien gehen beide Kandidaten in eine Stichwahl. Der Sohn des Ex-Präsidenten gilt als Favorit. Er profitiert von Unzufriedenheit über hohe Lebenshaltungskosten und Kriminalität. Von A. Herrberg.",
+      "pubDate": "2026-10-05T07:41:41+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX-Anleger starten Woche mit gemischten Gefühlen",
+      "description": "Es bleibt auch in der neuen Woche herausfordernd für den deutschen Leitindex. Zwar hat bereits am Freitag der US-Arbeitsmarktbericht die Zinssorgen gebremst. Trotzdem belasten die hohen Ölpreise.",
+      "pubDate": "2026-10-05T07:39:12+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Seit Mai: E-Auto-Prämie an 100.000 Antragsteller ausgezahlt",
+      "description": "Die neue Prämie zu Förderung von E-Autos hat laut Umweltminister Schneider die Erwartungen übertroffen. Geld sei bereits an 100.000 Antragsteller geflossen - viele von ihnen mit geringerem Einkommen.",
+      "pubDate": "2026-10-05T06:47:06+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Linke zieht gegen Reiche vor Bundesverfassungsgericht",
+      "description": "Die Linke wirft CDU-Politikerin Reiche vor, mit einem Video auf dem Account des Bundeswirtschaftsministeriums das Neutralitätsgebot verletzt zu haben. Nun will die Partei das höchste deutsche Gericht entscheiden lassen.",
+      "pubDate": "2026-10-05T05:39:00+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Österreichs Vizekanzler und SPÖ-Chef Babler kündigt Rückzug an",
+      "description": "Der Chefposten der SPÖ in Österreich gilt als Schleudersitz. Und er wurde seinem Ruf erneut gerecht: Vizekanzler und Parteichef Babler zieht sich zurück. Damit will er eine stabile Regierung gewährleisten - und Neuwahlen verhindern. Von S. Hahne.",
+      "pubDate": "2026-10-05T05:04:40+02:00",
+      "bild": ""
+    },
+    {
+      "title": "SPD-Basis setzt rote Linien bei der Arbeitszeitreform",
+      "description": "Die Koalition will Arbeitszeitregeln flexibler machen. Nun meldet sich die SPD-Basis zu Wort: Keine Wochenarbeitszeit ohne Tarifvertrag, heißt es in einem Positionspapier. Das könnte neuen Streit in der Koalition bedeuten. Von Jan-Peter Bartels.",
+      "pubDate": "2026-10-05T05:00:50+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Ermittlungen wegen Terrorverdacht: USA ziehen Bomber von britischem Stützpunkt ab",
+      "description": "Washington hat seine Langstreckenbomber vom britischen Militärstützpunkt Fairford zurückbeordert - aus Sicherheitsgründen, wie das Pentagon erklärte. Vor einer Woche waren dort Männer wegen möglicher Anschlagspläne festgenommen worden.",
+      "pubDate": "2026-10-05T03:56:23+02:00",
+      "bild": ""
+    },
     {
       "title": "Starke nationalistische Kräfte bei Wahlen in Bosnien und Herzegowina",
       "description": "Bei den Wahlen in Bosnien und Herzegowina haben vor allem nationalistische Kräfte die Oberhand. Beobachter halten mit dem nun gewählten Staatspräsidium eine Begnadigung von Ex-Machthaber Dodik für möglich. Von S. Hahne.",
@@ -9,9 +51,9 @@
       "bild": ""
     },
     {
-      "title": "Präsidentschaftswahl in Brasilien: Bolsonaro und Lula steuern auf Stichwahl zu",
-      "description": "Die Abstimmung um die Präsidentschaft in Brasilien gilt als Richtungswahl. Derzeit werden die Stimmen ausgezählt. Herausforderer Bolsonaro liegt zwar vorn - aber die bisherigen Ergebnisse deuten auf eine Stichwahl mit Amtsinhaber Lula hin.",
-      "pubDate": "2026-10-05T01:24:40+02:00",
+      "title": "Präsidentschaftswahl in Brasilien: Bolsonaro und Lula ziehen in Stichwahl ein",
+      "description": "Die Präsidentenwahl in Brasilien wird in einer Stichwahl entschieden: Herausforderer Bolsonaro liegt nach Auszählung fast aller Stimmen zwar etwas vor Amtsinhaber Lula - aber die absolute Mehrheit erreichten beide nicht.",
+      "pubDate": "2026-10-05T03:35:56+02:00",
       "bild": ""
     },
     {
@@ -27,7 +69,7 @@
       "bild": ""
     },
     {
-      "title": "Pfefferspray-Angriff auf Linken-Geschäftsstelle in Oranienburg",
+      "title": "Pfefferspray-Angriff in Linken-Geschäftsstelle in Oranienburg",
       "description": "Mitglieder der Linksjugend sind in der Geschäftsstelle der Linken in Oranienburg mit Pfefferspray attackiert worden. Die Polizei sucht nach drei Personen. Eine von ihnen soll kurz vor dem Angriff gefragt haben, ob man hier AfD wählen könne.",
       "pubDate": "2026-10-04T20:58:00+02:00",
       "bild": ""
@@ -40,56 +82,14 @@
     },
     {
       "title": "125 Jahre Nobelpreis: Was macht die Auszeichnung so bedeutend?",
-      "description": "Von morgen an wird wieder verkündet, wer die diesjährigen Nobelpreise erhält - und das seit mittlerweile 125 Jahren. Warum hat die Auszeichnung eine so hohe Bedeutung? Und wie werden die Preisträger ermittelt? Von Nina Kunze.",
-      "pubDate": "2026-10-04T18:06:59+02:00",
+      "description": "Von heute an wird wieder verkündet, wer die diesjährigen Nobelpreise erhält - und das seit mittlerweile 125 Jahren. Warum hat die Auszeichnung eine so hohe Bedeutung? Und wie werden die Preisträger ermittelt? Von Nina Kunze.",
+      "pubDate": "2026-10-05T06:32:01+02:00",
       "bild": ""
     },
     {
       "title": "Hamburg behält Vorsitz der Justizministerkonferenz",
       "description": "Die Regierungsbildung in Sachsen-Anhalt wirbelt auch auf Länderebene einiges durcheinander. Hamburg hätte den Vorsitz der Justizministerkonferenz eigentlich abgeben müssen - macht nun aber weiter.",
       "pubDate": "2026-10-04T16:51:32+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wahl in Brasilien: Kommen die Bolsonaros zurück?",
-      "description": "Bei der Wahl in Brasilien geht es heute darum, ob die Bolsonaros zurück an die Macht kommen. Flávio Bolsonaro tritt an - er wurde von seinem verurteilten Vater als Erbe auserkoren. Von Xenia Böttcher.",
-      "pubDate": "2026-10-04T16:06:39+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Zahl der Asylanträge in der EU offenbar deutlich gesunken",
-      "description": "Die Zahl der Asylanträge in Europa ist gesunken - in den ersten neun Monaten dieses Jahres wurden laut einem Zeitungsbericht im Vergleich zum Vorjahr fast ein Viertel weniger Anträge gestellt. Deutschland liegt auf Platz drei.",
-      "pubDate": "2026-10-04T16:03:55+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Merz-Besuch in Kiew: Eine Milliarde Militärhilfe für die Ukraine",
-      "description": "Bundeskanzler Merz hat der Ukraine eine Milliarde Euro an Militärhilfen und weitere 350 Millionen für den Energiesektor zugesagt. Das soll sich auch für Deutschland lohnen: Neue Rüstungsprojekte und ein Wissenstransfer stehen im Fokus.",
-      "pubDate": "2026-10-04T15:33:30+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Mehrere Verletzte bei Campingplatz-Brand am Gardasee",
-      "description": "Bei einem Brand auf einem großen Campingplatz am Gardasee in Italien sind mehrere Menschen verletzt worden. Inzwischen sind die Flammen unter Kontrolle - auch dank vier Feuerwehrleuten aus Hessen. Von Ivo Marusczyk.",
-      "pubDate": "2026-10-04T15:32:18+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Rekord-Wiesn: 7,4 Millionen Besucher auf dem Oktoberfest",
-      "description": "Das Oktoberfest hat in diesem Jahr einen neuen Besucherrekord verzeichnet. Insgesamt zählten die Veranstalter in den vergangenen zwei Wochen 7,4 Millionen Menschen auf der Wiesn. Überschattet wurde das Fest von zwei Unfällen.",
-      "pubDate": "2026-10-04T14:32:14+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Baskenland und Katalonien: Tote bei schweren Unwettern in Spanien",
-      "description": "Bei heftigen Regenfällen in Spanien sind drei Menschen ums Leben gekommen. In Katalonien und im Baskenland wurden Straßen und Keller überflutet - die Feuerwehr war im Dauereinsatz.",
-      "pubDate": "2026-10-04T13:43:22+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Influencer werden für ethische Jagd zum Problem",
-      "description": "Für die Reichweite in sozialen Medien bringt Action oft mehr als Jagdethik. Einen verantwortungsvollen Umgang mit Waffen gibt es dabei bisweilen nicht. Jagdausstatter distanzieren sich deshalb von einigen Influencern. Von B. Augustin.",
-      "pubDate": "2026-10-04T12:16:11+02:00",
       "bild": ""
     }
   ],
