@@ -19,7 +19,7 @@
        automatisch, sobald ein Gerät online ist.
    ══════════════════════════════════════════════════════ */
 
-const CACHE_VERSION = 'studjo-terminal-v1';
+const CACHE_VERSION = 'studjo-terminal-v2';
 const PRECACHE = CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_VERSION + '-runtime';
 
@@ -36,6 +36,7 @@ const CORE_DATEIEN = [
   'gong.js',
   'feiertage.js',
   'kalender.js',
+  'kacheln.js',
   'a11y.js',
   'a11y.css',
   'favicon.ico',

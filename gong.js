@@ -235,16 +235,37 @@
      Seite sich EINMALIG automatisch neu, damit sie die neue
      Version zeigt – ganz ohne Zutun der Werkstattbeschäftigten. */
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js').then(() => {
+    /* updateViaCache:'none' zwingt den Browser, bei der Prüfung auf
+       eine neue sw.js-Version IMMER tatsächlich im Netz nachzusehen,
+       statt möglicherweise eine ältere, zwischengespeicherte Version
+       aus dem normalen HTTP-Cache zu verwenden. Ohne das kann es
+       passieren, dass Aktualisierungen an sw.js auf einem Gerät, das
+       schon einmal einen Service Worker registriert hat, faktisch
+       gar nicht ankommen. */
+    navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).then((registrierung) => {
+      console.log('[Studjo] Service Worker registriert, Geltungsbereich:', registrierung.scope);
       if (navigator.serviceWorker.controller) versucheVorladen();
-    }).catch(() => {
+
+      /* Regelmäßig aktiv nach einer neueren sw.js suchen. Normalerweise
+         prüft der Browser das bei jeder Seitennavigation von selbst –
+         index.html hat aber (anders als z. B. wetter.html) keinen
+         eigenen Automatik-Reload, könnte auf einem Kiosk also
+         stundenlang offen bleiben, ohne dass diese Prüfung von selbst
+         passiert. */
+      setInterval(() => { registrierung.update().catch(() => {}); }, 60 * 60 * 1000); // stündlich
+    }).catch((fehler) => {
       /* Offline beim allerersten Besuch oder Registrierung aus
          anderem Grund nicht möglich – die Seite funktioniert dann
-         einfach ganz normal online weiter, nur ohne Offline-Vorteil. */
+         einfach ganz normal online weiter, nur ohne Offline-Vorteil.
+         Zur Fehlersuche trotzdem sichtbar protokollieren (in der
+         Browser-Konsole, F12), statt es völlig stillschweigend zu
+         verschlucken. */
+      console.error('[Studjo] Service-Worker-Registrierung fehlgeschlagen:', fehler);
     });
 
     let schonNeuGeladen = false;
     navigator.serviceWorker.addEventListener('controllerchange', () => {
+      console.log('[Studjo] Ein (neuer) Service Worker hat gerade die Kontrolle übernommen.');
       versucheVorladen(); // gilt auch für den allerersten Besuch (siehe unten)
       if (schonNeuGeladen) return;
       schonNeuGeladen = true;
