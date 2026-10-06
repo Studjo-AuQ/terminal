@@ -364,7 +364,82 @@
 .card-rot   { background: #fbe1e1; }
 .card-gelb  { background: #fff9c4; }
 .card-blau  { background: #e3f2fb; }
+/* ══════════════════════════════════════════════════════
+   STARTSEITE: Überschrift + Bedienbuttons
+   Desktop:
+   ↓ links | Überschrift mittig | Info rechts
 
+   Smartphone hochkant:
+   Überschrift oben über volle Breite
+   ↓ und Info in eigener Zeile darunter
+   ══════════════════════════════════════════════════════ */
+
+@media (max-width: 600px) {
+
+  .start-title-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "titel titel"
+      "runter info";
+    align-items: center;
+    column-gap: 16px;
+    row-gap: 8px;
+    margin-bottom: 10px;
+    padding: 0 6px 4px;
+  }
+
+  .start-title-area h1 {
+    grid-area: titel;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 8px 0 4px;
+    text-align: center;
+    line-height: 1.15;
+    font-size: clamp(1.7rem, 7.5vw, 2.2rem);
+  }
+
+  /* Pfeil nach unten */
+  #scroll-down-btn {
+    grid-area: runter;
+
+    /* überschreibt bewusst die Inline-Desktop-Position */
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    right: auto !important;
+    transform: none !important;
+
+    justify-self: start;
+
+    width: 46px !important;
+    height: 46px !important;
+    font-size: 1.6rem !important;
+
+    margin: 0 !important;
+  }
+
+  /* Info-Button */
+  .start-title-area > button[aria-label="Kurze Info anzeigen"] {
+    grid-area: info;
+
+    /* überschreibt bewusst die Inline-Desktop-Position */
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    right: auto !important;
+    transform: none !important;
+
+    justify-self: end;
+
+    width: 46px !important;
+    height: 46px !important;
+    font-size: 1.6rem !important;
+
+    margin: 0 !important;
+  }
+}
 </style>
 </head>
 <body>
@@ -384,7 +459,7 @@
 
 <main id="scrollable-content">
 
-  <div style="position:relative;">
+  <div class="start-title-area" style="position:relative;">
     <h1 id="seitenanfang">Willkommen am Studjo | Terminal</h1>
     <button type="button"
             id="scroll-down-btn"
