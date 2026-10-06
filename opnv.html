@@ -49,6 +49,18 @@
             grid-template-columns: 1fr !important;
         }
     }
+
+    /* Beide Kacheln dieser Seite auf Blau, passend zur Gruppenfarbe
+       von "Adressen und Fahrpläne" auf der Startseite. Bewusst nur
+       hier überschrieben (nicht an der globalen .tile-color-3/-8
+       -Regel in style.css), da tile-color-3 z. B. auch auf
+       speiseplan.html verwendet wird und dort unverändert bleiben
+       soll. */
+    .tile-grid .tile.tile-color-8,
+    .tile-grid .tile.tile-color-3 {
+        --tile-bg: #e3f2fb;
+        --tile-hover-color: #1565c0;
+    }
 </style>
 <div class="tile-grid">
 
