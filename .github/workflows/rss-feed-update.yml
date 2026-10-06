@@ -42,7 +42,6 @@ jobs:
                   ],
                   'max': 15,
               },
-              # ── NEU: kobinet-Nachrichten ────────────────────────────
               {
                   'datei':  'kobinet.json',
                   'urls': [
@@ -57,91 +56,135 @@ jobs:
               if not text:
                   return ''
               text = re.sub(r'<[^>]+>', ' ', text)
-              for entity, ersatz in [('&amp;','&'),('&lt;','<'),('&gt;','>'),
-                                     ('&quot;','"'),('&#39;',"'"),('&nbsp;',' ')]:
+              for entity, ersatz in [
+                  ('&amp;', '&'),
+                  ('&lt;', '<'),
+                  ('&gt;', '>'),
+                  ('&quot;', '"'),
+                  ('&#39;', "'"),
+                  ('&nbsp;', ' ')
+              ]:
                   text = text.replace(entity, ersatz)
               return re.sub(r'\s+', ' ', text).strip()
 
           def parse_datum(s):
-              for fmt in ['%a, %d %b %Y %H:%M:%S %z','%a, %d %b %Y %H:%M:%S %Z',
-                          '%Y-%m-%dT%H:%M:%S%z','%Y-%m-%dT%H:%M:%SZ']:
+              for fmt in [
+                  '%a, %d %b %Y %H:%M:%S %z',
+                  '%a, %d %b %Y %H:%M:%S %Z',
+                  '%Y-%m-%dT%H:%M:%S%z',
+                  '%Y-%m-%dT%H:%M:%SZ'
+              ]:
                   try:
                       return datetime.strptime(s.strip(), fmt).isoformat()
-                  except:
+                  except Exception:
                       pass
               return s
 
           def hole_feed(url, max_meldungen):
-              req = urllib.request.Request(url, headers={'User-Agent': 'Studjo-Infoterminal/1.0'})
+              req = urllib.request.Request(
+                  url,
+                  headers={'User-Agent': 'Studjo-Infoterminal/1.0'}
+              )
+
               with urllib.request.urlopen(req, timeout=15) as r:
                   inhalt = r.read()
-              root    = ET.fromstring(inhalt)
+
+              root = ET.fromstring(inhalt)
               channel = root.find('channel')
+
               if channel is not None:
                   quelle = (channel.findtext('title') or '').strip()
-                  items  = channel.findall('item')
+                  items = channel.findall('item')
               else:
-                  ns     = 'http://www.w3.org/2005/Atom'
+                  ns = 'http://www.w3.org/2005/Atom'
                   quelle = (root.findtext(f'{{{ns}}}title') or '').strip()
-                  items  = root.findall(f'{{{ns}}}entry')
+                  items = root.findall(f'{{{ns}}}entry')
 
               meldungen = []
+
               for item in items[:max_meldungen]:
                   def txt(tag, atom=None):
                       el = item.find(tag)
                       if el is None and atom:
-                          el = item.find(f'{{http://www.w3.org/2005/Atom}}{atom}')
+                          el = item.find(
+                              f'{{http://www.w3.org/2005/Atom}}{atom}'
+                          )
                       return el.text or '' if el is not None else ''
 
-                  bild = ''
-                  media_thumb = item.find('{http://search.yahoo.com/mrss/}thumbnail')
-                  if media_thumb is not None:
-                      bild = media_thumb.get('url', '')
-                  if not bild:
-                      enclosure = item.find('enclosure')
-                      if enclosure is not None and 'image' in enclosure.get('type',''):
-                          bild = enclosure.get('url', '')
-
                   titel = html_entfernen(txt('title', 'title'))
-                  desc  = html_entfernen(txt('description', 'summary'))
+                  desc = html_entfernen(txt('description', 'summary'))
                   datum = parse_datum(txt('pubDate', 'published'))
 
                   if titel:
                       meldungen.append({
-                          'title':       titel,
+                          'title': titel,
                           'description': desc,
-                          'pubDate':     datum,
-                          'bild':        bild,
+                          'pubDate': datum,
+
+                          # Datenschutz:
+                          # RSS-Feeds können externe Bild-/CDN-URLs liefern.
+                          # Diese werden bewusst NICHT übernommen.
+                          # Dadurch lädt der Browser der Nutzer später keine
+                          # Bilder direkt von Tagesschau, Deutschlandfunk,
+                          # kobinet oder anderen Drittservern.
+                          'bild': '',
                       })
+
               return quelle, meldungen
 
-          jetzt = datetime.now(timezone.utc).strftime('%d.%m.%Y, %H:%M Uhr (UTC)')
+          jetzt = datetime.now(timezone.utc).strftime(
+              '%d.%m.%Y, %H:%M Uhr (UTC)'
+          )
 
           for feed_cfg in FEEDS:
-              meldungen  = []
-              quelle     = ''
+              meldungen = []
+              quelle = ''
               fehler_log = []
 
               for url in feed_cfg['urls']:
                   try:
                       print(f"Lade: {url}")
-                      quelle, meldungen = hole_feed(url, feed_cfg['max'])
-                      print(f"  → {len(meldungen)} Meldungen von '{quelle}'")
+                      quelle, meldungen = hole_feed(
+                          url,
+                          feed_cfg['max']
+                      )
+                      print(
+                          f"  → {len(meldungen)} Meldungen "
+                          f"von '{quelle}'"
+                      )
                       break
                   except Exception as e:
                       fehler_log.append(f"{url}: {e}")
                       print(f"  → Fehler: {e}")
 
               ausgabe = {
-                  'quelle':       quelle or 'Nachrichten',
+                  'quelle': quelle or 'Nachrichten',
                   'aktualisiert': jetzt,
-                  'meldungen':    meldungen,
-                  'fehler':       fehler_log if not meldungen else [],
+                  'meldungen': meldungen,
+                  'fehler': fehler_log if not meldungen else [],
               }
-              with open(feed_cfg['datei'], 'w', encoding='utf-8') as f:
-                  json.dump(ausgabe, f, ensure_ascii=False, indent=2)
-              status = f"{len(meldungen)} Meldungen" if meldungen else "FEHLER"
-              print(f"Gespeichert: {feed_cfg['datei']} ({status})")
+
+              with open(
+                  feed_cfg['datei'],
+                  'w',
+                  encoding='utf-8'
+              ) as f:
+                  json.dump(
+                      ausgabe,
+                      f,
+                      ensure_ascii=False,
+                      indent=2
+                  )
+
+              status = (
+                  f"{len(meldungen)} Meldungen"
+                  if meldungen
+                  else "FEHLER"
+              )
+              print(
+                  f"Gespeichert: {feed_cfg['datei']} "
+                  f"({status})"
+              )
           PYTHON
 
       - name: Änderungen ins Repository übertragen
