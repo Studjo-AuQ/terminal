@@ -151,7 +151,6 @@
         /* Detail-Zeile (Wind, Luftfeuchte) */
         .karte-details {
             display: flex;
-            gap: 0;
             background: #e3f0fb;
             padding: 8px 18px;
             font-size: 0.82rem;
@@ -161,6 +160,68 @@
             gap: 12px;
         }
 
+        /* ── Kleidungs-/Wetter-Empfehlung ── */
+        .wetter-tipp {
+            margin: 14px 14px 4px;
+            padding: 14px 16px;
+            border-radius: 14px;
+            background: #f6f8fa;
+            border: 2px solid #dfe5e8;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .wetter-tipp-icon {
+            flex: 0 0 auto;
+            min-width: 70px;
+            text-align: center;
+            font-size: 3.4rem;
+            line-height: 1;
+        }
+        .wetter-tipp-text {
+            min-width: 0;
+        }
+        .wetter-tipp-label {
+            color: var(--grey);
+            font-size: 0.68rem;
+            line-height: 1.1;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 4px;
+        }
+        .wetter-tipp-titel {
+            color: var(--text-color);
+            font-size: 1.02rem;
+            line-height: 1.2;
+            font-weight: 800;
+            margin-bottom: 3px;
+        }
+        .wetter-tipp-hinweis {
+            color: #526067;
+            font-size: 0.82rem;
+            line-height: 1.35;
+            font-weight: 600;
+        }
+
+        /* Farbliche Unterstützung – Information bleibt auch ohne Farbe verständlich. */
+        .wetter-tipp.tipp-regen {
+            background: #eaf5fc;
+            border-color: #a8d5ef;
+        }
+        .wetter-tipp.tipp-kalt {
+            background: #eef0fb;
+            border-color: #bcc5e7;
+        }
+        .wetter-tipp.tipp-sonne {
+            background: #fff8dd;
+            border-color: #ecd477;
+        }
+        .wetter-tipp.tipp-mild {
+            background: #edf8ef;
+            border-color: #b9dfc1;
+        }
+
         /* 5-Tage-Vorschau */
         .vorschau-kopf {
             font-size: 0.78rem;
@@ -168,7 +229,7 @@
             color: var(--grey);
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            padding: 10px 18px 4px;
+            padding: 12px 18px 4px;
         }
 
         .vorschau-tage {
@@ -229,6 +290,20 @@
             line-height: 1.7;
         }
 
+        @media (max-width: 520px) {
+            .wetter-tipp {
+                padding: 12px 13px;
+                gap: 12px;
+            }
+            .wetter-tipp-icon {
+                min-width: 58px;
+                font-size: 3rem;
+            }
+            .wetter-tipp-titel {
+                font-size: 0.96rem;
+            }
+        }
+
         /* ── Footer ── */
         footer {
             text-align: center; padding: 18px;
@@ -284,9 +359,114 @@
 <script>
 const WOCHENTAGE_KURZ = ['So','Mo','Di','Mi','Do','Fr','Sa'];
 
+/* ═════════════════════════════════════════════════════════
+   EINFACHE KLEIDUNGS-/WETTER-EMPFEHLUNG
+
+   Die Empfehlung verwendet ausschließlich bereits vorhandene Werte
+   aus wetter.json. Es wird keine weitere API benötigt.
+
+   Priorität:
+   1. Regen + kühl
+   2. Regen
+   3. sehr kalt
+   4. sonnig/sehr warm
+   5. kühl/windig
+   6. mild/warm
+   ═════════════════════════════════════════════════════════ */
+function kleidungsTipp(stadtDaten) {
+    const aktuell = stadtDaten.aktuell || {};
+    const heute = (stadtDaten.tage && stadtDaten.tage[0]) || {};
+
+    const min = Number(heute.min);
+    const max = Number(heute.max);
+    const regenMm = Number(heute.niederschlag) || 0;
+    const wind = Number(aktuell.wind) || 0;
+    const gefuehlt = Number(aktuell.gefuehlt);
+    const zustand = String(heute.zustand || aktuell.zustand || '').toLowerCase();
+
+    const regenImText = /(regen|schauer|niesel)/i.test(zustand);
+    const regnerisch = regenMm >= 1 || regenImText;
+
+    const sehrKalt =
+        (Number.isFinite(max) && max <= 10) ||
+        (Number.isFinite(min) && min <= 3) ||
+        (Number.isFinite(gefuehlt) && gefuehlt <= 5);
+
+    const kuehl =
+        (Number.isFinite(max) && max <= 16) ||
+        (Number.isFinite(min) && min <= 10) ||
+        (Number.isFinite(gefuehlt) && gefuehlt <= 11) ||
+        wind >= 35;
+
+    const sonnig =
+        /(sonn|klar|wolkenlos)/i.test(zustand) ||
+        ['☀️', '🌤️'].includes(heute.emoji) ||
+        ['☀️', '🌤️'].includes(aktuell.emoji);
+
+    const sehrWarm =
+        Number.isFinite(max) && max >= 25;
+
+    const warmUndSonnig =
+        Number.isFinite(max) && max >= 22 && sonnig;
+
+    if (regnerisch && (sehrKalt || kuehl)) {
+        return {
+            icon: '☂️🧥',
+            titel: 'Jacke und Regenschirm mitnehmen',
+            text: 'Heute wird es kühl und regnerisch.',
+            klasse: 'tipp-regen'
+        };
+    }
+
+    if (regnerisch) {
+        return {
+            icon: '☂️',
+            titel: 'Regenschirm mitnehmen',
+            text: 'Heute kann es regnen.',
+            klasse: 'tipp-regen'
+        };
+    }
+
+    if (sehrKalt) {
+        return {
+            icon: '🧥',
+            titel: 'Warme Jacke anziehen',
+            text: 'Heute ist es kalt.',
+            klasse: 'tipp-kalt'
+        };
+    }
+
+    if (sehrWarm || warmUndSonnig) {
+        return {
+            icon: '☀️🧢',
+            titel: 'Sonnenschutz beachten',
+            text: 'Denk an Kappe und Sonnencreme.',
+            klasse: 'tipp-sonne'
+        };
+    }
+
+    if (kuehl) {
+        return {
+            icon: '🧥',
+            titel: 'Jacke mitnehmen',
+            text: wind >= 35
+                ? 'Heute ist es kühl oder windig.'
+                : 'Morgens oder tagsüber ist es eher kühl.',
+            klasse: 'tipp-kalt'
+        };
+    }
+
+    return {
+        icon: '👕',
+        titel: 'Leichte Kleidung reicht',
+        text: 'Heute ist das Wetter mild oder warm.',
+        klasse: 'tipp-mild'
+    };
+}
+
 function erstelleStadtKarte(stadtDaten) {
     const a = stadtDaten.aktuell;
-    const heute = new Date();
+    const tipp = kleidungsTipp(stadtDaten);
 
     // Tageskacheln (5 Tage)
     const tageHtml = stadtDaten.tage.map((tag, i) => {
@@ -318,11 +498,22 @@ function erstelleStadtKarte(stadtDaten) {
                 </div>
             </div>
         </div>
+
         <div class="karte-details">
             <span>💨 Wind ${a.wind} km/h</span>
             <span>💧 Feuchte ${a.luftfeuchte} %</span>
             ${a.niederschlag > 0 ? `<span>🌧️ ${a.niederschlag} mm</span>` : ''}
         </div>
+
+        <div class="wetter-tipp ${tipp.klasse}">
+            <div class="wetter-tipp-icon" aria-hidden="true">${tipp.icon}</div>
+            <div class="wetter-tipp-text">
+                <div class="wetter-tipp-label">Tipp für heute</div>
+                <div class="wetter-tipp-titel">${tipp.titel}</div>
+                <div class="wetter-tipp-hinweis">${tipp.text}</div>
+            </div>
+        </div>
+
         <div class="vorschau-kopf">5-Tage-Vorschau</div>
         <div class="vorschau-tage">${tageHtml}</div>`;
     return karte;
@@ -368,8 +559,7 @@ function entferneWetterMarkierungen() {
         .forEach(k => k.classList.remove('is-reading'));
 }
 
-/* Entfernt Emojis vor der Sprachausgabe – generelle Absicherung
-   zusätzlich zur gezielten 📍-Entfernung weiter unten. */
+/* Entfernt Emojis vor der Sprachausgabe. */
 function entferneEmojis(text) {
     return text.replace(/\p{Extended_Pictographic}/gu, '').replace(/\s+/g, ' ').trim();
 }
@@ -400,31 +590,42 @@ function vorlesenUndMarkieren() {
             if (btnVorlesen) btnVorlesen.classList.remove('aktiv');
             return;
         }
+
         const karte = karten[i];
         const name  = karte.querySelector('.stadtname')?.textContent.replace('📍','').trim() || '';
         const temp  = karte.querySelector('.gross-temp')?.textContent || '';
         const zust  = karte.querySelector('.zustand-text')?.textContent || '';
         const wind  = karte.querySelector('.karte-details')?.textContent.replace(/\s+/g,' ').trim() || '';
-        const text  = entferneEmojis(`${name}: ${temp} Grad, ${zust}. ${wind}.`);
+        const tippTitel = karte.querySelector('.wetter-tipp-titel')?.textContent || '';
+        const tippText  = karte.querySelector('.wetter-tipp-hinweis')?.textContent || '';
+
+        const text = entferneEmojis(
+            `${name}: ${temp} Grad, ${zust}. ${wind}. Tipp für heute: ${tippTitel}. ${tippText}`
+        );
 
         const u = new SpeechSynthesisUtterance(text);
         u.lang = 'de-DE';
         u.rate = 0.9;
+
         u.onstart = () => {
             entferneWetterMarkierungen();
             karte.classList.add('is-reading');
         };
+
         u.onend = () => {
             i++;
             setTimeout(next, 250);
         };
+
         u.onerror = () => {
             entferneWetterMarkierungen();
             spricht = false;
             if (btnVorlesen) btnVorlesen.classList.remove('aktiv');
         };
+
         speechSynthesis.speak(u);
     }
+
     next();
 }
 
@@ -436,6 +637,7 @@ ladeWetter();
 // Alle 30 Minuten neu laden
 setTimeout(() => location.reload(), 30 * 60 * 1000);
 </script>
+
 <!-- ══ FOOTER ══ -->
 <footer style="
   position: relative;
@@ -453,17 +655,17 @@ setTimeout(() => location.reload(), 30 * 60 * 1000);
      style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
     Startseite
   </a>
-   | 
+   |
   <a href="uebersicht.html"
      style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
     Übersicht
   </a>
-   | 
+   |
   <a href="impressum.html"
      style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
     Impressum
   </a>
-   | 
+   |
   <a href="datenschutz.html"
      style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
     Datenschutz
@@ -491,6 +693,7 @@ setTimeout(() => location.reload(), 30 * 60 * 1000);
     ⬆️
   </button>
 </footer>
+
 <div id="qr-overlay"
      onclick="this.style.display='none'"
      style="display:none; position:fixed; inset:0; z-index:2000;
@@ -515,11 +718,11 @@ setTimeout(() => location.reload(), 30 * 60 * 1000);
     </p>
   </div>
 </div>
-    
-    <link rel="stylesheet" href="a11y.css">
+
+<link rel="stylesheet" href="a11y.css">
 <script src="a11y.js"></script>
 
-<!-- ══ INFO-POPUP (Probelauf) ══ -->
+<!-- ══ INFO-POPUP ══ -->
 <div id="info-popup"
      onclick="this.style.display='none'"
      style="display:none; position:fixed; inset:0; z-index:2000;
@@ -550,9 +753,9 @@ setTimeout(() => location.reload(), 30 * 60 * 1000);
     <ul style="margin:0; padding-left:22px; font-size:1rem; line-height:1.8; color:#0f2f37;">
       <li>Hier siehst du das aktuelle Wetter.</li>
       <li>Du siehst das Wetter an mehreren Standorten.</li>
-      <li>So weißt du, was du anziehen sollst.</li>
+      <li>Du bekommst auch einen einfachen Tipp für heute.</li>
+      <li>So weißt du besser, was du anziehen oder mitnehmen kannst.</li>
       <li>Die Werte werden regelmäßig aktualisiert.</li>
-      <li>Bei Fragen hilft dir deine Gruppenleitung weiter.</li>
     </ul>
   </div>
 </div>
@@ -593,6 +796,6 @@ setTimeout(() => location.reload(), 30 * 60 * 1000);
   }
 </script>
 
-  <script src="gong.js"></script>
+<script src="gong.js"></script>
 </body>
 </html>
