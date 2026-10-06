@@ -1,158 +1,283 @@
 /* ══════════════════════════════════════════════════════
    wochenmotto.css
    Studjo Terminal | Evangelisches Johanneswerk
-   Ergänzung speziell für wochenmotto.html
    ══════════════════════════════════════════════════════ */
 
-/* Überschrift: linksbündig und fett (überschreibt die zentrierte
-   Standard-Überschrift aus style.css) */
 h1 {
-    text-align: left;
-    font-weight: 800;
-    margin: 0;
+  text-align: left;
+  font-weight: 800;
+  margin: 0;
 }
 
-/* Zurück-Button + Überschrift in einer gemeinsamen Zeile */
 .wm-header-row {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 18px;
-    margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 30px;
 }
 
-/* Zurück-Button: runde/ovale Einkreisung,
-   bei Mouse-Over bzw. Tastatur-Fokus füllt er sich rot */
 .back-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    flex-shrink: 0;
-    padding: 10px 24px;
-    border: 2px solid var(--primary-red, #b61f29);
-    border-radius: 999px;
-    background-color: #ffffff;
-    color: var(--primary-red, #b61f29);
-    font-weight: 700;
-    font-size: 1rem;
-    text-decoration: none;
-    transition: background-color 0.2s, color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  padding: 10px 24px;
+  border: 2px solid var(--primary-red, #b61f29);
+  border-radius: 999px;
+  background-color: #ffffff;
+  color: var(--primary-red, #b61f29);
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color .2s, color .2s;
 }
 
 .back-button:hover {
-    background-color: var(--primary-red, #b61f29);
-    color: #ffffff;
+  background-color: var(--primary-red, #b61f29);
+  color: #ffffff;
 }
 
-.back-button:focus-visible {
-    outline: 3px solid var(--text-color, #0f2f37);
-    outline-offset: 3px;
+.back-button:focus-visible,
+.wm-toggle:focus-visible {
+  outline: 3px solid var(--text-color, #0f2f37);
+  outline-offset: 3px;
 }
 
+/* Hauptkarte */
 .wm-box {
-    background-color: #ffffff;
-    border-radius: 16px;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
-    padding: 28px 24px;
-    margin: 0 auto 30px;
-    max-width: 700px;
+  --wm-accent: #b61f29;
+  --wm-soft: #f9eef0;
+
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 22px;
+  border: 1px solid #eceeef;
+  box-shadow: 0 8px 26px rgba(15,47,55,.10);
+  padding: 0 0 24px;
+  margin: 0 auto 30px;
+  max-width: 760px;
 }
 
-/* Dezente Anzeige der Kalenderwoche */
-.wm-kw {
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--secondary-grey, #6b6b6b);
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    margin: 0 0 12px;
-    text-align: center;
+/* Farbwelt je Kategorie */
+.wm-thema-arbeit      { --wm-accent:#b61f29; --wm-soft:#fbe9ec; }
+.wm-thema-zeit        { --wm-accent:#8a5a00; --wm-soft:#fff5dc; }
+.wm-thema-helfen      { --wm-accent:#496b44; --wm-soft:#edf6ea; }
+.wm-thema-team        { --wm-accent:#315f76; --wm-soft:#eaf4f8; }
+.wm-thema-lernen      { --wm-accent:#5b4b93; --wm-soft:#f0edfa; }
+.wm-thema-zuhoeren    { --wm-accent:#7b5d38; --wm-soft:#f7f0e7; }
+.wm-thema-freundlich  { --wm-accent:#a65065; --wm-soft:#fbeef2; }
+.wm-thema-sorgfalt    { --wm-accent:#3f6f70; --wm-soft:#eaf5f4; }
+.wm-thema-achten      { --wm-accent:#7b5579; --wm-soft:#f5edf4; }
+.wm-thema-mut         { --wm-accent:#8b5b1e; --wm-soft:#fbf0df; }
+.wm-thema-sprechen    { --wm-accent:#35658a; --wm-soft:#eaf2f8; }
+.wm-thema-ordnung     { --wm-accent:#527052; --wm-soft:#eef5ed; }
+.wm-thema-sicher      { --wm-accent:#9b4d18; --wm-soft:#fbede5; }
+.wm-thema-pause       { --wm-accent:#6a5f50; --wm-soft:#f5f1ea; }
+.wm-thema-fair        { --wm-accent:#555a75; --wm-soft:#eff0f7; }
+.wm-thema-standard    { --wm-accent:#b61f29; --wm-soft:#f5f5f5; }
+
+/* Große Themenfläche */
+.wm-visual {
+  position: relative;
+  padding: 26px 24px 22px;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(255,255,255,.85) 0 58px, transparent 60px),
+    var(--wm-soft);
+  text-align: center;
+  border-bottom: 1px solid rgba(0,0,0,.05);
 }
 
-/* Das Motto selbst: klar im Vordergrund, große Schrift */
+.wm-meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.wm-kw,
+.wm-nummer {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  margin: 0;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.82);
+  color: #606a6f;
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .02em;
+}
+
+.wm-emoji {
+  display: block;
+  font-size: clamp(4.8rem, 13vw, 7rem);
+  line-height: 1;
+  margin: 4px 0 12px;
+  filter: drop-shadow(0 4px 7px rgba(0,0,0,.09));
+}
+
+.wm-thema {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 13px;
+  border-radius: 999px;
+  background: #ffffff;
+  color: var(--wm-accent);
+  border: 2px solid color-mix(in srgb, var(--wm-accent) 35%, white);
+  font-size: .86rem;
+  font-weight: 900;
+}
+
+/* Motto */
+.wm-motto-bereich {
+  padding: 28px 30px 22px;
+  text-align: center;
+}
+
+.wm-kleinlabel {
+  margin: 0 0 8px;
+  color: #7b8286;
+  font-size: .75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .10em;
+}
+
 .wm-motto {
-    font-size: 1.9rem;
-    font-weight: 800;
-    line-height: 1.4;
-    color: var(--primary-red, #b61f29);
-    text-align: center;
-    margin: 0 0 24px;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.35;
+  color: var(--wm-accent);
+  text-align: center;
+  margin: 0;
 }
 
-@media (max-width: 600px) {
-    .wm-motto { font-size: 1.5rem; }
+/* Erklärung auf-/zuklappen */
+.wm-toggle-wrap {
+  padding: 0 24px;
 }
 
-/* Klickbarer/antippbarer Bereich zum Aufklappen der Erklärung.
-   Großzügige Fläche für gute Bedienbarkeit mit dem Finger. */
 .wm-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
-    min-height: 64px;
-    background-color: #f3f3f3;
-    border: 2px solid transparent;
-    border-radius: 12px;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: var(--text-color, #0f2f37);
-    padding: 14px 18px;
-    box-sizing: border-box;
-    transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 60px;
+  background: #f4f5f6;
+  border: 2px solid transparent;
+  border-radius: 14px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.08rem;
+  font-weight: 800;
+  color: var(--text-color, #0f2f37);
+  padding: 13px 18px;
+  transition: background-color .2s, border-color .2s;
 }
 
 .wm-toggle:hover {
-    background-color: #ececec;
-}
-
-/* Deutlich sichtbarer Tastatur-Fokus */
-.wm-toggle:focus-visible {
-    outline: 3px solid var(--primary-red, #b61f29);
-    outline-offset: 2px;
+  background: #eceeef;
 }
 
 .wm-toggle[aria-expanded="true"] {
-    background-color: #fbe9e7;
-    border-color: var(--primary-red, #b61f29);
+  background: var(--wm-soft);
+  border-color: var(--wm-accent);
 }
 
 .wm-pfeil {
-    font-size: 1rem;
+  font-size: .95rem;
+  color: var(--wm-accent);
 }
 
-/* Aufklapp-Bereich mit den Erklärungssätzen */
+/* Drei einzelne A1-Erklärungskarten */
 .wm-erklaerung {
-    margin-top: 16px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-left: 5px solid var(--primary-red, #b61f29);
-    border-radius: 8px;
+  margin: 16px 24px 0;
 }
 
 .wm-erklaerung ul {
-    margin: 0;
-    padding-left: 22px;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
 }
 
 .wm-erklaerung li {
-    font-size: 1.15rem;
-    line-height: 1.7;
-    margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  align-items: center;
+  gap: 11px;
+  margin: 0;
+  padding: 13px 14px;
+  background: #fafafa;
+  border: 1px solid #e8eaec;
+  border-radius: 12px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
-.wm-erklaerung li:last-child {
-    margin-bottom: 0;
+.wm-erklaerung-nummer {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--wm-soft);
+  color: var(--wm-accent);
+  font-size: .85rem;
+  font-weight: 900;
 }
 
-/* Fehlermeldung, falls die JSON-Datei nicht geladen werden kann */
 .wm-fehler {
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: var(--primary-red, #b61f29);
-    text-align: center;
-    margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--primary-red, #b61f29);
+  text-align: center;
+  margin: 0;
+  padding: 30px 22px;
+}
+
+@media (max-width: 600px) {
+  .wm-box {
+    border-radius: 18px;
+  }
+
+  .wm-visual {
+    padding: 20px 14px 18px;
+  }
+
+  .wm-emoji {
+    font-size: 4.8rem;
+  }
+
+  .wm-motto-bereich {
+    padding: 23px 18px 18px;
+  }
+
+  .wm-motto {
+    font-size: 1.55rem;
+  }
+
+  .wm-toggle-wrap {
+    padding: 0 15px;
+  }
+
+  .wm-erklaerung {
+    margin: 13px 15px 0;
+  }
+
+  .wm-erklaerung li {
+    grid-template-columns: 31px 1fr;
+    padding: 12px;
+    font-size: 1rem;
+  }
 }

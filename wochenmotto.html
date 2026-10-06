@@ -3,16 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="manifest" href="manifest.webmanifest">
-    <meta name="theme-color" content="#b61f29">
-    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Studjo">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#b61f29">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Studjo">
 <title>Wochenmotto | Studjo Terminal</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="wochenmotto.css">
 </head>
+
 <body>
 
 <header>
@@ -27,75 +28,97 @@
     <a href="index.html" class="back-button">
       <span aria-hidden="true">←</span> Zurück
     </a>
-    <h1 id="seitenanfang"><span aria-hidden="true">🌟</span> Wochenmotto</h1>
-      <button type="button"
+
+    <h1 id="seitenanfang">
+      <span aria-hidden="true">🌟</span> Wochenmotto
+    </h1>
+
+    <button type="button"
             onclick="document.getElementById('info-popup').style.display='flex'"
             aria-label="Kurze Info anzeigen"
-            style="margin-left:auto; flex-shrink:0; background:#ffffff; border:3px solid #b61f29;
-                   border-radius:50%; width:52px; height:52px; cursor:pointer;
+            style="margin-left:auto; flex-shrink:0; background:#ffffff;
+                   border:3px solid #b61f29; border-radius:50%;
+                   width:52px; height:52px; cursor:pointer;
                    display:flex; align-items:center; justify-content:center;
                    font-size:1.9rem; padding:0; line-height:1;">
-        ℹ️
+      ℹ️
     </button>
   </div>
 
   <div class="wm-box" id="wm-box">
 
-    <p class="wm-kw" id="wm-kw">Diese Woche: KW …</p>
+    <div class="wm-visual">
+      <div class="wm-meta">
+        <p class="wm-kw" id="wm-kw">Diese Woche: KW …</p>
+        <p class="wm-nummer" id="wm-nummer">Motto … von 100</p>
+      </div>
 
-    <p class="wm-motto" id="wm-motto">…</p>
+      <div class="wm-emoji"
+           id="wm-emoji"
+           aria-hidden="true">🌟</div>
 
-    <button type="button"
-            class="wm-toggle"
-            id="wm-toggle"
-            aria-expanded="false"
-            aria-controls="wm-erklaerung">
-      <span>Was bedeutet das?</span>
-      <span class="wm-pfeil" aria-hidden="true">▼</span>
-    </button>
+      <div class="wm-thema"
+           id="wm-thema">…</div>
+    </div>
+
+    <div class="wm-motto-bereich">
+      <p class="wm-kleinlabel">Unser Motto</p>
+      <p class="wm-motto"
+         id="wm-motto">…</p>
+    </div>
+
+    <div class="wm-toggle-wrap">
+      <button type="button"
+              class="wm-toggle"
+              id="wm-toggle"
+              aria-expanded="false"
+              aria-controls="wm-erklaerung">
+        <span>Was bedeutet das?</span>
+        <span class="wm-pfeil"
+              aria-hidden="true">▼</span>
+      </button>
+    </div>
 
     <div class="wm-erklaerung"
          id="wm-erklaerung"
          role="region"
          aria-label="Erklärung zum Wochenmotto"
          hidden>
-      <ul id="wm-erklaerung-liste">
-        <!-- wird per JavaScript befüllt -->
-      </ul>
+      <ul id="wm-erklaerung-liste"></ul>
     </div>
 
   </div>
 
 </main>
 
-<!-- ══ FOOTER ══ -->
 <footer style="
   position: relative;
   text-align: center;
-  padding: 10px 60px 10px 60px;
+  padding: 10px 60px;
   background: #b61f29;
   color: #ffffff;
   font-size: 0.85rem;
   line-height: 1.6;
 ">
   © 2026 <strong>Studjo | Arbeit und Qualifizierung</strong>
-   ·  Evangelisches Johanneswerk gGmbH
+   · Evangelisches Johanneswerk gGmbH
   <br>
+
   <a href="index.html" class="footer-home-link"
      style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
     Startseite
   </a>
-   | 
+   |
   <a href="uebersicht.html"
      style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
     Übersicht
   </a>
-   | 
+   |
   <a href="impressum.html"
      style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
     Impressum
   </a>
-   | 
+   |
   <a href="datenschutz.html"
      style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
     Datenschutz
@@ -105,10 +128,12 @@
           onclick="document.getElementById('qr-overlay').style.display='flex'"
           aria-label="QR-Code zum Scannen anzeigen"
           style="position:absolute; right:14px; top:50%; transform:translateY(-50%);
-                 background:rgba(255,255,255,0.18); border:2px solid rgba(255,255,255,0.55);
-                 border-radius:8px; width:38px; height:38px; cursor:pointer;
-                 display:flex; align-items:center; justify-content:center;
-                 font-size:1.25rem; padding:0; color:#fff; line-height:1;">
+                 background:rgba(255,255,255,0.18);
+                 border:2px solid rgba(255,255,255,0.55);
+                 border-radius:8px; width:38px; height:38px;
+                 cursor:pointer; display:flex; align-items:center;
+                 justify-content:center; font-size:1.25rem;
+                 padding:0; color:#fff; line-height:1;">
     📱
   </button>
 
@@ -116,35 +141,48 @@
           onclick="document.getElementById('seitenanfang').scrollIntoView({behavior:'smooth', block:'start'})"
           aria-label="Nach oben zur Seitenüberschrift scrollen"
           style="position:absolute; left:14px; top:50%; transform:translateY(-50%);
-                 background:rgba(255,255,255,0.18); border:2px solid rgba(255,255,255,0.55);
-                 border-radius:8px; width:38px; height:38px; cursor:pointer;
-                 display:flex; align-items:center; justify-content:center;
-                 font-size:1.25rem; padding:0; color:#fff; line-height:1;">
+                 background:rgba(255,255,255,0.18);
+                 border:2px solid rgba(255,255,255,0.55);
+                 border-radius:8px; width:38px; height:38px;
+                 cursor:pointer; display:flex; align-items:center;
+                 justify-content:center; font-size:1.25rem;
+                 padding:0; color:#fff; line-height:1;">
     ⬆️
   </button>
 </footer>
 
-<!-- ══ QR-CODE-OVERLAY (per Klick auf das Handy-Symbol im Footer) ══ -->
 <div id="qr-overlay"
      onclick="this.style.display='none'"
      style="display:none; position:fixed; inset:0; z-index:2000;
-            background:rgba(0,0,0,0.6); align-items:center; justify-content:center; padding:20px;">
+            background:rgba(0,0,0,0.6);
+            align-items:center; justify-content:center; padding:20px;">
   <div onclick="event.stopPropagation()"
-       style="background:#fff; border-radius:16px; padding:30px 30px 24px;
-              text-align:center; max-width:320px; position:relative;
+       style="background:#fff; border-radius:16px;
+              padding:30px 30px 24px; text-align:center;
+              max-width:320px; position:relative;
               box-shadow:0 10px 40px rgba(0,0,0,0.35);">
+
     <button type="button"
             onclick="document.getElementById('qr-overlay').style.display='none'"
             aria-label="Schließen"
-            style="position:absolute; top:10px; right:10px; background:#f1f1f1; border:none;
-                   border-radius:50%; width:32px; height:32px; font-size:1.1rem; cursor:pointer;
-                   line-height:1;">✕</button>
-    <img src="qr-terminal.jpg" alt="QR-Code zur Studjo-Terminal-Seite"
+            style="position:absolute; top:10px; right:10px;
+                   background:#f1f1f1; border:none;
+                   border-radius:50%; width:32px; height:32px;
+                   font-size:1.1rem; cursor:pointer; line-height:1;">
+      ✕
+    </button>
+
+    <img src="qr-terminal.jpg"
+         alt="QR-Code zur Studjo-Terminal-Seite"
          style="width:220px;height:220px;display:block;margin:0 auto 16px;">
-    <p style="font-size:1rem; color:#0f2f37; margin:0 0 6px; font-weight:700;">
+
+    <p style="font-size:1rem; color:#0f2f37;
+              margin:0 0 6px; font-weight:700;">
       Mit dem Handy scannen
     </p>
-    <p style="font-size:0.85rem; color:#8a8d8f; margin:0; word-break:break-all;">
+
+    <p style="font-size:0.85rem; color:#8a8d8f;
+              margin:0; word-break:break-all;">
       studjo-auq.github.io/terminal
     </p>
   </div>
@@ -155,80 +193,110 @@
 <link rel="stylesheet" href="a11y.css">
 <script src="a11y.js"></script>
 
-<!-- ══ INFO-POPUP (Probelauf) ══ -->
+<!-- ══ INFO-POPUP ══ -->
 <div id="info-popup"
      onclick="this.style.display='none'"
      style="display:none; position:fixed; inset:0; z-index:2000;
-            background:rgba(0,0,0,0.6); align-items:center; justify-content:center; padding:20px;">
+            background:rgba(0,0,0,0.6);
+            align-items:center; justify-content:center; padding:20px;">
+
   <div onclick="event.stopPropagation()"
-       style="background:#fff; border-radius:16px; padding:30px 30px 26px;
-              text-align:left; max-width:580px; width:100%; position:relative;
+       style="background:#fff; border-radius:16px;
+              padding:30px 30px 26px; text-align:left;
+              max-width:580px; width:100%; position:relative;
               box-shadow:0 10px 40px rgba(0,0,0,0.35);">
+
     <button type="button"
             onclick="vorleseInfoText(this)"
             aria-label="Info vorlesen"
-            style="position:absolute; top:10px; right:52px; background:#f1f1f1; border:none;
-                   border-radius:50%; width:32px; height:32px; font-size:1.05rem; cursor:pointer;
-                   line-height:1; display:flex; align-items:center; justify-content:center;">
+            style="position:absolute; top:10px; right:52px;
+                   background:#f1f1f1; border:none; border-radius:50%;
+                   width:32px; height:32px; font-size:1.05rem;
+                   cursor:pointer; line-height:1; display:flex;
+                   align-items:center; justify-content:center;">
       👂
     </button>
+
     <button type="button"
             onclick="document.getElementById('info-popup').style.display='none'"
             aria-label="Schließen"
-            style="position:absolute; top:10px; right:10px; background:#f1f1f1; border:none;
-                   border-radius:50%; width:32px; height:32px; font-size:1.1rem; cursor:pointer;
-                   line-height:1;">✕</button>
+            style="position:absolute; top:10px; right:10px;
+                   background:#f1f1f1; border:none;
+                   border-radius:50%; width:32px; height:32px;
+                   font-size:1.1rem; cursor:pointer; line-height:1;">
+      ✕
+    </button>
 
-    <h2 style="margin:0 0 16px; color:#b61f29; font-size:1.3rem; font-weight:800;">
+    <h2 style="margin:0 0 16px; color:#b61f29;
+               font-size:1.3rem; font-weight:800;">
       Kurze Info
     </h2>
 
-    <ul style="margin:0; padding-left:22px; font-size:1rem; line-height:1.8; color:#0f2f37;">
+    <ul style="margin:0; padding-left:22px;
+               font-size:1rem; line-height:1.8; color:#0f2f37;">
       <li>Hier steht das Motto für diese Woche.</li>
-      <li>Das Motto wechselt jede Woche neu.</li>
-      <li>Es soll dich freundlich begleiten.</li>
-      <li>Du kannst mehr über das Motto lesen.</li>
-      <li>Bei Fragen hilft dir deine Gruppenleitung weiter.</li>
+      <li>Das Motto wechselt jede Woche.</li>
+      <li>Es gibt 100 verschiedene Mottos.</li>
+      <li>Das Motto soll dich freundlich begleiten.</li>
+      <li>Tippe auf „Was bedeutet das?“ für eine Erklärung.</li>
     </ul>
   </div>
 </div>
 
 <script>
-  function vorleseInfoText(button) {
-      if (!('speechSynthesis' in window)) {
-          alert('Dein Browser unterstützt leider keine Sprachausgabe.');
-          return;
-      }
-      const warAktiv = button.classList.contains('aktiv');
-      window.speechSynthesis.cancel();
-      document.querySelectorAll('.info-ohr-aktiv').forEach(b => {
-          b.classList.remove('info-ohr-aktiv', 'aktiv');
-          b.style.background = '#f1f1f1';
-      });
-      if (warAktiv) return;
-
-      const popup = document.getElementById('info-popup');
-      const ueberschrift = popup.querySelector('h2')?.innerText || '';
-      const listenpunkte = Array.from(popup.querySelectorAll('li')).map(li => li.innerText);
-      const roh = [ueberschrift, ...listenpunkte].join('. ');
-      const text = roh.replace(/\p{Extended_Pictographic}/gu, '').replace(/\s+/g, ' ').trim();
-
-      const ansage = new SpeechSynthesisUtterance(text);
-      ansage.lang = 'de-DE';
-      ansage.rate = 0.95;
-      const zuruecksetzen = () => {
-          button.classList.remove('aktiv', 'info-ohr-aktiv');
-          button.style.background = '#f1f1f1';
-      };
-      ansage.onend = zuruecksetzen;
-      ansage.onerror = zuruecksetzen;
-
-      button.classList.add('aktiv', 'info-ohr-aktiv');
-      button.style.background = '#ffe600';
-      window.speechSynthesis.speak(ansage);
+function vorleseInfoText(button) {
+  if (!('speechSynthesis' in window)) {
+    alert('Dein Browser unterstützt leider keine Sprachausgabe.');
+    return;
   }
+
+  const warAktiv = button.classList.contains('aktiv');
+  window.speechSynthesis.cancel();
+
+  document.querySelectorAll('.info-ohr-aktiv').forEach(b => {
+    b.classList.remove('info-ohr-aktiv', 'aktiv');
+    b.style.background = '#f1f1f1';
+  });
+
+  if (warAktiv) return;
+
+  const popup = document.getElementById('info-popup');
+  const ueberschrift =
+    popup.querySelector('h2')?.innerText || '';
+
+  const listenpunkte =
+    Array.from(popup.querySelectorAll('li'))
+      .map(li => li.innerText);
+
+  const roh =
+    [ueberschrift, ...listenpunkte].join('. ');
+
+  const text =
+    roh.replace(/\p{Extended_Pictographic}/gu, '')
+       .replace(/\s+/g, ' ')
+       .trim();
+
+  const ansage =
+    new SpeechSynthesisUtterance(text);
+
+  ansage.lang = 'de-DE';
+  ansage.rate = 0.95;
+
+  const zuruecksetzen = () => {
+    button.classList.remove('aktiv', 'info-ohr-aktiv');
+    button.style.background = '#f1f1f1';
+  };
+
+  ansage.onend = zuruecksetzen;
+  ansage.onerror = zuruecksetzen;
+
+  button.classList.add('aktiv', 'info-ohr-aktiv');
+  button.style.background = '#ffe600';
+
+  window.speechSynthesis.speak(ansage);
+}
 </script>
 
-  <script src="gong.js"></script>
+<script src="gong.js"></script>
 </body>
 </html>
