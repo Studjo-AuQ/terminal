@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="manifest.webmanifest">
     <meta name="theme-color" content="#b61f29">
     <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
@@ -9,78 +10,270 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Studjo">
     <title>LearningApp - Arbeitssicherheit</title>
+
     <style>
-        /* Übernimm deine Variablen aus der opnv.txt */
         :root {
             --primary-red: #b61f29;
             --bg-color: #f9f9f9;
             --text-color: #0f2f37;
+            --grey: #6f777b;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            min-height: 100%;
+            font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont,
+                         "Segoe UI", Arial, sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
         }
 
         body {
-            font-family: 'Nunito Sans', sans-serif;
-            margin: 0;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
-            height: 100vh; /* Ganze Bildschirmhöhe */
         }
 
         header {
-            background-color: white;
-            padding: 10px;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            background: #fff;
+            padding: 10px 16px;
+            box-shadow: 0 2px 10px rgba(0,0,0,.06);
         }
 
         .back-nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 14px;
             max-width: 1200px;
             margin: 0 auto;
             width: 100%;
         }
 
         .back-button {
-            background-color: var(--primary-red);
-            color: white;
+            display: inline-flex;
+            align-items: center;
+            background: #fff;
+            color: var(--primary-red);
+            border: 2px solid var(--primary-red);
             text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 8px;
-            font-weight: bold;
+            padding: 9px 18px;
+            border-radius: 999px;
+            font-weight: 800;
+            white-space: nowrap;
         }
 
-        /* Der Bereich für die externe Webseite */
+        .back-button:hover,
+        .back-button:focus-visible {
+            background: var(--primary-red);
+            color: #fff;
+        }
+
+        .header-logo {
+            height: 42px;
+            width: auto;
+            max-width: 48%;
+            object-fit: contain;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 0;
+        }
+
+        .consent-bereich {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 28px 18px;
+        }
+
+        .consent-karte {
+            width: min(650px, 100%);
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 6px 24px rgba(0,0,0,.10);
+            padding: 30px 28px;
+            text-align: center;
+            border-top: 6px solid var(--primary-red);
+        }
+
+        .consent-symbol {
+            font-size: 3.8rem;
+            line-height: 1;
+            margin-bottom: 14px;
+        }
+
+        .consent-karte h1 {
+            margin: 0 0 16px;
+            color: var(--primary-red);
+            font-size: 1.45rem;
+            line-height: 1.25;
+        }
+
+        .consent-karte p {
+            margin: 0 auto 12px;
+            max-width: 570px;
+            font-size: 1.02rem;
+            line-height: 1.65;
+        }
+
+        .datenschutz-hinweis {
+            margin: 18px 0;
+            padding: 14px 16px;
+            border-radius: 12px;
+            background: #f3f5f6;
+            color: #33444b;
+            font-size: .92rem;
+            line-height: 1.55;
+            text-align: left;
+        }
+
+        .laden-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 52px;
+            margin-top: 6px;
+            padding: 12px 24px;
+            border: 0;
+            border-radius: 999px;
+            background: var(--primary-red);
+            color: #fff;
+            font: inherit;
+            font-size: 1.05rem;
+            font-weight: 900;
+            cursor: pointer;
+        }
+
+        .laden-button:hover,
+        .laden-button:focus-visible {
+            filter: brightness(.92);
+            outline: 3px solid #0f2f37;
+            outline-offset: 3px;
+        }
+
         .content-frame {
-            flex: 1; /* Füllt den Rest des Bildschirms aus */
-            border: none;
+            display: none;
+            flex: 1;
             width: 100%;
+            min-height: 70vh;
+            border: 0;
+            background: #fff;
         }
 
         footer {
             text-align: center;
-            padding: 10px;
-            background-color: var(--primary-red);
-            color: white;
-            font-size: 0.8rem;
+            padding: 10px 16px;
+            background: var(--primary-red);
+            color: #fff;
+            font-size: .82rem;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 600px) {
+            .consent-karte {
+                padding: 24px 18px;
+            }
+
+            .consent-karte h1 {
+                font-size: 1.25rem;
+            }
+
+            .header-logo {
+                height: 34px;
+            }
         }
     </style>
 </head>
+
 <body>
 
-    <header>
-        <div class="back-nav">
-            <a href="arbeitssicherheit.html" class="back-button">← Zurück zur Auswahl</a>
-            <img src="header.jpg" style="height: 40px;">
-        </div>
-    </header>
+<header>
+    <div class="back-nav">
+        <a href="arbeitssicherheit.html" class="back-button">← Zurück zur Auswahl</a>
+        <img src="header.jpg"
+             class="header-logo"
+             alt="Studjo | Arbeit und Qualifizierung">
+    </div>
+</header>
 
-    <iframe src="https://learningapps.org/watch?v=ptbns0ugc23" class="content-frame"></iframe>
+<main>
+    <div class="consent-bereich" id="consent-bereich">
+        <section class="consent-karte"
+                 aria-labelledby="learningapp-titel">
+            <div class="consent-symbol" aria-hidden="true">🧩</div>
 
-    <footer>
-        &copy; 2024 <b>Studjo | Arbeit und Qualifizierung</b> | Infoterminal | Barrierefreier Zugang
-    </footer>
+            <h1 id="learningapp-titel">LearningApp zur Arbeitssicherheit</h1>
 
-  <script src="gong.js"></script>
+            <p>
+                Die Übung kommt von <strong>LearningApps.org</strong>.
+            </p>
+
+            <p>
+                Die Übung wird erst geladen, wenn du auf den roten Button tippst.
+            </p>
+
+            <div class="datenschutz-hinweis">
+                <strong>Datenschutz:</strong><br>
+                Erst nach deiner Zustimmung baut dein Browser eine Verbindung
+                zu LearningApps.org auf. Dabei können zum Beispiel deine
+                IP-Adresse sowie Informationen zu Browser und Gerät an
+                LearningApps.org übertragen werden.
+                <br><br>
+                Deine Zustimmung wird auf diesem Gerät nicht gespeichert.
+            </div>
+
+            <button type="button"
+                    class="laden-button"
+                    id="learningapp-laden">
+                Zustimmen und Übung laden
+            </button>
+        </section>
+    </div>
+
+    <iframe id="learningapp-frame"
+            class="content-frame"
+            title="LearningApp zur Arbeitssicherheit"
+            allowfullscreen>
+    </iframe>
+</main>
+
+<footer>
+    © 2026 <strong>Studjo | Arbeit und Qualifizierung</strong>
+    · Evangelisches Johanneswerk gGmbH
+</footer>
+
+<script>
+(function () {
+    'use strict';
+
+    const APP_URL = "https://learningapps.org/watch?v=ptbns0ugc23";
+    const button = document.getElementById('learningapp-laden');
+    const consent = document.getElementById('consent-bereich');
+    const frame = document.getElementById('learningapp-frame');
+
+    button.addEventListener('click', function () {
+        /*
+         * Datenschutzprinzip:
+         * Das iframe erhält erst NACH dem bewussten Klick seine externe URL.
+         * Vorher findet durch diese Seite keine Verbindung zu LearningApps statt.
+         */
+        frame.src = APP_URL;
+        frame.style.display = 'block';
+        consent.style.display = 'none';
+        frame.focus();
+    });
+})();
+</script>
+
+<script src="gong.js"></script>
 </body>
 </html>
