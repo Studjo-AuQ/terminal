@@ -3,109 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="manifest" href="manifest.webmanifest">
-    <meta name="theme-color" content="#b61f29">
-    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Studjo">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#b61f29">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Studjo">
 <title>Losung für heute | Studjo Terminal</title>
+
 <link rel="stylesheet" href="style.css">
 
 <style>
+/* ══════════════════════════════════════════════════════
+   LOSUNG – moderne, bildhafte Darstellung
+   ══════════════════════════════════════════════════════ */
 
-/* ══ LOSUNG-SEITE ══ */
 .losung-wrap {
   max-width: 900px;
   margin: 0 auto;
   padding: 10px 10px 40px;
 }
 
-.losung-card {
-  background: #ffffff;
-  border-radius: 18px;
-  box-shadow: 0 4px 18px rgba(0,0,0,0.10);
-  padding: 40px 30px 30px;
-  text-align: center;
-}
-
-.losung-datum {
-  font-size: 1.2rem;
-  font-weight: 800;
-  color: var(--secondary-grey, #8a8d8f);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 30px;
-}
-
-.losung-block {
-  margin-bottom: 40px;
-}
-
-.losung-label {
-  font-size: 0.85rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--primary-red, #b61f29);
-  margin-bottom: 14px;
-}
-
-.losung-text {
-  font-size: 1.9rem;
-  font-weight: 700;
-  line-height: 1.5;
-  color: var(--text-color, #0f2f37);
-  margin-bottom: 14px;
-}
-
-.lehrtext-text {
-  font-size: 1.4rem;
-  font-weight: 600;
-  line-height: 1.55;
-  color: var(--text-color, #0f2f37);
-  margin-bottom: 14px;
-}
-
-.losung-stelle {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--secondary-grey, #8a8d8f);
-}
-
-.losung-trenner {
-  width: 60px;
-  height: 4px;
-  background: var(--primary-red, #b61f29);
-  border-radius: 2px;
-  margin: 0 auto 40px;
-  opacity: 0.5;
-}
-
-.losung-copyright {
-  font-size: 0.85rem;
-  color: var(--secondary-grey, #8a8d8f);
-  margin-top: 10px;
-  line-height: 1.6;
-}
-
-.losung-copyright a {
-  color: var(--primary-red, #b61f29);
-  font-weight: 700;
-  text-decoration: underline;
-}
-
-.losung-sonntag {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--primary-red, #b61f29);
-  margin-top: -22px;
-  margin-bottom: 24px;
-}
-
+/* Kopfzeile */
 .losung-topbar {
   max-width: 900px;
-  margin: 0 auto 30px;
+  margin: 0 auto 24px;
   padding: 10px 10px 0;
   display: flex;
   align-items: center;
@@ -148,6 +70,7 @@
   font-size: 1.5rem;
 }
 
+/* Lade-/Fehlerzustand */
 .losung-status {
   text-align: center;
   font-size: 1.1rem;
@@ -155,14 +78,289 @@
   padding: 60px 10px;
 }
 
-@media (max-width: 600px) {
-  .losung-text   { font-size: 1.4rem; }
-  .lehrtext-text { font-size: 1.15rem; }
-  .losung-card   { padding: 26px 18px 22px; }
+/* Gesamter Tagesbereich */
+.losung-tageskarte {
+  display: grid;
+  gap: 18px;
 }
 
+/* Große Symbolfläche */
+.losung-symbolfeld {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f9eff1 0%, #fff8ef 100%);
+  border: 1px solid #f0d9dd;
+  border-radius: 22px;
+  padding: 28px 24px 24px;
+  text-align: center;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+}
+
+.losung-symbolfeld::before,
+.losung-symbolfeld::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.losung-symbolfeld::before {
+  width: 170px;
+  height: 170px;
+  right: -55px;
+  top: -75px;
+  background: rgba(182,31,41,0.06);
+}
+
+.losung-symbolfeld::after {
+  width: 130px;
+  height: 130px;
+  left: -55px;
+  bottom: -70px;
+  background: rgba(15,47,55,0.05);
+}
+
+.losung-symbol-label {
+  position: relative;
+  z-index: 1;
+  color: var(--primary-red, #b61f29);
+  font-size: 0.76rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  margin-bottom: 10px;
+}
+
+.losung-symbole {
+  position: relative;
+  z-index: 1;
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  font-size: clamp(4rem, 11vw, 6.2rem);
+  line-height: 1;
+  margin-bottom: 14px;
+}
+
+.losung-datum {
+  position: relative;
+  z-index: 1;
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: #48545a;
+  line-height: 1.3;
+}
+
+.losung-sonntag {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.82);
+  color: var(--primary-red, #b61f29);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+/* Thematische Pastellvarianten.
+   Sie sind nur dekorativ; der Text bleibt unabhängig davon lesbar. */
+.thema-licht {
+  background: linear-gradient(135deg, #fff8d9 0%, #fffdf3 100%);
+  border-color: #eadb94;
+}
+.thema-hoffnung {
+  background: linear-gradient(135deg, #edf8ef 0%, #f8fcf8 100%);
+  border-color: #b9dfc1;
+}
+.thema-liebe {
+  background: linear-gradient(135deg, #fcecef 0%, #fff8fa 100%);
+  border-color: #efc1ca;
+}
+.thema-frieden {
+  background: linear-gradient(135deg, #edf6fb 0%, #f8fcfe 100%);
+  border-color: #b8d9e9;
+}
+.thema-schutz {
+  background: linear-gradient(135deg, #eef0fb 0%, #f8f9fe 100%);
+  border-color: #c3c9e8;
+}
+.thema-wasser {
+  background: linear-gradient(135deg, #eaf7fb 0%, #f8fdff 100%);
+  border-color: #b5dce8;
+}
+.thema-gemeinschaft {
+  background: linear-gradient(135deg, #f1f7ec 0%, #fafdf8 100%);
+  border-color: #c9dfb8;
+}
+.thema-weg {
+  background: linear-gradient(135deg, #f8f1e8 0%, #fffaf4 100%);
+  border-color: #e3ccb0;
+}
+.thema-freude {
+  background: linear-gradient(135deg, #fff0e7 0%, #fff9f4 100%);
+  border-color: #efc6a9;
+}
+.thema-gebet {
+  background: linear-gradient(135deg, #f3eef9 0%, #fbf9fd 100%);
+  border-color: #d8c6e7;
+}
+.thema-staerke {
+  background: linear-gradient(135deg, #eef3f5 0%, #fafcfc 100%);
+  border-color: #cad6da;
+}
+.thema-schoepfung {
+  background: linear-gradient(135deg, #edf7ed 0%, #f8fcf7 100%);
+  border-color: #bddbbc;
+}
+.thema-standard {
+  background: linear-gradient(135deg, #f7f5f2 0%, #ffffff 100%);
+  border-color: #ddd8d1;
+}
+
+/* Inhalt – Losung und Lehrtext klar getrennt */
+.losung-inhaltskarte {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 28px 28px 24px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  border: 1px solid #eceeef;
+}
+
+.losung-inhaltskarte.haupt {
+  border-top: 6px solid var(--primary-red, #b61f29);
+}
+
+.losung-inhaltskarte.lehrtext {
+  border-top: 6px solid #557b89;
+  background: #fbfcfc;
+}
+
+.losung-kartenkopf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.losung-kartenicon {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.losung-label {
+  font-size: 0.85rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--primary-red, #b61f29);
+}
+
+.losung-inhaltskarte.lehrtext .losung-label {
+  color: #456977;
+}
+
+.losung-text {
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.48;
+  color: var(--text-color, #0f2f37);
+  text-align: center;
+  margin: 0 0 18px;
+}
+
+.lehrtext-text {
+  font-size: 1.38rem;
+  font-weight: 600;
+  line-height: 1.55;
+  color: var(--text-color, #0f2f37);
+  text-align: center;
+  margin: 0 0 18px;
+}
+
+.losung-stelle {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--secondary-grey, #8a8d8f);
+  background: #f4f5f6;
+  border-radius: 999px;
+  padding: 7px 13px;
+}
+
+.losung-stelle-wrap {
+  text-align: center;
+}
+
+/* Copyright separat und ruhig */
+.losung-copyright {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 14px 18px;
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--secondary-grey, #8a8d8f);
+  line-height: 1.6;
+  border: 1px solid #eceeef;
+}
+
+.losung-copyright a {
+  color: var(--primary-red, #b61f29);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* Mobile Darstellung */
+@media (max-width: 600px) {
+  .losung-wrap {
+    padding: 4px 4px 28px;
+  }
+
+  .losung-symbolfeld {
+    padding: 22px 14px 20px;
+    border-radius: 18px;
+  }
+
+  .losung-symbole {
+    font-size: clamp(3.7rem, 19vw, 5rem);
+    gap: 10px;
+    min-height: 70px;
+  }
+
+  .losung-datum {
+    font-size: 0.96rem;
+  }
+
+  .losung-inhaltskarte {
+    padding: 22px 17px 20px;
+    border-radius: 17px;
+  }
+
+  .losung-text {
+    font-size: 1.42rem;
+    line-height: 1.46;
+  }
+
+  .lehrtext-text {
+    font-size: 1.15rem;
+    line-height: 1.52;
+  }
+
+  .losung-kartenkopf {
+    margin-bottom: 14px;
+  }
+
+  .losung-topbar {
+    margin-bottom: 18px;
+  }
+}
 </style>
 </head>
+
 <body>
 
 <header>
@@ -175,20 +373,28 @@
 
   <div class="losung-topbar">
     <a href="index.html" class="zurueck-pill">← Zurück</a>
-    <h1 id="seitenanfang"><span class="losung-icon">📖</span> Losung für heute</h1>
-      <button type="button"
+
+    <h1 id="seitenanfang">
+      <span class="losung-icon">📖</span>
+      Losung für heute
+    </h1>
+
+    <button type="button"
             onclick="document.getElementById('info-popup').style.display='flex'"
             aria-label="Kurze Info anzeigen"
-            style="margin-left:auto; flex-shrink:0; background:#ffffff; border:3px solid #b61f29;
-                   border-radius:50%; width:52px; height:52px; cursor:pointer;
+            style="margin-left:auto; flex-shrink:0; background:#ffffff;
+                   border:3px solid #b61f29; border-radius:50%;
+                   width:52px; height:52px; cursor:pointer;
                    display:flex; align-items:center; justify-content:center;
                    font-size:1.9rem; padding:0; line-height:1;">
-        ℹ️
+      ℹ️
     </button>
   </div>
 
   <div class="losung-wrap">
-    <div id="losung-inhalt" class="losung-status">Losung wird geladen …</div>
+    <div id="losung-inhalt" class="losung-status">
+      Losung wird geladen …
+    </div>
   </div>
 
 </main>
@@ -196,12 +402,142 @@
 <script>
 (function () {
 
-  const WOCHENTAGE = ['Sonntag','Montag','Dienstag','Mittwoch',
-                      'Donnerstag','Freitag','Samstag'];
-  const MONATE = ['Januar','Februar','März','April','Mai','Juni',
-                  'Juli','August','September','Oktober','November','Dezember'];
+  const WOCHENTAGE = [
+    'Sonntag','Montag','Dienstag','Mittwoch',
+    'Donnerstag','Freitag','Samstag'
+  ];
 
-  // Heutiges Datum als "YYYY-MM-DD" (lokale Zeit, kein UTC-Versatz)
+  const MONATE = [
+    'Januar','Februar','März','April','Mai','Juni',
+    'Juli','August','September','Oktober','November','Dezember'
+  ];
+
+  /* ══════════════════════════════════════════════════════
+     THEMEN-SYMBOLE
+
+     Die Symbole sind nur eine visuelle Begleitung.
+     Sie ersetzen keine Auslegung des Bibeltextes.
+
+     Es werden maximal zwei Themen ausgewählt.
+     Wenn nichts eindeutig passt, erscheint neutral 📖.
+     ══════════════════════════════════════════════════════ */
+
+  const THEMEN = [
+    {
+      name: 'Licht',
+      icon: '☀️',
+      klasse: 'thema-licht',
+      woerter: [
+        'licht', 'leuchte', 'leuchten', 'leuchtet',
+        'hell', 'morgenstern', 'sonne', 'scheint'
+      ]
+    },
+    {
+      name: 'Hoffnung',
+      icon: '🌱',
+      klasse: 'thema-hoffnung',
+      woerter: [
+        'hoffnung', 'hoffen', 'hoffe', 'vertrauen',
+        'vertraue', 'vertraut', 'trosten', 'trost',
+        'trösten', 'tröstet', 'zukunft'
+      ]
+    },
+    {
+      name: 'Liebe',
+      icon: '❤️',
+      klasse: 'thema-liebe',
+      woerter: [
+        'liebe', 'liebt', 'lieben', 'geliebt',
+        'lieb habe', 'barmherzigkeit', 'barmherzig'
+      ]
+    },
+    {
+      name: 'Frieden',
+      icon: '🕊️',
+      klasse: 'thema-frieden',
+      woerter: [
+        'frieden', 'friede', 'friedlich',
+        'versöhnen', 'versohn', 'versöhnt'
+      ]
+    },
+    {
+      name: 'Gemeinschaft',
+      icon: '🤝',
+      klasse: 'thema-gemeinschaft',
+      woerter: [
+        'gemeinsam', 'gemeinschaft', 'einander',
+        'untereinander', 'brüder', 'schwestern',
+        'bruder', 'schwester', 'volk'
+      ]
+    },
+    {
+      name: 'Schutz',
+      icon: '🛡️',
+      klasse: 'thema-schutz',
+      woerter: [
+        'schutz', 'schützen', 'beschützen',
+        'retten', 'rettet', 'gerettet',
+        'helfen', 'hilft', 'hilfe', 'bewahren'
+      ]
+    },
+    {
+      name: 'Weg',
+      icon: '🛤️',
+      klasse: 'thema-weg',
+      woerter: [
+        'weg', 'wege', 'pfad', 'führen', 'führt',
+        'führe', 'leitung', 'gehen', 'wandeln'
+      ]
+    },
+    {
+      name: 'Wasser',
+      icon: '💧',
+      klasse: 'thema-wasser',
+      woerter: [
+        'wasser', 'quelle', 'quellen', 'regen',
+        'meer', 'fluss', 'bäche', 'wasserbächen'
+      ]
+    },
+    {
+      name: 'Freude',
+      icon: '🌈',
+      klasse: 'thema-freude',
+      woerter: [
+        'freude', 'freuen', 'freut', 'fröhlich',
+        'froehlich', 'jubel', 'loben', 'lobt',
+        'danken', 'dankt'
+      ]
+    },
+    {
+      name: 'Gebet',
+      icon: '🙏',
+      klasse: 'thema-gebet',
+      woerter: [
+        'beten', 'betet', 'gebet', 'bitten',
+        'bittet', 'rufe', 'rufen', 'rief'
+      ]
+    },
+    {
+      name: 'Stärke',
+      icon: '💪',
+      klasse: 'thema-staerke',
+      woerter: [
+        'stärke', 'stark', 'stärken', 'kräftig',
+        'kraft', 'mächtig', 'macht'
+      ]
+    },
+    {
+      name: 'Schöpfung',
+      icon: '🌳',
+      klasse: 'thema-schoepfung',
+      woerter: [
+        'schöpfung', 'schoepfung', 'erde',
+        'himmel', 'baum', 'bäume', 'berg',
+        'berge', 'geschöpf', 'geschöpfe'
+      ]
+    }
+  ];
+
   function heutigerSchluessel() {
     const heute = new Date();
     const jahr = heute.getFullYear();
@@ -213,15 +549,77 @@
   function formatDatum(isoDatum) {
     const teile = String(isoDatum).split('-');
     if (teile.length !== 3) return isoDatum;
-    const d = new Date(Number(teile[0]), Number(teile[1]) - 1, Number(teile[2]));
+
+    const d = new Date(
+      Number(teile[0]),
+      Number(teile[1]) - 1,
+      Number(teile[2])
+    );
+
     if (isNaN(d.getTime())) return isoDatum;
-    return WOCHENTAGE[d.getDay()] + ', ' + d.getDate() + '. ' +
-           MONATE[d.getMonth()] + ' ' + d.getFullYear();
+
+    return WOCHENTAGE[d.getDay()] + ', ' +
+           d.getDate() + '. ' +
+           MONATE[d.getMonth()] + ' ' +
+           d.getFullYear();
+  }
+
+  function htmlSicher(text) {
+    return String(text ?? '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
+  }
+
+  function normalisiereText(text) {
+    return String(text || '')
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '');
+  }
+
+  function themenFuerText(text) {
+    const t = normalisiereText(text);
+
+    const treffer = THEMEN
+      .map(thema => {
+        let punkte = 0;
+
+        thema.woerter.forEach(wort => {
+          const w = normalisiereText(wort);
+          let pos = t.indexOf(w);
+
+          while (pos !== -1) {
+            punkte++;
+            pos = t.indexOf(w, pos + w.length);
+          }
+        });
+
+        return {
+          ...thema,
+          punkte
+        };
+      })
+      .filter(thema => thema.punkte > 0)
+      .sort((a, b) => b.punkte - a.punkte);
+
+    if (treffer.length === 0) {
+      return [{
+        name: 'Bibel',
+        icon: '📖',
+        klasse: 'thema-standard',
+        punkte: 1
+      }];
+    }
+
+    return treffer.slice(0, 2);
   }
 
   function zeigeFehler(text) {
     const ziel = document.getElementById('losung-inhalt');
-    ziel.classList.add('losung-status');
+    ziel.className = 'losung-status';
     ziel.textContent = text;
   }
 
@@ -235,49 +633,128 @@
       const data = alleLosungen[schluessel];
 
       if (!data) {
-        zeigeFehler('Für den heutigen Tag (' + formatDatum(schluessel) +
-                     ') liegt noch keine Losung vor.');
+        zeigeFehler(
+          'Für den heutigen Tag (' +
+          formatDatum(schluessel) +
+          ') liegt noch keine Losung vor.'
+        );
         return;
       }
 
       const ziel = document.getElementById('losung-inhalt');
-      ziel.classList.remove('losung-status');
+      ziel.className = '';
+
+      const gesamterText =
+        String(data.losung || '') + ' ' +
+        String(data.lehrtext || '');
+
+      const themen = themenFuerText(gesamterText);
+      const hauptThema = themen[0];
+      const symbole = themen
+        .map(thema => thema.icon)
+        .join(' ');
+
+      const symbolAria = themen
+        .map(thema => thema.name)
+        .join(' und ');
 
       const sonntagHtml = data.sonntag
-        ? '<div class="losung-sonntag" data-vorlesen>' + data.sonntag + '</div>'
+        ? '<div class="losung-sonntag" data-vorlesen>' +
+            htmlSicher(data.sonntag) +
+          '</div>'
         : '';
 
-      ziel.innerHTML =
-        '<div class="losung-card">' +
-          '<div class="losung-datum" data-vorlesen>' + formatDatum(schluessel) + '</div>' +
-          sonntagHtml +
+      ziel.innerHTML = `
+        <div class="losung-tageskarte">
 
-          '<div class="losung-block">' +
-            '<div class="losung-label" data-vorlesen>Losung</div>' +
-            '<div class="losung-text" data-vorlesen>' + data.losung + '</div>' +
-            '<div class="losung-stelle" data-vorlesen>' + data.losung_stelle + '</div>' +
-          '</div>' +
+          <section class="losung-symbolfeld ${hauptThema.klasse}"
+                   aria-label="Symbole für heute: ${htmlSicher(symbolAria)}">
 
-          '<div class="losung-trenner"></div>' +
+            <div class="losung-symbol-label">
+              Symbole für heute
+            </div>
 
-          '<div class="losung-block" style="margin-bottom:20px;">' +
-            '<div class="losung-label" data-vorlesen>Lehrtext</div>' +
-            '<div class="lehrtext-text" data-vorlesen>' + data.lehrtext + '</div>' +
-            '<div class="losung-stelle" data-vorlesen>' + data.lehrtext_stelle + '</div>' +
-          '</div>' +
+            <div class="losung-symbole"
+                 aria-hidden="true">
+              ${symbole}
+            </div>
 
-          '<div class="losung-copyright">' +
-            '© Evangelische Brüder-Unität – Herrnhuter Brüdergemeine' +
-            ' (<a href="https://www.herrnhuter.de" target="_blank" rel="noopener">www.herrnhuter.de</a>)' +
-            '<br>' +
-            'Weitere Informationen finden Sie hier: ' +
-            '<a href="https://www.losungen.de" target="_blank" rel="noopener">www.losungen.de</a>' +
-          '</div>' +
-        '</div>';
+            <div class="losung-datum"
+                 data-vorlesen>
+              ${htmlSicher(formatDatum(schluessel))}
+            </div>
+
+            ${sonntagHtml}
+          </section>
+
+          <section class="losung-inhaltskarte haupt">
+            <div class="losung-kartenkopf">
+              <span class="losung-kartenicon"
+                    aria-hidden="true">📖</span>
+
+              <div class="losung-label"
+                   data-vorlesen>
+                Losung
+              </div>
+            </div>
+
+            <div class="losung-text"
+                 data-vorlesen>
+              ${htmlSicher(data.losung)}
+            </div>
+
+            <div class="losung-stelle-wrap">
+              <div class="losung-stelle"
+                   data-vorlesen>
+                ${htmlSicher(data.losung_stelle)}
+              </div>
+            </div>
+          </section>
+
+          <section class="losung-inhaltskarte lehrtext">
+            <div class="losung-kartenkopf">
+              <span class="losung-kartenicon"
+                    aria-hidden="true">💬</span>
+
+              <div class="losung-label"
+                   data-vorlesen>
+                Lehrtext
+              </div>
+            </div>
+
+            <div class="lehrtext-text"
+                 data-vorlesen>
+              ${htmlSicher(data.lehrtext)}
+            </div>
+
+            <div class="losung-stelle-wrap">
+              <div class="losung-stelle"
+                   data-vorlesen>
+                ${htmlSicher(data.lehrtext_stelle)}
+              </div>
+            </div>
+          </section>
+
+          <div class="losung-copyright">
+            © Evangelische Brüder-Unität – Herrnhuter Brüdergemeine
+            (<a href="https://www.herrnhuter.de"
+                target="_blank"
+                rel="noopener">www.herrnhuter.de</a>)
+            <br>
+            Weitere Informationen:
+            <a href="https://www.losungen.de"
+               target="_blank"
+               rel="noopener">www.losungen.de</a>
+          </div>
+
+        </div>
+      `;
     })
     .catch(err => {
       console.error('Losungen konnten nicht geladen werden:', err);
-      zeigeFehler('Die Losung für heute konnte leider nicht geladen werden.');
+      zeigeFehler(
+        'Die Losung für heute konnte leider nicht geladen werden.'
+      );
     });
 
 })();
@@ -293,23 +770,25 @@
   line-height: 1.6;
 ">
   © 2026 <strong>Studjo | Arbeit und Qualifizierung</strong>
-   ·  Evangelisches Johanneswerk gGmbH
+   · Evangelisches Johanneswerk gGmbH
   <br>
-  <a href="index.html" class="footer-home-link"
+
+  <a href="index.html"
+     class="footer-home-link"
      style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
     Startseite
   </a>
-   | 
+   |
   <a href="uebersicht.html"
      style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
     Übersicht
   </a>
-   | 
+   |
   <a href="impressum.html"
      style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
     Impressum
   </a>
-   | 
+   |
   <a href="datenschutz.html"
      style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
     Datenschutz
@@ -318,128 +797,178 @@
   <button type="button"
           onclick="document.getElementById('qr-overlay').style.display='flex'"
           aria-label="QR-Code zum Scannen anzeigen"
-          style="position:absolute; right:14px; top:50%; transform:translateY(-50%);
-                 background:rgba(255,255,255,0.18); border:2px solid rgba(255,255,255,0.55);
-                 border-radius:8px; width:38px; height:38px; cursor:pointer;
-                 display:flex; align-items:center; justify-content:center;
-                 font-size:1.25rem; padding:0; color:#fff; line-height:1;">
+          style="position:absolute; right:14px; top:50%;
+                 transform:translateY(-50%);
+                 background:rgba(255,255,255,0.18);
+                 border:2px solid rgba(255,255,255,0.55);
+                 border-radius:8px; width:38px; height:38px;
+                 cursor:pointer; display:flex; align-items:center;
+                 justify-content:center; font-size:1.25rem;
+                 padding:0; color:#fff; line-height:1;">
     📱
   </button>
 
   <button type="button"
           onclick="document.getElementById('seitenanfang').scrollIntoView({behavior:'smooth', block:'start'})"
           aria-label="Nach oben zur Seitenüberschrift scrollen"
-          style="position:absolute; left:14px; top:50%; transform:translateY(-50%);
-                 background:rgba(255,255,255,0.18); border:2px solid rgba(255,255,255,0.55);
-                 border-radius:8px; width:38px; height:38px; cursor:pointer;
-                 display:flex; align-items:center; justify-content:center;
-                 font-size:1.25rem; padding:0; color:#fff; line-height:1;">
+          style="position:absolute; left:14px; top:50%;
+                 transform:translateY(-50%);
+                 background:rgba(255,255,255,0.18);
+                 border:2px solid rgba(255,255,255,0.55);
+                 border-radius:8px; width:38px; height:38px;
+                 cursor:pointer; display:flex; align-items:center;
+                 justify-content:center; font-size:1.25rem;
+                 padding:0; color:#fff; line-height:1;">
     ⬆️
   </button>
 </footer>
 
-<!-- ══ QR-CODE-OVERLAY (per Klick auf das Handy-Symbol im Footer) ══ -->
+<!-- ══ QR-CODE-OVERLAY ══ -->
 <div id="qr-overlay"
      onclick="this.style.display='none'"
      style="display:none; position:fixed; inset:0; z-index:2000;
-            background:rgba(0,0,0,0.6); align-items:center; justify-content:center; padding:20px;">
+            background:rgba(0,0,0,0.6); align-items:center;
+            justify-content:center; padding:20px;">
+
   <div onclick="event.stopPropagation()"
-       style="background:#fff; border-radius:16px; padding:30px 30px 24px;
-              text-align:center; max-width:320px; position:relative;
+       style="background:#fff; border-radius:16px;
+              padding:30px 30px 24px; text-align:center;
+              max-width:320px; position:relative;
               box-shadow:0 10px 40px rgba(0,0,0,0.35);">
+
     <button type="button"
             onclick="document.getElementById('qr-overlay').style.display='none'"
             aria-label="Schließen"
-            style="position:absolute; top:10px; right:10px; background:#f1f1f1; border:none;
-                   border-radius:50%; width:32px; height:32px; font-size:1.1rem; cursor:pointer;
-                   line-height:1;">✕</button>
-    <img src="qr-terminal.jpg" alt="QR-Code zur Studjo-Terminal-Seite"
+            style="position:absolute; top:10px; right:10px;
+                   background:#f1f1f1; border:none; border-radius:50%;
+                   width:32px; height:32px; font-size:1.1rem;
+                   cursor:pointer; line-height:1;">
+      ✕
+    </button>
+
+    <img src="qr-terminal.jpg"
+         alt="QR-Code zur Studjo-Terminal-Seite"
          style="width:220px;height:220px;display:block;margin:0 auto 16px;">
-    <p style="font-size:1rem; color:#0f2f37; margin:0 0 6px; font-weight:700;">
+
+    <p style="font-size:1rem; color:#0f2f37;
+              margin:0 0 6px; font-weight:700;">
       Mit dem Handy scannen
     </p>
-    <p style="font-size:0.85rem; color:#8a8d8f; margin:0; word-break:break-all;">
+
+    <p style="font-size:0.85rem; color:#8a8d8f;
+              margin:0; word-break:break-all;">
       studjo-auq.github.io/terminal
     </p>
   </div>
 </div>
+
 <link rel="stylesheet" href="a11y.css">
 <script src="a11y.js"></script>
 
-<!-- ══ INFO-POPUP (Probelauf) ══ -->
+<!-- ══ INFO-POPUP ══ -->
 <div id="info-popup"
      onclick="this.style.display='none'"
      style="display:none; position:fixed; inset:0; z-index:2000;
-            background:rgba(0,0,0,0.6); align-items:center; justify-content:center; padding:20px;">
+            background:rgba(0,0,0,0.6); align-items:center;
+            justify-content:center; padding:20px;">
+
   <div onclick="event.stopPropagation()"
-       style="background:#fff; border-radius:16px; padding:30px 30px 26px;
-              text-align:left; max-width:580px; width:100%; position:relative;
+       style="background:#fff; border-radius:16px;
+              padding:30px 30px 26px; text-align:left;
+              max-width:580px; width:100%; position:relative;
               box-shadow:0 10px 40px rgba(0,0,0,0.35);">
+
     <button type="button"
             onclick="vorleseInfoText(this)"
             aria-label="Info vorlesen"
-            style="position:absolute; top:10px; right:52px; background:#f1f1f1; border:none;
-                   border-radius:50%; width:32px; height:32px; font-size:1.05rem; cursor:pointer;
-                   line-height:1; display:flex; align-items:center; justify-content:center;">
+            style="position:absolute; top:10px; right:52px;
+                   background:#f1f1f1; border:none; border-radius:50%;
+                   width:32px; height:32px; font-size:1.05rem;
+                   cursor:pointer; line-height:1; display:flex;
+                   align-items:center; justify-content:center;">
       👂
     </button>
+
     <button type="button"
             onclick="document.getElementById('info-popup').style.display='none'"
             aria-label="Schließen"
-            style="position:absolute; top:10px; right:10px; background:#f1f1f1; border:none;
-                   border-radius:50%; width:32px; height:32px; font-size:1.1rem; cursor:pointer;
-                   line-height:1;">✕</button>
+            style="position:absolute; top:10px; right:10px;
+                   background:#f1f1f1; border:none; border-radius:50%;
+                   width:32px; height:32px; font-size:1.1rem;
+                   cursor:pointer; line-height:1;">
+      ✕
+    </button>
 
-    <h2 style="margin:0 0 16px; color:#b61f29; font-size:1.3rem; font-weight:800;">
+    <h2 style="margin:0 0 16px; color:#b61f29;
+               font-size:1.3rem; font-weight:800;">
       Kurze Info
     </h2>
 
-    <ul style="margin:0; padding-left:22px; font-size:1rem; line-height:1.8; color:#0f2f37;">
+    <ul style="margin:0; padding-left:22px;
+               font-size:1rem; line-height:1.8; color:#0f2f37;">
       <li>Hier steht ein Satz aus der Bibel.</li>
       <li>Der Satz gehört zum heutigen Tag.</li>
       <li>Jeden Tag erscheint eine neue Losung.</li>
+      <li>Große Symbole begleiten den Text.</li>
       <li>Du kannst dir den Text vorlesen lassen.</li>
-      <li>Bei Fragen hilft dir deine Gruppenleitung weiter.</li>
     </ul>
   </div>
 </div>
 
 <script>
-  function vorleseInfoText(button) {
-      if (!('speechSynthesis' in window)) {
-          alert('Dein Browser unterstützt leider keine Sprachausgabe.');
-          return;
-      }
-      const warAktiv = button.classList.contains('aktiv');
-      window.speechSynthesis.cancel();
-      document.querySelectorAll('.info-ohr-aktiv').forEach(b => {
-          b.classList.remove('info-ohr-aktiv', 'aktiv');
-          b.style.background = '#f1f1f1';
-      });
-      if (warAktiv) return;
+function vorleseInfoText(button) {
+    if (!('speechSynthesis' in window)) {
+        alert('Dein Browser unterstützt leider keine Sprachausgabe.');
+        return;
+    }
 
-      const popup = document.getElementById('info-popup');
-      const ueberschrift = popup.querySelector('h2')?.innerText || '';
-      const listenpunkte = Array.from(popup.querySelectorAll('li')).map(li => li.innerText);
-      const roh = [ueberschrift, ...listenpunkte].join('. ');
-      const text = roh.replace(/\p{Extended_Pictographic}/gu, '').replace(/\s+/g, ' ').trim();
+    const warAktiv = button.classList.contains('aktiv');
 
-      const ansage = new SpeechSynthesisUtterance(text);
-      ansage.lang = 'de-DE';
-      ansage.rate = 0.95;
-      const zuruecksetzen = () => {
-          button.classList.remove('aktiv', 'info-ohr-aktiv');
-          button.style.background = '#f1f1f1';
-      };
-      ansage.onend = zuruecksetzen;
-      ansage.onerror = zuruecksetzen;
+    window.speechSynthesis.cancel();
 
-      button.classList.add('aktiv', 'info-ohr-aktiv');
-      button.style.background = '#ffe600';
-      window.speechSynthesis.speak(ansage);
-  }
+    document.querySelectorAll('.info-ohr-aktiv').forEach(b => {
+        b.classList.remove('info-ohr-aktiv', 'aktiv');
+        b.style.background = '#f1f1f1';
+    });
+
+    if (warAktiv) return;
+
+    const popup = document.getElementById('info-popup');
+    const ueberschrift = popup.querySelector('h2')?.innerText || '';
+
+    const listenpunkte =
+        Array.from(popup.querySelectorAll('li'))
+             .map(li => li.innerText);
+
+    const roh =
+        [ueberschrift, ...listenpunkte].join('. ');
+
+    const text =
+        roh.replace(/\p{Extended_Pictographic}/gu, '')
+           .replace(/\s+/g, ' ')
+           .trim();
+
+    const ansage =
+        new SpeechSynthesisUtterance(text);
+
+    ansage.lang = 'de-DE';
+    ansage.rate = 0.95;
+
+    const zuruecksetzen = () => {
+        button.classList.remove('aktiv', 'info-ohr-aktiv');
+        button.style.background = '#f1f1f1';
+    };
+
+    ansage.onend = zuruecksetzen;
+    ansage.onerror = zuruecksetzen;
+
+    button.classList.add('aktiv', 'info-ohr-aktiv');
+    button.style.background = '#ffe600';
+
+    window.speechSynthesis.speak(ansage);
+}
 </script>
 
-  <script src="gong.js"></script>
+<script src="gong.js"></script>
 </body>
 </html>
