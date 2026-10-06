@@ -44,6 +44,27 @@
 
       <!-- AB HIER DIE NEUIGKEITEN PRO ABSCHNITT KOPIEREN, AKTUALISIEREN ODER LÖSCHEN-->
 
+   <div class="news-card">
+                <div class="news-kopf" onclick="toggleNews(this)">
+                    <img src="Neues.jpg" alt="" class="news-img">
+                    <div class="news-content">
+                        <div class="news-date">6. Oktober 2026</div>
+                        <h2 class="news-title">Verbesserungen am Terminal</h2>
+                        <p class="news-teaser">In den letzten Wochen sind noch einige Funktionen dazu gekommen.</p>
+                    </div>
+                    <button type="button" class="news-ohr" onclick="event.stopPropagation(); vorleseNews(this)" aria-label="Nachricht vorlesen">👂</button>
+                    <div class="news-pfeil">›</div>
+                </div>
+                <div class="news-mehr">
+                    <p class="news-text">1) Die Anzeige "Arbeitszeit / Freizeit" ist nun schmaler.
+                        <br>2) Du kannst durch Klicken in ein freies Feld den "Gong" aktivieren. Das ist ein Signal für Arbeit und Pausen.
+                    <br>3) Beim Kalender-Symbol und unter "Termine" sieht du nun alle wichtigen Termin für Studjo. Auch Schulferien sind dort markiert.
+                    <br>4) Unten rechts siehst du ein "Stift" Symbol. Damit kannst du dir die Kacheln auf der Startseite selbst verschieben oder für dich unwichtige ausblenden.
+                    <br>5) Unten rechts neben dem Stift siehst du ein Handy-Symbol. Dieses öffnet einen QR-Code, sodass du das Terminal anderen schnell übermitteln kannst.
+                    </p>
+                </div>
+            </div>           
+
             <div class="news-card">
                 <div class="news-kopf" onclick="toggleNews(this)">
                     <img src="Neues.jpg" alt="" class="news-img">
@@ -75,39 +96,6 @@
                     <p class="news-text">Das ist ein Vers aus der Bibel.<br>Lies oder lass ihn dir vorlesen.</p>
                 </div>
             </div>
-
-            <div class="news-card">
-                <div class="news-kopf" onclick="toggleNews(this)">
-                    <img src="Neues.jpg" alt="" class="news-img">
-                    <div class="news-content">
-                        <div class="news-date">20. Juli 2026</div>
-                        <h2 class="news-title">Infos zu Zeiten</h2>
-                        <p class="news-teaser">Auf der Startseite siehst du: Zeiten für Arbeit, Pause oder Freizeit.</p>
-                    </div>
-                    <button type="button" class="news-ohr" onclick="event.stopPropagation(); vorleseNews(this)" aria-label="Nachricht vorlesen">👂</button>
-                    <div class="news-pfeil">›</div>
-                </div>
-                <div class="news-mehr">
-                    <p class="news-text">So kannst du dich gut orientieren.<br>Die Angaben gelten für Vollzeit.</p>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <div class="news-kopf" onclick="toggleNews(this)">
-                    <img src="Neues.jpg" alt="" class="news-img">
-                    <div class="news-content">
-                        <div class="news-date">26. Juni 2026</div>
-                        <h2 class="news-title">Wetterbericht verbessert</h2>
-                        <p class="news-teaser">Der Bereich "Wetter" ist nun übersichtlicher.</p>
-                    </div>
-                    <button type="button" class="news-ohr" onclick="event.stopPropagation(); vorleseNews(this)" aria-label="Nachricht vorlesen">👂</button>
-                    <div class="news-pfeil">›</div>
-                </div>
-                <div class="news-mehr">
-                    <p class="news-text">Dort siehst du nun alle Standorte auf einen Blick.<br>Und eine 5-Tage-Vorschau.</p>
-                </div>
-            </div>
-
         </div>
 
         <script>
