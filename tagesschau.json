@@ -1,11 +1,65 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "06.10.2026, 09:19 Uhr (UTC)",
+  "aktualisiert": "06.10.2026, 13:58 Uhr (UTC)",
   "meldungen": [
     {
-      "title": "Livestream: Die Wahl des Landtagspräsidenten in Sachsen-Anhalt",
+      "title": "Schülerproteste in Frankreich erreichen neuen Höhepunkt",
+      "description": "Blockierte Gymnasien und Hochschulen, landesweite Demos: In Frankreich haben sich die Schülerproteste ausgeweitet. Auch Gewerkschaften schlossen sich den Protesten an. Die Polizei ist mit einem Großaufgebot im Einsatz.",
+      "pubDate": "2026-10-06T15:42:34+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Separatistenführer Puigdemont kann nach Spanien zurückkehren",
+      "description": "Per Referendum wollte der katalanische Regierungschef Puigdemont 2017 die Unabhängigkeit der Region durchsetzen - und scheiterte. Es folgte die Flucht ins Ausland und Jahre im Exil. Nun ebnet das Verfassungsgericht den Weg für seine mögliche Rückkehr.",
+      "pubDate": "2026-10-06T15:40:37+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Tankstellen: Verstöße gegen die 12-Uhr-Regel werden weniger",
+      "description": "Die Zahl der Tankstellen, die gegen die 12-Uhr-Regel verstoßen, ist deutlich gesunken. Laut SWR-Analyse konzentrieren sich die verbliebenen Fälle auf wenige auffällige Betreiber. Von Jan Russezki.",
+      "pubDate": "2026-10-06T15:29:54+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Rheinmetall erschließt sich das Weltall",
+      "description": "Rheinmetall hat die Serienproduktion von Satelliten aufgenommen. Damit erweitert der Rüstungskonzern sein breites Produktportfolio weiter. Die Rheinmetall-Aktie war zuletzt aber kaum gefragt.",
+      "pubDate": "2026-10-06T14:09:30+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Drohnenangriffe im Schwarzen Meer: Frachter vor Bulgarien gesunken",
+      "description": "Wieder sind im Schwarzen Meer Handelsschiffe unter Beschuss geraten - diesmal vor der Küste Bulgariens. Ein Frachter ist gesunken, die Crew wird vermisst. Auf einem weiteren Handelsschiff gab es mehrere Verletzte.",
+      "pubDate": "2026-10-06T13:00:35+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Bundesweit erster AfD-Landtagspräsident in Sachsen-Anhalt gewählt",
+      "description": "Tobias Rausch ist neuer Landtagspräsident in Sachsen-Anhalt. Der 35-Jährige wurde im ersten Wahlgang in das höchste Amt des Bundeslandes gewählt. Damit stellt die AfD erstmals in Deutschland einen Landtagspräsidenten.",
+      "pubDate": "2026-10-06T13:47:11+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Nobelpreis für Physik geht an Neutrinoforscher Francis Halzen",
+      "description": "Der Nobelpreis für Physik geht an den belgisch-amerikanischen Forscher Francis Halzen. Der Wissenschaftler erhalte die Auszeichnung für seine Pionierarbeit bei der Erforschung von Neutrinos - also Elementarteilchen - am Südpol, wie das Nobelkomitee mitteilte.",
+      "pubDate": "2026-10-06T15:42:12+02:00",
+      "bild": ""
+    },
+    {
+      "title": "US-Bundesstaat Pennsylvania meldet mehr als 1.000 Masern-Fälle",
+      "description": "Der US-Bundesstaat Pennsylvania hat mehr als 1.000 Masern-Fälle gemeldet - das ist der höchste Stand seit 35 Jahren. Etwa 200 Menschen werden im Krankenhaus behandelt, fünf sind gestorben. Von Nina Barth.",
+      "pubDate": "2026-10-06T11:36:32+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Abwehrkampf der Ukraine: Massiver Drohnenangriff auf Moskau",
+      "description": "Als Teil ihres Abwehrkampfs nimmt die Ukraine immer wieder Ziele tief im russischen Hinterland ins Visier. Die russischen Behörden melden einen großangelegten Angriff auf die Hauptstadt Moskau mit rund 650 Drohnen.",
+      "pubDate": "2026-10-06T11:20:20+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Livestream: Die Nachrichten auf tagesschau24",
       "description": "Aktuelle Meldungen, vertiefende Analysen und Interviews: Verfolgen Sie das Programm des ARD-Nachrichtenkanals tagesschau24 hier.",
-      "pubDate": "2026-10-06T11:02:17+02:00",
+      "pubDate": "2026-10-06T13:05:15+02:00",
       "bild": ""
     },
     {
@@ -36,60 +90,6 @@
       "title": "Solidarität mit Jane Doe: \"Es geht um unsere Körper, um unsere Leben!\"",
       "description": "Seit Tagen sorgt eine mutmaßliche Gruppenvergewaltigung in den USA für Schlagzeilen. Der Fall ist zwei Jahre her. Die mangelhafte Aufklärung macht Studierende der Cornell University wütend. Von M. Ganslmeier.",
       "pubDate": "2026-10-06T09:30:38+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bestsellerautor Jeffrey Archer mit 86 Jahren gestorben",
-      "description": "Seinen ersten Roman schrieb Jeffrey Archer, um einer Pleite zu entgehen. Es folgte eine Karriere mit Millionen verkaufter Bücher und weltweit begeisterten Fans. Nun ist der Autor gestorben - nur einen Tag vor Erscheinen seines letzten Werks.",
-      "pubDate": "2026-10-06T09:24:16+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Schülerdemos in Frankreich: Wütender Protest, Angst vor Eskalation",
-      "description": "Unterrichtsausfall, marode Gebäude, ungleiche Bildungschancen: Frankreichs Schüler gehen dagegen seit Tagen auf die Straße. Auch für heute sind Proteste angekündigt - begleitet von der Sorge vor weiterer Eskalation. Von J. Borutta.",
-      "pubDate": "2026-10-06T09:17:43+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Reformdruck nicht nur auf Beitrittskandidaten - auch auf die EU",
-      "description": "Die EU will reformbereite Beitrittskandidaten nicht endlos warten lassen. Doch da die strengen Reformkriterien noch nicht erfüllt sind, bedarf es dafür neuer Modelle. Und auch die EU selbst muss sich noch vorbereiten. Von Tina Hassel.",
-      "pubDate": "2026-10-06T08:45:06+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Trump erlaubt angesichts hoher Spritpreise Nutzung von steuerfreiem Diesel",
-      "description": "Mit dem Iran-Krieg ist das Tanken auch in den USA deutlich teurer geworden. Nun verspricht US-Präsident Trump Abhilfe: Autofahrer sollen steuerfreien, \"roten\" Diesel nutzen können. Der ist bisher nur in der Landwirtschaft erlaubt.",
-      "pubDate": "2026-10-06T07:30:33+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Debatte über Meinungsfreiheit: Warum viele ihre Meinung lieber für sich behalten",
-      "description": "Offene Debatten und politische Diskussionen: Meinungsfreiheit gehört zum nationalen Selbstverständnis der US-Amerikaner. Doch Studien zeigen: An den Universitäten behalten immer mehr ihre Ansichten lieber für sich. Von Anne Schneider.",
-      "pubDate": "2026-10-06T07:22:59+02:00",
-      "bild": ""
-    },
-    {
-      "title": "\"Hallo\" statt \"Privjet\": An Lettlands Schulen ist Russisch verboten",
-      "description": "Lettland will sich sprachlich stärker nach Europa orientieren - seit diesem Schuljahr darf Russisch an Schulen nicht mehr als Fremdsprache unterrichtet werden. Besonders populär wird stattdessen: Deutsch. Von Arne Bartram.",
-      "pubDate": "2026-10-06T06:46:48+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Warum ein Studium keine Jobgarantie mehr ist",
-      "description": "Hunderttausende Menschen hierzulande haben einen Uniabschluss und trotzdem keinen Job. Dabei galt lange: Wer studiert, hat später die besten Berufsaussichten. Doch diese Gewissheit bröckelt. Von L.-M. Hiltscher und C. Dörr.",
-      "pubDate": "2026-10-06T06:23:54+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Frankfurter Buchmesse von Existenzangst und KI-Sorgen überschattet",
-      "description": "Die Leselust sinkt, Läden schließen, die Politik macht Druck. Wird die Krise der deutschen Buchbranche existenziell? Das ist ein bestimmendes Thema, das den Start der 78. Frankfurter Buchmesse überschattet. Von Sonja Fouraté.",
-      "pubDate": "2026-10-06T06:22:55+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Wie starre Hierarchien in Kliniken Machtmissbrauch ermöglichen",
-      "description": "Zahlen und Berichte zum Thema Machtmissbrauch haben in diesem Jahr eine Debatte unter Ärztinnen und Ärzten losgetreten. Fachleute sehen ein systemisches Problem aufgrund von starken Hierarchien in Krankenhäusern.",
-      "pubDate": "2026-10-06T06:21:58+02:00",
       "bild": ""
     }
   ],
