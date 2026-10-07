@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "stand": "2026-10-07",
+  "hinweis": "Zentrale Datenquelle für Studjo-Termine und NRW-Schulferien. Pflege mit termine-pflege.html.",
+  "termine": [
+    {
+      "id": "weiter-20261007-fachtag-teilhabe",
+      "kategorie": "weitere",
+      "von": "2026-10-07",
+      "bis": "2026-10-07",
+      "titel": "Fachtag Teilhabe",
+      "uhrzeit": "",
+      "ansprechpartner": "",
+      "hinweis": "Q1, Bochum"
+    },
+    {
+      "id": "andacht-20261008-kierspe",
+      "kategorie": "andachten",
+      "von": "2026-10-08",
+      "bis": "2026-10-08",
+      "titel": "Betriebsstätte Kierspe",
+      "uhrzeit": "13:00 Uhr",
+      "ansprechpartner": "Pfr. Georg Freiwat",
+      "hinweis": ""
+    },
+    {
+      "id": "fest-20261129-auf-der-heide",
+      "kategorie": "werkstattfeste",
+      "von": "2026-11-29",
+      "bis": "2026-11-29",
+      "titel": "Auf der Heide",
+      "uhrzeit": "11:00 – 16:00 Uhr",
+      "ansprechpartner": "",
+      "hinweis": ""
+    },
+    {
+      "id": "weiter-20261218-weihnachtsfeier-mamav",
+      "kategorie": "weitere",
+      "von": "2026-12-18",
+      "bis": "2026-12-18",
+      "titel": "Weihnachtsfeier MAmAV",
+      "uhrzeit": "ca. 19:00 Uhr",
+      "ansprechpartner": "",
+      "hinweis": ""
+    },
+    {
+      "id": "weiter-20261222-weihnachtsfeier-mamwv",
+      "kategorie": "weitere",
+      "von": "2026-12-22",
+      "bis": "2026-12-22",
+      "titel": "Weihnachtsfeier MAmWV",
+      "uhrzeit": "ca. 10:00 Uhr",
+      "ansprechpartner": "",
+      "hinweis": ""
+    },
+    {
+      "id": "schluss-20261223-winterferien",
+      "kategorie": "schliessungstage",
+      "von": "2026-12-23",
+      "bis": "2027-01-05",
+      "titel": "Winterferien",
+      "uhrzeit": "Betriebsferien",
+      "ansprechpartner": "",
+      "hinweis": "Wir wünschen frohe Festtage!"
+    },
+    {
+      "id": "schluss-20270507-brueckentag",
+      "kategorie": "schliessungstage",
+      "von": "2027-05-07",
+      "bis": "2027-05-07",
+      "titel": "Betriebsurlaub",
+      "uhrzeit": "Ganztägig geschlossen",
+      "ansprechpartner": "",
+      "hinweis": "Brückentag (Christi Himmelfahrt)"
+    },
+    {
+      "id": "schluss-20270528-brueckentag",
+      "kategorie": "schliessungstage",
+      "von": "2027-05-28",
+      "bis": "2027-05-28",
+      "titel": "Betriebsurlaub",
+      "uhrzeit": "Ganztägig geschlossen",
+      "ansprechpartner": "",
+      "hinweis": "Brückentag (Fronleichnam)"
+    },
+    {
+      "id": "schluss-20271223-winterferien",
+      "kategorie": "schliessungstage",
+      "von": "2027-12-23",
+      "bis": "2028-01-04",
+      "titel": "Betriebsurlaub",
+      "uhrzeit": "Winterferien",
+      "ansprechpartner": "",
+      "hinweis": "Wir wünschen frohe Festtage!"
+    }
+  ],
+  "schulferien": [
+    {
+      "id": "ferien-2026-herbst",
+      "name": "Herbstferien",
+      "von": "2026-10-17",
+      "bis": "2026-10-31"
+    },
+    {
+      "id": "ferien-2026-weihnachten",
+      "name": "Weihnachtsferien",
+      "von": "2026-12-23",
+      "bis": "2027-01-06"
+    },
+    {
+      "id": "ferien-2027-ostern",
+      "name": "Osterferien",
+      "von": "2027-03-22",
+      "bis": "2027-04-03"
+    },
+    {
+      "id": "ferien-2027-pfingsten",
+      "name": "Pfingstferien",
+      "von": "2027-05-18",
+      "bis": "2027-05-18"
+    },
+    {
+      "id": "ferien-2027-sommer",
+      "name": "Sommerferien",
+      "von": "2027-07-19",
+      "bis": "2027-08-31"
+    },
+    {
+      "id": "ferien-2027-herbst",
+      "name": "Herbstferien",
+      "von": "2027-10-23",
+      "bis": "2027-11-06"
+    },
+    {
+      "id": "ferien-2027-weihnachten",
+      "name": "Weihnachtsferien",
+      "von": "2027-12-24",
+      "bis": "2028-01-08"
+    },
+    {
+      "id": "ferien-2028-ostern",
+      "name": "Osterferien",
+      "von": "2028-04-10",
+      "bis": "2028-04-22"
+    },
+    {
+      "id": "ferien-2028-sommer",
+      "name": "Sommerferien",
+      "von": "2028-07-10",
+      "bis": "2028-08-22"
+    },
+    {
+      "id": "ferien-2028-herbst",
+      "name": "Herbstferien",
+      "von": "2028-10-23",
+      "bis": "2028-11-04"
+    },
+    {
+      "id": "ferien-2028-weihnachten",
+      "name": "Weihnachtsferien",
+      "von": "2028-12-21",
+      "bis": "2029-01-05"
+    },
+    {
+      "id": "ferien-2029-ostern",
+      "name": "Osterferien",
+      "von": "2029-03-26",
+      "bis": "2029-04-07"
+    },
+    {
+      "id": "ferien-2029-pfingsten",
+      "name": "Pfingstferien",
+      "von": "2029-05-22",
+      "bis": "2029-05-22"
+    },
+    {
+      "id": "ferien-2029-sommer",
+      "name": "Sommerferien",
+      "von": "2029-07-02",
+      "bis": "2029-08-14"
+    },
+    {
+      "id": "ferien-2029-herbst",
+      "name": "Herbstferien",
+      "von": "2029-10-15",
+      "bis": "2029-10-27"
+    },
+    {
+      "id": "ferien-2029-weihnachten",
+      "name": "Weihnachtsferien",
+      "von": "2029-12-20",
+      "bis": "2030-01-04"
+    },
+    {
+      "id": "ferien-2030-ostern",
+      "name": "Osterferien",
+      "von": "2030-04-15",
+      "bis": "2030-04-27"
+    }
+  ]
+}

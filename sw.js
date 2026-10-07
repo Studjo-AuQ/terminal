@@ -1,17 +1,14 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 3
+   Version 4
 
-   Ziele:
-   - robuste Installation auch dann, wenn EINE Core-Datei fehlt
-   - schnelle, bereits gespeicherte Unterseiten
-   - Netzwerk-Aktualisierung im Hintergrund
-   - verlässliche offline.html als Rückfall
-   - KEINE Löschung fremder Caches (z. B. anderes GitHub-Repo Checkpoint)
+   Neu in Version 4:
+   - termine.json ist zentrale Offline-Datenquelle für Termine
+     und NRW-Schulferien.
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v3';
+const CACHE_VERSION = 'v4';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 
@@ -42,13 +39,14 @@ const CORE_DATEIEN = [
   'icon-512-maskable.png',
   'apple-touch-icon.png',
 
-  /* Lokale dynamische Daten, die wichtige Startseiten-Unterseiten nutzen. */
+  /* Lokale dynamische Daten */
+  'termine.json',
   'wetter.json',
   'wochenmottos.json',
   'data/losungen.json',
   'tagesschau.json',
   'kobinet.json',
-  'nachrichten.json',
+  'nachrichten.json'
 ];
 
 function absolut(pfad) {
@@ -58,9 +56,6 @@ function absolut(pfad) {
 async function coreDateienLaden() {
   const cache = await caches.open(PRECACHE);
 
-  /* Bewusst NICHT cache.addAll():
-     Eine einzige 404-Datei darf die komplette SW-Installation nicht
-     mehr verhindern. Jede Datei wird unabhängig versucht. */
   await Promise.allSettled(
     CORE_DATEIEN.map(async pfad => {
       try {
@@ -73,6 +68,7 @@ async function coreDateienLaden() {
         }
 
         await cache.put(url, antwort.clone());
+
       } catch (fehler) {
         console.warn('[Studjo SW] Core-Datei nicht erreichbar:', pfad, fehler);
       }
@@ -92,8 +88,6 @@ self.addEventListener('activate', event => {
     caches.keys()
       .then(namen => Promise.all(
         namen
-          /* Wichtig: Nur eigene Studjo-Terminal-Caches löschen.
-             Andere Apps unter studjo-auq.github.io bleiben unangetastet. */
           .filter(name =>
             name.startsWith(CACHE_PREFIX) &&
             name !== PRECACHE &&
@@ -122,7 +116,7 @@ function minimaleOfflineAntwort() {
     '</body></html>',
     {
       status: 200,
-      headers: { 'Content-Type': 'text/html; charset=utf-8' },
+      headers: { 'Content-Type': 'text/html; charset=utf-8' }
     }
   );
 }
@@ -132,7 +126,11 @@ async function ausCache(request, ignoreSearch = false) {
 }
 
 async function offlineFallback() {
-  const offline = await caches.match(absolut('offline.html'), { ignoreSearch: true });
+  const offline = await caches.match(
+    absolut('offline.html'),
+    { ignoreSearch: true }
+  );
+
   return offline || minimaleOfflineAntwort();
 }
 
@@ -147,8 +145,12 @@ async function fetchUndSpeichern(request) {
   return antwort;
 }
 
-/* Aktuelle Version bevorzugen; bei langsamem/fehlendem Netz Cache nutzen. */
-async function netzwerkZuerst(request, timeoutMs, ignoreSearch = false, htmlFallback = false) {
+async function netzwerkZuerst(
+  request,
+  timeoutMs,
+  ignoreSearch = false,
+  htmlFallback = false
+) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
 
@@ -165,9 +167,8 @@ async function netzwerkZuerst(request, timeoutMs, ignoreSearch = false, htmlFall
     const cacheTreffer = await ausCache(request, ignoreSearch);
     if (cacheTreffer) return cacheTreffer;
 
-    /* Eine echte HTTP-Antwort (z. B. 404) bleibt eine echte
-       HTTP-Antwort. offline.html ist nur für fehlendes Netz gedacht. */
     return antwort;
+
   } catch (fehler) {
     clearTimeout(timer);
 
@@ -179,12 +180,8 @@ async function netzwerkZuerst(request, timeoutMs, ignoreSearch = false, htmlFall
   }
 }
 
-/* Unterseiten: Cache sofort anzeigen, parallel online aktualisieren.
-   Genau dadurch profitieren die zuvor im Hintergrund geladenen Seiten
-   beim Anklicken von einem sehr schnellen Start. */
 async function navigationCacheZuerst(request, event) {
   const cacheTreffer = await ausCache(request, true);
-
   const update = fetchUndSpeichern(request).catch(() => null);
 
   if (cacheTreffer) {
@@ -198,7 +195,6 @@ async function navigationCacheZuerst(request, event) {
   return offlineFallback();
 }
 
-/* CSS, JS, Bilder, Schriften, Ton: Cache zuerst, online erneuern. */
 async function dateiCacheZuerst(request, event) {
   const cacheTreffer = await ausCache(request, false);
   const update = fetchUndSpeichern(request).catch(() => null);
@@ -214,6 +210,7 @@ async function dateiCacheZuerst(request, event) {
 
 function istStartseitenNavigation(url) {
   const scope = new URL(self.registration.scope);
+
   return url.pathname === scope.pathname ||
          url.pathname === scope.pathname + 'index.html';
 }
@@ -227,32 +224,34 @@ self.addEventListener('fetch', event => {
   /* Externe Server bewusst nicht verändern/cachen. */
   if (url.origin !== self.location.origin) return;
 
-  /* 1) Echte Browser-Navigation */
   if (request.mode === 'navigate') {
     if (istStartseitenNavigation(url)) {
-      /* Startseite möglichst aktuell halten. */
-      event.respondWith(netzwerkZuerst(request, 1500, true, true));
+      event.respondWith(
+        netzwerkZuerst(request, 1500, true, true)
+      );
     } else {
-      /* Unterseiten aus dem vorgeladenen Cache sofort öffnen. */
-      event.respondWith(navigationCacheZuerst(request, event));
+      event.respondWith(
+        navigationCacheZuerst(request, event)
+      );
     }
     return;
   }
 
-  /* 2) HTML-Dateien, die offline.js im Hintergrund abruft:
-        Netzwerk zuerst, damit der Cache wirklich aktualisiert wird. */
   if (/\.html$/i.test(url.pathname)) {
-    event.respondWith(netzwerkZuerst(request, 4000, true, true));
+    event.respondWith(
+      netzwerkZuerst(request, 4000, true, true)
+    );
     return;
   }
 
-  /* 3) Daten/PDFs: Aktualität wichtiger als Geschwindigkeit.
-        ignoreSearch=true ist wichtig für wetter.json?v=... usw. */
   if (/\.(json|pdf)$/i.test(url.pathname)) {
-    event.respondWith(netzwerkZuerst(request, 5000, true, false));
+    event.respondWith(
+      netzwerkZuerst(request, 5000, true, false)
+    );
     return;
   }
 
-  /* 4) Statische Dateien */
-  event.respondWith(dateiCacheZuerst(request, event));
+  event.respondWith(
+    dateiCacheZuerst(request, event)
+  );
 });

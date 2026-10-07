@@ -307,9 +307,7 @@
       ✓ <strong>Kurz zusammengefasst:</strong>
       Das Studjo Infoterminal verwendet keine Werbe-Cookies,
       kein Tracking, keine Analyse-Tools und kein Kontaktformular.
-      Es gibt keine Nutzerkonten. Es werden insbesondere keine Namen,
-      Geburtstage, Gesundheitsdaten oder vergleichbare personenbezogene
-      Informationen von Werkstattbeschäftigten im Terminal veröffentlicht.
+      Es gibt keine Nutzerkonten. Es werden insbesondere keine Geburtstage, Gesundheitsdaten oder vergleichbare sensible Angaben von Werkstattbeschäftigten veröffentlicht. Bei einzelnen Terminen kann ausschließlich eine freigegebene dienstliche Kontaktperson genannt werden.
     </div>
 
     <p>
@@ -363,14 +361,6 @@
           <td>Technische Verbindungsdaten innerhalb der jeweiligen Infrastruktur</td>
           <td>Erst beim Anklicken des Links</td>
           <td>Evangelisches Johanneswerk / internes System</td>
-        </tr>
-
-        <tr>
-          <td><strong>mehr-schulferien.de</strong></td>
-          <td>Automatische Anzeige der NRW-Schulferien im Kalender</td>
-          <td>IP-Adresse sowie technische Browser-/Verbindungsinformationen</td>
-          <td>Beim Laden der Schulferien im Kalender</td>
-          <td>mehr-schulferien.de</td>
         </tr>
 
         <tr>
@@ -543,37 +533,39 @@
 
   <!-- 8 -->
   <div class="karte">
-    <h2>8. NRW-Schulferien über mehr-schulferien.de</h2>
+    <h2>8. Termine und NRW-Schulferien</h2>
 
     <p>
-      Der Kalender des Studjo Terminals zeigt automatisch die
-      Schulferien in Nordrhein-Westfalen an.
-      Dafür ruft der Browser Kalenderdaten von
-      <strong>mehr-schulferien.de</strong> ab.
+      Termine und NRW-Schulferien werden im Studjo Terminal aus der
+      lokalen Datei <strong>termine.json</strong> geladen.
+      Diese Datei liegt zusammen mit den übrigen Terminal-Dateien
+      auf demselben Server.
     </p>
 
     <p>
-      Bei diesem Abruf wird technisch eine Verbindung zum Server
-      von mehr-schulferien.de hergestellt. Dabei kann der Anbieter
-      insbesondere die IP-Adresse und übliche technische
-      Verbindungsinformationen erhalten.
+      Für die Anzeige der Schulferien wird
+      <strong>keine externe Schulferien-Webseite und keine externe API</strong>
+      aufgerufen. Beim Öffnen des Kalenders entsteht deshalb keine
+      zusätzliche Verbindung zu einem Schulferien-Anbieter.
     </p>
 
     <p>
-      Das Studjo Terminal übermittelt bei diesem Abruf keine Namen,
-      Geburtstage, Gesundheitsdaten oder andere von Studjo
-      gespeicherte personenbezogene Informationen.
+      Die landesweit festgelegten Ferienzeiten für Nordrhein-Westfalen
+      werden manuell in der zentralen Datei gepflegt.
+      Bewegliche Ferientage einzelner Schulen gehören nicht automatisch
+      zu dieser landesweiten Liste.
     </p>
 
     <p>
-      Bereits geladene Schulferiendaten werden zeitlich begrenzt
-      im lokalen Browser gespeichert, damit sie nicht bei jedem
-      einzelnen Kalenderaufruf erneut vom Anbieter geladen werden müssen.
+      Bei Andachten kann optional ein dienstlicher Ansprechpartner
+      angezeigt werden. Hierfür sollen nur freigegebene dienstliche
+      Angaben verwendet werden. Namen oder andere personenbezogene
+      Angaben von Werkstattbeschäftigten werden in der Terminpflege
+      nicht vorgesehen.
     </p>
   </div>
 
-
-  <!-- 9 -->
+<!-- 9 -->
   <div class="karte">
     <h2>9. Lokaler Browserspeicher und Offline-Funktion</h2>
 
@@ -590,7 +582,6 @@
       <li>Einstellung der Schriftgröße und weiterer Bedienhilfen,</li>
       <li>Aktiv-/Inaktiv-Einstellung des Gongs,</li>
       <li>lokale Einstellungen zur Kacheldarstellung,</li>
-      <li>bereits geladene NRW-Schulferiendaten,</li>
       <li>technische Zeitpunkte für das Offline-Vorladen,</li>
       <li>Seiten und lokale Dateien für die Offline-Nutzung.</li>
     </ul>
@@ -675,7 +666,7 @@
 
     <p>
       Diese Datenschutzerklärung hat den Stand:
-      <strong>Oktober 2026</strong>.
+      <strong>Oktober 2026 – Phase 3</strong>.
     </p>
 
     <p>

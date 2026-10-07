@@ -1,28 +1,17 @@
 /* ══════════════════════════════════════════════════════
    kalender.js – Kalender für das Studjo Terminal
-   Feiertage, Brückentage, Schließungen, Termine, Schulferien
-
-   Darstellungsarten:
-     1. POPUP über Elemente mit data-kalender-oeffnen
-     2. EINGEBETTET über Elemente mit data-kalender-einbetten
 
    Datenquellen:
-     1. feiertage.js:
+     1. feiertage.js
         NRW-Feiertage, Studjo-Zusatztage und Brückentage
-     2. termine.html:
-        Andachten, Werkstattfeste, Schließungstage, weitere Termine
-     3. mehr-schulferien.de:
-        NRW-Schulferien als zusätzliche Information
+     2. termine.json
+        - Andachten
+        - Werkstattfeste
+        - Schließungstage
+        - Weitere Termine
+        - NRW-Schulferien
 
-   WICHTIG:
-   - Mehrere Hinweise dürfen gleichzeitig auf demselben Tag liegen.
-     Beispiel: Betriebsurlaub + Feiertag + Schulferien.
-   - Mehrtägige Schließungen werden möglichst automatisch aus dem
-     sichtbaren Datums-Text der Termin-Karte erkannt:
-       "23. Dez. bis 05. Jan."
-     data-datum bleibt dabei das ENDDATUM.
-   - Optional kann data-start="YYYY-MM-DD" weiterhin verwendet werden,
-     falls ein Sonderfall einmal nicht automatisch erkannt werden kann.
+   Es gibt KEINEN direkten Abruf von Schulferien-Webseiten mehr.
    ══════════════════════════════════════════════════════ */
 
 (function () {
@@ -39,64 +28,37 @@
   wartenAufFeiertageJs(function () {
     const F = window.StudjoFeiertage;
 
-    /* ════════════════════════════════════════════════════
-       GETEILTER ZUSTAND
-       ════════════════════════════════════════════════════ */
     let ansicht = new Date();
-
-    /* Pro Tag sind bewusst mehrere Schließungs-Karten möglich. */
     let schliessungstageKarte = new Map();
-    // "YYYY-MM-DD" -> [{ art, titel, details, quelleTitel }]
-
     let termineKarte = new Map();
-    // "YYYY-MM-DD" -> [{ kategorie, icon, titel, details }]
-
     let schulferienListe = [];
-    // [{ start, ende, name }]
+    let datenGeladen = false;
+    let ladePromise = null;
 
     const ziele = [];
 
-    const SPALTEN_KONFIG = {
-      'Schließungstage': { typ: 'schliessung', icon: '🔒' },
-      'Andachten':       { typ: 'termin',       icon: '⛪' },
-      'Werkstattfeste':  { typ: 'termin',       icon: '🎪' },
-      'Weitere Termine': { typ: 'termin',       icon: '📌' },
+    const KATEGORIEN = {
+      andachten:       { name: 'Andachten',       icon: '⛪', typ: 'termin' },
+      werkstattfeste:  { name: 'Werkstattfeste',  icon: '🎉', typ: 'termin' },
+      schliessungstage:{ name: 'Schließungstage', icon: '🔒', typ: 'schliessung' },
+      weitere:         { name: 'Weitere Termine', icon: '📌', typ: 'termin' }
     };
-
-    function konfigFuerUeberschrift(text) {
-      for (const [schluessel, cfg] of Object.entries(SPALTEN_KONFIG)) {
-        if (text.includes(schluessel)) return cfg;
-      }
-      return { typ: 'termin', icon: '📌' };
-    }
 
     const ICON = {
       schliessung: '🔒',
       feiertag: '🎉',
-      brueckentag: '🌉',
+      brueckentag: '🌉'
     };
 
-    const HINTERGRUND = {
-      schliessung: '#e5e9f5',
-      feiertag: '#fde8ea',
-      brueckentag: '#fff3d6',
-    };
-
-    const RAND = {
-      schliessung: '#aab6e0',
-      feiertag: '#f0b4ba',
-      brueckentag: '#f0d090',
-    };
-
-    const TEXTFARBE = {
-      schliessung: '#2a3a8c',
-      feiertag: '#b61f29',
-      brueckentag: '#8a5a00',
-    };
+    /* Alte Cache-Daten aus der früheren Schulferien-Webabfrage
+       werden nicht mehr benötigt. */
+    try {
+      localStorage.removeItem('studjo-schulferien-cache-v1');
+    } catch (e) {}
 
 
     /* ════════════════════════════════════════════════════
-       DATUMS-HILFSFUNKTIONEN
+       DATUM
        ════════════════════════════════════════════════════ */
 
     function parseIsoDatum(text) {
@@ -108,6 +70,7 @@
       const tag = Number(m[3]);
 
       const d = new Date(jahr, monat, tag);
+
       if (
         d.getFullYear() !== jahr ||
         d.getMonth() !== monat ||
@@ -115,103 +78,8 @@
       ) {
         return null;
       }
+
       return d;
-    }
-
-    function normalisiereMonat(text) {
-      return String(text || '')
-        .toLowerCase()
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '')
-        .replace(/\./g, '')
-        .trim();
-    }
-
-    const MONAT_INDEX = {
-      jan: 0, januar: 0,
-      feb: 1, februar: 1,
-      mar: 2, maerz: 2, marz: 2, maart: 2,
-      apr: 3, april: 3,
-      mai: 4,
-      jun: 5, juni: 5,
-      jul: 6, juli: 6,
-      aug: 7, august: 7,
-      sep: 8, sept: 8, september: 8,
-      okt: 9, oktober: 9,
-      nov: 10, november: 10,
-      dez: 11, dezember: 11,
-    };
-
-    function monatAusText(text) {
-      const normal = normalisiereMonat(text);
-      return Object.prototype.hasOwnProperty.call(MONAT_INDEX, normal)
-        ? MONAT_INDEX[normal]
-        : null;
-    }
-
-    function jahrAusKurzform(wert) {
-      if (!wert) return null;
-      const n = Number(wert);
-      if (!Number.isFinite(n)) return null;
-      if (String(wert).length === 2) return 2000 + n;
-      if (String(wert).length === 4) return n;
-      return null;
-    }
-
-    function ermittleStartdatum(karteEl, endeText) {
-      const explizit = parseIsoDatum(karteEl.getAttribute('data-start'));
-      if (explizit) return explizit;
-
-      const ende = parseIsoDatum(endeText);
-      if (!ende) return null;
-
-      const datumEl = karteEl.querySelector('.event-date');
-      const sichtbarerText = datumEl ? datumEl.textContent.trim() : '';
-
-      if (!/\bbis\b/i.test(sichtbarerText)) {
-        return new Date(ende);
-      }
-
-      const teile = sichtbarerText.split(/\bbis\b/i);
-      if (teile.length < 2) return new Date(ende);
-
-      let startTeil = teile[0]
-        .replace(/^\s*vom\s+/i, '')
-        .trim();
-
-      const m = /(\d{1,2})\.\s*(?:([A-Za-zÄÖÜäöüß.]+)\s*)?(?:(\d{2,4}))?\s*$/.exec(startTeil);
-      if (!m) return new Date(ende);
-
-      const tag = Number(m[1]);
-      const monatText = m[2] || '';
-      const angegebenesJahr = jahrAusKurzform(m[3]);
-
-      let monat = monatText ? monatAusText(monatText) : ende.getMonth();
-      if (monat === null) return new Date(ende);
-
-      let jahr = angegebenesJahr !== null
-        ? angegebenesJahr
-        : ende.getFullYear();
-
-      if (angegebenesJahr === null && monat > ende.getMonth()) {
-        jahr -= 1;
-      }
-
-      let start = new Date(jahr, monat, tag);
-
-      if (angegebenesJahr === null && start > ende) {
-        start = new Date(jahr - 1, monat, tag);
-      }
-
-      if (
-        start.getMonth() !== monat ||
-        start.getDate() !== tag ||
-        start > ende
-      ) {
-        return new Date(ende);
-      }
-
-      return start;
     }
 
     function fuegeMapArrayHinzu(map, schluessel, wert) {
@@ -219,165 +87,148 @@
       map.get(schluessel).push(wert);
     }
 
+    function tageImBereich(vonText, bisText, callback) {
+      const von = parseIsoDatum(vonText);
+      const bis = parseIsoDatum(bisText || vonText);
 
-    /* ════════════════════════════════════════════════════
-       DATENQUELLE: termine.html
-       ════════════════════════════════════════════════════ */
+      if (!von || !bis || bis < von) return;
 
-    async function ladeTermineAusSeite() {
-      try {
-        const antwort = await fetch('termine.html');
-        if (!antwort.ok) throw new Error('HTTP ' + antwort.status);
+      let d = new Date(von);
+      let sicherheit = 0;
 
-        const text = await antwort.text();
-        const doc = new DOMParser().parseFromString(text, 'text/html');
-
-        const neueSchliessungen = new Map();
-        const neueTermine = new Map();
-
-        doc.querySelectorAll('.termine-column').forEach(spalte => {
-          const ueberschriftEl = spalte.querySelector('.termine-header-titel');
-          if (!ueberschriftEl) return;
-
-          const ueberschriftText = ueberschriftEl.textContent.trim();
-          const cfg = konfigFuerUeberschrift(ueberschriftText);
-          const kategorieName = ueberschriftText.replace(/^\S+\s*/, '');
-
-          spalte.querySelectorAll('.event-card[data-datum]').forEach(karteEl => {
-            const endeText = karteEl.getAttribute('data-datum');
-            const ende = parseIsoDatum(endeText);
-            if (!ende) return;
-
-            const start = ermittleStartdatum(karteEl, endeText) || new Date(ende);
-
-            const titelEl = karteEl.querySelector('.event-title');
-            const originalTitel = titelEl
-              ? titelEl.textContent.trim()
-              : kategorieName;
-
-            const zeitEl = karteEl.querySelector('.event-time');
-            const notizEl = karteEl.querySelector('.event-note');
-
-            const zeit = zeitEl && zeitEl.textContent.trim()
-              ? zeitEl.textContent.trim()
-              : '';
-
-            const notiz = notizEl && notizEl.textContent.trim()
-              ? notizEl.textContent.trim()
-              : '';
-
-            let d = new Date(start);
-            let sicherheitszaehler = 0;
-
-            while (d <= ende && sicherheitszaehler < 400) {
-              const schluessel = F.datumSchluessel(d);
-
-              if (cfg.typ === 'schliessung') {
-                const details = ['Studjo ganztägig geschlossen.'];
-
-                if (
-                  originalTitel &&
-                  !/^(betriebsurlaub|betriebsferien)$/i.test(originalTitel)
-                ) {
-                  details.push(originalTitel);
-                }
-
-                if (
-                  zeit &&
-                  !/ganzt[aä]gig\s+geschlossen/i.test(zeit) &&
-                  !/^betriebsferien$/i.test(zeit)
-                ) {
-                  details.push(zeit);
-                }
-
-                if (notiz) details.push(notiz);
-
-                fuegeMapArrayHinzu(neueSchliessungen, schluessel, {
-                  art: 'schliessung',
-                  titel: 'Betriebsurlaub',
-                  details,
-                  quelleTitel: originalTitel,
-                });
-
-              } else {
-                fuegeMapArrayHinzu(neueTermine, schluessel, {
-                  kategorie: kategorieName,
-                  icon: cfg.icon,
-                  titel: originalTitel,
-                  details: [zeit, notiz].filter(Boolean),
-                });
-              }
-
-              d = F.tagePlus(d, 1);
-              sicherheitszaehler++;
-            }
-          });
-        });
-
-        schliessungstageKarte = neueSchliessungen;
-        termineKarte = neueTermine;
-
-      } catch (e) {
-        console.warn('[Studjo Kalender] Termine konnten nicht geladen werden:', e);
+      while (d <= bis && sicherheit < 800) {
+        callback(new Date(d));
+        d = F.tagePlus(d, 1);
+        sicherheit++;
       }
     }
 
 
     /* ════════════════════════════════════════════════════
-       DATENQUELLE: NRW-SCHULFERIEN
+       ZENTRALE DATENQUELLE termine.json
        ════════════════════════════════════════════════════ */
 
-    const FERIEN_CACHE_SCHLUESSEL = 'studjo-schulferien-cache-v1';
-    const FERIEN_CACHE_GUELTIG_MS = 24 * 60 * 60 * 1000;
+    function baueDatenstrukturen(daten) {
+      const neueSchliessungen = new Map();
+      const neueTermine = new Map();
 
-    async function ladeSchulferien(jahr) {
-      try {
-        let cache = {};
+      const liste = Array.isArray(daten.termine) ? daten.termine : [];
+
+      liste.forEach(termin => {
+        const cfg = KATEGORIEN[termin.kategorie];
+        if (!cfg) return;
+
+        const von = termin.von;
+        const bis = termin.bis || termin.von;
+
+        tageImBereich(von, bis, datum => {
+          const schluessel = F.datumSchluessel(datum);
+
+          if (cfg.typ === 'schliessung') {
+            const details = ['Studjo ist ganztägig geschlossen.'];
+
+            if (
+              termin.uhrzeit &&
+              !/ganzt[aä]gig\s+geschlossen/i.test(termin.uhrzeit)
+            ) {
+              details.push(termin.uhrzeit);
+            }
+
+            if (termin.hinweis) {
+              details.push(termin.hinweis);
+            }
+
+            fuegeMapArrayHinzu(
+              neueSchliessungen,
+              schluessel,
+              {
+                art: 'schliessung',
+                titel: termin.titel || 'Betriebsurlaub',
+                details
+              }
+            );
+
+          } else {
+            const details = [];
+
+            if (termin.uhrzeit) {
+              details.push(termin.uhrzeit);
+            }
+
+            if (termin.ansprechpartner) {
+              details.push('Ansprechpartner: ' + termin.ansprechpartner);
+            }
+
+            if (termin.hinweis) {
+              details.push(termin.hinweis);
+            }
+
+            fuegeMapArrayHinzu(
+              neueTermine,
+              schluessel,
+              {
+                kategorie: cfg.name,
+                icon: cfg.icon,
+                titel: termin.titel || cfg.name,
+                details
+              }
+            );
+          }
+        });
+      });
+
+      const ferien = Array.isArray(daten.schulferien) ? daten.schulferien : [];
+
+      schulferienListe = ferien
+        .filter(f => parseIsoDatum(f.von) && parseIsoDatum(f.bis || f.von))
+        .map(f => ({
+          start: f.von,
+          ende: f.bis || f.von,
+          name: f.name || 'Schulferien'
+        }))
+        .sort((a,b) => a.start.localeCompare(b.start));
+
+      schliessungstageKarte = neueSchliessungen;
+      termineKarte = neueTermine;
+      datenGeladen = true;
+    }
+
+    async function ladeDaten(force = false) {
+      if (datenGeladen && !force) return;
+      if (ladePromise && !force) return ladePromise;
+
+      ladePromise = (async () => {
         try {
-          cache = JSON.parse(localStorage.getItem(FERIEN_CACHE_SCHLUESSEL)) || {};
-        } catch (e) {}
+          if (
+            !force &&
+            window.StudjoTermineDaten &&
+            Array.isArray(window.StudjoTermineDaten.termine)
+          ) {
+            baueDatenstrukturen(window.StudjoTermineDaten);
+            return;
+          }
 
-        const eintrag = cache[jahr];
-        if (
-          eintrag &&
-          (Date.now() - eintrag.zeit) < FERIEN_CACHE_GUELTIG_MS
-        ) {
-          return eintrag.daten;
-        }
+          const antwort = await fetch('termine.json?v=' + Date.now());
 
-        const url =
-          'https://www.mehr-schulferien.de/api/v2.1/federal-states/nordrhein-westfalen/periods' +
-          '?start_date=' + jahr + '-01-01&end_date=' + jahr + '-12-31';
+          if (!antwort.ok) {
+            throw new Error('HTTP ' + antwort.status);
+          }
 
-        const antwort = await fetch(url);
-        if (!antwort.ok) throw new Error('HTTP ' + antwort.status);
+          const daten = await antwort.json();
+          window.StudjoTermineDaten = daten;
+          baueDatenstrukturen(daten);
 
-        const ergebnis = await antwort.json();
-        const daten = (ergebnis.data || [])
-          .filter(e => e.is_school_vacation)
-          .map(e => ({
-            start: e.starts_on,
-            ende: e.ends_on,
-            name: e.name,
-          }));
-
-        cache[jahr] = {
-          zeit: Date.now(),
-          daten,
-        };
-
-        try {
-          localStorage.setItem(
-            FERIEN_CACHE_SCHLUESSEL,
-            JSON.stringify(cache)
+        } catch (fehler) {
+          console.warn(
+            '[Studjo Kalender] termine.json konnte nicht geladen werden:',
+            fehler
           );
-        } catch (e) {}
+        } finally {
+          ladePromise = null;
+        }
+      })();
 
-        return daten;
-
-      } catch (e) {
-        return [];
-      }
+      return ladePromise;
     }
 
     function schulferienFuerTag(schluessel) {
@@ -386,35 +237,34 @@
       ) || null;
     }
 
-    async function ladeSchulferienFuerSichtbaresJahr() {
-      schulferienListe = await ladeSchulferien(ansicht.getFullYear());
-    }
-
 
     /* ════════════════════════════════════════════════════
-       INFORMATIONEN EINES TAGES ZUSAMMENFÜHREN
+       INFORMATIONEN EINES TAGES
        ════════════════════════════════════════════════════ */
 
     function tagesInfo(datum) {
       const schluessel = F.datumSchluessel(datum);
-
       const besondereTage = [];
 
       const schliessungen = schliessungstageKarte.get(schluessel) || [];
-      schliessungen.forEach(e => besondereTage.push({
-        art: 'schliessung',
-        titel: e.titel,
-        details: [...e.details],
-      }));
+
+      schliessungen.forEach(e => {
+        besondereTage.push({
+          art: 'schliessung',
+          titel: e.titel,
+          details: [...e.details]
+        });
+      });
 
       const fb = F.pruefeFeiertagOderBrueckentag(datum);
+
       if (fb) {
         besondereTage.push({
           art: fb.typ,
           titel: fb.name,
           details: fb.istWochenende
             ? []
-            : ['Studjo ist an diesem Tag geschlossen.'],
+            : ['Studjo ist an diesem Tag geschlossen.']
         });
       }
 
@@ -425,16 +275,17 @@
         primaer: besondereTage.length ? besondereTage[0] : null,
         besondereTage,
         ferien,
-        termine,
+        termine
       };
     }
 
     window.StudjoKalender = window.StudjoKalender || {};
     window.StudjoKalender.tagesInfo = tagesInfo;
+    window.StudjoKalender.datenBereit = ladeDaten;
 
 
     /* ════════════════════════════════════════════════════
-       MODERNE KALENDER-OPTIK
+       OPTIK
        ════════════════════════════════════════════════════ */
 
     function injiziereKalenderStyles() {
@@ -442,6 +293,7 @@
 
       const style = document.createElement('style');
       style.id = 'studjo-kalender-styles';
+
       style.textContent = `
         .studjo-kal-nav {
           display:grid;
@@ -475,12 +327,6 @@
           display:flex;
           align-items:center;
           justify-content:center;
-          transition:transform .15s ease, background .15s ease;
-        }
-
-        .studjo-kal-navbtn:hover {
-          background:#e7e9ec;
-          transform:translateY(-1px);
         }
 
         .studjo-kal-heute {
@@ -495,7 +341,6 @@
           font-size:.82rem;
           font-weight:900;
           cursor:pointer;
-          transition:background .15s ease, color .15s ease;
         }
 
         .studjo-kal-heute:hover {
@@ -512,11 +357,6 @@
           font-size:.72rem;
           font-weight:900;
           color:#6f7478;
-        }
-
-        .studjo-kal-wochentage > div:nth-child(6),
-        .studjo-kal-wochentage > div:nth-child(7) {
-          color:#8c9195;
         }
 
         .studjo-kal-raster {
@@ -543,13 +383,11 @@
           justify-content:center;
           gap:3px;
           overflow:visible;
-          transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;
           z-index:1;
         }
 
         .studjo-kal-tag:hover {
-          transform:translateY(-1px);
-          box-shadow:0 3px 10px rgba(15,47,55,.10);
+          box-shadow:0 3px 10px rgba(15,47,55,.12);
           z-index:3;
         }
 
@@ -727,7 +565,7 @@
 
 
     /* ════════════════════════════════════════════════════
-       GEMEINSAMES MARKUP
+       MARKUP
        ════════════════════════════════════════════════════ */
 
     function innererMarkup(idp) {
@@ -783,71 +621,43 @@
       `;
     }
 
-
-    /* ════════════════════════════════════════════════════
-       ZIEL REGISTRIEREN
-       ════════════════════════════════════════════════════ */
-
     function registriereZiel(idp) {
       const ziel = {
         idp,
         titelEl: document.getElementById(idp + '-titel'),
         rasterEl: document.getElementById(idp + '-raster'),
         infoEl: document.getElementById(idp + '-info'),
-        statusEl: document.getElementById(idp + '-status'),
+        statusEl: document.getElementById(idp + '-status')
       };
 
       ziele.push(ziel);
 
-      document
-        .getElementById(idp + '-zurueck')
-        .addEventListener('click', () => {
-          ansicht = new Date(
-            ansicht.getFullYear(),
-            ansicht.getMonth() - 1,
-            1
-          );
+      document.getElementById(idp + '-zurueck').addEventListener('click', () => {
+        ansicht = new Date(ansicht.getFullYear(), ansicht.getMonth() - 1, 1);
+        zeichneAlle();
+      });
 
-          zeichneAlle();
-          ladeSchulferienFuerSichtbaresJahr().then(zeichneAlle);
-        });
+      document.getElementById(idp + '-vor').addEventListener('click', () => {
+        ansicht = new Date(ansicht.getFullYear(), ansicht.getMonth() + 1, 1);
+        zeichneAlle();
+      });
 
-      document
-        .getElementById(idp + '-vor')
-        .addEventListener('click', () => {
-          ansicht = new Date(
-            ansicht.getFullYear(),
-            ansicht.getMonth() + 1,
-            1
-          );
+      document.getElementById(idp + '-heute').addEventListener('click', async () => {
+        const heute = new Date();
 
-          zeichneAlle();
-          ladeSchulferienFuerSichtbaresJahr().then(zeichneAlle);
-        });
+        ansicht = new Date(heute.getFullYear(), heute.getMonth(), 1);
 
-      document
-        .getElementById(idp + '-heute')
-        .addEventListener('click', async () => {
-          const heute = new Date();
-
-          ansicht = new Date(
-            heute.getFullYear(),
-            heute.getMonth(),
-            1
-          );
-
-          zeichneAlle();
-          await ladeSchulferienFuerSichtbaresJahr();
-          zeichneAlle();
-          zeigeTagInfo(heute);
-        });
+        await ladeDaten();
+        zeichneAlle();
+        zeigeTagInfo(heute);
+      });
 
       return ziel;
     }
 
 
     /* ════════════════════════════════════════════════════
-       KALENDER ZEICHNEN
+       ZEICHNEN
        ════════════════════════════════════════════════════ */
 
     function hatSchliessung(datum) {
@@ -878,13 +688,17 @@
       ziel.titelEl.textContent = F.MONATE[monat] + ' ' + jahr;
       ziel.rasterEl.innerHTML = '';
 
+      if (ziel.statusEl) {
+        ziel.statusEl.textContent = datenGeladen ? '' : 'Termine werden geladen …';
+      }
+
       const ersterTag = new Date(jahr, monat, 1);
       let startVersatz = ersterTag.getDay();
       startVersatz = startVersatz === 0 ? 6 : startVersatz - 1;
 
       for (let i = 0; i < startVersatz; i++) {
         const leer = document.createElement('div');
-        leer.setAttribute('aria-hidden', 'true');
+        leer.setAttribute('aria-hidden','true');
         ziel.rasterEl.appendChild(leer);
       }
 
@@ -896,29 +710,23 @@
         const datum = new Date(jahr, monat, tag);
         const info = tagesInfo(datum);
 
-        const istHeute =
-          F.datumSchluessel(datum) === heuteSchluessel;
-
-        const istWochenende =
-          datum.getDay() === 0 || datum.getDay() === 6;
-
+        const istHeute = F.datumSchluessel(datum) === heuteSchluessel;
+        const istWochenende = datum.getDay() === 0 || datum.getDay() === 6;
         const istSchliessung =
           info.besondereTage.some(e => e.art === 'schliessung');
 
         const zelle = document.createElement('button');
         zelle.type = 'button';
         zelle.className = 'studjo-kal-tag';
-        zelle.setAttribute('role', 'gridcell');
+        zelle.setAttribute('role','gridcell');
 
-        if (istWochenende) {
-          zelle.classList.add('kal-wochenende');
-        }
+        if (istWochenende) zelle.classList.add('kal-wochenende');
 
         if (istSchliessung) {
           zelle.classList.add('kal-schliessung');
 
-          const gestern = F.tagePlus(datum, -1);
-          const morgen = F.tagePlus(datum, 1);
+          const gestern = F.tagePlus(datum,-1);
+          const morgen = F.tagePlus(datum,1);
 
           if (datum.getDay() !== 1 && hatSchliessung(gestern)) {
             zelle.classList.add('kal-band-links');
@@ -928,14 +736,10 @@
             zelle.classList.add('kal-band-rechts');
           }
 
-        } else if (
-          info.besondereTage.some(e => e.art === 'feiertag')
-        ) {
+        } else if (info.besondereTage.some(e => e.art === 'feiertag')) {
           zelle.classList.add('kal-feiertag');
 
-        } else if (
-          info.besondereTage.some(e => e.art === 'brueckentag')
-        ) {
+        } else if (info.besondereTage.some(e => e.art === 'brueckentag')) {
           zelle.classList.add('kal-brueckentag');
 
         } else if (info.ferien) {
@@ -945,9 +749,7 @@
           zelle.classList.add('kal-termin');
         }
 
-        if (istHeute) {
-          zelle.classList.add('kal-heute');
-        }
+        if (istHeute) zelle.classList.add('kal-heute');
 
         const tagEl = document.createElement('span');
         tagEl.className = 'studjo-kal-tagnummer';
@@ -957,46 +759,30 @@
         const symbole = symboleFuerTag(info);
         const symbolEl = document.createElement('span');
         symbolEl.className = 'studjo-kal-symbole';
-        symbolEl.setAttribute('aria-hidden', 'true');
-        symbolEl.textContent = symbole.slice(0, 4).join('');
+        symbolEl.setAttribute('aria-hidden','true');
+        symbolEl.textContent = symbole.slice(0,4).join('');
         zelle.appendChild(symbolEl);
 
         const labelTeile = [
           F.WOCHENTAGE[datum.getDay()],
           tag + '.',
-          F.MONATE[monat],
+          F.MONATE[monat]
         ];
 
-        info.besondereTage.forEach(e => {
-          labelTeile.push('– ' + e.titel);
-        });
+        info.besondereTage.forEach(e => labelTeile.push('– ' + e.titel));
 
         if (info.termine.length) {
-          labelTeile.push(
-            '– ' +
-            info.termine.map(t => t.titel).join(', ')
-          );
+          labelTeile.push('– ' + info.termine.map(t => t.titel).join(', '));
         }
 
         if (info.ferien) {
-          labelTeile.push(
-            '– Schulferien: ' + info.ferien.name
-          );
+          labelTeile.push('– Schulferien: ' + info.ferien.name);
         }
 
-        if (istHeute) {
-          labelTeile.push('– Heute');
-        }
+        if (istHeute) labelTeile.push('– Heute');
 
-        zelle.setAttribute(
-          'aria-label',
-          labelTeile.join(' ')
-        );
-
-        zelle.addEventListener(
-          'click',
-          () => zeigeTagInfo(datum)
-        );
+        zelle.setAttribute('aria-label', labelTeile.join(' '));
+        zelle.addEventListener('click', () => zeigeTagInfo(datum));
 
         ziel.rasterEl.appendChild(zelle);
       }
@@ -1008,16 +794,16 @@
 
 
     /* ════════════════════════════════════════════════════
-       DETAILANZEIGE EINES TAGES
+       DETAILANZEIGE
        ════════════════════════════════════════════════════ */
 
     function htmlSicher(text) {
       return String(text ?? '')
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&#039;');
+        .replace(/&/g,'&amp;')
+        .replace(/</g,'&lt;')
+        .replace(/>/g,'&gt;')
+        .replace(/"/g,'&quot;')
+        .replace(/'/g,'&#039;');
     }
 
     function zeigeTagInfo(datum) {
@@ -1029,51 +815,35 @@
         F.MONATE[datum.getMonth()] + ' ' +
         datum.getFullYear();
 
-      const zeilen = [
-        '<strong>' + htmlSicher(datumText) + '</strong>',
-      ];
+      const zeilen = ['<strong>' + htmlSicher(datumText) + '</strong>'];
 
       info.besondereTage.forEach(e => {
         zeilen.push(
           htmlSicher((ICON[e.art] || '📌') + ' ' + e.titel)
         );
 
-        e.details.forEach(detail => {
-          zeilen.push(htmlSicher(detail));
-        });
+        e.details.forEach(detail => zeilen.push(htmlSicher(detail)));
       });
 
       info.termine.forEach(t => {
         zeilen.push(
-          htmlSicher(
-            t.icon + ' ' +
-            t.kategorie + ': ' +
-            t.titel
-          )
+          htmlSicher(t.icon + ' ' + t.kategorie + ': ' + t.titel)
         );
 
-        t.details.forEach(detail => {
-          zeilen.push(htmlSicher(detail));
-        });
+        t.details.forEach(detail => zeilen.push(htmlSicher(detail)));
       });
 
       if (info.ferien) {
         zeilen.push(
-          htmlSicher(
-            '🏖️ Schulferien: ' +
-            info.ferien.name
-          )
+          htmlSicher('🏖️ Schulferien: ' + info.ferien.name)
         );
       }
 
-      const istWochenende =
-        datum.getDay() === 0 ||
-        datum.getDay() === 6;
+      const istWochenende = datum.getDay() === 0 || datum.getDay() === 6;
 
       if (istWochenende) {
-        zeilen.push(
-          'Studjo wünscht ein schönes Wochenende.'
-        );
+        zeilen.push('Studjo wünscht ein schönes Wochenende.');
+
       } else if (
         info.besondereTage.length === 0 &&
         !info.ferien &&
@@ -1085,33 +855,6 @@
       ziele.forEach(ziel => {
         ziel.infoEl.innerHTML = zeilen.join('<br>');
       });
-    }
-
-
-    /* ════════════════════════════════════════════════════
-       DATEN LADEN
-       ════════════════════════════════════════════════════ */
-
-    async function ladeAlleDatenUndZeichneNeu() {
-      ziele.forEach(ziel => {
-        if (ziel.statusEl) {
-          ziel.statusEl.textContent =
-            'Lade Termine und Schulferien …';
-        }
-      });
-
-      await Promise.all([
-        ladeTermineAusSeite(),
-        ladeSchulferienFuerSichtbaresJahr(),
-      ]);
-
-      ziele.forEach(ziel => {
-        if (ziel.statusEl) {
-          ziel.statusEl.textContent = '';
-        }
-      });
-
-      zeichneAlle();
     }
 
 
@@ -1129,54 +872,39 @@
      role="dialog"
      aria-modal="true"
      aria-labelledby="kp-titel"
-     style="display:none; position:fixed; inset:0; z-index:2100;
-            background:rgba(0,0,0,0.6); align-items:center;
-            justify-content:center; padding:20px;">
+     style="display:none;position:fixed;inset:0;z-index:2100;
+            background:rgba(0,0,0,.6);align-items:center;
+            justify-content:center;padding:20px;">
 
-  <div style="background:#fff; border-radius:16px;
-              padding:22px 22px 20px; text-align:left;
-              max-width:470px; width:100%; position:relative;
-              box-shadow:0 10px 40px rgba(0,0,0,0.35);
-              max-height:90vh; overflow-y:auto;
-              box-sizing:border-box;">
+  <div style="background:#fff;border-radius:16px;
+              padding:22px 22px 20px;text-align:left;
+              max-width:470px;width:100%;position:relative;
+              box-shadow:0 10px 40px rgba(0,0,0,.35);
+              max-height:90vh;overflow-y:auto;box-sizing:border-box;">
 
     <button type="button"
             id="kalender-schliessen-btn"
             aria-label="Kalender schließen"
-            style="position:absolute; top:10px; right:10px;
-                   background:#f1f1f1; border:none; border-radius:50%;
-                   width:32px; height:32px; font-size:1.1rem;
-                   cursor:pointer; line-height:1;">
-      ✕
-    </button>
+            style="position:absolute;top:10px;right:10px;
+                   background:#f1f1f1;border:none;border-radius:50%;
+                   width:32px;height:32px;font-size:1.1rem;
+                   cursor:pointer;line-height:1;">✕</button>
 
     ${innererMarkup('kp')}
   </div>
 </div>`;
 
-      document.body.insertAdjacentHTML(
-        'beforeend',
-        html
-      );
+      document.body.insertAdjacentHTML('beforeend',html);
 
-      document
-        .getElementById('kalender-overlay')
-        .addEventListener('click', e => {
-          if (e.target === e.currentTarget) {
-            schliesseKalenderPopup();
-          }
-        });
+      document.getElementById('kalender-overlay').addEventListener('click',e => {
+        if (e.target === e.currentTarget) schliesseKalenderPopup();
+      });
 
-      document
-        .getElementById('kalender-schliessen-btn')
-        .addEventListener(
-          'click',
-          schliesseKalenderPopup
-        );
+      document.getElementById('kalender-schliessen-btn')
+        .addEventListener('click',schliesseKalenderPopup);
 
-      document.addEventListener('keydown', e => {
-        const overlay =
-          document.getElementById('kalender-overlay');
+      document.addEventListener('keydown',e => {
+        const overlay = document.getElementById('kalender-overlay');
 
         if (
           e.key === 'Escape' &&
@@ -1193,60 +921,46 @@
     async function oeffneKalenderPopup() {
       injiziereAlsPopup();
 
-      ansicht = new Date(
-        new Date().getFullYear(),
-        new Date().getMonth(),
-        1
-      );
+      const heute = new Date();
+      ansicht = new Date(heute.getFullYear(), heute.getMonth(), 1);
 
       popupLetzterFokus = document.activeElement;
 
-      const overlay =
-        document.getElementById('kalender-overlay');
-
+      const overlay = document.getElementById('kalender-overlay');
       overlay.style.display = 'flex';
 
       document.getElementById('kp-info').innerHTML =
         'Tippe auf einen Tag für mehr Informationen.';
 
       zeichneAlle();
+      document.getElementById('kp-heute').focus();
 
-      document
-        .getElementById('kp-heute')
-        .focus();
-
-      await ladeAlleDatenUndZeichneNeu();
+      await ladeDaten();
+      zeichneAlle();
     }
 
     function schliesseKalenderPopup() {
-      const overlay =
-        document.getElementById('kalender-overlay');
+      const overlay = document.getElementById('kalender-overlay');
+      if (overlay) overlay.style.display = 'none';
 
-      if (overlay) {
-        overlay.style.display = 'none';
-      }
-
-      if (popupLetzterFokus) {
-        popupLetzterFokus.focus();
-      }
+      if (popupLetzterFokus) popupLetzterFokus.focus();
     }
 
 
     /* ════════════════════════════════════════════════════
-       FEST EINGEBETTET
+       EINGEBETTET
        ════════════════════════════════════════════════════ */
 
     function renderAlsEingebettet(container) {
       container.innerHTML = `
-        <div style="background:#fff; border-radius:18px;
-                    padding:20px 20px 18px; margin-bottom:22px;
+        <div style="background:#fff;border-radius:18px;
+                    padding:20px 20px 18px;margin-bottom:22px;
                     border:1px solid #eceeef;
-                    box-shadow:0 8px 24px rgba(15,47,55,0.08);
+                    box-shadow:0 8px 24px rgba(15,47,55,.08);
                     box-sizing:border-box;">
 
-          <h2 style="margin:0 0 14px; color:#b61f29;
-                     font-size:1.3rem; font-weight:800;
-                     text-align:center;">
+          <h2 style="margin:0 0 14px;color:#b61f29;
+                     font-size:1.3rem;font-weight:800;text-align:center;">
             📅 Kalender
           </h2>
 
@@ -1256,7 +970,8 @@
 
       registriereZiel('ke');
       zeichneAlle();
-      ladeAlleDatenUndZeichneNeu();
+
+      ladeDaten().then(zeichneAlle);
     }
 
 
@@ -1267,34 +982,24 @@
     function einrichten() {
       injiziereKalenderStyles();
 
-      document
-        .querySelectorAll('[data-kalender-oeffnen]')
-        .forEach(el => {
-          el.addEventListener('click', e => {
-            e.preventDefault();
-            oeffneKalenderPopup();
-          });
+      document.querySelectorAll('[data-kalender-oeffnen]').forEach(el => {
+        el.addEventListener('click',e => {
+          e.preventDefault();
+          oeffneKalenderPopup();
         });
+      });
 
-      document
-        .querySelectorAll('[data-kalender-einbetten]')
-        .forEach(container => {
-          renderAlsEingebettet(container);
-        });
+      document.querySelectorAll('[data-kalender-einbetten]').forEach(container => {
+        renderAlsEingebettet(container);
+      });
+
+      ladeDaten().then(zeichneAlle);
     }
 
     if (document.readyState === 'loading') {
-      document.addEventListener(
-        'DOMContentLoaded',
-        einrichten
-      );
+      document.addEventListener('DOMContentLoaded',einrichten);
     } else {
       einrichten();
     }
-
-    /* Schließungstage sofort laden, damit auch die Zeitkachel
-       auf index.html direkt weiß, ob heute geschlossen ist. */
-    ladeTermineAusSeite();
   });
-
 })();
