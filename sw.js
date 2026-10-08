@@ -1,13 +1,13 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 7
+   Version 8
 
-   Neu in Version 7:
-   - ui-a11y.js zeigt vor internen ConSense-Links einen barrierearmen Hinweisdialog.
+   Neu in Version 8:
+   - offline.js zeigt bei fehlender Netzverbindung einen sichtbaren A1-Offline-Hinweis.
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v7';
+const CACHE_VERSION = 'v8';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 
@@ -109,7 +109,8 @@ function minimaleOfflineAntwort() {
     '<div style="font-size:3rem">📶</div>' +
     '<h1 style="color:#b61f29;font-size:1.6rem">Kein Internet gerade</h1>' +
     '<p style="font-size:1.1rem">Diese Seite ist gerade nicht gespeichert.<br>' +
-    'Bitte versuche es später noch einmal.</p>' +
+    'Bitte versuche es später noch einmal.<br><br>' +
+    'ConSense und LearningApps brauchen Internet.</p>' +
     '<button onclick="location.reload()" style="font-size:1.1rem;font-weight:800;' +
     'color:#fff;background:#b61f29;border:0;border-radius:999px;' +
     'padding:14px 32px">Noch einmal versuchen</button>' +

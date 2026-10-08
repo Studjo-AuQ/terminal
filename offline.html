@@ -10,73 +10,124 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Studjo">
+
 <style>
-  :root { --primary-red: #b61f29; }
+:root {
+  --primary-red:#b61f29;
+}
 
-  * { box-sizing: border-box; }
+* {
+  box-sizing:border-box;
+}
 
-  html, body {
-    height: 100%;
-    margin: 0;
-    font-family: 'Nunito Sans', -apple-system, 'Segoe UI', Arial, sans-serif;
-    background: #f9f9f9;
-    color: #0f2f37;
-  }
+html,
+body {
+  min-height:100%;
+  margin:0;
+  font-family:"Nunito Sans",-apple-system,"Segoe UI",Arial,sans-serif;
+  background:#f9f9f9;
+  color:#0f2f37;
+}
 
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 32px 20px;
-  }
+body {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:32px 20px;
+}
 
-  .symbol {
-    font-size: 4rem;
-    margin-bottom: 8px;
-    line-height: 1;
-  }
+.karte {
+  width:min(540px,100%);
+  background:#fff;
+  border-radius:18px;
+  box-shadow:0 7px 26px rgba(0,0,0,.12);
+  padding:30px 24px;
+  border-top:7px solid var(--primary-red);
+}
 
-  h1 {
-    color: var(--primary-red);
-    font-size: 1.6rem;
-    margin: 0 0 12px;
-  }
+.symbol {
+  font-size:4rem;
+  margin-bottom:10px;
+  line-height:1;
+}
 
-  p {
-    font-size: 1.15rem;
-    line-height: 1.5;
-    max-width: 460px;
-    margin: 0 0 28px;
-  }
+h1 {
+  color:var(--primary-red);
+  font-size:1.65rem;
+  margin:0 0 16px;
+}
 
-  button {
-    font-size: 1.1rem;
-    font-weight: 800;
-    color: #fff;
-    background: var(--primary-red);
-    border: none;
-    border-radius: 999px;
-    padding: 14px 32px;
-    cursor: pointer;
-  }
+p {
+  font-size:1.08rem;
+  line-height:1.6;
+  max-width:470px;
+  margin:0 auto 13px;
+}
 
-  button:active { opacity: .85; }
+.hinweis {
+  margin:20px auto;
+  padding:14px 16px;
+  border-radius:12px;
+  background:#fff3cd;
+  border:2px solid #d79000;
+  color:#3f2f00;
+  text-align:left;
+  max-width:470px;
+  font-size:1rem;
+  line-height:1.55;
+}
+
+button {
+  margin-top:6px;
+  font-size:1.08rem;
+  font-weight:800;
+  color:#fff;
+  background:var(--primary-red);
+  border:none;
+  border-radius:999px;
+  padding:14px 30px;
+  cursor:pointer;
+}
+
+button:focus-visible {
+  outline:4px solid #0f2f37;
+  outline-offset:3px;
+}
+
+button:active {
+  opacity:.85;
+}
 </style>
 </head>
+
 <body>
+
+<main class="karte">
   <div class="symbol" aria-hidden="true">📶</div>
 
   <h1>Kein Internet gerade</h1>
 
   <p>
-    Diese Seite ist noch nicht auf diesem Gerät gespeichert.<br>
+    Diese Seite ist noch nicht auf diesem Gerät gespeichert.
+  </p>
+
+  <p>
     Bitte versuche es später noch einmal.
   </p>
 
-  <button type="button" onclick="location.reload()">
+  <div class="hinweis">
+    <strong>Wichtig:</strong><br>
+    Gespeicherte Studjo-Seiten können auch ohne Internet gehen.<br>
+    ConSense und LearningApps brauchen Internet.
+  </div>
+
+  <button type="button"
+          onclick="location.reload()">
     Noch einmal versuchen
   </button>
+</main>
+
 </body>
 </html>

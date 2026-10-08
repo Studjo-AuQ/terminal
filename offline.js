@@ -17,6 +17,166 @@
 (function () {
   'use strict';
 
+
+  /* ════════════════════════════════════════════════════
+     SICHTBARER OFFLINE-HINWEIS
+     Erscheint nur, wenn der Browser eine fehlende
+     Netzverbindung meldet. Bereits gespeicherte Studjo-
+     Seiten können weiter funktionieren. Externe Inhalte
+     wie ConSense und LearningApps benötigen Internet.
+     ════════════════════════════════════════════════════ */
+
+  function offlineHinweisErzeugen() {
+    let hinweis =
+      document.getElementById(
+        'studjo-offline-hinweis'
+      );
+
+    if (hinweis) {
+      return hinweis;
+    }
+
+    hinweis =
+      document.createElement(
+        'div'
+      );
+
+    hinweis.id =
+      'studjo-offline-hinweis';
+
+    hinweis.setAttribute(
+      'role',
+      'status'
+    );
+
+    hinweis.setAttribute(
+      'aria-live',
+      'polite'
+    );
+
+    hinweis.setAttribute(
+      'aria-atomic',
+      'true'
+    );
+
+    hinweis.hidden =
+      true;
+
+    hinweis.innerHTML = `
+      <div aria-hidden="true"
+           style="
+             font-size:1.45rem;
+             line-height:1;
+             flex:0 0 auto;
+           ">
+        📶
+      </div>
+
+      <div style="
+             min-width:0;
+             flex:1 1 auto;
+           ">
+        <strong style="
+          display:block;
+          font-size:1rem;
+          line-height:1.25;
+          margin-bottom:2px;
+        ">
+          Offline – kein Internet
+        </strong>
+
+        <span style="
+          display:block;
+          font-size:.9rem;
+          line-height:1.35;
+        ">
+          Gespeicherte Studjo-Seiten gehen weiter.
+          ConSense und LearningApps gehen jetzt nicht.
+        </span>
+      </div>
+    `;
+
+    Object.assign(
+      hinweis.style,
+      {
+        position: 'fixed',
+        left: '50%',
+        top: '12px',
+        transform: 'translateX(-50%)',
+        zIndex: '3000',
+        width: 'min(680px, calc(100% - 24px))',
+        background: '#fff3cd',
+        color: '#3f2f00',
+        border: '3px solid #d79000',
+        borderRadius: '14px',
+        boxShadow: '0 6px 22px rgba(0,0,0,.20)',
+        padding: '11px 14px',
+        display: 'flex',
+        alignItems: 'center',
+        gap: '11px',
+        textAlign: 'left'
+      }
+    );
+
+    document.body.appendChild(
+      hinweis
+    );
+
+    return hinweis;
+  }
+
+  function offlineStatusAktualisieren() {
+    const hinweis =
+      offlineHinweisErzeugen();
+
+    const offline =
+      navigator.onLine === false;
+
+    hinweis.hidden =
+      !offline;
+
+    /* hidden wird durch display:flex aus dem Inline-Style
+       überstimmt. Deshalb die Sichtbarkeit zusätzlich explizit setzen. */
+    hinweis.style.display =
+      offline
+        ? 'flex'
+        : 'none';
+
+    document.documentElement
+      .classList.toggle(
+        'studjo-ist-offline',
+        offline
+      );
+  }
+
+  function offlineStatusStarten() {
+    offlineHinweisErzeugen();
+    offlineStatusAktualisieren();
+
+    window.addEventListener(
+      'offline',
+      offlineStatusAktualisieren
+    );
+
+    window.addEventListener(
+      'online',
+      offlineStatusAktualisieren
+    );
+  }
+
+  if (
+    document.readyState ===
+    'loading'
+  ) {
+    document.addEventListener(
+      'DOMContentLoaded',
+      offlineStatusStarten,
+      { once: true }
+    );
+  } else {
+    offlineStatusStarten();
+  }
+
   if (!('serviceWorker' in navigator)) {
     console.info('[Studjo] Dieser Browser unterstützt keine Service Worker.');
     return;
@@ -32,17 +192,10 @@
 
   let vorladenLaeuft = false;
 
-  /* Alte, fehlerhafte Claude-Sperre einmal beseitigen. */
   try {
     localStorage.removeItem(ALTER_SCHLUESSEL);
-  } catch (e) {
-    /* localStorage kann in sehr restriktiven Browser-Modi blockiert sein. */
-  }
+  } catch (e) {}
 
-  /* Einige ältere HTML-Seiten verweisen noch auf /icons/...,
-     obwohl die Dateien im Repo-Hauptverzeichnis liegen.
-     Für die laufende Seite korrigieren wir wenigstens das Apple-Icon
-     dynamisch. manifest.webmanifest wird zusätzlich dauerhaft korrigiert. */
   const appleIcon = document.querySelector('link[rel="apple-touch-icon"]');
   if (appleIcon && /(^|\/)icons\/apple-touch-icon\.png(?:$|[?#])/i.test(appleIcon.getAttribute('href') || '')) {
     appleIcon.setAttribute('href', 'apple-touch-icon.png');
@@ -65,15 +218,11 @@
   function erfolgMerken() {
     try {
       localStorage.setItem(VORLADEN_SCHLUESSEL, String(Date.now()));
-    } catch (e) {
-      /* Ohne localStorage wird beim nächsten Besuch erneut vorgeladen. */
-    }
+    } catch (e) {}
   }
 
   function warteAufController(timeoutMs = 12000) {
-    if (navigator.serviceWorker.controller) {
-      return Promise.resolve(true);
-    }
+    if (navigator.serviceWorker.controller) return Promise.resolve(true);
 
     return new Promise(resolve => {
       let fertig = false;
@@ -175,7 +324,6 @@
       });
     }
 
-    /* srcset-Bilder mitnehmen. */
     doc.querySelectorAll('[srcset]').forEach(element => {
       const srcset = element.getAttribute('srcset') || '';
       srcset.split(',').forEach(eintrag => {
@@ -185,7 +333,6 @@
       });
     });
 
-    /* Lokale Dateien aus Inline-CSS mitnehmen. */
     doc.querySelectorAll('style').forEach(style => {
       cssURLs(style.textContent || '', basis, scope).forEach(u => ressourcen.add(u));
     });
@@ -208,9 +355,7 @@
     if (!navigator.serviceWorker.controller || !navigator.onLine) return;
     try {
       await fetchFuerCache(location.href);
-    } catch (e) {
-      /* Offline/Netzfehler: vorhandener Cache bleibt unangetastet. */
-    }
+    } catch (e) {}
   }
 
   async function ressourcenPoolStarten(startURLs, scope) {
@@ -271,7 +416,6 @@
       const seitenQueue = [];
       const ressourcen = new Set();
 
-      /* Mit der bereits im Browser vorhandenen index.html beginnen. */
       const start = sammleAusDokument(document, new URL(location.href), scope);
       start.seiten.forEach(u => seitenQueue.push(u));
       start.ressourcen.forEach(u => ressourcen.add(u));
@@ -316,10 +460,6 @@
       const seitenGesamt = seitenErfolgreich + seitenFehler;
       const seitenQuote = seitenGesamt === 0 ? 1 : seitenErfolgreich / seitenGesamt;
 
-      /* Erst JETZT speichern – nicht vor dem Download.
-         Ein einzelnes kaputtes Bild soll nicht täglich alles neu anstoßen.
-         Bei massenhaft fehlgeschlagenen HTML-Seiten wird dagegen beim
-         nächsten Start erneut versucht. */
       if (seitenQuote >= 0.80) {
         erfolgMerken();
       }
@@ -346,10 +486,8 @@
 
       console.info('[Studjo] Service Worker registriert:', registrierung.scope);
 
-      /* Direkt nach einer neueren sw.js fragen. */
       registrierung.update().catch(() => {});
 
-      /* Kiosk/Startseite kann stundenlang offen bleiben. */
       setInterval(() => {
         registrierung.update().catch(() => {});
       }, 60 * 60 * 1000);
@@ -359,7 +497,6 @@
 
       await aktuelleSeiteSichern();
 
-      /* Erst nach dem sichtbaren Seitenaufbau im Hintergrund loslegen. */
       if (istStartseite()) {
         setTimeout(() => {
           unterseitenVorladen(registrierung);
@@ -367,8 +504,6 @@
       }
 
       navigator.serviceWorker.addEventListener('controllerchange', () => {
-        /* Kein erzwungenes Reload: Die Nutzer sehen keine Sprünge.
-           Der neue Worker kontrolliert ab jetzt die nächsten Requests. */
         setTimeout(async () => {
           await aktuelleSeiteSichern();
           if (istStartseite()) unterseitenVorladen(registrierung);
