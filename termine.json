@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "stand": "2026-10-07",
+  "stand": "2026-10-08",
   "hinweis": "Zentrale Datenquelle für Studjo-Termine und NRW-Schulferien. Terminorte können optional mit einem Studjo-Standort und dessen Gebäudebild verknüpft werden.",
   "termine": [
     {
@@ -76,6 +76,30 @@
       "hinweis": "Wir wünschen frohe Festtage!"
     },
     {
+      "id": "weitere-20270429-bielefeld-3emu3",
+      "kategorie": "weitere",
+      "von": "2027-04-29",
+      "bis": "2027-04-29",
+      "ort": "Bielefeld",
+      "standort": "",
+      "bild": "",
+      "uhrzeit": "",
+      "ansprechpartner": "",
+      "hinweis": "75 Jahre Johanneswerk: Wurzeln. Werte. Weitblick."
+    },
+    {
+      "id": "weitere-20270430-eintrag-ru3s9",
+      "kategorie": "weitere",
+      "von": "2027-04-30",
+      "bis": "2027-04-30",
+      "ort": "-",
+      "standort": "",
+      "bild": "",
+      "uhrzeit": "",
+      "ansprechpartner": "",
+      "hinweis": "Beginn der Sonderausstellung „175 Jahre Johanneswerk\" (bis 31.07.27)"
+    },
+    {
       "id": "schluss-20270507-brueckentag",
       "kategorie": "schliessungstage",
       "von": "2027-05-07",
@@ -98,6 +122,174 @@
       "uhrzeit": "Ganztägig geschlossen",
       "ansprechpartner": "",
       "hinweis": "Brückentag (Fronleichnam)"
+    },
+    {
+      "id": "weitere-20270624-bielefeld-jlokj",
+      "kategorie": "weitere",
+      "von": "2027-06-24",
+      "bis": "2027-06-24",
+      "ort": "Bielefeld",
+      "standort": "",
+      "bild": "",
+      "uhrzeit": "",
+      "ansprechpartner": "",
+      "hinweis": "Johanneswerktag Bielefeld (Ehrung Jubilare 25/40 Jahre)"
+    },
+    {
+      "id": "weitere-20270625-freisenberg-f7at8",
+      "kategorie": "weitere",
+      "von": "2027-06-25",
+      "bis": "2027-06-25",
+      "ort": "Freisenberg",
+      "standort": "fbs",
+      "bild": "bst-fbs.jpg",
+      "uhrzeit": "16:00 Uhr",
+      "ansprechpartner": "",
+      "hinweis": "Regionaler Johanneswerktag ab 16 Uhr, BST Freisenberg (Ehrung Jubilare)"
+    },
+    {
+      "id": "weitere-20270701-bochum-3gbw0",
+      "kategorie": "weitere",
+      "von": "2027-07-01",
+      "bis": "2027-07-01",
+      "ort": "Bochum",
+      "standort": "",
+      "bild": "",
+      "uhrzeit": "",
+      "ansprechpartner": "",
+      "hinweis": "(voraussichtlich) AOK Firmenlauf Bochum"
+    },
+    {
+      "id": "werkstattfeste-20270703-kierspe-a7iaz",
+      "kategorie": "werkstattfeste",
+      "von": "2027-07-03",
+      "bis": "2027-07-03",
+      "ort": "Kierspe",
+      "standort": "ki",
+      "bild": "bst-ki.jpg",
+      "uhrzeit": "11:00 bis 16:00 Uhr",
+      "ansprechpartner": "",
+      "hinweis": ""
+    },
+    {
+      "id": "weitere-20270709-ludenscheid-lj47o",
+      "kategorie": "weitere",
+      "von": "2027-07-09",
+      "bis": "2027-07-09",
+      "ort": "Lüdenscheid",
+      "standort": "",
+      "bild": "",
+      "uhrzeit": "",
+      "ansprechpartner": "",
+      "hinweis": "AOK Firmenlauf Lüdenscheid"
+    },
+    {
+      "id": "werkstattfeste-20270709-wefelshohl-hzxt9",
+      "kategorie": "werkstattfeste",
+      "von": "2027-07-09",
+      "bis": "2027-07-09",
+      "ort": "Wefelshohl",
+      "standort": "whs",
+      "bild": "bst-whs.jpg",
+      "uhrzeit": "12:00 - 15:30 Uhr",
+      "ansprechpartner": "",
+      "hinweis": "danach Firmenlauf"
+    },
+    {
+      "id": "werkstattfeste-20270905-werdohl-b7dl6",
+      "kategorie": "werkstattfeste",
+      "von": "2027-09-05",
+      "bis": "2027-09-05",
+      "ort": "Werdohl",
+      "standort": "wd",
+      "bild": "bst-wd.jpg",
+      "uhrzeit": "11:00 - 16:00 Uhr",
+      "ansprechpartner": "",
+      "hinweis": ""
+    },
+    {
+      "id": "werkstattfeste-20270910-dannenbaum-jeczp",
+      "kategorie": "werkstattfeste",
+      "von": "2027-09-10",
+      "bis": "2027-09-10",
+      "ort": "Dannenbaum",
+      "standort": "db",
+      "bild": "bst-db.jpg",
+      "uhrzeit": "12:00 - 15:30 Uhr",
+      "ansprechpartner": "",
+      "hinweis": ""
+    },
+    {
+      "id": "werkstattfeste-20270918-freisenberg-fxkzl",
+      "kategorie": "werkstattfeste",
+      "von": "2027-09-18",
+      "bis": "2027-09-18",
+      "ort": "Freisenberg",
+      "standort": "fbs",
+      "bild": "bst-fbs.jpg",
+      "uhrzeit": "11:00 bis 16:00 Uhr",
+      "ansprechpartner": "",
+      "hinweis": "zusammen mit Kerkhagen"
+    },
+    {
+      "id": "weitere-20271004-eintrag-5y9h2",
+      "kategorie": "weitere",
+      "von": "2027-10-04",
+      "bis": "2027-10-08",
+      "ort": "-",
+      "standort": "",
+      "bild": "",
+      "uhrzeit": "",
+      "ansprechpartner": "",
+      "hinweis": "AZAV und DIN ISO 9001 Re-Zertifizierung"
+    },
+    {
+      "id": "weitere-20271007-bochum-y7xbh",
+      "kategorie": "weitere",
+      "von": "2027-10-07",
+      "bis": "2027-10-07",
+      "ort": "Bochum",
+      "standort": "",
+      "bild": "",
+      "uhrzeit": "",
+      "ansprechpartner": "",
+      "hinweis": "Fachtag Teilhabe, vermutlich im \"Q1\" (Anmeldung MAmAV unter \"Schulungen\")"
+    },
+    {
+      "id": "werkstattfeste-20271128-auf-der-heide-f3yzy",
+      "kategorie": "werkstattfeste",
+      "von": "2027-11-28",
+      "bis": "2027-11-28",
+      "ort": "Auf der Heide",
+      "standort": "adh",
+      "bild": "bst-adh.jpg",
+      "uhrzeit": "11:00 - 16:00 Uhr",
+      "ansprechpartner": "",
+      "hinweis": ""
+    },
+    {
+      "id": "weitere-20271202-bielefeld-c7tty",
+      "kategorie": "weitere",
+      "von": "2027-12-02",
+      "bis": "2027-12-02",
+      "ort": "Bielefeld",
+      "standort": "",
+      "bild": "",
+      "uhrzeit": "",
+      "ansprechpartner": "",
+      "hinweis": "Jahrestagung"
+    },
+    {
+      "id": "weitere-20271222-alle-2zaxg",
+      "kategorie": "weitere",
+      "von": "2027-12-22",
+      "bis": "2027-12-22",
+      "ort": "alle",
+      "standort": "",
+      "bild": "",
+      "uhrzeit": "ca. 10:00 Uhr",
+      "ansprechpartner": "",
+      "hinweis": "Weihnachtsfeier MAmWV"
     },
     {
       "id": "schluss-20271223-winterferien",
