@@ -1,13 +1,13 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 6
+   Version 7
 
-   Neu in Version 6:
-   - ui-a11y.js wird für einheitliche Dialog- und Tastaturbedienung offline vorgeladen.
+   Neu in Version 7:
+   - ui-a11y.js zeigt vor internen ConSense-Links einen barrierearmen Hinweisdialog.
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v6';
+const CACHE_VERSION = 'v7';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 

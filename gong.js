@@ -232,6 +232,7 @@
    UI-BARRIEREFREIHEIT LADEN
    ui-a11y.js ergänzt vorhandene Popups und Aufklappbereiche
    zentral um Tastaturbedienung, Fokusführung und ARIA.
+   Außerdem zeigt es vor internen ConSense-Links einen verständlichen Hinweis.
    ══════════════════════════════════════════════════════ */
 (function ladeStudjoUiA11y() {
   if (

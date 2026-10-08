@@ -1096,6 +1096,413 @@
   }
 
 
+
+  /* ════════════════════════════════════════════════════
+     INTERNE CONSENSE-LINKS
+     Erst Hinweis zeigen, danach auf Wunsch Originalziel öffnen.
+     ════════════════════════════════════════════════════ */
+
+  const CONSENSE_HOST =
+    '001sdbfevm-660.johanneswerk.int';
+
+  let consenseZielUrl = '';
+  let consenseZielLink = null;
+
+  function istConsenseLink(link) {
+    if (
+      !link ||
+      link.tagName !== 'A' ||
+      !link.href
+    ) {
+      return false;
+    }
+
+    try {
+      const url =
+        new URL(
+          link.href,
+          window.location.href
+        );
+
+      return (
+        url.hostname
+          .toLowerCase() ===
+        CONSENSE_HOST
+      );
+
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function consenseDialogErzeugen() {
+    let dialog =
+      document.getElementById(
+        'consense-hinweis-dialog'
+      );
+
+    if (dialog) {
+      return dialog;
+    }
+
+    document.body.insertAdjacentHTML(
+      'beforeend',
+      `
+<div id="consense-hinweis-dialog"
+     role="dialog"
+     aria-modal="true"
+     aria-labelledby="consense-hinweis-titel"
+     aria-describedby="consense-hinweis-text"
+     aria-hidden="true"
+     style="
+       display:none;
+       position:fixed;
+       inset:0;
+       z-index:2600;
+       background:rgba(0,0,0,.62);
+       align-items:center;
+       justify-content:center;
+       padding:20px;
+     ">
+
+  <div data-dialog-inhalt
+       style="
+         width:min(520px,100%);
+         background:#fff;
+         color:#0f2f37;
+         border-radius:18px;
+         box-shadow:0 12px 42px rgba(0,0,0,.38);
+         padding:30px 26px 24px;
+         position:relative;
+         text-align:left;
+       ">
+
+    <button type="button"
+            id="consense-hinweis-x"
+            aria-label="Schließen"
+            style="
+              position:absolute;
+              top:10px;
+              right:10px;
+              width:36px;
+              height:36px;
+              border:0;
+              border-radius:50%;
+              background:#f1f1f1;
+              color:#0f2f37;
+              font-size:1.15rem;
+              cursor:pointer;
+            ">
+      ✕
+    </button>
+
+    <div aria-hidden="true"
+         style="
+           font-size:3rem;
+           line-height:1;
+           margin:0 0 12px;
+         ">
+      🔒
+    </div>
+
+    <h2 id="consense-hinweis-titel"
+        style="
+          margin:0 44px 16px 0;
+          color:#b61f29;
+          font-size:1.45rem;
+          line-height:1.25;
+        ">
+      Interne Seite
+    </h2>
+
+    <div id="consense-hinweis-text"
+         style="
+           font-size:1.08rem;
+           line-height:1.7;
+         ">
+
+      <p style="margin:0 0 10px;">
+        Diese Seite ist bei <strong>ConSense</strong>.
+      </p>
+
+      <p style="margin:0 0 10px;">
+        Du brauchst Zugang zu ConSense.
+      </p>
+
+      <p style="margin:0 0 10px;">
+        Bei Studjo kannst du die Seite am PC öffnen.
+      </p>
+
+      <p style="margin:0 0 20px;">
+        Mit einem privaten Handy geht es oft nicht.
+      </p>
+    </div>
+
+    <div style="
+           display:flex;
+           flex-wrap:wrap;
+           gap:10px;
+           margin-top:4px;
+         ">
+
+      <button type="button"
+              id="consense-hinweis-oeffnen"
+              style="
+                flex:1 1 210px;
+                min-height:52px;
+                border:0;
+                border-radius:12px;
+                background:#b61f29;
+                color:#fff;
+                font:inherit;
+                font-size:1rem;
+                font-weight:900;
+                cursor:pointer;
+                padding:12px 18px;
+              ">
+        ConSense öffnen
+      </button>
+
+      <button type="button"
+              id="consense-hinweis-zurueck"
+              style="
+                flex:1 1 130px;
+                min-height:52px;
+                border:2px solid #b61f29;
+                border-radius:12px;
+                background:#fff;
+                color:#b61f29;
+                font:inherit;
+                font-size:1rem;
+                font-weight:900;
+                cursor:pointer;
+                padding:12px 18px;
+              ">
+        Zurück
+      </button>
+
+    </div>
+
+  </div>
+</div>`
+    );
+
+    dialog =
+      document.getElementById(
+        'consense-hinweis-dialog'
+      );
+
+    const inhalt =
+      dialog.querySelector(
+        '[data-dialog-inhalt]'
+      );
+
+    inhalt.addEventListener(
+      'click',
+      e => e.stopPropagation()
+    );
+
+    document.getElementById(
+      'consense-hinweis-x'
+    ).addEventListener(
+      'click',
+      () => {
+        dialogSchliessen(
+          dialog,
+          true
+        );
+      }
+    );
+
+    document.getElementById(
+      'consense-hinweis-zurueck'
+    ).addEventListener(
+      'click',
+      () => {
+        dialogSchliessen(
+          dialog,
+          true
+        );
+      }
+    );
+
+    document.getElementById(
+      'consense-hinweis-oeffnen'
+    ).addEventListener(
+      'click',
+      () => {
+        const ziel =
+          consenseZielUrl;
+
+        dialogSchliessen(
+          dialog,
+          false
+        );
+
+        consenseZielUrl =
+          '';
+
+        if (!ziel) {
+          const rueckgabe =
+            consenseZielLink;
+
+          consenseZielLink =
+            null;
+
+          if (
+            rueckgabe &&
+            document.contains(
+              rueckgabe
+            )
+          ) {
+            rueckgabe.focus();
+          }
+
+          return;
+        }
+
+        const neuesFenster =
+          window.open(
+            ziel,
+            '_blank',
+            'noopener,noreferrer'
+          );
+
+        if (neuesFenster) {
+          try {
+            neuesFenster.opener =
+              null;
+          } catch (e) {}
+        }
+
+        const rueckgabe =
+          consenseZielLink;
+
+        consenseZielLink =
+          null;
+
+        if (
+          rueckgabe &&
+          document.contains(
+            rueckgabe
+          )
+        ) {
+          window.setTimeout(
+            () =>
+              rueckgabe.focus(),
+            0
+          );
+        }
+      }
+    );
+
+    dialog.addEventListener(
+      'click',
+      e => {
+        if (
+          e.target === dialog
+        ) {
+          dialogSchliessen(
+            dialog,
+            true
+          );
+        }
+      }
+    );
+
+    dialogEinrichten(
+      dialog
+    );
+
+    return dialog;
+  }
+
+  function consenseHinweisOeffnen(
+    link
+  ) {
+    const dialog =
+      consenseDialogErzeugen();
+
+    consenseZielUrl =
+      link.href;
+
+    consenseZielLink =
+      link;
+
+    dialogAusloeser =
+      link;
+
+    dialog.style.display =
+      'flex';
+
+    dialog.setAttribute(
+      'aria-hidden',
+      'false'
+    );
+
+    dialogGeoeffnet(
+      dialog,
+      link
+    );
+
+    window.setTimeout(
+      () => {
+        const btn =
+          document.getElementById(
+            'consense-hinweis-oeffnen'
+          );
+
+        if (btn) {
+          btn.focus();
+        }
+      },
+      0
+    );
+  }
+
+  function consenseLinksEinrichten() {
+    document
+      .querySelectorAll(
+        'a[href]'
+      )
+      .forEach(link => {
+        if (
+          !istConsenseLink(link) ||
+          link.dataset
+            .studjoConsenseHinweis ===
+          '1'
+        ) {
+          return;
+        }
+
+        link.dataset
+          .studjoConsenseHinweis =
+            '1';
+
+        link.setAttribute(
+          'aria-haspopup',
+          'dialog'
+        );
+
+        link.addEventListener(
+          'click',
+          e => {
+            if (
+              e.defaultPrevented
+            ) {
+              return;
+            }
+
+            e.preventDefault();
+
+            consenseHinweisOeffnen(
+              link
+            );
+          }
+        );
+      });
+  }
+
   /* ════════════════════════════════════════════════════
      DYNAMISCHE ELEMENTE
      Kalender-Popup wird z. B. erst beim Klick erzeugt.
@@ -1115,6 +1522,7 @@
             () => {
               alleDialogeEinrichten();
               accordionsEinrichten();
+              consenseLinksEinrichten();
             },
             30
           );
@@ -1124,6 +1532,7 @@
   function starten() {
     alleDialogeEinrichten();
     accordionsEinrichten();
+    consenseLinksEinrichten();
 
     domObserver.observe(
       document.body,
