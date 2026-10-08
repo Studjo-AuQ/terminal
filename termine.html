@@ -361,16 +361,6 @@ main {
     'Juli','August','September','Oktober','November','Dezember'
   ];
 
-  const STANDORTE = [
-    { keywords:['freisenberg'], bild:'bst-fbs.jpg' },
-    { keywords:['wefelshohl'], bild:'bst-whs.jpg' },
-    { keywords:['kerkhagen'], bild:'bst-kh.jpg' },
-    { keywords:['werdohl'], bild:'bst-wd.jpg' },
-    { keywords:['kierspe'], bild:'bst-ki.jpg' },
-    { keywords:['dannenbaum'], bild:'bst-db.jpg' },
-    { keywords:['auf der heide','heide'], bild:'bst-adh.jpg' }
-  ];
-
   function parseIso(text) {
     const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(text || ''));
     if (!m) return null;
@@ -432,27 +422,25 @@ main {
     return ende >= heute;
   }
 
-  function standortBilder(termin) {
-    const text = [
-      termin.titel,
-      termin.hinweis,
-      termin.ansprechpartner
-    ].join(' ').toLowerCase();
+  function bereinigterOrt(termin) {
+    const roh = String(
+      termin.ort ||
+      termin.titel ||
+      ''
+    ).trim();
 
-    return STANDORTE
-      .filter(s => s.keywords.some(kw => text.includes(kw)))
-      .map(s => s.bild);
+    return roh
+      .replace(/^\s*(?:Betriebsstätte|BST)\s+/i, '')
+      .trim();
   }
 
   function karteHtml(termin) {
-    const bilder = standortBilder(termin);
+    const ort = bereinigterOrt(termin);
 
-    const bildHtml = bilder.length
+    const bildHtml = termin.bild
       ? '<div class="bst-icon-container">' +
-        bilder.map(src =>
-          '<img src="' + htmlSicher(src) +
-          '" class="bst-icon" alt="Betriebsstätte">'
-        ).join('') +
+        '<img src="' + htmlSicher(termin.bild) +
+        '" class="bst-icon" alt="Gebäude ' + htmlSicher(ort) + '">' +
         '</div>'
       : '';
 
@@ -474,7 +462,7 @@ main {
                data-start="${htmlSicher(termin.von)}">
         ${bildHtml}
         <div class="event-date">${htmlSicher(formatZeitraum(termin.von, termin.bis))}</div>
-        <div class="event-title">${htmlSicher(termin.titel)}</div>
+        <div class="event-title">${htmlSicher(ort)}</div>
         ${zeitHtml}
         ${kontaktHtml}
         ${hinweisHtml}
@@ -639,7 +627,7 @@ main {
     <ul style="margin:0;padding-left:22px;font-size:1rem;line-height:1.8;color:#0f2f37;">
       <li>Hier findest du Termine bei Studjo.</li>
       <li>Es gibt Andachten, Feste, Schließungstage und weitere Termine.</li>
-      <li>Die Termine kommen automatisch aus einer zentralen Datei.</li>
+      <li>Ort, Uhrzeit und weitere Angaben kommen automatisch aus einer zentralen Datei.</li>
       <li>Vergangene Termine werden automatisch ausgeblendet.</li>
       <li>Im Kalender siehst du auch die Schulferien in NRW.</li>
     </ul>

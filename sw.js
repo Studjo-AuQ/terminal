@@ -1,14 +1,13 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 4
+   Version 5
 
-   Neu in Version 4:
-   - termine.json ist zentrale Offline-Datenquelle für Termine
-     und NRW-Schulferien.
+   Neu in Version 5:
+   - Termin-Datenmodell verwendet Ort sowie optionale Standort-/Bildzuordnung.
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v4';
+const CACHE_VERSION = 'v5';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 

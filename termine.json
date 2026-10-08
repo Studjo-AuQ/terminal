@@ -1,24 +1,28 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "stand": "2026-10-07",
-  "hinweis": "Zentrale Datenquelle für Studjo-Termine und NRW-Schulferien. Pflege mit termine-pflege.html.",
+  "hinweis": "Zentrale Datenquelle für Studjo-Termine und NRW-Schulferien. Terminorte können optional mit einem Studjo-Standort und dessen Gebäudebild verknüpft werden.",
   "termine": [
     {
       "id": "weiter-20261007-fachtag-teilhabe",
       "kategorie": "weitere",
       "von": "2026-10-07",
       "bis": "2026-10-07",
-      "titel": "Fachtag Teilhabe",
+      "ort": "Q1, Bochum",
+      "standort": "",
+      "bild": "",
       "uhrzeit": "",
       "ansprechpartner": "",
-      "hinweis": "Q1, Bochum"
+      "hinweis": "Fachtag Teilhabe"
     },
     {
       "id": "andacht-20261008-kierspe",
       "kategorie": "andachten",
       "von": "2026-10-08",
       "bis": "2026-10-08",
-      "titel": "Betriebsstätte Kierspe",
+      "ort": "Kierspe",
+      "standort": "ki",
+      "bild": "bst-ki.jpg",
       "uhrzeit": "13:00 Uhr",
       "ansprechpartner": "Pfr. Georg Freiwat",
       "hinweis": ""
@@ -28,7 +32,9 @@
       "kategorie": "werkstattfeste",
       "von": "2026-11-29",
       "bis": "2026-11-29",
-      "titel": "Auf der Heide",
+      "ort": "Auf der Heide",
+      "standort": "adh",
+      "bild": "bst-adh.jpg",
       "uhrzeit": "11:00 – 16:00 Uhr",
       "ansprechpartner": "",
       "hinweis": ""
@@ -38,7 +44,9 @@
       "kategorie": "weitere",
       "von": "2026-12-18",
       "bis": "2026-12-18",
-      "titel": "Weihnachtsfeier MAmAV",
+      "ort": "Weihnachtsfeier MAmAV",
+      "standort": "",
+      "bild": "",
       "uhrzeit": "ca. 19:00 Uhr",
       "ansprechpartner": "",
       "hinweis": ""
@@ -48,7 +56,9 @@
       "kategorie": "weitere",
       "von": "2026-12-22",
       "bis": "2026-12-22",
-      "titel": "Weihnachtsfeier MAmWV",
+      "ort": "Weihnachtsfeier MAmWV",
+      "standort": "",
+      "bild": "",
       "uhrzeit": "ca. 10:00 Uhr",
       "ansprechpartner": "",
       "hinweis": ""
@@ -58,7 +68,9 @@
       "kategorie": "schliessungstage",
       "von": "2026-12-23",
       "bis": "2027-01-05",
-      "titel": "Winterferien",
+      "ort": "Winterferien",
+      "standort": "",
+      "bild": "",
       "uhrzeit": "Betriebsferien",
       "ansprechpartner": "",
       "hinweis": "Wir wünschen frohe Festtage!"
@@ -68,7 +80,9 @@
       "kategorie": "schliessungstage",
       "von": "2027-05-07",
       "bis": "2027-05-07",
-      "titel": "Betriebsurlaub",
+      "ort": "Betriebsurlaub",
+      "standort": "",
+      "bild": "",
       "uhrzeit": "Ganztägig geschlossen",
       "ansprechpartner": "",
       "hinweis": "Brückentag (Christi Himmelfahrt)"
@@ -78,7 +92,9 @@
       "kategorie": "schliessungstage",
       "von": "2027-05-28",
       "bis": "2027-05-28",
-      "titel": "Betriebsurlaub",
+      "ort": "Betriebsurlaub",
+      "standort": "",
+      "bild": "",
       "uhrzeit": "Ganztägig geschlossen",
       "ansprechpartner": "",
       "hinweis": "Brückentag (Fronleichnam)"
@@ -88,7 +104,9 @@
       "kategorie": "schliessungstage",
       "von": "2027-12-23",
       "bis": "2028-01-04",
-      "titel": "Betriebsurlaub",
+      "ort": "Betriebsurlaub",
+      "standort": "",
+      "bild": "",
       "uhrzeit": "Winterferien",
       "ansprechpartner": "",
       "hinweis": "Wir wünschen frohe Festtage!"

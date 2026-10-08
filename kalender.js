@@ -108,6 +108,18 @@
        ZENTRALE DATENQUELLE termine.json
        ════════════════════════════════════════════════════ */
 
+    function bereinigterOrt(termin) {
+      const roh = String(
+        termin.ort ||
+        termin.titel ||
+        ''
+      ).trim();
+
+      return roh
+        .replace(/^\s*(?:Betriebsstätte|BST)\s+/i, '')
+        .trim();
+    }
+
     function baueDatenstrukturen(daten) {
       const neueSchliessungen = new Map();
       const neueTermine = new Map();
@@ -143,7 +155,7 @@
               schluessel,
               {
                 art: 'schliessung',
-                titel: termin.titel || 'Betriebsurlaub',
+                titel: bereinigterOrt(termin) || 'Betriebsurlaub',
                 details
               }
             );
@@ -169,7 +181,7 @@
               {
                 kategorie: cfg.name,
                 icon: cfg.icon,
-                titel: termin.titel || cfg.name,
+                titel: bereinigterOrt(termin) || cfg.name,
                 details
               }
             );
