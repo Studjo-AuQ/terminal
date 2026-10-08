@@ -1,19 +1,20 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 8
+   Version 9
 
-   Neu in Version 8:
-   - offline.js zeigt bei fehlender Netzverbindung einen sichtbaren A1-Offline-Hinweis.
+   Neu in Version 9:
+   - neuigkeiten.html ersetzt die frühere interne nachrichten.html und wird direkt offline vorgeladen.
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v8';
+const CACHE_VERSION = 'v9';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 
 const CORE_DATEIEN = [
   './',
   'index.html',
+  'neuigkeiten.html',
   'offline.html',
   'manifest.webmanifest',
 

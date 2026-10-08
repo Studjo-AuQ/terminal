@@ -197,6 +197,14 @@
      Bestehendes Verhalten bleibt erhalten.
      ════════════════════════════════════════════════════ */
   document.addEventListener('DOMContentLoaded', () => {
+    /* Dateiname-Migration:
+       Die frühere interne Seite nachrichten.html heißt nun eindeutig
+       neuigkeiten.html. So funktioniert die Startseiten-Kachel auch,
+       wenn die alte nachrichten.html gelöscht wurde. */
+    document.querySelectorAll('a[href="nachrichten.html"]').forEach(link => {
+      link.setAttribute('href', 'neuigkeiten.html');
+    });
+
     document.querySelectorAll('a.back-button, a.footer-home-link').forEach(link => {
       link.addEventListener('click', (e) => {
         if (window.history.length > 1) {

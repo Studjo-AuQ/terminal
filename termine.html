@@ -361,6 +361,10 @@ main {
     'Juli','August','September','Oktober','November','Dezember'
   ];
 
+  const WOCHENTAGE = [
+    'So','Mo','Di','Mi','Do','Fr','Sa'
+  ];
+
   function parseIso(text) {
     const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(text || ''));
     if (!m) return null;
@@ -378,7 +382,11 @@ main {
   function formatEinzelDatum(iso) {
     const d = parseIso(iso);
     if (!d) return iso || '';
-    return d.getDate() + '. ' + MONATE[d.getMonth()] + ' ' + d.getFullYear();
+
+    return WOCHENTAGE[d.getDay()] + ', ' +
+           d.getDate() + '. ' +
+           MONATE[d.getMonth()] + ' ' +
+           d.getFullYear();
   }
 
   function formatZeitraum(von, bis) {
@@ -388,15 +396,19 @@ main {
     const b = parseIso(bis);
     if (!a || !b) return formatEinzelDatum(von);
 
+    const tagA = WOCHENTAGE[a.getDay()];
+    const tagB = WOCHENTAGE[b.getDay()];
+
     if (a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth()) {
-      return a.getDate() + '. bis ' + b.getDate() + '. ' +
+      return tagA + ', ' + a.getDate() + '. bis ' +
+             tagB + ', ' + b.getDate() + '. ' +
              MONATE[b.getMonth()] + ' ' + b.getFullYear();
     }
 
     if (a.getFullYear() === b.getFullYear()) {
-      return a.getDate() + '. ' + MONATE[a.getMonth()] +
-             ' bis ' + b.getDate() + '. ' + MONATE[b.getMonth()] +
-             ' ' + b.getFullYear();
+      return tagA + ', ' + a.getDate() + '. ' + MONATE[a.getMonth()] +
+             ' bis ' + tagB + ', ' + b.getDate() + '. ' +
+             MONATE[b.getMonth()] + ' ' + b.getFullYear();
     }
 
     return formatEinzelDatum(von) + ' bis ' + formatEinzelDatum(bis);
