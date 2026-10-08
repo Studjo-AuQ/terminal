@@ -1,13 +1,13 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 9
+   Version 10
 
-   Neu in Version 9:
-   - neuigkeiten.html ersetzt die frühere interne nachrichten.html und wird direkt offline vorgeladen.
+   Neu in Version 10:
+   - modernisierte neuigkeiten.html mit thematischen Emojis; style-news.css wird direkt vorgeladen.
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v9';
+const CACHE_VERSION = 'v10';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 
@@ -20,6 +20,7 @@ const CORE_DATEIEN = [
 
   'style.css',
   'style-index.css',
+  'style-news.css',
   'a11y.css',
 
   'gong.js',
