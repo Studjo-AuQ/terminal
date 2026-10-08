@@ -14,16 +14,28 @@
 </head>
 <body>
 
-<header><div class="logo-container"><img src="header.jpg" alt="Studjo – Arbeit und Qualifizierung"></div></header>
+<header>
+  <div class="logo-container">
+    <img src="header.jpg" alt="Studjo – Arbeit und Qualifizierung">
+  </div>
+</header>
 
 <main>
   <div class="page-header-row">
-    <a href="index.html" target="_self" class="back-button"><span aria-hidden="true">←</span> Zurück</a>
+    <a href="index.html" target="_self" class="back-button">
+      <span aria-hidden="true">←</span> Zurück
+    </a>
+
     <h1 id="seitenanfang">📰 Neuigkeiten für Mitarbeitende</h1>
+
     <button type="button"
             onclick="document.getElementById('info-popup').style.display='flex'"
             aria-label="Kurze Info anzeigen"
-            style="margin-left:auto;flex-shrink:0;background:#fff;border:3px solid #b61f29;border-radius:50%;width:52px;height:52px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.9rem;padding:0;line-height:1;">ℹ️</button>
+            style="margin-left:auto;flex-shrink:0;background:#fff;border:3px solid #b61f29;
+                   border-radius:50%;width:52px;height:52px;cursor:pointer;display:flex;
+                   align-items:center;justify-content:center;font-size:1.9rem;padding:0;line-height:1;">
+      ℹ️
+    </button>
   </div>
 
   <p style="color:var(--secondary-grey);margin:0;font-size:1rem;font-weight:500;">
@@ -31,210 +43,312 @@
   </p>
 
   <div class="news-grid" id="news-grid">
-    <article class="news-card">
+    <article class="news-card" id="news-2026-10-06-verbesserungen-am-terminal">
       <div class="news-kopf">
         <div class="news-symbol-wrap" aria-hidden="true">
           <span class="news-symbol">💻</span>
         </div>
-        <button type="button" class="news-content"
-                aria-expanded="false" aria-controls="news-inhalt-1"
+
+        <button type="button"
+                class="news-content"
+                aria-expanded="false"
+                aria-controls="inhalt-news-2026-10-06-verbesserungen-am-terminal"
                 onclick="toggleNews(this)">
           <span class="news-date">6. Oktober 2026</span>
           <span class="news-title">Verbesserungen am Terminal</span>
           <span class="news-teaser">In den letzten Wochen sind noch einige Funktionen dazu gekommen.</span>
           <span class="news-pfeil" aria-hidden="true">›</span>
         </button>
-        <button type="button" class="news-ohr"
+
+        <button type="button"
+                class="news-ohr"
                 onclick="vorleseNews(this)"
                 aria-label="Nachricht vorlesen: Verbesserungen am Terminal">👂</button>
       </div>
-      <div class="news-mehr" id="news-inhalt-1" aria-hidden="true">
+
+      <div class="news-mehr"
+           id="inhalt-news-2026-10-06-verbesserungen-am-terminal"
+           aria-hidden="true">
         <p class="news-text">1) Die Anzeige &quot;Arbeitszeit / Freizeit&quot; ist nun schmaler.<br>2) Du kannst durch Klicken in ein freies Feld den &quot;Gong&quot; aktivieren. Das ist ein Signal für Arbeit und Pausen.<br>3) Beim Kalender-Symbol und unter &quot;Termine&quot; siehst du nun alle wichtigen Termine für Studjo. Auch Schulferien sind dort markiert.<br>4) Unten rechts auf der Startseite siehst du ein &quot;Stift&quot; Symbol. Damit kannst du dir die Kacheln auf der Startseite selbst verschieben oder für dich unwichtige ausblenden.<br>5) Unten rechts neben dem Stift siehst du ein Handy-Symbol. Dieses öffnet einen QR-Code, sodass du das Terminal anderen schnell übermitteln kannst.</p>
       </div>
     </article>
 
-    <article class="news-card">
+    <article class="news-card" id="news-2026-09-07-uebersicht-in-fusszeile">
       <div class="news-kopf">
         <div class="news-symbol-wrap" aria-hidden="true">
           <span class="news-symbol">ℹ️</span>
         </div>
-        <button type="button" class="news-content"
-                aria-expanded="false" aria-controls="news-inhalt-2"
+
+        <button type="button"
+                class="news-content"
+                aria-expanded="false"
+                aria-controls="inhalt-news-2026-09-07-uebersicht-in-fusszeile"
                 onclick="toggleNews(this)">
           <span class="news-date">7. September 2026</span>
           <span class="news-title">Übersicht in Fußzeile</span>
           <span class="news-teaser">Ganz unten ist die neue Fußzeile. Dort findest du auch eine Übersicht.</span>
           <span class="news-pfeil" aria-hidden="true">›</span>
         </button>
-        <button type="button" class="news-ohr"
+
+        <button type="button"
+                class="news-ohr"
                 onclick="vorleseNews(this)"
                 aria-label="Nachricht vorlesen: Übersicht in Fußzeile">👂</button>
       </div>
-      <div class="news-mehr" id="news-inhalt-2" aria-hidden="true">
+
+      <div class="news-mehr"
+           id="inhalt-news-2026-09-07-uebersicht-in-fusszeile"
+           aria-hidden="true">
         <p class="news-text">Das erklärt alle Inhalte hier.<br>Und gibt dir Tipps zur Bedienung.</p>
       </div>
     </article>
 
-    <article class="news-card">
+    <article class="news-card" id="news-2026-08-14-tages-losung">
       <div class="news-kopf">
         <div class="news-symbol-wrap" aria-hidden="true">
           <span class="news-symbol">📖</span>
         </div>
-        <button type="button" class="news-content"
-                aria-expanded="false" aria-controls="news-inhalt-3"
+
+        <button type="button"
+                class="news-content"
+                aria-expanded="false"
+                aria-controls="inhalt-news-2026-08-14-tages-losung"
                 onclick="toggleNews(this)">
           <span class="news-date">14. August 2026</span>
           <span class="news-title">Tages-Losung</span>
           <span class="news-teaser">Eine neue Kachel zeigt dir: Die Losung vom Tag.</span>
           <span class="news-pfeil" aria-hidden="true">›</span>
         </button>
-        <button type="button" class="news-ohr"
+
+        <button type="button"
+                class="news-ohr"
                 onclick="vorleseNews(this)"
                 aria-label="Nachricht vorlesen: Tages-Losung">👂</button>
       </div>
-      <div class="news-mehr" id="news-inhalt-3" aria-hidden="true">
+
+      <div class="news-mehr"
+           id="inhalt-news-2026-08-14-tages-losung"
+           aria-hidden="true">
         <p class="news-text">Das ist ein Vers aus der Bibel.<br>Lies oder lass ihn dir vorlesen.</p>
       </div>
     </article>
   </div>
 
-  <script type="application/json" id="neuigkeiten-daten">[{"datum": "2026-10-06", "titel": "Verbesserungen am Terminal", "teaser": "In den letzten Wochen sind noch einige Funktionen dazu gekommen.", "inhalt": "1) Die Anzeige \"Arbeitszeit / Freizeit\" ist nun schmaler.\n2) Du kannst durch Klicken in ein freies Feld den \"Gong\" aktivieren. Das ist ein Signal für Arbeit und Pausen.\n3) Beim Kalender-Symbol und unter \"Termine\" siehst du nun alle wichtigen Termine für Studjo. Auch Schulferien sind dort markiert.\n4) Unten rechts auf der Startseite siehst du ein \"Stift\" Symbol. Damit kannst du dir die Kacheln auf der Startseite selbst verschieben oder für dich unwichtige ausblenden.\n5) Unten rechts neben dem Stift siehst du ein Handy-Symbol. Dieses öffnet einen QR-Code, sodass du das Terminal anderen schnell übermitteln kannst.", "symbol": "💻", "symbolModus": "auto"}, {"datum": "2026-09-07", "titel": "Übersicht in Fußzeile", "teaser": "Ganz unten ist die neue Fußzeile. Dort findest du auch eine Übersicht.", "inhalt": "Das erklärt alle Inhalte hier.\nUnd gibt dir Tipps zur Bedienung.", "symbol": "ℹ️", "symbolModus": "auto"}, {"datum": "2026-08-14", "titel": "Tages-Losung", "teaser": "Eine neue Kachel zeigt dir: Die Losung vom Tag.", "inhalt": "Das ist ein Vers aus der Bibel.\nLies oder lass ihn dir vorlesen.", "symbol": "📖", "symbolModus": "auto"}]</script>
+  <script type="application/json" id="neuigkeiten-daten">{"schemaVersion": 2, "nachrichten": [{"datum": "2026-10-06", "titel": "Verbesserungen am Terminal", "teaser": "In den letzten Wochen sind noch einige Funktionen dazu gekommen.", "inhalt": "1) Die Anzeige \"Arbeitszeit / Freizeit\" ist nun schmaler.\n2) Du kannst durch Klicken in ein freies Feld den \"Gong\" aktivieren. Das ist ein Signal für Arbeit und Pausen.\n3) Beim Kalender-Symbol und unter \"Termine\" siehst du nun alle wichtigen Termine für Studjo. Auch Schulferien sind dort markiert.\n4) Unten rechts auf der Startseite siehst du ein \"Stift\" Symbol. Damit kannst du dir die Kacheln auf der Startseite selbst verschieben oder für dich unwichtige ausblenden.\n5) Unten rechts neben dem Stift siehst du ein Handy-Symbol. Dieses öffnet einen QR-Code, sodass du das Terminal anderen schnell übermitteln kannst.", "symbol": "💻", "symbolModus": "auto", "id": "news-2026-10-06-verbesserungen-am-terminal", "tickerAktiv": true, "tickerText": "", "tickerVon": "2026-10-06", "tickerBis": ""}, {"datum": "2026-09-07", "titel": "Übersicht in Fußzeile", "teaser": "Ganz unten ist die neue Fußzeile. Dort findest du auch eine Übersicht.", "inhalt": "Das erklärt alle Inhalte hier.\nUnd gibt dir Tipps zur Bedienung.", "symbol": "ℹ️", "symbolModus": "auto", "id": "news-2026-09-07-uebersicht-in-fusszeile", "tickerAktiv": true, "tickerText": "", "tickerVon": "2026-09-07", "tickerBis": ""}, {"datum": "2026-08-14", "titel": "Tages-Losung", "teaser": "Eine neue Kachel zeigt dir: Die Losung vom Tag.", "inhalt": "Das ist ein Vers aus der Bibel.\nLies oder lass ihn dir vorlesen.", "symbol": "📖", "symbolModus": "auto", "id": "news-2026-08-14-tages-losung", "tickerAktiv": true, "tickerText": "", "tickerVon": "2026-08-14", "tickerBis": ""}], "tickerNur": [{"id": "ticker-motto-der-woche", "symbol": "✨", "symbolModus": "manuell", "text": "Motto der Woche mit Erklärung", "link": "wochenmotto.html", "von": "", "bis": ""}]}</script>
 
   <script>
   function newsStatus(karte, offen) {
-    const trigger=karte.querySelector('.news-content');
-    const panel=karte.querySelector('.news-mehr');
-    karte.classList.toggle('offen',offen);
-    trigger.setAttribute('aria-expanded',offen?'true':'false');
-    panel.setAttribute('aria-hidden',offen?'false':'true');
+    const trigger = karte.querySelector('.news-content');
+    const panel = karte.querySelector('.news-mehr');
+
+    karte.classList.toggle('offen', offen);
+    trigger.setAttribute('aria-expanded', offen ? 'true' : 'false');
+    panel.setAttribute('aria-hidden', offen ? 'false' : 'true');
   }
 
   function toggleNews(trigger) {
-    const karte=trigger.closest('.news-card');
-    const warOffen=karte.classList.contains('offen');
+    const karte = trigger.closest('.news-card');
+    const warOffen = karte.classList.contains('offen');
 
-    document.querySelectorAll('.news-card').forEach(k=>newsStatus(k,false));
+    document.querySelectorAll('.news-card')
+      .forEach(k => newsStatus(k, false));
+
     window.speechSynthesis.cancel();
-    document.querySelectorAll('.news-ohr.aktiv').forEach(b=>b.classList.remove('aktiv'));
 
-    if(!warOffen) newsStatus(karte,true);
+    document.querySelectorAll('.news-ohr.aktiv')
+      .forEach(b => b.classList.remove('aktiv'));
+
+    if (!warOffen) newsStatus(karte, true);
   }
 
   function vorleseNews(button) {
-    if(!('speechSynthesis' in window)) {
+    if (!('speechSynthesis' in window)) {
       alert('Dein Browser unterstützt leider keine Sprachausgabe.');
       return;
     }
 
-    const karte=button.closest('.news-card');
-    const warAktiv=button.classList.contains('aktiv');
+    const karte = button.closest('.news-card');
+    const warAktiv = button.classList.contains('aktiv');
 
     window.speechSynthesis.cancel();
-    document.querySelectorAll('.news-ohr.aktiv').forEach(b=>b.classList.remove('aktiv'));
-    if(warAktiv) return;
 
-    document.querySelectorAll('.news-card').forEach(k=>newsStatus(k,k===karte));
+    document.querySelectorAll('.news-ohr.aktiv')
+      .forEach(b => b.classList.remove('aktiv'));
 
-    const datum=karte.querySelector('.news-date').innerText;
-    const titel=karte.querySelector('.news-title').innerText;
-    const teaser=karte.querySelector('.news-teaser').innerText;
-    const rest=karte.querySelector('.news-text').innerText;
+    if (warAktiv) return;
 
-    const text=[datum,titel,teaser,rest].join('. ')
-      .replace(/\p{Extended_Pictographic}/gu,'')
-      .replace(/\s+/g,' ').trim();
+    document.querySelectorAll('.news-card')
+      .forEach(k => newsStatus(k, k === karte));
 
-    const ansage=new SpeechSynthesisUtterance(text);
-    ansage.lang='de-DE';
-    ansage.rate=.95;
-    const fertig=()=>button.classList.remove('aktiv');
-    ansage.onend=fertig;
-    ansage.onerror=fertig;
+    const datum = karte.querySelector('.news-date').innerText;
+    const titel = karte.querySelector('.news-title').innerText;
+    const teaser = karte.querySelector('.news-teaser').innerText;
+    const rest = karte.querySelector('.news-text').innerText;
+
+    const text = [datum, titel, teaser, rest]
+      .join('. ')
+      .replace(/\p{Extended_Pictographic}/gu, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+
+    const ansage = new SpeechSynthesisUtterance(text);
+    ansage.lang = 'de-DE';
+    ansage.rate = 0.95;
+
+    const fertig = () => button.classList.remove('aktiv');
+    ansage.onend = fertig;
+    ansage.onerror = fertig;
 
     button.classList.add('aktiv');
     window.speechSynthesis.speak(ansage);
   }
+
+  function hashNachrichtOeffnen() {
+    const hash = decodeURIComponent(location.hash || '').replace(/^#/, '');
+    if (!hash) return;
+
+    const karte = document.getElementById(hash);
+    if (!karte || !karte.classList.contains('news-card')) return;
+
+    document.querySelectorAll('.news-card')
+      .forEach(k => newsStatus(k, k === karte));
+
+    window.setTimeout(() => {
+      karte.scrollIntoView({behavior:'smooth', block:'center'});
+      const trigger = karte.querySelector('.news-content');
+      if (trigger) trigger.focus({preventScroll:true});
+    }, 60);
+  }
+
+  window.addEventListener('hashchange', hashNachrichtOeffnen);
+  window.addEventListener('DOMContentLoaded', hashNachrichtOeffnen, {once:true});
   </script>
 </main>
 
 <footer style="position:relative;text-align:center;padding:10px 60px;background:#b61f29;color:#fff;font-size:.85rem;line-height:1.6;">
-© 2026 <strong>Studjo | Arbeit und Qualifizierung</strong> · Evangelisches Johanneswerk gGmbH<br>
-<a href="index.html" class="footer-home-link" style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">Startseite</a> |
-<a href="uebersicht.html" style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">Übersicht</a> |
-<a href="impressum.html" style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">Impressum</a> |
-<a href="datenschutz.html" style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">Datenschutz</a>
-<button type="button" onclick="document.getElementById('qr-overlay').style.display='flex'"
-aria-label="QR-Code zum Scannen anzeigen"
-style="position:absolute;right:14px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.55);border-radius:8px;width:38px;height:38px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.25rem;padding:0;color:#fff;">📱</button>
-<button type="button" onclick="document.getElementById('seitenanfang').scrollIntoView({behavior:'smooth',block:'start'})"
-aria-label="Nach oben zur Seitenüberschrift scrollen"
-style="position:absolute;left:14px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.55);border-radius:8px;width:38px;height:38px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.25rem;padding:0;color:#fff;">⬆️</button>
+  © 2026 <strong>Studjo | Arbeit und Qualifizierung</strong> · Evangelisches Johanneswerk gGmbH
+  <br>
+  <a href="index.html" class="footer-home-link" style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">Startseite</a> |
+  <a href="uebersicht.html" style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">Übersicht</a> |
+  <a href="impressum.html" style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">Impressum</a> |
+  <a href="datenschutz.html" style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">Datenschutz</a>
+
+  <button type="button"
+          onclick="document.getElementById('qr-overlay').style.display='flex'"
+          aria-label="QR-Code zum Scannen anzeigen"
+          style="position:absolute;right:14px;top:50%;transform:translateY(-50%);
+                 background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.55);
+                 border-radius:8px;width:38px;height:38px;cursor:pointer;display:flex;
+                 align-items:center;justify-content:center;font-size:1.25rem;padding:0;color:#fff;">
+    📱
+  </button>
+
+  <button type="button"
+          onclick="document.getElementById('seitenanfang').scrollIntoView({behavior:'smooth',block:'start'})"
+          aria-label="Nach oben zur Seitenüberschrift scrollen"
+          style="position:absolute;left:14px;top:50%;transform:translateY(-50%);
+                 background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.55);
+                 border-radius:8px;width:38px;height:38px;cursor:pointer;display:flex;
+                 align-items:center;justify-content:center;font-size:1.25rem;padding:0;color:#fff;">
+    ⬆️
+  </button>
 </footer>
 
-<div id="qr-overlay" onclick="this.style.display='none'"
-style="display:none;position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.6);align-items:center;justify-content:center;padding:20px;">
-<div onclick="event.stopPropagation()"
-style="background:#fff;border-radius:16px;padding:30px 30px 24px;text-align:center;max-width:320px;position:relative;box-shadow:0 10px 40px rgba(0,0,0,.35);">
-<button type="button" onclick="document.getElementById('qr-overlay').style.display='none'" aria-label="Schließen"
-style="position:absolute;top:10px;right:10px;background:#f1f1f1;border:0;border-radius:50%;width:32px;height:32px;font-size:1.1rem;cursor:pointer;">✕</button>
-<img src="qr-terminal.jpg" alt="QR-Code zur Studjo-Terminal-Seite" style="width:220px;height:220px;display:block;margin:0 auto 16px;">
-<p style="font-size:1rem;color:#0f2f37;margin:0 0 6px;font-weight:700;">Mit dem Handy scannen</p>
-<p style="font-size:.85rem;color:#8a8d8f;margin:0;word-break:break-all;">studjo-auq.github.io/terminal</p>
-</div></div>
+<div id="qr-overlay"
+     onclick="this.style.display='none'"
+     style="display:none;position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.6);
+            align-items:center;justify-content:center;padding:20px;">
+  <div onclick="event.stopPropagation()"
+       style="background:#fff;border-radius:16px;padding:30px 30px 24px;text-align:center;
+              max-width:320px;position:relative;box-shadow:0 10px 40px rgba(0,0,0,.35);">
+    <button type="button"
+            onclick="document.getElementById('qr-overlay').style.display='none'"
+            aria-label="Schließen"
+            style="position:absolute;top:10px;right:10px;background:#f1f1f1;border:0;
+                   border-radius:50%;width:32px;height:32px;font-size:1.1rem;cursor:pointer;">
+      ✕
+    </button>
+    <img src="qr-terminal.jpg" alt="QR-Code zur Studjo-Terminal-Seite"
+         style="width:220px;height:220px;display:block;margin:0 auto 16px;">
+    <p style="font-size:1rem;color:#0f2f37;margin:0 0 6px;font-weight:700;">Mit dem Handy scannen</p>
+    <p style="font-size:.85rem;color:#8a8d8f;margin:0;word-break:break-all;">studjo-auq.github.io/terminal</p>
+  </div>
+</div>
 
 <link rel="stylesheet" href="a11y.css">
 <script src="a11y.js"></script>
 
-<div id="info-popup" onclick="this.style.display='none'"
-style="display:none;position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.6);align-items:center;justify-content:center;padding:20px;">
-<div onclick="event.stopPropagation()"
-style="background:#fff;border-radius:16px;padding:30px 30px 26px;text-align:left;max-width:580px;width:100%;position:relative;box-shadow:0 10px 40px rgba(0,0,0,.35);">
-<button type="button" onclick="vorleseInfoText(this)" aria-label="Info vorlesen"
-style="position:absolute;top:10px;right:52px;background:#f1f1f1;border:0;border-radius:50%;width:32px;height:32px;font-size:1.05rem;cursor:pointer;">👂</button>
-<button type="button" onclick="document.getElementById('info-popup').style.display='none'" aria-label="Schließen"
-style="position:absolute;top:10px;right:10px;background:#f1f1f1;border:0;border-radius:50%;width:32px;height:32px;font-size:1.1rem;cursor:pointer;">✕</button>
-<h2 style="margin:0 0 16px;color:#b61f29;font-size:1.3rem;font-weight:800;">Kurze Info</h2>
-<ul style="margin:0;padding-left:22px;font-size:1rem;line-height:1.8;color:#0f2f37;">
-<li>Hier findest du Neuigkeiten für Mitarbeitende mit Werkstattvertrag.</li>
-<li>Jede Nachricht hat ein passendes Bild-Zeichen.</li>
-<li>Klicke auf eine Nachricht. Dann siehst du den ganzen Text.</li>
-<li>Mit dem Ohr kannst du die ganze Nachricht anhören.</li>
-<li>Mehr Neuigkeiten gibt es bei ConSense am Studjo-PC.</li>
-</ul>
-</div></div>
+<div id="info-popup"
+     onclick="this.style.display='none'"
+     style="display:none;position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.6);
+            align-items:center;justify-content:center;padding:20px;">
+  <div onclick="event.stopPropagation()"
+       style="background:#fff;border-radius:16px;padding:30px 30px 26px;text-align:left;
+              max-width:580px;width:100%;position:relative;box-shadow:0 10px 40px rgba(0,0,0,.35);">
+    <button type="button"
+            onclick="vorleseInfoText(this)"
+            aria-label="Info vorlesen"
+            style="position:absolute;top:10px;right:52px;background:#f1f1f1;border:0;
+                   border-radius:50%;width:32px;height:32px;font-size:1.05rem;cursor:pointer;">👂</button>
+    <button type="button"
+            onclick="document.getElementById('info-popup').style.display='none'"
+            aria-label="Schließen"
+            style="position:absolute;top:10px;right:10px;background:#f1f1f1;border:0;
+                   border-radius:50%;width:32px;height:32px;font-size:1.1rem;cursor:pointer;">✕</button>
+
+    <h2 style="margin:0 0 16px;color:#b61f29;font-size:1.3rem;font-weight:800;">Kurze Info</h2>
+
+    <ul style="margin:0;padding-left:22px;font-size:1rem;line-height:1.8;color:#0f2f37;">
+      <li>Hier findest du Neuigkeiten für Mitarbeitende mit Werkstattvertrag.</li>
+      <li>Jede Nachricht hat ein passendes Bild-Zeichen.</li>
+      <li>Klicke auf die Nachricht. Dann siehst du den ganzen Text.</li>
+      <li>Mit dem Ohr kannst du die ganze Nachricht anhören.</li>
+      <li>Mehr Neuigkeiten gibt es bei ConSense am Studjo-PC.</li>
+    </ul>
+  </div>
+</div>
 
 <script>
 function vorleseInfoText(button) {
-  if(!('speechSynthesis' in window)) {
+  if (!('speechSynthesis' in window)) {
     alert('Dein Browser unterstützt leider keine Sprachausgabe.');
     return;
   }
-  const warAktiv=button.classList.contains('aktiv');
+
+  const warAktiv = button.classList.contains('aktiv');
   window.speechSynthesis.cancel();
-  document.querySelectorAll('.info-ohr-aktiv').forEach(b=>{
+
+  document.querySelectorAll('.info-ohr-aktiv').forEach(b => {
     b.classList.remove('info-ohr-aktiv','aktiv');
-    b.style.background='#f1f1f1';
+    b.style.background = '#f1f1f1';
   });
-  if(warAktiv) return;
 
-  const popup=document.getElementById('info-popup');
-  const ueberschrift=popup.querySelector('h2')?.innerText||'';
-  const listenpunkte=Array.from(popup.querySelectorAll('li')).map(li=>li.innerText);
-  const text=[ueberschrift,...listenpunkte].join('. ')
+  if (warAktiv) return;
+
+  const popup = document.getElementById('info-popup');
+  const ueberschrift = popup.querySelector('h2')?.innerText || '';
+  const listenpunkte = Array.from(popup.querySelectorAll('li')).map(li => li.innerText);
+
+  const text = [ueberschrift, ...listenpunkte]
+    .join('. ')
     .replace(/\p{Extended_Pictographic}/gu,'')
-    .replace(/\s+/g,' ').trim();
+    .replace(/\s+/g,' ')
+    .trim();
 
-  const ansage=new SpeechSynthesisUtterance(text);
-  ansage.lang='de-DE';
-  ansage.rate=.95;
-  const fertig=()=>{
+  const ansage = new SpeechSynthesisUtterance(text);
+  ansage.lang = 'de-DE';
+  ansage.rate = 0.95;
+
+  const fertig = () => {
     button.classList.remove('aktiv','info-ohr-aktiv');
-    button.style.background='#f1f1f1';
+    button.style.background = '#f1f1f1';
   };
-  ansage.onend=fertig;
-  ansage.onerror=fertig;
+
+  ansage.onend = fertig;
+  ansage.onerror = fertig;
+
   button.classList.add('aktiv','info-ohr-aktiv');
-  button.style.background='#ffe600';
+  button.style.background = '#ffe600';
   window.speechSynthesis.speak(ansage);
 }
 </script>

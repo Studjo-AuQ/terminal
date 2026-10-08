@@ -1,13 +1,13 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 10
+   Version 11
 
-   Neu in Version 10:
-   - modernisierte neuigkeiten.html mit thematischen Emojis; style-news.css wird direkt vorgeladen.
+   Neu in Version 11:
+   - automatische Startseiten-Laufleiste aus ticker.json; ticker.js und ticker.json werden direkt vorgeladen.
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v10';
+const CACHE_VERSION = 'v11';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 
@@ -27,6 +27,7 @@ const CORE_DATEIEN = [
   'offline.js',
   'a11y.js',
   'ui-a11y.js',
+  'ticker.js',
   'feiertage.js',
   'kalender.js',
   'kacheln.js',
@@ -43,6 +44,7 @@ const CORE_DATEIEN = [
 
   /* Lokale dynamische Daten */
   'termine.json',
+  'ticker.json',
   'wetter.json',
   'wochenmottos.json',
   'data/losungen.json',

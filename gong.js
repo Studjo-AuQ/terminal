@@ -279,3 +279,46 @@
       script
     );
 })();
+
+
+/* ══════════════════════════════════════════════════════
+   STARTSEITEN-TICKER LADEN
+   Läuft nur dort, wo eine .ticker-container vorhanden ist.
+   ══════════════════════════════════════════════════════ */
+(function ladeStudjoTicker() {
+  if (
+    window.__studjoTickerAktiv ||
+    document.querySelector(
+      'script[data-studjo-ticker]'
+    )
+  ) {
+    return;
+  }
+
+  const script =
+    document.createElement(
+      'script'
+    );
+
+  script.src =
+    'ticker.js';
+
+  script.async =
+    true;
+
+  script.dataset
+    .studjoTicker =
+      'true';
+
+  script.onerror =
+    () => {
+      console.warn(
+        '[Studjo] ticker.js konnte nicht geladen werden.'
+      );
+    };
+
+  document.head
+    .appendChild(
+      script
+    );
+})();
