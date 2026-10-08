@@ -11,6 +11,10 @@
    ist, lädt es offline.js lediglich als kleinen Bootstrap nach. Dadurch
    wird der Service Worker auch dann registriert, wenn eine Unterseite
    direkt geöffnet wird.
+
+   Zusätzlich wird ui-a11y.js als zentrale Tastatur-/Dialog-Hilfe
+   nachgeladen. Dadurch müssen die vielen vorhandenen HTML-Seiten
+   nicht einzeln mit identischem Dialog-Code gepflegt werden.
    ══════════════════════════════════════════════════════ */
 
 (function () {
@@ -208,9 +212,6 @@
 
 /* ══════════════════════════════════════════════════════
    OFFLINE-MODUL LADEN
-   Nur dieser kleine Bootstrap bleibt hier, weil gong.js bereits auf
-   nahezu allen Terminal-Seiten vorhanden ist. Die eigentliche
-   Service-Worker-/Cache-Logik steht ausschließlich in offline.js.
    ══════════════════════════════════════════════════════ */
 (function ladeStudjoOfflineModul() {
   if (!('serviceWorker' in navigator)) return;
@@ -224,4 +225,48 @@
     console.warn('[Studjo] offline.js konnte nicht geladen werden.');
   };
   document.head.appendChild(script);
+})();
+
+
+/* ══════════════════════════════════════════════════════
+   UI-BARRIEREFREIHEIT LADEN
+   ui-a11y.js ergänzt vorhandene Popups und Aufklappbereiche
+   zentral um Tastaturbedienung, Fokusführung und ARIA.
+   ══════════════════════════════════════════════════════ */
+(function ladeStudjoUiA11y() {
+  if (
+    window.__studjoUiA11yAktiv ||
+    document.querySelector(
+      'script[data-studjo-ui-a11y]'
+    )
+  ) {
+    return;
+  }
+
+  const script =
+    document.createElement(
+      'script'
+    );
+
+  script.src =
+    'ui-a11y.js';
+
+  script.async =
+    true;
+
+  script.dataset
+    .studjoUiA11y =
+      'true';
+
+  script.onerror =
+    () => {
+      console.warn(
+        '[Studjo] ui-a11y.js konnte nicht geladen werden.'
+      );
+    };
+
+  document.head
+    .appendChild(
+      script
+    );
 })();

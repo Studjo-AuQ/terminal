@@ -1,13 +1,13 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 5
+   Version 6
 
-   Neu in Version 5:
-   - Termin-Datenmodell verwendet Ort sowie optionale Standort-/Bildzuordnung.
+   Neu in Version 6:
+   - ui-a11y.js wird für einheitliche Dialog- und Tastaturbedienung offline vorgeladen.
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v5';
+const CACHE_VERSION = 'v6';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 
@@ -24,6 +24,7 @@ const CORE_DATEIEN = [
   'gong.js',
   'offline.js',
   'a11y.js',
+  'ui-a11y.js',
   'feiertage.js',
   'kalender.js',
   'kacheln.js',
