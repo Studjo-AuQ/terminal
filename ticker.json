@@ -1,8 +1,17 @@
 {
   "schemaVersion": 1,
-  "stand": "2026-10-08",
+  "stand": "2026-10-09",
   "maxEintraege": 5,
   "eintraege": [
+    {
+      "id": "news-2026-10-09-laufband-aktualisiert",
+      "typ": "nachricht",
+      "symbol": "📢",
+      "text": "Laufband aktualisiert",
+      "link": "neuigkeiten.html#news-2026-10-09-laufband-aktualisiert",
+      "von": "2026-10-09",
+      "bis": ""
+    },
     {
       "id": "news-2026-10-06-verbesserungen-am-terminal",
       "typ": "nachricht",
@@ -24,7 +33,7 @@
     {
       "id": "news-2026-08-14-tages-losung",
       "typ": "nachricht",
-      "symbol": "📖",
+      "symbol": "⛪",
       "text": "Tages-Losung",
       "link": "neuigkeiten.html#news-2026-08-14-tages-losung",
       "von": "2026-08-14",
