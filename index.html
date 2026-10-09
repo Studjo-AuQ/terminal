@@ -614,7 +614,8 @@
           <span id="zk-uhr" class="zk-uhr-klein">…</span>
           <button id="zk-kalender-btn" class="zk-kalender-btn" type="button"
                   data-kalender-oeffnen
-                  aria-label="Kalender mit Feiertagen öffnen">📅</button>
+                  aria-label="Klick für Termin-Übersicht / Kalender"
+                  title="Klick für Termin-Übersicht / Kalender">📅</button>
         </div>
       </div>
 
@@ -757,7 +758,10 @@
        Die eigentliche Gong-Engine (Web Audio API, Zeitplan,
        Freischaltung, Datei laden) läuft zentral in gong.js – dort
        läuft sie auf JEDER Seite mit. Hier binden wir den sichtbaren
-       Glocken-Button und den Aktivierungs-Hinweis an. */
+       Glocken-Button und den Aktivierungs-Hinweis an.
+       Der Gong wird ausschließlich durch direkten Klick auf die Glocke
+       ein- oder ausgeschaltet. Freie Klicks auf die Startseite ändern
+       den Gong-Status nicht. */
     let gongPopupTimer = null;
     let gongPopupVorherigerFokus = null;
 
@@ -814,21 +818,39 @@
       const btn = document.getElementById('zk-gong-btn');
       if (!btn) return;
       btn.classList.remove('zk-gong-aus', 'zk-gong-locked', 'zk-gong-fehler');
+
       if (status.fehler) {
-        btn.textContent = '⚠️';
-        btn.setAttribute('aria-label',
+        const fehlerText =
           'Tondatei konnte nicht geladen werden. Bitte prüfen, ob dingdong.mp3 ' +
-          '(genau so geschrieben) im Hauptverzeichnis des Repos liegt.');
+          '(genau so geschrieben) im Hauptverzeichnis des Repos liegt.';
+        btn.textContent = '⚠️';
+        btn.setAttribute('aria-label', fehlerText);
+        btn.setAttribute('title', fehlerText);
         btn.classList.add('zk-gong-fehler');
         return;
       }
+
       btn.textContent = status.aktiv ? '🔔' : '🔕';
       btn.setAttribute('aria-pressed', String(status.aktiv));
-      btn.setAttribute('aria-label', status.aktiv
-        ? 'Klingelzeichen ist an – zum Ausschalten antippen'
-        : 'Klingelzeichen ist aus – zum Einschalten antippen');
-      if (!status.aktiv) btn.classList.add('zk-gong-aus');
-      else if (!status.bereit) btn.classList.add('zk-gong-locked');
+
+      if (!status.aktiv) {
+        const ausText = 'Klingelzeichen ist aus – zum Einschalten antippen';
+        btn.setAttribute('aria-label', ausText);
+        btn.setAttribute('title', ausText);
+        btn.classList.add('zk-gong-aus');
+        return;
+      }
+
+      if (!status.bereit) {
+        const pulsText = 'Klingelzeichen ist an – zum Ausschalten antippen';
+        btn.setAttribute('aria-label', pulsText);
+        btn.setAttribute('title', pulsText);
+        btn.classList.add('zk-gong-locked');
+        return;
+      }
+
+      btn.setAttribute('aria-label', 'Klingelzeichen ist an – zum Ausschalten antippen');
+      btn.setAttribute('title', 'Klick für ausschalten');
     }
 
     if (window.studjoGong) {
@@ -844,26 +866,6 @@
         }
       });
 
-      document.addEventListener('click', event => {
-        if (
-          event.target.closest &&
-          event.target.closest(
-            'a,button,input,select,textarea,label,[role="button"],' +
-            '.ticker-container,#gong-aktiv-popup'
-          )
-        ) {
-          return;
-        }
-
-        const status = window.studjoGong.status();
-        if (status.fehler || (status.aktiv && status.bereit)) return;
-
-        if (!status.aktiv) {
-          window.studjoGong.aktivieren();
-        }
-
-        zeigeGongAktivPopup();
-      });
     }
 
     /* Das Kalender-Popup selbst (HTML, Zeichnen, Öffnen/Schließen)

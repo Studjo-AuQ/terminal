@@ -1,13 +1,19 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 16
+   Version 17
 
-   Neu in Version 16:
+   Neu in Version 17:
+   - Gong wird auf der Startseite nur noch durch direkten Klick auf
+     die Glocke aktiviert oder deaktiviert.
+   - Freie Klicks auf die Startseite verändern den Gong-Status nicht.
+   - Gong und Kalender zeigen passende Mouseover-Hinweise.
+   - Versionssprung leert alte v16-Caches, damit die neue Bedienlogik
+     sofort zuverlässig am Terminal ankommt.
+
+   Weiter aus Version 16:
    - opnv.html nutzt direkte Startseiten-Zurücklinks und umgeht damit
      störende iframe-/Browser-History zuverlässig.
-   - index.html enthält den neuen Gong-Aktivierungshinweis.
-   - Versionssprung leert alte v15-Caches, damit beide Änderungen
-     sofort zuverlässig am Terminal ankommen.
+   - index.html enthält den Gong-Aktivierungshinweis.
 
    Weiter aus Version 15:
    - direkte Bereichs-Zurücklinks können iframe-History gezielt umgehen.
@@ -17,7 +23,7 @@
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v16';
+const CACHE_VERSION = 'v17';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 
