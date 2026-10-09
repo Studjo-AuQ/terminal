@@ -1,13 +1,15 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 11
+   Version 12
 
-   Neu in Version 11:
-   - automatische Startseiten-Laufleiste aus ticker.json; ticker.js und ticker.json werden direkt vorgeladen.
+   Neu in Version 12:
+   - neuigkeiten.html wird bei Online-Aufruf netzwerk-zuerst geladen,
+     damit neue Nachrichten und direkte #Links nicht aus einem alten HTML-Cache kommen.
+   - ticker.js enthält einen sichtbaren Start/Stopp-Schalter.
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v11';
+const CACHE_VERSION = 'v12';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 
@@ -220,6 +222,13 @@ function istStartseitenNavigation(url) {
          url.pathname === scope.pathname + 'index.html';
 }
 
+function istNeuigkeitenNavigation(url) {
+  const scope = new URL(self.registration.scope);
+
+  return url.pathname ===
+    scope.pathname + 'neuigkeiten.html';
+}
+
 self.addEventListener('fetch', event => {
   const request = event.request;
   if (request.method !== 'GET') return;
@@ -234,6 +243,15 @@ self.addEventListener('fetch', event => {
       event.respondWith(
         netzwerkZuerst(request, 1500, true, true)
       );
+
+    } else if (istNeuigkeitenNavigation(url)) {
+      /* Neuigkeiten werden häufig über die Pflege-App aktualisiert.
+         Deshalb online immer zuerst die aktuelle Server-Version laden.
+         Der Cache bleibt ausschließlich als Offline-/Fehler-Fallback. */
+      event.respondWith(
+        netzwerkZuerst(request, 4000, true, true)
+      );
+
     } else {
       event.respondWith(
         navigationCacheZuerst(request, event)

@@ -61,9 +61,55 @@
         position: relative;
         overflow: hidden;
         background: #fff;
-        padding: 8px 0;
+        padding: 8px 0 8px 42px;
         margin-bottom: 16px;
         border-bottom: 2px solid #f0f0f0;
+      }
+
+      .studjo-ticker-stop {
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 5;
+        width: 32px;
+        height: 32px;
+        border: 0;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0 1px 7px rgba(0,0,0,.14);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        cursor: pointer;
+        font-size: 1rem;
+        line-height: 1;
+      }
+
+      .studjo-ticker-stop:hover {
+        background: #f4f5f6;
+      }
+
+      .studjo-ticker-stop:focus-visible {
+        outline: 3px solid #0f2f37;
+        outline-offset: 2px;
+      }
+
+      .studjo-ticker-stop.is-paused {
+        filter: grayscale(1);
+        opacity: .52;
+      }
+
+      .studjo-ticker-stop.is-paused::after {
+        content: "";
+        position: absolute;
+        width: 23px;
+        height: 2px;
+        background: #555;
+        transform: rotate(-45deg);
+        border-radius: 2px;
+        pointer-events: none;
       }
 
       .studjo-ticker-track {
@@ -78,7 +124,8 @@
       }
 
       .ticker-container:hover .studjo-ticker-track,
-      .ticker-container:focus-within .studjo-ticker-track {
+      .ticker-container:focus-within .studjo-ticker-track,
+      .ticker-container.studjo-ticker-manuell-pause .studjo-ticker-track {
         animation-play-state: paused;
       }
 
@@ -97,6 +144,10 @@
 
       a.studjo-ticker-eintrag:hover {
         text-decoration: underline;
+      }
+
+      span.studjo-ticker-eintrag {
+        cursor: pointer;
       }
 
       a.studjo-ticker-eintrag:focus-visible {
@@ -131,6 +182,11 @@
           padding-left: 0;
           animation: none;
           white-space: nowrap;
+        }
+
+        .studjo-ticker-stop {
+          position: sticky;
+          left: 5px;
         }
       }
     `;
@@ -249,6 +305,91 @@
     return el;
   }
 
+  let manuellPausiert = false;
+  let stopButton = null;
+
+  function pauseStatusSetzen(pausiert) {
+    manuellPausiert =
+      Boolean(pausiert);
+
+    container.classList.toggle(
+      'studjo-ticker-manuell-pause',
+      manuellPausiert
+    );
+
+    if (!stopButton) return;
+
+    stopButton.classList.toggle(
+      'is-paused',
+      manuellPausiert
+    );
+
+    stopButton.setAttribute(
+      'aria-pressed',
+      manuellPausiert
+        ? 'true'
+        : 'false'
+    );
+
+    stopButton.setAttribute(
+      'aria-label',
+      manuellPausiert
+        ? 'Laufband wieder starten'
+        : 'Laufband anhalten'
+    );
+
+    stopButton.title =
+      manuellPausiert
+        ? 'Laufband wieder starten'
+        : 'Laufband anhalten';
+  }
+
+  function pauseUmschalten() {
+    pauseStatusSetzen(
+      !manuellPausiert
+    );
+  }
+
+  function stoppSchalterErzeugen() {
+    const button =
+      document.createElement(
+        'button'
+      );
+
+    button.type =
+      'button';
+
+    button.className =
+      'studjo-ticker-stop';
+
+    button.textContent =
+      '⏹️';
+
+    button.setAttribute(
+      'aria-pressed',
+      'false'
+    );
+
+    button.setAttribute(
+      'aria-label',
+      'Laufband anhalten'
+    );
+
+    button.title =
+      'Laufband anhalten';
+
+    button.addEventListener(
+      'click',
+      event => {
+        event.preventDefault();
+        event.stopPropagation();
+        pauseUmschalten();
+      }
+    );
+
+    return button;
+  }
+
   function render(daten) {
     const alle =
       Array.isArray(
@@ -349,8 +490,43 @@
       'Aktuelle Hinweise'
     );
 
-    container.appendChild(
+    stopButton =
+      stoppSchalterErzeugen();
+
+    container.append(
+      stopButton,
       track
+    );
+
+    pauseStatusSetzen(
+      false
+    );
+
+    /* Alternative Bedienung:
+       Klick auf eine nicht verlinkte Stelle im Laufband
+       hält an bzw. startet wieder.
+       Klicks auf echte Links bleiben davon unberührt. */
+    container.addEventListener(
+      'click',
+      event => {
+        if (
+          event.target.closest(
+            'a'
+          )
+        ) {
+          return;
+        }
+
+        if (
+          event.target.closest(
+            '.studjo-ticker-stop'
+          )
+        ) {
+          return;
+        }
+
+        pauseUmschalten();
+      }
     );
   }
 
