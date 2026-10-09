@@ -97,34 +97,29 @@
       }
 
       .studjo-ticker-stop.is-paused {
-        filter: grayscale(1);
-        opacity: .52;
-      }
-
-      .studjo-ticker-stop.is-paused::after {
-        content: "";
-        position: absolute;
-        width: 23px;
-        height: 2px;
-        background: #555;
-        transform: rotate(-45deg);
-        border-radius: 2px;
-        pointer-events: none;
+        background: #f1f2f3;
+        color: #4f595e;
       }
 
       .studjo-ticker-track {
-        display: inline-flex;
+        display: flex;
+        width: max-content;
         align-items: center;
-        gap: 22px;
         white-space: nowrap;
-        padding-left: 100%;
-        min-width: max-content;
         animation: studjo-ticker-scroll 42s linear infinite;
         will-change: transform;
       }
 
+      .studjo-ticker-gruppe {
+        display: inline-flex;
+        align-items: center;
+        gap: 22px;
+        flex: 0 0 auto;
+        padding-right: 22px;
+      }
+
       .ticker-container:hover .studjo-ticker-track,
-      .ticker-container:focus-within .studjo-ticker-track,
+      .ticker-container.studjo-ticker-linkfokus .studjo-ticker-track,
       .ticker-container.studjo-ticker-manuell-pause .studjo-ticker-track {
         animation-play-state: paused;
       }
@@ -133,7 +128,7 @@
         display: inline-flex;
         align-items: center;
         gap: 7px;
-        color: #b61f29;
+        color: #202628;
         font-size: 1.02rem;
         font-weight: 800;
         line-height: 1.4;
@@ -142,11 +137,19 @@
         padding: 2px 4px;
       }
 
-      a.studjo-ticker-eintrag:hover {
+      a.studjo-ticker-eintrag {
+        color: #b61f29;
         text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+      }
+
+      a.studjo-ticker-eintrag:hover {
+        text-decoration-thickness: 2px;
       }
 
       span.studjo-ticker-eintrag {
+        color: #202628;
         cursor: pointer;
       }
 
@@ -167,9 +170,15 @@
         font-weight: 800;
       }
 
+      .studjo-ticker-loop-trenner {
+        color: #b61f29;
+        font-weight: 900;
+        letter-spacing: .06em;
+      }
+
       @keyframes studjo-ticker-scroll {
         from { transform: translateX(0); }
-        to   { transform: translateX(-100%); }
+        to   { transform: translateX(-50%); }
       }
 
       @media (prefers-reduced-motion: reduce) {
@@ -179,9 +188,12 @@
         }
 
         .studjo-ticker-track {
-          padding-left: 0;
           animation: none;
           white-space: nowrap;
+        }
+
+        .studjo-ticker-gruppe[data-kopie="true"] {
+          display: none;
         }
 
         .studjo-ticker-stop {
@@ -324,6 +336,11 @@
       manuellPausiert
     );
 
+    stopButton.textContent =
+      manuellPausiert
+        ? '▶️'
+        : '⏹️';
+
     stopButton.setAttribute(
       'aria-pressed',
       manuellPausiert
@@ -334,14 +351,14 @@
     stopButton.setAttribute(
       'aria-label',
       manuellPausiert
-        ? 'Laufband wieder starten'
-        : 'Laufband anhalten'
+        ? 'Laufband starten'
+        : 'Laufband stoppen'
     );
 
     stopButton.title =
       manuellPausiert
-        ? 'Laufband wieder starten'
-        : 'Laufband anhalten';
+        ? 'Laufband starten'
+        : 'Laufband stoppen';
   }
 
   function pauseUmschalten() {
@@ -372,11 +389,11 @@
 
     button.setAttribute(
       'aria-label',
-      'Laufband anhalten'
+      'Laufband stoppen'
     );
 
     button.title =
-      'Laufband anhalten';
+      'Laufband stoppen';
 
     button.addEventListener(
       'click',
@@ -429,52 +446,121 @@
     track.className =
       'studjo-ticker-track';
 
-    track.setAttribute(
-      'role',
-      'list'
-    );
+    function gruppeErzeugen(
+      istKopie
+    ) {
+      const gruppe =
+        document.createElement(
+          'div'
+        );
 
-    aktuell.forEach(
-      (eintrag, index) => {
-        const element =
-          eintragElement(
-            eintrag
-          );
+      gruppe.className =
+        'studjo-ticker-gruppe';
 
-        element.setAttribute(
+      gruppe.dataset.kopie =
+        istKopie
+          ? 'true'
+          : 'false';
+
+      if (!istKopie) {
+        gruppe.setAttribute(
           'role',
-          'listitem'
+          'list'
         );
-
-        track.appendChild(
-          element
+      } else {
+        gruppe.setAttribute(
+          'aria-hidden',
+          'true'
         );
+      }
 
-        if (
-          index <
-          aktuell.length - 1
-        ) {
-          const trenner =
-            document.createElement(
-              'span'
+      aktuell.forEach(
+        (eintrag, index) => {
+          const element =
+            eintragElement(
+              eintrag
             );
 
-          trenner.className =
-            'studjo-ticker-trenner';
+          if (!istKopie) {
+            element.setAttribute(
+              'role',
+              'listitem'
+            );
+          } else {
+            element.tabIndex =
+              -1;
 
-          trenner.setAttribute(
-            'aria-hidden',
-            'true'
+            if (
+              element.tagName ===
+              'A'
+            ) {
+              element.removeAttribute(
+                'href'
+              );
+            }
+          }
+
+          gruppe.appendChild(
+            element
           );
 
-          trenner.textContent =
-            '+++';
+          if (
+            index <
+            aktuell.length - 1
+          ) {
+            const trenner =
+              document.createElement(
+                'span'
+              );
 
-          track.appendChild(
-            trenner
-          );
+            trenner.className =
+              'studjo-ticker-trenner';
+
+            trenner.setAttribute(
+              'aria-hidden',
+              'true'
+            );
+
+            trenner.textContent =
+              '+++';
+
+            gruppe.appendChild(
+              trenner
+            );
+          }
         }
-      }
+      );
+
+      const loopTrenner =
+        document.createElement(
+          'span'
+        );
+
+      loopTrenner.className =
+        'studjo-ticker-loop-trenner';
+
+      loopTrenner.setAttribute(
+        'aria-hidden',
+        'true'
+      );
+
+      loopTrenner.textContent =
+        '++++++';
+
+      gruppe.appendChild(
+        loopTrenner
+      );
+
+      return gruppe;
+    }
+
+    track.append(
+      gruppeErzeugen(
+        false
+      ),
+      gruppeErzeugen(
+        true
+      )
     );
 
     container.innerHTML = '';
@@ -500,6 +586,41 @@
 
     pauseStatusSetzen(
       false
+    );
+
+    /* Tastatur-Fokus auf einem echten Link pausiert nur vorübergehend.
+       Der Stop/Play-Button selbst darf das Laufband nicht festhalten. */
+    container.addEventListener(
+      'focusin',
+      event => {
+        if (
+          event.target.closest(
+            'a.studjo-ticker-eintrag'
+          )
+        ) {
+          container.classList.add(
+            'studjo-ticker-linkfokus'
+          );
+        }
+      }
+    );
+
+    container.addEventListener(
+      'focusout',
+      event => {
+        if (
+          !container.contains(
+            event.relatedTarget
+          ) ||
+          !event.relatedTarget?.closest?.(
+            'a.studjo-ticker-eintrag'
+          )
+        ) {
+          container.classList.remove(
+            'studjo-ticker-linkfokus'
+          );
+        }
+      }
     );
 
     /* Alternative Bedienung:

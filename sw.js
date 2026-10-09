@@ -1,15 +1,15 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 12
+   Version 13
 
-   Neu in Version 12:
-   - neuigkeiten.html wird bei Online-Aufruf netzwerk-zuerst geladen,
-     damit neue Nachrichten und direkte #Links nicht aus einem alten HTML-Cache kommen.
-   - ticker.js enthält einen sichtbaren Start/Stopp-Schalter.
+   Neu in Version 13:
+   - ticker.js: zuverlässiger Stop/Play-Schalter, nahtlose Endlosschleife
+     und klare Farbdifferenzierung zwischen Links und reinem Text.
+   - neuigkeiten.html bleibt netzwerk-zuerst, damit Direktlinks aktuell bleiben.
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v12';
+const CACHE_VERSION = 'v13';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 
