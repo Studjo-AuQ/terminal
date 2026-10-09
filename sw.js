@@ -1,14 +1,22 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 17
+   Version 18
 
-   Neu in Version 17:
+   Neu in Version 18:
+   - ticker.js macht auch die visuelle Endlos-Kopie der Meldungen
+     zuverlässig anklickbar.
+   - Stop/Play nutzt eine zentrale Pause-/Play-Steuerung und zusätzlich
+     die Web Animations API als Chrome-/Android-Absicherung.
+   - Touch-Geräte können nicht mehr durch einen festhängenden CSS-Hover
+     im Pause-Zustand bleiben.
+   - Versionssprung leert alte v17-Caches, damit ticker.js sofort neu
+     geladen wird.
+
+   Weiter aus Version 17:
    - Gong wird auf der Startseite nur noch durch direkten Klick auf
      die Glocke aktiviert oder deaktiviert.
    - Freie Klicks auf die Startseite verändern den Gong-Status nicht.
    - Gong und Kalender zeigen passende Mouseover-Hinweise.
-   - Versionssprung leert alte v16-Caches, damit die neue Bedienlogik
-     sofort zuverlässig am Terminal ankommt.
 
    Weiter aus Version 16:
    - opnv.html nutzt direkte Startseiten-Zurücklinks und umgeht damit
@@ -23,7 +31,7 @@
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v17';
+const CACHE_VERSION = 'v18';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 
