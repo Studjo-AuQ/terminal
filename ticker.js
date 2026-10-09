@@ -289,6 +289,20 @@
     if (hatLink) {
       el.href =
         eintrag.link;
+
+      el.addEventListener(
+        'click',
+        () => {
+          /* Vor dem Verlassen keinen Pause-Zustand im BFCache konservieren. */
+          pauseStatusSetzen(
+            false
+          );
+
+          container.classList.remove(
+            'studjo-ticker-linkfokus'
+          );
+        }
+      );
     }
 
     const symbol =
@@ -372,6 +386,86 @@
       !manuellPausiert
     );
   }
+
+  function laufbandBeimZurueckkehrenStarten() {
+    pauseStatusSetzen(
+      false
+    );
+
+    container.classList.remove(
+      'studjo-ticker-linkfokus'
+    );
+
+    const aktiv =
+      document.activeElement;
+
+    if (
+      aktiv &&
+      aktiv.closest &&
+      aktiv.closest(
+        '.ticker-container'
+      ) &&
+      typeof aktiv.blur ===
+        'function'
+    ) {
+      aktiv.blur();
+    }
+  }
+
+  /* Browser-Zurück kann die Startseite aus dem Back/Forward-Cache
+     wiederherstellen. Der alte JS-Zustand bleibt dann normalerweise
+     erhalten. Beim erneuten Anzeigen soll das Laufband aber immer laufen. */
+  window.addEventListener(
+    'pageshow',
+    laufbandBeimZurueckkehrenStarten
+  );
+
+  window.addEventListener(
+    'pagehide',
+    () => {
+      pauseStatusSetzen(
+        false
+      );
+
+      container.classList.remove(
+        'studjo-ticker-linkfokus'
+      );
+    }
+  );
+
+  /* Wenn das Laufband manuell gestoppt ist, startet ein freier Klick
+     irgendwo auf der Startseite wieder. Interaktive Elemente und das
+     Laufband selbst werden bewusst ausgenommen. */
+  document.addEventListener(
+    'click',
+    event => {
+      if (!manuellPausiert) {
+        return;
+      }
+
+      if (
+        event.target.closest &&
+        event.target.closest(
+          '.ticker-container'
+        )
+      ) {
+        return;
+      }
+
+      if (
+        event.target.closest &&
+        event.target.closest(
+          'a,button,input,select,textarea,label,[role="button"]'
+        )
+      ) {
+        return;
+      }
+
+      pauseStatusSetzen(
+        false
+      );
+    }
+  );
 
   function stoppSchalterErzeugen() {
     const button =

@@ -301,6 +301,14 @@
     });
 
     document.querySelectorAll('a.back-button, a.footer-home-link').forEach(link => {
+      /* Manche Seiten enthalten eingebettete iframes.
+         Deren interne Navigation kann zusätzliche History-Einträge erzeugen.
+         Links mit data-direct-link sollen deshalb IMMER ihr href-Ziel öffnen
+         und dürfen nicht durch history.back() abgefangen werden. */
+      if (link.hasAttribute('data-direct-link')) {
+        return;
+      }
+
       link.addEventListener('click', (e) => {
         if (window.history.length > 1) {
           e.preventDefault();

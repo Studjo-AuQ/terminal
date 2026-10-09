@@ -1,174 +1,170 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="manifest" href="manifest.webmanifest">
-    <meta name="theme-color" content="#b61f29">
-    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Studjo">
-    <title>Abfahrtsmonitor – Studjo</title>
-    <style>
-        :root {
-            --primary-red: #b61f29;
-        }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body {
-            font-family: 'Nunito Sans', Calibri, sans-serif;
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-        }
-        header {
-            background-color: white;
-            padding: 10px 16px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-            flex-shrink: 0;
-        }
-        .back-nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            width: 100%;
-            gap: 12px;
-        }
-        .back-button {
-            background-color: var(--primary-red);
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 8px;
-            font-weight: bold;
-            font-family: inherit;
-            white-space: nowrap;
-        }
-        .page-label {
-            font-size: 1.0rem;
-            font-weight: 700;
-            color: var(--primary-red);
-            text-align: center;
-            flex: 1;
-        }
-        .content-frame {
-            flex: 1;
-            border: none;
-            width: 100%;
-            display: none;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#b61f29">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Studjo">
+<title>Abfahrtsmonitor – Studjo</title>
 
-        /* ── Zustimmungs-Gate ── */
-        #consent-gate {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #f4f4f4;
-            padding: 24px;
-            text-align: center;
-        }
-        .consent-box {
-            max-width: 480px;
-            background: #fff;
-            border-radius: 16px;
-            padding: 32px 28px;
-            box-shadow: 0 6px 24px rgba(0,0,0,0.12);
-        }
-        .consent-box .icon { font-size: 2.4rem; margin-bottom: 10px; }
-        .consent-box h2 {
-            margin: 0 0 14px;
-            color: var(--primary-red);
-            font-size: 1.25rem;
-            font-weight: 800;
-        }
-        .consent-box p {
-            margin: 0 0 10px;
-            font-size: 1rem;
-            line-height: 1.6;
-            color: #0f2f37;
-        }
-        .consent-box .hinweis-klein {
-            font-size: 0.85rem;
-            color: #5a5a5a;
-            margin-bottom: 22px;
-        }
-        .consent-box .hinweis-klein a { color: var(--primary-red); }
-        .consent-button {
-            background: var(--primary-red);
-            color: #fff;
-            border: none;
-            border-radius: 999px;
-            padding: 14px 32px;
-            font-size: 1.05rem;
-            font-weight: 700;
-            cursor: pointer;
-            font-family: inherit;
-        }
-        .consent-button:hover { background: #96181f; }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: var(--primary-red);
-            color: white;
-            font-size: 0.8rem;
-            flex-shrink: 0;
-        }
-    </style>
+<style>
+:root{--primary-red:#b61f29}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Nunito Sans',Calibri,sans-serif;display:flex;flex-direction:column;min-height:100vh}
+header{background:#fff;padding:10px 16px;box-shadow:0 2px 10px rgba(0,0,0,.08);flex-shrink:0}
+.back-nav{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;width:100%;gap:12px}
+.back-button{background:var(--primary-red);color:#fff;text-decoration:none;padding:10px 20px;border-radius:8px;font-weight:700;font-family:inherit;white-space:nowrap}
+.page-label{font-size:1rem;font-weight:700;color:var(--primary-red);text-align:center;flex:1}
+.content-frame{flex:1;border:0;width:100%;display:none;min-height:420px}
+#consent-gate{flex:1;display:flex;align-items:center;justify-content:center;background:#f4f4f4;padding:24px;text-align:center}
+.consent-box{max-width:480px;background:#fff;border-radius:16px;padding:32px 28px;box-shadow:0 6px 24px rgba(0,0,0,.12)}
+.consent-box .icon{font-size:2.4rem;margin-bottom:10px}
+.consent-box h2{margin:0 0 14px;color:var(--primary-red);font-size:1.25rem;font-weight:800}
+.consent-box p{margin:0 0 10px;font-size:1rem;line-height:1.6;color:#0f2f37}
+.consent-box .hinweis-klein{font-size:.85rem;color:#5a5a5a;margin-bottom:22px}
+.consent-box .hinweis-klein a{color:var(--primary-red)}
+.consent-button{background:var(--primary-red);color:#fff;border:0;border-radius:999px;padding:14px 32px;font-size:1.05rem;font-weight:700;cursor:pointer;font-family:inherit}
+.consent-button:hover{background:#96181f}
+</style>
 </head>
+
 <body>
 
-    <header>
-        <div class="back-nav">
-            <a href="opnv.html" class="back-button">← Zurück</a>
-            <div class="page-label">🚌 Abfahrtsmonitor VRR</div>
-            <img src="header.jpg" style="height: 40px;" alt="Studjo Logo">
-        </div>
-    </header>
+<header id="seitenanfang">
+  <div class="back-nav">
+    <a href="opnv.html" class="back-button" data-direct-link>← Zurück</a>
+    <div class="page-label">🚌 Abfahrtsmonitor VRR</div>
+    <img src="header.jpg" style="height:40px" alt="Studjo Logo">
+  </div>
+</header>
 
-    <!-- Zustimmungs-Gate: Abfahrtsmonitor wird erst nach Klick geladen -->
-    <div id="consent-gate">
-        <div class="consent-box">
-            <div class="icon">🚉</div>
-            <h2>Externe Inhalte vom VRR</h2>
-            <p>
-                Der Abfahrtsmonitor wird direkt vom <strong>Verkehrsverbund Rhein-Ruhr (VRR)</strong> geladen.
-                Dabei können Daten wie deine IP-Adresse an den Anbieter übertragen werden.
-            </p>
-            <p class="hinweis-klein">
-                Mehr dazu in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.
-            </p>
-            <button type="button" class="consent-button" onclick="inhaltLaden()">
-                Zustimmen und Abfahrtsmonitor laden
-            </button>
-        </div>
-    </div>
+<div id="consent-gate">
+  <div class="consent-box">
+    <div class="icon">🚉</div>
+    <h2>Externe Inhalte vom VRR</h2>
+    <p>
+      Der Abfahrtsmonitor wird direkt vom
+      <strong>Verkehrsverbund Rhein-Ruhr (VRR)</strong> geladen.
+      Dabei können Daten wie deine IP-Adresse an den Anbieter übertragen werden.
+    </p>
+    <p class="hinweis-klein">
+      Mehr dazu in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.
+    </p>
+    <button type="button" class="consent-button" onclick="inhaltLaden()">
+      Zustimmen und Abfahrtsmonitor laden
+    </button>
+  </div>
+</div>
 
-    <iframe
-        id="content-frame"
+<iframe id="content-frame"
         src=""
         class="content-frame"
+        title="Abfahrtsmonitor VRR"
         allowfullscreen
         loading="lazy"
         sandbox="allow-scripts allow-same-origin allow-forms allow-popups-to-escape-sandbox">
-    </iframe>
+</iframe>
 
-    <footer>
-        &copy; 2026 <b>Studjo | Arbeit und Qualifizierung</b> | Infoterminal | Barrierefreier Zugang
-    </footer>
+<footer style="
+  position:relative;
+  text-align:center;
+  padding:10px 60px;
+  background:#b61f29;
+  color:#ffffff;
+  font-size:.85rem;
+  line-height:1.6;
+  flex-shrink:0;
+">
+  © 2026 <strong>Studjo | Arbeit und Qualifizierung</strong>
+  · Evangelisches Johanneswerk gGmbH
+  <br>
+
+  <a href="index.html" class="footer-home-link" data-direct-link
+     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Startseite
+  </a>
+  |
+  <a href="uebersicht.html"
+     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Übersicht
+  </a>
+  |
+  <a href="impressum.html"
+     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Impressum
+  </a>
+  |
+  <a href="datenschutz.html"
+     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Datenschutz
+  </a>
+
+  <button type="button"
+          onclick="document.getElementById('qr-overlay').style.display='flex'"
+          aria-label="QR-Code zum Scannen anzeigen"
+          style="position:absolute;right:14px;top:50%;transform:translateY(-50%);
+                 background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.55);
+                 border-radius:8px;width:38px;height:38px;cursor:pointer;
+                 display:flex;align-items:center;justify-content:center;
+                 font-size:1.25rem;padding:0;color:#fff;line-height:1;">
+    📱
+  </button>
+
+  <button type="button"
+          onclick="document.getElementById('seitenanfang').scrollIntoView({behavior:'smooth',block:'start'})"
+          aria-label="Nach oben zur Seitenüberschrift scrollen"
+          style="position:absolute;left:14px;top:50%;transform:translateY(-50%);
+                 background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.55);
+                 border-radius:8px;width:38px;height:38px;cursor:pointer;
+                 display:flex;align-items:center;justify-content:center;
+                 font-size:1.25rem;padding:0;color:#fff;line-height:1;">
+    ⬆️
+  </button>
+</footer>
+
+<div id="qr-overlay"
+     onclick="this.style.display='none'"
+     style="display:none;position:fixed;inset:0;z-index:2000;
+            background:rgba(0,0,0,.6);align-items:center;justify-content:center;padding:20px;">
+  <div onclick="event.stopPropagation()"
+       style="background:#fff;border-radius:16px;padding:30px 30px 24px;
+              text-align:center;max-width:320px;position:relative;
+              box-shadow:0 10px 40px rgba(0,0,0,.35);">
+    <button type="button"
+            onclick="document.getElementById('qr-overlay').style.display='none'"
+            aria-label="Schließen"
+            style="position:absolute;top:10px;right:10px;background:#f1f1f1;border:0;
+                   border-radius:50%;width:32px;height:32px;font-size:1.1rem;cursor:pointer;">
+      ✕
+    </button>
+
+    <img src="qr-terminal.jpg"
+         alt="QR-Code zur Studjo-Terminal-Seite"
+         style="width:220px;height:220px;display:block;margin:0 auto 16px;">
+
+    <p style="font-size:1rem;color:#0f2f37;margin:0 0 6px;font-weight:700;">
+      Mit dem Handy scannen
+    </p>
+
+    <p style="font-size:.85rem;color:#8a8d8f;margin:0;word-break:break-all;">
+      studjo-auq.github.io/terminal
+    </p>
+  </div>
+</div>
 
 <script>
-    function inhaltLaden() {
-        document.getElementById('consent-gate').style.display = 'none';
-        const frame = document.getElementById('content-frame');
-        frame.src = 'https://haltestellenmonitor.vrr.de/#/index';
-        frame.style.display = 'block';
-    }
+function inhaltLaden() {
+  document.getElementById('consent-gate').style.display='none';
+  const frame=document.getElementById('content-frame');
+  frame.src='https://haltestellenmonitor.vrr.de/#/index';
+  frame.style.display='block';
+}
 </script>
 
-  <script src="gong.js"></script>
+<script src="gong.js"></script>
 </body>
 </html>
