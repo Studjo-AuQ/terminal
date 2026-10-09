@@ -106,7 +106,7 @@
         width: max-content;
         align-items: center;
         white-space: nowrap;
-        animation: studjo-ticker-scroll 42s linear infinite;
+        animation: studjo-ticker-scroll 34s linear infinite;
         will-change: transform;
       }
 
@@ -139,13 +139,18 @@
 
       a.studjo-ticker-eintrag {
         color: #b61f29;
-        text-decoration: underline;
-        text-decoration-thickness: 1px;
-        text-underline-offset: 3px;
+        text-decoration: none;
+        transition: background .16s ease;
       }
 
       a.studjo-ticker-eintrag:hover {
-        text-decoration-thickness: 2px;
+        background: #f1f1f1;
+        text-decoration: none;
+      }
+
+      a.studjo-ticker-eintrag:focus-visible {
+        background: #f1f1f1;
+        text-decoration: none;
       }
 
       span.studjo-ticker-eintrag {
@@ -156,7 +161,8 @@
       a.studjo-ticker-eintrag:focus-visible {
         outline: 3px solid #0f2f37;
         outline-offset: 3px;
-        text-decoration: underline;
+        background: #f1f1f1;
+        text-decoration: none;
       }
 
       .studjo-ticker-symbol {

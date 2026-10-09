@@ -1,15 +1,17 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 13
+   Version 14
 
-   Neu in Version 13:
-   - ticker.js: zuverlässiger Stop/Play-Schalter, nahtlose Endlosschleife
-     und klare Farbdifferenzierung zwischen Links und reinem Text.
-   - neuigkeiten.html bleibt netzwerk-zuerst, damit Direktlinks aktuell bleiben.
+   Neu in Version 14:
+   - ticker.js läuft etwas schneller; Links werden nicht unterstrichen
+     und erhalten bei Hover/Fokus einen hellgrauen Hintergrund.
+   - gong.js versucht die Audio-Freigabe sofort und behandelt den ersten
+     Glocken-Klick bei gesperrtem Ton als Aktivierung statt als Ausschalten.
+   - neuigkeiten.html bleibt netzwerk-zuerst.
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v13';
+const CACHE_VERSION = 'v14';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 

@@ -48,13 +48,45 @@
     return { aktiv: gongAktiv, bereit: gongBereit, fehler: gongFehlerArt };
   }
 
+  function gongSichtbarenButtonErklaeren() {
+    const btn =
+      document.getElementById(
+        'zk-gong-btn'
+      );
+
+    if (!btn) return;
+
+    if (
+      gongAktiv &&
+      !gongBereit &&
+      !gongFehlerArt
+    ) {
+      btn.setAttribute(
+        'aria-label',
+        'Klingelzeichen aktivieren – Glocke einmal anklicken'
+      );
+
+      btn.title =
+        'Klingelzeichen aktivieren – einmal anklicken';
+    }
+  }
+
   function gongStatusMelden() {
     const status = gongStatus();
+
     gongStatusListener.forEach(fn => {
       try { fn(status); } catch (e) {
         /* Ein fehlerhafter Seiten-Callback darf den Gong nicht stoppen. */
       }
     });
+
+    /* Die Startseite setzt ihren sichtbaren Glocken-Status ebenfalls
+       über einen Listener. Dieser kleine Nachlauf präzisiert bei
+       gesperrtem Browser-Audio anschließend die Bedienhinweise. */
+    window.setTimeout(
+      gongSichtbarenButtonErklaeren,
+      0
+    );
   }
 
   function gongHoleContext() {
@@ -84,6 +116,12 @@
       .then(dekodiert => {
         gongBuffer = dekodiert;
         gongFehlerArt = null;
+
+        /* Sofort versuchen:
+           Wenn der Browser / die Site-Berechtigung Autoplay bereits
+           erlaubt, wird der Gong ohne zusätzlichen Klick bereit. */
+        gongVersucheFreischaltung();
+
         gongStatusMelden();
       })
       .catch(() => {
@@ -176,20 +214,77 @@
     status:   gongStatus,
 
     umschalten: () => {
+      /* Wichtig für die Bedienung:
+         Wenn der Gong eingeschaltet, aber vom Browser noch gesperrt ist,
+         bedeutet der erste Glocken-Klick „Ton freischalten“ und NICHT
+         „Gong ausschalten“. */
+      if (
+        gongAktiv &&
+        !gongBereit &&
+        !gongFehlerArt
+      ) {
+        gongVersucheFreischaltung();
+        gongStatusMelden();
+        return true;
+      }
+
       gongAktiv = !gongAktiv;
-      localStorage.setItem('studjo-gong-aktiv', String(gongAktiv));
-      gongVersucheFreischaltung();
+
+      localStorage.setItem(
+        'studjo-gong-aktiv',
+        String(gongAktiv)
+      );
+
+      if (gongAktiv) {
+        gongVersucheFreischaltung();
+      }
+
       gongStatusMelden();
       return gongAktiv;
+    },
+
+    aktivieren: () => {
+      gongAktiv = true;
+
+      localStorage.setItem(
+        'studjo-gong-aktiv',
+        'true'
+      );
+
+      gongVersucheFreischaltung();
+      gongStatusMelden();
+      return true;
     },
 
     aufStatusAenderung: (fn) => {
       gongStatusListener.push(fn);
       fn(gongStatus());
+
+      window.setTimeout(
+        gongSichtbarenButtonErklaeren,
+        0
+      );
     },
   };
 
   gongLadeDatei();
+
+  /* Schon beim Seitenaufruf einmal versuchen.
+     Das ist erlaubt, wenn der Browser für diese Site Autoplay bereits
+     freigegeben hat. Bei gesperrtem Autoplay passiert nichts Schädliches;
+     die nächste echte Nutzeraktion versucht es erneut. */
+  gongVersucheFreischaltung();
+
+  document.addEventListener(
+    'DOMContentLoaded',
+    () => {
+      window.setTimeout(
+        gongSichtbarenButtonErklaeren,
+        0
+      );
+    },
+    { once: true }
+  );
 
 
   /* ════════════════════════════════════════════════════
