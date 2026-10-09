@@ -621,6 +621,38 @@
       <button id="zk-gong-btn" class="zk-gong-btn" type="button"
               aria-pressed="true" aria-label="Klingelzeichen ein-/ausschalten">🔔</button>
 
+      <div id="gong-aktiv-popup"
+           role="dialog"
+           aria-modal="true"
+           aria-labelledby="gong-aktiv-titel"
+           style="display:none; position:fixed; inset:0; z-index:2600;
+                  background:rgba(0,0,0,0.42); align-items:center;
+                  justify-content:center; padding:20px;">
+        <div id="gong-aktiv-popup-box"
+             onclick="event.stopPropagation()"
+             style="position:relative; width:min(520px,92vw); box-sizing:border-box;
+                    background:#fff; color:#0f2f37; border:3px solid #b61f29;
+                    border-radius:16px; box-shadow:0 12px 36px rgba(0,0,0,.28);
+                    padding:24px 48px 22px 24px; text-align:left;">
+          <button id="gong-aktiv-popup-schliessen"
+                  type="button"
+                  aria-label="Gong-Hinweis schließen"
+                  style="position:absolute; top:9px; right:9px; width:34px; height:34px;
+                         border:0; border-radius:50%; background:#f1f1f1;
+                         color:#0f2f37; cursor:pointer; font-size:1.1rem;
+                         line-height:1;">✕</button>
+          <h2 id="gong-aktiv-titel"
+              style="margin:0 0 10px; color:#b61f29; font-size:1.25rem; font-weight:800;">
+            🔔 Gong aktiviert
+          </h2>
+          <p style="margin:0; font-size:1rem; line-height:1.55;">
+            Du hast den Gong aktiviert. Jetzt hörst du bei Arbeits- und Pausenbeginn ein Signal.
+            Und beim Ende von Pausen und der Arbeitszeit ein doppeltes Signal.
+            Ein weiterer Klick auf den Gong schaltet diesen ab.
+          </p>
+        </div>
+      </div>
+
       <div id="zk-weihnachtsgruss" class="zk-weihnachtsgruss" aria-live="polite" hidden>
         🎄 Wir wünschen Dir einen guten Übergang ins neue Jahr
       </div>
@@ -724,11 +756,60 @@
     /* ══ GONG (Klingelzeichen) ══
        Die eigentliche Gong-Engine (Web Audio API, Zeitplan,
        Freischaltung, Datei laden) läuft zentral in gong.js – dort
-       läuft sie auf JEDER Seite mit, da gong.js auf allen 36 Seiten
-       eingebunden ist (anders als a11y.js, das bewusst nicht überall
-       läuft). Hier binden wir nur den sichtbaren Glocken-Button an
-       die von gong.js bereitgestellte Schnittstelle (window.studjoGong)
-       an. */
+       läuft sie auf JEDER Seite mit. Hier binden wir den sichtbaren
+       Glocken-Button und den Aktivierungs-Hinweis an. */
+    let gongPopupTimer = null;
+    let gongPopupVorherigerFokus = null;
+
+    function schliesseGongAktivPopup() {
+      const popup = document.getElementById('gong-aktiv-popup');
+      if (!popup || popup.style.display === 'none') return;
+
+      popup.style.display = 'none';
+      if (gongPopupTimer) {
+        clearTimeout(gongPopupTimer);
+        gongPopupTimer = null;
+      }
+
+      if (
+        gongPopupVorherigerFokus &&
+        document.contains(gongPopupVorherigerFokus) &&
+        typeof gongPopupVorherigerFokus.focus === 'function'
+      ) {
+        gongPopupVorherigerFokus.focus();
+      }
+      gongPopupVorherigerFokus = null;
+    }
+
+    function zeigeGongAktivPopup() {
+      const popup = document.getElementById('gong-aktiv-popup');
+      const schliessen = document.getElementById('gong-aktiv-popup-schliessen');
+      if (!popup || !schliessen) return;
+
+      if (gongPopupTimer) clearTimeout(gongPopupTimer);
+      gongPopupVorherigerFokus = document.activeElement;
+      popup.style.display = 'flex';
+      schliessen.focus();
+
+      gongPopupTimer = setTimeout(schliesseGongAktivPopup, 5000);
+    }
+
+    const gongPopup = document.getElementById('gong-aktiv-popup');
+    const gongPopupSchliessen = document.getElementById('gong-aktiv-popup-schliessen');
+
+    if (gongPopup && gongPopupSchliessen) {
+      gongPopupSchliessen.addEventListener('click', schliesseGongAktivPopup);
+      gongPopup.addEventListener('click', event => {
+        if (event.target === gongPopup) schliesseGongAktivPopup();
+      });
+      document.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && gongPopup.style.display !== 'none') {
+          event.preventDefault();
+          schliesseGongAktivPopup();
+        }
+      });
+    }
+
     function aktualisiereGongIcon(status) {
       const btn = document.getElementById('zk-gong-btn');
       if (!btn) return;
@@ -752,10 +833,36 @@
 
     if (window.studjoGong) {
       window.studjoGong.aufStatusAenderung(aktualisiereGongIcon);
+
       document.getElementById('zk-gong-btn').addEventListener('click', () => {
+        const statusVorher = window.studjoGong.status();
+        if (statusVorher.fehler) return;
+
+        const istJetztAktiv = window.studjoGong.umschalten();
+        if (istJetztAktiv && (!statusVorher.aktiv || !statusVorher.bereit)) {
+          zeigeGongAktivPopup();
+        }
+      });
+
+      document.addEventListener('click', event => {
+        if (
+          event.target.closest &&
+          event.target.closest(
+            'a,button,input,select,textarea,label,[role="button"],' +
+            '.ticker-container,#gong-aktiv-popup'
+          )
+        ) {
+          return;
+        }
+
         const status = window.studjoGong.status();
-        if (status.fehler) return; // Fehler-Icon ist kein Schalter
-        window.studjoGong.umschalten();
+        if (status.fehler || (status.aktiv && status.bereit)) return;
+
+        if (!status.aktiv) {
+          window.studjoGong.aktivieren();
+        }
+
+        zeigeGongAktivPopup();
       });
     }
 

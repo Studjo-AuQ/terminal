@@ -1,8 +1,15 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 15
+   Version 16
 
-   Neu in Version 15:
+   Neu in Version 16:
+   - opnv.html nutzt direkte Startseiten-Zurücklinks und umgeht damit
+     störende iframe-/Browser-History zuverlässig.
+   - index.html enthält den neuen Gong-Aktivierungshinweis.
+   - Versionssprung leert alte v15-Caches, damit beide Änderungen
+     sofort zuverlässig am Terminal ankommen.
+
+   Weiter aus Version 15:
    - direkte Bereichs-Zurücklinks können iframe-History gezielt umgehen.
    - ticker.js startet bei freiem Startseiten-Klick und bei Rückkehr
      auf die Startseite zuverlässig wieder.
@@ -10,7 +17,7 @@
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v15';
+const CACHE_VERSION = 'v16';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 

@@ -21,7 +21,7 @@
     </header>
     <main>
         <div class="page-header-row">
-    <a href="index.html" target="_self" class="back-button">
+    <a href="index.html" target="_self" class="back-button" data-direct-link>
         <span aria-hidden="true">←</span> Zurück
     </a>
     <h1 id="seitenanfang">🚌 Fahrplanauskunft f&uuml;r Busse</h1>
@@ -177,7 +177,6 @@
         display: inline-block;
     }
 
-    /* Karte-Button: ausgefüllt rot */
     .adr-map-btn {
         background-color: #b61f29;
         color: white;
@@ -187,7 +186,6 @@
         border-color: #8b161e;
     }
 
-    /* Kopieren-Button: Outline */
     .adr-copy-btn {
         background-color: white;
         color: #b61f29;
@@ -207,7 +205,6 @@
 
 <div class="adr-grid">
 
-    <!-- 1 · Freisenbergstraße -->
     <div class="adr-card adr-card-1">
         <div class="adr-bst-name">
             Freisenbergstraße
@@ -222,7 +219,6 @@
         </div>
     </div>
 
-    <!-- 2 · Wefelshohlerstraße -->
     <div class="adr-card adr-card-2">
         <div class="adr-bst-name">
             Wefelshohlerstraße
@@ -237,7 +233,6 @@
         </div>
     </div>
 
-    <!-- 3 · Kerkhagen -->
     <div class="adr-card adr-card-3">
         <div class="adr-bst-name">
             Kerkhagen
@@ -252,7 +247,6 @@
         </div>
     </div>
 
-    <!-- 4 · Werdohl -->
     <div class="adr-card adr-card-4">
         <div class="adr-bst-name">
             Werdohl
@@ -267,7 +261,6 @@
         </div>
     </div>
 
-    <!-- 5 · Kierspe -->
     <div class="adr-card adr-card-5">
         <div class="adr-bst-name">
             Kierspe
@@ -282,7 +275,6 @@
         </div>
     </div>
 
-    <!-- 6 · Auf der Heide -->
     <div class="adr-card adr-card-6">
         <div class="adr-bst-name">
             Auf der Heide
@@ -297,7 +289,6 @@
         </div>
     </div>
 
-    <!-- 7 · Dannenbaumstraße -->
     <div class="adr-card adr-card-7">
         <div class="adr-bst-name">
             Dannenbaumstraße
@@ -361,7 +352,7 @@ function adresseKopieren(btn, text) {
   © 2026 <strong>Studjo | Arbeit und Qualifizierung</strong>
    ·  Evangelisches Johanneswerk gGmbH
   <br>
-  <a href="index.html" class="footer-home-link"
+  <a href="index.html" class="footer-home-link" data-direct-link
      style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
     Startseite
   </a>
@@ -540,9 +531,6 @@ function adresseKopieren(btn, text) {
 </div>
 
 <script>
-  // Zeigt den passenden, lokal gespeicherten Kartenausschnitt zur
-  // jeweiligen Betriebsstätte an. Kein Live-Kartendienst mehr nötig,
-  // daher auch kein Zustimmungs-Hinweis erforderlich.
   function zeigeKarte(bildDatei, bstName) {
       document.getElementById('karte-popup-titel').textContent = '📍 ' + bstName;
       const bild = document.getElementById('karte-popup-bild');
