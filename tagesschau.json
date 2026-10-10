@@ -1,11 +1,23 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "10.10.2026, 17:46 Uhr (UTC)",
+  "aktualisiert": "10.10.2026, 21:28 Uhr (UTC)",
   "meldungen": [
     {
+      "title": "Mehrere Tote und etliche ohne Strom durch Sturm \"Isaias\"",
+      "description": "Mit \"Isaias\" ist der erste Hurrikan der Saison auf die US-Küste getroffen. Er brachte heftige Regenfälle mit sich, in Hunderttausenden Haushalten fiel der Strom aus. Inzwischen hat sich der Sturm aber deutlich abgeschwächt.",
+      "pubDate": "2026-10-10T22:44:04+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Trump fordert nach Dieseldeal mit Putin Selenskyjs Ablösung",
+      "description": "Gestern hatte US-Präsident Trump einen Dieseldeal mit Russland angekündigt. Die Ukraine reagierte empört, nun fordert Trump eine Ablösung des ukrainischen Staatschefs Selenskyj. Er habe die Schuld an den hohen Energiepreisen.",
+      "pubDate": "2026-10-10T20:26:35+02:00",
+      "bild": ""
+    },
+    {
       "title": "Huthi-Miliz greift offenbar Flughafen in Riad an",
-      "description": "Der Flughafen nahe der saudischen Hauptstadt Riad ist offenbar erneut Ziel eines schweren Angriffs. Vermutet wird, dass die jemenitische Huthi-Miliz für die Attacke verantwortlich ist.",
-      "pubDate": "2026-10-10T18:44:22+02:00",
+      "description": "Der Flughafen nahe der saudischen Hauptstadt Riad ist erneut Ziel eines schweren Angriffs. Vermutet wird, dass die jemenitische Huthi-Miliz für die Attacke verantwortlich ist.",
+      "pubDate": "2026-10-10T22:08:55+02:00",
       "bild": ""
     },
     {
@@ -78,18 +90,6 @@
       "title": "Gründer der indischen \"Kakerlaken\"-Bewegung festgenommen",
       "description": "In Indien sind Tausende, meist jugendliche Anhänger der \"Kakerlaken\"-Bewegung festgenommen worden. Im ganzen Land gab es Proteste gegen die Wahlkommission. Bereits im Vorfeld war der Gründer der Bewegung festgesetzt worden.",
       "pubDate": "2026-10-10T13:08:42+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ein Jahr brüchige Waffenruhe Gaza: \"Der Krieg lässt uns nicht in Ruhe\"",
-      "description": "Ein Jahr nach der Waffenruhe im Gazastreifen leben viele Menschen weiter in Not, Hilfsorganisationen sichern ihr Überleben. Von der internationalen Politik fühlen sich die Menschen vergessen. Von Felicitas Boeselager.",
-      "pubDate": "2026-10-10T09:37:37+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Hurrikan \"Isaias\" trifft auf US-Golfküste",
-      "description": "Mit \"Isaias\" ist der erste Hurrikan der Saison auf die US-Küste getroffen. Er brachte heftige Regenfälle mit sich, in Hunderttausenden Haushalten fiel der Strom aus. Inzwischen hat sich der Sturm aber deutlich abgeschwächt.",
-      "pubDate": "2026-10-10T14:44:57+02:00",
       "bild": ""
     }
   ],
