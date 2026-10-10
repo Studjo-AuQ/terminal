@@ -1,14 +1,22 @@
 {
+  "id": "./index.html",
   "name": "Studjo Terminal",
   "short_name": "Studjo",
-  "description": "Infoterminal für Studjo | Arbeit und Qualifizierung – Arbeitszeiten, Speiseplan, Nachrichten und mehr",
+  "description": "Studjo informiert Mitarbeitende über Neuigkeiten, Termine, Arbeitszeiten, Speiseplan und weitere Angebote.",
   "lang": "de",
+  "dir": "ltr",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "any",
   "background_color": "#ffffff",
   "theme_color": "#b61f29",
+  "categories": [
+    "education",
+    "productivity",
+    "utilities"
+  ],
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "icon-192.png",
@@ -27,6 +35,49 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-startseite.png",
+      "sizes": "684x1536",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Startseite mit Arbeitszeit und wichtigen Bereichen"
+    },
+    {
+      "src": "screenshot-neuigkeiten.png",
+      "sizes": "684x1536",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Neuigkeiten bei Studjo"
+    },
+    {
+      "src": "screenshot-wochenmotto.png",
+      "sizes": "684x1536",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Wochenmotto mit Erklärung"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Neuigkeiten bei Studjo",
+      "short_name": "Neuigkeiten",
+      "description": "Aktuelle Meldungen von Studjo",
+      "url": "./neuigkeiten.html"
+    },
+    {
+      "name": "Termine",
+      "short_name": "Termine",
+      "description": "Termine und Kalender öffnen",
+      "url": "./termine.html"
+    },
+    {
+      "name": "Speiseplan",
+      "short_name": "Speiseplan",
+      "description": "Aktuellen Speiseplan öffnen",
+      "url": "./speiseplan.html"
     }
   ]
 }

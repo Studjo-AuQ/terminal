@@ -1,16 +1,21 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 18
+   Version 19
 
-   Neu in Version 18:
+   Neu in Version 19:
+   - manifest.webmanifest enthält zusätzliche PWA-Metadaten,
+     Smartphone-Screenshots und App-Shortcuts.
+   - die drei PWA-Screenshots werden für Offline-Nutzung mit vorgeladen.
+   - Versionssprung leert alte v18-Caches, damit Chrome das neue
+     Manifest und die Installationsdaten zuverlässig erhält.
+
+   Weiter aus Version 18:
    - ticker.js macht auch die visuelle Endlos-Kopie der Meldungen
      zuverlässig anklickbar.
    - Stop/Play nutzt eine zentrale Pause-/Play-Steuerung und zusätzlich
      die Web Animations API als Chrome-/Android-Absicherung.
    - Touch-Geräte können nicht mehr durch einen festhängenden CSS-Hover
      im Pause-Zustand bleiben.
-   - Versionssprung leert alte v17-Caches, damit ticker.js sofort neu
-     geladen wird.
 
    Weiter aus Version 17:
    - Gong wird auf der Startseite nur noch durch direkten Klick auf
@@ -31,7 +36,7 @@
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v18';
+const CACHE_VERSION = 'v19';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 
@@ -60,6 +65,11 @@ const CORE_DATEIEN = [
   'header.jpg',
   'dingdong.mp3',
   'qr-terminal.jpg',
+
+  /* PWA-Installationsvorschau */
+  'screenshot-startseite.png',
+  'screenshot-neuigkeiten.png',
+  'screenshot-wochenmotto.png',
 
   'icon-192.png',
   'icon-512.png',
