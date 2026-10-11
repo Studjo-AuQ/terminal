@@ -1,17 +1,53 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "11.10.2026, 13:21 Uhr (UTC)",
+  "aktualisiert": "11.10.2026, 18:23 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "\"Die Stromsteuer muss für alle gesenkt werden\"",
+      "description": "Die CDU will raus aus der Krise und wieder näher an die Lebenswirklichkeit der Menschen. Als konkrete Maßnahme schlägt der rheinland-pfälzische Regierungschef Schnieder im ARD-Bericht aus Berlin vor, die Stromsteuer für alle zu senken.",
+      "pubDate": "2026-10-11T20:05:00+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Angriffe auf Saudi-Arabien: Huthis drohen mit weiterer Eskalation",
+      "description": "Nach dem schweren Angriff auf den Flughafen von Riad droht die Huthi-Miliz mit einer weiteren Eskalation. Saudi-Arabien fühlt sich vom Partner USA im Stich gelassen und sucht neue Verbündete. Von Anna Osius.",
+      "pubDate": "2026-10-11T19:50:11+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Schwarz-Rot unter Druck: Wie die Koalition Vertrauen zurückgewinnen will",
+      "description": "Reformstau, schwindende Zustimmung in der Bevölkerung, desaströse Wahlergebnisse - die schwarz-rote Koalition steht unter Druck. Jetzt muss sie unter Beweis stellen, dass sie noch handlungsfähig ist. Von Ilanit Spinner.",
+      "pubDate": "2026-10-11T19:36:32+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Auf der Flucht: Viele Tote bei Schiffsunglück vor Dschibuti",
+      "description": "Vor der Küste Dschibutis hat sich ein schweres Unglück ereignet. Mehr als hundert Menschen kamen ums Leben. Ebenso viele werden noch vermisst. Sie hatten sich ein besseres Leben auf der arabischen Halbinsel erhofft.",
+      "pubDate": "2026-10-11T16:32:56+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Trump meldet \"Energie-Waffenruhe\" zwischen Russland und Ukraine",
+      "description": "Laut US-Präsident Trump gibt es eine \"Energie-Waffenruhe\" zwischen Russland und der Ukraine. Sie trete mit sofortiger Wirkung in Kraft, erklärte er auf seiner Plattform Truth Social. Eine Bestätigung aus Kiew oder Moskau liegt bislang nicht vor.",
+      "pubDate": "2026-10-11T19:31:38+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Selenskyj will Angriffe auf russische Raffinerien fortsetzen",
+      "description": "Nach Trumps Drohungen gegen den ukrainischen Präsidenten hat Selenskyj nun reagiert - und angekündigt, die Angriffe auf russische Ölraffinerien fortzusetzen. Ein Ende sei nur möglich, wenn auch Russland seine Attacken einstelle.",
+      "pubDate": "2026-10-11T16:22:07+02:00",
+      "bild": ""
+    },
     {
       "title": "Friedenspreisträger Sands kritisiert deutsches Schweigen zu Vorgehen Israels",
       "description": "Der Jurist und Schriftsteller Philippe Sands hat den Friedenspreis des Deutschen Buchhandels erhalten. Er bedankte sich mit dem Appell, zu Verletzungen des Völkerrechts nicht zu schweigen. Israels Vorgehen in Gaza müsse kritisiert werden.",
-      "pubDate": "2026-10-11T13:36:28+02:00",
+      "pubDate": "2026-10-11T17:38:17+02:00",
       "bild": ""
     },
     {
       "title": "Polizei warnt vor Anschlag auf polnischen Regierungschef Tusk",
-      "description": "Noch ist vieles im Unklaren, aber die Sorge scheint groß. Offenbar hat die polnische Polizei konkrete Hinweise auf Anschlagspläne auf Regierungschef Tusk und Verteidigungsminister Kosiniak-Kamysz. Eine Krisensitzung wurde einberufen.",
-      "pubDate": "2026-10-11T15:12:05+02:00",
+      "description": "Noch ist vieles im Unklaren, aber die Sorge scheint groß. Offenbar hat die polnische Polizei konkrete Hinweise auf Anschlagspläne auf Regierungschef Tusk und Verteidigungsminister Kosiniak-Kamysz. Ein Mann wurde festgenommen.",
+      "pubDate": "2026-10-11T17:37:39+02:00",
       "bild": ""
     },
     {
@@ -54,42 +90,6 @@
       "title": "Schutzstatus in Deutschland: Asylklagen dauern wieder länger",
       "description": "In den vergangenen Jahren war die Dauer von Asylklagen zurückgegangen. Inzwischen müssen Schutzsuchende wieder länger auf die Klärung ihres Status warten - die Zeit ist dabei jedoch stark vom Bundesland abhängig.",
       "pubDate": "2026-10-11T08:21:19+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bürgermeisterwahl: Entscheidung in Krakau - Stimmungstest für Polen",
-      "description": "Polens zweitgrößte Stadt Krakau wählt einen Bürgermeister: Die regierungsnahe Kandidatin tritt gegen einen Kandidaten an, der mit Stimmen von rechts rechnen kann. Ein Stimmungstest vor der Parlamentswahl. Von P. Milling",
-      "pubDate": "2026-10-11T08:19:57+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Gespräche in Athen: Rubio umwirbt die Gas-Drehscheibe Griechenland",
-      "description": "Südosteuropäische Länder bauen ein Pipelinesystem auf, das Gas über den Kontinent verteilen soll - um unabhängig von Russland zu werden. Auch Flüssiggasexporteur USA zeigt Interesse. Droht eine neue Abhängigkeit? Von J. Riemann.",
-      "pubDate": "2026-10-11T07:43:37+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Seehofer sieht \"Glaubwürdigkeitsverlust\" bei Merz",
-      "description": "Vor der CDU-Klausur hat der ehemalige CSU-Chef Seehofer massive Kritik an Kanzler Merz geübt. Gebrochene Wahlversprechen hätten seiner Glaubwürdigkeit geschadet. Nun seien ein Kurswechsel und weniger Selbstbeschäftigung nötig.",
-      "pubDate": "2026-10-11T05:50:03+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ukraine: Trump setzt Präsident Selenskyj weiter unter Druck",
-      "description": "\"Zeit, dass die Ukraine einen neuen Präsidenten bekommt\": US-Präsident Trump setzt Selenskyj weiter unter Druck. Er fordert erneut Wahlen - die rechtlich ausgeschlossen sind. Doch Selenskyj bekommt auch Rückhalt.",
-      "pubDate": "2026-10-11T05:47:34+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Klausur des CDU-Präsidiums: Kanzler Merz vor schwieriger Aufgabe",
-      "description": "In der CDU ist die Stimmung nach den miserablen Ergebnissen bei den jüngsten Landtagswahlen und sinkenden Umfragewerten schlecht. Heute und morgen kommt das Parteipräsidium zusammen. Von Sabine Henkel.",
-      "pubDate": "2026-10-11T03:27:57+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Berliner Sondierungen sorgen für Ärger in der Koalition",
-      "description": "Rot-Grün-Rot in Berlin wird konkreter - das hat auch Auswirkungen auf die Bundespolitik. Kulturstaatsminister Weimer warnt vor einer Zusammenarbeit mit der Linken. Die SPD sieht Handlungsbedarf an anderer Stelle.",
-      "pubDate": "2026-10-11T03:12:51+02:00",
       "bild": ""
     }
   ],
