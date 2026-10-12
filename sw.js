@@ -1,14 +1,21 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 20
+   Version 21
 
-   Neu in Version 20:
+   Neu in Version 21:
+   - neuigkeiten.html ist jetzt eine feste Darstellungsseite und lädt
+     ihre Inhalte ausschließlich aus neuigkeiten.json.
+   - neuigkeiten.json wird offline vorgeladen und als dynamische
+     JSON-Datei weiterhin netzwerk-zuerst aktualisiert.
+   - Laufband-Hashlinks bleiben unverändert und werden erst nach dem
+     Laden der Nachrichtenkarten geöffnet.
+   - Versionssprung leert alte v20-Caches für die Datenumstellung.
+
+   Weiter aus Version 20:
    - speiseplan-heute.js erkennt auf PDF-Seite 2 auch helle und farbige
      Tabellenlinien zuverlässig.
    - ein proportionaler Raster-Fallback sichert die drei Essensbilder
      zusätzlich gegen kleinere Designänderungen der PDF ab.
-   - Versionssprung leert alte v19-Caches, damit die neue Erkennung
-     sofort geladen wird.
 
    Weiter aus Version 19:
    - manifest.webmanifest enthält zusätzliche PWA-Metadaten,
@@ -42,7 +49,7 @@
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v20';
+const CACHE_VERSION = 'v21';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 
@@ -84,6 +91,7 @@ const CORE_DATEIEN = [
   'apple-touch-icon.png',
 
   /* Lokale dynamische Daten */
+  'neuigkeiten.json',
   'termine.json',
   'ticker.json',
   'wetter.json',
