@@ -1,7 +1,13 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "11.10.2026, 22:21 Uhr (UTC)",
+  "aktualisiert": "12.10.2026, 01:38 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Huthis greifen erneut Flughäfen in Saudi-Arabien an",
+      "description": "Die Huthi-Miliz hat ihre Attacken auf saudische Flughäfen fortgesetzt. Die Luftfahrtbehörde meldete mehrere Verletzte nach einem neuen Angriff auf den Flughafen King Khalid - mindestens ein Mensch wurde getötet.",
+      "pubDate": "2026-10-12T02:20:21+02:00",
+      "bild": ""
+    },
     {
       "title": "Russland greift trotz angeblicher \"Energie-Waffenruhe\" weiter Anlagen an",
       "description": "Russland hat erneut Energieanlagen angegriffen. Die Attacken erfolgten nach der Verkündung einer \"Energie-Waffenruhe\" zwischen Kiew und Moskau durch US-Präsident Trump - die bislang von beiden Seiten nicht bestätigt wurde.",
@@ -84,12 +90,6 @@
       "title": "Huthi-Angriff auf Flughafen Riad: Alptraum am Abflug-Gate",
       "description": "Ein Einschlag mitten im Terminal: Der jüngste Raketenangriff am Flughafen Riad ist der schwerste auf Saudi-Arabien seit Beginn des Iran-Kriegs. Augenzeugen berichten von Panik und vielen Opfern. Greifen jetzt die USA ein? Von Anna Osius.",
       "pubDate": "2026-10-11T12:39:51+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Todeskandidatin Pike nach gescheiterter Hinrichtung wieder im Gefängnis",
-      "description": "Die US-Todeskandidatin Pike hat rund anderthalb Wochen nach ihrer gescheiterten Hinrichtung das Krankenhaus verlassen. Sie ist mittlerweile in das Gefängnis zurückgekehrt, in dem sie seit mehr als 30 Jahren inhaftiert ist.",
-      "pubDate": "2026-10-11T11:20:40+02:00",
       "bild": ""
     }
   ],
