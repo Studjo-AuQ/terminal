@@ -1,13 +1,19 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 19
+   Version 20
 
-   Neu in Version 19:
+   Neu in Version 20:
+   - speiseplan-heute.js erkennt auf PDF-Seite 2 auch helle und farbige
+     Tabellenlinien zuverlässig.
+   - ein proportionaler Raster-Fallback sichert die drei Essensbilder
+     zusätzlich gegen kleinere Designänderungen der PDF ab.
+   - Versionssprung leert alte v19-Caches, damit die neue Erkennung
+     sofort geladen wird.
+
+   Weiter aus Version 19:
    - manifest.webmanifest enthält zusätzliche PWA-Metadaten,
      Smartphone-Screenshots und App-Shortcuts.
    - die drei PWA-Screenshots werden für Offline-Nutzung mit vorgeladen.
-   - Versionssprung leert alte v18-Caches, damit Chrome das neue
-     Manifest und die Installationsdaten zuverlässig erhält.
 
    Weiter aus Version 18:
    - ticker.js macht auch die visuelle Endlos-Kopie der Meldungen
@@ -36,7 +42,7 @@
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v19';
+const CACHE_VERSION = 'v20';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 
@@ -60,6 +66,7 @@ const CORE_DATEIEN = [
   'feiertage.js',
   'kalender.js',
   'kacheln.js',
+  'speiseplan-heute.js',
 
   'favicon.ico',
   'header.jpg',
