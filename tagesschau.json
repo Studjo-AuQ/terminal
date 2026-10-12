@@ -1,17 +1,83 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "12.10.2026, 01:38 Uhr (UTC)",
+  "aktualisiert": "12.10.2026, 08:59 Uhr (UTC)",
   "meldungen": [
     {
-      "title": "Huthis greifen erneut Flughäfen in Saudi-Arabien an",
-      "description": "Die Huthi-Miliz hat ihre Attacken auf saudische Flughäfen fortgesetzt. Die Luftfahrtbehörde meldete mehrere Verletzte nach einem neuen Angriff auf den Flughafen King Khalid - mindestens ein Mensch wurde getötet.",
-      "pubDate": "2026-10-12T02:20:21+02:00",
+      "title": "Marktbericht: DAX-Erholung setzt sich fort",
+      "description": "Der DAX legt zum Wochenstart weiter zu und knüpft an die Erholung vom Freitag an. Der Aufschwung ist aber wacklig, denn hohe Ölpreise und Anleiherenditen bleiben weiterhin ein Risiko.",
+      "pubDate": "2026-10-12T10:55:44+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Was hinter der aktuellen Euro-Schwäche steckt",
+      "description": "Politische Unsicherheiten in Frankreich und Spanien bringen den Euro unter Druck. Dazu kommen Sorgen wegen der hohen Staatsschulden in Europa. Was bedeutet das für Europas Gemeinschaftswährung? Von Claudia Wehrle.",
+      "pubDate": "2026-10-12T10:17:50+02:00",
+      "bild": ""
+    },
+    {
+      "title": "EU-Außenminister beschließen größte Sanktionsrunde gegen Russland",
+      "description": "Es geht um mehr als 1.600 Personen und Organisationen: Die EU-Außenminister haben neue Sanktionen wegen des russischen Angriffskrieges gegen die Ukraine beschlossen. Deutliche Kritik gibt es am Vorgehen der USA. Von Tina Hassel.",
+      "pubDate": "2026-10-12T10:33:32+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Nach Rücktritt von Bas: Schweitzer soll neuer Arbeitsminister werden",
+      "description": "Kurz nach dem Rücktritt von Bärbel Bas präsentiert die SPD einen Nachfolger: Der frühere Ministerpräsident von Rheinland-Pfalz, Alexander Schweitzer, soll neuer Arbeits- uns Sozialminister werden. Er übernimmt das Amt in schwierigen Zeiten.",
+      "pubDate": "2026-10-12T10:56:19+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Landwirtschaftsminister protestieren bei Merz gegen Zuckersteuer",
+      "description": "Im Streit über die Zuckersteuer wächst der Widerstand innerhalb der Union. Neun Landesminister haben sich in einem Brief an Kanzler Merz gegen die Abgabe ausgesprochen - und warnen vor den Folgen der geplanten Abgabe.",
+      "pubDate": "2026-10-12T08:24:01+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Bärbel Bas tritt als Arbeitsministerin und SPD-Vorsitzende zurück",
+      "description": "Dieser Schritt dürfte für die meisten überraschend kommen: Arbeitsministerin und SPD-Co-Chefin Bas legt ihre Ämter mit sofortiger Wirkung nieder. Sie begründete ihre Entscheidung mit persönlichen Gründen - und öffentlichen Angriffen.",
+      "pubDate": "2026-10-12T10:36:13+02:00",
+      "bild": ""
+    },
+    {
+      "title": "US-Senatoren kritisieren Trumps Diesel-Pläne als rechtswidrig",
+      "description": "Der von Präsident Trump angekündigte Import von russischem Diesel in die USA hat weltweit für harsche Kritik gesorgt. Auch im US-Kongress regt sich zunehmend Widerstand - nicht nur auf Seiten der Demokraten.",
+      "pubDate": "2026-10-12T07:40:02+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Nordkorea feuert offenbar erneut ballistische Raketen ab",
+      "description": "Die Spannungen auf der koreanischen Halbinsel haben in jüngster Zeit wieder zugenommen. Nun führte Nordkorea laut Angaben aus Südkorea und Japan erneut einen Raketentest durch. Die Geschosse landeten im Meer.",
+      "pubDate": "2026-10-12T06:39:12+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Schneller und einfacher Bauen: Wo bleibt der \"Gebäudetyp E\"?",
+      "description": "Das Bundesbauministerium will zügig für neuen Wohnraum sorgen. Helfen soll der \"Gebäudetyp E\", bei dem auf unnötigen Schnickschnack verzichtet wird. Doch das Gesetz dafür lässt seit Monaten auf sich warten. Von Oliver Neuroth.",
+      "pubDate": "2026-10-12T06:03:36+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Erbschaftsteuer beim Bundesverfassungsgericht auf dem Prüfstand",
+      "description": "Am Bundesverfassungsgericht geht es diese Woche gleich zwei Mal um die Erbschaftsteuer: Karlsruhe verhandelt unter anderem darüber, ob Unternehmenserben zu wenig Steuern zahlen. Von A. Stein und A. Lagmöller.",
+      "pubDate": "2026-10-12T05:01:19+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Söder fordert mutmaßliche Abweichler in Sachsen-Anhalt zum Rücktritt auf",
+      "description": "Als CDU-Abgeordneter für die AfD stimmen? Wer das in Sachsen-Anhalt tut, hat für Markus Söder keine Zukunft in der Union. \"Wollt ihr woanders hin? Dann sagt's auch\", so der CSU-Chef bei Caren Miosga.",
+      "pubDate": "2026-10-12T08:08:20+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Huthi-Miliz greift erneut Flughäfen in Saudi-Arabien an",
+      "description": "Es ist eine gefährliche Eskalation im Nahen Osten: Die Huthi-Miliz aus dem Jemen greift weiter Saudi-Arabien an. Neben dem Flughafen in Riad wurden auch wieder Energieanlagen getroffen. Nun bietet Iran Vermittlungsgespräche an.",
+      "pubDate": "2026-10-12T10:00:56+02:00",
       "bild": ""
     },
     {
       "title": "Russland greift trotz angeblicher \"Energie-Waffenruhe\" weiter Anlagen an",
       "description": "Russland hat erneut Energieanlagen angegriffen. Die Attacken erfolgten nach der Verkündung einer \"Energie-Waffenruhe\" zwischen Kiew und Moskau durch US-Präsident Trump - die bislang von beiden Seiten nicht bestätigt wurde.",
-      "pubDate": "2026-10-11T22:11:44+02:00",
+      "pubDate": "2026-10-12T08:38:55+02:00",
       "bild": ""
     },
     {
@@ -21,75 +87,9 @@
       "bild": ""
     },
     {
-      "title": "Angriffe auf Saudi-Arabien: Huthis drohen mit weiterer Eskalation",
+      "title": "Angriffe auf Saudi-Arabien: Huthi drohen mit weiterer Eskalation",
       "description": "Nach dem schweren Angriff auf den Flughafen von Riad droht die Huthi-Miliz mit einer weiteren Eskalation. Saudi-Arabien fühlt sich vom Partner USA im Stich gelassen und sucht neue Verbündete. Von Anna Osius.",
       "pubDate": "2026-10-11T19:50:11+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Schwarz-Rot unter Druck: Wie die Koalition Vertrauen zurückgewinnen will",
-      "description": "Reformstau, schwindende Zustimmung in der Bevölkerung, desaströse Wahlergebnisse - die schwarz-rote Koalition steht unter Druck. Jetzt muss sie unter Beweis stellen, dass sie noch handlungsfähig ist. Von Ilanit Spinner.",
-      "pubDate": "2026-10-11T19:36:32+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Auf der Flucht: Viele Tote bei Schiffsunglück vor Dschibuti",
-      "description": "Vor der Küste Dschibutis hat sich ein schweres Unglück ereignet. Mehr als hundert Menschen kamen ums Leben. Ebenso viele werden noch vermisst. Sie hatten sich ein besseres Leben auf der arabischen Halbinsel erhofft.",
-      "pubDate": "2026-10-11T16:32:56+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Trump meldet \"Energie-Waffenruhe\" zwischen Russland und Ukraine",
-      "description": "Laut US-Präsident Trump gibt es eine \"Energie-Waffenruhe\" zwischen Russland und der Ukraine. Sie trete mit sofortiger Wirkung in Kraft, erklärte er auf seiner Plattform Truth Social. Eine Bestätigung aus Kiew oder Moskau liegt bislang nicht vor.",
-      "pubDate": "2026-10-11T19:31:38+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Selenskyj will Angriffe auf russische Raffinerien fortsetzen",
-      "description": "Nach Trumps Drohungen gegen den ukrainischen Präsidenten hat Selenskyj nun reagiert - und angekündigt, die Angriffe auf russische Ölraffinerien fortzusetzen. Ein Ende sei nur möglich, wenn auch Russland seine Attacken einstelle.",
-      "pubDate": "2026-10-11T16:22:07+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Friedenspreisträger Sands kritisiert deutsches Schweigen zu Vorgehen Israels",
-      "description": "Der Jurist und Schriftsteller Philippe Sands hat den Friedenspreis des Deutschen Buchhandels erhalten. Er bedankte sich mit dem Appell, zu Verletzungen des Völkerrechts nicht zu schweigen. Israels Vorgehen in Gaza müsse kritisiert werden.",
-      "pubDate": "2026-10-11T17:38:17+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Polizei warnt vor Anschlag auf polnischen Regierungschef Tusk",
-      "description": "Noch ist vieles im Unklaren, aber die Sorge scheint groß. Offenbar hat die polnische Polizei konkrete Hinweise auf Anschlagspläne auf Regierungschef Tusk und Verteidigungsminister Kosiniak-Kamysz. Ein Mann wurde festgenommen.",
-      "pubDate": "2026-10-11T22:11:03+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Nach Senderboykott: US-Justiz prüft Verstoß gegen Kartellrecht",
-      "description": "Mehrere US-Sender hatten vorübergehend die Berichterstattung über US-Präsident Trump eingestellt, weil er einzelne Medien aus dem Weißen Haus ausgeschlossen hatte. Jetzt prüft das Justizministerium rechtliche Schritte gegen sie.",
-      "pubDate": "2026-10-11T13:23:58+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Papst Leo XIV. kündigt Operation an der Lunge an",
-      "description": "Eigentlich steht dem Oberhaupt der Katholischen Kirche eine große Südamerikareise bevor - aber Leo XIV. muss sich einem Eingriff an der Lunge unterziehen. Ärzte hätten einen Knoten entdeckt.",
-      "pubDate": "2026-10-11T13:22:28+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Frankfurt: Viele Fans von belarusischem Rapper festgenommen",
-      "description": "Drei Tage lang haben Tausende Fans des belarusischen Musikers Max Korzh in Frankfurt gefeiert. Immer wieder zündeten sie unerlaubt Feuerwerk. Die Polizei nahm Dutzende Menschen fest.",
-      "pubDate": "2026-10-11T12:17:20+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Angriff auf Yandex: Ukraine legt \"russisches Google\" lahm",
-      "description": "Zum dritten Mal innerhalb von vier Tagen ist der russische Technologie- und KI-Konzern Yandex Ziel eines ukrainischen Drohnenangriffs geworden. Das Rechenzentrum in der Region Wladimir musste vollständig abgeschaltet werden.",
-      "pubDate": "2026-10-11T12:53:06+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Huthi-Angriff auf Flughafen Riad: Alptraum am Abflug-Gate",
-      "description": "Ein Einschlag mitten im Terminal: Der jüngste Raketenangriff am Flughafen Riad ist der schwerste auf Saudi-Arabien seit Beginn des Iran-Kriegs. Augenzeugen berichten von Panik und vielen Opfern. Greifen jetzt die USA ein? Von Anna Osius.",
-      "pubDate": "2026-10-11T12:39:51+02:00",
       "bild": ""
     }
   ],
