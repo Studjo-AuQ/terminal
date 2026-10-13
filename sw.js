@@ -1,15 +1,20 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 21
+   Version 22
 
-   Neu in Version 21:
-   - neuigkeiten.html ist jetzt eine feste Darstellungsseite und lädt
+   Neu in Version 22:
+   - alle sieben AbA-Standortseiten verwenden die zentrale aba.json
+     und das gemeinsame aba.js.
+   - die neuen Unterseiten heißen aba_fbs.html, aba_adh.html, aba_wd.html,
+     aba_ki.html, aba_whs.html, aba_kh.html und aba_db.html.
+   - aba.json, aba.js, style-aba.css, aba.html und die sieben Standort-
+     hüllen werden für den Offline-Betrieb vorgeladen.
+   - Versionssprung leert alte v21-Caches für die AbA-Migration.
+
+   Weiter aus Version 21:
+   - neuigkeiten.html ist eine feste Darstellungsseite und lädt
      ihre Inhalte ausschließlich aus neuigkeiten.json.
-   - neuigkeiten.json wird offline vorgeladen und als dynamische
-     JSON-Datei weiterhin netzwerk-zuerst aktualisiert.
-   - Laufband-Hashlinks bleiben unverändert und werden erst nach dem
-     Laden der Nachrichtenkarten geöffnet.
-   - Versionssprung leert alte v20-Caches für die Datenumstellung.
+   - neuigkeiten.json wird offline vorgeladen.
 
    Weiter aus Version 20:
    - speiseplan-heute.js erkennt auf PDF-Seite 2 auch helle und farbige
@@ -49,7 +54,7 @@
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v21';
+const CACHE_VERSION = 'v22';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 
@@ -57,12 +62,21 @@ const CORE_DATEIEN = [
   './',
   'index.html',
   'neuigkeiten.html',
+  'aba.html',
+  'aba_fbs.html',
+  'aba_adh.html',
+  'aba_wd.html',
+  'aba_ki.html',
+  'aba_whs.html',
+  'aba_kh.html',
+  'aba_db.html',
   'offline.html',
   'manifest.webmanifest',
 
   'style.css',
   'style-index.css',
   'style-news.css',
+  'style-aba.css',
   'a11y.css',
 
   'gong.js',
@@ -74,6 +88,7 @@ const CORE_DATEIEN = [
   'kalender.js',
   'kacheln.js',
   'speiseplan-heute.js',
+  'aba.js',
 
   'favicon.ico',
   'header.jpg',
@@ -92,6 +107,7 @@ const CORE_DATEIEN = [
 
   /* Lokale dynamische Daten */
   'neuigkeiten.json',
+  'aba.json',
   'termine.json',
   'ticker.json',
   'wetter.json',
