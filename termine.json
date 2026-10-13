@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "stand": "2026-10-08",
+  "stand": "2026-10-13",
   "hinweis": "Zentrale Datenquelle für Studjo-Termine und NRW-Schulferien. Terminorte können optional mit einem Studjo-Standort und dessen Gebäudebild verknüpft werden.",
   "termine": [
     {
@@ -14,18 +14,6 @@
       "uhrzeit": "",
       "ansprechpartner": "",
       "hinweis": "Fachtag Teilhabe"
-    },
-    {
-      "id": "andacht-20261008-kierspe",
-      "kategorie": "andachten",
-      "von": "2026-10-08",
-      "bis": "2026-10-08",
-      "ort": "Kierspe",
-      "standort": "ki",
-      "bild": "bst-ki.jpg",
-      "uhrzeit": "13:00 Uhr",
-      "ansprechpartner": "Pfr. Georg Freiwat",
-      "hinweis": ""
     },
     {
       "id": "fest-20261129-auf-der-heide",
@@ -302,6 +290,66 @@
       "uhrzeit": "Winterferien",
       "ansprechpartner": "",
       "hinweis": "Wir wünschen frohe Festtage!"
+    },
+    {
+      "id": "andacht-20261022-wefelshohl-2qzur",
+      "kategorie": "andachten",
+      "von": "2026-10-22",
+      "bis": "2026-10-22",
+      "ort": "Wefelshohl",
+      "standort": "whs",
+      "bild": "bst-whs.jpg",
+      "uhrzeit": "09:00 Uhr",
+      "ansprechpartner": "Birgit K.",
+      "hinweis": "Gesprächskreis – Gott und die Welt"
+    },
+    {
+      "id": "andacht-20261126-wefelshohl-guznw",
+      "kategorie": "andachten",
+      "von": "2026-11-26",
+      "bis": "2026-11-26",
+      "ort": "Wefelshohl",
+      "standort": "whs",
+      "bild": "bst-whs.jpg",
+      "uhrzeit": "09:00 Uhr",
+      "ansprechpartner": "Birgit K.",
+      "hinweis": "Gesprächskreis – Gott und die Welt"
+    },
+    {
+      "id": "andacht-20261217-wefelshohl-46f6q",
+      "kategorie": "andachten",
+      "von": "2026-12-17",
+      "bis": "2026-12-17",
+      "ort": "Wefelshohl",
+      "standort": "whs",
+      "bild": "bst-whs.jpg",
+      "uhrzeit": "09:00 Uhr",
+      "ansprechpartner": "Birgit K.",
+      "hinweis": "Gesprächskreis – Gott und die Welt"
+    },
+    {
+      "id": "andacht-20261112-kerkhagen-y1v9g",
+      "kategorie": "andachten",
+      "von": "2026-11-12",
+      "bis": "2026-11-12",
+      "ort": "Kerkhagen",
+      "standort": "kh",
+      "bild": "bst-kh.jpg",
+      "uhrzeit": "09:00 Uhr",
+      "ansprechpartner": "Birgit K.",
+      "hinweis": "Gesprächskreis – Gott und die Welt"
+    },
+    {
+      "id": "andacht-20261210-kerkhagen-716pw",
+      "kategorie": "andachten",
+      "von": "2026-12-10",
+      "bis": "2026-12-10",
+      "ort": "Kerkhagen",
+      "standort": "kh",
+      "bild": "bst-kh.jpg",
+      "uhrzeit": "09:00 Uhr",
+      "ansprechpartner": "Birgit K.",
+      "hinweis": "Gesprächskreis – Gott und die Welt"
     }
   ],
   "schulferien": [
