@@ -1,20 +1,27 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 22
+   Version 23
 
-   Neu in Version 22:
-   - alle sieben AbA-Standortseiten verwenden die zentrale aba.json
+   Neu in Version 23:
+   - alle dynamischen JSON-Daten liegen künftig gesammelt unter data/.
+   - während der manuellen Migration dürfen die alten Root-JSON-Dateien
+     vorübergehend noch bestehen; die Seiten verwenden data/ als Hauptpfad.
+   - Wetter- und RSS-Actions schreiben direkt nach data/.
+   - Versionssprung leert alte v22-Caches für die Datenordner-Migration.
+
+   Weiter aus Version 22:
+   - alle sieben AbA-Standortseiten verwenden die zentrale data/aba.json
      und das gemeinsame aba.js.
    - die neuen Unterseiten heißen aba_fbs.html, aba_adh.html, aba_wd.html,
      aba_ki.html, aba_whs.html, aba_kh.html und aba_db.html.
-   - aba.json, aba.js, style-aba.css, aba.html und die sieben Standort-
+   - data/aba.json, aba.js, style-aba.css, aba.html und die sieben Standort-
      hüllen werden für den Offline-Betrieb vorgeladen.
    - Versionssprung leert alte v21-Caches für die AbA-Migration.
 
    Weiter aus Version 21:
    - neuigkeiten.html ist eine feste Darstellungsseite und lädt
-     ihre Inhalte ausschließlich aus neuigkeiten.json.
-   - neuigkeiten.json wird offline vorgeladen.
+     ihre Inhalte ausschließlich aus data/neuigkeiten.json.
+   - data/neuigkeiten.json wird offline vorgeladen.
 
    Weiter aus Version 20:
    - speiseplan-heute.js erkennt auf PDF-Seite 2 auch helle und farbige
@@ -54,7 +61,7 @@
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v22';
+const CACHE_VERSION = 'v23';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 
@@ -106,16 +113,16 @@ const CORE_DATEIEN = [
   'apple-touch-icon.png',
 
   /* Lokale dynamische Daten */
-  'neuigkeiten.json',
-  'aba.json',
-  'termine.json',
-  'ticker.json',
-  'wetter.json',
-  'wochenmottos.json',
+  'data/neuigkeiten.json',
+  'data/aba.json',
+  'data/termine.json',
+  'data/ticker.json',
+  'data/wetter.json',
+  'data/wochenmottos.json',
   'data/losungen.json',
-  'tagesschau.json',
-  'kobinet.json',
-  'nachrichten.json'
+  'data/tagesschau.json',
+  'data/kobinet.json',
+  'data/nachrichten.json'
 ];
 
 function absolut(pfad) {

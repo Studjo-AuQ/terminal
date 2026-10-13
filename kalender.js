@@ -4,7 +4,7 @@
    Datenquellen:
      1. feiertage.js
         NRW-Feiertage, Studjo-Zusatztage und Brückentage
-     2. termine.json
+     2. data/termine.json
         - Andachten
         - Werkstattfeste
         - Schließungstage
@@ -50,16 +50,9 @@
       brueckentag: '🌉'
     };
 
-    /* Alte Cache-Daten aus der früheren Schulferien-Webabfrage
-       werden nicht mehr benötigt. */
     try {
       localStorage.removeItem('studjo-schulferien-cache-v1');
     } catch (e) {}
-
-
-    /* ════════════════════════════════════════════════════
-       DATUM
-       ════════════════════════════════════════════════════ */
 
     function parseIsoDatum(text) {
       const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(text || '').trim());
@@ -102,11 +95,6 @@
         sicherheit++;
       }
     }
-
-
-    /* ════════════════════════════════════════════════════
-       ZENTRALE DATENQUELLE termine.json
-       ════════════════════════════════════════════════════ */
 
     function bereinigterOrt(termin) {
       const roh = String(
@@ -220,19 +208,38 @@
             return;
           }
 
-          const antwort = await fetch('termine.json?v=' + Date.now());
+          let daten = null;
+          let letzterFehler = null;
 
-          if (!antwort.ok) {
-            throw new Error('HTTP ' + antwort.status);
+          for (const pfad of ['data/termine.json', 'termine.json']) {
+            try {
+              const antwort = await fetch(
+                pfad + '?v=' + Date.now(),
+                { cache: 'no-store' }
+              );
+
+              if (!antwort.ok) {
+                throw new Error('HTTP ' + antwort.status + ' bei ' + pfad);
+              }
+
+              daten = await antwort.json();
+              break;
+
+            } catch (fehler) {
+              letzterFehler = fehler;
+            }
           }
 
-          const daten = await antwort.json();
+          if (!daten) {
+            throw letzterFehler || new Error('Termindaten nicht erreichbar');
+          }
+
           window.StudjoTermineDaten = daten;
           baueDatenstrukturen(daten);
 
         } catch (fehler) {
           console.warn(
-            '[Studjo Kalender] termine.json konnte nicht geladen werden:',
+            '[Studjo Kalender] data/termine.json konnte nicht geladen werden:',
             fehler
           );
         } finally {
@@ -248,11 +255,6 @@
         f => schluessel >= f.start && schluessel <= f.ende
       ) || null;
     }
-
-
-    /* ════════════════════════════════════════════════════
-       INFORMATIONEN EINES TAGES
-       ════════════════════════════════════════════════════ */
 
     function tagesInfo(datum) {
       const schluessel = F.datumSchluessel(datum);
@@ -294,11 +296,6 @@
     window.StudjoKalender = window.StudjoKalender || {};
     window.StudjoKalender.tagesInfo = tagesInfo;
     window.StudjoKalender.datenBereit = ladeDaten;
-
-
-    /* ════════════════════════════════════════════════════
-       OPTIK
-       ════════════════════════════════════════════════════ */
 
     function injiziereKalenderStyles() {
       if (document.getElementById('studjo-kalender-styles')) return;
@@ -575,11 +572,6 @@
       document.head.appendChild(style);
     }
 
-
-    /* ════════════════════════════════════════════════════
-       MARKUP
-       ════════════════════════════════════════════════════ */
-
     function innererMarkup(idp) {
       return `
         <div class="studjo-kal-nav">
@@ -666,11 +658,6 @@
 
       return ziel;
     }
-
-
-    /* ════════════════════════════════════════════════════
-       ZEICHNEN
-       ════════════════════════════════════════════════════ */
 
     function hatSchliessung(datum) {
       const info = tagesInfo(datum);
@@ -804,11 +791,6 @@
       ziele.forEach(zeichneZiel);
     }
 
-
-    /* ════════════════════════════════════════════════════
-       DETAILANZEIGE
-       ════════════════════════════════════════════════════ */
-
     function htmlSicher(text) {
       return String(text ?? '')
         .replace(/&/g,'&amp;')
@@ -868,11 +850,6 @@
         ziel.infoEl.innerHTML = zeilen.join('<br>');
       });
     }
-
-
-    /* ════════════════════════════════════════════════════
-       POPUP
-       ════════════════════════════════════════════════════ */
 
     let popupLetzterFokus = null;
 
@@ -958,11 +935,6 @@
       if (popupLetzterFokus) popupLetzterFokus.focus();
     }
 
-
-    /* ════════════════════════════════════════════════════
-       EINGEBETTET
-       ════════════════════════════════════════════════════ */
-
     function renderAlsEingebettet(container) {
       container.innerHTML = `
         <div style="background:#fff;border-radius:18px;
@@ -985,11 +957,6 @@
 
       ladeDaten().then(zeichneAlle);
     }
-
-
-    /* ════════════════════════════════════════════════════
-       INITIALISIERUNG
-       ════════════════════════════════════════════════════ */
 
     function einrichten() {
       injiziereKalenderStyles();

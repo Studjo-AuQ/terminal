@@ -2,7 +2,8 @@
    wochenmotto.js
    Studjo Terminal | Evangelisches Johanneswerk
 
-   - lädt die Inhalte aus wochenmottos.json
+   - lädt die Inhalte aus data/wochenmottos.json
+   - während der Datenordner-Migration ist wochenmottos.json als Fallback erlaubt
    - wechselt automatisch jede Woche
    - nutzt 100 Mottos fortlaufend und beginnt erst danach neu
    - KW 1/2026 = Motto 1
@@ -18,7 +19,10 @@
 (function () {
   'use strict';
 
-  const JSON_DATEI = 'wochenmottos.json';
+  const JSON_DATEIEN = [
+    'data/wochenmottos.json',
+    'wochenmottos.json'
+  ];
 
   /* Montag der ISO-KW 1/2026.
      Dadurch bleiben die bisherigen Mottos 1–50 zunächst in derselben
@@ -197,14 +201,32 @@
     });
   }
 
-  document.addEventListener('DOMContentLoaded', function () {
-    fetch(JSON_DATEI)
-      .then(function (antwort) {
+  async function ladeMottoDaten() {
+    let letzterFehler = null;
+
+    for (const pfad of JSON_DATEIEN) {
+      try {
+        const antwort = await fetch(
+          pfad + '?v=' + Date.now(),
+          { cache: 'no-store' }
+        );
+
         if (!antwort.ok) {
-          throw new Error('HTTP ' + antwort.status);
+          throw new Error('HTTP ' + antwort.status + ' bei ' + pfad);
         }
-        return antwort.json();
-      })
+
+        return await antwort.json();
+
+      } catch (fehler) {
+        letzterFehler = fehler;
+      }
+    }
+
+    throw letzterFehler || new Error('Motto-Daten nicht erreichbar.');
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    ladeMottoDaten()
       .then(function (daten) {
         const liste = Array.isArray(daten.wochenmottos)
           ? daten.wochenmottos

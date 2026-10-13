@@ -2,9 +2,9 @@
    ticker.js – robuste automatische Laufleiste auf der Studjo-Startseite
    Version 18
 
-   Quelle: ticker.json
+   Quelle: data/ticker.json
    - zeigt nur aktuell gültige Einträge
-   - maximal 3–5 Einträge (laut ticker.json.maxEintraege)
+   - maximal 3–5 Einträge (laut data/ticker.json → maxEintraege)
    - Emoji wird visuell gezeigt, aber nicht vorgelesen
    - Links funktionieren auch in der für den Endloslauf nötigen Kopie
    - Stop/Play arbeitet über einen zentralen Status
@@ -606,15 +606,35 @@
     }
   }
 
-  fetch('ticker.json?v=' + Date.now(), { cache: 'no-store' })
-    .then(response => {
-      if (!response.ok) throw new Error('HTTP ' + response.status);
-      return response.json();
-    })
+  async function ladeTickerDaten() {
+    let letzterFehler = null;
+
+    for (const pfad of ['data/ticker.json', 'ticker.json']) {
+      try {
+        const response = await fetch(
+          pfad + '?v=' + Date.now(),
+          { cache: 'no-store' }
+        );
+
+        if (!response.ok) {
+          throw new Error('HTTP ' + response.status + ' bei ' + pfad);
+        }
+
+        return await response.json();
+
+      } catch (fehler) {
+        letzterFehler = fehler;
+      }
+    }
+
+    throw letzterFehler || new Error('Ticker-Daten nicht erreichbar');
+  }
+
+  ladeTickerDaten()
     .then(render)
     .catch(fehler => {
       console.warn(
-        '[Studjo Ticker] ticker.json konnte nicht geladen werden:',
+        '[Studjo Ticker] data/ticker.json konnte nicht geladen werden:',
         fehler
       );
 

@@ -204,7 +204,10 @@
 (function () {
   'use strict';
 
-  const DATEN_DATEI = 'neuigkeiten.json';
+  const DATEN_DATEIEN = [
+    'data/neuigkeiten.json',
+    'neuigkeiten.json'
+  ];
 
   function formatDatum(isoDatum) {
     const teile = String(isoDatum || '').split('-');
@@ -658,28 +661,46 @@
 
   async function ladeNeuigkeiten() {
     try {
-      const antwort =
-        await fetch(
-          DATEN_DATEI +
-          '?v=' +
-          Date.now(),
-          {
-            cache: 'no-store'
-          }
-        );
+      let daten = null;
+      let letzterFehler = null;
 
-      if (!antwort.ok) {
-        throw new Error(
-          'HTTP ' +
-          antwort.status
-        );
+      for (const pfad of DATEN_DATEIEN) {
+        try {
+          const antwort =
+            await fetch(
+              pfad +
+              '?v=' +
+              Date.now(),
+              {
+                cache: 'no-store'
+              }
+            );
+
+          if (!antwort.ok) {
+            throw new Error(
+              'HTTP ' +
+              antwort.status +
+              ' bei ' +
+              pfad
+            );
+          }
+
+          daten =
+            await antwort.json();
+
+          break;
+
+        } catch (fehler) {
+          letzterFehler = fehler;
+        }
       }
 
-      const daten =
-        await antwort.json();
+      if (!daten) {
+        throw letzterFehler ||
+          new Error('Neuigkeiten-Daten nicht erreichbar');
+      }
 
       if (
-        !daten ||
         !Array.isArray(daten.nachrichten)
       ) {
         throw new Error(
@@ -691,7 +712,7 @@
 
     } catch (fehler) {
       console.error(
-        'Neuigkeiten konnten nicht geladen werden:',
+        'data/neuigkeiten.json konnte nicht geladen werden:',
         fehler
       );
 
