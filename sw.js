@@ -1,8 +1,15 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 24
+   Version 25
 
-   Neu in Version 24:
+   Neu in Version 25:
+   - Bilddateien mit Großbuchstaben und/oder Leerzeichen wurden im Ordner
+     img/ auf einheitliche kleingeschriebene Dateinamen umgestellt.
+   - Leerzeichen in Bilddateinamen wurden durch Unterstriche ersetzt.
+   - Versionssprung leert alte v24-Runtime-Caches, damit keine alten
+     Bildpfade aus dem Browser-Cache weiterverwendet werden.
+
+   Weiter aus Version 24:
    - lokale JPG- und PNG-Dateien liegen gesammelt im Ordner img/.
    - alle vorgeladenen Bilder und PWA-Icons verwenden die neuen img/-Pfade.
    - der veraltete apple-touch-icon-Verweis wurde entfernt.
@@ -67,7 +74,7 @@
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v24';
+const CACHE_VERSION = 'v25';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 
