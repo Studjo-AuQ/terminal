@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="manifest.webmanifest">
     <meta name="theme-color" content="#b61f29">
-    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Studjo">
     <title>Studjo Terminal – Arbeitsbegleitende Angebote</title>
@@ -16,7 +15,7 @@
 
     <header>
         <div class="logo-container">
-            <img src="header.jpg" alt="Studjo Logo">
+            <img src="img/header.jpg" alt="Studjo Logo">
         </div>
     </header>
 
@@ -32,7 +31,7 @@
     <p style="color:var(--secondary-grey); margin:0; font-size:1.0rem; font-weight:500;">
                     Betriebsstätte <b>Werdohl</b>
                 </p>
-    <img src="bst-wd.jpg" alt="Foto Betriebsstätte Werdohl" class="location-img-large">
+    <img src="img/bst-wd.jpg" alt="Foto Betriebsstätte Werdohl" class="location-img-large">
 </div>
 
 <div class="week-banner">
@@ -117,7 +116,7 @@ const WOCHENTAGE_KURZ = ['So','Mo','Di','Mi','Do','Fr','Sa'];
 const ANGEBOTE = [
     // --- MONTAG ---
     {
-        name: 'Spazieren und Bewegung', bild: 'aba_spazieren.jpg',
+        name: 'Spazieren und Bewegung', bild: 'img/aba_spazieren.jpg',
         wochentag: 1,
         zeit: '10:15 – 11:15 Uhr',
         anbieter: 'Marianne R., Svenja R.',
@@ -129,7 +128,7 @@ const ANGEBOTE = [
 
     // --- DIENSTAG ---
     {
-        name: 'Sport und Bewegung', bild: 'aba_sportbewegung.jpg',
+        name: 'Sport und Bewegung', bild: 'img/aba_sportbewegung.jpg',
         wochentag: 2,
         zeit: '11:00 – 12:00 Uhr',
         anbieter: 'Enver Ü.',
@@ -141,7 +140,7 @@ const ANGEBOTE = [
 
     // --- MITTWOCH ---
     {
-        name: 'Snoezelen', bild: 'aba_snoezelen.jpg',
+        name: 'Snoezelen', bild: 'img/aba_snoezelen.jpg',
         wochentag: 3,
         zeit: '10:20 – 11:20 Uhr',
         anbieter: 'Ramona M.-J.',
@@ -151,7 +150,7 @@ const ANGEBOTE = [
         zielgruppe: 'MontagePlus'
     },
     {
-        name: 'Kreatives Gestalten', bild: 'aba_basteln.jpg',
+        name: 'Kreatives Gestalten', bild: 'img/aba_basteln.jpg',
         wochentag: 3,
         zeit: '10:15 – 11:15 Uhr',
         anbieter: 'Saskia B.-N.',
@@ -161,7 +160,7 @@ const ANGEBOTE = [
         zielgruppe: 'MontagePlus'
     },
     {
-        name: 'Vorlesen', bild: 'aba_vorlesen.jpg',
+        name: 'Vorlesen', bild: 'img/aba_vorlesen.jpg',
         wochentag: 3,
         zeit: '10:15 – 11:15 Uhr',
         anbieter: 'Marvin L.',
@@ -171,7 +170,7 @@ const ANGEBOTE = [
         zielgruppe: 'MontagePlus'
     },
     {
-        name: 'Spiele, Farben, Zahlen 1', bild: 'aba_spielefarbenzahlen.jpg',
+        name: 'Spiele, Farben, Zahlen 1', bild: 'img/aba_spielefarbenzahlen.jpg',
         wochentag: 3,
         zeit: '13:00 – 14:00 Uhr',
         anbieter: 'Melanie M.',
@@ -182,7 +181,7 @@ const ANGEBOTE = [
         zielgruppe: ''
     },
     {
-        name: 'Spiele, Farben, Zahlen 2', bild: 'aba_spielefarbenzahlen.jpg',
+        name: 'Spiele, Farben, Zahlen 2', bild: 'img/aba_spielefarbenzahlen.jpg',
         wochentag: 3,
         zeit: '13:00 – 14:00 Uhr',
         anbieter: 'Melanie M.',
@@ -195,7 +194,7 @@ const ANGEBOTE = [
 
     // --- DONNERSTAG ---
     {
-        name: 'Spazieren und Bewegung', bild: 'aba_spazieren.jpg',
+        name: 'Spazieren und Bewegung', bild: 'img/aba_spazieren.jpg',
         wochentag: 4,
         zeit: '11:00 – 12:00 Uhr',
         anbieter: 'Claudia M.r',
@@ -205,7 +204,7 @@ const ANGEBOTE = [
         zielgruppe: ''
     },
     {
-        name: 'Vorlesen', bild: 'aba_vorlesen.jpg',
+        name: 'Vorlesen', bild: 'img/aba_vorlesen.jpg',
         wochentag: 4,
         zeit: '10:30 – 11:30 Uhr',
         anbieter: 'Tania T.',
@@ -215,7 +214,7 @@ const ANGEBOTE = [
         zielgruppe: ''
     },
     {
-        name: 'Spiel, Spaß und Bewegung', bild: 'aba_spielspassbewegung.jpg',
+        name: 'Spiel, Spaß und Bewegung', bild: 'img/aba_spielspassbewegung.jpg',
         wochentag: 4,
         zeit: '13:15 – 14:15 Uhr',
         anbieter: 'Erika St.',
@@ -227,7 +226,7 @@ const ANGEBOTE = [
 
     // --- FREITAG ---
     {
-        name: 'Tischtennis / Kicker', bild: 'aba_tischtenniskicker.jpg',
+        name: 'Tischtennis / Kicker', bild: 'img/aba_tischtenniskicker.jpg',
         wochentag: 5,
         zeit: '13:00 – 14:00 Uhr',
         anbieter: 'Federico L.',
@@ -239,7 +238,7 @@ const ANGEBOTE = [
 
     // --- MONTAG (14-tägig) ---
     {
-        name: 'Mobilität und Verkehrssicherheit', bild: 'aba_mobil.jpg',
+        name: 'Mobilität und Verkehrssicherheit', bild: 'img/aba_mobil.jpg',
         wochentag: 1,
         zeit: '10:30 – 11:30 Uhr',
         anbieter: 'offen (Ausfall)',
@@ -254,7 +253,7 @@ const ANGEBOTE = [
 // Sonderangebote (Termine feststehend oder flexibel)
 const SONDER_ANGEBOTE = [
     {
-        name: 'Andacht', bild: 'aba_andacht.jpg',
+        name: 'Andacht', bild: 'img/aba_andacht.jpg',
         anbieter: 'Birgit Krömer',
         treffpunkt: 'offen',
         rhythmus: 'termine',

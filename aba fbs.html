@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="manifest.webmanifest">
     <meta name="theme-color" content="#b61f29">
-    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Studjo">
     <title>Studjo Terminal – Arbeitsbegleitende Angebote</title>
@@ -16,7 +15,7 @@
 
     <header>
         <div class="logo-container">
-            <img src="header.jpg" alt="Studjo Logo">
+            <img src="img/header.jpg" alt="Studjo Logo">
         </div>
     </header>
 
@@ -32,7 +31,7 @@
     <p style="color:var(--secondary-grey); margin:0; font-size:1.0rem; font-weight:500;">
                     Betriebsstätte <b>Freisenberg</b>
                 </p>
-    <img src="bst-fbs.jpg" alt="Foto Betriebsstätte Freisenberg" class="location-img-large">
+    <img src="img/bst-fbs.jpg" alt="Foto Betriebsstätte Freisenberg" class="location-img-large">
 </div>
 
 <div class="week-banner">
@@ -56,7 +55,7 @@
 <!--
     <div class="read-aloud-container">
         <button class="btn-read-aloud" onclick="vorlesenUndMarkieren()" title="Seite vorlesen">
-            <img src="zuhoeren.jpg" alt="Ohr-Symbol">
+            <img src="img/zuhoeren.jpg" alt="Ohr-Symbol">
             <span>Vorlesen</span>
         </button>
     </div>
@@ -124,7 +123,7 @@ const WOCHENTAGE_KURZ = ['So','Mo','Di','Mi','Do','Fr','Sa'];
 const ANGEBOTE = [
     // --- MONTAG ---
     {
-        name: 'Dart', bild: 'aba_dart.jpg',
+        name: 'Dart', bild: 'img/aba_dart.jpg',
         wochentag: 1,
         zeit: '13:00 – 14:00 Uhr',
         anbieter: 'Sebastian Q.',
@@ -134,7 +133,7 @@ const ANGEBOTE = [
         zielgruppe: ''
     },
     {
-        name: 'Basteln', bild: 'aba_basteln.jpg',
+        name: 'Basteln', bild: 'img/aba_basteln.jpg',
         wochentag: 1,
         zeit: '10:30 – 11:45 Uhr',
         anbieter: 'Claudia M., Katrin S.',
@@ -144,7 +143,7 @@ const ANGEBOTE = [
         zielgruppe: ''
     },
     {
-        name: 'Natur erleben – Kreatives Gestalten', bild: 'aba_naturkreativ.jpg',
+        name: 'Natur erleben – Kreatives Gestalten', bild: 'img/aba_naturkreativ.jpg',
         wochentag: 1,
         zeit: '10:00 – 11:00 Uhr',
         anbieter: 'Lena D.',
@@ -154,7 +153,7 @@ const ANGEBOTE = [
         zielgruppe: ''
     },
     {
-        name: 'Zirkus', bild: 'aba_zirkus.jpg',
+        name: 'Zirkus', bild: 'img/aba_zirkus.jpg',
         wochentag: 1,
         zeit: '10:00 – 11:00 Uhr',
         anbieter: 'Joel K.',
@@ -165,7 +164,7 @@ const ANGEBOTE = [
     },
     // --- DIENSTAG ---
     {
-        name: 'Mobilität und Verkehrssicherheit', bild: 'aba_mobil.jpg',
+        name: 'Mobilität und Verkehrssicherheit', bild: 'img/aba_mobil.jpg',
         wochentag: 2,
         zeit: '10:30 – 11:30 Uhr',
         anbieter: 'Egor H.',
@@ -175,7 +174,7 @@ const ANGEBOTE = [
         zielgruppe: ''
     },
     {
-        name: 'Bewegung und Tanz', bild: 'aba_bewegungtanz.jpg',
+        name: 'Bewegung und Tanz', bild: 'img/aba_bewegungtanz.jpg',
         wochentag: 2,
         zeit: '13:00 – 14:00 Uhr',
         anbieter: 'Ines B.',
@@ -185,7 +184,7 @@ const ANGEBOTE = [
         zielgruppe: 'AuTmo'
     },
     {
-        name: 'Entspannung 1', bild: 'aba_entspannung.jpg',
+        name: 'Entspannung 1', bild: 'img/aba_entspannung.jpg',
         wochentag: 2,
         zeit: '13:15 – 14:15 Uhr',
         anbieter: 'Meggy R.',
@@ -195,7 +194,7 @@ const ANGEBOTE = [
         zielgruppe: ''
     },
     {
-        name: 'Kreatives Gestalten', bild: 'aba_basteln.jpg',
+        name: 'Kreatives Gestalten', bild: 'img/aba_basteln.jpg',
         wochentag: 2,
         zeit: '13:30 – 14:00 Uhr',
         anbieter: 'Sarah R.',
@@ -205,7 +204,7 @@ const ANGEBOTE = [
         zielgruppe: 'MontagePlus'
     },
     {
-        name: 'Spazieren und Bewegung', bild: 'aba_spazieren.jpg',
+        name: 'Spazieren und Bewegung', bild: 'img/aba_spazieren.jpg',
         wochentag: 2,
         zeit: '13:00 – 14:00 Uhr',
         anbieter: 'Lisa R., Nikolaos A.',
@@ -218,7 +217,7 @@ const ANGEBOTE = [
         zielgruppe: 'MontagePlus'
     },
     {
-        name: 'Vorlesen', bild: 'aba_vorlesen.jpg',
+        name: 'Vorlesen', bild: 'img/aba_vorlesen.jpg',
         wochentag: 2,
         zeit: '13:15 – 14:15 Uhr',
         anbieter: 'Thomas H.',
@@ -229,7 +228,7 @@ const ANGEBOTE = [
     },
     // --- MITTWOCH ---
     {
-        name: 'Snoezelen', bild: 'aba_snoezelen.jpg',
+        name: 'Snoezelen', bild: 'img/aba_snoezelen.jpg',
         wochentag: 3,
         zeit: '13:00 – 14:00 Uhr',
         anbieter: 'Josch F.',
@@ -239,7 +238,7 @@ const ANGEBOTE = [
         zielgruppe: 'AuTmo'
     },
     {
-        name: 'Nachhaltigkeit und Umwelt', bild: 'aba_umwelt.jpg',
+        name: 'Nachhaltigkeit und Umwelt', bild: 'img/aba_umwelt.jpg',
         wochentag: 3,
         zeit: '13:00 – 14:00 Uhr',
         anbieter: 'Gerhard G.',
@@ -251,7 +250,7 @@ const ANGEBOTE = [
         zielgruppe: ''
     },
     {
-        name: 'Entspannung 2', bild: 'aba_entspannung.jpg',
+        name: 'Entspannung 2', bild: 'img/aba_entspannung.jpg',
         wochentag: 3,
         zeit: '11:00 – 12:00 Uhr',
         anbieter: 'Melanie W.',
@@ -263,7 +262,7 @@ const ANGEBOTE = [
     
     // --- DONNERSTAG ---
         {
-        name: 'Chor', bild: 'aba_chor.jpg',
+        name: 'Chor', bild: 'img/aba_chor.jpg',
         wochentag: 4,
         zeit: '13:00 – 14:00 Uhr',
         anbieter: 'Markus H., Christian J.',
@@ -274,7 +273,7 @@ const ANGEBOTE = [
     },
     // --- FREITAG ---
     {
-        name: 'Walken', bild: 'aba_walken.jpg',
+        name: 'Walken', bild: 'img/aba_walken.jpg',
         wochentag: 5,
         zeit: '10:30 – 12:00 Uhr',
         anbieter: 'Andreas F., Andreas H.',
@@ -284,7 +283,7 @@ const ANGEBOTE = [
         zielgruppe: ''
     },
     {
-        name: 'Vorlesen', bild: 'aba_vorlesen.jpg',
+        name: 'Vorlesen', bild: 'img/aba_vorlesen.jpg',
         wochentag: 5,
         zeit: '10:30 – 11:00 Uhr',
         anbieter: 'Giulio C.',
@@ -294,7 +293,7 @@ const ANGEBOTE = [
         zielgruppe: 'MontagePlus'
     },
     {
-        name: 'Disco', bild: 'aba_disco.jpg',
+        name: 'Disco', bild: 'img/aba_disco.jpg',
         wochentag: 5,
         zeit: '12:00 – 13:00 Uhr',
         anbieter: '',
@@ -308,7 +307,7 @@ const ANGEBOTE = [
 // Sonderangebote (Aushang/flexibel/Workshop)
 const SONDER_ANGEBOTE = [
     {
-        name: 'Erste-Hilfe und Brandschutz', bild: 'aba_erstehilfe.jpg',
+        name: 'Erste-Hilfe und Brandschutz', bild: 'img/aba_erstehilfe.jpg',
         anbieter: 'Fabian F., Willi H.',
         treffpunkt: 'Gr. Besprechungsraum',
         rhythmus: 'monatlich',
@@ -316,7 +315,7 @@ const SONDER_ANGEBOTE = [
         kategorie: 'sicherheit'
     },
         {
-        name: 'Andacht', bild: 'aba_andacht.jpg',
+        name: 'Andacht', bild: 'img/aba_andacht.jpg',
         anbieter: 'Birgit K.',
         treffpunkt: 'Gr. Besprechungsraum',
         rhythmus: 'alle3monate',
@@ -324,7 +323,7 @@ const SONDER_ANGEBOTE = [
         kategorie: 'sozial'
     },
     {
-        name: 'Tanzworkshop', bild: 'aba_tanzworkshop.jpg',
+        name: 'Tanzworkshop', bild: 'img/aba_tanzworkshop.jpg',
         anbieter: 'Thomas W.',
         treffpunkt: 'Kulturwerkstatt Alte Schule',
         rhythmus: 'workshop',

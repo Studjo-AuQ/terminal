@@ -51,7 +51,7 @@
 
       <button class="a11y-btn" id="btn-vorlesen"
               title="Seite vorlesen" aria-label="Seite vorlesen">
-        <img src="zuhoeren.jpg" alt="Vorlesen">
+        <img src="img/zuhoeren.jpg" alt="Vorlesen">
       </button>
 
     </div>

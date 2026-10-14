@@ -1,80 +1,792 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="manifest" href="manifest.webmanifest">
-<meta name="theme-color" content="#b61f29">
-<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#b61f29">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Studjo">
-<title>Datenschutz – Studjo Infoterminal</title>
-<style>
-:root{--rot:#b61f29;--bg:#f9f9f9;--text:#0f2f37;--grau:#8a8d8f}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:"Nunito Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column}
-header{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.06)}.logo-container{max-width:1200px;margin:0 auto}.logo-container img{width:100%;height:auto;display:block}
-main{flex:1;max-width:900px;margin:0 auto;padding:24px 20px 48px;width:100%}.top-bar{display:flex;align-items:center;gap:16px;margin-bottom:28px;flex-wrap:wrap}.back-button{display:inline-flex;align-items:center;gap:6px;background:#fff;color:var(--rot);border:2px solid var(--rot);border-radius:999px;padding:8px 20px;font-weight:700;font-size:.95rem;text-decoration:none;white-space:nowrap}.back-button:hover{background:var(--rot);color:#fff}h1{font-size:1.5rem;font-weight:800;color:var(--rot)}
-.karte{background:#fff;border-radius:16px;box-shadow:0 3px 12px rgba(0,0,0,.08);padding:28px 32px;margin-bottom:16px}.karte h2{font-size:1.05rem;font-weight:800;color:var(--rot);border-bottom:2px solid var(--rot);padding-bottom:8px;margin-bottom:16px}.karte h3{font-size:.94rem;font-weight:800;color:var(--text);margin:18px 0 7px}.karte p,.karte address{font-size:.9rem;line-height:1.8;color:#333;font-style:normal;margin-bottom:8px}.karte a{color:var(--rot)}.karte ul{margin:8px 0 8px 1.4rem}.karte li{font-size:.9rem;line-height:1.75;color:#333;margin-bottom:3px}.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}.karte table{width:100%;border-collapse:collapse;font-size:.86rem;margin-top:10px;min-width:720px}.karte th{background:#fde8e9;color:var(--rot);font-weight:800;padding:8px 12px;text-align:left;border:1px solid #f0d0d2}.karte td{padding:8px 12px;border:1px solid #eee;vertical-align:top;line-height:1.55}.karte tr:nth-child(even) td{background:#fafafa}
-.ok-box{background:#eafaea;border-left:3px solid #2a7a2a;border-radius:0 8px 8px 0;padding:10px 14px;font-size:.85rem;color:#1a4a1a;margin:10px 0;line-height:1.55}.hinweis-box{background:#eef5fb;border-left:3px solid #3378a3;border-radius:0 8px 8px 0;padding:10px 14px;font-size:.85rem;color:#234b62;margin:10px 0;line-height:1.55}
-@media(max-width:600px){.karte{padding:22px 18px}}
-footer{text-align:center;padding:16px;background:var(--rot);color:#fff;font-size:.85rem}footer a{color:rgba(255,255,255,.85);text-decoration:none;margin:0 8px}
-</style>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Studjo">
+  <title>Datenschutz – Studjo Infoterminal</title>
+
+  <style>
+    :root {
+      --rot: #b61f29;
+      --bg: #f9f9f9;
+      --text: #0f2f37;
+      --grau: #8a8d8f;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,.06);
+    }
+
+    .logo-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    main {
+      flex: 1;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px 20px 48px;
+      width: 100%;
+    }
+
+    .top-bar {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+
+    .back-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: white;
+      color: var(--rot);
+      border: 2px solid var(--rot);
+      border-radius: 999px;
+      padding: 8px 20px;
+      font-weight: 700;
+      font-size: .95rem;
+      text-decoration: none;
+      font-family: inherit;
+      transition: background .2s, color .2s;
+      white-space: nowrap;
+    }
+
+    .back-button:hover {
+      background: var(--rot);
+      color: white;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--rot);
+    }
+
+    .karte {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 3px 12px rgba(0,0,0,.08);
+      padding: 28px 32px;
+      margin-bottom: 16px;
+    }
+
+    .karte h2 {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--rot);
+      border-bottom: 2px solid var(--rot);
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+    }
+
+    .karte h3 {
+      font-size: .94rem;
+      font-weight: 800;
+      color: var(--text);
+      margin: 18px 0 7px;
+    }
+
+    .karte p,
+    .karte address {
+      font-size: .9rem;
+      line-height: 1.8;
+      color: #333;
+      font-style: normal;
+      margin-bottom: 8px;
+    }
+
+    .karte p:last-child {
+      margin-bottom: 0;
+    }
+
+    .karte a {
+      color: var(--rot);
+    }
+
+    .karte a:hover {
+      text-decoration: underline;
+    }
+
+    .karte ul {
+      margin: 8px 0 8px 1.4rem;
+    }
+
+    .karte li {
+      font-size: .9rem;
+      line-height: 1.75;
+      color: #333;
+      margin-bottom: 3px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .karte table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .86rem;
+      margin-top: 10px;
+      min-width: 720px;
+    }
+
+    .karte th {
+      background: #fde8e9;
+      color: var(--rot);
+      font-weight: 800;
+      padding: 8px 12px;
+      text-align: left;
+      border: 1px solid #f0d0d2;
+    }
+
+    .karte td {
+      padding: 8px 12px;
+      border: 1px solid #eee;
+      vertical-align: top;
+      line-height: 1.55;
+    }
+
+    .karte tr:nth-child(even) td {
+      background: #fafafa;
+    }
+
+    .ok-box {
+      background: #eafaea;
+      border-left: 3px solid #2a7a2a;
+      border-radius: 0 8px 8px 0;
+      padding: 10px 14px;
+      font-size: .85rem;
+      color: #1a4a1a;
+      margin: 10px 0;
+      line-height: 1.55;
+    }
+
+    .hinweis-box {
+      background: #eef5fb;
+      border-left: 3px solid #3378a3;
+      border-radius: 0 8px 8px 0;
+      padding: 10px 14px;
+      font-size: .85rem;
+      color: #234b62;
+      margin: 10px 0;
+      line-height: 1.55;
+    }
+
+    @media (max-width: 600px) {
+      .karte {
+        padding: 22px 18px;
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 16px;
+      background: var(--rot);
+      color: white;
+      font-size: .85rem;
+    }
+
+    footer a {
+      color: rgba(255,255,255,.85);
+      text-decoration: none;
+      margin: 0 8px;
+    }
+  </style>
 </head>
+
 <body>
-<header><div class="logo-container"><img src="header.jpg" alt="Studjo – Arbeit und Qualifizierung"></div></header>
+
+<header>
+  <div class="logo-container">
+    <img src="img/header.jpg"
+         alt="Studjo – Arbeit und Qualifizierung">
+  </div>
+</header>
+
 <main>
-<div class="top-bar"><a href="index.html" class="back-button" target="_self">← Zurück</a><h1 id="seitenanfang">🔒 Datenschutzerklärung</h1></div>
+  <div class="top-bar">
+    <a href="index.html"
+       class="back-button"
+       target="_self">← Zurück</a>
 
-<div class="karte"><h2>1. Verantwortlicher für die Datenverarbeitung</h2><p>Verantwortliche Stelle für dieses Angebot ist die Ev. Johanneswerk gGmbH. Vergleichen Sie dazu auch unser <a href="impressum.html">Impressum</a>.</p><address>Evangelisches Johanneswerk gGmbH<br>Studjo | Arbeit und Qualifizierung<br>Freisenbergstraße 33<br>58513 Lüdenscheid<br>Telefon: +49 0 23 51 95 80-0<br>E-Mail: <a href="mailto:christoph.pasch@johanneswerk.de">christoph.pasch@johanneswerk.de</a></address></div>
+    <h1 id="seitenanfang">🔒 Datenschutzerklärung</h1>
+  </div>
 
-<div class="karte"><h2>2. Datenschutzbeauftragter</h2><p>Der Datenschutzbeauftragte des Evangelischen Johanneswerks ist erreichbar unter:</p><address>Niels Kill<br>c/o Althammer &amp; Kill GmbH &amp; Co. KG<br>Roscherstraße 7<br>30161 Hannover<br>Telefon: +49 511 33 06 03-0<br>E-Mail: <a href="mailto:johanneswerk@ak-datenschutz.de">johanneswerk@ak-datenschutz.de</a><br><a href="https://www.althammer-kill.de" target="_blank" rel="noopener noreferrer">www.althammer-kill.de</a></address></div>
 
-<div class="karte"><h2>3. Welche Daten werden verarbeitet?</h2><div class="ok-box">✓ <strong>Kurz zusammengefasst:</strong> Das Studjo Infoterminal verwendet keine Werbe-Cookies, kein Tracking, keine Analyse-Tools und kein Kontaktformular. Es gibt keine Nutzerkonten. Es werden insbesondere keine Geburtstage, Gesundheitsdaten oder vergleichbare sensible Angaben von Werkstattbeschäftigten veröffentlicht. Bei einzelnen Terminen kann ausschließlich eine freigegebene dienstliche Kontaktperson genannt werden.</div><p>Beim Aufruf der Website fallen technisch Verbindungsdaten an, insbesondere IP-Adresse, Datum und Uhrzeit des Abrufs, aufgerufene Datei sowie Browser- und Geräteinformationen. Beim derzeitigen Hosting entstehen diese Daten insbesondere beim Hosting-Anbieter GitHub Pages.</p><p>Die Website lädt keine Schriftart von Google Fonts oder einem anderen externen Schriftarten-Anbieter. Verwendet werden lokal beziehungsweise auf dem Gerät vorhandene Schriften.</p><div class="hinweis-box">Einige Funktionen speichern rein technische Einstellungen <strong>nur lokal im Browser auf dem jeweiligen Gerät</strong>. Diese Daten werden durch diese Funktionen nicht an Studjo oder an einen Analysedienst übertragen. Mehr dazu in Abschnitt 9.</div></div>
+  <!-- 1 -->
+  <div class="karte">
+    <h2>1. Verantwortlicher für die Datenverarbeitung</h2>
 
-<div class="karte"><h2>4. Übersicht der Verarbeitungsvorgänge</h2><div class="table-wrap"><table>
-<tr><th>Dienst / Technologie</th><th>Zweck</th><th>Mögliche technische Daten</th><th>Auslösung</th><th>Anbieter / Ort</th></tr>
-<tr><td><strong>GitHub Pages</strong></td><td>Hosting der Website</td><td>IP-Adresse, Zugriffszeit, aufgerufene Datei, Browser-/Gerätedaten</td><td>Beim Seitenaufruf</td><td>GitHub, Inc., USA</td></tr>
-<tr><td><strong>ConSense / Johanneswerk-Intranet</strong></td><td>Aktuelle interne Dokumente und Informationen</td><td>Technische Verbindungsdaten innerhalb der jeweiligen Infrastruktur</td><td>Erst beim Anklicken des Links</td><td>Evangelisches Johanneswerk / internes System</td></tr>
-<tr><td><strong>LearningApps.org</strong></td><td>Interaktive Lernübungen</td><td>IP-Adresse sowie Browser-/Geräteinformationen</td><td><strong>Erst nach Klick auf „Zustimmen und Übung laden“</strong></td><td>LearningApps.org</td></tr>
-<tr><td><strong>mobil.nrw</strong></td><td>Fahrplanauskunft</td><td>IP-Adresse sowie Browser-/Geräteinformationen</td><td><strong>Erst nach Zustimmung</strong></td><td>mobil.nrw</td></tr>
-<tr><td><strong>VRR Abfahrtsmonitor</strong></td><td>Aktuelle Abfahrtszeiten</td><td>IP-Adresse sowie Browser-/Geräteinformationen</td><td><strong>Erst nach Zustimmung</strong></td><td>Verkehrsverbund Rhein-Ruhr AöR</td></tr>
-<tr><td><strong>Lokaler Browserspeicher</strong></td><td>Bedienkomfort, Einstellungen und Offline-Funktion</td><td>Technische Einstellungen ohne Benutzerkonto</td><td>Nur lokal auf dem verwendeten Gerät</td><td>Browser / Gerät</td></tr>
-</table></div></div>
+    <p>
+      Verantwortliche Stelle für dieses Angebot ist die
+      Ev. Johanneswerk gGmbH. Vergleichen Sie dazu auch unser
+      <a href="impressum.html">Impressum</a>.
+    </p>
 
-<div class="karte"><h2>5. Hosting: GitHub Pages</h2><p>Diese Website wird derzeit als statische Website auf <strong>GitHub Pages</strong> gehostet, einem Dienst der GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA.</p><p>Beim Abruf von Seiten verarbeitet GitHub technisch notwendige Server-Logdaten, darunter insbesondere die IP-Adresse des anfragenden Geräts.</p><p>Weitere Informationen: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">Datenschutzerklärung von GitHub</a>.</p></div>
+    <address>
+      Evangelisches Johanneswerk gGmbH<br>
+      Studjo | Arbeit und Qualifizierung<br>
+      Freisenbergstraße 33<br>
+      58513 Lüdenscheid<br>
+      Telefon: +49 0 23 51 95 80-0<br>
+      E-Mail:
+      <a href="mailto:christoph.pasch@johanneswerk.de">
+        christoph.pasch@johanneswerk.de
+      </a>
+    </address>
+  </div>
 
-<div class="karte"><h2>6. Externe Links, ConSense und Nachrichten</h2><h3>ConSense und interne Johanneswerk-Inhalte</h3><p>Mehrere Kacheln des Terminals verweisen direkt auf Dokumente oder Informationen im internen Qualitätsmanagement-System ConSense. Dadurch kann die jeweils dort bereitgestellte aktuelle Fassung eines Dokuments aufgerufen werden. Das Terminal hält diese Dokumente nicht als eigene Kopie vor.</p><p>Eine Verbindung zum internen Ziel entsteht erst nach einer bewussten Bestätigung. Beim ersten Klick auf einen internen ConSense-Link zeigt das Studjo Terminal zunächst einen Hinweis. Erst mit „ConSense öffnen“ wird die interne Zielseite in einem neuen Tab aufgerufen.</p><h3>Allgemeine Nachrichten</h3><p>Inhalte von Deutschlandfunk / Nachrichtenleicht, Tagesschau und kobinet-nachrichten werden derzeit serverseitig automatisiert abgerufen und anschließend als statische JSON-Dateien im Ordner <strong>data/</strong> des Terminals bereitgestellt.</p><p><strong>Externe Bilder aus den RSS-Feeds werden nicht übernommen.</strong> Dadurch lädt der Browser beim Lesen der Nachrichten keine Nachrichtenbilder direkt von diesen Anbietern oder deren Bild-/CDN-Servern nach.</p><p>Beim normalen Lesen der bereits bereitgestellten Nachrichten findet deshalb kein direkter Browserabruf bei diesen Nachrichtenanbietern statt.</p></div>
 
-<div class="karte"><h2>7. Externe Inhalte mit vorheriger Zustimmung</h2><p>Einige Funktionen werden bewusst erst nach einer aktiven Entscheidung des Nutzers geladen. Vor dem Klick wird keine externe Seite in das jeweilige iframe eingesetzt.</p><h3>LearningApps.org</h3><p>Die Lernübungen zu Werkstattrat, Gewaltschutz und Arbeitssicherheit werden von LearningApps.org bereitgestellt. Beim Öffnen der Studjo-Seite wird die LearningApp <strong>noch nicht geladen</strong>.</p><p>Erst nach dem Klick auf <strong>„Zustimmen und Übung laden“</strong> erhält das eingebettete Fenster die Adresse von LearningApps.org. Erst dann wird eine Verbindung zu LearningApps.org aufgebaut. Dabei können insbesondere IP-Adresse sowie technische Informationen zu Browser und Gerät an LearningApps.org übertragen werden.</p><p>Die Zustimmung wird vom Studjo Terminal nicht gespeichert. Beim erneuten Aufruf muss erneut aktiv zugestimmt werden.</p><h3>mobil.nrw und VRR</h3><p>Auch die eingebetteten Fahrplan- und Abfahrtsdienste werden erst nach aktiver Zustimmung geladen. Ohne diesen Klick findet über das jeweilige iframe keine Verbindung zum Anbieter statt.</p><p>Informationen zum Datenschutz von mobil.nrw: <a href="https://www.mobil.nrw/datenschutz.html" target="_blank" rel="noopener noreferrer">mobil.nrw/datenschutz.html</a></p><p>Informationen zum Datenschutz des VRR: <a href="https://www.vrr.de/datenschutz/" target="_blank" rel="noopener noreferrer">vrr.de/datenschutz</a></p></div>
+  <!-- 2 -->
+  <div class="karte">
+    <h2>2. Datenschutzbeauftragter</h2>
 
-<div class="karte"><h2>8. Termine und NRW-Schulferien</h2><p>Termine und NRW-Schulferien werden im Studjo Terminal aus der lokalen Datei <strong>data/termine.json</strong> geladen. Diese Datei liegt zusammen mit den übrigen Datendateien im Ordner <strong>data/</strong> auf demselben Server.</p><p>Für die Anzeige der Schulferien wird <strong>keine externe Schulferien-Webseite und keine externe API</strong> aufgerufen. Beim Öffnen des Kalenders entsteht deshalb keine zusätzliche Verbindung zu einem Schulferien-Anbieter.</p><p>Die landesweit festgelegten Ferienzeiten für Nordrhein-Westfalen werden manuell in der zentralen Datei gepflegt. Bewegliche Ferientage einzelner Schulen gehören nicht automatisch zu dieser landesweiten Liste.</p><p>Bei Andachten kann optional ein dienstlicher Ansprechpartner angezeigt werden. Hierfür sollen nur freigegebene dienstliche Angaben verwendet werden. Namen oder andere personenbezogene Angaben von Werkstattbeschäftigten werden in der Terminpflege nicht vorgesehen.</p></div>
+    <p>
+      Der Datenschutzbeauftragte des Evangelischen Johanneswerks
+      ist erreichbar unter:
+    </p>
 
-<div class="karte"><h2>9. Lokaler Browserspeicher und Offline-Funktion</h2><p>Das Studjo Terminal verwendet an einigen Stellen <strong>localStorage</strong> sowie den technischen <strong>Browser-Cache / Cache Storage</strong>. Dies dient ausschließlich der Bedienung und Funktionsfähigkeit.</p><p>Zum Beispiel können lokal gespeichert werden:</p><ul><li>Einstellung der Schriftgröße und weiterer Bedienhilfen,</li><li>Aktiv-/Inaktiv-Einstellung des Gongs,</li><li>lokale Einstellungen zur Kacheldarstellung,</li><li>technische Zeitpunkte für das Offline-Vorladen,</li><li>Seiten und lokale Dateien für die Offline-Nutzung.</li></ul><div class="ok-box">✓ Diese lokalen Einstellungen sind nicht mit einem Benutzerkonto verbunden.<br>✓ Das Studjo Terminal sendet diese lokalen Einstellungen nicht an Studjo, GitHub oder einen Analysedienst.<br>✓ Es werden damit keine Nutzungsprofile erstellt.</div><p>Die lokal gespeicherten Daten können durch das Löschen der Website-Daten bzw. des Browser-Speichers auf dem jeweiligen Gerät entfernt werden.</p></div>
+    <address>
+      Niels Kill<br>
+      c/o Althammer &amp; Kill GmbH &amp; Co. KG<br>
+      Roscherstraße 7<br>
+      30161 Hannover<br>
+      Telefon: +49 511 33 06 03-0<br>
+      E-Mail:
+      <a href="mailto:johanneswerk@ak-datenschutz.de">
+        johanneswerk@ak-datenschutz.de
+      </a><br>
+      <a href="https://www.althammer-kill.de"
+         target="_blank"
+         rel="noopener">
+        www.althammer-kill.de
+      </a>
+    </address>
+  </div>
 
-<div class="karte"><h2>10. Cookies und Tracking</h2><div class="ok-box">✓ Das Studjo Infoterminal setzt selbst keine Werbe- oder Analyse-Cookies.<br>✓ Es verwendet keine Analyse- oder Tracking-Werkzeuge.<br>✓ Es gibt keine Nutzerkonten und keine Anmeldung.<br>✓ Es gibt kein Kontaktformular.<br>✓ Die Zustimmung zu LearningApps, mobil.nrw und VRR wird vom Studjo Terminal nicht dauerhaft gespeichert.</div><p>Externe Anbieter können nach einer bewusst ausgelösten Verbindung eigene technische Verfahren einsetzen. Dafür gelten die Datenschutzbestimmungen des jeweiligen Anbieters.</p></div>
 
-<div class="karte"><h2>11. Ihre Rechte als betroffene Person</h2><p>Ihnen stehen nach den jeweils anwendbaren Datenschutzvorschriften insbesondere Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und gegebenenfalls Widerspruch zu.</p><p>Fragen zum Datenschutz können an den Verantwortlichen oder den oben genannten Datenschutzbeauftragten gerichtet werden.</p></div>
-<div class="karte"><h2>12. Beschwerderecht</h2><p>Sie können sich bei der für das Evangelische Johanneswerk zuständigen Datenschutzaufsicht über eine Verarbeitung personenbezogener Daten beschweren.</p><p>Wegen der kirchlichen Trägerschaft sollte die konkret zuständige Datenschutzaufsicht in der freigegebenen Datenschutzerklärung entsprechend den Vorgaben des Evangelischen Johanneswerks benannt werden.</p></div>
-<div class="karte"><h2>13. Aktualität und Änderung dieser Datenschutzerklärung</h2><p>Diese Datenschutzerklärung hat den Stand: <strong>Oktober 2026 – Phase 3</strong>.</p><p>Sie wird angepasst, wenn sich die eingesetzten Dienste oder die technische Bereitstellung des Studjo Terminals ändern.</p><div class="hinweis-box"><strong>Hinweis:</strong> Diese technische Beschreibung sollte wegen der strengen Datenschutzvorgaben des Evangelischen Johanneswerks vor der endgültigen Freigabe durch die zuständige Datenschutzstelle beziehungsweise den Datenschutzbeauftragten geprüft werden.</div></div>
+  <!-- 3 -->
+  <div class="karte">
+    <h2>3. Welche Daten werden verarbeitet?</h2>
+
+    <div class="ok-box">
+      ✓ <strong>Kurz zusammengefasst:</strong>
+      Das Studjo Infoterminal verwendet keine Werbe-Cookies,
+      kein Tracking, keine Analyse-Tools und kein Kontaktformular.
+      Es gibt keine Nutzerkonten. Es werden insbesondere keine Geburtstage, Gesundheitsdaten oder vergleichbare sensible Angaben von Werkstattbeschäftigten veröffentlicht. Bei einzelnen Terminen kann ausschließlich eine freigegebene dienstliche Kontaktperson genannt werden.
+    </div>
+
+    <p>
+      Beim Aufruf der Website fallen technisch Verbindungsdaten an,
+      insbesondere IP-Adresse, Datum und Uhrzeit des Abrufs,
+      aufgerufene Datei sowie Browser- und Geräteinformationen.
+      Beim derzeitigen Hosting entstehen diese Daten insbesondere
+      beim Hosting-Anbieter GitHub Pages.
+    </p>
+
+    <p>
+      Die Website lädt keine Schriftart von Google Fonts oder einem
+      anderen externen Schriftarten-Anbieter. Verwendet werden
+      lokal beziehungsweise auf dem Gerät vorhandene Schriften.
+    </p>
+
+    <div class="hinweis-box">
+      Einige Funktionen speichern rein technische Einstellungen
+      <strong>nur lokal im Browser auf dem jeweiligen Gerät</strong>.
+      Diese Daten werden durch diese Funktionen nicht an Studjo
+      oder an einen Analysedienst übertragen. Mehr dazu in Abschnitt 9.
+    </div>
+  </div>
+
+
+  <!-- 4 -->
+  <div class="karte">
+    <h2>4. Übersicht der Verarbeitungsvorgänge</h2>
+
+    <div class="table-wrap">
+      <table>
+        <tr>
+          <th>Dienst / Technologie</th>
+          <th>Zweck</th>
+          <th>Mögliche technische Daten</th>
+          <th>Auslösung</th>
+          <th>Anbieter / Ort</th>
+        </tr>
+
+        <tr>
+          <td><strong>GitHub Pages</strong></td>
+          <td>Hosting der Website</td>
+          <td>IP-Adresse, Zugriffszeit, aufgerufene Datei, Browser-/Gerätedaten</td>
+          <td>Beim Seitenaufruf</td>
+          <td>GitHub, Inc., USA</td>
+        </tr>
+
+        <tr>
+          <td><strong>ConSense / Johanneswerk-Intranet</strong></td>
+          <td>Aktuelle interne Dokumente und Informationen</td>
+          <td>Technische Verbindungsdaten innerhalb der jeweiligen Infrastruktur</td>
+          <td>Erst beim Anklicken des Links</td>
+          <td>Evangelisches Johanneswerk / internes System</td>
+        </tr>
+
+        <tr>
+          <td><strong>LearningApps.org</strong></td>
+          <td>Interaktive Lernübungen</td>
+          <td>IP-Adresse sowie Browser-/Geräteinformationen</td>
+          <td><strong>Erst nach Klick auf „Zustimmen und Übung laden“</strong></td>
+          <td>LearningApps.org</td>
+        </tr>
+
+        <tr>
+          <td><strong>mobil.nrw</strong></td>
+          <td>Fahrplanauskunft</td>
+          <td>IP-Adresse sowie Browser-/Geräteinformationen</td>
+          <td><strong>Erst nach Zustimmung</strong></td>
+          <td>mobil.nrw</td>
+        </tr>
+
+        <tr>
+          <td><strong>VRR Abfahrtsmonitor</strong></td>
+          <td>Aktuelle Abfahrtszeiten</td>
+          <td>IP-Adresse sowie Browser-/Geräteinformationen</td>
+          <td><strong>Erst nach Zustimmung</strong></td>
+          <td>Verkehrsverbund Rhein-Ruhr AöR</td>
+        </tr>
+
+        <tr>
+          <td><strong>Lokaler Browserspeicher</strong></td>
+          <td>Bedienkomfort, Einstellungen und Offline-Funktion</td>
+          <td>Technische Einstellungen ohne Benutzerkonto</td>
+          <td>Nur lokal auf dem verwendeten Gerät</td>
+          <td>Browser / Gerät</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+  <!-- 5 -->
+  <div class="karte">
+    <h2>5. Hosting: GitHub Pages</h2>
+
+    <p>
+      Diese Website wird derzeit als statische Website auf
+      <strong>GitHub Pages</strong> gehostet, einem Dienst der
+      GitHub, Inc., 88 Colin P. Kelly Jr. Street,
+      San Francisco, CA 94107, USA.
+    </p>
+
+    <p>
+      Beim Abruf von Seiten verarbeitet GitHub technisch notwendige
+      Server-Logdaten, darunter insbesondere die IP-Adresse des
+      anfragenden Geräts.
+    </p>
+
+    <p>
+      Weitere Informationen:
+      <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+         target="_blank"
+         rel="noopener">
+        Datenschutzerklärung von GitHub
+      </a>.
+    </p>
+  </div>
+
+
+  <!-- 6 -->
+  <div class="karte">
+    <h2>6. Externe Links, ConSense und Nachrichten</h2>
+
+    <h3>ConSense und interne Johanneswerk-Inhalte</h3>
+
+    <p>
+      Mehrere Kacheln des Terminals verweisen direkt auf Dokumente
+      oder Informationen im internen Qualitätsmanagement-System
+      ConSense. Dadurch kann die jeweils dort bereitgestellte aktuelle
+      Fassung eines Dokuments aufgerufen werden. Das Terminal hält
+      diese Dokumente nicht als eigene Kopie vor.
+    </p>
+
+    <p>
+      Eine Verbindung zum internen Ziel entsteht erst nach einer bewussten Bestätigung. Beim ersten Klick auf einen internen ConSense-Link zeigt das Studjo Terminal zunächst einen Hinweis. Erst mit „ConSense öffnen“ wird die interne Zielseite in einem neuen Tab aufgerufen.
+    </p>
+
+    <h3>Allgemeine Nachrichten</h3>
+
+    <p>
+      Inhalte von Deutschlandfunk / Nachrichtenleicht,
+      Tagesschau und kobinet-nachrichten werden derzeit
+      serverseitig automatisiert abgerufen und anschließend als
+      statische JSON-Dateien im Ordner <strong>data/</strong>
+      des Terminals bereitgestellt.
+    </p>
+
+    <p>
+      <strong>Externe Bilder aus den RSS-Feeds werden nicht übernommen.</strong>
+      Dadurch lädt der Browser beim Lesen der Nachrichten keine
+      Nachrichtenbilder direkt von diesen Anbietern oder deren
+      Bild-/CDN-Servern nach.
+    </p>
+
+    <p>
+      Beim normalen Lesen der bereits bereitgestellten Nachrichten
+      findet deshalb kein direkter Browserabruf bei diesen
+      Nachrichtenanbietern statt.
+    </p>
+  </div>
+
+
+  <!-- 7 -->
+  <div class="karte">
+    <h2>7. Externe Inhalte mit vorheriger Zustimmung</h2>
+
+    <p>
+      Einige Funktionen werden bewusst erst nach einer aktiven
+      Entscheidung des Nutzers geladen. Vor dem Klick wird keine
+      externe Seite in das jeweilige iframe eingesetzt.
+    </p>
+
+    <h3>LearningApps.org</h3>
+
+    <p>
+      Die Lernübungen zu Werkstattrat, Gewaltschutz und
+      Arbeitssicherheit werden von LearningApps.org bereitgestellt.
+      Beim Öffnen der Studjo-Seite wird die LearningApp
+      <strong>noch nicht geladen</strong>.
+    </p>
+
+    <p>
+      Erst nach dem Klick auf
+      <strong>„Zustimmen und Übung laden“</strong>
+      erhält das eingebettete Fenster die Adresse von LearningApps.org.
+      Erst dann wird eine Verbindung zu LearningApps.org aufgebaut.
+      Dabei können insbesondere IP-Adresse sowie technische Informationen
+      zu Browser und Gerät an LearningApps.org übertragen werden.
+    </p>
+
+    <p>
+      Die Zustimmung wird vom Studjo Terminal nicht gespeichert.
+      Beim erneuten Aufruf muss erneut aktiv zugestimmt werden.
+    </p>
+
+    <h3>mobil.nrw und VRR</h3>
+
+    <p>
+      Auch die eingebetteten Fahrplan- und Abfahrtsdienste werden
+      erst nach aktiver Zustimmung geladen. Ohne diesen Klick findet
+      über das jeweilige iframe keine Verbindung zum Anbieter statt.
+    </p>
+
+    <p>
+      Informationen zum Datenschutz von mobil.nrw:
+      <a href="https://www.mobil.nrw/datenschutz.html"
+         target="_blank"
+         rel="noopener">
+        mobil.nrw/datenschutz.html
+      </a>
+    </p>
+
+    <p>
+      Informationen zum Datenschutz des VRR:
+      <a href="https://www.vrr.de/datenschutz/"
+         target="_blank"
+         rel="noopener">
+        vrr.de/datenschutz
+      </a>
+    </p>
+  </div>
+
+
+  <!-- 8 -->
+  <div class="karte">
+    <h2>8. Termine und NRW-Schulferien</h2>
+
+    <p>
+      Termine und NRW-Schulferien werden im Studjo Terminal aus der
+      lokalen Datei <strong>data/termine.json</strong> geladen.
+      Diese Datei liegt zusammen mit den übrigen Datendateien im Ordner
+      <strong>data/</strong> auf demselben Server.
+    </p>
+
+    <p>
+      Für die Anzeige der Schulferien wird
+      <strong>keine externe Schulferien-Webseite und keine externe API</strong>
+      aufgerufen. Beim Öffnen des Kalenders entsteht deshalb keine
+      zusätzliche Verbindung zu einem Schulferien-Anbieter.
+    </p>
+
+    <p>
+      Die landesweit festgelegten Ferienzeiten für Nordrhein-Westfalen
+      werden manuell in der zentralen Datei gepflegt.
+      Bewegliche Ferientage einzelner Schulen gehören nicht automatisch
+      zu dieser landesweiten Liste.
+    </p>
+
+    <p>
+      Bei Andachten kann optional ein dienstlicher Ansprechpartner
+      angezeigt werden. Hierfür sollen nur freigegebene dienstliche
+      Angaben verwendet werden. Namen oder andere personenbezogene
+      Angaben von Werkstattbeschäftigten werden in der Terminpflege
+      nicht vorgesehen.
+    </p>
+  </div>
+
+<!-- 9 -->
+  <div class="karte">
+    <h2>9. Lokaler Browserspeicher und Offline-Funktion</h2>
+
+    <p>
+      Das Studjo Terminal verwendet an einigen Stellen
+      <strong>localStorage</strong> sowie den technischen
+      <strong>Browser-Cache / Cache Storage</strong>.
+      Dies dient ausschließlich der Bedienung und Funktionsfähigkeit.
+    </p>
+
+    <p>Zum Beispiel können lokal gespeichert werden:</p>
+
+    <ul>
+      <li>Einstellung der Schriftgröße und weiterer Bedienhilfen,</li>
+      <li>Aktiv-/Inaktiv-Einstellung des Gongs,</li>
+      <li>lokale Einstellungen zur Kacheldarstellung,</li>
+      <li>technische Zeitpunkte für das Offline-Vorladen,</li>
+      <li>Seiten und lokale Dateien für die Offline-Nutzung.</li>
+    </ul>
+
+    <div class="ok-box">
+      ✓ Diese lokalen Einstellungen sind nicht mit einem Benutzerkonto
+      verbunden.<br>
+      ✓ Das Studjo Terminal sendet diese lokalen Einstellungen nicht an
+      Studjo, GitHub oder einen Analysedienst.<br>
+      ✓ Es werden damit keine Nutzungsprofile erstellt.
+    </div>
+
+    <p>
+      Die lokal gespeicherten Daten können durch das Löschen der
+      Website-Daten bzw. des Browser-Speichers auf dem jeweiligen
+      Gerät entfernt werden.
+    </p>
+  </div>
+
+
+  <!-- 10 -->
+  <div class="karte">
+    <h2>10. Cookies und Tracking</h2>
+
+    <div class="ok-box">
+      ✓ Das Studjo Infoterminal setzt selbst keine Werbe- oder
+      Analyse-Cookies.<br>
+      ✓ Es verwendet keine Analyse- oder Tracking-Werkzeuge.<br>
+      ✓ Es gibt keine Nutzerkonten und keine Anmeldung.<br>
+      ✓ Es gibt kein Kontaktformular.<br>
+      ✓ Die Zustimmung zu LearningApps, mobil.nrw und VRR wird
+      vom Studjo Terminal nicht dauerhaft gespeichert.
+    </div>
+
+    <p>
+      Externe Anbieter können nach einer bewusst ausgelösten
+      Verbindung eigene technische Verfahren einsetzen.
+      Dafür gelten die Datenschutzbestimmungen des jeweiligen Anbieters.
+    </p>
+  </div>
+
+
+  <!-- 11 -->
+  <div class="karte">
+    <h2>11. Ihre Rechte als betroffene Person</h2>
+
+    <p>
+      Ihnen stehen nach den jeweils anwendbaren Datenschutzvorschriften
+      insbesondere Rechte auf Auskunft, Berichtigung, Löschung,
+      Einschränkung der Verarbeitung und gegebenenfalls Widerspruch zu.
+    </p>
+
+    <p>
+      Fragen zum Datenschutz können an den Verantwortlichen oder
+      den oben genannten Datenschutzbeauftragten gerichtet werden.
+    </p>
+  </div>
+
+
+  <!-- 12 -->
+  <div class="karte">
+    <h2>12. Beschwerderecht</h2>
+
+    <p>
+      Sie können sich bei der für das Evangelische Johanneswerk
+      zuständigen Datenschutzaufsicht über eine Verarbeitung
+      personenbezogener Daten beschweren.
+    </p>
+
+    <p>
+      Wegen der kirchlichen Trägerschaft sollte die konkret zuständige
+      Datenschutzaufsicht in der freigegebenen Datenschutzerklärung
+      entsprechend den Vorgaben des Evangelischen Johanneswerks
+      benannt werden.
+    </p>
+  </div>
+
+
+  <!-- 13 -->
+  <div class="karte">
+    <h2>13. Aktualität und Änderung dieser Datenschutzerklärung</h2>
+
+    <p>
+      Diese Datenschutzerklärung hat den Stand:
+      <strong>Oktober 2026 – Phase 3</strong>.
+    </p>
+
+    <p>
+      Sie wird angepasst, wenn sich die eingesetzten Dienste oder
+      die technische Bereitstellung des Studjo Terminals ändern.
+    </p>
+
+    <div class="hinweis-box">
+      <strong>Hinweis:</strong>
+      Diese technische Beschreibung sollte wegen der strengen
+      Datenschutzvorgaben des Evangelischen Johanneswerks vor der
+      endgültigen Freigabe durch die zuständige Datenschutzstelle
+      beziehungsweise den Datenschutzbeauftragten geprüft werden.
+    </div>
+  </div>
+
 </main>
-<footer style="position:relative;text-align:center;padding:10px 60px;background:#b61f29;color:#fff;font-size:.85rem;line-height:1.6;">
-© 2026 <strong>Studjo | Arbeit und Qualifizierung</strong> · Evangelisches Johanneswerk gGmbH<br>
-<a href="index.html" class="footer-home-link" style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">Startseite</a> |
-<a href="uebersicht.html" style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">Übersicht</a> |
-<a href="impressum.html" style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">Impressum</a> |
-<a href="datenschutz.html" style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">Datenschutz</a>
-<button type="button" onclick="document.getElementById('qr-overlay').style.display='flex'" aria-label="QR-Code zum Scannen anzeigen" style="position:absolute;right:14px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.55);border-radius:8px;width:38px;height:38px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.25rem;padding:0;color:#fff;line-height:1;">📱</button>
-<button type="button" onclick="document.getElementById('seitenanfang').scrollIntoView({behavior:'smooth',block:'start'})" aria-label="Nach oben zur Seitenüberschrift scrollen" style="position:absolute;left:14px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.55);border-radius:8px;width:38px;height:38px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.25rem;padding:0;color:#fff;line-height:1;">⬆️</button>
+
+
+<footer style="
+  position: relative;
+  text-align: center;
+  padding: 10px 60px;
+  background: #b61f29;
+  color: #ffffff;
+  font-size: 0.85rem;
+  line-height: 1.6;
+">
+  © 2026 <strong>Studjo | Arbeit und Qualifizierung</strong>
+  · Evangelisches Johanneswerk gGmbH
+  <br>
+
+  <a href="index.html"
+     class="footer-home-link"
+     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Startseite
+  </a>
+   |
+  <a href="uebersicht.html"
+     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Übersicht
+  </a>
+   |
+  <a href="impressum.html"
+     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Impressum
+  </a>
+   |
+  <a href="datenschutz.html"
+     style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">
+    Datenschutz
+  </a>
+
+  <button type="button"
+          onclick="document.getElementById('qr-overlay').style.display='flex'"
+          aria-label="QR-Code zum Scannen anzeigen"
+          style="position:absolute; right:14px; top:50%;
+                 transform:translateY(-50%);
+                 background:rgba(255,255,255,.18);
+                 border:2px solid rgba(255,255,255,.55);
+                 border-radius:8px; width:38px; height:38px;
+                 cursor:pointer; display:flex; align-items:center;
+                 justify-content:center; font-size:1.25rem;
+                 padding:0; color:#fff; line-height:1;">
+    📱
+  </button>
+
+  <button type="button"
+          onclick="document.getElementById('seitenanfang').scrollIntoView({behavior:'smooth',block:'start'})"
+          aria-label="Nach oben zur Seitenüberschrift scrollen"
+          style="position:absolute; left:14px; top:50%;
+                 transform:translateY(-50%);
+                 background:rgba(255,255,255,.18);
+                 border:2px solid rgba(255,255,255,.55);
+                 border-radius:8px; width:38px; height:38px;
+                 cursor:pointer; display:flex; align-items:center;
+                 justify-content:center; font-size:1.25rem;
+                 padding:0; color:#fff; line-height:1;">
+    ⬆️
+  </button>
 </footer>
-<div id="qr-overlay" onclick="this.style.display='none'" style="display:none;position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.6);align-items:center;justify-content:center;padding:20px;">
-<div onclick="event.stopPropagation()" style="background:#fff;border-radius:16px;padding:30px 30px 24px;text-align:center;max-width:320px;position:relative;box-shadow:0 10px 40px rgba(0,0,0,.35);">
-<button type="button" onclick="document.getElementById('qr-overlay').style.display='none'" aria-label="Schließen" style="position:absolute;top:10px;right:10px;background:#f1f1f1;border:0;border-radius:50%;width:32px;height:32px;font-size:1.1rem;cursor:pointer;">✕</button>
-<img src="qr-terminal.jpg" alt="QR-Code zur Studjo-Terminal-Seite" style="width:220px;height:220px;display:block;margin:0 auto 16px;">
-<p style="font-size:1rem;color:#0f2f37;margin:0 0 6px;font-weight:700;">Mit dem Handy scannen</p>
-<p style="font-size:.85rem;color:#8a8d8f;margin:0;word-break:break-all;">studjo-auq.github.io/terminal</p>
-</div></div>
+
+
+<div id="qr-overlay"
+     onclick="this.style.display='none'"
+     style="display:none; position:fixed; inset:0; z-index:2000;
+            background:rgba(0,0,0,.6);
+            align-items:center; justify-content:center; padding:20px;">
+
+  <div onclick="event.stopPropagation()"
+       style="background:#fff; border-radius:16px;
+              padding:30px 30px 24px; text-align:center;
+              max-width:320px; position:relative;
+              box-shadow:0 10px 40px rgba(0,0,0,.35);">
+
+    <button type="button"
+            onclick="document.getElementById('qr-overlay').style.display='none'"
+            aria-label="Schließen"
+            style="position:absolute; top:10px; right:10px;
+                   background:#f1f1f1; border:none; border-radius:50%;
+                   width:32px; height:32px; font-size:1.1rem;
+                   cursor:pointer; line-height:1;">
+      ✕
+    </button>
+
+    <img src="img/qr-terminal.jpg"
+         alt="QR-Code zur Studjo-Terminal-Seite"
+         style="width:220px;height:220px;display:block;margin:0 auto 16px;">
+
+    <p style="font-size:1rem; color:#0f2f37;
+              margin:0 0 6px; font-weight:700;">
+      Mit dem Handy scannen
+    </p>
+
+    <p style="font-size:.85rem; color:#8a8d8f;
+              margin:0; word-break:break-all;">
+      studjo-auq.github.io/terminal
+    </p>
+  </div>
+</div>
+
 <script src="gong.js"></script>
 </body>
 </html>
