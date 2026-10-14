@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#b61f29">
-<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Studjo">
@@ -26,223 +25,683 @@
   --color-bildung:#0277bd;
   --bg-bildung:#e1f5fe;
 }
+
 * { box-sizing:border-box; }
+
 body {
   font-family:"Nunito Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
-  margin:0;background:var(--bg-color);color:var(--text-color);
-  min-height:100vh;display:flex;flex-direction:column;
+  margin:0;
+  background:var(--bg-color);
+  color:var(--text-color);
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
 }
-header {background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.05);}
-.logo-container {max-width:1200px;margin:0 auto;}
-.logo-container img {width:100%;height:auto;display:block;}
-main {flex:1;max-width:1400px;margin:0 auto;width:95%;padding:20px 20px 120px;}
-.page-header-row {display:flex;align-items:center;flex-wrap:wrap;gap:18px;margin-bottom:12px;}
-.page-header-row h1 {margin:0;text-align:left;font-weight:800;color:var(--primary-red);font-size:2rem;}
-.back-button {display:inline-flex;align-items:center;gap:8px;flex-shrink:0;padding:10px 24px;border:2px solid var(--primary-red);border-radius:999px;background:#fff;color:var(--primary-red);font-weight:700;font-size:1rem;text-decoration:none;}
-.back-button:hover {background:var(--primary-red);color:#fff;}
-.seiten-hinweis {color:var(--secondary-grey);margin:0 0 22px;font-size:1rem;font-weight:600;}
-.termine-grid {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:24px;align-items:start;}
-.termine-column {background:#fff;border-radius:14px;box-shadow:0 4px 12px rgba(0,0,0,.07);overflow:hidden;border-top:6px solid #ccc;min-width:0;}
-.termine-header {display:flex;align-items:center;justify-content:space-between;gap:8px;padding:12px 12px 12px 16px;font-weight:800;font-size:1.05rem;color:#fff;}
-.termine-header-titel {flex:1;min-width:0;line-height:1.2;}
-.termine-vorlesen-btn {flex-shrink:0;background:rgba(255,255,255,.25);border:0;border-radius:50%;width:38px;height:38px;font-size:1.15rem;cursor:pointer;display:flex;align-items:center;justify-content:center;}
-.termine-vorlesen-btn:hover {background:rgba(255,255,255,.45);}
-.termine-vorlesen-btn.aktiv {background:#ffe600;transform:scale(1.08);}
+
+header {
+  background:#fff;
+  box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+.logo-container {
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.logo-container img {
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+main {
+  flex:1;
+  max-width:1400px;
+  margin:0 auto;
+  width:95%;
+  padding:20px 20px 120px;
+}
+
+.page-header-row {
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:18px;
+  margin-bottom:12px;
+}
+
+.page-header-row h1 {
+  margin:0;
+  text-align:left;
+  font-weight:800;
+  color:var(--primary-red);
+  font-size:2rem;
+}
+
+.back-button {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  flex-shrink:0;
+  padding:10px 24px;
+  border:2px solid var(--primary-red);
+  border-radius:999px;
+  background:#fff;
+  color:var(--primary-red);
+  font-weight:700;
+  font-size:1rem;
+  text-decoration:none;
+}
+
+.back-button:hover {
+  background:var(--primary-red);
+  color:#fff;
+}
+
+.seiten-hinweis {
+  color:var(--secondary-grey);
+  margin:0 0 22px;
+  font-size:1rem;
+  font-weight:600;
+}
+
+/* Desktop: exakt vier fachliche Spalten.
+   Tablet/Smartphone: dieselben vier Bereiche responsiv angeordnet. */
+.termine-grid {
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:18px;
+  margin-top:24px;
+  align-items:start;
+}
+
+.termine-column {
+  background:#fff;
+  border-radius:14px;
+  box-shadow:0 4px 12px rgba(0,0,0,.07);
+  overflow:hidden;
+  border-top:6px solid #ccc;
+  min-width:0;
+}
+
+.termine-header {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  padding:12px 12px 12px 16px;
+  font-weight:800;
+  font-size:1.05rem;
+  color:#fff;
+}
+
+.termine-header-titel {
+  flex:1;
+  min-width:0;
+  line-height:1.2;
+}
+
+.termine-vorlesen-btn {
+  flex-shrink:0;
+  background:rgba(255,255,255,.25);
+  border:0;
+  border-radius:50%;
+  width:38px;
+  height:38px;
+  font-size:1.15rem;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.termine-vorlesen-btn:hover {
+  background:rgba(255,255,255,.45);
+}
+
+.termine-vorlesen-btn.aktiv {
+  background:#ffe600;
+  transform:scale(1.08);
+}
+
 .cat-sozial { border-top-color:var(--color-sozial); }
 .cat-sozial .termine-header { background:var(--color-sozial); }
 .cat-sozial .event-card { border-left-color:var(--color-sozial); background:var(--bg-sozial); }
+
 .cat-special { border-top-color:var(--color-special); }
 .cat-special .termine-header { background:var(--color-special); }
 .cat-special .event-card { border-left-color:var(--color-special); background:var(--bg-special); }
+
 .cat-sicherheit { border-top-color:var(--color-sicherheit); }
 .cat-sicherheit .termine-header { background:var(--color-sicherheit); }
 .cat-sicherheit .event-card { border-left-color:var(--color-sicherheit); background:var(--bg-sicherheit); }
+
 .cat-bildung { border-top-color:var(--color-bildung); }
 .cat-bildung .termine-header { background:var(--color-bildung); }
 .cat-bildung .event-card { border-left-color:var(--color-bildung); background:var(--bg-bildung); }
-.events-container {padding:12px;display:flex;flex-direction:column;gap:10px;}
-.event-card {position:relative;border-radius:9px;padding:12px 54px 12px 14px;border-left:4px solid #ccc;box-shadow:0 1px 3px rgba(0,0,0,.06);min-height:62px;}
-.event-date {font-weight:800;font-size:1.02rem;margin-bottom:5px;color:var(--text-color);}
-.event-title {font-weight:800;font-size:.95rem;color:#333;}
-.event-time,.event-contact {font-size:.9rem;color:#4f565a;margin-top:4px;}
-.event-note {font-size:.84rem;color:#62686b;margin-top:7px;padding-top:7px;border-top:1px dashed rgba(0,0,0,.14);}
-.bst-icon-container {position:absolute;top:10px;right:9px;display:flex;gap:3px;}
-.bst-icon {width:38px;height:38px;border-radius:6px;object-fit:cover;border:1px solid rgba(0,0,0,.12);background:#fff;}
-.leer-hinweis,.lade-hinweis,.fehler-hinweis {padding:22px 10px;text-align:center;color:#62686b;font-size:.92rem;font-weight:600;line-height:1.45;}
+
+.events-container {
+  padding:12px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.event-card {
+  position:relative;
+  border-radius:9px;
+  padding:12px 54px 12px 14px;
+  border-left:4px solid #ccc;
+  box-shadow:0 1px 3px rgba(0,0,0,.06);
+  min-height:62px;
+}
+
+.event-date {
+  font-weight:800;
+  font-size:1.02rem;
+  margin-bottom:5px;
+  color:var(--text-color);
+}
+
+.event-title {
+  font-weight:800;
+  font-size:.95rem;
+  color:#333;
+}
+
+.event-time,
+.event-contact {
+  font-size:.9rem;
+  color:#4f565a;
+  margin-top:4px;
+}
+
+.event-note {
+  font-size:.84rem;
+  color:#62686b;
+  margin-top:7px;
+  padding-top:7px;
+  border-top:1px dashed rgba(0,0,0,.14);
+}
+
+.bst-icon-container {
+  position:absolute;
+  top:10px;
+  right:9px;
+  display:flex;
+  gap:3px;
+}
+
+.bst-icon {
+  width:38px;
+  height:38px;
+  border-radius:6px;
+  object-fit:cover;
+  border:1px solid rgba(0,0,0,.12);
+  background:#fff;
+}
+
+.leer-hinweis,
+.lade-hinweis,
+.fehler-hinweis {
+  padding:22px 10px;
+  text-align:center;
+  color:#62686b;
+  font-size:.92rem;
+  font-weight:600;
+  line-height:1.45;
+}
+
 .fehler-hinweis { color:#8b1f27; }
-@media (max-width:1100px) {.termine-grid {grid-template-columns:repeat(2,minmax(0,1fr));}}
+
+@media (max-width:1100px) {
+  .termine-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
 @media (max-width:620px) {
-  main {width:100%;padding:16px 12px 110px;}
-  .termine-grid {grid-template-columns:1fr;}
-  .page-header-row h1 {width:100%;font-size:1.55rem;}
+  main {
+    width:100%;
+    padding:16px 12px 110px;
+  }
+
+  .termine-grid {
+    grid-template-columns:1fr;
+  }
+
+  .page-header-row h1 {
+    width:100%;
+    font-size:1.55rem;
+  }
 }
 </style>
 </head>
+
 <body>
-<header><div class="logo-container"><img src="header.jpg" alt="Studjo Logo"></div></header>
+
+<header>
+  <div class="logo-container">
+    <img src="img/header.jpg" alt="Studjo Logo">
+  </div>
+</header>
+
 <main>
   <div class="page-header-row">
-    <a href="index.html" target="_self" class="back-button"><span aria-hidden="true">←</span> Zurück</a>
+    <a href="index.html" target="_self" class="back-button">
+      <span aria-hidden="true">←</span> Zurück
+    </a>
+
     <h1 id="seitenanfang">📅 Termine bei Studjo</h1>
-    <button type="button" onclick="document.getElementById('info-popup').style.display='flex'" aria-label="Kurze Info anzeigen" style="margin-left:auto;flex-shrink:0;background:#fff;border:3px solid #b61f29;border-radius:50%;width:52px;height:52px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.9rem;padding:0;line-height:1;">ℹ️</button>
+
+    <button type="button"
+            onclick="document.getElementById('info-popup').style.display='flex'"
+            aria-label="Kurze Info anzeigen"
+            style="margin-left:auto;flex-shrink:0;background:#fff;border:3px solid #b61f29;
+                   border-radius:50%;width:52px;height:52px;cursor:pointer;display:flex;
+                   align-items:center;justify-content:center;font-size:1.9rem;padding:0;line-height:1;">
+      ℹ️
+    </button>
   </div>
+
   <p class="seiten-hinweis">Übersicht aller wichtigen Veranstaltungen</p>
+
   <div data-kalender-einbetten></div>
+
   <div class="termine-grid">
     <section class="termine-column cat-sozial" data-kategorie="andachten">
-      <div class="termine-header"><span class="termine-header-titel">⛪ Andacht/Gespräch</span><button type="button" class="termine-vorlesen-btn" onclick="vorleseSpalte(this)" aria-label="Andachten vorlesen">👂</button></div>
+      <div class="termine-header">
+        <span class="termine-header-titel">⛪ Andacht/Gespräch</span>
+        <button type="button" class="termine-vorlesen-btn"
+                onclick="vorleseSpalte(this)"
+                aria-label="Andachten vorlesen">👂</button>
+      </div>
       <div class="events-container"><div class="lade-hinweis">Termine werden geladen …</div></div>
     </section>
+
     <section class="termine-column cat-special" data-kategorie="werkstattfeste">
-      <div class="termine-header"><span class="termine-header-titel">🎉 Werkstattfeste</span><button type="button" class="termine-vorlesen-btn" onclick="vorleseSpalte(this)" aria-label="Werkstattfeste vorlesen">👂</button></div>
+      <div class="termine-header">
+        <span class="termine-header-titel">🎉 Werkstattfeste</span>
+        <button type="button" class="termine-vorlesen-btn"
+                onclick="vorleseSpalte(this)"
+                aria-label="Werkstattfeste vorlesen">👂</button>
+      </div>
       <div class="events-container"><div class="lade-hinweis">Termine werden geladen …</div></div>
     </section>
+
     <section class="termine-column cat-sicherheit" data-kategorie="schliessungstage">
-      <div class="termine-header"><span class="termine-header-titel">🛑 Schließungstage</span><button type="button" class="termine-vorlesen-btn" onclick="vorleseSpalte(this)" aria-label="Schließungstage vorlesen">👂</button></div>
+      <div class="termine-header">
+        <span class="termine-header-titel">🛑 Schließungstage</span>
+        <button type="button" class="termine-vorlesen-btn"
+                onclick="vorleseSpalte(this)"
+                aria-label="Schließungstage vorlesen">👂</button>
+      </div>
       <div class="events-container"><div class="lade-hinweis">Termine werden geladen …</div></div>
     </section>
+
     <section class="termine-column cat-bildung" data-kategorie="weitere">
-      <div class="termine-header"><span class="termine-header-titel">📅 Weitere Termine</span><button type="button" class="termine-vorlesen-btn" onclick="vorleseSpalte(this)" aria-label="Weitere Termine vorlesen">👂</button></div>
+      <div class="termine-header">
+        <span class="termine-header-titel">📅 Weitere Termine</span>
+        <button type="button" class="termine-vorlesen-btn"
+                onclick="vorleseSpalte(this)"
+                aria-label="Weitere Termine vorlesen">👂</button>
+      </div>
       <div class="events-container"><div class="lade-hinweis">Termine werden geladen …</div></div>
     </section>
   </div>
 </main>
+
 <script>
 (function () {
   'use strict';
-  const MONATE = ['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'];
-  const WOCHENTAGE = ['So','Mo','Di','Mi','Do','Fr','Sa'];
+
+  const MONATE = [
+    'Januar','Februar','März','April','Mai','Juni',
+    'Juli','August','September','Oktober','November','Dezember'
+  ];
+
+  const WOCHENTAGE = [
+    'So','Mo','Di','Mi','Do','Fr','Sa'
+  ];
 
   function parseIso(text) {
     const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(text || ''));
     if (!m) return null;
+
     const d = new Date(Number(m[1]), Number(m[2])-1, Number(m[3]));
-    if (d.getFullYear() !== Number(m[1]) || d.getMonth() !== Number(m[2])-1 || d.getDate() !== Number(m[3])) return null;
+    if (
+      d.getFullYear() !== Number(m[1]) ||
+      d.getMonth() !== Number(m[2])-1 ||
+      d.getDate() !== Number(m[3])
+    ) return null;
+
     return d;
   }
+
   function formatEinzelDatum(iso) {
-    const d = parseIso(iso); if (!d) return iso || '';
-    return WOCHENTAGE[d.getDay()] + ', ' + d.getDate() + '. ' + MONATE[d.getMonth()] + ' ' + d.getFullYear();
+    const d = parseIso(iso);
+    if (!d) return iso || '';
+
+    return WOCHENTAGE[d.getDay()] + ', ' +
+           d.getDate() + '. ' +
+           MONATE[d.getMonth()] + ' ' +
+           d.getFullYear();
   }
+
   function formatZeitraum(von, bis) {
     if (!bis || bis === von) return formatEinzelDatum(von);
-    const a = parseIso(von), b = parseIso(bis); if (!a || !b) return formatEinzelDatum(von);
-    const tagA = WOCHENTAGE[a.getDay()], tagB = WOCHENTAGE[b.getDay()];
-    if (a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth()) return tagA + ', ' + a.getDate() + '. bis ' + tagB + ', ' + b.getDate() + '. ' + MONATE[b.getMonth()] + ' ' + b.getFullYear();
-    if (a.getFullYear() === b.getFullYear()) return tagA + ', ' + a.getDate() + '. ' + MONATE[a.getMonth()] + ' bis ' + tagB + ', ' + b.getDate() + '. ' + MONATE[b.getMonth()] + ' ' + b.getFullYear();
+
+    const a = parseIso(von);
+    const b = parseIso(bis);
+    if (!a || !b) return formatEinzelDatum(von);
+
+    const tagA = WOCHENTAGE[a.getDay()];
+    const tagB = WOCHENTAGE[b.getDay()];
+
+    if (a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth()) {
+      return tagA + ', ' + a.getDate() + '. bis ' +
+             tagB + ', ' + b.getDate() + '. ' +
+             MONATE[b.getMonth()] + ' ' + b.getFullYear();
+    }
+
+    if (a.getFullYear() === b.getFullYear()) {
+      return tagA + ', ' + a.getDate() + '. ' + MONATE[a.getMonth()] +
+             ' bis ' + tagB + ', ' + b.getDate() + '. ' +
+             MONATE[b.getMonth()] + ' ' + b.getFullYear();
+    }
+
     return formatEinzelDatum(von) + ' bis ' + formatEinzelDatum(bis);
   }
-  function htmlSicher(text) {return String(text ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#039;');}
+
+  function htmlSicher(text) {
+    return String(text ?? '')
+      .replace(/&/g,'&amp;')
+      .replace(/</g,'&lt;')
+      .replace(/>/g,'&gt;')
+      .replace(/"/g,'&quot;')
+      .replace(/'/g,'&#039;');
+  }
+
   function istNochAktuell(termin) {
-    const heute = new Date(); heute.setHours(0,0,0,0);
-    const ende = parseIso(termin.bis || termin.von); if (!ende) return false; ende.setHours(0,0,0,0);
+    const heute = new Date();
+    heute.setHours(0,0,0,0);
+
+    const ende = parseIso(termin.bis || termin.von);
+    if (!ende) return false;
+    ende.setHours(0,0,0,0);
+
     return ende >= heute;
   }
+
   function bereinigterOrt(termin) {
-    const roh = String(termin.ort || termin.titel || '').trim();
-    return roh.replace(/^\s*(?:Betriebsstätte|BST)\s+/i, '').trim();
+    const roh = String(
+      termin.ort ||
+      termin.titel ||
+      ''
+    ).trim();
+
+    return roh
+      .replace(/^\s*(?:Betriebsstätte|BST)\s+/i, '')
+      .trim();
   }
+
   function karteHtml(termin) {
     const ort = bereinigterOrt(termin);
-    const bildHtml = termin.bild ? '<div class="bst-icon-container"><img src="' + htmlSicher(termin.bild) + '" class="bst-icon" alt="Gebäude ' + htmlSicher(ort) + '"></div>' : '';
-    const zeitHtml = termin.uhrzeit ? '<div class="event-time">🕐 ' + htmlSicher(termin.uhrzeit) + '</div>' : '';
-    const kontaktHtml = termin.ansprechpartner ? '<div class="event-contact">👤 ' + htmlSicher(termin.ansprechpartner) + '</div>' : '';
-    const hinweisHtml = termin.hinweis ? '<div class="event-note">' + htmlSicher(termin.hinweis) + '</div>' : '';
-    return `<article class="event-card" data-datum="${htmlSicher(termin.bis || termin.von)}" data-start="${htmlSicher(termin.von)}">${bildHtml}<div class="event-date">${htmlSicher(formatZeitraum(termin.von, termin.bis))}</div><div class="event-title">${htmlSicher(ort)}</div>${zeitHtml}${kontaktHtml}${hinweisHtml}</article>`;
+
+    const bildHtml = termin.bild
+      ? '<div class="bst-icon-container">' +
+        '<img src="' + htmlSicher(termin.bild) +
+        '" class="bst-icon" alt="Gebäude ' + htmlSicher(ort) + '">' +
+        '</div>'
+      : '';
+
+    const zeitHtml = termin.uhrzeit
+      ? '<div class="event-time">🕐 ' + htmlSicher(termin.uhrzeit) + '</div>'
+      : '';
+
+    const kontaktHtml = termin.ansprechpartner
+      ? '<div class="event-contact">👤 ' + htmlSicher(termin.ansprechpartner) + '</div>'
+      : '';
+
+    const hinweisHtml = termin.hinweis
+      ? '<div class="event-note">' + htmlSicher(termin.hinweis) + '</div>'
+      : '';
+
+    return `
+      <article class="event-card"
+               data-datum="${htmlSicher(termin.bis || termin.von)}"
+               data-start="${htmlSicher(termin.von)}">
+        ${bildHtml}
+        <div class="event-date">${htmlSicher(formatZeitraum(termin.von, termin.bis))}</div>
+        <div class="event-title">${htmlSicher(ort)}</div>
+        ${zeitHtml}
+        ${kontaktHtml}
+        ${hinweisHtml}
+      </article>
+    `;
   }
+
   function renderSpalten(daten) {
     const termine = Array.isArray(daten.termine) ? daten.termine : [];
+
     document.querySelectorAll('.termine-column[data-kategorie]').forEach(spalte => {
-      const kategorie = spalte.dataset.kategorie, container = spalte.querySelector('.events-container');
-      const liste = termine.filter(t => t.kategorie === kategorie).filter(istNochAktuell).sort((a,b) => String(a.von).localeCompare(String(b.von)));
-      container.innerHTML = liste.length ? liste.map(karteHtml).join('') : '<div class="leer-hinweis">Aktuell stehen hier keine kommenden Termine.</div>';
+      const kategorie = spalte.dataset.kategorie;
+      const container = spalte.querySelector('.events-container');
+
+      const liste = termine
+        .filter(t => t.kategorie === kategorie)
+        .filter(istNochAktuell)
+        .sort((a,b) => String(a.von).localeCompare(String(b.von)));
+
+      container.innerHTML = liste.length
+        ? liste.map(karteHtml).join('')
+        : '<div class="leer-hinweis">Aktuell stehen hier keine kommenden Termine.</div>';
     });
   }
+
   async function ladeTermine() {
     try {
       let daten = null, letzterFehler = null;
       for (const pfad of ['data/termine.json', 'termine.json']) {
         try {
-          const r = await fetch(pfad + '?v=' + Date.now(), { cache: 'no-store' });
-          if (!r.ok) throw new Error('HTTP ' + r.status + ' bei ' + pfad);
-          daten = await r.json(); break;
-        } catch (fehler) { letzterFehler = fehler; }
+          const r = await fetch(pfad + '?v=' + Date.now());
+          if (!r.ok) throw new Error('HTTP ' + r.status);
+          daten = await r.json();
+          break;
+        } catch (fehler) {
+          letzterFehler = fehler;
+        }
       }
+
       if (!daten) throw letzterFehler || new Error('Termindaten nicht erreichbar');
+
       window.StudjoTermineDaten = daten;
       renderSpalten(daten);
+
     } catch (fehler) {
       console.error('[Studjo Termine] data/termine.json konnte nicht geladen werden:', fehler);
-      document.querySelectorAll('.events-container').forEach(container => {container.innerHTML = '<div class="fehler-hinweis">Die Termine konnten gerade nicht geladen werden.</div>';});
+      document.querySelectorAll('.events-container').forEach(container => {
+        container.innerHTML =
+          '<div class="fehler-hinweis">Die Termine konnten gerade nicht geladen werden.</div>';
+      });
     }
   }
+
   window.bereiteVorlesenText = function (text) {
     text = String(text || '').replace(/\p{Extended_Pictographic}/gu,'');
-    text = text.replace(/(\d{1,2}[:.]\d{2})\s*[–—-]\s*(\d{1,2}[:.]\d{2})/g,'von $1 bis $2');
+    text = text.replace(
+      /(\d{1,2}[:.]\d{2})\s*[–—-]\s*(\d{1,2}[:.]\d{2})/g,
+      'von $1 bis $2'
+    );
     return text.replace(/\s+/g,' ').trim();
   };
+
   window.vorleseSpalte = function (button) {
-    if (!('speechSynthesis' in window)) {alert('Dein Browser unterstützt leider keine Sprachausgabe.');return;}
-    const warAktiv = button.classList.contains('aktiv'); window.speechSynthesis.cancel();
-    document.querySelectorAll('.termine-vorlesen-btn.aktiv').forEach(b => b.classList.remove('aktiv'));
+    if (!('speechSynthesis' in window)) {
+      alert('Dein Browser unterstützt leider keine Sprachausgabe.');
+      return;
+    }
+
+    const warAktiv = button.classList.contains('aktiv');
+    window.speechSynthesis.cancel();
+
+    document.querySelectorAll('.termine-vorlesen-btn.aktiv')
+      .forEach(b => b.classList.remove('aktiv'));
+
     if (warAktiv) return;
+
     const spalte = button.closest('.termine-column');
-    const titel = window.bereiteVorlesenText(spalte.querySelector('.termine-header-titel').innerText);
+    const titel = window.bereiteVorlesenText(
+      spalte.querySelector('.termine-header-titel').innerText
+    );
+
     const abschnitte = [titel + '.'];
+
     spalte.querySelectorAll('.event-card').forEach(karte => {
       const teile = [];
-      karte.querySelectorAll('.event-date, .event-title, .event-time, .event-contact, .event-note').forEach(el => {const text = window.bereiteVorlesenText(el.innerText);if (text) teile.push(text);});
+
+      karte.querySelectorAll(
+        '.event-date, .event-title, .event-time, .event-contact, .event-note'
+      ).forEach(el => {
+        const text = window.bereiteVorlesenText(el.innerText);
+        if (text) teile.push(text);
+      });
+
       if (teile.length) abschnitte.push(teile.join(', ') + '.');
     });
-    if (abschnitte.length === 1) abschnitte.push('Hier stehen aktuell keine Termine.');
-    const ansage = new SpeechSynthesisUtterance(abschnitte.join(' ')); ansage.lang = 'de-DE'; ansage.rate = 0.95;
-    ansage.onend = () => button.classList.remove('aktiv'); ansage.onerror = () => button.classList.remove('aktiv');
-    button.classList.add('aktiv'); window.speechSynthesis.speak(ansage);
+
+    if (abschnitte.length === 1) {
+      abschnitte.push('Hier stehen aktuell keine Termine.');
+    }
+
+    const ansage = new SpeechSynthesisUtterance(abschnitte.join(' '));
+    ansage.lang = 'de-DE';
+    ansage.rate = 0.95;
+    ansage.onend = () => button.classList.remove('aktiv');
+    ansage.onerror = () => button.classList.remove('aktiv');
+
+    button.classList.add('aktiv');
+    window.speechSynthesis.speak(ansage);
   };
+
   ladeTermine();
 })();
 </script>
+
 <footer style="position:relative;text-align:center;padding:10px 60px;background:#b61f29;color:#fff;font-size:.85rem;line-height:1.6;">
-  © 2026 <strong>Studjo | Arbeit und Qualifizierung</strong> · Evangelisches Johanneswerk gGmbH<br>
-  <a href="index.html" class="footer-home-link" style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">Startseite</a> |
-  <a href="uebersicht.html" style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">Übersicht</a> |
-  <a href="impressum.html" style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">Impressum</a> |
+  © 2026 <strong>Studjo | Arbeit und Qualifizierung</strong> · Evangelisches Johanneswerk gGmbH
+  <br>
+  <a href="index.html" class="footer-home-link" style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">Startseite</a>
+  |
+  <a href="uebersicht.html" style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">Übersicht</a>
+  |
+  <a href="impressum.html" style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">Impressum</a>
+  |
   <a href="datenschutz.html" style="color:rgba(255,255,255,.85);text-decoration:none;margin:0 6px">Datenschutz</a>
-  <button type="button" onclick="document.getElementById('qr-overlay').style.display='flex'" aria-label="QR-Code zum Scannen anzeigen" style="position:absolute;right:14px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.55);border-radius:8px;width:38px;height:38px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.25rem;padding:0;color:#fff;">📱</button>
-  <button type="button" onclick="document.getElementById('seitenanfang').scrollIntoView({behavior:'smooth',block:'start'})" aria-label="Nach oben zur Seitenüberschrift scrollen" style="position:absolute;left:14px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.55);border-radius:8px;width:38px;height:38px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.25rem;padding:0;color:#fff;">⬆️</button>
+
+  <button type="button"
+          onclick="document.getElementById('qr-overlay').style.display='flex'"
+          aria-label="QR-Code zum Scannen anzeigen"
+          style="position:absolute;right:14px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.55);border-radius:8px;width:38px;height:38px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.25rem;padding:0;color:#fff;">📱</button>
+
+  <button type="button"
+          onclick="document.getElementById('seitenanfang').scrollIntoView({behavior:'smooth',block:'start'})"
+          aria-label="Nach oben zur Seitenüberschrift scrollen"
+          style="position:absolute;left:14px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.55);border-radius:8px;width:38px;height:38px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.25rem;padding:0;color:#fff;">⬆️</button>
 </footer>
-<div id="qr-overlay" onclick="this.style.display='none'" style="display:none;position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.6);align-items:center;justify-content:center;padding:20px;">
-  <div onclick="event.stopPropagation()" style="background:#fff;border-radius:16px;padding:30px 30px 24px;text-align:center;max-width:320px;position:relative;box-shadow:0 10px 40px rgba(0,0,0,.35);">
-    <button type="button" onclick="document.getElementById('qr-overlay').style.display='none'" aria-label="Schließen" style="position:absolute;top:10px;right:10px;background:#f1f1f1;border:none;border-radius:50%;width:32px;height:32px;font-size:1.1rem;cursor:pointer;">✕</button>
-    <img src="qr-terminal.jpg" alt="QR-Code zur Studjo-Terminal-Seite" style="width:220px;height:220px;display:block;margin:0 auto 16px;">
+
+<div id="qr-overlay"
+     onclick="this.style.display='none'"
+     style="display:none;position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.6);align-items:center;justify-content:center;padding:20px;">
+  <div onclick="event.stopPropagation()"
+       style="background:#fff;border-radius:16px;padding:30px 30px 24px;text-align:center;max-width:320px;position:relative;box-shadow:0 10px 40px rgba(0,0,0,.35);">
+    <button type="button"
+            onclick="document.getElementById('qr-overlay').style.display='none'"
+            aria-label="Schließen"
+            style="position:absolute;top:10px;right:10px;background:#f1f1f1;border:none;border-radius:50%;width:32px;height:32px;font-size:1.1rem;cursor:pointer;">✕</button>
+    <img src="img/qr-terminal.jpg" alt="QR-Code zur Studjo-Terminal-Seite"
+         style="width:220px;height:220px;display:block;margin:0 auto 16px;">
     <p style="font-size:1rem;color:#0f2f37;margin:0 0 6px;font-weight:700;">Mit dem Handy scannen</p>
     <p style="font-size:.85rem;color:#8a8d8f;margin:0;word-break:break-all;">studjo-auq.github.io/terminal</p>
   </div>
 </div>
-<link rel="stylesheet" href="a11y.css"><script src="a11y.js"></script>
-<div id="info-popup" onclick="this.style.display='none'" style="display:none;position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.6);align-items:center;justify-content:center;padding:20px;">
-  <div onclick="event.stopPropagation()" style="background:#fff;border-radius:16px;padding:30px 30px 26px;text-align:left;max-width:580px;width:100%;position:relative;box-shadow:0 10px 40px rgba(0,0,0,.35);">
-    <button type="button" onclick="vorleseInfoText(this)" aria-label="Info vorlesen" style="position:absolute;top:10px;right:52px;background:#f1f1f1;border:none;border-radius:50%;width:32px;height:32px;font-size:1.05rem;cursor:pointer;">👂</button>
-    <button type="button" onclick="document.getElementById('info-popup').style.display='none'" aria-label="Schließen" style="position:absolute;top:10px;right:10px;background:#f1f1f1;border:none;border-radius:50%;width:32px;height:32px;font-size:1.1rem;cursor:pointer;">✕</button>
+
+<link rel="stylesheet" href="a11y.css">
+<script src="a11y.js"></script>
+
+<div id="info-popup"
+     onclick="this.style.display='none'"
+     style="display:none;position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.6);align-items:center;justify-content:center;padding:20px;">
+  <div onclick="event.stopPropagation()"
+       style="background:#fff;border-radius:16px;padding:30px 30px 26px;text-align:left;max-width:580px;width:100%;position:relative;box-shadow:0 10px 40px rgba(0,0,0,.35);">
+    <button type="button"
+            onclick="vorleseInfoText(this)"
+            aria-label="Info vorlesen"
+            style="position:absolute;top:10px;right:52px;background:#f1f1f1;border:none;border-radius:50%;width:32px;height:32px;font-size:1.05rem;cursor:pointer;">👂</button>
+    <button type="button"
+            onclick="document.getElementById('info-popup').style.display='none'"
+            aria-label="Schließen"
+            style="position:absolute;top:10px;right:10px;background:#f1f1f1;border:none;border-radius:50%;width:32px;height:32px;font-size:1.1rem;cursor:pointer;">✕</button>
+
     <h2 style="margin:0 0 16px;color:#b61f29;font-size:1.3rem;font-weight:800;">Kurze Info</h2>
+
     <ul style="margin:0;padding-left:22px;font-size:1rem;line-height:1.8;color:#0f2f37;">
-      <li>Hier findest du Termine bei Studjo.</li><li>Es gibt Andachten, Feste, Schließungstage und weitere Termine.</li><li>Ort, Uhrzeit und weitere Angaben kommen automatisch aus einer zentralen Datei.</li><li>Vergangene Termine werden automatisch ausgeblendet.</li><li>Im Kalender siehst du auch die Schulferien in NRW.</li>
+      <li>Hier findest du Termine bei Studjo.</li>
+      <li>Es gibt Andachten, Feste, Schließungstage und weitere Termine.</li>
+      <li>Ort, Uhrzeit und weitere Angaben kommen automatisch aus einer zentralen Datei.</li>
+      <li>Vergangene Termine werden automatisch ausgeblendet.</li>
+      <li>Im Kalender siehst du auch die Schulferien in NRW.</li>
     </ul>
   </div>
 </div>
+
 <script>
 function vorleseInfoText(button) {
-  if (!('speechSynthesis' in window)) {alert('Dein Browser unterstützt leider keine Sprachausgabe.');return;}
-  const warAktiv = button.classList.contains('aktiv');window.speechSynthesis.cancel();
-  document.querySelectorAll('.info-ohr-aktiv').forEach(b => {b.classList.remove('info-ohr-aktiv','aktiv');b.style.background = '#f1f1f1';});
+  if (!('speechSynthesis' in window)) {
+    alert('Dein Browser unterstützt leider keine Sprachausgabe.');
+    return;
+  }
+
+  const warAktiv = button.classList.contains('aktiv');
+  window.speechSynthesis.cancel();
+
+  document.querySelectorAll('.info-ohr-aktiv').forEach(b => {
+    b.classList.remove('info-ohr-aktiv','aktiv');
+    b.style.background = '#f1f1f1';
+  });
+
   if (warAktiv) return;
-  const popup = document.getElementById('info-popup'), ueberschrift = popup.querySelector('h2')?.innerText || '', listenpunkte = Array.from(popup.querySelectorAll('li')).map(li => li.innerText);
-  const text = [ueberschrift, ...listenpunkte].join('. ').replace(/\p{Extended_Pictographic}/gu,'').replace(/\s+/g,' ').trim();
-  const ansage = new SpeechSynthesisUtterance(text);ansage.lang = 'de-DE';ansage.rate = 0.95;
-  const fertig = () => {button.classList.remove('aktiv','info-ohr-aktiv');button.style.background = '#f1f1f1';};
-  ansage.onend = fertig;ansage.onerror = fertig;button.classList.add('aktiv','info-ohr-aktiv');button.style.background = '#ffe600';window.speechSynthesis.speak(ansage);
+
+  const popup = document.getElementById('info-popup');
+  const ueberschrift = popup.querySelector('h2')?.innerText || '';
+  const listenpunkte = Array.from(popup.querySelectorAll('li')).map(li => li.innerText);
+
+  const text = [ueberschrift, ...listenpunkte]
+    .join('. ')
+    .replace(/\p{Extended_Pictographic}/gu,'')
+    .replace(/\s+/g,' ')
+    .trim();
+
+  const ansage = new SpeechSynthesisUtterance(text);
+  ansage.lang = 'de-DE';
+  ansage.rate = 0.95;
+
+  const fertig = () => {
+    button.classList.remove('aktiv','info-ohr-aktiv');
+    button.style.background = '#f1f1f1';
+  };
+
+  ansage.onend = fertig;
+  ansage.onerror = fertig;
+
+  button.classList.add('aktiv','info-ohr-aktiv');
+  button.style.background = '#ffe600';
+  window.speechSynthesis.speak(ansage);
 }
 </script>
-<script src="gong.js"></script><script src="feiertage.js"></script><script src="kalender.js"></script>
+
+<script src="gong.js"></script>
+<script src="feiertage.js"></script>
+<script src="kalender.js"></script>
 </body>
 </html>

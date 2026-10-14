@@ -196,10 +196,6 @@
     localStorage.removeItem(ALTER_SCHLUESSEL);
   } catch (e) {}
 
-  const appleIcon = document.querySelector('link[rel="apple-touch-icon"]');
-  if (appleIcon && /(^|\/)icons\/apple-touch-icon\.png(?:$|[?#])/i.test(appleIcon.getAttribute('href') || '')) {
-    appleIcon.setAttribute('href', 'apple-touch-icon.png');
-  }
 
   function istStartseite() {
     const dateiname = location.pathname.split('/').pop();

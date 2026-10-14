@@ -1,9 +1,15 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 23
+   Version 24
 
-   Neu in Version 23:
-   - alle dynamischen JSON-Daten liegen künftig gesammelt unter data/.
+   Neu in Version 24:
+   - lokale JPG- und PNG-Dateien liegen gesammelt im Ordner img/.
+   - alle vorgeladenen Bilder und PWA-Icons verwenden die neuen img/-Pfade.
+   - der veraltete apple-touch-icon-Verweis wurde entfernt.
+   - Versionssprung leert alte v23-Caches mit Bildpfaden aus dem Root.
+
+   Weiter aus Version 23:
+   - alle dynamischen JSON-Daten liegen gesammelt unter data/.
    - während der manuellen Migration dürfen die alten Root-JSON-Dateien
      vorübergehend noch bestehen; die Seiten verwenden data/ als Hauptpfad.
    - Wetter- und RSS-Actions schreiben direkt nach data/.
@@ -61,7 +67,7 @@
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v23';
+const CACHE_VERSION = 'v24';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 
@@ -98,20 +104,18 @@ const CORE_DATEIEN = [
   'aba.js',
 
   'favicon.ico',
-  'header.jpg',
+  'img/header.jpg',
   'dingdong.mp3',
-  'qr-terminal.jpg',
+  'img/qr-terminal.jpg',
 
   /* PWA-Installationsvorschau */
-  'screenshot-startseite.png',
-  'screenshot-neuigkeiten.png',
-  'screenshot-wochenmotto.png',
+  'img/screenshot-startseite.png',
+  'img/screenshot-neuigkeiten.png',
+  'img/screenshot-wochenmotto.png',
 
-  'icon-192.png',
-  'icon-512.png',
-  'icon-512-maskable.png',
-  'apple-touch-icon.png',
-
+  'img/icon-192.png',
+  'img/icon-512.png',
+  'img/icon-512-maskable.png',
   /* Lokale dynamische Daten */
   'data/neuigkeiten.json',
   'data/aba.json',
