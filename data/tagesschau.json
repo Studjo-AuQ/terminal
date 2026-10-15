@@ -1,7 +1,55 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "15.10.2026, 14:20 Uhr (UTC)",
+  "aktualisiert": "15.10.2026, 18:33 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Bundeswehr: Vorwürfe sexuellen Fehlverhaltens in Weißenfels",
+      "description": "Nach Berichten über sexuelles Fehlverhalten bei der Bundeswehr in Sachsen-Anhalt kündigt das Verteidigungsministerium Konsequenzen an. Doch wie tief sitzt das Problem in der Truppe wirklich? Von Christina Nagel.",
+      "pubDate": "2026-10-15T20:22:56+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Ringen um neuen EU-Haushalt: Showdown in Zeitlupe",
+      "description": "Die EU solle nicht so viel Geld ausgeben, findet Bundeskanzler Merz. Einige Länder sehen das genauso. Andere können den Sparvorschlägen nichts abgewinnen. Trotz klarer Fronten bleibt der große Knall im Ringen um den Haushalt aus. Von S. Stuchlik.",
+      "pubDate": "2026-10-15T20:05:32+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Warum sich die Ukraine ohne die Aufklärungsdaten der USA kaum verteidigen kann",
+      "description": "Um sich verteidigen zu können, ist die Ukraine dringend auf Informationen aus den USA angewiesen. Doch genau dabei hakt es offenbar. Zudem gibt es Probleme mit dem Satellitendienst Starlink. Welche Folgen hat das? Und was steckt dahinter?",
+      "pubDate": "2026-10-15T19:17:37+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Psychotherapie-Reform: Bundestag beschließt Korrekturen",
+      "description": "Mit einer neuen Vergütungsregel will die Regierung bei der Psychotherapie sparen. Kinder und Schwerkranke sind ausgenommen. Fachverbände befürchten jedoch: Alle anderen könnten künftig länger auf einen Therapieplatz warten. Von S. Emminghaus.",
+      "pubDate": "2026-10-15T19:16:11+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX vom Tech-Ausverkauf kaum betroffen",
+      "description": "Der DAX pendelt weiter um die Marke von 25.000 Punkten. Der weltweite Ausverkauf von Tech-Aktien hat den deutschen Leitindex nicht so stark getroffen - denn große Technologiewerte sind kaum vertreten.",
+      "pubDate": "2026-10-15T18:32:51+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Trump sagt Livestream zu geplanter Hinrichtung von Attentäter ab",
+      "description": "Die ganze Welt sollte zusehen, wie ein verurteilter Attentäter hingerichtet wird - nun hat US-Präsident Trump den geplanten Livestream abgesagt. Die Ankündigung von Verteidigungsminister Hegseth war auf Empörung gestoßen.",
+      "pubDate": "2026-10-15T17:57:03+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Das sind die Pläne für den Ausweis auf dem Smartphone",
+      "description": "Die Brieftasche soll digital werden: Der Bundestag hat neue Regelungen für Pässe und Ausweise auf den Weg gebracht. So kann künftig der Personalausweis auf dem Smartphone hinterlegt werden. Älteren Menschen sollen Behördengänge erspart bleiben.",
+      "pubDate": "2026-10-15T17:53:10+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Reiche muss Instagram-Video mit Vorwurf gegen Linke löschen",
+      "description": "Bundeswirtschaftsministerin Reiche muss ein Instagram-Video über die Linke vorerst entfernen, in dem sie der Partei Antisemitismus vorwirft. Das entschied das Bundesverfassungsgericht in einem Eilverfahren. Von I. Sayram und J. Pentz.",
+      "pubDate": "2026-10-15T18:35:05+02:00",
+      "bild": ""
+    },
     {
       "title": "EuGH-Urteil: Banken müssen bei Kontobetrug Geld erstatten",
       "description": "Maschen, mit denen Betrüger Zugriff auf die Konten ihrer Opfer bekommen, werden immer besser. Der EuGH hat jetzt mit einem Urteil die Rechte betroffener Verbraucher gestärkt. Von Antonetta Stephany.",
@@ -29,7 +77,7 @@
     {
       "title": "SPD wählt Mitte Januar bei Parteitag in Bremen neue Parteispitze",
       "description": "Seit dem Rückzug von Bärbel Bas fehlt der SPD die Hälfte ihrer Doppelspitze. Nun will die Partei ihre gesamte Führung neu wählen. Bewerbungen liegen noch nicht vor, aber es gibt Zeit und Ort für den Bundesparteitag.",
-      "pubDate": "2026-10-15T14:45:47+02:00",
+      "pubDate": "2026-10-15T17:09:31+02:00",
       "bild": ""
     },
     {
@@ -42,54 +90,6 @@
       "title": "Bundeswehr: Pistorius will Reservedienst verpflichtend machen",
       "description": "Im Bundestag wird heute über das \"Reservestärkungsgesetz\" beraten. Es soll dabei helfen, die Zahl der Reservistinnen und Reservisten zu erhöhen - auf 200.000 bis 2033. Aus der Wirtschaft kommt Kritik. Von K. Aue.",
       "pubDate": "2026-10-15T13:03:31+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Schwere Schäden nach Unwetter auf Rhodos",
-      "description": "Bei heftigen Regenfällen und Sturm auf der griechischen Insel Rhodos ist mindestens ein Mensch gestorben. Autos wurden ins Meer gespült, Straßen sind überflutet. Das Ausmaß der Schäden wird nur langsam sichtbar. Von Jasper Riemann.",
-      "pubDate": "2026-10-15T12:45:23+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Flughafen Frankfurt: Lufthansa bereitet sich auf Kerosin-Mangel vor",
-      "description": "Am Frankfurter Flughafen kommt es derzeit zu Einschränkungen bei der Kerosinversorgung. Grund ist unter anderem die Wartung einer Pipeline. Die Lufthansa hat vorsorglich Maßnahmen ergriffen, Flüge sollen nicht gestrichen werden.",
-      "pubDate": "2026-10-15T13:35:04+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Viele Tote bei Einsturz von Schuldach in Pakistan",
-      "description": "In Pakistan sind bei dem Einsturz eines Schuldachs mindestens 33 Menschen gestorben. Unter den Toten befinden sich vor allem Schüler, die gerade im Unterricht saßen. Die Polizei meldete bereits eine Festnahme.",
-      "pubDate": "2026-10-15T12:10:33+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Spyware-Methode aufgedeckt: Spionagesoftware per Onlinewerbung",
-      "description": "Eine israelische Firma soll Onlinewerbung genutzt haben, um Spionagesoftware zu verbreiten. Das geht aus einem Bericht hervor, den BR und netzpolitik.org vorab einsehen konnten. Im Visier standen mutmaßlich internationale Organisationen, Staaten, Medien und Unternehmen.",
-      "pubDate": "2026-10-15T12:00:12+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Erneut Feuer auf Handelsschiff vor Rumäniens Küste",
-      "description": "Im Schwarzen Meer vor Rumäniens Küste ist auf einem Handelsschiff ein Feuer ausgebrochen. Es sei von Drohnen getroffen worden, teilte der rumänische Präsident Dan laut der Agentur Reuters mit. Mehrere Seeleute werden noch vermisst.",
-      "pubDate": "2026-10-15T13:52:23+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Türkei: Tote nach Starkregen und Überschwemmungen in Istanbul",
-      "description": "Straßen stehen unter Wasser, Fahrzeuge bleiben stecken: Bei heftigen Regenfällen sind in Istanbul mindestens zwei Menschen gestorben. Die Behörden sind im Großeinsatz - und auch heute ist weiterer Regen angekündigt.",
-      "pubDate": "2026-10-15T11:05:45+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: Ausverkauf bei Technologiewerten belastet Börsen",
-      "description": "Der DAX startet schwach in den Handel. Die hohe US-Inflation schürt die Sorge vor weiteren Zinserhöhungen und setzt Chipwerte weltweit unter Druck. An den Börsen setzt sich der Ausverkauf fort.",
-      "pubDate": "2026-10-15T13:47:18+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Reform der Notfallversorgung beschlossen - was sich für Patienten ändert",
-      "description": "Wer wirklich dringend medizinische Hilfe braucht, soll schneller drankommen. Leichtere Fälle sollen gar nicht erst in der Notaufnahme landen - der Bundestag hat die Reform der Notfallmedizin beschlossen. Was ändert sich konkret?",
-      "pubDate": "2026-10-15T10:32:37+02:00",
       "bild": ""
     }
   ],
