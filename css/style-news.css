@@ -1,9 +1,9 @@
 /* Studjo Neuigkeiten – thematische Emojis und barrierefreie Aufklappkarten */
 
-@font-face{font-display:swap;font-family:'Nunito Sans';font-style:normal;font-weight:400;src:url('fonts/nunito-sans-v19-latin-regular.woff2') format('woff2')}
-@font-face{font-display:swap;font-family:'Nunito Sans';font-style:normal;font-weight:600;src:url('fonts/nunito-sans-v19-latin-600.woff2') format('woff2')}
-@font-face{font-display:swap;font-family:'Nunito Sans';font-style:normal;font-weight:700;src:url('fonts/nunito-sans-v19-latin-700.woff2') format('woff2')}
-@font-face{font-display:swap;font-family:'Nunito Sans';font-style:normal;font-weight:800;src:url('fonts/nunito-sans-v19-latin-800.woff2') format('woff2')}
+@font-face{font-display:swap;font-family:'Nunito Sans';font-style:normal;font-weight:400;src:url('../fonts/nunito-sans-v19-latin-regular.woff2') format('woff2')}
+@font-face{font-display:swap;font-family:'Nunito Sans';font-style:normal;font-weight:600;src:url('../fonts/nunito-sans-v19-latin-600.woff2') format('woff2')}
+@font-face{font-display:swap;font-family:'Nunito Sans';font-style:normal;font-weight:700;src:url('../fonts/nunito-sans-v19-latin-700.woff2') format('woff2')}
+@font-face{font-display:swap;font-family:'Nunito Sans';font-style:normal;font-weight:800;src:url('../fonts/nunito-sans-v19-latin-800.woff2') format('woff2')}
 
 :root{--primary-red:#b61f29;--secondary-grey:#747b7f;--bg-color:#f9f9f9;--text-color:#0f2f37}
 *{box-sizing:border-box}

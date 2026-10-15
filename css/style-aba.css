@@ -8,7 +8,7 @@
   font-family: 'Nunito Sans';
   font-style:  normal;
   font-weight: 400;
-  src: url('fonts/nunito-sans-v19-latin-regular.woff2') format('woff2');
+  src: url('../fonts/nunito-sans-v19-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -16,7 +16,7 @@
   font-family: 'Nunito Sans';
   font-style:  normal;
   font-weight: 600;
-  src: url('fonts/nunito-sans-v19-latin-600.woff2') format('woff2');
+  src: url('../fonts/nunito-sans-v19-latin-600.woff2') format('woff2');
 }
 
 @font-face {
@@ -24,7 +24,7 @@
   font-family: 'Nunito Sans';
   font-style:  normal;
   font-weight: 700;
-  src: url('fonts/nunito-sans-v19-latin-700.woff2') format('woff2');
+  src: url('../fonts/nunito-sans-v19-latin-700.woff2') format('woff2');
 }
 
 @font-face {
@@ -32,7 +32,7 @@
   font-family: 'Nunito Sans';
   font-style:  normal;
   font-weight: 800;
-  src: url('fonts/nunito-sans-v19-latin-800.woff2') format('woff2');
+  src: url('../fonts/nunito-sans-v19-latin-800.woff2') format('woff2');
 }
 
 /* --- Grundeinstellungen & Variablen --- */
