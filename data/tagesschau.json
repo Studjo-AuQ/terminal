@@ -1,7 +1,49 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "15.10.2026, 04:15 Uhr (UTC)",
+  "aktualisiert": "15.10.2026, 09:19 Uhr (UTC)",
   "meldungen": [
+    {
+      "title": "Türkei: Tote nach Starkregen und Überschwemmungen in Istanbul",
+      "description": "Straßen stehen unter Wasser, Fahrzeuge bleiben stecken: Bei heftigen Regenfällen sind in Istanbul mindestens zwei Menschen gestorben. Die Behörden sind im Großeinsatz - und auch heute ist weiterer Regen angekündigt.",
+      "pubDate": "2026-10-15T11:05:45+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: Ausverkauf bei Technologiewerten belastet Börsen",
+      "description": "Der DAX startet schwach in den Handel. Die hohe US-Inflation schürt die Sorge vor weiteren Zinserhöhungen und setzt Chipwerte weltweit unter Druck. An den Börsen setzt sich der Ausverkauf fort.",
+      "pubDate": "2026-10-15T10:32:44+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Reform der Notfallversorgung beschlossen - was sich für Patienten ändert",
+      "description": "Wer wirklich dringend medizinische Hilfe braucht, soll schneller drankommen. Leichtere Fälle sollen gar nicht erst in der Notaufnahme landen - der Bundestag hat die Reform der Notfallmedizin beschlossen. Was ändert sich konkret?",
+      "pubDate": "2026-10-15T10:32:37+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Sorge vor Spionage: Slowakei erneuert Militärkontakte mit Russland",
+      "description": "Unter Premierminister Fico gilt die Slowakei schon länger als Putins Einfallstor in die EU. Umso bedenklicher ist, dass sein Land nun auch im Stillen die Militärkontakte mit Russland wieder aufgenommen hat. Von Marianne Allweiss.",
+      "pubDate": "2026-10-15T09:24:38+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Alkoholverbot an Bahnhöfen: Mehr Sicherheit, weniger Konflikte?",
+      "description": "Ab heute gilt das bundesweite Alkoholverbot an den Bahnhöfen der Deutschen Bahn. Der Konzern hofft, dass es damit zu weniger Konflikten kommt. In fast 40 Bahnhöfen wurde der Schritt bereits getestet. Von Jens Eberl.",
+      "pubDate": "2026-10-15T09:11:08+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Krieg gegen die Ukraine: Sorge vor dem Winter, Hoffen auf EU-Hilfe",
+      "description": "Russlands Angriffe auf Energieanlagen bringen die Menschen in der Ukraine in Not. Ohne Strom und Wasser wächst die Sorge vor dem Winter. Präsident Selenskyj ringt um mehr Unterstützung aus Europa. Von Rebecca Barth.",
+      "pubDate": "2026-10-15T08:01:26+02:00",
+      "bild": ""
+    },
+    {
+      "title": "11KM-Podcast: EU-Comeback für Großbritannien?",
+      "description": "Andy Burnham überrascht mit kritischen Äußerungen zum Brexit. Kommt Großbritannien zurück in die EU? 11KM über den \"Soft Socialist\" Burnham und wie der neue Premier die britische Politik prägt.",
+      "pubDate": "2026-10-15T06:29:37+02:00",
+      "bild": ""
+    },
     {
       "title": "EU-Spitzen verhandeln über Haushalt - Deutschland will kürzen",
       "description": "Auf dem heutigen EU-Gipfel geht es um bis zu zwei Billionen Euro. Deutschland ist größter Nettozahler - nun will Kanzler Merz beim Haushalt bis 2034 kürzen. Bei anderen Verhandlern stößt das auf Unverständnis. Von J.-M. Magro.",
@@ -29,7 +71,7 @@
     {
       "title": "Erklärung zu Antisemitismus - Sondierungen in Berlin gehen weiter",
       "description": "Nachdem SPD und Grüne die Sondierungen mit der Linkspartei unterbrochen hatten, geht es nun weiter. Alle Parteien verständigten sich, ihre Antisemitismus-Vereinbarung in einen möglichen Koalitionsvertrag aufzunehmen.",
-      "pubDate": "2026-10-14T22:33:16+02:00",
+      "pubDate": "2026-10-15T11:04:45+02:00",
       "bild": ""
     },
     {
@@ -48,48 +90,6 @@
       "title": "Istanbuler Ex-Bürgermeister İmamoğlu sagt erstmals in Mammutprozess aus",
       "description": "Es ist ein Mammutprozess gegen die Istanbuler Stadtverwaltung und den abgesetzten Bürgermeister: İmamoğlu hat nach mehr als anderthalb Jahren U-Haft erstmals vor Gericht ausgesagt. Parallel stürmte die Polizei den TV-Sender Halk TV. Von B. Weber.",
       "pubDate": "2026-10-14T18:20:57+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ukraine kritisiert fehlende US-Unterstützung - NATO und EU widersprechen",
-      "description": "Die Ukraine ist beim Abwehrkampf gegen Russland auf Geheimdienstinformationen der USA angewiesen - doch die sollen vor neuen russischen Angriffen ausgeblieben sein. Präsident Selenskyj übt Kritik. EU und NATO beschwichtigen.",
-      "pubDate": "2026-10-14T17:33:55+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Kanzler setzt auf gute Regierungsarbeit gegen Extremismus",
-      "description": "In seiner Regierungserklärung betont der Kanzler, dass Deutschland unter Druck stehe wie \"vielleicht noch nie\". Unzufriedenheit führe zu Extremismus. Dem müsse man \"schöpferische Anstrengung\" entgegensetzen.",
-      "pubDate": "2026-10-14T17:33:29+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Appell an Industriestaaten: IWF warnt vor steigenden Staatsschulden",
-      "description": "Der Internationale Währungsfonds fordert Industrieländer auf, ihre Haushaltsdefizite zu verringern und Schulden abzubauen. Steigende Zinsen und hohe Ausgaben schränkten den finanziellen Spielraum der Staaten zunehmend ein.",
-      "pubDate": "2026-10-14T16:31:12+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Unbekannte verhelfen Häftling in Essen während Arztbesuch zur Flucht",
-      "description": "In Essen sollen zwei Männer JVA-Beamte überwältigt und einen Häftling während eines Arztbesuches zur Flucht verholfen haben. Die Polizei ist im Großeinsatz und warnt, die Männer könnten bewaffnet sein.",
-      "pubDate": "2026-10-14T21:03:00+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Nepal: Erneut schwere Überschwemmungen nach Unwettern",
-      "description": "Erst vor wenigen Wochen erlebte Nepal eine verheerende Flutkatastrophe. Jetzt hat eine neue Flutwelle Häuser und Brücken mitgerissen. Rettungskräfte suchen nach Vermissten, ob es Tote gibt, ist bislang noch unklar. Von Bo Hyun Kim.",
-      "pubDate": "2026-10-14T16:18:13+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Haushaltsdebatte in Frankreich: Die politische Quadratur des Kreises",
-      "description": "In Frankreich haben die Beratungen über den Haushalt begonnen. Angesichts hoher Schulden will Finanzminister Lescure deutlich sparen. Aber die Regierung hat keine eigene Mehrheit - und stößt auf Widerstand. Von C. Dylla.",
-      "pubDate": "2026-10-14T16:17:03+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Studentenproteste in albanischer Hauptstadt Tirana eskalieren",
-      "description": "In der albanischen Hauptstadt Tirana hat es erneut gewaltsame Proteste gegeben. Medienberichten zufolge warfen Demonstranten Brandsätze auf das Bildungsministerium und verursachten ein Feuer.",
-      "pubDate": "2026-10-14T15:56:17+02:00",
       "bild": ""
     }
   ],
