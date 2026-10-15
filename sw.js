@@ -1,19 +1,26 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 26
+   Version 27
 
-   Neu in Version 26:
-   - CSS- und JavaScript-Dateien werden schrittweise in die Ordner css/ und
-     js/ verschoben.
-   - Während der Übergangsphase werden die bisherigen Root-Pfade UND die
-     neuen Ordnerpfade parallel vorgeladen.
-   - Dadurch funktionieren bereits geöffnete/zwischengespeicherte Seiten
-     weiterhin, während die HTML-Dateien anschließend auf css/ und js/
-     umgestellt werden.
+   Neu in Version 27:
+   - Die Migration der CSS- und JavaScript-Dateien in die Ordner css/ und
+     js/ ist abgeschlossen.
+   - Die alten CSS- und JavaScript-Pfade im Root werden nicht mehr
+     vorgeladen.
+   - CORE_DATEIEN verwendet für die bisher vorgeladenen Stylesheets und
+     Skripte nur noch die neuen Pfade unter css/ und js/.
    - sw.js bleibt bewusst im Root, damit der Service-Worker-Scope unverändert
      das komplette Terminal unter /terminal/ umfasst.
-   - Versionssprung leert die alten v25-Caches und baut den Übergangscache
-     mit alten und neuen Asset-Pfaden neu auf.
+   - Versionssprung leert die alten v26-Caches und baut den finalen Cache
+     ohne die früheren Root-Pfade neu auf.
+
+   Weiter aus Version 26:
+   - CSS- und JavaScript-Dateien wurden schrittweise in die Ordner css/ und
+     js/ verschoben.
+   - Während der Übergangsphase wurden die bisherigen Root-Pfade UND die
+     neuen Ordnerpfade parallel vorgeladen.
+   - Dadurch funktionierten bereits geöffnete/zwischengespeicherte Seiten
+     weiterhin, während die HTML-Dateien auf css/ und js/ umgestellt wurden.
 
    Weiter aus Version 25:
    - Bilddateien mit Großbuchstaben und/oder Leerzeichen wurden im Ordner
@@ -87,7 +94,7 @@
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v26';
+const CACHE_VERSION = 'v27';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 
@@ -106,32 +113,14 @@ const CORE_DATEIEN = [
   'offline.html',
   'manifest.webmanifest',
 
-  /* Übergangsphase CSS:
-     Die Root-Dateien bleiben bis zum Abschluss der Migration bestehen.
-     Parallel werden bereits die neuen Dateien unter css/ vorgeladen. */
-  'style.css',
-  'style-index.css',
-  'style-news.css',
-  'style-aba.css',
-  'a11y.css',
+  /* Stylesheets unter css/ */
   'css/style.css',
   'css/style-index.css',
   'css/style-news.css',
   'css/style-aba.css',
   'css/a11y.css',
 
-  /* Übergangsphase JavaScript:
-     Alte Root-Pfade und neue js/-Pfade werden parallel vorgeladen. */
-  'gong.js',
-  'offline.js',
-  'a11y.js',
-  'ui-a11y.js',
-  'ticker.js',
-  'feiertage.js',
-  'kalender.js',
-  'kacheln.js',
-  'speiseplan-heute.js',
-  'aba.js',
+  /* JavaScript unter js/ */
   'js/gong.js',
   'js/offline.js',
   'js/a11y.js',
@@ -156,6 +145,7 @@ const CORE_DATEIEN = [
   'img/icon-192.png',
   'img/icon-512.png',
   'img/icon-512-maskable.png',
+
   /* Lokale dynamische Daten */
   'data/neuigkeiten.json',
   'data/aba.json',
