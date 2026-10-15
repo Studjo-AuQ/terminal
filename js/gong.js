@@ -329,7 +329,7 @@
   if (document.querySelector('script[data-studjo-offline]')) return;
 
   const script = document.createElement('script');
-  script.src = 'offline.js';
+  script.src = 'js/offline.js';
   script.async = true;
   script.dataset.studjoOffline = 'true';
   script.onerror = () => {
@@ -361,7 +361,7 @@
     );
 
   script.src =
-    'ui-a11y.js';
+    'js/ui-a11y.js';
 
   script.async =
     true;
@@ -404,7 +404,7 @@
     );
 
   script.src =
-    'ticker.js';
+    'js/ticker.js';
 
   script.async =
     true;

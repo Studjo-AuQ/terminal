@@ -19,7 +19,7 @@
    liegt – gleiches Koordinatensystem, keine Umrechnung nötig.
    ══════════════════════════════════════════════════════ */
 
-import * as pdfjsLib from './pdfjs/pdf.min.mjs';
+import * as pdfjsLib from '../pdfjs/pdf.min.mjs';
 pdfjsLib.GlobalWorkerOptions.workerSrc = './pdfjs/pdf.worker.min.mjs';
 
 const ORDNER = 'speiseplaene/';
