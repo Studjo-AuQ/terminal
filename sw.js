@@ -1,6 +1,6 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 30
+   Version 31
 
    - lädt beim Installieren alle aktuell lokalen Terminal-Dateien vor
      (HTML, CSS, JS, JSON, Schriften, Bilder, PDF.js und Speiseplan-PDFs)
@@ -17,7 +17,7 @@
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v30';
+const CACHE_VERSION = 'v31';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 
@@ -98,6 +98,7 @@ const OFFLINE_DATEIEN = [
   "data/neuigkeiten.json",
   "data/tagesschau.json",
   "data/tagesinfo.json",
+  "data/speiseplan-kurz.json",
   "data/termine.json",
   "data/ticker.json",
   "data/wetter.json",
@@ -475,6 +476,22 @@ function istNeuigkeitenNavigation(url) {
     scope.pathname + 'neuigkeiten.html';
 }
 
+/* Die wichtigsten Startseiten-Dateien werden bewusst network-first
+   geladen. Damit sieht die installierte Android-PWA Änderungen an der
+   Tageskarte künftig beim normalen Öffnen und nicht erst nach einem
+   manuellen Finger-Reload. Offline bleibt der Cache der Fallback. */
+function istStartseitenKernDatei(url) {
+  const scope = new URL(self.registration.scope);
+  const basis = scope.pathname;
+
+  return [
+    basis + 'js/kacheln.js',
+    basis + 'js/gong.js',
+    basis + 'js/offline.js',
+    basis + 'css/style-index.css'
+  ].includes(url.pathname);
+}
+
 
 async function headNetzwerkOderCache(request) {
   try {
@@ -531,7 +548,7 @@ self.addEventListener('fetch', event => {
   if (request.mode === 'navigate') {
     if (istStartseitenNavigation(url)) {
       event.respondWith(
-        netzwerkZuerst(request, 1500, true, true)
+        netzwerkZuerst(request, 2500, true, true)
       );
 
     } else if (istNeuigkeitenNavigation(url)) {
@@ -547,6 +564,13 @@ self.addEventListener('fetch', event => {
         navigationCacheZuerst(request, event)
       );
     }
+    return;
+  }
+
+  if (istStartseitenKernDatei(url)) {
+    event.respondWith(
+      netzwerkZuerst(request, 3500, true, false)
+    );
     return;
   }
 
