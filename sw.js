@@ -1,6 +1,6 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 28
+   Version 29
 
    - lädt beim Installieren alle aktuell lokalen Terminal-Dateien vor
      (HTML, CSS, JS, JSON, Schriften, Bilder, PDF.js und Speiseplan-PDFs)
@@ -17,7 +17,7 @@
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v28';
+const CACHE_VERSION = 'v29';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 
@@ -191,9 +191,11 @@ const OFFLINE_DATEIEN = [
   "img/gewalt.jpg",
   "img/gewaltschutzkonzept.jpg",
   "img/header.jpg",
-  "img/icon-192.png",
-  "img/icon-512-maskable.png",
-  "img/icon-512.png",
+  "img/icon-192-v2.png",
+  "img/icon-512-maskable-v2.png",
+  "img/icon-1024-maskable-v2.png",
+  "img/icon-512-v2.png",
+  "img/icon-1024-v2.png",
   "img/information.jpg",
   "img/kompetenzen_im_bbb.jpg",
   "img/kontakt.jpg",
