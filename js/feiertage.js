@@ -9,7 +9,7 @@
 
    Einbindung auf jeder Seite, die Feiertage braucht, VOR dem
    jeweils eigenen Skript:
-     <script src="feiertage.js"></script>
+     <script src="js/feiertage.js"></script>
 
    Komplett rechnerisch (Oster-Formel nach Gauß) – keine
    Datumsliste, die von Hand gepflegt werden müsste, auch nicht

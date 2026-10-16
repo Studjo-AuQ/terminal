@@ -3,8 +3,8 @@
    Studjo Infoterminal | Evangelisches Johanneswerk
 
    Einbindung auf jeder Seite (kurz vor </body>):
-     <link rel="stylesheet" href="a11y.css">
-     <script src="a11y.js"></script>
+     <link rel="stylesheet" href="css/a11y.css">
+     <script src="js/a11y.js"></script>
 
    Aus den HTML-Seiten kannst du danach entfernen:
      • <div class="read-aloud-container">…</div>

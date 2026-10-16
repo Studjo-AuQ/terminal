@@ -2,7 +2,7 @@
    kalender.js – Kalender für das Studjo Terminal
 
    Datenquellen:
-     1. feiertage.js
+     1. js/feiertage.js
         NRW-Feiertage, Studjo-Zusatztage und Brückentage
      2. data/termine.json
         - Andachten
@@ -208,31 +208,17 @@
             return;
           }
 
-          let daten = null;
-          let letzterFehler = null;
+          const pfad = 'data/termine.json';
+          const antwort = await fetch(
+            pfad + '?v=' + Date.now(),
+            { cache: 'no-store' }
+          );
 
-          for (const pfad of ['data/termine.json', 'termine.json']) {
-            try {
-              const antwort = await fetch(
-                pfad + '?v=' + Date.now(),
-                { cache: 'no-store' }
-              );
-
-              if (!antwort.ok) {
-                throw new Error('HTTP ' + antwort.status + ' bei ' + pfad);
-              }
-
-              daten = await antwort.json();
-              break;
-
-            } catch (fehler) {
-              letzterFehler = fehler;
-            }
+          if (!antwort.ok) {
+            throw new Error('HTTP ' + antwort.status + ' bei ' + pfad);
           }
 
-          if (!daten) {
-            throw letzterFehler || new Error('Termindaten nicht erreichbar');
-          }
+          const daten = await antwort.json();
 
           window.StudjoTermineDaten = daten;
           baueDatenstrukturen(daten);

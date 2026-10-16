@@ -607,27 +607,17 @@
   }
 
   async function ladeTickerDaten() {
-    let letzterFehler = null;
+    const pfad = 'data/ticker.json';
+    const response = await fetch(
+      pfad + '?v=' + Date.now(),
+      { cache: 'no-store' }
+    );
 
-    for (const pfad of ['data/ticker.json', 'ticker.json']) {
-      try {
-        const response = await fetch(
-          pfad + '?v=' + Date.now(),
-          { cache: 'no-store' }
-        );
-
-        if (!response.ok) {
-          throw new Error('HTTP ' + response.status + ' bei ' + pfad);
-        }
-
-        return await response.json();
-
-      } catch (fehler) {
-        letzterFehler = fehler;
-      }
+    if (!response.ok) {
+      throw new Error('HTTP ' + response.status + ' bei ' + pfad);
     }
 
-    throw letzterFehler || new Error('Ticker-Daten nicht erreichbar');
+    return await response.json();
   }
 
   ladeTickerDaten()
