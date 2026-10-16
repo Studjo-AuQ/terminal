@@ -236,3 +236,762 @@
   }
 
 })();
+
+
+/* ══════════════════════════════════════════════════════
+   STARTSEITE: „Heute bei Studjo …“ – Tageskarte, Stufe 1
+
+   Die Tageskarte wird bewusst NICHT als normale Navigationskachel
+   angelegt. Sie wird automatisch direkt vor .card-grid eingefügt.
+   So bleibt sie unabhängig von der individuell gespeicherten
+   Kachel-Reihenfolge immer oberhalb von „Neuigkeiten“.
+
+   Datenquellen:
+     - data/termine.json über window.StudjoKalender
+     - data/aba.json
+     - data/wochenmottos.json
+     - data/losungen.json
+     - data/wetter.json
+     - data/tagesinfo.json (spätere Admin-Vorgaben)
+
+   Wichtige Regeln:
+     - Schulferien werden hier NIE angezeigt.
+     - Maximal ein Termin-Hinweis belegt einen Platz.
+     - Montags hat das neue Wochenmotto Vorrang.
+     - Wetter wird nur gezeigt, wenn wetter.json von heute ist.
+     - Die übrige Auswahl ist pro Kalendertag stabil: Ein Neuladen
+       der Seite erzeugt am selben Tag keine andere Zusammenstellung.
+     - Mittagessen folgt in Stufe 2, damit auf der Startseite keine
+       schwere PDF-/OCR-Erkennung ausgeführt werden muss.
+   ══════════════════════════════════════════════════════ */
+
+(function () {
+  'use strict';
+
+  const ANZAHL_STANDARD = 3;
+  const START_MONTAG_UTC = Date.UTC(2025, 11, 29); // ISO-KW 1/2026
+  const WOCHE_MS = 7 * 24 * 60 * 60 * 1000;
+  const ADMIN_DATEI = 'data/tagesinfo.json';
+
+  let vorlesenAktiv = false;
+  let aktuelleAussage = null;
+
+  function $(id) {
+    return document.getElementById(id);
+  }
+
+  function isoDatum(datum) {
+    return [
+      datum.getFullYear(),
+      String(datum.getMonth() + 1).padStart(2, '0'),
+      String(datum.getDate()).padStart(2, '0')
+    ].join('-');
+  }
+
+  function datumSchluesselOhneStriche(datum) {
+    return Number(
+      String(datum.getFullYear()) +
+      String(datum.getMonth() + 1).padStart(2, '0') +
+      String(datum.getDate()).padStart(2, '0')
+    );
+  }
+
+  function hash(text) {
+    let h = 2166136261;
+    for (let i = 0; i < text.length; i++) {
+      h ^= text.charCodeAt(i);
+      h = Math.imul(h, 16777619);
+    }
+    return h >>> 0;
+  }
+
+  function stabileSortierung(liste, datum, zusatz = '') {
+    const tag = isoDatum(datum);
+    return [...liste].sort((a, b) => {
+      const ah = hash(tag + '|' + zusatz + '|' + (a.id || a.typ || a.text || 'a'));
+      const bh = hash(tag + '|' + zusatz + '|' + (b.id || b.typ || b.text || 'b'));
+      return ah - bh;
+    });
+  }
+
+  async function ladeJson(pfad, optional = false) {
+    try {
+      const antwort = await fetch(pfad + '?v=' + Date.now(), { cache: 'no-store' });
+      if (!antwort.ok) throw new Error('HTTP ' + antwort.status + ' bei ' + pfad);
+      return await antwort.json();
+    } catch (fehler) {
+      if (!optional) {
+        console.warn('[Studjo Tageskarte] Daten konnten nicht geladen werden:', pfad, fehler);
+      }
+      return null;
+    }
+  }
+
+  function aktiveAdminVorgabe(admin, heute) {
+    if (!admin || !Array.isArray(admin.vorgaben)) return null;
+    const tag = isoDatum(heute);
+
+    return admin.vorgaben.find(v => {
+      const von = String(v.von || v.datum || '').trim();
+      const bis = String(v.bis || von).trim();
+      return von && tag >= von && tag <= bis;
+    }) || null;
+  }
+
+  function kuerzen(text, max = 112) {
+    const sauber = String(text || '').replace(/\s+/g, ' ').trim();
+    if (sauber.length <= max) return sauber;
+    const teil = sauber.slice(0, max);
+    const leer = teil.lastIndexOf(' ');
+    return (leer > 60 ? teil.slice(0, leer) : teil).trim() + '…';
+  }
+
+  function injiziereStyles() {
+    if ($('studjo-tagesinfo-styles')) return;
+
+    const style = document.createElement('style');
+    style.id = 'studjo-tagesinfo-styles';
+    style.textContent = `
+      .tagesinfo-box {
+        position:relative;
+        width:100%;
+        box-sizing:border-box;
+        margin:0 0 24px;
+        padding:16px 18px 18px;
+        background:#eef0f1;
+        border:1px solid #d9dddf;
+        border-radius:18px;
+        box-shadow:0 3px 12px rgba(15,47,55,.08);
+      }
+
+      .tagesinfo-kopf {
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        gap:12px;
+        margin-bottom:12px;
+      }
+
+      .tagesinfo-titel {
+        margin:0;
+        color:#0f2f37;
+        font-size:1.25rem;
+        font-weight:900;
+        line-height:1.2;
+      }
+
+      .tagesinfo-ohr {
+        flex:0 0 auto;
+        width:42px;
+        height:42px;
+        border:2px solid #b61f29;
+        border-radius:50%;
+        background:#fff;
+        color:#b61f29;
+        font-size:1.3rem;
+        line-height:1;
+        cursor:pointer;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        padding:0;
+        touch-action:manipulation;
+      }
+
+      .tagesinfo-ohr:hover,
+      .tagesinfo-ohr:focus-visible {
+        background:#fff6f6;
+        outline:3px solid rgba(182,31,41,.18);
+        outline-offset:2px;
+      }
+
+      .tagesinfo-ohr.aktiv {
+        background:#ffe600;
+        color:#111;
+        border-color:#111;
+      }
+
+      .tagesinfo-liste {
+        display:grid;
+        grid-template-columns:repeat(3,minmax(0,1fr));
+        gap:0;
+        background:#fff;
+        border-radius:14px;
+        overflow:hidden;
+        border:1px solid #e0e3e4;
+      }
+
+      .tagesinfo-item {
+        min-width:0;
+        display:grid;
+        grid-template-columns:48px minmax(0,1fr);
+        gap:10px;
+        align-items:center;
+        padding:14px 15px;
+        color:#0f2f37;
+        text-decoration:none;
+        background:#fff;
+        box-sizing:border-box;
+        transition:background .15s ease;
+      }
+
+      .tagesinfo-item + .tagesinfo-item {
+        border-left:1px solid #e2e5e6;
+      }
+
+      .tagesinfo-item:hover,
+      .tagesinfo-item:focus-visible {
+        background:#fff8f8;
+        outline:none;
+      }
+
+      .tagesinfo-item.is-reading {
+        background:#ffe600 !important;
+        color:#111 !important;
+        border-radius:0 !important;
+        box-shadow:none !important;
+        transform:none !important;
+      }
+
+      .tagesinfo-emoji {
+        width:44px;
+        height:44px;
+        border-radius:12px;
+        background:#f3f4f5;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size:1.65rem;
+        line-height:1;
+      }
+
+      .tagesinfo-item.is-reading .tagesinfo-emoji {
+        background:rgba(255,255,255,.55);
+      }
+
+      .tagesinfo-inhalt {
+        min-width:0;
+      }
+
+      .tagesinfo-rubrik {
+        display:block;
+        margin:0 0 3px;
+        color:#6f7478;
+        font-size:.66rem;
+        font-weight:900;
+        text-transform:uppercase;
+        letter-spacing:.055em;
+        line-height:1.15;
+      }
+
+      .tagesinfo-text {
+        display:block;
+        color:#a71923;
+        font-size:1.02rem;
+        font-weight:800;
+        line-height:1.28;
+        text-decoration:underline;
+        text-decoration-thickness:1px;
+        text-underline-offset:2px;
+      }
+
+      .tagesinfo-text::after {
+        content:'  ›';
+        text-decoration:none;
+        white-space:nowrap;
+      }
+
+      .tagesinfo-item.is-reading .tagesinfo-rubrik,
+      .tagesinfo-item.is-reading .tagesinfo-text {
+        color:#111 !important;
+      }
+
+      .tagesinfo-status {
+        margin:8px 2px 0;
+        color:#74797c;
+        font-size:.72rem;
+        line-height:1.3;
+      }
+
+      @media (max-width:700px) {
+        .tagesinfo-box {
+          padding:14px 12px 13px;
+          margin-bottom:20px;
+        }
+
+        .tagesinfo-kopf {
+          margin:0 4px 10px;
+        }
+
+        .tagesinfo-titel {
+          font-size:1.15rem;
+        }
+
+        .tagesinfo-ohr {
+          width:40px;
+          height:40px;
+        }
+
+        .tagesinfo-liste {
+          grid-template-columns:1fr;
+        }
+
+        .tagesinfo-item {
+          grid-template-columns:46px minmax(0,1fr);
+          padding:12px 12px;
+        }
+
+        .tagesinfo-item + .tagesinfo-item {
+          border-left:0;
+          border-top:1px solid #e2e5e6;
+        }
+
+        .tagesinfo-emoji {
+          width:42px;
+          height:42px;
+          font-size:1.55rem;
+        }
+
+        .tagesinfo-text {
+          font-size:1rem;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  function baueGrundgeruest(grid) {
+    if ($('tagesinfo-box')) return $('tagesinfo-box');
+
+    const box = document.createElement('section');
+    box.id = 'tagesinfo-box';
+    box.className = 'tagesinfo-box';
+    box.setAttribute('aria-labelledby', 'tagesinfo-titel');
+    box.innerHTML = `
+      <div class="tagesinfo-kopf">
+        <h2 class="tagesinfo-titel" id="tagesinfo-titel">Heute bei Studjo …</h2>
+        <button type="button" class="tagesinfo-ohr" id="tagesinfo-ohr"
+                aria-label="Die drei Tipps vorlesen" aria-pressed="false"
+                title="Die drei Tipps vorlesen">👂</button>
+      </div>
+      <div class="tagesinfo-liste" id="tagesinfo-liste" aria-live="polite"></div>
+      <p class="tagesinfo-status" id="tagesinfo-status" hidden></p>
+    `;
+
+    grid.parentNode.insertBefore(box, grid);
+    $('tagesinfo-ohr').addEventListener('click', vorlesenUmschalten);
+    return box;
+  }
+
+  function stoppVorlesen() {
+    if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+    vorlesenAktiv = false;
+    aktuelleAussage = null;
+    document.querySelectorAll('#tagesinfo-box .is-reading')
+      .forEach(el => el.classList.remove('is-reading'));
+
+    const btn = $('tagesinfo-ohr');
+    if (btn) {
+      btn.classList.remove('aktiv');
+      btn.setAttribute('aria-pressed', 'false');
+    }
+  }
+
+  function vorlesenUmschalten() {
+    if (!('speechSynthesis' in window)) {
+      alert('Dein Browser unterstützt leider keine Sprachausgabe.');
+      return;
+    }
+
+    if (vorlesenAktiv || window.speechSynthesis.speaking) {
+      stoppVorlesen();
+      return;
+    }
+
+    const zeilen = Array.from(document.querySelectorAll('#tagesinfo-liste .tagesinfo-item'));
+    if (!zeilen.length) return;
+
+    vorlesenAktiv = true;
+    const btn = $('tagesinfo-ohr');
+    btn.classList.add('aktiv');
+    btn.setAttribute('aria-pressed', 'true');
+
+    const elemente = [
+      { text: 'Heute bei Studjo.', element: null },
+      ...zeilen.map(zeile => ({
+        text: (
+          (zeile.querySelector('.tagesinfo-rubrik')?.textContent || '') + '. ' +
+          (zeile.querySelector('.tagesinfo-text')?.textContent || '')
+        ).replace(/\p{Extended_Pictographic}/gu, '').replace(/\s+/g, ' ').trim(),
+        element: zeile
+      }))
+    ];
+
+    function spiele(index) {
+      if (!vorlesenAktiv || index >= elemente.length) {
+        stoppVorlesen();
+        return;
+      }
+
+      const abschnitt = elemente[index];
+      aktuelleAussage = new SpeechSynthesisUtterance(abschnitt.text);
+      aktuelleAussage.lang = 'de-DE';
+      aktuelleAussage.rate = 0.9;
+
+      aktuelleAussage.onstart = () => {
+        document.querySelectorAll('#tagesinfo-box .is-reading')
+          .forEach(el => el.classList.remove('is-reading'));
+        if (abschnitt.element) abschnitt.element.classList.add('is-reading');
+      };
+
+      aktuelleAussage.onend = () => {
+        setTimeout(() => spiele(index + 1), 180);
+      };
+
+      aktuelleAussage.onerror = stoppVorlesen;
+      window.speechSynthesis.speak(aktuelleAussage);
+    }
+
+    spiele(0);
+  }
+
+  function parseIso(text) {
+    const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(text || '').trim());
+    if (!m) return null;
+    const d = new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
+    return Number.isNaN(d.getTime()) ? null : d;
+  }
+
+  function montag(datum) {
+    const d = new Date(datum);
+    d.setHours(0, 0, 0, 0);
+    const tag = d.getDay();
+    d.setDate(d.getDate() + (tag === 0 ? -6 : 1 - tag));
+    return d;
+  }
+
+  function wochenSeitReferenz(daten, wochenMontag) {
+    const ref = parseIso(daten?.programm?.referenzDatum) ||
+                parseIso(daten?.programm?.gueltigVon) ||
+                new Date(2026, 3, 1);
+    return Math.round((wochenMontag - montag(ref)) / WOCHE_MS);
+  }
+
+  function nterWochentag(jahr, monat, wochentag, n) {
+    const d = new Date(jahr, monat, 1);
+    while (d.getDay() !== wochentag) d.setDate(d.getDate() + 1);
+    d.setDate(d.getDate() + 7 * (Math.max(1, Number(n) || 1) - 1));
+    return d;
+  }
+
+  function abaFindetStatt(daten, angebot, heute) {
+    if (angebot.sichtbar === false || angebot.typ !== 'regelmaessig') return false;
+    if (Number(angebot.wochentag) !== heute.getDay()) return false;
+
+    const tag = new Date(heute);
+    tag.setHours(0, 0, 0, 0);
+    const ab = parseIso(angebot.aktivAb);
+    const bis = parseIso(angebot.aktivBis);
+    if (ab && tag < ab) return false;
+    if (bis && tag > bis) return false;
+
+    const wm = montag(heute);
+    const rhythmus = angebot.rhythmus || 'woechentlich';
+
+    if (rhythmus === 'woechentlich') return true;
+
+    if (rhythmus === '14taegig') {
+      const diff = wochenSeitReferenz(daten, wm);
+      const gerade = ((diff % 2) + 2) % 2 === 0;
+      return angebot.referenzFindet === false ? !gerade : gerade;
+    }
+
+    if (rhythmus === 'monatlich') {
+      const soll = nterWochentag(
+        heute.getFullYear(),
+        heute.getMonth(),
+        Number(angebot.wochentag) || 1,
+        angebot.monatlichWoche || 1
+      );
+      return heute.getFullYear() === soll.getFullYear() &&
+             heute.getMonth() === soll.getMonth() &&
+             heute.getDate() === soll.getDate();
+    }
+
+    return false;
+  }
+
+  async function kandidatAba(heute) {
+    if (heute.getDay() === 0 || heute.getDay() === 6) return null;
+
+    const daten = await ladeJson('data/aba.json');
+    if (!daten || !Array.isArray(daten.angebote)) return null;
+
+    const gueltigVon = parseIso(daten?.programm?.gueltigVon);
+    const gueltigBis = parseIso(daten?.programm?.gueltigBis);
+    const tag = new Date(heute);
+    tag.setHours(0, 0, 0, 0);
+    if (gueltigVon && tag < gueltigVon) return null;
+    if (gueltigBis && tag > gueltigBis) return null;
+
+    const passend = daten.angebote.filter(a => abaFindetStatt(daten, a, heute));
+    if (!passend.length) return null;
+
+    const angebot = stabileSortierung(passend, heute, 'aba')[0];
+    const standort = (daten.standorte || []).find(s => s.id === angebot.standort);
+    const ort = standort?.kurzname || standort?.name || '';
+    const zeit = String(angebot.zeit || '').trim();
+
+    return {
+      id: 'aba',
+      typ: 'aba',
+      rubrik: 'AbA-Tipp',
+      emoji: '🧩',
+      text: [angebot.name, ort, zeit].filter(Boolean).join(' · '),
+      href: 'aba.html'
+    };
+  }
+
+  function montagDerWocheUTC(datum) {
+    const d = new Date(Date.UTC(datum.getFullYear(), datum.getMonth(), datum.getDate()));
+    const tag = d.getUTCDay();
+    const bisMontag = tag === 0 ? -6 : 1 - tag;
+    d.setUTCDate(d.getUTCDate() + bisMontag);
+    return Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
+  }
+
+  function positiveModulo(zahl, teiler) {
+    return ((zahl % teiler) + teiler) % teiler;
+  }
+
+  async function kandidatMotto(heute) {
+    const daten = await ladeJson('data/wochenmottos.json');
+    const liste = Array.isArray(daten?.wochenmottos) ? daten.wochenmottos : [];
+    if (!liste.length) return null;
+
+    const wochenSeitStart = Math.round((montagDerWocheUTC(heute) - START_MONTAG_UTC) / WOCHE_MS);
+    const nr = positiveModulo(wochenSeitStart, liste.length) + 1;
+    const eintrag = liste.find(m => Number(m.woche) === nr);
+    if (!eintrag) return null;
+
+    return {
+      id: 'motto',
+      typ: 'motto',
+      rubrik: 'Wochenmotto',
+      emoji: eintrag.emoji || '📖',
+      text: kuerzen(eintrag.motto, 105),
+      href: 'wochenmotto.html'
+    };
+  }
+
+  async function kandidatLosung(heute) {
+    const daten = await ladeJson('data/losungen.json');
+    const eintrag = daten?.[isoDatum(heute)];
+    if (!eintrag || !eintrag.losung) return null;
+
+    const stelle = String(eintrag.losung_stelle || '').trim();
+    return {
+      id: 'losung',
+      typ: 'losung',
+      rubrik: 'Losung',
+      emoji: '⛪',
+      text: kuerzen(eintrag.losung, 100) + (stelle ? ' · ' + stelle : ''),
+      href: 'losung.html'
+    };
+  }
+
+  function wetterIstVonHeute(daten, heute) {
+    const m = /^(\d{2})\.(\d{2})\.(\d{4})/.exec(String(daten?.aktualisiert || '').trim());
+    if (!m) return false;
+    return Number(m[1]) === heute.getDate() &&
+           Number(m[2]) === heute.getMonth() + 1 &&
+           Number(m[3]) === heute.getFullYear();
+  }
+
+  function wetterStadtKurz(stadt, heute) {
+    if (!stadt) return '';
+    const ddmm = String(heute.getDate()).padStart(2, '0') + '.' +
+                 String(heute.getMonth() + 1).padStart(2, '0') + '.';
+    const tag = (stadt.tage || []).find(t => t.datum === ddmm) || (stadt.tage || [])[0];
+    if (!tag) return '';
+    return stadt.stadt + ': ' + (tag.emoji || '') + ' bis ' + tag.max + ' °C';
+  }
+
+  async function kandidatWetter(heute) {
+    const daten = await ladeJson('data/wetter.json');
+    if (!daten || !wetterIstVonHeute(daten, heute)) return null;
+
+    const lu = (daten.staedte || []).find(s => s.stadt === 'Lüdenscheid');
+    const bo = (daten.staedte || []).find(s => s.stadt === 'Bochum');
+    const teile = [wetterStadtKurz(lu, heute), wetterStadtKurz(bo, heute)].filter(Boolean);
+    if (!teile.length) return null;
+
+    return {
+      id: 'wetter',
+      typ: 'wetter',
+      rubrik: 'Wetter',
+      emoji: '☀️',
+      text: teile.join(' · '),
+      href: 'wetter.html'
+    };
+  }
+
+  async function kandidatTerminUndBesonderes(heute) {
+    if (!window.StudjoKalender) return { termin: null, besonderes: null };
+
+    try {
+      await window.StudjoKalender.datenBereit();
+    } catch (e) {}
+
+    const info = window.StudjoKalender.tagesInfo(heute);
+    if (!info) return { termin: null, besonderes: null };
+
+    // WICHTIG: info.ferien wird absichtlich vollständig ignoriert.
+    let besonderes = null;
+    if (info.primaer) {
+      const p = info.primaer;
+      besonderes = {
+        id: 'besonderes',
+        typ: 'besonderes',
+        rubrik: p.art === 'feiertag' ? 'Feiertag' : 'Heute wichtig',
+        emoji: p.art === 'schliessung' ? '🔒' : (p.art === 'brueckentag' ? '🌉' : '🎉'),
+        text: p.titel + (p.details?.[0] ? ' · ' + p.details[0] : ''),
+        href: 'termine.html'
+      };
+    }
+
+    const termine = Array.isArray(info.termine) ? info.termine : [];
+    let termin = null;
+    if (termine.length) {
+      const erster = termine[0];
+      const zeit = (erster.details || []).find(d => /\d{1,2}:\d{2}/.test(d)) || '';
+      const zusatz = termine.length > 1 ? termine.length + ' Termine heute · ' : '';
+      const hinweis = (erster.details || []).find(d => d !== zeit && !/^Ansprechpartner:/i.test(d)) || '';
+
+      termin = {
+        id: 'termine',
+        typ: 'termine',
+        rubrik: 'Termin',
+        emoji: erster.icon || '📅',
+        text: zusatz + [erster.titel, zeit, hinweis].filter(Boolean).join(' · '),
+        href: 'termine.html'
+      };
+    }
+
+    return { termin, besonderes };
+  }
+
+  function istAusgeblendet(typ, vorgabe) {
+    return Array.isArray(vorgabe?.ausblenden) && vorgabe.ausblenden.includes(typ);
+  }
+
+  function rendere(kandidaten) {
+    const liste = $('tagesinfo-liste');
+    if (!liste) return;
+    liste.innerHTML = '';
+
+    kandidaten.forEach(k => {
+      const a = document.createElement('a');
+      a.className = 'tagesinfo-item';
+      a.href = k.href;
+      a.dataset.tagesinfoTyp = k.typ;
+      a.setAttribute('aria-label', k.rubrik + ': ' + k.text + '. Mehr Informationen');
+      a.innerHTML = `
+        <span class="tagesinfo-emoji" aria-hidden="true">${k.emoji}</span>
+        <span class="tagesinfo-inhalt" data-vorlesen>
+          <span class="tagesinfo-rubrik">${k.rubrik}</span>
+          <span class="tagesinfo-text">${k.text}</span>
+        </span>
+      `;
+      liste.appendChild(a);
+    });
+  }
+
+  async function starten() {
+    const grid = document.querySelector('.card-grid');
+    if (!grid || $('tagesinfo-box')) return;
+
+    injiziereStyles();
+    baueGrundgeruest(grid);
+
+    const heute = new Date();
+    heute.setHours(12, 0, 0, 0);
+
+    const [admin, termindaten, aba, motto, losung, wetter] = await Promise.all([
+      ladeJson(ADMIN_DATEI, true),
+      kandidatTerminUndBesonderes(heute),
+      kandidatAba(heute),
+      kandidatMotto(heute),
+      kandidatLosung(heute),
+      kandidatWetter(heute)
+    ]);
+
+    const vorgabe = aktiveAdminVorgabe(admin, heute);
+    const anzahl = Math.max(1, Math.min(3, Number(admin?.anzahl) || ANZAHL_STANDARD));
+
+    const alle = [
+      termindaten.besonderes,
+      termindaten.termin,
+      aba,
+      motto,
+      losung,
+      wetter
+    ].filter(Boolean);
+
+    const map = new Map(alle.map(k => [k.typ, k]));
+    const auswahl = [];
+
+    function aufnehmen(kandidat) {
+      if (!kandidat) return;
+      if (auswahl.some(k => k.typ === kandidat.typ)) return;
+      if (istAusgeblendet(kandidat.typ, vorgabe) && kandidat.typ !== 'besonderes') return;
+      if (auswahl.length < anzahl) auswahl.push(kandidat);
+    }
+
+    // 1. Schließung/Feiertag/Brückentag ist immer wichtiger als Zufall.
+    aufnehmen(termindaten.besonderes);
+
+    // 2. Datiert in der Pflegezentrale fixierte Rubriken folgen als Nächstes.
+    (Array.isArray(vorgabe?.fixieren) ? vorgabe.fixieren : [])
+      .forEach(typ => aufnehmen(map.get(typ)));
+
+    // 3. Ein echter Termin des Tages darf genau einen Platz belegen.
+    //    Schulferien befinden sich NICHT in termindaten.termin.
+    aufnehmen(termindaten.termin);
+
+    // 4. Montags bekommt das neue Wochenmotto einen festen Platz.
+    if (heute.getDay() === 1) aufnehmen(motto);
+
+    // 5. Restliche Plätze: stabile Tagesmischung statt Zufall pro Seitenaufruf.
+    const rest = stabileSortierung(
+      alle.filter(k => k.typ !== 'besonderes' && k.typ !== 'termine'),
+      heute,
+      'tageskarte'
+    );
+    rest.forEach(aufnehmen);
+
+    if (!auswahl.length) {
+      $('tagesinfo-box').hidden = true;
+      return;
+    }
+
+    rendere(auswahl);
+
+    if (vorgabe) {
+      const status = $('tagesinfo-status');
+      if (status && vorgabe.hinweis) {
+        status.textContent = vorgabe.hinweis;
+        status.hidden = false;
+      }
+    }
+  }
+
+  window.addEventListener('pagehide', stoppVorlesen);
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', starten, { once: true });
+  } else {
+    starten();
+  }
+
+})();
