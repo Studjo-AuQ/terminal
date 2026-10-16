@@ -252,6 +252,7 @@
      - data/wochenmottos.json
      - data/losungen.json
      - data/wetter.json
+     - data/speiseplan-kurz.json (automatisch aus Speiseplan-PDFs erzeugt)
      - data/tagesinfo.json (spätere Admin-Vorgaben)
 
    Wichtige Regeln:
@@ -261,8 +262,8 @@
      - Wetter wird nur gezeigt, wenn wetter.json von heute ist.
      - Die übrige Auswahl ist pro Kalendertag stabil: Ein Neuladen
        der Seite erzeugt am selben Tag keine andere Zusammenstellung.
-     - Mittagessen folgt in Stufe 2, damit auf der Startseite keine
-       schwere PDF-/OCR-Erkennung ausgeführt werden muss.
+     - Mittagessen wird aus einem kleinen vorbereiteten JSON gelesen.
+       Die OCR läuft einmalig in GitHub Actions, nicht auf dem Endgerät.
    ══════════════════════════════════════════════════════ */
 
 (function () {
@@ -356,8 +357,8 @@
         position:relative;
         width:100%;
         box-sizing:border-box;
-        margin:0 0 24px;
-        padding:16px 18px 18px;
+        margin:0 0 18px;
+        padding:7px 10px 10px;
         background:#eef0f1;
         border:1px solid #d9dddf;
         border-radius:18px;
@@ -368,27 +369,27 @@
         display:flex;
         align-items:center;
         justify-content:space-between;
-        gap:12px;
-        margin-bottom:12px;
+        gap:8px;
+        margin-bottom:6px;
       }
 
       .tagesinfo-titel {
         margin:0;
         color:#0f2f37;
-        font-size:1.25rem;
+        font-size:1.05rem;
         font-weight:900;
         line-height:1.2;
       }
 
       .tagesinfo-ohr {
         flex:0 0 auto;
-        width:42px;
-        height:42px;
+        width:36px;
+        height:36px;
         border:2px solid #b61f29;
         border-radius:50%;
         background:#fff;
         color:#b61f29;
-        font-size:1.3rem;
+        font-size:1.15rem;
         line-height:1;
         cursor:pointer;
         display:flex;
@@ -490,9 +491,8 @@
         font-size:1.02rem;
         font-weight:800;
         line-height:1.28;
-        text-decoration:underline;
-        text-decoration-thickness:1px;
-        text-underline-offset:2px;
+        text-decoration:none;
+        white-space:pre-line;
       }
 
       .tagesinfo-text::after {
@@ -515,21 +515,21 @@
 
       @media (max-width:700px) {
         .tagesinfo-box {
-          padding:14px 12px 13px;
-          margin-bottom:20px;
+          padding:6px 8px 9px;
+          margin-bottom:16px;
         }
 
         .tagesinfo-kopf {
-          margin:0 4px 10px;
+          margin:0 2px 5px;
         }
 
         .tagesinfo-titel {
-          font-size:1.15rem;
+          font-size:1rem;
         }
 
         .tagesinfo-ohr {
-          width:40px;
-          height:40px;
+          width:34px;
+          height:34px;
         }
 
         .tagesinfo-liste {
@@ -748,7 +748,7 @@
       rubrik: 'AbA-Tipp',
       emoji: '🧩',
       text: [angebot.name, ort, zeit].filter(Boolean).join(' · '),
-      href: 'aba.html'
+      href: standort?.seite || 'aba.html'
     };
   }
 
@@ -800,21 +800,76 @@
     };
   }
 
-  function wetterIstVonHeute(daten, heute) {
-    const m = /^(\d{2})\.(\d{2})\.(\d{4})/.exec(String(daten?.aktualisiert || '').trim());
+
+  function essensZieldatum(jetzt) {
+    const tag = jetzt.getDay();
+    if (tag === 0 || tag === 6) return null;
+
+    const nachUmschaltzeit =
+      jetzt.getHours() > 13 ||
+      (jetzt.getHours() === 13 && jetzt.getMinutes() >= 15);
+
+    /* Freitag nach 13:15 Uhr gibt es keinen Folgetag mit Mittagessen.
+       Am Wochenende wird deshalb ebenfalls kein Essen-Tipp angeboten. */
+    if (tag === 5 && nachUmschaltzeit) return null;
+
+    const ziel = new Date(jetzt);
+    if (nachUmschaltzeit) ziel.setDate(ziel.getDate() + 1);
+    ziel.setHours(12, 0, 0, 0);
+
+    return { ziel, istFolgetag: nachUmschaltzeit };
+  }
+
+  async function kandidatEssen(jetzt) {
+    const zielInfo = essensZieldatum(jetzt);
+    if (!zielInfo) return null;
+
+    const daten = await ladeJson('data/speiseplan-kurz.json', true);
+    const eintrag = daten?.tage?.[isoDatum(zielInfo.ziel)];
+    const a1 = String(eintrag?.a1 || '').trim();
+    const a2 = String(eintrag?.a2 || '').trim();
+
+    /* Nur anzeigen, wenn beide ersten Menüs sicher erkannt wurden. */
+    if (!a1 || !a2) return null;
+
+    return {
+      id: 'essen',
+      typ: 'essen',
+      rubrik: 'Mittagessen, zum Beispiel…',
+      emoji: '🍽️',
+      text: 'A1: ' + a1 + '\nA2: ' + a2,
+      href: 'speiseplan.html'
+    };
+  }
+
+  function datumTextIstHeute(text, heute) {
+    const m = /^(\d{2})\.(\d{2})\.(\d{4})/.exec(String(text || '').trim());
     if (!m) return false;
     return Number(m[1]) === heute.getDate() &&
            Number(m[2]) === heute.getMonth() + 1 &&
            Number(m[3]) === heute.getFullYear();
   }
 
+  function wetterIstVonHeute(daten, heute) {
+    return datumTextIstHeute(daten?.aktualisiert, heute);
+  }
+
   function wetterStadtKurz(stadt, heute) {
     if (!stadt) return '';
+    if (stadt.veraltet && !datumTextIstHeute(stadt.datenstand, heute)) return '';
     const ddmm = String(heute.getDate()).padStart(2, '0') + '.' +
                  String(heute.getMonth() + 1).padStart(2, '0') + '.';
     const tag = (stadt.tage || []).find(t => t.datum === ddmm) || (stadt.tage || [])[0];
     if (!tag) return '';
-    return stadt.stadt + ': ' + (tag.emoji || '') + ' bis ' + tag.max + ' °C';
+
+    let standHinweis = '';
+    if (stadt.veraltet) {
+      const m = /,\s*(\d{1,2}:\d{2})/.exec(String(stadt.datenstand || ''));
+      standHinweis = m ? ' (Stand ' + m[1] + ' Uhr)' : ' (älterer Stand)';
+    }
+
+    return stadt.stadt + standHinweis + ': ' +
+           (tag.emoji || '') + ' bis ' + tag.max + ' °C';
   }
 
   async function kandidatWetter(heute) {
@@ -917,13 +972,16 @@
     const heute = new Date();
     heute.setHours(12, 0, 0, 0);
 
-    const [admin, termindaten, aba, motto, losung, wetter] = await Promise.all([
+    const jetzt = new Date();
+
+    const [admin, termindaten, aba, motto, losung, wetter, essen] = await Promise.all([
       ladeJson(ADMIN_DATEI, true),
       kandidatTerminUndBesonderes(heute),
       kandidatAba(heute),
       kandidatMotto(heute),
       kandidatLosung(heute),
-      kandidatWetter(heute)
+      kandidatWetter(heute),
+      kandidatEssen(jetzt)
     ]);
 
     const vorgabe = aktiveAdminVorgabe(admin, heute);
@@ -935,7 +993,8 @@
       aba,
       motto,
       losung,
-      wetter
+      wetter,
+      essen
     ].filter(Boolean);
 
     const map = new Map(alle.map(k => [k.typ, k]));
