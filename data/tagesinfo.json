@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "stand": "2026-10-16",
-  "hinweis": "Vorbereitung für die spätere Pflegezentrale. Ohne Vorgaben stellt das Terminal die Tageskarte automatisch zusammen.",
+  "hinweis": "Ohne aktive Zeitsteuerung stellt das Terminal die Tageskarte automatisch zusammen. Schließungen, Feiertage und Brückentage bleiben geschützt.",
   "anzahl": 3,
   "rubriken": [
     "termine",
@@ -9,7 +9,8 @@
     "motto",
     "losung",
     "wetter",
-    "essen"
+    "essen",
+    "nachricht"
   ],
   "vorgaben": []
 }
