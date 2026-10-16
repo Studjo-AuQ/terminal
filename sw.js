@@ -1,6 +1,6 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 29
+   Version 30
 
    - lädt beim Installieren alle aktuell lokalen Terminal-Dateien vor
      (HTML, CSS, JS, JSON, Schriften, Bilder, PDF.js und Speiseplan-PDFs)
@@ -17,7 +17,7 @@
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v29';
+const CACHE_VERSION = 'v30';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 
@@ -97,6 +97,7 @@ const OFFLINE_DATEIEN = [
   "data/nachrichten.json",
   "data/neuigkeiten.json",
   "data/tagesschau.json",
+  "data/tagesinfo.json",
   "data/termine.json",
   "data/ticker.json",
   "data/wetter.json",
