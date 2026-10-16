@@ -1,7 +1,15 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "16.10.2026, 18:58 Uhr (UTC)",
+  "aktualisiert": "16.10.2026, 22:01 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "ee80b6e2ea1dbc53388d",
+      "title": "Winkel als Vorsitzender der Jungen Union wiedergewählt",
+      "description": "Johannes Winkel ist als Vorsitzender der Jungen Union mit seinem bislang besten Ergebnis wiedergewählt worden. Er rief zu Zuversicht und Selbstbewusstsein auf - und teilte gleich darauf in Richtung SPD aus.",
+      "pubDate": "2026-10-16T23:15:49+02:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/junge-union-vorsitzender-100.html",
+      "bild": ""
+    },
     {
       "id": "e652a2da08d52ab9a0bb",
       "title": "Online Challenges: Bundesrat fordert mehr Schutz von Minderjährigen",
@@ -13,8 +21,8 @@
     {
       "id": "d972ccaeecbe5db36034",
       "title": "Trumps neue Sprecherin räumt ihren Posten nach wenigen Tagen im Amt",
-      "description": "Die gerade erst angetretene neue Pressesprecherin von US-Präsident Donald Trump, Katie Zacharia, gibt ihr Amt wieder auf. In den vergangenen Tagen war sie mit Negativschlagzeilen aufgefallen.",
-      "pubDate": "2026-10-16T20:46:52+02:00",
+      "description": "Die gerade erst angetretene neue Pressesprecherin von US-Präsident Donald Trump, Katie Zacharia, gibt ihr Amt schon wieder auf. Sie war wegen falscher Angaben zu ihrem Lebenslauf unter Druck geraten.",
+      "pubDate": "2026-10-16T21:42:41+02:00",
       "link": "https://www.tagesschau.de/ausland/amerika/zacharia-sprecherin-trump-100.html",
       "bild": ""
     },
@@ -112,14 +120,6 @@
       "description": "Bei \"Blackout-Challenges\" würgen sich Jugendliche selbst oder gegenseitig bis zur Ohnmacht. Aufnahmen davon werden vielfach in Sozialen Medien geteilt. Der Bundesrat fordert nun Strafen für die, die andere gezielt zu solchen Handlungen verleiten.",
       "pubDate": "2026-10-16T15:29:07+02:00",
       "link": "https://www.tagesschau.de/inland/innenpolitik/soziale-medien-challenges-bundesrat-100.html",
-      "bild": ""
-    },
-    {
-      "id": "0ac5341b6104b8d97b89",
-      "title": "KI: Bundesregierung plant Kooperation mit US-Chiphersteller Nvidia",
-      "description": "Deutschland will beim KI-Boom mitwirken - die Industrie soll zukunftsfähig gemacht und der Standort für Investoren attraktiver werden. Um das zu erreichen, hat die Regierung offenbar einen Deal mit Nvidia eingefädelt.",
-      "pubDate": "2026-10-16T15:13:40+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/technologie/nvidia-bundesregierung-ki-100.html",
       "bild": ""
     }
   ],
