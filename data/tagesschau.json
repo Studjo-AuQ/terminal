@@ -1,7 +1,63 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "16.10.2026, 12:43 Uhr (UTC)",
+  "aktualisiert": "16.10.2026, 15:28 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "0ed417bec1301330a875",
+      "title": "Wirtschaftsministerin Reiche für Direktzahlungen nach \"Tankrabatt\"",
+      "description": "Der \"Tankrabatt\" soll Autofahrer entlasten - aber was kommt danach? Wirtschaftsministerin Reiche spricht sich im ARD Interview der Woche für eine gezieltere Entlastung von Geringverdienern aus - und erhöht den Druck auf das Finanzministerium.",
+      "pubDate": "2026-10-16T16:55:10+02:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/katherina-reiche-tankrabatt-entlastungen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "5181e0f429068c862b46",
+      "title": "Schaltsekunde abgeschafft - kommt dafür die Schaltstunde?",
+      "description": "Ein internationales Gremium hat festgelegt: Künftig wird es keine Schaltsekunden mehr geben. 27 Mal wurde sie genutzt, um unsere Uhren mit der astronomischen Zeit in Einklang zu halten. Ein neues System käme erst im Jahr 3000 zum Einsatz.",
+      "pubDate": "2026-10-16T16:50:10+02:00",
+      "link": "https://www.tagesschau.de/wissen/forschung/schaltsekunde-abschaffung-100.html",
+      "bild": ""
+    },
+    {
+      "id": "ec1693aac56bd5b5b0cd",
+      "title": "Drohungen an jüdische Studenten nach AfD-Blockade bei Gedenkfeier",
+      "description": "Jüdische Studierende hatten AfD-Politiker Tillschneider daran gehindert, am Gedenken in der Synagoge von Halle teilzunehmen - jetzt bekommen sie Morddrohungen. Die Polizei ermittelt, ob Tillschneider beleidigt wurde.",
+      "pubDate": "2026-10-16T16:40:15+02:00",
+      "link": "https://www.tagesschau.de/inland/juedische-studenten-afd-100.html",
+      "bild": ""
+    },
+    {
+      "id": "8383edbb543881b5aeb5",
+      "title": "Wie es mit der Commerzbank nun weitergeht",
+      "description": "Nach der Zustimmung der EZB-Aufseher steht einer Mehrheitsübernahme der Commerzbank durch die italienische Großbank UniCredit fast nichts mehr im Weg. Was sind die nächsten Schritte - und die Folgen? Von Ursula Mayer.",
+      "pubDate": "2026-10-16T16:25:09+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/unicredit-commerzbank-uebernahme-100.html",
+      "bild": ""
+    },
+    {
+      "id": "debc85119de74b4d6359",
+      "title": "Gefährliche Mutproben: Bundesrat fordert mehr Schutz von Minderjährigen im Netz",
+      "description": "Bei \"Blackout-Challenges\" würgen sich Jugendliche selbst oder gegenseitig bis zur Ohnmacht. Aufnahmen davon werden vielfach in Sozialen Medien geteilt. Der Bundesrat fordert nun Strafen für die, die andere gezielt zu solchen Handlungen verleiten.",
+      "pubDate": "2026-10-16T15:29:07+02:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/soziale-medien-challenges-bundesrat-100.html",
+      "bild": ""
+    },
+    {
+      "id": "0ac5341b6104b8d97b89",
+      "title": "KI: Bundesregierung plant Kooperation mit US-Chiphersteller Nvidia",
+      "description": "Deutschland will beim KI-Boom mitwirken - die Industrie soll zukunftsfähig gemacht und der Standort für Investoren attraktiver werden. Um das zu erreichen, hat die Regierung offenbar einen Deal mit Nvidia eingefädelt.",
+      "pubDate": "2026-10-16T15:13:40+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/technologie/nvidia-bundesregierung-ki-100.html",
+      "bild": ""
+    },
+    {
+      "id": "742579ebfad0ff5d0058",
+      "title": "Streit über Wehrdienst für Ultraorthodoxe in Israel",
+      "description": "Die Frage der Wehrpflicht spaltet Israel. Sollen junge ultraorthodoxe Männer in der Armee dienen oder weiter die heiligen Schriften studieren? Forderungen nach Wehrgerechtigkeit treffen auf massiven Widerstand - gerade vor der Wahl. Von Julio Segador.",
+      "pubDate": "2026-10-16T14:59:58+02:00",
+      "link": "https://www.tagesschau.de/ausland/asien/israel-wehrpflicht-ultraorthodox-100.html",
+      "bild": ""
+    },
     {
       "id": "1ddfa1c345f60582ccc2",
       "title": "Noch mehr Eigentum westlicher Firmen unter Kreml-Kontrolle",
@@ -20,9 +76,9 @@
     },
     {
       "id": "242122036a5040821ff6",
-      "title": "Vorstand der Berliner Linksfraktion trifft sich zu Sondersitzung",
-      "description": "Nach neuen Äußerungen der Berliner Linken-Politikerin Emde schaltet sich der Vorstand der Fraktion heute zu einer Sondersitzung zusammen. Anlass ist ein Instagram-Video, in dem Emde israel-kritische Positionen wiederholt.",
-      "pubDate": "2026-10-16T13:59:27+02:00",
+      "title": "Berlin: Linken-Vorstand distanziert sich von Abgeordneter Emde",
+      "description": "Die Vorstand der Linken in Berlin will offenbar nicht mehr mit der Abgeordneten Emde zusammenarbeiten. Hintergrund ist ein Instagram-Video, in dem Emde israel-kritische Positionen wiederholt. Kommende Woche soll es ein Gespräch geben.",
+      "pubDate": "2026-10-16T17:14:30+02:00",
       "link": "https://www.tagesschau.de/inland/regional/berlin/beratungen-vorstand-linksfraktion-berlin-100.html",
       "bild": ""
     },
@@ -64,62 +120,6 @@
       "description": "Zigaretten, Feinschnitt und andere Tabakwaren und tabakähnliche Produkte sollen deutlich stärker besteuert werden als bislang - die Preise dürften erheblich steigen. Was ist genau geplant?",
       "pubDate": "2026-10-16T14:38:22+02:00",
       "link": "https://www.tagesschau.de/inland/innenpolitik/ueberblick-tabaksteuer-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c82eb26938ca94dd3612",
-      "title": "Giftige Rauchwolken durch Waldbrände in Indonesien treffen auch Nachbarländer",
-      "description": "Eine besonders schwere Brandsaison macht Indonesien zu schaffen. Die dortigen Torfbrände sind nur schwer zu bekämpfen und der giftige Rauch belastet auch die Nachbarländer. In einem Nationalpark auf Java gab es vier Tote.",
-      "pubDate": "2026-10-16T12:20:08+02:00",
-      "link": "https://www.tagesschau.de/ausland/asien/indonesien-malaysia-waldbraende-100.html",
-      "bild": ""
-    },
-    {
-      "id": "36d0b169ef5d5487e4ee",
-      "title": "EU-Spitzen stärken Selenskyj den Rücken",
-      "description": "Präsident Selenskyj ist zum EU-Gipfel nach Brüssel gereist - und wird mit Zusicherungen begrüßt. Hilfen bleiben, Sanktionen sind in Arbeit, die EU-Beitrittsverhandlungen kommen voran. Allerdings geht US-Präsident Trump weiter auf Konfrontation.",
-      "pubDate": "2026-10-16T11:57:13+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/eu-gipfel-ukraine-selenskyj-100.html",
-      "bild": ""
-    },
-    {
-      "id": "d5ed15ef242d76d48a5d",
-      "title": "Flugverkehr über Italien gestört - Sabotage bislang ausgeschlossen",
-      "description": "In Italien gibt es massive Probleme im Flugverkehr. Betroffen sind Starts und Landungen im ganzen Land, aber auch Überflüge. Grund sind Störungen bei der Flugsicherung. Ein Hackerangriff oder Sabotage wird derzeit ausgeschlossen.",
-      "pubDate": "2026-10-16T11:55:19+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/flugverkehr-italien-100.html",
-      "bild": ""
-    },
-    {
-      "id": "34b9e9f6829158498af0",
-      "title": "Wohnimmobilien: Deutlich mehr Baugenehmigungen",
-      "description": "Lichtblick für den deutschen Wohnungsbau: Der Aufwärtstrend des ersten Halbjahres setzt sich auch im August fort. Doch höhere Energiepreise und Zinsen belasten viele Bauherren.",
-      "pubDate": "2026-10-16T11:29:27+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/baugenehmigungen-steigen-wieder-2026-100.html",
-      "bild": ""
-    },
-    {
-      "id": "65c6b79358bcad85b899",
-      "title": "Klingbeils Baustellen - Zwischen Sparzwang und Entlastung",
-      "description": "Deutschlands Probleme begleiten Finanzminister Klingbeil bis nach Bangkok. Sparen, Schuldenabbau, Reformen - das sind die Empfehlungen auf der dortigen IWF-Tagung. Klingbeil gibt sich zuversichtlich - und verweist auch auf die Tabaksteuer. Von N. Kohnert.",
-      "pubDate": "2026-10-16T11:14:29+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/finanzminister-klingbeil-spd-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f13a945a2dfc89ef8085",
-      "title": "Marktbericht: DAX startet mit Gewinnen",
-      "description": "Die Erholung im weltweiten Technologiesektor gibt auch dem deutschen Aktienmarkt Rückenwind. US-Notenbankchef Kevin Warsh sieht in künstlicher Intelligenz enormes Potenzial für Länder bei Produktivität und Wachstum.",
-      "pubDate": "2026-10-16T10:12:55+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-nikkei-oelpreis-100.html",
-      "bild": ""
-    },
-    {
-      "id": "fb912a144ac6cdd82a10",
-      "title": "Bundeseigene Wohnungsbaugesellschaft soll 2027 starten",
-      "description": "Der Wohnungsmangel in Deutschland ist groß, eine bundeseigene Wohnungsbaugesellschaft soll Abhilfe schaffen. Nach Angaben von Bundesbauministerin Hubertz soll sie 2027 an den Start gehen.",
-      "pubDate": "2026-10-16T10:04:20+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/hubertz-wohnungsbaugesellschaft-100.html",
       "bild": ""
     }
   ],
