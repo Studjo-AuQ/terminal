@@ -1,7 +1,79 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "16.10.2026, 15:28 Uhr (UTC)",
+  "aktualisiert": "16.10.2026, 18:58 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "e652a2da08d52ab9a0bb",
+      "title": "Online Challenges: Bundesrat fordert mehr Schutz von Minderjährigen",
+      "description": "Immer wieder verletzen sich Jugendliche bei Challenges, die in Sozialen Medien kursieren. Der Bundesrat will Erwachsene bestrafen, die Minderjährige dazu verleiten. Eine Wissenschaftlerin warnt vor Symbolpolitik. Von L. Pfeuffer-Rooschüz.",
+      "pubDate": "2026-10-16T20:42:07+02:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/soziale-medien-challenges-100.html",
+      "bild": ""
+    },
+    {
+      "id": "d972ccaeecbe5db36034",
+      "title": "Trumps neue Sprecherin räumt ihren Posten nach wenigen Tagen im Amt",
+      "description": "Die gerade erst angetretene neue Pressesprecherin von US-Präsident Donald Trump, Katie Zacharia, gibt ihr Amt wieder auf. In den vergangenen Tagen war sie mit Negativschlagzeilen aufgefallen.",
+      "pubDate": "2026-10-16T20:46:52+02:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/zacharia-sprecherin-trump-100.html",
+      "bild": ""
+    },
+    {
+      "id": "e4ad8263023a6dcabdd1",
+      "title": "Selenskyj beim EU-Gipfel: Unterstützung für die Ukraine ohne USA?",
+      "description": "Die Gräben zwischen den USA und der Ukraine scheinen immer größer zu werden. Selenskyj wendet sich mit einer Grundsatzfrage an die EU-Staaten - die haben militärische, finanzielle und politische Probleme. Von S. Stuchlik.",
+      "pubDate": "2026-10-16T20:07:15+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/selenskyj-eu-gipfel-102.html",
+      "bild": ""
+    },
+    {
+      "id": "35698f6e2eb8c1ab293a",
+      "title": "Angriff auf NS-Dokumentationszentrum in Köln",
+      "description": "In Köln ist das NS-Dokumentationszentrum mit einer stinkenden Flüssigkeit verunreinigt worden. Die Polizei geht von einem Buttersäure-Angriff aus. Das Haus gilt als Kölns größte Gedenkstätte für Opfer des Nationalsozialismus.",
+      "pubDate": "2026-10-16T19:12:00+02:00",
+      "link": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/angriff-auf-ns-dokumentationszentrum-in-koeln-100.html",
+      "bild": ""
+    },
+    {
+      "id": "3aaf5ebd3770a473553d",
+      "title": "Papst bittet Putin um Waffenruhe in Oleschky",
+      "description": "Leo XIV. ist besorgt über die Lage in der abgeriegelten ukrainischen Frontstadt Oleschky. In einem Telefonat mit Putin ruft er den Kremlchef zu einem Waffenstillstand in der Region auf - kurz nach seiner Lungen-OP.",
+      "pubDate": "2026-10-16T19:25:17+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/papst-telefonat-putin-100.html",
+      "bild": ""
+    },
+    {
+      "id": "3e94945f68a8388427b6",
+      "title": "EU-Regeln: Berlin und Paris wollen Verbrenner-Aus aufweichen",
+      "description": "Deutschland und Frankreich haben sich auf eine Position zum Verbrenner-Aus in der EU verständigt. Kanzler Merz und Umweltminister Schneider zeigen sich sehr zufrieden. Oder ist es ein historischer Fehler? Von Jakob Mayr.",
+      "pubDate": "2026-10-16T18:59:07+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/verbrenner-aus-paris-berlin-100.html",
+      "bild": ""
+    },
+    {
+      "id": "2359df258b517b596bbb",
+      "title": "Eurowings streicht Flüge und prüft Kurzarbeit",
+      "description": "Der Kostendruck steigt: Eurowings streicht Flüge und prüft die Möglichkeit von Kurzarbeit für seine Mitarbeitenden. Als Grund nennt die Lufthansa-Tochter die gestiegenen Preise für Kerosin durch den Iran-Krieg.",
+      "pubDate": "2026-10-16T18:52:09+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/eurowings-kurzarbeit-100.html",
+      "bild": ""
+    },
+    {
+      "id": "f13a945a2dfc89ef8085",
+      "title": "Marktbericht: DAX schüttelt KI- und Zinssorgen vorerst ab",
+      "description": "Die Stimmung an den Aktienmärkten hat sich zum Ende der Handelswoche spürbar aufgehellt. Ausschlaggebend war eine Rede von US-Notenbankchef Warsh. Dazu kamen Rückenwind aus der Autoindustrie und starke Firmenbilanzen.",
+      "pubDate": "2026-10-16T18:22:56+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-nikkei-oelpreis-100.html",
+      "bild": ""
+    },
+    {
+      "id": "220138cedf0cc13a497f",
+      "title": "Starlink-Anschlag: Hat Russland die türkische Mafia beauftragt?",
+      "description": "Wegen eines Brandanschlags auf eine Starlink-Station in Polen wurden zwei Tatverdächtige in Deutschland festgenommen. Nach Recherchen von ARD-Hauptstadtstudio und STRG_F sollen die beiden Männer zur türkischen Organisierten Kriminalität gehören.",
+      "pubDate": "2026-10-16T17:51:42+02:00",
+      "link": "https://www.tagesschau.de/investigativ/starlink-polen-tuerkei-mafia-100.html",
+      "bild": ""
+    },
     {
       "id": "0ed417bec1301330a875",
       "title": "Wirtschaftsministerin Reiche für Direktzahlungen nach \"Tankrabatt\"",
@@ -48,78 +120,6 @@
       "description": "Deutschland will beim KI-Boom mitwirken - die Industrie soll zukunftsfähig gemacht und der Standort für Investoren attraktiver werden. Um das zu erreichen, hat die Regierung offenbar einen Deal mit Nvidia eingefädelt.",
       "pubDate": "2026-10-16T15:13:40+02:00",
       "link": "https://www.tagesschau.de/wirtschaft/technologie/nvidia-bundesregierung-ki-100.html",
-      "bild": ""
-    },
-    {
-      "id": "742579ebfad0ff5d0058",
-      "title": "Streit über Wehrdienst für Ultraorthodoxe in Israel",
-      "description": "Die Frage der Wehrpflicht spaltet Israel. Sollen junge ultraorthodoxe Männer in der Armee dienen oder weiter die heiligen Schriften studieren? Forderungen nach Wehrgerechtigkeit treffen auf massiven Widerstand - gerade vor der Wahl. Von Julio Segador.",
-      "pubDate": "2026-10-16T14:59:58+02:00",
-      "link": "https://www.tagesschau.de/ausland/asien/israel-wehrpflicht-ultraorthodox-100.html",
-      "bild": ""
-    },
-    {
-      "id": "1ddfa1c345f60582ccc2",
-      "title": "Noch mehr Eigentum westlicher Firmen unter Kreml-Kontrolle",
-      "description": "Unmittelbar vor Wolodymyr Selenskyjs Auftritt beim Europäischen Rat stellt Russland weitere europäische Unternehmen im Land unter staatliche Zwangsverwaltung - darunter einen deutschen Verpackungshersteller.",
-      "pubDate": "2026-10-16T14:38:24+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/russland-vermoegen-deutscher-firmen-staatliche-kontrolle-100.html",
-      "bild": ""
-    },
-    {
-      "id": "a1c0d6706f5d5ee1d424",
-      "title": "Auto-Aktien steigen nach deutsch-französischer Einigung deutlich",
-      "description": "Deutschland und Frankreich haben sich auf die Lockerung des eigentlich beschlossenen Verbrenner-Aus geeinigt. Das lässt die Aktien der Autobauer nach oben springen. Und auch der DAX kann am Mittag zulegen.",
-      "pubDate": "2026-10-16T14:17:39+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/autobauer-verbrenneraus-marktbericht-100.html",
-      "bild": ""
-    },
-    {
-      "id": "242122036a5040821ff6",
-      "title": "Berlin: Linken-Vorstand distanziert sich von Abgeordneter Emde",
-      "description": "Die Vorstand der Linken in Berlin will offenbar nicht mehr mit der Abgeordneten Emde zusammenarbeiten. Hintergrund ist ein Instagram-Video, in dem Emde israel-kritische Positionen wiederholt. Kommende Woche soll es ein Gespräch geben.",
-      "pubDate": "2026-10-16T17:14:30+02:00",
-      "link": "https://www.tagesschau.de/inland/regional/berlin/beratungen-vorstand-linksfraktion-berlin-100.html",
-      "bild": ""
-    },
-    {
-      "id": "4438a3572cca8e06ddfd",
-      "title": "\"Deutschlandtag\" der Jungen Union - der Parteinachwuchs als Antreiber",
-      "description": "Die Umfragewerte im Keller, die Stimmung auch: In der Koalition kriselt es. Beim \"Deutschlandtag\" der Jungen Union in Bonn will der Parteinachwuchs nun neue Impulse für die Union setzen. Von Dagmar Pepping.",
-      "pubDate": "2026-10-16T13:28:58+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/junge-union-deutschlandtag-112.html",
-      "bild": ""
-    },
-    {
-      "id": "c37d002ea3b60a6ef896",
-      "title": "Wie Anleger bei ETFs den Überblick behalten",
-      "description": "Einfach, günstig, transparent: Damit haben ETFs Millionen Anleger überzeugt. Doch die Branche bringt immer kompliziertere Produkte auf den Markt - oft mit höheren Gebühren und zusätzlichen Risiken. Von Angela Göpfert.",
-      "pubDate": "2026-10-16T13:25:34+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/etf-geldanlage-kosten-risiken-100.html",
-      "bild": ""
-    },
-    {
-      "id": "3476c023df8e3d6a7d66",
-      "title": "Vergabe der Wiesn-Zelte laut Gerichtsbeschluss rechtmäßig",
-      "description": "Monatelang wurde darüber gestritten, wie die lukrativen Wiesn-Festzelte vergeben werden - und ob dabei nicht europäisches Recht angewendet werden müsste. Nun gab es die finale Entscheidung.",
-      "pubDate": "2026-10-16T13:23:56+02:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/gerichtsentscheidung-wiesn-zelte-100.html",
-      "bild": ""
-    },
-    {
-      "id": "817d4ff484bc87a52155",
-      "title": "Zweifel an Qualifikation: Trumps Sprecherin bei Prüfung durchgefallen",
-      "description": "Nur wenige Tage nach ihrem Start als neue Sprecherin des Weißen Hauses macht Katie Zacharia bereits selbst Schlagzeilen. Ist sie nun Anwältin oder nicht? Auch wirre Sätze und Versprecher sorgen für Irritationen.",
-      "pubDate": "2026-10-16T13:12:24+02:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/trump-sprecherin-zacharia-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f9316f3d6548dd56eb62",
-      "title": "Welche Tabakware wie viel teurer wird",
-      "description": "Zigaretten, Feinschnitt und andere Tabakwaren und tabakähnliche Produkte sollen deutlich stärker besteuert werden als bislang - die Preise dürften erheblich steigen. Was ist genau geplant?",
-      "pubDate": "2026-10-16T14:38:22+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/ueberblick-tabaksteuer-100.html",
       "bild": ""
     }
   ],
