@@ -25,6 +25,8 @@ jobs:
           import xml.etree.ElementTree as ET
           import json
           import re
+          import html
+          import hashlib
           from datetime import datetime, timezone
 
           FEEDS = [
@@ -57,15 +59,7 @@ jobs:
               if not text:
                   return ''
               text = re.sub(r'<[^>]+>', ' ', text)
-              for entity, ersatz in [
-                  ('&amp;', '&'),
-                  ('&lt;', '<'),
-                  ('&gt;', '>'),
-                  ('&quot;', '"'),
-                  ('&#39;', "'"),
-                  ('&nbsp;', ' ')
-              ]:
-                  text = text.replace(entity, ersatz)
+              text = html.unescape(text)
               return re.sub(r'\s+', ' ', text).strip()
 
           def parse_datum(s):
@@ -80,6 +74,30 @@ jobs:
                   except Exception:
                       pass
               return s
+
+          def atom_text(item, name):
+              ns = 'http://www.w3.org/2005/Atom'
+              el = item.find(f'{{{ns}}}{name}')
+              return el.text or '' if el is not None else ''
+
+          def item_link(item):
+              link = (item.findtext('link') or '').strip()
+              if link:
+                  return link
+              ns = 'http://www.w3.org/2005/Atom'
+              for el in item.findall(f'{{{ns}}}link'):
+                  href = (el.attrib.get('href') or '').strip()
+                  rel = (el.attrib.get('rel') or 'alternate').strip()
+                  if href and rel in ('alternate', ''):
+                      return href
+              return ''
+
+          def stabile_id(item, titel, datum, link):
+              guid = (item.findtext('guid') or '').strip()
+              if not guid:
+                  guid = atom_text(item, 'id').strip()
+              basis = guid or link or (titel + '|' + datum)
+              return hashlib.sha1(basis.encode('utf-8')).hexdigest()[:20]
 
           def hole_feed(url, max_meldungen):
               req = urllib.request.Request(
@@ -115,12 +133,15 @@ jobs:
                   titel = html_entfernen(txt('title', 'title'))
                   desc = html_entfernen(txt('description', 'summary'))
                   datum = parse_datum(txt('pubDate', 'published'))
+                  link = item_link(item)
 
                   if titel:
                       meldungen.append({
+                          'id': stabile_id(item, titel, datum, link),
                           'title': titel,
                           'description': desc,
                           'pubDate': datum,
+                          'link': link,
                           'bild': '',
                       })
 
