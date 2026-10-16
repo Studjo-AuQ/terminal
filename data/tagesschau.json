@@ -1,11 +1,71 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "16.10.2026, 05:42 Uhr (UTC)",
+  "aktualisiert": "16.10.2026, 11:09 Uhr (UTC)",
   "meldungen": [
     {
-      "title": "Marktbericht: Hoffnung auf Entlastung bei Öl- und Dieselpreisen",
-      "description": "Der DAX bewegt sich zum Wochenschluss zwischen geopolitischen Risiken einerseits und Hoffnung auf Entlastung andererseits. Die Internationale Energieagentur (IEA) will die Freigabe von Ölnotreserven beschleunigen.",
-      "pubDate": "2026-10-16T07:40:56+02:00",
+      "title": "Welche Tabakware wieviel teurer wird",
+      "description": "Zigaretten, Feinschnitt und andere Tabakwaren und tabakähnliche Produkte sollen deutlich stärker besteuert werden als bislang - die Preise dürften erheblich steigen. Was ist genau geplant?",
+      "pubDate": "2026-10-16T12:23:43+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Giftige Rauchwolken durch Waldbrände in Indonesien treffen auch Nachbarländer",
+      "description": "Eine besonders schwere Brandsaison macht Indonesien zu schaffen. Die dortigen Torfbrände sind nur schwer zu bekämpfen und der giftige Rauch belastet auch die Nachbarländer. In einem Nationalpark auf Java gab es vier Tote.",
+      "pubDate": "2026-10-16T12:20:08+02:00",
+      "bild": ""
+    },
+    {
+      "title": "EU-Spitzen stärken Selenskyj den Rücken",
+      "description": "Präsident Selenskyj ist zum EU-Gipfel nach Brüssel gereist - und wird mit Zusicherungen begrüßt. Hilfen bleiben, Sanktionen sind in Arbeit, die EU-Beitrittsverhandlungen kommen voran. Allerdings geht US-Präsident Trump weiter auf Konfrontation.",
+      "pubDate": "2026-10-16T11:57:13+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Flugverkehr über Italien gestört - Sabotage bislang ausgeschlossen",
+      "description": "In Italien gibt es massive Probleme im Flugverkehr. Betroffen sind Starts und Landungen im ganzen Land, aber auch Überflüge. Grund sind Störungen bei der Flugsicherung. Ein Hackerangriff oder Sabotage wird derzeit ausgeschlossen.",
+      "pubDate": "2026-10-16T11:55:19+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wohnimmobilien: Deutlich mehr Baugenehmigungen",
+      "description": "Lichtblick für den deutschen Wohnungsbau: Der Aufwärtstrend des ersten Halbjahres setzt sich auch im August fort. Doch höhere Energiepreise und Zinsen belasten viele Bauherren.",
+      "pubDate": "2026-10-16T11:29:27+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Klingbeils Baustellen - Zwischen Sparzwang und Entlastung",
+      "description": "Deutschlands Probleme begleiten Finanzminister Klingbeil bis nach Bangkok. Sparen, Schuldenabbau, Reformen - das sind die Empfehlungen auf der dortigen IWF-Tagung. Klingbeil gibt sich zuversichtlich - und verweist auch auf die Tabaksteuer. Von N. Kohnert.",
+      "pubDate": "2026-10-16T11:14:29+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Marktbericht: DAX startet mit Gewinnen",
+      "description": "Die Erholung im weltweiten Technologiesektor gibt auch dem deutschen Aktienmarkt Rückenwind. US-Notenbankchef Kevin Warsh sieht in künstlicher Intelligenz enormes Potenzial für Länder bei Produktivität und Wachstum.",
+      "pubDate": "2026-10-16T10:12:55+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Bundeseigene Wohnungsbaugesellschaft soll 2027 starten",
+      "description": "Der Wohnungsmangel in Deutschland ist groß, eine bundeseigene Wohnungsbaugesellschaft soll Abhilfe schaffen. Nach Angaben von Bundesbauministerin Hubertz soll sie 2027 an den Start gehen.",
+      "pubDate": "2026-10-16T10:04:20+02:00",
+      "bild": ""
+    },
+    {
+      "title": "In New Yorks \"Little Haiti\" geht die Angst um",
+      "description": "Seit Trump ihnen den Schutzstatus entzogen hat, gehen viele Haitianer in den USA kaum noch aus dem Haus, verstecken sich - aus Angst vor Abschiebung. Wie wirkt sich das auf den Alltag in New Yorks Viertel \"Little Haiti\" aus? Von Arnd Henze.",
+      "pubDate": "2026-10-16T09:04:17+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Wie subversiv ist Kinderfernsehen noch?",
+      "description": "Kinderfernsehen stellt oft Fragen, die auch Kinder selbst stellen würden - und provoziert damit immer mal wieder auch prominente Erwachsene. Doch trotz Kritik gibt es subversive Kinderserien bis heute. Von Alexander Bühler.",
+      "pubDate": "2026-10-16T09:02:03+02:00",
+      "bild": ""
+    },
+    {
+      "title": "Welternährungstag der UN: Der Kampf gegen Hunger kommt kaum voran",
+      "description": "Kriege, Klimawandel und gekürzte Hilfsgelder verschärfen die weltweite Ernährungskrise, besonders in Krisenregionen. Der Kampf gegen Hunger kommt kaum voran. Das UN-Ziel \"Zero Hunger\" bis 2030 rückt in weite Ferne. Von Verena Schälter.",
+      "pubDate": "2026-10-16T08:19:43+02:00",
       "bild": ""
     },
     {
@@ -22,74 +82,14 @@
     },
     {
       "title": "Altersvorsorge: Wie das mit der \"Frühstartrente\" laufen soll",
-      "description": "Der Entwurf für eine große Rentenreform liegt noch nicht vor, aber der Bundestag will heute über eine Maßnahme zur Alterssicherung entscheiden: die sogenannte Frühstartrente. Was sie beinhaltet und wer sie bekommt.",
-      "pubDate": "2026-10-16T05:00:25+02:00",
+      "description": "Der Entwurf für eine große Rentenreform liegt noch nicht vor, aber der Bundestag hat heute eine Maßnahme zur Alterssicherung beschlossen: die sogenannte Frühstartrente. Was sie beinhaltet und wer sie bekommt.",
+      "pubDate": "2026-10-16T10:16:46+02:00",
       "bild": ""
     },
     {
       "title": "Starlink-Störung in der Ukraine: Enttäuscht von Musk, enttäuscht von Trump",
       "description": "In der Ukraine scheint für viele klar: Die Starlink-Ausfälle sind kein Zufall, sondern politisch gewollt. Die Unterstützung aus der EU wird immer wichtiger. Von Rebecca Barth.",
       "pubDate": "2026-10-16T03:23:51+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Frankreich und Deutschland wollen Verbrenner-Aus aufweichen",
-      "description": "Deutschland setzt sich dafür ein, dass weiter Neuwagen mit Verbrennungstechnologie zugelassen werden können. Frankreichs Präsident Macron hat sich bisher gesperrt - nun zeichnet sich ein Deal ab.",
-      "pubDate": "2026-10-16T03:17:45+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bundestag beschließt Anhebung der Tabaksteuer",
-      "description": "Millionen Menschen rauchen in Deutschland, das beschert dem Bund Milliardeneinnahmen über die Tabaksteuer. Künftig soll es noch mehr werden. Raucher müssen sich daher auf höhere Preise einstellen.",
-      "pubDate": "2026-10-16T01:06:09+02:00",
-      "bild": ""
-    },
-    {
-      "title": "UniCredit bekommt grünes Licht von EZB für Übernahme der Commerzbank",
-      "description": "Seit zwei Jahren bemüht sich die italienische Großbank UniCredit um die Commerzbank. Nach langem Widerstand hat UniCredit nun eine wichtige Hürde genommen - und grünes Licht von der EZB bekommen.",
-      "pubDate": "2026-10-15T21:53:38+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Mehrere US-Bundesstaaten verklagen KI-Firma OpenAI",
-      "description": "Wie sicher ist der Umgang mit KI-Chatbots wie ChatGPT? Acht Bundesstaaten in den USA sehen erhebliche Risiken und haben deshalb Klagen gegen den Entwickler OpenAI eingereicht.",
-      "pubDate": "2026-10-15T21:20:05+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Bundeswehr: Vorwürfe sexuellen Fehlverhaltens in Weißenfels",
-      "description": "Nach Berichten über sexuelles Fehlverhalten bei der Bundeswehr in Sachsen-Anhalt kündigt das Verteidigungsministerium Konsequenzen an. Doch wie tief sitzt das Problem in der Truppe wirklich? Von Christina Nagel.",
-      "pubDate": "2026-10-15T20:22:56+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Ringen um neuen EU-Haushalt: Showdown in Zeitlupe",
-      "description": "Die EU solle nicht so viel Geld ausgeben, findet Bundeskanzler Merz. Einige Länder sehen das genauso. Andere können den Sparvorschlägen nichts abgewinnen. Trotz klarer Fronten bleibt der große Knall im Ringen um den Haushalt aus. Von S. Stuchlik.",
-      "pubDate": "2026-10-15T20:05:32+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Warum sich die Ukraine ohne die Aufklärungsdaten der USA kaum verteidigen kann",
-      "description": "Um sich verteidigen zu können, ist die Ukraine dringend auf Informationen aus den USA angewiesen. Doch genau dabei hakt es offenbar. Zudem gibt es Probleme mit dem Satellitendienst Starlink. Welche Folgen hat das? Und was steckt dahinter?",
-      "pubDate": "2026-10-15T19:17:37+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Psychotherapie-Reform: Bundestag beschließt Korrekturen",
-      "description": "Mit einer neuen Vergütungsregel will die Regierung bei der Psychotherapie sparen. Kinder und Schwerkranke sind ausgenommen. Fachverbände befürchten jedoch: Alle anderen könnten künftig länger auf einen Therapieplatz warten. Von S. Emminghaus.",
-      "pubDate": "2026-10-15T19:16:11+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Marktbericht: DAX vom Tech-Ausverkauf kaum betroffen",
-      "description": "Der DAX pendelt weiter um die Marke von 25.000 Punkten. Der weltweite Ausverkauf von Tech-Aktien hat den deutschen Leitindex nicht so stark getroffen - denn große Technologiewerte sind kaum vertreten.",
-      "pubDate": "2026-10-15T18:32:51+02:00",
-      "bild": ""
-    },
-    {
-      "title": "Trump sagt Livestream zu geplanter Hinrichtung von Attentäter ab",
-      "description": "Die ganze Welt sollte zusehen, wie ein verurteilter Attentäter hingerichtet wird - nun hat US-Präsident Trump den geplanten Livestream abgesagt. Die Ankündigung von Verteidigungsminister Hegseth war auf Empörung gestoßen.",
-      "pubDate": "2026-10-15T17:57:03+02:00",
       "bild": ""
     }
   ],
