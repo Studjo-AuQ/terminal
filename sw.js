@@ -1,6 +1,6 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 31
+   Version 32
 
    - lädt beim Installieren alle aktuell lokalen Terminal-Dateien vor
      (HTML, CSS, JS, JSON, Schriften, Bilder, PDF.js und Speiseplan-PDFs)
@@ -17,7 +17,7 @@
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v31';
+const CACHE_VERSION = 'v32';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 
@@ -488,7 +488,8 @@ function istStartseitenKernDatei(url) {
     basis + 'js/kacheln.js',
     basis + 'js/gong.js',
     basis + 'js/offline.js',
-    basis + 'css/style-index.css'
+    basis + 'css/style-index.css',
+    basis + 'css/a11y.css'
   ].includes(url.pathname);
 }
 
