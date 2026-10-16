@@ -165,3 +165,52 @@
 
 /* ── Seitenabstand unten ── */
 body { padding-bottom: 80px; }
+
+/* ══════════════════════════════════════════════════════
+   Wetterseite: Kleidungstipp auf schmalen Karten
+   Die Symbole stehen in einer eigenen Zeile.
+   Dadurch erhält der Text darunter immer die volle Kartenbreite.
+   ══════════════════════════════════════════════════════ */
+.wetter-tipp {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  align-items: start !important;
+  gap: 9px !important;
+}
+
+.wetter-tipp-icon {
+  width: 100% !important;
+  min-width: 0 !important;
+  text-align: center !important;
+  font-size: 2.75rem !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+
+.wetter-tipp-text {
+  width: 100% !important;
+  min-width: 0 !important;
+  text-align: left !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+}
+
+@media (max-width: 520px) {
+  .wetter-tipp {
+    padding: 11px 12px 12px !important;
+    gap: 7px !important;
+  }
+
+  .wetter-tipp-icon {
+    font-size: 2.45rem !important;
+  }
+
+  .wetter-tipp-titel {
+    font-size: 0.96rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .wetter-tipp-hinweis {
+    line-height: 1.4 !important;
+  }
+}
