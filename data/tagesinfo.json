@@ -1,7 +1,15 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "stand": "2026-10-16",
   "hinweis": "Vorbereitung für die spätere Pflegezentrale. Ohne Vorgaben stellt das Terminal die Tageskarte automatisch zusammen.",
   "anzahl": 3,
+  "rubriken": [
+    "termine",
+    "aba",
+    "motto",
+    "losung",
+    "wetter",
+    "essen"
+  ],
   "vorgaben": []
 }
