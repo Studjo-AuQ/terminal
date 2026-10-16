@@ -328,15 +328,28 @@
     }
   }
 
-  function aktiveAdminVorgabe(admin, heute) {
-    if (!admin || !Array.isArray(admin.vorgaben)) return null;
-    const tag = isoDatum(heute);
+  function zeitwert(text, ende = false) {
+    const roh = String(text || '').trim();
+    if (!roh) return null;
+    const normalisiert = /^\d{4}-\d{2}-\d{2}$/.test(roh)
+      ? roh + (ende ? 'T23:59:59' : 'T00:00:00')
+      : roh;
+    const d = new Date(normalisiert);
+    return Number.isNaN(d.getTime()) ? null : d;
+  }
 
-    return admin.vorgaben.find(v => {
-      const von = String(v.von || v.datum || '').trim();
-      const bis = String(v.bis || von).trim();
-      return von && tag >= von && tag <= bis;
-    }) || null;
+  function aktiveAdminVorgabe(admin, jetzt) {
+    if (!admin || !Array.isArray(admin.vorgaben)) return null;
+
+    return admin.vorgaben
+      .filter(v => v && v.aktiv !== false)
+      .filter(v => {
+        const von = zeitwert(v.von || v.datum, false);
+        const bis = zeitwert(v.bis || v.von || v.datum, true);
+        return von && bis && jetzt >= von && jetzt <= bis;
+      })
+      /* Bei Überschneidungen gilt die später beginnende Vorgabe. */
+      .sort((a, b) => String(b.von || b.datum || '').localeCompare(String(a.von || a.datum || '')))[0] || null;
   }
 
   function kuerzen(text, max = 112) {
@@ -889,6 +902,25 @@
     };
   }
 
+  function kandidatAdminNachricht(slot) {
+    const n = slot && slot.nachricht;
+    if (!n || !String(n.titel || n.title || '').trim()) return null;
+
+    const titel = String(n.titel || n.title || '').trim();
+    const quelle = String(n.quelle || '').trim();
+    const href = String(n.link || '').trim() || 'nachrichten-allgemein.html';
+
+    return {
+      id: 'nachricht-' + String(n.id || hash(titel)).replace(/[^a-zA-Z0-9_-]/g, '').slice(0, 80),
+      typ: 'nachricht',
+      rubrik: 'Wichtige Nachricht' + (quelle ? ' · ' + quelle : ''),
+      emoji: String(n.emoji || '📰'),
+      text: kuerzen(titel, 118),
+      href,
+      extern: /^https?:\/\//i.test(href)
+    };
+  }
+
   async function kandidatTerminUndBesonderes(heute) {
     if (!window.StudjoKalender) return { termin: null, besonderes: null };
 
@@ -947,6 +979,7 @@
       const a = document.createElement('a');
       a.className = 'tagesinfo-item';
       a.href = k.href;
+      if (k.extern) { a.target = '_blank'; a.rel = 'noopener noreferrer'; }
       a.dataset.tagesinfoTyp = k.typ;
       a.setAttribute('aria-label', k.rubrik + ': ' + k.text + '. Mehr Informationen');
       a.innerHTML = `
@@ -982,7 +1015,9 @@
       kandidatEssen(jetzt)
     ]);
 
-    const vorgabe = aktiveAdminVorgabe(admin, heute);
+    /* Zeitsteuerung verwendet die echte aktuelle Uhrzeit. Für die inhaltlichen
+       Tagesdaten bleibt "heute" auf 12 Uhr normalisiert. */
+    const vorgabe = aktiveAdminVorgabe(admin, jetzt);
     const anzahl = Math.max(1, Math.min(3, Number(admin?.anzahl) || ANZAHL_STANDARD));
 
     const alle = [
@@ -998,34 +1033,80 @@
     const map = new Map(alle.map(k => [k.typ, k]));
     const auswahl = [];
 
-    function aufnehmen(kandidat) {
-      if (!kandidat) return;
-      if (auswahl.some(k => k.typ === kandidat.typ)) return;
-      if (istAusgeblendet(kandidat.typ, vorgabe) && kandidat.typ !== 'besonderes') return;
-      if (auswahl.length < anzahl) auswahl.push(kandidat);
+    function aufnehmen(kandidat, ausdruecklich = false) {
+      if (!kandidat || auswahl.length >= anzahl) return false;
+      if (auswahl.some(k => k.id === kandidat.id)) return false;
+      if (!ausdruecklich && istAusgeblendet(kandidat.typ, vorgabe) && kandidat.typ !== 'besonderes') return false;
+      auswahl.push(kandidat);
+      return true;
     }
 
-    // 1. Schließung/Feiertag/Brückentag ist immer wichtiger als Zufall.
-    aufnehmen(termindaten.besonderes);
+    // 1. Schließung/Feiertag/Brückentag ist unverdrängbar.
+    aufnehmen(termindaten.besonderes, true);
 
-    // 2. Datiert in der Pflegezentrale fixierte Rubriken folgen als Nächstes.
-    (Array.isArray(vorgabe?.fixieren) ? vorgabe.fixieren : [])
-      .forEach(typ => aufnehmen(map.get(typ)));
-
-    // 3. Ein echter Termin des Tages darf genau einen Platz belegen.
-    //    Schulferien befinden sich NICHT in termindaten.termin.
-    aufnehmen(termindaten.termin);
-
-    // 4. Montags bekommt das neue Wochenmotto einen festen Platz.
-    if (heute.getDay() === 1) aufnehmen(motto);
-
-    // 5. Restliche Plätze: stabile Tagesmischung statt Zufall pro Seitenaufruf.
-    const rest = stabileSortierung(
-      alle.filter(k => k.typ !== 'besonderes' && k.typ !== 'termine'),
+    /* Automatische Reihenfolge für freie Plätze: echter Termin zuerst,
+       montags danach das neue Motto, anschließend stabile Tagesmischung. */
+    const autoReihe = [];
+    function autoMerken(k) {
+      if (!k || k.typ === 'besonderes' || istAusgeblendet(k.typ, vorgabe)) return;
+      if (!autoReihe.some(x => x.id === k.id)) autoReihe.push(k);
+    }
+    autoMerken(termindaten.termin);
+    if (heute.getDay() === 1) autoMerken(motto);
+    stabileSortierung(
+      alle.filter(k => k.typ !== 'besonderes' && k.typ !== 'termine' && !(heute.getDay() === 1 && k.typ === 'motto')),
       heute,
       'tageskarte'
-    );
-    rest.forEach(aufnehmen);
+    ).forEach(autoMerken);
+
+    let autoIndex = 0;
+    function naechsterAutoKandidat() {
+      while (autoIndex < autoReihe.length) {
+        const k = autoReihe[autoIndex++];
+        if (!auswahl.some(x => x.id === k.id)) return k;
+      }
+      return null;
+    }
+
+    const plaetze = Array.isArray(vorgabe?.plaetze) ? vorgabe.plaetze.slice(0, 3) : null;
+
+    if (plaetze && plaetze.length) {
+      /* Jeder Admin-Platz wird in Reihenfolge 1–3 abgearbeitet.
+         Ist ein fixierter Inhalt an diesem Tag nicht verfügbar, fällt genau
+         dieser Platz sicher auf die Automatik zurück. */
+      for (const slot of plaetze) {
+        if (auswahl.length >= anzahl) break;
+        const modus = String(slot?.modus || 'auto');
+        let kandidat = null;
+        let ausdruecklich = false;
+
+        if (modus === 'auto') {
+          kandidat = naechsterAutoKandidat();
+        } else if (modus === 'nachricht') {
+          kandidat = kandidatAdminNachricht(slot);
+          ausdruecklich = true;
+        } else {
+          kandidat = map.get(modus) || null;
+          ausdruecklich = true;
+        }
+
+        if (!aufnehmen(kandidat, ausdruecklich)) {
+          aufnehmen(naechsterAutoKandidat(), false);
+        }
+      }
+
+      while (auswahl.length < anzahl) {
+        if (!aufnehmen(naechsterAutoKandidat(), false)) break;
+      }
+    } else {
+      /* Rückwärtskompatibilität für ältere tagesinfo.json-Dateien. */
+      (Array.isArray(vorgabe?.fixieren) ? vorgabe.fixieren : [])
+        .forEach(typ => aufnehmen(map.get(typ), true));
+
+      aufnehmen(termindaten.termin, false);
+      if (heute.getDay() === 1) aufnehmen(motto, false);
+      autoReihe.forEach(k => aufnehmen(k, false));
+    }
 
     if (!auswahl.length) {
       $('tagesinfo-box').hidden = true;
