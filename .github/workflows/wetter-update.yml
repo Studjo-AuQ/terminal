@@ -21,9 +21,17 @@ jobs:
       - name: Wetterdaten für alle Standorte holen
         run: |
           python3 << 'PYTHON'
-          import urllib.request
+          import copy
           import json
-          from datetime import datetime, timezone
+          import re
+          import time
+          import urllib.request
+          from datetime import datetime
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+
+          DATEI = Path('data/wetter.json')
+          BERLIN = ZoneInfo('Europe/Berlin')
 
           STAEDTE = [
               { 'name': 'Lüdenscheid', 'lat': 51.2198, 'lon': 7.6286 },
@@ -33,15 +41,15 @@ jobs:
           ]
 
           WMO = {
-              0:  ('Klar',                  '☀️'),
-              1:  ('Überwiegend klar',       '🌤️'),
-              2:  ('Teils bewölkt',          '⛅'),
-              3:  ('Bedeckt',               '☁️'),
-              45: ('Nebel',                 '🌫️'),
-              48: ('Reifnebel',             '🌫️'),
-              51: ('Leichter Nieselregen',  '🌦️'),
-              53: ('Nieselregen',           '🌦️'),
-              55: ('Starker Nieselregen',   '🌦️'),
+              0:  ('Klar',                 '☀️'),
+              1:  ('Überwiegend klar',     '🌤️'),
+              2:  ('Teils bewölkt',        '⛅'),
+              3:  ('Bedeckt',              '☁️'),
+              45: ('Nebel',                '🌫️'),
+              48: ('Reifnebel',            '🌫️'),
+              51: ('Leichter Nieselregen', '🌦️'),
+              53: ('Nieselregen',          '🌦️'),
+              55: ('Starker Nieselregen',  '🌦️'),
               61: ('Leichter Regen',        '🌧️'),
               63: ('Regen',                 '🌧️'),
               65: ('Starker Regen',         '🌧️'),
@@ -67,7 +75,31 @@ jobs:
           def wmo_info(code):
               return WMO.get(int(code), ('Unbekannt', '🌡️'))
 
-          def hole_wetter(stadt):
+          def datum_aus_stand(text):
+              try:
+                  return datetime.strptime(
+                      str(text).split(',')[0].strip(), '%d.%m.%Y'
+                  ).date()
+              except Exception:
+                  return None
+
+          try:
+              alte_daten = json.loads(DATEI.read_text(encoding='utf-8'))
+          except Exception:
+              alte_daten = {}
+
+          alter_stand = alte_daten.get('aktualisiert', '')
+          alte_staedte = {
+              s.get('stadt'): s
+              for s in (alte_daten.get('staedte') or [])
+              if s.get('stadt')
+          }
+
+          jetzt = datetime.now(BERLIN)
+          stand_text = jetzt.strftime('%d.%m.%Y, %H:%M Uhr')
+          heute = jetzt.date()
+
+          def hole_wetter_einmal(stadt):
               url = (
                   f"https://api.open-meteo.com/v1/forecast"
                   f"?latitude={stadt['lat']}&longitude={stadt['lon']}"
@@ -82,20 +114,20 @@ jobs:
                   url,
                   headers={'User-Agent': 'Studjo-Infoterminal/1.0'}
               )
-              with urllib.request.urlopen(req, timeout=15) as r:
+              with urllib.request.urlopen(req, timeout=25) as r:
                   daten = json.loads(r.read())
 
               current = daten['current']
-              daily   = daten['daily']
+              daily = daten['daily']
 
               wmo_text, wmo_emoji = wmo_info(current['weather_code'])
               aktuell = {
-                  'temp':         round(current['temperature_2m']),
-                  'gefuehlt':     round(current['apparent_temperature']),
-                  'zustand':      wmo_text,
-                  'emoji':        wmo_emoji,
-                  'wind':         round(current['wind_speed_10m']),
-                  'luftfeuchte':  current['relative_humidity_2m'],
+                  'temp': round(current['temperature_2m']),
+                  'gefuehlt': round(current['apparent_temperature']),
+                  'zustand': wmo_text,
+                  'emoji': wmo_emoji,
+                  'wind': round(current['wind_speed_10m']),
+                  'luftfeuchte': current['relative_humidity_2m'],
                   'niederschlag': current['precipitation'],
               }
 
@@ -104,47 +136,111 @@ jobs:
                   datum = datetime.fromisoformat(daily['time'][i])
                   wt, we = wmo_info(daily['weather_code'][i])
                   tage.append({
-                      'wochentag':    WOCHENTAGE[datum.weekday()],
-                      'datum':        datum.strftime('%d.%m.'),
-                      'emoji':        we,
-                      'zustand':      wt,
-                      'max':          round(daily['temperature_2m_max'][i]),
-                      'min':          round(daily['temperature_2m_min'][i]),
+                      'wochentag': WOCHENTAGE[datum.weekday()],
+                      'datum': datum.strftime('%d.%m.'),
+                      'emoji': we,
+                      'zustand': wt,
+                      'max': round(daily['temperature_2m_max'][i]),
+                      'min': round(daily['temperature_2m_min'][i]),
                       'niederschlag': round(daily['precipitation_sum'][i], 1),
                   })
 
-              return { 'aktuell': aktuell, 'tage': tage }
+              return {'aktuell': aktuell, 'tage': tage}
+
+          def hole_wetter_mit_wiederholung(stadt, versuche=4):
+              letzter_fehler = None
+              for versuch in range(1, versuche + 1):
+                  try:
+                      return hole_wetter_einmal(stadt), None
+                  except Exception as exc:
+                      letzter_fehler = exc
+                      print(
+                          f"  ⚠️ Versuch {versuch}/{versuche} fehlgeschlagen: {exc}"
+                      )
+                      if versuch < versuche:
+                          time.sleep(3 * versuch)
+              return None, letzter_fehler
 
           ergebnisse = []
           fehler = []
 
           for stadt in STAEDTE:
-              try:
-                  print(f"Lade Wetter für {stadt['name']}…")
-                  wetter = hole_wetter(stadt)
-                  ergebnisse.append({ 'stadt': stadt['name'], **wetter })
+              name = stadt['name']
+              print(f"Lade Wetter für {name}…")
+              wetter, exc = hole_wetter_mit_wiederholung(stadt)
+
+              if wetter is not None:
+                  ergebnisse.append({
+                      'stadt': name,
+                      'datenstand': stand_text,
+                      'veraltet': False,
+                      **wetter,
+                  })
                   print(
                       f"  ✅ {wetter['aktuell']['temp']}°C, "
                       f"{wetter['aktuell']['zustand']}"
                   )
-              except Exception as e:
-                  fehler.append(f"{stadt['name']}: {e}")
-                  print(f"  ❌ Fehler: {e}")
+                  continue
+
+              # Ein kurzzeitiger API-/SSL-Aussetzer soll einen Standort
+              # nicht sofort aus wetter.html verschwinden lassen.
+              alt = alte_staedte.get(name)
+              alter_tag = datum_aus_stand(
+                  (alt or {}).get('datenstand') or alter_stand
+              )
+
+              if alt and alter_tag == heute:
+                  fallback = copy.deepcopy(alt)
+                  fallback['stadt'] = name
+                  fallback['datenstand'] = (
+                      fallback.get('datenstand') or alter_stand
+                  )
+                  fallback['veraltet'] = True
+
+                  # wetter.html kann die Zusatzfelder ignorieren. Damit der
+                  # ältere Stand trotzdem direkt sichtbar ist, wird auch der
+                  # Zustandstext verständlich gekennzeichnet.
+                  aktuell_alt = fallback.get('aktuell') or {}
+                  zustand_alt = str(aktuell_alt.get('zustand') or '')
+                  zustand_alt = re.sub(
+                      r'^Letzter Stand .*? · ', '', zustand_alt
+                  )
+                  zeit_match = re.search(
+                      r',\s*(\d{1,2}:\d{2})', fallback['datenstand']
+                  )
+                  zeit_text = zeit_match.group(1) if zeit_match else '?'
+                  aktuell_alt['zustand'] = (
+                      f'Letzter Stand {zeit_text} Uhr · {zustand_alt}'
+                  )
+                  fallback['aktuell'] = aktuell_alt
+
+                  ergebnisse.append(fallback)
+                  meldung = (
+                      f"{name}: aktueller Abruf fehlgeschlagen; "
+                      f"verwende letzten Stand von heute ({fallback['datenstand']}). "
+                      f"Fehler: {exc}"
+                  )
+                  fehler.append(meldung)
+                  print('  ↩️ ' + meldung)
+              else:
+                  meldung = f"{name}: {exc}"
+                  fehler.append(meldung)
+                  print('  ❌ ' + meldung)
 
           ausgabe = {
-              'aktualisiert': datetime.now(timezone.utc).strftime(
-                  '%d.%m.%Y, %H:%M Uhr'
-              ),
+              'aktualisiert': stand_text,
               'staedte': ergebnisse,
               'fehler': fehler,
           }
 
-          with open('data/wetter.json', 'w', encoding='utf-8') as f:
-              json.dump(ausgabe, f, ensure_ascii=False, indent=2)
+          DATEI.write_text(
+              json.dumps(ausgabe, ensure_ascii=False, indent=2) + '\n',
+              encoding='utf-8'
+          )
 
           print(
               f"\n✅ data/wetter.json gespeichert – "
-              f"{len(ergebnisse)} Städte, {len(fehler)} Fehler"
+              f"{len(ergebnisse)} Städte, {len(fehler)} Hinweis(e)/Fehler"
           )
           PYTHON
 

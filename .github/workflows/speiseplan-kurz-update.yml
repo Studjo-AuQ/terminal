@@ -1,0 +1,189 @@
+name: Speiseplan-Kurztexte aktualisieren
+
+on:
+  push:
+    paths:
+      - 'speiseplaene/*.pdf'
+      - '.github/workflows/speiseplan-kurz-update.yml'
+  workflow_dispatch:
+
+jobs:
+  kurztexte-erzeugen:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: OCR-Werkzeuge installieren
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils tesseract-ocr tesseract-ocr-deu
+          python3 -m pip install --disable-pip-version-check pillow numpy
+
+      - name: A1 und A2 aus Speiseplan-PDFs lesen
+        run: |
+          python3 << 'PYTHON'
+          import glob
+          import json
+          import re
+          import subprocess
+          import tempfile
+          from datetime import date, datetime
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+
+          import numpy as np
+          from PIL import Image
+
+          ZIEL = Path('data/speiseplan-kurz.json')
+          ZIEL.parent.mkdir(parents=True, exist_ok=True)
+
+          try:
+              alt = json.loads(ZIEL.read_text(encoding='utf-8'))
+          except Exception:
+              alt = {}
+
+          tage = dict(alt.get('tage') or {})
+          fehler = []
+
+          def gruppiere_linien(kandidaten):
+              gruppen = []
+              for pos in kandidaten:
+                  if gruppen and pos - gruppen[-1][-1] <= 10:
+                      gruppen[-1].append(pos)
+                  else:
+                      gruppen.append([pos])
+              return [round(sum(g) / len(g)) for g in gruppen]
+
+          def finde_raster(img):
+              rgb = np.asarray(img.convert('RGB'), dtype=np.float32)
+              grau = rgb.mean(axis=2)
+
+              # Entspricht der bewährten Erkennung aus js/speiseplan-heute.js:
+              # dunkle Linie über mehr als 50 % der jeweils geprüften Achse.
+              y_anteil = (grau[:, ::2] < 130).mean(axis=1)
+              x_anteil = (grau[::2, :] < 130).mean(axis=0)
+
+              ys = gruppiere_linien(np.where(y_anteil > 0.50)[0].tolist())
+              xs = gruppiere_linien(np.where(x_anteil > 0.50)[0].tolist())
+              return xs, ys
+
+          def ocr_kurz(crop, tmpdir, name):
+              pfad = Path(tmpdir) / f'{name}.png'
+              crop.save(pfad)
+              proc = subprocess.run(
+                  ['tesseract', str(pfad), 'stdout', '-l', 'deu', '--psm', '6'],
+                  check=False,
+                  capture_output=True,
+                  text=True,
+              )
+              text = proc.stdout or ''
+              text = re.sub(r'\[[^\]]*\]', ' ', text)
+              text = re.sub(r'kcal:?\s*\d+\s*\]?', ' ', text, flags=re.I)
+              text = re.sub(r'[|_~]', ' ', text)
+              text = re.sub(r'\s+', ' ', text).strip()
+
+              woerter = re.findall(
+                  r"[0-9A-Za-zÄÖÜäöüß][0-9A-Za-zÄÖÜäöüß&/.,+'’()\-]*",
+                  text,
+              )
+              return ' '.join(woerter[:3]).strip()
+
+          pdfs = sorted(Path('speiseplaene').glob('*.pdf'))
+
+          for pdf in pdfs:
+              m = re.search(r'(\d{4})-KW(\d{1,2})', pdf.name, re.I)
+              if not m:
+                  continue
+
+              jahr = int(m.group(1))
+              kw = int(m.group(2))
+
+              try:
+                  with tempfile.TemporaryDirectory() as tmpdir:
+                      basis = Path(tmpdir) / 'seite1'
+                      subprocess.run(
+                          [
+                              'pdftoppm', '-f', '1', '-singlefile', '-png',
+                              '-r', '300', str(pdf), str(basis)
+                          ],
+                          check=True,
+                          capture_output=True,
+                      )
+
+                      bild = Image.open(str(basis) + '.png').convert('RGB')
+                      xs, ys = finde_raster(bild)
+
+                      if len(xs) < 4 or len(ys) < 7:
+                          raise RuntimeError(
+                              f'Tabellenraster nicht erkannt: X={len(xs)}, Y={len(ys)}'
+                          )
+
+                      neue_woche = {}
+
+                      for tag_index in range(5):
+                          datum = date.fromisocalendar(jahr, kw, tag_index + 1)
+                          y0 = ys[1 + tag_index] + 6
+                          y1 = ys[2 + tag_index] - 6
+
+                          werte = []
+                          for spalte in (0, 1):  # immer A1 und A2
+                              x0 = xs[spalte] + 6
+                              x1 = xs[spalte + 1] - 6
+                              if x1 <= x0 or y1 <= y0:
+                                  raise RuntimeError('Ungültiger Zellenausschnitt')
+
+                              crop = bild.crop((x0, y0, x1, y1))
+                              kurz = ocr_kurz(
+                                  crop,
+                                  tmpdir,
+                                  f'{jahr}-KW{kw:02d}-{tag_index}-{spalte}'
+                              )
+                              werte.append(kurz)
+
+                          neue_woche[datum.isoformat()] = {
+                              'a1': werte[0],
+                              'a2': werte[1],
+                              'quelle': str(pdf).replace('\\', '/'),
+                          }
+
+                      # Erst nach erfolgreicher Verarbeitung die fünf Tage ersetzen.
+                      for schluessel, wert in neue_woche.items():
+                          tage[schluessel] = wert
+
+                      print(f'✅ {pdf.name}: A1/A2 für 5 Tage erkannt')
+
+              except Exception as exc:
+                  meldung = f'{pdf.name}: {exc}'
+                  fehler.append(meldung)
+                  print('❌', meldung)
+
+          jetzt = datetime.now(ZoneInfo('Europe/Berlin'))
+          ausgabe = {
+              'schemaVersion': 1,
+              'stand': jetzt.strftime('%d.%m.%Y, %H:%M Uhr'),
+              'hinweis': (
+                  'Automatisch aus den Speiseplan-PDFs erzeugt. '
+                  'Für die Tageskarte werden A1 und A2 auf jeweils drei Wörter gekürzt.'
+              ),
+              'tage': dict(sorted(tage.items())),
+              'fehler': fehler,
+          }
+
+          ZIEL.write_text(
+              json.dumps(ausgabe, ensure_ascii=False, indent=2) + '\n',
+              encoding='utf-8'
+          )
+          print(f'✅ {ZIEL} geschrieben: {len(tage)} Tages-Einträge')
+          PYTHON
+
+      - name: Kurztexte ins Repository übertragen
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/speiseplan-kurz.json
+          git diff --staged --quiet || git commit -m "Speiseplan-Kurztexte automatisch aktualisiert"
+          git push
