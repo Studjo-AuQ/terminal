@@ -857,18 +857,15 @@
   function wetterStadtKurz(stadt, heute) {
     if (!stadt) return '';
     if (stadt.veraltet && !datumTextIstHeute(stadt.datenstand, heute)) return '';
+
     const ddmm = String(heute.getDate()).padStart(2, '0') + '.' +
                  String(heute.getMonth() + 1).padStart(2, '0') + '.';
     const tag = (stadt.tage || []).find(t => t.datum === ddmm) || (stadt.tage || [])[0];
     if (!tag) return '';
 
-    let standHinweis = '';
-    if (stadt.veraltet) {
-      const m = /,\s*(\d{1,2}:\d{2})/.exec(String(stadt.datenstand || ''));
-      standHinweis = m ? ' (Stand ' + m[1] + ' Uhr)' : ' (älterer Stand)';
-    }
-
-    return stadt.stadt + standHinweis + ': ' +
+    /* In der kompakten Tageskarte zählt nur die Wetter-Aussage.
+       Technische Abrufzeiten bleiben auf der ausführlichen Wetterseite. */
+    return stadt.stadt + ': ' +
            (tag.emoji || '') + ' bis ' + tag.max + ' °C';
   }
 
@@ -886,7 +883,8 @@
       typ: 'wetter',
       rubrik: 'Wetter',
       emoji: '☀️',
-      text: teile.join(' · '),
+      /* Jeder Ort beginnt bewusst in einer eigenen Zeile. */
+      text: teile.join('\n'),
       href: 'wetter.html'
     };
   }
