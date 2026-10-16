@@ -1,194 +1,313 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 27
+   Version 28
 
-   Neu in Version 27:
-   - Die Migration der CSS- und JavaScript-Dateien in die Ordner css/ und
-     js/ ist abgeschlossen.
-   - Die alten CSS- und JavaScript-Pfade im Root werden nicht mehr
-     vorgeladen.
-   - CORE_DATEIEN verwendet für die bisher vorgeladenen Stylesheets und
-     Skripte nur noch die neuen Pfade unter css/ und js/.
-   - sw.js bleibt bewusst im Root, damit der Service-Worker-Scope unverändert
-     das komplette Terminal unter /terminal/ umfasst.
-   - Versionssprung leert die alten v26-Caches und baut den finalen Cache
-     ohne die früheren Root-Pfade neu auf.
-
-   Weiter aus Version 26:
-   - CSS- und JavaScript-Dateien wurden schrittweise in die Ordner css/ und
-     js/ verschoben.
-   - Während der Übergangsphase wurden die bisherigen Root-Pfade UND die
-     neuen Ordnerpfade parallel vorgeladen.
-   - Dadurch funktionierten bereits geöffnete/zwischengespeicherte Seiten
-     weiterhin, während die HTML-Dateien auf css/ und js/ umgestellt wurden.
-
-   Weiter aus Version 25:
-   - Bilddateien mit Großbuchstaben und/oder Leerzeichen wurden im Ordner
-     img/ auf einheitliche kleingeschriebene Dateinamen umgestellt.
-   - Leerzeichen in Bilddateinamen wurden durch Unterstriche ersetzt.
-   - Versionssprung leert alte v24-Runtime-Caches, damit keine alten
-     Bildpfade aus dem Browser-Cache weiterverwendet werden.
-
-   Weiter aus Version 24:
-   - lokale JPG- und PNG-Dateien liegen gesammelt im Ordner img/.
-   - alle vorgeladenen Bilder und PWA-Icons verwenden die neuen img/-Pfade.
-   - der veraltete apple-touch-icon-Verweis wurde entfernt.
-   - Versionssprung leert alte v23-Caches mit Bildpfaden aus dem Root.
-
-   Weiter aus Version 23:
-   - alle dynamischen JSON-Daten liegen gesammelt unter data/.
-   - während der manuellen Migration dürfen die alten Root-JSON-Dateien
-     vorübergehend noch bestehen; die Seiten verwenden data/ als Hauptpfad.
-   - Wetter- und RSS-Actions schreiben direkt nach data/.
-   - Versionssprung leert alte v22-Caches für die Datenordner-Migration.
-
-   Weiter aus Version 22:
-   - alle sieben AbA-Standortseiten verwenden die zentrale data/aba.json
-     und das gemeinsame aba.js.
-   - die neuen Unterseiten heißen aba_fbs.html, aba_adh.html, aba_wd.html,
-     aba_ki.html, aba_whs.html, aba_kh.html und aba_db.html.
-   - data/aba.json, aba.js, style-aba.css, aba.html und die sieben Standort-
-     hüllen werden für den Offline-Betrieb vorgeladen.
-   - Versionssprung leert alte v21-Caches für die AbA-Migration.
-
-   Weiter aus Version 21:
-   - neuigkeiten.html ist eine feste Darstellungsseite und lädt
-     ihre Inhalte ausschließlich aus data/neuigkeiten.json.
-   - data/neuigkeiten.json wird offline vorgeladen.
-
-   Weiter aus Version 20:
-   - speiseplan-heute.js erkennt auf PDF-Seite 2 auch helle und farbige
-     Tabellenlinien zuverlässig.
-   - ein proportionaler Raster-Fallback sichert die drei Essensbilder
-     zusätzlich gegen kleinere Designänderungen der PDF ab.
-
-   Weiter aus Version 19:
-   - manifest.webmanifest enthält zusätzliche PWA-Metadaten,
-     Smartphone-Screenshots und App-Shortcuts.
-   - die drei PWA-Screenshots werden für Offline-Nutzung mit vorgeladen.
-
-   Weiter aus Version 18:
-   - ticker.js macht auch die visuelle Endlos-Kopie der Meldungen
-     zuverlässig anklickbar.
-   - Stop/Play nutzt eine zentrale Pause-/Play-Steuerung und zusätzlich
-     die Web Animations API als Chrome-/Android-Absicherung.
-   - Touch-Geräte können nicht mehr durch einen festhängenden CSS-Hover
-     im Pause-Zustand bleiben.
-
-   Weiter aus Version 17:
-   - Gong wird auf der Startseite nur noch durch direkten Klick auf
-     die Glocke aktiviert oder deaktiviert.
-   - Freie Klicks auf die Startseite verändern den Gong-Status nicht.
-   - Gong und Kalender zeigen passende Mouseover-Hinweise.
-
-   Weiter aus Version 16:
-   - opnv.html nutzt direkte Startseiten-Zurücklinks und umgeht damit
-     störende iframe-/Browser-History zuverlässig.
-   - index.html enthält den Gong-Aktivierungshinweis.
-
-   Weiter aus Version 15:
-   - direkte Bereichs-Zurücklinks können iframe-History gezielt umgehen.
-   - ticker.js startet bei freiem Startseiten-Klick und bei Rückkehr
-     auf die Startseite zuverlässig wieder.
-   - neuigkeiten.html bleibt netzwerk-zuerst.
+   - lädt beim Installieren alle aktuell lokalen Terminal-Dateien vor
+     (HTML, CSS, JS, JSON, Schriften, Bilder, PDF.js und Speiseplan-PDFs)
+   - externe Angebote wie ConSense, LearningApps, VRR/Mobil.NRW und andere
+     Fremdserver werden bewusst nicht gespeichert
+   - ein neuer Worker wird nur aktiviert, wenn das vollständige lokale
+     Offline-Paket erfolgreich aufgebaut wurde
+   - HEAD-Anfragen der Speiseplan-Erkennung können offline auf bereits
+     gespeicherte PDF-Dateien zurückgreifen
+   - Runtime-Cache wird vor dem Precache bevorzugt, damit im Hintergrund
+     aktualisierte Dateien beim nächsten Aufruf auch tatsächlich genutzt werden
+   - Query-Parameter bei Network-first-Dateien werden beim Speichern
+     normalisiert, damit z. B. ?v=<Zeitstempel> den Cache nicht aufbläht
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v27';
+const CACHE_VERSION = 'v28';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 
-const CORE_DATEIEN = [
+const OFFLINE_DATEIEN = [
   './',
-  'index.html',
-  'neuigkeiten.html',
-  'aba.html',
-  'aba_fbs.html',
-  'aba_adh.html',
-  'aba_wd.html',
-  'aba_ki.html',
-  'aba_whs.html',
-  'aba_kh.html',
-  'aba_db.html',
-  'offline.html',
-  'manifest.webmanifest',
 
-  /* Stylesheets unter css/ */
-  'css/style.css',
-  'css/style-index.css',
-  'css/style-news.css',
-  'css/style-aba.css',
-  'css/a11y.css',
+  /* Root */
+  "aba.html",
+  "aba_adh.html",
+  "aba_db.html",
+  "aba_fbs.html",
+  "aba_kh.html",
+  "aba_ki.html",
+  "aba_wd.html",
+  "aba_whs.html",
+  "abfahrt.html",
+  "anzeige busse.html",
+  "arbeitssicherheit.html",
+  "bistropdf.html",
+  "bistroplan.pdf",
+  "datenschutz.html",
+  "dingdong.mp3",
+  "faq.html",
+  "favicon.ico",
+  "fluchtundrettungsplan.html",
+  "impressum.html",
+  "index.html",
+  "infofilme.html",
+  "learningapp-arbeitssicherheit.html",
+  "learningapp-gewalt.html",
+  "learningapp-wr.html",
+  "losung.html",
+  "manifest.webmanifest",
+  "nachrichten-allgemein.html",
+  "neuigkeiten.html",
+  "offline.html",
+  "opnv.html",
+  "regeln.html",
+  "speiseplan-ansicht.html",
+  "speiseplan.html",
+  "termine.html",
+  "uebersicht.html",
+  "verhaltenbeikonflikten.html",
+  "werkstattordnung.html",
+  "wetter.html",
+  "wochenmotto.html",
+  "wrfb.html",
 
-  /* JavaScript unter js/ */
-  'js/gong.js',
-  'js/offline.js',
-  'js/a11y.js',
-  'js/ui-a11y.js',
-  'js/ticker.js',
-  'js/feiertage.js',
-  'js/kalender.js',
-  'js/kacheln.js',
-  'js/speiseplan-heute.js',
-  'js/aba.js',
+  /* CSS */
+  "css/a11y.css",
+  "css/speiseplan-ansicht.css",
+  "css/style-aba.css",
+  "css/style-index.css",
+  "css/style-news.css",
+  "css/style.css",
+  "css/wochenmotto.css",
 
-  'favicon.ico',
-  'img/header.jpg',
-  'dingdong.mp3',
-  'img/qr-terminal.jpg',
+  /* JavaScript */
+  "js/a11y.js",
+  "js/aba.js",
+  "js/feiertage.js",
+  "js/gong.js",
+  "js/kacheln.js",
+  "js/kalender.js",
+  "js/offline.js",
+  "js/script.js",
+  "js/speiseplan-ansicht.js",
+  "js/speiseplan-heute.js",
+  "js/ticker.js",
+  "js/ui-a11y.js",
+  "js/wochenmotto.js",
 
-  /* PWA-Installationsvorschau */
-  'img/screenshot-startseite.png',
-  'img/screenshot-neuigkeiten.png',
-  'img/screenshot-wochenmotto.png',
+  /* Daten */
+  "data/aba.json",
+  "data/kobinet.json",
+  "data/losungen.json",
+  "data/nachrichten.json",
+  "data/neuigkeiten.json",
+  "data/tagesschau.json",
+  "data/termine.json",
+  "data/ticker.json",
+  "data/wetter.json",
+  "data/wochenmottos.json",
 
-  'img/icon-192.png',
-  'img/icon-512.png',
-  'img/icon-512-maskable.png',
+  /* Schriften */
+  "fonts/nunito-sans-v19-latin-600.woff2",
+  "fonts/nunito-sans-v19-latin-700.woff2",
+  "fonts/nunito-sans-v19-latin-800.woff2",
+  "fonts/nunito-sans-v19-latin-regular.woff2",
 
-  /* Lokale dynamische Daten */
-  'data/neuigkeiten.json',
-  'data/aba.json',
-  'data/termine.json',
-  'data/ticker.json',
-  'data/wetter.json',
-  'data/wochenmottos.json',
-  'data/losungen.json',
-  'data/tagesschau.json',
-  'data/kobinet.json',
-  'data/nachrichten.json'
+  /* Bilder */
+  "img/aba.jpg",
+  "img/aba_andacht.jpg",
+  "img/aba_basteln.jpg",
+  "img/aba_bewegung.jpg",
+  "img/aba_bewegungtanz.jpg",
+  "img/aba_buntefitnesskiste.jpg",
+  "img/aba_chor.jpg",
+  "img/aba_dart.jpg",
+  "img/aba_diamontpainting.jpg",
+  "img/aba_digitalemedien.jpg",
+  "img/aba_disco.jpg",
+  "img/aba_entspannung.jpg",
+  "img/aba_erstehilfe.jpg",
+  "img/aba_gesellschaftsspiele.jpg",
+  "img/aba_gespraechskreis.jpg",
+  "img/aba_kicker.jpg",
+  "img/aba_lesenschreiben.jpg",
+  "img/aba_mobil.jpg",
+  "img/aba_modeschmuck.jpg",
+  "img/aba_motorikballspiele.jpg",
+  "img/aba_naturkreativ.jpg",
+  "img/aba_sitztanz.jpg",
+  "img/aba_snoezelen.jpg",
+  "img/aba_spazieren.jpg",
+  "img/aba_spielefarbenzahlen.jpg",
+  "img/aba_spielspassbewegung.jpg",
+  "img/aba_sportbewegung.jpg",
+  "img/aba_tanzworkshop.jpg",
+  "img/aba_tischtennis.jpg",
+  "img/aba_tischtenniskicker.jpg",
+  "img/aba_umwelt.jpg",
+  "img/aba_vorlesen.jpg",
+  "img/aba_walken.jpg",
+  "img/aba_zirkus.jpg",
+  "img/abfahrt.jpg",
+  "img/antrag.jpg",
+  "img/app.jpg",
+  "img/apple-touch-icon.png",
+  "img/arbeitssicherheit.jpg",
+  "img/aussenpraktikum.jpg",
+  "img/back.jpg",
+  "img/berufsfelder.jpg",
+  "img/bistro.jpg",
+  "img/brandschutz.jpg",
+  "img/bst-adh.jpg",
+  "img/bst-aufderheide.jpg",
+  "img/bst-dannenbaum.jpg",
+  "img/bst-db.jpg",
+  "img/bst-fbs.jpg",
+  "img/bst-freisenberg.jpg",
+  "img/bst-kerkhagen.jpg",
+  "img/bst-kh.jpg",
+  "img/bst-ki.jpg",
+  "img/bst-kierspe.jpg",
+  "img/bst-wd.jpg",
+  "img/bst-wefelshohl.jpg",
+  "img/bst-werdohl.jpg",
+  "img/bst-whs.jpg",
+  "img/bus.png",
+  "img/essen.jpg",
+  "img/ev_bbb.jpg",
+  "img/faq-arbeit.jpg",
+  "img/faq-beschwerde.jpg",
+  "img/faq-blanko.jpg",
+  "img/faq-entgelt.jpg",
+  "img/faq-gewalt.jpg",
+  "img/faq-krank.jpg",
+  "img/faq-quali.jpg",
+  "img/faq-sonstiges.jpg",
+  "img/faq-urlaub.jpg",
+  "img/faq-wr.jpg",
+  "img/faq-zeiten.jpg",
+  "img/faq.jpg",
+  "img/feedback.jpg",
+  "img/fem.jpg",
+  "img/fem_konzept.jpg",
+  "img/filme.jpg",
+  "img/flucht.jpg",
+  "img/flyer.jpg",
+  "img/gewalt.jpg",
+  "img/gewaltschutzkonzept.jpg",
+  "img/header.jpg",
+  "img/icon-192.png",
+  "img/icon-512-maskable.png",
+  "img/icon-512.png",
+  "img/information.jpg",
+  "img/kompetenzen_im_bbb.jpg",
+  "img/kontakt.jpg",
+  "img/liebe.jpg",
+  "img/lohn.jpg",
+  "img/losung.jpg",
+  "img/neues.jpg",
+  "img/news-001allgemein.jpg",
+  "img/news.jpg",
+  "img/notfall.jpg",
+  "img/opnv.jpg",
+  "img/personal.jpg",
+  "img/ppp_vorstellung_wr.jpg",
+  "img/qr-terminal.jpg",
+  "img/regeln.jpg",
+  "img/schulung.jpg",
+  "img/screenshot-neuigkeiten.png",
+  "img/screenshot-startseite.png",
+  "img/screenshot-wochenmotto.png",
+  "img/soziale_akt.jpg",
+  "img/speiseplan_diese_woche.jpg",
+  "img/speiseplan_kommende_kommende_woche.jpg",
+  "img/speiseplan_kommende_woche.jpg",
+  "img/start.png",
+  "img/studjo_logo_kfz.png",
+  "img/termine.jpg",
+  "img/text.jpg",
+  "img/video.jpg",
+  "img/werkstatt.jpg",
+  "img/werkstattrat.jpg",
+  "img/wetter.jpg",
+  "img/wochenmotto.jpg",
+  "img/ziel.png",
+  "img/zuhoeren.jpg",
+  "img/zusammenarbeit.jpg",
+
+  /* PDF.js */
+  "pdfjs/pdf.min.mjs",
+  "pdfjs/pdf.worker.min.mjs",
+
+  /* Speisepläne */
+  "speiseplaene/speiseplan_2026-KW42.pdf",
+  "speiseplaene/speiseplan_2026-KW43.pdf",
+  "speiseplaene/speiseplan_2026-KW44.pdf",
+  "speiseplaene/speiseplan_2026-KW45.pdf",
+  "speiseplaene/speiseplan_2026-KW46.pdf",
 ];
 
 function absolut(pfad) {
   return new URL(pfad, self.registration.scope).href;
 }
 
-async function coreDateienLaden() {
-  const cache = await caches.open(PRECACHE);
+const PRELOAD_PARALLEL = 8;
 
-  await Promise.allSettled(
-    CORE_DATEIEN.map(async pfad => {
+async function offlineDateienLaden() {
+  const cache = await caches.open(PRECACHE);
+  const fehler = [];
+  let naechsterIndex = 0;
+
+  async function arbeiter() {
+    while (true) {
+      const index = naechsterIndex++;
+      if (index >= OFFLINE_DATEIEN.length) return;
+
+      const pfad = OFFLINE_DATEIEN[index];
+
       try {
         const url = absolut(pfad);
         const antwort = await fetch(url, { cache: 'reload' });
 
         if (!antwort.ok) {
-          console.warn('[Studjo SW] Core-Datei nicht geladen:', pfad, antwort.status);
-          return;
+          throw new Error('HTTP ' + antwort.status);
         }
 
         await cache.put(url, antwort.clone());
 
-      } catch (fehler) {
-        console.warn('[Studjo SW] Core-Datei nicht erreichbar:', pfad, fehler);
+      } catch (fehlerObjekt) {
+        fehler.push({ pfad, fehler: fehlerObjekt });
+        console.warn(
+          '[Studjo SW] Offline-Datei nicht geladen:',
+          pfad,
+          fehlerObjekt
+        );
       }
-    })
+    }
+  }
+
+  await Promise.all(
+    Array.from(
+      { length: Math.min(PRELOAD_PARALLEL, OFFLINE_DATEIEN.length) },
+      () => arbeiter()
+    )
+  );
+
+  if (fehler.length) {
+    /* Ein unvollständiger neuer Precache soll den funktionierenden alten
+       Service Worker nicht ablösen. Beim nächsten Online-Aufruf versucht
+       der Browser die Installation erneut. */
+    await caches.delete(PRECACHE);
+    throw new Error(
+      'Offline-Paket unvollständig: ' + fehler.length + ' Datei(en) fehlen.'
+    );
+  }
+
+  console.info(
+    '[Studjo SW] Offline-Paket vollständig:',
+    OFFLINE_DATEIEN.length,
+    'Dateien/URLs'
   );
 }
 
 self.addEventListener('install', event => {
   event.waitUntil(
-    coreDateienLaden()
+    offlineDateienLaden()
       .then(() => self.skipWaiting())
   );
 });
@@ -233,7 +352,24 @@ function minimaleOfflineAntwort() {
 }
 
 async function ausCache(request, ignoreSearch = false) {
-  return caches.match(request, { ignoreSearch });
+  /* Runtime zuerst: Dort liegen frisch im Hintergrund aktualisierte Dateien.
+     Der Precache bleibt die verlässliche Offline-Grundlage. */
+  const runtime = await caches.open(RUNTIME);
+  const runtimeTreffer = await runtime.match(request, { ignoreSearch });
+  if (runtimeTreffer) return runtimeTreffer;
+
+  const precache = await caches.open(PRECACHE);
+  return precache.match(request, { ignoreSearch });
+}
+
+function cacheSchluessel(request, ignoreSearch = false) {
+  if (!ignoreSearch) return request;
+
+  const url = new URL(request.url);
+  url.search = '';
+  url.hash = '';
+
+  return new Request(url.href, { method: 'GET' });
 }
 
 async function offlineFallback() {
@@ -271,7 +407,10 @@ async function netzwerkZuerst(
 
     if (antwort && antwort.ok) {
       const cache = await caches.open(RUNTIME);
-      await cache.put(request, antwort.clone());
+      await cache.put(
+        cacheSchluessel(request, ignoreSearch),
+        antwort.clone()
+      );
       return antwort;
     }
 
@@ -333,14 +472,58 @@ function istNeuigkeitenNavigation(url) {
     scope.pathname + 'neuigkeiten.html';
 }
 
+
+async function headNetzwerkOderCache(request) {
+  try {
+    const online = await fetch(request);
+
+    /* Ein echter HTTP-Fehler (z. B. 404) soll online nicht durch eine
+       eventuell ältere Cache-Datei verdeckt werden. */
+    if (online) return online;
+
+  } catch (fehler) {
+    /* Offline: im Cache nach der zugehörigen GET-Datei suchen. */
+  }
+
+  const cacheTreffer = await caches.match(
+    request,
+    {
+      ignoreSearch: true,
+      ignoreMethod: true
+    }
+  );
+
+  if (cacheTreffer) {
+    return new Response(
+      null,
+      {
+        status: cacheTreffer.status || 200,
+        statusText: cacheTreffer.statusText || 'OK',
+        headers: cacheTreffer.headers
+      }
+    );
+  }
+
+  return new Response(null, { status: 404, statusText: 'Offline – nicht gespeichert' });
+}
+
 self.addEventListener('fetch', event => {
   const request = event.request;
-  if (request.method !== 'GET') return;
-
   const url = new URL(request.url);
 
   /* Externe Server bewusst nicht verändern/cachen. */
   if (url.origin !== self.location.origin) return;
+
+  /* Speiseplan-Skripte prüfen PDF-Dateien per HEAD. Offline kann dieser
+     Test nun auf den bereits gespeicherten GET-Eintrag zurückgreifen. */
+  if (request.method === 'HEAD') {
+    event.respondWith(
+      headNetzwerkOderCache(request)
+    );
+    return;
+  }
+
+  if (request.method !== 'GET') return;
 
   if (request.mode === 'navigate') {
     if (istStartseitenNavigation(url)) {
