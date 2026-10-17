@@ -1,7 +1,55 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "17.10.2026, 00:42 Uhr (UTC)",
+  "aktualisiert": "17.10.2026, 05:27 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "312d201581e7d83d1f26",
+      "title": "Nachfolge als UN-Generalsekretär: Bewerber scheitern an Vetomächten",
+      "description": "Bis Ende Dezember muss der UN-Sicherheitsrat eine Nachfolge für Generalsekretär Guterres bestimmen. Doch auch bei der sechsten Probeabstimmung fielen alle Kandidaten bei den Vetomächten durch. Von Martin Ganslmeier.",
+      "pubDate": "2026-10-17T06:56:34+02:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/un-generalsekretaer-wahl-100.html",
+      "bild": ""
+    },
+    {
+      "id": "90ed3859564dff164166",
+      "title": "GKV-Verbandschef fordert Besserstellung gesetzlich Versicherter",
+      "description": "Dass gesetzlich Versicherte oft bei der Terminvergabe benachteiligt würden, hält der Chef des GKV-Spitzenverbands, Blatt, für eine \"himmelschreiende Ungerechtigkeit\". Stattdessen solle künftig der medizinische Bedarf entscheiden.",
+      "pubDate": "2026-10-17T05:23:11+02:00",
+      "link": "https://www.tagesschau.de/wissen/gesundheit/gkv-arzttermine-100.html",
+      "bild": ""
+    },
+    {
+      "id": "0048376121f64c13b843",
+      "title": "Wie sich Bundespolitiker auf Social Media schlagen",
+      "description": "Nah an den Leuten oder unangemessen? Auf Social Media versuchen sich die Spitzenpolitiker mit ihrer eigenen Ansprache. Eine Analyse der Postings zeigt: Es gibt klare Gewinner und Verlierer. Von Fynn Dresler und Philine Elster.",
+      "pubDate": "2026-10-17T04:39:05+02:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/social-media-bundespolitik-100.html",
+      "bild": ""
+    },
+    {
+      "id": "0dc5ebe7b2a505b4ff08",
+      "title": "\"Rente mit 63\": Arbeitsminister Schweitzer fordert Kompromiss",
+      "description": "Bundesarbeitsminister Schweitzer setzt bei der Rentenreform auf Kompromissbereitschaft in der schwarz-roten Koalition. Insbesondere über die abschlagsfreie Rente nach 45 Beitragsjahren müssten noch \"politische Debatten stattfinden\".",
+      "pubDate": "2026-10-17T03:50:50+02:00",
+      "link": "https://www.tagesschau.de/inland/schweitzer-rente-kompromiss-100.html",
+      "bild": ""
+    },
+    {
+      "id": "bb676431345f6bf73e15",
+      "title": "Iran-Krieg: Trauer nach Angriff auf Schule in Minab hält an",
+      "description": "Am ersten Tag des Iran-Kriegs im Februar schlägt eine Rakete in einer Schule in Minab ein. 168 Menschen sterben, die meisten sind Kinder. Heute ist der Ort Gedenkstätte, aber auch Bühne für Regimepropaganda. Von Benjamin Weber.",
+      "pubDate": "2026-10-17T03:43:26+02:00",
+      "link": "https://www.tagesschau.de/ausland/asien/iran-minab-schule-angriff-100.html",
+      "bild": ""
+    },
+    {
+      "id": "eef847a3a5de00932e52",
+      "title": "UK Green Party: Zerbrechen die britischen Grünen am Thema Israel?",
+      "description": "Eigentlich erlebten die Grünen in Großbritannien einen großen Aufschwung in diesem Jahr. Nun sorgt die Partei mit einem Beschluss zu Zionismus und Israel für Kontroversen - selbst in den eigenen Reihen. Von Franziska Hoppen.",
+      "pubDate": "2026-10-17T03:40:59+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/grossbritannien-gruene-antizionismus-100.html",
+      "bild": ""
+    },
     {
       "id": "3ba5b8d571744d494547",
       "title": "Amazonas in Brasilien: Abholzung auf tiefstem Stand seit 1988",
@@ -72,54 +120,6 @@
       "description": "Deutschland und Frankreich haben sich auf eine Position zum Verbrenner-Aus in der EU verständigt. Kanzler Merz und Umweltminister Schneider zeigen sich sehr zufrieden. Oder ist es ein historischer Fehler? Von Jakob Mayr.",
       "pubDate": "2026-10-16T18:59:07+02:00",
       "link": "https://www.tagesschau.de/ausland/europa/verbrenner-aus-paris-berlin-100.html",
-      "bild": ""
-    },
-    {
-      "id": "2359df258b517b596bbb",
-      "title": "Eurowings streicht Flüge und prüft Kurzarbeit",
-      "description": "Der Kostendruck steigt: Eurowings streicht Flüge und prüft die Möglichkeit von Kurzarbeit für seine Mitarbeitenden. Als Grund nennt die Lufthansa-Tochter die gestiegenen Preise für Kerosin durch den Iran-Krieg.",
-      "pubDate": "2026-10-16T18:52:09+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/eurowings-kurzarbeit-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f13a945a2dfc89ef8085",
-      "title": "Marktbericht: DAX schüttelt KI- und Zinssorgen vorerst ab",
-      "description": "Die Stimmung an den Aktienmärkten hat sich zum Ende der Handelswoche spürbar aufgehellt. Ausschlaggebend war eine Rede von US-Notenbankchef Warsh. Dazu kamen Rückenwind aus der Autoindustrie und starke Firmenbilanzen.",
-      "pubDate": "2026-10-16T18:22:56+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-nikkei-oelpreis-100.html",
-      "bild": ""
-    },
-    {
-      "id": "220138cedf0cc13a497f",
-      "title": "Starlink-Anschlag: Hat Russland die türkische Mafia beauftragt?",
-      "description": "Wegen eines Brandanschlags auf eine Starlink-Station in Polen wurden zwei Tatverdächtige in Deutschland festgenommen. Nach Recherchen von ARD-Hauptstadtstudio und STRG_F sollen die beiden Männer zur türkischen Organisierten Kriminalität gehören.",
-      "pubDate": "2026-10-16T17:51:42+02:00",
-      "link": "https://www.tagesschau.de/investigativ/starlink-polen-tuerkei-mafia-100.html",
-      "bild": ""
-    },
-    {
-      "id": "0ed417bec1301330a875",
-      "title": "Wirtschaftsministerin Reiche für Direktzahlungen nach \"Tankrabatt\"",
-      "description": "Der \"Tankrabatt\" soll Autofahrer entlasten - aber was kommt danach? Wirtschaftsministerin Reiche spricht sich im ARD Interview der Woche für eine gezieltere Entlastung von Geringverdienern aus - und erhöht den Druck auf das Finanzministerium.",
-      "pubDate": "2026-10-16T16:55:10+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/katherina-reiche-tankrabatt-entlastungen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "5181e0f429068c862b46",
-      "title": "Schaltsekunde abgeschafft - kommt dafür die Schaltstunde?",
-      "description": "Ein internationales Gremium hat festgelegt: Künftig wird es keine Schaltsekunden mehr geben. 27 Mal wurde sie genutzt, um unsere Uhren mit der astronomischen Zeit in Einklang zu halten. Ein neues System käme erst im Jahr 3000 zum Einsatz.",
-      "pubDate": "2026-10-16T16:50:10+02:00",
-      "link": "https://www.tagesschau.de/wissen/forschung/schaltsekunde-abschaffung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "ec1693aac56bd5b5b0cd",
-      "title": "Drohungen an jüdische Studenten nach AfD-Blockade bei Gedenkfeier",
-      "description": "Jüdische Studierende hatten AfD-Politiker Tillschneider daran gehindert, am Gedenken in der Synagoge von Halle teilzunehmen - jetzt bekommen sie Morddrohungen. Die Polizei ermittelt, ob Tillschneider beleidigt wurde.",
-      "pubDate": "2026-10-16T16:40:15+02:00",
-      "link": "https://www.tagesschau.de/inland/juedische-studenten-afd-100.html",
       "bild": ""
     }
   ],
