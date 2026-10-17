@@ -1,7 +1,31 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "17.10.2026, 05:27 Uhr (UTC)",
+  "aktualisiert": "17.10.2026, 09:37 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "22f0e61ab43b86574fb0",
+      "title": "Forscher: Meeresboden bremst Eisschmelze in Antarktis",
+      "description": "Das Team des deutschen Forschungsschiffes \"Polarstern\" hat vor der Ostantarktis entdeckt: Der Meeresboden hilft dabei, das Schmelzen des Eises dort zu bremsen. Von Andreas Kegel.",
+      "pubDate": "2026-10-17T10:15:08+02:00",
+      "link": "https://www.tagesschau.de/wissen/klima/antarktis-eisschmelze-100.html",
+      "bild": ""
+    },
+    {
+      "id": "d0a52fa39f2301364347",
+      "title": "Russland-Sanktionen auf Eis: Wie sich Trump Putin weiter annähert",
+      "description": "Die Unterstützung von US-Präsident Trump für die Ukraine war schon immer zurückhaltend. Mit den jetzt gestoppten Sanktionen kommt er dem russischen Präsidenten weit entgegen. Auch in den USA wird er dafür massiv kritisiert. Von Carsten Kühntopp.",
+      "pubDate": "2026-10-17T10:08:36+02:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/usa-trump-russland-ukraine-100.html",
+      "bild": ""
+    },
+    {
+      "id": "109b193f6df2534420d9",
+      "title": "\"Nationales Interesse\" - Trump setzt geplante Sanktionen gegen Russland aus",
+      "description": "Erst macht der US-Präsident einen umstrittenen Diesel-Deal mit Russland, nun setzt Trump gerade erst beschlossene Sanktionen aus. Das Weiße Haus begründet dies mit nationalem Interesse. Moskau reagiert erfreut.",
+      "pubDate": "2026-10-17T10:35:52+02:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/usa-russland-ukraine-sanktionen-100.html",
+      "bild": ""
+    },
     {
       "id": "312d201581e7d83d1f26",
       "title": "Nachfolge als UN-Generalsekretär: Bewerber scheitern an Vetomächten",
@@ -96,30 +120,6 @@
       "description": "Die Gräben zwischen den USA und der Ukraine scheinen immer größer zu werden. Selenskyj wendet sich mit einer Grundsatzfrage an die EU-Staaten - die haben militärische, finanzielle und politische Probleme. Von S. Stuchlik.",
       "pubDate": "2026-10-16T20:07:15+02:00",
       "link": "https://www.tagesschau.de/ausland/europa/selenskyj-eu-gipfel-102.html",
-      "bild": ""
-    },
-    {
-      "id": "35698f6e2eb8c1ab293a",
-      "title": "Angriff auf NS-Dokumentationszentrum in Köln",
-      "description": "In Köln ist das NS-Dokumentationszentrum mit einer stinkenden Flüssigkeit verunreinigt worden. Die Polizei geht von einem Buttersäure-Angriff aus. Das Haus gilt als Kölns größte Gedenkstätte für Opfer des Nationalsozialismus.",
-      "pubDate": "2026-10-16T19:12:00+02:00",
-      "link": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/angriff-auf-ns-dokumentationszentrum-in-koeln-100.html",
-      "bild": ""
-    },
-    {
-      "id": "3aaf5ebd3770a473553d",
-      "title": "Papst bittet Putin um Waffenruhe in Oleschky",
-      "description": "Leo XIV. ist besorgt über die Lage in der abgeriegelten ukrainischen Frontstadt Oleschky. In einem Telefonat mit Putin ruft er den Kremlchef zu einem Waffenstillstand in der Region auf - kurz nach seiner Lungen-OP.",
-      "pubDate": "2026-10-16T19:25:17+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/papst-telefonat-putin-100.html",
-      "bild": ""
-    },
-    {
-      "id": "3e94945f68a8388427b6",
-      "title": "EU-Regeln: Berlin und Paris wollen Verbrenner-Aus aufweichen",
-      "description": "Deutschland und Frankreich haben sich auf eine Position zum Verbrenner-Aus in der EU verständigt. Kanzler Merz und Umweltminister Schneider zeigen sich sehr zufrieden. Oder ist es ein historischer Fehler? Von Jakob Mayr.",
-      "pubDate": "2026-10-16T18:59:07+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/verbrenner-aus-paris-berlin-100.html",
       "bild": ""
     }
   ],
