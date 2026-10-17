@@ -1,7 +1,23 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "16.10.2026, 22:01 Uhr (UTC)",
+  "aktualisiert": "17.10.2026, 00:42 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "3ba5b8d571744d494547",
+      "title": "Amazonas in Brasilien: Abholzung auf tiefstem Stand seit 1988",
+      "description": "Die Abholzung im brasilianischen Amazonas ist auf den niedrigsten Stand seit Beginn der Aufzeichnungen 1988 gesunken. Die Regierung wertet den Rückgang als Erfolg der Schutzbemühungen von Präsident Lula, der gerade im Wahlkampf ist.",
+      "pubDate": "2026-10-17T02:05:19+02:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/brasilien-amazonas-abholzung-tiefstand-100.html",
+      "bild": ""
+    },
+    {
+      "id": "1f071f7e25d21339bb16",
+      "title": "Gaza und die Toten unter den Trümmern - warten auf die Bergung",
+      "description": "Große Teile des Gazastreifens sind zerstört, Tausende Tote liegen unter den Trümmern. Um sie zu bergen, fehlt es an schwerem Gerät, Treibstoff und Möglichkeiten zur Identifizierung. Angehörige warten - manche seit Jahren. Von B. Meier.",
+      "pubDate": "2026-10-17T00:22:52+02:00",
+      "link": "https://www.tagesschau.de/ausland/asien/gaza-tote-bergungen-100.html",
+      "bild": ""
+    },
     {
       "id": "ee80b6e2ea1dbc53388d",
       "title": "Winkel als Vorsitzender der Jungen Union wiedergewählt",
@@ -104,22 +120,6 @@
       "description": "Jüdische Studierende hatten AfD-Politiker Tillschneider daran gehindert, am Gedenken in der Synagoge von Halle teilzunehmen - jetzt bekommen sie Morddrohungen. Die Polizei ermittelt, ob Tillschneider beleidigt wurde.",
       "pubDate": "2026-10-16T16:40:15+02:00",
       "link": "https://www.tagesschau.de/inland/juedische-studenten-afd-100.html",
-      "bild": ""
-    },
-    {
-      "id": "8383edbb543881b5aeb5",
-      "title": "Wie es mit der Commerzbank nun weitergeht",
-      "description": "Nach der Zustimmung der EZB-Aufseher steht einer Mehrheitsübernahme der Commerzbank durch die italienische Großbank UniCredit fast nichts mehr im Weg. Was sind die nächsten Schritte - und die Folgen? Von Ursula Mayer.",
-      "pubDate": "2026-10-16T16:25:09+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/unicredit-commerzbank-uebernahme-100.html",
-      "bild": ""
-    },
-    {
-      "id": "debc85119de74b4d6359",
-      "title": "Gefährliche Mutproben: Bundesrat fordert mehr Schutz von Minderjährigen im Netz",
-      "description": "Bei \"Blackout-Challenges\" würgen sich Jugendliche selbst oder gegenseitig bis zur Ohnmacht. Aufnahmen davon werden vielfach in Sozialen Medien geteilt. Der Bundesrat fordert nun Strafen für die, die andere gezielt zu solchen Handlungen verleiten.",
-      "pubDate": "2026-10-16T15:29:07+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/soziale-medien-challenges-bundesrat-100.html",
       "bild": ""
     }
   ],
