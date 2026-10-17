@@ -1,7 +1,63 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "17.10.2026, 09:37 Uhr (UTC)",
+  "aktualisiert": "17.10.2026, 13:34 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "43b1580ff08b922fc544",
+      "title": "Zusammenstöße zwischen Polizei und Demonstranten bei Protesten in Frankreich",
+      "description": "Angriffe auf Polizisten, versuchte Plünderungen und Brandstiftungen: Bei Protesten gegen hohe Lebenshaltungskosten ist es in ganz Frankreich zu Ausschreitungen gekommen. An den laufenden Demonstrationen beteiligen sich Zehntausende.",
+      "pubDate": "2026-10-17T15:30:11+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/frankreich-proteste-212.html",
+      "bild": ""
+    },
+    {
+      "id": "ee055cd24f0b1c3e7d7c",
+      "title": "Sondierungen in Berlin: Linke, Grüne und SPD erzielen offenbar Einigung",
+      "description": "Vier Wochen nach der Wahl zum Berliner Abgeordnetenhaus haben Linke, Grüne und SPD bei den Sondierungen offenbar eine Einigung erzielt. Am Nachmittag soll es ein gemeinsames Pressestatement geben.",
+      "pubDate": "2026-10-17T14:54:37+02:00",
+      "link": "https://www.tagesschau.de/inland/regional/berlin/sondierungen-berlin-112.html",
+      "bild": ""
+    },
+    {
+      "id": "44559c8647a9d33c903b",
+      "title": "Tanker im Persischen Golf attackiert",
+      "description": "Vor der saudischen Küste sind Angriffe auf zwei Schiffe gemeldet worden - weit entfernt von der Straße von Hormus. Dort wiederum ist ein Supertanker nach iranischen Angaben auf eine Mine gelaufen.",
+      "pubDate": "2026-10-17T14:28:17+02:00",
+      "link": "https://www.tagesschau.de/ausland/asien/persischer-golf-tanker-angriffe-100.html",
+      "bild": ""
+    },
+    {
+      "id": "f19a9e347218eeb32984",
+      "title": "Merz verteidigt Reformkurs und warnt Koalitionspartner SPD",
+      "description": "Beim \"Deutschlandtag\" der Jungen Union findet Kanzler Merz deutliche Worte in Richtung SPD: Er wolle den Erfolg der Koalition, aber nicht um jeden Preis. In Sachen Rente pocht er darauf, die Reformvorschläge vollständig umzusetzen.",
+      "pubDate": "2026-10-17T13:57:58+02:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/merz-junge-union-104.html",
+      "bild": ""
+    },
+    {
+      "id": "4bfc14d243324a2d2981",
+      "title": "Nach Lungen-OP: Papst kann Klinik verlassen",
+      "description": "Papst Leo XIV. kann nach seiner Krebsoperation noch heute das Krankenhaus verlassen, teilte der Vatikan mit. Schon am Sonntag will er das Angelus-Gebet vom Fenster der päpstlichen Wohnung aus sprechen.",
+      "pubDate": "2026-10-17T13:13:34+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/papst-krankenhaus-op-100.html",
+      "bild": ""
+    },
+    {
+      "id": "ad647ed7f3ae6ae716f5",
+      "title": "Steigende Preise für Benzin, Heizöl, Gas - wie teuer wird der Winter?",
+      "description": "Die Preise für Kraftstoff, Heizöl und Erdgas sind binnen kurzer Zeit stark gestiegen. Das verteuert den Alltag und belastet auch Firmen mit Extrakosten. Was sind die Folgen? Von Lisa Wurscher und Julia Lamour.",
+      "pubDate": "2026-10-17T12:05:01+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/energie-heizen-winter-100.html",
+      "bild": ""
+    },
+    {
+      "id": "efc8dad3b47c3ad115ed",
+      "title": "Nach dem Ende des \"Tankrabatts\": Bilger hält weitere Entlastungen für möglich",
+      "description": "Der \"Tankrabatt\" gilt noch bis zum Jahresende - und dann? Verkehrsminister Bilger hält weitere gezielte Entlastungen für möglich - etwa für Busunternehmen oder Taxifahrer. Zudem arbeite die Regierung an einem Mechanismus für Direktzahlungen.",
+      "pubDate": "2026-10-17T11:38:09+02:00",
+      "link": "https://www.tagesschau.de/inland/bilger-tankrabatt-100.html",
+      "bild": ""
+    },
     {
       "id": "22f0e61ab43b86574fb0",
       "title": "Forscher: Meeresboden bremst Eisschmelze in Antarktis",
@@ -21,8 +77,8 @@
     {
       "id": "109b193f6df2534420d9",
       "title": "\"Nationales Interesse\" - Trump setzt geplante Sanktionen gegen Russland aus",
-      "description": "Erst macht der US-Präsident einen umstrittenen Diesel-Deal mit Russland, nun setzt Trump gerade erst beschlossene Sanktionen aus. Das Weiße Haus begründet dies mit nationalem Interesse. Moskau reagiert erfreut.",
-      "pubDate": "2026-10-17T10:35:52+02:00",
+      "description": "Erst macht der US-Präsident einen umstrittenen Diesel-Deal mit Russland, nun setzt Trump gerade erst beschlossene Sanktionen aus. Das Weiße Haus begründet dies mit nationalem Interesse. Moskau reagiert erfreut, die Ukraine ist entsetzt.",
+      "pubDate": "2026-10-17T14:07:08+02:00",
       "link": "https://www.tagesschau.de/ausland/amerika/usa-russland-ukraine-sanktionen-100.html",
       "bild": ""
     },
@@ -64,62 +120,6 @@
       "description": "Am ersten Tag des Iran-Kriegs im Februar schlägt eine Rakete in einer Schule in Minab ein. 168 Menschen sterben, die meisten sind Kinder. Heute ist der Ort Gedenkstätte, aber auch Bühne für Regimepropaganda. Von Benjamin Weber.",
       "pubDate": "2026-10-17T03:43:26+02:00",
       "link": "https://www.tagesschau.de/ausland/asien/iran-minab-schule-angriff-100.html",
-      "bild": ""
-    },
-    {
-      "id": "eef847a3a5de00932e52",
-      "title": "UK Green Party: Zerbrechen die britischen Grünen am Thema Israel?",
-      "description": "Eigentlich erlebten die Grünen in Großbritannien einen großen Aufschwung in diesem Jahr. Nun sorgt die Partei mit einem Beschluss zu Zionismus und Israel für Kontroversen - selbst in den eigenen Reihen. Von Franziska Hoppen.",
-      "pubDate": "2026-10-17T03:40:59+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/grossbritannien-gruene-antizionismus-100.html",
-      "bild": ""
-    },
-    {
-      "id": "3ba5b8d571744d494547",
-      "title": "Amazonas in Brasilien: Abholzung auf tiefstem Stand seit 1988",
-      "description": "Die Abholzung im brasilianischen Amazonas ist auf den niedrigsten Stand seit Beginn der Aufzeichnungen 1988 gesunken. Die Regierung wertet den Rückgang als Erfolg der Schutzbemühungen von Präsident Lula, der gerade im Wahlkampf ist.",
-      "pubDate": "2026-10-17T02:05:19+02:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/brasilien-amazonas-abholzung-tiefstand-100.html",
-      "bild": ""
-    },
-    {
-      "id": "1f071f7e25d21339bb16",
-      "title": "Gaza und die Toten unter den Trümmern - warten auf die Bergung",
-      "description": "Große Teile des Gazastreifens sind zerstört, Tausende Tote liegen unter den Trümmern. Um sie zu bergen, fehlt es an schwerem Gerät, Treibstoff und Möglichkeiten zur Identifizierung. Angehörige warten - manche seit Jahren. Von B. Meier.",
-      "pubDate": "2026-10-17T00:22:52+02:00",
-      "link": "https://www.tagesschau.de/ausland/asien/gaza-tote-bergungen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "ee80b6e2ea1dbc53388d",
-      "title": "Winkel als Vorsitzender der Jungen Union wiedergewählt",
-      "description": "Johannes Winkel ist als Vorsitzender der Jungen Union mit seinem bislang besten Ergebnis wiedergewählt worden. Er rief zu Zuversicht und Selbstbewusstsein auf - und teilte gleich darauf in Richtung SPD aus.",
-      "pubDate": "2026-10-16T23:15:49+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/junge-union-vorsitzender-100.html",
-      "bild": ""
-    },
-    {
-      "id": "e652a2da08d52ab9a0bb",
-      "title": "Online Challenges: Bundesrat fordert mehr Schutz von Minderjährigen",
-      "description": "Immer wieder verletzen sich Jugendliche bei Challenges, die in Sozialen Medien kursieren. Der Bundesrat will Erwachsene bestrafen, die Minderjährige dazu verleiten. Eine Wissenschaftlerin warnt vor Symbolpolitik. Von L. Pfeuffer-Rooschüz.",
-      "pubDate": "2026-10-16T20:42:07+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/soziale-medien-challenges-100.html",
-      "bild": ""
-    },
-    {
-      "id": "d972ccaeecbe5db36034",
-      "title": "Trumps neue Sprecherin räumt ihren Posten nach wenigen Tagen im Amt",
-      "description": "Die gerade erst angetretene neue Pressesprecherin von US-Präsident Donald Trump, Katie Zacharia, gibt ihr Amt schon wieder auf. Sie war wegen falscher Angaben zu ihrem Lebenslauf unter Druck geraten.",
-      "pubDate": "2026-10-16T21:42:41+02:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/zacharia-sprecherin-trump-100.html",
-      "bild": ""
-    },
-    {
-      "id": "e4ad8263023a6dcabdd1",
-      "title": "Selenskyj beim EU-Gipfel: Unterstützung für die Ukraine ohne USA?",
-      "description": "Die Gräben zwischen den USA und der Ukraine scheinen immer größer zu werden. Selenskyj wendet sich mit einer Grundsatzfrage an die EU-Staaten - die haben militärische, finanzielle und politische Probleme. Von S. Stuchlik.",
-      "pubDate": "2026-10-16T20:07:15+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/selenskyj-eu-gipfel-102.html",
       "bild": ""
     }
   ],
