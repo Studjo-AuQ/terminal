@@ -1,7 +1,15 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "18.10.2026, 19:20 Uhr (UTC)",
+  "aktualisiert": "18.10.2026, 21:44 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "d4d5072d0878c1b9e5a3",
+      "title": "Ausschreitungen in Frankreich: Macron spricht von \"Wut und Scham\"",
+      "description": "Die heftigen Ausschreitungen haben Frankreich erschüttert. Und auch am Sonntag gab es wieder Zusammenstöße. In einer Ansprache kündigte Präsident Macron an, durchzugreifen - notfalls mit einem Verbot der Demonstrationen.",
+      "pubDate": "2026-10-18T21:46:21+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/frankreich-krawalle-proteste-102.html",
+      "bild": ""
+    },
     {
       "id": "a22b8254ddc88422a153",
       "title": "US-Midterms: Können die Republikaner wieder bei Latinos punkten?",
@@ -112,14 +120,6 @@
       "description": "In Frankreich haben Hunderttausende Menschen am Samstag protestiert - überschattet von massiven Ausschreitungen. Vermummte plünderten Geschäfte und setzten Gebäude in Brand. 1.800 Menschen wurden festgenommen.",
       "pubDate": "2026-10-18T13:51:17+02:00",
       "link": "https://www.tagesschau.de/ausland/europa/frankreich-ausschreitungen-116.html",
-      "bild": ""
-    },
-    {
-      "id": "55138299203b830dd372",
-      "title": "COP17 zur Biodiversität: Den Holzdieben in Armenien auf der Spur",
-      "description": "Ab Montag beraten Vertreter von fast 200 Ländern auf der 17. UN-Konferenz zur biologischen Vielfalt, wie sich ihre selbst gesteckten Ziele noch erreichen lassen. Unterwegs mit Umweltschützern im Gastland Armenien. Von Norbert Hahn.",
-      "pubDate": "2026-10-18T08:48:59+02:00",
-      "link": "https://www.tagesschau.de/ausland/asien/un-biodiversitaetskonferenz-armenien-100.html",
       "bild": ""
     }
   ],
