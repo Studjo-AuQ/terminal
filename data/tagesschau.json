@@ -1,7 +1,31 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "18.10.2026, 16:48 Uhr (UTC)",
+  "aktualisiert": "18.10.2026, 19:20 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "a22b8254ddc88422a153",
+      "title": "US-Midterms: Können die Republikaner wieder bei Latinos punkten?",
+      "description": "Fast die Hälfte der Latinos in den USA wählte 2024 Donald Trump - und trug damit maßgeblich zu seinem Erfolg bei. Viele setzten große Hoffnungen in ihn. Wie ist die Stimmung unter Latinos kurz vor den Zwischenwahlen? Von N. Barth.",
+      "pubDate": "2026-10-18T21:00:53+02:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/usa-latinos-midterms-100.html",
+      "bild": ""
+    },
+    {
+      "id": "3d787d111ae4e34b693d",
+      "title": "Bericht aus Berlin: Heil äußert Zweifel an Rot-Grün-Rot in Berlin",
+      "description": "Kann Rot-Grün-Rot in Berlin funktionieren? Der SPD-Politiker Heil und weitere SPD-Bundestagsabgeordnete sind skeptisch. Grünen-Chefin Brantner nennt im Bericht aus Berlin Kriterien, die für eine stabile Regierung erfüllt sein müssten.",
+      "pubDate": "2026-10-18T20:32:34+02:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/bab-heil-brantner-koalition-berlin-100.html",
+      "bild": ""
+    },
+    {
+      "id": "cb4fd73a92c4d4d7cd6f",
+      "title": "\"Deutschlandtag\" der Jungen Union: Der große Knall bleibt aus",
+      "description": "Die Junge Union ist in der Partei längst ein Machtfaktor. Entsprechend selbstbewusst präsentierte sich der Nachwuchs beim \"Deutschlandtag\" - und Kanzler Merz zeigte sich zugewandt. Harmonie war trotzdem nicht zu spüren. Von K. Palzer.",
+      "pubDate": "2026-10-18T18:48:09+02:00",
+      "link": "https://www.tagesschau.de/inland/junge-union-deutschlandtag-analyse-100.html",
+      "bild": ""
+    },
     {
       "id": "819fa057982c8d00deba",
       "title": "Drohne in Litauens Luftraum eingedrungen und abgestürzt",
@@ -37,8 +61,8 @@
     {
       "id": "2f99932d253e17d977b8",
       "title": "Nach Gewalt bei Protesten in Frankreich: Macron beruft Krisensitzung ein",
-      "description": "Am Tag nach der massiven Gewalt bei Protesten in Frankreich wird das Ausmaß der Zerstörung sichtbar. Die Regierung macht Linksradikale für die Krawalle verantwortlich. Präsident Macron will sich am Abend an die Nation wenden.",
-      "pubDate": "2026-10-18T15:56:51+02:00",
+      "description": "Am Tag nach der massiven Gewalt bei Protesten in Frankreich wird das Ausmaß der Zerstörung sichtbar. Die Regierung macht Linksradikale für die Krawalle verantwortlich. Präsident Macron spricht von \"ungezügelter Gewalt\".",
+      "pubDate": "2026-10-18T20:45:27+02:00",
       "link": "https://www.tagesschau.de/ausland/europa/frankreich-krawalle-proteste-100.html",
       "bild": ""
     },
@@ -96,30 +120,6 @@
       "description": "Ab Montag beraten Vertreter von fast 200 Ländern auf der 17. UN-Konferenz zur biologischen Vielfalt, wie sich ihre selbst gesteckten Ziele noch erreichen lassen. Unterwegs mit Umweltschützern im Gastland Armenien. Von Norbert Hahn.",
       "pubDate": "2026-10-18T08:48:59+02:00",
       "link": "https://www.tagesschau.de/ausland/asien/un-biodiversitaetskonferenz-armenien-100.html",
-      "bild": ""
-    },
-    {
-      "id": "6f49d94ccb67fed1478f",
-      "title": "Wechseljahre im Job: Wie Hitzewallungen den Arbeitsalltag erschweren",
-      "description": "Fast jede fünfte Frau überlegt wegen Beschwerden in den Wechseljahren, früher in Ruhestand zu gehen. Erst seit kurzem wird die Bedeutung der Menopause für die Arbeitskultur entdeckt und offen diskutiert. Von Lilofee Fettich.",
-      "pubDate": "2026-10-18T08:25:03+02:00",
-      "link": "https://www.tagesschau.de/kultur/wechseljahre-am-arbeitsplatz-100.html",
-      "bild": ""
-    },
-    {
-      "id": "11c4815369f0b7bcbbf1",
-      "title": "Ausschreitungen bei Protesten gegen Bildungsreformen in Brüssel",
-      "description": "In Brüssel hat die Polizei Tränengas gegen Teilnehmer von Studentenprotesten eingesetzt. Demonstranten hatten zuvor mit Flaschen und Feuerwerkskörpern geworfen. Belgiens Innenministerium sprach von \"organisierter Gewalt\".",
-      "pubDate": "2026-10-17T21:10:03+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/bruessel-ausschreitungen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "8d4f9c1f141f2f068289",
-      "title": "Midterms 2026: Trumps Migrationspolitik verunsichert Unternehmen",
-      "description": "Viele Wähler unterstützten 2024 Trumps Versprechen einer rigiden Abschiebepolitik. Doch vor den Zwischenwahlen zeigt sich: Das rücksichtslose Vorgehen der Einwanderungsbehörde ICE befremdet Bürger - und Unternehmer. Von Carsten Kühntopp.",
-      "pubDate": "2026-10-17T19:44:57+02:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/usa-midterms-trump-migration-100.html",
       "bild": ""
     }
   ],
