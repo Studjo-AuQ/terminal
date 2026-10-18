@@ -1,7 +1,47 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "18.10.2026, 13:28 Uhr (UTC)",
+  "aktualisiert": "18.10.2026, 16:48 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "819fa057982c8d00deba",
+      "title": "Drohne in Litauens Luftraum eingedrungen und abgestürzt",
+      "description": "NATO-Kampfjets stiegen auf, Bürger wurden gewarnt: In Litauen hat eine Drohne für Alarm gesorgt, weil sie in den Luftraum eindrang. Kiew entschuldigte sich kurz darauf - und vermutet eine Störaktion Russlands dahinter.",
+      "pubDate": "2026-10-18T18:13:24+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/litauen-drohne-absturz-ukraine-100.html",
+      "bild": ""
+    },
+    {
+      "id": "c010a3ad34d079f02ba5",
+      "title": "Iran unterbreitet den USA ein Angebot - und droht zugleich",
+      "description": "Irans Regierung hat gemischte Signale nach Washington gesendet: Während Außenminister Araghtschi das Angebot erneuerte, die Straße von Hormus zu öffnen, drohte der neu ernannte Verteidigungsminister Ketabtschi US-Präsident Trump.",
+      "pubDate": "2026-10-18T17:18:33+02:00",
+      "link": "https://www.tagesschau.de/ausland/asien/iran-hormus-angebot-drohung-100.html",
+      "bild": ""
+    },
+    {
+      "id": "54bcb1fdc35ba58e2d95",
+      "title": "Fake-Sneaker sind ein riesiges Geschäft - doch Käufer gehen in Risiko",
+      "description": "Sneaker-Kultmodelle können vierstellige Summen kosten. Viele Menschen greifen daher zu deutlich günstigeren Kopien. Doch das kann gefährlich werden. Von G. Marković-Schomburg, I. Mäueler und L.-M. Hiltscher.",
+      "pubDate": "2026-10-18T16:46:25+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/sneaker-kultmodelle-investment-100.html",
+      "bild": ""
+    },
+    {
+      "id": "e43412741f9b7aedcaf8",
+      "title": "Gewalt bei Protesten beschäftigt auch Italien",
+      "description": "Proteste und Krawalle hat es am Samstag auch in Italien gegeben. Ministerpräsidentin Meloni verurteilte die Gewalt, von der vor allem Mailand betroffen war. Die Demonstranten forderten höhere Löhne und mehr Investitionen.",
+      "pubDate": "2026-10-18T16:27:58+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/italien-proteste-belgien-portugal-100.html",
+      "bild": ""
+    },
+    {
+      "id": "2f99932d253e17d977b8",
+      "title": "Nach Gewalt bei Protesten in Frankreich: Macron beruft Krisensitzung ein",
+      "description": "Am Tag nach der massiven Gewalt bei Protesten in Frankreich wird das Ausmaß der Zerstörung sichtbar. Die Regierung macht Linksradikale für die Krawalle verantwortlich. Präsident Macron will sich am Abend an die Nation wenden.",
+      "pubDate": "2026-10-18T15:56:51+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/frankreich-krawalle-proteste-100.html",
+      "bild": ""
+    },
     {
       "id": "1cf0cba80a96e9eea129",
       "title": "Jubel bei erstem öffentlichen Papst-Auftritt nach OP",
@@ -80,46 +120,6 @@
       "description": "Viele Wähler unterstützten 2024 Trumps Versprechen einer rigiden Abschiebepolitik. Doch vor den Zwischenwahlen zeigt sich: Das rücksichtslose Vorgehen der Einwanderungsbehörde ICE befremdet Bürger - und Unternehmer. Von Carsten Kühntopp.",
       "pubDate": "2026-10-17T19:44:57+02:00",
       "link": "https://www.tagesschau.de/ausland/amerika/usa-midterms-trump-migration-100.html",
-      "bild": ""
-    },
-    {
-      "id": "764a2decdbc96bac8efe",
-      "title": "Selenskyj kritisiert Trumps Aussetzung von Russland-Sanktionen",
-      "description": "US-Präsident Trump setzt geplante Russland-Sanktionen aus - während Angriffe auf die Infrastruktur laut dem ukrainischen Staatschef Selenskyj zunehmen. Er warnt, Trumps Entscheidung werde Moskau nur weiter bestärken.",
-      "pubDate": "2026-10-17T19:26:53+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/ukraine-usa-sanktionen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "0a3e26ddda7a77617d2d",
-      "title": "Paketversand und Retouren durch Onlinehandel auf Rekordniveau",
-      "description": "Immer mehr Menschen bestellen online. Auch die Zahl der Rücksendungen nimmt stetig zu. Ein lohnendes Geschäft für Kioskbesitzer, Paketunternehmen. Kritik kommt von Umweltschützern. Von Lucretia Gather.",
-      "pubDate": "2026-10-17T18:14:36+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/online-retouren-rekord-100.html",
-      "bild": ""
-    },
-    {
-      "id": "eec13cf94c39c1761701",
-      "title": "Rechtsruck - auch bei Israels linken Parteien?",
-      "description": "Israels politische Landschaft ist über die Jahre nach rechts gerückt. Der Terroranschlag der Hamas vor gut drei Jahren hat diese Entwicklung verstärkt. Wie wirkt sich das auf linke Parteien aus? Von Jan-Christoph Kitzler.",
-      "pubDate": "2026-10-17T18:09:53+02:00",
-      "link": "https://www.tagesschau.de/ausland/asien/israel-wahl-linke-100.html",
-      "bild": ""
-    },
-    {
-      "id": "810496421a6712cf52fd",
-      "title": "Linke, Grüne und SPD verkünden Durchbruch bei Sondierungen in Berlin",
-      "description": "Vier Wochen nach der Wahl zum Berliner Abgeordnetenhaus haben Linke, Grüne und SPD ihre Sondierungsgespräche erfolgreich abgeschlossen. Sofern die Parteigremien zustimmen, können Koalitionsverhandlungen beginnen.",
-      "pubDate": "2026-10-17T21:15:16+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/berlin-sondierungsvereinbarung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "97b46ac60cc6d37d1fd1",
-      "title": "Olivenernte: Verletzte bei Siedlergewalt im Westjordanland",
-      "description": "Während der Olivenernte im Westjordanland häuft sich die Gewalt israelischer Siedler gegen palästinensische Helfer. In mehreren Orten sind dabei Menschen verletzt worden, unter ihnen auch eine US-Journalistin.",
-      "pubDate": "2026-10-17T20:09:16+02:00",
-      "link": "https://www.tagesschau.de/ausland/asien/westjordanland-olivenernte-angriffe-100.html",
       "bild": ""
     }
   ],
