@@ -1,7 +1,31 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "18.10.2026, 04:08 Uhr (UTC)",
+  "aktualisiert": "18.10.2026, 09:00 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "44240bc7c3b1746a2226",
+      "title": "Gewalt, Plünderungen, Brände: Proteste in Frankreich eskaliert",
+      "description": "Es war ein beispielloser Protesttag in Frankreich: In mehreren Städten gab es massive Ausschreitungen. 1.200 Menschen wurden festgenommen. Vermummte plünderten Geschäfte und setzten Gebäude in Brand - darunter das historische Rathaus in Limoges.",
+      "pubDate": "2026-10-18T09:31:06+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/frankreich-ausschreitungen-116.html",
+      "bild": ""
+    },
+    {
+      "id": "55138299203b830dd372",
+      "title": "COP17 zur Biodiversität: Den Holzdieben in Armenien auf der Spur",
+      "description": "Ab Montag beraten Vertreter von fast 200 Ländern auf der 17. UN-Konferenz zur biologischen Vielfalt, wie sich ihre selbst gesteckten Ziele noch erreichen lassen. Unterwegs mit Umweltschützern im Gastland Armenien. Von Norbert Hahn.",
+      "pubDate": "2026-10-18T08:48:59+02:00",
+      "link": "https://www.tagesschau.de/ausland/asien/un-biodiversitaetskonferenz-armenien-100.html",
+      "bild": ""
+    },
+    {
+      "id": "6f49d94ccb67fed1478f",
+      "title": "Wechseljahre im Job: Wie Hitzewallungen den Arbeitsalltag erschweren",
+      "description": "Fast jede fünfte Frau überlegt wegen Beschwerden in den Wechseljahren, früher in Ruhestand zu gehen. Erst seit kurzem wird die Bedeutung der Menopause für die Arbeitskultur entdeckt und offen diskutiert. Von Lilofee Fettich.",
+      "pubDate": "2026-10-18T08:25:03+02:00",
+      "link": "https://www.tagesschau.de/kultur/wechseljahre-am-arbeitsplatz-100.html",
+      "bild": ""
+    },
     {
       "id": "11c4815369f0b7bcbbf1",
       "title": "Ausschreitungen bei Protesten gegen Bildungsreformen in Brüssel",
@@ -62,7 +86,7 @@
       "id": "7b7f8679f188b60bec1c",
       "title": "Unbekannte feuern auf Wohnhaus und Restaurant in Köln",
       "description": "In der Nacht sind in Köln erneut Schüsse gefallen. Dabei wurden ein Wohnhaus und ein Restaurant getroffen. Verletzte soll es nach bisherigen Erkenntnissen nicht geben. Die Hintergründe der Tat sind noch unklar.",
-      "pubDate": "2026-10-17T17:54:00+02:00",
+      "pubDate": "2026-10-18T10:50:00+02:00",
       "link": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/schuesse-koeln-102.html",
       "bild": ""
     },
@@ -77,7 +101,7 @@
     {
       "id": "43b1580ff08b922fc544",
       "title": "Schwere Ausschreitungen bei Massenprotesten in Frankreich",
-      "description": "Angriffe auf Polizisten, Plünderungen und Brandstiftungen: Bei Massenprotesten gegen hohe Lebenshaltungskosten hat es in Frankreich schwere Ausschreitungen gegeben. In Limoges setzten Randalierer das historische Rathaus in Brand.",
+      "description": "Angriffe auf Polizisten, Plünderungen und Brandstiftungen: In Frankreich hat es bei landesweiten Protesten schwere Ausschreitungen gegeben. In Limoges setzten Randalierer das historische Rathaus in Brand. 1.200 Menschen wurden festgenommen.",
       "pubDate": "2026-10-18T00:31:39+02:00",
       "link": "https://www.tagesschau.de/ausland/europa/frankreich-proteste-212.html",
       "bild": ""
@@ -96,30 +120,6 @@
       "description": "Vor der saudischen Küste sind Angriffe auf zwei Schiffe gemeldet worden - weit entfernt von der Straße von Hormus. Dort wiederum ist ein Supertanker nach iranischen Angaben auf eine Mine gelaufen.",
       "pubDate": "2026-10-17T14:28:17+02:00",
       "link": "https://www.tagesschau.de/ausland/asien/persischer-golf-tanker-angriffe-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f19a9e347218eeb32984",
-      "title": "Merz verteidigt Reformkurs und warnt Koalitionspartner SPD",
-      "description": "Beim \"Deutschlandtag\" der Jungen Union findet Kanzler Merz deutliche Worte in Richtung SPD: Er wolle den Erfolg der Koalition, aber nicht um jeden Preis. In Sachen Rente pocht er darauf, die Reformvorschläge vollständig umzusetzen.",
-      "pubDate": "2026-10-17T17:29:15+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/merz-junge-union-104.html",
-      "bild": ""
-    },
-    {
-      "id": "4bfc14d243324a2d2981",
-      "title": "Papst Leo XIV. hat das Krankenhaus nach Lungen-OP verlassen",
-      "description": "Wenige Tage nach seiner Krebsoperation an der Lunge hat Papst Leo XIV. das Krankenhaus verlassen. Schon morgen will er nach Angaben des Vatikans das Angelus-Gebet vom Fenster der päpstlichen Wohnung aus sprechen.",
-      "pubDate": "2026-10-17T16:29:50+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/papst-krankenhaus-op-100.html",
-      "bild": ""
-    },
-    {
-      "id": "ad647ed7f3ae6ae716f5",
-      "title": "Steigende Preise für Benzin, Heizöl, Gas - wie teuer wird der Winter?",
-      "description": "Die Preise für Kraftstoff, Heizöl und Erdgas sind binnen kurzer Zeit stark gestiegen. Das verteuert den Alltag und belastet auch Firmen mit Extrakosten. Was sind die Folgen? Von Lisa Wurscher und Julia Lamour.",
-      "pubDate": "2026-10-17T12:05:01+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/energie-heizen-winter-100.html",
       "bild": ""
     }
   ],
