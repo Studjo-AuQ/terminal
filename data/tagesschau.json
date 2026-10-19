@@ -1,7 +1,55 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "19.10.2026, 00:04 Uhr (UTC)",
+  "aktualisiert": "19.10.2026, 05:09 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "0dcc56733abcee2ba0a8",
+      "title": "Marktbericht: DAX steht schwacher Wochenstart bevor",
+      "description": "Positive Konjunkturdaten aus China, Gegenwind der US-Börsen und eine unübersichtliche Lage in Frankreich - ein Mix, der den DAX zum Wochenauftakt belasten könnte.",
+      "pubDate": "2026-10-19T07:08:06+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-berichtssaison-100.html",
+      "bild": ""
+    },
+    {
+      "id": "1894b9616f19970491f6",
+      "title": "Alberta stimmt über mögliche Abspaltung von Kanada ab",
+      "description": "Seit einigen Jahren erstarkt in der ölreichen Provinz Alberta im Westen Kanadas eine Separatistenbewegung - unterstützt auch von US-Präsident Trump. Heute wird über ein mögliches Unabhängigkeitsreferendum abgestimmt. Von Martin Ganslmeier.",
+      "pubDate": "2026-10-19T06:55:25+02:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/kanada-alberta-volksabstimmung-100.html",
+      "bild": ""
+    },
+    {
+      "id": "59a71d0f73e16bdcae9a",
+      "title": "11KM-Podcast: Deutsche Beamte zwischen Bashing und Reformen",
+      "description": "Knapp 57 Milliarden Euro hat Deutschland 2024 allein für die Pensionen von Beamten ausgegeben. Ist das noch bezahlbar? 11KM fragt, wo eine Reform des deutschen Beamtensystems ansetzen könnte.",
+      "pubDate": "2026-10-19T06:26:52+02:00",
+      "link": "https://www.tagesschau.de/inland/gesellschaft/podcast-11km-beamte-100.html",
+      "bild": ""
+    },
+    {
+      "id": "cbbbc36ce1a985f4d75f",
+      "title": "Wann kommt der Gesetzentwurf für die Rentenreform?",
+      "description": "Die Rentenreform soll kommen. Darüber sind sich in der schwarz-roten Koalition alle einig. Über die Details und den Zeitplan gehen die Meinungen aber weiterhin auseinander - auch bei den Fraktionschefs.",
+      "pubDate": "2026-10-19T05:00:16+02:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/rentenreform-zeitplan-miersch-frei-100.html",
+      "bild": ""
+    },
+    {
+      "id": "294b26192257f5866e65",
+      "title": "Ausschreitungen in Frankreich: Fassungslosigkeit und Schuldzuweisungen",
+      "description": "Mit Schock und Unverständnis haben viele Menschen in Frankreich auf die Gewalt bei den Protesten reagiert. Die politischen Lager kämpfen um die Deutungshoheit - und machen sich gegenseitig für die Eskalation verantwortlich. Von C. Dylla.",
+      "pubDate": "2026-10-19T04:17:03+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/frankreich-ausschreitungen-politische-reaktionen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "f91e35395b95a675b2f7",
+      "title": "Flugzeug wegen Bombendrohung in Bulgarien notgelandet",
+      "description": "Auf dem Weg von Tel Aviv nach Wien ist ein Flugzeug von Austrian Airlines in Bulgarien notgelandet. Offenbar hatte es zuvor eine Bombendrohung gegen die Maschine gegeben. Die Hintergründe sind noch unklar.",
+      "pubDate": "2026-10-19T02:48:48+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/notlandung-bulgarien-bombendrohung-100.html",
+      "bild": ""
+    },
     {
       "id": "001fa5e5b3117dc92b10",
       "title": "USA liefern laut Selenskyj wieder Geheimdienstinformationen",
@@ -72,54 +120,6 @@
       "description": "Proteste und Krawalle hat es am Samstag auch in Italien gegeben. Ministerpräsidentin Meloni verurteilte die Gewalt, von der vor allem Mailand betroffen war. Die Demonstranten forderten höhere Löhne und mehr Investitionen.",
       "pubDate": "2026-10-18T16:27:58+02:00",
       "link": "https://www.tagesschau.de/ausland/europa/italien-proteste-belgien-portugal-100.html",
-      "bild": ""
-    },
-    {
-      "id": "2f99932d253e17d977b8",
-      "title": "Nach Gewalt bei Protesten in Frankreich: Macron beruft Krisensitzung ein",
-      "description": "Am Tag nach der massiven Gewalt bei Protesten in Frankreich wird das Ausmaß der Zerstörung sichtbar. Die Regierung macht Linksradikale für die Krawalle verantwortlich. Präsident Macron spricht von \"ungezügelter Gewalt\".",
-      "pubDate": "2026-10-18T20:45:27+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/frankreich-krawalle-proteste-100.html",
-      "bild": ""
-    },
-    {
-      "id": "1cf0cba80a96e9eea129",
-      "title": "Jubel bei erstem öffentlichen Papst-Auftritt nach OP",
-      "description": "Papst Leo XIV. ist zurück im Vatikan. Wenige Tage nach seiner Lungen-Operation wandte er sich an die Gläubigen auf dem Petersplatz. Vom Fenster seines Arbeitszimmers im Apostolischen Palast sprach er das Angelus-Gebet.",
-      "pubDate": "2026-10-18T14:07:31+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/papst-angelus-gebet-106.html",
-      "bild": ""
-    },
-    {
-      "id": "76b7e1e618bb51f52434",
-      "title": "Russland meldet Drohnenangriffe in St. Petersburg",
-      "description": "Die Ukraine hat in St. Petersburg nach russischen Angaben erneut Ölanlagen und ein Logistikzentrum angegriffen. Behörden zufolge kam dabei ein Mensch ums Leben. Auch die Ukraine meldet massiven Beschuss ihrer Energieanlagen und Tote.",
-      "pubDate": "2026-10-18T13:55:25+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/ukraine-krieg-angriffe-st-petersburg-100.html",
-      "bild": ""
-    },
-    {
-      "id": "10e74ec6fc4117a5f2d6",
-      "title": "Doppelsystem Deutschland: Gesetzliche und Private Krankenkasse",
-      "description": "Das deutsche Krankenversicherungssystem ist speziell. Während in vielen Ländern die private Versicherung eine Ergänzung ist, ist sie hierzulande für Millionen Menschen das Hauptsystem. Von L.-M. Hiltscher.",
-      "pubDate": "2026-10-18T13:18:25+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/krankenversicherung-pkv-gkv-vergleich-100.html",
-      "bild": ""
-    },
-    {
-      "id": "4a1216e74394a2a75169",
-      "title": "CSU-Chef Söder fordert bei Junger Union \"Brandmauer nach links\"",
-      "description": "Dass Linke, Grüne und SPD einen Durchbruch bei den Sondierungen in Berlin erzielt haben, führt auf dem \"Deutschlandtag\" der Jungen Union zu heftiger Kritik: CSU-Chef Söder fordert eine klare Abgrenzung nach links - unter dem Jubel der Delegierten.",
-      "pubDate": "2026-10-18T13:17:48+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/soeder-junge-union-102.html",
-      "bild": ""
-    },
-    {
-      "id": "c60791286ed5d6f770cd",
-      "title": "Wie die Lausitz den Ärztemangel in den Griff bekommen will",
-      "description": "In Deutschland fehlen Tausende Hausärzte, besonders auf dem Land. Brandenburg will mit einer neuen staatlichen Medizinerausbildung gegensteuern, in einer Region, die besonders vom Strukturwandel betroffen ist. Von J. Piwon.",
-      "pubDate": "2026-10-18T11:36:32+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/gesundheit-aerztemangel-brandenburg-100.html",
       "bild": ""
     }
   ],
