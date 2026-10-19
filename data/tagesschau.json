@@ -1,7 +1,15 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "18.10.2026, 21:44 Uhr (UTC)",
+  "aktualisiert": "19.10.2026, 00:04 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "001fa5e5b3117dc92b10",
+      "title": "USA liefern laut Selenskyj wieder Geheimdienstinformationen",
+      "description": "Die Ukraine klagte zuletzt über fehlende US-Geheimdienstinformationen zu russischen Angriffen. Inzwischen liefern die USA diese laut dem ukrainischen Präsidenten wieder. Doch angesichts des jüngsten US-Kurses zeigt er sich tief besorgt.",
+      "pubDate": "2026-10-19T00:23:09+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/ukraine-geheimdienst-informationen-usa-100.html",
+      "bild": ""
+    },
     {
       "id": "d4d5072d0878c1b9e5a3",
       "title": "Ausschreitungen in Frankreich: Macron spricht von \"Wut und Scham\"",
@@ -112,14 +120,6 @@
       "description": "In Deutschland fehlen Tausende Hausärzte, besonders auf dem Land. Brandenburg will mit einer neuen staatlichen Medizinerausbildung gegensteuern, in einer Region, die besonders vom Strukturwandel betroffen ist. Von J. Piwon.",
       "pubDate": "2026-10-18T11:36:32+02:00",
       "link": "https://www.tagesschau.de/inland/innenpolitik/gesundheit-aerztemangel-brandenburg-100.html",
-      "bild": ""
-    },
-    {
-      "id": "44240bc7c3b1746a2226",
-      "title": "Gewalt, Plünderungen, Brände: Proteste in Frankreich eskalieren",
-      "description": "In Frankreich haben Hunderttausende Menschen am Samstag protestiert - überschattet von massiven Ausschreitungen. Vermummte plünderten Geschäfte und setzten Gebäude in Brand. 1.800 Menschen wurden festgenommen.",
-      "pubDate": "2026-10-18T13:51:17+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/frankreich-ausschreitungen-116.html",
       "bild": ""
     }
   ],
