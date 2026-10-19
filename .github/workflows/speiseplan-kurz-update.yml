@@ -26,7 +26,6 @@ jobs:
       - name: A1 und A2 aus Speiseplan-PDFs lesen
         run: |
           python3 << 'PYTHON'
-          import glob
           import json
           import re
           import subprocess
@@ -41,13 +40,15 @@ jobs:
           ZIEL = Path('data/speiseplan-kurz.json')
           ZIEL.parent.mkdir(parents=True, exist_ok=True)
 
-          try:
-              alt = json.loads(ZIEL.read_text(encoding='utf-8'))
-          except Exception:
-              alt = {}
-
-          tage = dict(alt.get('tage') or {})
+          # Bewusst vollständig neu aufbauen:
+          # So bleiben keine früher falsch erkannten Tageswerte erhalten.
+          tage = {}
           fehler = []
+
+          WOCHENTAGE = (
+              'montag', 'dienstag', 'mittwoch',
+              'donnerstag', 'freitag', 'samstag', 'sonntag'
+          )
 
           def gruppiere_linien(kandidaten):
               gruppen = []
@@ -62,8 +63,6 @@ jobs:
               rgb = np.asarray(img.convert('RGB'), dtype=np.float32)
               grau = rgb.mean(axis=2)
 
-              # Entspricht der bewährten Erkennung aus js/speiseplan-heute.js:
-              # dunkle Linie über mehr als 50 % der jeweils geprüften Achse.
               y_anteil = (grau[:, ::2] < 130).mean(axis=1)
               x_anteil = (grau[::2, :] < 130).mean(axis=0)
 
@@ -74,12 +73,14 @@ jobs:
           def ocr_kurz(crop, tmpdir, name):
               pfad = Path(tmpdir) / f'{name}.png'
               crop.save(pfad)
+
               proc = subprocess.run(
                   ['tesseract', str(pfad), 'stdout', '-l', 'deu', '--psm', '6'],
                   check=False,
                   capture_output=True,
                   text=True,
               )
+
               text = proc.stdout or ''
               text = re.sub(r'\[[^\]]*\]', ' ', text)
               text = re.sub(r'kcal:?\s*\d+\s*\]?', ' ', text, flags=re.I)
@@ -92,11 +93,65 @@ jobs:
               )
               return ' '.join(woerter[:3]).strip()
 
+          def ist_datumsspalte(text):
+              """
+              Die aktuelle PDF enthält links eine Tages-/Datumsspalte.
+              Diese wurde bisher fälschlich als A1 gespeichert.
+              """
+              t = str(text or '').strip().lower()
+
+              if any(re.search(rf'\b{tag}\b', t) for tag in WOCHENTAGE):
+                  return True
+
+              if re.search(r'\b\d{1,2}\.\d{1,2}\.\d{2,4}\b', t):
+                  return True
+
+              return False
+
+          def waehle_a1_a2(werte):
+              """
+              OCR liest mehrere Tabellenzellen der Zeile.
+              Falls die erste Zelle ein Wochentag/Datum ist, wird sie übersprungen.
+              Danach sind die ersten zwei echten Menüzellen A1 und A2.
+              """
+              werte = [str(x or '').strip() for x in werte]
+
+              if len(werte) >= 3 and ist_datumsspalte(werte[0]):
+                  werte = werte[1:]
+
+              if len(werte) < 2:
+                  raise RuntimeError(
+                      f'Zu wenige Menü-Zellen erkannt: {werte!r}'
+                  )
+
+              a1, a2 = werte[0], werte[1]
+
+              if not a1 or not a2:
+                  raise RuntimeError(
+                      f'A1/A2 leer erkannt: A1={a1!r}, A2={a2!r}'
+                  )
+
+              # Ein grüner Workflow darf künftig niemals wieder
+              # ein Datum oder einen Wochentag als Menü speichern.
+              if ist_datumsspalte(a1) or ist_datumsspalte(a2):
+                  raise RuntimeError(
+                      f'Datums-/Wochentagstext in Menü erkannt: '
+                      f'A1={a1!r}, A2={a2!r}'
+                  )
+
+              return a1, a2
+
           pdfs = sorted(Path('speiseplaene').glob('*.pdf'))
+
+          if not pdfs:
+              raise RuntimeError(
+                  'Keine Speiseplan-PDFs unter speiseplaene/ gefunden.'
+              )
 
           for pdf in pdfs:
               m = re.search(r'(\d{4})-KW(\d{1,2})', pdf.name, re.I)
               if not m:
+                  print(f'ℹ️ Übersprungen – kein KW-Dateiname: {pdf.name}')
                   continue
 
               jahr = int(m.group(1))
@@ -105,10 +160,16 @@ jobs:
               try:
                   with tempfile.TemporaryDirectory() as tmpdir:
                       basis = Path(tmpdir) / 'seite1'
+
                       subprocess.run(
                           [
-                              'pdftoppm', '-f', '1', '-singlefile', '-png',
-                              '-r', '300', str(pdf), str(basis)
+                              'pdftoppm',
+                              '-f', '1',
+                              '-singlefile',
+                              '-png',
+                              '-r', '300',
+                              str(pdf),
+                              str(basis),
                           ],
                           check=True,
                           capture_output=True,
@@ -119,65 +180,105 @@ jobs:
 
                       if len(xs) < 4 or len(ys) < 7:
                           raise RuntimeError(
-                              f'Tabellenraster nicht erkannt: X={len(xs)}, Y={len(ys)}'
+                              f'Tabellenraster nicht erkannt: '
+                              f'X={len(xs)}, Y={len(ys)}'
                           )
 
                       neue_woche = {}
 
                       for tag_index in range(5):
-                          datum = date.fromisocalendar(jahr, kw, tag_index + 1)
+                          datum = date.fromisocalendar(
+                              jahr, kw, tag_index + 1
+                          )
                           y0 = ys[1 + tag_index] + 6
                           y1 = ys[2 + tag_index] - 6
 
+                          # Bis zu vier Zellen lesen:
+                          # Tag/Datum | A1 | A2 | A3
+                          # Falls die PDF keine separate Datumsspalte hat,
+                          # funktioniert waehle_a1_a2() ebenfalls.
+                          zellen_anzahl = min(4, len(xs) - 1)
                           werte = []
-                          for spalte in (0, 1):  # immer A1 und A2
+
+                          for spalte in range(zellen_anzahl):
                               x0 = xs[spalte] + 6
                               x1 = xs[spalte + 1] - 6
+
                               if x1 <= x0 or y1 <= y0:
-                                  raise RuntimeError('Ungültiger Zellenausschnitt')
+                                  raise RuntimeError(
+                                      f'Ungültiger Zellenausschnitt: '
+                                      f'Spalte {spalte}'
+                                  )
 
                               crop = bild.crop((x0, y0, x1, y1))
                               kurz = ocr_kurz(
                                   crop,
                                   tmpdir,
-                                  f'{jahr}-KW{kw:02d}-{tag_index}-{spalte}'
+                                  f'{jahr}-KW{kw:02d}-'
+                                  f'{tag_index}-{spalte}',
                               )
                               werte.append(kurz)
 
+                          a1, a2 = waehle_a1_a2(werte)
+
                           neue_woche[datum.isoformat()] = {
-                              'a1': werte[0],
-                              'a2': werte[1],
+                              'a1': a1,
+                              'a2': a2,
                               'quelle': str(pdf).replace('\\', '/'),
                           }
 
-                      # Erst nach erfolgreicher Verarbeitung die fünf Tage ersetzen.
-                      for schluessel, wert in neue_woche.items():
-                          tage[schluessel] = wert
+                          print(
+                              f'  {datum.isoformat()}: '
+                              f'A1={a1!r} | A2={a2!r}'
+                          )
 
-                      print(f'✅ {pdf.name}: A1/A2 für 5 Tage erkannt')
+                      tage.update(neue_woche)
+                      print(
+                          f'✅ {pdf.name}: A1/A2 für 5 Tage erkannt'
+                      )
 
               except Exception as exc:
                   meldung = f'{pdf.name}: {exc}'
                   fehler.append(meldung)
                   print('❌', meldung)
 
+          # Bei irgendeinem OCR-/Rasterfehler soll der Workflow ROT werden.
+          # So wird keine semantisch fehlerhafte JSON-Datei als Erfolg verkauft.
+          if fehler:
+              raise RuntimeError(
+                  'Mindestens ein Speiseplan konnte nicht sicher '
+                  'ausgewertet werden:\n' + '\n'.join(fehler)
+              )
+
+          if not tage:
+              raise RuntimeError('Keine Tages-Einträge erzeugt.')
+
           jetzt = datetime.now(ZoneInfo('Europe/Berlin'))
+
           ausgabe = {
-              'schemaVersion': 1,
+              'schemaVersion': 2,
               'stand': jetzt.strftime('%d.%m.%Y, %H:%M Uhr'),
               'hinweis': (
                   'Automatisch aus den Speiseplan-PDFs erzeugt. '
-                  'Für die Tageskarte werden A1 und A2 auf jeweils drei Wörter gekürzt.'
+                  'Eine erkannte Tages-/Datumsspalte wird übersprungen. '
+                  'A1 und A2 werden auf jeweils drei Wörter gekürzt.'
               ),
               'tage': dict(sorted(tage.items())),
-              'fehler': fehler,
+              'fehler': [],
           }
 
           ZIEL.write_text(
-              json.dumps(ausgabe, ensure_ascii=False, indent=2) + '\n',
-              encoding='utf-8'
+              json.dumps(
+                  ausgabe,
+                  ensure_ascii=False,
+                  indent=2,
+              ) + '\n',
+              encoding='utf-8',
           )
-          print(f'✅ {ZIEL} geschrieben: {len(tage)} Tages-Einträge')
+
+          print(
+              f'✅ {ZIEL} geschrieben: {len(tage)} Tages-Einträge'
+          )
           PYTHON
 
       - name: Kurztexte ins Repository übertragen
