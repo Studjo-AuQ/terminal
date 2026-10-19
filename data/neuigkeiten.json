@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "stand": "2026-10-12",
+  "stand": "2026-10-19",
   "nachrichten": [
     {
       "datum": "2026-10-06",
@@ -29,17 +29,17 @@
       "tickerBis": ""
     },
     {
-      "id": "news-2026-08-14-tages-losung",
-      "datum": "2026-08-14",
-      "titel": "Tages-Losung",
-      "teaser": "Eine neue Kachel zeigt dir: Die Losung vom Tag.",
-      "inhalt": "Das ist ein Vers aus der Bibel.\nLies oder lass ihn dir vorlesen.",
-      "symbol": "📖",
-      "symbolModus": "auto",
+      "datum": "2026-10-19",
+      "titel": "\"Heute bei Studjo...\"",
+      "teaser": "Neue Tageskarte oben beim Start",
+      "inhalt": "Neuerdings siehst du auf der Startseite über den Kacheln \"Heute bei Studjo...\". Hier werden 3 Felder mit Infos oder Verweisen zu bestimmten Seiten gezeigt. So wird eine möglichst interessierte Auswahl zwischen Nachrichten, Tagesterminen, Motto, Losung, AbA oder Wetter präsentiert. Ein Klick führt dich direkt zur Seite.",
+      "symbol": "ℹ️",
+      "symbolModus": "manuell",
       "tickerAktiv": true,
       "tickerText": "",
-      "tickerVon": "2026-08-14",
-      "tickerBis": ""
+      "tickerVon": "2026-10-19",
+      "tickerBis": "",
+      "id": "news-2026-10-19-heute-bei-studjo"
     }
   ],
   "tickerNur": [

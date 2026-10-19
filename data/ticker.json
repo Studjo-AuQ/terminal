@@ -1,8 +1,17 @@
 {
   "schemaVersion": 1,
-  "stand": "2026-10-12",
+  "stand": "2026-10-19",
   "maxEintraege": 5,
   "eintraege": [
+    {
+      "id": "news-2026-10-19-heute-bei-studjo",
+      "typ": "nachricht",
+      "symbol": "ℹ️",
+      "text": "\"Heute bei Studjo...\"",
+      "link": "neuigkeiten.html#news-2026-10-19-heute-bei-studjo",
+      "von": "2026-10-19",
+      "bis": ""
+    },
     {
       "id": "news-2026-10-06-verbesserungen-am-terminal",
       "typ": "nachricht",
@@ -19,15 +28,6 @@
       "text": "Übersicht in Fußzeile",
       "link": "neuigkeiten.html#news-2026-09-07-uebersicht-in-fusszeile",
       "von": "2026-09-07",
-      "bis": ""
-    },
-    {
-      "id": "news-2026-08-14-tages-losung",
-      "typ": "nachricht",
-      "symbol": "📖",
-      "text": "Tages-Losung",
-      "link": "neuigkeiten.html#news-2026-08-14-tages-losung",
-      "von": "2026-08-14",
       "bis": ""
     },
     {
