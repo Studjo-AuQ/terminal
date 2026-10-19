@@ -1,12 +1,44 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "19.10.2026, 17:41 Uhr (UTC)",
+  "aktualisiert": "19.10.2026, 22:13 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "1066f35e5ef321053d24",
+      "title": "Berlin: Grüne und SPD stimmen für Koalitionsgespräche mit Linke",
+      "description": "Die Grünen und die SPD wollen in Berlin mit der Linkspartei Koalitionsverhandlungen aufnehmen. Beide Parteien entschieden sich am Abend für die Gespräche - die Abstimmung bei der Linken steht noch aus.",
+      "pubDate": "2026-10-19T21:52:35+02:00",
+      "link": "https://www.tagesschau.de/inland/berlin-wahl-spd-gruene-koalitionsverhandlungen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "3ac859ec1dad431e9832",
+      "title": "Bundesregierung vereinbart KI-Kooperation mit Nvidia",
+      "description": "Deutschland und der US-Chip-Gigant Nvidia haben eine Zusammenarbeit bei der Entwicklung Künstlicher Intelligenz beschlossen. Die Vereinbarung wurde beim ersten \"Invest-in-Germany\"-Gipfel verkündet - und soll die deutsche Wettbewerbsfähigkeit stärken.",
+      "pubDate": "2026-10-19T21:23:41+02:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/bund-nvidia-zusammenarbeit-ki-100.html",
+      "bild": ""
+    },
+    {
+      "id": "4462627f1cf0b6842a27",
+      "title": "Proteste in vielen Ländern Europas - aus ähnlichen Gründen",
+      "description": "Die gewalttätigen Proteste in Frankreich dominieren seit Tagen die Schlagzeilen. Doch auch in anderen Ländern Europas gibt es derzeit Großdemos und Ausschreitungen, die Gründe ähneln einander vielfach. Wer protestiert gerade in welchen Ländern - und warum?",
+      "pubDate": "2026-10-19T21:08:04+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/proteste-europa-100.html",
+      "bild": ""
+    },
+    {
+      "id": "6b13515a153f653d6fa0",
+      "title": "Jemen: Mehr als 50 Tote bei Huthi-Angriff auf Militärlager",
+      "description": "Die Huthi-Miliz beschießt im Jemen ein Militärlager offenbar mit mehreren ballistischen Raketen. Mindestens 53 Soldaten kommen ums Leben. Die proiranische Miliz spricht von Vergeltung gegen Saudi-Arabien.",
+      "pubDate": "2026-10-19T20:35:46+02:00",
+      "link": "https://www.tagesschau.de/ausland/asien/jemen-huthi-angriff-militaerlager-viele-tote-100.html",
+      "bild": ""
+    },
     {
       "id": "3802af41f2d2d90eeb18",
       "title": "Berliner SPD für Koalitionsgespräche mit Linkspartei und Grünen",
       "description": "Die Berliner SPD stimmt mit großer Mehrheit für Koalitionsverhandlungen mit der Linkspartei und mit den Grünen. Die Grünen wollen noch am Abend über den Beginn der Gespräche entscheiden.",
-      "pubDate": "2026-10-19T19:19:04+02:00",
+      "pubDate": "2026-10-19T19:59:59+02:00",
       "link": "https://www.tagesschau.de/inland/innenpolitik/koalitionsverhandlungen-berlin-spd-linke-gruene-100.html",
       "bild": ""
     },
@@ -88,38 +120,6 @@
       "description": "Vor einem Jahr erbeuteten Diebe die französischen Kronjuwelen aus dem Pariser Louvre. Das Museum hat seine Sicherheitsvorkehrungen mittlerweile verschärft, aber vom Schmuck fehlt weiterhin jede Spur. Von Cai Rienäcker.",
       "pubDate": "2026-10-19T13:46:08+02:00",
       "link": "https://www.tagesschau.de/ausland/europa/frankreich-ein-jahr-louvre-einbruch-100.html",
-      "bild": ""
-    },
-    {
-      "id": "717daeaecf0b26f7970a",
-      "title": "Bringt der Aufschwung in Deutschland auch mehr Jobs?",
-      "description": "In der Industrie sind Zehntausende Jobs gefährdet. Zugleich erwarten Ökonomen, dass die deutsche Wirtschaft stärker wächst als gedacht. Kann das den Stellenabbau stoppen? Von Sebastian Schreiber.",
-      "pubDate": "2026-10-19T13:25:35+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt-konjunktur-industrie-100.html",
-      "bild": ""
-    },
-    {
-      "id": "8f47e2fccc2d6c4e0feb",
-      "title": "COP17 in Armenien: Weltnaturkonferenz startet mit großen Aufgaben",
-      "description": "Rund ein Drittel der Land- und Meeresflächen weltweit soll bis 2030 wirksam geschützt sein. Wie das erreicht werden kann, darüber wird ab heute bei der Weltnaturkonferenz COP17 in Armeniens Hauptstadt Jerewan beraten. Von Stephan Hübner.",
-      "pubDate": "2026-10-19T13:08:38+02:00",
-      "link": "https://www.tagesschau.de/wissen/klima/weltnaturkonferenz-in-armenien-startet-100.html",
-      "bild": ""
-    },
-    {
-      "id": "2d150b03726ebed832d7",
-      "title": "Mindestens zwei Tote durch Überschwemmungen im Osten Spaniens",
-      "description": "Ein heftiges Sturmtief hat Straßen und Campingplätze im Südosten Spaniens unter Wasser gesetzt. Menschen flüchten vor den Wassermassen auf Hausdächer, es gab mindestens zwei Tote. Auf Mallorca fiel das Unwetter weniger heftig aus als befürchtet.",
-      "pubDate": "2026-10-19T13:00:46+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/spanien-unwetter-mallorca-102.html",
-      "bild": ""
-    },
-    {
-      "id": "f4adeb6af0071df62401",
-      "title": "Krawalle in Frankreich - Regierung räumt \"Kontrollverlust\" der Behörden ein",
-      "description": "Nach den gewalttätigen Protesten am Wochenende ist Frankreichs Regierung mit der Frage beschäftigt, wie es dazu kommen konnte. Innenminister Nuñez bot seinen Rücktritt an, Justizminister Darmanin sieht Defizite bei den Behörden.",
-      "pubDate": "2026-10-19T13:29:10+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/frankreichs-justizminister-sieht-schwaechen-bei-sicherheitsbehoerden-100.html",
       "bild": ""
     }
   ],
