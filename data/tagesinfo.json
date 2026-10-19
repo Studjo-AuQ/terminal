@@ -12,5 +12,36 @@
     "essen",
     "nachricht"
   ],
-  "vorgaben": []
+  "vorgaben": [
+    {
+      "id": "tages-mvevb0rb",
+      "name": "",
+      "von": "2026-10-19T00:00",
+      "bis": "2026-10-19T23:59",
+      "aktiv": true,
+      "plaetze": [
+        {
+          "modus": "auto"
+        },
+        {
+          "modus": "essen"
+        },
+        {
+          "modus": "nachricht",
+          "nachricht": {
+            "id": "ec6a54f63d554d901f16",
+            "quelleKey": "kobinet",
+            "quelle": "Kobinet",
+            "titel": "Fachtagung zu Gewalt-Schutz und Empowerment für Frauen mit Behinderungen",
+            "text": "Logo des Netzwerkes Foto: Starke.Frauen.Machen. BIELEFELD (kobinet) Das Bundesnetzwerk der Frauenbeauftragten in Einrichtungen \"Starke.Frauen.Machen. e.V.\" veranstaltet am 25. und 26. November 2026 eine Online-Fachtagung zum Thema \"Gegen Gewalt und für Empowerment\". Anlässlich des Internationalen Tags gegen Gewalt an Frauen thematisiert die Tagung Gewaltschutz und Empowerment speziell für Frauen mit Behinderungen, die besonders in Einrichtungen von Gewalt betroffen sind. Die Fachtagung richtet sich an Frauenbeauftragte, Unterstützerinnen, Verbände und weitere Interessierte. Am 25. November referieren Expertinnen aus verschiedenen Bereichen über die Verbesserung des Gewaltschutzes. Am Folgetag, dem 26. November, steht ein Mitmach-Programm auf dem Plan, das sich insbesondere an Frauenbeauftragte richtet. Es umfasst Informationen zur Zusammenarbeit mit Beratungsstellen sowie einen Schnupper-Wendo-Kurs. Alle Interessierten sind zur Teilnahme eingeladen. Quelle",
+            "pubDate": "2026-10-17T05:00:42+00:00",
+            "link": "https://kbnt.org/sfpuv67",
+            "emoji": "♿"
+          }
+        }
+      ],
+      "ausblenden": [],
+      "hinweis": ""
+    }
+  ]
 }
