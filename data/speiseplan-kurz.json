@@ -1,7 +1,133 @@
 {
   "schemaVersion": 1,
-  "stand": "noch nicht erzeugt",
-  "hinweis": "Diese Datei wird automatisch durch den GitHub-Workflow speiseplan-kurz-update.yml aus den Speiseplan-PDFs erzeugt.",
-  "tage": {},
+  "stand": "19.10.2026, 09:45 Uhr",
+  "hinweis": "Automatisch aus den Speiseplan-PDFs erzeugt. Für die Tageskarte werden A1 und A2 auf jeweils drei Wörter gekürzt.",
+  "tage": {
+    "2026-10-12": {
+      "a1": "Montag 12.10.2026",
+      "a2": "Bay. Leberkäse an",
+      "quelle": "speiseplaene/speiseplan_2026-KW42.pdf"
+    },
+    "2026-10-13": {
+      "a1": "Dienstag 13.10.2026",
+      "a2": "Kaiserschmarren Warmes Pflaumen-Zimt-Kompott",
+      "quelle": "speiseplaene/speiseplan_2026-KW42.pdf"
+    },
+    "2026-10-14": {
+      "a1": "Mittwoch 14.10.2026",
+      "a2": "Mini-Schweinshaxe an Majoransoße",
+      "quelle": "speiseplaene/speiseplan_2026-KW42.pdf"
+    },
+    "2026-10-15": {
+      "a1": "Donnerstag 15.10.2026",
+      "a2": "Bay. Kräuterbratwürstchen an",
+      "quelle": "speiseplaene/speiseplan_2026-KW42.pdf"
+    },
+    "2026-10-16": {
+      "a1": "Freitag 16.10.2026",
+      "a2": "Eisbeinfleisch an Majoransoße",
+      "quelle": "speiseplaene/speiseplan_2026-KW42.pdf"
+    },
+    "2026-10-19": {
+      "a1": "Montag 19.10.2026",
+      "a2": "Hähnchen Cordon Bleu",
+      "quelle": "speiseplaene/speiseplan_2026-KW43.pdf"
+    },
+    "2026-10-20": {
+      "a1": "Dienstag 20.10.2026",
+      "a2": "Grüner Bohneneintopf mit",
+      "quelle": "speiseplaene/speiseplan_2026-KW43.pdf"
+    },
+    "2026-10-21": {
+      "a1": "Mittwoch 21.10.2026",
+      "a2": "Rinderfrikadelle Griechische-Art an",
+      "quelle": "speiseplaene/speiseplan_2026-KW43.pdf"
+    },
+    "2026-10-22": {
+      "a1": "Donnerstag 22.10.2026",
+      "a2": "Szegediner Gulasch mit",
+      "quelle": "speiseplaene/speiseplan_2026-KW43.pdf"
+    },
+    "2026-10-23": {
+      "a1": "Freitag 23.10.2026",
+      "a2": "Paniertes Schollenfilet Rahmspinat",
+      "quelle": "speiseplaene/speiseplan_2026-KW43.pdf"
+    },
+    "2026-10-26": {
+      "a1": "Montag 26.10.2026",
+      "a2": "Dicke Bohnen mit",
+      "quelle": "speiseplaene/speiseplan_2026-KW44.pdf"
+    },
+    "2026-10-27": {
+      "a1": "Dienstag 27.10.2026",
+      "a2": "Chili Con Carne",
+      "quelle": "speiseplaene/speiseplan_2026-KW44.pdf"
+    },
+    "2026-10-28": {
+      "a1": "Mittwoch 28.10.2026",
+      "a2": "Hähnchenkeule an Geflügelsoße",
+      "quelle": "speiseplaene/speiseplan_2026-KW44.pdf"
+    },
+    "2026-10-29": {
+      "a1": "Donnerstag 29.10.2026",
+      "a2": "Hühnerfrikassee mit Spargel,",
+      "quelle": "speiseplaene/speiseplan_2026-KW44.pdf"
+    },
+    "2026-10-30": {
+      "a1": "Freitag 30.10.2026",
+      "a2": "Fischstäbchen Rahmspinat Kartoffelpüree",
+      "quelle": "speiseplaene/speiseplan_2026-KW44.pdf"
+    },
+    "2026-11-02": {
+      "a1": "Montag 02.11.2026",
+      "a2": "Hähnchenbrust in Zitronensoße",
+      "quelle": "speiseplaene/speiseplan_2026-KW45.pdf"
+    },
+    "2026-11-03": {
+      "a1": "Dienstag 03.11.2026",
+      "a2": "Grünkohleintopf mit Kasselerwürfel",
+      "quelle": "speiseplaene/speiseplan_2026-KW45.pdf"
+    },
+    "2026-11-04": {
+      "a1": "Mittwoch 04.11.2026",
+      "a2": "Geflügelleber in Apfel-Zwiebelsoße",
+      "quelle": "speiseplaene/speiseplan_2026-KW45.pdf"
+    },
+    "2026-11-05": {
+      "a1": "Donnerstag 05.11.2026",
+      "a2": "Kasselernackenbraten an Bratensoße",
+      "quelle": "speiseplaene/speiseplan_2026-KW45.pdf"
+    },
+    "2026-11-06": {
+      "a1": "Freitag 06.11.2026",
+      "a2": "Dorschfrikadelle an Remouladensoße",
+      "quelle": "speiseplaene/speiseplan_2026-KW45.pdf"
+    },
+    "2026-11-09": {
+      "a1": "Montag 09.11.2026",
+      "a2": "Hähnchen Kebab Fleisch",
+      "quelle": "speiseplaene/speiseplan_2026-KW46.pdf"
+    },
+    "2026-11-10": {
+      "a1": "Dienstag 10.11.2026",
+      "a2": "Pichelsteiner Eintopf mit",
+      "quelle": "speiseplaene/speiseplan_2026-KW46.pdf"
+    },
+    "2026-11-11": {
+      "a1": "Mittwoch 11.11.2026",
+      "a2": "Zarte Entenbrust an",
+      "quelle": "speiseplaene/speiseplan_2026-KW46.pdf"
+    },
+    "2026-11-12": {
+      "a1": "Donnerstag 12.11.2026",
+      "a2": "Spiralnudeln Reibekäse Bolognese",
+      "quelle": "speiseplaene/speiseplan_2026-KW46.pdf"
+    },
+    "2026-11-13": {
+      "a1": "Freitag 13.11.2026",
+      "a2": "Matjes mit Zwiebeln",
+      "quelle": "speiseplaene/speiseplan_2026-KW46.pdf"
+    }
+  },
   "fehler": []
 }
