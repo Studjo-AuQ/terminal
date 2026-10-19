@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "stand": "2026-10-13",
+  "stand": "2026-10-19",
   "hinweis": "Zentrale Datenquelle für Studjo-Termine und NRW-Schulferien. Terminorte können optional mit einem Studjo-Standort und dessen Gebäudebild verknüpft werden.",
   "termine": [
     {
@@ -22,7 +22,7 @@
       "bis": "2026-11-29",
       "ort": "Auf der Heide",
       "standort": "adh",
-      "bild": "img/bst-adh.jpg",
+      "bild": "bst-adh.jpg",
       "uhrzeit": "11:00 – 16:00 Uhr",
       "ansprechpartner": "",
       "hinweis": ""
@@ -130,7 +130,7 @@
       "bis": "2027-06-25",
       "ort": "Freisenberg",
       "standort": "fbs",
-      "bild": "img/bst-fbs.jpg",
+      "bild": "bst-fbs.jpg",
       "uhrzeit": "16:00 Uhr",
       "ansprechpartner": "",
       "hinweis": "Regionaler Johanneswerktag ab 16 Uhr, BST Freisenberg (Ehrung Jubilare)"
@@ -154,7 +154,7 @@
       "bis": "2027-07-03",
       "ort": "Kierspe",
       "standort": "ki",
-      "bild": "img/bst-ki.jpg",
+      "bild": "bst-ki.jpg",
       "uhrzeit": "11:00 bis 16:00 Uhr",
       "ansprechpartner": "",
       "hinweis": ""
@@ -178,7 +178,7 @@
       "bis": "2027-07-09",
       "ort": "Wefelshohl",
       "standort": "whs",
-      "bild": "img/bst-whs.jpg",
+      "bild": "bst-whs.jpg",
       "uhrzeit": "12:00 - 15:30 Uhr",
       "ansprechpartner": "",
       "hinweis": "danach Firmenlauf"
@@ -190,7 +190,7 @@
       "bis": "2027-09-05",
       "ort": "Werdohl",
       "standort": "wd",
-      "bild": "img/bst-wd.jpg",
+      "bild": "bst-wd.jpg",
       "uhrzeit": "11:00 - 16:00 Uhr",
       "ansprechpartner": "",
       "hinweis": ""
@@ -202,7 +202,7 @@
       "bis": "2027-09-10",
       "ort": "Dannenbaum",
       "standort": "db",
-      "bild": "img/bst-db.jpg",
+      "bild": "bst-db.jpg",
       "uhrzeit": "12:00 - 15:30 Uhr",
       "ansprechpartner": "",
       "hinweis": ""
@@ -214,7 +214,7 @@
       "bis": "2027-09-18",
       "ort": "Freisenberg",
       "standort": "fbs",
-      "bild": "img/bst-fbs.jpg",
+      "bild": "bst-fbs.jpg",
       "uhrzeit": "11:00 bis 16:00 Uhr",
       "ansprechpartner": "",
       "hinweis": "zusammen mit Kerkhagen"
@@ -250,7 +250,7 @@
       "bis": "2027-11-28",
       "ort": "Auf der Heide",
       "standort": "adh",
-      "bild": "img/bst-adh.jpg",
+      "bild": "bst-adh.jpg",
       "uhrzeit": "11:00 - 16:00 Uhr",
       "ansprechpartner": "",
       "hinweis": ""
@@ -298,7 +298,7 @@
       "bis": "2026-10-22",
       "ort": "Wefelshohl",
       "standort": "whs",
-      "bild": "img/bst-whs.jpg",
+      "bild": "bst-whs.jpg",
       "uhrzeit": "09:00 Uhr",
       "ansprechpartner": "Birgit K.",
       "hinweis": "Gesprächskreis – Gott und die Welt"
@@ -310,7 +310,7 @@
       "bis": "2026-11-26",
       "ort": "Wefelshohl",
       "standort": "whs",
-      "bild": "img/bst-whs.jpg",
+      "bild": "bst-whs.jpg",
       "uhrzeit": "09:00 Uhr",
       "ansprechpartner": "Birgit K.",
       "hinweis": "Gesprächskreis – Gott und die Welt"
@@ -322,7 +322,7 @@
       "bis": "2026-12-17",
       "ort": "Wefelshohl",
       "standort": "whs",
-      "bild": "img/bst-whs.jpg",
+      "bild": "bst-whs.jpg",
       "uhrzeit": "09:00 Uhr",
       "ansprechpartner": "Birgit K.",
       "hinweis": "Gesprächskreis – Gott und die Welt"
@@ -334,7 +334,7 @@
       "bis": "2026-11-12",
       "ort": "Kerkhagen",
       "standort": "kh",
-      "bild": "img/bst-kh.jpg",
+      "bild": "bst-kh.jpg",
       "uhrzeit": "09:00 Uhr",
       "ansprechpartner": "Birgit K.",
       "hinweis": "Gesprächskreis – Gott und die Welt"
@@ -346,10 +346,82 @@
       "bis": "2026-12-10",
       "ort": "Kerkhagen",
       "standort": "kh",
-      "bild": "img/bst-kh.jpg",
+      "bild": "bst-kh.jpg",
       "uhrzeit": "09:00 Uhr",
       "ansprechpartner": "Birgit K.",
       "hinweis": "Gesprächskreis – Gott und die Welt"
+    },
+    {
+      "id": "weitere-20270311-werdohl-1pmzf",
+      "kategorie": "weitere",
+      "von": "2027-03-11",
+      "bis": "2027-03-11",
+      "ort": "Werdohl",
+      "standort": "wd",
+      "bild": "bst-wd.jpg",
+      "uhrzeit": "19:00 Uhr",
+      "ansprechpartner": "Matthoff / Likaj",
+      "hinweis": "Eltern- und Betreuerversammlung"
+    },
+    {
+      "id": "weitere-20270311-freisenberg-syuja",
+      "kategorie": "weitere",
+      "von": "2027-03-11",
+      "bis": "2027-03-11",
+      "ort": "Freisenberg",
+      "standort": "fbs",
+      "bild": "bst-fbs.jpg",
+      "uhrzeit": "19:00 Uhr",
+      "ansprechpartner": "Pasch / Wachholz",
+      "hinweis": "Eltern- und Betreuerversammlung"
+    },
+    {
+      "id": "weitere-20270318-dannenbaum-lyui7",
+      "kategorie": "weitere",
+      "von": "2027-03-18",
+      "bis": "2027-03-18",
+      "ort": "Dannenbaum",
+      "standort": "db",
+      "bild": "bst-db.jpg",
+      "uhrzeit": "19:00 Uhr",
+      "ansprechpartner": "Pasch / Bitzer",
+      "hinweis": "Eltern- und Betreuerversammlung"
+    },
+    {
+      "id": "weitere-20270318-kierspe-45f7v",
+      "kategorie": "weitere",
+      "von": "2027-03-18",
+      "bis": "2027-03-18",
+      "ort": "Kierspe",
+      "standort": "ki",
+      "bild": "bst-ki.jpg",
+      "uhrzeit": "19:00 Uhr",
+      "ansprechpartner": "Matthoff / Knipps",
+      "hinweis": "Eltern- und Betreuerversammlung"
+    },
+    {
+      "id": "weitere-20270325-auf-der-heide-ke7xt",
+      "kategorie": "weitere",
+      "von": "2027-03-25",
+      "bis": "2027-03-25",
+      "ort": "Auf der Heide",
+      "standort": "adh",
+      "bild": "bst-adh.jpg",
+      "uhrzeit": "19:00 Uhr",
+      "ansprechpartner": "Pasch / Fleischfresser",
+      "hinweis": "Eltern- und Betreuerversammlung"
+    },
+    {
+      "id": "weitere-20270325-wefelshohl-6mvi3",
+      "kategorie": "weitere",
+      "von": "2027-03-25",
+      "bis": "2027-03-25",
+      "ort": "Wefelshohl",
+      "standort": "whs",
+      "bild": "bst-whs.jpg",
+      "uhrzeit": "19:00 Uhr",
+      "ansprechpartner": "Matthoff / v. Hofe",
+      "hinweis": "Eltern- und Betreuerversammlung"
     }
   ],
   "schulferien": [
