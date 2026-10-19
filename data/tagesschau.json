@@ -1,12 +1,76 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "19.10.2026, 05:09 Uhr (UTC)",
+  "aktualisiert": "19.10.2026, 11:07 Uhr (UTC)",
   "meldungen": [
     {
+      "id": "2d150b03726ebed832d7",
+      "title": "Mindestens zwei Tote durch Überschwemmungen im Osten Spaniens",
+      "description": "Ein heftiges Sturmtief hat Straßen und Campingplätze im Südosten Spaniens unter Wasser gesetzt. Menschen flüchten vor den Wassermassen auf Hausdächer, es gab mindestens zwei Tote. Auf Mallorca fiel das Unwetter weniger heftig aus als befürchtet.",
+      "pubDate": "2026-10-19T13:00:46+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/spanien-unwetter-mallorca-102.html",
+      "bild": ""
+    },
+    {
+      "id": "f4adeb6af0071df62401",
+      "title": "Krawalle in Frankreich - Regierung räumt \"Kontrollverlust\" der Behörden ein",
+      "description": "Nach den gewalttätigen Protesten am Wochenende ist Frankreichs Regierung mit der Frage beschäftigt, wie es dazu kommen konnte. Innenminister Nuñez bot seinen Rücktritt an, Justizminister Daramanin sieht Defizite bei den Behörden.",
+      "pubDate": "2026-10-19T11:56:31+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/frankreichs-justizminister-sieht-schwaechen-bei-sicherheitsbehoerden-100.html",
+      "bild": ""
+    },
+    {
+      "id": "442d76a0773988c7a325",
+      "title": "Russland greift Kiew offenbar erneut mit Raketen an",
+      "description": "Russland hat die Ukraine abermals mit Raketen und Drohnen angegriffen - einmal mehr gab es laut dem ukrainischen Präsidenten Selenskyj keine frühzeitige Warnung westlicher Partner. US-Außenminister Rubio widerspricht.",
+      "pubDate": "2026-10-19T12:25:05+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/ukraine-russland-angriffe-200.html",
+      "bild": ""
+    },
+    {
+      "id": "6ac9a94181c79327cb46",
+      "title": "Volkswagen will offenbar Gehälter einfrieren",
+      "description": "Der angeschlagene Autobauer Volkswagen verschärft seine Sparmaßnahmen. Übereinstimmenden Berichten zufolge sollen weltweit die Gehälter für mehrere Jahre eingefroren werden. Der Konzern will sich dazu nicht äußern.",
+      "pubDate": "2026-10-19T11:06:30+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/vw-1620.html",
+      "bild": ""
+    },
+    {
+      "id": "44db5a7984ff69e5a059",
+      "title": "In Kiew wächst die Kritik an Bürgermeister Klitschko",
+      "description": "In Kiew steht der nächste Kriegswinter bevor. Viele Menschen werfen Bürgermeister Klitschko hier Missmanagement vor. Statt die Strom- und Wasserversorgung zu sichern, würde Geld für Straßenbau ausgegeben. Von Rebecca Barth.",
+      "pubDate": "2026-10-19T11:04:40+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/unzufriedenheit-mit-klitschko-kiew-100.html",
+      "bild": ""
+    },
+    {
+      "id": "0b4ac6466b5309f4d841",
+      "title": "IW-Studie: Fachkräftemangel bremst Infrastruktur-Projekte aus",
+      "description": "Der Bund will massiv in Brücken, Netze und Digitalisierung investieren. Doch laut einer Studie des Instituts der deutschen Wirtschaft fehlen schon jetzt die Fachkräfte, um die Projekte umzusetzen.",
+      "pubDate": "2026-10-19T10:07:38+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/fachkraeftemaengel-infrastruktur-iw-studie-100.html",
+      "bild": ""
+    },
+    {
+      "id": "ad64f4ebc7b54c204ec3",
+      "title": "Kritik an Rot-Grün-Rot in Berlin: \"Ich habe noch erhebliche Zweifel\"",
+      "description": "Die rot-grün-roten Sondierungsgespräche in Berlin waren holprig, aber erfolgreich. Heute wollen Grüne und SPD über Koalitionsverhandlungen mit der Linken entscheiden. Doch Kritik und Zweifel sind laut, etwa bei SPD-Fraktionschef Miersch.",
+      "pubDate": "2026-10-19T10:23:24+02:00",
+      "link": "https://www.tagesschau.de/inland/berlin-spd-linke-gruene-100.html",
+      "bild": ""
+    },
+    {
+      "id": "c0b14a8995a4cba69896",
+      "title": "Sturmtief \"Adam\": Behörden warnen vor Unwetter auf Mallorca",
+      "description": "Mallorca bereitet sich auf schwere Regenfälle vor. Wegen des Sturmtiefs \"Adam\" herrscht Warnstufe Rot, die Schulen sind geschlossen, viele Flüge bereits ausgefallen. Auf dem spanischen Festland kam es bereits zu Überflutungen.",
+      "pubDate": "2026-10-19T07:31:49+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/spanien-mallorca-sturmwarnung-100.html",
+      "bild": ""
+    },
+    {
       "id": "0dcc56733abcee2ba0a8",
-      "title": "Marktbericht: DAX steht schwacher Wochenstart bevor",
-      "description": "Positive Konjunkturdaten aus China, Gegenwind der US-Börsen und eine unübersichtliche Lage in Frankreich - ein Mix, der den DAX zum Wochenauftakt belasten könnte.",
-      "pubDate": "2026-10-19T07:08:06+02:00",
+      "title": "Marktbericht: DAX fällt unter 25.500 Punkten",
+      "description": "Zum Wochenauftakt belasten Meldungen aus China und den USA die Börsen. Sinkende Ölpreise und positive Daten reichen als Gegengewicht nicht aus. Dem DAX misslingt der Handelsauftakt.",
+      "pubDate": "2026-10-19T10:36:52+02:00",
       "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-berichtssaison-100.html",
       "bild": ""
     },
@@ -45,8 +109,8 @@
     {
       "id": "f91e35395b95a675b2f7",
       "title": "Flugzeug wegen Bombendrohung in Bulgarien notgelandet",
-      "description": "Auf dem Weg von Tel Aviv nach Wien ist ein Flugzeug von Austrian Airlines in Bulgarien notgelandet. Offenbar hatte es zuvor eine Bombendrohung gegen die Maschine gegeben. Die Hintergründe sind noch unklar.",
-      "pubDate": "2026-10-19T02:48:48+02:00",
+      "description": "Auf dem Weg von Tel Aviv nach Wien ist ein Flugzeug von Austrian Airlines notgelandet. Zuvor hatte es eine Bombendrohung gegeben. Nachdem bei einer Durchsuchung der Maschine nichts gefunden wurde, konnte sie ihren Flug fortsetzen.",
+      "pubDate": "2026-10-19T08:34:49+02:00",
       "link": "https://www.tagesschau.de/ausland/europa/notlandung-bulgarien-bombendrohung-100.html",
       "bild": ""
     },
@@ -56,70 +120,6 @@
       "description": "Die Ukraine klagte zuletzt über fehlende US-Geheimdienstinformationen zu russischen Angriffen. Inzwischen liefern die USA diese laut dem ukrainischen Präsidenten wieder. Doch angesichts des jüngsten US-Kurses zeigt er sich tief besorgt.",
       "pubDate": "2026-10-19T00:23:09+02:00",
       "link": "https://www.tagesschau.de/ausland/europa/ukraine-geheimdienst-informationen-usa-100.html",
-      "bild": ""
-    },
-    {
-      "id": "d4d5072d0878c1b9e5a3",
-      "title": "Ausschreitungen in Frankreich: Macron spricht von \"Wut und Scham\"",
-      "description": "Die heftigen Ausschreitungen haben Frankreich erschüttert. Und auch am Sonntag gab es wieder Zusammenstöße. In einer Ansprache kündigte Präsident Macron an, durchzugreifen - notfalls mit einem Verbot der Demonstrationen.",
-      "pubDate": "2026-10-18T21:46:21+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/frankreich-krawalle-proteste-102.html",
-      "bild": ""
-    },
-    {
-      "id": "a22b8254ddc88422a153",
-      "title": "US-Midterms: Können die Republikaner wieder bei Latinos punkten?",
-      "description": "Fast die Hälfte der Latinos in den USA wählte 2024 Donald Trump - und trug damit maßgeblich zu seinem Erfolg bei. Viele setzten große Hoffnungen in ihn. Wie ist die Stimmung unter Latinos kurz vor den Zwischenwahlen? Von N. Barth.",
-      "pubDate": "2026-10-18T21:00:53+02:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/usa-latinos-midterms-100.html",
-      "bild": ""
-    },
-    {
-      "id": "3d787d111ae4e34b693d",
-      "title": "Bericht aus Berlin: Heil äußert Zweifel an Rot-Grün-Rot in Berlin",
-      "description": "Kann Rot-Grün-Rot in Berlin funktionieren? Der SPD-Politiker Heil und weitere SPD-Bundestagsabgeordnete sind skeptisch. Grünen-Chefin Brantner nennt im Bericht aus Berlin Kriterien, die für eine stabile Regierung erfüllt sein müssten.",
-      "pubDate": "2026-10-18T20:32:34+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/bab-heil-brantner-koalition-berlin-100.html",
-      "bild": ""
-    },
-    {
-      "id": "cb4fd73a92c4d4d7cd6f",
-      "title": "\"Deutschlandtag\" der Jungen Union: Der große Knall bleibt aus",
-      "description": "Die Junge Union ist in der Partei längst ein Machtfaktor. Entsprechend selbstbewusst präsentierte sich der Nachwuchs beim \"Deutschlandtag\" - und Kanzler Merz zeigte sich zugewandt. Harmonie war trotzdem nicht zu spüren. Von K. Palzer.",
-      "pubDate": "2026-10-18T18:48:09+02:00",
-      "link": "https://www.tagesschau.de/inland/junge-union-deutschlandtag-analyse-100.html",
-      "bild": ""
-    },
-    {
-      "id": "819fa057982c8d00deba",
-      "title": "Drohne in Litauens Luftraum eingedrungen und abgestürzt",
-      "description": "NATO-Kampfjets stiegen auf, Bürger wurden gewarnt: In Litauen hat eine Drohne für Alarm gesorgt, weil sie in den Luftraum eindrang. Kiew entschuldigte sich kurz darauf - und vermutet eine Störaktion Russlands dahinter.",
-      "pubDate": "2026-10-18T18:13:24+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/litauen-drohne-absturz-ukraine-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c010a3ad34d079f02ba5",
-      "title": "Iran unterbreitet den USA ein Angebot - und droht zugleich",
-      "description": "Irans Regierung hat gemischte Signale nach Washington gesendet: Während Außenminister Araghtschi das Angebot erneuerte, die Straße von Hormus zu öffnen, drohte der neu ernannte Verteidigungsminister Ketabtschi US-Präsident Trump.",
-      "pubDate": "2026-10-18T17:18:33+02:00",
-      "link": "https://www.tagesschau.de/ausland/asien/iran-hormus-angebot-drohung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "54bcb1fdc35ba58e2d95",
-      "title": "Fake-Sneaker sind ein riesiges Geschäft - doch Käufer gehen in Risiko",
-      "description": "Sneaker-Kultmodelle können vierstellige Summen kosten. Viele Menschen greifen daher zu deutlich günstigeren Kopien. Doch das kann gefährlich werden. Von G. Marković-Schomburg, I. Mäueler und L.-M. Hiltscher.",
-      "pubDate": "2026-10-18T16:46:25+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/sneaker-kultmodelle-investment-100.html",
-      "bild": ""
-    },
-    {
-      "id": "e43412741f9b7aedcaf8",
-      "title": "Gewalt bei Protesten beschäftigt auch Italien",
-      "description": "Proteste und Krawalle hat es am Samstag auch in Italien gegeben. Ministerpräsidentin Meloni verurteilte die Gewalt, von der vor allem Mailand betroffen war. Die Demonstranten forderten höhere Löhne und mehr Investitionen.",
-      "pubDate": "2026-10-18T16:27:58+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/italien-proteste-belgien-portugal-100.html",
       "bild": ""
     }
   ],
