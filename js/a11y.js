@@ -162,26 +162,19 @@
   let isSpeaking      = false;
   let aktuelleAussage = null;
 
-  /* Elemente, die generisch vorgelesen werden */
   const LESE_SELEKTOREN = [
     'h1', 'h2', 'h3',
     'p',
     'li',
-    '.news-title', '.news-text',          /* nachrichten*.html  */
-    '.kachel-titel', '.faq-frage-text',   /* faq.html           */
+    '.news-title', '.news-text',
+    '.kachel-titel', '.faq-frage-text',
     '.antwort-text',
-    '.termin-titel', '.termin-info',      /* termine.html o.ä.  */
-    '[data-vorlesen]'                     /* beliebige Seite    */
+    '.termin-titel', '.termin-info',
+    '[data-vorlesen]'
   ].join(', ');
 
-  /* Elemente überspringen, die in diesen Containern stecken */
   const SKIP_SELEKTOREN = '.a11y-bar, #btn-help, footer, nav, .quiz-box, button, script, style';
 
-  /* Entfernt Emojis vor der Sprachausgabe. Manche Sprachausgaben
-     (z. B. unter Windows/Edge) lesen Emojis sonst wörtlich als ihre
-     Bildbeschreibung vor (z. B. "Ein Uhr" für 🕐, "Buch" für 📖) –
-     das ist verwirrend, daher werden Emojis hier grundsätzlich
-     entfernt, nicht mitgesprochen. */
   function entferneEmojis(text) {
     return text.replace(/\p{Extended_Pictographic}/gu, '').replace(/\s+/g, ' ').trim();
   }
@@ -203,11 +196,11 @@
     const kandidaten = Array.from(container.querySelectorAll(LESE_SELEKTOREN));
 
     const elemente = kandidaten
-      .filter(el => !el.closest(SKIP_SELEKTOREN))   // Skipzonen ausschließen
-      .filter(el => el.offsetParent !== null)        // nur sichtbare
+      .filter(el => !el.closest(SKIP_SELEKTOREN))
+      .filter(el => el.offsetParent !== null)
       .filter(el => (el.innerText || '').trim().length > 2)
       .map(el => ({
-        text:    entferneEmojis(el.innerText.trim().replace(/\s+/g, ' ')),
+        text: entferneEmojis(el.innerText.trim().replace(/\s+/g, ' ')),
         element: el
       }));
 
@@ -228,8 +221,9 @@
       document.getElementById('btn-vorlesen').classList.remove('aktiv');
       return;
     }
-    const abschnitt   = elemente[index];
-    aktuelleAussage   = new SpeechSynthesisUtterance(abschnitt.text);
+
+    const abschnitt = elemente[index];
+    aktuelleAussage = new SpeechSynthesisUtterance(abschnitt.text);
     aktuelleAussage.lang = 'de-DE';
     aktuelleAussage.rate = 0.88;
 
@@ -237,14 +231,17 @@
       entferneAlleMarkierungen();
       if (abschnitt.element) abschnitt.element.classList.add('is-reading');
     };
+
     aktuelleAussage.onend = () => {
       setTimeout(() => spieleSequenz(elemente, index + 1), 300);
     };
+
     aktuelleAussage.onerror = () => {
       entferneAlleMarkierungen();
       isSpeaking = false;
       document.getElementById('btn-vorlesen').classList.remove('aktiv');
     };
+
     window.speechSynthesis.speak(aktuelleAussage);
   }
 
@@ -253,18 +250,17 @@
       .forEach(el => el.classList.remove('is-reading'));
   }
 
-  /* Öffentlich zugänglich (für Seiten, die explizit aufrufen wollen) */
-  window.a11yVorlesen            = vorlesenGenerisch;
-  window.a11ySpielSequenz        = spieleSequenz;
+  window.a11yVorlesen = vorlesenGenerisch;
+  window.a11ySpielSequenz = spieleSequenz;
   window.a11yEntferneMarkierungen = entferneAlleMarkierungen;
 
-  /* Vorlesen-Button: eigene Seitenfunktion hat Vorrang */
   document.getElementById('btn-vorlesen').addEventListener('click', function (e) {
     e.stopPropagation();
+
     if (typeof window.vorlesenUndMarkieren === 'function') {
-      window.vorlesenUndMarkieren();   /* seitenspezifisch */
+      window.vorlesenUndMarkieren();
     } else {
-      vorlesenGenerisch();             /* generisch        */
+      vorlesenGenerisch();
     }
   });
 
@@ -273,6 +269,7 @@
      7. TOAST
      ════════════════════════════════════════════════════ */
   let toastTimer = null;
+
   function zeigToast(text) {
     const t = document.getElementById('a11y-toast');
     t.textContent = text;
@@ -287,5 +284,188 @@
      ════════════════════════════════════════════════════ */
   wendeSchriftAn(false);
   wendeKontrastAn(false);
+
+})();
+
+
+/* ══════════════════════════════════════════════════════
+   Nachrichten-Deep-Link für die Tageskarte
+
+   Beispiel:
+   nachrichten-allgemein.html
+     ?quelle=kobinet
+     &titel=Fachtagung%20...
+
+   Die Nachrichtenseite bleibt auf Studjo. Nach dem Laden wird
+   automatisch der richtige Anbieter-Tab gewählt, die passende
+   Meldung aufgeklappt und in den sichtbaren Bereich gescrollt.
+   ══════════════════════════════════════════════════════ */
+(function () {
+  'use strict';
+
+  const dateiname = location.pathname.split('/').pop();
+  if (dateiname !== 'nachrichten-allgemein.html') return;
+
+  const params = new URLSearchParams(location.search);
+  let quelle = String(params.get('quelle') || '').trim().toLowerCase();
+  const titel = String(params.get('titel') || '').trim();
+
+  if (!titel) return;
+
+  if (['nachrichten', 'nachrichtenleicht', 'dlf', 'deutschlandfunk'].includes(quelle)) {
+    quelle = 'leicht';
+  }
+
+  if (!['leicht', 'tagesschau', 'kobinet'].includes(quelle)) {
+    quelle = 'leicht';
+  }
+
+  const gridIds = {
+    leicht: 'grid-leicht',
+    tagesschau: 'grid-tagesschau',
+    kobinet: 'grid-kobinet'
+  };
+
+  const gridId = gridIds[quelle];
+
+  function tabButton() {
+    return Array.from(document.querySelectorAll('.tab-btn')).find(btn => {
+      const onclick = String(btn.getAttribute('onclick') || '');
+      return onclick.includes("'" + quelle + "'");
+    }) || null;
+  }
+
+  function findeKarte() {
+    const grid = document.getElementById(gridId);
+    if (!grid) return null;
+
+    const ziel = titel.replace(/\s+/g, ' ').trim();
+
+    return Array.from(grid.querySelectorAll('.news-card')).find(karte => {
+      const kartenTitel = String(
+        karte.querySelector('.card-titel')?.textContent || ''
+      ).replace(/\s+/g, ' ').trim();
+
+      return kartenTitel === ziel;
+    }) || null;
+  }
+
+  function oeffneKarte(karte) {
+    const btn = tabButton();
+
+    if (btn && typeof window.zeigeTab === 'function') {
+      window.zeigeTab(quelle, btn);
+    }
+
+    document.querySelectorAll('.news-card.offen')
+      .forEach(k => k.classList.remove('offen'));
+
+    karte.classList.add('offen');
+
+    setTimeout(() => {
+      karte.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }, 100);
+  }
+
+  async function fallbackAusTagesinfo() {
+    /* Falls die Meldung inzwischen aus dem kurzen RSS-Feed herausgefallen ist,
+       wird die in tagesinfo.json gespeicherte Kopie wieder als interne Karte
+       eingefügt. */
+    try {
+      if (typeof window.erstelleKarte !== 'function') return null;
+
+      const r = await fetch(
+        'data/tagesinfo.json?v=' + Date.now(),
+        { cache: 'no-store' }
+      );
+      if (!r.ok) return null;
+
+      const daten = await r.json();
+      const vorgaben = Array.isArray(daten?.vorgaben) ? daten.vorgaben : [];
+
+      let gespeichert = null;
+
+      for (const vorgabe of vorgaben) {
+        const plaetze = Array.isArray(vorgabe?.plaetze) ? vorgabe.plaetze : [];
+
+        for (const platz of plaetze) {
+          const n = platz?.nachricht;
+          const t = String(n?.titel || n?.title || '')
+            .replace(/\s+/g, ' ')
+            .trim();
+
+          if (n && t === titel.replace(/\s+/g, ' ').trim()) {
+            gespeichert = n;
+            break;
+          }
+        }
+
+        if (gespeichert) break;
+      }
+
+      if (!gespeichert) return null;
+
+      const grid = document.getElementById(gridId);
+      if (!grid) return null;
+
+      const meldung = {
+        id: gespeichert.id || '',
+        title: gespeichert.titel || gespeichert.title || titel,
+        description: gespeichert.text || '',
+        pubDate: gespeichert.pubDate || '',
+        bild: ''
+      };
+
+      const karte = window.erstelleKarte(
+        meldung,
+        gespeichert.quelle || 'Studjo Tageskarte'
+      );
+
+      grid.prepend(karte);
+      return karte;
+
+    } catch (e) {
+      console.warn(
+        '[Studjo Nachrichten] Gespeicherte Tageskarten-Nachricht konnte nicht geöffnet werden:',
+        e
+      );
+      return null;
+    }
+  }
+
+  async function starten() {
+    /* Die drei Feeds werden asynchron geladen. Deshalb zunächst kurz warten,
+       bis die gesuchte Karte tatsächlich im DOM vorhanden ist. */
+    for (let i = 0; i < 40; i++) {
+      const karte = findeKarte();
+
+      if (karte) {
+        oeffneKarte(karte);
+        return;
+      }
+
+      await new Promise(resolve => setTimeout(resolve, 150));
+    }
+
+    const fallback = await fallbackAusTagesinfo();
+
+    if (fallback) {
+      oeffneKarte(fallback);
+      return;
+    }
+
+    /* Mindestens den richtigen Anbieter-Tab zeigen, falls die gespeicherte
+       Nachricht wider Erwarten nicht mehr auffindbar ist. */
+    const btn = tabButton();
+
+    if (btn && typeof window.zeigeTab === 'function') {
+      window.zeigeTab(quelle, btn);
+    }
+  }
+
+  starten();
 
 })();

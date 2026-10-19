@@ -902,13 +902,35 @@
     };
   }
 
+  function nachrichtenQuelleKey(n) {
+    const direkt = String(n?.quelleKey || '').trim().toLowerCase();
+    if (['leicht', 'tagesschau', 'kobinet'].includes(direkt)) return direkt;
+
+    const quelle = String(n?.quelle || '').toLowerCase();
+    if (quelle.includes('kobinet')) return 'kobinet';
+    if (quelle.includes('tagesschau')) return 'tagesschau';
+    return 'leicht';
+  }
+
+  function interneNachrichtenUrl(n, titel) {
+    const params = new URLSearchParams();
+    params.set('quelle', nachrichtenQuelleKey(n));
+    params.set('titel', titel);
+
+    return 'nachrichten-allgemein.html?' + params.toString();
+  }
+
   function kandidatAdminNachricht(slot) {
     const n = slot && slot.nachricht;
     if (!n || !String(n.titel || n.title || '').trim()) return null;
 
     const titel = String(n.titel || n.title || '').trim();
     const quelle = String(n.quelle || '').trim();
-    const href = String(n.link || '').trim() || 'nachrichten-allgemein.html';
+
+    /* Manuell hervorgehobene Nachrichten bleiben auf der Studjo-Plattform.
+       Der interne Link öffnet auf nachrichten-allgemein.html automatisch
+       den passenden Anbieter-Tab und klappt genau diese Nachricht auf. */
+    const href = interneNachrichtenUrl(n, titel);
 
     return {
       id: 'nachricht-' + String(n.id || hash(titel)).replace(/[^a-zA-Z0-9_-]/g, '').slice(0, 80),
@@ -917,7 +939,7 @@
       emoji: String(n.emoji || '📰'),
       text: kuerzen(titel, 118),
       href,
-      extern: /^https?:\/\//i.test(href)
+      extern: false
     };
   }
 
