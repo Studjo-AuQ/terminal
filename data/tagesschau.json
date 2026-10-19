@@ -1,7 +1,111 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "19.10.2026, 11:07 Uhr (UTC)",
+  "aktualisiert": "19.10.2026, 17:41 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "3802af41f2d2d90eeb18",
+      "title": "Berliner SPD für Koalitionsgespräche mit Linkspartei und Grünen",
+      "description": "Die Berliner SPD stimmt mit großer Mehrheit für Koalitionsverhandlungen mit der Linkspartei und mit den Grünen. Die Grünen wollen noch am Abend über den Beginn der Gespräche entscheiden.",
+      "pubDate": "2026-10-19T19:19:04+02:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/koalitionsverhandlungen-berlin-spd-linke-gruene-100.html",
+      "bild": ""
+    },
+    {
+      "id": "04674049773519c62dbb",
+      "title": "Durchbruch im Fall Langley: Vermisste wurde Opfer einer Gewalttat",
+      "description": "Im Fall der seit dem Sommer 2007 vermissten Kerstin Lee Langley aus Regensburg gibt es einen Durchbruch: Die damals 39-Jährige soll von einem Trio getötet worden sein. Eine der Verdächtigen legte nun ein Geständnis ab.",
+      "pubDate": "2026-10-19T17:43:35+02:00",
+      "link": "https://www.tagesschau.de/inland/regional/bayern/verbrechen-kerstin-langley-vermisste-opfer-gewalttat-100.html",
+      "bild": ""
+    },
+    {
+      "id": "ea2d33612a2d1473e718",
+      "title": "Frankreichs Premierminister Lecornu kündigt Ausgangssperren an",
+      "description": "Nach den Ausschreitungen in Frankreich kündigt die Regierung lokale Ausgangssperren an. Für Samstag kursieren Aufrufe zu weiteren Protesten. Bundesinnenminister Dobrindt machte zwei Gruppen für die Krawalle im Nachbarland verantwortlich.",
+      "pubDate": "2026-10-19T19:19:39+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/frankreich-proteste-ausschreitungen-ausgangssperren-100.html",
+      "bild": ""
+    },
+    {
+      "id": "ca45c50e2c9b0d058d21",
+      "title": "Frankreich-Proteste: \"Macron hat nicht die richtigen Antworten gefunden\"",
+      "description": "Frankreich steht nach den Unruhen am Wochenende unter Schock. Hat Macron die Unzufriedenheit im Land unterschätzt? Politikwissenschaftler Ross über die Vorwürfe gegen den Präsidenten - und welche Optionen dieser nun hat.",
+      "pubDate": "2026-10-19T16:09:22+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/europa-proteste-interview-ross-100.html",
+      "bild": ""
+    },
+    {
+      "id": "e3c9ed4b955c837e698b",
+      "title": "Merz lädt zu Investitionsgipfel in Berlin",
+      "description": "Bundeskanzler Merz setzt auf mehr Investoren aus dem Ausland. Auf einem Gipfel in Berlin werben auch Wirtschaftsministerin Reiche und Finanzminister Klingbeil für den Standort Deutschland. Kritik kommt von den Linken. Von A-K. Mellmann.",
+      "pubDate": "2026-10-19T15:12:19+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/wirtschaft-investitionsgipfel-nvidia-ki-100.html",
+      "bild": ""
+    },
+    {
+      "id": "dccf0e7dc376986a27ac",
+      "title": "Auschwitz-Überlebender Höllenreiner im Alter von 92 gestorben",
+      "description": "Hermann Höllenreiner überlebte das Vernichtungslager Auschwitz - und floh im Alter von elf Jahren von einem der Todesmärsche. Mit 92 Jahren ist er nun gestorben.",
+      "pubDate": "2026-10-19T15:04:07+02:00",
+      "link": "https://www.tagesschau.de/inland/auschwitz-ueberlebender-hoellenreiner-gestorben-100.html",
+      "bild": ""
+    },
+    {
+      "id": "ae10b79ad223ed0d1c6d",
+      "title": "Reiche verspricht Milliarden für Wasserstoff-Ausbau",
+      "description": "Der Markt für Wasserstoff kommt nur langsam in Gang. Wirtschaftsministerin Reiche will nun mit Milliardenhilfen für die Industrie und Anreizen für klimafreundlichen Stahl gegensteuern.",
+      "pubDate": "2026-10-19T14:34:29+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/reiche-wasserstoff-ausbau-millarden-100.html",
+      "bild": ""
+    },
+    {
+      "id": "3f90f7a61c91002cd188",
+      "title": "Anteil weiblicher Führungskräfte in Deutschland weiterhin niedrig",
+      "description": "Der Anteil von Frauen in Spitzenpositionen verharrt in Deutschland weiter unter dem EU-Durchschnitt: Weniger als ein Drittel der Chefposten war 2025 weiblich besetzt. Spitzenreiter im EU-Vergleich bleibt Schweden.",
+      "pubDate": "2026-10-19T14:19:43+02:00",
+      "link": "https://www.tagesschau.de/inland/gesellschaft/frauen-anteil-fuehrungspositionen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "2874c7c34899175a6631",
+      "title": "Zwölf Migranten bei zwei Bootsunglücken in der Ägäis gestorben",
+      "description": "Vor den griechischen Inseln Samos und Lesbos sind binnen weniger Stunden zwei Boote mit Migranten verunglückt. Laut Behörden starben mindestens zwölf Menschen. Ein mutmaßlicher Schleuser wurde festgenommen.",
+      "pubDate": "2026-10-19T14:07:14+02:00",
+      "link": "https://www.tagesschau.de/ausland/aegaeis-bootsunglueck-100.html",
+      "bild": ""
+    },
+    {
+      "id": "ef06319500392d25b960",
+      "title": "Marktbericht: Sorgen um Frankreich belasten den Euro",
+      "description": "Die Gewalteskalation in Frankreich lastet auch auf den Finanzmärkten. Sie lässt die Sorge um die französischen Staatsfinanzen wieder aufleben. Der Euro fiel zeitweise wieder unter 1,12 Dollar zurück.",
+      "pubDate": "2026-10-19T14:05:00+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktbericht-frankreich-proteste-euro-100.html",
+      "bild": ""
+    },
+    {
+      "id": "d805070c694b53575b71",
+      "title": "Louvre: Weiterhin keine Spur von den geraubten Kronjuwelen",
+      "description": "Vor einem Jahr erbeuteten Diebe die französischen Kronjuwelen aus dem Pariser Louvre. Das Museum hat seine Sicherheitsvorkehrungen mittlerweile verschärft, aber vom Schmuck fehlt weiterhin jede Spur. Von Cai Rienäcker.",
+      "pubDate": "2026-10-19T13:46:08+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/frankreich-ein-jahr-louvre-einbruch-100.html",
+      "bild": ""
+    },
+    {
+      "id": "717daeaecf0b26f7970a",
+      "title": "Bringt der Aufschwung in Deutschland auch mehr Jobs?",
+      "description": "In der Industrie sind Zehntausende Jobs gefährdet. Zugleich erwarten Ökonomen, dass die deutsche Wirtschaft stärker wächst als gedacht. Kann das den Stellenabbau stoppen? Von Sebastian Schreiber.",
+      "pubDate": "2026-10-19T13:25:35+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt-konjunktur-industrie-100.html",
+      "bild": ""
+    },
+    {
+      "id": "8f47e2fccc2d6c4e0feb",
+      "title": "COP17 in Armenien: Weltnaturkonferenz startet mit großen Aufgaben",
+      "description": "Rund ein Drittel der Land- und Meeresflächen weltweit soll bis 2030 wirksam geschützt sein. Wie das erreicht werden kann, darüber wird ab heute bei der Weltnaturkonferenz COP17 in Armeniens Hauptstadt Jerewan beraten. Von Stephan Hübner.",
+      "pubDate": "2026-10-19T13:08:38+02:00",
+      "link": "https://www.tagesschau.de/wissen/klima/weltnaturkonferenz-in-armenien-startet-100.html",
+      "bild": ""
+    },
     {
       "id": "2d150b03726ebed832d7",
       "title": "Mindestens zwei Tote durch Überschwemmungen im Osten Spaniens",
@@ -13,113 +117,9 @@
     {
       "id": "f4adeb6af0071df62401",
       "title": "Krawalle in Frankreich - Regierung räumt \"Kontrollverlust\" der Behörden ein",
-      "description": "Nach den gewalttätigen Protesten am Wochenende ist Frankreichs Regierung mit der Frage beschäftigt, wie es dazu kommen konnte. Innenminister Nuñez bot seinen Rücktritt an, Justizminister Daramanin sieht Defizite bei den Behörden.",
-      "pubDate": "2026-10-19T11:56:31+02:00",
+      "description": "Nach den gewalttätigen Protesten am Wochenende ist Frankreichs Regierung mit der Frage beschäftigt, wie es dazu kommen konnte. Innenminister Nuñez bot seinen Rücktritt an, Justizminister Darmanin sieht Defizite bei den Behörden.",
+      "pubDate": "2026-10-19T13:29:10+02:00",
       "link": "https://www.tagesschau.de/ausland/europa/frankreichs-justizminister-sieht-schwaechen-bei-sicherheitsbehoerden-100.html",
-      "bild": ""
-    },
-    {
-      "id": "442d76a0773988c7a325",
-      "title": "Russland greift Kiew offenbar erneut mit Raketen an",
-      "description": "Russland hat die Ukraine abermals mit Raketen und Drohnen angegriffen - einmal mehr gab es laut dem ukrainischen Präsidenten Selenskyj keine frühzeitige Warnung westlicher Partner. US-Außenminister Rubio widerspricht.",
-      "pubDate": "2026-10-19T12:25:05+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/ukraine-russland-angriffe-200.html",
-      "bild": ""
-    },
-    {
-      "id": "6ac9a94181c79327cb46",
-      "title": "Volkswagen will offenbar Gehälter einfrieren",
-      "description": "Der angeschlagene Autobauer Volkswagen verschärft seine Sparmaßnahmen. Übereinstimmenden Berichten zufolge sollen weltweit die Gehälter für mehrere Jahre eingefroren werden. Der Konzern will sich dazu nicht äußern.",
-      "pubDate": "2026-10-19T11:06:30+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/vw-1620.html",
-      "bild": ""
-    },
-    {
-      "id": "44db5a7984ff69e5a059",
-      "title": "In Kiew wächst die Kritik an Bürgermeister Klitschko",
-      "description": "In Kiew steht der nächste Kriegswinter bevor. Viele Menschen werfen Bürgermeister Klitschko hier Missmanagement vor. Statt die Strom- und Wasserversorgung zu sichern, würde Geld für Straßenbau ausgegeben. Von Rebecca Barth.",
-      "pubDate": "2026-10-19T11:04:40+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/unzufriedenheit-mit-klitschko-kiew-100.html",
-      "bild": ""
-    },
-    {
-      "id": "0b4ac6466b5309f4d841",
-      "title": "IW-Studie: Fachkräftemangel bremst Infrastruktur-Projekte aus",
-      "description": "Der Bund will massiv in Brücken, Netze und Digitalisierung investieren. Doch laut einer Studie des Instituts der deutschen Wirtschaft fehlen schon jetzt die Fachkräfte, um die Projekte umzusetzen.",
-      "pubDate": "2026-10-19T10:07:38+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/fachkraeftemaengel-infrastruktur-iw-studie-100.html",
-      "bild": ""
-    },
-    {
-      "id": "ad64f4ebc7b54c204ec3",
-      "title": "Kritik an Rot-Grün-Rot in Berlin: \"Ich habe noch erhebliche Zweifel\"",
-      "description": "Die rot-grün-roten Sondierungsgespräche in Berlin waren holprig, aber erfolgreich. Heute wollen Grüne und SPD über Koalitionsverhandlungen mit der Linken entscheiden. Doch Kritik und Zweifel sind laut, etwa bei SPD-Fraktionschef Miersch.",
-      "pubDate": "2026-10-19T10:23:24+02:00",
-      "link": "https://www.tagesschau.de/inland/berlin-spd-linke-gruene-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c0b14a8995a4cba69896",
-      "title": "Sturmtief \"Adam\": Behörden warnen vor Unwetter auf Mallorca",
-      "description": "Mallorca bereitet sich auf schwere Regenfälle vor. Wegen des Sturmtiefs \"Adam\" herrscht Warnstufe Rot, die Schulen sind geschlossen, viele Flüge bereits ausgefallen. Auf dem spanischen Festland kam es bereits zu Überflutungen.",
-      "pubDate": "2026-10-19T07:31:49+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/spanien-mallorca-sturmwarnung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "0dcc56733abcee2ba0a8",
-      "title": "Marktbericht: DAX fällt unter 25.500 Punkten",
-      "description": "Zum Wochenauftakt belasten Meldungen aus China und den USA die Börsen. Sinkende Ölpreise und positive Daten reichen als Gegengewicht nicht aus. Dem DAX misslingt der Handelsauftakt.",
-      "pubDate": "2026-10-19T10:36:52+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-berichtssaison-100.html",
-      "bild": ""
-    },
-    {
-      "id": "1894b9616f19970491f6",
-      "title": "Alberta stimmt über mögliche Abspaltung von Kanada ab",
-      "description": "Seit einigen Jahren erstarkt in der ölreichen Provinz Alberta im Westen Kanadas eine Separatistenbewegung - unterstützt auch von US-Präsident Trump. Heute wird über ein mögliches Unabhängigkeitsreferendum abgestimmt. Von Martin Ganslmeier.",
-      "pubDate": "2026-10-19T06:55:25+02:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/kanada-alberta-volksabstimmung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "59a71d0f73e16bdcae9a",
-      "title": "11KM-Podcast: Deutsche Beamte zwischen Bashing und Reformen",
-      "description": "Knapp 57 Milliarden Euro hat Deutschland 2024 allein für die Pensionen von Beamten ausgegeben. Ist das noch bezahlbar? 11KM fragt, wo eine Reform des deutschen Beamtensystems ansetzen könnte.",
-      "pubDate": "2026-10-19T06:26:52+02:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/podcast-11km-beamte-100.html",
-      "bild": ""
-    },
-    {
-      "id": "cbbbc36ce1a985f4d75f",
-      "title": "Wann kommt der Gesetzentwurf für die Rentenreform?",
-      "description": "Die Rentenreform soll kommen. Darüber sind sich in der schwarz-roten Koalition alle einig. Über die Details und den Zeitplan gehen die Meinungen aber weiterhin auseinander - auch bei den Fraktionschefs.",
-      "pubDate": "2026-10-19T05:00:16+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/rentenreform-zeitplan-miersch-frei-100.html",
-      "bild": ""
-    },
-    {
-      "id": "294b26192257f5866e65",
-      "title": "Ausschreitungen in Frankreich: Fassungslosigkeit und Schuldzuweisungen",
-      "description": "Mit Schock und Unverständnis haben viele Menschen in Frankreich auf die Gewalt bei den Protesten reagiert. Die politischen Lager kämpfen um die Deutungshoheit - und machen sich gegenseitig für die Eskalation verantwortlich. Von C. Dylla.",
-      "pubDate": "2026-10-19T04:17:03+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/frankreich-ausschreitungen-politische-reaktionen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f91e35395b95a675b2f7",
-      "title": "Flugzeug wegen Bombendrohung in Bulgarien notgelandet",
-      "description": "Auf dem Weg von Tel Aviv nach Wien ist ein Flugzeug von Austrian Airlines notgelandet. Zuvor hatte es eine Bombendrohung gegeben. Nachdem bei einer Durchsuchung der Maschine nichts gefunden wurde, konnte sie ihren Flug fortsetzen.",
-      "pubDate": "2026-10-19T08:34:49+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/notlandung-bulgarien-bombendrohung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "001fa5e5b3117dc92b10",
-      "title": "USA liefern laut Selenskyj wieder Geheimdienstinformationen",
-      "description": "Die Ukraine klagte zuletzt über fehlende US-Geheimdienstinformationen zu russischen Angriffen. Inzwischen liefern die USA diese laut dem ukrainischen Präsidenten wieder. Doch angesichts des jüngsten US-Kurses zeigt er sich tief besorgt.",
-      "pubDate": "2026-10-19T00:23:09+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/ukraine-geheimdienst-informationen-usa-100.html",
       "bild": ""
     }
   ],
