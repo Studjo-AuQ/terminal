@@ -1,7 +1,111 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "20.10.2026, 06:28 Uhr (UTC)",
+  "aktualisiert": "20.10.2026, 12:01 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "69aadcda02d58d9c8161",
+      "title": "Deutsche mögen Nudeln - am liebsten aus dem Ausland",
+      "description": "Der Konsum von Nudeln hat sich hierzulande seit 1990 verdoppelt. Außerdem gehört Deutschland zu den größten Herstellern in der EU. Unangefochtener Spitzenreiter ist Italien, danach folgt Spanien.",
+      "pubDate": "2026-10-20T13:22:58+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/nudeln-hersteller-eu-100.html",
+      "bild": ""
+    },
+    {
+      "id": "6315751ebe680d7b88fc",
+      "title": "Verkehrsminister planen Deutschlandticket für Gelegenheitsfahrer",
+      "description": "Nicht alle Menschen nutzen die Bahn täglich. Die Verkehrsminister der Länder wollen nun auch für Gelegenheitsfahrer ein bundesweit gültiges Ticket einführen.",
+      "pubDate": "2026-10-20T12:52:48+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/deutschlandticket-316.html",
+      "bild": ""
+    },
+    {
+      "id": "5527f33b96eda9b2f494",
+      "title": "Selenskyj trifft sich mit US-Gesandtem Witkoff zu Gesprächen in Oslo",
+      "description": "In Oslo kommt der ukrainische Präsident Selenskyj mit dem US-Gesandten Witkoff zu Gesprächen zusammen. Zuletzt hatten sich die Beziehungen zwischen den USA der Ukraine wegen Trumps Umgang mit Russland wieder verschlechtert.",
+      "pubDate": "2026-10-20T12:50:05+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/ukraine-treffen-witkoff-100.html",
+      "bild": ""
+    },
+    {
+      "id": "f667950670a8d57bae9d",
+      "title": "Neue EU-Strategie: Ein eigener Plan für die Arktis",
+      "description": "Was in der Arktis klimatisch, wirtschaftlich und militärisch geschieht, ist von enormer Bedeutung für Europa - dieser Erkenntnis will die EU nun Taten folgen lassen. Heute will sie eine Strategie für die Region vorstellen. Von T. Spickhofen.",
+      "pubDate": "2026-10-20T12:44:55+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/eu-arktis-strategie-100.html",
+      "bild": ""
+    },
+    {
+      "id": "6e875e37435013ec386a",
+      "title": "Vor Wahl in Israel: Ex-General Eisenkot könnte Netanjahu schlagen",
+      "description": "Vor der Wahl in Israel zeichnet sich ein knappes Rennen ab. Während Amtsinhaber Netanjahu auf Polarisierung setzt, versucht sein Herausforderer Eisenkot, die gesellschaftliche Spaltung zu überwinden. Wer ist der Ex-Militär? Von Bettina Meier.",
+      "pubDate": "2026-10-20T12:25:53+02:00",
+      "link": "https://www.tagesschau.de/ausland/israel-wahlkampf-eisenkot-100.html",
+      "bild": ""
+    },
+    {
+      "id": "1da7189d6450f12bed62",
+      "title": "Abkehr vom Verbrenner-Aus: Unterhändler im Europaparlament finden Kompromiss",
+      "description": "2035 sollte eigentlich Schluss sein mit Verbrennermotoren bei Neuwagen in der EU. Inzwischen sieht es aber so aus, als könnte das komplette Verbrenner-Aus kippen. Die Unterhändler der Fraktionen im EU-Parlament haben sich bereits geeinigt. Von J.-M. Magro.",
+      "pubDate": "2026-10-20T12:16:34+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/eu-verbrenner-klima-100.html",
+      "bild": ""
+    },
+    {
+      "id": "0bb2a98a50b2afee7b92",
+      "title": "Steht Europas größtes Stahlwerk endgültig vor dem Aus?",
+      "description": "Lange lebte Taranto vom größten Stahlwerk Italiens - und mit dessen Umweltverschmutzung. Ein Urteil könnte zum Wendepunkt werden. Während Beschäftigte um ihre Jobs kämpfen, fordern Einwohner eine Schließung. Von Verena Schälter.",
+      "pubDate": "2026-10-20T10:42:49+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/stahlwerk-taranto-italien-umweltverschmutzung-100.html",
+      "bild": ""
+    },
+    {
+      "id": "cb393bdc7691da443cac",
+      "title": "AfD bestätigt Hackerangriff auf E-Mail-Konten",
+      "description": "Unbekannte haben einen Hackerangriff auf Mail-Konten der AfD verübt und laut eigenen Angaben Daten daraus veröffentlicht. Die AfD bestätigte einen Angriff auf Postfächer, die aber überwiegend nicht mehr genutzt würden.",
+      "pubDate": "2026-10-20T10:42:06+02:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/afd-hackerangriff-102.html",
+      "bild": ""
+    },
+    {
+      "id": "90a196f8e0f896f1e623",
+      "title": "Chance oder Risiko: Zusammenarbeit deutscher Unternehmen mit Big Tech",
+      "description": "Bosch setzt voll auf Künstliche Intelligenz und arbeitet dafür eng mit Microsoft zusammen. Doch Digitalexperten warnen, dass sich die deutsche Industrie zu sehr in die Abhängigkeit von US-Techriesen begibt. Von Laura Bisch.",
+      "pubDate": "2026-10-20T10:34:02+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/bosch-microsoft-ki-100.html",
+      "bild": ""
+    },
+    {
+      "id": "6b191575c0d909f3638e",
+      "title": "Marktbericht: \"Unsicherheitscocktail\" belastet die Aktienbörsen",
+      "description": "Zinsängste und politische Unruhen in europäischen Städten drücken auf die Stimmung. Jetzt rückt der KI-Boom in den Vordergrund: Viele Tech-Konzerne lassen sich in den kommenden Tagen in die Bücher sehen.",
+      "pubDate": "2026-10-20T10:33:17+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-geldanlage-bilanzsaison-100.html",
+      "bild": ""
+    },
+    {
+      "id": "9edf8f1b759282922a11",
+      "title": "Frankreich verlängert örtliche Ausgangssperren - nach ruhiger Nacht",
+      "description": "In Paris war das Betreten zentraler Plätze verboten, in Lyon durfte man nur mit triftigem Grund auf die Straße. Die nächtlichen Ausgangssperren haben sich aus Sicht der Regierung bewährt. Kommende Nacht soll es wieder welche geben - wenn nötig.",
+      "pubDate": "2026-10-20T10:28:16+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/frankreich-ausgangssperren-100.html",
+      "bild": ""
+    },
+    {
+      "id": "d4dcf5cc95866f00a2eb",
+      "title": "Immobilienkredite so teuer wie seit 2009 nicht mehr",
+      "description": "Wer derzeit ein Haus kaufen will, muss für die Finanzierung besonders tief in die Tasche greifen. Die Zinsen für Immobilienkredite sind so hoch wie lange nicht. Dazu kommen hohe Material- und Lohnkosten.",
+      "pubDate": "2026-10-20T10:07:00+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/immobilienkredite-zinsen-darlehen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "bb5f95645cff1cdda6c4",
+      "title": "Gegen Unabhängigkeitsreferendum: Alberta will kanadisch bleiben",
+      "description": "In der kanadischen Provinz Alberta gibt es kein Referendum über eine Abspaltung vom Rest des Landes. Eine deutliche Mehrheit votierte für die nationale Einheit. Die Separatismus-Bestrebungen hatten auch das Interesse Trumps geweckt.",
+      "pubDate": "2026-10-20T11:25:41+02:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/alberta-kanada-100.html",
+      "bild": ""
+    },
     {
       "id": "2c3c9b73a621cb500124",
       "title": "Wahlen in den USA: Was zu den Midterms wichtig ist",
@@ -11,115 +115,11 @@
       "bild": ""
     },
     {
-      "id": "6b191575c0d909f3638e",
-      "title": "Marktbericht: Anleger warten auf US-Bilanzen",
-      "description": "Vor wichtigen Bilanzen einiger US-Technologieunternehmen wie SpaceX und Meta bleiben die Investoren zurückhaltend. Außerdem wirken die Turbulenzen in Frankreich, Italien und Spanien weiter nach.",
-      "pubDate": "2026-10-20T07:35:01+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-geldanlage-bilanzsaison-100.html",
-      "bild": ""
-    },
-    {
       "id": "e52803d3a1ca54b642bc",
       "title": "Neue EU-Strategie: Warum die Arktis zum Sicherheitsrisiko wird",
       "description": "Lange galt die Arktis als Region mit wenigen Spannungen. Doch die geopolitische Lage hat sich grundlegend geändert, und auch der Klimawandel betrifft den hohen Norden. Eine neue EU-Strategie soll dem Rechnung tragen. Von A. Bartram.",
       "pubDate": "2026-10-20T06:27:24+02:00",
       "link": "https://www.tagesschau.de/ausland/europa/arktis-veraenderungen-eu-strategie-100.html",
-      "bild": ""
-    },
-    {
-      "id": "b8f337674d527b1654e4",
-      "title": "Wahrscheinliches Steuer-Plus weckt Begehrlichkeiten",
-      "description": "Von heute an berät der Arbeitskreis Steuerschätzung darüber, mit wie vielen Steuereinnahmen Bund und Länder rechnen können. Es könnte mehr sein als bislang erwartet. Das weckt Begehrlichkeiten. Von Philipp Eckstein.",
-      "pubDate": "2026-10-20T05:15:05+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/steuereinnahmen-bund-laender-steuerschaetzung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "da1f19538619b872fae2",
-      "title": "Uruguay: Ein Land, fast unabhängig von Öl und Gas",
-      "description": "Das 3,5-Millionen-Einwohner-Land in Südamerika steckte 2008 in einer Energiekrise. Heute gilt Uruguay als Klima-Champion. Wie hat das Land die Energiewende geschafft - und würde das auch für andere Länder funktionieren? Von Anne Herrberg.",
-      "pubDate": "2026-10-20T04:30:18+02:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/uruguay-erneuerbare-energie-klima-100.html",
-      "bild": ""
-    },
-    {
-      "id": "e7577ff89fd831c650b1",
-      "title": "Verbaler Schlagabtausch: Neue Spannungen zwischen Trump und Selenskyj",
-      "description": "\"Wir haben der Ukraine viel gegeben - sie hat uns nichts gegeben\": US-Präsident Trump verschärft den Ton gegen Selenskyj. Der ukrainische Präsident wiederum wirft den USA vor, Waffenlieferungen zurückzuhalten.",
-      "pubDate": "2026-10-20T06:47:36+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/ukraine-usa-spannungen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "1066f35e5ef321053d24",
-      "title": "Berlin: Grüne und SPD stimmen für Koalitionsgespräche mit Linke",
-      "description": "Die Grünen und die SPD wollen in Berlin mit der Linkspartei Koalitionsverhandlungen aufnehmen. Beide Parteien entschieden sich am Abend für die Gespräche - die Abstimmung bei der Linken steht noch aus.",
-      "pubDate": "2026-10-19T21:52:35+02:00",
-      "link": "https://www.tagesschau.de/inland/berlin-wahl-spd-gruene-koalitionsverhandlungen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "3ac859ec1dad431e9832",
-      "title": "Bundesregierung vereinbart KI-Kooperation mit Nvidia",
-      "description": "Deutschland und der US-Chip-Gigant Nvidia haben eine Zusammenarbeit bei der Entwicklung Künstlicher Intelligenz beschlossen. Die Vereinbarung wurde beim ersten \"Invest in Germany\"-Gipfel verkündet - und soll die deutsche Wettbewerbsfähigkeit stärken.",
-      "pubDate": "2026-10-19T21:23:41+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/technologie/bund-nvidia-zusammenarbeit-ki-100.html",
-      "bild": ""
-    },
-    {
-      "id": "4462627f1cf0b6842a27",
-      "title": "Proteste in vielen Ländern Europas - aus ähnlichen Gründen",
-      "description": "Die gewalttätigen Proteste in Frankreich dominieren seit Tagen die Schlagzeilen. Doch auch in anderen Ländern Europas gibt es derzeit Großdemos und Ausschreitungen, die Gründe ähneln einander vielfach. Wer protestiert gerade in welchen Ländern - und warum?",
-      "pubDate": "2026-10-19T21:08:04+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/proteste-europa-100.html",
-      "bild": ""
-    },
-    {
-      "id": "6b13515a153f653d6fa0",
-      "title": "Jemen: Mehr als 50 Tote bei Huthi-Angriff auf Militärlager",
-      "description": "Die Huthi-Miliz beschießt im Jemen ein Militärlager offenbar mit mehreren ballistischen Raketen. Mindestens 53 Soldaten kommen ums Leben. Die proiranische Miliz spricht von Vergeltung gegen Saudi-Arabien.",
-      "pubDate": "2026-10-19T20:35:46+02:00",
-      "link": "https://www.tagesschau.de/ausland/asien/jemen-huthi-angriff-militaerlager-viele-tote-100.html",
-      "bild": ""
-    },
-    {
-      "id": "3802af41f2d2d90eeb18",
-      "title": "Berliner SPD für Koalitionsgespräche mit Linkspartei und Grünen",
-      "description": "Die Berliner SPD stimmt mit großer Mehrheit für Koalitionsverhandlungen mit der Linkspartei und mit den Grünen. Die Grünen wollen noch am Abend über den Beginn der Gespräche entscheiden.",
-      "pubDate": "2026-10-19T19:59:59+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/koalitionsverhandlungen-berlin-spd-linke-gruene-100.html",
-      "bild": ""
-    },
-    {
-      "id": "04674049773519c62dbb",
-      "title": "Durchbruch im Fall Langley: Vermisste wurde Opfer einer Gewalttat",
-      "description": "Im Fall der seit dem Sommer 2007 vermissten Kerstin Lee Langley aus Regensburg gibt es einen Durchbruch: Die damals 39-Jährige soll von einem Trio getötet worden sein. Eine der Verdächtigen legte nun ein Geständnis ab.",
-      "pubDate": "2026-10-19T17:43:35+02:00",
-      "link": "https://www.tagesschau.de/inland/regional/bayern/verbrechen-kerstin-langley-vermisste-opfer-gewalttat-100.html",
-      "bild": ""
-    },
-    {
-      "id": "ea2d33612a2d1473e718",
-      "title": "Frankreichs Premierminister Lecornu kündigt Ausgangssperren an",
-      "description": "Nach den Ausschreitungen in Frankreich kündigt die Regierung lokale Ausgangssperren an. Für Samstag kursieren Aufrufe zu weiteren Protesten. Bundesinnenminister Dobrindt machte zwei Gruppen für die Krawalle im Nachbarland verantwortlich.",
-      "pubDate": "2026-10-19T19:19:39+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/frankreich-proteste-ausschreitungen-ausgangssperren-100.html",
-      "bild": ""
-    },
-    {
-      "id": "ca45c50e2c9b0d058d21",
-      "title": "Frankreich-Proteste: \"Macron hat nicht die richtigen Antworten gefunden\"",
-      "description": "Frankreich steht nach den Unruhen am Wochenende unter Schock. Hat Macron die Unzufriedenheit im Land unterschätzt? Politikwissenschaftler Ross über die Vorwürfe gegen den Präsidenten - und welche Optionen dieser nun hat.",
-      "pubDate": "2026-10-19T16:09:22+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/europa-proteste-interview-ross-100.html",
-      "bild": ""
-    },
-    {
-      "id": "e3c9ed4b955c837e698b",
-      "title": "Merz lädt zu Investitionsgipfel in Berlin",
-      "description": "Bundeskanzler Merz setzt auf mehr Investoren aus dem Ausland. Auf einem Gipfel in Berlin werben auch Wirtschaftsministerin Reiche und Finanzminister Klingbeil für den Standort Deutschland. Kritik kommt von den Linken. Von A-K. Mellmann.",
-      "pubDate": "2026-10-19T15:12:19+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/wirtschaft-investitionsgipfel-nvidia-ki-100.html",
       "bild": ""
     }
   ],
