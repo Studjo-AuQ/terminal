@@ -1,7 +1,31 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "20.10.2026, 17:26 Uhr (UTC)",
+  "aktualisiert": "20.10.2026, 20:48 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "5f59a8723131246e357a",
+      "title": "Selenskyj fordert Teilnahme an Putin-Xi-Trump-Treffen",
+      "description": "Trump hatte Interesse an einem Gespräch mit den Präsidenten Russlands und Chinas über die Ukraine gezeigt. Nach einem Treffen mit europäischen Partnern sowie dem US-Sondergesandten Witkoff in Oslo forderte Präsident Selenskyj nun eine Beteiligung Kiews.",
+      "pubDate": "2026-10-20T22:01:00+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/selenskyj-witkoff-norwegen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "5e94f3180c057cdf0f1a",
+      "title": "So reagieren Frankreich und Italien auf die Ausschreitungen",
+      "description": "Ausgangssperren, Antiterror-Soldaten, neue Dekrete: Frankreich und Italien haben auf die Ausschreitungen am Wochenende reagiert. So sollen in Zukunft Unruhen verhindert werden.",
+      "pubDate": "2026-10-20T21:56:31+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/frankreich-italien-ausschreitungen-proteste-100.html",
+      "bild": ""
+    },
+    {
+      "id": "922d160b09d6fffed382",
+      "title": "EU-Parlament: Mitte-Fraktionen schließen Verbrenner-Kompromiss",
+      "description": "Ziel in Europa soll der Umstieg auf E-Autos bleiben - trotzdem haben sich die Unterhändler verschiedener Parteien im EU-Parlament nun auf ein Aufweichen des \"Verbrenner-Aus'\" geeinigt. Doch die finale Abstimmung steht noch an. Von J.-M. Magro.",
+      "pubDate": "2026-10-20T19:49:19+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/verbrenner-aus-eu-108.html",
+      "bild": ""
+    },
     {
       "id": "ae5eebd55127bcbb751b",
       "title": "VW ruft weltweit mehr als 70.000 E-Autos wegen Brandgefahr zurück",
@@ -37,8 +61,8 @@
     {
       "id": "6abc74e6b49d447d8c3e",
       "title": "Kassenärzte sagen ab 2027 längere Termin-Wartezeiten voraus",
-      "description": "Ab 2027 wird in Arztpraxen ein festes Kontingent an Terminen festgelegt. Die Kassenärztliche Bundesvereinigung fürchtet, dass gesetzlich Versicherte dadurch länger als bisher auf Arzttermine warten müssen.",
-      "pubDate": "2026-10-20T16:46:46+02:00",
+      "description": "Ab 2027 wird in Arztpraxen ein festes Kontingent an Terminen festgelegt. Die Kassenärztliche Bundesvereinigung befürchtet noch längere Wartezeiten auf Termine - die Krankenkassen sehen darin Angstmacherei.",
+      "pubDate": "2026-10-20T19:41:17+02:00",
       "link": "https://www.tagesschau.de/inland/gesellschaft/kassenaerzte-lange-wartezeiten-termine-100.html",
       "bild": ""
     },
@@ -96,30 +120,6 @@
       "description": "Die Slowakei hat einen neuen Reaktorblock ans Netz genommen. Wenn er Volllast erreicht, wird sie zum Land mit dem weltweit höchsten Atomanteil im Energiemix. Und Staatschef Fico plant bereits das nächste Kraftwerk. Von Marianne Allweiss.",
       "pubDate": "2026-10-20T14:51:16+02:00",
       "link": "https://www.tagesschau.de/ausland/europa/slowakei-atomreaktor-100.html",
-      "bild": ""
-    },
-    {
-      "id": "d9b08d7bb79174153591",
-      "title": "Bundesregierung spricht von Investitionszusagen in Milliardenhöhe",
-      "description": "Der Investitionsgipfel in Berlin soll mehr Kapital nach Deutschland locken. Kanzler Merz und Wirtschaftsministerin Reiche sprechen bereits von ersten Zusagen: Unternehmen sollen milliardenschwere Investitionen angekündigt haben.",
-      "pubDate": "2026-10-20T14:23:47+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/investitionsgipfel-114.html",
-      "bild": ""
-    },
-    {
-      "id": "a2748c3439f90cb3b631",
-      "title": "Deutschlands schwindende Anziehungskraft für Investoren",
-      "description": "Für internationale Konzerne ist Deutschland seit Jahren immer weniger attraktiv. Sie meiden den Standort ganz oder halbieren geplante Investitionen, wie etwa der Pharmakonzern Eli Lilly in Alzey. Die Folgen sind gravierend. Von Axel John.",
-      "pubDate": "2026-10-20T14:23:23+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/technologie/investoren-118.html",
-      "bild": ""
-    },
-    {
-      "id": "bbf0f694b90f04cacea5",
-      "title": "Marktbericht: Ölpreis springt auf Fünf-Monats-Hoch",
-      "description": "Neue Angriffe im Persischen Golf machen Öl wieder so teuer wie im Mai. Das schürt die Sorge vor einem neuen Inflationsschub. Die einzige Hoffnung bleibt derzeit eine Annäherung der Kriegsparteien.",
-      "pubDate": "2026-10-20T14:15:27+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktbericht-oelpreis-100.html",
       "bild": ""
     }
   ],
