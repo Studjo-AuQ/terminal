@@ -1,7 +1,15 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "19.10.2026, 22:13 Uhr (UTC)",
+  "aktualisiert": "20.10.2026, 01:11 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "e7577ff89fd831c650b1",
+      "title": "Verbaler Schlagabtausch: Spannungen zwischen Trump und Selenskyj",
+      "description": "US-Präsident Trump verschärft den Ton gegenüber der Ukraine und Selenskyj immer weiter. Der kritisiert die verzögerte Lieferung von bereits bezahlten Abwehrraketen.",
+      "pubDate": "2026-10-20T03:03:35+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/ukraine-usa-spannungen-100.html",
+      "bild": ""
+    },
     {
       "id": "1066f35e5ef321053d24",
       "title": "Berlin: Grüne und SPD stimmen für Koalitionsgespräche mit Linke",
@@ -112,14 +120,6 @@
       "description": "Die Gewalteskalation in Frankreich lastet auch auf den Finanzmärkten. Sie lässt die Sorge um die französischen Staatsfinanzen wieder aufleben. Der Euro fiel zeitweise wieder unter 1,12 Dollar zurück.",
       "pubDate": "2026-10-19T14:05:00+02:00",
       "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktbericht-frankreich-proteste-euro-100.html",
-      "bild": ""
-    },
-    {
-      "id": "d805070c694b53575b71",
-      "title": "Louvre: Weiterhin keine Spur von den geraubten Kronjuwelen",
-      "description": "Vor einem Jahr erbeuteten Diebe die französischen Kronjuwelen aus dem Pariser Louvre. Das Museum hat seine Sicherheitsvorkehrungen mittlerweile verschärft, aber vom Schmuck fehlt weiterhin jede Spur. Von Cai Rienäcker.",
-      "pubDate": "2026-10-19T13:46:08+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/frankreich-ein-jahr-louvre-einbruch-100.html",
       "bild": ""
     }
   ],
