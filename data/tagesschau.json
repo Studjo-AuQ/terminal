@@ -1,12 +1,52 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "20.10.2026, 01:11 Uhr (UTC)",
+  "aktualisiert": "20.10.2026, 06:28 Uhr (UTC)",
   "meldungen": [
     {
+      "id": "2c3c9b73a621cb500124",
+      "title": "Wahlen in den USA: Was zu den Midterms wichtig ist",
+      "description": "Es ist ein wichtiger Stimmungstest für Präsident Trump: In zwei Wochen sind die US-Bürger zu den Zwischenwahlen aufgerufen. Wer wird gewählt, welche Themen bestimmen den Wahlkampf und welche Chancen haben die Demokraten? Von E. Aretz und J. Unsöld.",
+      "pubDate": "2026-10-20T08:00:43+02:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/faq-midterms-100.html",
+      "bild": ""
+    },
+    {
+      "id": "6b191575c0d909f3638e",
+      "title": "Marktbericht: Anleger warten auf US-Bilanzen",
+      "description": "Vor wichtigen Bilanzen einiger US-Technologieunternehmen wie SpaceX und Meta bleiben die Investoren zurückhaltend. Außerdem wirken die Turbulenzen in Frankreich, Italien und Spanien weiter nach.",
+      "pubDate": "2026-10-20T07:35:01+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-geldanlage-bilanzsaison-100.html",
+      "bild": ""
+    },
+    {
+      "id": "e52803d3a1ca54b642bc",
+      "title": "Neue EU-Strategie: Warum die Arktis zum Sicherheitsrisiko wird",
+      "description": "Lange galt die Arktis als Region mit wenigen Spannungen. Doch die geopolitische Lage hat sich grundlegend geändert, und auch der Klimawandel betrifft den hohen Norden. Eine neue EU-Strategie soll dem Rechnung tragen. Von A. Bartram.",
+      "pubDate": "2026-10-20T06:27:24+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/arktis-veraenderungen-eu-strategie-100.html",
+      "bild": ""
+    },
+    {
+      "id": "b8f337674d527b1654e4",
+      "title": "Wahrscheinliches Steuer-Plus weckt Begehrlichkeiten",
+      "description": "Von heute an berät der Arbeitskreis Steuerschätzung darüber, mit wie vielen Steuereinnahmen Bund und Länder rechnen können. Es könnte mehr sein als bislang erwartet. Das weckt Begehrlichkeiten. Von Philipp Eckstein.",
+      "pubDate": "2026-10-20T05:15:05+02:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/steuereinnahmen-bund-laender-steuerschaetzung-100.html",
+      "bild": ""
+    },
+    {
+      "id": "da1f19538619b872fae2",
+      "title": "Uruguay: Ein Land, fast unabhängig von Öl und Gas",
+      "description": "Das 3,5-Millionen-Einwohner-Land in Südamerika steckte 2008 in einer Energiekrise. Heute gilt Uruguay als Klima-Champion. Wie hat das Land die Energiewende geschafft - und würde das auch für andere Länder funktionieren? Von Anne Herrberg.",
+      "pubDate": "2026-10-20T04:30:18+02:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/uruguay-erneuerbare-energie-klima-100.html",
+      "bild": ""
+    },
+    {
       "id": "e7577ff89fd831c650b1",
-      "title": "Verbaler Schlagabtausch: Spannungen zwischen Trump und Selenskyj",
-      "description": "US-Präsident Trump verschärft den Ton gegenüber der Ukraine und Selenskyj immer weiter. Der kritisiert die verzögerte Lieferung von bereits bezahlten Abwehrraketen.",
-      "pubDate": "2026-10-20T03:03:35+02:00",
+      "title": "Verbaler Schlagabtausch: Neue Spannungen zwischen Trump und Selenskyj",
+      "description": "\"Wir haben der Ukraine viel gegeben - sie hat uns nichts gegeben\": US-Präsident Trump verschärft den Ton gegen Selenskyj. Der ukrainische Präsident wiederum wirft den USA vor, Waffenlieferungen zurückzuhalten.",
+      "pubDate": "2026-10-20T06:47:36+02:00",
       "link": "https://www.tagesschau.de/ausland/europa/ukraine-usa-spannungen-100.html",
       "bild": ""
     },
@@ -21,9 +61,9 @@
     {
       "id": "3ac859ec1dad431e9832",
       "title": "Bundesregierung vereinbart KI-Kooperation mit Nvidia",
-      "description": "Deutschland und der US-Chip-Gigant Nvidia haben eine Zusammenarbeit bei der Entwicklung Künstlicher Intelligenz beschlossen. Die Vereinbarung wurde beim ersten \"Invest-in-Germany\"-Gipfel verkündet - und soll die deutsche Wettbewerbsfähigkeit stärken.",
+      "description": "Deutschland und der US-Chip-Gigant Nvidia haben eine Zusammenarbeit bei der Entwicklung Künstlicher Intelligenz beschlossen. Die Vereinbarung wurde beim ersten \"Invest in Germany\"-Gipfel verkündet - und soll die deutsche Wettbewerbsfähigkeit stärken.",
       "pubDate": "2026-10-19T21:23:41+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/bund-nvidia-zusammenarbeit-ki-100.html",
+      "link": "https://www.tagesschau.de/wirtschaft/technologie/bund-nvidia-zusammenarbeit-ki-100.html",
       "bild": ""
     },
     {
@@ -80,46 +120,6 @@
       "description": "Bundeskanzler Merz setzt auf mehr Investoren aus dem Ausland. Auf einem Gipfel in Berlin werben auch Wirtschaftsministerin Reiche und Finanzminister Klingbeil für den Standort Deutschland. Kritik kommt von den Linken. Von A-K. Mellmann.",
       "pubDate": "2026-10-19T15:12:19+02:00",
       "link": "https://www.tagesschau.de/wirtschaft/wirtschaft-investitionsgipfel-nvidia-ki-100.html",
-      "bild": ""
-    },
-    {
-      "id": "dccf0e7dc376986a27ac",
-      "title": "Auschwitz-Überlebender Höllenreiner im Alter von 92 gestorben",
-      "description": "Hermann Höllenreiner überlebte das Vernichtungslager Auschwitz - und floh im Alter von elf Jahren von einem der Todesmärsche. Mit 92 Jahren ist er nun gestorben.",
-      "pubDate": "2026-10-19T15:04:07+02:00",
-      "link": "https://www.tagesschau.de/inland/auschwitz-ueberlebender-hoellenreiner-gestorben-100.html",
-      "bild": ""
-    },
-    {
-      "id": "ae10b79ad223ed0d1c6d",
-      "title": "Reiche verspricht Milliarden für Wasserstoff-Ausbau",
-      "description": "Der Markt für Wasserstoff kommt nur langsam in Gang. Wirtschaftsministerin Reiche will nun mit Milliardenhilfen für die Industrie und Anreizen für klimafreundlichen Stahl gegensteuern.",
-      "pubDate": "2026-10-19T14:34:29+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/reiche-wasserstoff-ausbau-millarden-100.html",
-      "bild": ""
-    },
-    {
-      "id": "3f90f7a61c91002cd188",
-      "title": "Anteil weiblicher Führungskräfte in Deutschland weiterhin niedrig",
-      "description": "Der Anteil von Frauen in Spitzenpositionen verharrt in Deutschland weiter unter dem EU-Durchschnitt: Weniger als ein Drittel der Chefposten war 2025 weiblich besetzt. Spitzenreiter im EU-Vergleich bleibt Schweden.",
-      "pubDate": "2026-10-19T14:19:43+02:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/frauen-anteil-fuehrungspositionen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "2874c7c34899175a6631",
-      "title": "Zwölf Migranten bei zwei Bootsunglücken in der Ägäis gestorben",
-      "description": "Vor den griechischen Inseln Samos und Lesbos sind binnen weniger Stunden zwei Boote mit Migranten verunglückt. Laut Behörden starben mindestens zwölf Menschen. Ein mutmaßlicher Schleuser wurde festgenommen.",
-      "pubDate": "2026-10-19T14:07:14+02:00",
-      "link": "https://www.tagesschau.de/ausland/aegaeis-bootsunglueck-100.html",
-      "bild": ""
-    },
-    {
-      "id": "ef06319500392d25b960",
-      "title": "Marktbericht: Sorgen um Frankreich belasten den Euro",
-      "description": "Die Gewalteskalation in Frankreich lastet auch auf den Finanzmärkten. Sie lässt die Sorge um die französischen Staatsfinanzen wieder aufleben. Der Euro fiel zeitweise wieder unter 1,12 Dollar zurück.",
-      "pubDate": "2026-10-19T14:05:00+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktbericht-frankreich-proteste-euro-100.html",
       "bild": ""
     }
   ],
