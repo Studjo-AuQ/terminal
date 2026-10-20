@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "stand": "2026-10-19",
+  "stand": "2026-10-20",
   "hinweis": "Ohne aktive Zeitsteuerung stellt das Terminal die Tageskarte automatisch zusammen. Schließungen, Feiertage und Brückentage bleiben geschützt.",
   "anzahl": 3,
   "rubriken": [
@@ -42,6 +42,26 @@
       ],
       "ausblenden": [],
       "hinweis": ""
+    },
+    {
+      "id": "tages-mvgh0xvo",
+      "name": "",
+      "von": "2026-10-20T11:17",
+      "bis": "2026-10-23T23:59",
+      "aktiv": true,
+      "plaetze": [
+        {
+          "modus": "essen"
+        },
+        {
+          "modus": "aba"
+        },
+        {
+          "modus": "wetter"
+        }
+      ],
+      "ausblenden": [],
+      "hinweis": "Wir wünschen schöne Herbstferien!"
     }
   ]
 }
