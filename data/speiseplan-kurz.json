@@ -1,33 +1,8 @@
 {
   "schemaVersion": 2,
-  "stand": "19.10.2026, 10:13 Uhr",
+  "stand": "20.10.2026, 11:03 Uhr",
   "hinweis": "Automatisch aus den Speiseplan-PDFs erzeugt. Eine erkannte Tages-/Datumsspalte wird übersprungen. A1 und A2 werden auf jeweils drei Wörter gekürzt.",
   "tage": {
-    "2026-10-12": {
-      "a1": "Bay. Leberkäse an",
-      "a2": "Pilzragout in Rahm",
-      "quelle": "speiseplaene/speiseplan_2026-KW42.pdf"
-    },
-    "2026-10-13": {
-      "a1": "Kaiserschmarren Warmes Pflaumen-Zimt-Kompott",
-      "a2": "Vegetarischer Möhreneintopf u",
-      "quelle": "speiseplaene/speiseplan_2026-KW42.pdf"
-    },
-    "2026-10-14": {
-      "a1": "Mini-Schweinshaxe an Majoransoße",
-      "a2": "Reibekuchen mit Apfelmus",
-      "quelle": "speiseplaene/speiseplan_2026-KW42.pdf"
-    },
-    "2026-10-15": {
-      "a1": "Bay. Kräuterbratwürstchen an",
-      "a2": "herzhafte Kartoffel-Gemüsepfanne mit",
-      "quelle": "speiseplaene/speiseplan_2026-KW42.pdf"
-    },
-    "2026-10-16": {
-      "a1": "Eisbeinfleisch an Majoransoße",
-      "a2": "Topfenpfannkuchen mit Vanillesoße",
-      "quelle": "speiseplaene/speiseplan_2026-KW42.pdf"
-    },
     "2026-10-19": {
       "a1": "Hähnchen Cordon Bleu",
       "a2": "Grießbrei mit Beerensoße",
@@ -127,6 +102,31 @@
       "a1": "Matjes mit Zwiebeln",
       "a2": "Palatschinken mit Lauch-Gemüseragout",
       "quelle": "speiseplaene/speiseplan_2026-KW46.pdf"
+    },
+    "2026-11-16": {
+      "a1": "Bratwurst mit Sauerkraut",
+      "a2": "Gemüselasagne an Tomatensoße",
+      "quelle": "speiseplaene/speiseplan_2026-KW47.pdf"
+    },
+    "2026-11-17": {
+      "a1": "Erbseneintopf mit Fleischwurst",
+      "a2": "Kartoffeltaschen mit Kräuter-Frischkäse",
+      "quelle": "speiseplaene/speiseplan_2026-KW47.pdf"
+    },
+    "2026-11-18": {
+      "a1": "Pizza mit Geflügelsalami",
+      "a2": "Karotten-Puffer mit Rahmwirsing",
+      "quelle": "speiseplaene/speiseplan_2026-KW47.pdf"
+    },
+    "2026-11-19": {
+      "a1": "Bami Goreng Götterspeise",
+      "a2": "Käsespätzle mit Blattsalat",
+      "quelle": "speiseplaene/speiseplan_2026-KW47.pdf"
+    },
+    "2026-11-20": {
+      "a1": "Seelachs Knusperfilet mit",
+      "a2": "Omelette mit Gemüsefüllung",
+      "quelle": "speiseplaene/speiseplan_2026-KW47.pdf"
     }
   },
   "fehler": []
