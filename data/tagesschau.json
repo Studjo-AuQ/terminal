@@ -1,12 +1,52 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "21.10.2026, 14:59 Uhr (UTC)",
+  "aktualisiert": "21.10.2026, 19:15 Uhr (UTC)",
   "meldungen": [
     {
+      "id": "34ffb90a5ff6c44b0f7d",
+      "title": "Osteuropa-Experte über Ukraine-Gespräche: \"Keine großen Hoffnungen\"",
+      "description": "Russland hat sich bereit gezeigt, die Gespräche mit den USA und der Ukraine wieder aufzunehmen. Aber sind Fortschritte wahrscheinlich? Osteuropa-Experte Umland zeigt sich im tagesschau24-Interview skeptisch.",
+      "pubDate": "2026-10-21T20:54:59+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/ukraine-usa-russland-102.html",
+      "bild": ""
+    },
+    {
+      "id": "7d5a0e290de77462c3e3",
+      "title": "Macron kritisiert Trump nach Äußerungen zu Unruhen in Frankreich",
+      "description": "Auch US-Präsident Trump hatte sich zu den Unruhen in Frankreich zu Wort gemeldet - der französische Präsident Macron hat nun offenbar genug davon. Bei einem Besuch in Katar machte er seinem Ärger Luft. Von Cai Rienäcker.",
+      "pubDate": "2026-10-21T19:48:20+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/macron-rede-112.html",
+      "bild": ""
+    },
+    {
+      "id": "6864ca0b670ea329a79d",
+      "title": "Verhältnis zu Israel: Ein heikles Thema für Demokraten und Republikaner",
+      "description": "In den USA schwindet die Solidarität mit Israel. Umfragen zeigen, dass sich insbesondere jüngere US-Amerikaner vom engen Verbündeten abwenden. Im Wahlkampf bereitet das Demokraten und Republikaner erhebliche Probleme. Von A. Henze.",
+      "pubDate": "2026-10-21T19:21:35+02:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/usa-midterms-wahlkampfthema-israel-100.html",
+      "bild": ""
+    },
+    {
+      "id": "dca546d309ae399db2fe",
+      "title": "Marktbericht: DAX startet dank KI durch",
+      "description": "Von neuer KI-Zuversicht nach guten Unternehmensdaten getragen, nahm der DAX heute wieder kräftig Fahrt auf. Ein Treiber war das Thema Künstliche Intelligenz. Frankreich-Sorgen traten vorerst in den Hintergrund.",
+      "pubDate": "2026-10-21T19:17:42+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-boerse-dax-dow-jones-118.html",
+      "bild": ""
+    },
+    {
+      "id": "38cf6648f6caca1d89da",
+      "title": "Polizei und Behörden beobachten Demo-Aufrufe für den 31. Oktober",
+      "description": "Während es bei den Protesten in Frankreich zu Ausschreitungen kommt, ruft auch in Deutschland eine Initiative für den 31. Oktober zu Demos auf. Polizei und Behörden beobachten die Lage und tauschen sich mit Frankreich und Italien aus.",
+      "pubDate": "2026-10-21T18:57:53+02:00",
+      "link": "https://www.tagesschau.de/inland/aufruf-demos-sicherheitsbehoerden-100.html",
+      "bild": ""
+    },
+    {
       "id": "3cb6979f52afd8b85e62",
-      "title": "Krieg gegen die Ukraine: Putin stimmt neuen Gesprächen zu",
-      "description": "Nach einem Treffen mit dem US-Sondergesandten erklärt sich Russlands Präsident Putin offenbar zu neuen Verhandlungen mit den USA und der Ukraine bereit. Um ein Ende des Kriegs soll es dabei demnach aber nicht gehen.",
-      "pubDate": "2026-10-21T16:58:25+02:00",
+      "title": "Krieg gegen die Ukraine: Putin stimmt Wiederaufnahme von Gesprächen zu",
+      "description": "Nach einem Treffen mit dem US-Sondergesandten erklärt sich Russlands Präsident Putin offenbar zu neuen Gesprächen mit den USA und der Ukraine bereit. Um ein Ende des Kriegs soll es dabei demnach aber nicht gehen.",
+      "pubDate": "2026-10-21T19:50:10+02:00",
       "link": "https://www.tagesschau.de/ausland/europa/russland-ukraine-krieg-putin-gespraeche-100.html",
       "bild": ""
     },
@@ -29,8 +69,8 @@
     {
       "id": "ae062ffb68eac3520792",
       "title": "Programmiersprache PHP: Sicherheitslücke bedroht weltweit Webseiten",
-      "description": "Zahlreiche Webseiten und Onlinedienste weltweit sind derzeit in Gefahr: Grund ist eine Sicherheitslücke in der weitverbreiteten Programmiersprache PHP. Das Gefahrenpotenzial ist demnach extrem hoch.",
-      "pubDate": "2026-10-21T16:15:08+02:00",
+      "description": "Eine gravierende Sicherheitslücke bedroht Millionen Webseiten. Betroffen ist die weitverbreitete Programmiersprache PHP. In Deutschland sind Internetseiten mehrerer Städte vorsichtshalber abgeschaltet.",
+      "pubDate": "2026-10-21T19:32:26+02:00",
       "link": "https://www.tagesschau.de/wirtschaft/technologie/it-sicherheit-php-luecke-100.html",
       "bild": ""
     },
@@ -38,7 +78,7 @@
       "id": "fbe9916c75206fe11b66",
       "title": "Nahverkehr: \"Deutschlandticket light\" kommt vorerst nicht",
       "description": "Ein attraktives Ticket für gelegentliche Bus- und Bahnfahrer - das hatten Hamburg und Nordrhein-Westfalen für die Verkehrsministerkonferenz zur Beratung vorgeschlagen. Doch nun ist \"Deutschlandticket light\" bereits wieder vom Tisch.",
-      "pubDate": "2026-10-21T15:56:23+02:00",
+      "pubDate": "2026-10-21T17:16:35+02:00",
       "link": "https://www.tagesschau.de/inland/deutschlandticket-light-kommt-nicht-100.html",
       "bild": ""
     },
@@ -60,7 +100,7 @@
     },
     {
       "id": "00450fdeb69dbc856872",
-      "title": "BGH-Urteil: Schufa muss über Score-Berechnung informieren",
+      "title": "BGH-Urteil: Entscheidung zu Transparenz bei Schufa",
       "description": "Immer wieder gibt es Kritik am Score-System der Schufa. Zu undurchsichtig, lautet der Vorwurf. Nun hat der Bundesgerichtshof entschieden: Unter bestimmten Voraussetzungen muss die Schufa über die Berechnung informieren. Von Anne Stein.",
       "pubDate": "2026-10-21T15:18:47+02:00",
       "link": "https://www.tagesschau.de/wirtschaft/verbraucher/bgh-urteil-schufa-114.html",
@@ -80,46 +120,6 @@
       "description": "Die Musk-Konzerne Tesla und SpaceX könnten sich zusammentun und so einen mehrere Billionen Dollar schweren Tech-Konzern bilden. Welche Folgen - aber auch Risiken - diese Fusion haben könnte.",
       "pubDate": "2026-10-21T15:08:11+02:00",
       "link": "https://www.tagesschau.de/wirtschaft/unternehmen/faq-tesla-spacex-zusammenschluss-folgen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "37113637e1f0613406cc",
-      "title": "Gewinnprognose erhöht: Rekordgewinn für Adidas",
-      "description": "Das hören Aktionäre und Investoren immer gerne: der Sportartikelkonzern Adidas erhöht nach einem Rekordquartal die Prognose. Im DAX gehört die Aktie zu den größten Gewinnern.",
-      "pubDate": "2026-10-21T14:31:29+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/mittags-mb-adidas-100.html",
-      "bild": ""
-    },
-    {
-      "id": "2d513aa75cdc65b53608",
-      "title": "Ukraine-Krieg: Putin schlägt Treffen mit Trump und Xi vor",
-      "description": "In St. Petersburg berät Russlands Präsident Putin mit dem US-Vermittler Witkoff über den Ukraine-Krieg. Zum Auftakt der Gespräche schlug Putin ein Dreier-Treffen mit Trump und Xi in China vor - und kündigte erste Diesellieferungen an die USA an.",
-      "pubDate": "2026-10-21T13:55:51+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/ukraine-russland-usa-verhandlungen-106.html",
-      "bild": ""
-    },
-    {
-      "id": "0eeeb55394b436727d59",
-      "title": "Häuser sollen besser gegen Naturgefahren versichert werden",
-      "description": "Hochwasser, Starkregen, Erdbeben: Gegen Schäden nach solchen Naturkatastrophen sind Häuser nicht standardmäßig versichert. Das will die Bundesregierung nun ändern - und legt ein erstes Papier mit Eckpunkten vor.",
-      "pubDate": "2026-10-21T13:48:22+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/versicherungen-naturkatastrophen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "736c9e67bc49d856035a",
-      "title": "Fake Hotelanzeigen - Brüssel ermittelt gegen Booking.com",
-      "description": "Unternimmt das Portal Booking.com genügend gegen Betrüger, die Reisende mit Fake-Anzeigen locken? Die EU will das ermitteln und sicherstellen, dass die Europäer ihren Urlaub ohne Angst buchen können.",
-      "pubDate": "2026-10-21T13:32:40+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/reisen-betrug-bookingcom-eu-100.html",
-      "bild": ""
-    },
-    {
-      "id": "56b5b6cf191fb1adca21",
-      "title": "UN-Konferenz: Delegationen bemühen sich um Frieden im Sudan",
-      "description": "Seit mehr als dreieinhalb Jahren tobt im Sudan ein Krieg. Die UN bemühen sich auf einer Konferenz in Genf, eine politische Lösung für den Konflikt zu finden. Unterdessen hält die Gewalt im Land unvermindert an.",
-      "pubDate": "2026-10-21T11:54:59+02:00",
-      "link": "https://www.tagesschau.de/ausland/afrika/sudan-konferenz-108.html",
       "bild": ""
     }
   ],
