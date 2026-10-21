@@ -1,7 +1,23 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "21.10.2026, 19:15 Uhr (UTC)",
+  "aktualisiert": "21.10.2026, 22:37 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "8d80c2087356502dc594",
+      "title": "Datenschutzskandal: Facebook-Konzern Meta soll Milliardenstrafe zahlen",
+      "description": "Acht Jahre nach dem Skandal um den Missbrauch von Nutzerdaten ist der Facebookkonzern Meta in New Mexico zu einer Milliardenstrafe verurteilt worden. Der Fall solle anderen Tech-Unternehmen eine Warnung sein, sagte der Generalstaatsanwalt.",
+      "pubDate": "2026-10-21T22:47:20+02:00",
+      "link": "https://www.tagesschau.de/ausland/meta-cambrigde-skandal-milliardenstrafe-100.html",
+      "bild": ""
+    },
+    {
+      "id": "fcff4cc7c3de61ed358b",
+      "title": "Papst Leo braucht nach Lungenkrebs-OP keine weitere Behandlung",
+      "description": "Erst vor wenigen Tagen war Leo XIV. wegen eines Karzinoms ein Teil seiner Lunge entfernt worden. Nun gibt es aus dem Vatikan gute Nachrichten: Der Tumor sei lokal begrenzt gewesen, eine weitere Therapie sei nicht nötig.",
+      "pubDate": "2026-10-21T22:47:10+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/papst-leo-lungenkrebs-100.html",
+      "bild": ""
+    },
     {
       "id": "34ffb90a5ff6c44b0f7d",
       "title": "Osteuropa-Experte über Ukraine-Gespräche: \"Keine großen Hoffnungen\"",
@@ -46,7 +62,7 @@
       "id": "3cb6979f52afd8b85e62",
       "title": "Krieg gegen die Ukraine: Putin stimmt Wiederaufnahme von Gesprächen zu",
       "description": "Nach einem Treffen mit dem US-Sondergesandten erklärt sich Russlands Präsident Putin offenbar zu neuen Gesprächen mit den USA und der Ukraine bereit. Um ein Ende des Kriegs soll es dabei demnach aber nicht gehen.",
-      "pubDate": "2026-10-21T19:50:10+02:00",
+      "pubDate": "2026-10-21T23:02:08+02:00",
       "link": "https://www.tagesschau.de/ausland/europa/russland-ukraine-krieg-putin-gespraeche-100.html",
       "bild": ""
     },
@@ -104,22 +120,6 @@
       "description": "Immer wieder gibt es Kritik am Score-System der Schufa. Zu undurchsichtig, lautet der Vorwurf. Nun hat der Bundesgerichtshof entschieden: Unter bestimmten Voraussetzungen muss die Schufa über die Berechnung informieren. Von Anne Stein.",
       "pubDate": "2026-10-21T15:18:47+02:00",
       "link": "https://www.tagesschau.de/wirtschaft/verbraucher/bgh-urteil-schufa-114.html",
-      "bild": ""
-    },
-    {
-      "id": "18f01a1506a4e9b55da4",
-      "title": "Polens Parlament für Lockerung des Abtreibungsrechts",
-      "description": "Die Verschärfung des Abtreibungsrechts unter der alten PiS-Regierung hatte monatelange Massenproteste in Polen ausgelöst. Nun hat das Parlament eine Lockerung eingeleitet - aber es droht ein Veto.",
-      "pubDate": "2026-10-21T15:08:58+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/polen-abtreibungsrecht-lockerung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "e3d3056b29358c2d3062",
-      "title": "Was eine Fusion von Tesla und SpaceX bedeuten würde",
-      "description": "Die Musk-Konzerne Tesla und SpaceX könnten sich zusammentun und so einen mehrere Billionen Dollar schweren Tech-Konzern bilden. Welche Folgen - aber auch Risiken - diese Fusion haben könnte.",
-      "pubDate": "2026-10-21T15:08:11+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/faq-tesla-spacex-zusammenschluss-folgen-100.html",
       "bild": ""
     }
   ],
