@@ -1,0 +1,11 @@
+Studjo-Pflegezentrale – überarbeitete lokale Fassung
+
+1. Vor dem Wechsel in der alten Pflegezentrale eine Gesamtsicherung herunterladen.
+2. Diese HTML-Datei auf dem Windows-PC speichern und per Doppelklick im Browser öffnen.
+3. Bei Bedarf unter Sicherung die bisherige Gesamtsicherung einlesen. Das bisherige Sicherungsformat wird weiterhin unterstützt.
+4. Die Pflegezentrale selbst gehört nicht ins Terminal-Repository.
+5. Lokal gespeicherte Inhalte, offene Formulare und heruntergeladene Exportdateien sind unterschiedliche Bearbeitungsstände. Erst Daten speichern, dann exportieren, danach die genannte Datei in GitHub ersetzen.
+
+Enthalten: sichtbare Speicherfehler, Formularentwürfe, Sicherung einschließlich Webseiten-Entwürfen und neuen Bildern, Importprüfung, Rückgängig-Funktion für Datenänderungen, Tastaturbedienung für Dateiöffnen/Reiter/Dialoge, korrigierte AbA-Bildpfade und Mottofilter.
+
+Prüfung: JavaScript-Syntax und gezielte Funktionstests. Ein vollständiger Windows-/Screenreader-Praxistest steht aus.
