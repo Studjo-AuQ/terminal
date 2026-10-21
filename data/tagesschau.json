@@ -1,7 +1,39 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "20.10.2026, 23:44 Uhr (UTC)",
+  "aktualisiert": "21.10.2026, 04:20 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "a84aaf60f686e21abe7d",
+      "title": "Interne Lageeinschätzung - Bundeswehr warnt vor russischen Anschlägen",
+      "description": "Die Bundeswehr warnt vor möglichen russischen Sabotageanschlägen auf die eigenen Truppen in Deutschland - das geht aus einer internen Lageeinschätzung hervor, die WDR und SZ vorliegt. In dem Papier wurde die Bedrohung erstmals als \"Erheblich\" eingestuft.",
+      "pubDate": "2026-10-21T06:00:11+02:00",
+      "link": "https://www.tagesschau.de/investigativ/wdr/bundeswehr-russland-102.html",
+      "bild": ""
+    },
+    {
+      "id": "216b0fe0978b2bc57b18",
+      "title": "El Salvadors Präsident kündigt an, Tausende Häftlinge freizulassen",
+      "description": "Menschenrechtsorganisationen kritisieren, dass etwa die Hälfte der 90.000 Menschen im Gefängnis unschuldig inhaftiert ist. Nun hat Präsident Bukele überraschend angekündigt, Tausende freizulassen. Von Jenny Barke.",
+      "pubDate": "2026-10-21T05:05:13+02:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/el-salvador-bukele-gefangene-100.html",
+      "bild": ""
+    },
+    {
+      "id": "c258910fa41173795827",
+      "title": "Tödliches Virus: Nigeria bestätigt ersten Ebola-Fall",
+      "description": "Nun auch der erste Fall von Ebola in Nigeria: Es ist nun das vierte Land in Afrika mit mindestens einem bestätigten Ebola-Fall. 44 Kontaktpersonen der infizierten Frau wurden bisher ermittelt.",
+      "pubDate": "2026-10-21T03:11:10+02:00",
+      "link": "https://www.tagesschau.de/ausland/ebola-nigeria-102.html",
+      "bild": ""
+    },
+    {
+      "id": "01b3e459fafc1fdf44c4",
+      "title": "Panne soll behoben werden: Höhere Tabaksteuer gilt aus Versehen ab sofort",
+      "description": "Ab 2027 sollen die Tabaksteuern schrittweise steigen und das Rauchen verteuern, so dachte man. Doch nun wurde verkündet: Sie gilt bereits ab sofort. Dem Ministerium ist dabei ein Fehler unterlaufen.",
+      "pubDate": "2026-10-21T02:53:00+02:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/tabaksteuer-aus-versehen-in-kraft-100.html",
+      "bild": ""
+    },
     {
       "id": "5f59a8723131246e357a",
       "title": "Selenskyj fordert Teilnahme an Putin-Xi-Trump-Treffen",
@@ -88,38 +120,6 @@
       "description": "Die Deutsche Post will das Briefporto im kommenden Januar von 95 Cent auf 1,15 Euro anheben. Auch Postkarten, Großbriefe und andere Produkte sollen 2027 teurer werden - sofern die Bundesnetzagentur die Erhöhungen genehmigt.",
       "pubDate": "2026-10-20T16:00:04+02:00",
       "link": "https://www.tagesschau.de/wirtschaft/verbraucher/porto-standardbrief-100.html",
-      "bild": ""
-    },
-    {
-      "id": "e9792608b3fd983080fc",
-      "title": "Berliner Linke vertagt Entscheidung über umstrittene Abgeordnete Emde",
-      "description": "Die Linke-Fraktionsspitze in Berlin will nicht mehr mit Vanessa Emde zusammenarbeiten. Wie es im Konflikt mit der wegen ihrer Israel-Kritik umstrittenen Abgeordneten weitergeht, bleibt vorerst unklar - eine Entscheidung wurde vertagt.",
-      "pubDate": "2026-10-20T15:27:29+02:00",
-      "link": "https://www.tagesschau.de/inland/regional/berlin/berliner-linke-abgeordnete-emde-100.html",
-      "bild": ""
-    },
-    {
-      "id": "387c55f9bc52e90ba821",
-      "title": "Unruhen in Frankreich: Festnahme nach Brand von Rathaus in Limoges",
-      "description": "Während der Ausschreitungen in Frankreich war das historische Rathaus von Limoges abgebrannt. Das Feuer war zu einem Symbol der Unruhen geworden. Nun gab es eine Festnahme: Es soll sich um einen polizeibekannten Linksextremisten handeln.",
-      "pubDate": "2026-10-20T15:19:11+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/frankreich-limoges-brandstiftung-festnahme-100.html",
-      "bild": ""
-    },
-    {
-      "id": "2bc7a19251a1dede33c3",
-      "title": "US-Midterms: Wie Preise die Zwischenwahlen beeinflussen könnten",
-      "description": "Inflation, Lebenshaltungskosten, Treibstoffpreise: Viele Amerikaner machen Präsident Trump für die hohen Preise verantwortlich. Für die Republikaner könnte das vor den Midterms zum Problem werden. Von Carsten Kühntopp.",
-      "pubDate": "2026-10-20T15:07:51+02:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/us-zwischenwahlen-wirtschaft-100.html",
-      "bild": ""
-    },
-    {
-      "id": "616a8638b0f6dbad07f7",
-      "title": "Neuer Reaktorblock am Netz: Slowakei überholt Frankreich beim Atomstrom",
-      "description": "Die Slowakei hat einen neuen Reaktorblock ans Netz genommen. Wenn er Volllast erreicht, wird sie zum Land mit dem weltweit höchsten Atomanteil im Energiemix. Und Staatschef Fico plant bereits das nächste Kraftwerk. Von Marianne Allweiss.",
-      "pubDate": "2026-10-20T14:51:16+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/slowakei-atomreaktor-100.html",
       "bild": ""
     }
   ],
