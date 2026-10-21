@@ -28,10 +28,11 @@ jobs:
           import html
           import hashlib
           from datetime import datetime, timezone
+          from pathlib import Path
 
           FEEDS = [
               {
-                  'datei':  'data/nachrichten.json',
+                  'datei': 'data/nachrichten.json',
                   'urls': [
                       'https://www.nachrichtenleicht.de/nachrichtenleicht-nachrichten-100.rss',
                       'https://www.deutschlandfunk.de/podcast-nachrichtenleicht-der-wochenrueckblick-in-einfacher-sprache-100.xml',
@@ -39,7 +40,7 @@ jobs:
                   'max': 12,
               },
               {
-                  'datei':  'data/tagesschau.json',
+                  'datei': 'data/tagesschau.json',
                   'urls': [
                       'https://www.tagesschau.de/xml/rss2/',
                       'https://www.tagesschau.de/inland/index~rss2.xml',
@@ -47,7 +48,7 @@ jobs:
                   'max': 15,
               },
               {
-                  'datei':  'data/kobinet.json',
+                  'datei': 'data/kobinet.json',
                   'urls': [
                       'https://feeds.feedburner.com/Kobinet-nachrichten',
                   ],
@@ -70,7 +71,10 @@ jobs:
                   '%Y-%m-%dT%H:%M:%SZ'
               ]:
                   try:
-                      return datetime.strptime(s.strip(), fmt).isoformat()
+                      return datetime.strptime(
+                          s.strip(),
+                          fmt
+                      ).isoformat()
                   except Exception:
                       pass
               return s
@@ -84,39 +88,57 @@ jobs:
               link = (item.findtext('link') or '').strip()
               if link:
                   return link
+
               ns = 'http://www.w3.org/2005/Atom'
+
               for el in item.findall(f'{{{ns}}}link'):
                   href = (el.attrib.get('href') or '').strip()
                   rel = (el.attrib.get('rel') or 'alternate').strip()
+
                   if href and rel in ('alternate', ''):
                       return href
+
               return ''
 
           def stabile_id(item, titel, datum, link):
               guid = (item.findtext('guid') or '').strip()
+
               if not guid:
                   guid = atom_text(item, 'id').strip()
+
               basis = guid or link or (titel + '|' + datum)
-              return hashlib.sha1(basis.encode('utf-8')).hexdigest()[:20]
+
+              return hashlib.sha1(
+                  basis.encode('utf-8')
+              ).hexdigest()[:20]
 
           def hole_feed(url, max_meldungen):
               req = urllib.request.Request(
                   url,
-                  headers={'User-Agent': 'Studjo-Infoterminal/1.0'}
+                  headers={
+                      'User-Agent': 'Studjo-Infoterminal/1.0'
+                  }
               )
 
-              with urllib.request.urlopen(req, timeout=15) as r:
+              with urllib.request.urlopen(
+                  req,
+                  timeout=15
+              ) as r:
                   inhalt = r.read()
 
               root = ET.fromstring(inhalt)
               channel = root.find('channel')
 
               if channel is not None:
-                  quelle = (channel.findtext('title') or '').strip()
+                  quelle = (
+                      channel.findtext('title') or ''
+                  ).strip()
                   items = channel.findall('item')
               else:
                   ns = 'http://www.w3.org/2005/Atom'
-                  quelle = (root.findtext(f'{{{ns}}}title') or '').strip()
+                  quelle = (
+                      root.findtext(f'{{{ns}}}title') or ''
+                  ).strip()
                   items = root.findall(f'{{{ns}}}entry')
 
               meldungen = []
@@ -124,20 +146,33 @@ jobs:
               for item in items[:max_meldungen]:
                   def txt(tag, atom=None):
                       el = item.find(tag)
+
                       if el is None and atom:
                           el = item.find(
                               f'{{http://www.w3.org/2005/Atom}}{atom}'
                           )
+
                       return el.text or '' if el is not None else ''
 
-                  titel = html_entfernen(txt('title', 'title'))
-                  desc = html_entfernen(txt('description', 'summary'))
-                  datum = parse_datum(txt('pubDate', 'published'))
+                  titel = html_entfernen(
+                      txt('title', 'title')
+                  )
+                  desc = html_entfernen(
+                      txt('description', 'summary')
+                  )
+                  datum = parse_datum(
+                      txt('pubDate', 'published')
+                  )
                   link = item_link(item)
 
                   if titel:
                       meldungen.append({
-                          'id': stabile_id(item, titel, datum, link),
+                          'id': stabile_id(
+                              item,
+                              titel,
+                              datum,
+                              link
+                          ),
                           'title': titel,
                           'description': desc,
                           'pubDate': datum,
@@ -147,58 +182,121 @@ jobs:
 
               return quelle, meldungen
 
-          jetzt = datetime.now(timezone.utc).strftime(
+          def lade_bisherigen_stand(datei):
+              pfad = Path(datei)
+
+              if not pfad.exists():
+                  return None
+
+              try:
+                  daten = json.loads(
+                      pfad.read_text(
+                          encoding='utf-8'
+                      )
+                  )
+
+                  if daten.get('meldungen'):
+                      return daten
+
+              except Exception as e:
+                  print(
+                      f'Bisheriger Stand von {datei} '
+                      f'konnte nicht gelesen werden: {e}'
+                  )
+
+              return None
+
+          jetzt = datetime.now(
+              timezone.utc
+          ).strftime(
               '%d.%m.%Y, %H:%M Uhr (UTC)'
           )
 
+          harte_fehler = []
+
           for feed_cfg in FEEDS:
+              datei = feed_cfg['datei']
+              bisher = lade_bisherigen_stand(datei)
               meldungen = []
               quelle = ''
               fehler_log = []
 
               for url in feed_cfg['urls']:
                   try:
-                      print(f"Lade: {url}")
-                      quelle, meldungen = hole_feed(
+                      print(f'Lade: {url}')
+
+                      kandidat_quelle, kandidat_meldungen = hole_feed(
                           url,
                           feed_cfg['max']
                       )
+
+                      if not kandidat_meldungen:
+                          raise RuntimeError(
+                              'Feed lieferte keine Meldungen.'
+                          )
+
+                      quelle = kandidat_quelle
+                      meldungen = kandidat_meldungen
+
                       print(
-                          f"  → {len(meldungen)} Meldungen "
+                          f'  → {len(meldungen)} Meldungen '
                           f"von '{quelle}'"
                       )
                       break
+
                   except Exception as e:
-                      fehler_log.append(f"{url}: {e}")
-                      print(f"  → Fehler: {e}")
+                      fehler_log.append(
+                          f'{url}: {e}'
+                      )
+                      print(f'  → Fehler: {e}')
 
-              ausgabe = {
-                  'quelle': quelle or 'Nachrichten',
-                  'aktualisiert': jetzt,
-                  'meldungen': meldungen,
-                  'fehler': fehler_log if not meldungen else [],
-              }
+              if meldungen:
+                  ausgabe = {
+                      'quelle': quelle or 'Nachrichten',
+                      'aktualisiert': jetzt,
+                      'meldungen': meldungen,
+                      'fehler': [],
+                  }
 
-              with open(
-                  feed_cfg['datei'],
-                  'w',
-                  encoding='utf-8'
-              ) as f:
-                  json.dump(
-                      ausgabe,
-                      f,
-                      ensure_ascii=False,
-                      indent=2
+                  with open(
+                      datei,
+                      'w',
+                      encoding='utf-8'
+                  ) as f:
+                      json.dump(
+                          ausgabe,
+                          f,
+                          ensure_ascii=False,
+                          indent=2
+                      )
+
+                  print(
+                      f'Gespeichert: {datei} '
+                      f'({len(meldungen)} Meldungen)'
                   )
+                  continue
 
-              status = (
-                  f"{len(meldungen)} Meldungen"
-                  if meldungen
-                  else "FEHLER"
+              if bisher:
+                  print(
+                      '::warning::'
+                      f'{datei}: Alle Abrufe fehlgeschlagen. '
+                      'Der letzte funktionierende Datenstand bleibt '
+                      'unverändert erhalten.'
+                  )
+                  for fehler in fehler_log:
+                      print('  ' + fehler)
+                  continue
+
+              harte_fehler.append(
+                  f'{datei}: kein neuer und kein bisheriger '
+                  'brauchbarer Nachrichtenbestand. ' +
+                  ' | '.join(fehler_log)
               )
-              print(
-                  f"Gespeichert: {feed_cfg['datei']} "
-                  f"({status})"
+
+          if harte_fehler:
+              raise RuntimeError(
+                  'RSS-Update ohne brauchbaren Fallback:\n' +
+                  '\n'.join(harte_fehler)
               )
           PYTHON
 
