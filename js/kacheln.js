@@ -276,6 +276,9 @@
 
   let vorlesenAktiv = false;
   let aktuelleAussage = null;
+  let tageskartenTimer = null;
+  let aktualisierungLaeuft = false;
+  let aktualisierungNochmal = false;
 
   function $(id) {
     return document.getElementById(id);
@@ -331,9 +334,20 @@
   function zeitwert(text, ende = false) {
     const roh = String(text || '').trim();
     if (!roh) return null;
-    const normalisiert = /^\d{4}-\d{2}-\d{2}$/.test(roh)
-      ? roh + (ende ? 'T23:59:59' : 'T00:00:00')
-      : roh;
+
+    let normalisiert = roh;
+
+    if (/^\d{4}-\d{2}-\d{2}$/.test(roh)) {
+      normalisiert = roh + (ende ? 'T23:59:59' : 'T00:00:00');
+    } else if (
+      ende &&
+      /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/.test(roh)
+    ) {
+      /* Pflegezentrale speichert Minuten. "bis 23:59" soll daher
+         die gesamte Minute bis 23:59:59 einschließen. */
+      normalisiert = roh + ':59';
+    }
+
     const d = new Date(normalisiert);
     return Number.isNaN(d.getTime()) ? null : d;
   }
@@ -350,6 +364,61 @@
       })
       /* Bei Überschneidungen gilt die später beginnende Vorgabe. */
       .sort((a, b) => String(b.von || b.datum || '').localeCompare(String(a.von || a.datum || '')))[0] || null;
+  }
+
+  function naechsteTageskartenGrenze(admin, jetzt) {
+    const kandidaten = [];
+
+    /* Mitternacht: Datum, Termine, Motto und Zufallsauswahl ändern sich. */
+    const mitternacht = new Date(jetzt);
+    mitternacht.setDate(mitternacht.getDate() + 1);
+    mitternacht.setHours(0, 0, 2, 0);
+    kandidaten.push(mitternacht);
+
+    /* 13:15 Uhr: Mittagessen wechselt auf den Folgetag. */
+    const essenGrenze = new Date(jetzt);
+    essenGrenze.setHours(13, 15, 1, 0);
+    if (essenGrenze <= jetzt) essenGrenze.setDate(essenGrenze.getDate() + 1);
+    kandidaten.push(essenGrenze);
+
+    /* Beginn und Ende von Admin-Zeitsteuerungen. */
+    if (Array.isArray(admin?.vorgaben)) {
+      admin.vorgaben
+        .filter(v => v && v.aktiv !== false)
+        .forEach(v => {
+          const von = zeitwert(v.von || v.datum, false);
+          const bis = zeitwert(v.bis || v.von || v.datum, true);
+
+          if (von && von > jetzt) kandidaten.push(von);
+
+          if (bis) {
+            const nachEnde = new Date(bis.getTime() + 1000);
+            if (nachEnde > jetzt) kandidaten.push(nachEnde);
+          }
+        });
+    }
+
+    return kandidaten
+      .filter(d => d instanceof Date && !Number.isNaN(d.getTime()) && d > jetzt)
+      .sort((a, b) => a - b)[0] || null;
+  }
+
+  function planeTageskartenAktualisierung(admin, jetzt) {
+    clearTimeout(tageskartenTimer);
+    tageskartenTimer = null;
+
+    const naechste = naechsteTageskartenGrenze(admin, jetzt);
+    if (!naechste) return;
+
+    const MAX_TIMEOUT = 2147480000;
+    const wartezeit = Math.max(
+      250,
+      Math.min(MAX_TIMEOUT, naechste.getTime() - Date.now() + 150)
+    );
+
+    tageskartenTimer = setTimeout(() => {
+      tageskarteAktualisieren();
+    }, wartezeit);
   }
 
   function kuerzen(text, max = 112) {
@@ -915,6 +984,11 @@
   function interneNachrichtenUrl(n, titel) {
     const params = new URLSearchParams();
     params.set('quelle', nachrichtenQuelleKey(n));
+
+    const id = String(n?.id || '').trim();
+    if (id) params.set('id', id);
+
+    /* Titel bleibt als Rückwärtskompatibilitäts-Fallback erhalten. */
     params.set('titel', titel);
 
     return 'nachrichten-allgemein.html?' + params.toString();
@@ -1015,138 +1089,210 @@
     });
   }
 
-  async function starten() {
+  async function tageskarteAktualisieren() {
     const grid = document.querySelector('.card-grid');
-    if (!grid || $('tagesinfo-box')) return;
+    if (!grid) return;
 
     injiziereStyles();
-    baueGrundgeruest(grid);
+    const box = baueGrundgeruest(grid);
 
-    const heute = new Date();
-    heute.setHours(12, 0, 0, 0);
-
-    const jetzt = new Date();
-
-    const [admin, termindaten, aba, motto, losung, wetter, essen] = await Promise.all([
-      ladeJson(ADMIN_DATEI, true),
-      kandidatTerminUndBesonderes(heute),
-      kandidatAba(heute),
-      kandidatMotto(heute),
-      kandidatLosung(heute),
-      kandidatWetter(heute),
-      kandidatEssen(jetzt)
-    ]);
-
-    /* Zeitsteuerung verwendet die echte aktuelle Uhrzeit. Für die inhaltlichen
-       Tagesdaten bleibt "heute" auf 12 Uhr normalisiert. */
-    const vorgabe = aktiveAdminVorgabe(admin, jetzt);
-    const anzahl = Math.max(1, Math.min(3, Number(admin?.anzahl) || ANZAHL_STANDARD));
-
-    const alle = [
-      termindaten.besonderes,
-      termindaten.termin,
-      aba,
-      motto,
-      losung,
-      wetter,
-      essen
-    ].filter(Boolean);
-
-    const map = new Map(alle.map(k => [k.typ, k]));
-    const auswahl = [];
-
-    function aufnehmen(kandidat, ausdruecklich = false) {
-      if (!kandidat || auswahl.length >= anzahl) return false;
-      if (auswahl.some(k => k.id === kandidat.id)) return false;
-      if (!ausdruecklich && istAusgeblendet(kandidat.typ, vorgabe) && kandidat.typ !== 'besonderes') return false;
-      auswahl.push(kandidat);
-      return true;
-    }
-
-    // 1. Schließung/Feiertag/Brückentag ist unverdrängbar.
-    aufnehmen(termindaten.besonderes, true);
-
-    /* Automatische Reihenfolge für freie Plätze: echter Termin zuerst,
-       montags danach das neue Motto, anschließend stabile Tagesmischung. */
-    const autoReihe = [];
-    function autoMerken(k) {
-      if (!k || k.typ === 'besonderes' || istAusgeblendet(k.typ, vorgabe)) return;
-      if (!autoReihe.some(x => x.id === k.id)) autoReihe.push(k);
-    }
-    autoMerken(termindaten.termin);
-    if (heute.getDay() === 1) autoMerken(motto);
-    stabileSortierung(
-      alle.filter(k => k.typ !== 'besonderes' && k.typ !== 'termine' && !(heute.getDay() === 1 && k.typ === 'motto')),
-      heute,
-      'tageskarte'
-    ).forEach(autoMerken);
-
-    let autoIndex = 0;
-    function naechsterAutoKandidat() {
-      while (autoIndex < autoReihe.length) {
-        const k = autoReihe[autoIndex++];
-        if (!auswahl.some(x => x.id === k.id)) return k;
-      }
-      return null;
-    }
-
-    const plaetze = Array.isArray(vorgabe?.plaetze) ? vorgabe.plaetze.slice(0, 3) : null;
-
-    if (plaetze && plaetze.length) {
-      /* Jeder Admin-Platz wird in Reihenfolge 1–3 abgearbeitet.
-         Ist ein fixierter Inhalt an diesem Tag nicht verfügbar, fällt genau
-         dieser Platz sicher auf die Automatik zurück. */
-      for (const slot of plaetze) {
-        if (auswahl.length >= anzahl) break;
-        const modus = String(slot?.modus || 'auto');
-        let kandidat = null;
-        let ausdruecklich = false;
-
-        if (modus === 'auto') {
-          kandidat = naechsterAutoKandidat();
-        } else if (modus === 'nachricht') {
-          kandidat = kandidatAdminNachricht(slot);
-          ausdruecklich = true;
-        } else {
-          kandidat = map.get(modus) || null;
-          ausdruecklich = true;
-        }
-
-        if (!aufnehmen(kandidat, ausdruecklich)) {
-          aufnehmen(naechsterAutoKandidat(), false);
-        }
-      }
-
-      while (auswahl.length < anzahl) {
-        if (!aufnehmen(naechsterAutoKandidat(), false)) break;
-      }
-    } else {
-      /* Rückwärtskompatibilität für ältere tagesinfo.json-Dateien. */
-      (Array.isArray(vorgabe?.fixieren) ? vorgabe.fixieren : [])
-        .forEach(typ => aufnehmen(map.get(typ), true));
-
-      aufnehmen(termindaten.termin, false);
-      if (heute.getDay() === 1) aufnehmen(motto, false);
-      autoReihe.forEach(k => aufnehmen(k, false));
-    }
-
-    if (!auswahl.length) {
-      $('tagesinfo-box').hidden = true;
+    if (aktualisierungLaeuft) {
+      aktualisierungNochmal = true;
       return;
     }
 
-    rendere(auswahl);
+    aktualisierungLaeuft = true;
 
-    if (vorgabe) {
+    try {
+      if (vorlesenAktiv) stoppVorlesen();
+
+      const heute = new Date();
+      heute.setHours(12, 0, 0, 0);
+
+      const jetzt = new Date();
+
+      const [admin, termindaten, aba, motto, losung, wetter, essen] = await Promise.all([
+        ladeJson(ADMIN_DATEI, true),
+        kandidatTerminUndBesonderes(heute),
+        kandidatAba(heute),
+        kandidatMotto(heute),
+        kandidatLosung(heute),
+        kandidatWetter(heute),
+        kandidatEssen(jetzt)
+      ]);
+
+      planeTageskartenAktualisierung(admin, jetzt);
+
+      /* Zeitsteuerung verwendet die echte aktuelle Uhrzeit. Für die inhaltlichen
+         Tagesdaten bleibt "heute" auf 12 Uhr normalisiert. */
+      const vorgabe = aktiveAdminVorgabe(admin, jetzt);
+      const anzahl = Math.max(
+        1,
+        Math.min(3, Number(admin?.anzahl) || ANZAHL_STANDARD)
+      );
+
+      const alle = [
+        termindaten.besonderes,
+        termindaten.termin,
+        aba,
+        motto,
+        losung,
+        wetter,
+        essen
+      ].filter(Boolean);
+
+      const map = new Map(alle.map(k => [k.typ, k]));
+      const auswahl = [];
+
+      function aufnehmen(kandidat, ausdruecklich = false) {
+        if (!kandidat || auswahl.length >= anzahl) return false;
+        if (auswahl.some(k => k.id === kandidat.id)) return false;
+        if (
+          !ausdruecklich &&
+          istAusgeblendet(kandidat.typ, vorgabe) &&
+          kandidat.typ !== 'besonderes'
+        ) return false;
+
+        auswahl.push(kandidat);
+        return true;
+      }
+
+      // 1. Schließung/Feiertag/Brückentag ist unverdrängbar.
+      aufnehmen(termindaten.besonderes, true);
+
+      /* Automatische Reihenfolge für freie Plätze: echter Termin zuerst,
+         montags danach das neue Motto, anschließend stabile Tagesmischung. */
+      const autoReihe = [];
+
+      function autoMerken(kandidat) {
+        if (
+          !kandidat ||
+          kandidat.typ === 'besonderes' ||
+          istAusgeblendet(kandidat.typ, vorgabe)
+        ) return;
+
+        if (!autoReihe.some(x => x.id === kandidat.id)) {
+          autoReihe.push(kandidat);
+        }
+      }
+
+      autoMerken(termindaten.termin);
+      if (heute.getDay() === 1) autoMerken(motto);
+
+      stabileSortierung(
+        alle.filter(kandidat =>
+          kandidat.typ !== 'besonderes' &&
+          kandidat.typ !== 'termine' &&
+          !(heute.getDay() === 1 && kandidat.typ === 'motto')
+        ),
+        heute,
+        'tageskarte'
+      ).forEach(autoMerken);
+
+      let autoIndex = 0;
+
+      function naechsterAutoKandidat() {
+        while (autoIndex < autoReihe.length) {
+          const kandidat = autoReihe[autoIndex++];
+          if (!auswahl.some(x => x.id === kandidat.id)) return kandidat;
+        }
+        return null;
+      }
+
+      const plaetze = Array.isArray(vorgabe?.plaetze)
+        ? vorgabe.plaetze.slice(0, 3)
+        : null;
+
+      if (plaetze && plaetze.length) {
+        for (const slot of plaetze) {
+          if (auswahl.length >= anzahl) break;
+
+          const modus = String(slot?.modus || 'auto');
+          let kandidat = null;
+          let ausdruecklich = false;
+
+          if (modus === 'auto') {
+            kandidat = naechsterAutoKandidat();
+          } else if (modus === 'nachricht') {
+            kandidat = kandidatAdminNachricht(slot);
+            ausdruecklich = true;
+          } else {
+            kandidat = map.get(modus) || null;
+            ausdruecklich = true;
+          }
+
+          if (!aufnehmen(kandidat, ausdruecklich)) {
+            aufnehmen(naechsterAutoKandidat(), false);
+          }
+        }
+
+        while (auswahl.length < anzahl) {
+          if (!aufnehmen(naechsterAutoKandidat(), false)) break;
+        }
+
+      } else {
+        /* Rückwärtskompatibilität für ältere tagesinfo.json-Dateien. */
+        (Array.isArray(vorgabe?.fixieren) ? vorgabe.fixieren : [])
+          .forEach(typ => aufnehmen(map.get(typ), true));
+
+        aufnehmen(termindaten.termin, false);
+        if (heute.getDay() === 1) aufnehmen(motto, false);
+        autoReihe.forEach(kandidat => aufnehmen(kandidat, false));
+      }
+
       const status = $('tagesinfo-status');
-      if (status && vorgabe.hinweis) {
+      if (status) {
+        status.textContent = '';
+        status.hidden = true;
+      }
+
+      if (!auswahl.length) {
+        box.hidden = true;
+        return;
+      }
+
+      box.hidden = false;
+      rendere(auswahl);
+
+      if (vorgabe && status && vorgabe.hinweis) {
         status.textContent = vorgabe.hinweis;
         status.hidden = false;
+      }
+
+    } finally {
+      aktualisierungLaeuft = false;
+
+      if (aktualisierungNochmal) {
+        aktualisierungNochmal = false;
+        setTimeout(() => tageskarteAktualisieren(), 0);
       }
     }
   }
 
-  window.addEventListener('pagehide', stoppVorlesen);
+  function starten() {
+    tageskarteAktualisieren();
+  }
+
+  window.addEventListener('pagehide', () => {
+    stoppVorlesen();
+    clearTimeout(tageskartenTimer);
+  });
+
+  /* Beim Zurückkehren in die PWA aktuelle Uhrzeit und Admin-Regeln prüfen.
+     Das ist besonders für 13:15 Uhr und längere Hintergrundphasen wichtig. */
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') {
+      tageskarteAktualisieren();
+    }
+  });
+
+  window.addEventListener('pageshow', event => {
+    if (event.persisted) tageskarteAktualisieren();
+  });
+
+  window.addEventListener('online', () => {
+    tageskarteAktualisieren();
+  });
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', starten, { once: true });
