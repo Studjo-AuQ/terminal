@@ -1,11 +1,99 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "21.10.2026, 04:20 Uhr (UTC)",
+  "aktualisiert": "21.10.2026, 09:31 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "b49948d9648153a99b44",
+      "title": "Iranisches Finanznetzwerk: Eine deutsche Bank im Visier Teherans",
+      "description": "Internationale Sanktionen gegen das iranische Regime erschweren den Zahlungsverkehr. Deshalb unterhalten die Mullahs ein Netzwerk aus Hunderten Tarnfirmen. Nach Recherchen von Report Mainz und dem Spiegel wollten sie eine Bank in Bayern übernehmen.",
+      "pubDate": "2026-10-21T11:00:03+02:00",
+      "link": "https://www.tagesschau.de/investigativ/report-mainz/iran-bank-104.html",
+      "bild": ""
+    },
+    {
+      "id": "ec4247c32d74c88d5f94",
+      "title": "Wer an den Ausschreitungen in Frankreich beteiligt war",
+      "description": "Die Gewalteskalation beim landesweiten Protesttag hat Frankreich schwer erschüttert. Wer waren die Randalierer und Plünderer? Für den Premierminister ist die Antwort klar, doch die Wirklichkeit ist komplexer. Von Carolin Dylla.",
+      "pubDate": "2026-10-21T10:52:52+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/frankreich-ausschreitungen-120.html",
+      "bild": ""
+    },
+    {
+      "id": "dca546d309ae399db2fe",
+      "title": "Marktbericht: DAX startet kaum verändert",
+      "description": "Der DAX ist verhalten in den Handel gestartet. Während KI-Werte sich dank SpaceX erholen, bleiben Investoren mit Blick auf weitere Tech-Bilanzen, die Unruhen in Frankreich und die Ölpreise vorsichtig.",
+      "pubDate": "2026-10-21T10:52:33+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-boerse-dax-dow-jones-118.html",
+      "bild": ""
+    },
+    {
+      "id": "f6cea9c78eab82a432fb",
+      "title": "Alice Schwarzer stellt Magazin \"Emma\" ein",
+      "description": "Nach 50 Jahren ist Schluss. Das feministische Magazin \"Emma\" wird eingestellt. Gründerin und Herausgeberin Alice Schwarzer betonte, die Gründe seien nicht ökonomischer Natur. \"Wir meinen, es reicht.\"",
+      "pubDate": "2026-10-21T10:40:09+02:00",
+      "link": "https://www.tagesschau.de/kultur/emma-magazin-ende-100.html",
+      "bild": ""
+    },
+    {
+      "id": "e845a1f26409baa420dd",
+      "title": "Streaming-Gigant unter Druck: Netflix wächst langsamer",
+      "description": "Netflix war jahrelang der unumstrittene Marktführer beim Streaming. Doch der Konzern kämpft gegen immer stärkere Konkurrenz. Neue Produktionen sollen helfen, die Zuschauer wieder mehr zu fesseln - und mehr Werbung zu verkaufen.",
+      "pubDate": "2026-10-21T10:20:43+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/netflix-streaming-serien-100.html",
+      "bild": ""
+    },
+    {
+      "id": "527e48a4e25607e00d37",
+      "title": "Klimaziele der Regierung: Die CDU, das Klima und der Luftverkehr",
+      "description": "Die CDU will den innerdeutschen Flugverkehr stärken. Dabei gilt: Kurzstreckenflüge sind pro Kilometer besonders klimaschädlich - Start und Landung verursachen den Großteil der Emissionen. Wie passt das zu den deutschen Klimazielen? Von K. Aue.",
+      "pubDate": "2026-10-21T09:25:52+02:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/merz-klima-luftverkehr-100.html",
+      "bild": ""
+    },
+    {
+      "id": "bd77bb76735c49ce2b5d",
+      "title": "Tesla und SpaceX prüfen Zusammenschluss - noch mehr Macht für Musk?",
+      "description": "Die beiden US-Konzerne Tesla und SpaceX, die von Tech-Milliardär Elon Musk geführt werden, prüfen einen Zusammenschluss. Sollte dieser zustande kommen, wäre es die bislang größte Fusion zweier Firmen. Doch es gibt große Hürden.",
+      "pubDate": "2026-10-21T09:11:45+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/tesla-spacex-zusammenschluss-moeglich-100.html",
+      "bild": ""
+    },
+    {
+      "id": "96508d1efa23c90c1519",
+      "title": "UN-Bericht: Erde steuert auf 2,8 Grad Erwärmung zu",
+      "description": "Die Folgen der Erderwärmung sind verheerend. Das eigentlich vereinbarte 1,5-Grad-Limit wird ziemlich sicher gerissen. Doch die UN betonen: Es gibt Fortschritte beim Klimaschutz, die Zeit drängt allerdings. Von Janina Schreiber.",
+      "pubDate": "2026-10-21T09:54:54+02:00",
+      "link": "https://www.tagesschau.de/wissen/klima/erderwaermung-un-bericht-102.html",
+      "bild": ""
+    },
+    {
+      "id": "1cfac84b1297d166b385",
+      "title": "US-Vermittler Witkoff berät mit Putin über Ukraine",
+      "description": "Nach Gesprächen mit dem ukrainischen Präsidenten Selenskyj in Oslo ist US-Unterhändler Witkoff zu Verhandlungen mit der russischen Führung in St. Petersburg eingetroffen. US-Präsident Trump hatte Selenskyj zuvor zu einem \"Deal\" aufgefordert.",
+      "pubDate": "2026-10-21T10:15:02+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/ukraine-russland-usa-verhandlungen-104.html",
+      "bild": ""
+    },
+    {
+      "id": "8e2794e2d97efc959556",
+      "title": "Musk ordnete laut Medienberichten Drosselung von Starlink für Ukraine an",
+      "description": "Der US-Technologieunternehmer Musk ist Medienberichten zufolge für die mutmaßliche Einschränkung der Satellitenkommunikation in der Ukraine verantwortlich. Sollte das zutreffend sein, wirft das einige Fragen auf - auch an US-Präsident Trump.",
+      "pubDate": "2026-10-21T08:30:22+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/musk-spacelink-drosselung-ukraine-100.html",
+      "bild": ""
+    },
+    {
+      "id": "21e29535304dd04dd879",
+      "title": "China-Schock 2.0 - wie sich Europas Industrie schützen kann",
+      "description": "China setzt Europas Unternehmen zunehmend unter Druck - auch mit massiven Subventionen. Doch höhere Zölle allein reichen kaum aus. Was kann die EU noch tun, um ihre Wirtschaft zu schützen? Von Angela Göpfert.",
+      "pubDate": "2026-10-21T06:41:58+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/china-schock-europa-industrie-zoelle-100.html",
+      "bild": ""
+    },
     {
       "id": "a84aaf60f686e21abe7d",
       "title": "Interne Lageeinschätzung - Bundeswehr warnt vor russischen Anschlägen",
-      "description": "Die Bundeswehr warnt vor möglichen russischen Sabotageanschlägen auf die eigenen Truppen in Deutschland - das geht aus einer internen Lageeinschätzung hervor, die WDR und SZ vorliegt. In dem Papier wurde die Bedrohung erstmals als \"Erheblich\" eingestuft.",
+      "description": "Die Bundeswehr warnt vor möglichen russischen Sabotageanschlägen auf die eigenen Truppen in Deutschland - das geht aus einer internen Lageeinschätzung hervor, die WDR und SZ vorliegt. In dem Papier wurde die Bedrohung erstmals als \"erheblich\" eingestuft.",
       "pubDate": "2026-10-21T06:00:11+02:00",
       "link": "https://www.tagesschau.de/investigativ/wdr/bundeswehr-russland-102.html",
       "bild": ""
@@ -13,113 +101,25 @@
     {
       "id": "216b0fe0978b2bc57b18",
       "title": "El Salvadors Präsident kündigt an, Tausende Häftlinge freizulassen",
-      "description": "Menschenrechtsorganisationen kritisieren, dass etwa die Hälfte der 90.000 Menschen im Gefängnis unschuldig inhaftiert ist. Nun hat Präsident Bukele überraschend angekündigt, Tausende freizulassen. Von Jenny Barke.",
+      "description": "Menschenrechtsorganisationen kritisieren, dass etwa die Hälfte der 90.000 Menschen in El Salvadors Gefängnissen unschuldig inhaftiert ist. Nun hat Präsident Bukele überraschend angekündigt, Tausende freizulassen. Von Jenny Barke.",
       "pubDate": "2026-10-21T05:05:13+02:00",
       "link": "https://www.tagesschau.de/ausland/amerika/el-salvador-bukele-gefangene-100.html",
       "bild": ""
     },
     {
       "id": "c258910fa41173795827",
-      "title": "Tödliches Virus: Nigeria bestätigt ersten Ebola-Fall",
-      "description": "Nun auch der erste Fall von Ebola in Nigeria: Es ist nun das vierte Land in Afrika mit mindestens einem bestätigten Ebola-Fall. 44 Kontaktpersonen der infizierten Frau wurden bisher ermittelt.",
+      "title": "Nigeria bestätigt ersten Ebola-Fall",
+      "description": "Bislang waren drei afrikanische Länder von dem aktuellen Ebola-Ausbruch betroffen, nun meldet auch Nigeria einen Fall. Eine Frau sei in der Hauptstadt Abuja in Behandlung, so die Behörden. Nigeria ist das bevölkerungsreichste Land auf dem Kontinent.",
       "pubDate": "2026-10-21T03:11:10+02:00",
       "link": "https://www.tagesschau.de/ausland/ebola-nigeria-102.html",
       "bild": ""
     },
     {
       "id": "01b3e459fafc1fdf44c4",
-      "title": "Panne soll behoben werden: Höhere Tabaksteuer gilt aus Versehen ab sofort",
-      "description": "Ab 2027 sollen die Tabaksteuern schrittweise steigen und das Rauchen verteuern, so dachte man. Doch nun wurde verkündet: Sie gilt bereits ab sofort. Dem Ministerium ist dabei ein Fehler unterlaufen.",
-      "pubDate": "2026-10-21T02:53:00+02:00",
+      "title": "Ministerium unterläuft Panne beim Gesetz zur Tabaksteuer",
+      "description": "Gestern wurde das Gesetz zur Anhebung der Tabaksteuer veröffentlicht. Eigentlich sollen die Steuersätze ab 2027 steigen. Doch durch eine Panne des Finanzministeriums gelten sie ab sofort - zumindest auf dem Papier.",
+      "pubDate": "2026-10-21T06:52:22+02:00",
       "link": "https://www.tagesschau.de/inland/innenpolitik/tabaksteuer-aus-versehen-in-kraft-100.html",
-      "bild": ""
-    },
-    {
-      "id": "5f59a8723131246e357a",
-      "title": "Selenskyj fordert Teilnahme an Putin-Xi-Trump-Treffen",
-      "description": "Trump hatte Interesse an einem Gespräch mit den Präsidenten Russlands und Chinas über die Ukraine gezeigt. Nach einem Treffen mit europäischen Partnern sowie dem US-Sondergesandten Witkoff in Oslo forderte Präsident Selenskyj nun eine Beteiligung Kiews.",
-      "pubDate": "2026-10-20T22:01:00+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/selenskyj-witkoff-norwegen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "5e94f3180c057cdf0f1a",
-      "title": "So reagieren Frankreich und Italien auf die Ausschreitungen",
-      "description": "Ausgangssperren, Antiterror-Soldaten, neue Dekrete: Frankreich und Italien haben auf die Ausschreitungen am Wochenende reagiert. So sollen in Zukunft Unruhen verhindert werden.",
-      "pubDate": "2026-10-20T21:56:31+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/frankreich-italien-ausschreitungen-proteste-100.html",
-      "bild": ""
-    },
-    {
-      "id": "922d160b09d6fffed382",
-      "title": "EU-Parlament: Mitte-Fraktionen schließen Verbrenner-Kompromiss",
-      "description": "Ziel in Europa soll der Umstieg auf E-Autos bleiben - trotzdem haben sich die Unterhändler verschiedener Parteien im EU-Parlament nun auf ein Aufweichen des \"Verbrenner-Aus'\" geeinigt. Doch die finale Abstimmung steht noch an. Von J.-M. Magro.",
-      "pubDate": "2026-10-20T19:49:19+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/verbrenner-aus-eu-108.html",
-      "bild": ""
-    },
-    {
-      "id": "ae5eebd55127bcbb751b",
-      "title": "VW ruft weltweit mehr als 70.000 E-Autos wegen Brandgefahr zurück",
-      "description": "Der Rückruf von Millionen VW-Fahrzeugen liegt noch nicht lange zurück, nun muss Volkswagen erneut einen Mangel beheben. Auch in Deutschland sind viele Autos betroffen - wegen fehlerhafter Batterien.",
-      "pubDate": "2026-10-20T18:57:49+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/vw-e-autos-rueckruf-100.html",
-      "bild": ""
-    },
-    {
-      "id": "b83f065716858d1b1f1f",
-      "title": "EU-Rechnungshof-Bericht: Kaum Fortschritte bei Digitalisierung",
-      "description": "Seit 2021 hat die EU fast 50 Milliarden Euro an ihre Mitgliedstaaten ausgezahlt. Geld, das darauf abzielen sollte, Behörden und Verwaltung digitaler und effizienter zu machen. Der EU-Rechnungshof zieht eine gemischte Bilanz. Von A. Mamengui",
-      "pubDate": "2026-10-20T18:42:23+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/europaeischer-rechnungshof-corona-gelder-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c1e6ac34de02230092d1",
-      "title": "Angriffe auf Brücken in Kiew: \"Man muss ja irgendwie weiterleben\"",
-      "description": "Seit Wochen greift Russland gezielt Brücken in der ukrainischen Hauptstadt Kiew an. Die Einwohner versuchen, sich mit dem Verkehrschaos so gut wie möglich zu arrangieren. Der Ausnahmezustand gehört bereits zum Alltag. Von Niels Bula.",
-      "pubDate": "2026-10-20T18:23:41+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/angriffe-bruecken-kiew-100.html",
-      "bild": ""
-    },
-    {
-      "id": "e58bbf24220f8dd6fa7e",
-      "title": "EU legt neue Arktis-Strategie vor und verstärkt militärische Präsenz",
-      "description": "Die neue Arktis-Strategie der Europäischen Kommission macht deutlich: Die EU will ihre Präsenz dort verstärken, wo die \"tektonischen Platten der Geopolitik aufeinanderprallen\", wie Kommissionschefin von der Leyen sagt. Von Thomas Spickhofen.",
-      "pubDate": "2026-10-20T17:38:35+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/eu-arktis-strategie-102.html",
-      "bild": ""
-    },
-    {
-      "id": "6abc74e6b49d447d8c3e",
-      "title": "Kassenärzte sagen ab 2027 längere Termin-Wartezeiten voraus",
-      "description": "Ab 2027 wird in Arztpraxen ein festes Kontingent an Terminen festgelegt. Die Kassenärztliche Bundesvereinigung befürchtet noch längere Wartezeiten auf Termine - die Krankenkassen sehen darin Angstmacherei.",
-      "pubDate": "2026-10-20T19:41:17+02:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/kassenaerzte-lange-wartezeiten-termine-100.html",
-      "bild": ""
-    },
-    {
-      "id": "7df1a02464c6c432aead",
-      "title": "Flugausfälle: EU regelt Erstattung bei Buchung über Drittanbieter",
-      "description": "In Zukunft müssen auch Drittanbieter die Kosten für die Buchung eines Fluges erstatten, wenn dieser ausfällt. Das hat das EU-Parlament beschlossen. Außerdem soll es ein einheitliches Erstattungsformular für so gut wie alle Transportmittel geben.",
-      "pubDate": "2026-10-20T16:43:12+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/eu-reiserechte-100.html",
-      "bild": ""
-    },
-    {
-      "id": "489fb6a85cf243e88696",
-      "title": "Mit wem will die SPD wohin?",
-      "description": "Bislang kursieren nur Namen. Handfeste Bewerbungen für den SPD-Chefposten gibt es noch nicht, dafür einige Absagen. Einer sagt nicht Nein, andere sagen gar nichts. Doch die SPD muss mehr klären als nur Personalfragen. Von Christina Nagel.",
-      "pubDate": "2026-10-20T16:13:44+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/spd-kurs-vorsitz-100.html",
-      "bild": ""
-    },
-    {
-      "id": "5ebb9ebafd4446db59e9",
-      "title": "Die Deutsche Post will 2027 das Porto für Briefe erhöhen",
-      "description": "Die Deutsche Post will das Briefporto im kommenden Januar von 95 Cent auf 1,15 Euro anheben. Auch Postkarten, Großbriefe und andere Produkte sollen 2027 teurer werden - sofern die Bundesnetzagentur die Erhöhungen genehmigt.",
-      "pubDate": "2026-10-20T16:00:04+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/porto-standardbrief-100.html",
       "bild": ""
     }
   ],
