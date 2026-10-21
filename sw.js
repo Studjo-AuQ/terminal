@@ -1,9 +1,10 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 32
+   Version 33
 
-   - lädt beim Installieren alle aktuell lokalen Terminal-Dateien vor
-     (HTML, CSS, JS, JSON, Schriften, Bilder, PDF.js und Speiseplan-PDFs)
+   - lädt beim Installieren den stabilen lokalen Terminal-Kern vor
+     (HTML, CSS, JS, JSON, Schriften, Bilder und PDF.js)
+   - rollierende Speiseplan-PDFs werden dynamisch aus data/speiseplan-kurz.json synchronisiert
    - externe Angebote wie ConSense, LearningApps, VRR/Mobil.NRW und andere
      Fremdserver werden bewusst nicht gespeichert
    - ein neuer Worker wird nur aktiviert, wenn das vollständige lokale
@@ -17,9 +18,10 @@
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v32';
+const CACHE_VERSION = 'v33';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
+const SPEISEPLAN_CACHE = CACHE_PREFIX + CACHE_VERSION + '-speiseplaene';
 
 const OFFLINE_DATEIEN = [
   './',
@@ -82,6 +84,7 @@ const OFFLINE_DATEIEN = [
   "js/gong.js",
   "js/kacheln.js",
   "js/kalender.js",
+  "js/nachrichten-deeplink.js",
   "js/offline.js",
   "js/script.js",
   "js/speiseplan-ansicht.js",
@@ -237,13 +240,7 @@ const OFFLINE_DATEIEN = [
   /* PDF.js */
   "pdfjs/pdf.min.mjs",
   "pdfjs/pdf.worker.min.mjs",
-
-  /* Speisepläne */
-  "speiseplaene/speiseplan_2026-KW42.pdf",
-  "speiseplaene/speiseplan_2026-KW43.pdf",
-  "speiseplaene/speiseplan_2026-KW44.pdf",
-  "speiseplaene/speiseplan_2026-KW45.pdf",
-  "speiseplaene/speiseplan_2026-KW46.pdf",
+  /* Speiseplan-PDFs werden dynamisch aus data/speiseplan-kurz.json synchronisiert. */
 ];
 
 function absolut(pfad) {
@@ -251,6 +248,158 @@ function absolut(pfad) {
 }
 
 const PRELOAD_PARALLEL = 8;
+
+const SPEISEPLAN_KURZ_PFAD = 'data/speiseplan-kurz.json';
+const SPEISEPLAN_META_PFAD = '__studjo-speiseplan-cache-meta__.json';
+
+function speiseplanQuellenAusDaten(daten) {
+  const quellen = new Set();
+
+  Object.values(daten?.tage || {}).forEach(eintrag => {
+    const quelle = String(eintrag?.quelle || '').trim().replace(/^\.\//, '');
+
+    /* Nur eigene PDF-Dateien aus dem vorgesehenen Ordner zulassen. */
+    if (
+      /^speiseplaene\/[^/?#]+\.pdf$/i.test(quelle) &&
+      !quelle.includes('..')
+    ) {
+      quellen.add(quelle);
+    }
+  });
+
+  return [...quellen].sort();
+}
+
+function speiseplanSignatur(daten, quellen) {
+  return JSON.stringify({
+    stand: String(daten?.stand || ''),
+    quellen
+  });
+}
+
+async function speiseplanPdfsAusDatenSynchronisieren(daten) {
+  const quellen = speiseplanQuellenAusDaten(daten);
+
+  if (!quellen.length) {
+    console.warn(
+      '[Studjo SW] Keine Speiseplan-PDFs in',
+      SPEISEPLAN_KURZ_PFAD,
+      'referenziert.'
+    );
+    return;
+  }
+
+  const cache = await caches.open(SPEISEPLAN_CACHE);
+  const metaUrl = absolut(SPEISEPLAN_META_PFAD);
+  const signatur = speiseplanSignatur(daten, quellen);
+  const metaTreffer = await cache.match(metaUrl);
+
+  if (metaTreffer) {
+    try {
+      const alt = await metaTreffer.text();
+      if (alt === signatur) {
+        /* JSON unverändert: kein erneutes Herunterladen großer PDFs nötig. */
+        return;
+      }
+    } catch (e) {}
+  }
+
+  const sollUrls = new Set(quellen.map(absolut));
+  const fehler = [];
+  let naechsterIndex = 0;
+  const parallel = Math.min(3, quellen.length);
+
+  async function arbeiter() {
+    while (true) {
+      const index = naechsterIndex++;
+      if (index >= quellen.length) return;
+
+      const pfad = quellen[index];
+      const url = absolut(pfad);
+
+      try {
+        const antwort = await fetch(url, { cache: 'reload' });
+
+        if (!antwort.ok) {
+          throw new Error('HTTP ' + antwort.status);
+        }
+
+        await cache.put(url, antwort.clone());
+
+      } catch (fehlerObjekt) {
+        fehler.push({ pfad, fehler: fehlerObjekt });
+        console.warn(
+          '[Studjo SW] Speiseplan-PDF nicht aktualisiert:',
+          pfad,
+          fehlerObjekt
+        );
+      }
+    }
+  }
+
+  await Promise.all(
+    Array.from({ length: parallel }, () => arbeiter())
+  );
+
+  if (fehler.length) {
+    /* Wichtig: Alte, bereits funktionierende PDF-Caches bleiben erhalten.
+       Ein temporärer PDF-Fehler darf den Service Worker nicht unbrauchbar machen. */
+    throw new Error(
+      'Speiseplan-PDF-Synchronisierung unvollständig: ' +
+      fehler.length + ' Datei(en).'
+    );
+  }
+
+  /* Erst nach vollständig erfolgreicher Synchronisierung alte Wochen entfernen. */
+  const vorhandene = await cache.keys();
+
+  await Promise.all(
+    vorhandene
+      .filter(request => {
+        if (request.url === metaUrl) return false;
+        return !sollUrls.has(request.url);
+      })
+      .map(request => cache.delete(request))
+  );
+
+  await cache.put(
+    metaUrl,
+    new Response(signatur, {
+      headers: { 'Content-Type': 'text/plain; charset=utf-8' }
+    })
+  );
+
+  console.info(
+    '[Studjo SW] Speiseplan-PDFs synchronisiert:',
+    quellen.length
+  );
+}
+
+async function speiseplanPdfsSynchronisieren() {
+  let antwort = null;
+
+  try {
+    const online = await fetch(
+      absolut(SPEISEPLAN_KURZ_PFAD),
+      { cache: 'reload' }
+    );
+
+    if (online.ok) antwort = online;
+  } catch (e) {}
+
+  if (!antwort) {
+    antwort = await ausCache(
+      new Request(absolut(SPEISEPLAN_KURZ_PFAD)),
+      true
+    );
+  }
+
+  if (!antwort) return;
+
+  const daten = await antwort.clone().json();
+  await speiseplanPdfsAusDatenSynchronisieren(daten);
+}
+
 
 async function offlineDateienLaden() {
   const cache = await caches.open(PRECACHE);
@@ -312,6 +461,15 @@ async function offlineDateienLaden() {
 self.addEventListener('install', event => {
   event.waitUntil(
     offlineDateienLaden()
+      .then(() =>
+        speiseplanPdfsSynchronisieren()
+          .catch(fehler => {
+            console.warn(
+              '[Studjo SW] Dynamische Speiseplan-PDFs konnten beim Installieren nicht vollständig synchronisiert werden:',
+              fehler
+            );
+          })
+      )
       .then(() => self.skipWaiting())
   );
 });
@@ -324,7 +482,8 @@ self.addEventListener('activate', event => {
           .filter(name =>
             name.startsWith(CACHE_PREFIX) &&
             name !== PRECACHE &&
-            name !== RUNTIME
+            name !== RUNTIME &&
+            name !== SPEISEPLAN_CACHE
           )
           .map(name => caches.delete(name))
       ))
@@ -363,7 +522,11 @@ async function ausCache(request, ignoreSearch = false) {
   if (runtimeTreffer) return runtimeTreffer;
 
   const precache = await caches.open(PRECACHE);
-  return precache.match(request, { ignoreSearch });
+  const precacheTreffer = await precache.match(request, { ignoreSearch });
+  if (precacheTreffer) return precacheTreffer;
+
+  const speiseplaene = await caches.open(SPEISEPLAN_CACHE);
+  return speiseplaene.match(request, { ignoreSearch });
 }
 
 function cacheSchluessel(request, ignoreSearch = false) {
@@ -469,11 +632,14 @@ function istStartseitenNavigation(url) {
          url.pathname === scope.pathname + 'index.html';
 }
 
-function istNeuigkeitenNavigation(url) {
+function istDynamischeNavigation(url) {
   const scope = new URL(self.registration.scope);
+  const basis = scope.pathname;
 
-  return url.pathname ===
-    scope.pathname + 'neuigkeiten.html';
+  return [
+    basis + 'neuigkeiten.html',
+    basis + 'nachrichten-allgemein.html'
+  ].includes(url.pathname);
 }
 
 /* Die wichtigsten Startseiten-Dateien werden bewusst network-first
@@ -486,6 +652,9 @@ function istStartseitenKernDatei(url) {
 
   return [
     basis + 'js/kacheln.js',
+    basis + 'js/a11y.js',
+    basis + 'js/kalender.js',
+    basis + 'js/nachrichten-deeplink.js',
     basis + 'js/gong.js',
     basis + 'js/offline.js',
     basis + 'css/style-index.css',
@@ -552,10 +721,10 @@ self.addEventListener('fetch', event => {
         netzwerkZuerst(request, 2500, true, true)
       );
 
-    } else if (istNeuigkeitenNavigation(url)) {
-      /* Neuigkeiten werden häufig über die Pflege-App aktualisiert.
-         Deshalb online immer zuerst die aktuelle Server-Version laden.
-         Der Cache bleibt ausschließlich als Offline-/Fehler-Fallback. */
+    } else if (istDynamischeNavigation(url)) {
+      /* Neuigkeiten und die Nachrichtenseite können sich häufig ändern.
+         Deshalb online zuerst die aktuelle Server-Version laden.
+         Der Cache bleibt als Offline-/Fehler-Fallback erhalten. */
       event.respondWith(
         netzwerkZuerst(request, 4000, true, true)
       );
@@ -578,6 +747,28 @@ self.addEventListener('fetch', event => {
   if (/\.html$/i.test(url.pathname)) {
     event.respondWith(
       netzwerkZuerst(request, 4000, true, true)
+    );
+    return;
+  }
+
+  if (
+    url.pathname ===
+    new URL(SPEISEPLAN_KURZ_PFAD, self.registration.scope).pathname
+  ) {
+    event.respondWith(
+      netzwerkZuerst(request, 5000, true, false)
+    );
+
+    /* Die kleine JSON-Datei ist die Quelle der Wahrheit für die rollierenden
+       Speiseplan-PDFs. Nur wenn ihre Signatur wechselt, werden PDFs neu geladen. */
+    event.waitUntil(
+      speiseplanPdfsSynchronisieren()
+        .catch(fehler => {
+          console.warn(
+            '[Studjo SW] Speiseplan-PDFs konnten nicht vollständig synchronisiert werden:',
+            fehler
+          );
+        })
     );
     return;
   }
