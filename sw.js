@@ -1,6 +1,6 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 33
+   Version 34
 
    - lädt beim Installieren den stabilen lokalen Terminal-Kern vor
      (HTML, CSS, JS, JSON, Schriften, Bilder und PDF.js)
@@ -18,7 +18,7 @@
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v33';
+const CACHE_VERSION = 'v34';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 const SPEISEPLAN_CACHE = CACHE_PREFIX + CACHE_VERSION + '-speiseplaene';
@@ -90,6 +90,7 @@ const OFFLINE_DATEIEN = [
   "js/speiseplan-ansicht.js",
   "js/speiseplan-heute.js",
   "js/ticker.js",
+  "js/termine-komfort.js",
   "js/ui-a11y.js",
   "js/wochenmotto.js",
 
@@ -638,7 +639,8 @@ function istDynamischeNavigation(url) {
 
   return [
     basis + 'neuigkeiten.html',
-    basis + 'nachrichten-allgemein.html'
+    basis + 'nachrichten-allgemein.html',
+    basis + 'termine.html'
   ].includes(url.pathname);
 }
 
@@ -655,6 +657,7 @@ function istStartseitenKernDatei(url) {
     basis + 'js/a11y.js',
     basis + 'js/kalender.js',
     basis + 'js/nachrichten-deeplink.js',
+    basis + 'js/termine-komfort.js',
     basis + 'js/gong.js',
     basis + 'js/offline.js',
     basis + 'css/style-index.css',
