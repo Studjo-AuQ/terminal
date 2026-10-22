@@ -1,12 +1,60 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "22.10.2026, 01:23 Uhr (UTC)",
+  "aktualisiert": "22.10.2026, 06:30 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "9a0bb3a21c6eedd9572f",
+      "title": "Meta investiert mindestens 135 Milliarden Dollar in KI",
+      "description": "Der Meta-Konzern will den Ausbau seiner KI-Infrastruktur vorantreiben. Zur Finanzierung soll es eine neue Aktie ohne Stimmrechte geben. Damit sichert sich Firmenchef Zuckerberg die Kontrolle. Von Antje Sieb.",
+      "pubDate": "2026-10-22T07:25:41+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/meta-quartalszahlen-ki-investitionen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "cac13e89a2b0e6c383f1",
+      "title": "Marktbericht: Tech-Bilanzen schieben den DAX nicht weiter an",
+      "description": "Am Donnerstag verarbeiten die Aktienmärkte die Bilanzen von wichtigen US-Technologiekonzernen wie Meta und Tesla. Auch SAP hat die Quartalszahlen vorgestellt. Die Anleger reagieren zurückhaltend.",
+      "pubDate": "2026-10-22T07:24:19+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-tesla-meta-sap-100.html",
+      "bild": ""
+    },
+    {
+      "id": "8d142c88cce73b3f8547",
+      "title": "US-Zwischenwahlen: Wie verlässlich sind die Umfragen vor den Midterms?",
+      "description": "Angesichts der landesweit niedrigen Zustimmungswerte für Trump hoffen viele Demokraten in den USA auf einen deutlichen Sieg bei den Zwischenwahlen in zwei Wochen. Umfragen nähren ihre Zuversicht. Doch sind sie verlässlich? Von Jan Oppel.",
+      "pubDate": "2026-10-22T07:03:31+02:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/usa-midterms-umfragen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "7f011cc6cea9a116a329",
+      "title": "Auch Republikaner kritisieren Trumps Ukraine-Kurs",
+      "description": "US-Präsident Trump nähert sich Russland an und lobt Kreml-Chef Putin ausdrücklich. Auch in Trumps eigener Partei, die ihm lange treu ergeben war, gibt es daran zunehmend Kritik. Einige Abgeordnete wählen deutliche Worte. Von C. Kühntopp.",
+      "pubDate": "2026-10-22T07:03:03+02:00",
+      "link": "https://www.tagesschau.de/ausland/kritik-trump-ukraine-100.html",
+      "bild": ""
+    },
+    {
+      "id": "3097abf2854b93ffba09",
+      "title": "Wasserzeichen markieren bald auch KI-Texte von ChatGPT",
+      "description": "Stammt dieser Text von einer Künstlichen Intelligenz? Aufschluss geben können Wasserzeichen, die KI-generierte Texte markieren. OpenAI hat das nun für ChatGPT angekündigt. Von Pauline Möhle und Leila Boucheligua.",
+      "pubDate": "2026-10-22T05:30:26+02:00",
+      "link": "https://www.tagesschau.de/wissen/ki-texte-wasserzeichen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "f2b4d2aea0a25965fffe",
+      "title": "Ausschüsse im EU-Parlament stimmen ab zum Verbrenner-Kompromiss",
+      "description": "Nach der Einigung der Unterhändler zur Abkehr vom \"Verbrenner-Aus\" befassen sich heute Ausschüsse im EU-Parlament damit. Die Abstimmungen werden zeigen, ob der Kompromiss hält. Von Christian Feld und Jean-Marie Magro.",
+      "pubDate": "2026-10-22T05:05:08+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/verbrenner-aus-124.html",
+      "bild": ""
+    },
     {
       "id": "48ec3bf9b19de8380387",
       "title": "Krieg gegen die Ukraine: Russische Raketen schlagen erneut in Kiew ein",
-      "description": "Mehrere Raketenangriffe haben in der Nacht erneut Kiew erschüttert. Bürgermeister Klitschko sprach von mindestens sechs Verletzten.",
-      "pubDate": "2026-10-22T02:05:26+02:00",
+      "description": "Mehrere Raketenangriffe haben in der Nacht erneut Kiew erschüttert. Bürgermeister Klitschko sprach von mindestens fünfzehn Verletzten.",
+      "pubDate": "2026-10-22T05:13:31+02:00",
       "link": "https://www.tagesschau.de/ausland/europa/raketen-kiew-ukraine-100.html",
       "bild": ""
     },
@@ -61,7 +109,7 @@
     {
       "id": "38cf6648f6caca1d89da",
       "title": "Polizei und Behörden beobachten Demo-Aufrufe für den 31. Oktober",
-      "description": "Während es bei den Protesten in Frankreich zu Ausschreitungen kommt, ruft auch in Deutschland eine Initiative für den 31. Oktober zu Demos auf. Polizei und Behörden beobachten die Lage und tauschen sich mit Frankreich und Italien aus.",
+      "description": "Auch in Deutschland ruft eine Initiative junge Menschen zu Protesten auf. Am 31. Oktober soll es bundesweit Demonstrationen geben. Polizei und Behörden beobachten die Lage und tauschen sich mit Frankreich und Italien aus.",
       "pubDate": "2026-10-21T18:57:53+02:00",
       "link": "https://www.tagesschau.de/inland/aufruf-demos-sicherheitsbehoerden-100.html",
       "bild": ""
@@ -72,54 +120,6 @@
       "description": "Nach einem Treffen mit dem US-Sondergesandten erklärt sich Russlands Präsident Putin offenbar zu neuen Gesprächen mit den USA und der Ukraine bereit. Um ein Ende des Kriegs soll es dabei demnach aber nicht gehen.",
       "pubDate": "2026-10-21T23:02:08+02:00",
       "link": "https://www.tagesschau.de/ausland/europa/russland-ukraine-krieg-putin-gespraeche-100.html",
-      "bild": ""
-    },
-    {
-      "id": "45958047118c9be57268",
-      "title": "Huthi-Attacken auf Saudi-Arabien: Angriff auf bin Salmans Vision",
-      "description": "Kronprinz Mohammed bin Salman will Saudi-Arabien öffnen, für Touristen und Investoren. Doch seine \"Vision 2030\" ist in Gefahr: Die Angriffe der Huthi zerstören das Image von Sicherheit und Stabilität. Von Tim Kukral.",
-      "pubDate": "2026-10-21T16:35:26+02:00",
-      "link": "https://www.tagesschau.de/ausland/asien/huthi-saudi-arabien-104.html",
-      "bild": ""
-    },
-    {
-      "id": "2912a68912d72fbbad19",
-      "title": "Aus Versehen in Kraft: Wie es zum Fehler bei der Tabaksteuer kam",
-      "description": "Die Tabaksteuer soll ab 2027 schrittweise steigen. Doch durch einen Fehler im Gesetzestext gelten eigentlich schon jetzt erhöhte Steuern auf Tabakwaren - allerdings nur auf dem Papier. Wie kam es dazu? Von Maximilian Ulrich.",
-      "pubDate": "2026-10-21T16:34:31+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/panne-tabaksteuer-gesetz-100.html",
-      "bild": ""
-    },
-    {
-      "id": "ae062ffb68eac3520792",
-      "title": "Programmiersprache PHP: Sicherheitslücke bedroht weltweit Webseiten",
-      "description": "Eine gravierende Sicherheitslücke bedroht Millionen Webseiten. Betroffen ist die weitverbreitete Programmiersprache PHP. In Deutschland sind Internetseiten mehrerer Städte vorsichtshalber abgeschaltet.",
-      "pubDate": "2026-10-21T19:32:26+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/technologie/it-sicherheit-php-luecke-100.html",
-      "bild": ""
-    },
-    {
-      "id": "fbe9916c75206fe11b66",
-      "title": "Nahverkehr: \"Deutschlandticket light\" kommt vorerst nicht",
-      "description": "Ein attraktives Ticket für gelegentliche Bus- und Bahnfahrer - das hatten Hamburg und Nordrhein-Westfalen für die Verkehrsministerkonferenz zur Beratung vorgeschlagen. Doch nun ist \"Deutschlandticket light\" bereits wieder vom Tisch.",
-      "pubDate": "2026-10-21T17:16:35+02:00",
-      "link": "https://www.tagesschau.de/inland/deutschlandticket-light-kommt-nicht-100.html",
-      "bild": ""
-    },
-    {
-      "id": "32f855e9b2bd656c5bb0",
-      "title": "Brasilien: Lula und Bolsonaro wollen Ausschluss des jeweils anderen",
-      "description": "Kurz vor der Stichwahl in Brasilien verschärft sich der Wahlkampf zwischen Lula und Bolsonaro. Beide Präsidentschaftsbewerber gehen nun gerichtlich gegen den jeweils anderen vor, um eine Annullierung der Kandidatur zu erreichen.",
-      "pubDate": "2026-10-21T15:40:07+02:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/lula-bolsonaro-ausschluss-stichwahl-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c5aed43055e4e5c0ca6b",
-      "title": "Das abgespaltene Russlandgeschäft von Globus wirft neue Fragen auf",
-      "description": "Die Eigner der Handelsgruppe Globus sind unter dem Namen \"Hyperglobus\" weiter in Russland aktiv. Eine Plusminus-Recherche zeigt nun: Einer dieser Märkte unterstützt eine Organisation, die Ausrüstung an die russische Armee liefert. Von M. Fuchs.",
-      "pubDate": "2026-10-21T15:31:14+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/russland-globus-handel-100.html",
       "bild": ""
     }
   ],
