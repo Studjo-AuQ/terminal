@@ -45,6 +45,8 @@
   let letzterFokus = null;
   let vorlesenAktiv = false;
   let aktuelleAussage = null;
+  let letzterGefundenerTermin = null;
+  let programmatischerKalendersprung = false;
 
   function parseIso(text) {
     const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(
@@ -418,6 +420,50 @@
         box-shadow:0 0 0 4px rgba(255,230,0,.30) !important;
       }
 
+      /* Zusätzlich zur roten Heute-Markierung bleibt der zuletzt
+         ausgewählte Kalendertag deutlich sichtbar. */
+      #ke-raster .studjo-kal-tag.kal-ausgewaehlt {
+        box-shadow:
+          inset 0 0 0 3px #b61f29,
+          0 3px 10px rgba(15,47,55,.12);
+        z-index:5;
+      }
+
+      #ke-raster .studjo-kal-tag.kal-ausgewaehlt.kal-heute {
+        box-shadow:
+          inset 0 0 0 3px #b61f29,
+          0 0 0 2px rgba(182,31,41,.18);
+      }
+
+      .studjo-naechster-footer {
+        display:flex;
+        justify-content:flex-start;
+        margin-top:16px;
+      }
+
+      .studjo-naechster-kalenderbtn {
+        border:2px solid #b61f29;
+        border-radius:999px;
+        background:#fff;
+        color:#b61f29;
+        padding:10px 16px;
+        font:inherit;
+        font-size:.9rem;
+        font-weight:900;
+        cursor:pointer;
+      }
+
+      .studjo-naechster-kalenderbtn:hover,
+      .studjo-naechster-kalenderbtn:focus-visible {
+        background:#b61f29;
+        color:#fff;
+        outline:3px solid rgba(182,31,41,.18);
+      }
+
+      .studjo-naechster-kalenderbtn[hidden] {
+        display:none !important;
+      }
+
       @media (max-width:680px) {
         .studjo-kal-nav:has(#ke-naechster-termin) {
           grid-template-columns:
@@ -505,6 +551,15 @@
           </h2>
 
           <div id="studjo-naechster-inhalt"></div>
+
+          <div class="studjo-naechster-footer">
+            <button type="button"
+                    id="studjo-naechster-kalender"
+                    class="studjo-naechster-kalenderbtn"
+                    hidden>
+              📅 Im Kalender zeigen
+            </button>
+          </div>
         </div>
       </div>
     `;
@@ -572,6 +627,10 @@
       .addEventListener('click', function () {
         vorlesenPopup(this);
       });
+
+    document
+      .getElementById('studjo-naechster-kalender')
+      .addEventListener('click', zeigeNaechstenTerminImKalender);
 
     document.addEventListener('keydown', event => {
       if (
@@ -643,9 +702,21 @@
     injizierePopup();
 
     const gefunden = findeNaechsteTermine();
+    letzterGefundenerTermin = gefunden;
+
     const inhalt = document.getElementById(
       'studjo-naechster-inhalt'
     );
+
+    const kalenderButton = document.getElementById(
+      'studjo-naechster-kalender'
+    );
+
+    if (kalenderButton) {
+      kalenderButton.hidden =
+        !gefunden.datum ||
+        !gefunden.termine.length;
+    }
 
     if (!gefunden.datum || !gefunden.termine.length) {
       inhalt.innerHTML = `
@@ -774,6 +845,155 @@
     spiele(0);
   }
 
+  function markiereAusgewaehltenTag(button) {
+    const raster = document.getElementById('ke-raster');
+    if (!raster || !button) return;
+
+    raster
+      .querySelectorAll('.studjo-kal-tag.kal-ausgewaehlt')
+      .forEach(el => el.classList.remove('kal-ausgewaehlt'));
+
+    button.classList.add('kal-ausgewaehlt');
+  }
+
+  function scrolleAufMobilZumTagesInfo() {
+    if (programmatischerKalendersprung) return;
+
+    if (!window.matchMedia('(max-width: 680px)').matches) {
+      return;
+    }
+
+    const info = document.getElementById('ke-info');
+    if (!info) return;
+
+    setTimeout(() => {
+      info.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+      });
+    }, 80);
+  }
+
+  function richteKalendertagAuswahlEin() {
+    const raster = document.getElementById('ke-raster');
+    if (!raster || raster.dataset.komfortAuswahl === '1') return;
+
+    raster.dataset.komfortAuswahl = '1';
+
+    raster.addEventListener('click', event => {
+      const tag = event.target.closest('.studjo-kal-tag');
+      if (!tag || !raster.contains(tag)) return;
+
+      markiereAusgewaehltenTag(tag);
+      scrolleAufMobilZumTagesInfo();
+    });
+
+    const observer = new MutationObserver(() => {
+      const ausgewaehlt = raster.querySelector(
+        '.studjo-kal-tag.kal-ausgewaehlt'
+      );
+
+      if (!ausgewaehlt) {
+        const heute = raster.querySelector(
+          '.studjo-kal-tag.kal-heute'
+        );
+
+        if (heute) heute.classList.add('kal-ausgewaehlt');
+      }
+    });
+
+    observer.observe(raster, {
+      childList: true
+    });
+  }
+
+  function kalenderMonatAusTitel() {
+    const text = String(
+      document.getElementById('ke-titel')?.textContent || ''
+    ).trim();
+
+    const m = /^(.+?)\s+(\d{4})$/.exec(text);
+    if (!m) return null;
+
+    const monat = MONATE.indexOf(m[1]);
+    const jahr = Number(m[2]);
+
+    if (monat < 0 || !Number.isInteger(jahr)) return null;
+
+    return {
+      monat,
+      jahr,
+      wert: jahr * 12 + monat
+    };
+  }
+
+  function findeTagButtonFuerDatum(datum) {
+    const raster = document.getElementById('ke-raster');
+    if (!raster) return null;
+
+    const tag = String(datum.getDate());
+
+    return Array.from(
+      raster.querySelectorAll('.studjo-kal-tag')
+    ).find(button =>
+      String(
+        button.querySelector('.studjo-kal-tagnummer')?.textContent || ''
+      ).trim() === tag
+    ) || null;
+  }
+
+  async function zeigeNaechstenTerminImKalender() {
+    const datum = letzterGefundenerTermin?.datum;
+
+    if (!(datum instanceof Date) || Number.isNaN(datum.getTime())) {
+      return;
+    }
+
+    stoppeVorlesen();
+    schliessePopup();
+
+    const zielWert =
+      datum.getFullYear() * 12 +
+      datum.getMonth();
+
+    let aktuell = kalenderMonatAusTitel();
+    let sicherheit = 0;
+
+    while (
+      aktuell &&
+      aktuell.wert !== zielWert &&
+      sicherheit < 240
+    ) {
+      const button =
+        aktuell.wert < zielWert
+          ? document.getElementById('ke-vor')
+          : document.getElementById('ke-zurueck');
+
+      if (!button) break;
+
+      button.click();
+      aktuell = kalenderMonatAusTitel();
+      sicherheit++;
+    }
+
+    const tagButton = findeTagButtonFuerDatum(datum);
+    if (!tagButton) return;
+
+    programmatischerKalendersprung = true;
+
+    tagButton.click();
+    markiereAusgewaehltenTag(tagButton);
+
+    setTimeout(() => {
+      tagButton.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+      });
+
+      programmatischerKalendersprung = false;
+    }, 100);
+  }
+
   function fuegeNaechsterButtonEin() {
     const zurueck = document.getElementById('ke-zurueck');
     if (!zurueck) return false;
@@ -819,6 +1039,14 @@
        den unteren Infobereich mit den Daten des heutigen Tages. */
     if (heuteButton) {
       heuteButton.click();
+
+      setTimeout(() => {
+        const heute = document.querySelector(
+          '#ke-raster .studjo-kal-tag.kal-heute'
+        );
+
+        if (heute) markiereAusgewaehltenTag(heute);
+      }, 0);
     }
   }
 
@@ -842,6 +1070,7 @@
       );
     }
 
+    richteKalendertagAuswahlEin();
     await zeigeHeutigenTagAutomatisch();
   }
 
