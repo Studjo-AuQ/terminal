@@ -1,7 +1,15 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "21.10.2026, 22:37 Uhr (UTC)",
+  "aktualisiert": "22.10.2026, 01:23 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "48ec3bf9b19de8380387",
+      "title": "Krieg gegen die Ukraine: Russische Raketen schlagen erneut in Kiew ein",
+      "description": "Mehrere Raketenangriffe haben in der Nacht erneut Kiew erschüttert. Bürgermeister Klitschko sprach von mindestens sechs Verletzten.",
+      "pubDate": "2026-10-22T02:05:26+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/raketen-kiew-ukraine-100.html",
+      "bild": ""
+    },
     {
       "id": "8d80c2087356502dc594",
       "title": "Datenschutzskandal: Facebook-Konzern Meta soll Milliardenstrafe zahlen",
@@ -112,14 +120,6 @@
       "description": "Die Eigner der Handelsgruppe Globus sind unter dem Namen \"Hyperglobus\" weiter in Russland aktiv. Eine Plusminus-Recherche zeigt nun: Einer dieser Märkte unterstützt eine Organisation, die Ausrüstung an die russische Armee liefert. Von M. Fuchs.",
       "pubDate": "2026-10-21T15:31:14+02:00",
       "link": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/russland-globus-handel-100.html",
-      "bild": ""
-    },
-    {
-      "id": "00450fdeb69dbc856872",
-      "title": "BGH-Urteil: Entscheidung zu Transparenz bei Schufa",
-      "description": "Immer wieder gibt es Kritik am Score-System der Schufa. Zu undurchsichtig, lautet der Vorwurf. Nun hat der Bundesgerichtshof entschieden: Unter bestimmten Voraussetzungen muss die Schufa über die Berechnung informieren. Von Anne Stein.",
-      "pubDate": "2026-10-21T15:18:47+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/bgh-urteil-schufa-114.html",
       "bild": ""
     }
   ],
