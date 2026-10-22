@@ -1,7 +1,31 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "22.10.2026, 17:54 Uhr (UTC)",
+  "aktualisiert": "22.10.2026, 21:25 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "3d22bd8d063ec121d1ec",
+      "title": "Klimawandel: Fast alle Korallenriffe weltweit vom Absterben bedroht",
+      "description": "Korallen bieten im Meer einer großen Artenvielfalt ein Zuhause. Doch die Riffe sind durch die Erhitzung der Meere erheblich gefährdet. Eine Studie zeigt nun das ganze Ausmaß.",
+      "pubDate": "2026-10-22T21:34:07+02:00",
+      "link": "https://www.tagesschau.de/ausland/korallenriffe-weltweit-bedroht-klimawandel-100.html",
+      "bild": ""
+    },
+    {
+      "id": "01eb0ba244d9367b3a66",
+      "title": "Korruption - Trumps empfindlichster Punkt vor den Midterms?",
+      "description": "Unter US-Wählern gewinnt vor den Zwischenwahlen ein Thema an Bedeutung - und das ist besonders heikel für Präsident Trump. Immer mehr Bürger registrieren, wie sehr das Vermögen Trumps und seines Umfelds gewachsen ist. Von Ralf Borchard.",
+      "pubDate": "2026-10-22T21:48:35+02:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/usa-midterms-korruption-100.html",
+      "bild": ""
+    },
+    {
+      "id": "d2d7dc0c345b958e33a2",
+      "title": "Energiepreise: Ministerpräsidenten drängen auf Entlastungen",
+      "description": "Die Stromsteuer runter, die Kraftstoffkosten deckeln: Die Ministerpräsidentinnen und -präsidenten fordern von der Regierung spürbare Entlastungen für die Menschen im Land. Man sei der Auffassung, dass der Bund diese Spielräume habe.",
+      "pubDate": "2026-10-22T20:12:49+02:00",
+      "link": "https://www.tagesschau.de/inland/ministerpraesidentenkonferenz-beschluesse-stromsteuer-spritpreise-100.html",
+      "bild": ""
+    },
     {
       "id": "7d7053872e6a681cc3b9",
       "title": "Datenschutzerklärung von tagesschau.de",
@@ -96,30 +120,6 @@
       "description": "Bei der Ministerpräsidentenkonferenz dürfte heute wohl auch über die Pflegereform diskutiert werden. Die SPD will Nachbesserungen - und fordert eine Überarbeitung des Gesetzentwurfs.",
       "pubDate": "2026-10-22T12:31:09+02:00",
       "link": "https://www.tagesschau.de/inland/innenpolitik/spd-pflegereform-104.html",
-      "bild": ""
-    },
-    {
-      "id": "8e1ee8576f20d3cd4dca",
-      "title": "Livekultur als Geschäftsmodell - Wem gehören unsere Festivals?",
-      "description": "Wacken, Rock am Ring, Hurricane: Hinter vielen der größten Musikfestivals stehen inzwischen internationale Konzerne. Die Konzentration verändert das Geschäft mit Livemusik und setzt unabhängige Veranstalter unter Druck. Von Samira Straub.",
-      "pubDate": "2026-10-22T12:03:36+02:00",
-      "link": "https://www.tagesschau.de/kultur/wem-gehoeren-festivals-100.html",
-      "bild": ""
-    },
-    {
-      "id": "45eb0cb8657d2f7ff32b",
-      "title": "Schnieder besorgt über mögliche AfD-Beteiligung an Ministerpräsidentenkonferenz",
-      "description": "Die Ministerpräsidentenkonferenz tagt heute - noch ist kein AfD-Regierungschef dabei. Das könnte sich ändern, sollte Siegmund in Sachsen-Anhalt gewählt werden. Der rheinland-pfälzische Ministerpräsident Schnieder warnte vor Sicherheitsrisiken.",
-      "pubDate": "2026-10-22T11:25:10+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/schnieder-afd-ministerpraesidentenkonferenz-100.html",
-      "bild": ""
-    },
-    {
-      "id": "ed017144a5498d180cc3",
-      "title": "Die Kapitalrente - Befreiungsschlag oder Risiko?",
-      "description": "Von 2028 an soll die Kapitalrente das deutsche Rentensystem ergänzen: Beiträge werden in Fonds investiert, um die Altersvorsorge zu stärken. Kann die Kapitalrente die großen Hoffnungen erfüllen? Von Frank Aischmann.",
-      "pubDate": "2026-10-22T11:24:26+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/renten-reform-kapitalrente-100.html",
       "bild": ""
     }
   ],
