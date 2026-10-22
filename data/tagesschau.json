@@ -1,7 +1,63 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "22.10.2026, 12:53 Uhr (UTC)",
+  "aktualisiert": "22.10.2026, 17:54 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "7d7053872e6a681cc3b9",
+      "title": "Datenschutzerklärung von tagesschau.de",
+      "description": "Hier erhalten Sie Informationen zum Datenschutz für die Webseiten bei tagesschau.de",
+      "pubDate": "2026-10-22T18:54:35+02:00",
+      "link": "https://www.tagesschau.de/datenschutz",
+      "bild": ""
+    },
+    {
+      "id": "cac13e89a2b0e6c383f1",
+      "title": "Marktbericht: DAX fällt wieder zurück",
+      "description": "Der DAX hat bei volatilem Handel einen Teil seiner Gewinne vom Vortag wieder abgegeben. Er folgte einer schwachen Wall Street. Es waren mal wieder Nachrichten aus dem US-Tech-Sektor, die die Kurse bewegten.",
+      "pubDate": "2026-10-22T18:36:57+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-tesla-meta-sap-100.html",
+      "bild": ""
+    },
+    {
+      "id": "8d6a88c278ba70d3b8f3",
+      "title": "Bevölkerungsschutz: Wie Schweden für den Ernstfall vorsorgt",
+      "description": "Kriege, Extremwetter, Terror: Schweden bereitet seine Bevölkerung auf den möglichen Ernstfall vor - etwa mit einer Broschüre und Übungen. Denn klar ist auch: Im Fall der Fälle müssen die Menschen erstmal alleine klarkommen. Von Jana Sinram.",
+      "pubDate": "2026-10-22T18:35:29+02:00",
+      "link": "https://www.tagesschau.de/ausland/schweden-bevoelkerungsschutz-100.html",
+      "bild": ""
+    },
+    {
+      "id": "e5979d8a49a8fbd1d69b",
+      "title": "PHP-Sicherheitslücke: Digitalminister sieht keine Hinweise auf Cyberangriffe",
+      "description": "Millionen Cyberattacken binnen weniger Stunden: Die PHP-Sicherheitslücke hat weltweit Besorgnis ausgelöst. Viele Internetseiten sind noch immer nicht erreichbar - und Kriminelle versuchen weiter, die Lücke auszunutzen.",
+      "pubDate": "2026-10-22T18:27:55+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/cybersicherheit-internet-php-100.html",
+      "bild": ""
+    },
+    {
+      "id": "e92bbc7a4bd95f714eb2",
+      "title": "Neues Plattenlabel von Igor Levit: \"Mein Leben ist No Silence\"",
+      "description": "Igor Levit ist als Pianist international erfolgreich - und mischt sich immer wieder politisch ein. Mit seinem eigenen Label will er jetzt auch anderen Künstlern eine Plattform geben. Der Name hat eine persönliche Geschichte. Von Max Kell.",
+      "pubDate": "2026-10-22T17:23:05+02:00",
+      "link": "https://www.tagesschau.de/kultur/musik-igor-levit-neues-plattenlabel-100.html",
+      "bild": ""
+    },
+    {
+      "id": "eba5c8b9d15a466e3389",
+      "title": "Steuerschätzung 2027: Mehr Geld, aber \"keine neuen Spielräume\"",
+      "description": "Trotz aktueller Krisen kann der Bund im kommenden Jahr mit mehr Steuereinnahmen rechnen als zunächst erwartet. Dennoch rechnet Finanzminister Klingbeil nicht mit mehr Spielräumen für den Haushalt.",
+      "pubDate": "2026-10-22T17:54:20+02:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/steuerschaetzung-bund-klingbeil-100.html",
+      "bild": ""
+    },
+    {
+      "id": "34dc01a8248b229c898f",
+      "title": "Ausschluss einiger Länder vom Finanzausgleich - ginge das?",
+      "description": "Markus Söder will Bundesländer mit \"extremistischer\" Regierungsbeteiligung vom Länderfinanzausgleich ausschließen - und schaut dabei nach Berlin und Sachsen-Anhalt. Aber ginge das überhaupt? Von Frank Aischmann.",
+      "pubDate": "2026-10-22T15:27:40+02:00",
+      "link": "https://www.tagesschau.de/inland/gesellschaft/extremismusklausel-laenderfinanzausgleich-soeder-100.html",
+      "bild": ""
+    },
     {
       "id": "ff1832e6940ff94d6b75",
       "title": "Marktbericht: SAP-Umbau trägt Früchte",
@@ -64,62 +120,6 @@
       "description": "Von 2028 an soll die Kapitalrente das deutsche Rentensystem ergänzen: Beiträge werden in Fonds investiert, um die Altersvorsorge zu stärken. Kann die Kapitalrente die großen Hoffnungen erfüllen? Von Frank Aischmann.",
       "pubDate": "2026-10-22T11:24:26+02:00",
       "link": "https://www.tagesschau.de/inland/innenpolitik/renten-reform-kapitalrente-100.html",
-      "bild": ""
-    },
-    {
-      "id": "2e112be546c0a296b453",
-      "title": "Die Gelbe Wiesenraute ist Blume des Jahres 2027",
-      "description": "Seit 1980 kürt die Loki-Schmidt-Stiftung die Blume des Jahres. Für 2027 hat sie die Gelbe Wiesenraute auserkoren. Mit der Wahl der bis zu 1,50 Meter hohen Pflanze verbindet die Stiftung einen Appell.",
-      "pubDate": "2026-10-22T11:07:58+02:00",
-      "link": "https://www.tagesschau.de/wissen/klima/blume-des-jahres-100.html",
-      "bild": ""
-    },
-    {
-      "id": "702f36fa071ef15eee98",
-      "title": "Kanada gehen die Ahornsirup-Reserven aus",
-      "description": "Kanada hat eine strategische Ahornsirup-Reserve - und die geht zur Neige. Bis Ende Februar kommenden Jahres dürfte sie komplett leer sein. Im vergangenen Jahr hatte es Hamsterkäufe von Importeuren gegeben, vor allem aus den USA.",
-      "pubDate": "2026-10-22T10:52:53+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/kanada-ahornsirup-exporte-usa-deutschland-100.html",
-      "bild": ""
-    },
-    {
-      "id": "cac13e89a2b0e6c383f1",
-      "title": "Marktbericht: Anleger zweifeln an KI-Rally",
-      "description": "Trotz starker SAP-Zahlen gibt der DAX im frühen Handel deutlich nach. Die Bilanzen von Meta und Tesla erfüllen die hohen Erwartungen der Anleger nicht, die Schwäche bei den Technologie-Werten setzt sich fort.",
-      "pubDate": "2026-10-22T10:39:51+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-tesla-meta-sap-100.html",
-      "bild": ""
-    },
-    {
-      "id": "97c3b14b967563d3fdf6",
-      "title": "Knesset-Wahl: Was die Kriegskosten für Israels Wähler bedeuten",
-      "description": "Sicherheit steht in Israels Wahlkampf im Vordergrund. Doch drei Jahre Krieg haben die Wirtschaft schwer getroffen: Für viele Menschen geht es vor der Wahl am 27. Oktober auch um die Frage, wie es wirtschaftlich weitergehen soll. Von B. Meier.",
-      "pubDate": "2026-10-22T09:56:08+02:00",
-      "link": "https://www.tagesschau.de/ausland/asien/israel-wirtschaft-wahl-100.html",
-      "bild": ""
-    },
-    {
-      "id": "26d320283843831f1e7a",
-      "title": "Tote nach Angriff auf Flughafen in Saudi-Arabien",
-      "description": "Immer wieder greifen die Huthi aus dem Jemen zivile Ziele in Saudi-Arabien an. Nun werden Verletzte und zwei Todesopfer nach einer Attacke auf den Flughafen in Dammam gemeldet. Die USA kündigten an, diplomatisches Personal abzuziehen.",
-      "pubDate": "2026-10-22T09:50:35+02:00",
-      "link": "https://www.tagesschau.de/ausland/asien/flughafen-saudi-arabien-100.html",
-      "bild": ""
-    },
-    {
-      "id": "2d1ad33f82b1d937b054",
-      "title": "Nach Treffen mit Witkoff - Russland greift Kiew erneut mit Raketen an",
-      "description": "Die gegenseitigen Angriffe gehen ungeachtet der US-Vermittlungsbemühungen weiter: Russland griff in der Nacht erneut die ukrainische Hauptstadt Kiew an, aus Moskau wurden Drohnenangriffe gemeldet.",
-      "pubDate": "2026-10-22T10:56:23+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/ukraine-putin-witkoff-100.html",
-      "bild": ""
-    },
-    {
-      "id": "04e93af8352ab47f3deb",
-      "title": "Warum Meta eine Rekordstrafe zahlen soll",
-      "description": "Der Skandal um Cambridge Analytica erschütterte 2018 das Vertrauen in Facebook. Daten wurden abgegriffen, um Wählerprofile zu erstellen. Nun wurde der Mutterkonzern Meta verurteilt - wegen irreführender Aussagen. Von S. Jackisch.",
-      "pubDate": "2026-10-22T08:36:44+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/meta-strafe-cambridge-analytica-100.html",
       "bild": ""
     }
   ],
