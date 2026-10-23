@@ -1,7 +1,23 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "23.10.2026, 19:29 Uhr (UTC)",
+  "aktualisiert": "23.10.2026, 22:35 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "96c49881fea5e154a4fc",
+      "title": "Frankreich rüstet sich für nächsten Protesttag",
+      "description": "Frankreich fürchtet eine weitere Eskalation der aufgeheizten Stimmung. Diesmal will der Staat besser vorbereitet sein. Inmitten dieser Lage erschüttert ein mutmaßlich rassistisch motivierter Anschlag das Land. Von Cai Rienäcker.",
+      "pubDate": "2026-10-23T22:02:01+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/frankreich-vorbereitung-ausschreittungen-paris-100.html",
+      "bild": ""
+    },
+    {
+      "id": "68f54f3acda92343ca0c",
+      "title": "CSU-Chef Söder spricht von \"Herausforderung für die Demokratie\"",
+      "description": "CSU-Chef Söder sieht die Demokratie vor großen Herausforderungen. Er forderte zudem finanzielle Entlastungen für die Bevölkerung. Es müsse etwas passieren, betonte der bayrische Ministerpräsident im Interview mit den tagesthemen.",
+      "pubDate": "2026-10-23T21:45:20+02:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/csu-soeder-138.html",
+      "bild": ""
+    },
     {
       "id": "55004a11e80e706b92be",
       "title": "CSU-Parteitag: Söder fordert Kampf gegen AfD und Linke",
@@ -104,22 +120,6 @@
       "description": "Nach den schweren Ausschreitungen in Mailand reagiert Italiens Regierung mit einem neuen Sicherheitsdekret. Die sozialen Ursachen bleiben. Ebenso die Frage: Wer waren die meist sehr jungen Randalierer? Von V. Schälter.",
       "pubDate": "2026-10-23T14:55:47+02:00",
       "link": "https://www.tagesschau.de/ausland/europa/italien-proteste-124.html",
-      "bild": ""
-    },
-    {
-      "id": "9748e67fbd0fcb101216",
-      "title": "Ein Toter und Verletze: Innenminister spricht von Terror-Tat bei Paris",
-      "description": "Aus einem Auto heraus hat ein Mann in mehreren Vororten von Paris Schüsse abgefeuert. Ein Mensch wurde getötet, es gibt mehrere Schwerverletzte. Frankreichs Innenminister Nuñez spricht von einer \"terroristischen Tat\".",
-      "pubDate": "2026-10-23T17:15:56+02:00",
-      "link": "https://www.tagesschau.de/ausland/frankreich-schuesse-terrorverdacht-100.html",
-      "bild": ""
-    },
-    {
-      "id": "2de0f89805f7b3fb5e2c",
-      "title": "Deutsche Baubranche verzeichnet Rekordanstieg bei Großaufträgen",
-      "description": "Es ist ein Lichtblick in angespannten Zeiten: Die deutsche Baubranche meldet das größte Auftragsplus seit Beginn der Aufzeichnung. Grund sind aber vor allem Großaufträge. Trotzdem bleibt der Mietmarkt angespannt.",
-      "pubDate": "2026-10-23T13:53:21+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/konjunktur/baugewerbe-grossauftraege-100.html",
       "bild": ""
     }
   ],
