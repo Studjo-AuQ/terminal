@@ -1,7 +1,79 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "23.10.2026, 10:25 Uhr (UTC)",
+  "aktualisiert": "23.10.2026, 15:24 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "f1c4d1aac22e9f457361",
+      "title": "Nicht nur wegen Ryanair-Abzug: Der BER bleibt ein Sorgenflughafen",
+      "description": "Ryanair schließt seine Basis am Berliner Flughafen. Der BER sei zu teuer, zu kompliziert, zu unflexibel, sagt die Airline schon seit Jahren. Und sie sagt auch: Fliegen in Deutschland sei grundsätzlich zu teuer. Eine Analyse von A. Kartschall",
+      "pubDate": "2026-10-23T17:09:02+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/ryanair-ber-100.html",
+      "bild": ""
+    },
+    {
+      "id": "4c17db07ee1e47893a43",
+      "title": "Russland und Ukraine tauschen erneut Gefangene aus",
+      "description": "In einem Gefangenenaustausch haben Russland und die Ukraine jeweils 270 Personen übergeben. Die Aktion ist Teil einer vor Monaten geplanten Vereinbarung. Unter den Freigelassenen sind auch ukrainische Soldaten, die für tot gehalten wurden.",
+      "pubDate": "2026-10-23T15:58:44+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/ukraine-gefangenenaustausch-150.html",
+      "bild": ""
+    },
+    {
+      "id": "5aa29ac22c267b95fded",
+      "title": "Marktbericht: Nasdaq kommt unter die Räder",
+      "description": "Der KI-Boom beherrscht weiter die Wall Street. Die erste Euphorie ist aber vorbei - die Anleger wollen vielmehr endlich Ergebnisse der horrenden KI-Investitionen sehen. Meta ist ein warnendes Beispiel.",
+      "pubDate": "2026-10-23T15:16:51+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/mb-mittag-108.html",
+      "bild": ""
+    },
+    {
+      "id": "eaca8976276e2cdb753c",
+      "title": "Erneut mutmaßlicher Drohnenangriff auf Schiff vor Rumäniens Küste",
+      "description": "Ein weiteres Handelsschiff soll Medienberichten zufolge nahe der rumänischen Küste von einer Drohne angegriffen worden sein. Es gebe mindestens ein Todesopfer. Rumäniens Präsident sieht die Verantwortung erneut bei Russland.",
+      "pubDate": "2026-10-23T15:01:59+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/rumaenien-drohnenangriff-handelsschiff-100.html",
+      "bild": ""
+    },
+    {
+      "id": "2fc7e0663150522e7e04",
+      "title": "Nach Krawallen führt Italien auch eine Sicherheitsdebatte",
+      "description": "Nach den schweren Ausschreitungen in Mailand reagiert Italiens Regierung mit einem neuen Sicherheitsdekret. Die sozialen Ursachen bleiben. Ebenso die Frage: Wer waren die meist sehr jungen Randalierer? Von V. Schälter.",
+      "pubDate": "2026-10-23T14:55:47+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/italien-proteste-124.html",
+      "bild": ""
+    },
+    {
+      "id": "9748e67fbd0fcb101216",
+      "title": "Ein Toter und Verletze: Innenminister spricht von Terror-Tat bei Paris",
+      "description": "Aus einem Auto heraus hat ein Mann in mehreren Vororten von Paris Schüsse abgefeuert. Ein Mensch wurde getötet, es gibt mehrere Schwerverletzte. Frankreichs Innenminister Nuñez spricht von einer \"terroristischen Tat\".",
+      "pubDate": "2026-10-23T17:15:56+02:00",
+      "link": "https://www.tagesschau.de/ausland/frankreich-schuesse-terrorverdacht-100.html",
+      "bild": ""
+    },
+    {
+      "id": "2de0f89805f7b3fb5e2c",
+      "title": "Deutsche Baubranche verzeichnet Rekordanstieg bei Großaufträgen",
+      "description": "Es ist ein Lichtblick in angespannten Zeiten: Die deutsche Baubranche meldet das größte Auftragsplus seit Beginn der Aufzeichnung. Grund sind aber vor allem Großaufträge. Trotzdem bleibt der Mietmarkt angespannt.",
+      "pubDate": "2026-10-23T13:53:21+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/konjunktur/baugewerbe-grossauftraege-100.html",
+      "bild": ""
+    },
+    {
+      "id": "573519fcd08626e01eb3",
+      "title": "CSU-Chef und Ministerpräsident: Der doppelte Söder",
+      "description": "Mit einer Rede von CSU-Chef Söder beginnt heute der Parteitag der Christsozialen. Söder zeigt sich als ambivalenter Politiker: Als Parteichef prägt er die Koalition, als Ministerpräsident kritisiert er sie zugleich. Von Sabine Henkel.",
+      "pubDate": "2026-10-23T13:28:38+02:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/csu-union-soeder-bundespolitik-100.html",
+      "bild": ""
+    },
+    {
+      "id": "5d6f132a8d11867da2f8",
+      "title": "Fachgesellschaften veröffentlichen Leitlinien für Suizidassistenz",
+      "description": "Wie sollen Ärzte oder Pflegekräfte reagieren, wenn Menschen in existenzieller Not sagen, dass sie sterben wollen? Ein Gesetz, das dafür Regeln vorgibt, fehlt. Eine neue Leitlinie setzt auf eingehende Beratung. Von Daniela Remus.",
+      "pubDate": "2026-10-23T12:48:25+02:00",
+      "link": "https://www.tagesschau.de/inland/gesellschaft/leitlinien-suizidassistenz-100.html",
+      "bild": ""
+    },
     {
       "id": "e016d7531c13e14ce6a7",
       "title": "Finnland genehmigt unterirdisches Atommüll-Endlager",
@@ -48,78 +120,6 @@
       "description": "Gleich zwei Sturmtiefs ziehen auf Deutschland zu und bringen am Wochenende in weiten Teilen des Landes Sturmböen und viel Regen mit sich. Der Deutsche Wetterdienst hat für viele Regionen Warnungen herausgegeben.",
       "pubDate": "2026-10-23T10:33:26+02:00",
       "link": "https://www.tagesschau.de/inland/wetter-herbst-sturm-100.html",
-      "bild": ""
-    },
-    {
-      "id": "8864cecf77f548c48f0c",
-      "title": "Nach Angriff in Hebron: Israel bereitet Abriegelung des Westjordanlands vor",
-      "description": "Die israelische Regierung hat das Militär angewiesen, sich auf eine vollständige Abriegelung des Westjordanlands vorzubereiten. Zuvor waren zwei Männer getötet worden, die einen Anschlag geplant haben sollen.",
-      "pubDate": "2026-10-23T11:47:53+02:00",
-      "link": "https://www.tagesschau.de/ausland/asien/westjordanland-abriegelung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f7e5ac83e61ae85d963c",
-      "title": "Ringen um Sparkurs bei Autobauer Volkswagen geht weiter",
-      "description": "Stellenabbau, Sparrunden und drohende Werkschließungen: Die Stimmung bei Volkswagen ist aufgeheizt, die Gewerkschaft IG Metall droht mit Streiks ab Januar. Heute spricht die Konzernspitze mit der IG Metall. Worum es bei dem Krisentreffen geht.",
-      "pubDate": "2026-10-23T11:12:00+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/vw-ig-metall-ueberpruefungsgespraech-100.html",
-      "bild": ""
-    },
-    {
-      "id": "bbc97633efc2ecbad150",
-      "title": "Weihnachtsbäume könnten teurer werden",
-      "description": "Weihnachten ohne festlich geschmückten Baum ist für viele undenkbar. Und in wenigen Wochen beginnt bereits die Ernte. Eines zeichnet sich aber bereits ab: Wer einen natürlichen Weihnachtsbaum will, muss tiefer in die Tasche greifen.",
-      "pubDate": "2026-10-23T10:04:17+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/weihnachtsbaum-saison-preise-anstieg-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c4af480d0ef70de95cd3",
-      "title": "Illegale Spenden aus der Schweiz - Hat Weidel nicht die ganze Wahrheit gesagt?",
-      "description": "Das AfD-Leak könnte ein neues Licht auf einen AfD-Spendenskandal werfen, der abgeschlossen schien. Alice Weidel war möglicherweise früher und stärker in illegale Parteispenden eingebunden, als von ihr zugegeben. Das zeigen Recherchen von NDR und WDR.",
-      "pubDate": "2026-10-23T10:03:32+02:00",
-      "link": "https://www.tagesschau.de/investigativ/ndr-wdr/afd-leak-weidel-100.html",
-      "bild": ""
-    },
-    {
-      "id": "0d6ae0b689917965be05",
-      "title": "Etwa 50.000 Hitzetote im Sommer 2026 in Europa",
-      "description": "Seit Beginn der Aufzeichnungen gab es noch nie so viele Hitzetote in Europa wie im Sommer 2026. Das hat eine britische Analyse ergeben. Die Folgen der von Menschen gemachten Klimaerwärmung werden den Forschern zufolge immer deutlicher.",
-      "pubDate": "2026-10-23T09:14:56+02:00",
-      "link": "https://www.tagesschau.de/wissen/klima/hitzetote-sommer-studie-100.html",
-      "bild": ""
-    },
-    {
-      "id": "75e79544bd247a4a49c8",
-      "title": "Venezuela: Tausende fordern Rückkehr von Machado",
-      "description": "In Venezuela haben Anhänger der Oppositionspolitikerin und Friedensnobelpreisträgerin Machado deren Rückkehr gefordert. Es war die größte Kundgebung seit der Absetzung von Präsident Maduro durch die USA.",
-      "pubDate": "2026-10-23T09:01:24+02:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/venezuela-demonstrationen-machado-100.html",
-      "bild": ""
-    },
-    {
-      "id": "597684f45368bab0b096",
-      "title": "Wadephul reist in die Türkei: Ein halber Tag für die großen Krisen",
-      "description": "Die Straße von Hormus, die Angriffe der Huthi, der Ukraine-Krieg - auf der Suche nach Wegen aus diesen Konflikten trifft sich Außenminister Wadephul in Istanbul in ungewöhnlicher Runde. Entstehen dort neue Allianzen? Von K. Willinger.",
-      "pubDate": "2026-10-23T08:39:15+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/tuerkei-besuch-wadephul-100.html",
-      "bild": ""
-    },
-    {
-      "id": "5963194182358eaad7e1",
-      "title": "\"Top Gun\"-Darsteller Skerritt stirbt mit 93",
-      "description": "Er war Commander Mike \"Viper\" Metcalf an der Seite von Tom Cruise in \"Top Gun\". In \"Alien\" spielte er den Raumschiffkapitän Dallas. Nun ist der Schauspieler Tom Skerritt im Alter von 93 Jahren gestorben.",
-      "pubDate": "2026-10-23T08:05:34+02:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/tom-skerritt-gestorben-100.html",
-      "bild": ""
-    },
-    {
-      "id": "32b0dce1844051d439e4",
-      "title": "11KM-Podcast: Studierende fordern Serbiens Präsident Vucic heraus",
-      "description": "Die serbische Präsident Vucic wird bei den Parlamentswahlen von einer Studierendenbewegung herausgefordert. 11KM fragt: Welche Chancen hat die Revolution der Jugend?",
-      "pubDate": "2026-10-23T07:41:49+02:00",
-      "link": "https://www.tagesschau.de/podcast-11km-parlamentswahl-serbien-100.html",
       "bild": ""
     }
   ],
