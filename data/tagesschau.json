@@ -1,7 +1,71 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "23.10.2026, 15:24 Uhr (UTC)",
+  "aktualisiert": "23.10.2026, 19:29 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "55004a11e80e706b92be",
+      "title": "CSU-Parteitag: Söder fordert Kampf gegen AfD und Linke",
+      "description": "Zum Auftakt des CSU-Parteitags knöpft sich Parteichef Söder die Linke und die AfD vor. Und er weist auf den Ernst der Lage für die Union hin. Den meisten Applaus bekam er aber für etwas anderes. Von Anita Fünffinger.",
+      "pubDate": "2026-10-23T20:10:26+02:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/csu-soeder-parteitag-100.html",
+      "bild": ""
+    },
+    {
+      "id": "a4d5ada40d034729427f",
+      "title": "Bürgergeld und Einsparungen: Geschichte eines Irrtums",
+      "description": "2024 hatte Kanzler Merz im Wahlkampf versprochen, das \"System Bürgergeld vom Kopf auf die Füße\" zu stellen. Zweistellige Milliardenbeträge wollte er so einsparen. Gebracht aber hat die neue Grundsicherung bisher wenig. Von Isabell Karras.",
+      "pubDate": "2026-10-23T19:50:13+02:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/buergergeld-einsparungen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "19ac70cdf214ad65fe5b",
+      "title": "Wadephul zieht positive Bilanz nach Außenministertreffen in Istanbul",
+      "description": "Beim ersten Treffen dieser Art hat Außenminister Wadephul mit sieben anderen Chefdiplomaten aus Europa und Nahost in Istanbul über Kriege und Konflikte beraten. Seine Bilanz: positiv. Künftig soll es regelmäßige Treffen geben. Von C. Buttkereit.",
+      "pubDate": "2026-10-23T19:43:10+02:00",
+      "link": "https://www.tagesschau.de/ausland/istanbul-wadephul-100.html",
+      "bild": ""
+    },
+    {
+      "id": "877f7178b039c04631b9",
+      "title": "Anti-Terror-Staatsanwaltschaft ermittelt nach tödlichen Schüssen bei Paris",
+      "description": "Ein Toter, vier Verletzte - darunter ein zwölfjähriges Kind: Nach den Schüssen eines Autofahrers auf Passanten bei Paris ermittelt die Anti-Terror-Staatsanwaltschaft. Sie prüft auch, ob es einen rassistischen Hintergrund gibt. Von C. Dylla.",
+      "pubDate": "2026-10-23T19:05:12+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/frankreich-paris-schuesse-100.html",
+      "bild": ""
+    },
+    {
+      "id": "320d0e21df97d4384de1",
+      "title": "Marktbericht: DAX-Anleger meiden das Risiko",
+      "description": "Hohe Ölpreise, anhaltenden Sorgen um Frankreichs Staatsfinanzen und immer wieder neue Bedenken bei der Künstlichen Intelligenz. Zu viele Probleme gleichzeitig für die Anleger, der DAX gab nach.",
+      "pubDate": "2026-10-23T18:38:57+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-ki-boom-100.html",
+      "bild": ""
+    },
+    {
+      "id": "a0b914d39a9554b4f519",
+      "title": "Israel will Westjordanland nach Angriff in Hebron abriegeln",
+      "description": "Nach einem Angriff nahe Hebron im Westjordanland hat Israels Militär den Tod von zwei Soldaten bestätigt. Die Zufahrten zur Stadt sind gesperrt - bald soll die Armee das ganze Westjordanland abriegeln. Von B. Meier.",
+      "pubDate": "2026-10-23T18:31:33+02:00",
+      "link": "https://www.tagesschau.de/ausland/israel-westjordanland-abriegelung-100.html",
+      "bild": ""
+    },
+    {
+      "id": "3d5a408f076814e40d27",
+      "title": "Vermittelt durch Melania Trump - Waffenruhe für besetzte ukrainische Stadt",
+      "description": "Die humanitäre Lage in der von Russland besetzten ukrainischen Stadt Oleschky ist dramatisch. Nun gibt es Hoffnung für eine Evakuierung. Das Weiße Haus gab eine lokale Waffenruhe bekannt - vermittelt durch First Lady Melania Trump.",
+      "pubDate": "2026-10-23T19:26:28+02:00",
+      "link": "https://www.tagesschau.de/ausland/melania-trump-waffenruhe-oleschky-100.html",
+      "bild": ""
+    },
+    {
+      "id": "47863ef2035cababf86e",
+      "title": "Griechenland verbietet Social Media für unter 15-Jährige",
+      "description": "Auch Griechenland will Kinder und Jugendliche vor Gefahren Sozialer Medien schützen. Das Parlament hat ein Verbot für unter 15-Jährige beschlossen. Künftig sollen Plattformen das Alter ihrer Nutzer überprüfen.",
+      "pubDate": "2026-10-23T17:44:49+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/griechenland-social-media-100.html",
+      "bild": ""
+    },
     {
       "id": "f1c4d1aac22e9f457361",
       "title": "Nicht nur wegen Ryanair-Abzug: Der BER bleibt ein Sorgenflughafen",
@@ -56,70 +120,6 @@
       "description": "Es ist ein Lichtblick in angespannten Zeiten: Die deutsche Baubranche meldet das größte Auftragsplus seit Beginn der Aufzeichnung. Grund sind aber vor allem Großaufträge. Trotzdem bleibt der Mietmarkt angespannt.",
       "pubDate": "2026-10-23T13:53:21+02:00",
       "link": "https://www.tagesschau.de/wirtschaft/konjunktur/baugewerbe-grossauftraege-100.html",
-      "bild": ""
-    },
-    {
-      "id": "573519fcd08626e01eb3",
-      "title": "CSU-Chef und Ministerpräsident: Der doppelte Söder",
-      "description": "Mit einer Rede von CSU-Chef Söder beginnt heute der Parteitag der Christsozialen. Söder zeigt sich als ambivalenter Politiker: Als Parteichef prägt er die Koalition, als Ministerpräsident kritisiert er sie zugleich. Von Sabine Henkel.",
-      "pubDate": "2026-10-23T13:28:38+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/csu-union-soeder-bundespolitik-100.html",
-      "bild": ""
-    },
-    {
-      "id": "5d6f132a8d11867da2f8",
-      "title": "Fachgesellschaften veröffentlichen Leitlinien für Suizidassistenz",
-      "description": "Wie sollen Ärzte oder Pflegekräfte reagieren, wenn Menschen in existenzieller Not sagen, dass sie sterben wollen? Ein Gesetz, das dafür Regeln vorgibt, fehlt. Eine neue Leitlinie setzt auf eingehende Beratung. Von Daniela Remus.",
-      "pubDate": "2026-10-23T12:48:25+02:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/leitlinien-suizidassistenz-100.html",
-      "bild": ""
-    },
-    {
-      "id": "e016d7531c13e14ce6a7",
-      "title": "Finnland genehmigt unterirdisches Atommüll-Endlager",
-      "description": "Finnland setzt zur Stromgewinnung auch auf Kernenergie - und hat nun grünes Licht für den Betrieb eines unterirdischen Endlagers für Tausende Tonnen hochradioaktiven Atommüll gegeben. Noch fehlt allerdings eine letzte Genehmigung.",
-      "pubDate": "2026-10-23T12:04:33+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/finnland-endlager-atommuell-100.html",
-      "bild": ""
-    },
-    {
-      "id": "47f7564717e0d2f5776b",
-      "title": "Vor Knesset-Wahl: Junge Israelis zwischen Trauma und Zukunftssorge",
-      "description": "Der Terrorangriff der Hamas vor gut drei Jahren hat auch bei den jungen Wählern Israels tiefe Spuren hinterlassen. Sicherheit, Identität und die Sorge vor dem nächsten Krieg beeinflussen ihre Wahlentscheidung. Von Jan-Christoph Kitzler.",
-      "pubDate": "2026-10-23T11:33:59+02:00",
-      "link": "https://www.tagesschau.de/ausland/asien/israel-parlamentswahlen-erstwaehler-100.html",
-      "bild": ""
-    },
-    {
-      "id": "94d6f3dc6dc70faca0c2",
-      "title": "Frankreichs Schuldenkrise: Droht eine neue Eurokrise?",
-      "description": "Frankreichs Anleiherenditen sind auf den höchsten Stand seit 2002 gestiegen. Wie groß ist die Ansteckungsgefahr für andere hochverschuldete Euroländer - und was kann die EZB dagegen tun? Von Angela Göpfert.",
-      "pubDate": "2026-10-23T11:13:15+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/frankreich-anleiherenditen-schuldenkrise-eurokrise-ezb-100.html",
-      "bild": ""
-    },
-    {
-      "id": "320d0e21df97d4384de1",
-      "title": "Marktbericht: Tech-Sorgen und hohe Ölpreise belasten den DAX",
-      "description": "Sorgen um den Technologiesektor und die Angst vor einer erneuten Eskalation im Nahen Osten drücken auf die Stimmung der Anleger. Der Ölpreis legt kräftig zu, damit steigen auch die Inflationsgefahren.",
-      "pubDate": "2026-10-23T10:45:11+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-ki-boom-100.html",
-      "bild": ""
-    },
-    {
-      "id": "182746bb6cfa8aa20a16",
-      "title": "Pferdekutschen im New Yorker Central Park sollen abgeschafft werden",
-      "description": "In New York geht eine Ära zu Ende. Die berühmten Pferdekutschen im Central Park werden schrittweise bis Juni 2028 abgeschafft. Der Stadtrat stimmte einem Gesetzesentwurf von Bürgermeister Mamdani zu. Von M. Ganslmeier.",
-      "pubDate": "2026-10-23T10:36:32+02:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/new-york-pferdekutschen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "32c6fd1508ad3e792acd",
-      "title": "Erste schwerere Herbststürme in Deutschland erwartet",
-      "description": "Gleich zwei Sturmtiefs ziehen auf Deutschland zu und bringen am Wochenende in weiten Teilen des Landes Sturmböen und viel Regen mit sich. Der Deutsche Wetterdienst hat für viele Regionen Warnungen herausgegeben.",
-      "pubDate": "2026-10-23T10:33:26+02:00",
-      "link": "https://www.tagesschau.de/inland/wetter-herbst-sturm-100.html",
       "bild": ""
     }
   ],
