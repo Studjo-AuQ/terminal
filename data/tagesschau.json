@@ -1,7 +1,47 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "23.10.2026, 00:06 Uhr (UTC)",
+  "aktualisiert": "23.10.2026, 05:14 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "6a2a15a828826c80ddf7",
+      "title": "\"Operation Chargeback\": Merkur-Tochterfirma wickelte Zahlungen ab",
+      "description": "Im Rahmen der \"Operation Chargeback\" ermitteln Behörden gegen internationale Geldwäsche-Netzwerke. Ex-Wirecard-Manager sind inzwischen angeklagt. Nach BR-Recherchen führen Spuren auch zu einer Tochterfirma des Glücksspielkonzerns Merkur.",
+      "pubDate": "2026-10-23T07:04:03+02:00",
+      "link": "https://www.tagesschau.de/investigativ/br-recherche/gluecksspiel-geldwaesche-wirecard-100.html",
+      "bild": ""
+    },
+    {
+      "id": "908bf67e942db97265aa",
+      "title": "Trotz Gesetzesverschärfung - Mehr Extremisten mit Waffenerlaubnis",
+      "description": "Eigentlich sollen Rechts- und Linksextremisten nach dem Willen der Bundesregierung konsequent entwaffnet werden. Eine NDR-Recherche zeigt, dass dieses Vorhaben nicht wie gewünscht vorankommt.",
+      "pubDate": "2026-10-23T06:11:14+02:00",
+      "link": "https://www.tagesschau.de/investigativ/ndr/waffen-extremisten-102.html",
+      "bild": ""
+    },
+    {
+      "id": "80c4ac217c6184b15d75",
+      "title": "Trump soll Musk gebeten haben, die Starlink-Drosselung aufzuheben",
+      "description": "Das ukrainische Militär beklagt eine Drosselung von Elon Musks Satelliteninternet. Laut einem Medienbericht soll Trump nun die Aufhebung befohlen haben. Der US-Präsident bezieht selbst Stellung dazu - doch viele Fragen bleiben offen.",
+      "pubDate": "2026-10-23T04:28:21+02:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/musk-trump-starlink-ukraine-100.html",
+      "bild": ""
+    },
+    {
+      "id": "d74804fa8839d36d8146",
+      "title": "Studentenbewegung: Tausende auf Straße in Serbien vor Neuwahl",
+      "description": "Drei Tage vor der Parlamentswahl am Sonntag ist in der serbischen Hauptstadt Belgrad eine riesige Menschenmenge zur Abschlusskundgebung der oppositionellen \"Studentenliste\" gekommen.",
+      "pubDate": "2026-10-23T04:01:08+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/serbien-proteste-158.html",
+      "bild": ""
+    },
+    {
+      "id": "688ec15fb99158bdfec2",
+      "title": "Tote und Verletzte: Erdbeben erschüttert Norden Tibets",
+      "description": "Die von China kontrollierte autonome Region Tibet wurde von einem Erdbeben getroffen. Dabei sind Häuser zerstört worden - es gibt bisher 16 Tote und Dutzende Verletzte.",
+      "pubDate": "2026-10-23T05:01:38+02:00",
+      "link": "https://www.tagesschau.de/ausland/asien/tibet-erdbeben-104.html",
+      "bild": ""
+    },
     {
       "id": "3d22bd8d063ec121d1ec",
       "title": "Klimawandel: Fast alle Korallenriffe weltweit vom Absterben bedroht",
@@ -80,46 +120,6 @@
       "description": "Markus Söder will Bundesländer mit \"extremistischer\" Regierungsbeteiligung vom Länderfinanzausgleich ausschließen - und schaut dabei nach Berlin und Sachsen-Anhalt. Aber ginge das überhaupt? Von Frank Aischmann.",
       "pubDate": "2026-10-22T15:27:40+02:00",
       "link": "https://www.tagesschau.de/inland/gesellschaft/extremismusklausel-laenderfinanzausgleich-soeder-100.html",
-      "bild": ""
-    },
-    {
-      "id": "ff1832e6940ff94d6b75",
-      "title": "Marktbericht: SAP-Umbau trägt Früchte",
-      "description": "Europas größter Softwarekonzern setzt beim Umbau ganz auf KI - mit Erfolg, wie die jüngsten Quartalszahlen zeigen. Vor allem im Cloudgeschäft punkten die Walldorfer. Die Börse honoriert das.",
-      "pubDate": "2026-10-22T14:10:58+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/sap-mittags-mb-100.html",
-      "bild": ""
-    },
-    {
-      "id": "b7d396eb70367d9c6ed4",
-      "title": "Internationaler Strafgerichtshof erhält Sacharow-Preis",
-      "description": "Der Internationale Strafgerichtshof hat den diesjährigen Sacharow-Preis erhalten. Mit der Auszeichnung würdigt das EU-Parlament den Einsatz des Gerichts für das Völkerrecht - und setzt ein Zeichen gegen die Sanktionen von US-Präsident Trump.",
-      "pubDate": "2026-10-22T13:42:57+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/sacharow-preis-internationaler-strafgerichtshof-100.html",
-      "bild": ""
-    },
-    {
-      "id": "36ffba9fcb452d55dc57",
-      "title": "Mutmaßlicher russischer Spion in Brandenburg festgenommen",
-      "description": "In Brandenburg hat die Polizei einen mutmaßlichen Spion festgenommen. Er soll im Dienste Russlands Rüstungsfirmen ausgespäht haben. Der Mann selbst soll ein Ukrainer aus russisch besetztem Gebiet sein. Von. M. Götschenberg und H. Schmidt.",
-      "pubDate": "2026-10-22T13:32:31+02:00",
-      "link": "https://www.tagesschau.de/inland/spionage-ruestungindustrie-festnahme-100.html",
-      "bild": ""
-    },
-    {
-      "id": "1526d2f3dda191c53808",
-      "title": "Was beim neuen Altersvorsorgedepot zu beachten ist",
-      "description": "Neben der Kapitalrente wird es auch eine neue staatlich geförderte Zusatzrente geben, das Altersvorsorgedepot. Es soll die \"Riester-Rente\" ablösen. Das Versprechen: mehr Aktien, ETFs und Renditechancen. Was es zu beachten gilt, erklärt Christian Sachsinger.",
-      "pubDate": "2026-10-22T13:09:07+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/altersvorsorgedepot-100.html",
-      "bild": ""
-    },
-    {
-      "id": "430f06253a3269d449a1",
-      "title": "SPD will Pflegereform nachbessern",
-      "description": "Bei der Ministerpräsidentenkonferenz dürfte heute wohl auch über die Pflegereform diskutiert werden. Die SPD will Nachbesserungen - und fordert eine Überarbeitung des Gesetzentwurfs.",
-      "pubDate": "2026-10-22T12:31:09+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/spd-pflegereform-104.html",
       "bild": ""
     }
   ],
