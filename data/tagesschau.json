@@ -1,7 +1,79 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "24.10.2026, 06:22 Uhr (UTC)",
+  "aktualisiert": "24.10.2026, 11:28 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "4974f6e086f8ac9cf299",
+      "title": "Krieg gegen die Ukraine: Starlink funktioniert wieder stabil",
+      "description": "Die Satellitenkommunikation von SpaceX in der Ukraine funktioniert nach Angaben aus Kiew wieder stabil. Die ukrainische Armee meldet derweil Angriffe auf russische Industrieanlagen.",
+      "pubDate": "2026-10-24T13:24:45+02:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/musk-starlink-ukraine-102.html",
+      "bild": ""
+    },
+    {
+      "id": "9dca3079f21f50eddacf",
+      "title": "Debatte über SPD-Vorsitz: Mit oder ohne Klingbeil?",
+      "description": "Noch ist offen, ob SPD-Chef Klingbeil noch einmal für den Posten kandidiert. Der Juso-Vorsitzende Türmer hat eine klare Meinung: Er fordert einen Neustart an der Parteispitze. Bremens Bürgermeister Bovenschulte hält an Klingbeil fest.",
+      "pubDate": "2026-10-24T12:52:30+02:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/spd-chef-klingbeil-debatte-100.html",
+      "bild": ""
+    },
+    {
+      "id": "0a2552911ec04b9dafc2",
+      "title": "Deutschlandticket für Gelegenheitsfahrer: Bilger findet Idee gut",
+      "description": "Schnell mit dem Handy bei Bahn oder Öffis einchecken - und der günstigste Tarif wird berechnet. Am Monatsende kostet das Ganze höchstens so viel wie das Deutschlandticket. Der Verkehrsminister findet die Idee gut.",
+      "pubDate": "2026-10-24T12:46:34+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/bahn-nahverkehr-deutschlandticket-light-100.html",
+      "bild": ""
+    },
+    {
+      "id": "185c0da060b255daccfe",
+      "title": "Massive Waldbrände in Indonesien - Kritik an Regierung",
+      "description": "In Indonesien wüten die schlimmsten Feuer seit 2015. Hauptsächlich ausgelöst wurden die Feuer durch illegale Brandrodung. Die Nachbarn Singapur und Malaysia kritisieren die indonesische Regierung scharf. Von Jennifer Johnston.",
+      "pubDate": "2026-10-24T12:26:00+02:00",
+      "link": "https://www.tagesschau.de/ausland/asien/braende-indonesien-100.html",
+      "bild": ""
+    },
+    {
+      "id": "1e3c6667f533bdc1b1f5",
+      "title": "Studie über Zeitumstellung - Welche Zeit ist besser für unsere Gesundheit?",
+      "description": "Was einmal Energie sparen sollte, ist jetzt für viele ein Ärgernis. Die EU-Kommission schlug 2018 vor, die Zeitumstellung abzuschaffen. Nur: Welche Zeit soll gelten? Forschende haben eine Antwort. Von Wiebke Drescher.",
+      "pubDate": "2026-10-24T10:55:12+02:00",
+      "link": "https://www.tagesschau.de/wissen/gesundheit/zeitumstellung-winterzeit-sommerzeit-114.html",
+      "bild": ""
+    },
+    {
+      "id": "55a4f2cb721070ae85f2",
+      "title": "Sommerzeit endet - Um 3:00 Uhr wird an der Uhr gedreht",
+      "description": "Es ist wieder so weit: Die Uhren werden um eine Stunde zurückgestellt. Auch wenn es in der ersten Nacht Vorteile bringt, sind die meisten Menschen nicht zufrieden mit der Zeitumstellung.",
+      "pubDate": "2026-10-24T10:54:51+02:00",
+      "link": "https://www.tagesschau.de/wissen/gesundheit/zeitumstellung-sommerzeit-138.html",
+      "bild": ""
+    },
+    {
+      "id": "926f4e0327d58bed6b9e",
+      "title": "Energie-Entkoppelung: So abhängig ist Europa noch von Russland",
+      "description": "Nach dem Vollangriff auf die Ukraine wollte Europa schnell unabhängig werden von russischer Energie. Teilweise ist das auch gelungen. Vor allem bei Öl und Uran bleiben aber alte Abhängigkeiten. Von Jean-Marie Magro.",
+      "pubDate": "2026-10-24T10:27:08+02:00",
+      "link": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/abhaengigkeit-russische-energie-100.html",
+      "bild": ""
+    },
+    {
+      "id": "5ab47edb2029d4cffe9b",
+      "title": "Verletzte und Schäden nach \"Sturmtief\" Luise",
+      "description": "Bäume und Äste auf Straßen und Gleisen, ein umgestürztes Gestell: Sturmtief \"Luise\" ist über Teile Deutschlands hinweggefegt. Zwei Menschen wurden schwer verletzt. Mit \"Manja\" zieht schon der nächste Sturm heran.",
+      "pubDate": "2026-10-24T10:59:50+02:00",
+      "link": "https://www.tagesschau.de/inland/herbststurm-104.html",
+      "bild": ""
+    },
+    {
+      "id": "bee0e0505d3e64034575",
+      "title": "Repräsentationsbau der Nazis: Großbrand im Kehlsteinhaus am Obersalzberg",
+      "description": "Es diente den Nazis als Repräsentationsort hoch in den Bergen. Nun ist im Kehlsteinhaus am Obersalzberg bei Berchtesgaden ein Feuer ausgebrochen. Die Polizei vermutet Brandstiftung und nahm einen Verdächtigen fest.",
+      "pubDate": "2026-10-24T10:11:10+02:00",
+      "link": "https://www.tagesschau.de/inland/gesellschaft/berchtesgaden-feuer-nazihaus-100.html",
+      "bild": ""
+    },
     {
       "id": "ef61c358a3a8ae1b0682",
       "title": "Brasilien vor der Stichwahl: Die Macht der Influencer",
@@ -45,81 +117,9 @@
     {
       "id": "68f54f3acda92343ca0c",
       "title": "CSU-Chef Söder spricht von \"Herausforderung für die Demokratie\"",
-      "description": "CSU-Chef Söder sieht die Demokratie vor großen Herausforderungen. Er forderte zudem finanzielle Entlastungen für die Bevölkerung. Es müsse etwas passieren, betonte der bayrische Ministerpräsident im Interview mit den tagesthemen.",
+      "description": "CSU-Chef Söder sieht die Demokratie vor großen Herausforderungen. Er verlangte zudem finanzielle Entlastungen für die Bevölkerung. Es müsse etwas passieren, betonte der bayrische Ministerpräsident im Interview mit den tagesthemen.",
       "pubDate": "2026-10-23T21:45:20+02:00",
       "link": "https://www.tagesschau.de/inland/innenpolitik/csu-soeder-138.html",
-      "bild": ""
-    },
-    {
-      "id": "55004a11e80e706b92be",
-      "title": "CSU-Parteitag: Söder fordert Kampf gegen AfD und Linke",
-      "description": "Zum Auftakt des CSU-Parteitags knöpft sich Parteichef Söder die Linke und die AfD vor. Und er weist auf den Ernst der Lage für die Union hin. Den meisten Applaus bekam er aber für etwas anderes. Von Anita Fünffinger.",
-      "pubDate": "2026-10-23T20:10:26+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/csu-soeder-parteitag-100.html",
-      "bild": ""
-    },
-    {
-      "id": "a4d5ada40d034729427f",
-      "title": "Bürgergeld und Einsparungen: Geschichte eines Irrtums",
-      "description": "2024 hatte Kanzler Merz im Wahlkampf versprochen, das \"System Bürgergeld vom Kopf auf die Füße\" zu stellen. Zweistellige Milliardenbeträge wollte er so einsparen. Gebracht aber hat die neue Grundsicherung bisher wenig. Von Isabell Karras.",
-      "pubDate": "2026-10-23T19:50:13+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/buergergeld-einsparungen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "19ac70cdf214ad65fe5b",
-      "title": "Wadephul zieht positive Bilanz nach Außenministertreffen in Istanbul",
-      "description": "Beim ersten Treffen dieser Art hat Außenminister Wadephul mit sieben anderen Chefdiplomaten aus Europa und Nahost in Istanbul über Kriege und Konflikte beraten. Seine Bilanz: positiv. Künftig soll es regelmäßige Treffen geben. Von C. Buttkereit.",
-      "pubDate": "2026-10-23T19:43:10+02:00",
-      "link": "https://www.tagesschau.de/ausland/istanbul-wadephul-100.html",
-      "bild": ""
-    },
-    {
-      "id": "877f7178b039c04631b9",
-      "title": "Anti-Terror-Staatsanwaltschaft ermittelt nach tödlichen Schüssen bei Paris",
-      "description": "Ein Toter, vier Verletzte - darunter ein zwölfjähriges Kind: Nach den Schüssen eines Autofahrers auf Passanten bei Paris ermittelt die Anti-Terror-Staatsanwaltschaft. Sie prüft auch, ob es einen rassistischen Hintergrund gibt. Von C. Dylla.",
-      "pubDate": "2026-10-23T19:05:12+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/frankreich-paris-schuesse-100.html",
-      "bild": ""
-    },
-    {
-      "id": "320d0e21df97d4384de1",
-      "title": "Marktbericht: DAX-Anleger meiden das Risiko",
-      "description": "Hohe Ölpreise, anhaltenden Sorgen um Frankreichs Staatsfinanzen und immer wieder neue Bedenken bei der Künstlichen Intelligenz. Zu viele Probleme gleichzeitig für die Anleger, der DAX gab nach.",
-      "pubDate": "2026-10-23T18:38:57+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-ki-boom-100.html",
-      "bild": ""
-    },
-    {
-      "id": "a0b914d39a9554b4f519",
-      "title": "Israel will Westjordanland nach Angriff in Hebron abriegeln",
-      "description": "Nach einem Angriff nahe Hebron im Westjordanland hat Israels Militär den Tod von zwei Soldaten bestätigt. Die Zufahrten zur Stadt sind gesperrt - bald soll die Armee das ganze Westjordanland abriegeln. Von B. Meier.",
-      "pubDate": "2026-10-23T18:31:33+02:00",
-      "link": "https://www.tagesschau.de/ausland/israel-westjordanland-abriegelung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "3d5a408f076814e40d27",
-      "title": "Vermittelt durch Melania Trump - Waffenruhe für besetzte ukrainische Stadt",
-      "description": "Die humanitäre Lage in der von Russland besetzten ukrainischen Stadt Oleschky ist dramatisch. Nun gibt es Hoffnung für eine Evakuierung. Das Weiße Haus gab eine lokale Waffenruhe bekannt - vermittelt durch First Lady Melania Trump.",
-      "pubDate": "2026-10-23T19:26:28+02:00",
-      "link": "https://www.tagesschau.de/ausland/melania-trump-waffenruhe-oleschky-100.html",
-      "bild": ""
-    },
-    {
-      "id": "47863ef2035cababf86e",
-      "title": "Griechenland verbietet Social Media für unter 15-Jährige",
-      "description": "Auch Griechenland will Kinder und Jugendliche vor Gefahren Sozialer Medien schützen. Das Parlament hat ein Verbot für unter 15-Jährige beschlossen. Künftig sollen Plattformen das Alter ihrer Nutzer überprüfen.",
-      "pubDate": "2026-10-23T17:44:49+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/griechenland-social-media-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f1c4d1aac22e9f457361",
-      "title": "Nicht nur wegen Ryanair-Abzug: Der BER bleibt ein Sorgenflughafen",
-      "description": "Ryanair schließt seine Basis am Berliner Flughafen. Der BER sei zu teuer, zu kompliziert, zu unflexibel, sagt die Airline schon seit Jahren. Und sie sagt auch: Fliegen in Deutschland sei grundsätzlich zu teuer. Eine Analyse von A. Kartschall",
-      "pubDate": "2026-10-23T17:09:02+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/ryanair-ber-100.html",
       "bild": ""
     }
   ],
