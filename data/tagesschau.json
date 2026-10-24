@@ -1,7 +1,23 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "23.10.2026, 22:35 Uhr (UTC)",
+  "aktualisiert": "24.10.2026, 01:27 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "1ac9829f3c65e10f1c85",
+      "title": "Wie sieht die Zukunft der Raffinerien aus?",
+      "description": "Deutschlands Raffinerien stehen vor einem grundlegenden Wandel: Weg von fossilen Rohstoffen, hin zu klimafreundlicheren Alternativen. Wirtschaftsministerin Reiche will dafür eine Strategie vorlegen. Doch Experten sind skeptisch. Von Oda Lambrecht.",
+      "pubDate": "2026-10-24T03:06:57+02:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/raffineriestrategie-100.html",
+      "bild": ""
+    },
+    {
+      "id": "e0feba38db3618e84f71",
+      "title": "Nach Anschlag auf Soldaten: Israel startet Operation im Westjordanland",
+      "description": "Nach den tödlichen Schüssen auf zwei Soldaten hat Israels Armee einen \"Anti-Terror-Einsatz\" im Westjordanland begonnen. Man suche dort nach Waffen und Terrorinfrastruktur. Israels Premier drohte zudem mit einem großagelegten Militäreinsatz.",
+      "pubDate": "2026-10-24T03:01:43+02:00",
+      "link": "https://www.tagesschau.de/ausland/israel-westjordanland-militaeroperation-100.html",
+      "bild": ""
+    },
     {
       "id": "96c49881fea5e154a4fc",
       "title": "Frankreich rüstet sich für nächsten Protesttag",
@@ -104,22 +120,6 @@
       "description": "Der KI-Boom beherrscht weiter die Wall Street. Die erste Euphorie ist aber vorbei - die Anleger wollen vielmehr endlich Ergebnisse der horrenden KI-Investitionen sehen. Meta ist ein warnendes Beispiel.",
       "pubDate": "2026-10-23T15:16:51+02:00",
       "link": "https://www.tagesschau.de/wirtschaft/finanzen/mb-mittag-108.html",
-      "bild": ""
-    },
-    {
-      "id": "eaca8976276e2cdb753c",
-      "title": "Erneut mutmaßlicher Drohnenangriff auf Schiff vor Rumäniens Küste",
-      "description": "Ein weiteres Handelsschiff soll Medienberichten zufolge nahe der rumänischen Küste von einer Drohne angegriffen worden sein. Es gebe mindestens ein Todesopfer. Rumäniens Präsident sieht die Verantwortung erneut bei Russland.",
-      "pubDate": "2026-10-23T15:01:59+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/rumaenien-drohnenangriff-handelsschiff-100.html",
-      "bild": ""
-    },
-    {
-      "id": "2fc7e0663150522e7e04",
-      "title": "Nach Krawallen führt Italien auch eine Sicherheitsdebatte",
-      "description": "Nach den schweren Ausschreitungen in Mailand reagiert Italiens Regierung mit einem neuen Sicherheitsdekret. Die sozialen Ursachen bleiben. Ebenso die Frage: Wer waren die meist sehr jungen Randalierer? Von V. Schälter.",
-      "pubDate": "2026-10-23T14:55:47+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/italien-proteste-124.html",
       "bild": ""
     }
   ],
