@@ -1,7 +1,47 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "24.10.2026, 11:28 Uhr (UTC)",
+  "aktualisiert": "24.10.2026, 14:48 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "f00805fcc0ad45a61ec1",
+      "title": "Midterms in den USA: Amerikanischer Traum in weiter Ferne",
+      "description": "Höherer Lebensstandard durch harte Arbeit: Der klassische amerikanische Traum scheint jungen US-Bürgern zunehmend unerreichbar. Was erwarten sie von den Zwischenwahlen? Anne Schneider hat sich in Texas umgehört.",
+      "pubDate": "2026-10-24T15:47:08+02:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/usa-midterms-junge-waehler-100.html",
+      "bild": ""
+    },
+    {
+      "id": "f0375e25c69b785d04dc",
+      "title": "Stichwahl in Brasilien: Flávio Bolsonaro - der Kandidat des Vaters",
+      "description": "Flávio Bolsonaro will seinen verurteilten Vater als Präsident beerben - und wohl auch aus der Haft befreien. Trotz allem: Für seine Anhänger ist der Familienname sein wichtigstes Kapital bei der morgigen Stichwahl. Von A. Herrberg und L. Bilard.",
+      "pubDate": "2026-10-24T15:36:26+02:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/brasilien-wahl-bolsonaro-106.html",
+      "bild": ""
+    },
+    {
+      "id": "4c7c5f0cbb6970369644",
+      "title": "Viele Kontrollen und Festnahmen am Protesttag in Frankreich",
+      "description": "Eine Woche nach den schweren Ausschreitungen in Frankreich finden heute erneut große Demonstrationen statt. Bis zum frühen Nachmittag gab es mehr als 100 Festnahmen. 70.000 Ordnungskräfte sind im Einsatz.",
+      "pubDate": "2026-10-24T15:33:20+02:00",
+      "link": "https://www.tagesschau.de/ausland/europa/frankreich-vorbereitung-ausschreitungen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "d2b308c36ef65d22dcca",
+      "title": "Israelische Armee startet Einsatz in Hebron",
+      "description": "Nach dem tödlichen Angriff auf Soldaten hat Israel in Hebron im Westjordanland einen Militäreinsatz begonnen. Premier Netanjahu kündigte eine \"sehr große Überraschung\" für die Palästinensische Autonomiebehörde an.",
+      "pubDate": "2026-10-24T16:14:53+02:00",
+      "link": "https://www.tagesschau.de/ausland/asien/westjordanland-abriegelung-102.html",
+      "bild": ""
+    },
+    {
+      "id": "19b2e93fdfeabaa10f66",
+      "title": "Merz auf CSU-Parteitag bejubelt für Begrüßung Aigners",
+      "description": "Der Kanzler ruft auf dem CSU-Parteitag zu Geschlossenheit auf und warnt vor Extremisten. Großen Applaus gibt es aber für einen besonderen Gruß, der im Zusammenhang mit der Diskussion über die Steinmeier-Nachfolge gesehen wurde.",
+      "pubDate": "2026-10-24T14:19:07+02:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/csu-cdu-merz-aigner-100.html",
+      "bild": ""
+    },
     {
       "id": "4974f6e086f8ac9cf299",
       "title": "Krieg gegen die Ukraine: Starlink funktioniert wieder stabil",
@@ -68,9 +108,9 @@
     },
     {
       "id": "bee0e0505d3e64034575",
-      "title": "Repräsentationsbau der Nazis: Großbrand im Kehlsteinhaus am Obersalzberg",
-      "description": "Es diente den Nazis als Repräsentationsort hoch in den Bergen. Nun ist im Kehlsteinhaus am Obersalzberg bei Berchtesgaden ein Feuer ausgebrochen. Die Polizei vermutet Brandstiftung und nahm einen Verdächtigen fest.",
-      "pubDate": "2026-10-24T10:11:10+02:00",
+      "title": "Nazi-Bau: Kehlsteinhaus am Obersalzberg durch Brand weitgehend zerstört",
+      "description": "Es diente den Nazis als Repräsentationsort hoch in den Bergen. In Nacht hat es nun im Kehlsteinhaus am Obersalzberg bei Berchtesgaden gebrannt. Die Polizei vermutet Brandstiftung und hat einen Verdächtigen festgenommen.",
+      "pubDate": "2026-10-24T15:58:56+02:00",
       "link": "https://www.tagesschau.de/inland/gesellschaft/berchtesgaden-feuer-nazihaus-100.html",
       "bild": ""
     },
@@ -80,46 +120,6 @@
       "description": "Wer beherrscht die Sozialen Netzwerke? Diese Frage könnte in Brasilien wahlentscheidend sein. Im digitalen Wahlkampf kann Bolsonaro auf den erfolgreichsten Influencer des Landes zählen - doch auch die Linke hat dazugelernt. Von A. Herrberg.",
       "pubDate": "2026-10-24T06:13:03+02:00",
       "link": "https://www.tagesschau.de/ausland/amerika/brasilien-wahl-influencer-100.html",
-      "bild": ""
-    },
-    {
-      "id": "55162e64da7b85cf5e6c",
-      "title": "US-Midterms: Die Sorge vor einer neuen Wahllüge Trumps",
-      "description": "Seitdem Trump vor sechs Jahren gegen Biden verlor, leugnet er das Wahlergebnis. Die Lüge ist Doktrin in seiner Partei, viele US-Bürger haben sie verinnerlicht. Was, wenn die Republikaner nun die Zwischenwahlen verlieren sollten? Von C. Kühntopp.",
-      "pubDate": "2026-10-24T06:10:57+02:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/usa-midterms-trump-wahlbetrug-100.html",
-      "bild": ""
-    },
-    {
-      "id": "1ac9829f3c65e10f1c85",
-      "title": "Wie sieht die Zukunft der Raffinerien aus?",
-      "description": "Deutschlands Raffinerien stehen vor einem grundlegenden Wandel: Weg von fossilen Rohstoffen, hin zu klimafreundlicheren Alternativen. Wirtschaftsministerin Reiche will dafür eine Strategie vorlegen. Doch Experten sind skeptisch. Von Oda Lambrecht.",
-      "pubDate": "2026-10-24T03:06:57+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/raffineriestrategie-100.html",
-      "bild": ""
-    },
-    {
-      "id": "e0feba38db3618e84f71",
-      "title": "Nach Anschlag auf Soldaten: Israel startet Operation im Westjordanland",
-      "description": "Nach den tödlichen Schüssen auf zwei Soldaten hat Israels Armee einen \"Anti-Terror-Einsatz\" im Westjordanland begonnen. Man suche dort nach Waffen und Terrorinfrastruktur. Israels Premier drohte zudem mit einem großangelegten Militäreinsatz.",
-      "pubDate": "2026-10-24T03:01:43+02:00",
-      "link": "https://www.tagesschau.de/ausland/israel-westjordanland-militaeroperation-100.html",
-      "bild": ""
-    },
-    {
-      "id": "96c49881fea5e154a4fc",
-      "title": "Frankreich rüstet sich für nächsten Protesttag",
-      "description": "Frankreich fürchtet eine weitere Eskalation der aufgeheizten Stimmung. Diesmal will der Staat besser vorbereitet sein. Inmitten dieser Lage erschüttert ein mutmaßlich rassistisch motivierter Anschlag das Land. Von Cai Rienäcker.",
-      "pubDate": "2026-10-23T22:02:01+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/frankreich-vorbereitung-ausschreittungen-paris-100.html",
-      "bild": ""
-    },
-    {
-      "id": "68f54f3acda92343ca0c",
-      "title": "CSU-Chef Söder spricht von \"Herausforderung für die Demokratie\"",
-      "description": "CSU-Chef Söder sieht die Demokratie vor großen Herausforderungen. Er verlangte zudem finanzielle Entlastungen für die Bevölkerung. Es müsse etwas passieren, betonte der bayrische Ministerpräsident im Interview mit den tagesthemen.",
-      "pubDate": "2026-10-23T21:45:20+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/csu-soeder-138.html",
       "bild": ""
     }
   ],
