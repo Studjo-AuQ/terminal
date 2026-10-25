@@ -1,12 +1,60 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "25.10.2026, 09:19 Uhr (UTC)",
+  "aktualisiert": "25.10.2026, 13:52 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "1c357d078a90f84c04c7",
+      "title": "Steinmeier bei Umweltpreis-Verleihung: \"Die Fieberkurve unseres Planeten zeigt deutlich nach oben\"",
+      "description": "In Aachen ist der Deutsche Umweltpreis an die Klimajuristin Verheyen und den Membranfilter-Ingenieur Vossenkaul verliehen worden. Bundespräsident Steinmeier mahnte, dem Klimaschutz trotz anderer Krisen und Sorgen Priorität einzuräumen.",
+      "pubDate": "2026-10-25T14:13:45+01:00",
+      "link": "https://www.tagesschau.de/inland/umweltpreis-142.html",
+      "bild": ""
+    },
+    {
+      "id": "edefcdadc831baf0e4cd",
+      "title": "Wie ein Dorf in Brandenburg seinen Gasthof retten will",
+      "description": "In vielen Dörfern verschwinden die letzten Gaststätten. Im brandenburgischen Leißnitz wollen die Einwohner das verhindern. Gemeinsam wollen sie einen Ort erhalten, an dem Menschen zusammenkommen. Von Jacqueline Piwon.",
+      "pubDate": "2026-10-25T13:06:21+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/dorfkneipe-rettung-brandenburg-100.html",
+      "bild": ""
+    },
+    {
+      "id": "c02b65594fd1e61bb7ff",
+      "title": "Pläne der Koalition: Wahlrechtsreform kommt kaum voran",
+      "description": "Neben dem Umbau der Sozialsysteme hat die schwarz-rote Koalition eine Reform angekündigt, bei der es für manche um die politische Existenz geht: Sie möchte das Wahlrecht ändern. Doch es geht nur langsam voran. Von Jakob Mayr.",
+      "pubDate": "2026-10-25T12:57:30+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/wahlrecht-reform-104.html",
+      "bild": ""
+    },
+    {
+      "id": "b5775c4e32bb0e5e6c94",
+      "title": "Dobrindt plant hohe Hürden für Vergesellschaftungen",
+      "description": "Geht es nach der Berliner Linkspartei, sollen Wohnungen in Zukunft vergesellschaftet werden. Doch die Bundesregierung will der Partei mit einem Gesetz zuvorkommen. Nun gibt es erste Details aus dem Innenministerium.",
+      "pubDate": "2026-10-25T12:51:21+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/dobrindt-vergesellschaftung-100.html",
+      "bild": ""
+    },
+    {
+      "id": "82afab37ee9cdba43956",
+      "title": "Sturmtief \"Manja\" fegt über Deutschland",
+      "description": "Stromausfall in Freiburg, mögliche Sturmflut und orkanartige Böen an der Nordsee: Sturm und Regen bestimmen heute das Wetter in Deutschland, es gab bereits zahlreiche Einsätze. Für Teile des Landes galten Warnungen.",
+      "pubDate": "2026-10-25T12:53:23+01:00",
+      "link": "https://www.tagesschau.de/inland/wetter-sturm-112.html",
+      "bild": ""
+    },
+    {
+      "id": "41f0cff541f389da927d",
+      "title": "Vor Midterms: Ex-US-Präsident Obama schaltet sich mit Trump-Kritik in Wahlkampf ein",
+      "description": "Die Demokraten hoffen bei den Zwischenwahlen auf einen Sieg. Nun gibt es Wahlkampfhilfe vom früheren US-Präsidenten Obama. Der wirft Trump Korruption vor - und lästert über die Renovierungsarbeiten im Weißen Haus.",
+      "pubDate": "2026-10-25T11:35:11+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/usa-trump-wahl-102.html",
+      "bild": ""
+    },
     {
       "id": "ebce44588fe9fae40e9c",
       "title": "Proteste in Europa - auch mit Gewalt",
       "description": "Nicht nur Frankreich - auch in vielen anderen europäischen Ländern wurde wieder protestiert. Dabei kam es mancherorts erneut zu Auseinandersetzungen mit der Polizei. Insgesamt melden die Behörden aber weniger Gewalt als am vergangenen Wochenende.",
-      "pubDate": "2026-10-25T09:55:32+01:00",
+      "pubDate": "2026-10-25T13:21:49+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/proteste-frankreich-spanien-italien-protugal-albanien-100.html",
       "bild": ""
     },
@@ -30,7 +78,7 @@
       "id": "72859cb1ad5c373f4c76",
       "title": "Audi kündigt US-Werk an - auf Trumps Wahlkampftour",
       "description": "Immer wieder droht Trump ausländischen Unternehmen mit hohen Zöllen. Nun kündigte Audi den Bau seines ersten Werks in den USA an. Auf einer Wahlkampfveranstaltung durfte der US-Präsident damit auch für sich werben.",
-      "pubDate": "2026-10-25T08:10:15+01:00",
+      "pubDate": "2026-10-25T12:14:29+01:00",
       "link": "https://www.tagesschau.de/ausland/amerika/audi-usa-trump-100.html",
       "bild": ""
     },
@@ -72,54 +120,6 @@
       "description": "Als Deutschland und die Türkei 1961 das Anwerbeabkommen unterschreiben, rechnet niemand damit, dass Hunderttausende Menschen dauerhaft eine Heimat hier finden werden. Für viele ein hart erarbeiteter Erfolg. Von Carolyn Wißing.",
       "pubDate": "2026-10-24T18:19:11+02:00",
       "link": "https://www.tagesschau.de/inland/gesellschaft/anwerbeabkommen-tuerkei-100.html",
-      "bild": ""
-    },
-    {
-      "id": "59498e96332d26729aca",
-      "title": "Hausdurchsuchungen und Zwangsräumungen in Hebron",
-      "description": "Nach dem tödlichen Angriff auf israelische Soldaten geht die Armee weiter gegen Palästinenser in Hebron vor. Hunderte Menschen mussten überstürzt ihre Häuser verlassen. Von Bettina Meier.",
-      "pubDate": "2026-10-24T18:06:57+02:00",
-      "link": "https://www.tagesschau.de/ausland/asien/westjordanland-abriegelung-104.html",
-      "bild": ""
-    },
-    {
-      "id": "7f9357ca594423d0a4ca",
-      "title": "CSU-Parteitag: Merz äußert sich nicht zur Präsidentinnen-Frage",
-      "description": "Wird CSU-Politikerin Aigner Kandidatin für das Amt der Bundespräsidentin? Mit Spannung wurde erwartet, ob sich CDU-Chef Merz auf dem CSU-Parteitag dazu äußert. Er tat es nicht - und sendete doch ein Signal. Von Kerstin Palzer.",
-      "pubDate": "2026-10-24T18:51:47+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/csu-parteitag-merz-106.html",
-      "bild": ""
-    },
-    {
-      "id": "f00805fcc0ad45a61ec1",
-      "title": "Midterms in den USA: Amerikanischer Traum in weiter Ferne",
-      "description": "Höherer Lebensstandard durch harte Arbeit: Der klassische amerikanische Traum scheint jungen US-Bürgern zunehmend unerreichbar. Was erwarten sie von den Zwischenwahlen? Anne Schneider hat sich in Texas umgehört.",
-      "pubDate": "2026-10-24T15:47:08+02:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/usa-midterms-junge-waehler-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f0375e25c69b785d04dc",
-      "title": "Stichwahl in Brasilien: Flávio Bolsonaro - der Kandidat des Vaters",
-      "description": "Flávio Bolsonaro will seinen verurteilten Vater als Präsident beerben - und wohl auch aus der Haft befreien. Trotz allem: Für seine Anhänger ist der Familienname sein wichtigstes Kapital bei der heutigen Stichwahl. Von A. Herrberg und L. Bilard.",
-      "pubDate": "2026-10-24T15:36:26+02:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/brasilien-wahl-bolsonaro-106.html",
-      "bild": ""
-    },
-    {
-      "id": "d2b308c36ef65d22dcca",
-      "title": "Israelische Armee startet Einsatz in Hebron",
-      "description": "Nach dem tödlichen Angriff auf Soldaten hat Israel in Hebron im Westjordanland einen Militäreinsatz begonnen. Premier Netanjahu kündigte eine \"sehr große Überraschung\" für die Palästinensische Autonomiebehörde an.",
-      "pubDate": "2026-10-24T16:14:53+02:00",
-      "link": "https://www.tagesschau.de/ausland/asien/westjordanland-abriegelung-102.html",
-      "bild": ""
-    },
-    {
-      "id": "19b2e93fdfeabaa10f66",
-      "title": "Merz auf CSU-Parteitag bejubelt für Begrüßung Aigners",
-      "description": "Der Kanzler ruft auf dem CSU-Parteitag zu Geschlossenheit auf und warnt vor Extremisten. Großen Applaus gibt es aber für einen besonderen Gruß, der im Zusammenhang mit der Diskussion über die Steinmeier-Nachfolge gesehen wurde.",
-      "pubDate": "2026-10-24T14:19:07+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/csu-cdu-merz-aigner-100.html",
       "bild": ""
     }
   ],
