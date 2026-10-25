@@ -1,13 +1,37 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "25.10.2026, 17:32 Uhr (UTC)",
+  "aktualisiert": "25.10.2026, 20:41 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "28f8e901f048fc91b9d2",
+      "title": "Kreuzfahrtschiff rammt zwei Containerschiffe in Bremerhaven",
+      "description": "Das Kreuzfahrtschiff \"Mein Schiff 3\" ist nach dem Auslaufen in Bremerhaven bei stürmischem Wetter mit zwei Schiffen kollidiert. Zwei Schlepper wurden beschädigt. Nach aktuellem Stand gab es keine Verletzten.",
+      "pubDate": "2026-10-25T19:30:00+01:00",
+      "link": "https://www.tagesschau.de/inland/seeunfall-bremerhaven-100.html",
+      "bild": ""
+    },
+    {
+      "id": "1f8cbffed86f96bf09ff",
+      "title": "Auftakt der RN-Wahlkampagne: Le Pen spricht von \"Wiedergeburt\" Frankreichs",
+      "description": "Die rechtspopulistische französische Präsidentschaftskandidatin Le Pen führt derzeit in den Umfragen. Zum Auftakt der Wahlkampagne ihres Rassemblement National warb sie für einen politischen Neuanfang.",
+      "pubDate": "2026-10-25T20:25:14+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/le-pen-frankreich-100.html",
+      "bild": ""
+    },
+    {
+      "id": "5ffa1de24982ee6be3a1",
+      "title": "Stromsteuer-Debatte: Union und SPD weiter weit auseinander",
+      "description": "Dass Unternehmen und Haushalte beim Strompreis entlastet werden sollen, darüber herrscht in der Regierung Einigkeit. Unklar aber ist, wie das finanziert werden kann. Im Bericht aus Berlin machten CDU und SPD sehr unterschiedliche Vorschläge.",
+      "pubDate": "2026-10-25T19:49:43+01:00",
+      "link": "https://www.tagesschau.de/inland/bericht-aus-berlin-stromsteuer-100.html",
+      "bild": ""
+    },
     {
       "id": "d91d3366431d32c392ce",
       "title": "Oppositionsführerin Machado meldet Rückkehr nach Venezuela",
-      "description": "Rund zehn Monate nach ihrer heimlichen Ausreise aus Venezuela ist die Friedensnobelpreisträgerin Machado in ihr Heimatland zurückgekehrt. „Ich bin hier. Bei euch“, teilte Machado auf der Plattform X mit.",
-      "pubDate": "2026-10-25T18:10:19+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/venzuela-112.html",
+      "description": "Rund zehn Monate nach ihrer heimlichen Ausreise aus Venezuela ist die Friedensnobelpreisträgerin Machado in ihre Heimat zurückgekehrt. Den Weg freigemacht hätten von den USA unterstützte \"Versöhnungsgespräche\", so US-Außenminister Rubio.",
+      "pubDate": "2026-10-25T20:41:15+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/venezuela-machado-104.html",
       "bild": ""
     },
     {
@@ -96,30 +120,6 @@
       "description": "Nicht nur Frankreich - auch in vielen anderen europäischen Ländern wurde wieder protestiert. Dabei kam es mancherorts erneut zu Auseinandersetzungen mit der Polizei. Insgesamt melden die Behörden aber weniger Gewalt als am vergangenen Wochenende.",
       "pubDate": "2026-10-25T13:21:49+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/proteste-frankreich-spanien-italien-protugal-albanien-100.html",
-      "bild": ""
-    },
-    {
-      "id": "af26b096f8ea2a78e072",
-      "title": "Israel will Westjordanland am Wahltag abriegeln",
-      "description": "Vor der Parlamentswahl in Israel verschärft die Armee ihr Vorgehen im Westjordanland. Demnach sollen sämtliche Übergänge zu dem Palästinensergebiet geschlossen werden, teilte das Militär mit.",
-      "pubDate": "2026-10-25T09:51:16+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/israel-westjordanland-lockdown-parlamentswahlen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f12e23cf5c6aefaa5448",
-      "title": "Musk wirft Ukraine Verstoß bei Starlink-Nutzung vor",
-      "description": "Tech-Milliardär Musk wirft der Ukraine vor, seinen Satelliten-Internetdienst Starlink für tödliche Drohnenangriffe missbraucht zu haben. Das System sei kein \"Mittel zum Töten\", sagte Musk. Die Sicherheitslücke sei inzwischen aber geschlossen.",
-      "pubDate": "2026-10-25T08:45:03+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/musk-ukraine-starlink-100.html",
-      "bild": ""
-    },
-    {
-      "id": "72859cb1ad5c373f4c76",
-      "title": "Audi kündigt US-Werk an - auf Trumps Wahlkampftour",
-      "description": "Immer wieder droht Trump ausländischen Unternehmen mit hohen Zöllen. Nun kündigte Audi den Bau seines ersten Werks in den USA an. Auf einer Wahlkampfveranstaltung durfte der US-Präsident damit auch für sich werben.",
-      "pubDate": "2026-10-25T16:04:51+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/audi-usa-trump-100.html",
       "bild": ""
     }
   ],
