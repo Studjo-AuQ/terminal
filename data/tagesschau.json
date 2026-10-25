@@ -1,7 +1,47 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "25.10.2026, 13:52 Uhr (UTC)",
+  "aktualisiert": "25.10.2026, 17:32 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "d91d3366431d32c392ce",
+      "title": "Oppositionsführerin Machado meldet Rückkehr nach Venezuela",
+      "description": "Rund zehn Monate nach ihrer heimlichen Ausreise aus Venezuela ist die Friedensnobelpreisträgerin Machado in ihr Heimatland zurückgekehrt. „Ich bin hier. Bei euch“, teilte Machado auf der Plattform X mit.",
+      "pubDate": "2026-10-25T18:10:19+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/venzuela-112.html",
+      "bild": ""
+    },
+    {
+      "id": "f4918ca280f82014579e",
+      "title": "Hohe Wahlbeteiligung und Manipulationsvorwürfe in Serbien",
+      "description": "Lange Schlangen vor den Wahllokalen in Serbien: Viele Menschen wünschen sich Veränderung. Bei der Parlamentswahl setzt die Studentenbewegung auf einen Erfolg. Doch auch Präsident Vucic hat überzeugte Anhänger.",
+      "pubDate": "2026-10-25T17:24:20+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/serbien-wahl-update-100.html",
+      "bild": ""
+    },
+    {
+      "id": "b8c490c6bea60015b4f9",
+      "title": "\"Nur ein toter Bandit ist ein guter Bandit\" - Wahlkampf in Brasilien",
+      "description": "Brasiliens Wähler sehen Gewalt und Kriminalität als das größte Problem im Land. Die Macht der Banden wird immer größer. Die Kandidaten bei der Stichwahl ums Präsidentenamt heute stehen dabei für unterschiedliche Lösungen. Von Xenia Böttcher.",
+      "pubDate": "2026-10-25T16:16:47+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/brasilien-wahl-innere-sicherheit-100.html",
+      "bild": ""
+    },
+    {
+      "id": "14bc48ab2360d6af5f32",
+      "title": "Großbritannien: Burnham offen für Rückkehr zu EU-Freizügigkeit",
+      "description": "Der Brexit hat Großbritannien mehr Schaden als Nutzen gebracht - so sieht es zumindest der neue Premier Burnham. Jetzt zeigt er sich einmal mehr offen für eine Wiederannäherung an die EU - allerdings in Grenzen.",
+      "pubDate": "2026-10-25T16:12:04+01:00",
+      "link": "https://www.tagesschau.de/ausland/burnham-freizuegigkeit-100.html",
+      "bild": ""
+    },
+    {
+      "id": "a09a0249ca3a91f42510",
+      "title": "Gaza droht eine neue Ernährungskrise",
+      "description": "Die Lage im Gazastreifen droht sich wieder zu verschärfen - denn das Welternährungsprogramm muss seine Lebensmittellieferungen massiv kürzen. Der Grund: Die internationalen Geldgeber zahlen deutlich weniger ein. Von Bettina Meier.",
+      "pubDate": "2026-10-25T15:31:54+01:00",
+      "link": "https://www.tagesschau.de/ausland/gaza-ernaehrung-100.html",
+      "bild": ""
+    },
     {
       "id": "1c357d078a90f84c04c7",
       "title": "Steinmeier bei Umweltpreis-Verleihung: \"Die Fieberkurve unseres Planeten zeigt deutlich nach oben\"",
@@ -38,7 +78,7 @@
       "id": "82afab37ee9cdba43956",
       "title": "Sturmtief \"Manja\" fegt über Deutschland",
       "description": "Stromausfall in Freiburg, mögliche Sturmflut und orkanartige Böen an der Nordsee: Sturm und Regen bestimmen heute das Wetter in Deutschland, es gab bereits zahlreiche Einsätze. Für Teile des Landes galten Warnungen.",
-      "pubDate": "2026-10-25T12:53:23+01:00",
+      "pubDate": "2026-10-25T15:48:27+01:00",
       "link": "https://www.tagesschau.de/inland/wetter-sturm-112.html",
       "bild": ""
     },
@@ -78,48 +118,8 @@
       "id": "72859cb1ad5c373f4c76",
       "title": "Audi kündigt US-Werk an - auf Trumps Wahlkampftour",
       "description": "Immer wieder droht Trump ausländischen Unternehmen mit hohen Zöllen. Nun kündigte Audi den Bau seines ersten Werks in den USA an. Auf einer Wahlkampfveranstaltung durfte der US-Präsident damit auch für sich werben.",
-      "pubDate": "2026-10-25T12:14:29+01:00",
+      "pubDate": "2026-10-25T16:04:51+01:00",
       "link": "https://www.tagesschau.de/ausland/amerika/audi-usa-trump-100.html",
-      "bild": ""
-    },
-    {
-      "id": "005942df4d73dfd1bc60",
-      "title": "Wie Erdwärme die Wärmeversorgung verändern soll",
-      "description": "In Potsdam wird gerade mehr als einen Kilometer in den Boden gebohrt, um künftig Tausende Haushalte mit Erdwärme zu versorgen. Die Technik birgt Risiken, aber auch viele Chancen. Von M. Kell und H. Christ.",
-      "pubDate": "2026-10-25T05:10:34+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/technologie/erdwaerme-waermeversorgung-heizen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "b217555b54a81aa3a697",
-      "title": "Serbien wählt - kann Vucic seine Macht wieder festigen?",
-      "description": "Serbiens langjähriger Staatschef Vucic will heute die Wahl gewinnen und Premier werden. Doch die starke Protestbewegung der Studenten könnte ihn nach 14 Jahren entmachten. Wer ist Vucic? Von Oliver Soos.",
-      "pubDate": "2026-10-25T05:10:13+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/serbien-wahl-portraet-vucic-100.html",
-      "bild": ""
-    },
-    {
-      "id": "2e0785e7344fa33bead6",
-      "title": "Lula oder Bolsonaro: Brasilien vor der Stichwahl",
-      "description": "Lula oder Bolsonaro - beide Präsidentschaftskandidaten liegen vor der Stichwahl in Brasilien gleichauf. Das Land ist tief gespalten. Dabei könnten gerade die Unentschlossenen zum entscheidenden Faktor werden. Von Anne Herrberg.",
-      "pubDate": "2026-10-25T05:07:12+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/brasilien-stichwahl-bolsonaro-lula-100.html",
-      "bild": ""
-    },
-    {
-      "id": "4c7c5f0cbb6970369644",
-      "title": "Hunderttausende protestieren in Frankreich - neue Unruhen",
-      "description": "Eine Woche nach den schweren Ausschreitungen in Frankreich haben am Samstag landesweit mehr als 400.000 Menschen demonstriert. Nach einem friedlichen Beginn kam es am Abend zu Zusammenstößen mit der Polizei. Fast 1.000 Menschen wurden festgenommen.",
-      "pubDate": "2026-10-24T21:00:39+02:00",
-      "link": "https://www.tagesschau.de/ausland/europa/frankreich-vorbereitung-ausschreitungen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "9433bae9172e536478c1",
-      "title": "65 Jahre Anwerbeabkommen: Zum Arbeiten gekommen, Heimat gefunden",
-      "description": "Als Deutschland und die Türkei 1961 das Anwerbeabkommen unterschreiben, rechnet niemand damit, dass Hunderttausende Menschen dauerhaft eine Heimat hier finden werden. Für viele ein hart erarbeiteter Erfolg. Von Carolyn Wißing.",
-      "pubDate": "2026-10-24T18:19:11+02:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/anwerbeabkommen-tuerkei-100.html",
       "bild": ""
     }
   ],
