@@ -1,7 +1,39 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "25.10.2026, 04:18 Uhr (UTC)",
+  "aktualisiert": "25.10.2026, 09:19 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "ebce44588fe9fae40e9c",
+      "title": "Proteste in Europa - auch mit Gewalt",
+      "description": "Nicht nur Frankreich - auch in vielen anderen europäischen Ländern wurde wieder protestiert. Dabei kam es mancherorts erneut zu Auseinandersetzungen mit der Polizei. Insgesamt melden die Behörden aber weniger Gewalt als am vergangenen Wochenende.",
+      "pubDate": "2026-10-25T09:55:32+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/proteste-frankreich-spanien-italien-protugal-albanien-100.html",
+      "bild": ""
+    },
+    {
+      "id": "af26b096f8ea2a78e072",
+      "title": "Israel will Westjordanland am Wahltag abriegeln",
+      "description": "Vor der Parlamentswahl in Israel verschärft die Armee ihr Vorgehen im Westjordanland. Demnach sollen sämtliche Übergänge zu dem Palästinensergebiet geschlossen werden, teilte das Militär mit.",
+      "pubDate": "2026-10-25T09:51:16+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/israel-westjordanland-lockdown-parlamentswahlen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "f12e23cf5c6aefaa5448",
+      "title": "Musk wirft Ukraine Verstoß bei Starlink-Nutzung vor",
+      "description": "Tech-Milliardär Musk wirft der Ukraine vor, seinen Satelliten-Internetdienst Starlink für tödliche Drohnenangriffe missbraucht zu haben. Das System sei kein \"Mittel zum Töten\", sagte Musk. Die Sicherheitslücke sei inzwischen aber geschlossen.",
+      "pubDate": "2026-10-25T08:45:03+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/musk-ukraine-starlink-100.html",
+      "bild": ""
+    },
+    {
+      "id": "72859cb1ad5c373f4c76",
+      "title": "Audi kündigt US-Werk an - auf Trumps Wahlkampftour",
+      "description": "Immer wieder droht Trump ausländischen Unternehmen mit hohen Zöllen. Nun kündigte Audi den Bau seines ersten Werks in den USA an. Auf einer Wahlkampfveranstaltung durfte der US-Präsident damit auch für sich werben.",
+      "pubDate": "2026-10-25T08:10:15+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/audi-usa-trump-100.html",
+      "bild": ""
+    },
     {
       "id": "005942df4d73dfd1bc60",
       "title": "Wie Erdwärme die Wärmeversorgung verändern soll",
@@ -13,7 +45,7 @@
     {
       "id": "b217555b54a81aa3a697",
       "title": "Serbien wählt - kann Vucic seine Macht wieder festigen?",
-      "description": "Serbiens autoritärer Präsident Aleksandar Vucic will heute die Wahl gewinnen und Premier werden. Doch die starke Protestbewegung der Studenten könnte ihn nach 14 Jahren entmachten. Wer ist Vucic? Von Oliver Soos.",
+      "description": "Serbiens langjähriger Staatschef Vucic will heute die Wahl gewinnen und Premier werden. Doch die starke Protestbewegung der Studenten könnte ihn nach 14 Jahren entmachten. Wer ist Vucic? Von Oliver Soos.",
       "pubDate": "2026-10-25T05:10:13+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/serbien-wahl-portraet-vucic-100.html",
       "bild": ""
@@ -29,7 +61,7 @@
     {
       "id": "4c7c5f0cbb6970369644",
       "title": "Hunderttausende protestieren in Frankreich - neue Unruhen",
-      "description": "Eine Woche nach den schweren Ausschreitungen in Frankreich haben heute landesweit mehr als 400.000 Menschen demonstriert. Nach einem friedlichen Beginn kam es am Abend zu Zusammenstößen mit der Polizei. Fast 1.000 Menschen wurden festgenommen.",
+      "description": "Eine Woche nach den schweren Ausschreitungen in Frankreich haben am Samstag landesweit mehr als 400.000 Menschen demonstriert. Nach einem friedlichen Beginn kam es am Abend zu Zusammenstößen mit der Polizei. Fast 1.000 Menschen wurden festgenommen.",
       "pubDate": "2026-10-24T21:00:39+02:00",
       "link": "https://www.tagesschau.de/ausland/europa/frankreich-vorbereitung-ausschreitungen-100.html",
       "bild": ""
@@ -69,7 +101,7 @@
     {
       "id": "f0375e25c69b785d04dc",
       "title": "Stichwahl in Brasilien: Flávio Bolsonaro - der Kandidat des Vaters",
-      "description": "Flávio Bolsonaro will seinen verurteilten Vater als Präsident beerben - und wohl auch aus der Haft befreien. Trotz allem: Für seine Anhänger ist der Familienname sein wichtigstes Kapital bei der morgigen Stichwahl. Von A. Herrberg und L. Bilard.",
+      "description": "Flávio Bolsonaro will seinen verurteilten Vater als Präsident beerben - und wohl auch aus der Haft befreien. Trotz allem: Für seine Anhänger ist der Familienname sein wichtigstes Kapital bei der heutigen Stichwahl. Von A. Herrberg und L. Bilard.",
       "pubDate": "2026-10-24T15:36:26+02:00",
       "link": "https://www.tagesschau.de/ausland/amerika/brasilien-wahl-bolsonaro-106.html",
       "bild": ""
@@ -88,38 +120,6 @@
       "description": "Der Kanzler ruft auf dem CSU-Parteitag zu Geschlossenheit auf und warnt vor Extremisten. Großen Applaus gibt es aber für einen besonderen Gruß, der im Zusammenhang mit der Diskussion über die Steinmeier-Nachfolge gesehen wurde.",
       "pubDate": "2026-10-24T14:19:07+02:00",
       "link": "https://www.tagesschau.de/inland/innenpolitik/csu-cdu-merz-aigner-100.html",
-      "bild": ""
-    },
-    {
-      "id": "4974f6e086f8ac9cf299",
-      "title": "Krieg gegen die Ukraine: Starlink funktioniert wieder stabil",
-      "description": "Die Satellitenkommunikation von SpaceX in der Ukraine funktioniert nach Angaben aus Kiew wieder stabil. Die ukrainische Armee meldet derweil Angriffe auf russische Industrieanlagen.",
-      "pubDate": "2026-10-24T17:29:30+02:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/musk-starlink-ukraine-102.html",
-      "bild": ""
-    },
-    {
-      "id": "9dca3079f21f50eddacf",
-      "title": "Debatte über SPD-Vorsitz: Mit oder ohne Klingbeil?",
-      "description": "Noch ist offen, ob SPD-Chef Klingbeil noch einmal für den Posten kandidiert. Der Juso-Vorsitzende Türmer hat eine klare Meinung: Er fordert einen Neustart an der Parteispitze. Bremens Bürgermeister Bovenschulte hält an Klingbeil fest.",
-      "pubDate": "2026-10-24T12:52:30+02:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/spd-chef-klingbeil-debatte-100.html",
-      "bild": ""
-    },
-    {
-      "id": "0a2552911ec04b9dafc2",
-      "title": "Deutschlandticket für Gelegenheitsfahrer: Bilger findet Idee gut",
-      "description": "Schnell mit dem Handy bei Bahn oder Öffis einchecken - und der günstigste Tarif wird berechnet. Am Monatsende kostet das Ganze höchstens so viel wie das Deutschlandticket. Der Verkehrsminister findet die Idee gut.",
-      "pubDate": "2026-10-24T12:46:34+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/bahn-nahverkehr-deutschlandticket-light-100.html",
-      "bild": ""
-    },
-    {
-      "id": "185c0da060b255daccfe",
-      "title": "Massive Waldbrände in Indonesien - Kritik an Regierung",
-      "description": "In Indonesien wüten die schlimmsten Feuer seit 2015. Hauptsächlich ausgelöst wurden die Feuer durch illegale Brandrodung. Die Nachbarn Singapur und Malaysia kritisieren die indonesische Regierung scharf. Von Jennifer Johnston.",
-      "pubDate": "2026-10-24T12:26:00+02:00",
-      "link": "https://www.tagesschau.de/ausland/asien/braende-indonesien-100.html",
       "bild": ""
     }
   ],
