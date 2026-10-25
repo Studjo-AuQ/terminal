@@ -1,7 +1,31 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "24.10.2026, 23:34 Uhr (UTC)",
+  "aktualisiert": "25.10.2026, 04:18 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "005942df4d73dfd1bc60",
+      "title": "Wie Erdwärme die Wärmeversorgung verändern soll",
+      "description": "In Potsdam wird gerade mehr als einen Kilometer in den Boden gebohrt, um künftig Tausende Haushalte mit Erdwärme zu versorgen. Die Technik birgt Risiken, aber auch viele Chancen. Von M. Kell und H. Christ.",
+      "pubDate": "2026-10-25T05:10:34+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/technologie/erdwaerme-waermeversorgung-heizen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "b217555b54a81aa3a697",
+      "title": "Serbien wählt - kann Vucic seine Macht wieder festigen?",
+      "description": "Serbiens autoritärer Präsident Aleksandar Vucic will heute die Wahl gewinnen und Premier werden. Doch die starke Protestbewegung der Studenten könnte ihn nach 14 Jahren entmachten. Wer ist Vucic? Von Oliver Soos.",
+      "pubDate": "2026-10-25T05:10:13+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/serbien-wahl-portraet-vucic-100.html",
+      "bild": ""
+    },
+    {
+      "id": "2e0785e7344fa33bead6",
+      "title": "Lula oder Bolsonaro: Brasilien vor der Stichwahl",
+      "description": "Lula oder Bolsonaro - beide Präsidentschaftskandidaten liegen vor der Stichwahl in Brasilien gleichauf. Das Land ist tief gespalten. Dabei könnten gerade die Unentschlossenen zum entscheidenden Faktor werden. Von Anne Herrberg.",
+      "pubDate": "2026-10-25T05:07:12+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/brasilien-stichwahl-bolsonaro-lula-100.html",
+      "bild": ""
+    },
     {
       "id": "4c7c5f0cbb6970369644",
       "title": "Hunderttausende protestieren in Frankreich - neue Unruhen",
@@ -96,30 +120,6 @@
       "description": "In Indonesien wüten die schlimmsten Feuer seit 2015. Hauptsächlich ausgelöst wurden die Feuer durch illegale Brandrodung. Die Nachbarn Singapur und Malaysia kritisieren die indonesische Regierung scharf. Von Jennifer Johnston.",
       "pubDate": "2026-10-24T12:26:00+02:00",
       "link": "https://www.tagesschau.de/ausland/asien/braende-indonesien-100.html",
-      "bild": ""
-    },
-    {
-      "id": "1e3c6667f533bdc1b1f5",
-      "title": "Studie über Zeitumstellung - Welche Zeit ist besser für unsere Gesundheit?",
-      "description": "Was einmal Energie sparen sollte, ist jetzt für viele ein Ärgernis. Die EU-Kommission schlug 2018 vor, die Zeitumstellung abzuschaffen. Nur: Welche Zeit soll gelten? Forschende haben eine Antwort. Von Wiebke Drescher.",
-      "pubDate": "2026-10-24T10:55:12+02:00",
-      "link": "https://www.tagesschau.de/wissen/gesundheit/zeitumstellung-winterzeit-sommerzeit-114.html",
-      "bild": ""
-    },
-    {
-      "id": "55a4f2cb721070ae85f2",
-      "title": "Sommerzeit endet - Um 3:00 Uhr wird an der Uhr gedreht",
-      "description": "Es ist wieder so weit: Die Uhren werden um eine Stunde zurückgestellt. Auch wenn es in der ersten Nacht Vorteile bringt, sind die meisten Menschen nicht zufrieden mit der Zeitumstellung.",
-      "pubDate": "2026-10-24T10:54:51+02:00",
-      "link": "https://www.tagesschau.de/wissen/gesundheit/zeitumstellung-sommerzeit-138.html",
-      "bild": ""
-    },
-    {
-      "id": "926f4e0327d58bed6b9e",
-      "title": "Energie-Entkoppelung: So abhängig ist Europa noch von Russland",
-      "description": "Nach dem Vollangriff auf die Ukraine wollte Europa schnell unabhängig werden von russischer Energie. Teilweise ist das auch gelungen. Vor allem bei Öl und Uran bleiben aber alte Abhängigkeiten. Von Jean-Marie Magro.",
-      "pubDate": "2026-10-24T10:27:08+02:00",
-      "link": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/abhaengigkeit-russische-energie-100.html",
       "bild": ""
     }
   ],
