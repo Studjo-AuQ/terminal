@@ -1,19 +1,6 @@
-/* ══════════════════════════════════════════════════════
-   speiseplan-ansicht.css
-   Studjo Terminal | Evangelisches Johanneswerk
-   ══════════════════════════════════════════════════════ */
-
 * { box-sizing: border-box; }
 
-/* WICHTIG: Mehrere Elemente auf dieser Seite setzen "display: flex"
-   für ihren normalen Zustand. Ohne diese Regel gewinnt diese eigene
-   Regel gegen das hidden-Attribut (gleiche CSS-Spezifität, aber
-   unsere Regel kommt zuletzt) – das Element bliebe sichtbar, obwohl
-   es als "hidden" markiert ist. Diese Regel stellt sicher, dass
-   hidden immer greift, unabhängig von anderen display-Angaben. */
-[hidden] {
-    display: none !important;
-}
+[hidden] { display: none !important; }
 
 html, body {
     margin: 0;
@@ -37,9 +24,11 @@ html, body {
 
 .sp-titel {
     flex: 1;
+    min-width: 0;
     font-size: 1.25rem;
     font-weight: 800;
     color: var(--primary-red, #b61f29);
+    white-space: nowrap;
 }
 
 .back-button {
@@ -63,12 +52,45 @@ html, body {
     color: #ffffff;
 }
 
-.back-button:focus-visible {
+.back-button:focus-visible,
+.sp-bild-link:focus-visible {
     outline: 3px solid #0f2f37;
     outline-offset: 3px;
 }
 
-/* Seiten-Umschaltung (1: Speiseplan-Tabelle / 2: Essensbilder) */
+/* Neuer direkter Zugang zur bebilderten Seite 2 */
+.sp-bild-link {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 44px;
+    padding: 8px 18px;
+    border: 2px solid var(--primary-red, #b61f29);
+    border-radius: 999px;
+    background: #fff7f7;
+    color: var(--primary-red, #b61f29);
+    font: inherit;
+    font-size: 1.02rem;
+    font-weight: 800;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.sp-bild-link:hover,
+.sp-bild-link.aktiv {
+    background: var(--primary-red, #b61f29);
+    color: #ffffff;
+}
+
+.sp-bild-link.aktiv::after {
+    content: " ✓";
+    font-weight: 900;
+}
+
 .sp-seiten-nav {
     display: flex;
     align-items: center;
@@ -156,7 +178,6 @@ html, body {
     height: auto;
 }
 
-/* Für Screenreader/Vorlesen sichtbar, optisch aber unsichtbar */
 .sp-sr-only {
     position: absolute;
     width: 1px; height: 1px;
@@ -165,4 +186,68 @@ html, body {
     clip: rect(0,0,0,0);
     white-space: nowrap;
     border: 0;
+}
+
+@media (max-width: 1050px) {
+    .sp-header {
+        height: 116px;
+        align-items: flex-start;
+        padding-top: 12px;
+        gap: 12px;
+    }
+
+    .sp-bild-link {
+        top: 82px;
+    }
+
+    .sp-frame-wrap {
+        top: 116px;
+    }
+}
+
+@media (max-width: 680px) {
+    .sp-header {
+        height: 128px;
+        padding: 10px 10px 0;
+        gap: 8px;
+    }
+
+    .back-button {
+        padding: 8px 12px;
+        font-size: .88rem;
+    }
+
+    .sp-titel {
+        font-size: .98rem;
+        white-space: normal;
+        line-height: 1.15;
+        padding-top: 8px;
+    }
+
+    .sp-seiten-nav {
+        gap: 5px;
+        font-size: .76rem;
+    }
+
+    .sp-seiten-nav button {
+        width: 34px;
+        height: 34px;
+        font-size: 1.05rem;
+    }
+
+    .sp-bild-link {
+        top: 96px;
+        max-width: calc(100vw - 24px);
+        min-height: 40px;
+        padding: 7px 14px;
+        font-size: .92rem;
+    }
+
+    .sp-frame-wrap {
+        top: 128px;
+    }
+
+    .sp-canvas-wrap {
+        padding: 10px;
+    }
 }
