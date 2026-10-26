@@ -1069,7 +1069,7 @@
   function rendere(kandidaten) {
     const liste = $('tagesinfo-liste');
     if (!liste) return;
-    liste.innerHTML = '';
+    liste.replaceChildren();
 
     kandidaten.forEach(k => {
       const a = document.createElement('a');
@@ -1078,13 +1078,26 @@
       if (k.extern) { a.target = '_blank'; a.rel = 'noopener noreferrer'; }
       a.dataset.tagesinfoTyp = k.typ;
       a.setAttribute('aria-label', k.rubrik + ': ' + k.text + '. Mehr Informationen');
-      a.innerHTML = `
-        <span class="tagesinfo-emoji" aria-hidden="true">${k.emoji}</span>
-        <span class="tagesinfo-inhalt" data-vorlesen>
-          <span class="tagesinfo-rubrik">${k.rubrik}</span>
-          <span class="tagesinfo-text">${k.text}</span>
-        </span>
-      `;
+
+      const emoji = document.createElement('span');
+      emoji.className = 'tagesinfo-emoji';
+      emoji.setAttribute('aria-hidden', 'true');
+      emoji.textContent = String(k.emoji || '');
+
+      const inhalt = document.createElement('span');
+      inhalt.className = 'tagesinfo-inhalt';
+      inhalt.setAttribute('data-vorlesen', '');
+
+      const rubrik = document.createElement('span');
+      rubrik.className = 'tagesinfo-rubrik';
+      rubrik.textContent = String(k.rubrik || '');
+
+      const text = document.createElement('span');
+      text.className = 'tagesinfo-text';
+      text.textContent = String(k.text || '');
+
+      inhalt.append(rubrik, text);
+      a.append(emoji, inhalt);
       liste.appendChild(a);
     });
   }
