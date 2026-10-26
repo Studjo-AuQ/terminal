@@ -1,0 +1,1410 @@
+name: Terminal-Daten prüfen
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  workflow_run:
+    workflows:
+      - "RSS-Feed aktualisieren"
+      - "Speiseplan-Kurztexte aktualisieren"
+    types:
+      - completed
+
+permissions:
+  contents: read
+
+concurrency:
+  group: terminal-data-pruefen-${{ github.ref || github.event.workflow_run.head_branch || 'main' }}
+  cancel-in-progress: true
+
+jobs:
+  daten-pruefen:
+    name: JSON, Pfade und Offline-Paket prüfen
+    runs-on: ubuntu-latest
+
+    # Nach einem fehlgeschlagenen vorgelagerten Workflow muss nicht noch
+    # dessen unverändertes Repository geprüft werden.
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Terminal-Daten validieren
+        shell: bash
+        run: |
+          python3 <<'PYTHON'
+          from __future__ import annotations
+
+          import calendar
+          import json
+          import re
+          import sys
+          from collections import Counter, defaultdict
+          from datetime import date, datetime
+          from pathlib import Path
+          from urllib.parse import urlsplit
+
+          ROOT = Path('.')
+          DATA = ROOT / 'data'
+
+          errors = []
+          warnings = []
+          stats = []
+
+          def annotation(kind, path, message):
+              safe = str(message).replace('\n', ' ').replace('\r', ' ')
+              print(f'::{kind} file={path}::{safe}')
+
+          def error(path, message):
+              errors.append((str(path), str(message)))
+              annotation('error', path, message)
+
+          def warn(path, message):
+              warnings.append((str(path), str(message)))
+              annotation('warning', path, message)
+
+          def info(message):
+              print(f'ℹ️ {message}')
+
+          def load_json(path):
+              try:
+                  with open(path, 'r', encoding='utf-8') as f:
+                      return json.load(f)
+              except FileNotFoundError:
+                  error(path, 'Datei fehlt.')
+              except json.JSONDecodeError as exc:
+                  error(
+                      path,
+                      f'Ungültiges JSON in Zeile {exc.lineno}, '
+                      f'Spalte {exc.colno}: {exc.msg}'
+                  )
+              return None
+
+          def text(value):
+              return str(value or '').strip()
+
+          def valid_iso_date(value):
+              if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', text(value)):
+                  return False
+              try:
+                  date.fromisoformat(text(value))
+                  return True
+              except ValueError:
+                  return False
+
+          def valid_local_datetime(value):
+              if not re.fullmatch(
+                  r'\d{4}-\d{2}-\d{2}T\d{2}:\d{2}',
+                  text(value)
+              ):
+                  return False
+              try:
+                  datetime.fromisoformat(text(value))
+                  return True
+              except ValueError:
+                  return False
+
+          def date_range(path, label, von, bis, datetime_mode=False):
+              validator = (
+                  valid_local_datetime
+                  if datetime_mode
+                  else valid_iso_date
+              )
+
+              if not validator(von):
+                  error(path, f'{label}: ungültiger Startwert {von!r}.')
+                  return False
+
+              if not validator(bis):
+                  error(path, f'{label}: ungültiger Endwert {bis!r}.')
+                  return False
+
+              if text(von) > text(bis):
+                  error(
+                      path,
+                      f'{label}: Start {von!r} liegt nach Ende {bis!r}.'
+                  )
+                  return False
+
+              return True
+
+          def unique_ids(path, items, label):
+              seen = set()
+
+              for index, item in enumerate(items or []):
+                  ident = text(
+                      item.get('id')
+                      if isinstance(item, dict)
+                      else ''
+                  )
+
+                  if not ident:
+                      error(
+                          path,
+                          f'{label}[{index}]: ID fehlt.'
+                      )
+                      continue
+
+                  if ident in seen:
+                      error(
+                          path,
+                          f'{label}: doppelte ID {ident!r}.'
+                      )
+
+                  seen.add(ident)
+
+              return seen
+
+          def repo_path_from_link(value):
+              raw = text(value)
+              if not raw:
+                  return None
+
+              if re.match(
+                  r'^(?:https?:|mailto:|tel:|data:|blob:|#)',
+                  raw,
+                  flags=re.I
+              ):
+                  return None
+
+              parsed = urlsplit(raw)
+              path = parsed.path.lstrip('/')
+
+              if path.startswith('./'):
+                  path = path[2:]
+
+              if '..' in Path(path).parts:
+                  return '__INVALID_PARENT__'
+
+              return path or None
+
+          def require_repo_file(path, value, label, require_img=False):
+              raw = text(value)
+              if not raw:
+                  return
+
+              target = repo_path_from_link(raw)
+
+              if target == '__INVALID_PARENT__':
+                  error(
+                      path,
+                      f'{label}: Pfad darf kein ".." enthalten: {raw!r}.'
+                  )
+                  return
+
+              if target is None:
+                  return
+
+              if require_img and not target.startswith('img/'):
+                  error(
+                      path,
+                      f'{label}: Bild muss unter img/ liegen: {raw!r}.'
+                  )
+
+              if not (ROOT / target).is_file():
+                  error(
+                      path,
+                      f'{label}: referenzierte Datei fehlt: {target}.'
+                  )
+
+          def has_html_tag(value):
+              return bool(
+                  re.search(
+                      r'<\s*/?\s*[a-z][^>]*>',
+                      str(value or ''),
+                      flags=re.I
+                  )
+              )
+
+          # --------------------------------------------------
+          # 0. Alle JSON-Dateien müssen syntaktisch gültig sein
+          # --------------------------------------------------
+          if not DATA.is_dir():
+              error('data', 'Datenordner data/ fehlt.')
+              all_json = {}
+          else:
+              all_json = {}
+
+              for path in sorted(DATA.glob('*.json')):
+                  obj = load_json(path)
+                  if obj is not None:
+                      all_json[path.name] = obj
+
+              stats.append(
+                  f'{len(all_json)} JSON-Dateien syntaktisch gelesen'
+              )
+
+          required_json = [
+              'aba.json',
+              'termine.json',
+              'tagesinfo.json',
+              'wochenmottos.json',
+              'losungen.json',
+              'neuigkeiten.json',
+              'ticker.json',
+              'nachrichten.json',
+              'tagesschau.json',
+              'kobinet.json',
+              'speiseplan-kurz.json',
+              'wetter.json',
+          ]
+
+          for name in required_json:
+              if name not in all_json:
+                  error(
+                      f'data/{name}',
+                      'Erforderliche Terminal-Datendatei fehlt oder ist ungültig.'
+                  )
+
+          # --------------------------------------------------
+          # 1. AbA
+          # --------------------------------------------------
+          aba_path = 'data/aba.json'
+          aba = all_json.get('aba.json')
+
+          standort_ids = set()
+
+          if isinstance(aba, dict):
+              standorte = aba.get('standorte') or []
+              angebote = aba.get('angebote') or []
+              kategorien = aba.get('kategorien') or {}
+
+              if not isinstance(standorte, list):
+                  error(aba_path, 'standorte muss eine Liste sein.')
+                  standorte = []
+
+              if not isinstance(angebote, list):
+                  error(aba_path, 'angebote muss eine Liste sein.')
+                  angebote = []
+
+              if not isinstance(kategorien, dict):
+                  error(aba_path, 'kategorien muss ein Objekt sein.')
+                  kategorien = {}
+
+              standort_ids = unique_ids(
+                  aba_path,
+                  standorte,
+                  'standorte'
+              )
+              unique_ids(
+                  aba_path,
+                  angebote,
+                  'angebote'
+              )
+
+              if not standort_ids:
+                  error(
+                      aba_path,
+                      'Mindestens ein AbA-Standort ist erforderlich.'
+                  )
+
+              for site in standorte:
+                  sid = text(site.get('id'))
+
+                  if not text(site.get('name')):
+                      error(
+                          aba_path,
+                          f'Standort {sid or "?"}: name fehlt.'
+                      )
+
+                  require_repo_file(
+                      aba_path,
+                      site.get('bild'),
+                      f'Standort {sid}: Bild',
+                      require_img=True
+                  )
+
+                  require_repo_file(
+                      aba_path,
+                      site.get('seite'),
+                      f'Standort {sid}: Seite'
+                  )
+
+              for image in aba.get('bildkatalog') or []:
+                  require_repo_file(
+                      aba_path,
+                      image,
+                      'Bildkatalog',
+                      require_img=True
+                  )
+
+              allowed_types = {
+                  'regelmaessig',
+                  'sonder',
+              }
+
+              known_rhythms = {
+                  'woechentlich',
+                  '14taegig',
+                  'monatlich',
+                  'alle3monate',
+                  'workshop',
+                  'termine',
+                  'offen',
+                  'aushang',
+              }
+
+              for offer in angebote:
+                  oid = text(offer.get('id')) or '?'
+                  typ = text(offer.get('typ'))
+                  rhythmus = text(offer.get('rhythmus'))
+
+                  if not text(offer.get('name')):
+                      error(
+                          aba_path,
+                          f'{oid}: name fehlt.'
+                      )
+
+                  if text(offer.get('standort')) not in standort_ids:
+                      error(
+                          aba_path,
+                          f'{oid}: unbekannter Standort '
+                          f'{offer.get("standort")!r}.'
+                      )
+
+                  if text(offer.get('kategorie')) not in kategorien:
+                      error(
+                          aba_path,
+                          f'{oid}: unbekannte Kategorie '
+                          f'{offer.get("kategorie")!r}.'
+                      )
+
+                  if typ not in allowed_types:
+                      error(
+                          aba_path,
+                          f'{oid}: unbekannter typ {typ!r}.'
+                      )
+
+                  if rhythmus and rhythmus not in known_rhythms:
+                      warn(
+                          aba_path,
+                          f'{oid}: neuer/unbekannter Rhythmus '
+                          f'{rhythmus!r}. Bitte prüfen.'
+                      )
+
+                  require_repo_file(
+                      aba_path,
+                      offer.get('bild'),
+                      f'{oid}: Bild',
+                      require_img=True
+                  )
+
+                  von = text(offer.get('von'))
+                  bis = text(offer.get('bis'))
+
+                  if von and not valid_iso_date(von):
+                      error(
+                          aba_path,
+                          f'{oid}: ungültiges von-Datum {von!r}.'
+                      )
+
+                  if bis and not valid_iso_date(bis):
+                      error(
+                          aba_path,
+                          f'{oid}: ungültiges bis-Datum {bis!r}.'
+                      )
+
+                  if von and bis and von > bis:
+                      error(
+                          aba_path,
+                          f'{oid}: von liegt nach bis.'
+                      )
+
+                  if rhythmus == '14taegig':
+                      if not isinstance(
+                          offer.get('referenzFindet'),
+                          bool
+                      ):
+                          error(
+                              aba_path,
+                              f'{oid}: 14-tägiges Angebot braucht '
+                              'referenzFindet=true/false.'
+                          )
+
+                  if (
+                      typ == 'regelmaessig' and
+                      rhythmus in {
+                          'woechentlich',
+                          '14taegig',
+                          'monatlich',
+                      }
+                  ):
+                      wochentag = offer.get('wochentag')
+                      if (
+                          not isinstance(wochentag, int) or
+                          not 1 <= wochentag <= 5
+                      ):
+                          error(
+                              aba_path,
+                              f'{oid}: wochentag muss 1 bis 5 sein.'
+                          )
+
+              programm = aba.get('programm') or {}
+              pvon = text(programm.get('gueltigVon'))
+              pbis = text(programm.get('gueltigBis'))
+
+              if pvon or pbis:
+                  date_range(
+                      aba_path,
+                      'AbA-Programm',
+                      pvon,
+                      pbis
+                  )
+
+              stats.append(
+                  f'{len(angebote)} AbA-Angebote / '
+                  f'{len(standorte)} Standorte geprüft'
+              )
+
+          # --------------------------------------------------
+          # 2. Termine + Schulferien
+          # --------------------------------------------------
+          termine_path = 'data/termine.json'
+          termine_data = all_json.get('termine.json')
+
+          if isinstance(termine_data, dict):
+              termine = termine_data.get('termine') or []
+              ferien = termine_data.get('schulferien') or []
+
+              if not isinstance(termine, list):
+                  error(
+                      termine_path,
+                      'termine muss eine Liste sein.'
+                  )
+                  termine = []
+
+              if not isinstance(ferien, list):
+                  error(
+                      termine_path,
+                      'schulferien muss eine Liste sein.'
+                  )
+                  ferien = []
+
+              unique_ids(
+                  termine_path,
+                  termine,
+                  'termine'
+              )
+              unique_ids(
+                  termine_path,
+                  ferien,
+                  'schulferien'
+              )
+
+              allowed_categories = {
+                  'weitere',
+                  'werkstattfeste',
+                  'schliessungstage',
+                  'andachten',
+              }
+
+              for item in termine:
+                  ident = text(item.get('id')) or '?'
+                  cat = text(item.get('kategorie'))
+
+                  if cat not in allowed_categories:
+                      error(
+                          termine_path,
+                          f'{ident}: unbekannte Kategorie {cat!r}.'
+                      )
+
+                  von = text(item.get('von'))
+                  bis = text(item.get('bis')) or von
+
+                  date_range(
+                      termine_path,
+                      ident,
+                      von,
+                      bis
+                  )
+
+                  standort = text(item.get('standort'))
+
+                  if (
+                      standort and
+                      standort_ids and
+                      standort not in standort_ids
+                  ):
+                      error(
+                          termine_path,
+                          f'{ident}: unbekannter Standort '
+                          f'{standort!r}.'
+                      )
+
+                  require_repo_file(
+                      termine_path,
+                      item.get('bild'),
+                      f'{ident}: Bild',
+                      require_img=True
+                  )
+
+              for item in ferien:
+                  ident = text(item.get('id')) or '?'
+                  date_range(
+                      termine_path,
+                      f'Schulferien {ident}',
+                      item.get('von'),
+                      item.get('bis')
+                  )
+
+              stats.append(
+                  f'{len(termine)} Termine / '
+                  f'{len(ferien)} Ferienzeiträume geprüft'
+              )
+
+          # --------------------------------------------------
+          # 3. Tageskarte
+          # --------------------------------------------------
+          tages_path = 'data/tagesinfo.json'
+          tages = all_json.get('tagesinfo.json')
+
+          if isinstance(tages, dict):
+              vorgaben = tages.get('vorgaben') or []
+              rubriken = tages.get('rubriken') or []
+              anzahl = tages.get('anzahl')
+
+              if not isinstance(vorgaben, list):
+                  error(
+                      tages_path,
+                      'vorgaben muss eine Liste sein.'
+                  )
+                  vorgaben = []
+
+              if not isinstance(rubriken, list):
+                  error(
+                      tages_path,
+                      'rubriken muss eine Liste sein.'
+                  )
+                  rubriken = []
+
+              if not isinstance(anzahl, int) or not 1 <= anzahl <= 3:
+                  error(
+                      tages_path,
+                      'anzahl muss eine Ganzzahl von 1 bis 3 sein.'
+                  )
+
+              unique_ids(
+                  tages_path,
+                  vorgaben,
+                  'vorgaben'
+              )
+
+              allowed_modes = {
+                  'auto',
+                  'termine',
+                  'aba',
+                  'motto',
+                  'losung',
+                  'wetter',
+                  'essen',
+                  'nachricht',
+              }
+
+              if len(set(rubriken)) != len(rubriken):
+                  error(
+                      tages_path,
+                      'rubriken enthält doppelte Werte.'
+                  )
+
+              unknown_rubrics = (
+                  set(rubriken) -
+                  (allowed_modes - {'auto'})
+              )
+
+              if unknown_rubrics:
+                  error(
+                      tages_path,
+                      'Unbekannte rubriken: ' +
+                      ', '.join(sorted(unknown_rubrics))
+                  )
+
+              for rule in vorgaben:
+                  rid = text(rule.get('id')) or '?'
+
+                  date_range(
+                      tages_path,
+                      rid,
+                      rule.get('von'),
+                      rule.get('bis'),
+                      datetime_mode=True
+                  )
+
+                  plaetze = rule.get('plaetze') or []
+
+                  if not isinstance(plaetze, list):
+                      error(
+                          tages_path,
+                          f'{rid}: plaetze muss eine Liste sein.'
+                      )
+                      plaetze = []
+
+                  if len(plaetze) > 3:
+                      error(
+                          tages_path,
+                          f'{rid}: mehr als 3 Plätze definiert.'
+                      )
+
+                  for index, slot in enumerate(plaetze, start=1):
+                      modus = text(slot.get('modus') or 'auto')
+
+                      if modus not in allowed_modes:
+                          error(
+                              tages_path,
+                              f'{rid}, Platz {index}: '
+                              f'unbekannter Modus {modus!r}.'
+                          )
+
+                      if modus == 'nachricht':
+                          news = slot.get('nachricht')
+
+                          if not isinstance(news, dict):
+                              error(
+                                  tages_path,
+                                  f'{rid}, Platz {index}: '
+                                  'nachricht-Objekt fehlt.'
+                              )
+                          else:
+                              titel = text(
+                                  news.get('titel') or
+                                  news.get('title')
+                              )
+
+                              if not titel:
+                                  error(
+                                      tages_path,
+                                      f'{rid}, Platz {index}: '
+                                      'Nachrichtentitel fehlt.'
+                                  )
+
+                              if not text(news.get('id')):
+                                  warn(
+                                      tages_path,
+                                      f'{rid}, Platz {index}: '
+                                      'Nachricht hat keine stabile ID; '
+                                      'Titel-Fallback wäre nötig.'
+                                  )
+
+                  ausblenden = rule.get('ausblenden') or []
+
+                  if not isinstance(ausblenden, list):
+                      error(
+                          tages_path,
+                          f'{rid}: ausblenden muss eine Liste sein.'
+                      )
+                  else:
+                      for typ in ausblenden:
+                          if typ not in rubriken:
+                              warn(
+                                  tages_path,
+                                  f'{rid}: ausblenden enthält '
+                                  f'unbekannte Rubrik {typ!r}.'
+                              )
+
+              stats.append(
+                  f'{len(vorgaben)} Tageskarten-Steuerung(en) geprüft'
+              )
+
+          # --------------------------------------------------
+          # 4. Wochenmottos
+          # --------------------------------------------------
+          motto_path = 'data/wochenmottos.json'
+          motto = all_json.get('wochenmottos.json')
+
+          if isinstance(motto, dict):
+              items = motto.get('wochenmottos') or []
+
+              if not isinstance(items, list):
+                  error(
+                      motto_path,
+                      'wochenmottos muss eine Liste sein.'
+                  )
+                  items = []
+
+              weeks = []
+
+              for item in items:
+                  try:
+                      week = int(item.get('woche'))
+                  except Exception:
+                      error(
+                          motto_path,
+                          f'Ungültige Woche: {item.get("woche")!r}.'
+                      )
+                      continue
+
+                  weeks.append(week)
+
+                  if not text(item.get('motto')):
+                      error(
+                          motto_path,
+                          f'Woche {week}: motto fehlt.'
+                      )
+
+              if len(items) != 100:
+                  error(
+                      motto_path,
+                      f'Es werden genau 100 Mottos erwartet, '
+                      f'gefunden: {len(items)}.'
+                  )
+
+              if set(weeks) != set(range(1, 101)):
+                  error(
+                      motto_path,
+                      'Die Wochen müssen eindeutig 1 bis 100 abdecken.'
+                  )
+
+              stats.append(
+                  f'{len(items)} Wochenmottos geprüft'
+              )
+
+          # --------------------------------------------------
+          # 5. Losungen
+          # --------------------------------------------------
+          losung_path = 'data/losungen.json'
+          losungen = all_json.get('losungen.json')
+
+          if isinstance(losungen, dict):
+              by_year = Counter()
+
+              for datum, item in losungen.items():
+                  if not valid_iso_date(datum):
+                      error(
+                          losung_path,
+                          f'Ungültiger Datumsschlüssel {datum!r}.'
+                      )
+                      continue
+
+                  by_year[datum[:4]] += 1
+
+                  if not isinstance(item, dict):
+                      error(
+                          losung_path,
+                          f'{datum}: Eintrag ist kein Objekt.'
+                      )
+                      continue
+
+                  if not text(item.get('losung')):
+                      error(
+                          losung_path,
+                          f'{datum}: losung fehlt.'
+                      )
+
+                  if not text(item.get('lehrtext')):
+                      warn(
+                          losung_path,
+                          f'{datum}: lehrtext fehlt.'
+                      )
+
+              for year, count in sorted(by_year.items()):
+                  expected = (
+                      366
+                      if calendar.isleap(int(year))
+                      else 365
+                  )
+
+                  if count != expected:
+                      warn(
+                          losung_path,
+                          f'Jahr {year}: {count} statt '
+                          f'{expected} Tages-Einträge. '
+                          'Teilimporte sind möglich, bitte prüfen.'
+                      )
+
+              stats.append(
+                  f'{len(losungen)} Losungstage geprüft'
+              )
+
+          # --------------------------------------------------
+          # 6. Neuigkeiten + Ticker
+          # --------------------------------------------------
+          news_path = 'data/neuigkeiten.json'
+          news = all_json.get('neuigkeiten.json')
+          news_ids = set()
+
+          if isinstance(news, dict):
+              messages = news.get('nachrichten') or []
+              ticker_only = news.get('tickerNur') or []
+
+              if not isinstance(messages, list):
+                  error(
+                      news_path,
+                      'nachrichten muss eine Liste sein.'
+                  )
+                  messages = []
+
+              if not isinstance(ticker_only, list):
+                  error(
+                      news_path,
+                      'tickerNur muss eine Liste sein.'
+                  )
+                  ticker_only = []
+
+              news_ids = unique_ids(
+                  news_path,
+                  messages,
+                  'nachrichten'
+              )
+              unique_ids(
+                  news_path,
+                  ticker_only,
+                  'tickerNur'
+              )
+
+              for item in messages:
+                  ident = text(item.get('id')) or '?'
+
+                  if not valid_iso_date(item.get('datum')):
+                      error(
+                          news_path,
+                          f'{ident}: ungültiges datum '
+                          f'{item.get("datum")!r}.'
+                      )
+
+                  if not text(item.get('titel')):
+                      error(
+                          news_path,
+                          f'{ident}: titel fehlt.'
+                      )
+
+                  von = text(item.get('tickerVon'))
+                  bis = text(item.get('tickerBis'))
+
+                  if von and not valid_iso_date(von):
+                      error(
+                          news_path,
+                          f'{ident}: tickerVon ungültig.'
+                      )
+
+                  if bis and not valid_iso_date(bis):
+                      error(
+                          news_path,
+                          f'{ident}: tickerBis ungültig.'
+                      )
+
+                  if von and bis and von > bis:
+                      error(
+                          news_path,
+                          f'{ident}: tickerVon liegt nach tickerBis.'
+                      )
+
+              stats.append(
+                  f'{len(messages)} Neuigkeiten geprüft'
+              )
+
+          ticker_path = 'data/ticker.json'
+          ticker = all_json.get('ticker.json')
+
+          if isinstance(ticker, dict):
+              entries = ticker.get('eintraege') or []
+
+              if not isinstance(entries, list):
+                  error(
+                      ticker_path,
+                      'eintraege muss eine Liste sein.'
+                  )
+                  entries = []
+
+              unique_ids(
+                  ticker_path,
+                  entries,
+                  'eintraege'
+              )
+
+              max_entries = ticker.get('maxEintraege')
+
+              if (
+                  not isinstance(max_entries, int) or
+                  max_entries < 1
+              ):
+                  error(
+                      ticker_path,
+                      'maxEintraege muss eine positive Ganzzahl sein.'
+                  )
+              elif len(entries) > max_entries:
+                  warn(
+                      ticker_path,
+                      f'{len(entries)} Einträge bei '
+                      f'maxEintraege={max_entries}.'
+                  )
+
+              for item in entries:
+                  ident = text(item.get('id')) or '?'
+                  von = text(item.get('von'))
+                  bis = text(item.get('bis'))
+
+                  if von and not valid_iso_date(von):
+                      error(
+                          ticker_path,
+                          f'{ident}: von ungültig.'
+                      )
+
+                  if bis and not valid_iso_date(bis):
+                      error(
+                          ticker_path,
+                          f'{ident}: bis ungültig.'
+                      )
+
+                  if von and bis and von > bis:
+                      error(
+                          ticker_path,
+                          f'{ident}: von liegt nach bis.'
+                      )
+
+                  require_repo_file(
+                      ticker_path,
+                      item.get('link'),
+                      f'{ident}: Link'
+                  )
+
+                  link = text(item.get('link'))
+
+                  if (
+                      link.startswith('neuigkeiten.html#') and
+                      news_ids
+                  ):
+                      anchor = link.split('#', 1)[1]
+
+                      if anchor not in news_ids:
+                          error(
+                              ticker_path,
+                              f'{ident}: Neuigkeiten-Ziel '
+                              f'{anchor!r} existiert nicht.'
+                          )
+
+              stats.append(
+                  f'{len(entries)} Ticker-Einträge geprüft'
+              )
+
+          # --------------------------------------------------
+          # 7. RSS-Nachrichten
+          # --------------------------------------------------
+          for filename in (
+              'nachrichten.json',
+              'tagesschau.json',
+              'kobinet.json',
+          ):
+              path = f'data/{filename}'
+              feed = all_json.get(filename)
+
+              if not isinstance(feed, dict):
+                  continue
+
+              messages = feed.get('meldungen') or []
+
+              if not isinstance(messages, list):
+                  error(
+                      path,
+                      'meldungen muss eine Liste sein.'
+                  )
+                  messages = []
+
+              if not messages:
+                  error(
+                      path,
+                      'Feed enthält keine Meldungen.'
+                  )
+
+              unique_ids(
+                  path,
+                  messages,
+                  'meldungen'
+              )
+
+              for item in messages:
+                  ident = text(item.get('id')) or '?'
+
+                  if not text(item.get('title')):
+                      error(
+                          path,
+                          f'{ident}: title fehlt.'
+                      )
+
+                  if has_html_tag(item.get('title')):
+                      error(
+                          path,
+                          f'{ident}: HTML-Tag im title.'
+                      )
+
+                  if has_html_tag(item.get('description')):
+                      error(
+                          path,
+                          f'{ident}: HTML-Tag in description.'
+                      )
+
+                  if (
+                      text(item.get('id')) and
+                      not re.fullmatch(
+                          r'[0-9a-f]{20}',
+                          text(item.get('id'))
+                      )
+                  ):
+                      warn(
+                          path,
+                          f'{ident}: ID weicht vom '
+                          '20-stelligen RSS-ID-Format ab.'
+                      )
+
+              stats.append(
+                  f'{len(messages)} Meldungen aus {filename} geprüft'
+              )
+
+          # --------------------------------------------------
+          # 8. Speiseplan-Kurztexte
+          # --------------------------------------------------
+          meal_path = 'data/speiseplan-kurz.json'
+          meals = all_json.get('speiseplan-kurz.json')
+
+          if isinstance(meals, dict):
+              tage = meals.get('tage') or {}
+
+              if not isinstance(tage, dict):
+                  error(
+                      meal_path,
+                      'tage muss ein Objekt sein.'
+                  )
+                  tage = {}
+
+              if not tage:
+                  error(
+                      meal_path,
+                      'Keine Speiseplan-Tage vorhanden.'
+                  )
+
+              fehler_liste = meals.get('fehler') or []
+
+              if fehler_liste:
+                  error(
+                      meal_path,
+                      f'fehler enthält {len(fehler_liste)} Eintrag/Einträge.'
+                  )
+
+              if meals.get('schemaVersion') != 2:
+                  warn(
+                      meal_path,
+                      'schemaVersion ist nicht 2.'
+                  )
+
+              weekday_or_date = re.compile(
+                  r'(?:\bmontag\b|\bdienstag\b|\bmittwoch\b|'
+                  r'\bdonnerstag\b|\bfreitag\b|\bsamstag\b|'
+                  r'\bsonntag\b|\b\d{1,2}\.\d{1,2}\.\d{2,4}\b)',
+                  flags=re.I
+              )
+
+              by_source = defaultdict(list)
+
+              for datum, item in tage.items():
+                  if not valid_iso_date(datum):
+                      error(
+                          meal_path,
+                          f'Ungültiger Tages-Schlüssel {datum!r}.'
+                      )
+                      continue
+
+                  d = date.fromisoformat(datum)
+
+                  if d.weekday() > 4:
+                      error(
+                          meal_path,
+                          f'{datum}: Speiseplan-Tag liegt am Wochenende.'
+                      )
+
+                  if not isinstance(item, dict):
+                      error(
+                          meal_path,
+                          f'{datum}: Eintrag ist kein Objekt.'
+                      )
+                      continue
+
+                  a1 = text(item.get('a1'))
+                  a2 = text(item.get('a2'))
+
+                  if not a1 or not a2:
+                      error(
+                          meal_path,
+                          f'{datum}: A1 und A2 müssen beide vorhanden sein.'
+                      )
+
+                  if (
+                      weekday_or_date.search(a1) or
+                      weekday_or_date.search(a2)
+                  ):
+                      error(
+                          meal_path,
+                          f'{datum}: A1/A2 enthält Datum oder Wochentag.'
+                      )
+
+                  source = text(item.get('quelle'))
+
+                  if not source:
+                      error(
+                          meal_path,
+                          f'{datum}: quelle fehlt.'
+                      )
+                  else:
+                      require_repo_file(
+                          meal_path,
+                          source,
+                          f'{datum}: PDF-Quelle'
+                      )
+                      by_source[source].append(datum)
+
+              for source, dates in sorted(by_source.items()):
+                  if len(dates) != 5:
+                      error(
+                          meal_path,
+                          f'{source}: erwartet 5 Werktage, '
+                          f'gefunden {len(dates)}.'
+                      )
+
+              stats.append(
+                  f'{len(tage)} Speiseplan-Tage / '
+                  f'{len(by_source)} PDFs geprüft'
+              )
+
+          # --------------------------------------------------
+          # 9. Wetter
+          # --------------------------------------------------
+          weather_path = 'data/wetter.json'
+          weather = all_json.get('wetter.json')
+
+          if isinstance(weather, dict):
+              cities = weather.get('staedte') or []
+
+              if not isinstance(cities, list):
+                  error(
+                      weather_path,
+                      'staedte muss eine Liste sein.'
+                  )
+                  cities = []
+
+              names = [
+                  text(city.get('stadt'))
+                  for city in cities
+                  if isinstance(city, dict)
+              ]
+
+              duplicates = [
+                  name
+                  for name, count in Counter(names).items()
+                  if name and count > 1
+              ]
+
+              if duplicates:
+                  error(
+                      weather_path,
+                      'Doppelte Städte: ' +
+                      ', '.join(sorted(duplicates))
+                  )
+
+              for required_city in (
+                  'Lüdenscheid',
+                  'Bochum',
+              ):
+                  if required_city not in names:
+                      error(
+                          weather_path,
+                          f'Pflichtstadt {required_city!r} fehlt.'
+                      )
+
+              for city in cities:
+                  if not isinstance(city, dict):
+                      error(
+                          weather_path,
+                          'Stadt-Eintrag ist kein Objekt.'
+                      )
+                      continue
+
+                  name = text(city.get('stadt')) or '?'
+
+                  if not isinstance(city.get('aktuell'), dict):
+                      error(
+                          weather_path,
+                          f'{name}: aktuell-Block fehlt.'
+                      )
+
+                  days = city.get('tage') or []
+
+                  if not isinstance(days, list) or not days:
+                      error(
+                          weather_path,
+                          f'{name}: keine Vorhersagetage vorhanden.'
+                      )
+
+              weather_errors = weather.get('fehler') or []
+
+              if weather_errors:
+                  warn(
+                      weather_path,
+                      'Wetterdatei enthält Fehlerhinweise/Fallbacks: '
+                      f'{weather_errors!r}'
+                  )
+
+              stats.append(
+                  f'{len(cities)} Wetterstädte geprüft'
+              )
+
+          # --------------------------------------------------
+          # 10. Service Worker: Pflicht-Offline-Paket
+          # --------------------------------------------------
+          sw_path = Path('sw.js')
+
+          if not sw_path.is_file():
+              error('sw.js', 'Service Worker fehlt.')
+          else:
+              sw = sw_path.read_text(
+                  encoding='utf-8'
+              )
+
+              match = re.search(
+                  r'const\s+OFFLINE_DATEIEN\s*=\s*\['
+                  r'(?P<body>.*?)'
+                  r'\n\];',
+                  sw,
+                  flags=re.S
+              )
+
+              if not match:
+                  error(
+                      'sw.js',
+                      'OFFLINE_DATEIEN konnte nicht gefunden werden.'
+                  )
+              else:
+                  paths = re.findall(
+                      r'"([^"]+)"',
+                      match.group('body')
+                  )
+
+                  duplicates = [
+                      value
+                      for value, count in Counter(paths).items()
+                      if count > 1
+                  ]
+
+                  if duplicates:
+                      error(
+                          'sw.js',
+                          'Doppelte OFFLINE_DATEIEN: ' +
+                          ', '.join(sorted(duplicates))
+                      )
+
+                  for value in paths:
+                      if value == './':
+                          continue
+
+                      if re.match(
+                          r'^speiseplaene/.*\.pdf$',
+                          value,
+                          flags=re.I
+                      ):
+                          warn(
+                              'sw.js',
+                              'Rollierendes Speiseplan-PDF ist wieder '
+                              f'statisch eingetragen: {value}.'
+                          )
+
+                      if not (ROOT / value).is_file():
+                          error(
+                              'sw.js',
+                              f'OFFLINE_DATEIEN verweist auf '
+                              f'fehlende Datei: {value}.'
+                          )
+
+                  stats.append(
+                      f'{len(paths)} Service-Worker-Offlinepfade geprüft'
+                  )
+
+          # --------------------------------------------------
+          # Ergebnis / GitHub Summary
+          # --------------------------------------------------
+          print()
+          print('═' * 64)
+          print('Studjo Terminal – Validierung')
+          print('═' * 64)
+
+          for line in stats:
+              print('✅', line)
+
+          print()
+          print(f'Fehler:   {len(errors)}')
+          print(f'Warnungen:{len(warnings):>3}')
+
+          summary_path = Path(
+              str(
+                  __import__('os').environ.get(
+                      'GITHUB_STEP_SUMMARY',
+                      ''
+                  )
+              )
+          )
+
+          summary = [
+              '# ✅ Studjo Terminal – Datenprüfung'
+              if not errors
+              else '# ❌ Studjo Terminal – Datenprüfung',
+              '',
+              f'- **Fehler:** {len(errors)}',
+              f'- **Warnungen:** {len(warnings)}',
+              '',
+              '## Geprüft',
+          ]
+
+          summary.extend(
+              f'- {line}'
+              for line in stats
+          )
+
+          if errors:
+              summary += [
+                  '',
+                  '## Fehler',
+              ]
+              summary.extend(
+                  f'- `{path}` – {message}'
+                  for path, message in errors
+              )
+
+          if warnings:
+              summary += [
+                  '',
+                  '## Warnungen',
+              ]
+              summary.extend(
+                  f'- `{path}` – {message}'
+                  for path, message in warnings
+              )
+
+          if summary_path:
+              try:
+                  with summary_path.open(
+                      'a',
+                      encoding='utf-8'
+                  ) as f:
+                      f.write(
+                          '\n'.join(summary) + '\n'
+                      )
+              except Exception:
+                  pass
+
+          if errors:
+              print()
+              print(
+                  '❌ Validierung fehlgeschlagen. '
+                  'Bitte die oben markierten Fehler korrigieren.'
+              )
+              sys.exit(1)
+
+          if warnings:
+              print()
+              print(
+                  '⚠️ Validierung erfolgreich, '
+                  'aber mit Warnungen.'
+              )
+          else:
+              print()
+              print(
+                  '✅ Validierung vollständig erfolgreich.'
+              )
+          PYTHON
