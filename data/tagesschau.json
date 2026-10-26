@@ -1,12 +1,68 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "26.10.2026, 01:32 Uhr (UTC)",
+  "aktualisiert": "26.10.2026, 07:00 Uhr (UTC)",
   "meldungen": [
     {
+      "id": "cb8b440b339eddd85f2b",
+      "title": "Wahlen in Brasilien: Eine Nacht zwischen Jubel und Misstrauen",
+      "description": "Feuerwerk und Freudentränen - in Brasilien feiern Anhänger den Wahlsieg von Lula als Erfolg der Demokratie. Doch während die einen aufatmen, warnen andere vor dem politischen Kampf, der jetzt erst beginnt. Von Anne Herrberg.",
+      "pubDate": "2026-10-26T07:34:32+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/brasilien-wahlen-lula-102.html",
+      "bild": ""
+    },
+    {
+      "id": "f6bc84b8aa93a7b9e6bd",
+      "title": "Marktbericht: Anleger versuchen DAX zu stabilisieren",
+      "description": "Die Zahl der Sorgen bleibt groß. Neben den anhaltend hohen Ölpreisen dämpfen die Sorgen um den KI-Boom die Stimmung. Jetzt hoffen die Anleger auf gute Unternehmensbilanzen und Hilfe von den Notenbanken.",
+      "pubDate": "2026-10-26T07:27:39+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-fed-ezb-100.html",
+      "bild": ""
+    },
+    {
+      "id": "53888faf3d94f1e5efb3",
+      "title": "Wie die Goldsuche Natur und Lebensgrundlagen in Ghana zerstört",
+      "description": "In Ghana wird unter extremen Bedingungen Gold abgebaut - auch Kakaoplantagen müssen dafür weichen. Mit verheerenden Folgen: Zurück bleiben zerstörte Landschaften und verdreckte, belastete Flüsse. Von Judith Hartmann und Jakob Sax.",
+      "pubDate": "2026-10-26T07:13:21+01:00",
+      "link": "https://www.tagesschau.de/wissen/klima/goldabbau-ghana-abholzung-regenwald-100.html",
+      "bild": ""
+    },
+    {
+      "id": "d5e48b1f91d1b96d7c98",
+      "title": "11KM-Podcast: Frauen in der Bundeswehr - belästigt, gemobbt, missbraucht",
+      "description": "Seit 25 Jahren können Frauen in der Bundeswehr alle Dienstgrade erreichen. Doch viele Soldatinnen berichten von Sexismus und Gewalt. Der Podcast 11KM über eine Kultur des Wegschauens.",
+      "pubDate": "2026-10-26T06:27:48+01:00",
+      "link": "https://www.tagesschau.de/podcast-11km-frauen-bundeswehr-100.html",
+      "bild": ""
+    },
+    {
+      "id": "75d1cf7eddd402a5f1c0",
+      "title": "Deutsche Geheimdienste setzen auf Cloud-System von Google",
+      "description": "Um geheime Informationen schneller untereinander austauschen zu können, wollen BND, Verfassungsschutz und MAD ein gemeinsames Cloud-System aufbauen. Nach Recherchen von NDR und WDR soll Google dabei eine maßgebliche Rolle spielen. Von F. Flade und R. Pinkert.",
+      "pubDate": "2026-10-26T06:11:08+01:00",
+      "link": "https://www.tagesschau.de/investigativ/ndr-wdr/nachrichtendienst-google-100.html",
+      "bild": ""
+    },
+    {
+      "id": "cc37607a3c08c97d63b2",
+      "title": "Reisen in die Boom-Region: Merz und Steinmeier gleichzeitig in Asien",
+      "description": "Kanzler Merz besucht ab heute Singapur, Japan und Südkorea - und dürfte versuchen, Partnerschaften auszubauen, um die Abhängigkeit von China zu reduzieren. Dort wiederum ist Bundespräsident Steinmeier zu Gast. Von Dagmar Pepping.",
+      "pubDate": "2026-10-26T04:31:40+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/asien-reise-merz-steinmeier-100.html",
+      "bild": ""
+    },
+    {
+      "id": "a866442c5ebb340c0953",
+      "title": "Massenproteste gegen Rundfunkreform in Tschechien",
+      "description": "Die tschechische Regierung will den öffentlich-rechtlichen Rundfunk künftig aus dem Staatshaushalt finanzieren - und Mittel für die Sender deutlich kürzen. Landesweit protestierten Zehntausende. Sie befürchten weniger Unabhängigkeit. Von K. Peetz.",
+      "pubDate": "2026-10-26T04:06:18+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/tschechien-rundfunk-proteste-100.html",
+      "bild": ""
+    },
+    {
       "id": "5e73ec928688d900d1d7",
-      "title": "Lula gewinnt Wahl in Brasilien",
-      "description": "Der linksgerichtete Staatschef Lula da Silva hat die Präsidentschaftswahl in Brasilien gewonnen. Der 80-Jährige setzte sich gegen den rechtsgerichteten Kandidaten Flávio Bolsonaro durch, wie das Oberste Wahlgericht mitteilte.",
-      "pubDate": "2026-10-26T02:12:14+01:00",
+      "title": "Lula gewinnt Wahl - Bolsonaro erkennt Niederlage nicht an",
+      "description": "Der linke Staatschef Lula hat die Präsidentschaftswahl in Brasilien gewonnen. Er setzte sich gegen den rechten Kandidaten Bolsonaro durch - doch der will das Ergebnis nicht anerkennen.",
+      "pubDate": "2026-10-26T04:28:19+01:00",
       "link": "https://www.tagesschau.de/ausland/amerika/brasilien-wahlen-lula-100.html",
       "bild": ""
     },
@@ -22,7 +78,7 @@
       "id": "28f8e901f048fc91b9d2",
       "title": "Kreuzfahrtschiff rammt zwei Containerschiffe in Bremerhaven",
       "description": "Das Kreuzfahrtschiff \"Mein Schiff 3\" ist nach dem Auslaufen in Bremerhaven bei stürmischem Wetter mit zwei Schiffen kollidiert. Zwei Schlepper wurden beschädigt. Nach aktuellem Stand gab es keine Verletzten.",
-      "pubDate": "2026-10-25T19:30:00+01:00",
+      "pubDate": "2026-10-26T07:42:00+01:00",
       "link": "https://www.tagesschau.de/inland/seeunfall-bremerhaven-100.html",
       "bild": ""
     },
@@ -64,62 +120,6 @@
       "description": "Brasiliens Wähler sehen Gewalt und Kriminalität als das größte Problem im Land. Die Macht der Banden wird immer größer. Die Kandidaten bei der Stichwahl ums Präsidentenamt heute stehen dabei für unterschiedliche Lösungen. Von Xenia Böttcher.",
       "pubDate": "2026-10-25T21:43:16+01:00",
       "link": "https://www.tagesschau.de/ausland/amerika/brasilien-wahl-innere-sicherheit-100.html",
-      "bild": ""
-    },
-    {
-      "id": "14bc48ab2360d6af5f32",
-      "title": "Großbritannien: Burnham offen für Rückkehr zu EU-Freizügigkeit",
-      "description": "Der Brexit hat Großbritannien mehr Schaden als Nutzen gebracht - so sieht es zumindest der neue Premier Burnham. Jetzt zeigt er sich einmal mehr offen für eine Wiederannäherung an die EU - allerdings in Grenzen.",
-      "pubDate": "2026-10-25T16:12:04+01:00",
-      "link": "https://www.tagesschau.de/ausland/burnham-freizuegigkeit-100.html",
-      "bild": ""
-    },
-    {
-      "id": "a09a0249ca3a91f42510",
-      "title": "Gaza droht eine neue Ernährungskrise",
-      "description": "Die Lage im Gazastreifen droht sich wieder zu verschärfen - denn das Welternährungsprogramm muss seine Lebensmittellieferungen massiv kürzen. Der Grund: Die internationalen Geldgeber zahlen deutlich weniger ein. Von Bettina Meier.",
-      "pubDate": "2026-10-25T15:31:54+01:00",
-      "link": "https://www.tagesschau.de/ausland/gaza-ernaehrung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "1c357d078a90f84c04c7",
-      "title": "Steinmeier bei Umweltpreis-Verleihung: \"Die Fieberkurve unseres Planeten zeigt deutlich nach oben\"",
-      "description": "In Aachen ist der Deutsche Umweltpreis an die Klimajuristin Verheyen und den Membranfilter-Ingenieur Vossenkaul verliehen worden. Bundespräsident Steinmeier mahnte, dem Klimaschutz trotz anderer Krisen und Sorgen Priorität einzuräumen.",
-      "pubDate": "2026-10-25T14:13:45+01:00",
-      "link": "https://www.tagesschau.de/inland/umweltpreis-142.html",
-      "bild": ""
-    },
-    {
-      "id": "edefcdadc831baf0e4cd",
-      "title": "Wie ein Dorf in Brandenburg seinen Gasthof retten will",
-      "description": "In vielen Dörfern verschwinden die letzten Gaststätten. Im brandenburgischen Leißnitz wollen die Einwohner das verhindern. Gemeinsam wollen sie einen Ort erhalten, an dem Menschen zusammenkommen. Von Jacqueline Piwon.",
-      "pubDate": "2026-10-25T13:06:21+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/dorfkneipe-rettung-brandenburg-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c02b65594fd1e61bb7ff",
-      "title": "Pläne der Koalition: Wahlrechtsreform kommt kaum voran",
-      "description": "Neben dem Umbau der Sozialsysteme hat die schwarz-rote Koalition eine Reform angekündigt, bei der es für manche um die politische Existenz geht: Sie möchte das Wahlrecht ändern. Doch es geht nur langsam voran. Von Jakob Mayr.",
-      "pubDate": "2026-10-25T12:57:30+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/wahlrecht-reform-104.html",
-      "bild": ""
-    },
-    {
-      "id": "b5775c4e32bb0e5e6c94",
-      "title": "Dobrindt plant hohe Hürden für Vergesellschaftungen",
-      "description": "Geht es nach der Berliner Linkspartei, sollen Wohnungen in Zukunft vergesellschaftet werden. Doch die Bundesregierung will der Partei mit einem Gesetz zuvorkommen. Nun gibt es erste Details aus dem Innenministerium.",
-      "pubDate": "2026-10-25T12:51:21+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/dobrindt-vergesellschaftung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "82afab37ee9cdba43956",
-      "title": "Sturmtief \"Manja\" fegt über Deutschland",
-      "description": "Stromausfall in Freiburg, mögliche Sturmflut und orkanartige Böen an der Nordsee: Sturm und Regen bestimmen heute das Wetter in Deutschland, es gab bereits zahlreiche Einsätze. Für Teile des Landes galten Warnungen.",
-      "pubDate": "2026-10-25T15:48:27+01:00",
-      "link": "https://www.tagesschau.de/inland/wetter-sturm-112.html",
       "bild": ""
     }
   ],
