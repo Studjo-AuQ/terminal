@@ -1,7 +1,87 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "26.10.2026, 15:04 Uhr (UTC)",
+  "aktualisiert": "26.10.2026, 20:41 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "402825f40e8852ef3e11",
+      "title": "Kritik an Audi-Chef Döllner reißt nach Auftritt mit Trump nicht ab",
+      "description": "Der Auftritt von Audi-Chef Döllner an der Seite von US-Präsident Trump sorgt weiter für Kritik. SPD-Generalsekretär Klüssendorf fordert Konsequenzen vom Mutterkonzern VW. Audi selbst verteidigt den Auftritt.",
+      "pubDate": "2026-10-26T20:56:04+01:00",
+      "link": "https://www.tagesschau.de/inland/audi-kritik-doellner-trump-100.html",
+      "bild": ""
+    },
+    {
+      "id": "eb6d92ade2bfdd89306e",
+      "title": "Ukraine-Krieg: Russland will Angriffe trotz Gesprächen fortsetzen",
+      "description": "Trotz der geplanten Wiederaufnahme von Gesprächen unter US-Vermittlung will Russland die Ukraine weiter angreifen. Das teilte Kremlsprecher Peskow mit. In Charkiw wurden bei einer russischen Attacke zwei Menschen getötet.",
+      "pubDate": "2026-10-26T20:45:53+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/russland-will-angriffe-fortsetzen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "10f6872c97452f51cc43",
+      "title": "Audi investiert in Amerika, Neckarsulm bangt",
+      "description": "Audi will in den USA ein neues Werk bauen, der Auftritt des Firmenchefs auf einer Wahlkampfveranstaltung von Trump sorgt für heftige Kritik. Zugleich ist die Zukunft von deutschen Audi-Werken offen - wie in Neckarsulm. Von F. Siegel.",
+      "pubDate": "2026-10-26T18:56:22+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/audi-usa-trump-neckarsulm-100.html",
+      "bild": ""
+    },
+    {
+      "id": "38b53111a68f4fb865e6",
+      "title": "Kommunen setzen auf neue Konzepte bei Cybersicherheit",
+      "description": "Eine Gemeinde zahlt für einen großen Auftrag - das Geld landet aber bei Kriminellen. Weil solche Betrugsmaschen häufiger werden, setzen Kommunen auf neue Konzepte gegen Cyberkriminalität - und brauchen gut geschultes Personal. Von Markus Kaiser.",
+      "pubDate": "2026-10-26T18:56:13+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/cybersicherheit-ki-kommunen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "f6bc84b8aa93a7b9e6bd",
+      "title": "Marktbericht: Klare Gewinne zum Wochenstart",
+      "description": "Dank eines robusten ifo-Geschäftsklimas konnte sich der DAX zum Wochenstart deutlich erholen. Eine Trendwende ist das aber noch nicht. In dieser Woche stehen noch einige gewichtige Daten an.",
+      "pubDate": "2026-10-26T18:05:23+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-fed-ezb-100.html",
+      "bild": ""
+    },
+    {
+      "id": "06e99cd09b6bbfb246a2",
+      "title": "Kommentar zu Audi-Chef Döllner: Politisch und menschlich ein fatales Signal",
+      "description": "Ist der Auftritt des Audi-Chefs beim US-Präsidenten nicht einfach nur wirtschaftlich vernünftig? Nein, meint Katharina Fuß. Der Manager macht sich zum grinsenden Statisten von Trump - und schickt fatale Signale an die Audi-Belegschaft in Deutschland.",
+      "pubDate": "2026-10-26T17:57:08+01:00",
+      "link": "https://www.tagesschau.de/kommentar/audi-doellner-trump-kommentar-100.html",
+      "bild": ""
+    },
+    {
+      "id": "e35f124e2f2b3fa02e7e",
+      "title": "Welche Folgen das Wahlergebnis für Brasilien haben könnte",
+      "description": "Ihm fehlen Millionen Stimmen, doch seine Niederlage akzeptiert er nicht: Brasiliens rechter Präsidentschaftskandidat Bolsonaro. Das weckt Erinnerungen an die Abwahl seines Vaters. Was nun folgen könnte, erklärt Experte Maihold.",
+      "pubDate": "2026-10-26T17:27:33+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/brasilien-wahl-126.html",
+      "bild": ""
+    },
+    {
+      "id": "dd79c5f4edc27eef5f8d",
+      "title": "Wahlsieg der Studentenliste: Serbien betritt politisches Neuland",
+      "description": "Absolute Mehrheit für die Studentenliste: In Serbien hat sie überraschend klar die Parlamentswahl gewonnen. Aber wie kann aus einer Protestbewegung eine Regierung werden? Vieles ist unklar - und die Aufgaben sind groß.",
+      "pubDate": "2026-10-26T21:36:08+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/serbien-wahlsieg-studentenliste-100.html",
+      "bild": ""
+    },
+    {
+      "id": "efafe1ecb1f2e5fd6561",
+      "title": "KI-Unternehmen Anthropic beantragt Börsengang und warnt vor Risiken",
+      "description": "Das amerikanische KI-Unternehmen Anthropic gibt den Startschuss für einen Mega-Börsengang schon im November und reicht die nötigen Unterlagen ein. Es dürfte einer der größten Börsengänge aller Zeiten werden.",
+      "pubDate": "2026-10-26T16:49:36+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/anthropic-bereitet-boersengang-vor-100.html",
+      "bild": ""
+    },
+    {
+      "id": "b77b9e9c40b42c91bd76",
+      "title": "Wahl des Bundespräsidenten: Wer folgt auf Steinmeier?",
+      "description": "Am 30. Januar wählt die Bundesversammlung ein neues Staatsoberhaupt. Doch wer für die Nachfolge von Frank-Walter Steinmeier ins Rennen geschickt wird, ist noch offen. Welche Namen gehandelt werden, wer die besten Chancen hat und wie die Wahl abläuft.",
+      "pubDate": "2026-10-26T16:07:22+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/bundespraesidentenwahl-102.html",
+      "bild": ""
+    },
     {
       "id": "72ba07cf61911e7f01fe",
       "title": "Demonstrationen für Pressefreiheit in der Türkei",
@@ -40,86 +120,6 @@
       "description": "Von heute an fahren auf einem Teil der bekannten Londoner Oxford Street keine Autos, Busse und Taxis mehr. Der Umbau zur Fußgängerzone soll der Einkaufsstraße neues Leben einhauchen.",
       "pubDate": "2026-10-26T11:27:47+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/london-oxford-street-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f6bc84b8aa93a7b9e6bd",
-      "title": "Marktbericht: Gesunkene Kurse locken Schnäppchenjäger an",
-      "description": "Nach den Kursverlusten in der vergangenen Woche geht der DAX heute auf Erholungskurs. Der ifo-Geschäftsklimaindex unterstützt, aber ein hoher Ölpreis und die Sorgen um die Nachhaltigkeit des KI-Boom belasten.",
-      "pubDate": "2026-10-26T11:19:27+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-fed-ezb-100.html",
-      "bild": ""
-    },
-    {
-      "id": "9dd45b5f0e3872534fe7",
-      "title": "Netanjahus Gegenkandidaten bei der Israel-Wahl: Gemeinsam für den Neuanfang?",
-      "description": "Morgen wählt Israel. Dann entscheidet sich, ob das Land seinen Premier behält. Oder ob das \"Anti-Netanjahu-Bündnis\" gewinnt. Doch die unterschiedlichen Vorstellungen der Kandidaten könnten zum Problem werden. Von J.-C. Kitzler.",
-      "pubDate": "2026-10-26T10:41:25+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/israel-wahlen-netanjahu-100.html",
-      "bild": ""
-    },
-    {
-      "id": "5aa958ae917fe3c090af",
-      "title": "Wie die Ukraine einen Soldaten per Drohne rettete",
-      "description": "Der Ukraine ist eine spektakuläre Mission gelungen: Erstmals wurde ein verwundeter Soldat aus dem Frontgebiet mit einer Drohne ausgeflogen. Im ARD-Interview berichtet er, wie er seine Rettung erlebte. Von V. Golod und N. Bula.",
-      "pubDate": "2026-10-26T10:17:03+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/ukraine-soldat-rettung-drohne-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f691830456f5580458f1",
-      "title": "Umfragen vor den Midterms: Trumps frühere Wähler wenden sich von ihm ab",
-      "description": "US-Präsident Trump wurde 2024 von vielen Menschen gewählt, die sonst nicht für die Republikaner stimmen. Kurz vor den Zwischenwahlen zeigen Umfragen nun: Diese Wähler hat er besonders enttäuscht. Von Jörg Schönenborn.",
-      "pubDate": "2026-10-26T10:06:38+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/midterms-umfragen-trump-100.html",
-      "bild": ""
-    },
-    {
-      "id": "76e2ade5f41534e4b40b",
-      "title": "Kreuzfahrtschiff rammt Containerschiffe - Polizei ermittelt gegen Kapitän",
-      "description": "Nach der Schiffskollision in Bremerhaven während eines Sturms ermittelt die Polizei gegen den Kapitän des Kreuzfahrtschiffs \"Mein Schiff 3\". Es geht um einen möglichen Verstoß gegen die Sorgfaltspflicht. Die Kreuzfahrt ist abgesagt.",
-      "pubDate": "2026-10-26T15:30:41+01:00",
-      "link": "https://www.tagesschau.de/inland/herbststurm-norden-deutschland-100.html",
-      "bild": ""
-    },
-    {
-      "id": "cb8b440b339eddd85f2b",
-      "title": "Wahlen in Brasilien: Eine Nacht zwischen Jubel und Misstrauen",
-      "description": "Feuerwerk und Freudentränen - in Brasilien feiern Anhänger den Wahlsieg von Lula als Erfolg der Demokratie. Doch während die einen aufatmen, warnen andere vor dem politischen Kampf, der jetzt erst beginnt. Von Anne Herrberg.",
-      "pubDate": "2026-10-26T07:34:32+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/brasilien-wahlen-lula-102.html",
-      "bild": ""
-    },
-    {
-      "id": "53888faf3d94f1e5efb3",
-      "title": "Wie die Goldsuche Natur und Lebensgrundlagen in Ghana zerstört",
-      "description": "In Ghana wird unter extremen Bedingungen Gold abgebaut - auch Kakaoplantagen müssen dafür weichen. Mit verheerenden Folgen: Zurück bleiben zerstörte Landschaften und verdreckte, belastete Flüsse. Von Judith Hartmann und Jakob Sax.",
-      "pubDate": "2026-10-26T07:13:21+01:00",
-      "link": "https://www.tagesschau.de/wissen/klima/goldabbau-ghana-abholzung-regenwald-100.html",
-      "bild": ""
-    },
-    {
-      "id": "d5e48b1f91d1b96d7c98",
-      "title": "11KM-Podcast: Frauen in der Bundeswehr - belästigt, gemobbt, missbraucht",
-      "description": "Seit 25 Jahren können Frauen in der Bundeswehr alle Dienstgrade erreichen. Doch viele Soldatinnen berichten von Sexismus und Gewalt. Der Podcast 11KM über eine Kultur des Wegschauens.",
-      "pubDate": "2026-10-26T06:27:48+01:00",
-      "link": "https://www.tagesschau.de/podcast-11km-frauen-bundeswehr-100.html",
-      "bild": ""
-    },
-    {
-      "id": "75d1cf7eddd402a5f1c0",
-      "title": "Deutsche Nachrichtendienste setzen auf Cloud-System von Google",
-      "description": "Um geheime Informationen schneller untereinander austauschen zu können, wollen BND, Verfassungsschutz und MAD ein gemeinsames Cloud-System aufbauen. Nach Recherchen von NDR und WDR soll Google dabei eine maßgebliche Rolle spielen. Von F. Flade und R. Pinkert.",
-      "pubDate": "2026-10-26T06:11:08+01:00",
-      "link": "https://www.tagesschau.de/investigativ/ndr-wdr/nachrichtendienst-google-100.html",
-      "bild": ""
-    },
-    {
-      "id": "cc37607a3c08c97d63b2",
-      "title": "Reisen in die Boom-Region: Merz und Steinmeier gleichzeitig in Asien",
-      "description": "Kanzler Merz besucht Singapur, Japan und Südkorea - und dürfte versuchen, Partnerschaften auszubauen, um die Abhängigkeit von China zu reduzieren. Dort wiederum ist Bundespräsident Steinmeier zu Gast. Von Dagmar Pepping.",
-      "pubDate": "2026-10-26T04:31:40+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/asien-reise-merz-steinmeier-100.html",
       "bild": ""
     }
   ],
