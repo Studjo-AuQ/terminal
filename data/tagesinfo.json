@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "stand": "2026-10-22",
+  "stand": "2026-10-26",
   "hinweis": "Ohne aktive Zeitsteuerung stellt das Terminal die Tageskarte automatisch zusammen. Schließungen, Feiertage und Brückentage bleiben geschützt.",
   "anzahl": 3,
   "rubriken": [
@@ -16,18 +16,18 @@
     {
       "id": "tages-mvj2j1ne",
       "name": "",
-      "von": "2026-10-22T00:00",
-      "bis": "2026-10-22T23:59",
+      "von": "2026-10-26T00:00",
+      "bis": "2026-10-26T23:59",
       "aktiv": true,
       "plaetze": [
         {
-          "modus": "auto"
+          "modus": "essen"
         },
         {
-          "modus": "auto"
+          "modus": "motto"
         },
         {
-          "modus": "auto"
+          "modus": "aba"
         }
       ],
       "ausblenden": [],
