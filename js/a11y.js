@@ -299,3 +299,23 @@
   script.async = false;
   document.body.appendChild(script);
 })();
+
+/* Startseiten-spezifische Admin-Navigation liegt bewusst in einer
+   separaten Datei. a11y.js dient hier nur als bereits vorhandener,
+   network-first geladener Einstiegspunkt. */
+(function () {
+  const dateiname = location.pathname.split('/').pop();
+
+  if (
+    dateiname !== '' &&
+    dateiname !== 'index.html'
+  ) {
+    return;
+  }
+
+  const script = document.createElement('script');
+  script.src = 'js/pflegezentrale-link.js?v=20261026-1';
+  script.async = false;
+  document.body.appendChild(script);
+})();
+
