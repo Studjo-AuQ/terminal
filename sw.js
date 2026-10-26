@@ -1,6 +1,6 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 34
+   Version 35
 
    - lädt beim Installieren den stabilen lokalen Terminal-Kern vor
      (HTML, CSS, JS, JSON, Schriften, Bilder und PDF.js)
@@ -18,7 +18,7 @@
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v34';
+const CACHE_VERSION = 'v35';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 const SPEISEPLAN_CACHE = CACHE_PREFIX + CACHE_VERSION + '-speiseplaene';
@@ -86,6 +86,7 @@ const OFFLINE_DATEIEN = [
   "js/kalender.js",
   "js/nachrichten-deeplink.js",
   "js/offline.js",
+  "js/pflegezentrale-link.js",
   "js/script.js",
   "js/speiseplan-ansicht.js",
   "js/speiseplan-heute.js",
@@ -640,7 +641,8 @@ function istDynamischeNavigation(url) {
   return [
     basis + 'neuigkeiten.html',
     basis + 'nachrichten-allgemein.html',
-    basis + 'termine.html'
+    basis + 'termine.html',
+    basis + 'pflegezentrale.html'
   ].includes(url.pathname);
 }
 
@@ -660,6 +662,7 @@ function istStartseitenKernDatei(url) {
     basis + 'js/termine-komfort.js',
     basis + 'js/gong.js',
     basis + 'js/offline.js',
+    basis + 'js/pflegezentrale-link.js',
     basis + 'css/style-index.css',
     basis + 'css/a11y.css'
   ].includes(url.pathname);
