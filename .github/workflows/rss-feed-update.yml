@@ -59,8 +59,11 @@ jobs:
           def html_entfernen(text):
               if not text:
                   return ''
-              text = re.sub(r'<[^>]+>', ' ', text)
+              # Erst Entities dekodieren, danach HTML entfernen.
+              # Sonst würde z. B. &lt;img ...&gt; erst NACH dem Filter
+              # wieder zu echtem HTML werden.
               text = html.unescape(text)
+              text = re.sub(r'<[^>]+>', ' ', text)
               return re.sub(r'\s+', ' ', text).strip()
 
           def parse_datum(s):
