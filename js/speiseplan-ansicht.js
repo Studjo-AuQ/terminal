@@ -1,24 +1,3 @@
-/* ══════════════════════════════════════════════════════
-   speiseplan-ansicht.js  (Version 2 – in sich geschlossen)
-   Studjo Terminal | Evangelisches Johanneswerk
-
-   WICHTIG: Diese Datei ist bewusst komplett eigenständig und
-   hat KEINE Abhängigkeit mehr zu speiseplan-erkennung.js.
-   Grund: Bei mehreren einzeln hochgeladenen Dateien kann es
-   passieren, dass eine alte Version einer Datei liegen bleibt,
-   während eine andere Datei schon eine neue Funktion daraus
-   erwartet ("... is not a function"). Mit nur einer Datei kann
-   das nicht mehr passieren.
-
-   Der farbige Rahmen um den heutigen Tag wird außerdem nicht
-   mehr als separates, absolut positioniertes Element über dem
-   Canvas gezeichnet (das ist fehleranfällig: CSS-Skalierung,
-   Scroll-Position, getBoundingClientRect – jede Kleinigkeit
-   kann die Position verschieben). Stattdessen wird der Rahmen
-   direkt in denselben Canvas gezeichnet, in dem auch das PDF
-   liegt – gleiches Koordinatensystem, keine Umrechnung nötig.
-   ══════════════════════════════════════════════════════ */
-
 import * as pdfjsLib from '../pdfjs/pdf.min.mjs';
 pdfjsLib.GlobalWorkerOptions.workerSrc = './pdfjs/pdf.worker.min.mjs';
 
@@ -50,43 +29,28 @@ function kandidatenFuerDatum(datum) {
     ];
 }
 
-/* ── Wochen-Auswahl (welche der 3 PDF-Dateien) ──
-   Wechselt NUR montags um 7:00 Uhr, unabhängig von der Tageszeit
-   sonst. Das Wochenende (Sa/So) gehört durch die normale ISO-Woche-
-   Berechnung ohnehin schon zur gerade laufenden (Freitag-)Woche –
-   nur der Montagmorgen braucht eine kleine Verzögerung, damit die
-   3 Kacheln nicht schon um Mitternacht umspringen. */
 function wochenBasisDatum() {
     const jetzt = new Date();
     if (jetzt.getDay() === 1 && jetzt.getHours() < 7) {
         const zurueck = new Date(jetzt);
-        zurueck.setDate(zurueck.getDate() - 3); // auf Freitag der Vorwoche zurück
+        zurueck.setDate(zurueck.getDate() - 3);
         return zurueck;
     }
     return jetzt;
 }
 
-/* Umschaltzeitpunkt für "Morgen"-Umrandung bzw. Wochenend-Blackout:
-   13:15 Uhr (vorher 15:00 Uhr). */
 function abUmschaltzeit(jetzt) {
     return jetzt.getHours() > 13 || (jetzt.getHours() === 13 && jetzt.getMinutes() >= 15);
 }
 
-/* ── Blackout-Fenster für die Tages-Vorschau ──
-   Freitag ab 13:15 Uhr bis Montag 7:00 Uhr: kein Werkstattbetrieb,
-   daher auch keine "Heute/Morgen"-Umrandung. */
 function istBlackout(jetzt) {
-    const tag = jetzt.getDay(); // 0=So … 6=Sa
+    const tag = jetzt.getDay();
     if (tag === 6 || tag === 0) return true;
     if (tag === 5 && abUmschaltzeit(jetzt)) return true;
     if (tag === 1 && jetzt.getHours() < 7) return true;
     return false;
 }
 
-/* Ab 13:15 Uhr (Mo-Do) wird bereits der Folgetag umrandet ("Morgen"),
-   um Mitternacht springt es automatisch auf "Heute" zurück. Während
-   des Blackout-Fensters (siehe oben) wird nichts umrandet. Gilt nur
-   für die Kachel "Aktuelle Woche" (woche=0). */
 function effektiverTag() {
     const jetzt = new Date();
     if (istBlackout(jetzt)) return null;
@@ -103,10 +67,6 @@ function effektiverTag() {
     return { ziel, wochentagIndex, label };
 }
 
-/* Basisdatum für die Dateisuche: IMMER das stabile Wochen-Basisdatum
-   (siehe wochenBasisDatum) plus den Wochen-Offset der jeweiligen
-   Kachel – unabhängig von der Tageszeit. So können "Aktuelle Woche"
-   und "Nächste Woche" nie auf dieselbe Datei zeigen. */
 function basisDatumFuerOffset(offsetWochen) {
     const datum = new Date(wochenBasisDatum());
     datum.setDate(datum.getDate() + offsetWochen * 7);
@@ -118,13 +78,11 @@ async function findeDatei(kandidaten) {
         try {
             const antwort = await fetch(pfad, { method: 'HEAD' });
             if (antwort.ok) return pfad;
-        } catch (e) { /* nächsten Kandidaten versuchen */ }
+        } catch (e) {}
     }
     return null;
 }
 
-/* Findet dunkle, durchgehende horizontale Linien (Tabellenraster)
-   direkt im übergebenen Canvas. */
 function findeHorizontaleLinien(canvas, schwelle = 0.5, dunkelWert = 130) {
     const ctx = canvas.getContext('2d');
     const { width, height } = canvas;
@@ -166,10 +124,29 @@ const navEl        = document.getElementById('sp-seiten-nav');
 const btnPrev      = document.getElementById('sp-btn-prev');
 const btnNext      = document.getElementById('sp-btn-next');
 const seitenInfo   = document.getElementById('sp-seiten-info');
+const bildLink     = document.getElementById('sp-bild-link');
 
 let pdfDokument   = null;
 let aktuelleSeite = 1;
-let seite1Original = null; // Referenz auf die geladene Seite 1 für die Rahmen-Erkennung
+let seite1Original = null;
+
+function aktualisiereBildLink() {
+    if (!bildLink || !pdfDokument || pdfDokument.numPages < 2) {
+        if (bildLink) bildLink.hidden = true;
+        return;
+    }
+
+    bildLink.hidden = false;
+    const istBildseite = aktuelleSeite === 2;
+    bildLink.classList.toggle('aktiv', istBildseite);
+    bildLink.setAttribute('aria-pressed', istBildseite ? 'true' : 'false');
+    bildLink.setAttribute(
+        'aria-label',
+        istBildseite
+            ? 'Bebilderte Darstellung auf Seite 2 ist geöffnet'
+            : 'Zur bebilderten Darstellung auf Seite 2 wechseln'
+    );
+}
 
 async function renderSeite(nummer) {
     const seite = await pdfDokument.getPage(nummer);
@@ -199,21 +176,12 @@ async function renderSeite(nummer) {
     seitenInfo.textContent = 'Seite ' + nummer + ' von ' + pdfDokument.numPages;
     btnPrev.disabled = nummer <= 1;
     btnNext.disabled = nummer >= pdfDokument.numPages;
+    aktualisiereBildLink();
 }
 
-/* Zeichnet den farbigen Rahmen auf den sichtbaren Canvas.
-   Die LINIEN-ERKENNUNG läuft dabei bewusst auf einem separaten,
-   immer gleich hoch aufgelösten Hilfs-Canvas (1754px Breite) statt
-   auf dem sichtbaren Canvas – auf kleinen Handy-Bildschirmen ist der
-   sichtbare Canvas oft so schmal, dass die dünnen Tabellenlinien
-   beim Verkleinern verschwimmen und nicht mehr zuverlässig gefunden
-   werden. Das gefundene Ergebnis wird anschließend proportional auf
-   die tatsächliche Anzeigegröße umgerechnet. */
 async function zeichneTagesRahmen(seite) {
-    // Diese Funktion wird nur noch aufgerufen, wenn offset === 0 ist
-    // (siehe renderSeite).
     const tag = effektiverTag();
-    if (tag === null) return; // Blackout-Fenster (Wochenende/Freitagnachmittag/Montagfrüh) – nichts umranden
+    if (tag === null) return;
     const { wochentagIndex } = tag;
 
     const ANALYSE_BREITE = 1754;
@@ -227,14 +195,12 @@ async function zeichneTagesRahmen(seite) {
     await seite.render({ canvasContext: analyseCanvas.getContext('2d'), viewport: analyseViewport }).promise;
 
     const linienY = findeHorizontaleLinien(analyseCanvas);
-    if (linienY.length < 7) return; // Layout nicht wie erwartet – lieber nichts zeichnen
+    if (linienY.length < 7) return;
 
     const startY = linienY[1 + wochentagIndex];
     const endeY  = linienY[2 + wochentagIndex];
     if (startY === undefined || endeY === undefined) return;
 
-    // Umrechnung von der Analyse-Auflösung auf die tatsächliche
-    // Anzeigegröße des sichtbaren Canvas
     const skalaFaktor = canvas.height / analyseCanvas.height;
     const startYSkaliert = startY * skalaFaktor;
     const endeYSkaliert  = endeY * skalaFaktor;
@@ -257,8 +223,14 @@ function wechselSeite(richtung) {
     const ziel = aktuelleSeite + richtung;
     if (ziel >= 1 && ziel <= pdfDokument.numPages) renderSeite(ziel);
 }
+
 btnPrev.addEventListener('click', () => wechselSeite(-1));
 btnNext.addEventListener('click', () => wechselSeite(1));
+
+bildLink.addEventListener('click', () => {
+    if (!pdfDokument || pdfDokument.numPages < 2) return;
+    if (aktuelleSeite !== 2) renderSeite(2);
+});
 
 let resizeTimer;
 window.addEventListener('resize', () => {
@@ -275,6 +247,7 @@ async function start() {
             ladeEl.hidden = true;
             canvasWrap.hidden = true;
             navEl.hidden = true;
+            bildLink.hidden = true;
             fehlerEl.querySelector('p').innerHTML =
                 'Dieser Speiseplan ist noch nicht veröffentlicht.<br>' +
                 '<small>Erwartete Datei: ' + kandidatenFuerDatum(basisDatumFuerOffset(offset))[0] + '</small>';
@@ -289,6 +262,7 @@ async function start() {
         fehlerEl.hidden = true;
         canvasWrap.hidden = false;
         navEl.hidden = (pdfDokument.numPages <= 1);
+        aktualisiereBildLink();
 
         stufe = 'Seite anzeigen';
         await renderSeite(1);
@@ -297,6 +271,7 @@ async function start() {
         console.error('Fehler beim Anzeigen des Speiseplans (Schritt: ' + stufe + '):', fehler);
         ladeEl.hidden = true;
         canvasWrap.hidden = true;
+        bildLink.hidden = true;
         fehlerEl.querySelector('p').textContent =
             'Der Speiseplan konnte nicht angezeigt werden. ' +
             '(Technischer Fehler bei „' + stufe + '“: ' + (fehler && fehler.message ? fehler.message : fehler) + ')';
@@ -308,10 +283,6 @@ ladeEl.hidden = false;
 let letzterZustand = basisDatumFuerOffset(offset).toDateString() + '|' + istBlackout(new Date());
 start();
 
-// Terminal-Seiten bleiben oft dauerhaft geöffnet. Alle 5 Minuten
-// prüfen, ob sich das Basisdatum ODER der Blackout-Status geändert
-// hat (z. B. Montag 7 Uhr für die Datei, Freitag 13:15 Uhr fürs
-// Blackout-Fenster) – nur dann wird neu geladen.
 setInterval(() => {
     const neuerZustand = basisDatumFuerOffset(offset).toDateString() + '|' + istBlackout(new Date());
     if (neuerZustand !== letzterZustand) {
