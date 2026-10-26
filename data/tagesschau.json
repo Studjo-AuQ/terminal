@@ -1,21 +1,93 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "26.10.2026, 07:40 Uhr (UTC)",
+  "aktualisiert": "26.10.2026, 15:04 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "72ba07cf61911e7f01fe",
+      "title": "Demonstrationen für Pressefreiheit in der Türkei",
+      "description": "Journalisten stehen in der Türkei seit Langem unter Druck. Erneut sperrten die Behörden kürzlich Medienseiten und inhaftierten weitere Journalisten. Am Wochenende haben nun Tausende Menschen für mehr Pressefreiheit protestiert. Von Stella Männer.",
+      "pubDate": "2026-10-26T15:25:20+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/demo-pressefreiheit-tuerkei-100.html",
+      "bild": ""
+    },
+    {
+      "id": "4be012b01c7f2339d934",
+      "title": "Brasiliens Kapitalmärkte stürzen ab",
+      "description": "Während die EU die Wiederwahl von Brasiliens Präsident Lula begrüßt, hat diese einen Kurssturz bei brasilianischen Aktien und Anleihen ausgelöst. An den Märkten gibt es Sorgen wegen Brasiliens hoher Verschuldung.",
+      "pubDate": "2026-10-26T14:47:15+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktbericht-brasilien-wahl-100.html",
+      "bild": ""
+    },
+    {
+      "id": "b33014f902c838fb78f1",
+      "title": "Audi-Chef bei Trump - Verstoß gegen Konzernregeln?",
+      "description": "US-Präsident Trump und Audi-Chef Döllner auf einer Bühne - das stößt auf scharfe Kritik. Der Vorstandsvorsitzende kündigte in den USA ein neues Werk an. Nun könnten die eigenen Konzernleitlinien für ihn zum Problem werden.",
+      "pubDate": "2026-10-26T13:48:59+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/audi-us-werk-doellner-trump-100.html",
+      "bild": ""
+    },
+    {
+      "id": "4803c67c228ce4df3807",
+      "title": "Ifo-Index: Konjunkturbelebung setzt sich fort",
+      "description": "Die Stimmung in den deutschen Chefetagen hellt sich weiter auf: Trotz hoher Energiepreise ist der ifo-Geschäftsklimaindex im Oktober zum sechsten Mal in Folge gestiegen.",
+      "pubDate": "2026-10-26T11:29:32+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/konjunktur/ifo-index-oktober-102.html",
+      "bild": ""
+    },
+    {
+      "id": "7abe82e9a83fde6e86d9",
+      "title": "Oxford Street in London wird zur Fußgängerzone",
+      "description": "Von heute an fahren auf einem Teil der bekannten Londoner Oxford Street keine Autos, Busse und Taxis mehr. Der Umbau zur Fußgängerzone soll der Einkaufsstraße neues Leben einhauchen.",
+      "pubDate": "2026-10-26T11:27:47+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/london-oxford-street-100.html",
+      "bild": ""
+    },
+    {
+      "id": "f6bc84b8aa93a7b9e6bd",
+      "title": "Marktbericht: Gesunkene Kurse locken Schnäppchenjäger an",
+      "description": "Nach den Kursverlusten in der vergangenen Woche geht der DAX heute auf Erholungskurs. Der ifo-Geschäftsklimaindex unterstützt, aber ein hoher Ölpreis und die Sorgen um die Nachhaltigkeit des KI-Boom belasten.",
+      "pubDate": "2026-10-26T11:19:27+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-fed-ezb-100.html",
+      "bild": ""
+    },
+    {
+      "id": "9dd45b5f0e3872534fe7",
+      "title": "Netanjahus Gegenkandidaten bei der Israel-Wahl: Gemeinsam für den Neuanfang?",
+      "description": "Morgen wählt Israel. Dann entscheidet sich, ob das Land seinen Premier behält. Oder ob das \"Anti-Netanjahu-Bündnis\" gewinnt. Doch die unterschiedlichen Vorstellungen der Kandidaten könnten zum Problem werden. Von J.-C. Kitzler.",
+      "pubDate": "2026-10-26T10:41:25+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/israel-wahlen-netanjahu-100.html",
+      "bild": ""
+    },
+    {
+      "id": "5aa958ae917fe3c090af",
+      "title": "Wie die Ukraine einen Soldaten per Drohne rettete",
+      "description": "Der Ukraine ist eine spektakuläre Mission gelungen: Erstmals wurde ein verwundeter Soldat aus dem Frontgebiet mit einer Drohne ausgeflogen. Im ARD-Interview berichtet er, wie er seine Rettung erlebte. Von V. Golod und N. Bula.",
+      "pubDate": "2026-10-26T10:17:03+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/ukraine-soldat-rettung-drohne-100.html",
+      "bild": ""
+    },
+    {
+      "id": "f691830456f5580458f1",
+      "title": "Umfragen vor den Midterms: Trumps frühere Wähler wenden sich von ihm ab",
+      "description": "US-Präsident Trump wurde 2024 von vielen Menschen gewählt, die sonst nicht für die Republikaner stimmen. Kurz vor den Zwischenwahlen zeigen Umfragen nun: Diese Wähler hat er besonders enttäuscht. Von Jörg Schönenborn.",
+      "pubDate": "2026-10-26T10:06:38+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/midterms-umfragen-trump-100.html",
+      "bild": ""
+    },
+    {
+      "id": "76e2ade5f41534e4b40b",
+      "title": "Kreuzfahrtschiff rammt Containerschiffe - Polizei ermittelt gegen Kapitän",
+      "description": "Nach der Schiffskollision in Bremerhaven während eines Sturms ermittelt die Polizei gegen den Kapitän des Kreuzfahrtschiffs \"Mein Schiff 3\". Es geht um einen möglichen Verstoß gegen die Sorgfaltspflicht. Die Kreuzfahrt ist abgesagt.",
+      "pubDate": "2026-10-26T15:30:41+01:00",
+      "link": "https://www.tagesschau.de/inland/herbststurm-norden-deutschland-100.html",
+      "bild": ""
+    },
     {
       "id": "cb8b440b339eddd85f2b",
       "title": "Wahlen in Brasilien: Eine Nacht zwischen Jubel und Misstrauen",
       "description": "Feuerwerk und Freudentränen - in Brasilien feiern Anhänger den Wahlsieg von Lula als Erfolg der Demokratie. Doch während die einen aufatmen, warnen andere vor dem politischen Kampf, der jetzt erst beginnt. Von Anne Herrberg.",
       "pubDate": "2026-10-26T07:34:32+01:00",
       "link": "https://www.tagesschau.de/ausland/amerika/brasilien-wahlen-lula-102.html",
-      "bild": ""
-    },
-    {
-      "id": "f6bc84b8aa93a7b9e6bd",
-      "title": "Marktbericht: Anleger versuchen DAX zu stabilisieren",
-      "description": "Die Zahl der Sorgen bleibt groß. Neben den anhaltend hohen Ölpreisen dämpfen die Sorgen um den KI-Boom die Stimmung. Jetzt hoffen die Anleger auf gute Unternehmensbilanzen und Hilfe von den Notenbanken.",
-      "pubDate": "2026-10-26T07:27:39+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-fed-ezb-100.html",
       "bild": ""
     },
     {
@@ -36,7 +108,7 @@
     },
     {
       "id": "75d1cf7eddd402a5f1c0",
-      "title": "Deutsche Geheimdienste setzen auf Cloud-System von Google",
+      "title": "Deutsche Nachrichtendienste setzen auf Cloud-System von Google",
       "description": "Um geheime Informationen schneller untereinander austauschen zu können, wollen BND, Verfassungsschutz und MAD ein gemeinsames Cloud-System aufbauen. Nach Recherchen von NDR und WDR soll Google dabei eine maßgebliche Rolle spielen. Von F. Flade und R. Pinkert.",
       "pubDate": "2026-10-26T06:11:08+01:00",
       "link": "https://www.tagesschau.de/investigativ/ndr-wdr/nachrichtendienst-google-100.html",
@@ -45,81 +117,9 @@
     {
       "id": "cc37607a3c08c97d63b2",
       "title": "Reisen in die Boom-Region: Merz und Steinmeier gleichzeitig in Asien",
-      "description": "Kanzler Merz besucht ab heute Singapur, Japan und Südkorea - und dürfte versuchen, Partnerschaften auszubauen, um die Abhängigkeit von China zu reduzieren. Dort wiederum ist Bundespräsident Steinmeier zu Gast. Von Dagmar Pepping.",
+      "description": "Kanzler Merz besucht Singapur, Japan und Südkorea - und dürfte versuchen, Partnerschaften auszubauen, um die Abhängigkeit von China zu reduzieren. Dort wiederum ist Bundespräsident Steinmeier zu Gast. Von Dagmar Pepping.",
       "pubDate": "2026-10-26T04:31:40+01:00",
       "link": "https://www.tagesschau.de/ausland/asien/asien-reise-merz-steinmeier-100.html",
-      "bild": ""
-    },
-    {
-      "id": "a866442c5ebb340c0953",
-      "title": "Massenproteste gegen Rundfunkreform in Tschechien",
-      "description": "Die tschechische Regierung will den öffentlich-rechtlichen Rundfunk künftig aus dem Staatshaushalt finanzieren - und Mittel für die Sender deutlich kürzen. Landesweit protestierten Zehntausende. Sie befürchten weniger Unabhängigkeit. Von K. Peetz.",
-      "pubDate": "2026-10-26T04:06:18+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/tschechien-rundfunk-proteste-100.html",
-      "bild": ""
-    },
-    {
-      "id": "5e73ec928688d900d1d7",
-      "title": "Lula gewinnt Wahl in Brasilien - Bolsonaro erkennt Niederlage nicht an",
-      "description": "Der linke Staatschef Lula hat die Präsidentschaftswahl in Brasilien gewonnen. Er setzte sich gegen den rechten Kandidaten Bolsonaro durch - doch der will das Ergebnis nicht anerkennen.",
-      "pubDate": "2026-10-26T07:58:43+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/brasilien-wahlen-lula-100.html",
-      "bild": ""
-    },
-    {
-      "id": "18cd344c66d077103ca7",
-      "title": "Neuer Gebäudetyp E: Schnelles und günstiges Bauen per Gesetz",
-      "description": "Deutschland braucht mehr bezahlbaren Wohnraum. Das soll unter anderem mit dem Gebäudetyp E gelingen - das E steht hier für \"einfach\". Der Gesetzentwurf liegt dem ARD-Hauptstadtstudio exklusiv vor. Von Oliver Neuroth.",
-      "pubDate": "2026-10-26T00:07:11+01:00",
-      "link": "https://www.tagesschau.de/inland/gebaeudetyp-e-104.html",
-      "bild": ""
-    },
-    {
-      "id": "28f8e901f048fc91b9d2",
-      "title": "Kreuzfahrtschiff rammt zwei Containerschiffe in Bremerhaven",
-      "description": "Das Kreuzfahrtschiff \"Mein Schiff 3\" ist nach dem Auslaufen in Bremerhaven bei stürmischem Wetter mit zwei Schiffen kollidiert. Zwei Schlepper wurden beschädigt. Nach aktuellem Stand gab es keine Verletzten.",
-      "pubDate": "2026-10-26T07:42:00+01:00",
-      "link": "https://www.tagesschau.de/inland/seeunfall-bremerhaven-100.html",
-      "bild": ""
-    },
-    {
-      "id": "1f8cbffed86f96bf09ff",
-      "title": "Auftakt der RN-Wahlkampagne: Le Pen spricht von \"Wiedergeburt\" Frankreichs",
-      "description": "Die rechtspopulistische französische Präsidentschaftskandidatin Le Pen führt derzeit in den Umfragen. Zum Auftakt der Wahlkampagne ihres Rassemblement National warb sie für einen politischen Neuanfang.",
-      "pubDate": "2026-10-25T20:25:14+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/le-pen-frankreich-100.html",
-      "bild": ""
-    },
-    {
-      "id": "5ffa1de24982ee6be3a1",
-      "title": "Stromsteuer-Debatte: Union und SPD weiter weit auseinander",
-      "description": "Dass Unternehmen und Haushalte beim Strompreis entlastet werden sollen, darüber herrscht in der Regierung Einigkeit. Unklar aber ist, wie das finanziert werden kann. Im Bericht aus Berlin machten CDU und SPD sehr unterschiedliche Vorschläge.",
-      "pubDate": "2026-10-25T19:49:43+01:00",
-      "link": "https://www.tagesschau.de/inland/bericht-aus-berlin-stromsteuer-100.html",
-      "bild": ""
-    },
-    {
-      "id": "d91d3366431d32c392ce",
-      "title": "Oppositionsführerin Machado meldet Rückkehr nach Venezuela",
-      "description": "Rund zehn Monate nach ihrer heimlichen Ausreise aus Venezuela ist die Friedensnobelpreisträgerin Machado in ihre Heimat zurückgekehrt. Den Weg freigemacht hätten von den USA unterstützte \"Versöhnungsgespräche\", so US-Außenminister Rubio.",
-      "pubDate": "2026-10-25T20:41:15+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/venezuela-machado-104.html",
-      "bild": ""
-    },
-    {
-      "id": "f4918ca280f82014579e",
-      "title": "Hohe Wahlbeteiligung und Manipulationsvorwürfe in Serbien",
-      "description": "Lange Schlangen vor den Wahllokalen in Serbien: Viele Menschen wünschen sich Veränderung. Bei der Parlamentswahl setzt die Studentenbewegung auf einen Erfolg. Doch auch Präsident Vucic hat überzeugte Anhänger.",
-      "pubDate": "2026-10-25T17:24:20+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/serbien-wahl-update-100.html",
-      "bild": ""
-    },
-    {
-      "id": "b8c490c6bea60015b4f9",
-      "title": "\"Nur ein toter Bandit ist ein guter Bandit\" - Wahlkampf in Brasilien",
-      "description": "Brasiliens Wähler sehen Gewalt und Kriminalität als das größte Problem im Land. Die Macht der Banden wird immer größer. Die Kandidaten bei der Stichwahl ums Präsidentenamt heute stehen dabei für unterschiedliche Lösungen. Von Xenia Böttcher.",
-      "pubDate": "2026-10-25T21:43:16+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/brasilien-wahl-innere-sicherheit-100.html",
       "bild": ""
     }
   ],
