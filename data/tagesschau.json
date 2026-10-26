@@ -1,7 +1,23 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "25.10.2026, 23:07 Uhr (UTC)",
+  "aktualisiert": "26.10.2026, 01:32 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "5e73ec928688d900d1d7",
+      "title": "Lula gewinnt Wahl in Brasilien",
+      "description": "Der linksgerichtete Staatschef Lula da Silva hat die Präsidentschaftswahl in Brasilien gewonnen. Der 80-Jährige setzte sich gegen den rechtsgerichteten Kandidaten Flávio Bolsonaro durch, wie das Oberste Wahlgericht mitteilte.",
+      "pubDate": "2026-10-26T02:12:14+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/brasilien-wahlen-lula-100.html",
+      "bild": ""
+    },
+    {
+      "id": "18cd344c66d077103ca7",
+      "title": "Neuer Gebäudetyp E: Schnelles und günstiges Bauen per Gesetz",
+      "description": "Deutschland braucht mehr bezahlbaren Wohnraum. Das soll unter anderem mit dem Gebäudetyp E gelingen - das E steht hier für \"einfach\". Der Gesetzentwurf liegt dem ARD-Hauptstadtstudio exklusiv vor. Von Oliver Neuroth.",
+      "pubDate": "2026-10-26T00:07:11+01:00",
+      "link": "https://www.tagesschau.de/inland/gebaeudetyp-e-104.html",
+      "bild": ""
+    },
     {
       "id": "28f8e901f048fc91b9d2",
       "title": "Kreuzfahrtschiff rammt zwei Containerschiffe in Bremerhaven",
@@ -104,22 +120,6 @@
       "description": "Stromausfall in Freiburg, mögliche Sturmflut und orkanartige Böen an der Nordsee: Sturm und Regen bestimmen heute das Wetter in Deutschland, es gab bereits zahlreiche Einsätze. Für Teile des Landes galten Warnungen.",
       "pubDate": "2026-10-25T15:48:27+01:00",
       "link": "https://www.tagesschau.de/inland/wetter-sturm-112.html",
-      "bild": ""
-    },
-    {
-      "id": "41f0cff541f389da927d",
-      "title": "Vor Midterms: Ex-US-Präsident Obama schaltet sich mit Trump-Kritik in Wahlkampf ein",
-      "description": "Die Demokraten hoffen bei den Zwischenwahlen auf einen Sieg. Nun gibt es Wahlkampfhilfe vom früheren US-Präsidenten Obama. Der wirft Trump Korruption vor - und lästert über die Renovierungsarbeiten im Weißen Haus.",
-      "pubDate": "2026-10-25T11:35:11+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/usa-trump-wahl-102.html",
-      "bild": ""
-    },
-    {
-      "id": "ebce44588fe9fae40e9c",
-      "title": "Proteste in Europa - auch mit Gewalt",
-      "description": "Nicht nur Frankreich - auch in vielen anderen europäischen Ländern wurde wieder protestiert. Dabei kam es mancherorts erneut zu Auseinandersetzungen mit der Polizei. Insgesamt melden die Behörden aber weniger Gewalt als am vergangenen Wochenende.",
-      "pubDate": "2026-10-25T13:21:49+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/proteste-frankreich-spanien-italien-protugal-albanien-100.html",
       "bild": ""
     }
   ],
