@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="manifest" href="manifest.webmanifest">
-    <meta name="theme-color" content="#b61f29">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#b61f29">
 <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Studjo">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Studjo">
 <title>Speiseplan | Studjo Terminal</title>
 <link rel="stylesheet" href="css/speiseplan-ansicht.css">
 </head>
@@ -17,7 +17,18 @@
   <a href="speiseplan.html" target="_self" class="back-button">
     <span aria-hidden="true">←</span> Zurück
   </a>
+
   <span class="sp-titel" id="sp-titel">📄 Speiseplan</span>
+
+  <button type="button"
+          class="sp-bild-link"
+          id="sp-bild-link"
+          aria-label="Zur bebilderten Darstellung auf Seite 2 wechseln"
+          hidden>
+    <span aria-hidden="true">🍽️</span>
+    <span>Zur Anzeige als Bild</span>
+  </button>
+
   <div class="sp-seiten-nav" id="sp-seiten-nav" hidden>
     <button type="button" id="sp-btn-prev" aria-label="Vorherige Seite">‹</button>
     <span id="sp-seiten-info">Seite 1 von 1</span>
@@ -38,20 +49,9 @@
   </div>
 </div>
 
-<!-- Für echte Screenreader (VoiceOver/NVDA/TalkBack): Hinweis, welcher
-     Tag markiert ist. Visuell unsichtbar. Bewusst UNABHÄNGIG von der
-     eigenen a11y-Steuerleiste, die auf dieser Seite entfernt wurde
-     (siehe Kommentar unten) – echte Screenreader lesen das trotzdem. -->
 <div class="sp-sr-only" id="sp-sr-hinweis"></div>
 
 <script type="module" src="js/speiseplan-ansicht.js"></script>
-
-<!-- Bewusst OHNE a11y.css/a11y.js auf dieser Seite: Der Inhalt ist ein
-     als Bild gerenderter PDF-Canvas, kein echter Text. Die eigene
-     Schriftgrößen-/Kontrast-/Vorlesen-Steuerleiste hätte hier keine
-     Wirkung (Schrift vergrößert sich nicht, Kontrast macht nur den
-     Hintergrund weiß, Vorlesen liest nichts vor) und würde nur
-     verwirren. -->
-  <script src="js/gong.js"></script>
+<script src="js/gong.js"></script>
 </body>
 </html>

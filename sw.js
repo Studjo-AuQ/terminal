@@ -1,6 +1,6 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 35
+   Version 36
 
    - lädt beim Installieren den stabilen lokalen Terminal-Kern vor
      (HTML, CSS, JS, JSON, Schriften, Bilder und PDF.js)
@@ -18,7 +18,7 @@
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v35';
+const CACHE_VERSION = 'v36';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 const SPEISEPLAN_CACHE = CACHE_PREFIX + CACHE_VERSION + '-speiseplaene';
@@ -663,6 +663,8 @@ function istStartseitenKernDatei(url) {
     basis + 'js/gong.js',
     basis + 'js/offline.js',
     basis + 'js/pflegezentrale-link.js',
+    basis + 'js/speiseplan-ansicht.js',
+    basis + 'css/speiseplan-ansicht.css',
     basis + 'css/style-index.css',
     basis + 'css/a11y.css'
   ].includes(url.pathname);
