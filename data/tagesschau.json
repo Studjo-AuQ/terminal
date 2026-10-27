@@ -1,7 +1,63 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "27.10.2026, 16:21 Uhr (UTC)",
+  "aktualisiert": "27.10.2026, 20:53 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "a91c7dc30c489f693b9a",
+      "title": "Keine klare Mehrheit bei Parlamentswahl in Israel",
+      "description": "Die Parlamentswahl in Israel hat laut ersten Prognosen keinen klaren Sieger hervorgebracht. Weder für Premierminister Netanjahu noch für seinen wichtigsten Herausforderer Eisenkot zeichnet sich eine Mehrheit in der 120 Sitze zählenden Knesset ab.",
+      "pubDate": "2026-10-27T21:49:11+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/israel-wahl-prognose-100.html",
+      "bild": ""
+    },
+    {
+      "id": "4a55c013a282eb6f6218",
+      "title": "CDU-Politikerin Claus signalisiert Interesse an Steinmeier-Nachfolge",
+      "description": "Bisher gibt es nur den Vorschlag der CSU: Ilse Aigner soll Bundespräsidentin werden. Doch in der CDU gibt es den Wunsch nach einem Namen aus den eigenen Reihen. Nun wird der von Ines Claus genannt. Hätte sie Chancen? Von Kirsten Girschick.",
+      "pubDate": "2026-10-27T20:52:58+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/moegliche-nachfolgerin-steinmeier-ines-claus-100.html",
+      "bild": ""
+    },
+    {
+      "id": "0b5aa62bdfb940fbe266",
+      "title": "Brasilien: Bolsonaro trotz Ausreiseverbots offenbar auf Weg in USA",
+      "description": "Der unterlegene Präsidentschaftskandidat Flávio Bolsonaro hat nach Medienberichten Brasilien verlassen und ist auf dem Weg in die USA. Bolsonaro darf wegen einer Entscheidung des Obersten Gerichts eigentlich nicht ausreisen.",
+      "pubDate": "2026-10-27T20:25:34+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/bolsonaro-brasilien-usa-100.html",
+      "bild": ""
+    },
+    {
+      "id": "5b7fe23aad82a61014ef",
+      "title": "Nach Anschlägen in Frankreich: Sorge vor wachsendem Rassismus",
+      "description": "Nach den offenbar rassistisch motivierten Anschlägen in Frankreich gehen in Paris Menschen auf die Straße. Viele sehen rechte Medien in der Verantwortung - und den Rassemblement National. Von Carolin Dylla.",
+      "pubDate": "2026-10-27T18:56:21+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/frankreich-paris-kundgebung-nach-anschlaegen-von-trappes-la-verriere-100.html",
+      "bild": ""
+    },
+    {
+      "id": "5f752895e3f92494c23b",
+      "title": "Marktbericht: DAX kann weiter zulegen",
+      "description": "Obwohl die wichtigsten Termine der Woche noch bevorstehen, hat der DAX seine Kurserholung fortgesetzt. Geholfen haben dabei neue Hoffnungen auf eine diplomatische Lösung im Iran-Krieg.",
+      "pubDate": "2026-10-27T18:18:35+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-jones-anthropic-ki-ezb-100.html",
+      "bild": ""
+    },
+    {
+      "id": "7ed2ef362152f71b92b2",
+      "title": "FAQ: Die lange Suche nach einem Atommüll-Endlager",
+      "description": "Rund 27.000 Kubikmeter hochradioaktiver Müll müssen dauerhaft und sicher verwahrt werden. Bis 2050 soll ein Endlager gefunden werden. Die Suche wurde nun weiter eingegrenzt. Wie muss ein Endlager beschaffen sein? Und wo könnte es entstehen?",
+      "pubDate": "2026-10-27T18:12:36+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/endlagersuche-standorte-100.html",
+      "bild": ""
+    },
+    {
+      "id": "2e004dbd122fa35c2e41",
+      "title": "Pressefreiheit: Ägypten schließt unabhängige Nachrichtenseite",
+      "description": "Ein ägyptisches Gericht hat die Schließung der unabhängigen Nachrichtenwebseite Mada Masr angeordnet. Chefredakteurin Attalah wurde zu einer hohen Geldstrafe verurteilt. Reporter ohne Grenzen spricht von einer \"ungeheuerlichen Entscheidung\".",
+      "pubDate": "2026-10-27T17:42:34+01:00",
+      "link": "https://www.tagesschau.de/ausland/afrika/aegypten-nachrichtenseite-mada-masr-100.html",
+      "bild": ""
+    },
     {
       "id": "7a44772de3b1376adae8",
       "title": "Tarifverhandlungen: IG Metall lehnt Angebot ab - Warnstreiks drohen",
@@ -37,7 +93,7 @@
     {
       "id": "49ae415e7ebbf651d025",
       "title": "Bundesgerichtshof verweist Streit um falsches Künast-Zitat an EuGH",
-      "description": "Der Bundesgerichtshof hat den Rechtsstreit der Grünen-Politikerin Künast gegen Meta an den Europäischen Gerichtshof verweisen. Der soll prüfen, ob der Internetkonzern für die Löschung eines rechtswidrigen Memes verantwortlich ist.",
+      "description": "Der Bundesgerichtshof hat den Rechtsstreit der Grünen-Politikerin Künast gegen Meta an den Europäischen Gerichtshof verwiesen. Der soll prüfen, ob der Internetkonzern für die Löschung eines rechtswidrigen Memes verantwortlich ist.",
       "pubDate": "2026-10-27T16:35:01+01:00",
       "link": "https://www.tagesschau.de/inland/gesellschaft/kuenast-meta-eugh-100.html",
       "bild": ""
@@ -53,8 +109,8 @@
     {
       "id": "106e39bf02e3d1678aad",
       "title": "Bei Knesset-Wahl zeichnet sich enorm hohe Wahlbeteiligung ab",
-      "description": "Für viele Israelis ist es nicht weniger als eine Schicksalswahl - und das spiegelt sich in der Wahlbeteiligung wider. Die liegt bereits jetzt auf einem Rekordniveau. Umfragen deuten auf ein knappes Rennen hin.",
-      "pubDate": "2026-10-27T17:10:28+01:00",
+      "description": "Für viele Israelis ist es nicht weniger als eine Schicksalswahl - und das spiegelt sich in der Wahlbeteiligung wider. Die liegt auf einem Rekordniveau. Umfragen deuten auf ein knappes Rennen hin.",
+      "pubDate": "2026-10-27T21:05:11+01:00",
       "link": "https://www.tagesschau.de/ausland/asien/hohe-wahlbeteiligung-israel-100.html",
       "bild": ""
     },
@@ -64,62 +120,6 @@
       "description": "Wer spätabends oder am Wochenende Aktien von Siemens, SAP und Co. kaufen oder verkaufen will, kann das ab sofort tun. Die Deutsche Börse ermöglicht den Handel rund um die Uhr. Was hat es damit auf sich?",
       "pubDate": "2026-10-27T15:12:19+01:00",
       "link": "https://www.tagesschau.de/wirtschaft/finanzen/dax-aktien-handel-100.html",
-      "bild": ""
-    },
-    {
-      "id": "5d30ae93f9d52daf4d58",
-      "title": "Stubb und Störe sprechen mit Putin",
-      "description": "Finnlands Präsident Stubb und Norwegens Ministerpräsident Störe haben mit Kremlchef Putin telefoniert. Die Initiative war nicht mit europäischen Partnern abgestimmt. Anschließend sprachen sie mit dem ukrainischen Präsidenten Selenskyj.",
-      "pubDate": "2026-10-27T14:32:22+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/putin-telefonat-stubb-stoere-100.html",
-      "bild": ""
-    },
-    {
-      "id": "98b1583a3fed66379eea",
-      "title": "Beiersdorf-Zahlen: Nivea und Tesa schrumpfen weiter",
-      "description": "Beiersdorf sieht erste Fortschritte in seinem Konsumentengeschäft. Dennoch lagen die Umsätze mit Tesa- und Nivea-Produkten im dritten Quartal weiter unter Vorjahr. Die Aktie steht unter Druck.",
-      "pubDate": "2026-10-27T14:10:55+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktbericht-beiersdorf-100.html",
-      "bild": ""
-    },
-    {
-      "id": "84137dd344a92de83aa9",
-      "title": "Atommüll-Endlager: In fünf Bundesländern soll nicht mehr gesucht werden",
-      "description": "Die Suche nach einem Endlager für den hochradioaktiven Atommüll in Deutschland wird konkreter. Die zuständigen Fachleute haben die geeigneten Gebiete weiter eingegrenzt. Fünf Bundesländer sind nun nicht mehr Teil der laufenden Suche.",
-      "pubDate": "2026-10-27T13:53:16+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/endlagersuche-atommuell-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c8344a2380d45a5aeb6d",
-      "title": "Wahl in Israel: \"König Bibi\" polarisiert - setzt er sich noch mal durch?",
-      "description": "Benjamin Netanjahu hat Israel länger regiert als jeder andere Politiker vor ihm. Heute entscheiden die Wähler, ob eine weitere Amtszeit dazukommt. Es ist eine Abstimmung über einen Premier, der im Land wie kein Zweiter polarisiert. Von J. Segador.",
-      "pubDate": "2026-10-27T13:11:13+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/israel-wahl-portraet-netanjahu-100.html",
-      "bild": ""
-    },
-    {
-      "id": "324afb5c9b40dacf6c18",
-      "title": "Nachbarstaaten knüpfen wenig Hoffnung an die Wahl in Israel",
-      "description": "Die Wahl der Knesset wird auch in den Nachbarstaaten Libanon und Syrien genau beobachtet. Die Hoffnung auf eine Änderung von Israels Außenpolitik - im Falle einer Niederlage von Premier Netanjahu - ist jedoch gering. Von Ina Rottscheidt.",
-      "pubDate": "2026-10-27T12:49:29+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/israel-wahl-libanon-syrien-100.html",
-      "bild": ""
-    },
-    {
-      "id": "49b5fbfd6edf71862fa6",
-      "title": "Beate Zschäpe soll bis mindestens 2035 in Haft bleiben",
-      "description": "Seit rund 15 Jahren sitzt die verurteilte Rechtsterroristin Beate Zschäpe im Gefängnis - das Mindestmaß bei einer lebenslangen Haftstrafe. Deshalb beantragte sie nun ihre vorzeitige Entlassung - allerdings ohne Erfolg.",
-      "pubDate": "2026-10-27T12:10:07+01:00",
-      "link": "https://www.tagesschau.de/inland/zschaepe-gericht-gegen-vorzeitige-haftentlassung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f1a0edc5a65c06746a4e",
-      "title": "Kanzler Merz setzt auf Handel mit Asien - offenbar als Reaktion auf Trump",
-      "description": "Der Kanzler beschwört auf seiner Asienreise den freien Handel. Mit der Pazifik-Region will Merz ein großes Abkommen schließen - und damit offenbar einen Kontrapunkt zum Vorgehen der USA setzen.",
-      "pubDate": "2026-10-27T11:43:15+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/merz-handel-asien-100.html",
       "bild": ""
     }
   ],
