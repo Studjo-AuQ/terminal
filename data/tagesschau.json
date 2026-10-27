@@ -1,7 +1,47 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "27.10.2026, 00:19 Uhr (UTC)",
+  "aktualisiert": "27.10.2026, 05:27 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "2be8dbdec35c9c711780",
+      "title": "Muss Facebook rechtswidrige Memes aufspüren?",
+      "description": "Über Social-Media-Accounts wurden Posts verbreitet, die der Grünen-Politikerin Künast falsche Zitate untergeschoben haben. Daraufhin verklagte Künast den Facebook-Betreiber Meta. Heute verhandelt der Bundesgerichtshof erneut. Von Klaus Hempel.",
+      "pubDate": "2026-10-27T05:20:26+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/facebook-memes-kuenast-100.html",
+      "bild": ""
+    },
+    {
+      "id": "c5f025a3cb3c90b894a1",
+      "title": "Junge Menschen im Sog der Sekten",
+      "description": "Junge Menschen fühlen sich von den anhaltenden Krisen besonders belastet. Recherchen des team.recherche vom SWR zeigen, wie Sekten das auszunutzen versuchen. Eine Expertin spricht von \"goldenen Zeiten für Sekten\".",
+      "pubDate": "2026-10-27T05:00:49+01:00",
+      "link": "https://www.tagesschau.de/investigativ/swr/junge-menschen-sekten-100.html",
+      "bild": ""
+    },
+    {
+      "id": "1cf659d04e13a9595229",
+      "title": "Knesset-Wahl 2026: Israel vor der Entscheidung",
+      "description": "Es ist eine fundamentale Richtungsentscheidung in einer der schwersten Krisen der jüdischen Republik: Mehr als 7,3 Millionen Wahlberechtigte stimmen ab. 70.000 Staatsbürger aus aller Welt fliegen ein. Heute wählt Israel ein neues Parlament. Von J. Segador.",
+      "pubDate": "2026-10-27T04:18:23+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/israel-vor-wahl-100.html",
+      "bild": ""
+    },
+    {
+      "id": "46b61f23ba731cd331d0",
+      "title": "Brasilien nach der Stichwahl: Was jetzt auf Lula zukommt",
+      "description": "Nach der Stichwahl hat nun auch Bolsonaros Partei die Niederlage anerkannt. Doch die Herausforderungen, vor denen Lula steht, sind groß. Die Kosten für essenzielle Güter wie Lebensmittel sind hoch. Die vierte Amtszeit könnte seine schwerste werden. Von A. Herrberg.",
+      "pubDate": "2026-10-27T04:06:48+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/lula-wahl-brasilien-100.html",
+      "bild": ""
+    },
+    {
+      "id": "4ef825e7c3a97e6e73ae",
+      "title": "Schülerproteste in Frankreich: Fünf-Punkte-Plan, aber noch kein Befreiungsschlag",
+      "description": "In Frankreich geht die Regierung mit einem Maßnahmenkatalog auf die protestierenden Schüler zu. Diese begrüßen den Fünf-Punkte-Plan des Bildungsministers, wollen am kommenden Samstag aber erneut demonstrieren. Von Julia Borutta.",
+      "pubDate": "2026-10-27T03:22:51+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/frankreich-proteste-5-punkte-plan-100.html",
+      "bild": ""
+    },
     {
       "id": "74c97e3c4df1c77be6d4",
       "title": "Harry Kane gewinnt Ballon d'Or",
@@ -21,8 +61,8 @@
     {
       "id": "eb6d92ade2bfdd89306e",
       "title": "Ukraine-Krieg: Russland will Angriffe trotz Gesprächen fortsetzen",
-      "description": "Trotz der geplanten Wiederaufnahme von Gesprächen unter US-Vermittlung will Russland die Ukraine weiter angreifen. Das teilte Kremlsprecher Peskow mit. In Charkiw wurden bei einer russischen Attacke zwei Menschen getötet.",
-      "pubDate": "2026-10-26T23:30:15+01:00",
+      "description": "Trotz der geplanten Wiederaufnahme von Gesprächen unter US-Vermittlung will Russland die Ukraine weiter angreifen. In Charkiw wurden bei einer russischen Attacke zwei Menschen getötet. Und in Oleschky ist eine lokal begrenzte Waffenruhe in Kraft getreten.",
+      "pubDate": "2026-10-27T04:49:21+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/russland-will-angriffe-fortsetzen-100.html",
       "bild": ""
     },
@@ -80,46 +120,6 @@
       "description": "Das amerikanische KI-Unternehmen Anthropic gibt den Startschuss für einen Mega-Börsengang schon im November und reicht die nötigen Unterlagen ein. Es dürfte einer der größten Börsengänge aller Zeiten werden.",
       "pubDate": "2026-10-26T16:49:36+01:00",
       "link": "https://www.tagesschau.de/wirtschaft/unternehmen/anthropic-bereitet-boersengang-vor-100.html",
-      "bild": ""
-    },
-    {
-      "id": "b77b9e9c40b42c91bd76",
-      "title": "Wahl des Bundespräsidenten: Wer folgt auf Steinmeier?",
-      "description": "Am 30. Januar wählt die Bundesversammlung ein neues Staatsoberhaupt. Doch wer für die Nachfolge von Frank-Walter Steinmeier ins Rennen geschickt wird, ist noch offen. Welche Namen gehandelt werden, wer die besten Chancen hat und wie die Wahl abläuft.",
-      "pubDate": "2026-10-26T16:07:22+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/bundespraesidentenwahl-102.html",
-      "bild": ""
-    },
-    {
-      "id": "72ba07cf61911e7f01fe",
-      "title": "Demonstrationen für Pressefreiheit in der Türkei",
-      "description": "Journalisten stehen in der Türkei seit Langem unter Druck. Erneut sperrten die Behörden kürzlich Medienseiten und inhaftierten weitere Journalisten. Am Wochenende haben nun Tausende Menschen für mehr Pressefreiheit protestiert. Von Stella Männer.",
-      "pubDate": "2026-10-26T15:25:20+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/demo-pressefreiheit-tuerkei-100.html",
-      "bild": ""
-    },
-    {
-      "id": "4be012b01c7f2339d934",
-      "title": "Brasiliens Kapitalmärkte stürzen ab",
-      "description": "Während die EU die Wiederwahl von Brasiliens Präsident Lula begrüßt, hat diese einen Kurssturz bei brasilianischen Aktien und Anleihen ausgelöst. An den Märkten gibt es Sorgen wegen Brasiliens hoher Verschuldung.",
-      "pubDate": "2026-10-26T14:47:15+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktbericht-brasilien-wahl-100.html",
-      "bild": ""
-    },
-    {
-      "id": "b33014f902c838fb78f1",
-      "title": "Audi-Chef bei Trump - Verstoß gegen Konzernregeln?",
-      "description": "US-Präsident Trump und Audi-Chef Döllner auf einer Bühne - das stößt auf scharfe Kritik. Der Vorstandsvorsitzende kündigte in den USA ein neues Werk an. Nun könnten die eigenen Konzernleitlinien für ihn zum Problem werden.",
-      "pubDate": "2026-10-26T13:48:59+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/audi-us-werk-doellner-trump-100.html",
-      "bild": ""
-    },
-    {
-      "id": "4803c67c228ce4df3807",
-      "title": "Ifo-Index: Konjunkturbelebung setzt sich fort",
-      "description": "Die Stimmung in den deutschen Chefetagen hellt sich weiter auf: Trotz hoher Energiepreise ist der ifo-Geschäftsklimaindex im Oktober zum sechsten Mal in Folge gestiegen.",
-      "pubDate": "2026-10-26T11:29:32+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/konjunktur/ifo-index-oktober-102.html",
       "bild": ""
     }
   ],
