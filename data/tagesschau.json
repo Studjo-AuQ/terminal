@@ -1,7 +1,15 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "26.10.2026, 20:41 Uhr (UTC)",
+  "aktualisiert": "27.10.2026, 00:19 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "74c97e3c4df1c77be6d4",
+      "title": "Harry Kane gewinnt Ballon d'Or",
+      "description": "Harry Kane wurde in London mit dem Ballon d'Or ausgezeichnet. Er ist der erste Bundesliga-Spieler seit Matthias Sammer 1996, der den Award gewinnt. Bei den Frauen gewann Alexia Putellas, bester Trainer wurde Luis de la Fuente.",
+      "pubDate": "2026-10-27T00:20:35+01:00",
+      "link": "https://www.tagesschau.de/sport/eilmeldung-9588.html",
+      "bild": ""
+    },
     {
       "id": "402825f40e8852ef3e11",
       "title": "Kritik an Audi-Chef Döllner reißt nach Auftritt mit Trump nicht ab",
@@ -14,7 +22,7 @@
       "id": "eb6d92ade2bfdd89306e",
       "title": "Ukraine-Krieg: Russland will Angriffe trotz Gesprächen fortsetzen",
       "description": "Trotz der geplanten Wiederaufnahme von Gesprächen unter US-Vermittlung will Russland die Ukraine weiter angreifen. Das teilte Kremlsprecher Peskow mit. In Charkiw wurden bei einer russischen Attacke zwei Menschen getötet.",
-      "pubDate": "2026-10-26T20:45:53+01:00",
+      "pubDate": "2026-10-26T23:30:15+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/russland-will-angriffe-fortsetzen-100.html",
       "bild": ""
     },
@@ -112,14 +120,6 @@
       "description": "Die Stimmung in den deutschen Chefetagen hellt sich weiter auf: Trotz hoher Energiepreise ist der ifo-Geschäftsklimaindex im Oktober zum sechsten Mal in Folge gestiegen.",
       "pubDate": "2026-10-26T11:29:32+01:00",
       "link": "https://www.tagesschau.de/wirtschaft/konjunktur/ifo-index-oktober-102.html",
-      "bild": ""
-    },
-    {
-      "id": "7abe82e9a83fde6e86d9",
-      "title": "Oxford Street in London wird zur Fußgängerzone",
-      "description": "Von heute an fahren auf einem Teil der bekannten Londoner Oxford Street keine Autos, Busse und Taxis mehr. Der Umbau zur Fußgängerzone soll der Einkaufsstraße neues Leben einhauchen.",
-      "pubDate": "2026-10-26T11:27:47+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/london-oxford-street-100.html",
       "bild": ""
     }
   ],
