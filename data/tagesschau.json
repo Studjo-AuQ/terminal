@@ -1,7 +1,39 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "28.10.2026, 00:22 Uhr (UTC)",
+  "aktualisiert": "28.10.2026, 06:09 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "c7cebbe5e4bc1c2bd0d3",
+      "title": "Liveblog zur Israel-Wahl: ++ Netanjahu will Regierung bilden - Eisenkot auch ++",
+      "description": "Kein klarer Wahlsieger in Israel nach Prognosen - dennoch beansprucht sowohl das Netanjahu-Lager als auch das Bündnis um Ex-Militärchef Eisenkot die Regierungsbildung für sich. Zulegen können die arabischen Parteien. Alle Entwicklungen im Liveblog.",
+      "pubDate": "2026-10-28T07:06:54+01:00",
+      "link": "https://www.tagesschau.de/newsticker/liveblog-israel-wahl-100.html",
+      "bild": ""
+    },
+    {
+      "id": "8d796161252894443ac0",
+      "title": "Israel - Eine Wahl ohne klarenn Gewinner",
+      "description": "Es war eine lange, nervenaufreibende Nacht in den Wahlkampfzentralen in Tel Aviv und Jerusalem. Doch Klarheit hat dieser Morgen nicht gebracht. Im Gegenteil: Israel droht nach der Wahl eine monatelange politische Blockade. Von J. Segador.",
+      "pubDate": "2026-10-28T06:47:34+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/israel-patt-wahl-100.html",
+      "bild": ""
+    },
+    {
+      "id": "24895d73b5064de6b7be",
+      "title": "Wo Deutschland noch wachsen kann: Zukunftsmärkte für heimische Firmen",
+      "description": "Die deutsche Wirtschaft hat viele Probleme. Doch bei all den negativen Nachrichten gibt es auch Chancen. Denn auf einigen Märkten der Zukunft haben heimische Unternehmen gute Karten. Von Angela Göpfert.",
+      "pubDate": "2026-10-28T06:19:59+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/konjunktur/deutschland-wachstum-ki-robotik-zukunftsmaerkte-100.html",
+      "bild": ""
+    },
+    {
+      "id": "51dfcaafe1470fae4132",
+      "title": "Knesset-Wahl in Israel: Prognosen zeigen Patt-Situation in Israel",
+      "description": "Nach der Wahl in Israel sehen mehrere TV-Sender ein enges Rennen um die Mehrheit im Parlament. Sowohl Eisenkot als auch Netanjahu kündigten an, eine Regierung bilden zu wollen.",
+      "pubDate": "2026-10-28T04:17:52+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/israel-wahl-patt-100.html",
+      "bild": ""
+    },
     {
       "id": "a91c7dc30c489f693b9a",
       "title": "Keine klare Mehrheit bei Parlamentswahl in Israel",
@@ -22,7 +54,7 @@
       "id": "0b5aa62bdfb940fbe266",
       "title": "Brasilien: Bolsonaro trotz Ausreiseverbots offenbar in USA eingetroffen",
       "description": "Der unterlegene Präsidentschaftskandidat Flávio Bolsonaro hat laut Medienberichten Brasilien verlassen und ist in den USA gelandet - trotz eines gerichtlich verhängten Ausreiseverbots. Die USA wollen ihm und seiner Familie nun Visa erteilen.",
-      "pubDate": "2026-10-28T01:18:43+01:00",
+      "pubDate": "2026-10-28T04:21:25+01:00",
       "link": "https://www.tagesschau.de/ausland/amerika/bolsonaro-brasilien-usa-100.html",
       "bild": ""
     },
@@ -88,38 +120,6 @@
       "description": "Durch einen Wirbelsturm sind im türkischen Antalya vier Menschen ums Leben gekommen. Die vier Bauarbeiter starben, als der Tornado ihren Wohncontainer zerstörte. Ein weiterer Mensch wurde verletzt.",
       "pubDate": "2026-10-27T16:35:24+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/tuerkei-antalya-tornado-vier-tote-100.html",
-      "bild": ""
-    },
-    {
-      "id": "49ae415e7ebbf651d025",
-      "title": "Bundesgerichtshof verweist Streit um falsches Künast-Zitat an EuGH",
-      "description": "Der Bundesgerichtshof hat den Rechtsstreit der Grünen-Politikerin Künast gegen Meta an den Europäischen Gerichtshof verwiesen. Der soll prüfen, ob der Internetkonzern für die Löschung eines rechtswidrigen Memes verantwortlich ist.",
-      "pubDate": "2026-10-27T16:35:01+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/kuenast-meta-eugh-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f2441c26f0f609459e80",
-      "title": "Mehr Personal und Befugnisse: EU will Frontex massiv ausbauen",
-      "description": "Die EU-Kommission will Frontex massiv ausbauen. Die Grenzschutzagentur soll sich künftig verstärkt um Abschiebungen kümmern - auch zwischen Drittstaaten. Eine schnelle Eingreiftruppe für Krisen wie in Ceuta ist ebenfalls vorgesehen.",
-      "pubDate": "2026-10-27T16:55:43+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/eu-will-fuer-frontex-mehr-befugnisse-und-personal-100.html",
-      "bild": ""
-    },
-    {
-      "id": "106e39bf02e3d1678aad",
-      "title": "Bei Knesset-Wahl zeichnet sich enorm hohe Wahlbeteiligung ab",
-      "description": "Für viele Israelis ist es nicht weniger als eine Schicksalswahl - und das spiegelt sich in der Wahlbeteiligung wider. Die liegt auf einem Rekordniveau. Umfragen deuten auf ein knappes Rennen hin.",
-      "pubDate": "2026-10-27T21:05:11+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/hohe-wahlbeteiligung-israel-100.html",
-      "bild": ""
-    },
-    {
-      "id": "9b9e381ccd33dd329f27",
-      "title": "40 DAX-Aktien jetzt rund um die Uhr handelbar",
-      "description": "Wer spätabends oder am Wochenende Aktien von Siemens, SAP und Co. kaufen oder verkaufen will, kann das ab sofort tun. Die Deutsche Börse ermöglicht den Handel rund um die Uhr. Was hat es damit auf sich?",
-      "pubDate": "2026-10-27T15:12:19+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/dax-aktien-handel-100.html",
       "bild": ""
     }
   ],
