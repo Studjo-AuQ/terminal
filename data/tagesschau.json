@@ -1,7 +1,55 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "29.10.2026, 16:49 Uhr (UTC)",
+  "aktualisiert": "29.10.2026, 21:42 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "c37a458b0cdd81776427",
+      "title": "Trauer um britischen Schauspieler: Patrick Stewart gestorben",
+      "description": "Seine Rollen als Captain Picard in Star Trek und Professor Charles Xavier bei X-Men machten ihn weltberühmt. Nun ist der britische Schauspieler Patrick Stewart im Alter von 86 Jahren gestorben.",
+      "pubDate": "2026-10-29T21:53:05+01:00",
+      "link": "https://www.tagesschau.de/kultur/patrick-stewart-tot-100.html",
+      "bild": ""
+    },
+    {
+      "id": "b690f38113d15dec9bf6",
+      "title": "Debatte in der Koalition über Steuer auf Umsätze durch KI",
+      "description": "In Deutschland könnte es eine Steuer auf Umsätze geben, die mit Künstlicher Intelligenz erzielt werden. Auch Familienministerin Prien sprach sich nun dafür aus. So soll auf Veränderungen in der Arbeitswelt reagiert werden - zum Beispiel auf Jobverluste.",
+      "pubDate": "2026-10-29T21:12:03+01:00",
+      "link": "https://www.tagesschau.de/inland/ministerin-prien-ki-steuer-100.html",
+      "bild": ""
+    },
+    {
+      "id": "45091037881d999da812",
+      "title": "Wer auf EZB-Chefin Christine Lagarde folgen könnte",
+      "description": "Früher als geplant tritt die Suche nach einer Nachfolge für EZB-Chefin Lagarde in die heiße Phase - die Französin scheidet vorzeitig aus dem Amt. Was sind die Hintergründe, wer könnte nachrücken an der Spitze der Notenbank? Von Constantin Röse.",
+      "pubDate": "2026-10-29T19:40:44+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/ezb-ruecktritt-lagarde-100.html",
+      "bild": ""
+    },
+    {
+      "id": "25ec9742aa8573dcacac",
+      "title": "Marktbericht: DAX setzt Klettertour fort",
+      "description": "Die großen Notenbanken halten vorerst die Füße still - die Botschaft hat die Kauflust der Anleger beflügelt, der DAX beendet den Handelstag im Plus. Auch der VW-Schock vom Morgen wurde gut verdaut.",
+      "pubDate": "2026-10-29T18:32:38+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-alphabet-ki-fed-ezb-100.html",
+      "bild": ""
+    },
+    {
+      "id": "2e3e0f8bffadaba66aa0",
+      "title": "Zugunglück in Spanien: Ein Land zwischen Trauer und Aufarbeitung",
+      "description": "Nach dem Zugunglück in Spanien sind Schock und Trauer groß. Forensiker identifizieren weiterhin Todesopfer. Zudem wurden die Gesprächsprotokolle der Leitstelle mit den Lokomotivführern veröffentlicht. Von Julia Macher.",
+      "pubDate": "2026-10-29T17:59:55+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/spanien-zugunglueck-132.html",
+      "bild": ""
+    },
+    {
+      "id": "33b95e15ccab7a40cd2a",
+      "title": "Südafrika bewirbt sich mit der Stadt Durban um Olympia",
+      "description": "Noch nie hat ein afrikanischer Staat Olympische oder Paralympische Spiele ausgerichtet. Südafrika schickt nun Durban für 2036 und 2040 ins Bewerberrennen - einer von derzeit sechs Konkurrenten für München.",
+      "pubDate": "2026-10-29T17:52:47+01:00",
+      "link": "https://www.tagesschau.de/ausland/afrika/suedafrika-olympia-bewerbung-durban-100.html",
+      "bild": ""
+    },
     {
       "id": "c0dbbd1c83ebe60329c2",
       "title": "Afrika-Gipfel in Russland: Putin umwirbt einen ganzen Kontinent",
@@ -53,7 +101,7 @@
     {
       "id": "187102691bbc473725ab",
       "title": "Europäische Zentralbank hält Leitzins unverändert",
-      "description": "Die Europäische Zentralbank (EZB) hat wie erwartet die Leitzinsen unverändert bei 2,5 Prozent belassen. Für Gesprächsstoff sorgt aber der vorzeitige Rückzug von EZB-Chefin Christine Lagarde.",
+      "description": "Die Europäische Zentralbank (EZB) hat wie erwartet die Leitzinsen unverändert bei 2,5 Prozent belassen. Zuvor hatte auch die US-Notenbank Fed von einer Änderung ihrer Leitzinsen abgesehen.",
       "pubDate": "2026-10-29T16:18:04+01:00",
       "link": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/ezb-570.html",
       "bild": ""
@@ -72,54 +120,6 @@
       "description": "Die EU und Kanada wollen wirtschaftlich und politisch enger zusammenrücken. Könnte eine verstärkte Kooperation Europas Lieferketten sichern, Preise stabil halten, Abhängigkeiten reduzieren? Von Petra Thiele.",
       "pubDate": "2026-10-29T14:12:47+01:00",
       "link": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/kanada-eu-allianz-folgen-verbraucher-100.html",
-      "bild": ""
-    },
-    {
-      "id": "1f38d68158373dfb5fcb",
-      "title": "Wie Kanada unter Trumps Zöllen leidet",
-      "description": "Beim heute beginnenden Gipfel in Montreal geht es auch darum, wie eng die Zusammenarbeit mit der EU sein wird. In Kanada sind die Erwartungen groß. Denn die Folgen von Trumps Zöllen sind längst spürbar. Von Giselle Ucar.",
-      "pubDate": "2026-10-29T14:12:09+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/kanada-zoelle-trump-eu-100.html",
-      "bild": ""
-    },
-    {
-      "id": "9b5f12e03e1e550354d2",
-      "title": "Zahlreiche Tote bei Angriff auf Bahnhof in Dnipro",
-      "description": "Eine russische Drohne hat nach ukrainischen Angaben am Bahnhof von Dnipro mindestens 14 Menschen getötet. Während Russland und die Ukraine sich weiter gegenseitig mit Drohnen angreifen, hält die Waffenruhe in der Frontstadt Oleschky.",
-      "pubDate": "2026-10-29T15:04:36+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/russland-ukraine-angriffe-120.html",
-      "bild": ""
-    },
-    {
-      "id": "bc243eeca0f665cad667",
-      "title": "Eralp reagiert auf Spiegel-Bericht",
-      "description": "In nicht für die Öffentlichkeit bestimmten Anmerkungen zu einem Spiegel-Interview sorgte sich Linken-Politikerin Elif Eralp um ihre Sicherheit. Nun bekräftigte sie, klar gegen Gewalt vorgehen zu wollen.",
-      "pubDate": "2026-10-29T17:04:25+01:00",
-      "link": "https://www.tagesschau.de/inland/regional/berlin/nach-spiegel-bericht-eralp-100.html",
-      "bild": ""
-    },
-    {
-      "id": "e2693a8c554fbed255a0",
-      "title": "Opiumproduktion in Afghanistan stark gestiegen",
-      "description": "Die Taliban haben den Anbau von Schlafmohn und die Herstellung von Opium in Afghanistan 2022 verboten. Nun ist die Produktion den UN zufolge erstmals wieder gestiegen - um 400 Prozent innerhalb eines Jahres.",
-      "pubDate": "2026-10-29T13:50:48+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/afghanistan-zunahme-opiumproduktion-100.html",
-      "bild": ""
-    },
-    {
-      "id": "60d8a0e01fc85340b2e3",
-      "title": "Wer am Samstag auf die Straße geht - und was zu erwarten ist",
-      "description": "Am Samstag soll es in zahlreichen Städten Deutschlands zu Protesten kommen. Nach den Ausschreitungen etwa in Frankreich ist die Sorge vor Gewalt groß. Zu recht? Was sagen die Sicherheitsbehörden, was Experten - und worum geht es eigentlich?",
-      "pubDate": "2026-10-29T13:02:19+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/gen-z-regelt-proteste-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f9da9a955b630a2cf28a",
-      "title": "Steinmeier-Rede in China: \"Mit Größe und Macht kommt große Verantwortung\"",
-      "description": "Bundespräsident Steinmeier hat an der renommierten Peking-Universität eine Rede gehalten. Dabei richtete er klare Forderungen an China - bekundete aber auch seinen Respekt für die Volksrepublik.",
-      "pubDate": "2026-10-29T12:21:17+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/steinmeier-china-102.html",
       "bild": ""
     }
   ],
