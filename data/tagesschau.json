@@ -1,7 +1,23 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "28.10.2026, 23:27 Uhr (UTC)",
+  "aktualisiert": "29.10.2026, 02:44 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "0b12eb2dfa2c053a5f72",
+      "title": "Brasiliens Wahlverlierer: Bolsonaros spektakuläre Flucht",
+      "description": "Ein Privatflugzeug, wohl zwei Zwischenstopps, die Ankunft in Trumps USA - der Wahlverlierer der Präsidentschaftswahl bezeichnet sich nun als \"Anführer\" Brasiliens. Wie geht das rechte Lager mit dem geflüchteten Bolsonaro um? Von A. Herrberg.",
+      "pubDate": "2026-10-29T03:14:59+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/bolsonaro-flucht-100.html",
+      "bild": ""
+    },
+    {
+      "id": "fe0a34afe35edec65749",
+      "title": "Zugunglück in Spanien: Der Schock sitzt tief",
+      "description": "In Spanien sitzt der Schock tief über das zweite schwere Zugunglück auf der Hochgeschwindigkeitszugstrecke zwischen Madrid und Andalusien. Mindestens 68 Menschen verloren bei dem Unglück in der Region Toledo ihr Leben. Von Franka Welz.",
+      "pubDate": "2026-10-29T01:52:51+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/spanien-zugunglueck-reportage-100.html",
+      "bild": ""
+    },
     {
       "id": "2fb3cbcbcff2dd744bf2",
       "title": "Bolsonaro erklärt sich selbst zum Wahlsieger - aus den USA",
@@ -104,22 +120,6 @@
       "description": "Banken verdienen wieder gut - nach der Konkurrenz kann jetzt auch die Deutsche Bank gute Quartalszahlen vorlegen. In einem umkämpften Markt will der Konzern nun aufholen gegenüber den größten Instituten in Europa.",
       "pubDate": "2026-10-28T15:05:32+01:00",
       "link": "https://www.tagesschau.de/wirtschaft/finanzen/mittags-mb-deutsche-bank-100.html",
-      "bild": ""
-    },
-    {
-      "id": "4a2b3cf7445131e283f6",
-      "title": "Wahl in Israel: Keine klare Mehrheit, stattdessen Hoffnungen und Frust",
-      "description": "Nach der Parlamentswahl droht Israel eine Hängepartie: Keines der Lager hat eine klare Mehrheit. Premier Netanjahu gibt sich kämpferisch. Seine Gegner sind enttäuscht - hoffen aber weiter auf Veränderungen. Von J.-C. Kitzler.",
-      "pubDate": "2026-10-28T15:03:46+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/israel-wahl-178.html",
-      "bild": ""
-    },
-    {
-      "id": "a781be9cec5feb5257b3",
-      "title": "Mindestens 68 Tote nach Zugunglück in Spanien",
-      "description": "Die Zahl der Toten nach dem schweren Zugunglück in Spanien ist auf 68 gestiegen. Ein Hochgeschwindigkeitszug war am Morgen auf einen stehenden Zug aufgefahren - laut ersten Ermittlungen vermutlich wegen einer falschen Ansage der Leitstelle.",
-      "pubDate": "2026-10-28T17:11:17+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/spanien-zugunglueck-124.html",
       "bild": ""
     }
   ],
