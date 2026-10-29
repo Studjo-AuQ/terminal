@@ -1,11 +1,107 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "29.10.2026, 02:44 Uhr (UTC)",
+  "aktualisiert": "29.10.2026, 09:43 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "71cd84b081c43d814aea",
+      "title": "KI-Investitionen tragen nicht überall Früchte",
+      "description": "Die Tech-Giganten im Silicon Valley stecken Milliarden in Künstliche Intelligenz. Doch die investierten Gelder führen nicht automatisch zu Wachstum. Das zeigen die Zahlen von Microsoft und Alphabet.",
+      "pubDate": "2026-10-29T10:28:06+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/microsoft-alphabet-kuenstliche-intelligenz-cloud-100.html",
+      "bild": ""
+    },
+    {
+      "id": "3c072d20dff0a55172d4",
+      "title": "US-Zwischenwahlen: Trump holen seine Versprechen ein",
+      "description": "Er werde das Leben in den USA wieder erschwinglich machen, hatte Trump 2024 versprochen. Zwei Jahre danach sieht die Wirklichkeit anders aus - nicht zuletzt an den Zapfsäulen. Das wirkt sich auf die Umfragen vor den Midterms aus. Von J. Schönenborn.",
+      "pubDate": "2026-10-29T09:21:07+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/usa-midterms-lebenshaltungskosten-102.html",
+      "bild": ""
+    },
+    {
+      "id": "950e804bc2daf6bc8b5b",
+      "title": "Suche nach Opfern des Zugunglücks in Spanien geht weiter",
+      "description": "In Spanien suchen die Rettungskräfte nach dem schweren Zugunglück nach weiteren Opfern in den Waggon-Trümmern. Die Regierung versprach Aufklärung, in Madrid gab es Proteste. Als Unfallursache könnte menschliches Versagen eine Rolle gespielt haben.",
+      "pubDate": "2026-10-29T09:20:43+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/spanien-zugunglueck-128.html",
+      "bild": ""
+    },
+    {
+      "id": "9ad2cfa049c726940ea4",
+      "title": "Milliardenverlust bei Volkswagen",
+      "description": "Hohe Abschreibungen und ein schwaches China-Geschäft haben Volkswagen tiefrote Zahlen beschert. Der Konzernverlust lag im dritten Quartal bei 5,8 Milliarden Euro. VW-Aktien fallen.",
+      "pubDate": "2026-10-29T09:16:16+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/volkswagen-milliardenverlust-102.html",
+      "bild": ""
+    },
+    {
+      "id": "1088a6820189af443398",
+      "title": "Konstituierende Sitzung von neu gewähltem Abgeordnetenhaus in Berlin",
+      "description": "Knapp sechs Wochen nach der Wahl in Berlin kommt das Abgeordnetenhaus zu seiner konstituierenden Sitzung zusammen. Auf der Tagesordnung steht die Wahl des Parlamentspräsidiums. Erstmals könnte dieses Amt an eine Linken-Politikerin gehen.",
+      "pubDate": "2026-10-29T08:56:14+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/berlin-abgeordnetenhaus-erste-sitzung-100.html",
+      "bild": ""
+    },
+    {
+      "id": "f1ab9191bfe465979af0",
+      "title": "Pflegeversicherung: Linnemann schließt Leistungskürzungen nicht aus",
+      "description": "Gesundheitsminister Linnemann hält Einschnitte bei der Pflegeversicherung für möglich. Angesichts steigender Kosten müssten rund zehn Prozent eingespart werden. Patientenschützer warnen vor den Folgen für die häusliche Pflege.",
+      "pubDate": "2026-10-29T10:27:28+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/linnemann-kuerzungen-pflegeleistungen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "9307993284caa888e50c",
+      "title": "Hoffnung auf unabhängige Medien in Serbien",
+      "description": "Nach der Niederlage der Vucic-Partei in Serbien hoffen viele Menschen wieder auf eine unabhängige Berichterstattung. Eine Initiative fordert den Entzug der Sendelizenz für Informer - einem Propagandasender im Dienste des Ex-Präsidenten. Von S. Hahne.",
+      "pubDate": "2026-10-29T07:46:15+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/serbien-medien-100.html",
+      "bild": ""
+    },
+    {
+      "id": "5f03a9850ac3c87f196c",
+      "title": "Wie lange ist Christine Lagarde noch EZB-Chefin?",
+      "description": "In vielen Euro-Ländern stockt die Konjunktur, Proteste wie in Frankreich setzen Regierungen unter Druck. Da bräuchte die EZB eine starke Führung - doch über die Zukunft von Notenbankchefin Lagarde wird heftig spekuliert. Von Oliver Feldforth.",
+      "pubDate": "2026-10-29T07:28:41+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/ezb-zinsen-lagarde-100.html",
+      "bild": ""
+    },
+    {
+      "id": "25ec9742aa8573dcacac",
+      "title": "Marktbericht: DAX dürfte vor EZB-Zinsentscheid leicht zulegen",
+      "description": "Heute müssen die Investoren die Zahlen der US-Tech-Konzerne Microsoft und Alphabet verarbeiten. Am Nachmittag steht noch der Zinsentscheid der EZB an. Die US-Notenbank Fed hat schon vorgelegt.",
+      "pubDate": "2026-10-29T07:26:29+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-alphabet-ki-fed-ezb-100.html",
+      "bild": ""
+    },
+    {
+      "id": "51030167731dc3f31f37",
+      "title": "EU-Kanada-Gipfel: Kanada wird vorerst kein \"assoziiertes EU-Mitglied\"",
+      "description": "Kanzler Merz und andere EU-Regierungschefs haben die Kanada-Pläne von EU-Kommissionspräsidentin von der Leyen abgeschwächt - kurz vor dem heute beginnenden EU-Kanada-Gipfel. Von einer \"assoziierten Mitgliedschaft\" ist nicht mehr die Rede. Von S. Fritz.",
+      "pubDate": "2026-10-29T07:20:37+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/eu-kanada-gipfel-100.html",
+      "bild": ""
+    },
+    {
+      "id": "22b8e46f8e2820dba0e6",
+      "title": "Wie Spazierengehen auf die Psyche wirkt",
+      "description": "Gerade jetzt im Herbst kann ein Spaziergang besonders guttun. Studien zeigen, dass regelmäßiges Gehen Stimmung, Gesundheit und soziale Kontakte fördern kann. In einigen Städten haben sich Spazierclubs gebildet. Von Gerald Perschke.",
+      "pubDate": "2026-10-29T06:45:03+01:00",
+      "link": "https://www.tagesschau.de/wissen/gesundheit/herbst-spaziergang-100.html",
+      "bild": ""
+    },
+    {
+      "id": "d93745b92a35d0acaa15",
+      "title": "Digitale Barrierefreiheit: Gesetzlich vorgeschrieben, aber oft missachtet",
+      "description": "Die meisten Webseiten verfehlen die gesetzlich vorgeschriebenen Mindeststandards der Barrierefreiheit. Das zeigt eine Analyse von BR Data. Die Folge: Menschen mit Behinderung können digitale Angebote oftmals kaum oder gar nicht nutzen. Von Julia Barthel und Marco Lehner.",
+      "pubDate": "2026-10-29T05:07:22+01:00",
+      "link": "https://www.tagesschau.de/investigativ/br-recherche/digitale-barrierefreiheit-100.html",
+      "bild": ""
+    },
     {
       "id": "0b12eb2dfa2c053a5f72",
       "title": "Brasiliens Wahlverlierer: Bolsonaros spektakuläre Flucht",
-      "description": "Ein Privatflugzeug, wohl zwei Zwischenstopps, die Ankunft in Trumps USA - der Wahlverlierer der Präsidentschaftswahl bezeichnet sich nun als \"Anführer\" Brasiliens. Wie geht das rechte Lager mit dem geflüchteten Bolsonaro um? Von A. Herrberg.",
+      "description": "Ein Privatflugzeug, Zwischenstopps, die Ankunft in den USA - der brasilianische Wahlverlierer Bolsonaro ist nun in Florida - und bezeichnet sich als \"Anführer\" Brasiliens. Wie geht das rechte Lager mit dem geflüchteten Bolsonaro um? Von A. Herrberg.",
       "pubDate": "2026-10-29T03:14:59+01:00",
       "link": "https://www.tagesschau.de/ausland/amerika/bolsonaro-flucht-100.html",
       "bild": ""
@@ -24,102 +120,6 @@
       "description": "Heimlich hat sich der brasilianische Wahlverlierer Flávio Bolsonaro in die USA abgesetzt. Gegen ihn wird wegen Korruption und Geldwäsche ermittelt. Entgegen eindeutiger Ergebnisse hat er sich nun selbst zum Wahlsieger erklärt.",
       "pubDate": "2026-10-28T22:56:25+01:00",
       "link": "https://www.tagesschau.de/ausland/amerika/flavio-bolsonaro-erklaerung-wahlsieger-100.html",
-      "bild": ""
-    },
-    {
-      "id": "fdbf9a8c35d15d6de9fd",
-      "title": "Wie konnte es zu dem schweren Zugunglück kommen?",
-      "description": "Ein Zug steht, ein weiterer fährt mit hoher Geschwindigkeit auf. Bei dem schweren Zugunglück in Spanien starben mindestens 68 Menschen. Es gibt erste Erkenntnisse zur Unglücksursache: Offenbar spielte menschliches Versagen eine Rolle.",
-      "pubDate": "2026-10-28T21:54:12+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/zugunglueck-spanien-144.html",
-      "bild": ""
-    },
-    {
-      "id": "fd043a1453c27e2f2f32",
-      "title": "Bayern: Ermittlungen gegen zwei Belarusen wegen Sabotageverdacht",
-      "description": "Zwei Männer aus Belarus stehen im Verdacht, im Raum Nürnberg einen Brandanschlag geplant zu haben - im Auftrag einer fremden Regierung oder Vereinigung. Sie wurden festgenommen und sitzen in Untersuchungshaft. Von Joseph Röhmel.",
-      "pubDate": "2026-10-28T20:03:51+01:00",
-      "link": "https://www.tagesschau.de/inland/bayern-ermittlungen-gegen-belarusen-sabotage-100.html",
-      "bild": ""
-    },
-    {
-      "id": "ca6839908a4694de77ee",
-      "title": "Großbritannien: Burnhams Regierung stellt Haushalt vor",
-      "description": "Die Vorstellung des Haushalts war für Großbritanniens Premier Burnham der erste Härtetest. Die Erwartungen der Briten sind hoch. Die Regierung setzt vor allem auf kleine Maßnahmen, die die Menschen sofort spüren sollen. Von Lisa-Maria Röhling.",
-      "pubDate": "2026-10-28T19:20:51+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/gb-labour-haushalt-burnham-100.html",
-      "bild": ""
-    },
-    {
-      "id": "59e573fafec7bff7b062",
-      "title": "Marktbericht: Der DAX behauptet sich",
-      "description": "Der Handelstag im DAX endet mit leichten Gewinnen. Die Investoren haben viele Quartalszahlen zu verarbeiten, außerdem richtet sich der Blick in die USA. Die hohen Energiepreise dämpfen indes weiterhin die Stimmung.",
-      "pubDate": "2026-10-28T18:38:51+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-nasdaq-100.html",
-      "bild": ""
-    },
-    {
-      "id": "4740375fd8620a9c54de",
-      "title": "Netanjahu nach Wahl in Israel ohne Mehrheit und trotzdem am Hebel",
-      "description": "Israel hat gewählt, doch keines der Lager kommt auf eine Mehrheit. Die Regierungsbildung dürfte sich hinziehen. Bis dahin bleibt Netanjahu im Amt - mit weitreichenden Folgen für den Gazastreifen, das Westjordanland und die gesamte Region. Von J.-C. Kitzler.",
-      "pubDate": "2026-10-28T18:22:57+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/israel-wahl-mehrheitsverhaeltnisse-100.html",
-      "bild": ""
-    },
-    {
-      "id": "86dcf7b6444cd50036dc",
-      "title": "Merz fordert auf Asienreise neue Allianz für regelbasierten Handel",
-      "description": "Kanzler Merz hat auf bei seinem Japan-Besuch eine Allianz für einen regelkonformen globalen Handel gefordert. Damit könne man besser auf unerlaubte Zölle reagieren. Deutschland ist die drittgrößte Volkswirtschaft der Welt, Japan die viertgrößte.",
-      "pubDate": "2026-10-28T18:05:18+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/merz-asienbesuch-japan-100.html",
-      "bild": ""
-    },
-    {
-      "id": "07f922361f88981cf746",
-      "title": "Parlamentswahl in Israel: Wofür die arabischen Parteien stehen",
-      "description": "Die arabischen Parteien haben bei der Wahl in Israel wahrscheinlich so stark abgeschnitten wie noch nie. Ihre Unterstützung könnte der Opposition den Weg an die Macht ebnen. Was sind ihre Themen, was sind ihre Ziele? Ein Überblick.",
-      "pubDate": "2026-10-28T17:08:34+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/israel-arabische-parteien-wahl-100.html",
-      "bild": ""
-    },
-    {
-      "id": "ed8ae0306397f1565b5e",
-      "title": "Börsendebüt von tk accelis bleibt unter den Erwartungen",
-      "description": "Seine Marinewerften und das Wasserstoffgeschäft hat der Industriekonzern Thyssenkrupp schon abgespalten. Nun folgt die Werkstofftochter mit eigenen Aktien. Und es gibt noch weitergehende Pläne.",
-      "pubDate": "2026-10-28T16:50:44+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/boersengang-tk-accelis-100.html",
-      "bild": ""
-    },
-    {
-      "id": "509120946669a7fb1b26",
-      "title": "Quantennetzwerk QuNET: Schutz gegen Hackerangriffe",
-      "description": "Quantencomputer und KI können wohl bald jede Verschlüsselung knacken. In Zukunft sollen Quantennetze wie QuNET die Kommunikation schützen. Die Technologie funktioniert, aber noch nicht perfekt. Von Jan Kerckhoff.",
-      "pubDate": "2026-10-28T16:39:49+01:00",
-      "link": "https://www.tagesschau.de/wissen/technologie/quantennetzwerk-qunet-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c3e8faf579762db1dac8",
-      "title": "Kritische Infrastruktur: Mehr Prüfungen auf Sabotagerisiko",
-      "description": "Die Bedrohung für die Kritische Infrastruktur in Deutschland - etwa durch Sabotage oder Spionage - ist gestiegen. Daher will der Bund künftig Beschäftigte in noch mehr Betrieben auf mögliche Sicherheitsrisiken überprüfen.",
-      "pubDate": "2026-10-28T15:48:08+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/kritische-infrastruktur-sabotage-schutz-100.html",
-      "bild": ""
-    },
-    {
-      "id": "78b265bf5da36beb7253",
-      "title": "Nach illegaler Ausreise aus Brasilien: Flávio Bolsonaro in Miami gelandet",
-      "description": "Der brasilianische Wahlverlierer Flávio Bolsonaro hat sich trotz eines Ausreiseverbots in die USA abgesetzt. Ein Privatflugzeug brachte ihn und seine Familie nach Miami. Gegen Bolsonaro wird unter anderem wegen Korruption ermittelt.",
-      "pubDate": "2026-10-28T15:37:14+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/brasilien-flavio-bolsonaro-ecuador-usa-102.html",
-      "bild": ""
-    },
-    {
-      "id": "2227cd7c180b07501466",
-      "title": "Marktbericht: Deutsche Bank will \"europäischer Champion\" werden",
-      "description": "Banken verdienen wieder gut - nach der Konkurrenz kann jetzt auch die Deutsche Bank gute Quartalszahlen vorlegen. In einem umkämpften Markt will der Konzern nun aufholen gegenüber den größten Instituten in Europa.",
-      "pubDate": "2026-10-28T15:05:32+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/mittags-mb-deutsche-bank-100.html",
       "bild": ""
     }
   ],
