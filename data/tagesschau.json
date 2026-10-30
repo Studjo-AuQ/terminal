@@ -1,7 +1,79 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "30.10.2026, 01:47 Uhr (UTC)",
+  "aktualisiert": "30.10.2026, 08:26 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "45946a9be9c1eaae4b0c",
+      "title": "Debatte um Eralp überlagert Regierungsbildung",
+      "description": "Die Regierungsbildung in Berlin wird erneut von einer Debatte über die Linkspartei überschattet. Im Fokus: die eventuell künftige Regierende Bürgermeisterin Eralp. Und die Frage, wie entschieden sie gegen Islamismus vorgehen kann.",
+      "pubDate": "2026-10-30T09:15:27+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/berlin-eralp-debatte-spiegel-bericht-100.html",
+      "bild": ""
+    },
+    {
+      "id": "872aba74f1e60bc9b4e6",
+      "title": "Hilfstransporte für die ukrainische Frontstadt Oleschky sollen anlaufen",
+      "description": "Die Bewohner der von Russland besetzten ukrainischen Frontstadt Oleschky können bald mit Hilfe rechnen. Die Route ist von Minen geräumt. Auch eine Evakuierung wird vorbereitet. Die Waffenruhe gilt noch bis Sonntag.",
+      "pubDate": "2026-10-30T09:00:11+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/ukraine-oleschky-102.html",
+      "bild": ""
+    },
+    {
+      "id": "c82f8fc3620b9ff2c4bc",
+      "title": "Klage in Rheinland-Pfalz: Wie viel Unterrichtsausfall ist zu viel?",
+      "description": "Ein ehemaliger Schüler verklagt das Land Rheinland-Pfalz, weil während seiner Oberstufenzeit zu viel Unterricht ausgefallen sein soll. Mit dem Fall beschäftigt sich jetzt das Verwaltungsgericht Neustadt. Von C. Kehlbach und H. Diekert.",
+      "pubDate": "2026-10-30T08:56:44+01:00",
+      "link": "https://www.tagesschau.de/inland/gesellschaft/unterrichtsausfall-klage-rheinland-pfalz-100.html",
+      "bild": ""
+    },
+    {
+      "id": "5bf4c5d14e07c295e84d",
+      "title": "Fehlende Wohnungen: Was hat der \"Bau-Turbo\" bislang gebracht?",
+      "description": "In Deutschland werden viel zu wenig Wohnungen gebaut. Dabei versucht die Bundesregierung gegenzusteuern - etwa mit dem \"Bau-Turbo\", der seit einem Jahr gilt. Was hat Gesetz bislang gebracht? Von Axel John.",
+      "pubDate": "2026-10-30T08:55:53+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/konjunktur/bauturbo-wohnungen-immobilien-100.html",
+      "bild": ""
+    },
+    {
+      "id": "aa77e0d8b4470368c55b",
+      "title": "Milliardenschwerer Hackerangriff auf Kryptobörse Binance",
+      "description": "Die weltgrößte Kryptobörse Binance ist offenbar Opfer einer massiven Cyberattacke geworden. Betroffen sind Digitalwährungen im Wert von mehr als sechs Milliarden Dollar. Was bedeutet das für Kunden?",
+      "pubDate": "2026-10-30T08:24:20+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/technologie/hackerangriff-kryptoboerse-binance-100.html",
+      "bild": ""
+    },
+    {
+      "id": "86de3f8a1e505ab0720e",
+      "title": "Marktbericht: Kann der DAX die 26.000 verteidigen?",
+      "description": "Der DAX hat wieder die Marke von 26.000 Punkten übersprungen. Schwache Zahlen von Intel und Amazon dürften den Anlegern aber nicht gefallen. Der deutsche Leitindex könnte zum Handelsstart leicht zurückfallen.",
+      "pubDate": "2026-10-30T07:44:55+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-jones-geldanlage-amazon-100.html",
+      "bild": ""
+    },
+    {
+      "id": "bd648d3f464280c2b1cb",
+      "title": "EU-Kanada-Gipfel: Zusammenarbeit bei KI verstärken",
+      "description": "Gemeinsam unabhängiger werden - das ist das große Ziel der angestrebten neuen Allianz zwischen Kanada und der EU. Ein Beispiel: die Zusammenarbeit im Bereich Künstlicher Intelligenz. Von Giselle Ucar.",
+      "pubDate": "2026-10-30T07:38:08+01:00",
+      "link": "https://www.tagesschau.de/ausland/eu-kanada-ki-100.html",
+      "bild": ""
+    },
+    {
+      "id": "1cb30ec231b477d8e117",
+      "title": "EU-Kanada-Gipfel: \"Die neue Allianz ist keine Marketing-Übung\"",
+      "description": "Beim EU-Kanada-Gipfel ging es auf europäischer Seite bislang viel darum, wie die neue Allianz denn heißen soll. Kanadas Premier Carney sagt dazu: \"Der Name ist egal.\" Heute sollen konkrete Vereinbarungen folgen. Von Martin Ganslmeier.",
+      "pubDate": "2026-10-30T06:46:43+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/eu-kanada-zweiter-tag-100.html",
+      "bild": ""
+    },
+    {
+      "id": "44b4bc75c7a85266a709",
+      "title": "Oppositionspolitikerin Machado: Was bedeutet ihre Rückkehr für Venezuela?",
+      "description": "Die venezolanische Oppositionspolitikerin María Corina Machado ist aus dem Exil zurückgekehrt. Dort ermittelt die Justiz gegen sie wegen Vaterlandverrats - doch sie versteckt sich nicht mehr. Von Jenny Barke.",
+      "pubDate": "2026-10-30T04:22:31+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/venezuela-machado-106.html",
+      "bild": ""
+    },
     {
       "id": "f44415e224e4819bddb2",
       "title": "Frankreich bereitet sich auf neue Schülerproteste vor",
@@ -13,15 +85,15 @@
     {
       "id": "dcaffd928a23b108ca19",
       "title": "Wahl in Israel: Alle Stimmen ausgezählt - Patt bleibt bestehen",
-      "description": "Die Auszählung der Stimmen in Israel bestätigt, dass eine äußerst schwierige Regierungsbildung bevorsteht. Unterdessen ist ein Streit über das Wahlergebnis entbrannt - die Likud-Partei spricht von \"gestohlener Wahl\".",
+      "description": "Die Auszählung aller Stimmen in Israel bestätigt, dass eine äußerst schwierige Regierungsbildung bevorsteht. Unterdessen ist ein Streit über das Wahlergebnis entbrannt - die Likud-Partei spricht von \"gestohlener Wahl\".",
       "pubDate": "2026-10-30T01:01:06+01:00",
       "link": "https://www.tagesschau.de/ausland/asien/israel-wahl-ergebnis-102.html",
       "bild": ""
     },
     {
       "id": "b8fa39750f67b2e14a91",
-      "title": "Bosnien-Herzegowina: Militär-Hubschrauber abgestürzt - vier Tote",
-      "description": "In dem einstigen Bürgerkriegsland Bosnien-Herzegowina verunglückt ein Militärhelikopter der EU-Friedensmission. Die Insassen kamen alle aus Italien. Der genaue Hergang ist noch unklar.",
+      "title": "Bosnien und Herzegowina: Militärhubschrauber abgestürzt - vier Tote",
+      "description": "Beim Absturz eines Militärhubschraubers der EU-Friedenstruppe in Bosnien und Herzegowina sind vier Menschen ums Leben gekommen. Die Insassen kamen alle aus Italien. Der genaue Hergang ist noch unklar.",
       "pubDate": "2026-10-30T00:05:38+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/hubschrauber-bosnien-absturz-100.html",
       "bild": ""
@@ -48,78 +120,6 @@
       "description": "Früher als geplant tritt die Suche nach einer Nachfolge für EZB-Chefin Lagarde in die heiße Phase - die Französin scheidet vorzeitig aus dem Amt. Was sind die Hintergründe, wer könnte nachrücken an der Spitze der Notenbank? Von Constantin Röse.",
       "pubDate": "2026-10-29T19:40:44+01:00",
       "link": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/ezb-ruecktritt-lagarde-100.html",
-      "bild": ""
-    },
-    {
-      "id": "25ec9742aa8573dcacac",
-      "title": "Marktbericht: DAX setzt Klettertour fort",
-      "description": "Die großen Notenbanken halten vorerst die Füße still - die Botschaft hat die Kauflust der Anleger beflügelt, der DAX beendet den Handelstag im Plus. Auch der VW-Schock vom Morgen wurde gut verdaut.",
-      "pubDate": "2026-10-29T18:32:38+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-alphabet-ki-fed-ezb-100.html",
-      "bild": ""
-    },
-    {
-      "id": "2e3e0f8bffadaba66aa0",
-      "title": "Zugunglück in Spanien: Ein Land zwischen Trauer und Aufarbeitung",
-      "description": "Nach dem Zugunglück in Spanien sind Schock und Trauer groß. Forensiker identifizieren weiterhin Todesopfer. Zudem wurden die Gesprächsprotokolle der Leitstelle mit den Lokomotivführern veröffentlicht. Von Julia Macher.",
-      "pubDate": "2026-10-29T17:59:55+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/spanien-zugunglueck-132.html",
-      "bild": ""
-    },
-    {
-      "id": "33b95e15ccab7a40cd2a",
-      "title": "Südafrika bewirbt sich mit der Stadt Durban um Olympia",
-      "description": "Noch nie hat ein afrikanischer Staat Olympische oder Paralympische Spiele ausgerichtet. Südafrika schickt nun Durban für 2036 und 2040 ins Bewerberrennen - einer von derzeit sechs Konkurrenten für München.",
-      "pubDate": "2026-10-29T17:52:47+01:00",
-      "link": "https://www.tagesschau.de/ausland/afrika/suedafrika-olympia-bewerbung-durban-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c0dbbd1c83ebe60329c2",
-      "title": "Afrika-Gipfel in Russland: Putin umwirbt einen ganzen Kontinent",
-      "description": "Beim Handel mit Afrika liegen China und die EU weit vor Russland. Doch Moskau versucht, seinen Einfluss auf dem Kontinent zu stärken - beim dritten Afrika-Russland-Gipfel waren fast alle afrikanischen Länder dabei. Von Norbert Hahn.",
-      "pubDate": "2026-10-29T17:35:53+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/russland-afrika-gipfel-102.html",
-      "bild": ""
-    },
-    {
-      "id": "d2459f874a3ba91e4114",
-      "title": "Steinmeier-Nachfolge: Die Kandidatensuche wird zur Machtfrage",
-      "description": "Deutschland sucht eine Nachfolge für Bundespräsident Steinmeier. Die Kandidatendebatte bei CDU/CSU ist unübersichtlich und parteipolitisch aufgeladen - nicht zum ersten Mal in der Geschichte. Von Georg Schwarte.",
-      "pubDate": "2026-10-29T17:22:50+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/bundespraesident-kandidatensuche-union-100.html",
-      "bild": ""
-    },
-    {
-      "id": "2ee2f13e83d782a0cdf6",
-      "title": "Wie groß ist der politische Einfluss von Stars wie Stevie Wonder?",
-      "description": "Stevie Wonders Musik war immer politisch. Jahrzehntelang war er als Bürgerrechtler aktiv, später machte er Wahlkampf für Obama. Welchen Einfluss haben Popstars - und was machen sie daraus, gerade jetzt, vor den Midterms? Von S. Fritz.",
-      "pubDate": "2026-10-29T17:12:36+01:00",
-      "link": "https://www.tagesschau.de/kultur/stevie-wonder-tournee-politik-100.html",
-      "bild": ""
-    },
-    {
-      "id": "44a1b414a1349f95acf1",
-      "title": "Schauspielerin Elke Sommer gestorben",
-      "description": "Sie machte sich in den 1960er-Jahren einen Namen in Hollywood, wurde mit Golden Globe und Bambi ausgezeichnet. Nun ist die deutsche Schauspielerin Elke Sommer im Alter von 85 Jahren gestorben.",
-      "pubDate": "2026-10-29T17:02:48+01:00",
-      "link": "https://www.tagesschau.de/kultur/schauspielerin-elke-sommer-100.html",
-      "bild": ""
-    },
-    {
-      "id": "d9d839d7b3b2aac6c76f",
-      "title": "Kommentar zum \"Tankrabatt\": Die Regierung schmeißt Milliarden aus dem Fenster",
-      "description": "Vor vier Wochen ist die Neuauflage des \"Tankrabatts\" in Kraft getreten. Für die Bundesregierung war es eine Beruhigungspille kurz vor den Wahlen, meint Jan Zimmermann. Der Frust an der Tankstelle bleibt jedoch.",
-      "pubDate": "2026-10-29T15:25:14+01:00",
-      "link": "https://www.tagesschau.de/kommentar/tankrabatt-ein-monat-100.html",
-      "bild": ""
-    },
-    {
-      "id": "890bfbe19f06c9b6444b",
-      "title": "Hohe Spritpreise: Bringt der \"Tankrabatt\" wirklich etwas?",
-      "description": "Seit dem 1. Oktober gilt ein neuer \"Tankrabatt\". Experten zufolge geben die Mineralölkonzerne die Ersparnis nur zum Teil an die Autofahrer weiter. Der Interessenverband der Branche widerspricht. Von Max Ortmann und Jan Koch.",
-      "pubDate": "2026-10-29T15:23:49+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/tankrabatt-entlastung-bilanz-100.html",
       "bild": ""
     }
   ],
