@@ -1,7 +1,23 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "30.10.2026, 20:02 Uhr (UTC)",
+  "aktualisiert": "30.10.2026, 23:59 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "9f57f9d64f83db69fed7",
+      "title": "US-Regierung genehmigt Patriot-Lieferungen an Ukraine",
+      "description": "Um sich gegen russische Angriffe zur Wehr zu setzen, ist die Ukraine vor allem auf US-Waffenlieferungen angewiesen. Diese kamen zuletzt ins Stocken. Bei einer Lieferung hat das US-Außenministerium nun grünes Licht gegeben.",
+      "pubDate": "2026-10-31T00:56:24+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/usa-ukraine-patriot-100.html",
+      "bild": ""
+    },
+    {
+      "id": "3a69ca9c6a73550b2227",
+      "title": "Binance will alle Verluste nach Hackerangriff ersetzen",
+      "description": "Nach einem Hackerangriff mit einem Schaden von 6,3 Milliarden Dollar will Binance alle Verluste ersetzen. Der Fall zeigt, wie verwundbar Kryptowerte sind, und wirft Fragen zur Sicherheit digitaler Anlagen auf.",
+      "pubDate": "2026-10-30T21:21:33+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/technologie/usa-binance-hackerangriff-verluste-100.html",
+      "bild": ""
+    },
     {
       "id": "b42bff20453a52b84b0d",
       "title": "\"Allianz für die Zukunft\": Kanada und Europa gründen Bündnis",
@@ -104,22 +120,6 @@
       "description": "Die hohe Inflation in Deutschland ‌hat sich im Oktober spürbar abgeschwächt. Dafür sorgen vor allem die fallenden Preise an den Zapfsäulen. Doch Ökonomen geben noch keine Entwarnung.",
       "pubDate": "2026-10-30T15:08:37+01:00",
       "link": "https://www.tagesschau.de/wirtschaft/verbraucher/inflationsrate-deutschland-oktober-100.html",
-      "bild": ""
-    },
-    {
-      "id": "6df587ac667d5bc1685f",
-      "title": "Kampf gegen Ebola - Studie macht Hoffnung auf Impfstoff",
-      "description": "Seit Monaten grassiert in der DR Kongo eine Variante des Ebola-Virus. Mehr als 10.000 Fälle wurden bislang erfasst. Bisher gibt es gegen diesen Erreger keinen Impfstoff, doch eine medizinische Studie weckt Hoffnung. Von Daniela Remus.",
-      "pubDate": "2026-10-30T14:58:25+01:00",
-      "link": "https://www.tagesschau.de/wissen/gesundheit/ebola-afrika-studie-100.html",
-      "bild": ""
-    },
-    {
-      "id": "0735962be120daa62815",
-      "title": "Wie der VW-Vorstand die Laune bei den Skoda-Mitarbeitern drückt",
-      "description": "Während die Konzernmutter Volkswagen viele Probleme hat, erwirtschaftet die tschechische Tochter Skoda passable Gewinne. Doch das ist für den Hersteller nicht automatisch von Vorteil. Von André Berthold.",
-      "pubDate": "2026-10-30T14:51:43+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/skoda-144.html",
       "bild": ""
     }
   ],
