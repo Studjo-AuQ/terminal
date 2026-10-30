@@ -1,7 +1,31 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "29.10.2026, 21:42 Uhr (UTC)",
+  "aktualisiert": "30.10.2026, 01:47 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "f44415e224e4819bddb2",
+      "title": "Frankreich bereitet sich auf neue Schülerproteste vor",
+      "description": "Frankreich stellt sich auf ein unruhiges Wochenende ein: Erneut wollen Schüler im ganzen Land gegen die Bildungspolitik protestieren. Denn die ersten Zugeständnisse der Regierung reichen ihnen nicht aus. Von Julia Borutta.",
+      "pubDate": "2026-10-30T02:44:07+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/frankreich-schuelerproteste-halloween-100.html",
+      "bild": ""
+    },
+    {
+      "id": "dcaffd928a23b108ca19",
+      "title": "Wahl in Israel: Alle Stimmen ausgezählt - Patt bleibt bestehen",
+      "description": "Die Auszählung der Stimmen in Israel bestätigt, dass eine äußerst schwierige Regierungsbildung bevorsteht. Unterdessen ist ein Streit über das Wahlergebnis entbrannt - die Likud-Partei spricht von \"gestohlener Wahl\".",
+      "pubDate": "2026-10-30T01:01:06+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/israel-wahl-ergebnis-102.html",
+      "bild": ""
+    },
+    {
+      "id": "b8fa39750f67b2e14a91",
+      "title": "Bosnien-Herzegowina: Militär-Hubschrauber abgestürzt - vier Tote",
+      "description": "In dem einstigen Bürgerkriegsland Bosnien-Herzegowina verunglückt ein Militärhelikopter der EU-Friedensmission. Die Insassen kamen alle aus Italien. Der genaue Hergang ist noch unklar.",
+      "pubDate": "2026-10-30T00:05:38+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/hubschrauber-bosnien-absturz-100.html",
+      "bild": ""
+    },
     {
       "id": "c37a458b0cdd81776427",
       "title": "Trauer um britischen Schauspieler: Patrick Stewart gestorben",
@@ -96,30 +120,6 @@
       "description": "Seit dem 1. Oktober gilt ein neuer \"Tankrabatt\". Experten zufolge geben die Mineralölkonzerne die Ersparnis nur zum Teil an die Autofahrer weiter. Der Interessenverband der Branche widerspricht. Von Max Ortmann und Jan Koch.",
       "pubDate": "2026-10-29T15:23:49+01:00",
       "link": "https://www.tagesschau.de/wirtschaft/verbraucher/tankrabatt-entlastung-bilanz-100.html",
-      "bild": ""
-    },
-    {
-      "id": "187102691bbc473725ab",
-      "title": "Europäische Zentralbank hält Leitzins unverändert",
-      "description": "Die Europäische Zentralbank (EZB) hat wie erwartet die Leitzinsen unverändert bei 2,5 Prozent belassen. Zuvor hatte auch die US-Notenbank Fed von einer Änderung ihrer Leitzinsen abgesehen.",
-      "pubDate": "2026-10-29T16:18:04+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/ezb-570.html",
-      "bild": ""
-    },
-    {
-      "id": "1acbc52b30e3536bd369",
-      "title": "Marktbericht: Warum Autoreparaturen immer teurer werden",
-      "description": "Steigende Kosten für Ersatzteile und höhere Werkstattlöhne - Autoreparaturen werden immer teurer. Regelmäßig erhöhen die Versicherer daher die Preise, auch wenn man unfallfrei gefahren ist.",
-      "pubDate": "2026-10-29T14:14:08+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/mittags-mb-autoreparaturen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "460964ce60ad4750ef02",
-      "title": "Was bringt eine EU-Allianz mit Kanada den Verbrauchern in Europa?",
-      "description": "Die EU und Kanada wollen wirtschaftlich und politisch enger zusammenrücken. Könnte eine verstärkte Kooperation Europas Lieferketten sichern, Preise stabil halten, Abhängigkeiten reduzieren? Von Petra Thiele.",
-      "pubDate": "2026-10-29T14:12:47+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/kanada-eu-allianz-folgen-verbraucher-100.html",
       "bild": ""
     }
   ],
