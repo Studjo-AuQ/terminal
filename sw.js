@@ -1,6 +1,6 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 38
+   Version 39
 
    - lädt beim Installieren den stabilen lokalen Terminal-Kern vor
      (HTML, CSS, JS, JSON, Schriften, Bilder und PDF.js)
@@ -18,7 +18,7 @@
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v38';
+const CACHE_VERSION = 'v39';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 const SPEISEPLAN_CACHE = CACHE_PREFIX + CACHE_VERSION + '-speiseplaene';
@@ -68,13 +68,8 @@ const OFFLINE_DATEIEN = [
   "wochenmotto.html",
   "wrfb.html",
 
-  /* Eigene Gewaltpraeventionsspiele – alle drei Spiele vollstaendig offline */
-  "spiele/grenzen-kompass.html",
-  "spiele/grenzen-kompass-spiel.html",
-  "spiele/gewaltspirale.html",
-  "spiele/gewaltspirale-spiel.html",
-  "spiele/ausmass-haeufigkeit.html",
-  "spiele/ausmass-haeufigkeit-spiel.html",
+  /* Lernspiele werden NICHT vorgeladen.
+     Erst nach bewusster Navigation online abrufen und im Runtime-Cache speichern. */
 
   /* CSS */
   "css/a11y.css",
@@ -734,6 +729,20 @@ self.addEventListener('fetch', event => {
   }
 
   if (request.method !== 'GET') return;
+
+  // Spielseiten erst bei einer echten Navigation laden, niemals bei automatischem Vorladen.
+  // Alle Spielseiten sind eigenständige HTML-Dateien (keine externen Assets).
+  const spielPfad = new URL(self.registration.scope).pathname + 'spiele/';
+  if (url.pathname.startsWith(spielPfad) && /\.html$/i.test(url.pathname)) {
+    if (request.mode !== 'navigate') {
+      event.respondWith(new Response('Lernspiele werden nicht vorgeladen.', {
+        status: 403, headers: {'Content-Type':'text/plain; charset=utf-8'}
+      }));
+    } else {
+      event.respondWith(netzwerkZuerst(request, 9000, true, false));
+    }
+    return;
+  }
 
   if (request.mode === 'navigate') {
     if (istStartseitenNavigation(url)) {
