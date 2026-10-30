@@ -531,7 +531,18 @@ window.STUDJO_MC={"SK-001":{"frage":"Welche Hilfe passt hier NICHT?","antworten"
   function persist(){return; /* Kein Speichern/Dateiimport oder -export. */ try{if(state){state.modified=new Date().toISOString();window.__studjoStorage.setItem(STORAGE,JSON.stringify(state));}else {window.__studjoStorage.removeItem(STORAGE);window.__studjoStorage.removeItem(OLD_STORAGE);}}catch(_){/* JSON file export remains available */}}
   function loadSaved(){return null; /* Kein Speichern/Dateiimport oder -export. */ try{const raw=window.__studjoStorage.getItem(STORAGE)||window.__studjoStorage.getItem(OLD_STORAGE);return raw?normalizeState(JSON.parse(raw)):null;}catch(_){return null;}}
   function refreshResume(){ $('resumeBox').hidden=!loadSaved(); }
-  function beginGame(){
+  
+/* Einmaliges Signal an den Terminal-Rahmen: Spiel ist wirklich gestartet.
+   Die Spielmechanik und der fluechtige Sitzungsmodus bleiben unveraendert. */
+function notifyTerminalGameStarted(){
+ try{
+  if(window.parent!==window){
+   window.parent.postMessage({type:'studjo:game-started',game:'ausmass-haeufigkeit'},'*');
+  }
+ }catch(_error){}
+}
+
+function beginGame(){
     cancelPending(); const mode=modeNow(),types=selectedTypes();
     if(!types.length){notice('Bitte mindestens eine Gewaltform auswählen.');return;}
     const count=Math.min(Number($('cardCount').value),types.length*22),deck=chooseCards(types,count);
@@ -539,7 +550,7 @@ window.STUDJO_MC={"SK-001":{"frage":"Welche Hilfe passt hier NICHT?","antworten"
     const names={1:mode==='solo'?'Du':cleanName($('player1Name').value,'Gruppe 1'),2:cleanName($('player2Name').value,'Gruppe 2')};
     const records=deck.map((id,i)=>({id,owner:mode==='solo'?1:i%2===0?1:mode==='two'?2:'pc',choice:null,skipped:false,review:null,pcReview:null,frequency:null}));
     state={format:'studjo-gewaltspiel-spielstand',version:2,sourceVersion:DB.meta.version,started:new Date().toISOString(),modified:new Date().toISOString(),phase:'sort',options:{mode,types,count:deck.length,names,extraA:mode!=='solo'&&$('extraA').checked,extraB:$('extraB').checked,soloCompare:$('soloCompare').checked},records,sortCursor:0,reviewQueue:[],reviewIndex:0,freqQueue:[],freqIndex:0,discussQueue:[],discussIndex:0,helpQueue:[],helpIndex:0,helpAnswers:{}};
-    persist();render();speak('Das Spiel beginnt. Runde 1: Ausmaß einschätzen.');
+    persist();render();notifyTerminalGameStarted();speak('Das Spiel beginnt. Runde 1: Ausmaß einschätzen.');
   }
   function render(){
     cancelPending();

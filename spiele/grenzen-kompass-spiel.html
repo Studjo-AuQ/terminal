@@ -167,12 +167,24 @@ function valid(v){
  }
  return true;
 }
+
+/* Einmaliges Signal an den Terminal-Rahmen: Spiel ist wirklich gestartet.
+   Die Spielmechanik und der fluechtige Sitzungsmodus bleiben unveraendert. */
+function notifyTerminalGameStarted(){
+ try{
+  if(window.parent!==window){
+   window.parent.postMessage({type:'studjo:game-started',game:'grenzen-kompass'},'*');
+  }
+ }catch(_error){}
+}
+
 function start(mode){
  const previous=load(mode);
  if(previous&&previous.index<previous.queue.length && !confirm('Für diesen Modus gibt es einen angefangenen Spielstand. Wenn du neu beginnst, wird dieser ersetzt. Möchtest du neu beginnen?'))return;
  const queue=randMode(mode);
  state={version:1,mode,queue,index:0,done:Array(queue.length).fill(false),firstAttempts:Array(queue.length).fill(null),currentChoice:null,wrongCount:0,created:new Date().toISOString()};
  save();render();
+ notifyTerminalGameStarted();
 }
 function setChoice(i){stopSpeech();if(!state || state.index>=state.queue.length||state.done[state.index])return;
  const q=getCurrent().task;if(i<0||i>2)return;

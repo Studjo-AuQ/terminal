@@ -13,8 +13,25 @@ main{display:flex;flex:1;min-height:0;flex-direction:column}.note{padding:7px 12
 iframe{flex:1;border:0;background:white;width:100%;min-height:78vh;min-height:78dvh}
 footer{text-align:center;background:var(--red);color:white;padding:7px 10px;font-size:.78rem}
 @media(max-width:500px){header img{height:29px}.back{font-size:.81rem;padding:7px 10px}}
+.note[hidden]{display:none!important}
 </style></head><body>
 <header><a href="../verhaltenbeikonflikten.html" target="_self" data-direct-link class="back">← Zurück zum Gewaltschutz</a><img src="../img/header.jpg" alt="Studjo – Arbeit und Qualifizierung"></header>
-<main><div class="note" role="note">Kein Speichern. Wenn du wenig Zeit hast, wähle die Neuner-Runde.</div><iframe title="Grenzen-Kompass – Was ist jetzt richtig?" src="grenzen-kompass-spiel.html" loading="eager" sandbox="allow-scripts allow-modals" allow="fullscreen" allowfullscreen></iframe></main>
+<main><div class="note" id="studjo-start-note" role="note">Kein Speichern. Wenn du wenig Zeit hast, wähle die Neuner-Runde.</div><iframe id="studjo-game-frame" title="Grenzen-Kompass – Was ist jetzt richtig?" src="grenzen-kompass-spiel.html" loading="eager" sandbox="allow-scripts allow-modals" allow="fullscreen" allowfullscreen></iframe></main>
 <footer>© Studjo · Evangelisches Johanneswerk · 🧭 Eigenes Lernspiel · ohne Spielstand-Speicherung</footer>
+
+<script>
+// Gelber Hinweis nur bis zum erfolgreichen Spielstart.
+// Die sandbox-isolierte Spielseite meldet den Start per postMessage.
+(function(){
+ 'use strict';
+ const frame=document.getElementById('studjo-game-frame');
+ const note=document.getElementById('studjo-start-note');
+ window.addEventListener('message',function(event){
+  const data=event.data;
+  if(event.source!==frame.contentWindow) return;
+  if(!data||data.type!=='studjo:game-started'||data.game!=='grenzen-kompass') return;
+  note.hidden=true;
+ });
+})();
+</script>
 </body></html>

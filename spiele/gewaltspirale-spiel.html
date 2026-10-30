@@ -1197,7 +1197,18 @@ button,.count-choice,.answer-button,.thumb-btn{touch-action:manipulation;-webkit
    $('die').setAttribute('aria-label','Würfel zeigt '+n+' '+(n===1?'Auge':'Augen'));
    $('die').classList.toggle('rolling',!!rotating);
  }
- function startGame(){
+ 
+/* Einmaliges Signal an den Terminal-Rahmen: Spiel ist wirklich gestartet.
+   Die Spielmechanik und der fluechtige Sitzungsmodus bleiben unveraendert. */
+function notifyTerminalGameStarted(){
+ try{
+  if(window.parent!==window){
+   window.parent.postMessage({type:'studjo:game-started',game:'gewaltspirale'},'*');
+  }
+ }catch(_error){}
+}
+
+function startGame(){
    if(phase!=='setup')return;
    saveOptIn=false;
    // Kein natives confirm(): Einige Android-Dateibetrachter unterdrücken solche Dialoge
@@ -1220,7 +1231,7 @@ button,.count-choice,.answer-button,.thumb-btn{touch-action:manipulation;-webkit
    $('rollButton').disabled=false;
    $('rollButton').textContent='🎲 Würfeln';
    $('diceHelp').textContent='Würfle. Danach wird das erreichte Feld kurz angezeigt und dann die Karte geöffnet.';
-   setDie(1,false);paintTurn();updateSaveControls();saveGame();$('rollButton').focus();
+   setDie(1,false);paintTurn();updateSaveControls();saveGame();notifyTerminalGameStarted();$('rollButton').focus();
  }
 
  function shuffleDeck(cards){
