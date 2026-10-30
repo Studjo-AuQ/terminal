@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "stand": "2026-10-19",
+  "stand": "2026-10-30",
   "maxEintraege": 5,
   "eintraege": [
     {
-      "id": "news-2026-10-19-heute-bei-studjo",
+      "id": "news-2026-10-30-3-lernspiele-zur-gewalt",
       "typ": "nachricht",
-      "symbol": "ℹ️",
-      "text": "\"Heute bei Studjo...\"",
-      "link": "neuigkeiten.html#news-2026-10-19-heute-bei-studjo",
-      "von": "2026-10-19",
+      "symbol": "📚",
+      "text": "3 Lernspiele zur Gewalt",
+      "link": "neuigkeiten.html#news-2026-10-30-3-lernspiele-zur-gewalt",
+      "von": "2026-10-30",
       "bis": ""
     },
     {
@@ -28,15 +28,6 @@
       "text": "Übersicht in Fußzeile",
       "link": "neuigkeiten.html#news-2026-09-07-uebersicht-in-fusszeile",
       "von": "2026-09-07",
-      "bis": ""
-    },
-    {
-      "id": "ticker-motto-der-woche",
-      "typ": "ticker",
-      "symbol": "✨",
-      "text": "Motto der Woche mit Erklärung",
-      "link": "wochenmotto.html",
-      "von": "",
       "bis": ""
     }
   ]
