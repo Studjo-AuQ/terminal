@@ -1,6 +1,6 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 36
+   Version 37
 
    - lädt beim Installieren den stabilen lokalen Terminal-Kern vor
      (HTML, CSS, JS, JSON, Schriften, Bilder und PDF.js)
@@ -18,7 +18,7 @@
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v36';
+const CACHE_VERSION = 'v37';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 const SPEISEPLAN_CACHE = CACHE_PREFIX + CACHE_VERSION + '-speiseplaene';
@@ -67,6 +67,14 @@ const OFFLINE_DATEIEN = [
   "wetter.html",
   "wochenmotto.html",
   "wrfb.html",
+
+  /* Eigene Gewaltpraeventionsspiele – alle drei Spiele vollstaendig offline */
+  "spiele/grenzen-kompass.html",
+  "spiele/grenzen-kompass-spiel.html",
+  "spiele/gewaltspirale.html",
+  "spiele/gewaltspirale-spiel.html",
+  "spiele/ausmass-haeufigkeit.html",
+  "spiele/ausmass-haeufigkeit-spiel.html",
 
   /* CSS */
   "css/a11y.css",
@@ -639,6 +647,7 @@ function istDynamischeNavigation(url) {
   const basis = scope.pathname;
 
   return [
+    basis + 'verhaltenbeikonflikten.html',
     basis + 'neuigkeiten.html',
     basis + 'nachrichten-allgemein.html',
     basis + 'termine.html',
@@ -730,7 +739,8 @@ self.addEventListener('fetch', event => {
       );
 
     } else if (istDynamischeNavigation(url)) {
-      /* Neuigkeiten und die Nachrichtenseite können sich häufig ändern.
+      /* Gewaltschutz sowie Nachrichten- und Terminseiten sollen Aenderungen
+         zeitnah uebernehmen.
          Deshalb online zuerst die aktuelle Server-Version laden.
          Der Cache bleibt als Offline-/Fehler-Fallback erhalten. */
       event.respondWith(
