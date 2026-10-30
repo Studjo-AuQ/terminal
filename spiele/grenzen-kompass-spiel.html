@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#8B1E24">
 <meta name="description" content="Grenzen-Kompass – Was ist jetzt richtig?: Offline-Lernspiel mit Verhaltenskarten für den Berufsbildungsbereich.">
-<title>Grenzen-Kompass – Was ist jetzt richtig? | Studjo-Terminal 1.1</title>
+<title>Grenzen-Kompass – Was ist jetzt richtig? | Studjo-Terminal 1.2</title>
 <style>
 :root{--red:#8B1E24;--red-dark:#64151a;--green:#24734e;--green-soft:#eaf5ee;--gold:#a37518;--gold-soft:#fff5db;--ink:#202b32;--muted:#586671;--bg:#f7f5f1;--surface:#fff;--line:#dddcd8;--shadow:0 13px 38px rgba(41,36,30,.09);--radius:19px;--control:56px;color-scheme:light}
 *{box-sizing:border-box}html{height:100%;scroll-behavior:smooth}body{margin:0;min-height:100%;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink);font-size:18px;line-height:1.55;-webkit-tap-highlight-color:transparent}
@@ -72,7 +72,10 @@ const LAST_MODE='studjo_grenzenkompass_v1_lastmode';
 function storageKey(mode){return mode==='all'?STORE_ALL:STORE_ROUND;}
 const EMOJI_PREF='studjo_grenzenkompass_emoji_pref';
 const DEVICE_PREF='studjo_grenzenkompass_terminal_device_v1';
-const kioskLocked=new URLSearchParams(location.search).get('kiosk')==='1';
+const query=new URLSearchParams(location.search);
+const kioskLocked=query.get('kiosk')==='1';
+const embeddedPrivate=query.get('studjo')==='privat';
+const wrapperControlsDevice=kioskLocked||embeddedPrivate;
 // No browser storage is accessed for game data before explicit private-device opt-in.
 let deviceMode=kioskLocked?'shared':null;
 let emojiVisible=true;
@@ -82,7 +85,7 @@ function chooseDevice(mode){
  if(mode!=='private'&&mode!=='shared')return;
  state=null;deviceMode=mode;ioError='';emojiVisible=true;
  if(isPrivate()){
-  try{localStorage.setItem(DEVICE_PREF,'private');emojiVisible=localStorage.getItem(EMOJI_PREF)!=='off';}
+  try{emojiVisible=localStorage.getItem(EMOJI_PREF)!=='off';}
   catch(e){ioError='Die Speicherung ist in diesem Browser nicht verfügbar. Du kannst deinen Fortschritt nur während dieser Sitzung behalten.';}
  }else{
   // Shared mode: neither read nor write any stored game state.
@@ -239,7 +242,7 @@ function renderHome(){
  const resumeAll=resumable(all)?`<button class="btn soft" data-action="resume-all">↪ Gesamtspiel fortsetzen (${all.index+1}/156)</button>`:'';
  const roundInfo=round&&round.index>=round.queue.length?'<span class="mode-done">✓ Bereits abgeschlossen</span>':'';
  const allInfo=all&&all.index>=all.queue.length?'<span class="mode-done">✓ Bereits abgeschlossen</span>':'';
- app.innerHTML=`<section class="home panel"><div class="hero"><p class="eyebrow">Verstehen · Handeln · Rücksicht nehmen</p><h1>Grenzen-Kompass 🧭</h1><p class="hero-tagline">Was ist jetzt richtig?</p><p class="lead">Grenzen erkennen. Gut handeln. Es besser machen.</p></div><div class="homebody"><div data-read-group="intro" class="read-intro"><p data-read-segment><strong>Du bekommst kurze Geschichten aus der Werkstatt.</strong></p><p data-read-segment>Schau dir das Bild an und wähle eine Antwort.</p><p data-read-segment>Du darfst es noch einmal versuchen.</p></div>${voiceBar('home')}<div class="paths"><div class="path a"><span class="pathicon">🔎</span><strong>A · Grenzen erkennen</strong><small>Was ist hier wichtig?</small></div><div class="path b"><span class="pathicon">✋</span><strong>B · Richtig handeln</strong><small>Was mache ich jetzt?</small></div><div class="path c"><span class="pathicon">🤝</span><strong>C · Besser machen</strong><small>Wie geht es besser?</small></div></div><h2 class="mode-title">Wähle dein Spiel</h2><div class="mode-grid"><section class="mode-tile"><h3>Kurze Runde</h3><p>9 verschiedene Karten. Die Aufgaben A, B und C kommen gemischt.</p><div class="mode-actions"><button class="btn primary" data-action="start-round">▶ Neue Runde mit 9 Aufgaben</button>${resumeRound}${roundInfo}</div></section><section class="mode-tile"><h3>Gesamtspiel</h3><p>Alle 52 Karten. Bei jeder Karte kommen A, dann B und dann C. Immer von Karte 1 bis Karte 52.</p><div class="mode-actions"><button class="btn primary" data-action="start-all">▶ Gesamtspiel mit 156 Aufgaben</button>${resumeAll}${allInfo}</div></section></div><div class="notice"><strong>Studjo-Terminal-Version 1.1:</strong> ${isPrivate()?'Auf deinem privaten Gerät werden beide Spielarten getrennt gespeichert.':'Gemeinsames Gerät: Es wird kein Spielstand dauerhaft gespeichert. Bitte beende das Spiel vor der nächsten Person.'}</div>${ioError?`<div class="notice" role="status">${html(ioError)}</div>`:''}<details class="help"><summary>ℹ️ Kurze Anleitung anzeigen</summary><div data-read-group="guide" class="read-guide"><p data-read-segment>1. Wähle die kurze Runde oder das Gesamtspiel.</p><p data-read-segment>2. Lies die Geschichte. Sieh dir das Bild an.</p><p data-read-segment>3. Wähle eine von drei Antworten.</p><p data-read-segment>4. Lies die Rückmeldung. Du darfst es noch einmal versuchen.</p><p data-read-segment>5. Gehe zur nächsten Aufgabe.</p><p data-read-segment>Im Gesamtspiel kommen die Karten von 1 bis 52. Jede Karte hat drei Aufgaben: A, B und C.</p><p data-read-segment>Beide Spielarten kannst du jederzeit unterbrechen und später fortsetzen.</p><p data-read-segment>Tippe auf Vorlesen. Der Text mit dem gelben Hintergrund wird gerade gesprochen.</p></div></details><p class="voice-small-note">🔊 Das Vorlesen nutzt die Stimmen deines Geräts. Für das Vorlesen ohne Internet muss eine deutsche Offline-Stimme installiert sein.</p><div class="companion-settings"><span class="companion-preview" aria-hidden="true">🙂</span><div class="companion-settings-text"><strong>Optionaler Lern-Begleiter</strong><span>Ein Gesicht verändert sich beim Üben. Du kannst es ausblenden. Es gibt keine Note.</span></div><button class="tool" data-action="emoji" aria-pressed="${emojiVisible}">${emojiVisible?'Gesicht ausblenden':'Gesicht anzeigen'}</button></div><div class="tools">${isPrivate()?`<button class="tool" data-action="import">📂 Spielstand laden (JSON)</button><button class="tool" data-action="export-round" ${round?'':'disabled'}>💾 Neuner-Runde als JSON</button><button class="tool" data-action="export-all" ${all?'':'disabled'}>💾 Gesamtspiel als JSON</button>`:''}${!kioskLocked?`<button class="tool" data-action="switch-device">⚙️ Gerät wechseln</button>`:''}${isPrivate()?`<button class="tool" data-action="delete-data">🗑️ Meine gespeicherten Spielstände löschen</button>`:''}<span class="smallprint">Keine Internetverbindung für die Spielinhalte erforderlich</span></div></div></section>`;
+ app.innerHTML=`<section class="home panel"><div class="hero"><p class="eyebrow">Verstehen · Handeln · Rücksicht nehmen</p><h1>Grenzen-Kompass 🧭</h1><p class="hero-tagline">Was ist jetzt richtig?</p><p class="lead">Grenzen erkennen. Gut handeln. Es besser machen.</p></div><div class="homebody"><div data-read-group="intro" class="read-intro"><p data-read-segment><strong>Du bekommst kurze Geschichten aus der Werkstatt.</strong></p><p data-read-segment>Schau dir das Bild an und wähle eine Antwort.</p><p data-read-segment>Du darfst es noch einmal versuchen.</p></div>${voiceBar('home')}<div class="paths"><div class="path a"><span class="pathicon">🔎</span><strong>A · Grenzen erkennen</strong><small>Was ist hier wichtig?</small></div><div class="path b"><span class="pathicon">✋</span><strong>B · Richtig handeln</strong><small>Was mache ich jetzt?</small></div><div class="path c"><span class="pathicon">🤝</span><strong>C · Besser machen</strong><small>Wie geht es besser?</small></div></div><h2 class="mode-title">Wähle dein Spiel</h2><div class="mode-grid"><section class="mode-tile"><h3>Kurze Runde</h3><p>9 verschiedene Karten. Die Aufgaben A, B und C kommen gemischt.</p><div class="mode-actions"><button class="btn primary" data-action="start-round">▶ Neue Runde mit 9 Aufgaben</button>${resumeRound}${roundInfo}</div></section><section class="mode-tile"><h3>Gesamtspiel</h3><p>Alle 52 Karten. Bei jeder Karte kommen A, dann B und dann C. Immer von Karte 1 bis Karte 52.</p><div class="mode-actions"><button class="btn primary" data-action="start-all">▶ Gesamtspiel mit 156 Aufgaben</button>${resumeAll}${allInfo}</div></section></div><div class="notice"><strong>Studjo-Terminal-Version 1.1:</strong> ${isPrivate()?'Auf deinem privaten Gerät werden beide Spielarten getrennt gespeichert.':'Gemeinsames Gerät: Es wird kein Spielstand dauerhaft gespeichert. Bitte beende das Spiel vor der nächsten Person.'}</div>${ioError?`<div class="notice" role="status">${html(ioError)}</div>`:''}<details class="help"><summary>ℹ️ Kurze Anleitung anzeigen</summary><div data-read-group="guide" class="read-guide"><p data-read-segment>1. Wähle die kurze Runde oder das Gesamtspiel.</p><p data-read-segment>2. Lies die Geschichte. Sieh dir das Bild an.</p><p data-read-segment>3. Wähle eine von drei Antworten.</p><p data-read-segment>4. Lies die Rückmeldung. Du darfst es noch einmal versuchen.</p><p data-read-segment>5. Gehe zur nächsten Aufgabe.</p><p data-read-segment>Im Gesamtspiel kommen die Karten von 1 bis 52. Jede Karte hat drei Aufgaben: A, B und C.</p><p data-read-segment>Beide Spielarten kannst du jederzeit unterbrechen und später fortsetzen.</p><p data-read-segment>Tippe auf Vorlesen. Der Text mit dem gelben Hintergrund wird gerade gesprochen.</p></div></details><p class="voice-small-note">🔊 Das Vorlesen nutzt die Stimmen deines Geräts. Für das Vorlesen ohne Internet muss eine deutsche Offline-Stimme installiert sein.</p><div class="companion-settings"><span class="companion-preview" aria-hidden="true">🙂</span><div class="companion-settings-text"><strong>Optionaler Lern-Begleiter</strong><span>Ein Gesicht verändert sich beim Üben. Du kannst es ausblenden. Es gibt keine Note.</span></div><button class="tool" data-action="emoji" aria-pressed="${emojiVisible}">${emojiVisible?'Gesicht ausblenden':'Gesicht anzeigen'}</button></div><div class="tools">${isPrivate()?`<button class="tool" data-action="import">📂 Spielstand laden (JSON)</button><button class="tool" data-action="export-round" ${round?'':'disabled'}>💾 Neuner-Runde als JSON</button><button class="tool" data-action="export-all" ${all?'':'disabled'}>💾 Gesamtspiel als JSON</button>`:''}${!wrapperControlsDevice?`<button class="tool" data-action="switch-device">⚙️ Gerät wechseln</button>`:''}${isPrivate()?`<button class="tool" data-action="delete-data">🗑️ Meine gespeicherten Spielstände löschen</button>`:''}<span class="smallprint">Keine Internetverbindung für die Spielinhalte erforderlich</span></div></div></section>`;
 }
 function renderTask(){stopSpeech();const{card,variant,task}=getCurrent(),n=state.index+1,total=state.queue.length,done=state.done[state.index],answered=state.currentChoice!==null,ok=done;
  const story=(card.story||card.original).replace(/\. /g,'.\n');
@@ -257,7 +260,7 @@ function doAction(action){
  if(action==='device-private'){chooseDevice('private');return;}
  if(action==='device-shared'){chooseDevice('shared');return;}
  if(action==='switch-device'){
-  if(!kioskLocked && confirm('Gerät wechseln? Ein nicht gespeicherter Spielstand wird beendet.')){
+  if(!wrapperControlsDevice && confirm('Gerät wechseln? Ein nicht gespeicherter Spielstand wird beendet.')){
    state=null;deviceMode=null;try{localStorage.removeItem(DEVICE_PREF);}catch(e){}renderHome();
   }return;
  }
@@ -277,12 +280,14 @@ app.addEventListener('click',ev=>{const t=ev.target.closest('button');if(!t||t.d
 document.addEventListener('visibilitychange',()=>{if(document.hidden)stopSpeech();});window.addEventListener('pagehide',stopSpeech);
 importfile.addEventListener('change',()=>{importState(importfile.files?.[0]);importfile.value='';});
 window.addEventListener('keydown',ev=>{if(!state||!app.contains(document.activeElement))return;if(state.index>=state.queue.length)return;const t=document.activeElement;if(t && ['BUTTON','INPUT','TEXTAREA'].includes(t.tagName))return;if(['1','2','3'].includes(ev.key)){setChoice(Number(ev.key)-1);}});
+// No automatic device selection from earlier visits.
+// An outer Terminal wrapper may pass the explicit choice from the current visit.
 if(kioskLocked){deviceMode='shared';}
-else{
- try{if(localStorage.getItem(DEVICE_PREF)==='private'){
-  deviceMode='private';emojiVisible=localStorage.getItem(EMOJI_PREF)!=='off';
- }}catch(e){}
+else if(embeddedPrivate){
+ deviceMode='private';
+ try{emojiVisible=localStorage.getItem(EMOJI_PREF)!=='off';}catch(e){}
 }
+else{deviceMode=null;}
 renderHome();
 </script>
 </body>
