@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#8B1E24">
 <meta name="description" content="Grenzen-Kompass – Was ist jetzt richtig?: Offline-Lernspiel mit Verhaltenskarten für den Berufsbildungsbereich.">
-<title>Grenzen-Kompass – Was ist jetzt richtig? | Studjo-Terminal 1.2</title>
+<title>Grenzen-Kompass – Was ist jetzt richtig? | Studjo-Terminal ohne Spielstand</title>
 <style>
 :root{--red:#8B1E24;--red-dark:#64151a;--green:#24734e;--green-soft:#eaf5ee;--gold:#a37518;--gold-soft:#fff5db;--ink:#202b32;--muted:#586671;--bg:#f7f5f1;--surface:#fff;--line:#dddcd8;--shadow:0 13px 38px rgba(41,36,30,.09);--radius:19px;--control:56px;color-scheme:light}
 *{box-sizing:border-box}html{height:100%;scroll-behavior:smooth}body{margin:0;min-height:100%;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink);font-size:18px;line-height:1.55;-webkit-tap-highlight-color:transparent}
@@ -73,14 +73,14 @@ function storageKey(mode){return mode==='all'?STORE_ALL:STORE_ROUND;}
 const EMOJI_PREF='studjo_grenzenkompass_emoji_pref';
 const DEVICE_PREF='studjo_grenzenkompass_terminal_device_v1';
 const query=new URLSearchParams(location.search);
-const kioskLocked=query.get('kiosk')==='1';
-const embeddedPrivate=query.get('studjo')==='privat';
+const kioskLocked=true; // Studjo: keine Speicherung, auch bei direktem Aufruf
+const embeddedPrivate=false;
 const wrapperControlsDevice=kioskLocked||embeddedPrivate;
 // No browser storage is accessed for game data before explicit private-device opt-in.
-let deviceMode=kioskLocked?'shared':null;
+let deviceMode='shared';
 let emojiVisible=true;
 function isPrivate(){return deviceMode==='private';}
-function chooseDevice(mode){
+function chooseDevice(mode){return; /* abgeschaltet */
  if(kioskLocked && mode!=='shared')return;
  if(mode!=='private'&&mode!=='shared')return;
  state=null;deviceMode=mode;ioError='';emojiVisible=true;
@@ -124,7 +124,7 @@ function randMode(mode){
  while(tasks.some((t,i)=>i>=3 && t===tasks[i-1] && t===tasks[i-2] && t===tasks[i-3]));
  return selected.map((id,i)=>({card:id,type:tasks[i]}));
 }
-function save(){
+function save(){return; /* Kein Browser-Spielstand */
  if(!isPrivate())return;
  try{
   if(state){
@@ -133,7 +133,7 @@ function save(){
   }
  }catch(err){ioError='Automatisches Speichern ist auf diesem Gerät nicht verfügbar. Du kannst den Spielstand als JSON speichern.';}
 }
-function load(mode){
+function load(mode){return null; /* Kein Spielstand laden */
  if(!isPrivate())return (state&&state.mode===mode)?state:null;
  try{
   let str=localStorage.getItem(storageKey(mode));
@@ -254,8 +254,8 @@ function renderTask(){stopSpeech();const{card,variant,task}=getCurrent(),n=state
  app.innerHTML=`<div class="gamehead"><span class="counter">Aufgabe ${n} von ${total}</span><div class="topactions">${voiceButton('speak-all','🔊 Vorlesen')} ${companionWidget()}<button class="tool emoji-switch" data-action="emoji" aria-pressed="${emojiVisible}" title="Lern-Begleiter ein- oder ausblenden">${emojiVisible?'Gesicht aus':'Gesicht an'}</button>${isPrivate()?`<button class="tool" data-action="export" title="Spielstand als JSON speichern">💾 Speichern</button>`:''}<button class="tool" data-action="menu">${isPrivate()?'⏸ Pause':'✕ Spiel beenden'}</button></div></div><div class="progressouter" role="progressbar" aria-valuenow="${state.done.filter(Boolean).length}" aria-valuemax="${total}" aria-valuemin="0" aria-label="Bearbeitete Aufgaben"><div class="progressinner" style="width:${Math.round(state.done.filter(Boolean).length/total*100)}%"></div></div><article class="questionpanel panel"><div class="questiontop"><span class="typebadge ${variant}">${LABELS[variant].icon} ${variant} · ${LABELS[variant].title}</span><span class="cardno">${typeHeader} ${card.card} · ${html(card.topic)}</span></div><section class="situation"><div><p class="blocktag">Situation</p><p class="situationtitle">${html(card.label)}</p><div data-read-group="story"><p class="story">${speakable(story)}</p></div>${extra}</div><div class="artbox"><img alt="Bild aus Karte ${card.card}: ${html(card.label)}" src="${PICTURES[card.picture]}" loading="eager" draggable="false"></div></section><div class="qbody"><h2 id="question-title" tabindex="-1" data-read-group="question"><span class="read-segment" data-read-segment>${html(task.question)}</span></h2><div class="choices" data-read-group="question" aria-label="Drei Antworten">${opts}</div>${voiceBar('task',!!task.extra,answered)}${fb}${buttons}</div><div class="footnote">🧭 Es gibt keine Strafpunkte. Bei einer unpassenden Antwort darfst du erneut wählen. ${task.extra?'Die neue Geschichte gehört nur zu dieser Aufgabe.':''}</div></article><p class="smallprint">${ioError?html(ioError):(isPrivate()?"Dein Fortschritt wird nach jeder Antwort auf diesem privaten Gerät gespeichert.":"Gemeinsames Gerät: Keine Speicherung. Beim Beenden oder Schließen geht der Fortschritt verloren.")}</p>`;
 }
 function renderFinish(){stopSpeech();const total=state.queue.length;app.innerHTML=`<section class="panel complete"><div class="bigicon" aria-hidden="true">🎉</div><p class="eyebrow">${state.mode==='all'?'Dein Gesamtspiel ist geschafft':'Deine Runde ist geschafft'}</p><h1>Gut gemacht!</h1><div data-read-group="finish"><p data-read-segment>Du hast ${total} Aufgaben bearbeitet.</p><p data-read-segment>Du weißt jetzt mehr über Grenzen.</p><p data-read-segment>Du kannst andere Menschen fragen.</p><p data-read-segment>Und du kannst Hilfe holen.</p></div>${voiceBar('finish')}<div class="stars" aria-hidden="true">${'<span>★</span>'.repeat(5)}</div>${emojiVisible?`<div class="finish-companion">${companionWidget(true)}</div>`:''}<div class="notice">Du hast ohne Strafpunkte gelernt. Auch das Wiederholen ist ein Teil des Lernens.</div>${window.GrenzenLMS?`<p class="lms-result" role="status">${html(window.GrenzenLMS.message())}</p>`:''}<div class="actions"><button class="btn primary" data-action="start-round">Neue Runde starten →</button><button class="btn outline" data-action="start-all">Neues Gesamtspiel starten</button>${isPrivate()?`<button class="btn outline" data-action="export">💾 Ergebnis / Spielstand speichern</button>`:""}${window.GrenzenLMS?'<button class="btn outline" data-action="lms-retry">↻ LMS-Abschluss melden</button>':''}<button class="btn plain" data-action="menu">Zur Startseite</button></div></section>`;}
-function exportState(mode){if(!isPrivate()){alert('Auf gemeinsam genutzten Geräten ist der Download von Spielständen aus Datenschutzgründen deaktiviert.');return;}const s=mode?load(mode):(state||load(localStorage.getItem(LAST_MODE)==='all'?'all':'round'));if(!s){alert('Es gibt noch keinen Spielstand.');return;}const b=new Blob([JSON.stringify(s,null,2)],{type:'application/json'});const url=URL.createObjectURL(b);const a=document.createElement('a');a.href=url;a.download='grenzen-kompass-'+(s.mode==='all'?'gesamtspiel':'neuner-runde')+'-spielstand.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1500);}
-function importState(file){if(!isPrivate())return;if(!file)return;if(file.size>1e6){alert('Die Datei ist zu groß.');return;}const reader=new FileReader();reader.onload=()=>{try{const obj=JSON.parse(String(reader.result));if(!valid(obj))throw Error('Falscher Dateiaufbau');state=obj;if(!Array.isArray(state.firstAttempts))state.firstAttempts=Array(state.queue.length).fill(null);save();render();}catch(err){alert('Diese Datei ist kein gültiger Grenzen-Kompass-Spielstand.');}};reader.onerror=()=>alert('Die Datei konnte nicht gelesen werden.');reader.readAsText(file);}
+function exportState(mode){return; /* JSON-Download abgeschaltet */if(!isPrivate()){alert('Auf gemeinsam genutzten Geräten ist der Download von Spielständen aus Datenschutzgründen deaktiviert.');return;}const s=mode?load(mode):(state||load(localStorage.getItem(LAST_MODE)==='all'?'all':'round'));if(!s){alert('Es gibt noch keinen Spielstand.');return;}const b=new Blob([JSON.stringify(s,null,2)],{type:'application/json'});const url=URL.createObjectURL(b);const a=document.createElement('a');a.href=url;a.download='grenzen-kompass-'+(s.mode==='all'?'gesamtspiel':'neuner-runde')+'-spielstand.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1500);}
+function importState(file){return; /* JSON-Import abgeschaltet */if(!isPrivate())return;if(!file)return;if(file.size>1e6){alert('Die Datei ist zu groß.');return;}const reader=new FileReader();reader.onload=()=>{try{const obj=JSON.parse(String(reader.result));if(!valid(obj))throw Error('Falscher Dateiaufbau');state=obj;if(!Array.isArray(state.firstAttempts))state.firstAttempts=Array(state.queue.length).fill(null);save();render();}catch(err){alert('Diese Datei ist kein gültiger Grenzen-Kompass-Spielstand.');}};reader.onerror=()=>alert('Die Datei konnte nicht gelesen werden.');reader.readAsText(file);}
 function doAction(action){
  if(action==='device-private'){chooseDevice('private');return;}
  if(action==='device-shared'){chooseDevice('shared');return;}
