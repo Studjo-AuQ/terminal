@@ -1,125 +1,125 @@
 {
-  "quelle": "Aktuelle Nachrichten aus Deutschland",
-  "aktualisiert": "30.10.2026, 15:15 Uhr (UTC)",
+  "quelle": "tagesschau.de - Die Nachrichten der ARD",
+  "aktualisiert": "30.10.2026, 20:02 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "b42bff20453a52b84b0d",
+      "title": "\"Allianz für die Zukunft\": Kanada und Europa gründen Bündnis",
+      "description": "Die EU und Kanada gründen in Montreal eine \"Allianz für die Zukunft\". Ziel ist mehr Unabhängigkeit und eine engere Zusammenarbeit von KI bis Raumfahrt. Auch die Ukraine spielt eine Rolle.",
+      "pubDate": "2026-10-30T19:59:17+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/kanada-eu-allianz-zukunft-100.html",
+      "bild": ""
+    },
+    {
+      "id": "c70e3605ced5916ce05c",
+      "title": "USA: Bereitet Newsom eine Präsidentschaftskandidatur vor?",
+      "description": "Der Wahlkampf in den USA ist für Politiker auch eine Gelegenheit, sich zu positionieren - für die Präsidentschaftswahl 2028. Kaliforniens Gouverneur Newsom werden Ambitionen nachgesagt - doch es gibt viele Vorbehalte. Von R. Spiegelhauer.",
+      "pubDate": "2026-10-30T19:46:53+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/usa-midterms-newsom-ambitionen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "bf248211d871004f458e",
+      "title": "Zelda, WoW und GTA VI: Warum die Games noch immer faszinieren",
+      "description": "Zelda, WoW und GTA: Der November bietet für Gamer gleich drei neu aufgelegte Videospiel-Klassiker. Warum lösen die jahrzehntealten Game-Reihen noch immer solche Begeisterung aus? Von Samira Straub",
+      "pubDate": "2026-10-30T19:27:55+01:00",
+      "link": "https://www.tagesschau.de/kultur/videospiel-klassiker-100.html",
+      "bild": ""
+    },
+    {
+      "id": "86de3f8a1e505ab0720e",
+      "title": "Marktbericht: Schwaches Ende einer starken Börsenwoche",
+      "description": "Zum Wochenschluss schwächelt der DAX, nachdem er zuvor viermal in Folge gestiegen war. Auslöser sind der hohe Ölpreis, aber auch schwache Tech-Vorgaben aus Übersee.",
+      "pubDate": "2026-10-30T18:22:12+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-jones-geldanlage-amazon-100.html",
+      "bild": ""
+    },
+    {
+      "id": "e99f12ece7dd66c69862",
+      "title": "Erste Einwohner aus besetzter ukrainischer Stadt Oleschky evakuiert",
+      "description": "Inmitten einer Feuerpause haben die ersten Einwohner von Oleschky die von Russland besetzte südukrainische Stadt verlassen. Die Ukraine hofft, dass auch weitere Städte in der Region auf ähnlichem Weg versorgt werden können.",
+      "pubDate": "2026-10-30T17:49:53+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/ukraine-erste-menschen-verlassen-oleschky-100.html",
+      "bild": ""
+    },
+    {
+      "id": "70e65161aa99023d3910",
+      "title": "Steinmeier in China: Handelsüberschuss im Fokus",
+      "description": "Bundespräsident Steinmeier hat China zum Abbau seines hohen Handelsdefizits mit Deutschland aufgefordert. Bei einem Treffen mit Präsident Xi betonte er zudem die Verantwortung beider Länder, die internationale Ordnung aufrechtzuerhalten.",
+      "pubDate": "2026-10-30T17:35:59+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/steinmeiner-xi-treffen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "0673b4d2e488d65e1512",
+      "title": "Jugendproteste: \"Sie meinen es jetzt wirklich ernst\"",
+      "description": "Steigende Preise, marode Schulen, fehlender Dialog: Im Interview erklärt der Protestforscher Florian Staudt, warum junge Menschen in Europa protestieren - und was die Politik aus seiner Sicht jetzt tun sollte.",
+      "pubDate": "2026-10-30T17:03:53+01:00",
+      "link": "https://www.tagesschau.de/inland/gesellschaft/gen-z-proteste-gruende-100.html",
+      "bild": ""
+    },
+    {
+      "id": "883027f513062744bcff",
+      "title": "Klage wegen Unterrichtsausfall: Ex-Schüler scheitert vor Gericht",
+      "description": "Mehr als 400 ausgefallene Unterrichtsstunden, aber kein Anspruch auf eine Neubewertung des Abiturs: Die Klage eines ehemaligen Schülers aus Landau gegen das Land Rheinland-Pfalz blieb ohne Erfolg. Von Christoph Kehlbach.",
+      "pubDate": "2026-10-30T16:55:15+01:00",
+      "link": "https://www.tagesschau.de/inland/gesellschaft/unterrichtsausfall-klage-abgewiesen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "51d645dc97dcc8cfbfe0",
+      "title": "Nach gescheiterter Hinrichtung: Pike beklagt ständige Schmerzen",
+      "description": "Als erste Frau seit 200 Jahren sollte Christa Pike in Tennessee hingerichtet werden. Doch sie überlebte die Gabe eines eigentlich tödlichen Medikaments. In einer ersten Stellungnahme berichtet sie von ständigen Schmerzen.",
+      "pubDate": "2026-10-30T16:46:27+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/pike-aeussert-sich-erstmals-nach-gescheiterter-hinrichtung-100.html",
+      "bild": ""
+    },
     {
       "id": "85b558f25b6fbd63a9de",
       "title": "Gen-Z-Protest: Polizei will Anreise von Gewalttätern stoppen",
       "description": "Vor den \"Gen Z regelt\"-Demonstrationen am Samstag wollen die Behörden gewaltbereite Personen schon an der Grenze stoppen. Die Initiatoren machen der Bundesregierung schwere Vorwürfe und bekommen prominente Unterstützung für ihren Protest.",
-      "pubDate": "2026-10-30T16:09:35+01:00",
+      "pubDate": "2026-10-30T16:58:19+01:00",
       "link": "https://www.tagesschau.de/inland/gesellschaft/genz-proteste-polizei-gewalttaeter-100.html",
       "bild": ""
     },
     {
-      "id": "c031050d0c751d3d747a",
-      "title": "Nach Eralp-Interview: Müssen sich Medien an Absprachen halten?",
-      "description": "Wer Medien ein Interview gibt, verlangt mitunter die Freigabe des Gesprächs vor der Veröffentlichung. Absprachen können jedoch gebrochen werden - was folgt daraus? Und wie ist die Lage im Fall Eralp? Von Max Bauer.",
-      "pubDate": "2026-10-30T15:56:30+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/autorisierung-medien-100.html",
+      "id": "4b2003740cf5ebe7288c",
+      "title": "Vorschlag für mehr Pünktlichkeit der Bahn: Weniger Züge auf der Strecke",
+      "description": "Die Bahn will pünktlicher werden. Deshalb soll eine neue Expertenkommission jetzt Vorschläge für schnelle Verbesserungen liefern. Eine Idee: Weniger Züge auf den überlasteten Strecken. Doch aus der Branche kommt Kritik.",
+      "pubDate": "2026-10-30T15:59:25+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/bahn-puenktlichkeit-expertenkommission-100.html",
       "bild": ""
     },
     {
-      "id": "61e978c5d760966be7e5",
-      "title": "1992 in Halle veröffentlicht: Die Drahtzieher hinter der Stasi-Liste",
-      "description": "Vor mehr als 30 Jahren sorgte eine Liste mit rund 4.500 Namen von geführten Stasi-Informanten in Halle für Aufsehen. Wer sie verfasste, blieb jahrzehntelang unbekannt. Nun sprechen die Verfasser erstmals öffentlich. Von Ottilie Wied.",
-      "pubDate": "2026-10-30T12:51:06+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/stasi-liste-halle-100.html",
+      "id": "25f7c6d493749c2d0f7a",
+      "title": "Wahl-Patt in Israel: Regierungsbildung nicht in Sicht",
+      "description": "Das Endergebnis der Wahl in Israel bringt für keinen Parteienblock eine regierungsfähige Mehrheit. Jetzt könnten die arabischen Parteien zum Zuge kommen. Doch aus dem Netanjahu-Lager kommen neue Vorwürfe. Konkurrent Eisenkot reagiert. Von Tim Aßmann.",
+      "pubDate": "2026-10-30T15:28:05+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/israel-wahlergebnis-korri-100.html",
       "bild": ""
     },
     {
-      "id": "45946a9be9c1eaae4b0c",
-      "title": "Debatte um Eralp überlagert Regierungsbildung",
-      "description": "Die Regierungsbildung in Berlin wird erneut von einer Debatte über die Linkspartei überschattet. Im Fokus: die eventuell künftige Regierende Bürgermeisterin Eralp. Und die Frage, wie entschieden sie gegen Islamismus vorgehen kann.",
-      "pubDate": "2026-10-30T10:02:46+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/berlin-eralp-debatte-spiegel-bericht-100.html",
+      "id": "b7bd6a5570c606ae896f",
+      "title": "Inflationsrate geht im Oktober auf 2,8 Prozent zurück",
+      "description": "Die hohe Inflation in Deutschland ‌hat sich im Oktober spürbar abgeschwächt. Dafür sorgen vor allem die fallenden Preise an den Zapfsäulen. Doch Ökonomen geben noch keine Entwarnung.",
+      "pubDate": "2026-10-30T15:08:37+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/inflationsrate-deutschland-oktober-100.html",
       "bild": ""
     },
     {
-      "id": "c82f8fc3620b9ff2c4bc",
-      "title": "Klage in Rheinland-Pfalz: Wie viel Unterrichtsausfall ist zu viel?",
-      "description": "Ein ehemaliger Schüler verklagt das Land Rheinland-Pfalz, weil während seiner Oberstufenzeit zu viel Unterricht ausgefallen sein soll. Mit dem Fall beschäftigt sich jetzt das Verwaltungsgericht Neustadt. Von C. Kehlbach und H. Diekert.",
-      "pubDate": "2026-10-30T08:56:44+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/unterrichtsausfall-klage-rheinland-pfalz-100.html",
+      "id": "6df587ac667d5bc1685f",
+      "title": "Kampf gegen Ebola - Studie macht Hoffnung auf Impfstoff",
+      "description": "Seit Monaten grassiert in der DR Kongo eine Variante des Ebola-Virus. Mehr als 10.000 Fälle wurden bislang erfasst. Bisher gibt es gegen diesen Erreger keinen Impfstoff, doch eine medizinische Studie weckt Hoffnung. Von Daniela Remus.",
+      "pubDate": "2026-10-30T14:58:25+01:00",
+      "link": "https://www.tagesschau.de/wissen/gesundheit/ebola-afrika-studie-100.html",
       "bild": ""
     },
     {
-      "id": "b690f38113d15dec9bf6",
-      "title": "Debatte in der Koalition über Steuer auf Umsätze durch KI",
-      "description": "In Deutschland könnte es eine Steuer auf Umsätze geben, die mit Künstlicher Intelligenz erzielt werden. Auch Familienministerin Prien sprach sich nun dafür aus. So soll auf Veränderungen in der Arbeitswelt reagiert werden - zum Beispiel auf Jobverluste.",
-      "pubDate": "2026-10-29T21:12:03+01:00",
-      "link": "https://www.tagesschau.de/inland/ministerin-prien-ki-steuer-100.html",
-      "bild": ""
-    },
-    {
-      "id": "d2459f874a3ba91e4114",
-      "title": "Steinmeier-Nachfolge: Die Kandidatensuche wird zur Machtfrage",
-      "description": "Deutschland sucht eine Nachfolge für Bundespräsident Steinmeier. Die Kandidatendebatte bei CDU/CSU ist unübersichtlich und parteipolitisch aufgeladen - nicht zum ersten Mal in der Geschichte. Von Georg Schwarte.",
-      "pubDate": "2026-10-29T17:22:50+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/bundespraesident-kandidatensuche-union-100.html",
-      "bild": ""
-    },
-    {
-      "id": "60d8a0e01fc85340b2e3",
-      "title": "Wer am Samstag auf die Straße geht - und was zu erwarten ist",
-      "description": "Am Samstag soll es in zahlreichen Städten Deutschlands zu Protesten kommen. Nach den Ausschreitungen etwa in Frankreich ist die Sorge vor Gewalt groß. Zu recht? Was sagen die Sicherheitsbehörden, was Experten - und worum geht es eigentlich?",
-      "pubDate": "2026-10-29T13:02:19+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/gen-z-regelt-proteste-100.html",
-      "bild": ""
-    },
-    {
-      "id": "1088a6820189af443398",
-      "title": "Linken-Politikerin Klein neue Parlamentspräsidentin",
-      "description": "Knapp sechs Wochen nach der Wahl in Berlin ist das Abgeordnetenhaus zu seiner konstituierenden Sitzung zusammengekommen. Die Linken-Politikerin Klein ist zur neuen Präsidentin des Parlaments gewählt worden.",
-      "pubDate": "2026-10-29T18:31:06+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/berlin-abgeordnetenhaus-erste-sitzung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f1ab9191bfe465979af0",
-      "title": "Pflegeversicherung: Linnemann schließt Leistungskürzungen nicht aus",
-      "description": "Gesundheitsminister Linnemann hält Einschnitte bei der Pflegeversicherung für möglich. Angesichts steigender Kosten müssten rund zehn Prozent eingespart werden. Patientenschützer warnen vor den Folgen für die häusliche Pflege.",
-      "pubDate": "2026-10-29T10:27:28+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/linnemann-kuerzungen-pflegeleistungen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "fd043a1453c27e2f2f32",
-      "title": "Bayern: Ermittlungen gegen zwei Belarusen wegen Sabotageverdacht",
-      "description": "Zwei Männer aus Belarus stehen im Verdacht, im Raum Nürnberg einen Brandanschlag geplant zu haben - im Auftrag einer fremden Regierung oder Vereinigung. Sie wurden festgenommen und sitzen in Untersuchungshaft. Von Joseph Röhmel.",
-      "pubDate": "2026-10-28T20:03:51+01:00",
-      "link": "https://www.tagesschau.de/inland/bayern-ermittlungen-gegen-belarusen-sabotage-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c3e8faf579762db1dac8",
-      "title": "Kritische Infrastruktur: Mehr Prüfungen auf Sabotagerisiko",
-      "description": "Die Bedrohung für die Kritische Infrastruktur in Deutschland - etwa durch Sabotage oder Spionage - ist gestiegen. Daher will der Bund künftig Beschäftigte in noch mehr Betrieben auf mögliche Sicherheitsrisiken überprüfen.",
-      "pubDate": "2026-10-28T15:48:08+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/kritische-infrastruktur-sabotage-schutz-100.html",
-      "bild": ""
-    },
-    {
-      "id": "ea1ab5076e2f2f6c3555",
-      "title": "Weiterhin 14 Monate - Rolle rückwärts beim Elterngeld",
-      "description": "Das Elterngeld bleibt laut Plänen des Familienministeriums bei bis zu 14 Monaten. Eine geplante Kürzung auf zwölf Monate wird nicht umgesetzt. Zudem sollen Mindest- und Höchstbeträge steigen. Von Sarah Beham und Philip Kuntschner.",
-      "pubDate": "2026-10-28T16:11:17+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/elterngeld-bezugsdauer-prien-100.html",
-      "bild": ""
-    },
-    {
-      "id": "d1efd222a156e54e8e14",
-      "title": "Nachfolge für Steinmeier: Merz beharrt auf CDU-Vorschlagsrecht",
-      "description": "Die Debatte um die Nachfolge von Bundespräsident Steinmeier nimmt Fahrt auf. Aus dem Umfeld des Bundeskanzlers heißt es nun: Merz habe noch keine Entscheidung getroffen - und sehe das Vorschlagsrecht bei der CDU. Von Markus Preiß.",
-      "pubDate": "2026-10-28T08:21:25+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/nachfolge-steinmeier-100.html",
-      "bild": ""
-    },
-    {
-      "id": "4a55c013a282eb6f6218",
-      "title": "CDU-Politikerin Claus signalisiert Interesse an Steinmeier-Nachfolge",
-      "description": "Bisher gibt es nur den Vorschlag der CSU: Ilse Aigner soll Bundespräsidentin werden. Doch in der CDU gibt es den Wunsch nach einem Namen aus den eigenen Reihen. Nun wird der von Ines Claus genannt. Hätte sie Chancen? Von Kirsten Girschick.",
-      "pubDate": "2026-10-27T20:52:58+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/moegliche-nachfolgerin-steinmeier-ines-claus-100.html",
+      "id": "0735962be120daa62815",
+      "title": "Wie der VW-Vorstand die Laune bei den Skoda-Mitarbeitern drückt",
+      "description": "Während die Konzernmutter Volkswagen viele Probleme hat, erwirtschaftet die tschechische Tochter Skoda passable Gewinne. Doch das ist für den Hersteller nicht automatisch von Vorteil. Von André Berthold.",
+      "pubDate": "2026-10-30T14:51:43+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/skoda-144.html",
       "bild": ""
     }
   ],
