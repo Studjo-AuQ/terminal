@@ -1,6 +1,6 @@
 /* ══════════════════════════════════════════════════════
    sw.js – Service Worker für das Studjo Terminal
-   Version 37
+   Version 38
 
    - lädt beim Installieren den stabilen lokalen Terminal-Kern vor
      (HTML, CSS, JS, JSON, Schriften, Bilder und PDF.js)
@@ -18,7 +18,7 @@
    ══════════════════════════════════════════════════════ */
 
 const CACHE_PREFIX  = 'studjo-terminal-';
-const CACHE_VERSION = 'v37';
+const CACHE_VERSION = 'v38';
 const PRECACHE = CACHE_PREFIX + CACHE_VERSION + '-precache';
 const RUNTIME  = CACHE_PREFIX + CACHE_VERSION + '-runtime';
 const SPEISEPLAN_CACHE = CACHE_PREFIX + CACHE_VERSION + '-speiseplaene';
@@ -648,6 +648,9 @@ function istDynamischeNavigation(url) {
 
   return [
     basis + 'verhaltenbeikonflikten.html',
+    basis + 'spiele/grenzen-kompass.html',
+    basis + 'spiele/gewaltspirale.html',
+    basis + 'spiele/ausmass-haeufigkeit.html',
     basis + 'neuigkeiten.html',
     basis + 'nachrichten-allgemein.html',
     basis + 'termine.html',
