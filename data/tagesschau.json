@@ -1,28 +1,68 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "31.10.2026, 16:16 Uhr (UTC)",
+  "aktualisiert": "31.10.2026, 20:13 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "8bd6168b4cd80cba1216",
+      "title": "Weitgehend friedlich - in einigen Städten Ausschreitungen",
+      "description": "Bessere Bildung, mehr Klimaschutz und bezahlbarer Wohnraum - dafür sind Zehntausende in vielen deutschen Städten auf die Straße gezogen. Die Proteste der \"Gen Z regelt\" blieben weitgehend friedlich. Doch am Abend kam es zu einigen Ausschreitungen.",
+      "pubDate": "2026-10-31T20:40:24+01:00",
+      "link": "https://www.tagesschau.de/inland/gesellschaft/jugendproteste-102.html",
+      "bild": ""
+    },
+    {
+      "id": "b6fcace43d0880d25951",
+      "title": "Erneut Proteste und Zusammenstöße in Frankreich",
+      "description": "Am dritten Samstag in Folge haben in Frankreich Hunderttausende Menschen protestiert - erst friedlich, doch am Ende kam es wieder zu Zusammenstößen mit der Polizei. Die bleibt auch nach Ende der Protestzüge in Alarmbereitschaft. Von J. Borutta.",
+      "pubDate": "2026-10-31T20:02:09+01:00",
+      "link": "https://www.tagesschau.de/ausland/frankreich-proteste-242.html",
+      "bild": ""
+    },
+    {
+      "id": "9dc2c6224b68ea098572",
+      "title": "Midterms in den USA: Kippt ausgerechnet Texas?",
+      "description": "In Texas könnte bei den Zwischenwahlen am Dienstag ein Demokrat das Rennen um den Sitz im US-Senat für sich entscheiden. Dabei gewinnen in dem Bundesstaat seit Jahrzehnten verlässlich die Republikaner. Welche Themen beschäftigen die Wähler? Von S. Schmidt.",
+      "pubDate": "2026-10-31T19:05:02+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/usa-midterms-wahlkampf-texas-100.html",
+      "bild": ""
+    },
+    {
+      "id": "2d3657af16c740aac941",
+      "title": "Treffen in Atlanta: G20-Außenminister finden keine gemeinsame Sprache",
+      "description": "Zwei Tage lang haben die G20-Außenminister in Atlanta über internationale Krisen beraten. Es ging dabei vor allem um die Folgen für die Weltwirtschaft. Überlagert wurde das Treffen von Spannungen - vor allem mit Russland. Von M. Sambale.",
+      "pubDate": "2026-10-31T17:54:43+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/g20-aussenminister-abschluss-100.html",
+      "bild": ""
+    },
+    {
+      "id": "c34a3e385ed6c85c27ab",
+      "title": "Was Salz aus 1.000 Metern Tiefe so wertvoll macht",
+      "description": "Ein Bergbaukonzern aus Hessen kontrolliert rund 30 Prozent des Weltmarktes für hochreine Pharmasalze. Was dort abgebaut wird, ist für viele Menschen überlebenswichtig. Von Christof Dörr.",
+      "pubDate": "2026-10-31T17:21:31+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/technologie/salz-142.html",
+      "bild": ""
+    },
     {
       "id": "587c28f0d73258fcbe83",
       "title": "Berliner Linke stimmt für Aufnahme von Koalitionsverhandlungen mit Grünen und SPD",
-      "description": "In Berlin hat sich nach Grünen und SPD nun auch die Linke für Koalitionsverhandlungen ausgesprochen. Auf einem Parteitag stimmte eine klare Mehrheit dafür. Sechs Wochen nach der Wahl können die Gespräche damit beginnen.",
-      "pubDate": "2026-10-31T17:13:23+01:00",
+      "description": "Sechs Wochen nach der Wahl in Berlin ist der Weg frei für rot-grün-rote Koalitionsverhandlungen: Nach Grünen und SPD stimmte nun auch der Parteitag der Linken dafür. Am Montag sollen die Gespräche beginnen.",
+      "pubDate": "2026-10-31T19:00:40+01:00",
       "link": "https://www.tagesschau.de/inland/innenpolitik/linke-parteitag-koalitionsverhandlungen-100.html",
       "bild": ""
     },
     {
       "id": "5f45dc24f59eeaf366b1",
       "title": "Aus für UN-Friedensmission in der Westsahara nach Veto im UN-Sicherheitsrat",
-      "description": "Nach mehr als 30 Jahren das Aus für die UN-Friedensmission MINURSO: Russland hat die Verlängerung im UN-Sicherheitsrat blockiert. Damit müssen zivile und militärische Kräfte das Gebiet in den kommenden Tagen verlassen - auch deutsche Soldaten.",
+      "description": "Nach mehr als 30 Jahren kommt nun das Aus für die UN-Friedensmission MINURSO: Russland hat die Verlängerung im UN-Sicherheitsrat blockiert. Damit müssen zivile und militärische Kräfte das Gebiet in den kommenden Tagen verlassen - auch deutsche Soldaten.",
       "pubDate": "2026-10-31T17:12:40+01:00",
       "link": "https://www.tagesschau.de/ausland/afrika/westsahara-un-mission-100.html",
       "bild": ""
     },
     {
       "id": "f8f5798af14000e90f03",
-      "title": "Demos in vielen Städten: Jugend-Proteste bisher weitgehend friedlich",
-      "description": "Die Proteste der \"GenZ\" haben begonnen. Größere Aktionen gibt es etwa in Berlin, Frankfurt, München und Köln. Dort wurde der Demozug wegen Verstößen gegen das Vermummungsverbot abgesagt. Bislang ist es laut Polizei weitgehend friedlich.",
-      "pubDate": "2026-10-31T16:55:18+01:00",
+      "title": "\"GenZ\"-Proteste: Tausende demonstrieren für soziale Gerechtigkeit",
+      "description": "Am Nachmittag haben die angekündigten Proteste der \"GenZ\" begonnen. In Hamburg und Köln ging die Polizei unter anderem wegen des Einsatzes von Pyrotechnik gegen Demonstrierende vor. Die befürchteten großen Ausschreitungen blieben bislang aus.",
+      "pubDate": "2026-10-31T17:54:21+01:00",
       "link": "https://www.tagesschau.de/inland/gesellschaft/gen-z-proteste-114.html",
       "bild": ""
     },
@@ -38,7 +78,7 @@
       "id": "91c2de1f9a70d659b1b5",
       "title": "Der Kampf um das polnische Verfassungsgericht eskaliert",
       "description": "Nach der Absetzung der bisherigen Gerichtsspitze eskaliert der Streit über Polens Verfassungsgericht: Regierung und Opposition werfen sich gegenseitig vor, die Justiz zu gefährden. Vor dem Gebäude gab es erneut Proteste.",
-      "pubDate": "2026-10-31T14:57:56+01:00",
+      "pubDate": "2026-10-31T21:11:14+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/polen-eskalation-verfassungsgericht-100.html",
       "bild": ""
     },
@@ -70,7 +110,7 @@
       "id": "390e3989fb85c7bcbb75",
       "title": "Linkspartei: Eralp rechnet mit Zustimmung zu Koalitionsgesprächen",
       "description": "In Berlin läuft der Parteitag der Linkspartei. Fraktionschefin Eralp verteidigte das Sondierungspapier mit Grünen sowie SPD und warb für Koalitionsverhandlungen. Sie äußerte sich auch zur umstrittenen Abgeordneten Emde.",
-      "pubDate": "2026-10-31T17:07:00+01:00",
+      "pubDate": "2026-10-31T20:39:40+01:00",
       "link": "https://www.tagesschau.de/inland/regional/berlin/berlin-linkspartei-eralp-koalitionsverhandlungen-100.html",
       "bild": ""
     },
@@ -80,46 +120,6 @@
       "description": "Horrorfilme boomen seit Längerem. Doch nun erobern Dämonen und übernatürliche Gruselgeschichten auch das Seriensegment. Sind wir so abgestumpft, dass uns nur noch Gewalt unterhält, oder steckt mehr dahinter? Von Ferdinand Meyen.",
       "pubDate": "2026-10-31T12:09:27+01:00",
       "link": "https://www.tagesschau.de/kultur/horror-serien-hype-100.html",
-      "bild": ""
-    },
-    {
-      "id": "8cf78d3679a84ab59c2d",
-      "title": "Zwei Sullivans in Alaska - wollen Demokraten die Wahl manipulieren?",
-      "description": "In Alaska deutet sich bei den US-Zwischenwahlen ein knappes Rennen um den Senatsposten an. Der republikanische Amtsinhaber Sullivan kämpft auch mit namensgleicher Konkurrenz. Ein Foul der Demokraten? Nun klagt das Justizministerium.",
-      "pubDate": "2026-10-31T11:51:32+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/midterms-alaska-sullivan-100.html",
-      "bild": ""
-    },
-    {
-      "id": "e10720abb6f1ded290b8",
-      "title": "Gen-Z-Proteste: Was die Bundesregierung für die Jugend macht",
-      "description": "Die bundesweit angekündigten Proteste junger Menschen werfen die Frage auf: Tut die Politik zu wenig für Jugendliche? Fragen an zwei junge Abgeordnete mit Blick auf Rente, Wehrdienst und Bildung. Von Sarah Beham.",
-      "pubDate": "2026-10-31T11:09:19+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/jugendproteste-bundesregierung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "261d6cc2b056d3fc03a7",
-      "title": "Chip im Kopf: Wenn Computer Gedanken verstehen lernen",
-      "description": "Was lange wie Science-Fiction klang, ist inzwischen Realität: Chips im Gehirn helfen gelähmten Menschen, Computer mit ihren Gedanken zu steuern. Forscher hoffen auf neue Therapien, Ethiker warnen vor Risiken. Von Katharina Bruns.",
-      "pubDate": "2026-10-31T10:17:08+01:00",
-      "link": "https://www.tagesschau.de/wissen/computer-chip-gehirn-100.html",
-      "bild": ""
-    },
-    {
-      "id": "9b0578803b5d48c622b5",
-      "title": "Evakuierungsaktion im ukrainischen Oleschky abgeschlossen",
-      "description": "Es war die größte gemeinsame Aktion von Ukrainern und Russen seit Kriegsbeginn: Mit 25 Bussen wurden Menschen aus der Frontstadt Oleschky gebracht. Ein Teil von ihnen ist bereits in Belarus angekommen, um in die Ukraine weiterzureisen.",
-      "pubDate": "2026-10-31T10:14:41+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/ukraine-evakuierung-oleschky-100.html",
-      "bild": ""
-    },
-    {
-      "id": "9f93b07ae3fc090b3969",
-      "title": "Arabische Parteien in Israel stecken in einem Dilemma",
-      "description": "Die arabischen Listen in Israel haben bei der Parlamentswahl große Erfolge erzielt. Sie traten gemeinsam an, unterscheiden sich aber inhaltlich. Vor allem wollen sie nicht nur Mehrheitsbeschaffer sein. Von Julio Segador.",
-      "pubDate": "2026-10-31T09:49:15+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/israel-wahl-arabische-parteien-100.html",
       "bild": ""
     }
   ],
