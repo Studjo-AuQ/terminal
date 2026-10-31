@@ -1,7 +1,71 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "31.10.2026, 05:25 Uhr (UTC)",
+  "aktualisiert": "31.10.2026, 11:07 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "8cf78d3679a84ab59c2d",
+      "title": "Zwei Sullivans in Alaska - wollen Demokraten die Wahl manipulieren?",
+      "description": "In Alaska deutet sich bei den US-Zwischenwahlen ein knappes Rennen um den Senatsposten an. Der republikanische Amtsinhaber Sullivan kämpft auch mit namensgleicher Konkurrenz. Ein Foul der Demokraten? Nun klagt das Justizministerium.",
+      "pubDate": "2026-10-31T11:51:32+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/midterms-alaska-sullivan-100.html",
+      "bild": ""
+    },
+    {
+      "id": "e10720abb6f1ded290b8",
+      "title": "Gen-Z-Proteste: Was die Bundesregierung für die Jugend macht",
+      "description": "Die bundesweit angekündigten Proteste junger Menschen werfen die Frage auf: Tut die Politik zu wenig für Jugendliche? Fragen an zwei junge Abgeordnete mit Blick auf Rente, Wehrdienst und Bildung. Von Sarah Beham.",
+      "pubDate": "2026-10-31T11:09:19+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/jugendproteste-bundesregierung-100.html",
+      "bild": ""
+    },
+    {
+      "id": "261d6cc2b056d3fc03a7",
+      "title": "Chip im Kopf: Wenn Computer Gedanken verstehen lernen",
+      "description": "Was lange wie Science-Fiction klang, ist inzwischen Realität: Chips im Gehirn helfen gelähmten Menschen, Computer mit ihren Gedanken zu steuern. Forscher hoffen auf neue Therapien, Ethiker warnen vor Risiken. Von Katharina Bruns.",
+      "pubDate": "2026-10-31T10:17:08+01:00",
+      "link": "https://www.tagesschau.de/wissen/computer-chip-gehirn-100.html",
+      "bild": ""
+    },
+    {
+      "id": "9b0578803b5d48c622b5",
+      "title": "Evakuierungsaktion im ukrainischen Oleschky abgeschlossen",
+      "description": "Es war die größte gemeinsame Aktion von Ukrainern und Russen seit Kriegsbeginn: Mit 25 Bussen wurden Menschen aus der Frontstadt Oleschky gebracht. Ein Teil von ihnen ist bereits in Belarus angekommen, um in die Ukraine weiterzureisen.",
+      "pubDate": "2026-10-31T10:14:41+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/ukraine-evakuierung-oleschky-100.html",
+      "bild": ""
+    },
+    {
+      "id": "9f93b07ae3fc090b3969",
+      "title": "Arabische Parteien in Israel stecken in einem Dilemma",
+      "description": "Die arabischen Listen in Israel haben bei der Parlamentswahl große Erfolge erzielt. Sie traten gemeinsam an, unterscheiden sich aber inhaltlich. Vor allem wollen sie nicht nur Mehrheitsbeschaffer sein. Von Julia Segador.",
+      "pubDate": "2026-10-31T09:49:15+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/israel-wahl-arabische-parteien-100.html",
+      "bild": ""
+    },
+    {
+      "id": "08c55d634882d72139b0",
+      "title": "KI bei der Geldanlage: Wie sicher sind ChatGPT-Anlagetipps?",
+      "description": "Immer mehr Menschen holen sich bei der Geldanlage Rat von ChatGPT oder Claude. Experten sehen in den KI-Anlagetipps durchaus Potenzial, warnen aber auch vor Fehlern und Risiken. Von Angela Göpfert.",
+      "pubDate": "2026-10-31T08:45:19+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/ki-geldanlage-chatgpt-anlagetipps-risiken-100.html",
+      "bild": ""
+    },
+    {
+      "id": "bf1fcaf05cbed19b8105",
+      "title": "Die Linke in Berlin: Aus dem Trubel in die Koalition?",
+      "description": "Die Berliner Linke entscheidet heute über den Start von Koalitionsverhandlungen mit SPD und Grünen. Überschattet wird der Parteitag von Antisemitismusvorwürfen und einem Spiegel-Bericht. Von Frank Aischmann.",
+      "pubDate": "2026-10-31T08:43:12+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/linke-berlin-parteitag-eralp-100.html",
+      "bild": ""
+    },
+    {
+      "id": "906424f92670c17417fe",
+      "title": "Einigung bei der UN-Biodiversitätskonferenz erzielt",
+      "description": "Wie kann die Artenvielfalt geschützt werden? Darüber wurde bei der UN-Biodiversitätskonferenz intensiv verhandelt. Am Ende gab es in Armenien eine Einigung - wenn auch keine besonders ambitionierte.",
+      "pubDate": "2026-10-31T08:09:41+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/biodiversitaet-cop-armenien-100.html",
+      "bild": ""
+    },
     {
       "id": "85574a506e3560fc75a4",
       "title": "Jugendproteste in mehr als 30 Städten geplant",
@@ -29,8 +93,8 @@
     {
       "id": "3483a7d30d6dfa42c649",
       "title": "Polen: Tumult und Protest vor dem Verfassungsgericht",
-      "description": "Der Machtkampf um das polnische Verfassungsgericht spitzt sich zu. Die Polizei umstellte das Gebäude, nachdem sich Protestierende dort versammelt hatten. Auslöser ist die mutmaßliche Suspendierung der bisherigen Gerichtsführung.",
-      "pubDate": "2026-10-31T04:42:57+01:00",
+      "description": "Der Machtkampf um das polnische Verfassungsgericht spitzt sich zu. Die Polizei sicherte das Gebäude ab, nachdem sich Protestierende dort versammelt hatten. Auslöser ist die mutmaßliche Suspendierung der bisherigen Gerichtsführung.",
+      "pubDate": "2026-10-31T09:25:36+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/polen-verfassungsgericht-streit-100.html",
       "bild": ""
     },
@@ -56,70 +120,6 @@
       "description": "Die EU und Kanada gründen in Montreal eine \"Allianz für die Zukunft\". Ziel ist mehr Unabhängigkeit und eine engere Zusammenarbeit von KI bis Raumfahrt. Auch die Ukraine spielt eine Rolle.",
       "pubDate": "2026-10-31T04:57:32+01:00",
       "link": "https://www.tagesschau.de/ausland/amerika/kanada-eu-allianz-zukunft-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c70e3605ced5916ce05c",
-      "title": "USA: Bereitet Newsom eine Präsidentschaftskandidatur vor?",
-      "description": "Der Wahlkampf in den USA ist für Politiker auch eine Gelegenheit, sich zu positionieren - für die Präsidentschaftswahl 2028. Kaliforniens Gouverneur Newsom werden Ambitionen nachgesagt - doch es gibt viele Vorbehalte. Von R. Spiegelhauer.",
-      "pubDate": "2026-10-30T19:46:53+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/usa-midterms-newsom-ambitionen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "bf248211d871004f458e",
-      "title": "Zelda, WoW und GTA VI: Warum die Games noch immer faszinieren",
-      "description": "Zelda, WoW und GTA: Der November bietet für Gamer gleich drei neu aufgelegte Videospiel-Klassiker. Warum lösen die jahrzehntealten Game-Reihen noch immer solche Begeisterung aus? Von Samira Straub",
-      "pubDate": "2026-10-30T19:27:55+01:00",
-      "link": "https://www.tagesschau.de/kultur/videospiel-klassiker-100.html",
-      "bild": ""
-    },
-    {
-      "id": "86de3f8a1e505ab0720e",
-      "title": "Marktbericht: Schwaches Ende einer starken Börsenwoche",
-      "description": "Zum Wochenschluss schwächelt der DAX, nachdem er zuvor viermal in Folge gestiegen war. Auslöser sind der hohe Ölpreis, aber auch schwache Tech-Vorgaben aus Übersee.",
-      "pubDate": "2026-10-30T18:22:12+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-jones-geldanlage-amazon-100.html",
-      "bild": ""
-    },
-    {
-      "id": "e99f12ece7dd66c69862",
-      "title": "Erste Einwohner aus besetzter ukrainischer Stadt Oleschky evakuiert",
-      "description": "Inmitten einer Feuerpause haben die ersten Einwohner von Oleschky die von Russland besetzte südukrainische Stadt verlassen. Die Ukraine hofft, dass auch weitere Städte in der Region auf ähnlichem Weg versorgt werden können.",
-      "pubDate": "2026-10-30T17:49:53+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/ukraine-erste-menschen-verlassen-oleschky-100.html",
-      "bild": ""
-    },
-    {
-      "id": "70e65161aa99023d3910",
-      "title": "Steinmeier in China: Handelsüberschuss im Fokus",
-      "description": "Bundespräsident Steinmeier hat China zum Abbau seines hohen Handelsdefizits mit Deutschland aufgefordert. Bei einem Treffen mit Präsident Xi betonte er zudem die Verantwortung beider Länder, die internationale Ordnung aufrechtzuerhalten.",
-      "pubDate": "2026-10-30T17:35:59+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/steinmeiner-xi-treffen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "0673b4d2e488d65e1512",
-      "title": "Jugendproteste: \"Sie meinen es jetzt wirklich ernst\"",
-      "description": "Steigende Preise, marode Schulen, fehlender Dialog: Im Interview erklärt der Protestforscher Florian Staudt, warum junge Menschen in Europa protestieren - und was die Politik aus seiner Sicht jetzt tun sollte.",
-      "pubDate": "2026-10-30T17:03:53+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/gen-z-proteste-gruende-100.html",
-      "bild": ""
-    },
-    {
-      "id": "883027f513062744bcff",
-      "title": "Klage wegen Unterrichtsausfall: Ex-Schüler scheitert vor Gericht",
-      "description": "Mehr als 400 ausgefallene Unterrichtsstunden, aber kein Anspruch auf eine Neubewertung des Abiturs: Die Klage eines ehemaligen Schülers aus Landau gegen das Land Rheinland-Pfalz blieb ohne Erfolg. Von Christoph Kehlbach.",
-      "pubDate": "2026-10-30T16:55:15+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/unterrichtsausfall-klage-abgewiesen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "51d645dc97dcc8cfbfe0",
-      "title": "Nach gescheiterter Hinrichtung: Pike beklagt ständige Schmerzen",
-      "description": "Als erste Frau seit 200 Jahren sollte Christa Pike in Tennessee hingerichtet werden. Doch sie überlebte die Gabe eines eigentlich tödlichen Medikaments. In einer ersten Stellungnahme berichtet sie von ständigen Schmerzen.",
-      "pubDate": "2026-10-30T16:46:27+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/pike-aeussert-sich-erstmals-nach-gescheiterter-hinrichtung-100.html",
       "bild": ""
     }
   ],
