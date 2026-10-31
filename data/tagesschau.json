@@ -1,7 +1,87 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "31.10.2026, 11:07 Uhr (UTC)",
+  "aktualisiert": "31.10.2026, 16:16 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "587c28f0d73258fcbe83",
+      "title": "Berliner Linke stimmt für Aufnahme von Koalitionsverhandlungen mit Grünen und SPD",
+      "description": "In Berlin hat sich nach Grünen und SPD nun auch die Linke für Koalitionsverhandlungen ausgesprochen. Auf einem Parteitag stimmte eine klare Mehrheit dafür. Sechs Wochen nach der Wahl können die Gespräche damit beginnen.",
+      "pubDate": "2026-10-31T17:13:23+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/linke-parteitag-koalitionsverhandlungen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "5f45dc24f59eeaf366b1",
+      "title": "Aus für UN-Friedensmission in der Westsahara nach Veto im UN-Sicherheitsrat",
+      "description": "Nach mehr als 30 Jahren das Aus für die UN-Friedensmission MINURSO: Russland hat die Verlängerung im UN-Sicherheitsrat blockiert. Damit müssen zivile und militärische Kräfte das Gebiet in den kommenden Tagen verlassen - auch deutsche Soldaten.",
+      "pubDate": "2026-10-31T17:12:40+01:00",
+      "link": "https://www.tagesschau.de/ausland/afrika/westsahara-un-mission-100.html",
+      "bild": ""
+    },
+    {
+      "id": "f8f5798af14000e90f03",
+      "title": "Demos in vielen Städten: Jugend-Proteste bisher weitgehend friedlich",
+      "description": "Die Proteste der \"GenZ\" haben begonnen. Größere Aktionen gibt es etwa in Berlin, Frankfurt, München und Köln. Dort wurde der Demozug wegen Verstößen gegen das Vermummungsverbot abgesagt. Bislang ist es laut Polizei weitgehend friedlich.",
+      "pubDate": "2026-10-31T16:55:18+01:00",
+      "link": "https://www.tagesschau.de/inland/gesellschaft/gen-z-proteste-114.html",
+      "bild": ""
+    },
+    {
+      "id": "8d6b812e532c29915efc",
+      "title": "Bewohner Oleschkys auf ukrainisch kontrolliertem Gebiet angekommen",
+      "description": "Nach der Evakuierung der von Russland besetzten Stadt Oleschky sind gerettete Bewohner in ukrainisch kontrolliertem Gebiet angekommen. Zuvor waren sie mit Militärflugzeugen nach Belarus gebracht worden.",
+      "pubDate": "2026-10-31T16:06:39+01:00",
+      "link": "https://www.tagesschau.de/ausland/oleschky-ukraine-100.html",
+      "bild": ""
+    },
+    {
+      "id": "91c2de1f9a70d659b1b5",
+      "title": "Der Kampf um das polnische Verfassungsgericht eskaliert",
+      "description": "Nach der Absetzung der bisherigen Gerichtsspitze eskaliert der Streit über Polens Verfassungsgericht: Regierung und Opposition werfen sich gegenseitig vor, die Justiz zu gefährden. Vor dem Gebäude gab es erneut Proteste.",
+      "pubDate": "2026-10-31T14:57:56+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/polen-eskalation-verfassungsgericht-100.html",
+      "bild": ""
+    },
+    {
+      "id": "3c6f69160ea0c3382ff9",
+      "title": "Das System Vucic in Serbien: Besiegt, aber nicht verschwunden",
+      "description": "Auch rund eine Woche nach ihrem Wahlsieg in Serbien staunt die Studentenbewegung noch über ihren Erfolg. Ihre Mitglieder merken aber im Alltag: Das System von Ex-Präsident Vucic verschwindet nicht über Nacht. Von A. Bachmann und I. Bafas.",
+      "pubDate": "2026-10-31T13:08:42+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/serbien-studenten-nach-wahlsieg-100.html",
+      "bild": ""
+    },
+    {
+      "id": "8546b51671575c4609f2",
+      "title": "Merz nach Asienreise: \"Hat sich in mehrfacher Hinsicht gelohnt\"",
+      "description": "Fünf Tage lang war Kanzler Merz in Asien. Es ging um Geschäfte mit einer Boom-Region, Allianzen gegen Großmächte, um Cybersicherheit und Verteidigung. Eine Auszeit von der deutschen Innenpolitik, die sich laut Merz gelohnt hat. Von D. Pepping.",
+      "pubDate": "2026-10-31T12:56:25+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/merz-asienreise-abschluss-100.html",
+      "bild": ""
+    },
+    {
+      "id": "d366835be54d0b70dd1e",
+      "title": "Ebola-Virus: Mehr als 5.000 Tote in der Demokratischen Republik Kongo",
+      "description": "Die Ebola-Infektionen in der Demokratischen Republik Kongo nehmen weiter zu. Seit Mai starben mehr als 5.000 Menschen - mehr als 10.000 gelten als infiziert. Das Ende ist nicht in Sicht, aber vielleicht ein Impfstoff.",
+      "pubDate": "2026-10-31T12:45:52+01:00",
+      "link": "https://www.tagesschau.de/ausland/afrika/kongo-ebola-tote-106.html",
+      "bild": ""
+    },
+    {
+      "id": "390e3989fb85c7bcbb75",
+      "title": "Linkspartei: Eralp rechnet mit Zustimmung zu Koalitionsgesprächen",
+      "description": "In Berlin läuft der Parteitag der Linkspartei. Fraktionschefin Eralp verteidigte das Sondierungspapier mit Grünen sowie SPD und warb für Koalitionsverhandlungen. Sie äußerte sich auch zur umstrittenen Abgeordneten Emde.",
+      "pubDate": "2026-10-31T17:07:00+01:00",
+      "link": "https://www.tagesschau.de/inland/regional/berlin/berlin-linkspartei-eralp-koalitionsverhandlungen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "3cccc99e481dce225836",
+      "title": "Warum Horror-Serien die Streaming-Charts dominieren",
+      "description": "Horrorfilme boomen seit Längerem. Doch nun erobern Dämonen und übernatürliche Gruselgeschichten auch das Seriensegment. Sind wir so abgestumpft, dass uns nur noch Gewalt unterhält, oder steckt mehr dahinter? Von Ferdinand Meyen.",
+      "pubDate": "2026-10-31T12:09:27+01:00",
+      "link": "https://www.tagesschau.de/kultur/horror-serien-hype-100.html",
+      "bild": ""
+    },
     {
       "id": "8cf78d3679a84ab59c2d",
       "title": "Zwei Sullivans in Alaska - wollen Demokraten die Wahl manipulieren?",
@@ -37,89 +117,9 @@
     {
       "id": "9f93b07ae3fc090b3969",
       "title": "Arabische Parteien in Israel stecken in einem Dilemma",
-      "description": "Die arabischen Listen in Israel haben bei der Parlamentswahl große Erfolge erzielt. Sie traten gemeinsam an, unterscheiden sich aber inhaltlich. Vor allem wollen sie nicht nur Mehrheitsbeschaffer sein. Von Julia Segador.",
+      "description": "Die arabischen Listen in Israel haben bei der Parlamentswahl große Erfolge erzielt. Sie traten gemeinsam an, unterscheiden sich aber inhaltlich. Vor allem wollen sie nicht nur Mehrheitsbeschaffer sein. Von Julio Segador.",
       "pubDate": "2026-10-31T09:49:15+01:00",
       "link": "https://www.tagesschau.de/ausland/asien/israel-wahl-arabische-parteien-100.html",
-      "bild": ""
-    },
-    {
-      "id": "08c55d634882d72139b0",
-      "title": "KI bei der Geldanlage: Wie sicher sind ChatGPT-Anlagetipps?",
-      "description": "Immer mehr Menschen holen sich bei der Geldanlage Rat von ChatGPT oder Claude. Experten sehen in den KI-Anlagetipps durchaus Potenzial, warnen aber auch vor Fehlern und Risiken. Von Angela Göpfert.",
-      "pubDate": "2026-10-31T08:45:19+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/ki-geldanlage-chatgpt-anlagetipps-risiken-100.html",
-      "bild": ""
-    },
-    {
-      "id": "bf1fcaf05cbed19b8105",
-      "title": "Die Linke in Berlin: Aus dem Trubel in die Koalition?",
-      "description": "Die Berliner Linke entscheidet heute über den Start von Koalitionsverhandlungen mit SPD und Grünen. Überschattet wird der Parteitag von Antisemitismusvorwürfen und einem Spiegel-Bericht. Von Frank Aischmann.",
-      "pubDate": "2026-10-31T08:43:12+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/linke-berlin-parteitag-eralp-100.html",
-      "bild": ""
-    },
-    {
-      "id": "906424f92670c17417fe",
-      "title": "Einigung bei der UN-Biodiversitätskonferenz erzielt",
-      "description": "Wie kann die Artenvielfalt geschützt werden? Darüber wurde bei der UN-Biodiversitätskonferenz intensiv verhandelt. Am Ende gab es in Armenien eine Einigung - wenn auch keine besonders ambitionierte.",
-      "pubDate": "2026-10-31T08:09:41+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/biodiversitaet-cop-armenien-100.html",
-      "bild": ""
-    },
-    {
-      "id": "85574a506e3560fc75a4",
-      "title": "Jugendproteste in mehr als 30 Städten geplant",
-      "description": "Wachsende Unzufriedenheit und Zukunftsängste: Die GenZ protestiert bundesweit für bessere Bildung, Klimaschutz und mehr politische Teilhabe. In mehr als 30 Städten sind Demonstrationen angekündigt. Von Jan Koch.",
-      "pubDate": "2026-10-31T05:52:31+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/gen-z-proteste-112.html",
-      "bild": ""
-    },
-    {
-      "id": "383d3bd753e2cd0e71e8",
-      "title": "Frust bei US-Farmern könnte Trump Stimmen bei den Midterms kosten",
-      "description": "Landwirte gelten als wichtige Wählergruppe der US-Republikaner. Doch steigende Kosten und eine unberechenbare Zollpolitik sorgen für Frust. Das könnte bei den Zwischenwahlen zum Stresstest für die Trump-Regierung werden. Von S. Jackisch.",
-      "pubDate": "2026-10-31T05:52:21+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/usa-midterms-landwirtschaft-100.html",
-      "bild": ""
-    },
-    {
-      "id": "1f59d9fb749a531a2a9d",
-      "title": "G20-Außenministertreffen in Atlanta: Russland bleibt auf Distanz",
-      "description": "In Atlanta beraten die G20-Außenminister über internationale Krisen und die Folgen für die Weltwirtschaft. Doch die Gräben zwischen den Teilnehmenden sind tief. Vor allem Russlands Außenminister Lawrow sparte nicht mit Kritik.",
-      "pubDate": "2026-10-31T04:05:42+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/g20-aussenminister-102.html",
-      "bild": ""
-    },
-    {
-      "id": "3483a7d30d6dfa42c649",
-      "title": "Polen: Tumult und Protest vor dem Verfassungsgericht",
-      "description": "Der Machtkampf um das polnische Verfassungsgericht spitzt sich zu. Die Polizei sicherte das Gebäude ab, nachdem sich Protestierende dort versammelt hatten. Auslöser ist die mutmaßliche Suspendierung der bisherigen Gerichtsführung.",
-      "pubDate": "2026-10-31T09:25:36+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/polen-verfassungsgericht-streit-100.html",
-      "bild": ""
-    },
-    {
-      "id": "9f57f9d64f83db69fed7",
-      "title": "US-Regierung genehmigt \"Patriot\"-Lieferungen an Ukraine",
-      "description": "Um sich gegen russische Angriffe zur Wehr zu setzen, ist die Ukraine vor allem auf US-Waffenlieferungen angewiesen. Diese kamen zuletzt ins Stocken. Bei einer Lieferung hat das US-Außenministerium nun grünes Licht gegeben.",
-      "pubDate": "2026-10-31T00:56:24+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/usa-ukraine-patriot-100.html",
-      "bild": ""
-    },
-    {
-      "id": "3a69ca9c6a73550b2227",
-      "title": "Binance will alle Verluste nach Hackerangriff ersetzen",
-      "description": "Nach einem Hackerangriff mit einem Schaden von 6,3 Milliarden Dollar will Binance alle Verluste ersetzen. Der Fall zeigt, wie verwundbar Kryptowerte sind, und wirft Fragen zur Sicherheit digitaler Anlagen auf.",
-      "pubDate": "2026-10-30T21:21:33+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/technologie/usa-binance-hackerangriff-verluste-100.html",
-      "bild": ""
-    },
-    {
-      "id": "b42bff20453a52b84b0d",
-      "title": "\"Allianz für die Zukunft\": Kanada und Europa gründen Bündnis",
-      "description": "Die EU und Kanada gründen in Montreal eine \"Allianz für die Zukunft\". Ziel ist mehr Unabhängigkeit und eine engere Zusammenarbeit von KI bis Raumfahrt. Auch die Ukraine spielt eine Rolle.",
-      "pubDate": "2026-10-31T04:57:32+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/kanada-eu-allianz-zukunft-100.html",
       "bild": ""
     }
   ],
