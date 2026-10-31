@@ -1,10 +1,42 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "30.10.2026, 23:59 Uhr (UTC)",
+  "aktualisiert": "31.10.2026, 05:25 Uhr (UTC)",
   "meldungen": [
     {
+      "id": "85574a506e3560fc75a4",
+      "title": "Jugendproteste in mehr als 30 Städten geplant",
+      "description": "Wachsende Unzufriedenheit und Zukunftsängste: Die GenZ protestiert bundesweit für bessere Bildung, Klimaschutz und mehr politische Teilhabe. In mehr als 30 Städten sind Demonstrationen angekündigt. Von Jan Koch.",
+      "pubDate": "2026-10-31T05:52:31+01:00",
+      "link": "https://www.tagesschau.de/inland/gesellschaft/gen-z-proteste-112.html",
+      "bild": ""
+    },
+    {
+      "id": "383d3bd753e2cd0e71e8",
+      "title": "Frust bei US-Farmern könnte Trump Stimmen bei den Midterms kosten",
+      "description": "Landwirte gelten als wichtige Wählergruppe der US-Republikaner. Doch steigende Kosten und eine unberechenbare Zollpolitik sorgen für Frust. Das könnte bei den Zwischenwahlen zum Stresstest für die Trump-Regierung werden. Von S. Jackisch.",
+      "pubDate": "2026-10-31T05:52:21+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/usa-midterms-landwirtschaft-100.html",
+      "bild": ""
+    },
+    {
+      "id": "1f59d9fb749a531a2a9d",
+      "title": "G20-Außenministertreffen in Atlanta: Russland bleibt auf Distanz",
+      "description": "In Atlanta beraten die G20-Außenminister über internationale Krisen und die Folgen für die Weltwirtschaft. Doch die Gräben zwischen den Teilnehmenden sind tief. Vor allem Russlands Außenminister Lawrow sparte nicht mit Kritik.",
+      "pubDate": "2026-10-31T04:05:42+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/g20-aussenminister-102.html",
+      "bild": ""
+    },
+    {
+      "id": "3483a7d30d6dfa42c649",
+      "title": "Polen: Tumult und Protest vor dem Verfassungsgericht",
+      "description": "Der Machtkampf um das polnische Verfassungsgericht spitzt sich zu. Die Polizei umstellte das Gebäude, nachdem sich Protestierende dort versammelt hatten. Auslöser ist die mutmaßliche Suspendierung der bisherigen Gerichtsführung.",
+      "pubDate": "2026-10-31T04:42:57+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/polen-verfassungsgericht-streit-100.html",
+      "bild": ""
+    },
+    {
       "id": "9f57f9d64f83db69fed7",
-      "title": "US-Regierung genehmigt Patriot-Lieferungen an Ukraine",
+      "title": "US-Regierung genehmigt \"Patriot\"-Lieferungen an Ukraine",
       "description": "Um sich gegen russische Angriffe zur Wehr zu setzen, ist die Ukraine vor allem auf US-Waffenlieferungen angewiesen. Diese kamen zuletzt ins Stocken. Bei einer Lieferung hat das US-Außenministerium nun grünes Licht gegeben.",
       "pubDate": "2026-10-31T00:56:24+01:00",
       "link": "https://www.tagesschau.de/ausland/amerika/usa-ukraine-patriot-100.html",
@@ -22,7 +54,7 @@
       "id": "b42bff20453a52b84b0d",
       "title": "\"Allianz für die Zukunft\": Kanada und Europa gründen Bündnis",
       "description": "Die EU und Kanada gründen in Montreal eine \"Allianz für die Zukunft\". Ziel ist mehr Unabhängigkeit und eine engere Zusammenarbeit von KI bis Raumfahrt. Auch die Ukraine spielt eine Rolle.",
-      "pubDate": "2026-10-30T19:59:17+01:00",
+      "pubDate": "2026-10-31T04:57:32+01:00",
       "link": "https://www.tagesschau.de/ausland/amerika/kanada-eu-allianz-zukunft-100.html",
       "bild": ""
     },
@@ -88,38 +120,6 @@
       "description": "Als erste Frau seit 200 Jahren sollte Christa Pike in Tennessee hingerichtet werden. Doch sie überlebte die Gabe eines eigentlich tödlichen Medikaments. In einer ersten Stellungnahme berichtet sie von ständigen Schmerzen.",
       "pubDate": "2026-10-30T16:46:27+01:00",
       "link": "https://www.tagesschau.de/ausland/amerika/pike-aeussert-sich-erstmals-nach-gescheiterter-hinrichtung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "85b558f25b6fbd63a9de",
-      "title": "Gen-Z-Protest: Polizei will Anreise von Gewalttätern stoppen",
-      "description": "Vor den \"Gen Z regelt\"-Demonstrationen am Samstag wollen die Behörden gewaltbereite Personen schon an der Grenze stoppen. Die Initiatoren machen der Bundesregierung schwere Vorwürfe und bekommen prominente Unterstützung für ihren Protest.",
-      "pubDate": "2026-10-30T16:58:19+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/genz-proteste-polizei-gewalttaeter-100.html",
-      "bild": ""
-    },
-    {
-      "id": "4b2003740cf5ebe7288c",
-      "title": "Vorschlag für mehr Pünktlichkeit der Bahn: Weniger Züge auf der Strecke",
-      "description": "Die Bahn will pünktlicher werden. Deshalb soll eine neue Expertenkommission jetzt Vorschläge für schnelle Verbesserungen liefern. Eine Idee: Weniger Züge auf den überlasteten Strecken. Doch aus der Branche kommt Kritik.",
-      "pubDate": "2026-10-30T15:59:25+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/bahn-puenktlichkeit-expertenkommission-100.html",
-      "bild": ""
-    },
-    {
-      "id": "25f7c6d493749c2d0f7a",
-      "title": "Wahl-Patt in Israel: Regierungsbildung nicht in Sicht",
-      "description": "Das Endergebnis der Wahl in Israel bringt für keinen Parteienblock eine regierungsfähige Mehrheit. Jetzt könnten die arabischen Parteien zum Zuge kommen. Doch aus dem Netanjahu-Lager kommen neue Vorwürfe. Konkurrent Eisenkot reagiert. Von Tim Aßmann.",
-      "pubDate": "2026-10-30T15:28:05+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/israel-wahlergebnis-korri-100.html",
-      "bild": ""
-    },
-    {
-      "id": "b7bd6a5570c606ae896f",
-      "title": "Inflationsrate geht im Oktober auf 2,8 Prozent zurück",
-      "description": "Die hohe Inflation in Deutschland ‌hat sich im Oktober spürbar abgeschwächt. Dafür sorgen vor allem die fallenden Preise an den Zapfsäulen. Doch Ökonomen geben noch keine Entwarnung.",
-      "pubDate": "2026-10-30T15:08:37+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/inflationsrate-deutschland-oktober-100.html",
       "bild": ""
     }
   ],
