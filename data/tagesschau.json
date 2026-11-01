@@ -1,7 +1,39 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "01.11.2026, 18:29 Uhr (UTC)",
+  "aktualisiert": "01.11.2026, 22:20 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "f8de974f010c973fbc00",
+      "title": "Bulgariens amtierende Präsidentin Jotowa liegt bei Stichwahl vorn",
+      "description": "Sie sieht sich als \"Präsidentin des Friedens\": Bulgariens Amtsinhaberin Jotowa liegt laut Prognosen bei der Stichwahl vorn. Die russlandfreundliche Politikerin setzte sich gegen Herausforderer Gjurow durch.",
+      "pubDate": "2026-11-01T21:37:14+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/stichwahl-bulgarien-102.html",
+      "bild": ""
+    },
+    {
+      "id": "c731a900e972c61eba68",
+      "title": "Wildberger bestätigt ARD-Bericht zu Hackerangriff",
+      "description": "Nach Informationen der ARD hat es möglicherweise einen Hackerangriff auf Bundestagsabgeordnete und Mitglieder der Bundesregierung gegeben. Im Bericht aus Berlin bestätigte Digitalminister Wildberger den Einsatz von Spyware. Details nannte er nicht.",
+      "pubDate": "2026-11-01T20:59:02+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/wildberger-hackerangriff-bundestagsabgeordnete-100.html",
+      "bild": ""
+    },
+    {
+      "id": "22cb9af3336ad2a8c4ad",
+      "title": "NASA-Experiment: Mars-Simulation nach einem Jahr beendet",
+      "description": "Vier Menschen haben in den USA gemeinsam ein Jahr auf 160 Quadratmetern verbracht - für die Wissenschaft. Nun ist das NASA-Experiment vorbei. Ziel der langen Zeit in Isolation war die Simulation des Lebens auf dem Mars.",
+      "pubDate": "2026-11-01T20:42:19+01:00",
+      "link": "https://www.tagesschau.de/ausland/nasa-mars-108.html",
+      "bild": ""
+    },
+    {
+      "id": "f66f3a1f3d47650c56a6",
+      "title": "Ausschreitungen nach Protesten: Unterwanderung oder spontane Eskalation?",
+      "description": "Verletzte und geplünderte Geschäfte - die Ausschreitungen nach den Protesten der Gen Z lösen Entsetzen aus. In Köln und Frankfurt wurden die Demos nach Einschätzung der Polizei unterwandert. Innenminister Dobrindt kündigte ein hartes Vorgehen an.",
+      "pubDate": "2026-11-01T21:27:02+01:00",
+      "link": "https://www.tagesschau.de/inland/gesellschaft/jugendproteste-ausschreitungen-100.html",
+      "bild": ""
+    },
     {
       "id": "a89bdfaea3ebad610292",
       "title": "FAQ: Was die neue Gebühr auf Sendungen aus Nicht-EU-Ländern bedeutet",
@@ -88,38 +120,6 @@
       "description": "In vielen europäischen Ländern gehen momentan junge Menschen auf die Straße - auch in Portugal. Dort richten sich die Demonstrationen vor allem gegen die Wohnungsnot. Die Polizei ging hart gegen ein Protestcamp in Lissabon vor.",
       "pubDate": "2026-11-01T10:46:44+01:00",
       "link": "https://www.tagesschau.de/ausland/portugal-protest-100.html",
-      "bild": ""
-    },
-    {
-      "id": "a45bae7dfc57c31e3168",
-      "title": "Ukraine: Zehn Tage gegen den Krieg im Kopf",
-      "description": "In den ukrainischen Karpaten versuchen Soldatinnen und Soldaten, für ein paar Tage Abstand vom Krieg zu gewinnen. Doch die Erinnerungen lassen sich nicht einfach abschütteln. Von Susanne Petersohn.",
-      "pubDate": "2026-11-01T09:43:57+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/ukraine-erholung-soldaten-100.html",
-      "bild": ""
-    },
-    {
-      "id": "751a00a41befe38a6a86",
-      "title": "Microcars boomen - aber wie sicher sind sie?",
-      "description": "Sie sehen aus wie Kleinwagen, sind aber keine: Microcars sind maximal 45 km/h schnell und dürfen in Deutschland schon ab 15 Jahren gefahren werden. Wie sicher sind die beliebten Mini-Autos? Von Hermann Scholz.",
-      "pubDate": "2026-11-01T09:41:59+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/microcars-sicherheit-100.html",
-      "bild": ""
-    },
-    {
-      "id": "d815ffad723ef8d8b39d",
-      "title": "Steinmeier zu KI: \"Nicht das Ob steht zur Frage, sondern das Wie\"",
-      "description": "Zum Abschluss seiner China-Reise hat Bundespräsident Steinmeier vor den Risiken von KI für die Demokratie gewarnt. Über Fortschritte im Handelskonflikt zwischen Europa und China äußerte er sich im Bericht aus Berlin vorsichtig optimistisch. Von D. Hebestreit und M. Deiß.",
-      "pubDate": "2026-11-01T09:01:11+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/steinmeier-ki-100.html",
-      "bild": ""
-    },
-    {
-      "id": "636b0797c468a4c2ce23",
-      "title": "Wie KI Entwicklung und Alltag verändert - kreativ auf Knopfdruck?",
-      "description": "Ob bei der Entwicklung neuer Produkte, in der Werbung oder bei der Gestaltung des eigenen Zuhauses: KI ist im Alltag angekommen. Sie spart oft Zeit, wirft aber auch Fragen nach Kreativität, Arbeitsplätzen und Vertrauen auf. Von Anke Heinhaus.",
-      "pubDate": "2026-11-01T09:00:49+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/technologie/ki-veraenderung-wirtschaft-alltag-100.html",
       "bild": ""
     }
   ],
