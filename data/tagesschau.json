@@ -1,12 +1,68 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "01.11.2026, 13:04 Uhr (UTC)",
+  "aktualisiert": "01.11.2026, 18:29 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "a89bdfaea3ebad610292",
+      "title": "FAQ: Was die neue Gebühr auf Sendungen aus Nicht-EU-Ländern bedeutet",
+      "description": "Jährlich erreichen mehrere Milliarden Kleinpakete die EU. Um diese Flut einzudämmen, wird jetzt eine Gebühr von mindestens zwei Euro pro Sendung fällig. Warum wird die Paketgebühr eingeführt? Werden Produkte jetzt teurer?",
+      "pubDate": "2026-11-01T17:43:44+01:00",
+      "link": "https://www.tagesschau.de/inland/neue-paketgebuehr-faq-100.html",
+      "bild": ""
+    },
+    {
+      "id": "11c6d9531e8b9ae9efdd",
+      "title": "Iran-Krieg: Golfstaaten bereiten sich auf neue Eskalation vor",
+      "description": "Die Sorge vor einer erneuten Eskalation im Iran-Krieg wächst - vor allem in den Golfstaaten. Eine Folge: Aufrüstung. Auf einer Konferenz beraten Politiker aus der Region mit Experten. Auch Deutschland ist vertreten. Von M. Behrendt.",
+      "pubDate": "2026-11-01T17:24:24+01:00",
+      "link": "https://www.tagesschau.de/ausland/golfstaaten-midterms-usa-100.html",
+      "bild": ""
+    },
+    {
+      "id": "9dca8aea2fa00c87faed",
+      "title": "Polizei zieht Bilanz zu Krawallen in Frankfurt",
+      "description": "54 Festnahmen, zahlreiche Verletzte und fünf geplünderte Geschäfte: Nach den Krawallen in Frankfurt am Main hat die Polizei eine erste Bilanz gezogen. Bei einem überwiegenden Teil der Randalierer sei kein politisches Motiv erkennbar.",
+      "pubDate": "2026-11-01T15:34:28+01:00",
+      "link": "https://www.tagesschau.de/inland/regional/hessen/krawalle-frankfurt-polizei-bilanz-100.html",
+      "bild": ""
+    },
+    {
+      "id": "056896f1607da4c67861",
+      "title": "Warum sich junge Paare gegen Kinder entscheiden",
+      "description": "In Deutschland gibt es so wenige Geburten wie seit 1946 nicht mehr. Doch junge Paare haben ihre Gründe, sich gegen Kinder zu entscheiden. Welche das sind - und was die sinkenden Zahlen für Auswirkungen haben. Von Alexandra Reese.",
+      "pubDate": "2026-11-01T15:51:00+01:00",
+      "link": "https://www.tagesschau.de/inland/gesellschaft/kinderlos-elternschaft-millennials-100.html",
+      "bild": ""
+    },
+    {
+      "id": "79ee71fb44d66b895bce",
+      "title": "Streit über Verfassungsgericht: Unterstützung für Tusk aus Brüssel",
+      "description": "In Polen stehen sich die Regierung von Tusk und das rechtskonservative Lager um Staatspräsident Nawrocki scheinbar unversöhnlich gegenüber. Nun schaltet sich die EU-Kommission in den Streit über das Verfassungsgericht ein.",
+      "pubDate": "2026-11-01T15:25:24+01:00",
+      "link": "https://www.tagesschau.de/ausland/polen-verfassungsgericht-eu-kommission-102.html",
+      "bild": ""
+    },
+    {
+      "id": "9afcc1e06ecd7d3e6843",
+      "title": "Wahlkampf der US-Demokraten: Links, rechts - oder am besten in der Mitte?",
+      "description": "Gemeinsam gegen Trump: Darin sind sich die Demokraten in den USA einig. Aber darüber hinaus? Im Wahlkampf in Colorado zeigt sich die ganze Bandbreite an politischen Ideen der Partei. Isabel Schayani hat drei Kandidierende begleitet.",
+      "pubDate": "2026-11-01T15:25:00+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/usa-midterms-colorado-100.html",
+      "bild": ""
+    },
+    {
+      "id": "ace66abac7feca0daab2",
+      "title": "Nach mehr als 500 Produktionen: Filmproduzentin Regina Ziegler gestorben",
+      "description": "Die erfolgreiche Film- und Fernsehproduzentin Regina Ziegler ist im Alter von 82 Jahren gestorben. Mit mehr als 500 Filmen und zahlreichen Auszeichnungen gehörte sie zu den einflussreichsten Frauen der Branche.",
+      "pubDate": "2026-11-01T15:12:27+01:00",
+      "link": "https://www.tagesschau.de/kultur/ziegler-regina-gestorben-100.html",
+      "bild": ""
+    },
     {
       "id": "8f1902557f9f7c81890d",
       "title": "FAQ: Wie lief der \"Gen Z regelt\"-Protest? Wie geht es weiter?",
       "description": "Mehr als 180.000 Menschen hatten sich zum bundesweiten \"Gen Z regelt\"-Protesttag angemeldet. Es kamen deutlich weniger. Woran könnte es gelegen haben? Wie reagiert die Politik und welche neuen Aktionen sind geplant?",
-      "pubDate": "2026-11-01T12:59:09+01:00",
+      "pubDate": "2026-11-01T15:46:12+01:00",
       "link": "https://www.tagesschau.de/inland/gesellschaft/demonstration-protest-genz-100.html",
       "bild": ""
     },
@@ -53,7 +109,7 @@
     {
       "id": "d815ffad723ef8d8b39d",
       "title": "Steinmeier zu KI: \"Nicht das Ob steht zur Frage, sondern das Wie\"",
-      "description": "Zum Abschluss seiner China-Reise hat Bundespräsident Steinmeier vor den Risiken Künstlicher Intelligenz für die Demokratie gewarnt. Über Fortschritte im Handelskonflikt zwischen Europa und China äußerte er sich vorsichtig optimistisch. Von D. Hebestreit und M. Deiß.",
+      "description": "Zum Abschluss seiner China-Reise hat Bundespräsident Steinmeier vor den Risiken von KI für die Demokratie gewarnt. Über Fortschritte im Handelskonflikt zwischen Europa und China äußerte er sich im Bericht aus Berlin vorsichtig optimistisch. Von D. Hebestreit und M. Deiß.",
       "pubDate": "2026-11-01T09:01:11+01:00",
       "link": "https://www.tagesschau.de/inland/innenpolitik/steinmeier-ki-100.html",
       "bild": ""
@@ -64,62 +120,6 @@
       "description": "Ob bei der Entwicklung neuer Produkte, in der Werbung oder bei der Gestaltung des eigenen Zuhauses: KI ist im Alltag angekommen. Sie spart oft Zeit, wirft aber auch Fragen nach Kreativität, Arbeitsplätzen und Vertrauen auf. Von Anke Heinhaus.",
       "pubDate": "2026-11-01T09:00:49+01:00",
       "link": "https://www.tagesschau.de/wirtschaft/technologie/ki-veraenderung-wirtschaft-alltag-100.html",
-      "bild": ""
-    },
-    {
-      "id": "8cba03a906d75ad8ed4d",
-      "title": "Bunte \"Tag der Toten\"-Parade zieht durch Mexiko-Stadt",
-      "description": "Schaurige Skelette, elegante Catrinas: In Mexiko-Stadt hat zum zehnten Mal eine Parade zum \"Tag der Toten\" stattgefunden. Das farbenfrohe Schauspiel geht auf einen Bond-Film zurück, die Traditionen dahinter sind viel älter.",
-      "pubDate": "2026-11-01T08:57:56+01:00",
-      "link": "https://www.tagesschau.de/ausland/mexiko-feierlichkeiten-november-100.html",
-      "bild": ""
-    },
-    {
-      "id": "89bf732a9fa9e575f537",
-      "title": "Trump lädt Flávio Bolsonaro zum Bleiben ein",
-      "description": "Nach seiner Wahlniederlage setzte sich der brasilianische Präsidentschaftskandidat Flávio Bolsonaro in die USA ab. Dort darf er bleiben - \"so lange, wie er will\", sagte Präsident Trump. Treffen will er Bolsonaro vorerst nicht.",
-      "pubDate": "2026-11-01T08:45:02+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/trump-bolsonaro-usa-100.html",
-      "bild": ""
-    },
-    {
-      "id": "51787315059fda8533ad",
-      "title": "Polen: Tusk beklagt Angriff auf \"Demokratie und Rechtsstaat\"",
-      "description": "Polens Präsident drängt sich mit Körpereinsatz ins Verfassungsgericht und drückt eine Richterin nach unten. Nun äußert sich Regierungschef Tusk zu dem Vorfall. Der Opposition wirft er einen Angriff auf Demokratie und Rechtsstaat vor.",
-      "pubDate": "2026-11-01T05:26:15+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/polen-eskalation-verfassungsgericht-102.html",
-      "bild": ""
-    },
-    {
-      "id": "91ecc8d52b3a1959f051",
-      "title": "FBI macht Nordkorea für Hackerangriff auf Binance verantwortlich",
-      "description": "Laut Experten war es der bisher größte Hackerangriff auf eine Börse für Digitalwährungen. Am Donnerstag war er bekannt geworden - und schnell geriet Nordkorea ins Visier. Nun macht auch das FBI nordkoreanische Hacker dafür verantwortlich.",
-      "pubDate": "2026-11-01T11:08:00+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/hack-binance-100.html",
-      "bild": ""
-    },
-    {
-      "id": "91aad488a24ccd79ede7",
-      "title": "\"Gen Z regelt\" will Demos fortsetzen",
-      "description": "Das Fazit der Organisatoren der \"Gen Z regelt\"-Proteste fällt positiv aus - trotz der vereinzelten Gewalt. Man habe keinen Einfluss darauf, was nach Ende der Demos passiere, sagte ein Sprecher. Der Protest soll bald weitergehen.",
-      "pubDate": "2026-11-01T12:58:42+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/gen-z-demos-bilanz-100.html",
-      "bild": ""
-    },
-    {
-      "id": "8ebb9e9ae647fc6c1928",
-      "title": "Ausschreitungen am Abend nach friedlichen Protesten am Nachmittag",
-      "description": "Bei den Protesten am Tag ging es um bessere Bildung oder die Wehrpflicht, Zehntausende demonstrierten friedlich. Am Abend übernahmen in einigen Städten dann Krawallmacher und Extremisten. Sie hatten sich offenbar teils gezielt unter die Demos gemischt.",
-      "pubDate": "2026-11-01T08:47:42+01:00",
-      "link": "https://www.tagesschau.de/inland/ausschreitungen-frankfurt-koeln-100.html",
-      "bild": ""
-    },
-    {
-      "id": "8bd6168b4cd80cba1216",
-      "title": "Weitgehend friedlich - in einigen Städten Ausschreitungen",
-      "description": "Bessere Bildung, mehr Klimaschutz und bezahlbarer Wohnraum - dafür sind Zehntausende in vielen deutschen Städten auf die Straße gezogen. Die Proteste der \"Gen Z regelt\" blieben weitgehend friedlich. Doch am Abend kam es zu einigen Ausschreitungen.",
-      "pubDate": "2026-10-31T21:33:42+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/jugendproteste-102.html",
       "bild": ""
     }
   ],
