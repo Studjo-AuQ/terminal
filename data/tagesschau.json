@@ -1,7 +1,87 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "01.11.2026, 05:40 Uhr (UTC)",
+  "aktualisiert": "01.11.2026, 13:04 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "8f1902557f9f7c81890d",
+      "title": "FAQ: Wie lief der \"Gen Z regelt\"-Protest? Wie geht es weiter?",
+      "description": "Mehr als 180.000 Menschen hatten sich zum bundesweiten \"Gen Z regelt\"-Protesttag angemeldet. Es kamen deutlich weniger. Woran könnte es gelegen haben? Wie reagiert die Politik und welche neuen Aktionen sind geplant?",
+      "pubDate": "2026-11-01T12:59:09+01:00",
+      "link": "https://www.tagesschau.de/inland/gesellschaft/demonstration-protest-genz-100.html",
+      "bild": ""
+    },
+    {
+      "id": "0399a0d35bf3b3376f00",
+      "title": "Israel: Demos für Einbindung der arabischen Parteien",
+      "description": "Sie demonstrierten für Veränderung - und die Ablösung von Premier Netanjahu: In Israel haben Hunderte die Opposition dazu aufgerufen, die arabischen Parteien an der Regierungsbildung zu beteiligen.",
+      "pubDate": "2026-11-01T12:24:19+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/israel-demo-arabische-parteien-100.html",
+      "bild": ""
+    },
+    {
+      "id": "76d6d9a0e1d846e8cfa7",
+      "title": "Vor 40 Jahren: Als eine Chemiewolke über Basel zog",
+      "description": "Vor 40 Jahren brannte bei Basel eine Lagerhalle, in der große Mengen gefährlicher Chemikalien gelagert waren. Ein Giftwolke zog über die Stadt, verseuchtes Löschwasser floss in den Rhein. Was hat sich durch die Katastrophe verändert? Von S. Biegger.",
+      "pubDate": "2026-11-01T12:06:56+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/schweiz-40-jahre-chemieunfall-sandoz-100.html",
+      "bild": ""
+    },
+    {
+      "id": "984258812331d0c343d5",
+      "title": "Demos gegen Wohnungsnot in Portugal - Protestcamps geräumt",
+      "description": "In vielen europäischen Ländern gehen momentan junge Menschen auf die Straße - auch in Portugal. Dort richten sich die Demonstrationen vor allem gegen die Wohnungsnot. Die Polizei ging hart gegen ein Protestcamp in Lissabon vor.",
+      "pubDate": "2026-11-01T10:46:44+01:00",
+      "link": "https://www.tagesschau.de/ausland/portugal-protest-100.html",
+      "bild": ""
+    },
+    {
+      "id": "a45bae7dfc57c31e3168",
+      "title": "Ukraine: Zehn Tage gegen den Krieg im Kopf",
+      "description": "In den ukrainischen Karpaten versuchen Soldatinnen und Soldaten, für ein paar Tage Abstand vom Krieg zu gewinnen. Doch die Erinnerungen lassen sich nicht einfach abschütteln. Von Susanne Petersohn.",
+      "pubDate": "2026-11-01T09:43:57+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/ukraine-erholung-soldaten-100.html",
+      "bild": ""
+    },
+    {
+      "id": "751a00a41befe38a6a86",
+      "title": "Microcars boomen - aber wie sicher sind sie?",
+      "description": "Sie sehen aus wie Kleinwagen, sind aber keine: Microcars sind maximal 45 km/h schnell und dürfen in Deutschland schon ab 15 Jahren gefahren werden. Wie sicher sind die beliebten Mini-Autos? Von Hermann Scholz.",
+      "pubDate": "2026-11-01T09:41:59+01:00",
+      "link": "https://www.tagesschau.de/inland/gesellschaft/microcars-sicherheit-100.html",
+      "bild": ""
+    },
+    {
+      "id": "d815ffad723ef8d8b39d",
+      "title": "Steinmeier zu KI: \"Nicht das Ob steht zur Frage, sondern das Wie\"",
+      "description": "Zum Abschluss seiner China-Reise hat Bundespräsident Steinmeier vor den Risiken Künstlicher Intelligenz für die Demokratie gewarnt. Über Fortschritte im Handelskonflikt zwischen Europa und China äußerte er sich vorsichtig optimistisch. Von D. Hebestreit und M. Deiß.",
+      "pubDate": "2026-11-01T09:01:11+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/steinmeier-ki-100.html",
+      "bild": ""
+    },
+    {
+      "id": "636b0797c468a4c2ce23",
+      "title": "Wie KI Entwicklung und Alltag verändert - kreativ auf Knopfdruck?",
+      "description": "Ob bei der Entwicklung neuer Produkte, in der Werbung oder bei der Gestaltung des eigenen Zuhauses: KI ist im Alltag angekommen. Sie spart oft Zeit, wirft aber auch Fragen nach Kreativität, Arbeitsplätzen und Vertrauen auf. Von Anke Heinhaus.",
+      "pubDate": "2026-11-01T09:00:49+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/technologie/ki-veraenderung-wirtschaft-alltag-100.html",
+      "bild": ""
+    },
+    {
+      "id": "8cba03a906d75ad8ed4d",
+      "title": "Bunte \"Tag der Toten\"-Parade zieht durch Mexiko-Stadt",
+      "description": "Schaurige Skelette, elegante Catrinas: In Mexiko-Stadt hat zum zehnten Mal eine Parade zum \"Tag der Toten\" stattgefunden. Das farbenfrohe Schauspiel geht auf einen Bond-Film zurück, die Traditionen dahinter sind viel älter.",
+      "pubDate": "2026-11-01T08:57:56+01:00",
+      "link": "https://www.tagesschau.de/ausland/mexiko-feierlichkeiten-november-100.html",
+      "bild": ""
+    },
+    {
+      "id": "89bf732a9fa9e575f537",
+      "title": "Trump lädt Flávio Bolsonaro zum Bleiben ein",
+      "description": "Nach seiner Wahlniederlage setzte sich der brasilianische Präsidentschaftskandidat Flávio Bolsonaro in die USA ab. Dort darf er bleiben - \"so lange, wie er will\", sagte Präsident Trump. Treffen will er Bolsonaro vorerst nicht.",
+      "pubDate": "2026-11-01T08:45:02+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/trump-bolsonaro-usa-100.html",
+      "bild": ""
+    },
     {
       "id": "51787315059fda8533ad",
       "title": "Polen: Tusk beklagt Angriff auf \"Demokratie und Rechtsstaat\"",
@@ -14,15 +94,15 @@
       "id": "91ecc8d52b3a1959f051",
       "title": "FBI macht Nordkorea für Hackerangriff auf Binance verantwortlich",
       "description": "Laut Experten war es der bisher größte Hackerangriff auf eine Börse für Digitalwährungen. Am Donnerstag war er bekannt geworden - und schnell geriet Nordkorea ins Visier. Nun macht auch das FBI nordkoreanische Hacker dafür verantwortlich.",
-      "pubDate": "2026-11-01T03:06:07+01:00",
+      "pubDate": "2026-11-01T11:08:00+01:00",
       "link": "https://www.tagesschau.de/ausland/asien/hack-binance-100.html",
       "bild": ""
     },
     {
       "id": "91aad488a24ccd79ede7",
-      "title": "\"Gen Z regelt\" will am 20. November wieder demonstrieren",
-      "description": "Man habe keinen Einfluss darauf, was nach Ende der Demos passiere, sagte ein \"Gen Z\"-Sprecher. Von Gewalt hatte sich die Initiative stets distanziert. Ihr Fazit der Jugendproteste fällt positiv aus. Am 20. November will sie erneut demonstrieren.",
-      "pubDate": "2026-11-01T02:44:46+01:00",
+      "title": "\"Gen Z regelt\" will Demos fortsetzen",
+      "description": "Das Fazit der Organisatoren der \"Gen Z regelt\"-Proteste fällt positiv aus - trotz der vereinzelten Gewalt. Man habe keinen Einfluss darauf, was nach Ende der Demos passiere, sagte ein Sprecher. Der Protest soll bald weitergehen.",
+      "pubDate": "2026-11-01T12:58:42+01:00",
       "link": "https://www.tagesschau.de/inland/gesellschaft/gen-z-demos-bilanz-100.html",
       "bild": ""
     },
@@ -30,7 +110,7 @@
       "id": "8ebb9e9ae647fc6c1928",
       "title": "Ausschreitungen am Abend nach friedlichen Protesten am Nachmittag",
       "description": "Bei den Protesten am Tag ging es um bessere Bildung oder die Wehrpflicht, Zehntausende demonstrierten friedlich. Am Abend übernahmen in einigen Städten dann Krawallmacher und Extremisten. Sie hatten sich offenbar teils gezielt unter die Demos gemischt.",
-      "pubDate": "2026-11-01T05:42:41+01:00",
+      "pubDate": "2026-11-01T08:47:42+01:00",
       "link": "https://www.tagesschau.de/inland/ausschreitungen-frankfurt-koeln-100.html",
       "bild": ""
     },
@@ -40,86 +120,6 @@
       "description": "Bessere Bildung, mehr Klimaschutz und bezahlbarer Wohnraum - dafür sind Zehntausende in vielen deutschen Städten auf die Straße gezogen. Die Proteste der \"Gen Z regelt\" blieben weitgehend friedlich. Doch am Abend kam es zu einigen Ausschreitungen.",
       "pubDate": "2026-10-31T21:33:42+01:00",
       "link": "https://www.tagesschau.de/inland/gesellschaft/jugendproteste-102.html",
-      "bild": ""
-    },
-    {
-      "id": "b6fcace43d0880d25951",
-      "title": "Erneut Proteste und Zusammenstöße in Frankreich",
-      "description": "Am dritten Samstag in Folge haben in Frankreich Hunderttausende Menschen protestiert - erst friedlich, doch am Ende kam es wieder zu Zusammenstößen mit der Polizei. Die bleibt auch nach Ende der Protestzüge in Alarmbereitschaft. Von J. Borutta.",
-      "pubDate": "2026-10-31T23:32:55+01:00",
-      "link": "https://www.tagesschau.de/ausland/frankreich-proteste-242.html",
-      "bild": ""
-    },
-    {
-      "id": "9dc2c6224b68ea098572",
-      "title": "Midterms in den USA: Kippt ausgerechnet Texas?",
-      "description": "In Texas könnte bei den Zwischenwahlen am Dienstag ein Demokrat das Rennen um den Sitz im US-Senat für sich entscheiden. Dabei gewinnen in dem Bundesstaat seit Jahrzehnten verlässlich die Republikaner. Welche Themen beschäftigen die Wähler? Von S. Schmidt.",
-      "pubDate": "2026-10-31T19:05:02+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/usa-midterms-wahlkampf-texas-100.html",
-      "bild": ""
-    },
-    {
-      "id": "2d3657af16c740aac941",
-      "title": "Treffen in Atlanta: G20-Außenminister finden keine gemeinsame Sprache",
-      "description": "Zwei Tage lang haben die G20-Außenminister in Atlanta über internationale Krisen beraten. Es ging dabei vor allem um die Folgen für die Weltwirtschaft. Überlagert wurde das Treffen von Spannungen - vor allem mit Russland. Von M. Sambale.",
-      "pubDate": "2026-10-31T17:54:43+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/g20-aussenminister-abschluss-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c34a3e385ed6c85c27ab",
-      "title": "Was Salz aus 1.000 Metern Tiefe so wertvoll macht",
-      "description": "Ein Bergbaukonzern aus Hessen kontrolliert rund 30 Prozent des Weltmarktes für hochreine Pharmasalze. Was dort abgebaut wird, ist für viele Menschen überlebenswichtig. Von Christof Dörr.",
-      "pubDate": "2026-10-31T17:21:31+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/technologie/salz-142.html",
-      "bild": ""
-    },
-    {
-      "id": "587c28f0d73258fcbe83",
-      "title": "Berliner Linke stimmt für Aufnahme von Koalitionsverhandlungen mit Grünen und SPD",
-      "description": "Sechs Wochen nach der Wahl in Berlin ist der Weg frei für rot-grün-rote Koalitionsverhandlungen: Nach Grünen und SPD stimmte nun auch der Parteitag der Linken dafür. Am Montag sollen die Gespräche beginnen.",
-      "pubDate": "2026-10-31T19:00:40+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/linke-parteitag-koalitionsverhandlungen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "5f45dc24f59eeaf366b1",
-      "title": "Aus für UN-Friedensmission in der Westsahara nach Veto im UN-Sicherheitsrat",
-      "description": "Nach mehr als 30 Jahren kommt nun das Aus für die UN-Friedensmission MINURSO: Russland hat die Verlängerung im UN-Sicherheitsrat blockiert. Damit müssen zivile und militärische Kräfte das Gebiet in den kommenden Tagen verlassen - auch deutsche Soldaten.",
-      "pubDate": "2026-10-31T17:12:40+01:00",
-      "link": "https://www.tagesschau.de/ausland/afrika/westsahara-un-mission-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f8f5798af14000e90f03",
-      "title": "\"GenZ\"-Proteste: Tausende demonstrieren für soziale Gerechtigkeit",
-      "description": "Am Nachmittag haben die angekündigten Proteste der \"GenZ\" begonnen. In Hamburg und Köln ging die Polizei unter anderem wegen des Einsatzes von Pyrotechnik gegen Demonstrierende vor. Die befürchteten großen Ausschreitungen blieben bislang aus.",
-      "pubDate": "2026-10-31T17:54:21+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/gen-z-proteste-114.html",
-      "bild": ""
-    },
-    {
-      "id": "8d6b812e532c29915efc",
-      "title": "Bewohner Oleschkys auf ukrainisch kontrolliertem Gebiet angekommen",
-      "description": "Nach der Evakuierung der von Russland besetzten Stadt Oleschky sind gerettete Bewohner in ukrainisch kontrolliertem Gebiet angekommen. Zuvor waren sie mit Militärflugzeugen nach Belarus gebracht worden.",
-      "pubDate": "2026-10-31T16:06:39+01:00",
-      "link": "https://www.tagesschau.de/ausland/oleschky-ukraine-100.html",
-      "bild": ""
-    },
-    {
-      "id": "91c2de1f9a70d659b1b5",
-      "title": "Der Kampf um das polnische Verfassungsgericht eskaliert",
-      "description": "Nach der Absetzung der bisherigen Gerichtsspitze eskaliert der Streit über Polens Verfassungsgericht: Regierung und Opposition werfen sich gegenseitig vor, die Justiz zu gefährden. Vor dem Gebäude gab es erneut Proteste.",
-      "pubDate": "2026-10-31T21:11:14+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/polen-eskalation-verfassungsgericht-100.html",
-      "bild": ""
-    },
-    {
-      "id": "3c6f69160ea0c3382ff9",
-      "title": "Das System Vucic in Serbien: Besiegt, aber nicht verschwunden",
-      "description": "Auch rund eine Woche nach ihrem Wahlsieg in Serbien staunt die Studentenbewegung noch über ihren Erfolg. Ihre Mitglieder merken aber im Alltag: Das System von Ex-Präsident Vucic verschwindet nicht über Nacht. Von A. Bachmann und I. Bafas.",
-      "pubDate": "2026-10-31T13:08:42+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/serbien-studenten-nach-wahlsieg-100.html",
       "bild": ""
     }
   ],
