@@ -1,7 +1,23 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "01.11.2026, 22:20 Uhr (UTC)",
+  "aktualisiert": "02.11.2026, 01:43 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "c8e2b296ebe0c2fc4403",
+      "title": "Ukraine: Feuerpause in Oleschky ausgelaufen",
+      "description": "Die Feuerpause in Oleschky ist vorbei. Vor ihrem Ende nutzte das ukrainische Militär noch die Gelegenheit, weitere Menschen aus der Region in Sicherheit zu bringen. Unterdessen melden Ukraine und Russland Cyberattacken auf ihre Warn-Apps.",
+      "pubDate": "2026-11-02T02:09:27+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/ukraine-waffenruhe-cherson-100.html",
+      "bild": ""
+    },
+    {
+      "id": "42fd6046239385e58e8b",
+      "title": "100 Tage im Amt: Spürbar anders - Ukraines Armee unter Chef Drapatyj",
+      "description": "Seit 100 Tagen ist der neue ukrainische Armeechef Drapatyj im Amt. Er verändert Führungsstrukturen und setzt auf mehr Eigenverantwortung an der Front. Auch kremlkritische russische Analysten bemerken eine Veränderung. Von Florian Kellermann.",
+      "pubDate": "2026-11-02T00:50:04+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/ukraine-kommandeur-100.html",
+      "bild": ""
+    },
     {
       "id": "f8de974f010c973fbc00",
       "title": "Bulgariens amtierende Präsidentin Jotowa liegt bei Stichwahl vorn",
@@ -104,22 +120,6 @@
       "description": "Sie demonstrierten für Veränderung - und die Ablösung von Premier Netanjahu: In Israel haben Hunderte die Opposition dazu aufgerufen, die arabischen Parteien an der Regierungsbildung zu beteiligen.",
       "pubDate": "2026-11-01T12:24:19+01:00",
       "link": "https://www.tagesschau.de/ausland/asien/israel-demo-arabische-parteien-100.html",
-      "bild": ""
-    },
-    {
-      "id": "76d6d9a0e1d846e8cfa7",
-      "title": "Vor 40 Jahren: Als eine Chemiewolke über Basel zog",
-      "description": "Vor 40 Jahren brannte bei Basel eine Lagerhalle, in der große Mengen gefährlicher Chemikalien gelagert waren. Ein Giftwolke zog über die Stadt, verseuchtes Löschwasser floss in den Rhein. Was hat sich durch die Katastrophe verändert? Von S. Biegger.",
-      "pubDate": "2026-11-01T12:06:56+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/schweiz-40-jahre-chemieunfall-sandoz-100.html",
-      "bild": ""
-    },
-    {
-      "id": "984258812331d0c343d5",
-      "title": "Demos gegen Wohnungsnot in Portugal - Protestcamps geräumt",
-      "description": "In vielen europäischen Ländern gehen momentan junge Menschen auf die Straße - auch in Portugal. Dort richten sich die Demonstrationen vor allem gegen die Wohnungsnot. Die Polizei ging hart gegen ein Protestcamp in Lissabon vor.",
-      "pubDate": "2026-11-01T10:46:44+01:00",
-      "link": "https://www.tagesschau.de/ausland/portugal-protest-100.html",
       "bild": ""
     }
   ],
