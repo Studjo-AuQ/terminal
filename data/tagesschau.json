@@ -1,7 +1,95 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "02.11.2026, 01:43 Uhr (UTC)",
+  "aktualisiert": "02.11.2026, 09:14 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "67f9a04178a17307c6b0",
+      "title": "Marktbericht: Gespannte Lage vor US-Zwischenwahlen",
+      "description": "Vor den US-Zwischenwahlen halten sich die Anleger lieber zurück. Zum Wochenstart gibt der DAX etwas nach. Mit Spannung warten die Investoren auch auf die heutigen Apple-Zahlen.",
+      "pubDate": "2026-11-02T10:06:31+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-geldanlage-168.html",
+      "bild": ""
+    },
+    {
+      "id": "98301842521e824254dc",
+      "title": "Binance-Kunden heben nach Hackerangriff Milliarden ab",
+      "description": "Einen Großteil der gestohlenen Kundengelder hat Binance nach dem Hackerangriff mittlerweile ersetzt. Dennoch kämpft die Kryptobörse mit einem Vertrauensverlust. Kunden haben 3,6 Milliarden Dollar abgezogen.",
+      "pubDate": "2026-11-02T09:59:47+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/binance-kundengelder-100.html",
+      "bild": ""
+    },
+    {
+      "id": "c2f07fdd2be1fd5b99c9",
+      "title": "Neun Tote bei Flugzeugabsturz in Florida",
+      "description": "In den USA sind neun Menschen beim Absturz eines Flugzeugs gestorben. Der Privatjet war im Bundesstaat Florida über einem Wohngebiet abgestürzt. Zuvor hatte der Pilot Probleme mit dem Wetter gemeldet.",
+      "pubDate": "2026-11-02T09:13:47+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/flugzeugabsturz-usa-florida-100.html",
+      "bild": ""
+    },
+    {
+      "id": "a22f829a210de7f802a4",
+      "title": "Michigan vor US-Zwischenwahl: Demokratin unterstützt jetzt Republikaner",
+      "description": "Der Kampf um den Senatssitz für den US-Bundesstaat Michigan ist eng. Nun könnte das Rennen noch spannender werden. Denn eine prominente Demokratin unterstützt nun den Spitzenkandidaten der Republikaner. Der fühlt sich geehrt. Auch Trump freut sich.",
+      "pubDate": "2026-11-02T08:25:06+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/midterms-michigan-streit-demokraten-100.html",
+      "bild": ""
+    },
+    {
+      "id": "62356ec451142e7edd59",
+      "title": "Fehlalarm in Kiew nach Hackerangriff auf Warn-App",
+      "description": "Vor Angriffen warnt die Ukraine die Bevölkerung per App. Doch dabei gibt es nun ein Problem: Die App wurde gehackt, in Kiew wurde fälschlicherweise vor \"Gefahr durch Strahlung\" gewarnt. Auch Russland meldet einen Angriff auf seine Warn-App.",
+      "pubDate": "2026-11-02T07:35:32+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/warn-app-ukraine-russland-gehackt-100.html",
+      "bild": ""
+    },
+    {
+      "id": "19b945c48846220c48e5",
+      "title": "Was das Rennen bei den Midterms entscheiden könnte",
+      "description": "Umfragen deuten darauf hin, dass die Demokraten bei den Midterms das Repräsentantenhaus zurückerobern. Gelingt das auch im Senat? Es wird wohl auf besonders umkämpfte Bundesstaaten ankommen. Von Jörg Schönenborn.",
+      "pubDate": "2026-11-02T07:11:04+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/usa-midterms-demokraten-republikaner-100.html",
+      "bild": ""
+    },
+    {
+      "id": "f653b37bb15d7e121240",
+      "title": "11KM-Podcast: Verliert Trump bei den Midterms die Stimmen der Farmer?",
+      "description": "In den USA stehen die Midterms bevor. Donald Trumps Politik sorgt derzeit unter anderem bei Farmern für viel Unmut. Die Gründe: hohe Preise für Sprit und Dünger. 11KM fragt: Verliert er seine treuesten Wähler?",
+      "pubDate": "2026-11-02T07:01:30+01:00",
+      "link": "https://www.tagesschau.de/podcast-11km-3998.html",
+      "bild": ""
+    },
+    {
+      "id": "6595b67d798622321d21",
+      "title": "Rot-grün-rote Koalitionsgespräche in Berlin starten",
+      "description": "Linke, Grüne und SPD in Berlin beginnen ihre Verhandlungen über eine gemeinsame Regierung. Bis Dezember könnte ein Koalitionsvertrag stehen - doch sicher ist das nicht. Mehrere prominente SPD-Mitglieder sprechen sich gegen eine Koalition aus.",
+      "pubDate": "2026-11-02T09:23:43+01:00",
+      "link": "https://www.tagesschau.de/inland/regional/berlin/koalitionsgespraeche-rot-gruen-rot-100.html",
+      "bild": ""
+    },
+    {
+      "id": "50e92c80454caf941a47",
+      "title": "Kritik an Ammoniak-Importen: Die EU, Russland und die Sprengstoffindustrie",
+      "description": "Trotz aller Sanktionen importiert die EU russisches Ammoniak - aufgrund eines \"EU-Sonderkontingents\" legal. Nach SWR-Recherchen haben die beteiligten Firmen Verbindungen zu Putin-nahen Oligarchen und zur Sprengstoffindustrie. Von Nick Schader.",
+      "pubDate": "2026-11-02T05:33:51+01:00",
+      "link": "https://www.tagesschau.de/investigativ/swr/ammoniak-eu-russland-100.html",
+      "bild": ""
+    },
+    {
+      "id": "42c9e9d83a757294ba4f",
+      "title": "Digitalgipfel der Bundesregierung: Ist der KI-Zug in Deutschland schon abgefahren?",
+      "description": "Die Bundesregierung lädt zum Digitalgipfel nach Berlin. Im Mittelpunkt der zweitägigen Konferenz steht die Frage, wie Deutschland und Europa beim Thema Künstliche Intelligenz global mitreden können.Von J. F. Willems.",
+      "pubDate": "2026-11-02T05:19:28+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/digitalgipfel-bundesregierung-100.html",
+      "bild": ""
+    },
+    {
+      "id": "404412991e92f66265bd",
+      "title": "Fall Imgart im AfD-Leak: Trotz Rassismus-Vorwürfen Verfassungsrichter",
+      "description": "Wegen mutmaßlich radikaler Ansichten wollte sein AfD-Kreisverband Rüdiger Imgart 2016 aus der Partei ausschließen. Doch das Verfahren scheitert - dann wird Imgart Verfassungsrichter in Bayern. Von S. Khamis und J. Streule.",
+      "pubDate": "2026-11-02T05:00:15+01:00",
+      "link": "https://www.tagesschau.de/investigativ/br-recherche/afd-verfassungsrichter-bayern-100.html",
+      "bild": ""
+    },
     {
       "id": "c8e2b296ebe0c2fc4403",
       "title": "Ukraine: Feuerpause in Oleschky ausgelaufen",
@@ -12,7 +100,7 @@
     },
     {
       "id": "42fd6046239385e58e8b",
-      "title": "100 Tage im Amt: Spürbar anders - Ukraines Armee unter Chef Drapatyj",
+      "title": "Wie sich die ukrainische Armee unter ihrem neuen Chef Drapatyj verändert",
       "description": "Seit 100 Tagen ist der neue ukrainische Armeechef Drapatyj im Amt. Er verändert Führungsstrukturen und setzt auf mehr Eigenverantwortung an der Front. Auch kremlkritische russische Analysten bemerken eine Veränderung. Von Florian Kellermann.",
       "pubDate": "2026-11-02T00:50:04+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/ukraine-kommandeur-100.html",
@@ -32,94 +120,6 @@
       "description": "Nach Informationen der ARD hat es möglicherweise einen Hackerangriff auf Bundestagsabgeordnete und Mitglieder der Bundesregierung gegeben. Im Bericht aus Berlin bestätigte Digitalminister Wildberger den Einsatz von Spyware. Details nannte er nicht.",
       "pubDate": "2026-11-01T20:59:02+01:00",
       "link": "https://www.tagesschau.de/inland/innenpolitik/wildberger-hackerangriff-bundestagsabgeordnete-100.html",
-      "bild": ""
-    },
-    {
-      "id": "22cb9af3336ad2a8c4ad",
-      "title": "NASA-Experiment: Mars-Simulation nach einem Jahr beendet",
-      "description": "Vier Menschen haben in den USA gemeinsam ein Jahr auf 160 Quadratmetern verbracht - für die Wissenschaft. Nun ist das NASA-Experiment vorbei. Ziel der langen Zeit in Isolation war die Simulation des Lebens auf dem Mars.",
-      "pubDate": "2026-11-01T20:42:19+01:00",
-      "link": "https://www.tagesschau.de/ausland/nasa-mars-108.html",
-      "bild": ""
-    },
-    {
-      "id": "f66f3a1f3d47650c56a6",
-      "title": "Ausschreitungen nach Protesten: Unterwanderung oder spontane Eskalation?",
-      "description": "Verletzte und geplünderte Geschäfte - die Ausschreitungen nach den Protesten der Gen Z lösen Entsetzen aus. In Köln und Frankfurt wurden die Demos nach Einschätzung der Polizei unterwandert. Innenminister Dobrindt kündigte ein hartes Vorgehen an.",
-      "pubDate": "2026-11-01T21:27:02+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/jugendproteste-ausschreitungen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "a89bdfaea3ebad610292",
-      "title": "FAQ: Was die neue Gebühr auf Sendungen aus Nicht-EU-Ländern bedeutet",
-      "description": "Jährlich erreichen mehrere Milliarden Kleinpakete die EU. Um diese Flut einzudämmen, wird jetzt eine Gebühr von mindestens zwei Euro pro Sendung fällig. Warum wird die Paketgebühr eingeführt? Werden Produkte jetzt teurer?",
-      "pubDate": "2026-11-01T17:43:44+01:00",
-      "link": "https://www.tagesschau.de/inland/neue-paketgebuehr-faq-100.html",
-      "bild": ""
-    },
-    {
-      "id": "11c6d9531e8b9ae9efdd",
-      "title": "Iran-Krieg: Golfstaaten bereiten sich auf neue Eskalation vor",
-      "description": "Die Sorge vor einer erneuten Eskalation im Iran-Krieg wächst - vor allem in den Golfstaaten. Eine Folge: Aufrüstung. Auf einer Konferenz beraten Politiker aus der Region mit Experten. Auch Deutschland ist vertreten. Von M. Behrendt.",
-      "pubDate": "2026-11-01T17:24:24+01:00",
-      "link": "https://www.tagesschau.de/ausland/golfstaaten-midterms-usa-100.html",
-      "bild": ""
-    },
-    {
-      "id": "9dca8aea2fa00c87faed",
-      "title": "Polizei zieht Bilanz zu Krawallen in Frankfurt",
-      "description": "54 Festnahmen, zahlreiche Verletzte und fünf geplünderte Geschäfte: Nach den Krawallen in Frankfurt am Main hat die Polizei eine erste Bilanz gezogen. Bei einem überwiegenden Teil der Randalierer sei kein politisches Motiv erkennbar.",
-      "pubDate": "2026-11-01T15:34:28+01:00",
-      "link": "https://www.tagesschau.de/inland/regional/hessen/krawalle-frankfurt-polizei-bilanz-100.html",
-      "bild": ""
-    },
-    {
-      "id": "056896f1607da4c67861",
-      "title": "Warum sich junge Paare gegen Kinder entscheiden",
-      "description": "In Deutschland gibt es so wenige Geburten wie seit 1946 nicht mehr. Doch junge Paare haben ihre Gründe, sich gegen Kinder zu entscheiden. Welche das sind - und was die sinkenden Zahlen für Auswirkungen haben. Von Alexandra Reese.",
-      "pubDate": "2026-11-01T15:51:00+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/kinderlos-elternschaft-millennials-100.html",
-      "bild": ""
-    },
-    {
-      "id": "79ee71fb44d66b895bce",
-      "title": "Streit über Verfassungsgericht: Unterstützung für Tusk aus Brüssel",
-      "description": "In Polen stehen sich die Regierung von Tusk und das rechtskonservative Lager um Staatspräsident Nawrocki scheinbar unversöhnlich gegenüber. Nun schaltet sich die EU-Kommission in den Streit über das Verfassungsgericht ein.",
-      "pubDate": "2026-11-01T15:25:24+01:00",
-      "link": "https://www.tagesschau.de/ausland/polen-verfassungsgericht-eu-kommission-102.html",
-      "bild": ""
-    },
-    {
-      "id": "9afcc1e06ecd7d3e6843",
-      "title": "Wahlkampf der US-Demokraten: Links, rechts - oder am besten in der Mitte?",
-      "description": "Gemeinsam gegen Trump: Darin sind sich die Demokraten in den USA einig. Aber darüber hinaus? Im Wahlkampf in Colorado zeigt sich die ganze Bandbreite an politischen Ideen der Partei. Isabel Schayani hat drei Kandidierende begleitet.",
-      "pubDate": "2026-11-01T15:25:00+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/usa-midterms-colorado-100.html",
-      "bild": ""
-    },
-    {
-      "id": "ace66abac7feca0daab2",
-      "title": "Nach mehr als 500 Produktionen: Filmproduzentin Regina Ziegler gestorben",
-      "description": "Die erfolgreiche Film- und Fernsehproduzentin Regina Ziegler ist im Alter von 82 Jahren gestorben. Mit mehr als 500 Filmen und zahlreichen Auszeichnungen gehörte sie zu den einflussreichsten Frauen der Branche.",
-      "pubDate": "2026-11-01T15:12:27+01:00",
-      "link": "https://www.tagesschau.de/kultur/ziegler-regina-gestorben-100.html",
-      "bild": ""
-    },
-    {
-      "id": "8f1902557f9f7c81890d",
-      "title": "FAQ: Wie lief der \"Gen Z regelt\"-Protest? Wie geht es weiter?",
-      "description": "Mehr als 180.000 Menschen hatten sich zum bundesweiten \"Gen Z regelt\"-Protesttag angemeldet. Es kamen deutlich weniger. Woran könnte es gelegen haben? Wie reagiert die Politik und welche neuen Aktionen sind geplant?",
-      "pubDate": "2026-11-01T15:46:12+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/demonstration-protest-genz-100.html",
-      "bild": ""
-    },
-    {
-      "id": "0399a0d35bf3b3376f00",
-      "title": "Israel: Demos für Einbindung der arabischen Parteien",
-      "description": "Sie demonstrierten für Veränderung - und die Ablösung von Premier Netanjahu: In Israel haben Hunderte die Opposition dazu aufgerufen, die arabischen Parteien an der Regierungsbildung zu beteiligen.",
-      "pubDate": "2026-11-01T12:24:19+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/israel-demo-arabische-parteien-100.html",
       "bild": ""
     }
   ],
