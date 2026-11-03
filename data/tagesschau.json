@@ -1,12 +1,36 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "02.11.2026, 19:42 Uhr (UTC)",
+  "aktualisiert": "03.11.2026, 02:08 Uhr (UTC)",
   "meldungen": [
     {
+      "id": "e6e3eba5d0159433e241",
+      "title": "Zwischenwahlen in den USA: Bleibt das Land regierbar?",
+      "description": "Wegen der enormen Preissteigerungen durch Trumps Zölle und den Iran-Krieg könnten die Republikaner bei den Midterms abgestraft werden. Die Folge wäre ein politisches Patt. Droht den USA der Stillstand? Von Anne Schneider.",
+      "pubDate": "2026-11-03T01:44:25+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/midterms-auftakt-100.html",
+      "bild": ""
+    },
+    {
+      "id": "2e5a25b1ed83bf5873e9",
+      "title": "Warum es bei diesen Midterms auch auf Alaska ankommen könnte",
+      "description": "Obwohl Alaska traditionell republikanisch wählt, liegt die Demokratin Peltola in Umfragen vorn. Der Ausgang im nördlichsten Bundesstaat könnte die Midterms entscheidend beeinflussen. Den Wahlkampf bestimmen auch hier die hohen Preise. Von Torben Börgers.",
+      "pubDate": "2026-11-02T21:15:15+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/usa-midterms-alaska-100.html",
+      "bild": ""
+    },
+    {
+      "id": "25ff144c5b2aa433e89d",
+      "title": "Abenteurer Bushby kehrt nach 28 Jahren von Weltreise zurück",
+      "description": "50.000 Kilometer in 28 Jahren - hinter dem englischen Abenteurer Karl Bushby liegt eine gewaltige Wanderung. Nun ist er in seine Heimatstadt Hull zurückgekehrt - und wurde von seiner gerührten Mutter empfangen. Von Lisa-Maria Röhling.",
+      "pubDate": "2026-11-02T21:00:49+01:00",
+      "link": "https://www.tagesschau.de/ausland/bushby-lauf-100.html",
+      "bild": ""
+    },
+    {
       "id": "519e9f446e542e882d8f",
-      "title": "Ukraine meldet mindestens 24 Tote bei Angriff in Region Saporischschja",
-      "description": "Bei einem russischen Angriff in der Region Saporischschja sind der Ukraine zufolge mindestens 24 Menschen getötet worden. Präsident Selenskyj warf Moskau gezieltes Bombardement vor - demnach traf die Attacke ein Verteilzentrum für Hilfsgüter.",
-      "pubDate": "2026-11-02T20:26:32+01:00",
+      "title": "Ukraine meldet mindestens 26 Tote bei Angriff in Region Saporischschja",
+      "description": "Bei einem russischen Angriff in der Region Saporischschja sind der Ukraine zufolge mindestens 26 Menschen getötet worden. Präsident Selenskyj warf Moskau gezieltes Bombardement vor - demnach traf die Attacke ein Verteilzentrum für Hilfsgüter.",
+      "pubDate": "2026-11-02T22:21:05+01:00",
       "link": "https://www.tagesschau.de/ausland/ukraine-saporischschja-tote-100.html",
       "bild": ""
     },
@@ -14,7 +38,7 @@
       "id": "7eae6d39a4f5acffd178",
       "title": "Jüdische Akademie in Frankfurt eröffnet",
       "description": "Mit der Jüdischen Akademie eröffnet der Zentralrat der Juden in Frankfurt erstmals nach der Shoah eine überregionale Bildungseinrichtung. Bundespräsident Steinmeier nutzte seine Rede für einen Appell, den Kampf gegen Antisemitismus zu verstärken.",
-      "pubDate": "2026-11-02T17:37:55+01:00",
+      "pubDate": "2026-11-02T21:37:43+01:00",
       "link": "https://www.tagesschau.de/inland/regional/hessen/juedische-akademie-frankfurt-100.html",
       "bild": ""
     },
@@ -96,30 +120,6 @@
       "description": "SPD und Grüne laufen Sturm gegen die Gleichsetzung von AfD und der Linken durch CDU und CSU. Experten betonen deutliche Unterschiede, vor allem bei Ideologie und Bewertung des Verfassungsschutzes. Von Jürgen P. Lang.",
       "pubDate": "2026-11-02T15:09:31+01:00",
       "link": "https://www.tagesschau.de/inland/innenpolitik/extremismus-linke-afd-100.html",
-      "bild": ""
-    },
-    {
-      "id": "9ac11a98337a01aefa0b",
-      "title": "Ministerin Reiche legt ersten Entwurf für Spritpreisdeckel-Gesetz vor",
-      "description": "Wirtschaftsministerin Reiche ist keine Befürworterin eines Spritpreisdeckels. Doch die Koalition will das Instrument einführen. Nun liegt ein erster Gesetzentwurf ihres Ministeriums vor. Er beschreibt, wann der Spritpreisdeckel gelten soll und wann nicht.",
-      "pubDate": "2026-11-02T18:05:39+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/reiche-spritpreisdeckel-entwurf-100.html",
-      "bild": ""
-    },
-    {
-      "id": "76b7798816e311fe2ce8",
-      "title": "Cyberangriffe haben Supermärkte in Europa offenbar lahmgelegt",
-      "description": "Cyberkriminelle haben offenbar wieder Supermärkte angegriffen. Sie sorgten besonders in Belgien und Schweden dafür, dass Kühlschränke und Tiefkühltruhen wärmer wurden. Es ist nicht das erste Mal.",
-      "pubDate": "2026-11-02T17:10:17+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/technologie/cyberangriff-supermaerkte-100.html",
-      "bild": ""
-    },
-    {
-      "id": "df2c27b17df6af71b59c",
-      "title": "Marktbericht: Teurer Wohnraum bremst Deutschlands Wirtschaft",
-      "description": "Der Mangel an Wohnraum und die hohen Mieten verhindern die berufliche Mobilität und erschweren Unternehmen die Suche nach Fachkräften. Experten fordern deshalb mehr Anreize für den Wohnungsbau.",
-      "pubDate": "2026-11-02T14:15:24+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/teurer-wohnraum-wirtschaftswachstum-marktbericht-100.html",
       "bild": ""
     }
   ],
