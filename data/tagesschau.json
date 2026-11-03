@@ -1,11 +1,115 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "03.11.2026, 02:08 Uhr (UTC)",
+  "aktualisiert": "03.11.2026, 09:56 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "d155898d633057a5882b",
+      "title": "Midterms: \"Entscheidende Wahl für Entwicklung der US-Demokratie\"",
+      "description": "Unter Trump haben die USA eine autoritäre Phase erreicht, sagt der Historiker Manfred Berg. Ob diese Entwicklung weitergehe, hänge von dieser und der Wahl 2028 ab. Doch selbst bei einer Niederlage werde Trump an seinem Politikstil festhalten.",
+      "pubDate": "2026-11-03T10:40:40+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/usa-midterms-zustand-demokratie-102.html",
+      "bild": ""
+    },
+    {
+      "id": "ceb8d00fee7888545e55",
+      "title": "US-Wahlen: Wie Trumps Kurs die Bundesregierung herausfordert",
+      "description": "Bei den Kongresswahlen entscheidet sich, ob Präsident Trump seine Politik weiterhin weitgehend ungehindert durchziehen kann. Das wird auch von der Bundespolitik aufmerksam beobachtet. Von Nicole Markwald.",
+      "pubDate": "2026-11-03T10:22:54+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/midterms-usa-deutschland-102.html",
+      "bild": ""
+    },
+    {
+      "id": "bf4542c782459b8056d6",
+      "title": "Marktbericht: Anleger scheuen vor US-Zwischenwahlen das Risiko",
+      "description": "Die Sorge vor einer erneuten Eskalation im Nahen Osten drückt auf die Stimmung der Anleger. Und vor den US-Zwischenwahlen herrscht ohnehin Nervosität. Der DAX fällt zum Handelsstart weiter zurück.",
+      "pubDate": "2026-11-03T10:15:35+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-apple-midterms-100.html",
+      "bild": ""
+    },
+    {
+      "id": "f379b460023323adf1e6",
+      "title": "Kahlschlag bei Schaeffler: Stellenabbau und Standortschließungen",
+      "description": "Die Krise der deutschen Autoindustrie lässt Schaeffler zu drastischen Maßnahmen greifen. Tausende Stellen werden gestrichen. In Deutschland stehen vier Werke vor dem Aus.",
+      "pubDate": "2026-11-03T10:02:12+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/schaeffler-154.html",
+      "bild": ""
+    },
+    {
+      "id": "23a9999460b1352f335a",
+      "title": "Starkes iPhone-Geschäft sorgt für Rekordumsatz bei Apple",
+      "description": "Apple hat unter dem neuen Konzernchef John Ternus ‌die Erwartungen von Börsenprofis übertroffen. Der iPhone-Umsatz und die Konzernerlöse haben im dritten Quartal Rekordwerte erreicht. Die Aktie fällt trotzdem.",
+      "pubDate": "2026-11-03T09:13:13+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/apple-rekordumsatz-100.html",
+      "bild": ""
+    },
+    {
+      "id": "1941dd91ce4a63994d27",
+      "title": "Midterms: So läuft der Wahltag in den USA ab",
+      "description": "Wann ist bei den Zwischenwahlen mit verlässlichen Ergebnissen zu rechnen? Wie lange haben die Wahllokale geöffnet - und wann nehmen die neugewählten Abgeordneten ihre Arbeit im Kongress auf? Ein Überblick über den Ablauf der Midterms.",
+      "pubDate": "2026-11-03T09:06:22+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/midterms-ablauf-100.html",
+      "bild": ""
+    },
+    {
+      "id": "dad7a24e012909f7f8ca",
+      "title": "Bilger will sogenannte Handy-Blitzer bundesweit einführen",
+      "description": "Mit sogenannten Handy-Blitzern können Fahrer erwischt werden, die das Mobiltelefon am Steuer nutzen. Das gibt es bislang nur in Rheinland-Pfalz, Bundesverkehrsminister Bilger will die Technik bundesweit einführen.",
+      "pubDate": "2026-11-03T08:39:12+01:00",
+      "link": "https://www.tagesschau.de/inland/bilger-handy-blitzer-100.html",
+      "bild": ""
+    },
+    {
+      "id": "b34bdb17794fdf7726e0",
+      "title": "Was Polens Wirtschaft boomen lässt",
+      "description": "Jahrzehntelang galt Polen als der arme Nachbar im Osten. Ein längst veraltetes Klischee: Die polnische Wirtschaft wächst stark - was viele Menschen aus Deutschland anlockt. Von Christiane Cichy.",
+      "pubDate": "2026-11-03T08:23:57+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/polen-boom-wirtschaftswunder-100.html",
+      "bild": ""
+    },
+    {
+      "id": "5d528fc066b5daf317ba",
+      "title": "Liveblog zu den Midterms: ++ US-Bürger wählen neuen Kongress ++",
+      "description": "Republikaner oder Demokraten - wer überzeugt mehr? In den USA finden heute die Zwischenwahlen statt, ein wichtiger Gradmesser für Trumps Politik. Weltweit wird der Ausgang der Wahl mit Spannung erwartet - die Entwicklungen hier im Liveblog.",
+      "pubDate": "2026-11-03T10:42:13+01:00",
+      "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
+      "bild": ""
+    },
+    {
+      "id": "28b02516a8ffde5cda6a",
+      "title": "Warum Tschechiens Rundfunk heute streikt",
+      "description": "In Tschechien streikt der öffentlich-rechtliche Rundfunk. Grund: ein Gesetz, das die Rundfunkgebühr abschafft - und den Rundfunk vom Staat finanzieren soll. Kritiker fürchten um die Unabhängigkeit der Berichterstattung. Von K. Peetz.",
+      "pubDate": "2026-11-03T07:19:48+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/tschechien-rundfunk-streik-100.html",
+      "bild": ""
+    },
+    {
+      "id": "648973a4509c4b873912",
+      "title": "USA greifen offenbar iranische Ziele in Straße von Hormus an",
+      "description": "Kurz vor den Midterms haben die USA Medienberichten zufolge wieder Iran angegriffen. Dabei soll es sich um einzelne Angriffe auf die Insel Qeschm in der Straße von Hormus handeln. Iran meldet den Abschuss einer US-Drohne.",
+      "pubDate": "2026-11-03T06:33:48+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/usa-iran-angriffe-126.html",
+      "bild": ""
+    },
+    {
+      "id": "d9ea8fe14d94007fddbc",
+      "title": "US-Vermittler Witkoff kündigt Gespräche mit Russland und Ukraine an",
+      "description": "Die USA, Russland und die Ukraine haben zuletzt im Februar im Dreierformat miteinander gesprochen. Kommende Woche wollen sie wieder zusammenkommen. US-Sondergesandter Witkoff nennt konkrete Ziele.",
+      "pubDate": "2026-11-03T04:55:28+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/ukraine-verhandlungen-104.html",
+      "bild": ""
+    },
+    {
+      "id": "db6d279f1cc2b7beb6b9",
+      "title": "Polen: Die Verfassungsgerichtskrise - kein Ende in Sicht",
+      "description": "Vor dem Verfassungsgericht in Polen hat es am Wochenende Tumulte gegeben, der Staatschef brach eine Auslandsreise ab. Zuvor wurden der Gerichtspräsident und sein Stellvertreter suspendiert. Ein Kompromiss ist nicht in Sicht. Von P. Milling.",
+      "pubDate": "2026-11-03T03:25:42+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/polen-verfassungsgericht-krise-100.html",
+      "bild": ""
+    },
     {
       "id": "e6e3eba5d0159433e241",
       "title": "Zwischenwahlen in den USA: Bleibt das Land regierbar?",
-      "description": "Wegen der enormen Preissteigerungen durch Trumps Zölle und den Iran-Krieg könnten die Republikaner bei den Midterms abgestraft werden. Die Folge wäre ein politisches Patt. Droht den USA der Stillstand? Von Anne Schneider.",
+      "description": "Vor allem wegen der enormen Preissteigerungen durch Trumps Zölle und den Iran-Krieg könnten die Republikaner bei den heutigen Midterms abgestraft werden. Die Folge könnte ein politisches Patt sein. Droht den USA der Stillstand? Von Anne Schneider.",
       "pubDate": "2026-11-03T01:44:25+01:00",
       "link": "https://www.tagesschau.de/ausland/amerika/midterms-auftakt-100.html",
       "bild": ""
@@ -16,110 +120,6 @@
       "description": "Obwohl Alaska traditionell republikanisch wählt, liegt die Demokratin Peltola in Umfragen vorn. Der Ausgang im nördlichsten Bundesstaat könnte die Midterms entscheidend beeinflussen. Den Wahlkampf bestimmen auch hier die hohen Preise. Von Torben Börgers.",
       "pubDate": "2026-11-02T21:15:15+01:00",
       "link": "https://www.tagesschau.de/ausland/amerika/usa-midterms-alaska-100.html",
-      "bild": ""
-    },
-    {
-      "id": "25ff144c5b2aa433e89d",
-      "title": "Abenteurer Bushby kehrt nach 28 Jahren von Weltreise zurück",
-      "description": "50.000 Kilometer in 28 Jahren - hinter dem englischen Abenteurer Karl Bushby liegt eine gewaltige Wanderung. Nun ist er in seine Heimatstadt Hull zurückgekehrt - und wurde von seiner gerührten Mutter empfangen. Von Lisa-Maria Röhling.",
-      "pubDate": "2026-11-02T21:00:49+01:00",
-      "link": "https://www.tagesschau.de/ausland/bushby-lauf-100.html",
-      "bild": ""
-    },
-    {
-      "id": "519e9f446e542e882d8f",
-      "title": "Ukraine meldet mindestens 26 Tote bei Angriff in Region Saporischschja",
-      "description": "Bei einem russischen Angriff in der Region Saporischschja sind der Ukraine zufolge mindestens 26 Menschen getötet worden. Präsident Selenskyj warf Moskau gezieltes Bombardement vor - demnach traf die Attacke ein Verteilzentrum für Hilfsgüter.",
-      "pubDate": "2026-11-02T22:21:05+01:00",
-      "link": "https://www.tagesschau.de/ausland/ukraine-saporischschja-tote-100.html",
-      "bild": ""
-    },
-    {
-      "id": "7eae6d39a4f5acffd178",
-      "title": "Jüdische Akademie in Frankfurt eröffnet",
-      "description": "Mit der Jüdischen Akademie eröffnet der Zentralrat der Juden in Frankfurt erstmals nach der Shoah eine überregionale Bildungseinrichtung. Bundespräsident Steinmeier nutzte seine Rede für einen Appell, den Kampf gegen Antisemitismus zu verstärken.",
-      "pubDate": "2026-11-02T21:37:43+01:00",
-      "link": "https://www.tagesschau.de/inland/regional/hessen/juedische-akademie-frankfurt-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f34be8f72901fa8f2100",
-      "title": "Merz spricht sich bei Steinmeier-Nachfolge für Frau aus",
-      "description": "Eine Festlegung hatte der Kanzler lange vermieden - doch nun macht Merz klar: Eine Frau soll auf Bundespräsident Steinmeier folgen. Er kündigte an, eine Kandidatin der politischen Mitte vorzuschlagen.",
-      "pubDate": "2026-11-02T19:30:17+01:00",
-      "link": "https://www.tagesschau.de/inland/merz-nachfolge-steinmeier-100.html",
-      "bild": ""
-    },
-    {
-      "id": "2c0fd48601af0c0f9475",
-      "title": "Handel mit Merchandise: Nicht mehr viel los im Trump-Shop",
-      "description": "Fanartikel von Trump waren einmal ein gutes Geschäft in den USA. Im ganzen Land eröffneten Shops, in denen es Devotionalien aller Art gab - nicht nur die bekannten roten MAGA-Mützen. Wie läuft das Geschäft inzwischen? Von C. Kühntopp.",
-      "pubDate": "2026-11-02T18:24:23+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/trump-stores-fanshop-100.html",
-      "bild": ""
-    },
-    {
-      "id": "a7c4ad40a6948739f838",
-      "title": "Koalitionsverhandlungen in Berlin: Das Rumoren in der SPD",
-      "description": "In Berlin haben die Koalitionsverhandlungen zwischen Linken, Grünen und SPD begonnen. In der SPD gibt es weiterhin Vorbehalte - unter anderem bei Bundespolitikern wie Boris Pistorius und Karl Lauterbach. Von Anne-Katrin Mellmann.",
-      "pubDate": "2026-11-02T18:22:00+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/spd-rot-gruen-rot-linke-berlin-100.html",
-      "bild": ""
-    },
-    {
-      "id": "16b754e34645adebf4cb",
-      "title": "Hubig legt Gesetzentwurf zur Verschärfung des Sexualstrafrechts vor",
-      "description": "Längere Verjährungsfristen bei Vergewaltigungen, ein neuer Tatbestand bei sexueller Belästigung - Justizministerin Hubig hat einen Entwurf zur Verschärfung des Sexualstrafrechts vorgelegt. Das Ziel: mehr Schutz für Frauen.",
-      "pubDate": "2026-11-02T17:36:39+01:00",
-      "link": "https://www.tagesschau.de/inland/hubig-sexualstrafrecht-102.html",
-      "bild": ""
-    },
-    {
-      "id": "3cf0ab93604bed6ca3c9",
-      "title": "Landgericht Potsdam: Kinderarzt gesteht Taten in Missbrauchsprozess",
-      "description": "Vor dem Landgericht Potsdam hat der Prozess gegen einen Kinderarzt begonnen. Ihm wird jahrelanger sexueller Missbrauch von mehr als 70 Kindern und Jugendlichen vorgeworfen. Er habe zu fast allen Vorwürfen Geständnisse abgelegt, sagte er.",
-      "pubDate": "2026-11-02T17:09:45+01:00",
-      "link": "https://www.tagesschau.de/inland/regional/brandenburg/prozess-kinderarzt-100.html",
-      "bild": ""
-    },
-    {
-      "id": "3ea44dc4e91563363fca",
-      "title": "Digitalgipfel in Berlin: Merz fordert mehr digitale Souveränität",
-      "description": "In Sachen KI hängt Deutschland international hinterher. Bei einem Digitalgipfel in Berlin forderte Kanzler Merz daher einen schnellen und energischen Ausbau der KI-Fähigkeiten. Doch viel Zeit bleibe dafür nicht mehr, sagen Experten.",
-      "pubDate": "2026-11-02T19:33:00+01:00",
-      "link": "https://www.tagesschau.de/inland/digitalgipfel-wildberger-merz-ki-100.html",
-      "bild": ""
-    },
-    {
-      "id": "7d19732cd023785c342f",
-      "title": "Afghanistans Kindern droht ein tödlicher Winter",
-      "description": "Die humanitäre Lage in Afghanistan gehört zu den größten Krisen weltweit. Besonders betroffen: Kinder. Nun schlagen Hilfsorganisationen wie UNICEF Alarm. Die Zahl der akut mangelernährten Mädchen und Jungen steige. Von F. Amler.",
-      "pubDate": "2026-11-02T16:07:44+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/afghanistan-haumanitare-lage-100.html",
-      "bild": ""
-    },
-    {
-      "id": "802e1ec1a4b2df11209d",
-      "title": "Merz verurteilt Krawalle am Rande der Jugendproteste",
-      "description": "Nach den Krawallen am Rande der Jugendproteste diskutiert die Politik über die Folgen - und darüber, von wem die Gewalt ausging. Kanzler Merz betont, man werde hart vorgehen. Zugleich zeigt er Verständnis für Forderungen von Demonstranten.",
-      "pubDate": "2026-11-02T15:59:58+01:00",
-      "link": "https://www.tagesschau.de/inland/jugendproteste-gewalt-merz-100.html",
-      "bild": ""
-    },
-    {
-      "id": "eb3a9129fd3ea22856a5",
-      "title": "Massive Cyberattacke auf Linken-Abgeordnete in Berlin",
-      "description": "Tausende Nachrichten binnen Minuten: Ein massiver Cyberagriff hat die Mail-Postfächer der Linken im Bundestag lahmgelegt. Wer hinter der Attacke steckt, ist noch unklar. Andere Fraktionen waren nicht betroffen.",
-      "pubDate": "2026-11-02T15:14:53+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/cyberattacke-linkspartei-mail-postfaecher-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f368ff2b0c72aab7b311",
-      "title": "AfD und Linke: Warum Extremismus-Vergleiche zu kurz greifen",
-      "description": "SPD und Grüne laufen Sturm gegen die Gleichsetzung von AfD und der Linken durch CDU und CSU. Experten betonen deutliche Unterschiede, vor allem bei Ideologie und Bewertung des Verfassungsschutzes. Von Jürgen P. Lang.",
-      "pubDate": "2026-11-02T15:09:31+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/extremismus-linke-afd-100.html",
       "bild": ""
     }
   ],
