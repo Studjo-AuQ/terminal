@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "stand": "20.10.2026, 11:03 Uhr",
+  "stand": "04.11.2026, 12:22 Uhr",
   "hinweis": "Automatisch aus den Speiseplan-PDFs erzeugt. Eine erkannte Tages-/Datumsspalte wird übersprungen. A1 und A2 werden auf jeweils drei Wörter gekürzt.",
   "tage": {
     "2026-10-19": {
@@ -127,6 +127,56 @@
       "a1": "Seelachs Knusperfilet mit",
       "a2": "Omelette mit Gemüsefüllung",
       "quelle": "speiseplaene/speiseplan_2026-KW47.pdf"
+    },
+    "2026-11-23": {
+      "a1": "Grünkohl mit Kohlwurst",
+      "a2": "veggi Bratwurst vegetarische",
+      "quelle": "speiseplaene/speiseplan_2026-KW48.pdf"
+    },
+    "2026-11-24": {
+      "a1": "Wirsingeintopf mit Fleischeinlage",
+      "a2": "Rührei Rahmspinat Kartoffelpüree",
+      "quelle": "speiseplaene/speiseplan_2026-KW48.pdf"
+    },
+    "2026-11-25": {
+      "a1": "Geflügelfrikadelle an Geflügelsoße",
+      "a2": "Kaiserschmarren mit Vanillesoße",
+      "quelle": "speiseplaene/speiseplan_2026-KW48.pdf"
+    },
+    "2026-11-26": {
+      "a1": "Leberkäse mit Spitzkohl",
+      "a2": "Reisnudel Gemüsepfanne an",
+      "quelle": "speiseplaene/speiseplan_2026-KW48.pdf"
+    },
+    "2026-11-27": {
+      "a1": "Büsumer Heringstopf Röstkartoffeln",
+      "a2": "Vegetarische Paprikaschote in",
+      "quelle": "speiseplaene/speiseplan_2026-KW48.pdf"
+    },
+    "2026-11-30": {
+      "a1": "Schweineschnitzel mit Zwiebel-Paprikasoße",
+      "a2": "Eierfrikasse& mit Spargel",
+      "quelle": "speiseplaene/speiseplan_2026-KW49.pdf"
+    },
+    "2026-12-01": {
+      "a1": "Würziger Gulaschtopf mn",
+      "a2": "Reibekuchen mit Apfelmus",
+      "quelle": "speiseplaene/speiseplan_2026-KW49.pdf"
+    },
+    "2026-12-02": {
+      "a1": "Gebratenes Hähnchenbrustfilet Currysoße",
+      "a2": "Apfelpfannkuchen mit Vanillesoße",
+      "quelle": "speiseplaene/speiseplan_2026-KW49.pdf"
+    },
+    "2026-12-03": {
+      "a1": "Currywurst mit gebackenen",
+      "a2": "Herzhafter Kartoffelgemüseauflauf Schnittlauchsauce",
+      "quelle": "speiseplaene/speiseplan_2026-KW49.pdf"
+    },
+    "2026-12-04": {
+      "a1": "Dorschfilet paniert an",
+      "a2": "Gemüsefrikadelle an Kräutersoße",
+      "quelle": "speiseplaene/speiseplan_2026-KW49.pdf"
     }
   },
   "fehler": []
