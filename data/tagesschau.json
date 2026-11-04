@@ -1,7 +1,15 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "03.11.2026, 23:07 Uhr (UTC)",
+  "aktualisiert": "04.11.2026, 03:08 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "5d528fc066b5daf317ba",
+      "title": "Liveblog zu den Midterms: ++ Demokrat erobert Senatssitz in North Carolina ++",
+      "description": "Im Bundesstaat North Carolina haben die Demokraten bei der Wahl zum US-Senat Hochrechnungen zufolge einen Sitz hinzugewonnen. Auch für das Repräsentantenhaus gibt es erste Ergebnisse. Die Entwicklungen im Liveblog.",
+      "pubDate": "2026-11-04T04:00:34+01:00",
+      "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
+      "bild": ""
+    },
     {
       "id": "a9a65669e5b3582edd31",
       "title": "Reaktion auf Zugunglücke: Spaniens Verkehrsminister tritt zurück",
@@ -112,14 +120,6 @@
       "description": "Es wäre die größte Fusion in der deutschen Chemiebranche: Wenn BASF und Evonik zusammengingen, entstünde ein Konzern mit einem Jahresumsatz von rund 74 Milliarden Euro. Doch noch sträubt sich Evonik. Von Michael Heussen.",
       "pubDate": "2026-11-03T15:59:40+01:00",
       "link": "https://www.tagesschau.de/wirtschaft/unternehmen/evonik-basf-fusion-100.html",
-      "bild": ""
-    },
-    {
-      "id": "9c48857de173a71bf5a2",
-      "title": "Merz verspricht mehr Hilfe für die Ukraine und appelliert an Europäer",
-      "description": "Russische Angriffe auf die Energie-Infrastruktur, Raketeneinschläge in den Städten: Der Ukraine droht ein harter Kriegswinter. Kanzler Merz sagt Unterstützung zu - fordert aber auch mehr Engagement der europäischen Partner.",
-      "pubDate": "2026-11-03T17:08:15+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/merz-selenskyj-134.html",
       "bild": ""
     }
   ],
