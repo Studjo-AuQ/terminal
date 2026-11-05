@@ -1,7 +1,71 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "05.11.2026, 00:15 Uhr (UTC)",
+  "aktualisiert": "05.11.2026, 07:14 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "812b337773aff913d6db",
+      "title": "Bundespräsidenten-Nachfolge: Unterstützung für Aigner nimmt zu",
+      "description": "Wen nominiert die Union für die Nachfolge des scheidenden Bundespräsidenten Steinmeier? Kommende Woche soll eine Entscheidung fallen. Immer mehr Politiker sprechen sich für die bayerische Landtagspräsidentin Aigner aus.",
+      "pubDate": "2026-11-05T07:52:45+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/unterstuetzung-fuer-aigner-nimmt-zu-100.html",
+      "bild": ""
+    },
+    {
+      "id": "a0497f5c0d4fc8d829b6",
+      "title": "Reaktionen auf Tod Aiwangers: Söder spricht von \"absoluter Tragödie\"",
+      "description": "Der unerwartete Tod von Hubert Aiwanger mit 55 Jahren hat parteiübergreifend Bestürzung ausgelöst. Der Chef der Freien Wähler war leblos in einem Hotel aufgefunden worden. Bayerns Ministerpräsident Söder sprach von einer \"absoluten Tragödie\".",
+      "pubDate": "2026-11-05T07:53:46+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/aiwanger-gestorben-reaktionen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "91258850d74777745711",
+      "title": "Marktbericht: DAX nähert sich dem Rekordhoch",
+      "description": "Nach den US-Zwischenwahlen ist die Euphorie an den Börsen groß: Der DAX robbt sich immer näher an sein Rekordhoch heran. Hilfreich ist auch der sinkende Ölpreis, der den Inflationsdruck senken könnte.",
+      "pubDate": "2026-11-05T07:20:58+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-zwischenwahlen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "6dcf9068cf0b2febb5f6",
+      "title": "US-Demokraten: Der gemäßigte Kurs verspricht weitere Erfolge",
+      "description": "Nach den Midterms sieht sich der linke Parteiflügel der Demokraten gestärkt, doch Top-Demokraten im Kongress setzen auf einen gemäßigten Kurs. Auch Experten sagen: Das hilft in einem \"Mitte-Rechts-Land\". Von C. Kühntopp.",
+      "pubDate": "2026-11-05T06:57:08+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/midterms-demokraten-100.html",
+      "bild": ""
+    },
+    {
+      "id": "9f7f476987cf4e4a8df2",
+      "title": "Bundestag debattiert über Pflegereform",
+      "description": "Der Bundestag debattiert heute über eine erste Pflegereform. Die große Strukturreform soll dann im neuen Jahr folgen. Was kommt damit auf Angehörige zu? Von Birthe Sönnichsen.",
+      "pubDate": "2026-11-05T06:52:28+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/pflege-reform-bundestag-100.html",
+      "bild": ""
+    },
+    {
+      "id": "b1bec39762263412cde1",
+      "title": "Strafen gegen Vucic-Propagandasendungen bei Informer und Prva in Serbien",
+      "description": "Nach dem Wahlsieg der Studentischen Liste sind erste Veränderungen schon spürbar. Eine serbische Medienaufsichtsbehörde hat Zwangspausen gegen Vucic-Propagandasendungen verhängt. Von Oliver Soos.",
+      "pubDate": "2026-11-05T05:05:08+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/serbien-medienaufsicht-strafe-100.html",
+      "bild": ""
+    },
+    {
+      "id": "5df069028c58c35c6773",
+      "title": "Suche nach mehrheitsfähiger Kandidatin: Merz und die Bundespräsidentinnen-Frage",
+      "description": "Eine Frau soll es werden - so weit hat sich Kanzler Merz in der Bundespräsidenten-Frage festgelegt. Einige Namen kursieren, doch welche Kandidatin hätte genug Rückhalt? Eine Entscheidung dürfte in Kürze fallen. Von Tina Handel.",
+      "pubDate": "2026-11-05T04:21:38+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/bundespraesident-wahl-kandidatinnen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "f4dfa1e6e4e60a74da09",
+      "title": "Frankreich: Nach den Protesten sollen jetzt Streiks folgen",
+      "description": "Die wichtigsten Gewerkschaften in Frankreich haben für heute zu Streiks und landesweiten Protesten aufgerufen. Auch die Proteste der Schüler und Studierenden schließen sich an. Kann das funktionieren? Von C. Dylla.",
+      "pubDate": "2026-11-05T02:52:28+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/proteste-streiks-frankreich-100.html",
+      "bild": ""
+    },
     {
       "id": "8b54a5135f358016937e",
       "title": "Midterms in den USA: Verhaltener Optimismus in der Ukraine nach US-Wahl",
@@ -14,7 +78,7 @@
       "id": "5d528fc066b5daf317ba",
       "title": "Liveblog zu den Midterms: ++ Trump verteidigt Iran-Krieg ++",
       "description": "US-Präsident Trump hat trotz des Wahldebakels betont, am Kurs im Iran-Krieg festhalten zu wollen. Außenminister Wadephul erwartet weiterhin eine konstruktive Zusammenarbeit mit der US-Regierung.",
-      "pubDate": "2026-11-04T23:08:00+01:00",
+      "pubDate": "2026-11-05T06:16:43+01:00",
       "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
       "bild": ""
     },
@@ -36,7 +100,7 @@
     },
     {
       "id": "6fe895532dae3d3620f3",
-      "title": "Gen-Z-Protest: Bundestag debattiert über Konsequenzen nach Krawallen",
+      "title": "\"Gen-Z\"-Protest: Bundestag debattiert über Konsequenzen nach Krawallen",
       "description": "Die Krawalle vom Wochenende haben den Bundestag erreicht. In einer Aktuellen Stunde herrschte weitgehend Einigkeit in der Verurteilung der Gewalt - über ihre Ursachen und die angemessene Wortwahl gingen die Meinungen auseinander. Von F. Aischmann.",
       "pubDate": "2026-11-04T21:24:21+01:00",
       "link": "https://www.tagesschau.de/inland/innenpolitik/gen-z-aktuelle-stunde-100.html",
@@ -56,70 +120,6 @@
       "description": "Das Rezept der Republikaner, ganz auf US-Präsident Trump und viel Geld zu setzen, ist nicht aufgegangen. Den Demokraten gelang es, Zuversicht zu vermitteln, meint Samuel Jackisch. Diese Chance müssen sie jetzt aber auch nutzen.",
       "pubDate": "2026-11-04T17:50:16+01:00",
       "link": "https://www.tagesschau.de/kommentar/usa-midterms-120.html",
-      "bild": ""
-    },
-    {
-      "id": "b432c214f25d34e37a48",
-      "title": "Nach Sieg bei den Midterms: Welche Optionen die Demokraten haben",
-      "description": "Lahme Ente oder entfesselter Kampfhahn - Meinungen darüber, was die Politik von US-Präsident Trump in den verbleibenden zwei Jahren ausmachen wird, variieren. Die Demokraten jedenfalls kündigen große Vorhaben an - und Trump sein Veto. Von Gabi Biesinger.",
-      "pubDate": "2026-11-04T17:49:39+01:00",
-      "link": "https://www.tagesschau.de/ausland/demokraten-optionen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "4eea4cca1900b67e2946",
-      "title": "Jeder vierte Jugendliche bewegt sich laut WHO kaum",
-      "description": "Sport und Bewegung gehören für viele Kinder und Jugendliche nicht mehr zum Alltag. Nur 14 Prozent bewegen sich laut WHO täglich für eine Stunde mäßig bis intensiv. Auch in Deutschland gibt es viele Bewegungsmuffel.",
-      "pubDate": "2026-11-04T17:37:10+01:00",
-      "link": "https://www.tagesschau.de/wissen/gesundheit/kinder-jugendliche-bewegung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "d32c1aa318fb8d47ec74",
-      "title": "Bund fördert Schwimmenlernen mit 20 Millionen Euro",
-      "description": "Mehr als die Hälfte aller Grundschulkinder in Deutschland kann nicht sicher schwimmen. Mit einem Förderprogramm von 20 Millionen Euro will der Bund das ändern. Schwimmverbände und Hilfsorganisationen sollen dabei helfen.",
-      "pubDate": "2026-11-04T17:29:29+01:00",
-      "link": "https://www.tagesschau.de/inland/foerderprogramm-bund-schwimmen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "b16f6d5600ae6b38fc29",
-      "title": "Reaktionen auf US-Wahlergebnis: Verhaltene Freude, vorsichtige Hoffnung",
-      "description": "Der spektakuläre Triumph der US-Demokraten bei den Zwischenwahlen hat weltweit Reaktionen ausgelöst: Russland setzt weiter auf Präsident Trump, China hält sich bedeckt, in der EU und Südafrika macht sich Hoffnung breit.",
-      "pubDate": "2026-11-04T16:42:29+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/midterms-usa-internationale-reaktionen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "560c80fdc256e68879af",
-      "title": "Reaktionen auf Janoschs Tod: Er machte \"Kindern Mut zum Träumen\"",
-      "description": "Ein Kinderbuchautor, dessen Figuren Generationen begleitet haben: Nach Janoschs Tod ist die Anteilnahme groß. Bundespräsident Steinmeier würdigte den Schriftsteller als \"Lebensbegleiter für ungezählte Kinder und ungezählte Erwachsene\".",
-      "pubDate": "2026-11-04T16:10:30+01:00",
-      "link": "https://www.tagesschau.de/kultur/janosch-reaktionen-tod-100.html",
-      "bild": ""
-    },
-    {
-      "id": "aebb7275d45d251f6dc5",
-      "title": "Weitere Fälle von gehackten Kühlanlagen bekannt geworden",
-      "description": "In Deutschland und Frankreich sind neue Fälle von durch Hacker manipulierten Kühlsystemen bekannt geworden. In Bayern traf es eine Metzgerei. In Frankreich einen besonders sensiblen Bereich: den Blutspendedienst.",
-      "pubDate": "2026-11-04T15:42:11+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/technologie/cyberangriff-kuehlanlagen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "2a74008afa4bef3dd7d5",
-      "title": "Neuer EZB-Chef: Niederlande nominieren Ex-Zentralbanker Knot",
-      "description": "Der frühere niederländische Zentralbankchef Knot ist nun offiziell für den EZB-Chefsessel nominiert. Er gilt als aussichtsreicher Kandidat für die Nachfolge der scheidenden Christine Lagarde.",
-      "pubDate": "2026-11-04T15:30:36+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/konjunktur/knot-nominierung-ezb-100.html",
-      "bild": ""
-    },
-    {
-      "id": "3f1c47a2755eddf99507",
-      "title": "Montenegro könnte EU-Mitgliedsland Nummer 28 werden",
-      "description": "Viele Länder möchten EU-Mitglied werden - für Montenegro läuft es am besten. Die EU hält einen Beitritt des kleinen Balkan-Landes schon 2028 für möglich. Für andere Staaten gebe es hingegen gerade eher keine Perspektive.",
-      "pubDate": "2026-11-04T15:11:39+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/eu-montenegro-100.html",
       "bild": ""
     }
   ],
