@@ -1,21 +1,53 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "04.11.2026, 18:49 Uhr (UTC)",
+  "aktualisiert": "05.11.2026, 00:15 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "8b54a5135f358016937e",
+      "title": "Midterms in den USA: Verhaltener Optimismus in der Ukraine nach US-Wahl",
+      "description": "Die Wahlschlappe von Trumps Republikanern lässt viele in der Ukraine auf einen Kurswechsel der USA hoffen. Doch ob es tatsächlich so schnell zu Veränderungen kommt, daran zweifelt man. Von F. Kellermann.",
+      "pubDate": "2026-11-05T01:10:07+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/ukraine-usa-zwischenwahl-100.html",
+      "bild": ""
+    },
+    {
+      "id": "5d528fc066b5daf317ba",
+      "title": "Liveblog zu den Midterms: ++ Trump verteidigt Iran-Krieg ++",
+      "description": "US-Präsident Trump hat trotz des Wahldebakels betont, am Kurs im Iran-Krieg festhalten zu wollen. Außenminister Wadephul erwartet weiterhin eine konstruktive Zusammenarbeit mit der US-Regierung.",
+      "pubDate": "2026-11-04T23:08:00+01:00",
+      "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
+      "bild": ""
+    },
+    {
+      "id": "72598c421b0e358904d5",
+      "title": "Vance zu den Midterms: \"Der Grund für unsere Niederlage ist der Krieg\"",
+      "description": "Nach der Wahlschlappe der Republikaner geht in der Partei die Spurensuche los, warum sie solche herben Verluste gegen die Demokraten einstecken musste. Für Vizepräsident Vance ist klar: Der Iran-Krieg ist schuld. Von K. Fuß.",
+      "pubDate": "2026-11-04T22:15:24+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/midterms-vance-irankrieg-100.html",
+      "bild": ""
+    },
+    {
+      "id": "8374bb8855eb2f22bf17",
+      "title": "Bayerns Wirtschaftsminister Hubert Aiwanger ist tot",
+      "description": "Bayerns Wirtschaftsminister und Vize-Ministerpräsident Hubert Aiwanger ist tot, wie das ARD-Hauptstadtstudio aus Regierungskreisen erfuhr. Der Freie-Wähler-Chef starb demnach im Alter von 55 Jahren in einem Berliner Hotel.",
+      "pubDate": "2026-11-05T00:35:58+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/hubert-aiwanger-tot-100.html",
+      "bild": ""
+    },
+    {
+      "id": "6fe895532dae3d3620f3",
+      "title": "Gen-Z-Protest: Bundestag debattiert über Konsequenzen nach Krawallen",
+      "description": "Die Krawalle vom Wochenende haben den Bundestag erreicht. In einer Aktuellen Stunde herrschte weitgehend Einigkeit in der Verurteilung der Gewalt - über ihre Ursachen und die angemessene Wortwahl gingen die Meinungen auseinander. Von F. Aischmann.",
+      "pubDate": "2026-11-04T21:24:21+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/gen-z-aktuelle-stunde-100.html",
+      "bild": ""
+    },
     {
       "id": "007573149abb699f2773",
       "title": "Marktbericht: DAX-Anleger in Kauflaune",
       "description": "Der DAX steigt zeitweise auf den höchsten Stand seit zwei Monaten. Neben positiven Unternehmenszahlen sorgt auch die Hoffnung auf mehr politische Berechenbarkeit in den USA für Rückenwind.",
       "pubDate": "2026-11-04T18:31:22+01:00",
       "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-boerse-118.html",
-      "bild": ""
-    },
-    {
-      "id": "5d528fc066b5daf317ba",
-      "title": "Liveblog zu den Midterms: ++ Vance sieht Iran-Krieg als Grund für Wahlschlappe ++",
-      "description": "US-Vizepräsident Vance führt die Niederlagen der Republikaner auf den Iran-Krieg zurück. Laut Medienberichten will der derzeitige Sprecher des Repräsentantenhauses, Johnson, nicht erneut als Fraktionschef der Republikaner kandidieren.",
-      "pubDate": "2026-11-04T19:18:19+01:00",
-      "link": "https://www.tagesschau.de/newsticker/liveblog-midterms-2026-100.html",
       "bild": ""
     },
     {
@@ -88,38 +120,6 @@
       "description": "Viele Länder möchten EU-Mitglied werden - für Montenegro läuft es am besten. Die EU hält einen Beitritt des kleinen Balkan-Landes schon 2028 für möglich. Für andere Staaten gebe es hingegen gerade eher keine Perspektive.",
       "pubDate": "2026-11-04T15:11:39+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/eu-montenegro-100.html",
-      "bild": ""
-    },
-    {
-      "id": "8a97bc77b8b8fbdb956e",
-      "title": "US-Midterms: Wie Trump abgestraft wurde - und was die Folgen sind",
-      "description": "Ein Teilerfolg für die Demokraten war erwartet worden. Doch die Zwischenwahlen in den USA kommen einem Desaster für Präsident Trump gleich. Was war dafür ausschlaggebend und wie geht es jetzt weiter? Fragen und Antworten von E. Aretz und C. Schwanitz.",
-      "pubDate": "2026-11-04T14:44:41+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/usa-ergebnisse-midterms-faq-100.html",
-      "bild": ""
-    },
-    {
-      "id": "66b763f82cbb767acb5a",
-      "title": "RNA-Medizin: Was kommt nach der Corona-Impfung?",
-      "description": "Bekannt wurde die RNA-Medizin vor allem während der Corona-Pandemie - durch die mRNA-Impfstoffe. Künftig könnten solche Therapien auch bei Herz-Kreislauf-Erkrankungen, seltenen Krankheiten oder Krebs zum Einsatz kommen.",
-      "pubDate": "2026-11-04T14:21:52+01:00",
-      "link": "https://www.tagesschau.de/wissen/gesundheit/rna-forschung-chancen-und-risiken-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c027c161fb779ca2fdf9",
-      "title": "Marktbericht: Demokraten-Sieg gibt DAX Rückenwind",
-      "description": "Der überraschende Erfolg der US-Demokraten steht bei den Märkten im Fokus und treibt etwa den DAX an. Gleichzeitig geraten Tech-Aktien unter Druck: Anleger befürchten, dass die Demokraten den KI-Sektor stärker regulieren könnten.",
-      "pubDate": "2026-11-04T14:11:29+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/reaktionen-midterms-102.html",
-      "bild": ""
-    },
-    {
-      "id": "94de3d9c319f2e7f08d3",
-      "title": "Wo die Menschen in Deutschland am längsten leben",
-      "description": "Die Lebenserwartung steigt - allerdings nicht überall gleichermaßen. Baden-Württemberg liegt vorn. Im Osten Deutschlands ist der Abstand zwischen Frauen und Männern besonders groß. Und mancherorts sinkt die Lebenserwartung von Frauen sogar.",
-      "pubDate": "2026-11-04T13:38:29+01:00",
-      "link": "https://www.tagesschau.de/wissen/gesundheit/lebenserwartung-maenner-frauen-102.html",
       "bild": ""
     }
   ],
