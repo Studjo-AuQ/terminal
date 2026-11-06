@@ -1,7 +1,23 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "05.11.2026, 21:52 Uhr (UTC)",
+  "aktualisiert": "06.11.2026, 02:09 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "35f3420c3e97ae019747",
+      "title": "Bundestag korrigiert Panne bei Tabaksteuererhöhung",
+      "description": "Eigentlich sollte die Tabaksteuer erst zum Jahreswechsel erhöht werden - doch durch ein Versehen trat die Erhöhung schon jetzt in Kraft. Nun heißt es per Gesetzesänderung: Kommando zurück.",
+      "pubDate": "2026-11-06T01:55:35+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/tabaksteuer-138.html",
+      "bild": ""
+    },
+    {
+      "id": "da0f887126a55f1622ab",
+      "title": "Kalifornien wandelt Todesstrafen in lebenslange Haftstrafen um",
+      "description": "In Kalifornien wird die Todesstrafe seit 20 Jahren nicht mehr vollstreckt. 548 Menschen sitzen dort aktuell im Todestrakt. Jetzt kündigte der scheidende Gouverneur Newsom an, ihre Strafen in lebenslange Haftstrafen umzuwandeln.",
+      "pubDate": "2026-11-06T00:44:38+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/kalifornien-todesstrafe-umwandlung-100.html",
+      "bild": ""
+    },
     {
       "id": "2c17fc6abceb484212b3",
       "title": "Häftling auf der Flucht: Fußfessel-Schlüssel gab es im Internet",
@@ -104,22 +120,6 @@
       "description": "Die Bundesregierung übernimmt alle Anteile der Eigentümerfamilien am Panzerbauer KNDS. Damit sichert sich der Bund den Einfluss auf Schlüsseltechnologien - und gibt offenbar weniger Geld aus als geplant.",
       "pubDate": "2026-11-05T15:11:59+01:00",
       "link": "https://www.tagesschau.de/wirtschaft/unternehmen/knds-bundesregierung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "2f5d78fda5c9fe53a27e",
-      "title": "Linnemann kündigt Nachbesserungen bei Pflegereform an",
-      "description": "Die Pläne für eine Reform der Pflegeversicherung sind umstritten. Patientenschützer sprechen von einer Mogelpackung. Im Bundestag verteidigte Gesundheitsminister Linnemann das Vorhaben - und kündigte zugleich Korrekturen an.",
-      "pubDate": "2026-11-05T15:07:06+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/bundestag-pflegeversicherung-linnemann-100.html",
-      "bild": ""
-    },
-    {
-      "id": "9a3f958a29e28730a655",
-      "title": "Christian Freuding wird neuer Generalinspekteur der Bundeswehr",
-      "description": "Wechsel an der Spitze der Bundeswehr: Christian Freuding wird neuer Generalinspekteur und damit ranghöchster Soldat der Truppe. Freuding sei der Richtige für \"das neue Zeitalter\", sagte Verteidigungsminister Pistorius.",
-      "pubDate": "2026-11-05T18:15:48+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/generalinspekteur-freuding-100.html",
       "bild": ""
     }
   ],
