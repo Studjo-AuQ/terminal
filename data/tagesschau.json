@@ -1,7 +1,71 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "06.11.2026, 17:19 Uhr (UTC)",
+  "aktualisiert": "06.11.2026, 22:17 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "0e4b8fcf35a67a06134d",
+      "title": "Politologin über Aigner: \"Sie hat viel politische Erfahrung\"",
+      "description": "Bayerns Landtagspräsidentin Ilse Aigner wird Unionskandidatin für die Wahl zur Bundespräsidentin. Genug Erfahrung habe sie, sagt die Politologin Münch in den tagesthemen. Diese werde auch dringend gebraucht.",
+      "pubDate": "2026-11-06T21:54:46+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/aigner-bundespraesidentin-interview-tt-100.html",
+      "bild": ""
+    },
+    {
+      "id": "30a967cadd68251ab135",
+      "title": "Trumps Stabschefin Wiles verlässt das Weiße Haus",
+      "description": "Seit der Wahlniederlage der Republikaner bei den Midterms wird spekuliert, ob und wie US-Präsident Trump seinen Machtzirkel umbaut. Nun steht fest: Die Strippenzieherin Wiles geht, ihr Vize Miller übernimmt.",
+      "pubDate": "2026-11-06T21:20:30+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/trump-wiles-100.html",
+      "bild": ""
+    },
+    {
+      "id": "1ff5d3d09c009daf8cde",
+      "title": "Bombendrohungen in Europa: Anzeichen auf koordinierten Angriff verdichten sich",
+      "description": "Erneut hat es in Europa zahlreiche Bombendrohungen gegeben - sowohl im Flugverkehr als auch gegen Medienhäuser. Spanien spricht von einem hybriden Angriff, der \"kein Zufall\" sei. Irland sieht eine \"koordinierte Kampagne\".",
+      "pubDate": "2026-11-06T20:39:20+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/bombendrohungen-europa-100.html",
+      "bild": ""
+    },
+    {
+      "id": "36fe0167bbd70dc81b1f",
+      "title": "Erneut Hackerangriff auf Münchener Universität - TUM betroffen",
+      "description": "Unbekannte haben Hochschulsysteme der Technischen Universität München gehackt. Sie konnten etwa Adressen und Passwörter einsehen. Es ist bereits der zweite Hackerangriff auf eine große Uni in München.",
+      "pubDate": "2026-11-06T20:23:12+01:00",
+      "link": "https://www.tagesschau.de/inland/regional/bayern/hackerangriff-tum-100.html",
+      "bild": ""
+    },
+    {
+      "id": "c3aebcb32293c2e09a4b",
+      "title": "Russland bei Eishockey-WM? Deutschlands sportpolitisches Dilemma",
+      "description": "Die Eishockey-WM in Deutschland steht wegen der möglichen Teilnahme Russlands vor einem Boykott mehrerer Nationen und Sponsoren. Die Bundesregierung bringt das in ein Dilemma. Von Felix Jakobs.",
+      "pubDate": "2026-11-06T19:53:38+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/eishockey-wm-wie-umgehen-mit-russland-100.html",
+      "bild": ""
+    },
+    {
+      "id": "439ddf7fe2796d9bc13f",
+      "title": "Die gestohlenen Kinder von Oleschky",
+      "description": "2022 verschleppten russische Soldaten Hannas Sohn Anton aus einem Heim in Oleschky. Eine niederländische NGO hilft bei der Suche - doch selbst wenn sie ihn findet, ist eine Rückkehr in die Ukraine nicht sicher. Von R. Barth.",
+      "pubDate": "2026-11-06T18:48:38+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/ukraine-oleschky-kinder-100.html",
+      "bild": ""
+    },
+    {
+      "id": "ea337c86415ca321d509",
+      "title": "Verhaltene Reaktionen auf Trumps Ankündigung eines Ukraine-Abkommens",
+      "description": "Nach einem Treffen mit Kreml-Unterhändler Dmitrijew kündigte US-Präsident Trump ein \"großes\" Ukraine-Abkommen an. Alle würden begeistert sein, behauptete er. Doch Moskau und Brüssel dämpfen die Erwartungen.",
+      "pubDate": "2026-11-06T18:46:51+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/trump-ukraine-reaktionen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "bb847e2ea0e555f9b54e",
+      "title": "Weltweiter KI-Ausverkauf: DAX rutscht nach Rekordhoch ab",
+      "description": "Sorgen um KI- und Halbleiterwerte lösen weltweit Verkäufe aus - und setzen auch den deutschen Aktienmarkt unter Druck. Die US-Börsen konnten sich inzwischen wieder berappeln.",
+      "pubDate": "2026-11-06T18:30:36+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-ki-nasdaq-wall-street-100.html",
+      "bild": ""
+    },
     {
       "id": "b58e6a5471d66fb19187",
       "title": "Anführer von Hungersekte in Kenia zu 200 Jahren Haft verurteilt.",
@@ -30,7 +94,7 @@
       "id": "07bdee5b281ef6cba0d8",
       "title": "Ilse Aigner soll laut ARD-Informationen Bundespräsidentin werden",
       "description": "Sie wäre dort die erste Frau: Laut ARD-Hauptstadtstudio werden CDU und CSU Ilse Aigner als Kandidatin für das Amt der Bundespräsidentin vorschlagen. Gemeinsam mit der SPD hätten sie in der Bundesversammlung eine Mehrheit.",
-      "pubDate": "2026-11-06T18:17:22+01:00",
+      "pubDate": "2026-11-06T21:36:48+01:00",
       "link": "https://www.tagesschau.de/inland/innenpolitik/cdu-csu-aigner-bundespraesidentin-100.html",
       "bild": ""
     },
@@ -56,70 +120,6 @@
       "description": "Ob im Club, an der Bar oder beim Karneval: K.-o.-Tropfen werden oft zur unsichtbaren Gefahr. Die anonyme Spurensicherung in Kliniken ermöglicht Betroffenen, Beweise zu sichern, ohne sofort die Polizei einschalten zu müssen. Von Jan Koch.",
       "pubDate": "2026-11-06T15:27:53+01:00",
       "link": "https://www.tagesschau.de/inland/gesellschaft/ko-tropfen-sexualisierte-gewalt-nachweis-100.html",
-      "bild": ""
-    },
-    {
-      "id": "211a746a1839759bc364",
-      "title": "Bombendrohungen auch gegen irische Medien",
-      "description": "Während weiter Flüge wegen Bombendrohungen umgeleitet werden, trifft es nun auch Medien: In Irland mussten Redaktionsgebäude geräumt werden. Es soll einen Zusammenhang geben. Aber wer steckt dahinter? Das bleibt unklar.",
-      "pubDate": "2026-11-06T14:49:52+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/bombendrohung-oeffentlich-rechtlicher-sender-irland-100.html",
-      "bild": ""
-    },
-    {
-      "id": "3d289720e10290d80180",
-      "title": "Marktbericht: Zweifel am KI-Geschäft belasten die Branche",
-      "description": "Der weltweite Kursrutsch bei Tech- und Chipwerten schürt Zweifel, ob sich die hohen KI-Investitionen auszahlen. Zugleich wächst vor dem geplanten Börsengang der Widerstand gegen die Billionenbewertung von Anthropic. Von Melanie Böff.",
-      "pubDate": "2026-11-06T14:22:11+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/ki-boom-unter-druck-100.html",
-      "bild": ""
-    },
-    {
-      "id": "d1e3177c0850e1c18b08",
-      "title": "Tesla will Cybertruck-Produktion in Texas einstellen",
-      "description": "Der Cybertruck sollte Teslas Antwort auf die beliebten US-Pickups sein. Doch das Elektroauto blieb hinter den Erwartungen zurück. Nun will Elon Musk die Produktion in Texas beenden und Platz für ein anderes Produkt schaffen.",
-      "pubDate": "2026-11-06T14:09:10+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/tesla-produktion-cybertruck-100.html",
-      "bild": ""
-    },
-    {
-      "id": "bf62cc6747c3801e4ba4",
-      "title": "EU-Dienst Copernicus: 1,5-Grad-Marke wird 2026 wohl überschritten",
-      "description": "Kurz vor der Klimakonferenz COP31 in Antalya gibt es ernüchternde Zahlen: Das 1,5-Grad-Ziel wird 2026 laut EU-Dienst Copernicus höchstwahrscheinlich überschritten. Der Oktober war zudem der wärmste seit Beginn der Aufzeichnungen.",
-      "pubDate": "2026-11-06T14:02:07+01:00",
-      "link": "https://www.tagesschau.de/wissen/klima/copernicus-klimakrise-1komma5-grad-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f43b4c6bdd93036c3f16",
-      "title": "EU-Kommission wirft TikTok Gesundheitsgefährdung vor",
-      "description": "Der \"Rabbit Hole\"-Effekt führt zu einer weiteren Konfrontation zwischen der EU und TikTok. Die Brüsseler werfen der App vor, die Gesundheit Nutzender zu gefährden. TikTok droht eine heftige Strafe.",
-      "pubDate": "2026-11-06T13:08:01+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/eu-tiktok-mentale-gesundheit-gefaehrdung-algorithmus-100.html",
-      "bild": ""
-    },
-    {
-      "id": "1f6930f434a487337e14",
-      "title": "Millionen Euro verschwunden: Vucic-nahe Bank in Serbien geschlossen",
-      "description": "Die serbische Alta Bank ist geschlossen, ihr Besitzer verhaftet. Der mutmaßliche Vertraute des früheren Präsidenten Vucic soll knapp 400 Millionen Euro gestohlen haben. Auch staatliche Gelder könnten betroffen sein. Von Silke Hahne.",
-      "pubDate": "2026-11-06T12:58:26+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/nationalbank-serbien-diebstahl-400-millionen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "28c71c04f38dbf482a43",
-      "title": "Bundestag beschließt härtere Strafen für Einsatz von K.-o.-Tropfen",
-      "description": "Täter mischen ihren Opfern K.-o.-Mittel unter, um sie gezielt wehrlos zu machen. Der Bundestag hat für solche Taten härtere Strafen beschlossen. Wie können sich Opfer schützen - und was droht jetzt den Tätern?",
-      "pubDate": "2026-11-06T12:28:21+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/strafen-ko-tropfen-bundestag-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f3aef7fedb94c0c0efbf",
-      "title": "Welche Folgen die US-Midterms für die deutsche Wirtschaft haben",
-      "description": "Der Machtwechsel im US-Kongress könnte Unternehmen mehr Planbarkeit bringen. Zugleich befürchten Ökonomen, dass sich der Zollstreit fortsetzt. Worauf kann sich die deutsche Wirtschaft einstellen? Von Sebastian Schreiber.",
-      "pubDate": "2026-11-06T12:17:25+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/midterms-wirtschaft-handelspolitik-100.html",
       "bild": ""
     }
   ],
