@@ -1,7 +1,103 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "06.11.2026, 02:09 Uhr (UTC)",
+  "aktualisiert": "06.11.2026, 09:44 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "ec348df2d9cd41344967",
+      "title": "Was Aiwangers Tod für Bayerns Koalition bedeutet",
+      "description": "Mit Hubert Aiwanger verlieren die Freien Wähler ihr Zentrum und ihre Anziehungskraft. Das könnte die politischen Verhältnisse in Bayern nachhaltig verändern. Noch sind sie Regierungspartner der CSU. Von J. Wengert.",
+      "pubDate": "2026-11-06T10:30:52+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/aiwanger-soeder-analyse-100.html",
+      "bild": ""
+    },
+    {
+      "id": "19452f77453142f3b07a",
+      "title": "Paraguay: Die Bankenkrise wird zur Staatskrise",
+      "description": "In Paraguay zieht die Krise um die Ueno Bank immer weitere Kreise: Weil Präsident Peña die Risiken zu lange ignorierte, leitete das Parlament ein Amtsenthebungsverfahren ein. Auch die Staatsanwaltschaft ermittelt. Von Anne Herrberg.",
+      "pubDate": "2026-11-06T10:29:54+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/paraguay-pena-ruecktritt-ueno-bank-100.html",
+      "bild": ""
+    },
+    {
+      "id": "bb847e2ea0e555f9b54e",
+      "title": "Marktbericht: DAX fällt im Sog der Nasdaq",
+      "description": "Der DAX kann sich dem Abwärtssog der Wall Street nicht entziehen. Der deutsche Leitindex stürzt zurück unter die Marke von 26.000 Punkten. Wie könnte es am Markt jetzt weitergehen?",
+      "pubDate": "2026-11-06T10:29:32+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-ki-nasdaq-wall-street-100.html",
+      "bild": ""
+    },
+    {
+      "id": "d76f9f14360a8afa94f8",
+      "title": "Daimler Truck meldet deutlichen Gewinnsprung wegen USA-Geschäft",
+      "description": "Der Nutzfahrzeughersteller Daimler Truck hat wieder auf die Erfolgsspur zurückgefunden. Dank eines anspringenden US-Geschäfts verbucht das Unternehmen einen Milliardengewinn und kann sich etwas erholen.",
+      "pubDate": "2026-11-06T10:13:00+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/daimlertruck-100.html",
+      "bild": ""
+    },
+    {
+      "id": "fe2ae41cb5ffdf75419f",
+      "title": "Israels Präsident nach Regierungskonsultationen mit ernüchterndem Fazit",
+      "description": "Am Sonntag entscheidet Israels Staatspräsident Herzog, wem er den Regierungsauftrag gibt. Die Konsultationen verliefen bisher allerdings wenig konstruktiv. Von Julio Segador.",
+      "pubDate": "2026-11-06T09:25:15+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/israel-konsultationen-auftrag-100.html",
+      "bild": ""
+    },
+    {
+      "id": "cc49d10353f26635f161",
+      "title": "Chipaktien an den internationalen Börsen im freien Fall",
+      "description": "Ein weltweiter Abverkauf von Chip- und Techaktien schickt wichtige Aktienindizes auf Talfahrt. In Seoul wurde der Handel zeitweise ausgesetzt. In den USA war es der schlimmste Einbruch seit 2020. Von Constantin Röse.",
+      "pubDate": "2026-11-06T10:21:42+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/boerse/tech-einbruch-ki-100.html",
+      "bild": ""
+    },
+    {
+      "id": "eefdb274bc3a97477a74",
+      "title": "Los Angeles bekommt linke Bürgermeisterin",
+      "description": "Die künftige Bürgermeisterin von Los Angeles heißt Nithya Raman. Sie gehört dem linken Flügel der Demokraten an - genau wie New Yorks Bürgermeister. Dezidiert linke Politik scheint Wähler in den Großstädten nicht mehr zu verprellen. Von G. Biesinger.",
+      "pubDate": "2026-11-06T08:32:23+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/los-angeles-buergermeisterin-100.html",
+      "bild": ""
+    },
+    {
+      "id": "83102ef685a49ea7ef4d",
+      "title": "Richtungsstreit bei US-Republikanern: Was kommt nach der Trump-Ära?",
+      "description": "Nach der Niederlage bei den Zwischenwahlen streiten die US-Republikaner über den künftigen Kurs der Partei. Fehleranalyse, Vorwürfe und eigene Bewerbungsreden sind dabei schwer auseinanderzuhalten. Von Samuel Jackisch.",
+      "pubDate": "2026-11-06T08:31:41+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/amerika-midterms-republikaner-100.html",
+      "bild": ""
+    },
+    {
+      "id": "b10996076df5a5969c0a",
+      "title": "Trump trifft Kreml-Vertreter und stellt Abkommen in Aussicht",
+      "description": "Sowohl Vertreter Russlands als auch der Ukraine waren jetzt zu Gast im Weißen Haus. Doch den US-Präsidenten persönlich durfte nur der Kreml-Gesandte treffen. Anschließend kündigte Trump einen möglichen Deal an, nannte aber keine Details.",
+      "pubDate": "2026-11-06T07:00:41+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/trump-ukraine-russland-108.html",
+      "bild": ""
+    },
+    {
+      "id": "c21817597ae09f1e88cd",
+      "title": "Bundestag plant härtere Strafen für den Einsatz von K.o.-Tropfen",
+      "description": "Immer wieder werden vor allem Frauen mit K.o.-Tropfen betäubt und erleben sexualisierte Gewalt. Der Bundestag will heute härtere Strafen beschließen. Aus Sicht der Opposition verfehlt das Gesetz aber den Kern des Problems. Von Felix Jakobs.",
+      "pubDate": "2026-11-06T06:17:40+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/ko-tropfen-gesetz-bundestag-100.html",
+      "bild": ""
+    },
+    {
+      "id": "d3b71403cd674f17471e",
+      "title": "Ressourcenverbrauch vieler Rechenzentren nicht öffentlich einsehbar",
+      "description": "Rechenzentren verbrauchen enorme Mengen Strom und Wasser. Betreiber sind gesetzlich verpflichtet, ihren Verbrauch zu veröffentlichen. Doch Anfragen des SWR an mehr als 30 Unternehmen zeigen: Viele nehmen es mit der Transparenz nicht so ernst.",
+      "pubDate": "2026-11-06T06:04:19+01:00",
+      "link": "https://www.tagesschau.de/investigativ/swr/rechenzentren-transparenz-wasserverbrauch-stromverbrauch-100.html",
+      "bild": ""
+    },
+    {
+      "id": "00583d3faefc0546dee3",
+      "title": "Kongress lehnt Peñas Rücktritt ab - Staatsanwalt ermittelt",
+      "description": "Paraguay wird von einem Finanzskandal erschüttert, in den auch Präsident Peña verwickelt ist. Der Staatschef will zurücktreten, doch der Kongress nimmt das Rücktrittsgesuch nicht an - und leitet ein Amtsenthebungsverfahren ein.",
+      "pubDate": "2026-11-06T05:28:23+01:00",
+      "link": "https://www.tagesschau.de/ausland/paraguay-ruecktritt-abgelehnt-100.html",
+      "bild": ""
+    },
     {
       "id": "35f3420c3e97ae019747",
       "title": "Bundestag korrigiert Panne bei Tabaksteuererhöhung",
@@ -24,102 +120,6 @@
       "description": "Im Oktober war ein Häftling in Essen während eines Arztbesuchs von Komplizen befreit worden und ist seitdem auf der Flucht. Nun räumte der NRW-Justizminister ein: Den Schlüssel für die Fußfessel gab es für 10 Euro im Internet zu kaufen.",
       "pubDate": "2026-11-05T20:34:20+01:00",
       "link": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/fussfessel-schluessel-100.html",
-      "bild": ""
-    },
-    {
-      "id": "37dad1502a6610061c06",
-      "title": "Supermärkte: Warum Kühlregale leicht zu hacken sind",
-      "description": "Angefangen hat es mit Angriffen auf Kühlsysteme in französischen Supermärkten. Inzwischen sind auch deutsche Einzelhändler betroffen. Experten rechnen mit weiteren Attacken auf Kritische Infrastruktur - und Wohnzimmer. Von S. Wolff",
-      "pubDate": "2026-11-05T20:11:03+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/hacker-kuehlsysteme-supermaerkte-100.html",
-      "bild": ""
-    },
-    {
-      "id": "cfa16a78e9f39520dc36",
-      "title": "Hunderttausende protestieren in Frankreich für bessere Lebensbedingungen",
-      "description": "Der Ruf nach höheren Löhnen, Steuergerechtigkeit und mehr Geld für Bildung hat in Frankreich erneut Hunderttausende auf die Straßen getrieben. Der Aktionstag verlief weitgehend friedlich, es kam mancherorts dennoch zu Ausschreitungen.",
-      "pubDate": "2026-11-05T22:18:10+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/streik-proteste-frankreich-100.html",
-      "bild": ""
-    },
-    {
-      "id": "64654301f3fd67eff5c5",
-      "title": "Paraguays Präsident tritt nach Bankenpleite zurück",
-      "description": "Inmitten einer schweren Bankenkrise seines Landes hat Paraguays Präsident Peña seinen Rücktritt eingereicht. Ihm wurden geschäftliche Beziehungen zur Muttergesellschaft der Pleitebank vorgeworfen. Von A. Herrberg.",
-      "pubDate": "2026-11-05T19:26:37+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/paraguay-ruecktritt-praesident-100.html",
-      "bild": ""
-    },
-    {
-      "id": "620a4cd994c9f0bb4ec6",
-      "title": "Investor Benko wegen Millionenbetrugs zu weiterer Haftstrafe verurteilt",
-      "description": "Die Vorwürfe gegen den österreichischen Immobilieninvestor René Benko sind umfangreich: Nach einer Verurteilung wegen Gläubigerschädigung im September folgt nun eine weitere wegen Betrugs. Sie ist noch nicht rechtskräftig.",
-      "pubDate": "2026-11-05T18:56:47+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/benko-prozess-neue-strafe-100.html",
-      "bild": ""
-    },
-    {
-      "id": "91258850d74777745711",
-      "title": "Marktbericht: DAX springt auf Rekordhoch",
-      "description": "Die Märkte bleiben im Aufwind: Nach den US-Zwischenwahlen erreicht der DAX im frühen Handel einen neuen Höchststand. Rückenwind erhält er von günstigeren Ölpreisen und positiven Signalen aus der Industrie.",
-      "pubDate": "2026-11-05T18:16:27+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-zwischenwahlen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "9aea770907f729a7f388",
-      "title": "Ukraine: Korruption und Mafiastrukturen bei Geheimdienst und Polizei?",
-      "description": "Ukrainische Antikorruptionsbehörden haben neue Ermittlungsergebnisse veröffentlicht, die schockieren: Der Korruptionsskandal zieht offenbar noch weitere Kreise als bisher bekannt - und betrifft auch Geheimdienst und Polizei. Von F. Kellermann.",
-      "pubDate": "2026-11-05T18:03:34+01:00",
-      "link": "https://www.tagesschau.de/ausland/ukraine-korruption-116.html",
-      "bild": ""
-    },
-    {
-      "id": "1b4adbf3c14f39695c2e",
-      "title": "ARD-DeutschlandTrend: Große Mehrheit hat Verständnis für Jugendproteste",
-      "description": "82 Prozent der Menschen in Deutschland findet, dass die Politik die Anliegen junger Menschen nicht gut genug berücksichtigt. Die junge Generation selbst vertraut im ARD-DeutschlandTrend vor allem zwei Parteien. Von Christian Basl.",
-      "pubDate": "2026-11-05T18:01:09+01:00",
-      "link": "https://www.tagesschau.de/inland/deutschlandtrend/deutschlandtrend-november-108.html",
-      "bild": ""
-    },
-    {
-      "id": "be47ef10967a8e2dd4e4",
-      "title": "Trump kritisiert die Midterms-Auszählung im Bundesstaat Alaska",
-      "description": "Noch läuft die Auszählung der Senatoren-Wahl in Alaska. Es zeichnet sich ein knappes Rennen ab. Nun mischt sich US-Präsident Trump ein: Er fordert, die Stimmen für Dan J. Sullivan dem Republikaner Dan S. Sullivan zuzuschlagen.",
-      "pubDate": "2026-11-05T17:58:22+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/us-midterms-trump-alaska-100.html",
-      "bild": ""
-    },
-    {
-      "id": "3368c49e6d24dd757eb7",
-      "title": "Britischer Komiker Brand der Vergewaltigung schuldig gesprochen",
-      "description": "Russell Brand - der britische Komiker und Schauspieler - blickt einer Gefängnisstrafe entgegen. Der 51-Jährige ist in einem Prozess um sexuelle Gewalt in mehreren Punkten für schuldig befunden worden.",
-      "pubDate": "2026-11-05T16:42:30+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/russell-brand-verurteilung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "94ad45665a39893d02b1",
-      "title": "Aiwanger starb laut ersten Erkenntnissen ohne Fremdverschulden",
-      "description": "Einen Tag nach dem plötzlichen Tod des Freie-Wähler-Chefs Aiwanger liegen erste Ermittlungsergebnisse vor. Für ein Fremdverschulden gibt es demnach keine Anhaltspunkte. Die Freien Wähler müssen sich jetzt neu aufstellen.",
-      "pubDate": "2026-11-05T16:25:23+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/aiwanger-tod-ermittlungen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "1c0abaf56e07a0f6aff4",
-      "title": "Großangelegter TV-Streich sorgt in Dänemark für Skandal",
-      "description": "Ist es in Ordnung, wenn 150 Menschen über Monate einen Freund und Kollegen belügen, um am Ende aufzulösen, dass alles nur ein Spaß fürs Fernsehen war? In Dänemark wird heftig über ein TV-Format diskutiert. Von Arne Bartram.",
-      "pubDate": "2026-11-05T15:32:28+01:00",
-      "link": "https://www.tagesschau.de/ausland/daenemark-tv-skandal-100.html",
-      "bild": ""
-    },
-    {
-      "id": "e8939bdbaa2765b8cf24",
-      "title": "Bund und Eigentümerfamilien einigen sich auf Kaufpreis bei KNDS",
-      "description": "Die Bundesregierung übernimmt alle Anteile der Eigentümerfamilien am Panzerbauer KNDS. Damit sichert sich der Bund den Einfluss auf Schlüsseltechnologien - und gibt offenbar weniger Geld aus als geplant.",
-      "pubDate": "2026-11-05T15:11:59+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/knds-bundesregierung-100.html",
       "bild": ""
     }
   ],
