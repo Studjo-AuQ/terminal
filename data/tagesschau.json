@@ -1,7 +1,23 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "07.11.2026, 20:05 Uhr (UTC)",
+  "aktualisiert": "07.11.2026, 23:51 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "6d7174612da89403045f",
+      "title": "Bankenkrise: Anklage gegen Paraguays Ex-Präsidenten",
+      "description": "Nur einen Tag nach seiner Amtsenthebung muss sich Paraguays Ex-Präsident Peña wegen seiner Rolle im Bankenskandal vor der Justiz verantworten. Die Staatsanwaltschaft fordert Untersuchungshaft.",
+      "pubDate": "2026-11-07T21:33:23+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/ermittlungen-paraguay-pena-100.html",
+      "bild": ""
+    },
+    {
+      "id": "3aa073d49d6d6ce5e812",
+      "title": "Oppositionsführer Eisenkot soll Israels neue Regierung bilden",
+      "description": "Endet die Ära Netanjahu in Israel? Staatspräsident Herzog beauftragt den Oppositionspolitiker Eisenkot mit der Regierungsbildung. In den kommenden 28 Tagen soll er versuchen, eine Koalition zu schmieden.",
+      "pubDate": "2026-11-07T21:31:48+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/regierungsbildung-israel-eisenkot-100.html",
+      "bild": ""
+    },
     {
       "id": "c194f2c6938692346af3",
       "title": "Papst in Uruguay: Schwierige Mission für Leo XIV.",
@@ -13,8 +29,8 @@
     {
       "id": "c516d5a6797f21e6df85",
       "title": "FAQ: Was ist über die Schüsse in Krakau bekannt?",
-      "description": "Am Nachmittag hat ein Täter im polnischen Krakau aus einem Auto geschossen und mindestens sechs Menschen getötet. Weitere Personen wurden verletzt. Was bislang über die Tat bekannt ist.",
-      "pubDate": "2026-11-07T20:38:37+01:00",
+      "description": "Im polnischen Krakau hat ein Mann aus einem Auto geschossen und mindestens sechs Menschen getötet. Weitere Personen wurden verletzt, darunter auch Deutsche. Was bislang über die Tat bekannt ist.",
+      "pubDate": "2026-11-08T00:00:48+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/schuesse-krakau-102.html",
       "bild": ""
     },
@@ -28,9 +44,9 @@
     },
     {
       "id": "542b6511d631af8b27bd",
-      "title": "Polen: Mindestens fünf Tote nach Schüssen in Krakau",
-      "description": "Bei Schüssen in der polnischen Stadt Krakau sind laut Polizei mindestens sechs Menschen getötet und 15 Personen verletzt worden. Der mutmaßliche Täter konnte demnach gefasst werden.",
-      "pubDate": "2026-11-07T19:27:27+01:00",
+      "title": "Polen: Mindestens sechs Tote nach Schüssen in Krakau",
+      "description": "Bei Schüssen in der polnischen Stadt Krakau sind laut Polizei mindestens sechs Menschen getötet und 16 Personen verletzt worden. Der mutmaßliche Täter konnte demnach gefasst werden. In seinem Wohnhaus wurden weitere Tote entdeckt.",
+      "pubDate": "2026-11-07T22:51:26+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/schuesse-krakau-100.html",
       "bild": ""
     },
@@ -104,22 +120,6 @@
       "description": "Die Bombendrohungen im europäischen Luftverkehr alarmieren Behörden - und verunsichern Passagiere. Gibt es solche Vorfälle öfter? Und was passiert bei einer Bombendrohung an Bord? Ein Überblick über die wichtigsten Fragen.",
       "pubDate": "2026-11-07T09:10:26+01:00",
       "link": "https://www.tagesschau.de/ausland/bombendrohungen-faq-100.html",
-      "bild": ""
-    },
-    {
-      "id": "b43f9b656873a3ae38e7",
-      "title": "Schwere Schäden nach Raketenangriffen auf Kiew",
-      "description": "Russland hat kurz vor Wintereinbruch erneut die ukrainische Strom- und Wasserversorgung angegriffen. In einigen Teilen des Landes fiel der Strom aus. Präsident Selenskyj und Kiews Bürgermeister Klitschko streiten über die Verteidigung.",
-      "pubDate": "2026-11-07T13:13:38+01:00",
-      "link": "https://www.tagesschau.de/ausland/ukraine-angriffe-kiew-138.html",
-      "bild": ""
-    },
-    {
-      "id": "cde4adaa50ae9cbf3579",
-      "title": "Pistorius rechnet derzeit nicht mit Rückkehr zur Wehrpflicht",
-      "description": "Die Wiedereinführung der Wehrpflicht scheint zum jetzigen Zeitpunkt offenbar nicht nötig. Verteidigungsminister Pistorius berichtet von einer positiven Entwicklung beim Bundeswehrpersonal - Spitzenvertreter der Union sehen das anders.",
-      "pubDate": "2026-11-07T15:45:52+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/bundeswehr-diskussion-wehrpflicht-100.html",
       "bild": ""
     }
   ],
