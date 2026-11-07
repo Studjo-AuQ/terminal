@@ -1,12 +1,36 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "07.11.2026, 15:51 Uhr (UTC)",
+  "aktualisiert": "07.11.2026, 20:05 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "c194f2c6938692346af3",
+      "title": "Papst in Uruguay: Schwierige Mission für Leo XIV.",
+      "description": "Zum Auftakt seiner Südamerika-Reise besucht Papst Leo XIV. Uruguay - ein Land, in dem der Glaube im Alltag kaum eine Rolle spielt. Doch im Armenviertel der Hauptstadt findet die soziale Arbeit der Kirche Anklang. Von Anne Herrberg.",
+      "pubDate": "2026-11-07T20:56:52+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/papst-reise-suedamerika-100.html",
+      "bild": ""
+    },
+    {
+      "id": "c516d5a6797f21e6df85",
+      "title": "FAQ: Was ist über die Schüsse in Krakau bekannt?",
+      "description": "Am Nachmittag hat ein Täter im polnischen Krakau aus einem Auto geschossen und mindestens sechs Menschen getötet. Weitere Personen wurden verletzt. Was bislang über die Tat bekannt ist.",
+      "pubDate": "2026-11-07T20:38:37+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/schuesse-krakau-102.html",
+      "bild": ""
+    },
+    {
+      "id": "659839b098fd08900f9d",
+      "title": "Weniger Teilnehmer bei neuen Demos in Frankreich",
+      "description": "Das zweite Mal in dieser Woche und das vierte Wochenende in Folge haben in Frankreich Menschen gegen hohe Lebenskosten oder Probleme im Bildungssystem protestiert. Allerdings kamen diesmal weniger Teilnehmer.",
+      "pubDate": "2026-11-07T19:57:56+01:00",
+      "link": "https://www.tagesschau.de/ausland/frankreich-proteste-246.html",
+      "bild": ""
+    },
     {
       "id": "542b6511d631af8b27bd",
       "title": "Polen: Mindestens fünf Tote nach Schüssen in Krakau",
-      "description": "Bei Schüssen in der polnischen Stadt Krakau sind laut Polizei mindestens fünf Menschen getötet und mehr als zehn Personen verletzt worden. Der mutmaßliche Täter konnte demnach gefasst werden.",
-      "pubDate": "2026-11-07T16:45:58+01:00",
+      "description": "Bei Schüssen in der polnischen Stadt Krakau sind laut Polizei mindestens sechs Menschen getötet und 15 Personen verletzt worden. Der mutmaßliche Täter konnte demnach gefasst werden.",
+      "pubDate": "2026-11-07T19:27:27+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/schuesse-krakau-100.html",
       "bild": ""
     },
@@ -96,30 +120,6 @@
       "description": "Die Wiedereinführung der Wehrpflicht scheint zum jetzigen Zeitpunkt offenbar nicht nötig. Verteidigungsminister Pistorius berichtet von einer positiven Entwicklung beim Bundeswehrpersonal - Spitzenvertreter der Union sehen das anders.",
       "pubDate": "2026-11-07T15:45:52+01:00",
       "link": "https://www.tagesschau.de/inland/innenpolitik/bundeswehr-diskussion-wehrpflicht-100.html",
-      "bild": ""
-    },
-    {
-      "id": "6287af215054a659e591",
-      "title": "Gesundheitsbehörde: Größter Masernausbruch in den USA seit 35 Jahren",
-      "description": "Die USA erleben laut der Gesundheitsbehörde CDC den größten Masernausbruch seit 1991. Im Laufe des Jahres wurden bereits 5.182 Krankheitsfälle registriert. In Wisconsin starb erstmals seit mehr als dreieinhalb Jahrzehnten ein Baby.",
-      "pubDate": "2026-11-07T07:01:55+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/usa-masern-100.html",
-      "bild": ""
-    },
-    {
-      "id": "cf81838c33e1db8eae21",
-      "title": "AfD-Leak: Die interne Sorge vor finanziellen Folgen",
-      "description": "Wer trägt die Verantwortung für das AfD-Leak? Der Landesverband Mecklenburg-Vorpommern fordert NDR und WDR zufolge, dass die Bundespartei mögliche Kosten aus Rechtsstreitigkeiten trägt. Von S. Pittelkow, M. Sarti und K. Riedel.",
-      "pubDate": "2026-11-07T06:00:12+01:00",
-      "link": "https://www.tagesschau.de/investigativ/ndr-wdr/afd-leak-folgen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "ca62539d95d593c99f0a",
-      "title": "Trumps neuer Stabschef Miller: \"Ein Warnschuss in Richtung des künftigen Kongresses\"",
-      "description": "Auf Stabschefin Wiles folgt Hardliner Miller: Mit dieser Entscheidung reagiert Trump auf das Wahldebakel seiner Partei - und geht auf Konfrontationskurs zu den Demokraten. Doch auch Republikanern stößt die Personalie auf. Von C. Kühntopp.",
-      "pubDate": "2026-11-07T05:19:10+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/trump-miller-100.html",
       "bild": ""
     }
   ],
