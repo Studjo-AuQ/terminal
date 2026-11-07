@@ -1,7 +1,31 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "06.11.2026, 22:17 Uhr (UTC)",
+  "aktualisiert": "07.11.2026, 02:16 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "cda19ad6e2e554ab5acc",
+      "title": "Gerät Tschechiens Wasserwirtschaft in Gefahr?",
+      "description": "Seit zwei Jahren gibt es in Tschechien zu wenig Schnee und Regen - der wasserreichste Stausee ist mittlerweile halb leer. Sollte auch dieser Winter die Pegelstände nicht anheben, wäre die Versorgung im ganzen Land gefährdet. Von André Berthold.",
+      "pubDate": "2026-11-07T03:08:29+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/tschechien-wasserknappheit-100.html",
+      "bild": ""
+    },
+    {
+      "id": "682b18888c8f0ea786cc",
+      "title": "Papst Leo XIV. beginnt Südamerika-Reise in Uruguay",
+      "description": "Drei Länder in elf Tagen: In Uruguay beginnt Papst Leo XIV. heute seine Südamerika-Reise. Auf ihn warten auch die Heimat seines Vorgängers und ein Wiedersehen mit der eigenen Vergangenheit. Von Anne Herrberg.",
+      "pubDate": "2026-11-07T02:50:19+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/papst-suedamerika-104.html",
+      "bild": ""
+    },
+    {
+      "id": "cb857e3bd8876c936cbe",
+      "title": "Paraguay: Peña als Präsident abgesetzt und unter Hausarrest",
+      "description": "Plötzlich ging es ganz schnell: Infolge der Bankenkrise in Paraguay hat das Parlament den bisherigen Präsidenten Peña des Amtes enthoben - kurz darauf wurde er unter Hausarrest gestellt. Ein Nachfolger ist bereits vereidigt.",
+      "pubDate": "2026-11-07T01:06:18+01:00",
+      "link": "https://www.tagesschau.de/ausland/paraguay-amtsenthebung-100.html",
+      "bild": ""
+    },
     {
       "id": "0e4b8fcf35a67a06134d",
       "title": "Politologin über Aigner: \"Sie hat viel politische Erfahrung\"",
@@ -96,30 +120,6 @@
       "description": "Sie wäre dort die erste Frau: Laut ARD-Hauptstadtstudio werden CDU und CSU Ilse Aigner als Kandidatin für das Amt der Bundespräsidentin vorschlagen. Gemeinsam mit der SPD hätten sie in der Bundesversammlung eine Mehrheit.",
       "pubDate": "2026-11-06T21:36:48+01:00",
       "link": "https://www.tagesschau.de/inland/innenpolitik/cdu-csu-aigner-bundespraesidentin-100.html",
-      "bild": ""
-    },
-    {
-      "id": "6c79ad92abd8eb4e1e78",
-      "title": "Kanarische Inseln melden vermehrte Flüchtlingsankünfte",
-      "description": "Spanien schlägt Alarm. Die Zahl der ankommenden Flüchtlinge auf El Hierro, einer kleinen kanarischen Insel, steigt seit Anfang November wieder stark an. Die Behörden warnen vor Ausnahmezuständen wie 2024. Von Julia Macher.",
-      "pubDate": "2026-11-06T16:48:14+01:00",
-      "link": "https://www.tagesschau.de/ausland/afrika/kanaren-fluechtlinge-106.html",
-      "bild": ""
-    },
-    {
-      "id": "421fab24aef533ee3833",
-      "title": "EU-Staatsanwaltschaft ermittelt nach Zugunglück in Spanien",
-      "description": "Nach dem schweren Zugunglück in Spanien mit 69 Toten ermittelt die EU-Staatsanwaltschaft wegen möglichen Subventionsbetrugs. Im Fokus stehen Gelder für die Bahnsicherheit. Bereits nach einem Unglück im Januar gab es Ermittlungen.",
-      "pubDate": "2026-11-06T16:01:09+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/zugunglueck-spanien-eu-ermittlungen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "5604a47e1b5eafda639f",
-      "title": "Übergriffe mit K.-o.-Tropfen: Warum anonyme Spurensicherung so wichtig ist",
-      "description": "Ob im Club, an der Bar oder beim Karneval: K.-o.-Tropfen werden oft zur unsichtbaren Gefahr. Die anonyme Spurensicherung in Kliniken ermöglicht Betroffenen, Beweise zu sichern, ohne sofort die Polizei einschalten zu müssen. Von Jan Koch.",
-      "pubDate": "2026-11-06T15:27:53+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/ko-tropfen-sexualisierte-gewalt-nachweis-100.html",
       "bild": ""
     }
   ],
