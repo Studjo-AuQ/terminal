@@ -1,7 +1,63 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "07.11.2026, 02:16 Uhr (UTC)",
+  "aktualisiert": "07.11.2026, 09:08 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "e5bf751400d05a0df0ca",
+      "title": "Was passiert bei einer Bombendrohung im Flugzeug?",
+      "description": "Die Bombendrohungen im europäischen Luftverkehr alarmieren Behörden - und verunsichern Passagiere. Gibt es solche Vorfälle öfter? Und was passiert bei einer Bombendrohung an Bord? Ein Überblick über die wichtigsten Fragen.",
+      "pubDate": "2026-11-07T09:10:26+01:00",
+      "link": "https://www.tagesschau.de/ausland/bombendrohungen-faq-100.html",
+      "bild": ""
+    },
+    {
+      "id": "b43f9b656873a3ae38e7",
+      "title": "Schwere Schäden nach Raketenangriffen auf Kiew",
+      "description": "Erneut haben russische Raketen die ukrainische Hauptstadt Kiew und das Umland getroffen. Es gab zahlreiche Explosionen, so Bürgermeister Klitschko. Die Strom- und Wasserversorgung seien stark beeinträchtigt.",
+      "pubDate": "2026-11-07T08:40:23+01:00",
+      "link": "https://www.tagesschau.de/ausland/ukraine-angriffe-kiew-138.html",
+      "bild": ""
+    },
+    {
+      "id": "cde4adaa50ae9cbf3579",
+      "title": "Pistorius rechnet derzeit nicht mit Rückkehr zur Wehrpflicht",
+      "description": "Die Wiedereinführung der Wehrpflicht scheint zum jetzigen Zeitpunkt offenbar nicht nötig. Verteidigungsminister Pistorius berichtet von einer positiven Entwicklung beim Bundeswehrpersonal. Er will künftig mehr Frauen für die Bundeswehr gewinnen.",
+      "pubDate": "2026-11-07T08:02:40+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/bundeswehr-diskussion-wehrpflicht-100.html",
+      "bild": ""
+    },
+    {
+      "id": "6287af215054a659e591",
+      "title": "Gesundheitsbehörde: Größter Masernausbruch in den USA seit 35 Jahren",
+      "description": "Die USA erleben laut der Gesundheitsbehörde CDC den größten Masernausbruch seit 1991. Im Laufe des Jahres wurden bereits 5.182 Krankheitsfälle registriert. In Wisconsin starb erstmals seit mehr als dreieinhalb Jahrzehnten ein Baby.",
+      "pubDate": "2026-11-07T07:01:55+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/usa-masern-100.html",
+      "bild": ""
+    },
+    {
+      "id": "cf81838c33e1db8eae21",
+      "title": "AfD-Leak: Die interne Sorge vor finanziellen Folgen",
+      "description": "Wer trägt die Verantwortung für das AfD-Leak? Der Landesverband Mecklenburg-Vorpommern fordert NDR und WDR zufolge, dass die Bundespartei mögliche Kosten aus Rechtsstreitigkeiten trägt. Von S. Pittelkow, M. Sarti und K. Riedel.",
+      "pubDate": "2026-11-07T06:00:12+01:00",
+      "link": "https://www.tagesschau.de/investigativ/ndr-wdr/afd-leak-folgen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "ca62539d95d593c99f0a",
+      "title": "Trumps neuer Stabschef Miller: \"Ein Warnschuss in Richtung des künftigen Kongresses\"",
+      "description": "Auf Stabschefin Wiles folgt Hardliner Miller: Mit dieser Entscheidung reagiert Trump auf das Wahldebakel seiner Partei - und geht auf Konfrontationskurs zu den Demokraten. Doch auch Republikanern stößt die Personalie auf. Von C. Kühntopp.",
+      "pubDate": "2026-11-07T05:19:10+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/trump-miller-100.html",
+      "bild": ""
+    },
+    {
+      "id": "449f9012135d492a274c",
+      "title": "Sanierung der Bahnstrecke Berlin-Hannover: Massive Probleme für Pendler",
+      "description": "Dass die Generalsanierung der Bahnstrecke Berlin-Hannover massive Verspätungen bedeutet, war klar. Doch nun zeigt sich: Die Pünktlichkeit auf der Ausweichstrecke ist selbst für Bahnverhältnisse unterdurchschnittlich. Von Andre Kartschall.",
+      "pubDate": "2026-11-07T03:54:24+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/bahn-berlin-hannover-bauarbeiten-pendler-100.html",
+      "bild": ""
+    },
     {
       "id": "cda19ad6e2e554ab5acc",
       "title": "Gerät Tschechiens Wasserwirtschaft in Gefahr?",
@@ -64,62 +120,6 @@
       "description": "Die Eishockey-WM in Deutschland steht wegen der möglichen Teilnahme Russlands vor einem Boykott mehrerer Nationen und Sponsoren. Die Bundesregierung bringt das in ein Dilemma. Von Felix Jakobs.",
       "pubDate": "2026-11-06T19:53:38+01:00",
       "link": "https://www.tagesschau.de/inland/innenpolitik/eishockey-wm-wie-umgehen-mit-russland-100.html",
-      "bild": ""
-    },
-    {
-      "id": "439ddf7fe2796d9bc13f",
-      "title": "Die gestohlenen Kinder von Oleschky",
-      "description": "2022 verschleppten russische Soldaten Hannas Sohn Anton aus einem Heim in Oleschky. Eine niederländische NGO hilft bei der Suche - doch selbst wenn sie ihn findet, ist eine Rückkehr in die Ukraine nicht sicher. Von R. Barth.",
-      "pubDate": "2026-11-06T18:48:38+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/ukraine-oleschky-kinder-100.html",
-      "bild": ""
-    },
-    {
-      "id": "ea337c86415ca321d509",
-      "title": "Verhaltene Reaktionen auf Trumps Ankündigung eines Ukraine-Abkommens",
-      "description": "Nach einem Treffen mit Kreml-Unterhändler Dmitrijew kündigte US-Präsident Trump ein \"großes\" Ukraine-Abkommen an. Alle würden begeistert sein, behauptete er. Doch Moskau und Brüssel dämpfen die Erwartungen.",
-      "pubDate": "2026-11-06T18:46:51+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/trump-ukraine-reaktionen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "bb847e2ea0e555f9b54e",
-      "title": "Weltweiter KI-Ausverkauf: DAX rutscht nach Rekordhoch ab",
-      "description": "Sorgen um KI- und Halbleiterwerte lösen weltweit Verkäufe aus - und setzen auch den deutschen Aktienmarkt unter Druck. Die US-Börsen konnten sich inzwischen wieder berappeln.",
-      "pubDate": "2026-11-06T18:30:36+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-ki-nasdaq-wall-street-100.html",
-      "bild": ""
-    },
-    {
-      "id": "b58e6a5471d66fb19187",
-      "title": "Anführer von Hungersekte in Kenia zu 200 Jahren Haft verurteilt.",
-      "description": "Der selbsternannte kenianische Pastor Mackenzie ist für den Mord an 191 Menschen verurteilt worden. Er soll sie aus angeblich religiösen Gründen zum Todesfasten verleitet haben - die meisten waren Kinder.",
-      "pubDate": "2026-11-06T18:08:10+01:00",
-      "link": "https://www.tagesschau.de/ausland/afrika/kenia-urteil-sektenfuehrer-100.html",
-      "bild": ""
-    },
-    {
-      "id": "0e91ef4bd9cf813136d5",
-      "title": "Bundestag berät über umstrittene Autobahn-Reform",
-      "description": "Der Bundestag hat über eine geplante Reform der bundeseigenen Autobahn GmbH debattiert. Die Regierung will die Finanzierung ändern, um Autobahnen zu erhalten und ausbauen zu können. Doch das Vorhaben ist umstritten.",
-      "pubDate": "2026-11-06T18:04:16+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/autobahn-reform-102.html",
-      "bild": ""
-    },
-    {
-      "id": "9ed30b2c22074099346b",
-      "title": "Auch Senat in Polen stimmt für Lockerung des Abtreibungsrechts",
-      "description": "Nach der ersten Kammer hat in Polen auch der Senat für eine Liberalisierung des Abtreibungsrechts gestimmt. Das letzte Wort hat aber Präsident Nawrocki. Dessen Zustimmung gilt als unwahrscheinlich.",
-      "pubDate": "2026-11-06T17:19:52+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/polen-aenderung-abreibungsrecht-100.html",
-      "bild": ""
-    },
-    {
-      "id": "07bdee5b281ef6cba0d8",
-      "title": "Ilse Aigner soll laut ARD-Informationen Bundespräsidentin werden",
-      "description": "Sie wäre dort die erste Frau: Laut ARD-Hauptstadtstudio werden CDU und CSU Ilse Aigner als Kandidatin für das Amt der Bundespräsidentin vorschlagen. Gemeinsam mit der SPD hätten sie in der Bundesversammlung eine Mehrheit.",
-      "pubDate": "2026-11-06T21:36:48+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/cdu-csu-aigner-bundespraesidentin-100.html",
       "bild": ""
     }
   ],
