@@ -1,7 +1,79 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "07.11.2026, 09:08 Uhr (UTC)",
+  "aktualisiert": "07.11.2026, 15:51 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "542b6511d631af8b27bd",
+      "title": "Polen: Mindestens fünf Tote nach Schüssen in Krakau",
+      "description": "Bei Schüssen in der polnischen Stadt Krakau sind laut Polizei mindestens fünf Menschen getötet und mehr als zehn Personen verletzt worden. Der mutmaßliche Täter konnte demnach gefasst werden.",
+      "pubDate": "2026-11-07T16:45:58+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/schuesse-krakau-100.html",
+      "bild": ""
+    },
+    {
+      "id": "df34ec9cb7f0ac33c941",
+      "title": "Wofür Trumps neuer Stabschef Miller steht",
+      "description": "Seit Freitag ist Stephen Miller neuer Stabschef von Präsident Trump. Der 41-Jährige gilt als rechter Hardliner und Kopf hinter der strikten Einwanderungspolitik. Welches Signal sendet Trump mit der Personalie an Republikaner und Demokraten?",
+      "pubDate": "2026-11-07T15:57:49+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/trump-stabschef-miller-100.html",
+      "bild": ""
+    },
+    {
+      "id": "4a7d25acbdfa89f5cdb8",
+      "title": "Parlamentswahl in Neuseeland: Regierungspartei und Labour nahezu gleichauf",
+      "description": "Neuseeland hat ein neues Parlament gewählt. Doch angesichts eines extrem knappen Wahlausgangs könnte es bei der Frage, welche Regierung das Land künftig führt, letztlich auf die kleinen Parteien ankommen.",
+      "pubDate": "2026-11-07T15:41:43+01:00",
+      "link": "https://www.tagesschau.de/ausland/ozeanien/neuseeland-parlamentswahl-102.html",
+      "bild": ""
+    },
+    {
+      "id": "3d678297eb242b079e41",
+      "title": "Pahlavi nimmt Freiheitspreis für iranisches Volk entgegen",
+      "description": "Der iranische Oppositionelle Pahlavi hat stellvertretend für das iranische Volk den Freiheitspreis der FDP-nahen Friedrich-Naumann-Stiftung entgegengenommen. Während der Verleihung gab es auch Demonstrationen.",
+      "pubDate": "2026-11-07T14:25:25+01:00",
+      "link": "https://www.tagesschau.de/inland/regional/hessen/pahlavi-friedenspreis-frankfurt-100.html",
+      "bild": ""
+    },
+    {
+      "id": "48f27e974ccd60c14668",
+      "title": "Ilse Aigner im Porträt: Krisenerprobt, bürgernah - und bald Staatsoberhaupt?",
+      "description": "Ilse Aigner hat beste Chancen, die erste Bundespräsidentin Deutschlands zu werden. Obwohl sie bereits hohe Ämter auf Bundes- und Landesebene innehatte, stand sie nie in allererster Reihe. Ein Porträt von Anita Fünffinger.",
+      "pubDate": "2026-11-07T12:30:37+01:00",
+      "link": "https://www.tagesschau.de/inland/ilse-aigner-portraet-100.html",
+      "bild": ""
+    },
+    {
+      "id": "8b70e50497abf2df6649",
+      "title": "Bandenchef bittet UN um Vermittlung in Haiti",
+      "description": "In Haiti werden nach einem Bandenangriff vier salvadorianische Militärangehörige vermisst. Um sie zu retten, schickt Präsident Bukele weitere Soldaten ins Land und droht den Gangs. Ein Bandenchef reagiert nun mit einem Brief an die UN. Von A. Demmer.",
+      "pubDate": "2026-11-07T11:51:13+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/haiti-banden-vereinte-nationen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "2014c9bc557d9b6dc570",
+      "title": "Welche Fakes rund um die Midterms kursieren",
+      "description": "Gefälschte Nachrichtenbeiträge, manipulierte Wahlmaschinen und erfundene Vorwürfe gegen Kandidaten: Rund um die US-Midterms verbreiten sich zahlreiche Falschbehauptungen. Dahinter stehen zum Teil russische Einflusskampagnen. Von C. Reveland und K. König.",
+      "pubDate": "2026-11-07T10:46:47+01:00",
+      "link": "https://www.tagesschau.de/faktenfinder/midterms-desinformation-100.html",
+      "bild": ""
+    },
+    {
+      "id": "fb491e960f7adb97adc9",
+      "title": "Katastrophenübung: Was wäre, wenn eine Dürre Deutschland lahmlegt?",
+      "description": "Jahrelang kaum Regen in Deutschland, heiße Sommer und dann seit Wochen eine extreme Hitzewelle. Das ist das Szenario von LÜKEX, einer Übung, die das Krisenmanagement von 180 beteiligten Organisationen verbessern soll. Von P. Sonnenberg.",
+      "pubDate": "2026-11-07T10:44:35+01:00",
+      "link": "https://www.tagesschau.de/inland/gesellschaft/hitze-duerre-ausnahmezustand-krisenmanagement-100.html",
+      "bild": ""
+    },
+    {
+      "id": "7478053e91f0320e48ff",
+      "title": "Hubig will geleakte E-Mails zur Prüfung von AfD-Verbotsverfahren nutzen",
+      "description": "Justizministerin Hubig wirbt dafür, ein AfD-Verbotsverfahren zu prüfen - gegebenenfalls auch mithilfe der von Hackern veröffentlichten Mails aus den Reihen der Partei. In der schwarz-roten Koalition ist ein Verbotsverfahren jedoch umstritten.",
+      "pubDate": "2026-11-07T10:28:52+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/hubig-afd-verbotsverfahren-leak-100.html",
+      "bild": ""
+    },
     {
       "id": "e5bf751400d05a0df0ca",
       "title": "Was passiert bei einer Bombendrohung im Flugzeug?",
@@ -13,16 +85,16 @@
     {
       "id": "b43f9b656873a3ae38e7",
       "title": "Schwere Schäden nach Raketenangriffen auf Kiew",
-      "description": "Erneut haben russische Raketen die ukrainische Hauptstadt Kiew und das Umland getroffen. Es gab zahlreiche Explosionen, so Bürgermeister Klitschko. Die Strom- und Wasserversorgung seien stark beeinträchtigt.",
-      "pubDate": "2026-11-07T08:40:23+01:00",
+      "description": "Russland hat kurz vor Wintereinbruch erneut die ukrainische Strom- und Wasserversorgung angegriffen. In einigen Teilen des Landes fiel der Strom aus. Präsident Selenskyj und Kiews Bürgermeister Klitschko streiten über die Verteidigung.",
+      "pubDate": "2026-11-07T13:13:38+01:00",
       "link": "https://www.tagesschau.de/ausland/ukraine-angriffe-kiew-138.html",
       "bild": ""
     },
     {
       "id": "cde4adaa50ae9cbf3579",
       "title": "Pistorius rechnet derzeit nicht mit Rückkehr zur Wehrpflicht",
-      "description": "Die Wiedereinführung der Wehrpflicht scheint zum jetzigen Zeitpunkt offenbar nicht nötig. Verteidigungsminister Pistorius berichtet von einer positiven Entwicklung beim Bundeswehrpersonal. Er will künftig mehr Frauen für die Bundeswehr gewinnen.",
-      "pubDate": "2026-11-07T08:02:40+01:00",
+      "description": "Die Wiedereinführung der Wehrpflicht scheint zum jetzigen Zeitpunkt offenbar nicht nötig. Verteidigungsminister Pistorius berichtet von einer positiven Entwicklung beim Bundeswehrpersonal - Spitzenvertreter der Union sehen das anders.",
+      "pubDate": "2026-11-07T15:45:52+01:00",
       "link": "https://www.tagesschau.de/inland/innenpolitik/bundeswehr-diskussion-wehrpflicht-100.html",
       "bild": ""
     },
@@ -48,78 +120,6 @@
       "description": "Auf Stabschefin Wiles folgt Hardliner Miller: Mit dieser Entscheidung reagiert Trump auf das Wahldebakel seiner Partei - und geht auf Konfrontationskurs zu den Demokraten. Doch auch Republikanern stößt die Personalie auf. Von C. Kühntopp.",
       "pubDate": "2026-11-07T05:19:10+01:00",
       "link": "https://www.tagesschau.de/ausland/amerika/trump-miller-100.html",
-      "bild": ""
-    },
-    {
-      "id": "449f9012135d492a274c",
-      "title": "Sanierung der Bahnstrecke Berlin-Hannover: Massive Probleme für Pendler",
-      "description": "Dass die Generalsanierung der Bahnstrecke Berlin-Hannover massive Verspätungen bedeutet, war klar. Doch nun zeigt sich: Die Pünktlichkeit auf der Ausweichstrecke ist selbst für Bahnverhältnisse unterdurchschnittlich. Von Andre Kartschall.",
-      "pubDate": "2026-11-07T03:54:24+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/bahn-berlin-hannover-bauarbeiten-pendler-100.html",
-      "bild": ""
-    },
-    {
-      "id": "cda19ad6e2e554ab5acc",
-      "title": "Gerät Tschechiens Wasserwirtschaft in Gefahr?",
-      "description": "Seit zwei Jahren gibt es in Tschechien zu wenig Schnee und Regen - der wasserreichste Stausee ist mittlerweile halb leer. Sollte auch dieser Winter die Pegelstände nicht anheben, wäre die Versorgung im ganzen Land gefährdet. Von André Berthold.",
-      "pubDate": "2026-11-07T03:08:29+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/tschechien-wasserknappheit-100.html",
-      "bild": ""
-    },
-    {
-      "id": "682b18888c8f0ea786cc",
-      "title": "Papst Leo XIV. beginnt Südamerika-Reise in Uruguay",
-      "description": "Drei Länder in elf Tagen: In Uruguay beginnt Papst Leo XIV. heute seine Südamerika-Reise. Auf ihn warten auch die Heimat seines Vorgängers und ein Wiedersehen mit der eigenen Vergangenheit. Von Anne Herrberg.",
-      "pubDate": "2026-11-07T02:50:19+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/papst-suedamerika-104.html",
-      "bild": ""
-    },
-    {
-      "id": "cb857e3bd8876c936cbe",
-      "title": "Paraguay: Peña als Präsident abgesetzt und unter Hausarrest",
-      "description": "Plötzlich ging es ganz schnell: Infolge der Bankenkrise in Paraguay hat das Parlament den bisherigen Präsidenten Peña des Amtes enthoben - kurz darauf wurde er unter Hausarrest gestellt. Ein Nachfolger ist bereits vereidigt.",
-      "pubDate": "2026-11-07T01:06:18+01:00",
-      "link": "https://www.tagesschau.de/ausland/paraguay-amtsenthebung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "0e4b8fcf35a67a06134d",
-      "title": "Politologin über Aigner: \"Sie hat viel politische Erfahrung\"",
-      "description": "Bayerns Landtagspräsidentin Ilse Aigner wird Unionskandidatin für die Wahl zur Bundespräsidentin. Genug Erfahrung habe sie, sagt die Politologin Münch in den tagesthemen. Diese werde auch dringend gebraucht.",
-      "pubDate": "2026-11-06T21:54:46+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/aigner-bundespraesidentin-interview-tt-100.html",
-      "bild": ""
-    },
-    {
-      "id": "30a967cadd68251ab135",
-      "title": "Trumps Stabschefin Wiles verlässt das Weiße Haus",
-      "description": "Seit der Wahlniederlage der Republikaner bei den Midterms wird spekuliert, ob und wie US-Präsident Trump seinen Machtzirkel umbaut. Nun steht fest: Die Strippenzieherin Wiles geht, ihr Vize Miller übernimmt.",
-      "pubDate": "2026-11-06T21:20:30+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/trump-wiles-100.html",
-      "bild": ""
-    },
-    {
-      "id": "1ff5d3d09c009daf8cde",
-      "title": "Bombendrohungen in Europa: Anzeichen auf koordinierten Angriff verdichten sich",
-      "description": "Erneut hat es in Europa zahlreiche Bombendrohungen gegeben - sowohl im Flugverkehr als auch gegen Medienhäuser. Spanien spricht von einem hybriden Angriff, der \"kein Zufall\" sei. Irland sieht eine \"koordinierte Kampagne\".",
-      "pubDate": "2026-11-06T20:39:20+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/bombendrohungen-europa-100.html",
-      "bild": ""
-    },
-    {
-      "id": "36fe0167bbd70dc81b1f",
-      "title": "Erneut Hackerangriff auf Münchener Universität - TUM betroffen",
-      "description": "Unbekannte haben Hochschulsysteme der Technischen Universität München gehackt. Sie konnten etwa Adressen und Passwörter einsehen. Es ist bereits der zweite Hackerangriff auf eine große Uni in München.",
-      "pubDate": "2026-11-06T20:23:12+01:00",
-      "link": "https://www.tagesschau.de/inland/regional/bayern/hackerangriff-tum-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c3aebcb32293c2e09a4b",
-      "title": "Russland bei Eishockey-WM? Deutschlands sportpolitisches Dilemma",
-      "description": "Die Eishockey-WM in Deutschland steht wegen der möglichen Teilnahme Russlands vor einem Boykott mehrerer Nationen und Sponsoren. Die Bundesregierung bringt das in ein Dilemma. Von Felix Jakobs.",
-      "pubDate": "2026-11-06T19:53:38+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/eishockey-wm-wie-umgehen-mit-russland-100.html",
       "bild": ""
     }
   ],
