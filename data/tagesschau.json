@@ -1,7 +1,39 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "07.11.2026, 23:51 Uhr (UTC)",
+  "aktualisiert": "08.11.2026, 05:41 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "4ebc4479207191a72fd5",
+      "title": "Medienbericht: Kaum Geld aus Sondervermögen in Bildungsinfrastruktur geflossen",
+      "description": "Vom Sondervermögen des Bundes sollen auch Schulen, Kitas und Wissenschaft profitieren. Doch von den vorgesehenen Mitteln ist bislang offenbar nur ein Bruchteil in die Bildungsinfrastruktur geflossen. Die Grünen kritisieren das.",
+      "pubDate": "2026-11-08T04:28:25+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/sondervermoegen-bildungsinfrastruktur-100.html",
+      "bild": ""
+    },
+    {
+      "id": "e6d0bcb106304bff62d5",
+      "title": "FDP vor Parteitag: Kubicki sucht den Weg aus der Krise",
+      "description": "Die FDP kommt heute zu einem digitalen Parteitag zusammen. Nach vielen Wahlniederlagen steckt die Partei in einer tiefen Krise. Bislang konnte das auch ihr neuer Vorsitzender Kubicki nicht ändern. Von Philipp Eckstein.",
+      "pubDate": "2026-11-08T03:28:44+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/fdp-kubicki-effekt-100.html",
+      "bild": ""
+    },
+    {
+      "id": "0b0bf4c9c598d2cfc75e",
+      "title": "Nach Schüssen in Krakau: Eine Stadt steht unter Schock",
+      "description": "Ein Mann schießt in Krakau aus seinem Auto, er tötet sechs Menschen und verletzt viele weitere. Nach der Tat steht Polens zweitgrößte Stadt unter Schock. Ermittler suchen Antworten auf die bohrende Frage: Warum? Von Palina Milling.",
+      "pubDate": "2026-11-08T02:50:38+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/polen-krakau-schuesse-102.html",
+      "bild": ""
+    },
+    {
+      "id": "92681498baf806aa89fc",
+      "title": "Französischer Präsidentschaftskandidat Mélenchon fordert NATO-Austritt",
+      "description": "Bei der französischen Präsidentschaftswahl im kommenden April könnte er stark abschneiden: der linke Kandidat Mélenchon. Jetzt hat er sein Programm vorgestellt - und sich dabei nicht nur gegen die NATO positioniert.",
+      "pubDate": "2026-11-08T01:14:21+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/frankreich-melenchon-wahlprogramm-100.html",
+      "bild": ""
+    },
     {
       "id": "6d7174612da89403045f",
       "title": "Bankenkrise: Anklage gegen Paraguays Ex-Präsidenten",
@@ -29,8 +61,8 @@
     {
       "id": "c516d5a6797f21e6df85",
       "title": "FAQ: Was ist über die Schüsse in Krakau bekannt?",
-      "description": "Im polnischen Krakau hat ein Mann aus einem Auto geschossen und mindestens sechs Menschen getötet. Weitere Personen wurden verletzt, darunter auch Deutsche. Was bislang über die Tat bekannt ist.",
-      "pubDate": "2026-11-08T00:00:48+01:00",
+      "description": "Im polnischen Krakau hat ein Mann aus einem Auto geschossen und mindestens sechs Menschen getötet. Weitere Personen wurden verletzt, darunter auch eine deutsche. Was bislang über die Tat bekannt ist.",
+      "pubDate": "2026-11-08T02:27:38+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/schuesse-krakau-102.html",
       "bild": ""
     },
@@ -88,38 +120,6 @@
       "description": "In Haiti werden nach einem Bandenangriff vier salvadorianische Militärangehörige vermisst. Um sie zu retten, schickt Präsident Bukele weitere Soldaten ins Land und droht den Gangs. Ein Bandenchef reagiert nun mit einem Brief an die UN. Von A. Demmer.",
       "pubDate": "2026-11-07T11:51:13+01:00",
       "link": "https://www.tagesschau.de/ausland/amerika/haiti-banden-vereinte-nationen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "2014c9bc557d9b6dc570",
-      "title": "Welche Fakes rund um die Midterms kursieren",
-      "description": "Gefälschte Nachrichtenbeiträge, manipulierte Wahlmaschinen und erfundene Vorwürfe gegen Kandidaten: Rund um die US-Midterms verbreiten sich zahlreiche Falschbehauptungen. Dahinter stehen zum Teil russische Einflusskampagnen. Von C. Reveland und K. König.",
-      "pubDate": "2026-11-07T10:46:47+01:00",
-      "link": "https://www.tagesschau.de/faktenfinder/midterms-desinformation-100.html",
-      "bild": ""
-    },
-    {
-      "id": "fb491e960f7adb97adc9",
-      "title": "Katastrophenübung: Was wäre, wenn eine Dürre Deutschland lahmlegt?",
-      "description": "Jahrelang kaum Regen in Deutschland, heiße Sommer und dann seit Wochen eine extreme Hitzewelle. Das ist das Szenario von LÜKEX, einer Übung, die das Krisenmanagement von 180 beteiligten Organisationen verbessern soll. Von P. Sonnenberg.",
-      "pubDate": "2026-11-07T10:44:35+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/hitze-duerre-ausnahmezustand-krisenmanagement-100.html",
-      "bild": ""
-    },
-    {
-      "id": "7478053e91f0320e48ff",
-      "title": "Hubig will geleakte E-Mails zur Prüfung von AfD-Verbotsverfahren nutzen",
-      "description": "Justizministerin Hubig wirbt dafür, ein AfD-Verbotsverfahren zu prüfen - gegebenenfalls auch mithilfe der von Hackern veröffentlichten Mails aus den Reihen der Partei. In der schwarz-roten Koalition ist ein Verbotsverfahren jedoch umstritten.",
-      "pubDate": "2026-11-07T10:28:52+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/hubig-afd-verbotsverfahren-leak-100.html",
-      "bild": ""
-    },
-    {
-      "id": "e5bf751400d05a0df0ca",
-      "title": "Was passiert bei einer Bombendrohung im Flugzeug?",
-      "description": "Die Bombendrohungen im europäischen Luftverkehr alarmieren Behörden - und verunsichern Passagiere. Gibt es solche Vorfälle öfter? Und was passiert bei einer Bombendrohung an Bord? Ein Überblick über die wichtigsten Fragen.",
-      "pubDate": "2026-11-07T09:10:26+01:00",
-      "link": "https://www.tagesschau.de/ausland/bombendrohungen-faq-100.html",
       "bild": ""
     }
   ],
