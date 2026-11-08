@@ -1,7 +1,47 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "08.11.2026, 13:08 Uhr (UTC)",
+  "aktualisiert": "08.11.2026, 18:26 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "aa7c705dcd25ef39a74f",
+      "title": "Amsterdam: Zehntausende demonstrieren gegen Israels Gaza-Politik",
+      "description": "Amsterdam ist erneut Schauplatz einer Großdemonstration gegen das israelische Vorgehen im Gazastreifen geworden. Der Protest verlief laut Polizei friedlich. Ministerpräsident Jetten war dieses Mal nicht dabei.",
+      "pubDate": "2026-11-08T18:02:14+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/demonstration-amsterdam-israel-100.html",
+      "bild": ""
+    },
+    {
+      "id": "7f6270be543d5af6fa2d",
+      "title": "Ukraine-Gespräche in Abu Dhabi: Europäer sind laut Frankreich \"gut vertreten\"",
+      "description": "Ab Dienstag soll in Abu Dhabi über einen möglichen Frieden in der Ukraine verhandelt werden. Laut dem französischen Außenminister Barrot ist auch Europa vertreten: Frankreich werde an den Gesprächen mit den Russen teilnehmen.",
+      "pubDate": "2026-11-08T17:33:42+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/ukraine-verhandlungen-abu-dhabi-100.html",
+      "bild": ""
+    },
+    {
+      "id": "d6477c0b3ac4a753b057",
+      "title": "Israel: Oppositionsführer Eisenkot soll neue Regierung bilden",
+      "description": "Nun ist es offiziell: Israels Präsident Herzog hat den Oppositionspolitiker Eisenkot mit der Regierungsbildung beauftragt. Der Ex-Militärchef appellierte an die anderen Parteien, \"unkonventionelle politische Schritte\" zu akzeptieren.",
+      "pubDate": "2026-11-08T17:07:41+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/israel-auftrag-regierungsbildung-eisenkot-100.html",
+      "bild": ""
+    },
+    {
+      "id": "8e2872d186191828d410",
+      "title": "Viele Gebäude weiterhin ohne Elementarschadenversicherung",
+      "description": "Immer häufiger führen Starkregen und Überschwemmungen zu teuren Schäden an Häusern. Nur gut die Hälfte der Gebäude in Deutschland sind gegen solche Folgen abgesichert. Experten sehen Handlungsbedarf. Von Katharina Wilhelm.",
+      "pubDate": "2026-11-08T16:28:00+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/klimaschaeden-versicherungen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "f5c164b11987807ee52b",
+      "title": "Mann hisst Palästinenser-Flagge vor Berliner Reichstagsgebäude",
+      "description": "Vor dem Berliner Reichstagsgebäude ist ein Mann den fast 30 Meter hohen Flaggenmast hochgeklettert. Er entfernte die Deutschlandflagge und hisste eine Palästinenser-Flagge. Nun ermittelt der Staatsschutz.",
+      "pubDate": "2026-11-08T15:05:08+01:00",
+      "link": "https://www.tagesschau.de/inland/regional/berlin/reichstag-palaestina-flagge-100.html",
+      "bild": ""
+    },
     {
       "id": "266ff7dc3c70245cdbd8",
       "title": "Russische Luftangriffe: Erneut Hunderttausende Ukrainer ohne Strom",
@@ -30,7 +70,7 @@
       "id": "7f9b93cc1c862fb13c4c",
       "title": "Berliner Linken-Politikerin Emde lehnt Mandatsverzicht ab",
       "description": "Die Berliner Linken-Abgeordnete Emde hat der Forderung des Parteivorstands, ihr Mandat niederzulegen, eine klare Absage erteilt. Auch von ihrer umstrittenen Haltung zu Israel scheint die Politikerin nicht abzurücken.",
-      "pubDate": "2026-11-08T11:26:04+01:00",
+      "pubDate": "2026-11-08T15:50:57+01:00",
       "link": "https://www.tagesschau.de/inland/regional/berlin/berlin-linke-emde-ablehnung-mandatsverzicht-100.html",
       "bild": ""
     },
@@ -80,46 +120,6 @@
       "description": "Mehrere Regionen in Japan wurden in der Nacht von einem Erdbeben der Stärke 5,7 erschüttert. Am stärksten betroffen war die Präfektur Aichi. Medien berichten über mehr als 20 Verletzte. Laut Behörden könnten weitere Beben folgen.",
       "pubDate": "2026-11-08T08:27:58+01:00",
       "link": "https://www.tagesschau.de/ausland/asien/japan-erdbeben-aichi-100.html",
-      "bild": ""
-    },
-    {
-      "id": "a7cff03c564fa4a42f96",
-      "title": "US-Militär attackiert Handelsschiff im Golf von Oman",
-      "description": "Im Golf von Oman hat das US-Militär auf ein Handelsschiff gefeuert, das gegen die US-Seeblockade verstoßen haben soll. Iran meldet den Brand zweier Frachter in der Straße von Hormus. Huthis greifen die saudische Hauptstadt Riad an.",
-      "pubDate": "2026-11-08T12:04:42+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/usa-iran-seeblockade-angriff-handelsschiff-100.html",
-      "bild": ""
-    },
-    {
-      "id": "4ebc4479207191a72fd5",
-      "title": "Medienbericht: Kaum Geld aus Sondervermögen in Bildungsinfrastruktur geflossen",
-      "description": "Vom Sondervermögen des Bundes sollen auch Schulen, Kitas und Wissenschaft profitieren. Doch von den vorgesehenen Mitteln ist bislang offenbar nur ein Bruchteil in die Bildungsinfrastruktur geflossen. Die Grünen kritisieren das.",
-      "pubDate": "2026-11-08T04:28:25+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/sondervermoegen-bildungsinfrastruktur-100.html",
-      "bild": ""
-    },
-    {
-      "id": "e6d0bcb106304bff62d5",
-      "title": "FDP vor Parteitag: Kubicki sucht den Weg aus der Krise",
-      "description": "Die FDP kommt heute zu einem digitalen Parteitag zusammen. Nach vielen Wahlniederlagen steckt die Partei in einer tiefen Krise. Bislang konnte das auch ihr neuer Vorsitzender Kubicki nicht ändern. Von Philipp Eckstein.",
-      "pubDate": "2026-11-08T03:28:44+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/fdp-kubicki-effekt-100.html",
-      "bild": ""
-    },
-    {
-      "id": "0b0bf4c9c598d2cfc75e",
-      "title": "Nach Schüssen in Krakau: Eine Stadt steht unter Schock",
-      "description": "Ein Mann schießt in Krakau aus seinem Auto, er tötet sechs Menschen und verletzt viele weitere. Nach der Tat steht Polens zweitgrößte Stadt unter Schock. Ermittler suchen Antworten auf die bohrende Frage: Warum? Von Palina Milling.",
-      "pubDate": "2026-11-08T02:50:38+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/polen-krakau-schuesse-102.html",
-      "bild": ""
-    },
-    {
-      "id": "92681498baf806aa89fc",
-      "title": "Französischer Präsidentschaftskandidat Mélenchon fordert NATO-Austritt",
-      "description": "Bei der französischen Präsidentschaftswahl im kommenden April könnte er stark abschneiden: der linke Kandidat Mélenchon. Jetzt hat er sein Programm vorgestellt - und sich dabei nicht nur gegen die NATO positioniert.",
-      "pubDate": "2026-11-08T01:14:21+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/frankreich-melenchon-wahlprogramm-100.html",
       "bild": ""
     }
   ],
