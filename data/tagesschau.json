@@ -1,7 +1,47 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "08.11.2026, 18:26 Uhr (UTC)",
+  "aktualisiert": "08.11.2026, 22:24 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "1e35cc0858aed1411530",
+      "title": "Unionsfraktionschef erteilt Plastiksteuer eine Absage",
+      "description": "Unionsfraktionschef Frei erteilt der geplanten Plastiksteuer eine Absage. Sie sei \"wirtschaftlich und ökologisch falsch\". Anders klingt das bei SPD-Fraktionschef Miersch, der auf laufende Verhandlungen verweist.",
+      "pubDate": "2026-11-08T21:38:04+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/plastiksteuer-absage-100.html",
+      "bild": ""
+    },
+    {
+      "id": "1a80e56faeeab79f6f53",
+      "title": "Überschwemmungen in Gaza schüren Sorge vor neuer Katastrophe",
+      "description": "Starker Regen hat Teile des Gazastreifens überschwemmt. Laut dem Gesundheitsminister haben eine Million Vertriebene kein Dach mehr über dem Kopf. Hilfsorganisationen befürchten eine humanitäre Katastrophe. Von J.-C. Kitzler.",
+      "pubDate": "2026-11-08T21:15:13+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/gaza-regenfaelle-humanitaere-lage-100.html",
+      "bild": ""
+    },
+    {
+      "id": "118749c3516ded306d14",
+      "title": "Kanzler Merz will Aigner als Bundespräsidentin vorschlagen",
+      "description": "Bislang hatte sich Kanzler Merz in der Frage zur Bundespräsidenten-Nachfolge zurückgehalten. Jetzt machte er es offiziell: Der CDU-Chef will am Montag Ilse Aigner dafür vorschlagen - als erste Frau in diesem Amt.",
+      "pubDate": "2026-11-08T21:05:22+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/aigner-bundespraesidentin-merz-100.html",
+      "bild": ""
+    },
+    {
+      "id": "fe6cfbb158fc0ef17406",
+      "title": "Chef der Jungen Union: \"Junge Generation wird von der Politik vernachlässigt\"",
+      "description": "Viele junge Menschen fühlen sich politisch übergangen. Das liege auch daran, dass Pläne wie die Rentenreform nicht umgesetzt würden, sagt Winkel, Vorsitzender der Jungen Union, im Bericht aus Berlin. Die Regierung habe einiges wieder gut zu machen.",
+      "pubDate": "2026-11-08T20:43:02+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/bericht-aus-berlin-junge-generation-100.html",
+      "bild": ""
+    },
+    {
+      "id": "1d02f2f68de80af679b4",
+      "title": "Parteitag: FDP bündelt Kräfte für Landtagswahlen kommendes Jahr",
+      "description": "Die FDP kämpft ums Überleben. Ihre letzte Chance dürften die Landtagswahlen kommendes Jahr sein. Während des digitalen Parteitags versuchte FDP-Chef Kubicki, die Liberalen als Gegengewicht zur Regierung zu etablieren. Von Lissy Kaufmann.",
+      "pubDate": "2026-11-08T19:53:14+01:00",
+      "link": "https://www.tagesschau.de/inland/fdp-bundesparteitag-122.html",
+      "bild": ""
+    },
     {
       "id": "aa7c705dcd25ef39a74f",
       "title": "Amsterdam: Zehntausende demonstrieren gegen Israels Gaza-Politik",
@@ -80,46 +120,6 @@
       "description": "\"Ein gewalttätiger Kämpfer und Krieger\": Mit einem unkonventionellen Vorschlag löst US-Präsident Trump Rätselraten aus: Der Chef der Kampfsportliga UFC soll Pressesprecher werden. Oder gibt es ein Missverständnis?",
       "pubDate": "2026-11-08T10:59:49+01:00",
       "link": "https://www.tagesschau.de/ausland/amerika/trump-sprecher-white-ufc-kampfsport-spekulationen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "5c89897dfbe99f2f659c",
-      "title": "Familienmitglieder des Schützen ebenfalls getötet",
-      "description": "Landesweit gilt in Polen nach den tödlichen Schüssen auf Passanten auf einem Marktplatz in Krakau Staatstrauer. Das Motiv des Schützen bleibt unklar. Er steht im Verdacht, auch seine Eltern und Schwester getötet zu haben.",
-      "pubDate": "2026-11-08T10:58:10+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/krakau-schuesse-trauer-100.html",
-      "bild": ""
-    },
-    {
-      "id": "d813e8c0dcc42792fda6",
-      "title": "Papst Leo XIV. setzt Südamerika-Reise fort",
-      "description": "Zum Auftakt seiner Südamerika-Reise traf Papst Leo XIV. in Uruguay auf Armut und Gläubige in einer meist säkularen Gesellschaft. Nun geht es nach Argentinien, dessen Staatschef den Pontifex bisher eher als Kritiker kennt. Von Tilmann Kleinjung.",
-      "pubDate": "2026-11-08T09:27:56+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/papst-leo-suedamerika-uruguay-100.html",
-      "bild": ""
-    },
-    {
-      "id": "48c9eee673f4ae48d3e4",
-      "title": "Guatemalas Korruptionsbekämpfer riskieren ihr Leben",
-      "description": "Guatemalas Präsident Arévalo versucht, die Korruption im Land zu bekämpfen. Doch der Widerstand einflussreicher Kreise ist massiv. Der Mord an einem der bekanntesten Anwälte des Landes zeigt, wie entschlossen sie sind. Von A. Demmer.",
-      "pubDate": "2026-11-08T08:39:28+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/guatemala-kampf-korruption-100.html",
-      "bild": ""
-    },
-    {
-      "id": "1f2c295ed14d8017acf0",
-      "title": "Wie der Aktienkauf rund um die Uhr funktionieren soll",
-      "description": "Die Deutsche Börse in Frankfurt ermöglicht ab sofort den Handel mit DAX-Werten auch nachts oder am Wochenende. Noch gibt es allerdings eine wichtige Hürde. Was Anleger wissen sollten. Von Alina Leimbach.",
-      "pubDate": "2026-11-08T08:35:33+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/aktien-kauf-nachts-100.html",
-      "bild": ""
-    },
-    {
-      "id": "e669fc685eac297b4cb5",
-      "title": "Mehr als 20 Verletzte nach Erdbeben in Zentraljapan",
-      "description": "Mehrere Regionen in Japan wurden in der Nacht von einem Erdbeben der Stärke 5,7 erschüttert. Am stärksten betroffen war die Präfektur Aichi. Medien berichten über mehr als 20 Verletzte. Laut Behörden könnten weitere Beben folgen.",
-      "pubDate": "2026-11-08T08:27:58+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/japan-erdbeben-aichi-100.html",
       "bild": ""
     }
   ],
