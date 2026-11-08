@@ -1,7 +1,95 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "08.11.2026, 05:41 Uhr (UTC)",
+  "aktualisiert": "08.11.2026, 13:08 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "266ff7dc3c70245cdbd8",
+      "title": "Russische Luftangriffe: Erneut Hunderttausende Ukrainer ohne Strom",
+      "description": "Erneut hat Russland die ukrainische Energieversorgung schwer getroffen. In der Region Dnipropetrowsk haben 600.000 Menschen keinen Strom. Das besetzte Atomkraftwerk Saporischschja muss mit Notstromaggregaten gekühlt werden.",
+      "pubDate": "2026-11-08T13:05:57+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/ukraine-stromausfall-120.html",
+      "bild": ""
+    },
+    {
+      "id": "afec230585806aa35d9d",
+      "title": "Schüsse in Krakau: Staatsanwaltschaft geht Terrorismusverdacht nach",
+      "description": "Nach den Schüssen in Krakau geht die Staatsanwaltschaft von Terrorismus aus. Sechs Menschen starben. Es gibt Hinweise auf eine \"sehr radikale\" Gesinnung des Schützen. Auch drei Familienmitglieder wurden erschossen.",
+      "pubDate": "2026-11-08T12:19:37+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/krakau-schuesse-trauer-102.html",
+      "bild": ""
+    },
+    {
+      "id": "1c980b7edfe2aafeca41",
+      "title": "Leiharbeiter: Nordkoreas Geldquelle in Russland",
+      "description": "Nordkorea stellt nicht nur Soldaten für den Krieg gegen die Ukraine. In Russland sind auch Zehntausende Leiharbeiter tätig. Sie hoffen auf einen besseren Verdienst als in ihrer Heimat - erfüllt sich dieser Wunsch? Von Norbert Hahn.",
+      "pubDate": "2026-11-08T11:32:46+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/russland-nordkorea-104.html",
+      "bild": ""
+    },
+    {
+      "id": "7f9b93cc1c862fb13c4c",
+      "title": "Berliner Linken-Politikerin Emde lehnt Mandatsverzicht ab",
+      "description": "Die Berliner Linken-Abgeordnete Emde hat der Forderung des Parteivorstands, ihr Mandat niederzulegen, eine klare Absage erteilt. Auch von ihrer umstrittenen Haltung zu Israel scheint die Politikerin nicht abzurücken.",
+      "pubDate": "2026-11-08T11:26:04+01:00",
+      "link": "https://www.tagesschau.de/inland/regional/berlin/berlin-linke-emde-ablehnung-mandatsverzicht-100.html",
+      "bild": ""
+    },
+    {
+      "id": "1b8447491ec0eb422834",
+      "title": "Trump will Kampfsportunternehmer White als Pressesprecher",
+      "description": "\"Ein gewalttätiger Kämpfer und Krieger\": Mit einem unkonventionellen Vorschlag löst US-Präsident Trump Rätselraten aus: Der Chef der Kampfsportliga UFC soll Pressesprecher werden. Oder gibt es ein Missverständnis?",
+      "pubDate": "2026-11-08T10:59:49+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/trump-sprecher-white-ufc-kampfsport-spekulationen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "5c89897dfbe99f2f659c",
+      "title": "Familienmitglieder des Schützen ebenfalls getötet",
+      "description": "Landesweit gilt in Polen nach den tödlichen Schüssen auf Passanten auf einem Marktplatz in Krakau Staatstrauer. Das Motiv des Schützen bleibt unklar. Er steht im Verdacht, auch seine Eltern und Schwester getötet zu haben.",
+      "pubDate": "2026-11-08T10:58:10+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/krakau-schuesse-trauer-100.html",
+      "bild": ""
+    },
+    {
+      "id": "d813e8c0dcc42792fda6",
+      "title": "Papst Leo XIV. setzt Südamerika-Reise fort",
+      "description": "Zum Auftakt seiner Südamerika-Reise traf Papst Leo XIV. in Uruguay auf Armut und Gläubige in einer meist säkularen Gesellschaft. Nun geht es nach Argentinien, dessen Staatschef den Pontifex bisher eher als Kritiker kennt. Von Tilmann Kleinjung.",
+      "pubDate": "2026-11-08T09:27:56+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/papst-leo-suedamerika-uruguay-100.html",
+      "bild": ""
+    },
+    {
+      "id": "48c9eee673f4ae48d3e4",
+      "title": "Guatemalas Korruptionsbekämpfer riskieren ihr Leben",
+      "description": "Guatemalas Präsident Arévalo versucht, die Korruption im Land zu bekämpfen. Doch der Widerstand einflussreicher Kreise ist massiv. Der Mord an einem der bekanntesten Anwälte des Landes zeigt, wie entschlossen sie sind. Von A. Demmer.",
+      "pubDate": "2026-11-08T08:39:28+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/guatemala-kampf-korruption-100.html",
+      "bild": ""
+    },
+    {
+      "id": "1f2c295ed14d8017acf0",
+      "title": "Wie der Aktienkauf rund um die Uhr funktionieren soll",
+      "description": "Die Deutsche Börse in Frankfurt ermöglicht ab sofort den Handel mit DAX-Werten auch nachts oder am Wochenende. Noch gibt es allerdings eine wichtige Hürde. Was Anleger wissen sollten. Von Alina Leimbach.",
+      "pubDate": "2026-11-08T08:35:33+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/aktien-kauf-nachts-100.html",
+      "bild": ""
+    },
+    {
+      "id": "e669fc685eac297b4cb5",
+      "title": "Mehr als 20 Verletzte nach Erdbeben in Zentraljapan",
+      "description": "Mehrere Regionen in Japan wurden in der Nacht von einem Erdbeben der Stärke 5,7 erschüttert. Am stärksten betroffen war die Präfektur Aichi. Medien berichten über mehr als 20 Verletzte. Laut Behörden könnten weitere Beben folgen.",
+      "pubDate": "2026-11-08T08:27:58+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/japan-erdbeben-aichi-100.html",
+      "bild": ""
+    },
+    {
+      "id": "a7cff03c564fa4a42f96",
+      "title": "US-Militär attackiert Handelsschiff im Golf von Oman",
+      "description": "Im Golf von Oman hat das US-Militär auf ein Handelsschiff gefeuert, das gegen die US-Seeblockade verstoßen haben soll. Iran meldet den Brand zweier Frachter in der Straße von Hormus. Huthis greifen die saudische Hauptstadt Riad an.",
+      "pubDate": "2026-11-08T12:04:42+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/usa-iran-seeblockade-angriff-handelsschiff-100.html",
+      "bild": ""
+    },
     {
       "id": "4ebc4479207191a72fd5",
       "title": "Medienbericht: Kaum Geld aus Sondervermögen in Bildungsinfrastruktur geflossen",
@@ -32,94 +120,6 @@
       "description": "Bei der französischen Präsidentschaftswahl im kommenden April könnte er stark abschneiden: der linke Kandidat Mélenchon. Jetzt hat er sein Programm vorgestellt - und sich dabei nicht nur gegen die NATO positioniert.",
       "pubDate": "2026-11-08T01:14:21+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/frankreich-melenchon-wahlprogramm-100.html",
-      "bild": ""
-    },
-    {
-      "id": "6d7174612da89403045f",
-      "title": "Bankenkrise: Anklage gegen Paraguays Ex-Präsidenten",
-      "description": "Nur einen Tag nach seiner Amtsenthebung muss sich Paraguays Ex-Präsident Peña wegen seiner Rolle im Bankenskandal vor der Justiz verantworten. Die Staatsanwaltschaft fordert Untersuchungshaft.",
-      "pubDate": "2026-11-07T21:33:23+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/ermittlungen-paraguay-pena-100.html",
-      "bild": ""
-    },
-    {
-      "id": "3aa073d49d6d6ce5e812",
-      "title": "Oppositionsführer Eisenkot soll Israels neue Regierung bilden",
-      "description": "Endet die Ära Netanjahu in Israel? Staatspräsident Herzog beauftragt den Oppositionspolitiker Eisenkot mit der Regierungsbildung. In den kommenden 28 Tagen soll er versuchen, eine Koalition zu schmieden.",
-      "pubDate": "2026-11-07T21:31:48+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/regierungsbildung-israel-eisenkot-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c194f2c6938692346af3",
-      "title": "Papst in Uruguay: Schwierige Mission für Leo XIV.",
-      "description": "Zum Auftakt seiner Südamerika-Reise besucht Papst Leo XIV. Uruguay - ein Land, in dem der Glaube im Alltag kaum eine Rolle spielt. Doch im Armenviertel der Hauptstadt findet die soziale Arbeit der Kirche Anklang. Von Anne Herrberg.",
-      "pubDate": "2026-11-07T20:56:52+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/papst-reise-suedamerika-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c516d5a6797f21e6df85",
-      "title": "FAQ: Was ist über die Schüsse in Krakau bekannt?",
-      "description": "Im polnischen Krakau hat ein Mann aus einem Auto geschossen und mindestens sechs Menschen getötet. Weitere Personen wurden verletzt, darunter auch eine deutsche. Was bislang über die Tat bekannt ist.",
-      "pubDate": "2026-11-08T02:27:38+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/schuesse-krakau-102.html",
-      "bild": ""
-    },
-    {
-      "id": "659839b098fd08900f9d",
-      "title": "Weniger Teilnehmer bei neuen Demos in Frankreich",
-      "description": "Das zweite Mal in dieser Woche und das vierte Wochenende in Folge haben in Frankreich Menschen gegen hohe Lebenskosten oder Probleme im Bildungssystem protestiert. Allerdings kamen diesmal weniger Teilnehmer.",
-      "pubDate": "2026-11-07T19:57:56+01:00",
-      "link": "https://www.tagesschau.de/ausland/frankreich-proteste-246.html",
-      "bild": ""
-    },
-    {
-      "id": "542b6511d631af8b27bd",
-      "title": "Polen: Mindestens sechs Tote nach Schüssen in Krakau",
-      "description": "Bei Schüssen in der polnischen Stadt Krakau sind laut Polizei mindestens sechs Menschen getötet und 16 Personen verletzt worden. Der mutmaßliche Täter konnte demnach gefasst werden. In seinem Wohnhaus wurden weitere Tote entdeckt.",
-      "pubDate": "2026-11-07T22:51:26+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/schuesse-krakau-100.html",
-      "bild": ""
-    },
-    {
-      "id": "df34ec9cb7f0ac33c941",
-      "title": "Wofür Trumps neuer Stabschef Miller steht",
-      "description": "Seit Freitag ist Stephen Miller neuer Stabschef von Präsident Trump. Der 41-Jährige gilt als rechter Hardliner und Kopf hinter der strikten Einwanderungspolitik. Welches Signal sendet Trump mit der Personalie an Republikaner und Demokraten?",
-      "pubDate": "2026-11-07T15:57:49+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/trump-stabschef-miller-100.html",
-      "bild": ""
-    },
-    {
-      "id": "4a7d25acbdfa89f5cdb8",
-      "title": "Parlamentswahl in Neuseeland: Regierungspartei und Labour nahezu gleichauf",
-      "description": "Neuseeland hat ein neues Parlament gewählt. Doch angesichts eines extrem knappen Wahlausgangs könnte es bei der Frage, welche Regierung das Land künftig führt, letztlich auf die kleinen Parteien ankommen.",
-      "pubDate": "2026-11-07T15:41:43+01:00",
-      "link": "https://www.tagesschau.de/ausland/ozeanien/neuseeland-parlamentswahl-102.html",
-      "bild": ""
-    },
-    {
-      "id": "3d678297eb242b079e41",
-      "title": "Pahlavi nimmt Freiheitspreis für iranisches Volk entgegen",
-      "description": "Der iranische Oppositionelle Pahlavi hat stellvertretend für das iranische Volk den Freiheitspreis der FDP-nahen Friedrich-Naumann-Stiftung entgegengenommen. Während der Verleihung gab es auch Demonstrationen.",
-      "pubDate": "2026-11-07T14:25:25+01:00",
-      "link": "https://www.tagesschau.de/inland/regional/hessen/pahlavi-friedenspreis-frankfurt-100.html",
-      "bild": ""
-    },
-    {
-      "id": "48f27e974ccd60c14668",
-      "title": "Ilse Aigner im Porträt: Krisenerprobt, bürgernah - und bald Staatsoberhaupt?",
-      "description": "Ilse Aigner hat beste Chancen, die erste Bundespräsidentin Deutschlands zu werden. Obwohl sie bereits hohe Ämter auf Bundes- und Landesebene innehatte, stand sie nie in allererster Reihe. Ein Porträt von Anita Fünffinger.",
-      "pubDate": "2026-11-07T12:30:37+01:00",
-      "link": "https://www.tagesschau.de/inland/ilse-aigner-portraet-100.html",
-      "bild": ""
-    },
-    {
-      "id": "8b70e50497abf2df6649",
-      "title": "Bandenchef bittet UN um Vermittlung in Haiti",
-      "description": "In Haiti werden nach einem Bandenangriff vier salvadorianische Militärangehörige vermisst. Um sie zu retten, schickt Präsident Bukele weitere Soldaten ins Land und droht den Gangs. Ein Bandenchef reagiert nun mit einem Brief an die UN. Von A. Demmer.",
-      "pubDate": "2026-11-07T11:51:13+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/haiti-banden-vereinte-nationen-100.html",
       "bild": ""
     }
   ],
