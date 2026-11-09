@@ -1,7 +1,111 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "09.11.2026, 01:53 Uhr (UTC)",
+  "aktualisiert": "09.11.2026, 09:33 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "615ac68dcebde27f16f7",
+      "title": "Marktbericht: Anleger nach KI-Crash weiter verunsichert",
+      "description": "Der DAX macht zwar einen Teil der Kursverluste vom Freitag wieder wett, aber noch scheuen die Investoren das Risiko. Unterstützung kommt von Konjunkturseite, die Exporte fallen unerwartet stark aus.",
+      "pubDate": "2026-11-09T10:25:58+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-geldanlage-170.html",
+      "bild": ""
+    },
+    {
+      "id": "300669075f5793c57fdc",
+      "title": "Schneider fordert Alternative zur Plastiksteuer",
+      "description": "\"Die Plastiksteuer machen wir nicht.\" Die Ansage von Unionsfraktionschef Frei war klar und deutlich - doch mit den Einnahmen daraus wird schon geplant. Umweltminister Schneider sieht jetzt die Union in der Pflicht.",
+      "pubDate": "2026-11-09T10:03:50+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/diskussion-plastiksteuer-100.html",
+      "bild": ""
+    },
+    {
+      "id": "ee79a79839fb75ee14bf",
+      "title": "G7-Außenminister sprechen über Ukraine und Iran",
+      "description": "Welche Rolle spielt Europa bei der Lösung des Ukraine-Kriegs? Wie geht es mit Iran weiter? Diese Fragen stehen im Zentrum der G7-Gespräche in Paris. Außenminister Wadephul mahnt Washington und Moskau.",
+      "pubDate": "2026-11-09T10:01:15+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/g7-paris-100.html",
+      "bild": ""
+    },
+    {
+      "id": "8d9d822fac1f8494f763",
+      "title": "Hoffen auf Ende des Iran-Krieges: Ölpreise deutlich gesunken",
+      "description": "Noch ist kein Abkommen unterzeichnet - doch Anleger glauben an ein Ende des US-Iran-Krieges. Das zeigt sich an den Ölpreisen. Und auch an der Tankstelle sinken die Spritpreise weiter.",
+      "pubDate": "2026-11-09T09:52:19+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/oelpreise-gesunken-100.html",
+      "bild": ""
+    },
+    {
+      "id": "face1eb6fb2fd2ccea18",
+      "title": "Wie steht es um den Klimaschutz im Gastgeberland Türkei?",
+      "description": "Den Anteil elektrischer Energie bis 2035 weltweit auf 35 Prozent erhöhen - mit diesem Vorschlag geht Gastgeberin Türkei in die Klimakonferenz. Das Land selbst setzt aber noch immer vor allem auf Kohle. Von Benjamin Weber.",
+      "pubDate": "2026-11-09T09:05:32+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/cop-gastgeber-turkei-100.html",
+      "bild": ""
+    },
+    {
+      "id": "974465db5389886310c1",
+      "title": "Opferbeauftragte Zupke warnt vor Verdrehung der DDR-Geschichte",
+      "description": "Der 9. November spielt eine besondere Rolle in der deutschen Geschichte. Die SED-Opferbeauftragte mahnt, das Erbe der friedlichen Revolution nicht politisch zu missbrauchen. Kanzler Merz rief zum Schutz der Demokratie auf.",
+      "pubDate": "2026-11-09T08:19:35+01:00",
+      "link": "https://www.tagesschau.de/inland/november-gedenken-100.html",
+      "bild": ""
+    },
+    {
+      "id": "5f232c4d50653d0d34a8",
+      "title": "Todesschütze von Krakau ist tot",
+      "description": "Die tödlichen Schüsse in Krakau haben Entsetzen ausgelöst, aber auch viele Fragen aufgeworfen. Vor allem nach dem Motiv des Täters. Er kann nicht mehr vernommen werden. Der 24-Jährige starb im Krankenhaus.",
+      "pubDate": "2026-11-09T08:06:15+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/krakau-todesschuetze-tot-100.html",
+      "bild": ""
+    },
+    {
+      "id": "3161240f785edcc78afa",
+      "title": "Klimagipfel in Antalya: Eine Premiere und viel Konfliktpotenzial",
+      "description": "In der Türkei beginnt die Klimakonferenz in neuem Format und mit alten Streitpunkten. Und wieder ist die große Frage: Kommt die Weltgemeinschaft beim Ausstieg aus Fossilen Energien voran? Von Jakob Mayr.",
+      "pubDate": "2026-11-09T07:02:50+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/klimagipfel-204.html",
+      "bild": ""
+    },
+    {
+      "id": "6be39a8a289f9b96e7dd",
+      "title": "ARD-Umfrage: Was die Deutschen an der Demokratie kritisieren",
+      "description": "Die Demokratie genießt breiten Rückhalt. Aber nur jeder Dritte ist der Meinung, dass sie in Deutschland gut funktioniert. Warum das so ist und was helfen kann, zeigt die ARD-Aktion \"Deine Meinung zählt!\". Von F. Riesewieck und B. Kießling.",
+      "pubDate": "2026-11-09T05:01:12+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/sorge-um-demokratie-umfrage-100.html",
+      "bild": ""
+    },
+    {
+      "id": "6a8a39598dd19f7a870a",
+      "title": "31. Klimakonferenz der UN startet - Guterres fordert mehr Einsatz",
+      "description": "Im türkischen Antalya beginnt die 31. Klimakonferenz der Vereinten Nationen. Zwei Wochen lang beraten Vertreter von fast 200 Ländern über Maßnahmen gegen die Erderwärmung. UN-Generalsekretär Guterres verweist auf die Dringlichkeit.",
+      "pubDate": "2026-11-09T04:59:05+01:00",
+      "link": "https://www.tagesschau.de/wissen/klima/cop-in-antalya-beginnt-100.html",
+      "bild": ""
+    },
+    {
+      "id": "ed08bd667c26c9161198",
+      "title": "Bundespräsidenten-Wahl: Merz bricht sein Schweigen und schlägt Aigner vor",
+      "description": "Lange hatte er darüber nachgedacht und sich zurückgehalten - am Abend sprach sich Kanzler Merz dann für Ilse Aigner als Bundespräsidentin aus. Heute wollen beide offiziell vor die Presse treten. Von Sabine Henkel.",
+      "pubDate": "2026-11-09T04:34:40+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/aigner-bundespraesidentin-100.html",
+      "bild": ""
+    },
+    {
+      "id": "9555c5d4f36a6a5edbe6",
+      "title": "Historische Niederlage: ANC stürzt bei Kommunalwahl in Südafrika ab",
+      "description": "Bei den Kommunalwahlen in Südafrika hat der Afrikanische Nationalkongress (ANC) eine herbe Niederlage eingefahren. Viele sind angesichts Kriminalität und Korruption enttäuscht von der Partei, die das Land aus der Apartheid geführt hatte.",
+      "pubDate": "2026-11-09T03:47:21+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/wahlen-suedafrika-102.html",
+      "bild": ""
+    },
+    {
+      "id": "f44e07b4cb4a2ce27ce0",
+      "title": "Krakau nach der Tat - der Stand der Ermittlungen",
+      "description": "Hunderte Menschen in Krakau haben gemeinsam der sechs Opfer gedacht, die am Wochenende auf einem zentralen Platz der Stadt erschossen wurden. Gleichzeitig ermitteln die Behörden weiter - wegen des Verdachts auf Terrorismus.",
+      "pubDate": "2026-11-09T03:02:19+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/ermittlungen-krakau-100.html",
+      "bild": ""
+    },
     {
       "id": "c8cfe23d1d9728f38dfe",
       "title": "Papst Leo XIV. fordert in Argentinien mehr Rücksicht auf Schwache",
@@ -16,110 +120,6 @@
       "description": "Vor der Küste Senegals ist ein Boot gekentert. Die Behörden bestätigten mehr als 20 Tote, mit weiteren wird gerechnet. Zahlreiche Menschen versuchen jedes Jahr, über die gefährliche Atlantikroute aus Westafrika in die EU zu gelangen.",
       "pubDate": "2026-11-09T01:32:33+01:00",
       "link": "https://www.tagesschau.de/ausland/afrika/viele-tote-bootsunglueck-senegal-100.html",
-      "bild": ""
-    },
-    {
-      "id": "580edb4e7680172fe28b",
-      "title": "Untersuchung gegen Nvidia-Chef Huang wegen möglicher Spionin aus China",
-      "description": "Der KI-Chip-Gigant Nvidia hat nach Berichten über einen Spionageverdacht eine Untersuchung gegen seinen Gründer und Konzernchef Jensen Huang eingeleitet. Er soll eine Affäre mit einer mutmaßlichen chinesischen Spionin gehabt haben. Von Gabi Biesinger.",
-      "pubDate": "2026-11-09T00:11:37+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/nvidia-spionage-pruefung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "1e35cc0858aed1411530",
-      "title": "Unionsfraktionschef erteilt Plastiksteuer eine Absage",
-      "description": "Unionsfraktionschef Frei erteilt der geplanten Plastiksteuer eine Absage. Sie sei \"wirtschaftlich und ökologisch falsch\". Anders klingt das bei SPD-Fraktionschef Miersch, der auf laufende Verhandlungen verweist.",
-      "pubDate": "2026-11-08T21:38:04+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/plastiksteuer-absage-100.html",
-      "bild": ""
-    },
-    {
-      "id": "1a80e56faeeab79f6f53",
-      "title": "Überschwemmungen in Gaza schüren Sorge vor neuer Katastrophe",
-      "description": "Starker Regen hat Teile des Gazastreifens überschwemmt. Laut dem Gesundheitsminister haben eine Million Vertriebene kein Dach mehr über dem Kopf. Hilfsorganisationen befürchten eine humanitäre Katastrophe. Von J.-C. Kitzler.",
-      "pubDate": "2026-11-08T21:15:13+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/gaza-regenfaelle-humanitaere-lage-100.html",
-      "bild": ""
-    },
-    {
-      "id": "118749c3516ded306d14",
-      "title": "Kanzler Merz will Aigner als Bundespräsidentin vorschlagen",
-      "description": "Bislang hatte sich Kanzler Merz in der Frage zur Bundespräsidenten-Nachfolge zurückgehalten. Jetzt machte er es offiziell: Der CDU-Chef will am Montag Ilse Aigner dafür vorschlagen - als erste Frau in diesem Amt.",
-      "pubDate": "2026-11-08T21:05:22+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/aigner-bundespraesidentin-merz-100.html",
-      "bild": ""
-    },
-    {
-      "id": "fe6cfbb158fc0ef17406",
-      "title": "Chef der Jungen Union: \"Junge Generation wird von der Politik vernachlässigt\"",
-      "description": "Viele junge Menschen fühlen sich politisch übergangen. Das liege auch daran, dass Pläne wie die Rentenreform nicht umgesetzt würden, sagt Winkel, Vorsitzender der Jungen Union, im Bericht aus Berlin. Die Regierung habe einiges wieder gut zu machen.",
-      "pubDate": "2026-11-08T20:43:02+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/bericht-aus-berlin-junge-generation-100.html",
-      "bild": ""
-    },
-    {
-      "id": "1d02f2f68de80af679b4",
-      "title": "Parteitag: FDP bündelt Kräfte für Landtagswahlen kommendes Jahr",
-      "description": "Die FDP kämpft ums Überleben. Ihre letzte Chance dürften die Landtagswahlen kommendes Jahr sein. Während des digitalen Parteitags versuchte FDP-Chef Kubicki, die Liberalen als Gegengewicht zur Regierung zu etablieren. Von Lissy Kaufmann.",
-      "pubDate": "2026-11-08T19:53:14+01:00",
-      "link": "https://www.tagesschau.de/inland/fdp-bundesparteitag-122.html",
-      "bild": ""
-    },
-    {
-      "id": "aa7c705dcd25ef39a74f",
-      "title": "Amsterdam: Zehntausende demonstrieren gegen Israels Gaza-Politik",
-      "description": "Amsterdam ist erneut Schauplatz einer Großdemonstration gegen das israelische Vorgehen im Gazastreifen geworden. Der Protest verlief laut Polizei friedlich. Ministerpräsident Jetten war dieses Mal nicht dabei.",
-      "pubDate": "2026-11-08T18:02:14+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/demonstration-amsterdam-israel-100.html",
-      "bild": ""
-    },
-    {
-      "id": "7f6270be543d5af6fa2d",
-      "title": "Ukraine-Gespräche in Abu Dhabi: Europäer sind laut Frankreich \"gut vertreten\"",
-      "description": "Ab Dienstag soll in Abu Dhabi über einen möglichen Frieden in der Ukraine verhandelt werden. Laut dem französischen Außenminister Barrot ist auch Europa vertreten: Frankreich werde an den Gesprächen mit den Russen teilnehmen.",
-      "pubDate": "2026-11-08T17:33:42+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/ukraine-verhandlungen-abu-dhabi-100.html",
-      "bild": ""
-    },
-    {
-      "id": "d6477c0b3ac4a753b057",
-      "title": "Israel: Oppositionsführer Eisenkot soll neue Regierung bilden",
-      "description": "Nun ist es offiziell: Israels Präsident Herzog hat den Oppositionspolitiker Eisenkot mit der Regierungsbildung beauftragt. Der Ex-Militärchef appellierte an die anderen Parteien, \"unkonventionelle politische Schritte\" zu akzeptieren.",
-      "pubDate": "2026-11-08T17:07:41+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/israel-auftrag-regierungsbildung-eisenkot-100.html",
-      "bild": ""
-    },
-    {
-      "id": "8e2872d186191828d410",
-      "title": "Viele Gebäude weiterhin ohne Elementarschadenversicherung",
-      "description": "Immer häufiger führen Starkregen und Überschwemmungen zu teuren Schäden an Häusern. Nur gut die Hälfte der Gebäude in Deutschland sind gegen solche Folgen abgesichert. Experten sehen Handlungsbedarf. Von Katharina Wilhelm.",
-      "pubDate": "2026-11-08T16:28:00+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/klimaschaeden-versicherungen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f5c164b11987807ee52b",
-      "title": "Mann hisst Palästinenser-Flagge vor Berliner Reichstagsgebäude",
-      "description": "Vor dem Berliner Reichstagsgebäude ist ein Mann den fast 30 Meter hohen Flaggenmast hochgeklettert. Er entfernte die Deutschlandflagge und hisste eine Palästinenser-Flagge. Nun ermittelt der Staatsschutz.",
-      "pubDate": "2026-11-08T15:05:08+01:00",
-      "link": "https://www.tagesschau.de/inland/regional/berlin/reichstag-palaestina-flagge-100.html",
-      "bild": ""
-    },
-    {
-      "id": "266ff7dc3c70245cdbd8",
-      "title": "Russische Luftangriffe: Erneut Hunderttausende Ukrainer ohne Strom",
-      "description": "Erneut hat Russland die ukrainische Energieversorgung schwer getroffen. In der Region Dnipropetrowsk haben 600.000 Menschen keinen Strom. Das besetzte Atomkraftwerk Saporischschja muss mit Notstromaggregaten gekühlt werden.",
-      "pubDate": "2026-11-08T13:05:57+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/ukraine-stromausfall-120.html",
-      "bild": ""
-    },
-    {
-      "id": "afec230585806aa35d9d",
-      "title": "Schüsse in Krakau: Staatsanwaltschaft geht Terrorismusverdacht nach",
-      "description": "Nach den Schüssen in Krakau geht die Staatsanwaltschaft von Terrorismus aus. Sechs Menschen starben. Es gibt Hinweise auf eine \"sehr radikale\" Gesinnung des Schützen. Auch drei Familienmitglieder wurden erschossen.",
-      "pubDate": "2026-11-08T12:19:37+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/krakau-schuesse-trauer-102.html",
       "bild": ""
     }
   ],
