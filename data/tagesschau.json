@@ -1,7 +1,31 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "08.11.2026, 22:24 Uhr (UTC)",
+  "aktualisiert": "09.11.2026, 01:53 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "c8cfe23d1d9728f38dfe",
+      "title": "Papst Leo XIV. fordert in Argentinien mehr Rücksicht auf Schwache",
+      "description": "Zu Beginn seines Argentinienbesuchs hat Papst Leo XIV. Kritik an der \"Kettensägen-Politik\" von Präsident Milei geübt und zu mehr Rücksicht aufgerufen. Seit fast vier Jahrzehnten war kein Papst mehr in dem südamerikanischen Land zu Gast.",
+      "pubDate": "2026-11-09T01:43:39+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/papst-in-argentinien-100.html",
+      "bild": ""
+    },
+    {
+      "id": "95b4bfe996b79aad6d26",
+      "title": "Mindestens 21 Tote nach Bootsunglück vor Senegal gemeldet",
+      "description": "Vor der Küste Senegals ist ein Boot gekentert. Die Behörden bestätigten mehr als 20 Tote, mit weiteren wird gerechnet. Zahlreiche Menschen versuchen jedes Jahr, über die gefährliche Atlantikroute aus Westafrika in die EU zu gelangen.",
+      "pubDate": "2026-11-09T01:32:33+01:00",
+      "link": "https://www.tagesschau.de/ausland/afrika/viele-tote-bootsunglueck-senegal-100.html",
+      "bild": ""
+    },
+    {
+      "id": "580edb4e7680172fe28b",
+      "title": "Untersuchung gegen Nvidia-Chef Huang wegen möglicher Spionin aus China",
+      "description": "Der KI-Chip-Gigant Nvidia hat nach Berichten über einen Spionageverdacht eine Untersuchung gegen seinen Gründer und Konzernchef Jensen Huang eingeleitet. Er soll eine Affäre mit einer mutmaßlichen chinesischen Spionin gehabt haben. Von Gabi Biesinger.",
+      "pubDate": "2026-11-09T00:11:37+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/nvidia-spionage-pruefung-100.html",
+      "bild": ""
+    },
     {
       "id": "1e35cc0858aed1411530",
       "title": "Unionsfraktionschef erteilt Plastiksteuer eine Absage",
@@ -96,30 +120,6 @@
       "description": "Nach den Schüssen in Krakau geht die Staatsanwaltschaft von Terrorismus aus. Sechs Menschen starben. Es gibt Hinweise auf eine \"sehr radikale\" Gesinnung des Schützen. Auch drei Familienmitglieder wurden erschossen.",
       "pubDate": "2026-11-08T12:19:37+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/krakau-schuesse-trauer-102.html",
-      "bild": ""
-    },
-    {
-      "id": "1c980b7edfe2aafeca41",
-      "title": "Leiharbeiter: Nordkoreas Geldquelle in Russland",
-      "description": "Nordkorea stellt nicht nur Soldaten für den Krieg gegen die Ukraine. In Russland sind auch Zehntausende Leiharbeiter tätig. Sie hoffen auf einen besseren Verdienst als in ihrer Heimat - erfüllt sich dieser Wunsch? Von Norbert Hahn.",
-      "pubDate": "2026-11-08T11:32:46+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/russland-nordkorea-104.html",
-      "bild": ""
-    },
-    {
-      "id": "7f9b93cc1c862fb13c4c",
-      "title": "Berliner Linken-Politikerin Emde lehnt Mandatsverzicht ab",
-      "description": "Die Berliner Linken-Abgeordnete Emde hat der Forderung des Parteivorstands, ihr Mandat niederzulegen, eine klare Absage erteilt. Auch von ihrer umstrittenen Haltung zu Israel scheint die Politikerin nicht abzurücken.",
-      "pubDate": "2026-11-08T15:50:57+01:00",
-      "link": "https://www.tagesschau.de/inland/regional/berlin/berlin-linke-emde-ablehnung-mandatsverzicht-100.html",
-      "bild": ""
-    },
-    {
-      "id": "1b8447491ec0eb422834",
-      "title": "Trump will Kampfsportunternehmer White als Pressesprecher",
-      "description": "\"Ein gewalttätiger Kämpfer und Krieger\": Mit einem unkonventionellen Vorschlag löst US-Präsident Trump Rätselraten aus: Der Chef der Kampfsportliga UFC soll Pressesprecher werden. Oder gibt es ein Missverständnis?",
-      "pubDate": "2026-11-08T10:59:49+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/trump-sprecher-white-ufc-kampfsport-spekulationen-100.html",
       "bild": ""
     }
   ],
