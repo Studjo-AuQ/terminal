@@ -1,7 +1,39 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "09.11.2026, 20:36 Uhr (UTC)",
+  "aktualisiert": "10.11.2026, 03:22 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "52b0009b8d474ef33ffe",
+      "title": "Gespräche in Abu Dhabi: Gedämpfte Erwartungen der Ukraine",
+      "description": "Heute beginnen die trilateralen Verhandlungen in Abu Dhabi. Können die Gespräche mit den USA und Russland zu einem echten Frieden führen - oder gar zu einer Schwächung der Ukraine? In der Ukraine sind die Erwartungen gedämpft. Von F. Kellermann.",
+      "pubDate": "2026-11-10T02:13:48+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/ukraine-erwartungen-gespraeche-100.html",
+      "bild": ""
+    },
+    {
+      "id": "b11f803adb82555465f3",
+      "title": "Verkehrsminister Bilger verteidigt \"Tankrabatt\"",
+      "description": "Seit Oktober gibt es den \"Tankrabatt\". Verkehrsminister Bilger findet das richtig. Entlastung sei nötig gewesen, sagte er in der ARD-Arena. Kritisch blickt er auf Debatten über ein generelles Tempolimit.",
+      "pubDate": "2026-11-10T00:40:08+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/bilger-wahlarena-100.html",
+      "bild": ""
+    },
+    {
+      "id": "e7bfc2a32eb8305eb388",
+      "title": "Merz verteidigt Ablauf der Nominierung von Aigner",
+      "description": "199 Tage hat es gedauert, bis sich Kanzler Merz hinter Aigner als Kandidatin zur Bundespräsidentin stellte. Im tagesthemen-Interview verteidigt er den Prozess, der \"störungsfrei\" und \"harmonisch\" abgelaufen sei. Aigner sei die Richtige für das Amt.",
+      "pubDate": "2026-11-09T22:27:31+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/merz-aigner-bundespraesidentin-100.html",
+      "bild": ""
+    },
+    {
+      "id": "5edbc4520c4cb1f2ac9c",
+      "title": "Republikaner Massie will Hegseth des Amtes entheben",
+      "description": "Nach der Wahlniederlage bei den Midterms wächst der Druck auf die US-Republikaner - auch wegen des Iran-Kriegs. Nun hat der Trump-kritische Republikaner Massie ein Amtsenthebungsverfahren gegen Verteidigungsminister Hegseth auf den Weg gebracht.",
+      "pubDate": "2026-11-09T21:48:39+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/usa-amtsenthebungsverfahren-hegseth-100.html",
+      "bild": ""
+    },
     {
       "id": "508ff78952563c0b13d2",
       "title": "Buenos Aires: Papst Leo XIV. feiert Messe vor zwei Millionen Menschen",
@@ -88,38 +120,6 @@
       "description": "Der Telekommunikationskonzern Vodafone muss sparen. In Deutschland soll nun rund jeder fünfte Job wegfallen - insgesamt 2.300 Stellen. Dafür will der Konzern stärker Künstliche Intelligenz einsetzen.",
       "pubDate": "2026-11-09T17:09:03+01:00",
       "link": "https://www.tagesschau.de/wirtschaft/unternehmen/vodafone-stellenabbau-102.html",
-      "bild": ""
-    },
-    {
-      "id": "2f7d02dedc2f9884f42e",
-      "title": "Russell Brand zu mehr als zehn Jahren Haft verurteilt",
-      "description": "Vor wenigen Tagen war der Ex-Comedian in London wegen Vergewaltigung und sexueller Nötigung verurteilt worden. Nun wurde das Strafmaß verkündet: Er muss zehneinhalb Jahre in Haft. Inzwischen wurden neue Vorwürfe laut.",
-      "pubDate": "2026-11-09T16:56:52+01:00",
-      "link": "https://www.tagesschau.de/ausland/russell-brand-strafmass-100.html",
-      "bild": ""
-    },
-    {
-      "id": "22d34d16ae960fbbadc6",
-      "title": "Steinmeier zu Novemberpogromen: \"Anlass, die Augen zu öffnen\"",
-      "description": "Bundespräsident Steinmeier hat zum Jahrestag der Novemberpogrome von 1938 die historische Verantwortung Deutschlands betont. Dass wieder mehr Juden hierzulande Opfer von Gewalt würden, mache ihn wütend. Es gebe \"Anlass, die Augen zu öffnen\".",
-      "pubDate": "2026-11-09T16:51:17+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/novemberpogrome-jahrestag-100.html",
-      "bild": ""
-    },
-    {
-      "id": "9d10cbba52a286e3d9ae",
-      "title": "Warum Merz sich doch für Aigner als Bundespräsidentin stark macht",
-      "description": "Lange hatte der Kanzler gezögert - nun ist es offiziell: Die CDU überlässt das höchste Staatsamt der kleinen Schwesterpartei aus Bayern. Die viel befürchtete Kritik in den eigenen Reihen ist ausgeblieben. Von Jannik Pentz.",
-      "pubDate": "2026-11-09T15:48:54+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/merz-aigner-kandidatin-bundespraesidentin-100.html",
-      "bild": ""
-    },
-    {
-      "id": "d40f6aab9224af773ef0",
-      "title": "Affäre von Nvidia-Chef Huang: Darum geht es beim Spionage-Verdacht",
-      "description": "Der US-Chipkonzern Nvidia ermittelt gegen seinen Chef Jensen Huang wegen einer Affäre mit einer mutmaßlichen chinesischen Spionin. Welche Vorwürfe konkret im Raum stehen - und welche Folgen sie haben könnten.",
-      "pubDate": "2026-11-09T14:58:03+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/faq-nvidia-spionage-100.html",
       "bild": ""
     }
   ],
