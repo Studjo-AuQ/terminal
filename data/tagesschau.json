@@ -1,7 +1,71 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "11.11.2026, 00:31 Uhr (UTC)",
+  "aktualisiert": "11.11.2026, 07:39 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "4d8e186562f9b7fc887f",
+      "title": "Marktbericht: DAX-Rekord bleibt in Sichtweite",
+      "description": "Zur Wochenmitte könnte der DAX seine Rekordjagd wieder aufnehmen. Erste Indikationen deuten auf klare Kursgewinne hin. Daneben gibt es wichtige Unternehmensdaten zu verarbeiten.",
+      "pubDate": "2026-11-11T07:38:55+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nasdaq-eon-nvidia-100.html",
+      "bild": ""
+    },
+    {
+      "id": "f3b6108b58780b75e235",
+      "title": "Papst Leo in Argentinien: Klartext gegen Mileis Kettensägen-Politik",
+      "description": "Papst Leo XIV. ist in Argentinien von Millionen Menschen gefeiert worden. Bei seinem Besuch kritisierte er die Sozialpolitik von Präsident Milei deutlich. Aber erreicht die Botschaft auch den Empfänger? Von T. Kleinjung.",
+      "pubDate": "2026-11-11T06:54:38+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/papst-argentinien-milei-100.html",
+      "bild": ""
+    },
+    {
+      "id": "0ea3dc9a65ea9172220c",
+      "title": "\"Digital Fairness Act\": Neue EU-Regeln für Influencer und Onlineshops?",
+      "description": "Die EU-Kommission legt heute einen Vorschlag für mehr Verbraucherschutz im Netz vor. Das Gesetz soll die Regeln für Werbung sowie Algorithmen verschärfen und nimmt Influencer, Onlineshops und Ticketverkäufer ins Visier. Von K. Schmid.",
+      "pubDate": "2026-11-11T06:28:10+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/digital-fairness-act-100.html",
+      "bild": ""
+    },
+    {
+      "id": "49c0d7f1ac0ffff5fb58",
+      "title": "11KM-Podcast: Millionen tote Rehe und Hirsche für den Klimawald?",
+      "description": "Jäger erlegten im vergangenen Jahr mehr als eine Million Rehe - auch im Namen des Klimaschutzes. Denn die Tiere können die Aufforstung stören. 11KM über den Interessenskonflikt im Wald.",
+      "pubDate": "2026-11-11T06:25:57+01:00",
+      "link": "https://www.tagesschau.de/podcast-11km-klimaschutz-rehe-100.html",
+      "bild": ""
+    },
+    {
+      "id": "37d2a32ce9cc6828b778",
+      "title": "Wie Spaniens Mieterbewegung für den Generalstreik mobilisiert",
+      "description": "Zum ersten Mal seit 2012 findet in Spanien heute ein Generalstreik statt. Die Idee dazu stammt nicht von Arbeitnehmervertretern, sondern von einem Mieterverbund. Das dürfte auch den anstehenden Wahlkampf beeinflussen. Von J. Macher.",
+      "pubDate": "2026-11-11T06:16:33+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/spanien-generalstreik-mieterbewegung-100.html",
+      "bild": ""
+    },
+    {
+      "id": "69fe9581fd9471d72dd5",
+      "title": "Zahl der Kriegsdienstverweigerer steigt weiter deutlich",
+      "description": "Der Wehrdienst bleibt weiterhin freiwillig. Die Musterung bei Männern ist allerdings verpflichtend. Die Zahl der Kriegsdienstverweigerungen steigt in diesem Jahr deutlich an.",
+      "pubDate": "2026-11-11T06:56:45+01:00",
+      "link": "https://www.tagesschau.de/inland/kriegsdienstverweigerer-steigend-100.html",
+      "bild": ""
+    },
+    {
+      "id": "56966671cd9dcf3f0d1c",
+      "title": "Kommentar: Aigner hätte auch zu AfD und Linken gehen müssen",
+      "description": "Als Bundespräsidentin möchte Ilse Aigner Gräben überwinden. Bei ihrem Besuch im Bundestag versuchte sie allerdings nicht, die Türschwellen vor den Fraktionssälen von AfD und Linke zu überwinden. Ein schlechter Start, meint Maximilian Ulrich.",
+      "pubDate": "2026-11-11T02:20:58+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/aigner-bundespraesidentin-kein-besuch-bei-afd-linke-100.html",
+      "bild": ""
+    },
+    {
+      "id": "00ea4b808f206e95f7de",
+      "title": "Ilse Aigner stellt sich den Bundestagsfraktionen vor",
+      "description": "Freundlich und überparteilich präsentiert sich die wohl künftige Bundespräsidentin Ilse Aigner bei den Fraktionen im Bundestag. Nur bei zwei Parteien lässt sie sich nicht blicken. Von Uwe Berndt.",
+      "pubDate": "2026-11-11T02:17:49+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/aigner-fraktionen-100.html",
+      "bild": ""
+    },
     {
       "id": "08302829d8fd3eb0ee75",
       "title": "US-Repräsentantenhaus lehnt Amtsenthebungsverfahren gegen Hegseth ab",
@@ -56,70 +120,6 @@
       "description": "Machtmissbrauch im Iran-Krieg - unter anderem wegen dieses Vorwurfs könnte ein Amtsenthebungsverfahren gegen Pentagon-Chef Hegseth eingeleitet werden. Auf einer Pressekonferenz wies er die Anschuldigungen zurück und sprach von einer Inszenierung.",
       "pubDate": "2026-11-10T16:51:55+01:00",
       "link": "https://www.tagesschau.de/ausland/amerika/usa-hegseth-amtsenthebungsverfahren-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c937a5cf3a3c43d93e51",
-      "title": "Maschinenbauer \"fassungslos\" über Bundesregierung",
-      "description": "Die Koalition ringt um Reformen. Viel zu zögerlich, findet der Maschinenbauverband VDMA. Er wirft der Bundesregierung vor, mit internem Streit und Reformstau den Industriestandort Deutschland zu gefährden.",
-      "pubDate": "2026-11-10T16:43:59+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/maschinenbaugipfel-100.html",
-      "bild": ""
-    },
-    {
-      "id": "e4072e42ec086cbf7feb",
-      "title": "Anthropic peilt Börsen-Bewertung von über einer Billion Dollar an",
-      "description": "Das KI-Unternehmen Anthropic hat Details seiner Börsenpläne veröffentlicht. Was die Aktien kosten sollen und wie viel Geld der US-Konzern damit erlösen will - trotz wachsender Zweifel an der Rentabilität der Branche.",
-      "pubDate": "2026-11-10T16:37:43+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/anthropic-boerse-kuenstliche-intelligenz-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c9451578ecc989dba8cf",
-      "title": "Zwei Tote bei russischen Luftangriffen",
-      "description": "Russland hat die Ukraine in der Nacht erneut mit Luftangriffen überzogen. Dabei starben ukrainischen Angaben zufolge zwei Menschen. Zudem seien mehrere Umspannwerke getroffen worden, in mehreren Regionen fiel der Strom aus.",
-      "pubDate": "2026-11-10T15:42:40+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/ukraine-russland-angriffe-206.html",
-      "bild": ""
-    },
-    {
-      "id": "0753f9bf5293adfa614e",
-      "title": "Proteste vor Haus bei Kiew: Keine Belege für ein ukrainisches Foltergefängnis",
-      "description": "Gewaltsame Proteste, ein verstörter Teenager, eine verzweifelte Ärztin: Im Internet verbreiten sich Bilder mit Behauptungen über die Entdeckung eines ukrainischen Foltergefängnisses bei Kiew. Was ist dazu bekannt? Von C. Reveland und K. König.",
-      "pubDate": "2026-11-10T15:22:54+01:00",
-      "link": "https://www.tagesschau.de/faktenfinder/ukraine-angebliches-foltergefaengnis-100.html",
-      "bild": ""
-    },
-    {
-      "id": "b827e684c035e9028923",
-      "title": "Ukraine-Verhandlungen: \"Beide Seiten stehen unter enormem Zugzwang\"",
-      "description": "Russland und die Ukraine stehen unter großem Zeitdruck, sagt der Militärexperte Markus Reisner. Doch ohne Zugeständnisse werde es keinen Erfolg bei den Verhandlungen geben. Wichtig seien auch mögliche Gespräche über eine neue Sicherheitsordnung.",
-      "pubDate": "2026-11-10T15:18:25+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/ukraine-gespraeche-abu-dhabi-104.html",
-      "bild": ""
-    },
-    {
-      "id": "5b2736069366cb49a48e",
-      "title": "Warum sitzt Deutschland in Abu Dhabi nicht am Verhandlungstisch?",
-      "description": "Derzeit treffen sich in Abu Dhabi Vertreter der Ukraine, Russlands und der USA, um Gespräche über ein Ende des Krieges wieder aufzunehmen. Europa scheint im Abseits, obwohl Deutschland der größte Unterstützer der Ukraine ist. Von N. Markwald.",
-      "pubDate": "2026-11-10T15:15:52+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/deutschland-rolle-ukraine-gespraeche-100.html",
-      "bild": ""
-    },
-    {
-      "id": "143bc3b7c5cd17b00a8f",
-      "title": "Mehrere Tote bei Massenunfällen auf bulgarischer Autobahn",
-      "description": "Dichter Nebel, nasse Straßen: Auf einer Autobahn in Bulgarien sind mindestens zwölf Menschen bei Auffahrunfällen gestorben. Zahlreiche Rettungskräfte sind im Einsatz. EU-Kommissionschefin von der Leyen musste ihren Besuch in dem Land verkürzen.",
-      "pubDate": "2026-11-10T15:09:14+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/bulgarien-tote-auffahrunfall-100.html",
-      "bild": ""
-    },
-    {
-      "id": "89002876f37161967949",
-      "title": "KI-Boom: Deutscher Chipkonzern Infineon will weiter zweistellig wachsen",
-      "description": "Der boomende Ausbau der KI-Infrastruktur, aber auch ein besseres Autogeschäft haben Infineon einen Rekordumsatz beschert. Der deutsche Chipkonzern sieht noch kein Ende des Booms.",
-      "pubDate": "2026-11-10T14:33:44+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktbericht-infineon-ki-100.html",
       "bild": ""
     }
   ],
