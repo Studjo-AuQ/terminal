@@ -1,7 +1,31 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "10.11.2026, 19:34 Uhr (UTC)",
+  "aktualisiert": "11.11.2026, 00:31 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "08302829d8fd3eb0ee75",
+      "title": "US-Repräsentantenhaus lehnt Amtsenthebungsverfahren gegen Hegseth ab",
+      "description": "Die Republikaner im US-Repräsentantenhaus haben einen Vorstoß zur Amtsenthebung von Verteidigungsminister Pete Hegseth abgewehrt. Sie stimmten nahezu geschlossen gegen eine entsprechende Resolution.",
+      "pubDate": "2026-11-11T01:19:26+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/hegseth-amtsenthebungsverfahren-gestoppt-100.html",
+      "bild": ""
+    },
+    {
+      "id": "b3acbf0d2cd69f92c6ae",
+      "title": "Erster Tag der Ukraine-Gespräche: Keine Ergebnisse, aber Hoffnung für Gefangene",
+      "description": "Der erste Tag der Gespräche zwischen Russland und der Ukraine in Abu Dhabi ist ohne offizielles Ergebnis zu Ende gegangen. Medien berichten aber von einem geplanten Gefangenenaustausch. Eine Waffenruhe scheint dagegen in weiter Ferne.",
+      "pubDate": "2026-11-10T22:08:29+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/ukraine-russland-krieg-gespraeche-abu-dhabi-100.html",
+      "bild": ""
+    },
+    {
+      "id": "157f8360d53cce8c0c0e",
+      "title": "Trauermesse nach Zugunglück mit 69 Toten in Spanien",
+      "description": "Vor knapp zwei Wochen erschütterte das zweite große Zugunglück innerhalb eines Jahres Spanien - der Schock sitzt noch immer tief. Bei einer Trauermesse in Toledo wurde nun der 69 Toten gedacht. Von Franka Welz.",
+      "pubDate": "2026-11-10T22:04:36+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/trauermesse-spanien-100.html",
+      "bild": ""
+    },
     {
       "id": "dd4158f41d099a4a7076",
       "title": "Schüsse in Hamburg: Verdächtiger tot, weitere Leichen in Süddeutschland",
@@ -96,30 +120,6 @@
       "description": "Der boomende Ausbau der KI-Infrastruktur, aber auch ein besseres Autogeschäft haben Infineon einen Rekordumsatz beschert. Der deutsche Chipkonzern sieht noch kein Ende des Booms.",
       "pubDate": "2026-11-10T14:33:44+01:00",
       "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktbericht-infineon-ki-100.html",
-      "bild": ""
-    },
-    {
-      "id": "1b88821fc31c8895cc14",
-      "title": "Masernkrise in den USA: Mehr Verunsicherung, mehr Infektionen",
-      "description": "Die USA erleben den größten Masernausbruch seit Jahrzehnten - auch weil der Gesundheitsminister widersprüchliche Botschaften zur Impfung verbreitet. Noch in dieser Woche könnte das Land den Status \"masernfrei\" verlieren. Von Anne Schneider.",
-      "pubDate": "2026-11-10T13:13:48+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/usa-masern-102.html",
-      "bild": ""
-    },
-    {
-      "id": "4d22f59a76f7c2505729",
-      "title": "Bund will offenbar E-Auto-Prämie um 917 Millionen Euro aufstocken",
-      "description": "Sie soll Menschen mit niedrigem oder mittlerem Einkommen den Umstieg erleichtern: Und tatsächlich ist die E-Auto-Prämie des Bundes ein voller Erfolg. Daher soll sie im kommenden Jahr noch mal um mehr als 900 Millionen aufgestockt werden.",
-      "pubDate": "2026-11-10T13:11:01+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/e-autos-kaufpraemie-bundesregierung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f4f9606c896117043d38",
-      "title": "Australien will nach Hackerangriff strengere Regeln für KI-Firmen",
-      "description": "Ein KI-Sicherheitsvorfall hat kürzlich einen Schock in Australien ausgelöst - jetzt reagiert die Regierung: Die Regeln für KI-Entwickler sollen verschärft werden. Auch im Strafrecht werden Änderungen geprüft.",
-      "pubDate": "2026-11-10T13:00:03+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/australien-ki-regulieren-100.html",
       "bild": ""
     }
   ],
