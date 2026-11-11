@@ -1,7 +1,87 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "11.11.2026, 16:00 Uhr (UTC)",
+  "aktualisiert": "11.11.2026, 22:38 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "874798afc1f3e3500b94",
+      "title": "Schwarz-Rot verschiebt Zuckersteuer - keine Einigung bei Stromsteuer",
+      "description": "Im Ringen um den Haushalt hat sich die Koalition nach ARD-Informationen auf einen Kompromiss geeinigt. So soll etwa die Einführung einer Zuckersteuer verschoben werden - zudem wird die Stromsteuer wohl vorerst nicht für alle gesenkt.",
+      "pubDate": "2026-11-11T22:30:05+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/koalition-haushalt-kompromiss-100.html",
+      "bild": ""
+    },
+    {
+      "id": "4e00b6aac9af62a056dd",
+      "title": "Köln und Düsseldorf: Meist friedlicher Karnevalsstart im Rheinland",
+      "description": "In den Karnevalshochburgen Köln und Düsseldorf haben die Jecken die fünfte Jahreszeit eingeläutet. Laut Polizei verliefen die Feiern auf den Straßen und in den Kneipen meist friedlich. Nur das Wetter machte nicht mit.",
+      "pubDate": "2026-11-11T21:29:48+01:00",
+      "link": "https://www.tagesschau.de/inland/gesellschaft/karneval-start-koeln-duesseldorf-100.html",
+      "bild": ""
+    },
+    {
+      "id": "8242293020addf48ca7d",
+      "title": "Polens Rechte ziehen mit \"Unabhängigkeitsmarsch\" durch Warschau",
+      "description": "Am polnischen Unabhängigkeitstag findet traditionell eine Großdemonstration von Rechtsnationalisten statt. Der sogenannte Unabhängigkeitsmarsch durch Warschau ist umstritten - und zieht doch Hunderttausende an. Von P. Milling.",
+      "pubDate": "2026-11-11T20:26:10+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/umstrittener-marsch-zu-unabhaengigkeitstag-in-polen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "1a5441dfd89063ad7a61",
+      "title": "\"Sicherheitsordnung\": Warum übernehmen die USA Russlands Forderung?",
+      "description": "Russland sieht Gespräche über eine \"Sicherheitsordnung\" für Europa vor allem als Mittel, seinen Einfluss über den Kontinent auszuweiten, sagt die Politikexpertin Jana Puglierin. Nun hätten sich die USA auf diese Logik eingelassen.",
+      "pubDate": "2026-11-11T19:56:21+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/europa-sicherheitsarchitektur-russland-usa-100.html",
+      "bild": ""
+    },
+    {
+      "id": "cc03e84a11c7258423d1",
+      "title": "Urteil: BGH nimmt Rechtsschutzversicherungen in die Pflicht",
+      "description": "Klagen gegen Impfstoffhersteller sind seit der Corona-Pandemie keine Seltenheit. Häufig wollen Versicherungen diese nicht unterstützen - wegen vermeintlich geringer Erfolgschancen. Oft zu Unrecht, urteilte nun der BGH. Von A. Stein.",
+      "pubDate": "2026-11-11T19:46:53+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/bgh-urteil-rechtsschutzversicherung-100.html",
+      "bild": ""
+    },
+    {
+      "id": "4d8e186562f9b7fc887f",
+      "title": "Marktbericht: DAX pirscht sich ans Rekordhoch heran",
+      "description": "Im Handelsverlauf hatte es ausgesehen, als würde dem DAX die Luft ausgehen. Doch dann endet der Handelstag mit einem Index nahe am Rekordhoch. Die Wirtschaftsweisen schüren Optimismus, zudem treten die KI-Sorgen in den Hintergrund.",
+      "pubDate": "2026-11-11T18:13:36+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nasdaq-eon-nvidia-100.html",
+      "bild": ""
+    },
+    {
+      "id": "92df599c8184a8c5a210",
+      "title": "Sexualisiertes Fehlverhalten: Die Bundeswehr hat ein strukturelles Problem",
+      "description": "Eine systematische Befragung macht erstmals das Ausmaß sexualisierten Fehlverhaltens in der Bundeswehr sichtbar. Gut so - aber die angekündigten Konsequenzen reichen nicht, meint Mario Kubina.",
+      "pubDate": "2026-11-11T17:54:55+01:00",
+      "link": "https://www.tagesschau.de/kommentar/bundeswehr-sexuelle-uebergriffe-100.html",
+      "bild": ""
+    },
+    {
+      "id": "0469bf2e42895dd25236",
+      "title": "Familienministerin Prien plant Einkommensgrenze beim Unterhaltsvorschuss",
+      "description": "Einkommensgrenze, statt verkürzter Zahlung: Familienministerin Prien hat einen Gesetzentwurf zum Unterhaltsvorschuss vorgelegt. Elternteile, die nicht zahlen, sollen stärker in die Pflicht genommen werden - etwa mit Fahrverboten.",
+      "pubDate": "2026-11-11T19:01:47+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/prien-unterhaltsvorschuss-gesetzentwurf-100.html",
+      "bild": ""
+    },
+    {
+      "id": "81eb4c9c3c5ff2f93549",
+      "title": "Bundeskabinett beschließt Aufbau einer Gasreserve",
+      "description": "Mit einer nationalen Gasreserve will die Bundesregierung die Versorgung in Krisensituationen sichern - dabei geht es ausdrücklich nicht um hohe Preise, sondern um Ausnahmefälle wie etwa Sabotage. Auf die Gaskunden kommen dadurch Mehrkosten zu.",
+      "pubDate": "2026-11-11T17:38:02+01:00",
+      "link": "https://www.tagesschau.de/inland/gasreserve-126.html",
+      "bild": ""
+    },
+    {
+      "id": "bdbc608ec7952ea170e6",
+      "title": "Nicht mehr nur BMI: So könnte Adipositas besser definiert werden",
+      "description": "Wie schwer und groß man ist, sagt allein nicht genug über die Gesundheit aus. Deshalb ist der Body-Mass-Index (BMI) seit Jahren in der Kritik. Eine neue Studie zeigt, welche Vorteile eine genauere Diagnose bringen würde. Von Veronika Simon.",
+      "pubDate": "2026-11-11T17:01:31+01:00",
+      "link": "https://www.tagesschau.de/wissen/adipositas-definition-bmi-100.html",
+      "bild": ""
+    },
     {
       "id": "9c66bbaae7e7e04ecdeb",
       "title": "Weniger Kündigungsschutz, mehr Befristungen - das plant die Koalition",
@@ -14,7 +94,7 @@
       "id": "97b18e123413aaefc58e",
       "title": "Bombendrohungen an Tausenden Schulen in Italien und Großbritannien",
       "description": "An Tausenden Schulen in Italien sind per E-Mail Bombendrohungen eingegangen. Auch in Großbritannien gibt es ähnliche Fälle. Die Behörden gehen von Falschmeldungen aus. Wer hinter den Drohungen steckt, ist unklar.",
-      "pubDate": "2026-11-11T16:31:39+01:00",
+      "pubDate": "2026-11-11T20:13:07+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/bombendrohungen-italien-100.html",
       "bild": ""
     },
@@ -38,88 +118,8 @@
       "id": "51a9137fed438e2dcd1b",
       "title": "Russland und Ukraine vereinbaren Gefangenenaustausch",
       "description": "Bei den Ukraine-Gesprächen haben Moskau und Kiew einen weiteren Gefangenenaustausch vereinbart. Morgen wollen die US-Gesandten Kushner und Witkoff zu Kremlchef Putin reisen. Dabei soll es auch darum gehen, die Europäer in die Gespräche einzubinden.",
-      "pubDate": "2026-11-11T15:09:53+01:00",
+      "pubDate": "2026-11-11T18:30:18+01:00",
       "link": "https://www.tagesschau.de/ausland/asien/ukraine-russland-verhandlungen-abu-dhabi-104.html",
-      "bild": ""
-    },
-    {
-      "id": "ea92e900d463c1d48f59",
-      "title": "Generalstreik in Spanien für bezahlbares Wohnen",
-      "description": "Seit dem Morgen läuft in Spanien ein Generalstreik. Die Hauptforderungen: bessere Löhne und bezahlbare Wohnungen. Der Verkehr ist eingeschränkt, Blockaden wurden errichtet und mehrere Menschen festgenommen.",
-      "pubDate": "2026-11-11T15:01:32+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/spanien-generalstreik-wohnungskrise-100.html",
-      "bild": ""
-    },
-    {
-      "id": "e96b0d1848538fdfca79",
-      "title": "Wirtschaftsweise korrigieren Wachstumsprognose deutlich nach oben",
-      "description": "Die Wirtschaft wächst wieder stärker - doch der Sachverständigenrat der Bundesregierung fordert harte Sparmaßnahmen. Und bringt eine Art \"Soli\" für Verteidigung ins Spiel. Von Alina Leimbach.",
-      "pubDate": "2026-11-11T14:30:06+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/konjunktur/wirtschaftsweise-jahresgutachten-2026-100.html",
-      "bild": ""
-    },
-    {
-      "id": "2410cca6878d71ac1c20",
-      "title": "Digital Fairness Act - EU will digitalen Verbraucherschutz stärken",
-      "description": "Die EU-Kommission will mit einem Digital Fairness Act (DFA) Verbraucher in der digitalen Welt schützen. Der nun vorgestellte Entwurf soll unlautere Praktiken unterbinden. Die deutschen Verleger sind nicht begeistert.",
-      "pubDate": "2026-11-11T13:40:59+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/eu-digital-fairness-act-100.html",
-      "bild": ""
-    },
-    {
-      "id": "8b23e91144918976a1c0",
-      "title": "Marktbericht: Der DAX-Rally geht die Puste aus",
-      "description": "Am dritten Tag erlahmt die DAX-Rally. Die Quartalszahlen waren zwar überwiegend positiv, aber für die Höhe der Bewertungen erwarten Investoren mehr. Dazu kommen unbefriedigende Entwicklungen bei Öl und Inflation.",
-      "pubDate": "2026-11-11T13:40:08+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/dax-rally-geht-puste-aus-100.html",
-      "bild": ""
-    },
-    {
-      "id": "62177a10638aa7d0ca92",
-      "title": "Bundeskartellamt kritisiert Gebührenpolitik von PayPal",
-      "description": "Wer etwas mit PayPal kauft, muss dafür keine Gebühren zahlen. Onlinehändler dagegen tragen womöglich überhöhte Kosten. Aus Sicht des Bundeskartellamts könnte das günstigere Zahlungsanbieter benachteiligen.",
-      "pubDate": "2026-11-11T13:34:37+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/paypal-bundeskartellamt-gebuehren-100.html",
-      "bild": ""
-    },
-    {
-      "id": "a5ba99638d0d59657836",
-      "title": "EKD-Synode in Würzburg: Wie die Kirche Demokratie stärken will",
-      "description": "Gegen Menschenfeindlichkeit: Die evangelische Kirche will die Demokratie stärken, mit Bildungsarbeit und Begegnungsräumen, vor allem auf dem Land. Das hat die Synode in Würzburg beschlossen. Doch Geld und Personal werden knapper. Von C. Wölfel.",
-      "pubDate": "2026-11-11T13:07:44+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/ekd-synode-122.html",
-      "bild": ""
-    },
-    {
-      "id": "be752eab1c24bcfd5fab",
-      "title": "Ukraine-Verhandlungen: Russland plant kein Treffen mit Europäern",
-      "description": "In Abu Dhabi gehen die von den USA vermittelten Gespräche über ein Ende des Kriegs gegen die Ukraine weiter. Auch die Europäer sind vor Ort, doch die russische Delegation zeigt wenig Interesse an einem Austausch.",
-      "pubDate": "2026-11-11T12:27:20+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/ukraine-russland-abu-dhabi-eu-100.html",
-      "bild": ""
-    },
-    {
-      "id": "65bbd49ff2228ab9d9ee",
-      "title": "Wenn Klimaschutz überfordert",
-      "description": "Vielen Menschen ist das Thema Klimaschutz wichtig - das zumindest zeigen Umfragen. Doch häufig werden Maßnahmen, die die Umwelt schützen sollen, abgelehnt. Wie passt das zusammen? Von Magdalena Schmude.",
-      "pubDate": "2026-11-11T12:02:47+01:00",
-      "link": "https://www.tagesschau.de/wissen/klima/klimaschutz-212.html",
-      "bild": ""
-    },
-    {
-      "id": "5faa91396d880aa322a7",
-      "title": "\"Tankrabatt\" drückt Inflation im Oktober",
-      "description": "Die Teuerungsrate ist im Oktober in Deutschland zurückgegangen. Der \"Tankrabatt\" zeigt offenbar Wirkung. Energie - vor allem Heizöl - bleibt aber teuer. Und auch einige Lebensmittel kosten wieder mehr.",
-      "pubDate": "2026-11-11T12:00:32+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/konjunktur/inflation-tankrabatt-spritpreise-oktober-100.html",
-      "bild": ""
-    },
-    {
-      "id": "e7a28ed9831605fd210d",
-      "title": "Pistorius pocht auf \"null Toleranz\" gegenüber sexualisiertem Fehlverhalten in Bundeswehr",
-      "description": "Angesichts der hohen Zahl an Fällen von sexualisiertem Fehlverhalten bei der Bundeswehr will Verteidigungsminister Pistorius mit \"null Toleranz\" dagegen vorgehen. Unter anderem durch bessere Prävention und eine externe Anlaufstelle für Betroffene.",
-      "pubDate": "2026-11-11T12:30:22+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/bundeswehr-dunkelfeldstudie-102.html",
       "bild": ""
     }
   ],
