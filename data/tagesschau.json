@@ -1,12 +1,36 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "11.11.2026, 22:38 Uhr (UTC)",
+  "aktualisiert": "12.11.2026, 03:42 Uhr (UTC)",
   "meldungen": [
     {
+      "id": "3ecbc33974adefd4a22e",
+      "title": "Im Stadtteil Brooklyn: Tote und Verletzte nach Gebäudeeinsturz in New York",
+      "description": "Beim Einsturz eines mehrstöckigen Gebäudes in New York sind mindestens zwei Menschen ums Leben gekommen. Mehrere weitere wurden unter den Trümmern eingeschlossen.",
+      "pubDate": "2026-11-12T04:34:55+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/new-york-gebaeude-einsturz-104.html",
+      "bild": ""
+    },
+    {
+      "id": "64a99a761e91146dbbf1",
+      "title": "Offene Wunden: Der Papst und die Missbrauchsskandale",
+      "description": "In der zweiten Heimat des Papstes, Peru, gibt es Missbrauchsvorwürfe gegen Sodalicio - eine Organisation, die trotz Verbots noch Einfluss hat. Für dieses Verbot spielte Papst Leo eine entscheidende Rolle. Von A. Herrberg.",
+      "pubDate": "2026-11-12T03:33:13+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/papst-peru-missbrauch-100.html",
+      "bild": ""
+    },
+    {
+      "id": "e7ed0c25b2713c273c03",
+      "title": "Historischer Sieg: Demokrat Colom holt Senatssitz in Mississippi",
+      "description": "Erstmals seit mehr als vier Jahrzehnten hat ein Demokrat im südlichen US-Bundesstaat Mississippi eine Wahl für den US-Senat gewonnen. Colom gelang ein überraschender Sieg - er weitet damit die Mehrheit im Senat ab Januar auf 55 der 100 Sitze aus.",
+      "pubDate": "2026-11-12T03:08:44+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/demokrat-mississippi-sieg-100.html",
+      "bild": ""
+    },
+    {
       "id": "874798afc1f3e3500b94",
-      "title": "Schwarz-Rot verschiebt Zuckersteuer - keine Einigung bei Stromsteuer",
-      "description": "Im Ringen um den Haushalt hat sich die Koalition nach ARD-Informationen auf einen Kompromiss geeinigt. So soll etwa die Einführung einer Zuckersteuer verschoben werden - zudem wird die Stromsteuer wohl vorerst nicht für alle gesenkt.",
-      "pubDate": "2026-11-11T22:30:05+01:00",
+      "title": "Schwarz-Rot verschiebt Zuckersteuer - keine Senkung der Stromsteuer",
+      "description": "Im Ringen um den Haushalt hat sich die Koalition auf einen Kompromiss geeinigt. So soll etwa die Einführung einer Zuckersteuer verschoben werden - zudem wird die Stromsteuer vorerst nicht gesenkt.",
+      "pubDate": "2026-11-12T00:12:02+01:00",
       "link": "https://www.tagesschau.de/inland/innenpolitik/koalition-haushalt-kompromiss-100.html",
       "bild": ""
     },
@@ -96,30 +120,6 @@
       "description": "An Tausenden Schulen in Italien sind per E-Mail Bombendrohungen eingegangen. Auch in Großbritannien gibt es ähnliche Fälle. Die Behörden gehen von Falschmeldungen aus. Wer hinter den Drohungen steckt, ist unklar.",
       "pubDate": "2026-11-11T20:13:07+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/bombendrohungen-italien-100.html",
-      "bild": ""
-    },
-    {
-      "id": "9d1fb3a0e838602ee197",
-      "title": "Vorstoß des Finanzministeriums: Was sich bei Steuerklassen für Paare ändern könnte",
-      "description": "Finanzminister Klingbeil erwägt, die von Paaren genutzten Steuerklassen III und V abzuschaffen. Das Ministerium möchte dadurch Bürokratie abbauen - aber ist das Vorhaben so einfach umsetzbar? Welche Folgen hätte ein Abschaffung?",
-      "pubDate": "2026-11-11T16:24:38+01:00",
-      "link": "https://www.tagesschau.de/inland/steuerklassen-klingbeil-100.html",
-      "bild": ""
-    },
-    {
-      "id": "3f7471040e7ff8261afc",
-      "title": "Kommentar: Russland sägt an der europäischen Sicherheitsarchitektur",
-      "description": "Bei den Verhandlungen in Abu Dhabi geht es längst nicht nur um die Ukraine, meint Stephan Laack. Russlands Forderungen zielten auch in Richtung der europäischen Sicherheitsarchitektur. Deshalb müssten alle Alarmglocken schrillen.",
-      "pubDate": "2026-11-11T16:14:57+01:00",
-      "link": "https://www.tagesschau.de/kommentar/ukraine-verhandlungen-abu-dhabi-106.html",
-      "bild": ""
-    },
-    {
-      "id": "51a9137fed438e2dcd1b",
-      "title": "Russland und Ukraine vereinbaren Gefangenenaustausch",
-      "description": "Bei den Ukraine-Gesprächen haben Moskau und Kiew einen weiteren Gefangenenaustausch vereinbart. Morgen wollen die US-Gesandten Kushner und Witkoff zu Kremlchef Putin reisen. Dabei soll es auch darum gehen, die Europäer in die Gespräche einzubinden.",
-      "pubDate": "2026-11-11T18:30:18+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/ukraine-russland-verhandlungen-abu-dhabi-104.html",
       "bild": ""
     }
   ],
