@@ -1,7 +1,71 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "13.11.2026, 01:24 Uhr (UTC)",
+  "aktualisiert": "13.11.2026, 08:39 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "15ebf0a043e761f73ea2",
+      "title": "Welche Folgen Nvidias Absturz für die KI-Branche hat",
+      "description": "Mit dem Abgang von Nvidia-Gründer Huang verliert das Unternehmen seinen visionären Vordenker. Was bedeutet das jetzt für das Unternehmen selbst und die Konkurrenz? Von R. Spiegelhauer.",
+      "pubDate": "2026-11-13T09:26:55+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/nvidia-ruecktritt-folgen-ki-branche-100.html",
+      "bild": ""
+    },
+    {
+      "id": "57464c5da442092dfb2a",
+      "title": "Scott Colom: Wie ein schwarzer Demokrat Mississippi erobert",
+      "description": "Der Demokrat Colom hat Historisches geschafft: Erstmals seit mehr als 140 Jahren hat Mississippi einen schwarzen Senator. Im Wahlkampf hat sich Colom als Politiker präsentiert, der den Menschen zuhört, egal welche Ansichten sie haben. Von Sandra Ratzow.",
+      "pubDate": "2026-11-13T09:22:34+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/usa-mississippi-senator-scott-colom-100.html",
+      "bild": ""
+    },
+    {
+      "id": "24d9e2148f196a8333fd",
+      "title": "Fall Nvidia: US-Senatsausschuss lädt Handelsminister Lutnick und Huang vor",
+      "description": "Der Chef ist zurückgetreten - doch die Aufarbeitung der Spionageaffäre um Jensen Huang und Nvidia beginnt erst. Huang und Handelsminister Lutnick sollen vor dem US-Senat aussagen. Es geht um mögliche Chip-Lieferungen nach China.",
+      "pubDate": "2026-11-13T08:27:43+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/nvidia-huang-us-handelsausschuss-100.html",
+      "bild": ""
+    },
+    {
+      "id": "e804d7fe6afd8b2e1c77",
+      "title": "Marktbericht: Atempause nach dem DAX-Rekord",
+      "description": "Nach dem erneuten Rekordhoch über 27.000 Punkten geht dem DAX zum Wochenschluss etwas die Puste aus. Die Bilanz der DAX-Berichtssaison fällt positiv aus, jetzt wären frische Impulse gefragt.",
+      "pubDate": "2026-11-13T07:35:10+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-geldanlage-100.html",
+      "bild": ""
+    },
+    {
+      "id": "71757af6913f4e4e1b8c",
+      "title": "Werden die Milliarden für die Stromsteuer noch gefunden?",
+      "description": "Bei der längsten Sitzung im Bundestag wurde in der Nacht jeder Cent umgedreht, damit der Bundesetat für 2027 steht. Gleichzeitig sucht die Regierungsspitze Milliarden für eine Stromsteuersenkung. Kann sie sie noch finden? Von Nicole Kohnert.",
+      "pubDate": "2026-11-13T09:36:42+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/bundestag-haushalt-milliarden-100.html",
+      "bild": ""
+    },
+    {
+      "id": "35b550099762f1961019",
+      "title": "Nachtsitzung im Haushaltsausschuss: Etat für 2027 steht",
+      "description": "Nach über 15 Stunden beendete der Haushaltsausschuss seine Beratungen - jetzt steht der Etat für das kommende Jahr. Insgesamt sind Ausgaben in Höhe von 560,9 Milliarden Euro geplant - mehr als ursprünglich vorgesehen war.",
+      "pubDate": "2026-11-13T07:26:14+01:00",
+      "link": "https://www.tagesschau.de/inland/bundeshaushalt-2027-100.html",
+      "bild": ""
+    },
+    {
+      "id": "0068c5978cc1a31cf1c6",
+      "title": "Reform der Nachrichtendienste: \"Jahrhundertwerk\" oder \"Monster\"?",
+      "description": "Der Bundestag stimmt heute über eine Reform der Nachrichtendienste ab. Sie sollen mehr Befugnisse erhalten. Innenminister Dobrindt spricht von einem \"Jahrhundertwerk\" - andere von einem \"Monster\". Von Markus Sambale.",
+      "pubDate": "2026-11-13T05:23:02+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/bundesregierung-reform-nachrichtendienste-100.html",
+      "bild": ""
+    },
+    {
+      "id": "185d7f26a2e5abbab84b",
+      "title": "Nvidia: Huang-Affäre könnte zu Trump-Skandal werden",
+      "description": "Laut Medienberichten wurde Trump zwei Mal von der Affäre des Nvidia-Chefs Huang mit einer mutmaßlichen chinesischen Spionin unterrichtet. Doch der Präsident beteuert, von nichts gewusst zu haben. Von C. Kühntopp.",
+      "pubDate": "2026-11-13T03:36:47+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/nvidia-trump-100.html",
+      "bild": ""
+    },
     {
       "id": "e8c37bb76666771a1381",
       "title": "EPG-Treffen in Dublin: Momentum für Friedensverhandlungen?",
@@ -13,17 +77,9 @@
     {
       "id": "898313169a8cfda64c25",
       "title": "US-Unterhändler kündigen Europas Beteiligung bei Ukraine-Verhandlungen an",
-      "description": "Von Putin zu Selenskyj - die US-Unterhändler Kushner und Witkoff kommen mit einer Ankündigung aus Moskau nach Dublin. Bei den Verhandlungen sollen künftig auch die Europäer teilnehmen.",
-      "pubDate": "2026-11-13T01:40:22+01:00",
+      "description": "Von Putin zu Selenskyj - die US-Unterhändler Kushner und Witkoff kommen mit Ankündigungen aus Moskau nach Dublin. Bei den Verhandlungen sollen künftig auch die Europäer teilnehmen.",
+      "pubDate": "2026-11-13T03:19:34+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/epg-ukraine-usa-europa-100.html",
-      "bild": ""
-    },
-    {
-      "id": "fb699df16c83068bb88d",
-      "title": "Auch Outlook betroffen: Microsoft-Dienste weltweit mit Störungen",
-      "description": "Ein großflächiger Ausfall von Microsoft-Diensten, darunter Outlook: Innerhalb der Anwendungspalette des Technologiekonzerns kommt es weltweit zu Störungen. Das Unternehmen arbeite mit Hochdruck an einer Lösung.",
-      "pubDate": "2026-11-13T00:08:03+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/microsoft-outlook-ausfall-100.html",
       "bild": ""
     },
     {
@@ -64,62 +120,6 @@
       "description": "Die Bundesbank sieht wachsende Gefahren für die Finanzbranche, weil Kredite zunehmend nicht zurückgezahlt werden. Aber auch Künstliche Intelligenz berge Risiken - und die Aggressivität von Cyberangriffen. Von Ursula Mayer.",
       "pubDate": "2026-11-12T18:31:15+01:00",
       "link": "https://www.tagesschau.de/wirtschaft/finanzen/risiken-finanzsystem-bundesbank-100.html",
-      "bild": ""
-    },
-    {
-      "id": "ff8d206ee5347a20ae3b",
-      "title": "Krieg gegen die Ukraine: Putin beharrt auf Gebietsansprüchen",
-      "description": "Bei einem Treffen mit den US-Unterhändlern Witkoff und Kushner hat der russische Präsident Putin seinen Anspruch auf ukrainische Gebiete erneuert. Eine mögliche Beteiligung Europas an Friedensgesprächen schloss er nicht aus.",
-      "pubDate": "2026-11-12T17:29:23+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/ukraine-russland-putin-witkoff-kushner-100.html",
-      "bild": ""
-    },
-    {
-      "id": "4edaa53ac9870a3d75c2",
-      "title": "Spanisches Parlament beschließt Maßnahmen für mehr Mieterschutz",
-      "description": "Spaniens Übergangsparlament hat mit einer Stimme Mehrheit Maßnahmen der linken Minderheitsregierung für mehr Mieterschutz angenommen. Die konservative PP-Partei will das Dekret wieder kippen. In zwei Wochen wird in Spanien gewählt.",
-      "pubDate": "2026-11-12T17:21:41+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/spanien-parlament-wohnungsdekret-100.html",
-      "bild": ""
-    },
-    {
-      "id": "942db95eeb4ee9e6c440",
-      "title": "Rücktritt von Nvidia-Chef Huang: Vom Sympathieträger zum Sicherheitsrisiko",
-      "description": "Er war nicht nur Chef, sondern auch Gesicht von Nvidia: Jensen Huang formte den Chip-Riesen maßgeblich - als \"sympathischer Tech-Bro\" mit guten Kontakten zur Trump-Regierung. Bis er zum Risiko wurde. Von Gabi Biesinger.",
-      "pubDate": "2026-11-12T17:17:54+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-huang-rolle-100.html",
-      "bild": ""
-    },
-    {
-      "id": "4e706bd5867fd21929ef",
-      "title": "\"Pflege ganz aktiv\" schafft mehr Freiraum in der Pflege",
-      "description": "Ein Modellprojekt in Rheinland-Pfalz ermöglicht ambulante Pflege nach individuellem Zeitbudget statt starrer Vorgaben. Erste Ergebnisse sind vielversprechend. Könnte so die Zukunft der Pflege aussehen? Von Claudia Hiller.",
-      "pubDate": "2026-11-12T16:46:43+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/pflege-neues-modell-ambulant-100.html",
-      "bild": ""
-    },
-    {
-      "id": "bd45bc3c42958e5b5dcf",
-      "title": "Iran-Krieg: Eisenkot ruft Netanjahu zu Zurückhaltung auf",
-      "description": "Seit Tagen wird spekuliert, dass Israels Premier Netanjahu neue Angriffe auf Iran planen könnte. Oppositionschef Eisenkot, der derzeit versucht, eine Regierung ohne Netanjahu zu bilden, warnt diesen jetzt vor \"gefährlichen Schritten\".",
-      "pubDate": "2026-11-12T15:28:14+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/eisenkot-netanjahu-100.html",
-      "bild": ""
-    },
-    {
-      "id": "d722b83d7150bd1d3ef1",
-      "title": "Erneut Bombendrohungen gegen hunderte Schulen in Italien",
-      "description": "In Italien sind erneut Bombendrohungen an Schulen gesendet worden. Es sollen etwa 1.600 Einrichtungen betroffen sein. Die Regierung will Gebäude künftig nur noch räumen lassen, wenn konkrete Hinweise auf eine Gefahr vorliegen.",
-      "pubDate": "2026-11-12T15:25:28+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/italien-schulen-bombendrohungen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "9f16ec2d24594667cdfd",
-      "title": "Nvidia-Chef Huang tritt nach Spionageaffäre zurück",
-      "description": "Der Chef des weltgrößten Chipkonzerns Nvidia, Jensen Huang, tritt wegen einer Affäre mit einer mutmaßlichen chinesischen Spionin zurück. Seine Aufgaben übernehme vorübergehend die bisherige Finanzchefin Colette Kress, teilte der US-Konzern mit.",
-      "pubDate": "2026-11-12T18:20:04+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-huang-ruecktritt-100.html",
       "bild": ""
     }
   ],
