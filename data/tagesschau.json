@@ -1,7 +1,39 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "12.11.2026, 20:20 Uhr (UTC)",
+  "aktualisiert": "13.11.2026, 01:24 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "e8c37bb76666771a1381",
+      "title": "EPG-Treffen in Dublin: Momentum für Friedensverhandlungen?",
+      "description": "Das Treffen in Dublin bringt neue Dynamik in die Friedensverhandlungen - am Abend kommen noch die US-Unterhändler Witkoff und Kushner aus Moskau angereist. NATO-Chef Rutte sieht Fortschritte. Von K. Schmid.",
+      "pubDate": "2026-11-13T02:22:12+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/epg-dublin-momentum-100.html",
+      "bild": ""
+    },
+    {
+      "id": "898313169a8cfda64c25",
+      "title": "US-Unterhändler kündigen Europas Beteiligung bei Ukraine-Verhandlungen an",
+      "description": "Von Putin zu Selenskyj - die US-Unterhändler Kushner und Witkoff kommen mit einer Ankündigung aus Moskau nach Dublin. Bei den Verhandlungen sollen künftig auch die Europäer teilnehmen.",
+      "pubDate": "2026-11-13T01:40:22+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/epg-ukraine-usa-europa-100.html",
+      "bild": ""
+    },
+    {
+      "id": "fb699df16c83068bb88d",
+      "title": "Auch Outlook betroffen: Microsoft-Dienste weltweit mit Störungen",
+      "description": "Ein großflächiger Ausfall von Microsoft-Diensten, darunter Outlook: Innerhalb der Anwendungspalette des Technologiekonzerns kommt es weltweit zu Störungen. Das Unternehmen arbeite mit Hochdruck an einer Lösung.",
+      "pubDate": "2026-11-13T00:08:03+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/microsoft-outlook-ausfall-100.html",
+      "bild": ""
+    },
+    {
+      "id": "f6c1670a2913e6f848ae",
+      "title": "Bayerischer Drohnenhersteller Quantum Systems meldet Cyberangriff",
+      "description": "Der bayerische Rüstungskonzern Quantum Systems ist nach eigenen Angaben Opfer eines Cyberangriffs geworden. Der Vorfall fand im Oktober statt. Laut einem Medienbericht hat die Bundeswehr bereits reagiert.",
+      "pubDate": "2026-11-12T22:09:07+01:00",
+      "link": "https://www.tagesschau.de/inland/quantum-systems-cyberangriff-100.html",
+      "bild": ""
+    },
     {
       "id": "b9d38ad5c0273be2a5bd",
       "title": "Mercedes stoppt Investitionen in Deutschland - und prüft Schließungen",
@@ -88,38 +120,6 @@
       "description": "Der Chef des weltgrößten Chipkonzerns Nvidia, Jensen Huang, tritt wegen einer Affäre mit einer mutmaßlichen chinesischen Spionin zurück. Seine Aufgaben übernehme vorübergehend die bisherige Finanzchefin Colette Kress, teilte der US-Konzern mit.",
       "pubDate": "2026-11-12T18:20:04+01:00",
       "link": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-huang-ruecktritt-100.html",
-      "bild": ""
-    },
-    {
-      "id": "464354933fb11b28f706",
-      "title": "DAX auf Rekordhoch - Anleger vertrauen deutscher Wachstumsstory",
-      "description": "Die Hoffnung auf Frieden im Nahen Osten und gute Geschäftsaussichten der deutschen Unternehmen überzeugen viele Anleger. Manche Analysten sehen das als Nährboden für eine Jahresend-Rally beim DAX.",
-      "pubDate": "2026-11-12T14:29:26+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktbericht-dax-rekord-siemens-ki-100.html",
-      "bild": ""
-    },
-    {
-      "id": "6a5eecae7f0a40ba213b",
-      "title": "EPG-Treffen in Irland: Europa will mit an den Tisch",
-      "description": "Kurze Gespräche und viel Diplomatie: Beim Treffen der Europäischen Politischen Gemeinschaft geht es heute um die Nachbereitung der Ukraine-Gespräche in Abu Dhabi und Moskau. Mit dabei: Selenskyj und der US-Sondergesandte Witkoff. Von S. López.",
-      "pubDate": "2026-11-12T14:28:28+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/irland-europaeische-gemeinschaft-100.html",
-      "bild": ""
-    },
-    {
-      "id": "215868f2c70679e3f969",
-      "title": "Neuausrichtung der Bundeszentrale für politische Bildung sorgt für Streit",
-      "description": "Die Bundeszentrale für politische Bildung ist bekannt für den Wahl-O-Mat, Bildungsveranstaltungen und Info-Broschüren. Auf Weisung des Innenministeriums richtet sie sich neu aus. Doch darüber ist jetzt ein Streit ausgebrochen. Von D. K. Mäurer.",
-      "pubDate": "2026-11-12T13:52:24+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/bundeszentrale-fuer-politische-bildung-ausrichtung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c75be35972bff4b8b298",
-      "title": "Polen scheitert vor EuGH mit Klagen gegen EU-Klimapaket",
-      "description": "Die \"Fit for 55\" genannten Klimaregeln sollen Europa bis Mitte des Jahrhunderts klimaneutral machen. Polen war gegen das Gesetzespaket aus dem Jahr 2023 mit sieben Klagen vorgegangen - alle wurden nun vom Europäischen Gerichtshof abgewiesen.",
-      "pubDate": "2026-11-12T13:39:40+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/eugh-polen-klage-eu-klimapaket-100.html",
       "bild": ""
     }
   ],
