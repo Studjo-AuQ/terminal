@@ -1,7 +1,47 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "13.11.2026, 17:05 Uhr (UTC)",
+  "aktualisiert": "13.11.2026, 22:47 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "5fddd650da36fc59d6d4",
+      "title": "US-Flusskreuzfahrtschiff kentert nach Zusammenprall in New Orleans",
+      "description": "Das Flusskreuzfahrtschiff \"American Heritage\" ist im Hafen der US-Stadt New Orleans gekentert. Zuvor war es von einem Tanker gerammt worden. An Bord des Schiffes befanden sich mehr als 130 Menschen.",
+      "pubDate": "2026-11-13T22:37:39+01:00",
+      "link": "https://www.tagesschau.de/ausland/kreuzfahrtschiff-unfall-new-orleans-100.html",
+      "bild": ""
+    },
+    {
+      "id": "f426bd493de28bd65b10",
+      "title": "Nvidia-Skandal: US-Handelsminister Lutnick wegen Chip-Exporten unter Druck",
+      "description": "US-Handelsminister Lutnick steht in der Kritik. Sein Ministerium soll Warnungen vor der in den Nvidia-Skandal verwickelten Firma Megaspeed ignoriert haben. Kabinettskollege Bessent warf ihm Versäumnisse vor.",
+      "pubDate": "2026-11-13T20:06:39+01:00",
+      "link": "https://www.tagesschau.de/ausland/usa-nvidia-finanzminister-handelminister-100.html",
+      "bild": ""
+    },
+    {
+      "id": "0e63ef161ecef78b852e",
+      "title": "EU einigt sich auf europäisches Team für Ukraine-Verhandlungen",
+      "description": "Lange wurde diskutiert, wer Europa bei Gesprächen mit Russland über ein Ende des Kriegs gegen die Ukraine vertreten soll. Nun gibt es eine Einigung: Das Team bilden Vertreter der EU-Institutionen und aus fünf Ländern - darunter auch Deutschland.",
+      "pubDate": "2026-11-13T19:44:23+01:00",
+      "link": "https://www.tagesschau.de/ausland/eu-vertreter-ukraine-gespraeche-100.html",
+      "bild": ""
+    },
+    {
+      "id": "e804d7fe6afd8b2e1c77",
+      "title": "Marktbericht: DAX schwächelt nach Allzeithoch",
+      "description": "Nach seinem Allzeithoch vom Donnerstag ist der Deutsche Aktienindex heute auf der Stelle getreten - allerdings auf hohem Niveau. Im Wochenvergleich gewinnt das Börsenbarometer mehr als vier Prozent.",
+      "pubDate": "2026-11-13T18:57:57+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-geldanlage-100.html",
+      "bild": ""
+    },
+    {
+      "id": "d63d078184070bd7b537",
+      "title": "Ukraine und Russland greifen sich trotz Verhandlungen weiter an",
+      "description": "Trotz intensiver Verhandlungen über ein Ende des Ukraine-Krieges dauern die gegenseitigen Angriffe zwischen Kiew und Moskau an. Russland meldet sieben Tote, in der Ukraine wurden mindestens zwei Menschen getötet.",
+      "pubDate": "2026-11-13T18:15:20+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/ukraine-russland-krieg-angriffe-autobomben-100.html",
+      "bild": ""
+    },
     {
       "id": "f8574a48afcd736ce5c0",
       "title": "Musikstars pilgern nach 95 Jahren in die Abbey Road in London",
@@ -30,7 +70,7 @@
       "id": "be5303a3745c3b85cb27",
       "title": "IT-Störungen: Microsoft sieht \"deutliche Verbesserung\" der Lage",
       "description": "Nach den weltweiten IT-Störungen scheint sich die Lage vor allem in Nordamerika und Europa zu entspannen. Das US-Technologieunternehmen Microsoft spricht von zum Teil \"umfassenden Verbesserungen\".",
-      "pubDate": "2026-11-13T16:40:27+01:00",
+      "pubDate": "2026-11-13T21:21:45+01:00",
       "link": "https://www.tagesschau.de/wirtschaft/unternehmen/microsoft-outlook-stoerung-100.html",
       "bild": ""
     },
@@ -80,46 +120,6 @@
       "description": "In Deutschland wurden im August so viele Unternehmensinsolvenzen registriert wie seit 13 Jahren nicht mehr. Die Pleitewelle dürfte weitergehen, meinen Experten. Gleichzeitig wird aber auch mehr gegründet.",
       "pubDate": "2026-11-13T14:00:43+01:00",
       "link": "https://www.tagesschau.de/wirtschaft/finanzen/firmenpleiten-deutschland-bundesamt-100.html",
-      "bild": ""
-    },
-    {
-      "id": "de9bde2e79397d2d9b30",
-      "title": "Microsoft-Ausfälle: \"Für viele Unternehmen digitaler Hirntod\"",
-      "description": "Spätestens nach dem Ausfall bei Microsoft sollten wir uns fragen, wie wir uns unabhängiger machen können, sagt IT-Sicherheitsexperte Dennis-Kenji Kipker. In unsicheren Zeiten brauche es mehr digitale Souveränität - und das sei möglich.",
-      "pubDate": "2026-11-13T13:28:28+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/sicherheitsexperte-abhaengigkeit-microsoft-outlook-teams-risiken-100.html",
-      "bild": ""
-    },
-    {
-      "id": "ce99e2f5e57d865dd62e",
-      "title": "DHL erhöht Preise für Pakete und Päckchen für Privatkunden ab 2027",
-      "description": "Wer seinen Liebsten etwas schicken möchte, der muss ab dem kommenden Jahr deutlich tiefer in die Tasche greifen. Denn der deutsche Marktführer DHL erhöht seine Portopreise deutlich - vor allem für Päckchen.",
-      "pubDate": "2026-11-13T13:20:30+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/post-hebt-paketpreise-privatkunden-an-2027-100.html",
-      "bild": ""
-    },
-    {
-      "id": "0dc545d715c34385effb",
-      "title": "Österreich: Barmherzige Brüder wegen Medikamentenpreisen in Kritik",
-      "description": "Ein Orden soll in Österreich Medikamente zu massiv überhöhten Preisen an eigene Krankenhäuser verkauft haben. Dadurch könnte Steuerzahlern ein Millionenschaden entstanden sein. Der Orden widerspricht. Von O. Soos.",
-      "pubDate": "2026-11-13T13:02:42+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/oesterreich-orden-barmherzige-brueder-hohe-medikamentenpreise-100.html",
-      "bild": ""
-    },
-    {
-      "id": "e9bbd135f2d2afa14784",
-      "title": "Kritik auch aus der Union an ausbleibender Stromsteuer-Senkung",
-      "description": "Der Bund darf 2027 sehr viel Geld ausgeben: Geplant sind mehr als 560 Milliarden Euro im Haushalt. Für eine Stromsteuersenkung reicht es aber weiterhin nicht. Die Kritik ist massiv, nicht nur bei der Opposition. Nun äußerte sich Kanzler Merz.",
-      "pubDate": "2026-11-13T14:20:56+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/stromsteuer-haushalt-kritik-merz-100.html",
-      "bild": ""
-    },
-    {
-      "id": "beafdd3a78b49ea3f978",
-      "title": "US-Einwanderungsbehörde ICE meldet Rekord bei Abschiebungen",
-      "description": "Fast eine halbe Million Menschen hat die US-Regierung binnen eines Jahres abgeschoben - laut eigenen Angaben. Das soll ein neuer Rekordwert sein. Es gibt aber Zweifel an der Transparenz der Daten.",
-      "pubDate": "2026-11-13T11:38:44+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/ice-einwanderungsbehoerde-abschiedbungen-rekord-100.html",
       "bild": ""
     }
   ],
