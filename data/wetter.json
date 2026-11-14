@@ -1,14 +1,14 @@
 {
-  "aktualisiert": "14.11.2026, 03:33 Uhr",
+  "aktualisiert": "14.11.2026, 10:42 Uhr",
   "staedte": [
     {
       "stadt": "Werdohl",
       "datenstand": "14.11.2026, 03:33 Uhr",
-      "veraltet": false,
+      "veraltet": true,
       "aktuell": {
         "temp": 2,
         "gefuehlt": 0,
-        "zustand": "Nebel",
+        "zustand": "Letzter Stand 03:33 Uhr · Nebel",
         "emoji": "🌫️",
         "wind": 2,
         "luftfeuchte": 99,
@@ -65,11 +65,11 @@
     {
       "stadt": "Kierspe",
       "datenstand": "14.11.2026, 03:33 Uhr",
-      "veraltet": false,
+      "veraltet": true,
       "aktuell": {
         "temp": 2,
         "gefuehlt": -1,
-        "zustand": "Nebel",
+        "zustand": "Letzter Stand 03:33 Uhr · Nebel",
         "emoji": "🌫️",
         "wind": 4,
         "luftfeuchte": 100,
@@ -126,11 +126,11 @@
     {
       "stadt": "Bochum",
       "datenstand": "14.11.2026, 03:33 Uhr",
-      "veraltet": false,
+      "veraltet": true,
       "aktuell": {
         "temp": 4,
         "gefuehlt": 1,
-        "zustand": "Klar",
+        "zustand": "Letzter Stand 03:33 Uhr · Klar",
         "emoji": "☀️",
         "wind": 7,
         "luftfeuchte": 89,
@@ -186,6 +186,9 @@
     }
   ],
   "fehler": [
-    "Lüdenscheid: <urlopen error _ssl.c:1063: The handshake operation timed out>"
+    "Lüdenscheid: <urlopen error _ssl.c:1063: The handshake operation timed out>",
+    "Werdohl: aktueller Abruf fehlgeschlagen; verwende letzten Stand von heute (14.11.2026, 03:33 Uhr). Fehler: <urlopen error _ssl.c:1063: The handshake operation timed out>",
+    "Kierspe: aktueller Abruf fehlgeschlagen; verwende letzten Stand von heute (14.11.2026, 03:33 Uhr). Fehler: <urlopen error _ssl.c:1063: The handshake operation timed out>",
+    "Bochum: aktueller Abruf fehlgeschlagen; verwende letzten Stand von heute (14.11.2026, 03:33 Uhr). Fehler: <urlopen error _ssl.c:1063: The handshake operation timed out>"
   ]
 }
