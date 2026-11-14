@@ -1,7 +1,71 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "14.11.2026, 02:59 Uhr (UTC)",
+  "aktualisiert": "14.11.2026, 10:09 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "020f379ccd600b9c456d",
+      "title": "Bahn zieht positive Bilanz zu Alkoholverbot an Bahnhöfen",
+      "description": "Seit einem Monat ist bundesweit der Konsum von Alkohol an Bahnhöfen untersagt. Die Deutsche Bahn zeigt sich in einer ersten Bilanz zufrieden. Weniger Müll, weniger Konflikte - die Situation habe sich für Reisende und Mitarbeitende verbessert.",
+      "pubDate": "2026-11-14T11:07:05+01:00",
+      "link": "https://www.tagesschau.de/inland/gesellschaft/bahn-alkohol-verbot-bilanz-100.html",
+      "bild": ""
+    },
+    {
+      "id": "f53baed1abdc56d35649",
+      "title": "Kassenärzte-Chef erwartet mehr Selbstzahler-Termine für gesetzlich Versicherte",
+      "description": "Wer längere Wartezeiten als gesetzlich Versicherter vermeiden will, muss künftig Behandlungen auch aus der eigenen Tasche zahlen - so die Einschätzung des Kassenärzte-Chefs. Grund seien die kürzlich beschlossenen Honorarkürzungen.",
+      "pubDate": "2026-11-14T09:15:06+01:00",
+      "link": "https://www.tagesschau.de/inland/gesetzlich-versicherte-behandlung-selbstzahler-100.html",
+      "bild": ""
+    },
+    {
+      "id": "b4e947dbf4d3bafd33b2",
+      "title": "Warum in Polen schneller gebaut wird als in Deutschland",
+      "description": "Wird in Polen eine neue Straße oder Brücke errichtet, geht es deutlich schneller als westlich der Oder in Deutschland. Fachleuten zufolge gibt es dafür mehrere Gründe. Von Andre Kartschall und Jakub Paczkowski.",
+      "pubDate": "2026-11-14T08:24:30+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/bauen-polen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "df05d4577de289d3e0e8",
+      "title": "Nach US-Zwischenwahlen: Migranten auf dem Weg Richtung USA",
+      "description": "Der Sieg der Demokraten bei den US-Midterms weckt in Mittelamerika neue Hoffnungen auf eine liberalere US-Einwanderungspolitik. Davon angetrieben haben sich in Mexiko mehr als 1.000 Migranten auf den Weg gemacht. Von J. Barke.",
+      "pubDate": "2026-11-14T08:21:14+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/migranten-usa-mexiko-110.html",
+      "bild": ""
+    },
+    {
+      "id": "b806493736737d8e64b3",
+      "title": "Vorübergehendes Startverbot in den USA: \"Unglaublich veraltetes Flugsicherungssystem\"",
+      "description": "Stundenlang durften in den USA keine Flugzeuge starten. Die Regierung macht veraltete Technik verantwortlich. Mittlerweile ist das Verbot wieder aufgehoben - doch wann sich der Flugverkehr normalisieren wird, ist unklar. Von Nina Barth.",
+      "pubDate": "2026-11-14T08:15:22+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/usa-ende-startverbot-flughaefen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "dcd15fb89eee5ad2f4a5",
+      "title": "Die USA sind bei der COP31 nicht dabei - aber dennoch präsent",
+      "description": "Die US-Regierung fehlt nach dem Ausstieg aus dem Pariser Klimaabkommen erneut auf dem Klimagipfel. Dennoch sind viele Politiker aus den USA in Antalya. Sie setzen weiter auf das Geschäft mit erneuerbaren Energien. Von Jakob Mayr.",
+      "pubDate": "2026-11-14T05:41:37+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/cop31-usa-tuerkei-100.html",
+      "bild": ""
+    },
+    {
+      "id": "cbcc1fb795be7269741d",
+      "title": "Keine Priorität für Klimaschutz in der Koalition",
+      "description": "Deutschland wird die selbst gesteckten Klimaziele für 2030 und 2040 verfehlen. Umwelt- und Naturschutzverbände werfen vor allem Kanzler Merz und Wirtschaftsministerin Reiche einen Rollback beim Klimaschutz vor. Von Susanne Henn.",
+      "pubDate": "2026-11-14T05:40:44+01:00",
+      "link": "https://www.tagesschau.de/inland/gesellschaft/klimaschutz-klimaziele-deutschland-100.html",
+      "bild": ""
+    },
+    {
+      "id": "498d4654f7203fd8da1a",
+      "title": "Weißes Haus kündigt Dreiertreffen von Trump mit Putin und Xi an",
+      "description": "Es wäre das erste Dreiertreffen der Staatschefs der USA, Russlands und Chinas. Laut Weißem Haus soll es beim kommenden Apec-Gipfel in Shenzhen stattfinden. Hauptthema: der Abbau von Atomwaffen. Auch der Iran-Krieg könnte zur Sprache kommen.",
+      "pubDate": "2026-11-14T04:18:01+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/treffen-trump-putin-xi-100.html",
+      "bild": ""
+    },
     {
       "id": "9c6cd21008cbd8983cf1",
       "title": "FAA hebt Startverbot an US-Flughäfen wieder auf",
@@ -56,70 +120,6 @@
       "description": "Seit 95 Jahren sind die Abbey Road Studios legendär: Die Beatles, Pink Floyd, Edward Elgar und Adele haben hier Musikgeschichte geschrieben. Ein Ort voller Mythen - und ein bis heute gefragtes Studio. Von Hannah Rau.",
       "pubDate": "2026-11-13T17:41:43+01:00",
       "link": "https://www.tagesschau.de/kultur/legendaere-abbey-road-tonstudios-100.html",
-      "bild": ""
-    },
-    {
-      "id": "8dfaf54f8b4839beb142",
-      "title": "AfD will Ex-Fußballprofi Berthold als Bundespräsidenten nominieren",
-      "description": "Der ehemalige Fußballprofi Thomas Berthold soll nach ARD-Informationen für die AfD ins Rennen um das Amt des Bundespräsidenten gehen. Der Weltmeister von 1990 tat sich während der Corona-Pandemie als \"Querdenker\" hervor.",
-      "pubDate": "2026-11-13T17:37:14+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/berthold-afd-wahl-bundespraesident-100.html",
-      "bild": ""
-    },
-    {
-      "id": "38dabe4b1c590d835d2a",
-      "title": "Cyberangriff auf Quantum Systems: Wie wurde der Drohnenhersteller zum Ziel?",
-      "description": "Nach dem Cyberangriff auf den bayerischen Drohnenhersteller Quantum Systems läuft die Suche nach den Tätern. Vieles deutet auf einen russischen Hintergrund hin. Das Unternehmen ist wichtiger Ausrüster des ukrainischen Militärs. Von Stephan Lina.",
-      "pubDate": "2026-11-13T17:02:19+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/quantum-systems-cyberangriff-102.html",
-      "bild": ""
-    },
-    {
-      "id": "be5303a3745c3b85cb27",
-      "title": "IT-Störungen: Microsoft sieht \"deutliche Verbesserung\" der Lage",
-      "description": "Nach den weltweiten IT-Störungen scheint sich die Lage vor allem in Nordamerika und Europa zu entspannen. Das US-Technologieunternehmen Microsoft spricht von zum Teil \"umfassenden Verbesserungen\".",
-      "pubDate": "2026-11-13T21:21:45+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/microsoft-outlook-stoerung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "20aae8432057fd4412b4",
-      "title": "Kommentar zum Haushalt: Die Koalition geht auf dem Zahnfleisch",
-      "description": "Der Bundeshaushalt für das kommende Jahr steht. Doch die Einigung ist ohne Richtung, ohne Ambition und ohne Vision, findet Sabine Henkel. Union und SPD fehlt nicht nur Geld, sondern vor allem Mut und eine Strategie.",
-      "pubDate": "2026-11-13T16:40:10+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/haushalt-koalition-geht-auf-zahnfleisch-100.html",
-      "bild": ""
-    },
-    {
-      "id": "67bdaa9884f1cb64fbf0",
-      "title": "Merz beansprucht Teilnahme an künftigen Ukraine-Gesprächen",
-      "description": "Der Krieg gegen die Ukraine steht im Fokus des EU-Treffens in Dublin. Kanzler Merz erhält für seinen Vorstoß zur Finanzierung neuer Ukraine-Hilfen Rückendeckung - bei Gesprächen über ein Kriegsende sieht er Deutschland als \"gesetzt\" an.",
-      "pubDate": "2026-11-13T17:36:49+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/ukraine-gipfel-eu-dublin-merz-100.html",
-      "bild": ""
-    },
-    {
-      "id": "ba5158cce76b0bf6c11f",
-      "title": "Brandstiftung: Auto von Nius-Chefredakteur Reichelt angezündet",
-      "description": "In Berlin-Charlottenburg ist das Auto von Nius-Chefredakteur Reichelt ausgebrannt. Auf seinem rechtspopulistischen Online-Portal spricht Reichelt von einem \"Einschüchterungsversuch\". Der Staatschutz ermittelt.",
-      "pubDate": "2026-11-13T16:28:26+01:00",
-      "link": "https://www.tagesschau.de/inland/regional/berlin/reichelt-auto-angezuendet-100.html",
-      "bild": ""
-    },
-    {
-      "id": "d17cc6f10fc825aa753a",
-      "title": "EU-Emissionshandel: Mehr kostenlose Verschmutzungsrechte für die Industrie",
-      "description": "Europas Industrie soll nicht mehr so stark durch das System des Emissionshandels belastet werden. EU-Parlament und Mitgliedstaaten haben sich darauf verständigt, zusätzliche kostenlose Emissionszertifikate auszugeben. Von Andreas Meyer-Feist.",
-      "pubDate": "2026-11-13T15:35:01+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/industrie-emissionen-co2-zertifikate-100.html",
-      "bild": ""
-    },
-    {
-      "id": "ba42919fd9de886f7c45",
-      "title": "Bundestag beschließt Reform: Mehr Befugnisse für die Nachrichtendienste",
-      "description": "Heimlich Wohnungen betreten, Hackerangriffe, Falschinformationen: Deutsche Nachrichtendienste bekommen mehr Befugnisse. Der Bundestag hat die Reform nun beschlossen. Damit reagiert die Koalition auf die verschärfte Bedrohung.",
-      "pubDate": "2026-11-13T14:11:16+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/nachrichtendienst-reform-beschlossen-100.html",
       "bild": ""
     }
   ],
