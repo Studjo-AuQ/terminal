@@ -1,7 +1,55 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "14.11.2026, 16:41 Uhr (UTC)",
+  "aktualisiert": "14.11.2026, 21:16 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "be0667d66439e32f2ce3",
+      "title": "Selbstzahlen oder lange Wartezeit? Kritik an Kassenärzte-Chef",
+      "description": "Schneller zum Facharzt, wenn man den Termin selbst zahlt? Wegen der anstehenden Honorarkürzungen hält Kassenärzte-Chef Gassen das für wahrscheinlich. Er handelte sich damit deutliche Kritik ein.",
+      "pubDate": "2026-11-14T20:45:01+01:00",
+      "link": "https://www.tagesschau.de/inland/reaktionen-selbstzahler-arzttermine-100.html",
+      "bild": ""
+    },
+    {
+      "id": "fc7ceb9298c843dd6bef",
+      "title": "Philippinische Popsängerin Carmelle gewinnt ersten ESC in Asien",
+      "description": "Der Eurovision Song Contest hat seit diesem Jahr einen Ableger in Asien. Die erste Ausgabe gewann die philippinische Sängerin Carmelle mit ihrem Song \"Sobra-Sobra\". Sie setzte sich gegen teils prominente Konkurrenz durch.",
+      "pubDate": "2026-11-14T20:24:24+01:00",
+      "link": "https://www.tagesschau.de/kultur/esc-asia-100.html",
+      "bild": ""
+    },
+    {
+      "id": "9955c3701a97101f3601",
+      "title": "EU: Israel soll Zugang für Helfer in den Gazastreifen gewähren",
+      "description": "Die EU fordert Israel auf, sofort Helfer in den Gazastreifen zu lassen. Dort hatte heftiger Regen die Zelte von Zehntausenden Vertriebenen überschwemmt. Auch die Kälte wird zunehmend zur Gefahr.",
+      "pubDate": "2026-11-14T20:09:28+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/gaza-hilfsforderung-eu-100.html",
+      "bild": ""
+    },
+    {
+      "id": "37ae4fb3793144052da1",
+      "title": "Protest bei der COP in Antalya: Mehr Klimagerechtigkeit gefordert",
+      "description": "Halbzeit bei der UN-Klimakonferenz, doch bisher gibt es kaum Ergebnisse - zum Frust der Aktivisten, die an einem Protestmarsch in Antalya teilnahmen. Sie wollen die Industriestaaten stärker zur Kasse bitten. Von B. Weber.",
+      "pubDate": "2026-11-14T19:47:48+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/cop-tuerkei-protest-100.html",
+      "bild": ""
+    },
+    {
+      "id": "766aeb298cdf2307945e",
+      "title": "Zu viel Chlor im Pool: 15 Gäste im Phantasialand verletzt",
+      "description": "Durch die Microsoft-Störung bekam die Belegschaft im Freizeitpark Phantasialand nicht mit, dass zu viel Chlor im Schwimmbecken eines Hotels auf dem Gelände war. 15 Gäste wurden verletzt.",
+      "pubDate": "2026-11-14T18:01:00+01:00",
+      "link": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/verletzte-phantasialand-chlor-100.html",
+      "bild": ""
+    },
+    {
+      "id": "51d63cd7a3e0f807b18e",
+      "title": "Ex-Arbeitsminister Hubertus Heil kandidiert für SPD-Vorsitz",
+      "description": "Mitte Januar wird auf einem Bundesparteitag die komplette Führung der SPD neu gewählt. Ex-Arbeitsminister Heil hat laut ARD-Hauptstadtstudio jetzt als Erster offiziell seine Kandidatur für den Vorsitz angekündigt. Von Moritz Rödle.",
+      "pubDate": "2026-11-14T19:12:45+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/heil-spd-vorsitz-kandidatur-100.html",
+      "bild": ""
+    },
     {
       "id": "626ea404aec7bdf1f93f",
       "title": "Korruptionsermittlungen in Ungarn: Millionen bei Ex-Minister entdeckt",
@@ -22,7 +70,7 @@
       "id": "8f5b7c41b98837eae7da",
       "title": "Was über das Startverbot für Flugzeuge in den USA bekannt ist",
       "description": "Es war der längste Ausfall des US-Flugbetriebs seit Jahrzehnten. Vier Stunden lang galt ein Startverbot. Warum - und mit welchen Folgen? Könnte in Deutschland Ähnliches geschehen? Ein Überblick.",
-      "pubDate": "2026-11-14T16:22:57+01:00",
+      "pubDate": "2026-11-14T19:49:48+01:00",
       "link": "https://www.tagesschau.de/ausland/amerika/usa-flughaefen-startverbot-100.html",
       "bild": ""
     },
@@ -38,7 +86,7 @@
       "id": "b28a2dfe1ef18321e08e",
       "title": "USA bieten Ukraine laut Selenskyj NATO-Beitritt bei Gebietsverzicht",
       "description": "Ein Rückzug aus dem Donbass im Tausch für einen NATO-Beitritt - das haben die USA der Ukraine nach Angaben Selenskyjs nahegelegt. Unter bestimmten Bedingungen würde er diese Frage in einem Referendum zur Abstimmung stellen, so der Präsident.",
-      "pubDate": "2026-11-14T13:42:12+01:00",
+      "pubDate": "2026-11-14T18:21:30+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/ukraine-usa-nato-gebietsverzicht-100.html",
       "bild": ""
     },
@@ -72,54 +120,6 @@
       "description": "Wer längere Wartezeiten als gesetzlich Versicherter vermeiden will, muss künftig Behandlungen auch aus der eigenen Tasche zahlen - so die Einschätzung des Kassenärzte-Chefs. Grund seien die kürzlich beschlossenen Honorarkürzungen.",
       "pubDate": "2026-11-14T09:15:06+01:00",
       "link": "https://www.tagesschau.de/inland/gesetzlich-versicherte-behandlung-selbstzahler-100.html",
-      "bild": ""
-    },
-    {
-      "id": "b4e947dbf4d3bafd33b2",
-      "title": "Warum in Polen schneller gebaut wird als in Deutschland",
-      "description": "Wird in Polen eine neue Straße oder Brücke errichtet, geht es deutlich schneller als westlich der Oder in Deutschland. Fachleuten zufolge gibt es dafür mehrere Gründe. Von Andre Kartschall und Jakub Paczkowski.",
-      "pubDate": "2026-11-14T08:24:30+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/bauen-polen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "df05d4577de289d3e0e8",
-      "title": "Nach US-Zwischenwahlen: Migranten auf dem Weg Richtung USA",
-      "description": "Der Sieg der Demokraten bei den US-Midterms weckt in Mittelamerika neue Hoffnungen auf eine liberalere US-Einwanderungspolitik. Davon angetrieben haben sich in Mexiko mehr als 1.000 Migranten auf den Weg gemacht. Von J. Barke.",
-      "pubDate": "2026-11-14T08:21:14+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/migranten-usa-mexiko-110.html",
-      "bild": ""
-    },
-    {
-      "id": "b806493736737d8e64b3",
-      "title": "Vorübergehendes Startverbot in den USA: \"Unglaublich veraltetes Flugsicherungssystem\"",
-      "description": "Stundenlang durften in den USA keine Flugzeuge starten. Die Regierung macht veraltete Technik verantwortlich. Mittlerweile ist das Verbot wieder aufgehoben - doch wann sich der Flugverkehr normalisieren wird, ist unklar. Von Nina Barth.",
-      "pubDate": "2026-11-14T08:15:22+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/usa-ende-startverbot-flughaefen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "dcd15fb89eee5ad2f4a5",
-      "title": "Die USA sind bei der COP31 nicht dabei - aber dennoch präsent",
-      "description": "Die US-Regierung fehlt nach dem Ausstieg aus dem Pariser Klimaabkommen erneut auf dem Klimagipfel. Dennoch sind viele Politiker aus den USA in Antalya. Sie setzen weiter auf das Geschäft mit erneuerbaren Energien. Von Jakob Mayr.",
-      "pubDate": "2026-11-14T05:41:37+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/cop31-usa-tuerkei-100.html",
-      "bild": ""
-    },
-    {
-      "id": "cbcc1fb795be7269741d",
-      "title": "Keine Priorität für Klimaschutz in der Koalition",
-      "description": "Deutschland wird die selbst gesteckten Klimaziele für 2030 und 2040 verfehlen. Umwelt- und Naturschutzverbände werfen vor allem Kanzler Merz und Wirtschaftsministerin Reiche einen Rollback beim Klimaschutz vor. Von Susanne Henn.",
-      "pubDate": "2026-11-14T05:40:44+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/klimaschutz-klimaziele-deutschland-100.html",
-      "bild": ""
-    },
-    {
-      "id": "498d4654f7203fd8da1a",
-      "title": "Weißes Haus kündigt Dreiertreffen von Trump mit Putin und Xi an",
-      "description": "Es wäre das erste Dreiertreffen der Staatschefs der USA, Russlands und Chinas. Laut Weißem Haus soll es beim kommenden Apec-Gipfel in Shenzhen stattfinden. Hauptthema: der Abbau von Atomwaffen. Auch der Iran-Krieg könnte zur Sprache kommen.",
-      "pubDate": "2026-11-14T04:18:01+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/treffen-trump-putin-xi-100.html",
       "bild": ""
     }
   ],
