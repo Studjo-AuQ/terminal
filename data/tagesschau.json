@@ -1,12 +1,20 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "13.11.2026, 22:47 Uhr (UTC)",
+  "aktualisiert": "14.11.2026, 02:59 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "9c6cd21008cbd8983cf1",
+      "title": "FAA hebt Startverbot an US-Flughäfen wieder auf",
+      "description": "Nach mehreren Stunden läuft der Flugverkehr in den USA wieder an. Die Luftfahrtbehörde hob das zuvor verhängte Startverbot auf. US-Verkehrsminister Duffy nannte überlastete Kommunikationssysteme als Ursache.",
+      "pubDate": "2026-11-14T03:36:59+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/usa-flugstopp-ende-100.html",
+      "bild": ""
+    },
     {
       "id": "5fddd650da36fc59d6d4",
       "title": "US-Flusskreuzfahrtschiff kentert nach Zusammenprall in New Orleans",
-      "description": "Das Flusskreuzfahrtschiff \"American Heritage\" ist im Hafen der US-Stadt New Orleans gekentert. Zuvor war es von einem Tanker gerammt worden. An Bord des Schiffes befanden sich mehr als 130 Menschen.",
-      "pubDate": "2026-11-13T22:37:39+01:00",
+      "description": "Das Flusskreuzfahrtschiff \"American Heritage\" ist im Hafen der US-Stadt New Orleans gekentert. Zuvor war es von einem Tanker gerammt worden. An Bord des Schiffes befanden sich mehr als 130 Menschen. Vermisst wird niemand.",
+      "pubDate": "2026-11-14T01:51:37+01:00",
       "link": "https://www.tagesschau.de/ausland/kreuzfahrtschiff-unfall-new-orleans-100.html",
       "bild": ""
     },
@@ -112,14 +120,6 @@
       "description": "Heimlich Wohnungen betreten, Hackerangriffe, Falschinformationen: Deutsche Nachrichtendienste bekommen mehr Befugnisse. Der Bundestag hat die Reform nun beschlossen. Damit reagiert die Koalition auf die verschärfte Bedrohung.",
       "pubDate": "2026-11-13T14:11:16+01:00",
       "link": "https://www.tagesschau.de/inland/innenpolitik/nachrichtendienst-reform-beschlossen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "324b55cbffcab45fdf82",
-      "title": "Marktbericht: Mehr Pleiten, aber auch mehr Gründungen in Deutschland",
-      "description": "In Deutschland wurden im August so viele Unternehmensinsolvenzen registriert wie seit 13 Jahren nicht mehr. Die Pleitewelle dürfte weitergehen, meinen Experten. Gleichzeitig wird aber auch mehr gegründet.",
-      "pubDate": "2026-11-13T14:00:43+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/firmenpleiten-deutschland-bundesamt-100.html",
       "bild": ""
     }
   ],
