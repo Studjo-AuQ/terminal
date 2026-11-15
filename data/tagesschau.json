@@ -1,7 +1,23 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "14.11.2026, 21:16 Uhr (UTC)",
+  "aktualisiert": "15.11.2026, 01:13 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "c580a2e8ac890db31f98",
+      "title": "Erfolg für SpaceX: \"Starship\"-Rakete kehrt zur Startrampe zurück",
+      "description": "Eine Rakete, die wie ein ziviles Flugzeug eingesetzt werden kann, das ist das Ziel von SpaceX. Nun kann das \"Starship\"-System einen Erfolg verbuchen: Erstmals landete die etwa 50 Meter große obere Raketenstufe wieder auf der Erde.",
+      "pubDate": "2026-11-15T00:12:16+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/space-x-rakete-rueckkehr-100.html",
+      "bild": ""
+    },
+    {
+      "id": "2df977cf9d52885f9df4",
+      "title": "Berlin: Hunderte bei \"Gen Z regelt\"-Protest - mehrere Festnahmen",
+      "description": "In Berlin haben Hunderte Menschen bei einer \"Gen Z regelt\"-Demo mitgemacht. Es ging unter anderem um kaputte Schulen, Wehrpflicht sowie Uni- und Sozialkürzungen. Mehrere Menschen wurden festgenommen.",
+      "pubDate": "2026-11-14T22:31:18+01:00",
+      "link": "https://www.tagesschau.de/inland/regional/berlin/gen-z-regelt-protest-berlin-100.html",
+      "bild": ""
+    },
     {
       "id": "be0667d66439e32f2ce3",
       "title": "Selbstzahlen oder lange Wartezeit? Kritik an Kassenärzte-Chef",
@@ -104,22 +120,6 @@
       "description": "Probleme bei Microsoft hatten zentrale Cloud-Dienste stundenlang lahmgelegt - Unternehmen und Verbraucher weltweit waren betroffen. Laut Microsoft laufen nun alle Systeme wieder. Hinweise auf böswillige Aktivitäten gebe es nicht.",
       "pubDate": "2026-11-14T11:17:44+01:00",
       "link": "https://www.tagesschau.de/wirtschaft/unternehmen/microsoft-stoerung-behoben-100.html",
-      "bild": ""
-    },
-    {
-      "id": "020f379ccd600b9c456d",
-      "title": "Bahn zieht positive Bilanz zu Alkoholverbot an Bahnhöfen",
-      "description": "Seit einem Monat ist bundesweit der Konsum von Alkohol an Bahnhöfen untersagt. Die Deutsche Bahn zeigt sich in einer ersten Bilanz zufrieden. Weniger Müll, weniger Konflikte - die Situation habe sich für Reisende und Mitarbeitende verbessert.",
-      "pubDate": "2026-11-14T11:07:05+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/bahn-alkohol-verbot-bilanz-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f53baed1abdc56d35649",
-      "title": "Kassenärzte-Chef erwartet mehr Selbstzahler-Termine für gesetzlich Versicherte",
-      "description": "Wer längere Wartezeiten als gesetzlich Versicherter vermeiden will, muss künftig Behandlungen auch aus der eigenen Tasche zahlen - so die Einschätzung des Kassenärzte-Chefs. Grund seien die kürzlich beschlossenen Honorarkürzungen.",
-      "pubDate": "2026-11-14T09:15:06+01:00",
-      "link": "https://www.tagesschau.de/inland/gesetzlich-versicherte-behandlung-selbstzahler-100.html",
       "bild": ""
     }
   ],
