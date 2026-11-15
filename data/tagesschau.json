@@ -1,11 +1,51 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "15.11.2026, 15:48 Uhr (UTC)",
+  "aktualisiert": "15.11.2026, 20:57 Uhr (UTC)",
   "meldungen": [
     {
+      "id": "5fe73913094f2284e808",
+      "title": "Israel: Netanjahu wirbt bei Eisenkot um Einheitsregierung",
+      "description": "Eisenkot oder Netanjahu? Die Parlamentswahl in Israel brachte keine eindeutige Antwort. Derzeit sucht Oppositionspolitiker Eisenkot nach Partnern für eine Koalition. Noch-Premier Netanjahu hat seine eigenen Vorstellungen. Von B. Meier.",
+      "pubDate": "2026-11-15T21:23:26+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/israel-netanjahu-einheitsregierung-100.html",
+      "bild": ""
+    },
+    {
+      "id": "4b84c369ae6bbee3de26",
+      "title": "Heil zum angestrebten SPD-Vorsitz: \"Habe viel Zuspruch aus der Partei\"",
+      "description": "Die SPD sucht eine neue Parteispitze. Erster Bewerber ist Hubertus Heil. Er bekomme viel Zuspruch aus der Partei, sagte er im Bericht aus Berlin. Auch zu Vizekanzler Klingbeil äußerte er sich. Offen ließ Heil, mit welcher Frau er kandidieren will.",
+      "pubDate": "2026-11-15T19:44:55+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/heil-spd-kandidatur-100.html",
+      "bild": ""
+    },
+    {
+      "id": "79fbae23b7403374594d",
+      "title": "Hunderte Flüchtlinge auf Kanaren angekommen",
+      "description": "Rund 1.500 Migranten haben innerhalb eines Tages die kanarischen Inseln erreicht - eine Rekordzahl. Besonders angespannt ist die Lage auf der kleinen Insel El Hierro. Der Präsident der Kanaren forderte Hilfen aus Madrid ein.",
+      "pubDate": "2026-11-15T18:31:41+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/fluechtlinge-ankunft-kanaren-100.html",
+      "bild": ""
+    },
+    {
+      "id": "ca8709e922193c64d00b",
+      "title": "Estland schließt ab Dezember Grenzübergänge nach Russland",
+      "description": "Estland unterstützt die Ukraine im Kampf gegen Russland - unter anderem mit Drohnen. Eine Drohnenfabrik wurde am Wochenende angegriffen, laut Estland von russischen Agenten. Nun schließt Estland seine drei Grenzübergänge zum Nachbarland.",
+      "pubDate": "2026-11-15T21:44:43+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/estland-russland-grenze-geschlossen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "dc68e0791c15a5c24e3c",
+      "title": "Innensenatorin: Bremen beendet Kampagne gegen Islamismus vorzeitig",
+      "description": "Mit Bildern von einem Wolf im Schafspelz hatte der Verfassungsschutz vor Islamisten gewarnt. Bremens Innensenatorin sagt nun: Das Ziel der Kampagne war richtig, die Umsetzung aber nicht.",
+      "pubDate": "2026-11-15T17:16:20+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/bremen-beendet-kampagne-gegen-islamismus-vorzeitig-100.html",
+      "bild": ""
+    },
+    {
       "id": "87136076d252352083a3",
-      "title": "Zehntausende protestieren gegen Rundfunkreform in Tschechien",
-      "description": "Zehntausende sind in Prag auf die Straße gegangen, um gegen Pläne zur Finanzierung der öffentlich-rechtlichen Medien zu protestieren. Sie fürchten, die Regierung könnte die Sender mit der Reform unter ihre Kontrolle bringen.",
+      "title": "Massenprotest gegen Rundfunkreform in Tschechien",
+      "description": "Mehrere Hunderttausend Menschen sind in Prag auf die Straße gegangen, um gegen Pläne zur Finanzierung der öffentlich-rechtlichen Medien zu protestieren. Sie befürchten, die Regierung könnte die Sender mit der Reform unter ihre Kontrolle bringen.",
       "pubDate": "2026-11-15T16:40:55+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/demo-tschechien-rundfunk-100.html",
       "bild": ""
@@ -80,46 +120,6 @@
       "description": "Weniger Aufträge, steigende Kosten: Handwerkspräsident Dittrich warnt davor, dass die Branche bis zu 80.000 Arbeitsplätze pro Jahr verlieren könnte - wenn nicht gegengesteuert wird.",
       "pubDate": "2026-11-15T12:15:26+01:00",
       "link": "https://www.tagesschau.de/wirtschaft/unternehmen/handwerk-krise-100.html",
-      "bild": ""
-    },
-    {
-      "id": "b06b0c88acd4343c276c",
-      "title": "Sachsen-Anhalt: Weggehen dürfen, wenn es gefährlich wird",
-      "description": "In rund einem Monat will sich der AfD-Politiker Siegmund in Sachsen-Anhalt zum Ministerpräsidenten wählen lassen. Viele Migranten überlegen, wegzuziehen. Doch was gilt für Asylsuchende mit einer Wohnsitzauflage? Von L. Pfeuffer-Rooschüz.",
-      "pubDate": "2026-11-15T12:10:03+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/sachsen-anhalt-afd-migranten-residenzpflicht-100.html",
-      "bild": ""
-    },
-    {
-      "id": "487a43d5417ca795b9c3",
-      "title": "Treibstoffmangel: Wie die Kubaner mit der Krise zurechtkommen",
-      "description": "Stromausfälle, Treibstoffmangel, steigende Preise: Die verschärften US-Sanktionen treffen die Menschen in Kuba hart. In Havanna versuchen sie, der Krise etwas entgegenzusetzen. Mit Musik, Unternehmergeist und Improvisation. Von Marie-Kristin Boese.",
-      "pubDate": "2026-11-15T10:46:38+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/kuba-energiekrise-alltag-100.html",
-      "bild": ""
-    },
-    {
-      "id": "57a1fce05bbb4342c49f",
-      "title": "Ukraine und Russland: Serie von Angriffen - wohl auch Energieanlagen betroffen",
-      "description": "Am Wochenende hat es eine Serie russischer Angriffe auf die Ukraine gegeben - laut Präsident Selenskyj sind auch Energieanlagen darunter. Die Ukraine wiederum griff offenbar eine petrochemische Anlage in Russland an.",
-      "pubDate": "2026-11-15T16:29:20+01:00",
-      "link": "https://www.tagesschau.de/ausland/ukraine-russland-angriffe-210.html",
-      "bild": ""
-    },
-    {
-      "id": "b0f50c51efedf1f2a908",
-      "title": "Heils Kandidatur für SPD-Vorsitz aktiviert Klingbeils Fürsprecher",
-      "description": "Der Erste wagt sich aus der Deckung: Ex-Arbeitsminister Heil will die SPD führen. Was macht Parteichef Klingbeil? Tritt er beim Parteitag im Januar erneut für den Vorsitz an? Nun sprachen sich weitere namhafte SPD-Politiker für ihn aus.",
-      "pubDate": "2026-11-15T14:30:13+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/spd-spitze-klingbeil-heil-100.html",
-      "bild": ""
-    },
-    {
-      "id": "fdbfc3b5fc7f2d840792",
-      "title": "Papst Leo in Südamerika: Empfangen wie ein lang vermisster alter Freund",
-      "description": "Auf seiner bisher längsten Auslandsreise als Papst wird Leo XIV. vor allem in Peru und Argentinien begeistert empfangen. Welche Akzente hat er in seiner \"zweiten Heimat\" gesetzt? Eine erste Bilanz des Südamerika-Besuchs. Von Tilmann Kleinjung.",
-      "pubDate": "2026-11-15T08:35:51+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/papst-reise-suedamerika-bilanz-100.html",
       "bild": ""
     }
   ],
