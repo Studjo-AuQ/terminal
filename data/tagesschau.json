@@ -1,7 +1,87 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "16.11.2026, 00:55 Uhr (UTC)",
+  "aktualisiert": "16.11.2026, 07:50 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "e57483f407a642f8a81d",
+      "title": "Dritter US-Flugzeugträger erreicht laut Medienberichten Nahen Osten",
+      "description": "Das US-Militär hat seine Flotte im Nahen Osten um einen dritten Flugzeugträger ergänzt. Ob die USA dauerhaft ihre Präsenz verstärken oder einen anderen Flugzeugträger ablösen, ist unklar. Die Lage bleibt angespannt.",
+      "pubDate": "2026-11-16T08:11:37+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/usa-flugzeugtraeger-nahost-102.html",
+      "bild": ""
+    },
+    {
+      "id": "4069bf0617cb67d11313",
+      "title": "Missglückter Raketenstart: Amazon verliert 40 Satelliten",
+      "description": "Techmilliardär Musks Starlink-Netzwerk dominiert, aber Amazon will ihm Konkurrenz machen. Nun muss das Unternehmen von Jeff Bezos aber einen Rückschlag hinnehmen - und der könnte langfristige Folgen haben.",
+      "pubDate": "2026-11-16T07:48:12+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/technologie/rakete-amazon-satelliten-100.html",
+      "bild": ""
+    },
+    {
+      "id": "06ff12337e08ed7fe37c",
+      "title": "Marktbericht: Setzt der DAX die Rekordjagd fort?",
+      "description": "In der vergangenen Woche übersprang der DAX erstmals die 27.000er-Marke und schaffte ein starkes Wochenplus. Ob der deutsche Leitindex die Rekordjagd fortsetzt, könnte auch am Chipkonzern Nvidia hängen.",
+      "pubDate": "2026-11-16T07:18:40+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-rekordhoch-100.html",
+      "bild": ""
+    },
+    {
+      "id": "14a54cadf0ab34546cab",
+      "title": "Grenzschließung zu Russland soll Estlands Sicherheit schützen",
+      "description": "In Estland ist die Empörung groß: Ab Dezember sollen Grenzübergänge zu Russland dichtgemacht werden. Hintergrund ist ein versuchter Anschlag auf ein Rüstungsunternehmen - das war nicht der erste Vorfall. Von Christian Stichler.",
+      "pubDate": "2026-11-16T07:14:09+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/estland-grenze-russland-100.html",
+      "bild": ""
+    },
+    {
+      "id": "8da88115b672604b0639",
+      "title": "Jemen: Regierungstruppen wollen Aden vor Huthi schützen",
+      "description": "Die von Iran unterstützte Huthi-Miliz rückt im Jemen offenbar auf den Regierungssitz Aden vor. Gleichzeitig ziehen sich regierungstreue Truppen weiter von der für den Welthandel wichtigen Meerenge Bab al-Mandab zurück.",
+      "pubDate": "2026-11-16T06:56:28+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/jemen-huthi-aden-100.html",
+      "bild": ""
+    },
+    {
+      "id": "a30219a792b1d3154a9f",
+      "title": "11KM-Podcast: Tierwohl in Schlachtbetrieben - warum versagen Kontrollen?",
+      "description": "Es gibt immer wieder Vorwürfe, dass Schlachtbetriebe gegen das Tierschutzgesetz verstoßen. 11KM fragt: Fehlt es an Kontrollen und kann eine verpflichtende Videoüberwachung helfen?",
+      "pubDate": "2026-11-16T06:42:43+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/podcast-11km-schlachthoefe-tierwohl-100.html",
+      "bild": ""
+    },
+    {
+      "id": "ac29f58f075342668b18",
+      "title": "Mögliche Abkommen: Eignet sich Ruanda für Abschiebezentren?",
+      "description": "Wohin mit abgelehnten Asylbewerbern, die nicht in ihre Herkunftsländer abgeschoben werden können? Nach Plänen Deutschlands und anderer EU-Länder könnten sie bald nach Ruanda gebracht werden. Menschenrechtler warnen. Von Karin Bensch.",
+      "pubDate": "2026-11-16T06:36:50+01:00",
+      "link": "https://www.tagesschau.de/ausland/afrika/ruanda-abschiebezentrum-100.html",
+      "bild": ""
+    },
+    {
+      "id": "ce72367a1ce551c46859",
+      "title": "Pläne der Bundesregierung: Juristen zweifeln an Gesetz gegen Vergesellschaftung",
+      "description": "Die Bundesregierung will Ländern die Vergesellschaftung großer Wohnungsbestände erschweren. Ein Gutachten im Auftrag der Linken kommt jedoch zu dem Schluss: Das geplante Investitionsschutzgesetz könnte in Karlsruhe scheitern. Von Alexander Budweg.",
+      "pubDate": "2026-11-16T06:03:11+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/investitionsschutzgesetz-dobrindt-gutachten-verfassungswidrig-100.html",
+      "bild": ""
+    },
+    {
+      "id": "720848686befa8e339e5",
+      "title": "Spionage-Ermittlungen: Wie gelangten die Geheimpapiere aus dem BND?",
+      "description": "Bei der Aufklärung des Spionagefalls um Ex-BND-Chef Hanning rückt nach Recherchen von WDR, NDR und SZ sein früherer Assistent in den Fokus. Im BND glaubt man demnach zu wissen, wie dieser Dokumente aus der Behörde geschmuggelt haben könnte.",
+      "pubDate": "2026-11-16T06:01:34+01:00",
+      "link": "https://www.tagesschau.de/investigativ/ndr-wdr/bnd-hanning-108.html",
+      "bild": ""
+    },
+    {
+      "id": "0513ef5a3f9de41ab958",
+      "title": "Papst besucht bedrohte Lebensräume in den Anden und im Amazonasgebiet",
+      "description": "Kurz vor Abschluss seiner Südamerika-Tour hat Papst Leo XIV. indigene Lebenswelten in den Anden und am Amazonas besucht. Dort kritisierte er mit deutlichen Worten Umweltverschmutzung und soziale Ungleichheit.",
+      "pubDate": "2026-11-16T04:22:31+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/papst-suedamerikareise-100.html",
+      "bild": ""
+    },
     {
       "id": "9739567a50e0b6670ea8",
       "title": "Entscheidende Woche bei der Weltklimakonferenz COP31 beginnt",
@@ -40,86 +120,6 @@
       "description": "Estland unterstützt die Ukraine im Kampf gegen Russland - unter anderem mit Drohnen. Eine Drohnenfabrik wurde am Wochenende angegriffen, laut Estland von russischen Agenten. Nun schließt Estland seine drei Grenzübergänge zum Nachbarland.",
       "pubDate": "2026-11-15T21:44:43+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/estland-russland-grenze-geschlossen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "dc68e0791c15a5c24e3c",
-      "title": "Innensenatorin: Bremen beendet Kampagne gegen Islamismus vorzeitig",
-      "description": "Mit Bildern von einem Wolf im Schafspelz hatte der Verfassungsschutz vor Islamisten gewarnt. Bremens Innensenatorin sagt nun: Das Ziel der Kampagne war richtig, die Umsetzung aber nicht.",
-      "pubDate": "2026-11-15T17:16:20+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/bremen-beendet-kampagne-gegen-islamismus-vorzeitig-100.html",
-      "bild": ""
-    },
-    {
-      "id": "87136076d252352083a3",
-      "title": "Massenprotest gegen Rundfunkreform in Tschechien",
-      "description": "Mehrere Hunderttausend Menschen sind in Prag auf die Straße gegangen, um gegen Pläne zur Finanzierung der öffentlich-rechtlichen Medien zu protestieren. Sie befürchten, die Regierung könnte die Sender mit der Reform unter ihre Kontrolle bringen.",
-      "pubDate": "2026-11-15T16:40:55+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/demo-tschechien-rundfunk-100.html",
-      "bild": ""
-    },
-    {
-      "id": "6682c70044f67f7f39be",
-      "title": "Mobile Notaufnahme im Saarland: Nicht mehr in die Klinik",
-      "description": "Klinikaufenthalte werden von vielen älteren Menschen gefürchtet, auch wenn sie nur der Untersuchung dienen. Im Saarland läuft deshalb seit September ein Modellprojekt, bei dem ein Diagnostik-Lkw Pflegeheime anfährt. Von Emil Mura.",
-      "pubDate": "2026-11-15T16:37:17+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/mobile-notaufnahme-saarland-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c8d4166a437f6c9b1f6e",
-      "title": "Bundesweites Gedenken zum Volkstrauertag - auch im Bundestag",
-      "description": "Der Volkstrauertag ist kein gesetzlicher Feiertag, aber ein staatlicher Gedenktag. Im ganzen Land wird heute an Kriegsopfer erinnert. In diesem Jahr zusammen mit dem österreichischem Bundespräsidenten Van der Bellen. Er rief zu mehr Mitgefühl auf.",
-      "pubDate": "2026-11-15T16:24:11+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/volkstrauertag-bundestag-104.html",
-      "bild": ""
-    },
-    {
-      "id": "b40d335e55bc8683ab97",
-      "title": "Banden in Schweden rekrutieren zunehmend junge Frauen",
-      "description": "In Schweden werden zunehmend junge Frauen und Mädchen für kriminelle Netzwerke rekrutiert - etwa als Kuriere für Drogen und Waffen. Die Banden locken mit dem Versprechen von schnellem Geld und Anerkennung. Von Arne Bartram.",
-      "pubDate": "2026-11-15T15:59:47+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/bandenkriminalitaet-schweden-100.html",
-      "bild": ""
-    },
-    {
-      "id": "208433b9f9c045170439",
-      "title": "Quallenzucht: Ein Geschäftsmodell, das sich lohnt",
-      "description": "Für die einen ist es eine Plage am Badestrand, für andere ein Geschäftsmodell: In Osthessen steht Europas größte Quallenfarm. Warum sich die Zucht der Nesseltiere wirtschaftlich lohnt. Von Christof Dörr.",
-      "pubDate": "2026-11-15T15:58:36+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/quallenzucht-100.html",
-      "bild": ""
-    },
-    {
-      "id": "9aede4a80a49535db81f",
-      "title": "Polizei prüft Bekennerschreiben nach Angriff auf Auto von Nius-Chefredakteur",
-      "description": "In Berlin ist am Freitag das Auto von Nius-Chefredakteur Reichelt angezündet worden. Nun prüft die Polizei ein im Internet veröffentlichtes Bekennerschreiben. Unklar ist, ob das Schreiben authentisch ist.",
-      "pubDate": "2026-11-15T15:13:26+01:00",
-      "link": "https://www.tagesschau.de/inland/regional/berlin/nius-chef-reichelt-auto-angezuendet-bekennerschreiben-100.html",
-      "bild": ""
-    },
-    {
-      "id": "2d4e25586cd2ed802401",
-      "title": "Israelischer Angriff im Gazastreifen: Ranghoher Hamas-Kommandeur tot",
-      "description": "Die israelische Armee hat im Gazastreifen einen ranghohen Kommandeur der Hamas getötet. Samir Abu Junis soll einer der wichtigsten Köpfe bei der Planung der Attacke auf Israel am 7. Oktober 2023 gewesen sein. Die Hamas bestätigte seinen Tod.",
-      "pubDate": "2026-11-15T13:46:16+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/hamas-kommandeur-gazastreifen-getoetet-100.html",
-      "bild": ""
-    },
-    {
-      "id": "a5099f32998ef88dfb1b",
-      "title": "Arzttermin gegen Bezahlung - warum der Vorstoß für Empörung sorgt",
-      "description": "Schneller zum Facharzt - aber nur wenn man die Behandlung selbst zahlt: Kassenärzte-Chef Gassen hat mit seinen Äußerungen zu Terminen gegen Aufpreis breite Kritik ausgelöst. Wie ist die Situation für Kassenpatienten - und was macht die Politik?",
-      "pubDate": "2026-11-15T13:42:46+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/arzttermine-selbst-zahlen-debatte-100.html",
-      "bild": ""
-    },
-    {
-      "id": "9823486e628d9c43d379",
-      "title": "Iran greift erneut US-Stützpunkt in Bahrain an",
-      "description": "Iran hat nach eigenen Angaben einen US-Stützpunkt in Bahrain angegriffen. Die Revolutionsgarde habe eine Radaranlage attackiert, meldeten Staatsmedien. Bahrain wehrte offenbar auch mehrere Angriffe ab.",
-      "pubDate": "2026-11-15T12:21:27+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/iran-revolutionsgarde-angriff-bahrain-100.html",
       "bild": ""
     }
   ],
