@@ -1,29 +1,20 @@
 {
-  "aktualisiert": "15.11.2026, 21:03 Uhr",
+  "aktualisiert": "16.11.2026, 01:06 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
-      "datenstand": "15.11.2026, 21:03 Uhr",
+      "datenstand": "16.11.2026, 01:06 Uhr",
       "veraltet": false,
       "aktuell": {
         "temp": 8,
-        "gefuehlt": 4,
-        "zustand": "Starker Nieselregen",
+        "gefuehlt": 5,
+        "zustand": "Leichter Nieselregen",
         "emoji": "🌦️",
-        "wind": 23,
-        "luftfeuchte": 96,
-        "niederschlag": 0.3
+        "wind": 17,
+        "luftfeuchte": 95,
+        "niederschlag": 0.1
       },
       "tage": [
-        {
-          "wochentag": "Sonntag",
-          "datum": "15.11.",
-          "emoji": "🌧️",
-          "zustand": "Leichter Regen",
-          "max": 8,
-          "min": 2,
-          "niederschlag": 5.9
-        },
         {
           "wochentag": "Montag",
           "datum": "16.11.",
@@ -31,16 +22,16 @@
           "zustand": "Leichter Regen",
           "max": 8,
           "min": 0,
-          "niederschlag": 13.6
+          "niederschlag": 14.9
         },
         {
           "wochentag": "Dienstag",
           "datum": "17.11.",
           "emoji": "🌧️",
-          "zustand": "Starker Regen",
-          "max": 10,
+          "zustand": "Regen",
+          "max": 11,
           "min": 0,
-          "niederschlag": 32.9
+          "niederschlag": 21.7
         },
         {
           "wochentag": "Mittwoch",
@@ -49,7 +40,7 @@
           "zustand": "Leichte Schauer",
           "max": 8,
           "min": 6,
-          "niederschlag": 10.7
+          "niederschlag": 10.3
         },
         {
           "wochentag": "Donnerstag",
@@ -59,49 +50,49 @@
           "max": 7,
           "min": 6,
           "niederschlag": 20.2
+        },
+        {
+          "wochentag": "Freitag",
+          "datum": "20.11.",
+          "emoji": "🌨️",
+          "zustand": "Schneeschauer",
+          "max": 7,
+          "min": -1,
+          "niederschlag": 17.5
         }
       ]
     },
     {
       "stadt": "Werdohl",
-      "datenstand": "15.11.2026, 21:03 Uhr",
+      "datenstand": "16.11.2026, 01:06 Uhr",
       "veraltet": false,
       "aktuell": {
         "temp": 10,
-        "gefuehlt": 7,
-        "zustand": "Leichter Regen",
-        "emoji": "🌧️",
-        "wind": 14,
-        "luftfeuchte": 88,
-        "niederschlag": 0.6
+        "gefuehlt": 8,
+        "zustand": "Leichte Schauer",
+        "emoji": "🌦️",
+        "wind": 9,
+        "luftfeuchte": 87,
+        "niederschlag": 0.0
       },
       "tage": [
-        {
-          "wochentag": "Sonntag",
-          "datum": "15.11.",
-          "emoji": "🌦️",
-          "zustand": "Leichte Schauer",
-          "max": 10,
-          "min": 3,
-          "niederschlag": 6.5
-        },
         {
           "wochentag": "Montag",
           "datum": "16.11.",
           "emoji": "🌦️",
           "zustand": "Leichte Schauer",
           "max": 10,
-          "min": 4,
-          "niederschlag": 15.6
+          "min": 5,
+          "niederschlag": 16.8
         },
         {
           "wochentag": "Dienstag",
           "datum": "17.11.",
           "emoji": "🌦️",
           "zustand": "Leichte Schauer",
-          "max": 13,
-          "min": 4,
-          "niederschlag": 36.7
+          "max": 14,
+          "min": 5,
+          "niederschlag": 28.6
         },
         {
           "wochentag": "Mittwoch",
@@ -109,60 +100,60 @@
           "emoji": "🌦️",
           "zustand": "Leichte Schauer",
           "max": 10,
-          "min": 8,
-          "niederschlag": 15.0
+          "min": 9,
+          "niederschlag": 10.5
         },
         {
           "wochentag": "Donnerstag",
           "datum": "19.11.",
-          "emoji": "🌦️",
-          "zustand": "Leichte Schauer",
+          "emoji": "🌧️",
+          "zustand": "Leichter Regen",
           "max": 10,
           "min": 8,
-          "niederschlag": 4.5
+          "niederschlag": 4.0
+        },
+        {
+          "wochentag": "Freitag",
+          "datum": "20.11.",
+          "emoji": "🌧️",
+          "zustand": "Leichter Regen",
+          "max": 10,
+          "min": 3,
+          "niederschlag": 16.4
         }
       ]
     },
     {
       "stadt": "Kierspe",
-      "datenstand": "15.11.2026, 21:03 Uhr",
+      "datenstand": "16.11.2026, 01:06 Uhr",
       "veraltet": false,
       "aktuell": {
         "temp": 8,
-        "gefuehlt": 4,
-        "zustand": "Starker Nieselregen",
+        "gefuehlt": 5,
+        "zustand": "Leichter Nieselregen",
         "emoji": "🌦️",
-        "wind": 22,
-        "luftfeuchte": 98,
-        "niederschlag": 0.3
+        "wind": 16,
+        "luftfeuchte": 97,
+        "niederschlag": 0.1
       },
       "tage": [
-        {
-          "wochentag": "Sonntag",
-          "datum": "15.11.",
-          "emoji": "🌧️",
-          "zustand": "Leichter Regen",
-          "max": 8,
-          "min": 0,
-          "niederschlag": 7.1
-        },
         {
           "wochentag": "Montag",
           "datum": "16.11.",
           "emoji": "🌧️",
           "zustand": "Regen",
           "max": 8,
-          "min": 0,
-          "niederschlag": 17.9
+          "min": 1,
+          "niederschlag": 21.6
         },
         {
           "wochentag": "Dienstag",
           "datum": "17.11.",
           "emoji": "🌧️",
           "zustand": "Regen",
-          "max": 10,
-          "min": 0,
-          "niederschlag": 35.9
+          "max": 11,
+          "min": 1,
+          "niederschlag": 24.5
         },
         {
           "wochentag": "Mittwoch",
@@ -171,7 +162,7 @@
           "zustand": "Leichte Schauer",
           "max": 8,
           "min": 6,
-          "niederschlag": 15.4
+          "niederschlag": 14.8
         },
         {
           "wochentag": "Donnerstag",
@@ -181,40 +172,40 @@
           "max": 7,
           "min": 6,
           "niederschlag": 23.4
+        },
+        {
+          "wochentag": "Freitag",
+          "datum": "20.11.",
+          "emoji": "⛈️",
+          "zustand": "Gewitter",
+          "max": 7,
+          "min": 0,
+          "niederschlag": 17.4
         }
       ]
     },
     {
       "stadt": "Bochum",
-      "datenstand": "15.11.2026, 21:03 Uhr",
+      "datenstand": "16.11.2026, 01:06 Uhr",
       "veraltet": false,
       "aktuell": {
         "temp": 10,
-        "gefuehlt": 6,
-        "zustand": "Nieselregen",
-        "emoji": "🌦️",
-        "wind": 22,
+        "gefuehlt": 7,
+        "zustand": "Bedeckt",
+        "emoji": "☁️",
+        "wind": 15,
         "luftfeuchte": 90,
-        "niederschlag": 0.2
+        "niederschlag": 0.0
       },
       "tage": [
-        {
-          "wochentag": "Sonntag",
-          "datum": "15.11.",
-          "emoji": "🌦️",
-          "zustand": "Starker Nieselregen",
-          "max": 11,
-          "min": 4,
-          "niederschlag": 2.7
-        },
         {
           "wochentag": "Montag",
           "datum": "16.11.",
           "emoji": "🌧️",
           "zustand": "Leichter Regen",
           "max": 10,
-          "min": 4,
-          "niederschlag": 5.8
+          "min": 5,
+          "niederschlag": 9.4
         },
         {
           "wochentag": "Dienstag",
@@ -223,7 +214,7 @@
           "zustand": "Regen",
           "max": 12,
           "min": 4,
-          "niederschlag": 18.9
+          "niederschlag": 24.6
         },
         {
           "wochentag": "Mittwoch",
@@ -232,7 +223,7 @@
           "zustand": "Starker Nieselregen",
           "max": 10,
           "min": 8,
-          "niederschlag": 7.3
+          "niederschlag": 6.2
         },
         {
           "wochentag": "Donnerstag",
@@ -242,6 +233,15 @@
           "max": 10,
           "min": 8,
           "niederschlag": 17.9
+        },
+        {
+          "wochentag": "Freitag",
+          "datum": "20.11.",
+          "emoji": "🌦️",
+          "zustand": "Leichte Schauer",
+          "max": 8,
+          "min": 1,
+          "niederschlag": 8.8
         }
       ]
     }
