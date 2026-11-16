@@ -1,7 +1,15 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "15.11.2026, 20:57 Uhr (UTC)",
+  "aktualisiert": "16.11.2026, 00:55 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "9739567a50e0b6670ea8",
+      "title": "Entscheidende Woche bei der Weltklimakonferenz COP31 beginnt",
+      "description": "In Antalya geht die Weltklimakonferenz in die entscheidende Phase: Die Ministerinnen und Minister kommen. Für Bundesumweltminister Schneider gibt es viel zu tun - und Erfolg dürfte wohl auch von Geldzusagen abhängen. Von J. Schreiber.",
+      "pubDate": "2026-11-16T01:35:10+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/cop-klimagipfel-schneider-100.html",
+      "bild": ""
+    },
     {
       "id": "5fe73913094f2284e808",
       "title": "Israel: Netanjahu wirbt bei Eisenkot um Einheitsregierung",
@@ -112,14 +120,6 @@
       "description": "Iran hat nach eigenen Angaben einen US-Stützpunkt in Bahrain angegriffen. Die Revolutionsgarde habe eine Radaranlage attackiert, meldeten Staatsmedien. Bahrain wehrte offenbar auch mehrere Angriffe ab.",
       "pubDate": "2026-11-15T12:21:27+01:00",
       "link": "https://www.tagesschau.de/ausland/asien/iran-revolutionsgarde-angriff-bahrain-100.html",
-      "bild": ""
-    },
-    {
-      "id": "4ce0622a6dce35095449",
-      "title": "Krise im Handwerk: \"Stilles Sterben der Betriebe\"",
-      "description": "Weniger Aufträge, steigende Kosten: Handwerkspräsident Dittrich warnt davor, dass die Branche bis zu 80.000 Arbeitsplätze pro Jahr verlieren könnte - wenn nicht gegengesteuert wird.",
-      "pubDate": "2026-11-15T12:15:26+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/handwerk-krise-100.html",
       "bild": ""
     }
   ],
