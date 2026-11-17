@@ -1,7 +1,23 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "16.11.2026, 18:16 Uhr (UTC)",
+  "aktualisiert": "17.11.2026, 01:59 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "ef9860367ccd693b0742",
+      "title": "Künstliche Intelligenz: Kalifornien verklagt OpenAI wegen Cyberangriffen",
+      "description": "Der Generalstaatsanwalt von Kalifornien klagt OpenAI an - ein gefährliches Produkt ohne angemessene Sicherheitsverfahren oder Aufsicht habe das Unternehmen entwickelt und getestet. Von R. Spiegelhauer.",
+      "pubDate": "2026-11-17T02:16:16+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/openai-klage-kalifornien-100.html",
+      "bild": ""
+    },
+    {
+      "id": "9c51215abba5438f6a43",
+      "title": "Abschiebezentrum geplant: Was steckt hinter den Ruanda-Plänen?",
+      "description": "Abgelehnte Asylbewerber sollen in Zukunft nach Ruanda gebracht werden können - auch wenn sie keine Verbindung zu dem Land haben. Innenminister Dobrindt will das zusammen mit vier anderen EU-Staaten und Ruanda möglich machen. Von Alena Lagmöller.",
+      "pubDate": "2026-11-16T19:59:11+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/ruanda-return-hub-abschiebezentrum-100.html",
+      "bild": ""
+    },
     {
       "id": "06ff12337e08ed7fe37c",
       "title": "Marktbericht: DAX bleibt nahe Rekordhoch",
@@ -78,7 +94,7 @@
       "id": "f6aeea4c18d2c431f967",
       "title": "Tesla kündigt Milliarden-Investition in Werk in Brandenburg an",
       "description": "Tesla will drei Milliarden Euro für den Ausbau des Werks in Grünheide östlich von Berlin ausgeben. Der US-Elektroautobauer will damit ein neues Produktionsgebäude finanzieren. Künftig sollen dort \"Cybercabs\" - fahrerlose Taxis - gebaut werden.",
-      "pubDate": "2026-11-16T18:59:15+01:00",
+      "pubDate": "2026-11-16T21:48:40+01:00",
       "link": "https://www.tagesschau.de/inland/regional/brandenburg/tesla-investitionen-brandenburg-100.html",
       "bild": ""
     },
@@ -104,22 +120,6 @@
       "description": "Die Bundesregierung will die Stromsteuer senken - bislang war jedoch unklar, wie das gegenfinanziert werden soll. Jetzt gibt es offenbar eine Möglichkeit: Kanzler Merz zeigte sich sicher, dass sich SPD und Union morgen einigen.",
       "pubDate": "2026-11-16T13:46:45+01:00",
       "link": "https://www.tagesschau.de/inland/innenpolitik/merz-stromsteuer-100.html",
-      "bild": ""
-    },
-    {
-      "id": "9f8e6964d6dea5c1d96b",
-      "title": "SPD-Politikerin Schwesig erneut zur Ministerpräsidentin gewählt",
-      "description": "Der Schweriner Landtag hat Mecklenburg-Vorpommerns Ministerpräsidentin Schwesig wiedergewählt. Das Parlament bestätigte die SPD-Politikerin für weitere fünf Jahre im Amt. Schwesig führt MV bereits seit 2017.",
-      "pubDate": "2026-11-16T14:23:01+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/schwesig-ministerpraesidentin-mecklenburg-vorpommern-wiedergewaehlt-100.html",
-      "bild": ""
-    },
-    {
-      "id": "4958f196b1af51b8d3d0",
-      "title": "EU-Außenminister wollen Ukraine-Strategie ausarbeiten",
-      "description": "Erstmals könnten EU-Staaten die Chance haben, aktiv über ein Kriegsende in der Ukraine mit zu verhandeln. Doch auch eine andere Region verlieren die EU-Außenminister nicht aus dem Blick: den Gazastreifen. Von Sabrina Fritz.",
-      "pubDate": "2026-11-16T13:23:50+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/eu-aussenminister-ukraine-nahost-100.html",
       "bild": ""
     }
   ],
