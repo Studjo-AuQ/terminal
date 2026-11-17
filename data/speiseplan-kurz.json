@@ -1,108 +1,8 @@
 {
   "schemaVersion": 2,
-  "stand": "04.11.2026, 12:22 Uhr",
+  "stand": "17.11.2026, 14:33 Uhr",
   "hinweis": "Automatisch aus den Speiseplan-PDFs erzeugt. Eine erkannte Tages-/Datumsspalte wird übersprungen. A1 und A2 werden auf jeweils drei Wörter gekürzt.",
   "tage": {
-    "2026-10-19": {
-      "a1": "Hähnchen Cordon Bleu",
-      "a2": "Grießbrei mit Beerensoße",
-      "quelle": "speiseplaene/speiseplan_2026-KW43.pdf"
-    },
-    "2026-10-20": {
-      "a1": "Grüner Bohneneintopf mit",
-      "a2": "Bunte Penne-Nudeln an",
-      "quelle": "speiseplaene/speiseplan_2026-KW43.pdf"
-    },
-    "2026-10-21": {
-      "a1": "Rinderfrikadelle Griechische-Art an",
-      "a2": "Kirschpfannkuchen mit Vanillesoße",
-      "quelle": "speiseplaene/speiseplan_2026-KW43.pdf"
-    },
-    "2026-10-22": {
-      "a1": "Szegediner Gulasch mit",
-      "a2": "Rote Bete Gnocchi",
-      "quelle": "speiseplaene/speiseplan_2026-KW43.pdf"
-    },
-    "2026-10-23": {
-      "a1": "Paniertes Schollenfilet Rahmspinat",
-      "a2": "Pilzragout in Rahm",
-      "quelle": "speiseplaene/speiseplan_2026-KW43.pdf"
-    },
-    "2026-10-26": {
-      "a1": "Dicke Bohnen mit",
-      "a2": "Brokkoli-Blumenkohl-Auflauf an Bechamel",
-      "quelle": "speiseplaene/speiseplan_2026-KW44.pdf"
-    },
-    "2026-10-27": {
-      "a1": "Chili Con Carne",
-      "a2": "Schwäbische Maultaschen mit",
-      "quelle": "speiseplaene/speiseplan_2026-KW44.pdf"
-    },
-    "2026-10-28": {
-      "a1": "Hähnchenkeule an Geflügelsoße",
-      "a2": "Kürbiseintopf Amarena-Kirsch Pudding",
-      "quelle": "speiseplaene/speiseplan_2026-KW44.pdf"
-    },
-    "2026-10-29": {
-      "a1": "Hühnerfrikassee mit Spargel,",
-      "a2": "Pizza vegetarisch Se",
-      "quelle": "speiseplaene/speiseplan_2026-KW44.pdf"
-    },
-    "2026-10-30": {
-      "a1": "Fischstäbchen Rahmspinat Kartoffelpüree",
-      "a2": "Spiralnudeln an Tomatensoße",
-      "quelle": "speiseplaene/speiseplan_2026-KW44.pdf"
-    },
-    "2026-11-02": {
-      "a1": "Hähnchenbrust in Zitronensoße",
-      "a2": "Butterspätzle an Rahmchampignons",
-      "quelle": "speiseplaene/speiseplan_2026-KW45.pdf"
-    },
-    "2026-11-03": {
-      "a1": "Grünkohleintopf mit Kasselerwürfel",
-      "a2": "Blumenkohl-Käse-Medaillon an Sahnesoße",
-      "quelle": "speiseplaene/speiseplan_2026-KW45.pdf"
-    },
-    "2026-11-04": {
-      "a1": "Geflügelleber in Apfel-Zwiebelsoße",
-      "a2": "Palatschinken mit Pflaumen-Kompott",
-      "quelle": "speiseplaene/speiseplan_2026-KW45.pdf"
-    },
-    "2026-11-05": {
-      "a1": "Kasselernackenbraten an Bratensoße",
-      "a2": "Kartoffel-Zucchini-Auflauf in Paprikarahmsoße",
-      "quelle": "speiseplaene/speiseplan_2026-KW45.pdf"
-    },
-    "2026-11-06": {
-      "a1": "Dorschfrikadelle an Remouladensoße",
-      "a2": "Vegetarische Graupensuppe en",
-      "quelle": "speiseplaene/speiseplan_2026-KW45.pdf"
-    },
-    "2026-11-09": {
-      "a1": "Hähnchen Kebab Fleisch",
-      "a2": "Asia-Reispfanne vegetarisch Currysoße",
-      "quelle": "speiseplaene/speiseplan_2026-KW46.pdf"
-    },
-    "2026-11-10": {
-      "a1": "Pichelsteiner Eintopf mit",
-      "a2": "Reibekuchen mit Apfelmus",
-      "quelle": "speiseplaene/speiseplan_2026-KW46.pdf"
-    },
-    "2026-11-11": {
-      "a1": "Zarte Entenbrust an",
-      "a2": "Schnippelbohneneintopf vegetarisch Erdbeerpudding",
-      "quelle": "speiseplaene/speiseplan_2026-KW46.pdf"
-    },
-    "2026-11-12": {
-      "a1": "Spiralnudeln Reibekäse Bolognese",
-      "a2": "herzhafte Kartoffel-Gemüsepfanne mit",
-      "quelle": "speiseplaene/speiseplan_2026-KW46.pdf"
-    },
-    "2026-11-13": {
-      "a1": "Matjes mit Zwiebeln",
-      "a2": "Palatschinken mit Lauch-Gemüseragout",
-      "quelle": "speiseplaene/speiseplan_2026-KW46.pdf"
-    },
     "2026-11-16": {
       "a1": "Bratwurst mit Sauerkraut",
       "a2": "Gemüselasagne an Tomatensoße",
@@ -177,6 +77,56 @@
       "a1": "Dorschfilet paniert an",
       "a2": "Gemüsefrikadelle an Kräutersoße",
       "quelle": "speiseplaene/speiseplan_2026-KW49.pdf"
+    },
+    "2026-12-07": {
+      "a1": "Grünkohl mit Kasseler",
+      "a2": "Vegetarische Nuggets nach",
+      "quelle": "speiseplaene/speiseplan_2026-KW50.pdf"
+    },
+    "2026-12-08": {
+      "a1": "Süßkartoffelsuppe mit Fleischwurst",
+      "a2": "Gabelspaghetti mit vegetarischer",
+      "quelle": "speiseplaene/speiseplan_2026-KW50.pdf"
+    },
+    "2026-12-09": {
+      "a1": "Fleischklößchen in Paprikarahmsoße",
+      "a2": "Milchreis mit heißen",
+      "quelle": "speiseplaene/speiseplan_2026-KW50.pdf"
+    },
+    "2026-12-10": {
+      "a1": "Putengulasch ungarische Art",
+      "a2": "Herzhafter Kartoffel-Gemüseauflauf an",
+      "quelle": "speiseplaene/speiseplan_2026-KW50.pdf"
+    },
+    "2026-12-11": {
+      "a1": "Seelachsfilet in Zitronen-Petersilien",
+      "a2": "Kohlroulade vegetarisch an",
+      "quelle": "speiseplaene/speiseplan_2026-KW50.pdf"
+    },
+    "2026-12-14": {
+      "a1": "Hähnchen Cordon Bleu",
+      "a2": "Grießbrei mit Beerensoße",
+      "quelle": "speiseplaene/speiseplan_2026-KW51.pdf"
+    },
+    "2026-12-15": {
+      "a1": "Grüner Bohneneintopf mit",
+      "a2": "Bunte Penne-Nudeln an",
+      "quelle": "speiseplaene/speiseplan_2026-KW51.pdf"
+    },
+    "2026-12-16": {
+      "a1": "Rinderfrikadelle Griechische-Art an",
+      "a2": "Kirschpfannkuchen mit Vanillesoße",
+      "quelle": "speiseplaene/speiseplan_2026-KW51.pdf"
+    },
+    "2026-12-17": {
+      "a1": "Szegediner Gulasch mit",
+      "a2": "Rote Bete Gnocchi",
+      "quelle": "speiseplaene/speiseplan_2026-KW51.pdf"
+    },
+    "2026-12-18": {
+      "a1": "Paniertes Schollenfilet Rahmspinat",
+      "a2": "Pilzragout in Rahm",
+      "quelle": "speiseplaene/speiseplan_2026-KW51.pdf"
     }
   },
   "fehler": []
