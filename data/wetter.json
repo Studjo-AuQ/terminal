@@ -1,14 +1,14 @@
 {
-  "aktualisiert": "18.11.2026, 02:05 Uhr",
+  "aktualisiert": "18.11.2026, 09:46 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
       "datenstand": "18.11.2026, 02:05 Uhr",
-      "veraltet": false,
+      "veraltet": true,
       "aktuell": {
         "temp": 8,
         "gefuehlt": 4,
-        "zustand": "Leichter Nieselregen",
+        "zustand": "Letzter Stand 02:05 Uhr · Leichter Nieselregen",
         "emoji": "🌦️",
         "wind": 20,
         "luftfeuchte": 93,
@@ -65,11 +65,11 @@
     {
       "stadt": "Werdohl",
       "datenstand": "18.11.2026, 02:05 Uhr",
-      "veraltet": false,
+      "veraltet": true,
       "aktuell": {
         "temp": 9,
         "gefuehlt": 5,
-        "zustand": "Leichte Schauer",
+        "zustand": "Letzter Stand 02:05 Uhr · Leichte Schauer",
         "emoji": "🌦️",
         "wind": 21,
         "luftfeuchte": 85,
@@ -126,11 +126,11 @@
     {
       "stadt": "Kierspe",
       "datenstand": "18.11.2026, 02:05 Uhr",
-      "veraltet": false,
+      "veraltet": true,
       "aktuell": {
         "temp": 8,
         "gefuehlt": 4,
-        "zustand": "Nieselregen",
+        "zustand": "Letzter Stand 02:05 Uhr · Nieselregen",
         "emoji": "🌦️",
         "wind": 21,
         "luftfeuchte": 95,
@@ -187,11 +187,11 @@
     {
       "stadt": "Bochum",
       "datenstand": "18.11.2026, 02:05 Uhr",
-      "veraltet": false,
+      "veraltet": true,
       "aktuell": {
         "temp": 10,
         "gefuehlt": 6,
-        "zustand": "Nieselregen",
+        "zustand": "Letzter Stand 02:05 Uhr · Nieselregen",
         "emoji": "🌦️",
         "wind": 24,
         "luftfeuchte": 89,
@@ -246,5 +246,10 @@
       ]
     }
   ],
-  "fehler": []
+  "fehler": [
+    "Lüdenscheid: aktueller Abruf fehlgeschlagen; verwende letzten Stand von heute (18.11.2026, 02:05 Uhr). Fehler: <urlopen error _ssl.c:1063: The handshake operation timed out>",
+    "Werdohl: aktueller Abruf fehlgeschlagen; verwende letzten Stand von heute (18.11.2026, 02:05 Uhr). Fehler: <urlopen error _ssl.c:1063: The handshake operation timed out>",
+    "Kierspe: aktueller Abruf fehlgeschlagen; verwende letzten Stand von heute (18.11.2026, 02:05 Uhr). Fehler: <urlopen error _ssl.c:1063: The handshake operation timed out>",
+    "Bochum: aktueller Abruf fehlgeschlagen; verwende letzten Stand von heute (18.11.2026, 02:05 Uhr). Fehler: <urlopen error _ssl.c:1063: The handshake operation timed out>"
+  ]
 }
