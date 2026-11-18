@@ -1,7 +1,47 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "17.11.2026, 19:43 Uhr (UTC)",
+  "aktualisiert": "18.11.2026, 02:17 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "a3c810246bf6bada7b60",
+      "title": "Mögliche Stromsteuersenkung: Verhandlung beendet - Verkündung am Morgen",
+      "description": "Die Spitzen von CDU, CSU und SPD haben ihre Beratungen im Kanzleramt am frühen Mittwochmorgen beendet - ohne eine Einigung zur Stromsteuersenkung zu verkünden. Die Details sollen am frühen Morgen bekanntgegeben werden.",
+      "pubDate": "2026-11-18T03:12:36+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/koalition-beendet-verhandlungen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "95fdfbc28dfe62dfa3fd",
+      "title": "Laut Gesundheitsbehörde: Warum die USA nicht mehr masernfrei sind",
+      "description": "Die USA erleben den schlimmsten Masern-Ausbruch seit mehr als 35 Jahren. Und haben nun auch ihren Status als masernfreies Land verloren. Das hat die Panamerikanische Gesundheitsorganisation (PAHO) offiziell bekannt gegeben. Von N. Barth.",
+      "pubDate": "2026-11-18T02:34:24+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/masern-usa-118.html",
+      "bild": ""
+    },
+    {
+      "id": "6b45798595f05af5e5ef",
+      "title": "Neue Quartalszahlen: Nvidia verdoppelt Umsatz und Gewinn",
+      "description": "Wenige Tage nach der Spionageaffäre rund um den bisherigen Konzernchef Huang hat Nvidia überraschend starke Quartalsergebnisse vorgelegt. Die Zahlen des US-Chipkonzerns lagen deutlich über den Erwartungen von Analysten.",
+      "pubDate": "2026-11-18T01:59:30+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-quartalsergebnisse-100.html",
+      "bild": ""
+    },
+    {
+      "id": "43e5b7d44aa951ceade7",
+      "title": "\"Ziemlich dumm\": Pistorius reagiert auf US-Kritik an ukrainischen Angriffen",
+      "description": "Nach der ukrainischen Attacke auf die Krim-Brücke kritisierten die USA Kiews Angriffe - ohne Russlands Zerstörung ziviler Ziele in der Ukraine zu erwähnen. Verteidigungsminister Pistorius reagierte mit deutlichen Worten.",
+      "pubDate": "2026-11-17T22:20:52+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/pistorius-ukraine-angriffe-usa-kritik-100.html",
+      "bild": ""
+    },
+    {
+      "id": "033d0f1cb2231f384fd7",
+      "title": "Sozialproteste in Frankreich reißen nicht ab",
+      "description": "Wieder gab es in Frankreich Streiks und Demonstrationen für höhere Gehälter und bessere Bildungsbedingungen. Bei der Zahl der Teilnehmer unterschieden sich die Angaben deutlich.",
+      "pubDate": "2026-11-17T21:02:01+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/frankreich-proteste-254.html",
+      "bild": ""
+    },
     {
       "id": "7bdb6216a75f9af4d270",
       "title": "Krieg gegen die Ukraine: Wie schwer ist die Krim-Brücke getroffen?",
@@ -80,46 +120,6 @@
       "description": "Laut Recherchen des NDR drängen insbesondere große Augenarztketten zum Kauf von überteuerten Sonderlinsen bei Grauer-Star-Operationen. Augenärzte haben demnach geschätzt Hunderte Millionen Euro zu viel von ihren Patienten kassiert.",
       "pubDate": "2026-11-17T17:01:15+01:00",
       "link": "https://www.tagesschau.de/investigativ/ndr/augenaerzte-grauer-star-100.html",
-      "bild": ""
-    },
-    {
-      "id": "a66bcdfe7f14d06ab880",
-      "title": "Zarte Hoffnung nach der Brandkatastrophe im Hürtgenwald",
-      "description": "Hunderte Einsatzkräfte kämpften im August gegen die Flammen im Hürtgenwald. Zurück blieb eine verwüstete Landschaft. Doch es gibt Hoffnung: Erste Pflanzen keimen und deuten auf eine Erholung der Natur hin. Von Jan Koch.",
-      "pubDate": "2026-11-17T16:53:57+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/klimawandel-huertgenwald-zukunft-100.html",
-      "bild": ""
-    },
-    {
-      "id": "65e7a2c89e5aa01dc14c",
-      "title": "Festnahme in Brandenburg: Wie ein Ukrainer für Russland spioniert haben soll",
-      "description": "Mitte Oktober ließ der Generalbundesanwalt in Eisenhüttenstadt einen Ukrainer festnehmen, der für einen russischen Geheimdienst spioniert haben soll. Recherchen von ARD-Hauptstadtstudio und SWR verdeutlichen den Umfang des mutmaßlichen Verrats.",
-      "pubDate": "2026-11-17T16:53:40+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/spion-russland-festnahme-brandenburg-100.html",
-      "bild": ""
-    },
-    {
-      "id": "2f92225ca1a421cad2f0",
-      "title": "ASEAN, Quad, APEC: Trump auf Gipfel-Tour durch Asien",
-      "description": "Der US-Präsident nimmt derzeit an einem Asien-Pazifik-Treffen nach dem anderen teil. Im Konflikt mit China dürfte ASEAN-Gastgeber Philippinen öffentlich kaum Unterstützung Trumps bekommen - denn der trifft bald Chinas Präsidenten. Von T. Iffland.",
-      "pubDate": "2026-11-17T16:53:23+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/asean-quad-apec-trump-100.html",
-      "bild": ""
-    },
-    {
-      "id": "d8fc52ea930f6f1927f4",
-      "title": "Offenbar Razzia bei Sohn von Ibrahim Ibrahim wegen Kriegswaffen-Verdacht",
-      "description": "In Berlin hat die Polizei eine Wohnung durchsucht - sie vermutete einen Verstoß gegen das Kriegswaffenkontrollgesetz. Einem Medienbericht zufolge ist der Verdächtige der Sohn des mutmaßlichen Terrorunterstützers Ibrahim Ibrahim.",
-      "pubDate": "2026-11-17T14:41:02+01:00",
-      "link": "https://www.tagesschau.de/inland/regional/berlin/razzia-sohn-ibrahim-ibrahim-kriegswaffen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "5ae2e9bf38b2125232bd",
-      "title": "Mehr Anträge auf Pflegegutachten vor geplanten Einschnitten",
-      "description": "Weil es immer mehr Pflegebedürftige gibt und die Kosten der Pflegeversicherungen stark steigen, plant die Bundesregierung Einschnitte. Das führt offenbar dazu, dass deutlich mehr Menschen versuchen, einen Pflegegrad zu bekommen.",
-      "pubDate": "2026-11-17T14:40:42+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/starker-anstieg-bei-pflegegutachten-vor-geplanter-reform-100.html",
       "bild": ""
     }
   ],
