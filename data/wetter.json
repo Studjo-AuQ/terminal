@@ -1,18 +1,18 @@
 {
-  "aktualisiert": "18.11.2026, 09:46 Uhr",
+  "aktualisiert": "18.11.2026, 18:42 Uhr",
   "staedte": [
     {
       "stadt": "Lüdenscheid",
-      "datenstand": "18.11.2026, 02:05 Uhr",
-      "veraltet": true,
+      "datenstand": "18.11.2026, 18:42 Uhr",
+      "veraltet": false,
       "aktuell": {
-        "temp": 8,
-        "gefuehlt": 4,
-        "zustand": "Letzter Stand 02:05 Uhr · Leichter Nieselregen",
-        "emoji": "🌦️",
-        "wind": 20,
-        "luftfeuchte": 93,
-        "niederschlag": 0.1
+        "temp": 7,
+        "gefuehlt": 3,
+        "zustand": "Bedeckt",
+        "emoji": "☁️",
+        "wind": 23,
+        "luftfeuchte": 91,
+        "niederschlag": 0.0
       },
       "tage": [
         {
@@ -20,9 +20,9 @@
           "datum": "18.11.",
           "emoji": "🌧️",
           "zustand": "Regen",
-          "max": 8,
+          "max": 9,
           "min": 7,
-          "niederschlag": 16.7
+          "niederschlag": 12.4
         },
         {
           "wochentag": "Donnerstag",
@@ -30,26 +30,26 @@
           "emoji": "🌧️",
           "zustand": "Leichter Regen",
           "max": 8,
-          "min": 6,
-          "niederschlag": 14.3
+          "min": 7,
+          "niederschlag": 13.7
         },
         {
           "wochentag": "Freitag",
           "datum": "20.11.",
-          "emoji": "🌦️",
-          "zustand": "Schauer",
-          "max": 6,
-          "min": 2,
-          "niederschlag": 17.8
+          "emoji": "🌧️",
+          "zustand": "Leichter Regen",
+          "max": 7,
+          "min": 0,
+          "niederschlag": 5.2
         },
         {
           "wochentag": "Samstag",
           "datum": "21.11.",
-          "emoji": "🌫️",
-          "zustand": "Nebel",
+          "emoji": "🌦️",
+          "zustand": "Leichter Nieselregen",
           "max": 5,
           "min": -1,
-          "niederschlag": 0.0
+          "niederschlag": 0.1
         },
         {
           "wochentag": "Sonntag",
@@ -64,16 +64,16 @@
     },
     {
       "stadt": "Werdohl",
-      "datenstand": "18.11.2026, 02:05 Uhr",
-      "veraltet": true,
+      "datenstand": "18.11.2026, 18:42 Uhr",
+      "veraltet": false,
       "aktuell": {
         "temp": 9,
         "gefuehlt": 5,
-        "zustand": "Letzter Stand 02:05 Uhr · Leichte Schauer",
+        "zustand": "Leichte Schauer",
         "emoji": "🌦️",
-        "wind": 21,
-        "luftfeuchte": 85,
-        "niederschlag": 0.0
+        "wind": 18,
+        "luftfeuchte": 90,
+        "niederschlag": 0.3
       },
       "tage": [
         {
@@ -83,16 +83,16 @@
           "zustand": "Leichte Schauer",
           "max": 10,
           "min": 8,
-          "niederschlag": 16.8
+          "niederschlag": 17.3
         },
         {
           "wochentag": "Donnerstag",
           "datum": "19.11.",
           "emoji": "🌦️",
           "zustand": "Leichte Schauer",
-          "max": 9,
-          "min": 7,
-          "niederschlag": 6.5
+          "max": 10,
+          "min": 8,
+          "niederschlag": 10.9
         },
         {
           "wochentag": "Freitag",
@@ -100,41 +100,41 @@
           "emoji": "🌦️",
           "zustand": "Leichte Schauer",
           "max": 8,
-          "min": 7,
-          "niederschlag": 25.4
+          "min": 2,
+          "niederschlag": 25.9
         },
         {
           "wochentag": "Samstag",
           "datum": "21.11.",
-          "emoji": "🌧️",
-          "zustand": "Leichter Regen",
-          "max": 7,
-          "min": 1,
-          "niederschlag": 2.9
+          "emoji": "🌫️",
+          "zustand": "Nebel",
+          "max": 6,
+          "min": 0,
+          "niederschlag": 0.0
         },
         {
           "wochentag": "Sonntag",
           "datum": "22.11.",
           "emoji": "🌫️",
           "zustand": "Nebel",
-          "max": 5,
-          "min": -2,
+          "max": 4,
+          "min": -1,
           "niederschlag": 0.0
         }
       ]
     },
     {
       "stadt": "Kierspe",
-      "datenstand": "18.11.2026, 02:05 Uhr",
-      "veraltet": true,
+      "datenstand": "18.11.2026, 18:42 Uhr",
+      "veraltet": false,
       "aktuell": {
         "temp": 8,
-        "gefuehlt": 4,
-        "zustand": "Letzter Stand 02:05 Uhr · Nieselregen",
+        "gefuehlt": 3,
+        "zustand": "Leichter Nieselregen",
         "emoji": "🌦️",
-        "wind": 21,
-        "luftfeuchte": 95,
-        "niederschlag": 0.2
+        "wind": 22,
+        "luftfeuchte": 91,
+        "niederschlag": 0.1
       },
       "tage": [
         {
@@ -142,36 +142,36 @@
           "datum": "18.11.",
           "emoji": "🌧️",
           "zustand": "Regen",
-          "max": 8,
+          "max": 9,
           "min": 7,
-          "niederschlag": 20.0
+          "niederschlag": 15.0
         },
         {
           "wochentag": "Donnerstag",
           "datum": "19.11.",
           "emoji": "🌧️",
           "zustand": "Leichter Regen",
-          "max": 8,
+          "max": 9,
           "min": 6,
-          "niederschlag": 19.0
+          "niederschlag": 15.2
         },
         {
           "wochentag": "Freitag",
           "datum": "20.11.",
-          "emoji": "🌦️",
-          "zustand": "Schauer",
-          "max": 6,
-          "min": 2,
-          "niederschlag": 17.7
+          "emoji": "🌧️",
+          "zustand": "Regen",
+          "max": 7,
+          "min": 0,
+          "niederschlag": 11.1
         },
         {
           "wochentag": "Samstag",
           "datum": "21.11.",
-          "emoji": "🌫️",
-          "zustand": "Nebel",
+          "emoji": "🌦️",
+          "zustand": "Leichter Nieselregen",
           "max": 5,
           "min": -1,
-          "niederschlag": 0.0
+          "niederschlag": 0.4
         },
         {
           "wochentag": "Sonntag",
@@ -186,16 +186,16 @@
     },
     {
       "stadt": "Bochum",
-      "datenstand": "18.11.2026, 02:05 Uhr",
-      "veraltet": true,
+      "datenstand": "18.11.2026, 18:42 Uhr",
+      "veraltet": false,
       "aktuell": {
         "temp": 10,
         "gefuehlt": 6,
-        "zustand": "Letzter Stand 02:05 Uhr · Nieselregen",
+        "zustand": "Leichter Nieselregen",
         "emoji": "🌦️",
-        "wind": 24,
-        "luftfeuchte": 89,
-        "niederschlag": 0.2
+        "wind": 22,
+        "luftfeuchte": 88,
+        "niederschlag": 0.1
       },
       "tage": [
         {
@@ -205,33 +205,33 @@
           "zustand": "Leichter Regen",
           "max": 11,
           "min": 9,
-          "niederschlag": 12.3
+          "niederschlag": 4.7
         },
         {
           "wochentag": "Donnerstag",
           "datum": "19.11.",
           "emoji": "🌧️",
-          "zustand": "Leichter Regen",
+          "zustand": "Regen",
           "max": 11,
-          "min": 6,
-          "niederschlag": 10.7
+          "min": 9,
+          "niederschlag": 11.2
         },
         {
           "wochentag": "Freitag",
           "datum": "20.11.",
           "emoji": "🌦️",
-          "zustand": "Leichte Schauer",
-          "max": 6,
-          "min": 1,
-          "niederschlag": 8.3
+          "zustand": "Leichter Nieselregen",
+          "max": 9,
+          "min": 4,
+          "niederschlag": 0.5
         },
         {
           "wochentag": "Samstag",
           "datum": "21.11.",
-          "emoji": "🌤️",
-          "zustand": "Überwiegend klar",
+          "emoji": "☁️",
+          "zustand": "Bedeckt",
           "max": 7,
-          "min": 0,
+          "min": 1,
           "niederschlag": 0.0
         },
         {
@@ -246,10 +246,5 @@
       ]
     }
   ],
-  "fehler": [
-    "Lüdenscheid: aktueller Abruf fehlgeschlagen; verwende letzten Stand von heute (18.11.2026, 02:05 Uhr). Fehler: <urlopen error _ssl.c:1063: The handshake operation timed out>",
-    "Werdohl: aktueller Abruf fehlgeschlagen; verwende letzten Stand von heute (18.11.2026, 02:05 Uhr). Fehler: <urlopen error _ssl.c:1063: The handshake operation timed out>",
-    "Kierspe: aktueller Abruf fehlgeschlagen; verwende letzten Stand von heute (18.11.2026, 02:05 Uhr). Fehler: <urlopen error _ssl.c:1063: The handshake operation timed out>",
-    "Bochum: aktueller Abruf fehlgeschlagen; verwende letzten Stand von heute (18.11.2026, 02:05 Uhr). Fehler: <urlopen error _ssl.c:1063: The handshake operation timed out>"
-  ]
+  "fehler": []
 }
