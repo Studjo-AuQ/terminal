@@ -1,11 +1,99 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "19.11.2026, 01:24 Uhr (UTC)",
+  "aktualisiert": "19.11.2026, 09:21 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "7437f8720cdfd8d95720",
+      "title": "Musk bereut offenbar Wahlkampfspenden an Republikaner",
+      "description": "Die US-Zwischenwahlen hatten für Tech-Unternehmer Musk nicht den erhofften Ausgang - die Republikaner, für die er Hunderte Millionen US-Dollar gespendet hatte, fuhren eine Niederlage ein. Nun bedauert er, das Geld versenkt zu haben.",
+      "pubDate": "2026-11-19T09:58:18+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/musk-spenden-republikaner-100.html",
+      "bild": ""
+    },
+    {
+      "id": "6cd3135592769ee6b82f",
+      "title": "18-jähriger Schüler soll Anschlag auf Moschee geplant haben",
+      "description": "Ein 18-Jähriger aus Eslohe in Nordrhein-Westfalen steht im Verdacht, mit Waffen aus einem 3D-Drucker einen Anschlag auf eine Moschee geplant zu haben. Ermittler fanden Hinweise auf eine rechtsradikale Gesinnung. Der Schüler kam in U-Haft.",
+      "pubDate": "2026-11-19T05:01:00+01:00",
+      "link": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/schueler-anschlagsplan-moschee-100.html",
+      "bild": ""
+    },
+    {
+      "id": "bd6f84354f965f564ba8",
+      "title": "Liveblog zum APEC-Gipfel: ++ Gipfel mit Xi, Trump und Putin hat begonnen ++",
+      "description": "Beim Gipfel der Asiatisch-Pazifischen Wirtschaftsgemeinschaft (APEC) hat das Treffen von Chinas Präsident Xi, US-Präsident Trump und Russlands Präsident Putin begonnen. Zuvor hatte es Zweiergespräche gegeben.",
+      "pubDate": "2026-11-19T10:01:47+01:00",
+      "link": "https://www.tagesschau.de/newsticker/liveblog-apec-gipfel-xi-trump-putin-100.html",
+      "bild": ""
+    },
+    {
+      "id": "53fe126f6c4f2ecc02c7",
+      "title": "Save the Children: Fast jedes vierte Kind lebt in einem Konfliktgebiet",
+      "description": "Noch nie haben so viele Kinder und Jugendliche weltweit in Konfliktgebieten gelebt. Etwa 589 Millionen waren 2025 betroffen, das zeigt ein Bericht der Organisation Save the Children.",
+      "pubDate": "2026-11-19T09:14:57+01:00",
+      "link": "https://www.tagesschau.de/ausland/kinder-konfliktgebiete-106.html",
+      "bild": ""
+    },
+    {
+      "id": "5907ad97137c0d3cde2a",
+      "title": "190,4 Millionen Dollar: Teuerstes van-Gogh-Gemälde verkauft",
+      "description": "So viel Geld hat noch nie jemand für ein Gemälde von van Gogh gezahlt: 190,4 Millionen US-Dollar. Dafür wechselte das Bild \"Blühende Kastanienbäume\" den Besitzer - nach einem zähen Konflikt um dessen Geschichte in der NS-Zeit.",
+      "pubDate": "2026-11-19T08:48:33+01:00",
+      "link": "https://www.tagesschau.de/kultur/van-gogh-bluehende-kastanienbaeume-100.html",
+      "bild": ""
+    },
+    {
+      "id": "9831f28656fa95a89fc1",
+      "title": "Marktbericht: Anleger vor Anthropic-Börsengang optimistisch",
+      "description": "Vor dem Rekordbörsengang des KI-Entwicklers Anthropic steigt an den Aktienmärkten die Spannung. An der Frankfurter Börse herrscht vorsichtiger Optimismus, der DAX dürfte etwas fester starten.",
+      "pubDate": "2026-11-19T07:33:47+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-anthropic-100.html",
+      "bild": ""
+    },
+    {
+      "id": "0261967c5a4e6801ac61",
+      "title": "Krim-Brücke nach ukrainischem Angriff erneut gesperrt",
+      "description": "Nach einem erneuten Angriff auf die für Russland strategisch wichtige Krim-Brücke ist laut Behörden nun der Zugverkehr \"vorübergehend\" eingestellt worden. Zuvor hatte eine Attacke bereits den Autoverkehr lahmgelegt.",
+      "pubDate": "2026-11-19T09:58:28+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/krim-bruecke-angriff-ukraine-zugverkehr-gestoppt-100.html",
+      "bild": ""
+    },
+    {
+      "id": "3678b65bedd0b85d0f72",
+      "title": "\"Koalition der Willigen\": Ukrainer fordern Einheit und Entschlossenheit",
+      "description": "In der Ukraine ist die Stimmung vor den beiden Treffen heute - in Berlin und in China - eher zurückhaltend. Risiken sehen sie insbesondere bei dem Dreigipfel in Shenzhen. Sie fordern Einheit und Entschlossenheit. Von R. Barth.",
+      "pubDate": "2026-11-19T05:19:46+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/ukraine-koalition-stimmung-100.html",
+      "bild": ""
+    },
+    {
+      "id": "f1b6e524e132aa934018",
+      "title": "Ukraine-Gipfel in Berlin: Mit Diplomatie und Druck",
+      "description": "Heute kommen knapp 30 Staats- und Regierungschefs nach Berlin, sie gehören zu den wichtigsten Unterstützern der Ukraine. Vom Treffen soll ein klares Signal ausgehen: Die Ukraine kann weiter auf Hilfe zählen. Von Christina Nagel.",
+      "pubDate": "2026-11-19T05:05:32+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/ukraine-unterstuetzung-treffen-berlin-100.html",
+      "bild": ""
+    },
+    {
+      "id": "4d473779ff88b38c611a",
+      "title": "Anthropic-Börsengang wird Musk-Rekord übertreffen",
+      "description": "Zum ersten Mal geht mit Anthropic ein maßgebliches KI-Unternehmen an den Markt. Der Börsengang wird der größte in der Geschichte. Ist das der Stimmungstest für die gesamte Branche? Giselle Ucar über die Ambitionen des KI-Riesen.",
+      "pubDate": "2026-11-19T07:44:41+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/anthropic-boersengang-aktie-100.html",
+      "bild": ""
+    },
+    {
+      "id": "a450318a2c21cb11a99b",
+      "title": "Militärabkommen zwischen Venezuela und USA unterzeichnet",
+      "description": "Die USA und Venezuela haben ein Militärabkommen unterzeichnet, wie US-Verteidigungsminister Hegseth mitteilte. Mit dem bereits angekündigten Ölabkommen werde die Straße von Hormus zudem \"irrelevant\".",
+      "pubDate": "2026-11-19T03:10:36+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/hegseth-usa-venezuela-100.html",
+      "bild": ""
+    },
     {
       "id": "21f92d5f971c12a66dc6",
       "title": "Commerzbank-Übernahme: Bundesregierung und UniCredit einigen sich",
-      "description": "Die italienische Bank und deren Chef Orcel sind bei der Übernahme der Commerzbank einen wichtigen Schritt weiter - die Bundesregierung einigte sich mit ihr.",
+      "description": "UniCredit garantiert Standort und Arbeitnehmerrechte - der Bund verzichtet auf Aufsichtsratsvertreter: Die Bundesregierung und die italienische Großbank haben sich bei der Commerzbank-Übernahme geeinigt.",
       "pubDate": "2026-11-19T02:06:22+01:00",
       "link": "https://www.tagesschau.de/wirtschaft/unternehmen/unicredit-bundesregierung-100.html",
       "bild": ""
@@ -13,7 +101,7 @@
     {
       "id": "a73e025b77fe72a17777",
       "title": "Israels Armee startet Einsatz in von Hamas kontrolliertem Gebiet",
-      "description": "Trotz der Waffenruhe hat Israels Armee nach eigenen Angaben einen neuen Einsatz im Zentrum des Gazastreifens begonnen. Ziel des Angriffs sei Infrastruktur der Terrororganisation Hamas. Die Islamisten werfen Israel Eskalation vor.",
+      "description": "Die israelische Armee hat eigenen Angaben zufolge eine Bodenoffensive mit Panzern im Zentrum des Gazastreifens begonnen. Das Land kontrolliert inzwischen rund 60 bis 70 Prozent des Gazastreifens militärisch.",
       "pubDate": "2026-11-18T22:04:52+01:00",
       "link": "https://www.tagesschau.de/ausland/asien/israel-gaza-bodenoffensive-104.html",
       "bild": ""
@@ -32,94 +120,6 @@
       "description": "Es gilt schon vorab als historisch - das erste Dreier-Treffen von Xi, Trump und Putin auf dem APEC-Gipfel in Shenzhen. Doch die Positionen der drei Präsidenten bei den Themen atomare Abrüstung, Iran oder Ukraine klaffen teils auseinander.",
       "pubDate": "2026-11-19T00:33:32+01:00",
       "link": "https://www.tagesschau.de/ausland/asien/apec-treffen-xi-putin-trump-themen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "95838429453d5cb41380",
-      "title": "Demokraten nominieren Jeffries als Chef des US-Repräsentantenhauses",
-      "description": "Trotz Vorbehalten einiger Progressiver haben die US-Demokraten ihren Fraktionschef Jeffries für den Vorsitz des US-Repräsentantenhauses nominiert. Als solcher könnte er auch Untersuchungen gegen die Trump-Regierung vorantreiben.",
-      "pubDate": "2026-11-18T19:11:40+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/jeffries-nominiert-100.html",
-      "bild": ""
-    },
-    {
-      "id": "7db9386c80b660b23ed7",
-      "title": "Neuer EU-Kredit für Ukraine: \"Wir sind entschlossener denn je\"",
-      "description": "Die Ukraine braucht dringend Geld - den Großteil soll die EU nach Willen der Kommission übernehmen. Für die Rückzahlung sollen künftige russische Reparationen genutzt werden. Doch einige Mitgliedsstaaten sind dagegen. Von T. Hassel und C. Feld.",
-      "pubDate": "2026-11-18T19:02:26+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/eu-ukraine-unsterstuetzung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "59d45ea9475f28c238b7",
-      "title": "\"Grand Theft Auto VI: Was hinter dem weltweiten Hype um GTA steckt",
-      "description": "13 Jahre nach dem Vorgänger erscheint \"Grand Theft Auto VI\". Viele Fans haben den Start mit Spannung erwartet, andere halten die Aufregung um das Videospiel für übertrieben. Was macht es so besonders?",
-      "pubDate": "2026-11-18T18:55:38+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/spiele-gta-sechs-neuerscheinung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "9b94ed1261023fe00997",
-      "title": "Deutliche Kursverluste: DAX rutscht unter 26.000er-Marke",
-      "description": "Das Rekordhoch der vergangenen Woche ist längst wieder passé. Der Leitindex DAX endet mit einem deutlichen Minus und fällt bis auf 25.736 Punkte. Da helfen auch gute Zahlen aus der Industrie nichts.",
-      "pubDate": "2026-11-18T18:45:45+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-nvidia-100.html",
-      "bild": ""
-    },
-    {
-      "id": "b4da7c289bb61f139a98",
-      "title": "Ex-Ministerin Kneissl: Österreich prüft Aberkennung der Staatsbürgerschaft",
-      "description": "Österreichs Ex-Außenministerin Kneissl fiel schon während ihrer Amtszeit durch ihre Nähe zu Russland auf. Inzwischen lebt sie dort und stellt sich öffentlich hinter Putin. In ihrem Heimatland könnte das jetzt Folgen haben.",
-      "pubDate": "2026-11-18T18:17:56+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/kneissl-staatsbuergerschaft-100.html",
-      "bild": ""
-    },
-    {
-      "id": "6ffad202a37234eee27a",
-      "title": "Brasilianischer Regenwald: Indigene verlassen offenbar aus Not ihre Isolation",
-      "description": "Offenbar aus Hunger heraus haben isoliert lebende Indigene in Brasilien Kontakt zur Außenwelt gesucht: Etwa 20 Angehörige der Awá kamen Berichten zufolge in ein Dorf, um nach Lebensmitteln zu fragen - \"ein beunruhigendes Zeichen\", so eine NGO.",
-      "pubDate": "2026-11-18T18:09:00+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/brasilien-awa-100.html",
-      "bild": ""
-    },
-    {
-      "id": "970c2463d6cb2ac6ae3d",
-      "title": "Gericht: Preiserhöhungs-Klausel von DAZN unwirksam",
-      "description": "Von 11,99 Euro monatlich auf 29,99 Euro in kurzer Zeit: Die Preiserhöhungen bei DAZN waren auf viel Kritik gestoßen - nun hat ein Gericht die zugrundeliegende Klausel für unwirksam erklärt. Verbraucher können auf Rückerstattungen hoffen.",
-      "pubDate": "2026-11-18T18:04:38+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/dazn-preise-urteil-100.html",
-      "bild": ""
-    },
-    {
-      "id": "1d9efbe07f9878a0e5da",
-      "title": "Kommentar zur Stromsteuer-Einigung: Fahren auf Sicht - aber wer sitzt eigentlich am Steuer?",
-      "description": "Kanzler Merz hat die Stromsteuer zur Schicksalsfrage erklärt - und dann acht Stunden lang das kleinstmögliche Ergebnis verhandelt, meint Georg Schwarte. Der Koalitionsausschuss liefert eine Doku-Soap statt Politik. Und niemand wundert sich mehr darüber.",
-      "pubDate": "2026-11-18T16:47:07+01:00",
-      "link": "https://www.tagesschau.de/kommentar/koalitionsausschuss-merz-stromsteuersenkung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "58f3f817f392e2ab2b02",
-      "title": "Einigung über Stromsteuersenkung: Die Koalition ist in eine neue Phase eingetreten",
-      "description": "Union und SPD haben sich auf eine Senkung der Stromsteuer geeinigt. Doch die Verhandlungen liefen Teilnehmern zufolge teils ruppig. Wie es zur Einigung kam und warum sie ein Vorgeschmack auf die kommenden Monate sein könnte. Von Tina Handel.",
-      "pubDate": "2026-11-18T16:45:55+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/stromsteuer-spritpreisdeckel-einigung-koalition-100.html",
-      "bild": ""
-    },
-    {
-      "id": "1764bbb0987933a15886",
-      "title": "Kabinett will bei Unterhaltszahlungen für Alleinerziehende sparen",
-      "description": "Wenn Elternteile keinen Unterhalt zahlen, springt oft der Staat ein. Das Kabinett will dafür jetzt eine Einkommensgrenze einführen. Säumigen Zahlern sollen dafür härtere Strafen drohen - bis hin zu Fahrverboten.",
-      "pubDate": "2026-11-18T16:37:39+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/kabinett-unterhaltszahlung-verschaerfung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "6fa73f6b71acdc5f4dfe",
-      "title": "Deutscher Ökonom Brunnermeier als EZB-Chefvolkswirt nominiert",
-      "description": "Die Bundesregierung schlägt Markus Brunnermeier als nächsten Chefvolkswirt der Europäischen Zentralbank vor. Der Posten gilt als einflussreich, wenn es um geldpolitische Entscheidungen der Notenbank geht.",
-      "pubDate": "2026-11-18T16:36:01+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/bundesregierung-ezb-chefvolkswirt-100.html",
       "bild": ""
     }
   ],
