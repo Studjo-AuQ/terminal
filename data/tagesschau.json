@@ -1,7 +1,39 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "18.11.2026, 19:19 Uhr (UTC)",
+  "aktualisiert": "19.11.2026, 01:24 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "21f92d5f971c12a66dc6",
+      "title": "Commerzbank-Übernahme: Bundesregierung und UniCredit einigen sich",
+      "description": "Die italienische Bank und deren Chef Orcel sind bei der Übernahme der Commerzbank einen wichtigen Schritt weiter - die Bundesregierung einigte sich mit ihr.",
+      "pubDate": "2026-11-19T02:06:22+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/unicredit-bundesregierung-100.html",
+      "bild": ""
+    },
+    {
+      "id": "a73e025b77fe72a17777",
+      "title": "Israels Armee startet Einsatz in von Hamas kontrolliertem Gebiet",
+      "description": "Trotz der Waffenruhe hat Israels Armee nach eigenen Angaben einen neuen Einsatz im Zentrum des Gazastreifens begonnen. Ziel des Angriffs sei Infrastruktur der Terrororganisation Hamas. Die Islamisten werfen Israel Eskalation vor.",
+      "pubDate": "2026-11-18T22:04:52+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/israel-gaza-bodenoffensive-104.html",
+      "bild": ""
+    },
+    {
+      "id": "b112895dca24b93c70ac",
+      "title": "Team aus Karlsruhe erhält Zukunftspreis für Mikrochip-Forschung",
+      "description": "Mit dem Deutschen Zukunftspreis des Bundespräsidenten soll besonders innovative Forschung ausgezeichnet werden. Dieses Jahr geht er an ein Forscher-Team, das an einer Technik gegen Datenstau bei Mikrochips arbeitet.",
+      "pubDate": "2026-11-18T20:44:46+01:00",
+      "link": "https://www.tagesschau.de/wissen/forschung/zukunftspreis-110.html",
+      "bild": ""
+    },
+    {
+      "id": "a3dc34be36fe52b1132f",
+      "title": "Xi, Trump und Putin: Drei Perspektiven, viele Differenzen",
+      "description": "Es gilt schon vorab als historisch - das erste Dreier-Treffen von Xi, Trump und Putin auf dem APEC-Gipfel in Shenzhen. Doch die Positionen der drei Präsidenten bei den Themen atomare Abrüstung, Iran oder Ukraine klaffen teils auseinander.",
+      "pubDate": "2026-11-19T00:33:32+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/apec-treffen-xi-putin-trump-themen-100.html",
+      "bild": ""
+    },
     {
       "id": "95838429453d5cb41380",
       "title": "Demokraten nominieren Jeffries als Chef des US-Repräsentantenhauses",
@@ -88,38 +120,6 @@
       "description": "Die Bundesregierung schlägt Markus Brunnermeier als nächsten Chefvolkswirt der Europäischen Zentralbank vor. Der Posten gilt als einflussreich, wenn es um geldpolitische Entscheidungen der Notenbank geht.",
       "pubDate": "2026-11-18T16:36:01+01:00",
       "link": "https://www.tagesschau.de/wirtschaft/finanzen/bundesregierung-ezb-chefvolkswirt-100.html",
-      "bild": ""
-    },
-    {
-      "id": "099f4f58e67804754388",
-      "title": "Studie: Diese Themen machen Kindern und Jugendlichen Angst",
-      "description": "Kriege, Wirtschaftskrisen, Wohnungsnot: Viele Jugendliche sorgen sich um ihre Zukunft. Das zeigt die neue COPSY-Studie. Ob Kinder dauerhaft psychisch belastet sind, hängt aber von etwas anderem ab. Von Melanie Stinn.",
-      "pubDate": "2026-11-18T16:06:36+01:00",
-      "link": "https://www.tagesschau.de/wissen/copsy-studie-2026-100.html",
-      "bild": ""
-    },
-    {
-      "id": "206b1826e7fc48f3019c",
-      "title": "DAK-Auswertung: Jugendliche konsumieren immer mehr Nikotinbeutel",
-      "description": "Kein Rauchen, kein Dampfen: Nikotinbeutel sind unauffällig. Doch der konzentrierte Suchtstoff bereitet Gesundheitsexperten Sorgen - sie warnen vor einer möglichen Legalisierung. Denn Teenager greifen schon jetzt oft zu.",
-      "pubDate": "2026-11-18T15:24:48+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/nikotinbeutel-jugendliche-100.html",
-      "bild": ""
-    },
-    {
-      "id": "86aa3ac48691618a7b1b",
-      "title": "Petersdom wurde heute vor 400 Jahren geweiht",
-      "description": "Seit der Antike pilgern Gläubige an den Ort des heutigen Petersdoms. Dort soll das Grab des Apostels Petrus liegen. Vor genau 400 Jahren, am 18. November 1626, wurde die Basilika geweiht. Von Anna Giordano.",
-      "pubDate": "2026-11-18T15:02:36+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/400-jahre-petersdom-100.html",
-      "bild": ""
-    },
-    {
-      "id": "90ae0ed0110eabd2acb9",
-      "title": "Nach Datenleak: Deutsche-Bank-Papiere weiter unter Druck",
-      "description": "Die Deutsche Bank bemüht sich nach dem XXL-Datenleak um Schadensbegrenzung. Anleger gehen auf Nummer sicher und verkaufen weiter ihre Aktien.",
-      "pubDate": "2026-11-18T14:48:13+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktbericht-146.html",
       "bild": ""
     }
   ],
