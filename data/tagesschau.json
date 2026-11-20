@@ -1,7 +1,15 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "19.11.2026, 18:34 Uhr (UTC)",
+  "aktualisiert": "20.11.2026, 01:08 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "74640919b173a073c8a2",
+      "title": "Strafbefehl gegen Tesla-Werksleiter",
+      "description": "Im Februar hatte die IG Metall Strafanzeige gegen den Werksleiter von Tesla in Grünheide gestellt. Der Vorwurf: üble Nachrede. Nun hat ein Gericht einen Strafbefehl gegen den Mann erlassen. Der Werksleiter wehrt sich vor Gericht.",
+      "pubDate": "2026-11-19T21:07:12+01:00",
+      "link": "https://www.tagesschau.de/inland/regional/brandenburg/strafbefehl-werksleiter-von-tesla-100.html",
+      "bild": ""
+    },
     {
       "id": "7e8f27d5df4d8f777959",
       "title": "Dreiergipfel in Shenzhen: Xis Choreografie - assistiert von Trump und Putin",
@@ -14,7 +22,7 @@
       "id": "fa9c6fc2bc5357baaa8c",
       "title": "Merz will baldige Gespräche mit Russland auf neutralem Boden",
       "description": "Die \"Koalition der Willigen\" verspricht, der Ukraine \"so lange wie nötig\" zu helfen. Nach dem Gipfel in Berlin rief Kanzler Merz Russlands Präsident Putin auf, die Waffen niederzulegen. Einen Frieden könne es nur mit Beteiligung Europas geben.",
-      "pubDate": "2026-11-19T19:22:57+01:00",
+      "pubDate": "2026-11-19T20:22:45+01:00",
       "link": "https://www.tagesschau.de/inland/innenpolitik/gipfel-koalition-willige-ukraine-100.html",
       "bild": ""
     },
@@ -28,9 +36,9 @@
     },
     {
       "id": "bd6f84354f965f564ba8",
-      "title": "Liveticker zu Gipfeln: ++ Macron: NATO-Beitritt der Ukraine neu verhandeln ++",
-      "description": "Frankreichs Präsident Macron will erneut über einen Beitritt der Ukraine zur NATO sprechen. Der britische Premierminister Burnham sieht Europa nach entschlossenen Gesprächen bereit für Verhandlungen.",
-      "pubDate": "2026-11-19T19:21:46+01:00",
+      "title": "Liveticker zu Gipfeln: ++ Wadephul sieht Chance auf Schritt Richtung Frieden ++",
+      "description": "Außenminister Wadephul gibt sich nach den jüngsten Bemühungen um einen Frieden für die Ukraine optimistisch. Frankreichs Präsident Macron will erneut über einen NATO-Beitritt der Ukraine sprechen.",
+      "pubDate": "2026-11-19T22:02:03+01:00",
       "link": "https://www.tagesschau.de/newsticker/liveblog-apec-gipfel-xi-trump-putin-100.html",
       "bild": ""
     },
@@ -112,14 +120,6 @@
       "description": "Russland wirft Frankreich vor, sich mit Soldaten in der Ukraine direkt am Krieg zu beteiligen. Die französische Regierung weist das zurück, bestätigt aber die Anwesenheit von Militärpersonal. Was ist ihre Aufgabe? Von C. Rienäcker.",
       "pubDate": "2026-11-19T12:38:46+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/frankreich-unterstuetzung-ukraine-militaer-100.html",
-      "bild": ""
-    },
-    {
-      "id": "83fb7cdeae885c890f7a",
-      "title": "Internationaler Gerichtshof: Vorgehen Myanmars gegen Rohingya war Völkermord",
-      "description": "Myanmar wollte einen \"wesentlichen Teil\" der Minderheit der Rohingya vernichten: Zu dieser Einschätzung kommt der Internationale Gerichtshof. Das Land sei daher verantwortlich für einen Völkermord, urteilte das höchste UN-Gericht.",
-      "pubDate": "2026-11-19T13:42:10+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/urteil-voelkermord-rohingya-myanmar-100.html",
       "bild": ""
     }
   ],
