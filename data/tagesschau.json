@@ -1,11 +1,35 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "20.11.2026, 17:57 Uhr (UTC)",
+  "aktualisiert": "20.11.2026, 23:55 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "d11e5775f8f401a6d144",
+      "title": "Mutmaßlicher Anschlagsplan: Dänen weisen russischen Diplomaten aus",
+      "description": "Russland soll auf dänischem Boden einen Anschlag auf einen ukrainisch-amerikanischen Rapper geplant haben. Als Reaktion wurde ein russischer Diplomat ausgewiesen. Zwei Verdächtige sitzen in Untersuchungshaft.",
+      "pubDate": "2026-11-20T22:28:00+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/daenemark-attentatsversuch-100.html",
+      "bild": ""
+    },
+    {
+      "id": "5df9d76a13da84e599cf",
+      "title": "Großbritannien: Schuldsprüche in Vergewaltigungsprozess",
+      "description": "Der Fall erinnert an das Martyrium der Französin Gisèle Pelicot. Die Britin Joanne Young wurde über Jahre von ihrem Ehemann betäubt - und dann im Internet zur Vergewaltigung angeboten. Nun wurden vier Männer schuldig gesprochen. Von F. Hoppen.",
+      "pubDate": "2026-11-20T21:25:44+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/joanne-young-100.html",
+      "bild": ""
+    },
+    {
+      "id": "dc9cc9fe3ae200dee951",
+      "title": "Anzeige gegen Depardieu und Houellebecq wegen Vergewaltigungsvorwurfs",
+      "description": "Gegen den Schauspieler Gérard Depardieu und den Schriftsteller Michel Houellebecq liegt eine neue Anzeige vor - es geht um den Vorwurf der Gruppenvergewaltigung. Laut einem Medienbericht geschah diese 2018 bei einem Filmdreh. Von C. Rienäcker.",
+      "pubDate": "2026-11-20T19:25:36+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/frankreich-vergewaltigungsvorwuerfe-depardieu-houellebecq-100.html",
+      "bild": ""
+    },
     {
       "id": "86ff03f815053068bede",
       "title": "Gipfel in Brüssel: Annäherung zwischen Großbritannien und EU",
-      "description": "Sechs Jahre nach dem Brexit rücken Großbritannien und die EU wieder näher zusammen. Das war heute beim gemeinsamen Gipfel in Brüssel deutlich spürbar. Manche träumen sogar schon von einer Rückkehr Großbritanniens in die EU. Von Sarah López.",
+      "description": "Sechs Jahre nach dem Brexit rücken Großbritannien und die EU wieder näher zusammen. Das war beim gemeinsamen Gipfel in Brüssel deutlich spürbar. Manche träumen sogar schon von einer Rückkehr Großbritanniens in die EU. Von Sarah López.",
       "pubDate": "2026-11-20T18:44:07+01:00",
       "link": "https://www.tagesschau.de/ausland/eu-uk-gipfel-102.html",
       "bild": ""
@@ -37,7 +61,7 @@
     {
       "id": "ef5ba5bac5cada535cfa",
       "title": "Verhandlungen dauern an - Weltklimakonferenz geht in die Verlängerung",
-      "description": "Die Klimakrise verschärft sich weiter. Im Ringen um eine angemessene Antwort geht die Weltklimakonferenz in Antalya in die Verlängerung. Die Verhandlungen dürften sich in die Nacht und ins Wochenende ziehen.",
+      "description": "Im Ringen um eine angemessene Antwort auf die Klimakrise geht die Weltklimakonferenz in die Verlängerung. Eigentlich sollte sie am Nachmittag zu Ende gehen. Doch die Verhandlungen dürften sich in die Nacht und ins Wochenende ziehen.",
       "pubDate": "2026-11-20T17:15:00+01:00",
       "link": "https://www.tagesschau.de/ausland/asien/klimakonferenz-verlaengerung-100.html",
       "bild": ""
@@ -77,8 +101,8 @@
     {
       "id": "aa73e10930233ac70059",
       "title": "Jugendliche erneut zu Tausenden auf den Straßen",
-      "description": "Die Generation Z demonstriert wieder: Junge Menschen gehen bundesweit für bessere Bildung, mehr Klimaschutz und gegen eine mögliche Wehrpflicht auf die Straßen. Einige Kundgebungen begannen am Mittag, andere sollen am Abend folgen.",
-      "pubDate": "2026-11-20T15:47:44+01:00",
+      "description": "Die Generation Z demonstriert wieder: Junge Menschen sind heute bundesweit für bessere Bildung, mehr Klimaschutz und gegen eine mögliche Wehrpflicht auf die Straßen gegangen. Meist blieb es friedlich.",
+      "pubDate": "2026-11-20T19:54:49+01:00",
       "link": "https://www.tagesschau.de/inland/gesellschaft/jugendproteste-114.html",
       "bild": ""
     },
@@ -96,30 +120,6 @@
       "description": "Mehrere Flugkörper sind in den polnischen Luftraum eingedrungen - nach Einschätzung der Regierung eine gezielte Provokation Russlands. Sie könnte in Zusammenhang mit einer Übung der Ukraine-Unterstützer stehen, die derzeit in Polen stattfindet.",
       "pubDate": "2026-11-20T17:22:28+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/absturz-russische-flugobjekte-polen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "ea1fadbceb96d13adb49",
-      "title": "Marktbericht: KI-Kater nach dem Anthropic-Börsengang",
-      "description": "Der aufsehenerregende Börsengang von Anthropic hat den Ausverkauf bei KI-Aktien nicht stoppen können. Der Deutsche Aktienindex ist sogar zwischenzeitlich unter die Marke von 25.000 Punkten gerutscht.",
-      "pubDate": "2026-11-20T14:19:33+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/boerse/ki-kater-100.html",
-      "bild": ""
-    },
-    {
-      "id": "412a9aee590b58b44e5d",
-      "title": "Bundesrat stoppt \"Startchancengesetz\" vorerst",
-      "description": "Der Bundesrat will beim \"Startchancengesetz\" nachbessern. Für andere lebensnahe Vorhaben wie die \"Frühstartrente\", die Reform der Notfallversorgung oder die digitale Brieftasche gab die Länderkammer hingegen grünes Licht.",
-      "pubDate": "2026-11-20T16:03:38+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/bundesrat-startchancengesetz-fruehstartrente-notfallreform-100.html",
-      "bild": ""
-    },
-    {
-      "id": "54c78061dbfeb35576c8",
-      "title": "Junge Menschen profitieren: EU und Großbritannien nähern sich wieder an",
-      "description": "Großbritannien gehört seit Jahren nicht mehr zur Europäischen Union. Doch jetzt machen beide Seiten wieder Schritte aufeinander zu. Von einem der ersten Abkommen profitieren vor allem junge Menschen.",
-      "pubDate": "2026-11-20T13:03:18+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/eu-grossbritannien-abkommen-102.html",
       "bild": ""
     }
   ],
