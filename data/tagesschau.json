@@ -1,12 +1,108 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "20.11.2026, 01:08 Uhr (UTC)",
+  "aktualisiert": "20.11.2026, 09:03 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "eb9897b71280a10027cb",
+      "title": "Deutliches Kursplus: So lief der erste Handelstag von Anthropic",
+      "description": "Den Anfangshype konnte Anthropic am ersten Börsentag nicht ganz halten. Trotzdem ist die Aktie mit einem deutlichen Kursplus aus dem Handel gegangen. Das machte viele Beschäftigte auf einen Schlag reich.",
+      "pubDate": "2026-11-20T09:16:20+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/anthropic-boersenstart-ipo-100.html",
+      "bild": ""
+    },
+    {
+      "id": "4d07c74e4d85e12d0d81",
+      "title": "Kaliforniens Justiz erhöht wegen China-Geschäft Druck auf Nvidia",
+      "description": "Nach dem Rücktritt von Nvidia-Chef Huang kommt der Chiphersteller nicht zur Ruhe. Jetzt wollen kalifornische Behörden untersuchen, ob und wie KI-Chips oder Informationen illegal nach China gelangt sein könnten.",
+      "pubDate": "2026-11-20T08:47:56+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/kalifornien-justiz-aufklaerung-nvidia-chips-china-100.html",
+      "bild": ""
+    },
+    {
+      "id": "797debcb8a257263a818",
+      "title": "Warum Burnham die Nähe zur EU sucht",
+      "description": "Der britische Premier Burnham lässt keinen Zweifel aufkommen: Er will London wieder näher an die EU führen, denn er hält den Brexit für gescheitert. Wie weit kann er dabei gehen? Ein EU-UK-Gipfel soll den Prozess beschleunigen. Von C. Prössl.",
+      "pubDate": "2026-11-20T08:41:19+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/eu-uk-gipfel-100.html",
+      "bild": ""
+    },
+    {
+      "id": "f476c720e087d218fcd4",
+      "title": "Tote bei russischen Angriffen auf mehrere Brücken in Kiew",
+      "description": "Es ist eine Attacke ins Herz der ukrainischen Hauptstadt: Russland hat in Kiew erneut Brücken beschossen und beschädigt. Mehrere Menschen wurden getötet. In Polen musste wegen des Angriffs zeitweise ein Flughafen den Betrieb einstellen.",
+      "pubDate": "2026-11-20T08:23:42+01:00",
+      "link": "https://www.tagesschau.de/ausland/ukraine-russland-angriffe-bruecken-100.html",
+      "bild": ""
+    },
+    {
+      "id": "ca7b43e88617c9e03455",
+      "title": "COP31: Deutsche Politiker auf Kurssuche bei der Weltklimakonferenz",
+      "description": "Bei der Weltklimakonferenz in Antalya wird auch am offiziell letzten Tag über Finanzierung und den Ausstieg aus Fossilen Energien gestritten. Die Zeit drängt - und viele kleinere Länder wünschen sich mehr Engagement aus Deutschland. Von D. Hebestreit.",
+      "pubDate": "2026-11-20T08:23:29+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/cop-antalya-deutschland-100.html",
+      "bild": ""
+    },
+    {
+      "id": "5d1cf4003b8745153fa1",
+      "title": "Neue EU-Regeln ab heute: Mehr Schutz vor Verschuldung bei Kleinkrediten",
+      "description": "Mehr Schutz für Verbraucher, mehr Kontrolle bei Krediten: Von heute an gilt die neue Verbraucherkreditrichtlinie. Selbst kleine Beträge wie bei \"Heute kaufen, später zahlen\" verlangen von Anbietern nun mehr Aufwand. Von Juri Sonnenholzner.",
+      "pubDate": "2026-11-20T07:51:30+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/kleinkredite-neue-regeln-verschuldung-100.html",
+      "bild": ""
+    },
+    {
+      "id": "b49bb922c25185f5283c",
+      "title": "WG-Mieten steigen stark: Kann sich die Gen Z Wohnen noch leisten?",
+      "description": "Heute demonstrieren erneut junge Menschen unter dem Motto \"Gen Z regelt\". Es geht ihnen auch um ein bezahlbares Leben. Denn inzwischen entscheiden auch Mietpreise darüber, wer wo studieren kann. Von Alexander C. Mühlhausen.",
+      "pubDate": "2026-11-20T07:48:37+01:00",
+      "link": "https://www.tagesschau.de/inland/gesellschaft/wg-zimmer-gen-z-proteste-wohnungskrise-100.html",
+      "bild": ""
+    },
+    {
+      "id": "778c37f92948786863df",
+      "title": "Marktbericht: DAX dürfte trotz Anthropic-Hype weiter fallen",
+      "description": "Der Anthropic-Funke ist nicht auf die Börsen übergesprungen: Der DAX dürfte deutlich schwächer starten, auch die Wall Street ist weit zurückgefallen. Aber nicht nur Technologiewerte verlieren.",
+      "pubDate": "2026-11-20T07:30:24+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-anthropic-102.html",
+      "bild": ""
+    },
+    {
+      "id": "f0023050783df6ef5f69",
+      "title": "Kritik aus den USA nach Treffen Trumps mit Xi und Putin",
+      "description": "Erstmals in der Geschichte saß ein US-Präsident allein mit dem chinesischen und dem russischen Staatschef an einem Tisch. Große Deals blieben offenbar aus, die Debatte zu Hause ist groß: War das Diplomatie - oder Inszenierung? Von S. Jackisch.",
+      "pubDate": "2026-11-20T06:48:01+01:00",
+      "link": "https://www.tagesschau.de/ausland/us-reaktionen-dreiergipfel-100.html",
+      "bild": ""
+    },
+    {
+      "id": "a68b2a689f1f1dc4298c",
+      "title": "Pistorius will Militärpakt mit Polen ausbauen",
+      "description": "Patriot-Systeme und Eurofighter-Kampfjets sowie eine Zusammenarbeit der Armeen beim Aufbau von gemeinsamen Verteidigungsstellungen: Polen und Deutschland arbeiten bereits militärisch zusammen. Das möchten beide Länder nun intensivieren.",
+      "pubDate": "2026-11-20T04:53:04+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/polen-deutschland-militaer-100.html",
+      "bild": ""
+    },
+    {
+      "id": "0da89691a572b2ceef22",
+      "title": "Jugendliche wollen wieder deutschlandweit protestieren",
+      "description": "Die Generation Z demonstriert wieder: Heute gehen erneut junge Menschen für bessere Bildung, mehr Klimaschutz und gegen eine mögliche Wehrpflicht auf die Straße. Ganz unterschiedliche Jugendbewegungen haben zu Protesten aufgerufen.",
+      "pubDate": "2026-11-20T07:42:49+01:00",
+      "link": "https://www.tagesschau.de/inland/gesellschaft/jugendproteste-110.html",
+      "bild": ""
+    },
+    {
+      "id": "39bbb7d5f5658c720005",
+      "title": "Medienberichte: Lufthansa will 1.000 Stellen streichen",
+      "description": "An ihren Drehkreuzen Frankfurt und München will die Lufthansa insgesamt 1.000 Stellen streichen. Das geht aus einem Brief an Mitarbeiter hervor. Wann und wie die Einsparungen umgesetzt werden, ist noch nicht bekannt.",
+      "pubDate": "2026-11-20T02:56:36+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/lufthansa-1000-stellen-100.html",
+      "bild": ""
+    },
     {
       "id": "74640919b173a073c8a2",
       "title": "Strafbefehl gegen Tesla-Werksleiter",
       "description": "Im Februar hatte die IG Metall Strafanzeige gegen den Werksleiter von Tesla in Grünheide gestellt. Der Vorwurf: üble Nachrede. Nun hat ein Gericht einen Strafbefehl gegen den Mann erlassen. Der Werksleiter wehrt sich vor Gericht.",
-      "pubDate": "2026-11-19T21:07:12+01:00",
+      "pubDate": "2026-11-20T09:13:46+01:00",
       "link": "https://www.tagesschau.de/inland/regional/brandenburg/strafbefehl-werksleiter-von-tesla-100.html",
       "bild": ""
     },
@@ -21,105 +117,9 @@
     {
       "id": "fa9c6fc2bc5357baaa8c",
       "title": "Merz will baldige Gespräche mit Russland auf neutralem Boden",
-      "description": "Die \"Koalition der Willigen\" verspricht, der Ukraine \"so lange wie nötig\" zu helfen. Nach dem Gipfel in Berlin rief Kanzler Merz Russlands Präsident Putin auf, die Waffen niederzulegen. Einen Frieden könne es nur mit Beteiligung Europas geben.",
+      "description": "Die \"Koalition der Willigen\" verspricht, der Ukraine \"so lange wie nötig\" zu helfen. Nach dem Gipfel in Berlin rief Kanzler Merz Russlands Präsidenten Putin auf, die Waffen niederzulegen. Einen Frieden könne es nur mit Beteiligung Europas geben.",
       "pubDate": "2026-11-19T20:22:45+01:00",
       "link": "https://www.tagesschau.de/inland/innenpolitik/gipfel-koalition-willige-ukraine-100.html",
-      "bild": ""
-    },
-    {
-      "id": "9831f28656fa95a89fc1",
-      "title": "Marktbericht: Keine Erholung trotz Anthropic-Euphorie",
-      "description": "Trotz der guten Stimmung im Technologiesektor rund um den Rekord-Börsengang von Anthropic ist der DAX abgerutscht. Der deutsche Leitindex schloss auf dem tiefsten Stand seit mehr als drei Wochen.",
-      "pubDate": "2026-11-19T18:33:52+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-anthropic-100.html",
-      "bild": ""
-    },
-    {
-      "id": "bd6f84354f965f564ba8",
-      "title": "Liveticker zu Gipfeln: ++ Wadephul sieht Chance auf Schritt Richtung Frieden ++",
-      "description": "Außenminister Wadephul gibt sich nach den jüngsten Bemühungen um einen Frieden für die Ukraine optimistisch. Frankreichs Präsident Macron will erneut über einen NATO-Beitritt der Ukraine sprechen.",
-      "pubDate": "2026-11-19T22:02:03+01:00",
-      "link": "https://www.tagesschau.de/newsticker/liveblog-apec-gipfel-xi-trump-putin-100.html",
-      "bild": ""
-    },
-    {
-      "id": "87184806b346bf65165f",
-      "title": "Volkswagen will Nullrunden für zwei Jahre",
-      "description": "Nullrunden, weniger Zulagen und Änderungen bei der Arbeitszeit - Volkswagen will harte Einschnitte in der anstehenden Tarifrunde durchsetzen. Die IG Metall wirft dem Konzern vor, mit dem \"Messer in den Rücken\" der Arbeitnehmer zu fallen.",
-      "pubDate": "2026-11-19T17:11:57+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/vw-nullrunde-100.html",
-      "bild": ""
-    },
-    {
-      "id": "4b4fccf248b91d67d9f5",
-      "title": "BASF bläst Evonik-Übernahme ab",
-      "description": "BASF nimmt Abstand von einer Übernahme des Konkurrenten Evonik. Der Chemiekonzern gibt die Pläne auf, nachdem Evonik zuvor zwei unverbindliche Kaufangebote zurückgewiesen hatte.",
-      "pubDate": "2026-11-19T16:55:43+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/basf-evonik-uebernahme-absage-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c9b6bd5788a6c13eb10c",
-      "title": "Rekord an der Börse: Lehren aus dem Anthropic-Börsengang",
-      "description": "Anthropic gelingt der größte Börsengang aller Zeiten. Nach dem Absturz von Nvidia verbindet die KI-Branche damit neue Hoffnungen. Sind die Zweifel am Boom rund um Künstliche Intelligenz nun zerstreut? Von Angela Göpfert.",
-      "pubDate": "2026-11-19T17:54:27+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/anthropic-boersengang-ki-boom-100.html",
-      "bild": ""
-    },
-    {
-      "id": "ba33a032dffcd5897548",
-      "title": "EGMR-Urteil: Corona-Impfpflichten waren menschenrechtskonform",
-      "description": "Zur Bekämpfung der Covid-19-Pandemie wurden Personen, die beispielsweise in Krankenhäusern oder Rettungsdiensten arbeiteten, verpflichtet, sich gegen Corona impfen zu lassen. Nun hat der EGMR entschieden. Von A. Stephany.",
-      "pubDate": "2026-11-19T16:24:28+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/egmr-corona-impfpflicht-100.html",
-      "bild": ""
-    },
-    {
-      "id": "dc82d2fd92510e565f4b",
-      "title": "Cupic: Biobauer, Dozent und nun Serbiens Parlamentspräsident",
-      "description": "Ein Biobauer und Dozent, der sechs Kinder hat und in einem Dorf lebt. Aleksandar Cupic ist für Anhänger der Studentischen Liste der Inbegriff eines Volksvertreters. Nun ist er vorerst der mächtigste Mann in Serbien. Von Oliver Soos.",
-      "pubDate": "2026-11-19T16:08:53+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/cupic-parlamentspraesident-serbien-100.html",
-      "bild": ""
-    },
-    {
-      "id": "89ae8325f18d102327e3",
-      "title": "Erstmals weltweit mehr Energie zum Kühlen als zum Heizen verbraucht",
-      "description": "Aufgrund der steigenden Temperaturen auf der Erde wurde laut Internationaler Energieagentur weltweit erstmals mehr Energie zum Kühlen als zum Heizen verbraucht. Der \"World Energy Outlook\" geht auch auf die Auswirkungen des Iran-Kriegs ein.",
-      "pubDate": "2026-11-19T15:51:14+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/energieverbrauch-weltweit-heizen-kuehlen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "3bbc3105957057d15599",
-      "title": "KI-gestützter Cyberangriff auf EU-Kommission",
-      "description": "Die Europäische Kommission in Brüssel ist Ziel eines KI-gestützten Hackerangriffs geworden. Ob Daten der mehr als 33.000 Beschäftigten gestohlen wurden, sagte die Behörde nicht. Auch die Verantwortlichen sind nicht bekannt.",
-      "pubDate": "2026-11-19T14:56:39+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/cyberangriff-eu-kommission-100.html",
-      "bild": ""
-    },
-    {
-      "id": "183694fd1fdd5d103585",
-      "title": "Firmenporträt: Anthropics halsbrecherischer Aufstieg",
-      "description": "Google schwor einst, nicht böse zu sein. OpenAI wollte KI fürs Gemeinwohl nutzen. Anthropic verspricht Sicherheit. Jetzt kommt der Börsengang - und mit ihm die Frage, die alle Tech-Giganten kennen: Was bleibt vom Ideal, wenn der Markt ruft? Von G. Biesinger.",
-      "pubDate": "2026-11-19T14:30:31+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/anthropic-firmenportrait-claude-boersengang-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c99d43aeee3e9325b359",
-      "title": "Marktbericht: Deutsche Telekom steigt bei KI-Start-up Mistral ein",
-      "description": "Unternehmen und Behörden sollen durch eine Beteiligung der Telekom am französischen Start-up Mistral mit \"vertrauenswürdiger KI aus Europa\" versorgt werden. Der Rekord-Börsengang von Anthropic stabilisiert derweil den DAX.",
-      "pubDate": "2026-11-19T13:57:07+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/mistral-telekom-ki-anthropic-marktbericht-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f647f31c80463d417d2a",
-      "title": "Französische Soldaten in der Ukraine - aber nicht zum Kampf",
-      "description": "Russland wirft Frankreich vor, sich mit Soldaten in der Ukraine direkt am Krieg zu beteiligen. Die französische Regierung weist das zurück, bestätigt aber die Anwesenheit von Militärpersonal. Was ist ihre Aufgabe? Von C. Rienäcker.",
-      "pubDate": "2026-11-19T12:38:46+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/frankreich-unterstuetzung-ukraine-militaer-100.html",
       "bild": ""
     }
   ],
