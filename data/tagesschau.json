@@ -1,12 +1,52 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "21.11.2026, 15:14 Uhr (UTC)",
+  "aktualisiert": "21.11.2026, 21:01 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "64dac7974747df5d3544",
+      "title": "EU und Indonesien unterzeichnen Freihandelsabkommen",
+      "description": "Fast zehn Jahre haben die Verhandlungen gedauert: Nun haben die EU und Indonesien ein Freihandelsabkommen unterzeichnet, mit dem die Zölle auf fast alle Waren wegfallen sollen. Davon könnte auch die Autobranche profitieren.",
+      "pubDate": "2026-11-21T21:17:57+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/eu-indonesien-handelsabkommen-102.html",
+      "bild": ""
+    },
+    {
+      "id": "4db04f4f1d4cf210f0d3",
+      "title": "Niederlande: Handfester Protest gegen PFAS-Verseuchung",
+      "description": "Rund um die Chemiefabrik Chemours in den Niederlanden sollen die Bürger kein Obst aus ihren Gärten mehr essen. Dort werden Kunststoffe hergestellt, die zu den sogenannten Ewigkeitschemikalien gehören. Dagegen wehren sich die Bürger. Von O. Chladkova.",
+      "pubDate": "2026-11-21T20:54:06+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/niederlande-protest-gegen-pfas-100.html",
+      "bild": ""
+    },
+    {
+      "id": "48c9c2358e140850feef",
+      "title": "Riemannsche Vermutung: Mathe-Jahrhundertproblem mit KI gelöst?",
+      "description": "Die Riemannsche Vermutung über Primzahlen gilt als eines der größten Probleme der Mathematik. Nun könnte sie mithilfe der KI von Anthropic gelöst worden sein - fast zeitgleich mit dem Börsengang des US-Unternehmens.",
+      "pubDate": "2026-11-21T18:32:19+01:00",
+      "link": "https://www.tagesschau.de/wissen/forschung/anthropic-riemannsche-vermutung-loesung-100.html",
+      "bild": ""
+    },
+    {
+      "id": "da45b73024fca347047b",
+      "title": "Ministerium will Autobahntankstellen vom Spritpreisdeckel ausnehmen",
+      "description": "Ab Januar soll der Preisdeckel für Benzin und Diesel gelten. Wirtschaftsministerin Reiche plant offenbar, Autobahntankstellen davon ausnehmen. Ihr neuer Gesetzentwurf ist noch in der Abstimmung zwischen den Ministerien.",
+      "pubDate": "2026-11-21T16:55:59+01:00",
+      "link": "https://www.tagesschau.de/inland/spritpreis-autobahntankstellen-ausnahme-100.html",
+      "bild": ""
+    },
+    {
+      "id": "515945cbe724f7428c02",
+      "title": "Mexiko nimmt einen der meistgesuchten Drogenbosse fest",
+      "description": "Die USA fordern von Mexiko schon länger ein hartes Vorgehen gegen Kartelle. Nun ist den Behörden offenbar ein hochrangiger Drogenboss ins Netz gegangen. Der Mann zählte auf der Liste des FBI zu den meistgesuchten Verbrechern.",
+      "pubDate": "2026-11-21T16:36:57+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/mexiko-drogenkartell-chef-festnahme-100.html",
+      "bild": ""
+    },
     {
       "id": "4d42f0cdea4501c61b8c",
       "title": "Finnland meldet Drohnenangriff auf russischen Frachter in der Ostsee",
-      "description": "Vor Finnland ist in internationalen Gewässern ein russisches Handelsschiff von Drohnen getroffen worden. Es brach ein Feuer aus, die Besatzung wurde nach russischen Angaben gerettet. Finnland schickte Helfer.",
-      "pubDate": "2026-11-21T15:15:27+01:00",
+      "description": "Vor Finnland ist in internationalen Gewässern ein russisches Handelsschiff von Drohnen getroffen worden. Es brach ein Feuer aus, zur Besatzung gibt es widersprüchliche Angaben.",
+      "pubDate": "2026-11-21T20:10:03+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/finnland-ostsee-drohnenangriff-russland-frachter-100.html",
       "bild": ""
     },
@@ -80,46 +120,6 @@
       "description": "Lange mussten GTA-Fans auf den sechsten Teil der Videospiel-Reihe warten - jetzt trägt der Hype Früchte. Nach Angaben von Rockstar Games erzielte das Spiel am ersten Verkaufstag einen Rekordumsatz von rund 3,8 Milliarden Dollar.",
       "pubDate": "2026-11-21T10:39:17+01:00",
       "link": "https://www.tagesschau.de/wirtschaft/unternehmen/milliardengewinn-gta-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f0d43590d06de51381c2",
-      "title": "Südafrikas vermeidbare Wasserkrise",
-      "description": "Marode Leitungen, zu hoher Verbrauch, geringe Investitionen: Die Wasserkrise in Südafrika gilt als weitgehend hausgemacht. Weil sich die Lage verschlimmert hat, reagieren die Behörden mit strengeren Regeln. Von Stephan Ueberbach.",
-      "pubDate": "2026-11-21T09:27:21+01:00",
-      "link": "https://www.tagesschau.de/ausland/afrika/wassermangel-suedafrika-100.html",
-      "bild": ""
-    },
-    {
-      "id": "1dff301f8abf30582fce",
-      "title": "Liquiditätshilfen für Schweinehalter: \"Nur ein Tropfen auf den heißen Stein\"",
-      "description": "Schweinehaltung in Deutschland ist ein Verlustgeschäft - Liquiditätshilfen in Höhe von 25 Millionen Euro sollen jetzt den Betrieben helfen. Doch das Notfallprogramm allein wird nicht ausreichen, warnen Landwirte und Opposition. Von T. Lehning.",
-      "pubDate": "2026-11-21T09:26:38+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/schweinezucht-deutschland-exporte-100.html",
-      "bild": ""
-    },
-    {
-      "id": "24552a0f25666e36ac78",
-      "title": "\"Palisades Fire\" - Angeklagter im zweiten Anlauf schuldig gesprochen",
-      "description": "Bei dem Brand im Januar 2025 starben zwölf Menschen: Nach dem verheerenden Feuer im Nobelvorort Pacific Palisades von Los Angeles ist der Angeklagte schuldig gesprochen worden. Ihm drohen bis zu 40 Jahre Haft.",
-      "pubDate": "2026-11-21T09:14:03+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/prozess-pacific-palisades-feuer-kalifornien-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f4a8e47a316fd155bf55",
-      "title": "\"Killerroboter\": UN-Konferenz endet mit Minimalkompromiss",
-      "description": "\"Killerroboter\" können Ziele auswählen und Angriffe auslösen - ohne menschliche Beteiligung. Die UN sollten dafür Schranken erarbeiten. Das Wann und Wie bleibt aber auch wegen des Widerstands aus Russland und den USA ungeklärt.",
-      "pubDate": "2026-11-21T08:57:28+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/regeln-fuer-killerroboter-100.html",
-      "bild": ""
-    },
-    {
-      "id": "aedf3c0f73492a7a73ea",
-      "title": "Offenbar Hackerangriffe auf FBI und US-Agrarministerium",
-      "description": "Hacker sind Medienberichten zufolge in ein Zahlungssystem des US-Agrarministeriums und in eine Datenbank des FBI eingedrungen. Die Angriffe reihen sich in eine Serie von Systemausfällen und Technikpannen in den USA.",
-      "pubDate": "2026-11-21T07:51:20+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/usa-hackerangriffe-100.html",
       "bild": ""
     }
   ],
