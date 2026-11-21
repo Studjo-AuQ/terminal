@@ -1,7 +1,47 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "20.11.2026, 23:55 Uhr (UTC)",
+  "aktualisiert": "21.11.2026, 06:53 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "aedf3c0f73492a7a73ea",
+      "title": "Offenbar Hackerangriffe auf FBI und US-Agrarministerium",
+      "description": "Hacker sind Medienberichten zufolge in ein Zahlungssystem des US-Agrarministeriums und in eine Datenbank des FBI eingedrungen. Die Angriffe reihen sich in eine Serie von Systemausfällen und Technikpannen in den USA.",
+      "pubDate": "2026-11-21T07:51:20+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/usa-hackerangriffe-100.html",
+      "bild": ""
+    },
+    {
+      "id": "d0b6f132df48f39493db",
+      "title": "Happy Birthday \"Rocky\" - Philadelphia feiert 50 Jahre Italian Stallion",
+      "description": "50 Jahre ist es her, dass ein Low-Budget-Film mit einem unbekannten Darsteller in die Kinos kam. Das Boxer-Drama \"Rocky\" machte Sylvester Stallone zum Weltstar. Die Stadt Philadelphia feiert nun ihren fiktiven Sohn. Von T. Börgers und D. Konrad.",
+      "pubDate": "2026-11-21T07:45:37+01:00",
+      "link": "https://www.tagesschau.de/kultur/50-jahre-rocky-100.html",
+      "bild": ""
+    },
+    {
+      "id": "52b3f836f3f45f01ad96",
+      "title": "US-Gericht billigt Vergleich von Bayer mit Glyphosat-Klägern",
+      "description": "Für den Chemiekonzern Bayer könnten die Klagen wegen des Unkraut-Vernichters Roundup in den USA bald der Vergangenheit angehören. Ein US-Gericht hat einen milliardenschweren Vergleich des Konzerns mit Vertretern der Kläger gebilligt.",
+      "pubDate": "2026-11-21T04:50:50+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/bayer-glyphosat-vergleich-usa-100.html",
+      "bild": ""
+    },
+    {
+      "id": "12962299d14a1d882ea2",
+      "title": "Tote und Verletzte bei Raketenangriff auf Krywyj Rih",
+      "description": "Krywyj Rih ist die Heimatstadt des ukrainischen Präsidenten Selenskyj. Nun wurde die Industriestadt erneut mit ballistischen Raketen beschossen. Eine Rakete schlug demnach nahe Wohnhäusern und einem Restaurant ein.",
+      "pubDate": "2026-11-21T03:39:59+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/ukraine-krieg-russland-krywyj-rih-100.html",
+      "bild": ""
+    },
+    {
+      "id": "38896b20f7b68cef563b",
+      "title": "Jugendliche erneut zu Tausenden auf den Straßen",
+      "description": "Zehntausende junge Menschen haben am Freitag friedlich für die Anliegen ihrer Generation demonstriert. Nach dem Ende der \"Gen Z regelt\"-Demos gab es mancherorts zwar doch noch Krawalle, eine Eskalation wie an Halloween blieb aber aus.",
+      "pubDate": "2026-11-21T03:38:36+01:00",
+      "link": "https://www.tagesschau.de/inland/gesellschaft/jugendproteste-krawalle-gen-z-100.html",
+      "bild": ""
+    },
     {
       "id": "d11e5775f8f401a6d144",
       "title": "Mutmaßlicher Anschlagsplan: Dänen weisen russischen Diplomaten aus",
@@ -61,8 +101,8 @@
     {
       "id": "ef5ba5bac5cada535cfa",
       "title": "Verhandlungen dauern an - Weltklimakonferenz geht in die Verlängerung",
-      "description": "Im Ringen um eine angemessene Antwort auf die Klimakrise geht die Weltklimakonferenz in die Verlängerung. Eigentlich sollte sie am Nachmittag zu Ende gehen. Doch die Verhandlungen dürften sich in die Nacht und ins Wochenende ziehen.",
-      "pubDate": "2026-11-20T17:15:00+01:00",
+      "description": "Im Ringen um eine angemessene Antwort auf die Klimakrise geht die Weltklimakonferenz in die Verlängerung. Eigentlich sollte sie am Freitag zu Ende gehen. Doch die Verhandlungen ziehen sich ins Wochenende.",
+      "pubDate": "2026-11-21T06:28:57+01:00",
       "link": "https://www.tagesschau.de/ausland/asien/klimakonferenz-verlaengerung-100.html",
       "bild": ""
     },
@@ -80,46 +120,6 @@
       "description": "Bundesfamilienministerin Prien weist gegenüber dem ARD-Hauptstadtstudio den Vorwurf zurück, bei Projekten gegen Antisemitismus zu sparen. Dennoch verlören einzelne Projekte die Förderung. Von Sarah Beham und Markus Langenstraß.",
       "pubDate": "2026-11-20T16:49:38+01:00",
       "link": "https://www.tagesschau.de/inland/innenpolitik/prien-demokratiefoerderung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f97378f14e5314f6cd81",
-      "title": "Anthropic-Aktie stürzt ab - KI-Angst an der Börse",
-      "description": "Erst legt der KI-Entwickler Anthropic einen der größten Börsengänge der Geschichte hin. Gleichzeitig geraten Technologie- und KI-Aktien weltweit unter Druck. Wie passt das zusammen? Von Michelle Goddemeier.",
-      "pubDate": "2026-11-20T17:20:16+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/boerse/anthropic-ki-tech-werte-boersen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "0ddac53c2ab65a3a53b6",
-      "title": "Kritik an Ausnahmen bei Erbschaftsteuer nach Recherchen über Döpfner-Schenkung",
-      "description": "Springer-Chef Döpfner hat im Jahr 2020 von Verlegerin Friede Springer ein Milliarden-Aktienpaket übertragen bekommen - aber wohl kaum Schenkungsteuern gezahlt. Politiker von SPD und CDU fordern nun Änderungen.",
-      "pubDate": "2026-11-20T15:58:12+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/doepfner-erbschaftssteuer-100.html",
-      "bild": ""
-    },
-    {
-      "id": "aa73e10930233ac70059",
-      "title": "Jugendliche erneut zu Tausenden auf den Straßen",
-      "description": "Die Generation Z demonstriert wieder: Junge Menschen sind heute bundesweit für bessere Bildung, mehr Klimaschutz und gegen eine mögliche Wehrpflicht auf die Straßen gegangen. Meist blieb es friedlich.",
-      "pubDate": "2026-11-20T19:54:49+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/jugendproteste-114.html",
-      "bild": ""
-    },
-    {
-      "id": "80ffb9e5dc73a3902509",
-      "title": "Gespräche mit Russland ja - aber wo?",
-      "description": "Gesprächsbereit, aber nicht um jeden Preis: Verteidigungsminister Pistorius hat das Angebot Russlands für ein Treffen mit den Europäern begrüßt. Moskau käme dafür aber nicht infrage. Zudem bezweifelt er eine ehrliche Verhandlungsbereitschaft.",
-      "pubDate": "2026-11-20T14:59:25+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/russland-ukraine-gespraeche-europa-100.html",
-      "bild": ""
-    },
-    {
-      "id": "71db949b736c66ddd4d2",
-      "title": "Polen wirft Russland gezielte Provokation vor",
-      "description": "Mehrere Flugkörper sind in den polnischen Luftraum eingedrungen - nach Einschätzung der Regierung eine gezielte Provokation Russlands. Sie könnte in Zusammenhang mit einer Übung der Ukraine-Unterstützer stehen, die derzeit in Polen stattfindet.",
-      "pubDate": "2026-11-20T17:22:28+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/absturz-russische-flugobjekte-polen-100.html",
       "bild": ""
     }
   ],
