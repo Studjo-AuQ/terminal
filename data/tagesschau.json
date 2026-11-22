@@ -1,7 +1,39 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "22.11.2026, 17:42 Uhr (UTC)",
+  "aktualisiert": "22.11.2026, 23:29 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "fd88d68ccc21101067cc",
+      "title": "Buhrufe und Pfiffe gegen BVB-Boss Cramer wegen Fall Nmecha",
+      "description": "Der religiös motivierte Kronen-Jubel von BVB-Fußballer Nmecha hat für Diskussionen gesorgt. Bei der Mitgliederversammlung des Vereins äußerte sich Geschäftsführer Cramer nur indirekt. Nmecha sei ein \"tadelloser Mensch\". Dafür gab es einige Buhrufe.",
+      "pubDate": "2026-11-22T20:58:18+01:00",
+      "link": "https://www.tagesschau.de/sport/mitgliederversammlung-bvb-fall-nmecha-100.html",
+      "bild": ""
+    },
+    {
+      "id": "1c342dc0124cea4eaf53",
+      "title": "Nach Drohnenangriff: \"Sparta II\" wird in russische Gewässer geschleppt",
+      "description": "Am Samstag war der russische Frachter \"Sparta II\" in der Ostsee von einer Drohne getroffen worden und in Brand geraten. Laut finnischem Grenzschutz hat das Schiff Schlagseite, kann aber in russische Gewässer geschleppt werden.",
+      "pubDate": "2026-11-22T20:53:03+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/finnland-ostsee-frachter-drohne-102.html",
+      "bild": ""
+    },
+    {
+      "id": "55f56b54a1a299a55dcc",
+      "title": "TK-Chef Baas: Mehr Geld schafft keine Arzttermine",
+      "description": "Schneller zum Facharzt gegen Bezahlung? Die Einschätzung von Kassenärzte-Chef Gassen hat Kritik ausgelöst. Mehr Geld löse das Problem nicht, sagt TK-Chef Baas im Bericht aus Berlin - und fordert stattdessen ein grundlegend neues System.",
+      "pubDate": "2026-11-22T20:24:22+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/bericht-aus-berlin-arzttermine-baas-100.html",
+      "bild": ""
+    },
+    {
+      "id": "9c7c7a02d160486d271d",
+      "title": "Explosion auf russischem Schiff in Libyen - Behörden vermuten Drohnenangriff",
+      "description": "In einem Hafen der ostlibyschen Stadt Bengasi hat es eine Explosion auf einem russischen Kriegsschiff gegeben. Die Behörden gehen von einem Angriff mit Drohnen aus. Berichten zufolge wird die Ukraine verantwortlich gemacht.",
+      "pubDate": "2026-11-22T19:43:06+01:00",
+      "link": "https://www.tagesschau.de/ausland/afrika/russisches-schiff-libyen-100.html",
+      "bild": ""
+    },
     {
       "id": "1f13adc6af0cff58fb60",
       "title": "Prien verurteilt Angriff auf FDP-Politikerin Preisler bei Demo",
@@ -88,38 +120,6 @@
       "description": "Die Bundeswehr hat ein Problem mit sexualisiertem Fehlverhalten. Das belegt eine Studie. Der künftige Generalinspekteur der Bundeswehr, Freuding, will hier \"unerbittlich hart durchgreifen\". Die Zahlen seien \"unerträglich\".",
       "pubDate": "2026-11-22T10:51:56+01:00",
       "link": "https://www.tagesschau.de/inland/gesellschaft/bundeswehr-generalinspekteur-gegen-sexualisiertes-fehlverhalten-100.html",
-      "bild": ""
-    },
-    {
-      "id": "8b7a3ffc47e67582bb68",
-      "title": "Israel: Warum die Stadt Bat Yam Iran verklagt",
-      "description": "Mehr als ein Jahr nach dem verheerenden Raketenangriff auf ein Wohnviertel im israelischen Bat Yam sind viele Familien nicht in ihre Wohnungen zurückgekehrt. Nun hat die Stadt Klage gegen Iran eingereicht. Von Bettina Meier.",
-      "pubDate": "2026-11-22T10:48:00+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/israel-bat-jam-raketenangriff-klage-iran-reportage-100.html",
-      "bild": ""
-    },
-    {
-      "id": "b029731c0b8e41cd05d8",
-      "title": "Wie Armut Kinder in Deutschland krank macht",
-      "description": "Kinder aus armutsgefährdeten Familien haben ein höheres Risiko, krank zu werden - körperlich und psychisch. Dabei gibt es in Deutschland viele Hilfen. Warum kommen sie oft nicht an? Von Katharina Spreier.",
-      "pubDate": "2026-11-22T09:26:52+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/armut-kinder-familien-100.html",
-      "bild": ""
-    },
-    {
-      "id": "f30bebacd04d63d20bb3",
-      "title": "Gesetzentwurf des Justizministeriums: Femizide sollen eindeutig als Mord gelten",
-      "description": "\"Wer eine Frau tötet, weil sie sich von ihm trennen will, der muss als Mörder bestraft werden\": Justizministerin Hubig will den Mordparagrafen verschärfen und Femizide eindeutig als Mord erfassen. Ein Gesetzentwurf dazu liegt nun vor.",
-      "pubDate": "2026-11-22T13:00:00+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/femizide-mord-gesetzentwurf-100.html",
-      "bild": ""
-    },
-    {
-      "id": "a1b03b7e643e288615f6",
-      "title": "Australien: Social-Media-Verbot mit Lücken und Mängeln",
-      "description": "Jugendliche vor den Folgen von Social Media zu schützen, das war die Idee hinter dem Social-Media-Verbot in Australien. Ein Jahr danach zeigt sich, wo es bei der Umsetzung hakt. Von C. Justus und P. Nöhr.",
-      "pubDate": "2026-11-22T08:26:24+01:00",
-      "link": "https://www.tagesschau.de/ausland/ozeanien/australien-social-media-108.html",
       "bild": ""
     }
   ],
