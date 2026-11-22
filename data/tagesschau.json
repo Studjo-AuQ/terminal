@@ -1,7 +1,55 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "22.11.2026, 01:30 Uhr (UTC)",
+  "aktualisiert": "22.11.2026, 09:36 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "b029731c0b8e41cd05d8",
+      "title": "Wie Armut Kinder in Deutschland krank macht",
+      "description": "Kinder aus armutsgefährdeten Familien haben ein höheres Risiko, krank zu werden - körperlich und psychisch. Dabei gibt es in Deutschland viele Hilfen. Warum kommen sie oft nicht an? Von Katharina Spreier.",
+      "pubDate": "2026-11-22T09:26:52+01:00",
+      "link": "https://www.tagesschau.de/inland/gesellschaft/armut-kinder-familien-100.html",
+      "bild": ""
+    },
+    {
+      "id": "f30bebacd04d63d20bb3",
+      "title": "Gesetzentwurf des Justizministeriums: Femizide sollen eindeutig als Mord gelten",
+      "description": "\"Wer eine Frau tötet, weil sie sich von ihm trennen will, der muss als Mörder bestraft werden\": Justizministerin Hubig will den Mordparagrafen verschärfen und Femizide eindeutig als Mord erfassen. Ein Gesetzentwurf dazu liegt nun vor.",
+      "pubDate": "2026-11-22T09:16:45+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/femizide-mord-gesetzentwurf-100.html",
+      "bild": ""
+    },
+    {
+      "id": "a1b03b7e643e288615f6",
+      "title": "Australien: Social-Media-Verbot mit Lücken und Mängeln",
+      "description": "Jugendliche vor den Folgen von Social Media zu schützen, das war die Idee hinter dem Social-Media-Verbot in Australien. Ein Jahr danach zeigt sich, wo es bei der Umsetzung hakt. Von C. Justus und P. Nöhr.",
+      "pubDate": "2026-11-22T08:26:24+01:00",
+      "link": "https://www.tagesschau.de/ausland/ozeanien/australien-social-media-108.html",
+      "bild": ""
+    },
+    {
+      "id": "75903fc01843d032891a",
+      "title": "Antisemitismusbeauftragte fordert mehr Engagement gegen Judenhass",
+      "description": "Antisemitismus so offen wie seit dem Holocaust nicht mehr: Bundesbeauftragte von Schnurbein warnt vor wachsendem Judenhass in Deutschland. Die \"AfD-Ideologie\" sei ein gefährlicher Angriff auf die Erinnerungskultur.",
+      "pubDate": "2026-11-22T06:47:26+01:00",
+      "link": "https://www.tagesschau.de/inland/gesellschaft/antisemitismusbeauftragte-102.html",
+      "bild": ""
+    },
+    {
+      "id": "b242f716e6d514dfbbd8",
+      "title": "IG Metall weitet Warnstreiks in norddeutscher Metall- und Elektroindustrie aus",
+      "description": "Bundesweit hatten am Freitag Beschäftigte der Metall- und Elektroindustrie ihre Arbeit niedergelegt. Im Norden will die IG Metall Küste jetzt nachlegen: Nochmal soll für 24 Stunden gestreikt werden - teils schon ab heute Abend.",
+      "pubDate": "2026-11-22T04:50:01+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/ig-metall-warnstreik-102.html",
+      "bild": ""
+    },
+    {
+      "id": "5a4034b5425d6554eaf5",
+      "title": "Klimakonferenz in Antalya: Staaten beraten neuen Entwurf für Abschlusserklärung",
+      "description": "Nach weit über 30 Stunden Verlängerung liegt der Klimakonferenz in Antalya ein neuer Entwurf für eine Abschlusserklärung vor. Ein klares Bekenntnis zur Abkehr von fossilen Energien enthält der Text nicht. Am Vormittag soll abgestimmt werden.",
+      "pubDate": "2026-11-22T06:21:04+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/cop31-klimakonferenz-100.html",
+      "bild": ""
+    },
     {
       "id": "64dac7974747df5d3544",
       "title": "EU und Indonesien unterzeichnen Freihandelsabkommen",
@@ -72,54 +120,6 @@
       "description": "Der im Sommer verstorbene Klaus-Michael Kühne war einer der prägendsten Unternehmer der deutschen Nachkriegsgeschichte. Sein Umgang mit der Vergangenheit seines Imperiums war umstritten. Was wird daraus? Von Sandra Biegger.",
       "pubDate": "2026-11-21T13:36:54+01:00",
       "link": "https://www.tagesschau.de/wirtschaft/unternehmen/klaus-michael-kuehne-unternehmer-vergangenheit-schindellegi-schweiz-100.html",
-      "bild": ""
-    },
-    {
-      "id": "aef31b2a20e243eb5d4e",
-      "title": "Hausärzte beklagen Mangel an Grippe-Impfstoff",
-      "description": "Sorry, kein Impfstoff da: Wer sich dieser Tage in der Hausarztpraxis gegen Grippe impfen lassen will, könnte mancherorts vertröstet werden. Der Hausärzteverband beklagt zu wenig Impfstoff. Die Apotheker sehen das weniger dramatisch.",
-      "pubDate": "2026-11-21T13:13:27+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/grippe-impfstoff-hausaerzte-100.html",
-      "bild": ""
-    },
-    {
-      "id": "17f5782f045ed6c68960",
-      "title": "Bilger fordert Bekenntnis der Autoindustrie zu Deutschland",
-      "description": "Die EU könnte Autokonzernen erlauben, auch nach 2035 neue Verbrenner und Hybride zu verkaufen. Verkehrsminister Bilger knüpft daran eine klare Erwartung: Deutschland müsse starker Produktionstandort bleiben.",
-      "pubDate": "2026-11-21T12:19:36+01:00",
-      "link": "https://www.tagesschau.de/inland/bilger-fordert-bekenntnis-der-autohersteller-zu-deutschland-100.html",
-      "bild": ""
-    },
-    {
-      "id": "df0d9d35655b4c8627eb",
-      "title": "\"Altersvorsorgedepot für nahezu alle Riester-Sparer interessant\"",
-      "description": "Die Bundesregierung stellt die Altersvorsorge ab dem kommenden Jahr neu auf. Die staatliche Förderung könnte beim neuen Altersvorsorgedepot für viele lukrativer sein als beim bisherigen \"Riestern\". Das sollte man beachten. Von P. Sauer.",
-      "pubDate": "2026-11-21T11:20:52+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/altersvorsorgedepot-tipps-riester-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c8312b8e48baf75f1e68",
-      "title": "Altersvorsorgedepot: Staatlich organisierter Fonds nicht startklar",
-      "description": "Zum Jahreswechsel startet das neue Modell der staatlichen Altersvorsorge, das Altersvorsorgedepot. Private Angebote gibt es längst - doch das öffentlich organisierte Basis-Fondsangebot wird dann wohl noch nicht bereit sein.",
-      "pubDate": "2026-11-21T11:16:17+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/altersvorsorgedepot-staatlicher-fonds-nicht-startklar-100.html",
-      "bild": ""
-    },
-    {
-      "id": "fc962ce3049381bcaa2c",
-      "title": "Erdbeben erschüttert Perus Andenregion",
-      "description": "Die Erschütterungen waren bis in die Hauptstadt Lima zu spüren: Ein Erdbeben der Stärke 6,7 hat die Andenregion in Peru erschüttert. Über Schäden oder Opfer ist bislang nichts bekannt.",
-      "pubDate": "2026-11-21T10:51:28+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/peru-erdbeben-102.html",
-      "bild": ""
-    },
-    {
-      "id": "957dfc0f74e2166ed66c",
-      "title": "GTA VI spielt laut Konzern fast vier Milliarden Dollar am ersten Tag ein",
-      "description": "Lange mussten GTA-Fans auf den sechsten Teil der Videospiel-Reihe warten - jetzt trägt der Hype Früchte. Nach Angaben von Rockstar Games erzielte das Spiel am ersten Verkaufstag einen Rekordumsatz von rund 3,8 Milliarden Dollar.",
-      "pubDate": "2026-11-21T10:39:17+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/milliardengewinn-gta-100.html",
       "bild": ""
     }
   ],
