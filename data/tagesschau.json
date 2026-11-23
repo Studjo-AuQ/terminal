@@ -1,7 +1,15 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "22.11.2026, 23:29 Uhr (UTC)",
+  "aktualisiert": "23.11.2026, 03:57 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "6e2ea8300ea10befeaaa",
+      "title": "US-Repräsentantenhaus: Demokraten so stark wie zuletzt 1992",
+      "description": "Die Demokraten haben ihre Mehrheit im US-Repräsentantenhaus weiter ausgebaut. Ab Januar stellen sie dort mindestens 258 Abgeordnete - zuletzt gelang ihnen dies vor mehr als 30 Jahren zu Zeiten von Bill Clinton.",
+      "pubDate": "2026-11-23T01:55:05+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/demokraten-mehrheit-repraesentantenhaus-100.html",
+      "bild": ""
+    },
     {
       "id": "fd88d68ccc21101067cc",
       "title": "Buhrufe und Pfiffe gegen BVB-Boss Cramer wegen Fall Nmecha",
@@ -30,7 +38,7 @@
       "id": "9c7c7a02d160486d271d",
       "title": "Explosion auf russischem Schiff in Libyen - Behörden vermuten Drohnenangriff",
       "description": "In einem Hafen der ostlibyschen Stadt Bengasi hat es eine Explosion auf einem russischen Kriegsschiff gegeben. Die Behörden gehen von einem Angriff mit Drohnen aus. Berichten zufolge wird die Ukraine verantwortlich gemacht.",
-      "pubDate": "2026-11-22T19:43:06+01:00",
+      "pubDate": "2026-11-23T01:51:02+01:00",
       "link": "https://www.tagesschau.de/ausland/afrika/russisches-schiff-libyen-100.html",
       "bild": ""
     },
@@ -78,7 +86,7 @@
       "id": "6083f9aeffe2f108c15b",
       "title": "Brand in indonesischer Süßwarenfabrik - viele Tote befürchtet",
       "description": "Nach einem Feuer in einer Fabrik westlich von Indonesiens Hauptstadt Jakarta gibt es mehrere Tote. Etwa 60 Menschen sollen sich zum Zeitpunkt des Ausbruchs im Gebäude aufgehalten haben. Viele werden noch vermisst.",
-      "pubDate": "2026-11-22T16:21:42+01:00",
+      "pubDate": "2026-11-23T04:40:19+01:00",
       "link": "https://www.tagesschau.de/ausland/asien/indonesien-brand-fabrik-tote-vermisste-100.html",
       "bild": ""
     },
@@ -112,14 +120,6 @@
       "description": "Die Weltklimakonferenz in Antalya ist schon in der Verlängerung, um ein Beschlusspapier wird heftig gerungen. Nun hat Umweltminister Schneider den Entwurf scharf zurückgewiesen - und erhebt Vorwürfe gegen einige Staaten.",
       "pubDate": "2026-11-22T12:19:54+01:00",
       "link": "https://www.tagesschau.de/ausland/weltklimakonferenz-cop-droht-zu-scheitern-100.html",
-      "bild": ""
-    },
-    {
-      "id": "72c350a5239e26afc314",
-      "title": "Künftiger Generalinspekteur will bei sexualisiertem Fehlverhalten durchgreifen",
-      "description": "Die Bundeswehr hat ein Problem mit sexualisiertem Fehlverhalten. Das belegt eine Studie. Der künftige Generalinspekteur der Bundeswehr, Freuding, will hier \"unerbittlich hart durchgreifen\". Die Zahlen seien \"unerträglich\".",
-      "pubDate": "2026-11-22T10:51:56+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/bundeswehr-generalinspekteur-gegen-sexualisiertes-fehlverhalten-100.html",
       "bild": ""
     }
   ],
