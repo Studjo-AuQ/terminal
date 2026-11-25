@@ -1,7 +1,47 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "24.11.2026, 22:42 Uhr (UTC)",
+  "aktualisiert": "25.11.2026, 05:20 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "580723e082340e6e6a90",
+      "title": "Theaterstück in Berlin: Wenn Spätis verschwinden",
+      "description": "Immer öfter müssen Spätis oder Kneipen schließen. Dabei sind sie essenziell für den sozialen Zusammenhalt. Was dieser Verlust für die Gesellschaft bedeutet, hinterfragen ein Bühnenstück und ein Soziologe. Von Regine Bruckmann.",
+      "pubDate": "2026-11-25T06:12:39+01:00",
+      "link": "https://www.tagesschau.de/kultur/paradies-spaeti-100.html",
+      "bild": ""
+    },
+    {
+      "id": "a15bb6b428af31745cfa",
+      "title": "US-Medienberichte: Trump plant wohl neue Zölle - auch gegen die EU",
+      "description": "Die US-Regierung bereitet offenbar neue Zölle gegenüber China, der EU und weiteren Ländern vor. Der Schritt erfolgt, nachdem die Zölle vom Supreme Court als illegal eingestuft wurden.",
+      "pubDate": "2026-11-25T05:08:29+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/usa-zoelle-122.html",
+      "bild": ""
+    },
+    {
+      "id": "15bc4b6b09e385a48070",
+      "title": "Keine schnelle Lösung bei Gewalt gegen Frauen",
+      "description": "Der heutige Orange Day steht für eine Zukunft ohne Gewalt gegen Frauen. Doch die Realität sieht anders aus. Strafverschärfungen und Gesetzesänderungen sind angestoßen, aber schnelle Lösungen sind nicht in Sicht. Von A. Lagmöller.",
+      "pubDate": "2026-11-25T05:00:11+01:00",
+      "link": "https://www.tagesschau.de/inland/gesellschaft/orange-day-gewalt-gegen-frauen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "cc771fb2425a7bab9e46",
+      "title": "Brücken-Krieg: Gefahr für Kiew, Probleme für Russlands Logistik",
+      "description": "Kiew, Saporischschja, Odessa - immer wieder greift Russland ukrainische Brücken an. Im Gegenzug schießt die Ukraine vermehrt zurück - auch auf die Krim-Brücke. Dabei geht es beiden Seiten nicht immer nur um militärische Ziele. Von R. Barth.",
+      "pubDate": "2026-11-25T02:40:52+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/ukraine-russland-bruecken-krieg-100.html",
+      "bild": ""
+    },
+    {
+      "id": "4542c441f2774a1d210e",
+      "title": "WHO: Lebenserwartung in Kuba erstmals seit Beginn der Aufzeichnungen gesunken",
+      "description": "Die Lebenserwartung in Kuba ist laut der WHO erstmals in der Geschichte gesunken, die Säuglingssterblichkeit hat sich mehr als verdoppelt. WHO-Chef Tedros macht dafür auch US-Sanktionen verantwortlich - und fordert deren sofortiges Ende.",
+      "pubDate": "2026-11-25T01:06:58+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/kuba-lebenserwartungen-who-100.html",
+      "bild": ""
+    },
     {
       "id": "ebe7c84930f53532a577",
       "title": "Nvidia-Chef Huang ist zurück, doch wie hoch ist der Preis?",
@@ -80,46 +120,6 @@
       "description": "Die EU will mit Importquoten verhindern, dass günstige chinesische Hybrid-Autos Europas Autobauern Konkurrenz machen. Die Importe hatten sich in den vergangenen zwei Jahren mehr als versechsfacht.",
       "pubDate": "2026-11-24T16:26:15+01:00",
       "link": "https://www.tagesschau.de/wirtschaft/hybridautos-china-europa-importe-100.html",
-      "bild": ""
-    },
-    {
-      "id": "45e52524f23367ebc412",
-      "title": "Müssen Geflüchtete bei Taliban-Diplomaten vorsprechen?",
-      "description": "Seit 2024 gibt es Sammelabschiebungen nach Afghanistan und Absprachen mit den Taliban. Taliban-Vertreter sind in Konsulaten in Deutschland aktiv. Dort müssen Geflüchtete vorsprechen, auf Anordnung deutscher Behörden. Ist das zulässig? Von Max Bauer.",
-      "pubDate": "2026-11-24T16:18:02+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/afghanistan-gefluechtete-taliban-100.html",
-      "bild": ""
-    },
-    {
-      "id": "6563dcb4612ef09678c3",
-      "title": "Taliban lassen Abschiebeflug verschieben",
-      "description": "Ein für heute geplanter Abschiebeflug nach Kabul wurde nach NDR-Informationen von afghanischer Seite abgesagt. Die Taliban wollen offenbar Druck machen, um die Einreise weiterer Konsularbeamte nach Deutschland zu erzwingen. Von P. Hornung.",
-      "pubDate": "2026-11-24T16:15:31+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/afghanistan-taliban-abschiebeflug-gestoppt-100.html",
-      "bild": ""
-    },
-    {
-      "id": "4f71c80164f6c947d138",
-      "title": "UN-Bericht: Partner und Verwandte Haupttäter bei Femiziden",
-      "description": "Von insgesamt 78.000 Femiziden weltweit im vergangenen Jahr gehen die meisten auf das Konto von Partnern und Angehörigen. Das geht aus einem UN-Bericht hervor. Für Frauen und Mädchen sei das eigene Zuhause der gefährlichste Ort.",
-      "pubDate": "2026-11-24T15:58:13+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/un-bericht-femizide-unodc-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c77b59fa5177387ca2cd",
-      "title": "Wie Trump an Huangs Rückkehr zu Nvidia verdiente",
-      "description": "Die Rückkehr des Nvidia-Chefs ließ den Aktienkurs des Chipunternehmens in die Höhe schnellen. Profitiert hat davon offenbar auch US-Präsident Trump - der sich zuvor für Huang eingesetzt hatte.",
-      "pubDate": "2026-11-24T15:51:13+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/trump-nvidia-aktien-100.html",
-      "bild": ""
-    },
-    {
-      "id": "636a961439dc8864aee1",
-      "title": "Kita-Gap-Portal: Trotz weniger Geburten fehlen Kitaplätze",
-      "description": "Obwohl in Deutschland weniger Kinder geboren werden, fehlt es weiterhin an Kitaplätzen. Vor allem ärmere und nicht Deutsch sprechende Familien sind betroffen. Große Unterschiede gibt es zwischen Ost und West.",
-      "pubDate": "2026-11-24T15:12:42+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/kitaplaetze-mangel-100.html",
       "bild": ""
     }
   ],
