@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "stand": "17.11.2026, 14:33 Uhr",
+  "stand": "26.11.2026, 13:12 Uhr",
   "hinweis": "Automatisch aus den Speiseplan-PDFs erzeugt. Eine erkannte Tages-/Datumsspalte wird übersprungen. A1 und A2 werden auf jeweils drei Wörter gekürzt.",
   "tage": {
     "2026-11-16": {
@@ -127,6 +127,31 @@
       "a1": "Paniertes Schollenfilet Rahmspinat",
       "a2": "Pilzragout in Rahm",
       "quelle": "speiseplaene/speiseplan_2026-KW51.pdf"
+    },
+    "2026-12-21": {
+      "a1": "Hühnerfrikassee mit Spargel,",
+      "a2": "Pizza vegetarisch Grütze",
+      "quelle": "speiseplaene/speiseplan_2026-KW52.pdf"
+    },
+    "2026-12-22": {
+      "a1": "Chili Con Carne",
+      "a2": "Tortellini an Tomaten-Gemüsesoße",
+      "quelle": "speiseplaene/speiseplan_2026-KW52.pdf"
+    },
+    "2026-12-23": {
+      "a1": "Hähnchenkeule an Geflügelsoße",
+      "a2": "Kürbiseintopf Amarena-Kirsch Pudding",
+      "quelle": "speiseplaene/speiseplan_2026-KW52.pdf"
+    },
+    "2026-12-24": {
+      "a1": "Linsensuppe mit Kasselerwürfel",
+      "a2": "Brokkoli-Blumenkohl-Auflauf an Bechamel",
+      "quelle": "speiseplaene/speiseplan_2026-KW52.pdf"
+    },
+    "2026-12-25": {
+      "a1": "Zarte Entenbrust mit",
+      "a2": "Kräuterseitling-Schnitzel an Kräutersoße",
+      "quelle": "speiseplaene/speiseplan_2026-KW52.pdf"
     }
   },
   "fehler": []
