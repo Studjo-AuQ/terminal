@@ -1,7 +1,103 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "25.11.2026, 15:57 Uhr (UTC)",
+  "aktualisiert": "26.11.2026, 00:10 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "3dfe7db0000e4df9884d",
+      "title": "Mit 65 Jahren: Duran-Duran-Gitarrist Andy Taylor gestorben",
+      "description": "Andy Taylor, der ursprüngliche Gitarrist der englischen New-Wave-Band Duran Duran, ist gestorben. Mit seinen von Rock und Funk inspirierten Gitarrenriffs prägte Taylor den Sound der Band.",
+      "pubDate": "2026-11-26T00:56:55+01:00",
+      "link": "https://www.tagesschau.de/kultur/andy-taylor-gestorben-100.html",
+      "bild": ""
+    },
+    {
+      "id": "f258397484c3ea504a0d",
+      "title": "Ägypten: Mindestens 30 Tote bei Großbrand auf Autobahn in Gizeh",
+      "description": "Ein mit Gasflaschen beladener Lkw hat bei einem Unfall auf einer Autobahn in der ägyptischen Stadt Gizeh einen Großbrand ausgelöst. Mindestens 30 Menschen starben bei dem Unglück, viele wurden verletzt.",
+      "pubDate": "2026-11-25T22:10:04+01:00",
+      "link": "https://www.tagesschau.de/ausland/afrika/aegypten-brand-gizeh-tote-100.html",
+      "bild": ""
+    },
+    {
+      "id": "815f3f62887893757ae6",
+      "title": "Bestechungsvorwurf gegen Netanjahu könnte fallen gelassen werden",
+      "description": "Seit Jahren muss sich Israels Premier wegen Betrugs, Untreue und Bestechlichkeit vor Gericht verantworten. Jetzt haben Richter empfohlen, den letzten Anklagepunkt fallen zu lassen. Netanjahu sieht den ganzen Prozess als gescheitert.",
+      "pubDate": "2026-11-25T20:50:08+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/israel-netanjahu-korruptionsvorwuerfe-100.html",
+      "bild": ""
+    },
+    {
+      "id": "eb80c5c8e1c2f31cb1a7",
+      "title": "Proteste gegen Gewalt an Frauen in Istanbul verboten",
+      "description": "Frauenrechtsorganisationen wollten in Istanbul gegen Gewalt an Frauen demonstrieren. Doch nach dem Demoaufruf wurden die Proteste verboten. Dennoch gingen am Abend zahlreiche Menschen auf die Straße.",
+      "pubDate": "2026-11-25T20:36:24+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/tuerkei-orange-day-demo-verboten-100.html",
+      "bild": ""
+    },
+    {
+      "id": "8379072f8b03c9c5ee8e",
+      "title": "Expertenkommission fordert schärfere Regeln für Prostitution",
+      "description": "Mehr Schutz vor Gewalt und Ausbeutung - Zwangsprostitution und Menschenhandel wirksamer bekämpfen: Die schwarz-rote Koalition will Prostitution neu regeln. Eine Expertenkommission empfiehlt nun strengere Regeln.",
+      "pubDate": "2026-11-25T20:14:28+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/neue-regeln-fuer-prostituition-empfehlungen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "67e4323747bc0f819c37",
+      "title": "Streit um \"Rente mit 63\": Unionsabgeordnete schlagen \"Respekt-Rente\" vor",
+      "description": "Im Streit um die \"Rente mit 63\" gehen Unionsabgeordnete mit einem Kompromiss auf die SPD zu: Sie schlagen eine \"Respekt-Rente\" vor. Für Menschen mit kleinem Einkommen soll die abschlagsfreie Frühverrentung bestehen bleiben.",
+      "pubDate": "2026-11-25T21:40:23+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/rente-kompromiss-koalition-100.html",
+      "bild": ""
+    },
+    {
+      "id": "b19d0e8bb8228a6579b1",
+      "title": "Ukraine-Hilfe polarisiert die Generaldebatte im Bundestag",
+      "description": "Im Bundestag wurde über den Haushalt 2027 debattiert. Darin auch enthalten: rund zwölf Milliarden Euro Ukraine-Hilfe. Für die AfD ist das eine Veruntreuung von Steuergeldern, für Kanzler Merz die Verteidigung \"unserer Freiheit\". Von Nicole Markwald.",
+      "pubDate": "2026-11-25T19:10:19+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/bundestag-generaldebatte-ukraine-hilfe-100.html",
+      "bild": ""
+    },
+    {
+      "id": "716ff2e879932eba6676",
+      "title": "TK-Gesundheitsreport Weiblich, mittelalt, leistungsstark - öfter krank?",
+      "description": "Im neuen Gesundheitsreport blickt die Techniker Krankenkasse auf die Situation von Frauen zwischen 35 und 55. Sie sind eine wichtige Gruppe von Arbeitnehmerinnen - und häufiger krank als gleichaltrige Männer. Von A. Kartschall.",
+      "pubDate": "2026-11-25T18:37:52+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/gesundheit-frauen-wechseljahre-arbeitsplatz-100.html",
+      "bild": ""
+    },
+    {
+      "id": "10661f22ff703a49fee1",
+      "title": "Asteroiden-Abwehr - einfach schießen und hoffen reicht nicht",
+      "description": "Was tun, wenn ein Asteroid auf die Erde zusteuert? Die Sonde \"Hera\" untersucht einen Asteroiden, an dem so ein Abwehrversuch getestet wurde. Noch fehlen viele Informationen, klar ist aber: Einfach wird das nicht. Von David Beck.",
+      "pubDate": "2026-11-25T18:30:09+01:00",
+      "link": "https://www.tagesschau.de/wissen/sonde-hera-asteroid-100.html",
+      "bild": ""
+    },
+    {
+      "id": "2494923b6db09cd67597",
+      "title": "EU-Kommission erlaubt weiter Staatshilfen für Landwirte und Industrie",
+      "description": "Landwirte, Industrie und andere Unternehmen können wegen der anhaltenden Energiekrise weiterhin mit staatlichen Zuschüssen rechnen. Laut EU-Kommission bleibt es bis mindestens Ende Juni 2027 bei den gelockerten Regeln zur Beihilfe.",
+      "pubDate": "2026-11-25T17:29:03+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/eu-staatshilfen-landwirte-industrie-100.html",
+      "bild": ""
+    },
+    {
+      "id": "d00d9dbcf991f2ffa0ca",
+      "title": "KI-Ernüchterung an den Börsen greift um sich",
+      "description": "An den US-Börsen geht die Verkaufswelle bei Tech-Aktien weiter. Die alten Sorgen von Investoren wegen der Geschäfts mit Künstlicher Intelligenz bleiben - und neue sind hinzugekommen. Von Heidi Radvilas.",
+      "pubDate": "2026-11-25T17:28:08+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/technologie/nvidia-rueckkehr-huang-boersen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "e2f5eff80c3013b0fe39",
+      "title": "Generaldebatte im Bundestag: Nachdenkliche Töne und ein Zugeständnis",
+      "description": "Selbstkritisch hat Bundeskanzler Merz im Bundestag den Kurs seiner Regierung verteidigt. Bei der Rede war es ungewöhnlich leise im Saal. Merz führte aus, wessen Kanzler er sein will - ein Zugeständnis an die SPD ging beinahe unter. Von S. Henkel.",
+      "pubDate": "2026-11-25T17:10:40+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/haushalt-generaldebatte-merz-100.html",
+      "bild": ""
+    },
     {
       "id": "2b1bea1598e063e98588",
       "title": "Wenn der Partner zuschlägt",
@@ -24,102 +120,6 @@
       "description": "Die USA haben neue Sonderzölle gegen die EU und weitere Handelspartner angekündigt. Für betroffene EU-Produkte ist ein Zollsatz von 15 Prozent vorgesehen, auf chinesische Waren soll eine Abgabe von 20 Prozent fällig werden.",
       "pubDate": "2026-11-25T16:18:25+01:00",
       "link": "https://www.tagesschau.de/ausland/amerika/usa-zoelle-124.html",
-      "bild": ""
-    },
-    {
-      "id": "4d3ebcf19525b24d7fed",
-      "title": "74 Peitschenhiebe für iranische Sängerin löst Empörung aus",
-      "description": "Ein Onlinekonzert ohne Kopftuch - dafür erhielt die iranische Sängerin Parastu Ahmadi 74 Peitschenhiebe. Das löste international große Empörung aus. Die Strafe sei \"grausam und unmenschlich\" und eine Form der Folter.",
-      "pubDate": "2026-11-25T15:07:47+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/iran-saengerin-peitschenhiebe-100.html",
-      "bild": ""
-    },
-    {
-      "id": "819143f98bddb4bc3673",
-      "title": "Discounter senken Butterpreis unter einen Euro",
-      "description": "Die Discounter Lidl und Aldi haben den Preis für ein Stück Butter unter einen Euro gesenkt. Das liege an gesunkenen Einkaufspreisen. Der Bauernverband kritisiert die Senkung als \"Ohrfeige für Milchbauern\".",
-      "pubDate": "2026-11-25T15:01:31+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/butter-preis-preiskampf-discounter-bauern-100.html",
-      "bild": ""
-    },
-    {
-      "id": "b146c1a169689daf8e5f",
-      "title": "tagesschau in Einfacher Sprache startet WhatsApp-Kanal",
-      "description": "Langsamer gesprochen, erklärte Fachbegriffe, kaum Nebensätze - seit 2024 gibt es die tagesschau in Einfacher Sprache. Zehntausende nutzen sie jeden Tag. Nun wird das Angebot um einen WhatsApp-Kanal erweitert.",
-      "pubDate": "2026-11-25T14:45:35+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/einfache-sprache-102.html",
-      "bild": ""
-    },
-    {
-      "id": "02e2dc354f944970febe",
-      "title": "Kartenzahlung überholt erstmals Bargeld in Geschäften",
-      "description": "Verbraucher in der Eurozone nutzen immer häufiger Kartenzahlungen. Trotzdem bleibt Bargeld beliebt - vor allem geringe Summen werden nach wie vor oft bar bezahlt.",
-      "pubDate": "2026-11-25T14:32:13+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/ezb-zahlungsverhalten-bargeld-kartenzahlung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c9a37a51146ad0d6a641",
-      "title": "Was über die rechtsextremistische Gruppe \"Terror 18\" bekannt ist",
-      "description": "Sie sind fast noch Kinder und planten laut Bundesanwaltschaft schwerste Straftaten, etwa auf eine Flüchtlingsunterkunft. Nun gingen Ermittler gegen mutmaßliche Mitglieder der rechtsextremistischen Gruppe \"Terror 18\" vor. Was ist bekannt? Von Max Bauer.",
-      "pubDate": "2026-11-25T14:15:59+01:00",
-      "link": "https://www.tagesschau.de/inland/terror-18-rechtsextremistische-gruppe-100.html",
-      "bild": ""
-    },
-    {
-      "id": "189e5300971bedcc734c",
-      "title": "Nach Apple-Absprung: Samsung steigt bei AMS-Osram ein",
-      "description": "Nach dem Rückzug von Apple drohte eine teure Chipfabrik für AMS-Osram zum Verlustgeschäft zu werden. Nun investiert Samsung 210 Millionen Euro. Kann aus dem gescheiterten Milliardenprojekt ein Zukunftsgeschäft werden?",
-      "pubDate": "2026-11-25T13:45:06+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/samsung-einstieg-osram-100.html",
-      "bild": ""
-    },
-    {
-      "id": "42254db91b7129eab211",
-      "title": "Tote und Vermisste nach Überflutung in Goldmine",
-      "description": "In einer illegal errichteten indonesischen Goldmine sind Bergleute von Wassermassen überrascht und eingeschlossen worden. Die Rettungsmaßnahmen laufen. Bisher wurden neun Tote geborgen.",
-      "pubDate": "2026-11-25T16:01:03+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/unglueck-illegale-goldmine-indonesien-100.html",
-      "bild": ""
-    },
-    {
-      "id": "58f3f4581e620b8d50ff",
-      "title": "Euro-Schwäche: Was der \"KI-Dollar\" für Firmen und Sparer bedeutet",
-      "description": "Der Euro ist zum Dollar auf den tiefsten Stand seit anderthalb Jahren gefallen. Hintergrund ist der KI-Boom. Welche Folgen hat das für Unternehmen, Verbraucher und Anleger? Von Angela Göpfert.",
-      "pubDate": "2026-11-25T12:47:38+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/euro-dollar-ki-etf-sparer-100.html",
-      "bild": ""
-    },
-    {
-      "id": "eb05ae10049c61ae966b",
-      "title": "Viele offene Fragen bei Chipkonzern Nvidia",
-      "description": "Jensen Huang steht wieder an der Spitze von Nvidia - und die Tech-Welt scheint wieder in Ordnung. Aber das kurzlebige Ausscheiden des Mitgründers hat Fragen aufgeworfen - und viele davon bleiben erst mal offen. Von Antje Sieb.",
-      "pubDate": "2026-11-25T12:32:09+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-offene-fragen-100.html",
-      "bild": ""
-    },
-    {
-      "id": "b159b31c6c04d3c9a45f",
-      "title": "Umstrittener Abschiebefall: Salvadorianer Abrego García hat USA verlassen",
-      "description": "2025 war der Salvadorianer Abrego Garcia aus den USA abgeschoben worden - rechtswidrig. Er landete in einem berüchtigten Gefängnis und wurde so zum Symbol für Trumps umstrittene Politik. Nun eine neue Wendung: Abrego Garcia ist in Spanien.",
-      "pubDate": "2026-11-25T12:19:15+01:00",
-      "link": "https://www.tagesschau.de/ausland/amerika/usa-abschiebepolitik-trump-garcia-100.html",
-      "bild": ""
-    },
-    {
-      "id": "94fd61d6440c38898424",
-      "title": "Flixtrain-Tickets bald auch bei Deutscher Bahn buchbar",
-      "description": "Zugreisende können demnächst auch Tickets für den Wettbewerber Flixtrain auf der Buchungsplattform der Deutschen Bahn buchen. Das vereinfacht den Ticketkauf erheblich - einige Hürden bleiben aber bestehen.",
-      "pubDate": "2026-11-25T12:01:33+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/flixtrain-deutsche-bahn-ticketverkauf-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c5992b07af9e48c16447",
-      "title": "Bundestag legt Schweigeminute für Opfer von Femiziden ein",
-      "description": "Dass Bundestagspräsidentin Klöckner und viele andere bei der Generaldebatte Orange als Kleidungsfarbe gewählt hatten, war kein Zufall. Grund ist der Orange Day, an dem an Frauen erinnert wird, die Opfer von Gewalt wurden.",
-      "pubDate": "2026-11-25T11:55:47+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/bundestag-orange-day-100.html",
       "bild": ""
     }
   ],
