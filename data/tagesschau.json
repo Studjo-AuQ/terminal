@@ -1,7 +1,47 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "26.11.2026, 18:55 Uhr (UTC)",
+  "aktualisiert": "27.11.2026, 02:05 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "e422362bc460c54f8e65",
+      "title": "Bosnien und Herzogowina: Dodik hebt Sohn auf den Thron",
+      "description": "Dodik hatte über 20 Jahre lang die Macht in der serbisch-dominierten Republika Srpska. 2025 musste er nach internationalem Druck zurücktreten, wegen seiner Separatismuspolitik. Nun macht er seinen Sohn zum Regierungschef. Von O. Soos.",
+      "pubDate": "2026-11-27T02:29:29+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/dodik-bosnien-sohn-100.html",
+      "bild": ""
+    },
+    {
+      "id": "aba07c30a52a45d580f0",
+      "title": "Merz verkündet vorzeitiges Ende des EU-Sondergipfels",
+      "description": "Die Vorstellungen unter den 27 Staats- und Regierungschefs lagen weit auseinander. So weit, dass sie laut Merz den zweiten angesetzten Tag des Gipfels ausfallen lassen. Es geht um viele Milliarden für den EU-Haushalt.",
+      "pubDate": "2026-11-27T01:02:22+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/eu-haushalt-vorzeitig-beendet-100.html",
+      "bild": ""
+    },
+    {
+      "id": "7833b78bdc6cbf755716",
+      "title": "Wintereinbruch: Schneefall behindert Autoverkehr in Bayern",
+      "description": "In Oberbayern haben Schneefälle für zahlreiche Verkehrsunfälle und Sperrungen von Autobahnen gesorgt. Stellenweise fielen bis zu zehn Zentimeter Neuschnee. Laut Wetterdienst bleiben auch die kommenden Tage eher frostig.",
+      "pubDate": "2026-11-26T22:54:39+01:00",
+      "link": "https://www.tagesschau.de/wetter/wetterthema/schnee-bayern-autobahnsperrung-100.html",
+      "bild": ""
+    },
+    {
+      "id": "44a0c1174d8d77b87ea7",
+      "title": "FAQ zur \"Rente mit 63\": Was wird gerade diskutiert?",
+      "description": "Die Debatte über die \"Rente mit 63\" wird zunehmend unübersichtlich: Welche Vorschläge werden aktuell diskutiert? Was deutet auf Bewegung innerhalb der Koalition hin? Und warum ist das Thema so umstritten? Ein Überblick.",
+      "pubDate": "2026-11-26T20:16:09+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/abschlagsfreie-rente-100.html",
+      "bild": ""
+    },
+    {
+      "id": "8321de87a4ce6c75a853",
+      "title": "Deutsche Firmen forschen an Technik für Waffendepots im Weltraum",
+      "description": "Angesichts der globalen Bedrohungslage gewinnt der Weltraum beim Thema Verteidigung an Bedeutung. Eine neue Technologie aus Deutschland soll den schnellen Transport von Waffen aus dem Orbit auf die Erde ermöglichen. Von U. Gradwohl und L.Wager.",
+      "pubDate": "2026-11-26T20:15:35+01:00",
+      "link": "https://www.tagesschau.de/wissen/waffendepots-orbit-100.html",
+      "bild": ""
+    },
     {
       "id": "68243ff5c1dfdafd258f",
       "title": "Warum die Bundeswehr im Senegal trainiert",
@@ -80,46 +120,6 @@
       "description": "Das Erzbistum Köln muss einem Missbrauchsopfer 550.000 Euro Schmerzensgeld zahlen - die bisher höchste Summe in einem solchen Fall. Das Oberlandesgericht Köln sieht die Kirche in der Verantwortung.",
       "pubDate": "2026-11-26T14:37:34+01:00",
       "link": "https://www.tagesschau.de/inland/gesellschaft/missbrauch-kirche-schmerzensgeld-102.html",
-      "bild": ""
-    },
-    {
-      "id": "9d4f2fd83917198c9e7c",
-      "title": "BGH stärkt Rechte von Mietern bei Balkonkraftwerken",
-      "description": "Mieter haben einen Anspruch darauf, Solaranlagen an ihren Balkonen anzubringen. Vermieter können das nur in Ausnahmefällen verbieten. Dass die Hürden dafür hoch sind, hat der Bundesgerichtshof jetzt klargestellt. Von Antonetta Stephany.",
-      "pubDate": "2026-11-26T14:29:47+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/mietrecht-balkonkraftwerke-bgh-100.html",
-      "bild": ""
-    },
-    {
-      "id": "42833fe84855e7832b02",
-      "title": "Israel: Staatsanwältin im Netanjahu-Prozess vor Dilemma",
-      "description": "Im Korruptionsprozess gegen Israels Premier Netanjahu haben die Richter empfohlen, den Vorwurf wegen Bestechlichkeit fallen zu lassen. Netanjahus Lager feiert das als Triumph - und die Staatsanwaltschaft steht massiv unter Zugzwang. Von J. Segador.",
-      "pubDate": "2026-11-26T14:02:45+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/israel-netanjahu-prozess-bestechungsvorwurf-100.html",
-      "bild": ""
-    },
-    {
-      "id": "3451157b9e9ac984b272",
-      "title": "Menschen in Hongkong gedenken der Opfer von Hochhausbrand",
-      "description": "Vor einem Jahr starben 168 Menschen bei einem verheerenden Brand in einem Hochhauskomplex in Hongkong. Heute haben die Menschen dort der Opfer gedacht. Eine offizielle Gedenkveranstaltung gab es aber nicht - auch auf Druck der Regierung.",
-      "pubDate": "2026-11-26T13:42:48+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/hongkong-gedenken-hochhausbrand-100.html",
-      "bild": ""
-    },
-    {
-      "id": "a5d97aff715c6232e3ee",
-      "title": "Marktbericht: Aktieninvestoren blicken vorsichtig nach vorn",
-      "description": "Nach einer massiven Talfahrt erholt sich der Aktienmarkt sprunghaft. Doch eine echte Trendwende an den Börsen ist derzeit nicht in Sicht. Chancen sind ebenso wie Risiken reichlich vorhanden.",
-      "pubDate": "2026-11-26T13:04:38+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/dax-erholung-chancen-risiken-100.html",
-      "bild": ""
-    },
-    {
-      "id": "200aa3a4559a9bf6a2a1",
-      "title": "Merz fordert weitere Kürzungen der EU-Finanzen",
-      "description": "Um mehr als 200 Milliarden Euro ist der EU-Haushaltsentwurf bereits gekürzt worden. Dem Kanzler reicht das aber noch nicht. Außerdem verknüpft Merz die schwierigen Verhandlungen weiterhin mit der Unterstützung für die Ukraine.",
-      "pubDate": "2026-11-26T12:58:32+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/eu-haushalt-ukraine-100.html",
       "bild": ""
     }
   ],
