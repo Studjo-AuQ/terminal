@@ -1,125 +1,125 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "27.11.2026, 02:05 Uhr (UTC)",
+  "aktualisiert": "27.11.2026, 11:17 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "b004242d6ddb0c453c89",
+      "title": "Polizistin in Kabul: Verhüllt im Dienst für das Taliban-Regime",
+      "description": "In Afghanistan haben Frauen kaum noch Rechte. In der Öffentlichkeit muss ihr Gesicht verhüllt sein, Bildung ist kaum möglich. Gleichzeitig arbeiten einige Frauen bei der Polizei und sind so Teil des Systems der Taliban. Von F. Amler.",
+      "pubDate": "2026-11-27T12:11:16+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/taliban-polizistin-100.html",
+      "bild": ""
+    },
+    {
+      "id": "41fb0a39faab7324a8a7",
+      "title": "SAP erwägt offenbar Abbau von Tausenden Jobs",
+      "description": "Der Software-Konzern SAP will offenbar Tausende Stellen streichen. Dabei spielt auch die Automatisierung mit Künstlicher Intelligenz eine entscheidende Rolle.",
+      "pubDate": "2026-11-27T12:09:46+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/sap-stellenabbau-geplant-100.html",
+      "bild": ""
+    },
+    {
+      "id": "2b08c571394717e1bfe1",
+      "title": "Streit um Rentenreform: Arbeitsminister Schweitzer optimistisch",
+      "description": "Die Koalition ringt weiter um die Rentenreform. Arbeitsminister Schweitzer ist optimistisch, dass es bald zu einer Einigung kommt. Es lägen gute Vorschläge auf dem Tisch, sagte er im Bundestag. Dort wurde des Etat seines Ministeriums debattiert.",
+      "pubDate": "2026-11-27T12:07:08+01:00",
+      "link": "https://www.tagesschau.de/inland/bundestag-haushalt-rentenreform-schweitzer-100.html",
+      "bild": ""
+    },
+    {
+      "id": "1e3e7e0b48303c620f27",
+      "title": "Westjordanland: Israelische Politiker sprechen von \"jüdischem Terror\"",
+      "description": "Die Gewalt radikaler Siedler gegen Palästinenser im Westjordanland hat massiv zugenommen. In Israel ist der Begriff \"jüdischer Terror\" kein Tabu mehr. Doch in der Regierung tobt ein Richtungsstreit. Von Julio Segador.",
+      "pubDate": "2026-11-27T10:57:35+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/westjordanland-gewalt-100.html",
+      "bild": ""
+    },
+    {
+      "id": "b9eb08a8234b268a076f",
+      "title": "Marktbericht: Anleger nutzen günstige Kurse zum Einkauf",
+      "description": "Der DAX setzt seine Erholung schwungvoll fort, unterstützt von der Aussicht auf einen starken Handelsstart an der Wall Street. Trotz der Kursgewinne bleibt die Frage, wie nachhaltig der KI-Boom ist.",
+      "pubDate": "2026-11-27T10:57:08+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-geldanlage-176.html",
+      "bild": ""
+    },
+    {
+      "id": "0ae65f7996cbff2b52e8",
+      "title": "Shopping: KI-Agenten werden beliebter",
+      "description": "Das Angebot an digitalen Einkaufshelfern steigt. Experten sehen Wachstumspotenzial. Doch Verbraucherschützer warnen vor Risiken, die Politik vor weiterem Ladensterben in den Städten. Von Heidi Radvilas.",
+      "pubDate": "2026-11-27T10:32:49+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/verbraucher/ki-agenten-einkaufen-handel-100.html",
+      "bild": ""
+    },
+    {
+      "id": "ab823e2402f191fc4a77",
+      "title": "Parteitag in Dresden: Wie hält es das BSW mit der AfD?",
+      "description": "Das BSW ringt um den Kurs zur AfD: Die Parteispitze betont Distanz, in Sachsen-Anhalt kommen sich beide Parteien aber recht nahe. Bringt der Parteitag in Dresden einen Richtungsentscheid? Von Maximilian Ulrich.",
+      "pubDate": "2026-11-27T09:22:38+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/bsw-parteitag-afd-sachsen-anhalt-100.html",
+      "bild": ""
+    },
+    {
+      "id": "4275d79744a8063655db",
+      "title": "Textilbranche: Einigung auf Mindestlohn-Erhöhung in Bangladesch",
+      "description": "Beschäftigte der Textilbranche in Bangladesch fordern eine deutliche Verbesserung ihrer Lebens- und Arbeitsbedingungen. Inzwischen gibt es eine erste Einigung. Doch wie viel bleibt den Menschen zum Leben? Von Severine Naeve.",
+      "pubDate": "2026-11-27T08:59:40+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/bangladesch-fast-fashion-100.html",
+      "bild": ""
+    },
+    {
+      "id": "a3892fb5f496b0940b69",
+      "title": "Bundesregierung will KI-Anbieter zur Kasse bitten",
+      "description": "KI-Anbieter sollen nach dem Willen der Bundesregierung künftig für die Erzeugung von Inhalten zahlen. Und zwar dann, wenn ihre Modelle Inhalte produzieren, die mit von Menschen geschaffenen Werken konkurrieren.",
+      "pubDate": "2026-11-27T08:48:12+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/technologie/ki-urheberrecht-verguetung-100.html",
+      "bild": ""
+    },
+    {
+      "id": "9aba98e9465508c71ff0",
+      "title": "USA: Schwerer Sturm sorgt an Thanksgiving für massive Einschränkungen",
+      "description": "Gestrichene Flüge, Stromausfälle und Überschwemmungen: Ausgerechnet an Thanksgiving haben Starkregen und heftige Winde in vielen Teilen der USA für Chaos gesorgt. In einigen Bundesstaaten gilt der Notstand.",
+      "pubDate": "2026-11-27T07:55:56+01:00",
+      "link": "https://www.tagesschau.de/ausland/amerika/usa-stuerme-thanksgiving-100.html",
+      "bild": ""
+    },
+    {
+      "id": "2f3e780f8d1e05c0ec5d",
+      "title": "SAP meldet verdächtige Aktivitäten",
+      "description": "Mitarbeiter des Softwareriesen sollen prüfen, ob sie Zugangsdaten ändern müssen: Laut einem Medienbericht gab es einen Hackerangriff auf SAP. Das aber will der DAX-Konzern nicht bestätigen.",
+      "pubDate": "2026-11-27T07:48:30+01:00",
+      "link": "https://www.tagesschau.de/wirtschaft/unternehmen/sap-hacker-angriff-100.html",
+      "bild": ""
+    },
+    {
+      "id": "d7bbe8717bcfa613703f",
+      "title": "Parlamentswahl: Wie Spaniens Volkspartei die Ära Sánchez abwickeln will",
+      "description": "Spaniens konservative Volkspartei PP hat gute Aussichten, bei der Parlamentswahl am Wochenende stärkste Kraft zu werden. Sie verspricht dem Land tiefgreifende Änderungen. Wo will sie umsteuern? Von F. Welz.",
+      "pubDate": "2026-11-27T06:43:42+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/spanien-wahl-volkspartei-100.html",
+      "bild": ""
+    },
+    {
+      "id": "a8652b5c32456ff50550",
+      "title": "Neuseeland: Konservative verlieren Mehrheit - Labour hat auch keine",
+      "description": "Nach der Wahl zeichnete sich ein sehr knappes Rennen ab. Nun ist klar: Neuseelands rechtsgerichtete Regierungskoalition unter Premier Luxon hat keine Mehrheit mehr. Jetzt spielt eine neue Partei die entscheidende Rolle.",
+      "pubDate": "2026-11-27T06:09:05+01:00",
+      "link": "https://www.tagesschau.de/ausland/ozeanien/neuseeland-parlamentswahl-106.html",
+      "bild": ""
+    },
+    {
+      "id": "fb12958e7fe4dd2c1ea9",
+      "title": "Rekordhohe Arbeitslosigkeit bei Menschen mit Schwerbehinderung",
+      "description": "Menschen mit Schwerbehinderung bekommen die gesamtwirtschaftliche Lage besonders stark zu spüren. Die Arbeitslosenquote bei ihnen lag im Jahresdurchschnitt 2025 mit zwölf Prozent fast doppelt so hoch wie im gesamten Arbeitsmarkt.",
+      "pubDate": "2026-11-27T05:13:07+01:00",
+      "link": "https://www.tagesschau.de/inland/gesellschaft/schwerbehinderung-arbeitslose-100.html",
+      "bild": ""
+    },
     {
       "id": "e422362bc460c54f8e65",
       "title": "Bosnien und Herzogowina: Dodik hebt Sohn auf den Thron",
-      "description": "Dodik hatte über 20 Jahre lang die Macht in der serbisch-dominierten Republika Srpska. 2025 musste er nach internationalem Druck zurücktreten, wegen seiner Separatismuspolitik. Nun macht er seinen Sohn zum Regierungschef. Von O. Soos.",
+      "description": "Milorad Dodik war über mehr als 20 Jahre der mächtige Mann in der serbisch dominierten Republika Srpska. 2025 musste er nach internationalem Druck zurücktreten. Nun macht er seinen Sohn zum Regierungschef. Von Oliver Soos.",
       "pubDate": "2026-11-27T02:29:29+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/dodik-bosnien-sohn-100.html",
-      "bild": ""
-    },
-    {
-      "id": "aba07c30a52a45d580f0",
-      "title": "Merz verkündet vorzeitiges Ende des EU-Sondergipfels",
-      "description": "Die Vorstellungen unter den 27 Staats- und Regierungschefs lagen weit auseinander. So weit, dass sie laut Merz den zweiten angesetzten Tag des Gipfels ausfallen lassen. Es geht um viele Milliarden für den EU-Haushalt.",
-      "pubDate": "2026-11-27T01:02:22+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/eu-haushalt-vorzeitig-beendet-100.html",
-      "bild": ""
-    },
-    {
-      "id": "7833b78bdc6cbf755716",
-      "title": "Wintereinbruch: Schneefall behindert Autoverkehr in Bayern",
-      "description": "In Oberbayern haben Schneefälle für zahlreiche Verkehrsunfälle und Sperrungen von Autobahnen gesorgt. Stellenweise fielen bis zu zehn Zentimeter Neuschnee. Laut Wetterdienst bleiben auch die kommenden Tage eher frostig.",
-      "pubDate": "2026-11-26T22:54:39+01:00",
-      "link": "https://www.tagesschau.de/wetter/wetterthema/schnee-bayern-autobahnsperrung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "44a0c1174d8d77b87ea7",
-      "title": "FAQ zur \"Rente mit 63\": Was wird gerade diskutiert?",
-      "description": "Die Debatte über die \"Rente mit 63\" wird zunehmend unübersichtlich: Welche Vorschläge werden aktuell diskutiert? Was deutet auf Bewegung innerhalb der Koalition hin? Und warum ist das Thema so umstritten? Ein Überblick.",
-      "pubDate": "2026-11-26T20:16:09+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/abschlagsfreie-rente-100.html",
-      "bild": ""
-    },
-    {
-      "id": "8321de87a4ce6c75a853",
-      "title": "Deutsche Firmen forschen an Technik für Waffendepots im Weltraum",
-      "description": "Angesichts der globalen Bedrohungslage gewinnt der Weltraum beim Thema Verteidigung an Bedeutung. Eine neue Technologie aus Deutschland soll den schnellen Transport von Waffen aus dem Orbit auf die Erde ermöglichen. Von U. Gradwohl und L.Wager.",
-      "pubDate": "2026-11-26T20:15:35+01:00",
-      "link": "https://www.tagesschau.de/wissen/waffendepots-orbit-100.html",
-      "bild": ""
-    },
-    {
-      "id": "68243ff5c1dfdafd258f",
-      "title": "Warum die Bundeswehr im Senegal trainiert",
-      "description": "Es ist die bislang größte Bundeswehr-Übung in Afrika: Im Senegal trainieren rund 1.000 Soldaten mit den dortigen Streitkräften die Evakuierung aus einem fiktiven Krisenstaat. Warum dort? Von Kai Küstner.",
-      "pubDate": "2026-11-26T18:59:05+01:00",
-      "link": "https://www.tagesschau.de/ausland/afrika/senegal-uebung-bundeswehr-100.html",
-      "bild": ""
-    },
-    {
-      "id": "175b8ec265d216dded8f",
-      "title": "Marktbericht: DAX macht einen Sprung nach vorn",
-      "description": "Mit Rückenwind der Technologie-Aktien springt der DAX am Donnerstag wieder über die Marke von 25.000 Punkten. Doch das Grundvertrauen, ob und wie weit die Erholung trägt, bleibt angeschlagen.",
-      "pubDate": "2026-11-26T18:23:20+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-geldanlage-174.html",
-      "bild": ""
-    },
-    {
-      "id": "8290498887321399f4e8",
-      "title": "Rheinmetall-Arbeiter bei Angriff in Kuwait getötet",
-      "description": "In Kuwait sind bei einem Drohnenangriff zwei Italiener getötet worden, die bei dem deutschen Rüstungskonzern Rheinmetall beschäftigt waren. Italien weist Iran die Verantwortung zu, doch Teheran dementiert den Angriff.",
-      "pubDate": "2026-11-26T19:08:12+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/kuwait-tote-angriff-kuwait-100.html",
-      "bild": ""
-    },
-    {
-      "id": "c02f630f94896758b27f",
-      "title": "Rentenreform: Vom Gesamtkunstwerk zum Trümmerhaufen",
-      "description": "Die \"Respekt-Rente\" ist der nächste Versuch der Regierung, die Rente zu reformieren. Auch sie wird wohl zerredet, weil die Koalitionäre lieber übereinander statt miteinander sprechen. Das macht auf Dauer ziemlich schlechte Laune, meint Georg Schwarte.",
-      "pubDate": "2026-11-26T17:29:47+01:00",
-      "link": "https://www.tagesschau.de/kommentar/respekt-rente-kommentar-schwarte-100.html",
-      "bild": ""
-    },
-    {
-      "id": "d36c3be23aa4930fc950",
-      "title": "Wofür steht der designierte EZB-Präsident Pablo Hernández de Cos?",
-      "description": "Der Spanier Pablo Hernández de Cos bringt viel geldpolitische Erfahrung mit. Welcher Kurs ist von dem 55-Jährigen Ökonomen zu erwarten, wenn er an die Spitze der Europäischen Zentralbank rückt?",
-      "pubDate": "2026-11-26T17:12:10+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/konjunktur/nachfolger-ezb-de-cos-portrait-100.html",
-      "bild": ""
-    },
-    {
-      "id": "274fd3a4001f9fe76899",
-      "title": "Einigung im Tarifstreit der Metall- und Elektroindustrie",
-      "description": "Die Beschäftigten in der Metall- und Elektroindustrie sollen in zwei Stufen insgesamt 4,3 Prozent mehr Lohn erhalten. Darauf haben sich Arbeitgeber und IG Metall geeinigt. Der Pilotabschluss ermöglicht aber auch Ausnahmen.",
-      "pubDate": "2026-11-26T17:43:33+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/tarifabschluss-metall-elektroindustrie-100.html",
-      "bild": ""
-    },
-    {
-      "id": "2a388d2ef4be78f0c558",
-      "title": "Chinesischer Online-Händler Temu sagt mehr Verbraucherschutz zu",
-      "description": "Der Onlinehändler Temu will Verbraucher in der EU besser schützen. So verzichtet das chinesische Unternehmen künftig nach eigenen Angaben auf gefälschte Bewertungen oder das Ausüben von Kaufdruck.",
-      "pubDate": "2026-11-26T15:38:50+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/temu-eu-verfahren-verbraucherschutz-100.html",
-      "bild": ""
-    },
-    {
-      "id": "7b8705821b6c6905a624",
-      "title": "Spanier Hernández de Cos soll Nachfolger von EZB-Chefin Lagarde werden",
-      "description": "EZB-Chefin Lagarde hatte angekündigt, ihren Posten im Februar aufzugeben. Nun ist die Nachfolge geklärt: Die EU-Spitzen einigten sich auf den Spanier Hernández de Cos. Ein Deutscher ist als Chefvolkswirt vorgesehen.",
-      "pubDate": "2026-11-26T18:28:08+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/ezb-chef-de-cos-100.html",
-      "bild": ""
-    },
-    {
-      "id": "36862be1bd75e757bf2d",
-      "title": "Russland: Sieben von zehn ermordeten Frauen Opfer häuslicher Gewalt",
-      "description": "Der Krieg gegen die Ukraine hinterlässt auch in der Statistik zu häuslicher Gewalt in Russland Spuren. Eine Studie zeigt: Viele Täter sind Kriegsteilnehmer. Und Verfahren können ausgesetzt werden, wenn Beschuldigte in den Krieg ziehen. Von L. Becker.",
-      "pubDate": "2026-11-26T14:40:55+01:00",
-      "link": "https://www.tagesschau.de/ausland/asien/mehr-frauen-in-russland-sterben-durch-gewalt-100.html",
-      "bild": ""
-    },
-    {
-      "id": "12e86c2d1ec62cea5d09",
-      "title": "Erzbistum Köln: Rekordschmerzensgeld für Missbrauchsopfer",
-      "description": "Das Erzbistum Köln muss einem Missbrauchsopfer 550.000 Euro Schmerzensgeld zahlen - die bisher höchste Summe in einem solchen Fall. Das Oberlandesgericht Köln sieht die Kirche in der Verantwortung.",
-      "pubDate": "2026-11-26T14:37:34+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/missbrauch-kirche-schmerzensgeld-102.html",
       "bild": ""
     }
   ],
