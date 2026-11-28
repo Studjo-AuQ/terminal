@@ -1,7 +1,71 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "28.11.2026, 02:54 Uhr (UTC)",
+  "aktualisiert": "28.11.2026, 11:33 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "49c956db8cd5369680ef",
+      "title": "Mehrere Opfer bei Explosion nahe einer Schule in Afghanistan",
+      "description": "Nahe einer Schule im Osten Afghanistans hat es eine Explosion gegeben. Durch die Detonation sind offenbar mehrere Schüler getötet worden. Die Behörden sprechen von Fahrlässigkeit.",
+      "pubDate": "2026-11-28T12:07:26+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/explosion-an-schule-in-afghanistan-100.html",
+      "bild": ""
+    },
+    {
+      "id": "6cc0f954ec1488b92720",
+      "title": "Mitarbeiter von Ärzte ohne Grenzen im Gazastreifen getötet",
+      "description": "Israel wirft der Hamas im Gazastreifen immer wieder vor, sich als humanitäre Helfer auszugeben. Nun hat das Militär bei einem Angriff zwei Wachleute von Ärzte ohne Grenzen getötet. Die Hilfsorganisation zeigt sich empört.",
+      "pubDate": "2026-11-28T10:58:16+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/gaza-israel-angriff-hamas-aerzte-ohne-grenzen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "8da027c7b576418127a8",
+      "title": "Volksabstimmung: Darf die Schweiz bald einfacher Waffen verkaufen?",
+      "description": "Das Schweizer Recht erlaubt den Export von Rüstungsgütern nur unter engen Vorgaben. Das schwäche die Sicherheit des Landes, meint die Regierung. Sie will das ändern - und lässt die Schweizer am Sonntag darüber abstimmen. Von S. Biegger.",
+      "pubDate": "2026-11-28T10:45:23+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/schweiz-abstimmung-kriegsmaterialgesetz-100.html",
+      "bild": ""
+    },
+    {
+      "id": "98e941f4ddf8f469d07f",
+      "title": "Flugverkehr am Airport Köln/Bonn nach Drohnensichtung zeitweise gestoppt",
+      "description": "Am Airport Köln/Bonn ist am späten Abend der Flugverkehr vorübergehend eingestellt worden. Anlass war eine gesichtete Drohne. Warum sie dort unterwegs war, ist unklar. Mittlerweile können die Flugzeuge wieder starten und landen.",
+      "pubDate": "2026-11-28T07:41:00+01:00",
+      "link": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/drohnensichtung-flugverkehr-am-airport-koelnbonn-gestoppt-100.html",
+      "bild": ""
+    },
+    {
+      "id": "b65d9dfeeba95c722940",
+      "title": "Nach niedrigen Pegelständen im Sommer: Umweltminister will Rhein umbauen",
+      "description": "Niedrige Pegelstände an deutschen Flüssen führten im Sommer zu erheblichen Wirtschaftsschäden. Umweltminister Schneider fordert nun massive Investitionen in die Wasserinfrastruktur. Er will dem Rhein mehr Platz geben.",
+      "pubDate": "2026-11-28T08:16:29+01:00",
+      "link": "https://www.tagesschau.de/inland/umweltminister-schneider-rhein-umbau-100.html",
+      "bild": ""
+    },
+    {
+      "id": "7e6f2a3844c848f677f2",
+      "title": "Kritik aus der Union an Rentenplänen von Arbeitsminister Schweitzer",
+      "description": "Der Vorschlag des Arbeitsministers zur Reform der Rente liegt auf dem Tisch - und der Gegenwind aus der Union ist recht rau. Dem Koalitionspartner stößt auf, dass die \"Rente mit 63\" im Kern erhalten bleibt. Doch nicht nur das.",
+      "pubDate": "2026-11-28T11:11:40+01:00",
+      "link": "https://www.tagesschau.de/inland/rentenplaene-reaktionen-102.html",
+      "bild": ""
+    },
+    {
+      "id": "719bb298094c8ba711dc",
+      "title": "Treibstoffkrise in Malawi: Kaum Geld - und dann der Iran-Krieg",
+      "description": "Malawi leidet unter einer extremen Treibstoffkrise. Die fragile Wirtschaft hängt vom Tabakexport ab - zu schwachen Deviseneinnahmen kommt die Lage an der Straße von Hormus hinzu. Die Krise wirkt sich auf alle Lebensbereiche aus. Von C. Hauck.",
+      "pubDate": "2026-11-28T04:34:41+01:00",
+      "link": "https://www.tagesschau.de/ausland/afrika/malawi-treibstoffkrise-100.html",
+      "bild": ""
+    },
+    {
+      "id": "c7f8cf9e11d56f05af8b",
+      "title": "US-Militär beschießt Frachter im Golf von Oman",
+      "description": "Im Golf von Oman hat das US-Militär nach eigenen Angaben ein Handelsschiff beschossen. Die Besatzung habe versucht, die US-Blockade iranischer Häfen zu durchbrechen. Das Schiff sei manövrierunfähig, die Crew unverletzt.",
+      "pubDate": "2026-11-28T04:27:38+01:00",
+      "link": "https://www.tagesschau.de/ausland/asien/iran-usa-frachter-beschuss-golf-oman-100.html",
+      "bild": ""
+    },
     {
       "id": "ce5a2ce289b3ce39e442",
       "title": "Durchsuchung bei Le Pens früherem Bürochef",
@@ -56,70 +120,6 @@
       "description": "Der Bundestag hat die Senkung der Stromsteuer für ein Jahr und eine Zuckersteuer bei Getränken beschlossen. Außerdem steigt die Abgabe auf hochprozentigen Alkohol. Auch Alkopops könnten teurer werden.",
       "pubDate": "2026-11-27T17:09:18+01:00",
       "link": "https://www.tagesschau.de/inland/innenpolitik/beschluss-zuckersteuer-stromsteuer-100.html",
-      "bild": ""
-    },
-    {
-      "id": "1aa12b435d8696e3ec34",
-      "title": "Schiffsunglück vor Ibiza: Gefahr für Umwelt gering",
-      "description": "Der Öltanker \"Med Emre\" treibt kieloben im Mittelmeer vor Ibiza. Eine größere Gefahr für die Umwelt geht von ihm nach ersten Erkenntnissen aber wohl nicht aus. Inzwischen wird die Abschleppung des Schiffs geplant.",
-      "pubDate": "2026-11-27T16:03:21+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/tankerunglueck-ibiza-vorsichtige-entwarnung-100.html",
-      "bild": ""
-    },
-    {
-      "id": "7f88297195b3fee3272a",
-      "title": "Zentralrat der Juden reagiert scharf auf Kritik von AfD-Chefin Weidel",
-      "description": "Der Zentralrat der Juden positioniert sich seit Langem klar gegen die AfD. Parteichefin Weidel warf der Organisation nun vor, sie sei von der CDU \"fremdgesteuert\". Der Präsident des Zentralrats reagierte mit deutlichen Worten.",
-      "pubDate": "2026-11-27T15:13:55+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/zentralrat-der-juden-kritik-afd-100.html",
-      "bild": ""
-    },
-    {
-      "id": "e6cca5ea821e238861fc",
-      "title": "Deutschland: Beginn der Ski-Saison - mit Neuschnee und höheren Preisen",
-      "description": "Es ist ausreichend Schnee gefallen, es ist kalt genug und das Wetter spielt auch mit: In Deutschland hat Ski-Saison begonnen - an der Zugspitze und im Sauerland. Wintersportler müssen allerdings wieder tiefer in die Tasche greifen.",
-      "pubDate": "2026-11-27T15:12:31+01:00",
-      "link": "https://www.tagesschau.de/inland/gesellschaft/ski-saison-deutschland-100.html",
-      "bild": ""
-    },
-    {
-      "id": "4df3ebbb9047dc961361",
-      "title": "Spionageverdacht: Ex-BND-Chef Hanning bleibt in Untersuchungshaft",
-      "description": "Die Festnahme des Ex-BND-Chefs Hanning hatte im Oktober international Schlagzeilen produziert. Nun steht fest, dass der 80-Jährige vorerst in Haft bleibt. Gegen Hanning wird unter anderem wegen Spionageverdachts ermittelt.",
-      "pubDate": "2026-11-27T15:10:01+01:00",
-      "link": "https://www.tagesschau.de/inland/bnd-hanning-untersuchungshaft-spionageverdacht-100.html",
-      "bild": ""
-    },
-    {
-      "id": "5b8097f81f9fd1453151",
-      "title": "Das plant Arbeitsminister Schweitzer für die Rente",
-      "description": "Seit Monaten ringt die Koalition um einen Kompromiss bei der Rente. Arbeitsminister Schweitzer hat nun einen ersten Entwurf vorgelegt. Einer der Punkte: Die \"Rente mit 63\" soll im Kern bestehen bleiben. Von Jan-Peter Bartels und Tim Aßmann.",
-      "pubDate": "2026-11-27T17:30:51+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/rentenreform-entwurf-arbeitsministerium-100.html",
-      "bild": ""
-    },
-    {
-      "id": "81b8514a872894e586b8",
-      "title": "Wer 2027 im Haushalt mehr Geld bekommt - und wer weniger",
-      "description": "Der Bundestag hat den Haushalt für 2027 beschlossen. Dabei gibt es deutliche Verschiebungen: mehr Geld für Verteidigung und Soziales, weniger für Gesundheit und Entwicklung. Wer profitiert, wer verliert?",
-      "pubDate": "2026-11-27T14:55:11+01:00",
-      "link": "https://www.tagesschau.de/inland/innenpolitik/haushalt-2027-ueberblick-102.html",
-      "bild": ""
-    },
-    {
-      "id": "5613400a30f9e5fd9295",
-      "title": "Anthropics wilde erste Börsenwoche",
-      "description": "Der KI-Konzern Anthropic ging mit großen Erwartungen an die Börse. Der Start der Aktie in New York verlief spektakulär. Doch nach einer Woche fällt die Bilanz alles andere als rosig aus.",
-      "pubDate": "2026-11-27T14:44:03+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/marktbericht-anthropic-ipo-ki-100.html",
-      "bild": ""
-    },
-    {
-      "id": "5f32ebf3748c45cee971",
-      "title": "Serbiens Studenten nominieren Professor als Staatsoberhaupt",
-      "description": "Die Parlamentswahl im September hatte Serbiens Studentenliste überraschend gewonnen. Nun soll Ende Dezember auch ein neuer Präsident gewählt werden. Ein Universitätsprofessor soll dafür ins Rennen gehen.",
-      "pubDate": "2026-11-27T14:37:34+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/serbien-praesidentschaftswahl-professor-100.html",
       "bild": ""
     }
   ],
