@@ -1,7 +1,31 @@
 {
   "quelle": "tagesschau.de - Die Nachrichten der ARD",
-  "aktualisiert": "27.11.2026, 20:12 Uhr (UTC)",
+  "aktualisiert": "28.11.2026, 02:54 Uhr (UTC)",
   "meldungen": [
+    {
+      "id": "ce5a2ce289b3ce39e442",
+      "title": "Durchsuchung bei Le Pens früherem Bürochef",
+      "description": "Er soll vertrauliche Informationen aus dem Innenministerium erhalten haben: In Frankreich sind die Parteizentrale des Rassemblement National und die Wohnung des früheren Bürochefs von Präsidentschaftskandidatin Le Pen durchsucht worden.",
+      "pubDate": "2026-11-28T02:41:50+01:00",
+      "link": "https://www.tagesschau.de/ausland/europa/frankreich-durchsuchung-ex-mitarbeiter-le-pen-100.html",
+      "bild": ""
+    },
+    {
+      "id": "35833cb7c2ebf07f7949",
+      "title": "Entwurf für Spritpreisdeckel liegt vor - Kabinett beschließt am Mittwoch",
+      "description": "Ein werktags berechneter Höchstpreis, Bußgeld bei Nichteinhaltung und Ausnahmen an Autobahnen: Der Spritpreisdeckel soll ab Januar gelten. Ein Entwurf ist nun in der Abstimmung. Das Kabinett könnte darüber am Mittwoch entscheiden.",
+      "pubDate": "2026-11-28T00:35:35+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/spritpreisdeckel-entwurf-kabinett-100.html",
+      "bild": ""
+    },
+    {
+      "id": "fb72afecae4eb5636671",
+      "title": "Schweitzer zu Plänen für Rentenreform: \"Wir können zusammenkommen\"",
+      "description": "In den tagesthemen hat Bundesarbeitsminister Schweitzer seine Rentenpläne als Grundlage für einen Konsens bezeichnet. Man stabilisiere damit die Beiträge und tue etwas \"für die Fleißigen, die lange gearbeitet haben\".",
+      "pubDate": "2026-11-27T23:10:29+01:00",
+      "link": "https://www.tagesschau.de/inland/innenpolitik/schweitzer-interview-100.html",
+      "bild": ""
+    },
     {
       "id": "1df18edce025d44972ac",
       "title": "Reaktionen auf Rentenpläne: \"Frührentner sollen also Haushaltslöcher stopfen\"",
@@ -96,30 +120,6 @@
       "description": "Die Parlamentswahl im September hatte Serbiens Studentenliste überraschend gewonnen. Nun soll Ende Dezember auch ein neuer Präsident gewählt werden. Ein Universitätsprofessor soll dafür ins Rennen gehen.",
       "pubDate": "2026-11-27T14:37:34+01:00",
       "link": "https://www.tagesschau.de/ausland/europa/serbien-praesidentschaftswahl-professor-100.html",
-      "bild": ""
-    },
-    {
-      "id": "5bab4192c4f36401440b",
-      "title": "Kommentar: Hernández de Cos - ein EZB-Chef im Sinne Frankreichs",
-      "description": "Der neue EZB-Rat steht fest - eingefädelt durch Emmanuel Macron. Der künftige EZB-Präsident Pablo Hernández de Cos steht eher für eine lockere Geldpolitik. In Zeiten hoher Inflation sind Konflikte programmiert. Von Klaus-Rainer Jackisch.",
-      "pubDate": "2026-11-27T14:20:03+01:00",
-      "link": "https://www.tagesschau.de/wirtschaft/finanzen/neuer-ezb-chef-de-cos-geldpolitik-100.html",
-      "bild": ""
-    },
-    {
-      "id": "ff87ea3fb7191f07974f",
-      "title": "Helge Schneider sagt Tschüss - vielleicht",
-      "description": "Helge Schneider verbindet avancierten Jazz mit anarchischem Humor. 2027 geht der selbsternannte Klimperclown auf Abschiedstournee. Fragt sich nur: Meint er das ernst? Von Christoph Ohrem.",
-      "pubDate": "2026-11-27T16:23:02+01:00",
-      "link": "https://www.tagesschau.de/kultur/helge-schneider-abschiedstournee-100.html",
-      "bild": ""
-    },
-    {
-      "id": "2e09f1c7a86ba886f6bb",
-      "title": "Ursachensuche: EU streitet weiter ums Geld",
-      "description": "Druck aus Frankreich, Widerstand aus Deutschland und der Gastgeber mit einer ungewöhnlichen Verhandlungsstrategie. Es gibt mehrere Gründe, warum der EU-Sondergipfel zum Haushalt gescheitert ist. Von Sabrina Fritz.",
-      "pubDate": "2026-11-27T14:18:17+01:00",
-      "link": "https://www.tagesschau.de/ausland/europa/eu-haushalt-gipfel-analyse-100.html",
       "bild": ""
     }
   ],
